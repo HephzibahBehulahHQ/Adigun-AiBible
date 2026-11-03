@@ -11,15 +11,18 @@ export function wrapText(ctx: CanvasRenderingContext2D, text: string, maxWidth: 
   }
   if (line) lines.push(line); return lines;
 }
-export function drawShareCard(canvas: HTMLCanvasElement, verses: Verse[], reference: string, edition: string, size: CardSize, palette: keyof typeof palettes) {
+export function drawShareCard(canvas: HTMLCanvasElement, verses: Verse[], reference: string, edition: string, size: CardSize, palette: keyof typeof palettes, rightsNotice = 'Source Scripture · Public domain') {
   const [width, height] = dimensions[size]; canvas.width = width; canvas.height = height;
   const ctx = canvas.getContext('2d'); if (!ctx) throw new Error('Image export is not supported in this browser.');
   const colors = palettes[palette]; ctx.fillStyle = colors.background; ctx.fillRect(0, 0, width, height);
   ctx.strokeStyle = colors.accent; ctx.globalAlpha = .18;
   for (let i = 0; i < 4; i++) { ctx.beginPath(); ctx.ellipse(width - 40, 100, 180 + i * 65, 180 + i * 65, 0, 0, Math.PI * 2); ctx.stroke(); }
   ctx.globalAlpha = 1; ctx.fillStyle = colors.accent; ctx.font = '600 23px system-ui'; ctx.fillText('ADIGUN–AIBIBLE  /  HB EVANGELISM', 96, 145);
+  ctx.font = '18px system-ui';
+  const creditLines = wrapText(ctx, rightsNotice, width - 192);
+  const footerTop = height - 70 - creditLines.length * 25;
   const text = verses.map(v => v.text).join(' '); let font = size === 'story' ? 64 : 52; let lines: string[] = [];
-  const top = height * .25, bottom = height - 300;
+  const top = height * .22, bottom = Math.min(height - 300, footerTop - 195);
   for (; font >= 30; font -= 2) { ctx.font = `${font}px Georgia, serif`; lines = wrapText(ctx, text, width - 192); if (lines.length * font * 1.48 <= bottom - top) break; }
   if (font < 30 || lines.length * font * 1.48 > bottom - top) throw new Error('This passage is too long for a legible card. Select fewer verses or choose Story. Nothing has been cropped.');
   ctx.fillStyle = colors.ink;
@@ -27,7 +30,7 @@ export function drawShareCard(canvas: HTMLCanvasElement, verses: Verse[], refere
   const ruleY = Math.min(bottom + 60, top + lines.length * font * 1.48 + 65);
   ctx.fillStyle = colors.accent; ctx.fillRect(96, ruleY, 66, 3); ctx.font = '600 32px system-ui'; ctx.fillText(reference, 96, ruleY + 68);
   ctx.fillStyle = colors.ink; ctx.font = '22px system-ui'; ctx.fillText(edition, 96, ruleY + 108);
-  ctx.globalAlpha = .65; ctx.font = '20px system-ui'; ctx.fillText('Source Scripture · Public domain', 96, height - 140); ctx.globalAlpha = 1;
+  ctx.globalAlpha = .8; ctx.font = '18px system-ui'; creditLines.forEach((line,i)=>ctx.fillText(line,96,footerTop+i*25)); ctx.globalAlpha = 1;
   return canvas;
 }
 export function downloadBlob(blob: Blob, name: string) { const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(url), 10000); }
