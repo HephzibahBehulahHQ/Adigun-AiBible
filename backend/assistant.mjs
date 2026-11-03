@@ -167,6 +167,7 @@ export function createAssistantHandler({ authenticate, resolveSource, limiter, p
       if (typeof quota?.allowed !== 'boolean' || !Number.isInteger(quota.retryAfterSeconds)
         || quota.retryAfterSeconds < 0 || quota.retryAfterSeconds > 86400) throw new RequestFailure(503, 'QUOTA_UNAVAILABLE');
       if (!quota.allowed) return respond(429, { error: 'RATE_LIMITED' }, { 'Retry-After': String(Math.max(1, quota.retryAfterSeconds)) });
+      signal.throwIfAborted();
       let raw;
       try {
         raw = await abortable(provider.generate({ system: SYSTEM, question: input.question, locale: input.locale, sources, maxOutputTokens: MAX_OUTPUT_TOKENS, signal }), signal);

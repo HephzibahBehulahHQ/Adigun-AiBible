@@ -239,3 +239,14 @@ export async function quranEvidenceMatches(excerpt: QuranExcerpt, link: Comparis
     return link.quranEvidencePassageIds.includes(id) && link.reviewedSourceHashes[id] === hashes[index];
   });
 }
+
+/** Bind an approved paraphrase to its exact installed Bible wording and address. */
+export async function paraphraseEvidenceMatches(reference:Reference, verses:{number:number;text:string}[], entry:EditorialContent):Promise<boolean> {
+  if(!isReference(reference)||entry.kind!=='paraphrase')return false;
+  const first=reference.verse,last=reference.endVerse??first,edition=reference.editionId||DEFAULT_EDITION_ID;
+  if(verses.length!==last-first+1||entry.basePassageIds.length!==verses.length||new Set(entry.basePassageIds).size!==verses.length)return false;
+  const selected=Array.from({length:last-first+1},(_,index)=>verses.filter(verse=>verse.number===first+index));
+  if(selected.some(matches=>matches.length!==1||!matches[0].text.trim()))return false;
+  const hashes=await Promise.all(selected.map(matches=>hashSourceText(matches[0].text)));
+  return selected.every((matches,index)=>{const id=`${edition}:${reference.bookId}:${reference.chapter}:${matches[0].number}`;return entry.basePassageIds.includes(id)&&entry.reviewedSourceHashes[id]===hashes[index];});
+}

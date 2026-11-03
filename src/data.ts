@@ -39,16 +39,16 @@ export function getEditionCatalog(): Promise<EditionCatalog> {
   if (!catalog) catalog = Promise.all([getManifest(), readJSON('data/editions/catalog.json', 'Additional edition information is not downloaded.')]).then(([baseline, raw]) => {
     const imported = raw as EditionCatalog;
     if (imported.schemaVersion !== 1 || !Array.isArray(imported.editions) || imported.editions.some(e => typeof e.id !== 'string' || typeof e.name !== 'string' || !/^https:\/\//.test(e.sourceUrl) || !/^https:\/\//.test(e.licenseUrl))) throw new Error('Edition catalog failed validation.');
-    return {schemaVersion: 1, editions: [{...baseline.edition, corpus: 'bible' as const}, ...imported.editions.filter(e => e.id !== baseline.edition.id)]};
+    return {schemaVersion: 1, editions: [{...baseline.edition, corpus: 'bible' as const, rights:{redistribute:true,adapt:true,offline:true,audio:true,export:true}, attribution:'World English Bible. Text in the public domain; the edition name is a trademark of eBible.org.', conditions:['Changed wording must not be presented as the unchanged World English Bible.']}, ...imported.editions.filter(e => e.id !== baseline.edition.id)]};
   }).catch(error => { catalog = undefined; throw error; });
   return catalog;
 }
 let quran: Promise<QuranSource> | undefined;
 export function getQuran(): Promise<QuranSource> {
   if (!quran) quran = Promise.all([getEditionCatalog(), readJSON('data/editions/eng-clearquran/quran.json', 'The English Quran source is not downloaded. Reconnect to open it.')]).then(([editions, raw]) => {
-    const data = raw as QuranSource;
+    const data = raw as {schemaVersion:number;editionId:string;surahs:QuranSource['surahs']};
     const edition = editions.editions.find(e => e.id === 'eng-clearquran' && e.corpus === 'quran');
-    if (!edition || !Array.isArray(data.surahs) || data.surahs.length !== 114 || data.surahs.some(s => !Number.isInteger(s.number) || !Array.isArray(s.verses) || s.verses.some(v => !Number.isInteger(v.number) || typeof v.text !== 'string'))) throw new Error('The Quran edition failed validation.');
+    if (!edition || data.schemaVersion !== 1 || data.editionId !== edition.id || !Array.isArray(data.surahs) || data.surahs.length !== 114 || data.surahs.some((s,i) => s.number !== i+1 || !Array.isArray(s.verses) || !s.verses.length || s.verses.some((v,j) => v.number !== j+1 || typeof v.text !== 'string'))) throw new Error('The Quran edition failed validation.');
     return {schemaVersion: 1, edition, surahs: data.surahs};
   }).catch(error => { quran = undefined; throw error; });
   return quran;

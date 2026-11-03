@@ -59,6 +59,12 @@ themselves, alter circle IDs, impersonate another member, or alter another
 member's display name. The owner is an implicit member and cannot lose owner
 authority by editing a membership row.
 
+Admission transactions must use the normal Data API `READ COMMITTED` isolation;
+the shared advisory lock plus a fresh statement snapshot protects concurrent
+invitation/acceptance capacity checks. Recheck this configured isolation in the
+dedicated project. This contract is not claimed for arbitrary long-lived
+`REPEATABLE READ` transactions issued through a privileged SQL connection.
+
 Invitations target an existing user's UUID, expire in at most seven days and are
 consumed in the same transaction as acceptance. Acceptance always starts as
 `member`. A removed member cannot reuse a consumed invitation. Invitations do
@@ -110,6 +116,14 @@ owner/member/post identities. Membership checks use current database rows,
 so removal and demotion take effect on subsequent requests without waiting for
 stale role metadata in a JWT. Private helper policies avoid recursive membership
 lookups. There are no broadly exposed views or Realtime publications.
+
+The direct Data API policies validate the signed identity, not live Auth session
+existence. A signed-out access token can therefore remain usable until expiry;
+configure a short access-token lifetime and document it. The assistant's server
+contract adds a live session check. If immediate session revocation is required
+for all private-data requests, add and verify an authorization gateway or a
+reviewed session-check policy before enabling those flows; do not claim this
+schema already provides that stronger property.
 
 Direct Data API writes invoke database quotas: at most five successful creates
 per user, per UTC minute, per action (`posts`, `reports`, `invitations`, `circles`).

@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=24 <25" },
+  "engines": {
+    "node": ">=24 <25"
+  },
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "typecheck": "tsc --noEmit",
@@ -15,9 +17,10 @@
     "content:coverage": "node scripts/validate-corpus.mjs",
     "build": "npm run typecheck && node scripts/prepare-content.mjs && vite build && node scripts/finalize-build.mjs",
     "preview": "vite preview --host 0.0.0.0",
-    "check": "npm run typecheck && npm run lint && npm test && npm run content:validate && npm run build",
+    "check": "npm run typecheck && npm run lint && npm test && npm run test:backend && npm run content:validate && npm run build",
     "checkpoint": "node scripts/checkpoint.mjs",
-    "checkpoint:watch": "node scripts/checkpoint.mjs --watch"
+    "checkpoint:watch": "node scripts/checkpoint.mjs --watch",
+    "test:backend": "node --test backend/tests/*.test.mjs"
   },
   "dependencies": {
     "react": "19.3.1",

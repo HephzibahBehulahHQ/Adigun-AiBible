@@ -4,7 +4,7 @@
 
 `content/editorial/candidates.json` preserves the original 50 research leads and cautions. Never approve a raw seed in place. Create an explicit record in `records.json` after research. `reviewers.json` starts empty; an authorized maintainer may register a real, consenting human reviewer after verifying identity. An agent must never populate it with invented people.
 
-Run `node scripts/publish-editorial.mjs` using Node 24. The publisher reads actual Bible units from `data/books`, builds edition-specific inventory, validates every proposed publication, and atomically writes `data/editorial-published.json`. There may legitimately be zero approved records. A purported approval that fails validation blocks publication rather than silently publishing it. Wire this command into the release build before copying data. Run `node --test tests/editorial.test.mjs` for the risk tests.
+Run `node scripts/publish-editorial.mjs` using Node 24. The publisher reads actual Bible units from `data/books`, builds edition-specific inventory, validates every proposed publication, and atomically writes `data/editorial-published.json`. There may legitimately be zero approved records. A purported approval that fails validation blocks publication rather than silently publishing it. The release build runs this publisher before copying data and exposes only compact approved publication metadata. Run `node --test tests/editorial.test.mjs` for the risk tests.
 
 ## Preparing and reviewing a comparison
 
@@ -18,6 +18,8 @@ Run `node scripts/publish-editorial.mjs` using Node 24. The publisher reads actu
 Paraphrases and other editorial additions use `EditorialContent`, `editorialContentHash`, and `validateEditorialContent`. Base-source evidence and named supporting sources are required. Origin (`human_authored` or `ai_assisted`) is separate from review status.
 
 ## Additional corpus manifest
+
+The installed edition catalog is resolved automatically from `data/editions`: canonical Bible evidence IDs use `<editionId>:<BOOK>:<chapter>:<verse>`, and Quran IDs use `eng-clearquran:QUR:<surah>:<verse>`. Source hashes bind the exact installed wording. External inventory cannot replace any installed edition. ClearQuran adaptation rights are false.
 
 Use `content/editorial/source-inventory.json`, or `--inventory /absolute/path.json`, with `{schemaVersion: 1, editions: EditionInventory[], sources: SourcePassage[]}`. The exported contracts in `src/editorial.ts` are authoritative. Every edition identifies corpus, version, reference system, evidenced redistribution/adaptation rights, and works with explicit ordered chapter/unit inventories. Every source identifies its exact edition/version, atomic reference, text, and SHA-256 hash. Missing/merged/split or nonnumeric labels must be represented explicitly; never infer another edition's numbering. Additional corpora cannot overwrite the imported Bible. Quran sources use corpus `quran`, work `QUR`. Hadith uses corpus `hadith` and its registered work/locator mapping. Register a documented mapping for historical divisions before importing them. `ValidationContext.resolveSource` is injectable for other storage backends.
 

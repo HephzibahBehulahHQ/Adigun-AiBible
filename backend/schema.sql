@@ -332,6 +332,10 @@ returns trigger language plpgsql security invoker set search_path = ''
 as $$
 declare consumed uuid;
 begin
+  -- Share the admission lock with invitation creation. The expiry check occurs
+  -- after acquiring it, so a waiting acceptance cannot claim an expired slot.
+  -- Data API admission transactions must use PostgreSQL READ COMMITTED.
+  perform pg_advisory_xact_lock(hashtextextended(new.circle_id::text, 18771));
   delete from aibible.circle_invitations
     where circle_id = new.circle_id and circle_owner_id = new.circle_owner_id
       and invitee_id = auth.uid() and expires_at > clock_timestamp()

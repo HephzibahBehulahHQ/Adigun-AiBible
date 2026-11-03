@@ -25,7 +25,9 @@ validation, no-store/CORS, cancellation and timeouts. They do not test RLS.
    Review `schema.sql`, then apply it only to the empty dedicated project through
    the approved SQL tool. Inspect the actual Data API configuration: expose
    `aibible`, never `aibible_private`; no private table should be in a Realtime
-   publication. Do not create custom objects in `auth`.
+   publication. Confirm admission requests use `READ COMMITTED`; capacity checks
+   rely on a fresh statement snapshot after the shared advisory lock. Do not
+   create custom objects in `auth`.
 2. Create controlled test Auth accounts without sending mail to real recipients:
    owner A, member A, moderator A, owner B, and an outsider. Record their actual
    UUIDs. Also test the `anon` role and an anonymous Auth identity. Auth users
@@ -68,6 +70,7 @@ the API; simulated SQL claims do not prove it.
 | Invitation abuse | Wrong target, expired/revoked invite, forged owner, role moderator on join | Denied |
 | Replay | Remove accepted member; reuse old invitation | Denied |
 | Concurrency | Accept invite while owner revokes it in another transaction | At most one consistent outcome; no unconsumed reusable invite |
+| Expiry race | Hold an admission lock while an accepted invite expires; release and race a new invitation | Waiting expired acceptance rolls back; no over-capacity admission |
 | Capacity | Concurrent owner invites at 14 existing members/pending invites | Owner plus members/pending invites cannot exceed 15 |
 | Roles | Member self-promotes; moderator promotes; owner promotes/demotes member | First two denied; owner change allowed |
 | Identity | Member changes user_id/circle/owner/joined_at or someone else's display name | Denied |
