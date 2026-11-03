@@ -1,0 +1,15 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+.env
+.env.*
+!.env.example
+*.log
+.checkpoint-state.json
+.checkpoint.lock
+.openai/
+coverage/
+
+public/data/
+public/docs/
