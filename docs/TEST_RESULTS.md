@@ -1,17 +1,25 @@
 # Verification evidence
 
-## Executed locally
+## Hardening release
 
-The pre-integration checkpoint passed TypeScript, ESLint, 62 automated tests, English source validation, all additional-edition integrity checks and the production build. Subsequent targeted checks passed 14 editorial/source tests and two notebook recovery/edition-attribution tests.
+Verified code checkpoint: `129a01e08761a5e1fccff34af06e1b2f0c030e24`. GitHub Actions run [41737114875](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41737114875) passed:
 
-The integrated release also passed TypeScript, ESLint, 68 app/domain/source tests, 20 backend contract tests, corpus checks and a production build. The first actual CI browser run passed 24 of 26 cases. Both PNG cases exposed an ambiguous canvas-size accessible name; the control now has an explicit accessible name. The full browser gate is rerunning, and PNG verification is not yet claimed. The final release result and commit are recorded in [project status](agent/PROJECT_STATUS.md). Browser checks run against the built production artifact in GitHub Actions; merely collecting tests is not a pass.
+- TypeScript and ESLint.
+- 68 application, source-integrity, editorial, offline/update and study-state tests.
+- 20 offline backend contract tests with injected Auth/quota/provider adapters and committed source resolution.
+- Complete English and additional-edition corpus validation and production build.
+- 25 Chromium cases on their first attempt; a mobile bookmark-persistence case passed only after retry. The stale save-status completion is fixed and retries are disabled. The workflow also repeats that persistence case five times per device profile; the PR checks record the final gate result.
 
-Commands: `npm run check`, `npm run test:e2e`, and `node --test backend/tests/*.test.mjs`. The browser suite covers functional navigation, durable study state, source identity, offline reading, exports and responsive layout. Backend tests use injected adapters and do not establish deployed RLS correctness.
+Browser coverage includes hash-route refresh and chapter navigation, skip-link focus, saved bookmarks and notes, exact English/German/Yoruba source identity, independent UI language, invalid-link recovery, verified offline refresh, 320px layout, actual PNG signature/dimensions, legacy WEB backup identity/removal while German is active, and Quran navigation through its final verse.
 
-## First deployment evidence
+Initial browser run `41736505631` passed 24/26. Both PNG cases could not locate the canvas-size control by its exact name. Adding an explicit accessible name fixed the control; the unchanged PNG assertions then passed. No failed browser test was skipped or removed.
 
-GitHub Actions run `41728171389` succeeded for source `f6e58b976dbfd30d65bf174b009340f3d3e30ea6`. The public build-info returned that commit and the browser opened Genesis 1. This verifies the first live release only.
+Commands: `npm run check` and `npm run test:e2e`; `check` includes `node --test backend/tests/*.test.mjs`. Cloud Browser cannot access the workspace loopback preview; actual browser execution occurred in GitHub Actions. Production verification is linked from [project status](agent/PROJECT_STATUS.md).
 
-## Remaining independent verification
+## First deployment
 
-Native-language review, human editorial approvals, production database authorization tests, provider response evaluation, and device-specific TTS/media support require their corresponding real environments or reviewers. No independent accessibility certification is claimed.
+Run `41728171389` deployed `f6e58b976dbfd30d65bf174b009340f3d3e30ea6`; live build-info matched, and the browser opened Genesis 1.
+
+## Explicit limits
+
+Database schema execution, RLS and concurrency tests, live Auth/model integration, independent editorial/native-language review, recorded narration and native widgets remain unverified or unavailable. Browser speech and silent WebM support depend on the browser; the PNG check does not certify every media platform. No independent accessibility certification is claimed.

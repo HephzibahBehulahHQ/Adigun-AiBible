@@ -4,7 +4,7 @@ The public product is hosted at https://hephzibahbehulahhq.github.io/Adigun-AiBi
 
 GitHub Pages uses GitHub Actions. The `Validate and deploy Adigun-AiBible` workflow validates every pull request to `main`. A push to `main`, or a manual workflow run on `main`, runs the locked Node.js 24 build and deploys its `dist/` artifact.
 
-The workflow runs TypeScript, ESLint, automated tests, source-corpus validation and the production build before deployment. A failing build cannot reach the deployment job. Only the deployment job receives Pages write and OIDC permissions. Official GitHub actions are pinned to verified release commit SHAs.
+The workflow runs TypeScript, ESLint, automated tests, source-corpus validation the production build, and all desktop/mobile Chromium browser cases before deployment. A failing build cannot reach the deployment job. Only the deployment job receives Pages write and OIDC permissions. Official GitHub actions are pinned to verified release commit SHAs.
 
 Vite, the manifest, runtime content and the service worker use the `/Adigun-AiBible/` project path. Hash routes permit direct links and refreshes on GitHub Pages. No custom domain or audience change is required.
 
