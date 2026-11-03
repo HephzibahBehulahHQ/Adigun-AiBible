@@ -33,6 +33,12 @@ jobs:
         run: npm ci
       - name: Validate source, content and production build
         run: npm run check
+      - name: Install Chromium for production-browser checks
+        run: npx playwright install --with-deps chromium
+      - name: Verify the built app in desktop and narrow browsers
+        run: npm run test:e2e
+      - name: Repeat the previously failing persistence regression
+        run: npx playwright test --grep "legacy WEB bookmarks" --repeat-each=5
       - name: Configure GitHub Pages
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0

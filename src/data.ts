@@ -1,21 +1,56 @@
-import type { Book, Manifest } from './types';
-const base = import.meta.env.BASE_URL;
+import type { Book, Edition, EditionCatalog, Manifest, Preferences, QuranSource } from './types';
+const base = import.meta.env?.BASE_URL || '/Adigun-AiBible/';
 export const assetUrl = (path: string) => `${base}${path}`;
-export async function getManifest(): Promise<Manifest> {
-  const response = await fetch(assetUrl('data/manifest.json'));
-  if (!response.ok) throw new Error('The edition manifest could not be loaded. Reconnect and try again.');
-  const data = await response.json() as Manifest;
-  if (!Array.isArray(data.books) || !data.edition || !data.totals) throw new Error('This edition manifest is invalid.');
-  return data;
+export const bibleEditionIds = ['eng-web', 'deu1912', 'yor'] as const;
+export function presetEditionId(preset: Preferences['preset']): string { return preset === 'de' ? 'deu1912' : preset === 'yo' ? 'yor' : 'eng-web'; }
+export function editionPreset(id: string): Preferences['preset'] { return id === 'deu1912' ? 'de' : id === 'yor' ? 'yo' : 'en'; }
+export function editionDataPath(editionId = 'eng-web', path = ''): string {
+  if (!bibleEditionIds.includes(editionId as typeof bibleEditionIds[number])) throw new Error('That Bible edition is not installed.');
+  return `${editionId === 'eng-web' ? 'data' : `data/editions/${editionId}`}/${path}`;
+}
+async function readJSON(path: string, message: string): Promise<unknown> {
+  const response = await fetch(assetUrl(path));
+  if (!response.ok) throw new Error(message);
+  return response.json();
+}
+const manifests = new Map<string, Promise<Manifest>>();
+export function getManifest(editionId = 'eng-web'): Promise<Manifest> {
+  if (!bibleEditionIds.includes(editionId as typeof bibleEditionIds[number])) return Promise.reject(new Error('That Bible edition is not installed. Choose English, Deutsch or Yorùbá.'));
+  if (!manifests.has(editionId)) manifests.set(editionId, readJSON(editionDataPath(editionId, 'manifest.json'), 'This edition is not downloaded. Reconnect to open it.').then(raw => {
+    const data = raw as Manifest;
+    if (data.schemaVersion !== 1 || data.edition?.id !== editionId || !Array.isArray(data.books) || !data.books.length || !data.totals || data.books.some(b => !/^[1-3]?[A-Z]{2,3}$/.test(b.id) || !Array.isArray(b.verseCounts) || b.chapters !== b.verseCounts.length)) throw new Error('This edition manifest failed validation.');
+    return data;
+  }).catch(error => { manifests.delete(editionId); throw error; }));
+  return manifests.get(editionId)!;
 }
 const books = new Map<string, Promise<Book>>();
-export function getBook(id: string): Promise<Book> {
+export function getBook(id: string, editionId = 'eng-web'): Promise<Book> {
   if (!/^[1-3]?[A-Z]{2,3}$/.test(id)) return Promise.reject(new Error('Invalid book identifier.'));
-  if (!books.has(id)) books.set(id, fetch(assetUrl(`data/books/${id}.json`)).then(async r => {
-    if (!r.ok) throw new Error('This book is not available offline yet. Reconnect or open a downloaded book.');
-    const b = await r.json() as Book;
-    if (b.id !== id || !Array.isArray(b.chapters)) throw new Error('The downloaded book failed validation.');
-    return b;
-  }).catch(e => { books.delete(id); throw e; }));
-  return books.get(id)!;
+  const key = `${editionId}:${id}`;
+  if (!books.has(key)) books.set(key, readJSON(editionDataPath(editionId, `books/${id}.json`), 'This book is not downloaded for the selected edition. Reconnect or choose a downloaded edition.').then(raw => {
+    const book = raw as Book;
+    if (book.id !== id || !Array.isArray(book.chapters) || book.chapters.some(ch => !Number.isInteger(ch.number) || !Array.isArray(ch.verses) || ch.verses.some(v => !Number.isInteger(v.number) || typeof v.text !== 'string'))) throw new Error('The downloaded book failed validation.');
+    return book;
+  }).catch(error => { books.delete(key); throw error; }));
+  return books.get(key)!;
 }
+let catalog: Promise<EditionCatalog> | undefined;
+export function getEditionCatalog(): Promise<EditionCatalog> {
+  if (!catalog) catalog = Promise.all([getManifest(), readJSON('data/editions/catalog.json', 'Additional edition information is not downloaded.')]).then(([baseline, raw]) => {
+    const imported = raw as EditionCatalog;
+    if (imported.schemaVersion !== 1 || !Array.isArray(imported.editions) || imported.editions.some(e => typeof e.id !== 'string' || typeof e.name !== 'string' || !/^https:\/\//.test(e.sourceUrl) || !/^https:\/\//.test(e.licenseUrl))) throw new Error('Edition catalog failed validation.');
+    return {schemaVersion: 1, editions: [{...baseline.edition, corpus: 'bible' as const, rights:{redistribute:true,adapt:true,offline:true,audio:true,export:true}, attribution:'World English Bible. Text in the public domain; the edition name is a trademark of eBible.org.', conditions:['Changed wording must not be presented as the unchanged World English Bible.']}, ...imported.editions.filter(e => e.id !== baseline.edition.id)]};
+  }).catch(error => { catalog = undefined; throw error; });
+  return catalog;
+}
+let quran: Promise<QuranSource> | undefined;
+export function getQuran(): Promise<QuranSource> {
+  if (!quran) quran = Promise.all([getEditionCatalog(), readJSON('data/editions/eng-clearquran/quran.json', 'The English Quran source is not downloaded. Reconnect to open it.')]).then(([editions, raw]) => {
+    const data = raw as {schemaVersion:number;editionId:string;surahs:QuranSource['surahs']};
+    const edition = editions.editions.find(e => e.id === 'eng-clearquran' && e.corpus === 'quran');
+    if (!edition || data.schemaVersion !== 1 || data.editionId !== edition.id || !Array.isArray(data.surahs) || data.surahs.length !== 114 || data.surahs.some((s,i) => s.number !== i+1 || !Array.isArray(s.verses) || !s.verses.length || s.verses.some((v,j) => v.number !== j+1 || typeof v.text !== 'string'))) throw new Error('The Quran edition failed validation.');
+    return {schemaVersion: 1, edition, surahs: data.surahs};
+  }).catch(error => { quran = undefined; throw error; });
+  return quran;
+}
+export function sourceCredit(edition: Edition): string { return [edition.attribution || edition.name, edition.license, edition.licenseUrl, edition.sourceUrl].filter(Boolean).join('\n'); }

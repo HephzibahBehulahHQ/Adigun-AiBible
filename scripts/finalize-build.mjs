@@ -1,23 +1,201 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
-import { resolve } from 'node:path';
+import { relative, resolve } from 'node:path';
+import { pathToFileURL } from 'node:url';
 import { createHash } from 'node:crypto';
-const root=resolve(import.meta.dirname,'..'), dist=resolve(root,'dist'), base='/Adigun-AiBible/';
-let commit='working-tree';
-if(process.env.GITHUB_SHA)commit=process.env.GITHUB_SHA;
-else{try{if(!execFileSync('git',['status','--porcelain'],{cwd:root,encoding:'utf8'}).trim())commit=execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim();}catch{/* A local preview may have no Git metadata. */}}
-const files=await readdir(resolve(dist,'assets'));
-const version=createHash('sha256').update(await readFile(resolve(dist,'index.html'))).digest('hex').slice(0,12);
-const precache=[base,`${base}index.html`,`${base}manifest.webmanifest`,`${base}data/manifest.json`,...files.filter(f=>/\.(js|css|svg|png|jpg|woff2)$/.test(f)).map(f=>`${base}assets/${f}`)];
-const sw=`const VERSION=${JSON.stringify(version)},SHELL='adigun-bible-shell-'+VERSION,CONTENT='adigun-bible-content-v1',BASE=${JSON.stringify(base)},PRECACHE=${JSON.stringify(precache)};
-self.addEventListener('install',event=>{event.waitUntil(caches.open(SHELL).then(cache=>cache.addAll(PRECACHE)));});
-self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('adigun-bible-shell-')&&k!==SHELL).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});
-self.addEventListener('message',event=>{if(event.data?.type==='ACTIVATE_UPDATE')self.skipWaiting();});
-self.addEventListener('fetch',event=>{const url=new URL(event.request.url);if(event.request.method!=='GET'||url.origin!==self.location.origin||!url.pathname.startsWith(BASE))return;
-if(url.pathname.startsWith(BASE+'data/')){event.respondWith(caches.open(CONTENT).then(async cache=>{const stored=await cache.match(event.request);if(stored)return stored;try{const response=await fetch(event.request);if(response.ok)await cache.put(event.request,response.clone());return response;}catch{return new Response('This content is not downloaded.',{status:503,headers:{'Content-Type':'text/plain'}});}}));return;}
-if(event.request.mode==='navigate'){event.respondWith(fetch(event.request).catch(()=>caches.open(SHELL).then(cache=>cache.match(BASE+'index.html')).then(r=>r||new Response('Reconnect once to install the application.',{status:503}))));return;}
-event.respondWith(caches.open(SHELL).then(async cache=>(await cache.match(event.request))||fetch(event.request)));});`;
-await writeFile(resolve(dist,'sw.js'),sw);
-await writeFile(resolve(dist,'build-info.json'),JSON.stringify({sourceCommit:commit,buildVersion:version,builtAt:new Date().toISOString(),stage:'core-development',policyVersion:'2.0'},null,2));
-await writeFile(resolve(dist,'.nojekyll'),'');
-console.log(`Release metadata and scoped service worker generated (${version}).`);
+
+const digest = bytes => createHash('sha256').update(bytes).digest('hex');
+async function inventory(directory, root = directory) {
+  const files = {};
+  for (const entry of (await readdir(directory, { withFileTypes: true })).sort((a, b) => a.name.localeCompare(b.name))) {
+    const path = resolve(directory, entry.name);
+    if (entry.isDirectory()) Object.assign(files, await inventory(path, root));
+    else if (entry.isFile()) {
+      const bytes = await readFile(path);
+      files[relative(root, path).replaceAll('\\', '/')] = { sha256: digest(bytes), bytes: bytes.length };
+    } else throw new Error(`Unsupported offline file: ${path}`);
+  }
+  return files;
+}
+
+// Kept self-contained so the generated worker has no network-loaded dependencies.
+function serviceWorkerRuntime(config) {
+  const { manifest, shellFiles } = config;
+  const BASE = manifest.basePath, PREFIX = manifest.cachePrefix;
+  const SHELL = `${PREFIX}shell-${manifest.buildVersion}`;
+  const CONTENT = `${PREFIX}content-${manifest.contentVersion}`;
+  const PACKS = `${PREFIX}pack-${manifest.contentVersion}-`;
+  const MARKER = '__adigun_offline_pack__.json';
+  const absolute = path => new URL(BASE + path, self.location.origin).href;
+  const essential = path => path.endsWith('/manifest.json') || path === 'data/editions/catalog.json';
+  const pathOf = request => {
+    const url = new URL(typeof request === 'string' ? request : request.url);
+    return url.origin === self.location.origin && url.pathname.startsWith(BASE) && !url.search ? url.pathname.slice(BASE.length) : null;
+  };
+  async function valid(response, file, path) {
+    if (!response?.ok || response.type === 'opaque') throw new Error(`Unavailable source file: ${path}`);
+    const bytes = await response.clone().arrayBuffer();
+    const hash = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)), n => n.toString(16).padStart(2, '0')).join('');
+    if (bytes.byteLength !== file.bytes || hash !== file.sha256) throw new Error(`Changed source file: ${path}`);
+    if (/\.(json|webmanifest)$/.test(path)) {
+      const value = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(bytes));
+      if (!value || typeof value !== 'object') throw new Error(`Invalid source file: ${path}`);
+    }
+    return response;
+  }
+  async function fresh(path, file) {
+    return valid(await fetch(absolute(path), { cache: 'no-store' }), file, path);
+  }
+  async function packRecord(cache) {
+    const response = await cache.match(absolute(MARKER));
+    if (!response) return null;
+    try {
+      const record = await response.json();
+      return record?.schemaVersion === 1 && record.appId === 'adigun-aibible' && record.basePath === BASE && Array.isArray(record.paths) ? record : null;
+    } catch { return null; }
+  }
+  async function installedResponse(path) {
+    for (const name of await caches.keys()) {
+      if (!name.startsWith(PACKS)) continue;
+      const cache = await caches.open(name), record = await packRecord(cache);
+      if (record?.contentVersion !== manifest.contentVersion || !record.paths.includes(path)) continue;
+      const response = await cache.match(absolute(path));
+      if (response) return response;
+    }
+    return (await caches.open(CONTENT)).match(absolute(path));
+  }
+  async function install() {
+    const names = await caches.keys(), hadShell = names.includes(SHELL);
+    const stagedName = `${PACKS}install-${crypto.randomUUID()}`;
+    const staged = await caches.open(stagedName), shell = await caches.open(SHELL);
+    try {
+      for (const [path, file] of Object.entries(shellFiles)) {
+        const response = await fresh(path, file);
+        await shell.put(absolute(path), response);
+      }
+      const targets = new Set(Object.keys(manifest.files).filter(essential));
+      const candidates = new Map();
+      for (const name of names) {
+        const isPack = name.startsWith(`${PREFIX}pack-`);
+        if (!isPack && !name.startsWith(`${PREFIX}content-`) && name !== 'adigun-bible-content-v1') continue;
+        const cache = await caches.open(name), record = isPack ? await packRecord(cache) : null;
+        if (isPack && !record) continue;
+        for (const request of await cache.keys()) {
+          const path = pathOf(request);
+          if (!path || !Object.hasOwn(manifest.files, path) || (isPack && !record.paths.includes(path))) continue;
+          targets.add(path);
+          if (!candidates.has(path)) candidates.set(path, []);
+          candidates.get(path).push(cache);
+        }
+      }
+      // Every previously available file is staged before this worker may enter its waiting state.
+      for (const path of [...targets].sort()) {
+        let response;
+        for (const cache of candidates.get(path) ?? []) {
+          try { response = await valid(await cache.match(absolute(path)), manifest.files[path], path); break; }
+          catch { /* An old edition may need a new verified copy. */ }
+        }
+        response ??= await fresh(path, manifest.files[path]);
+        await staged.put(absolute(path), response);
+      }
+      const record = { schemaVersion: 1, appId: 'adigun-aibible', basePath: BASE, contentVersion: manifest.contentVersion, packId: 'installation', paths: [...targets].sort(), createdAt: new Date().toISOString() };
+      await staged.put(absolute(MARKER), new Response(JSON.stringify(record), { headers: { 'Content-Type': 'application/json' } }));
+    } catch (error) {
+      await caches.delete(stagedName).catch(() => false);
+      if (!hadShell) await caches.delete(SHELL).catch(() => false);
+      throw error; // The old worker and all of its downloaded scripture remain usable.
+    }
+  }
+  async function activate() {
+    for (const name of await caches.keys()) {
+      const oldScopedShell = name.startsWith(`${PREFIX}shell-`) && name !== SHELL;
+      const oldScopedData = name.startsWith(`${PREFIX}content-`) && name !== CONTENT;
+      const oldScopedPack = name.startsWith(`${PREFIX}pack-`) && !name.startsWith(PACKS);
+      if (oldScopedShell || oldScopedData || oldScopedPack) await caches.delete(name);
+      else if (name === 'adigun-bible-content-v1' || /^adigun-bible-shell-[a-f0-9]{12}$/.test(name)) {
+        // Migrate the original release without clearing another project sharing this origin.
+        const cache = await caches.open(name), requests = await cache.keys();
+        if (requests.every(request => pathOf(request) !== null)) await caches.delete(name);
+        else if (name === 'adigun-bible-content-v1') {
+          for (const request of requests) if (pathOf(request) !== null) await cache.delete(request);
+        }
+      }
+    }
+    await self.clients.claim();
+  }
+  async function shellResponse(path) {
+    const cache = await caches.open(SHELL), stored = await cache.match(absolute(path));
+    if (stored) return stored;
+    try {
+      const response = await fresh(path, shellFiles[path]);
+      await cache.put(absolute(path), response.clone()).catch(() => undefined);
+      return response;
+    } catch { return new Response('Reconnect and update the application to restore this file.', { status: 503 }); }
+  }
+  async function contentResponse(path, request) {
+    // Explicit downloads manage their own staging transaction and must not write through to the active cache.
+    const staging = request.cache === 'no-store';
+    if (!staging) {
+      const stored = await installedResponse(path);
+      if (stored) return stored;
+    }
+    try {
+      const response = await fresh(path, manifest.files[path]);
+      if (!staging) await (await caches.open(CONTENT)).put(absolute(path), response.clone()).catch(() => undefined);
+      return response;
+    } catch {
+      return new Response('This source is not available for the installed edition. Reconnect, save and update the application, then retry.', { status: 503, headers: { 'Content-Type': 'text/plain' } });
+    }
+  }
+  self.addEventListener('install', event => event.waitUntil(install()));
+  self.addEventListener('activate', event => event.waitUntil(activate()));
+  self.addEventListener('message', event => { if (event.data?.type === 'ACTIVATE_UPDATE') self.skipWaiting(); });
+  self.addEventListener('fetch', event => {
+    if (event.request.method !== 'GET') return;
+    const path = pathOf(event.request);
+    if (path === null) return;
+    if (Object.hasOwn(manifest.files, path)) event.respondWith(contentResponse(path, event.request));
+    else if (path === '' || path === 'index.html') event.respondWith(shellResponse('index.html'));
+    else if (Object.hasOwn(shellFiles, path)) event.respondWith(shellResponse(path));
+    // Unlisted URLs (including private APIs, query-string requests and other projects) are never cached.
+  });
+}
+
+export function createServiceWorkerSource(manifest, shellFiles) {
+  return `(${serviceWorkerRuntime.toString()})(${JSON.stringify({ manifest, shellFiles })});\n`;
+}
+
+export async function finalizeBuild({ root = resolve(import.meta.dirname, '..'), base = '/Adigun-AiBible/', sourceCommit } = {}) {
+  if (!/^\/[A-Za-z0-9_/-]*\/$/.test(base) || base.includes('..')) throw new Error('Invalid deployment base path.');
+  const dist = resolve(root, 'dist');
+  const data = await inventory(resolve(dist, 'data'), dist);
+  const shell = await inventory(resolve(dist, 'assets'), dist);
+  for (const path of ['index.html', 'manifest.webmanifest']) {
+    const bytes = await readFile(resolve(dist, path));
+    shell[path] = { sha256: digest(bytes), bytes: bytes.length };
+  }
+  const files = Object.fromEntries(Object.entries(data).sort(([a], [b]) => a.localeCompare(b)));
+  const contentVersion = digest(JSON.stringify({ base, files })).slice(0, 24);
+  const buildVersion = digest(JSON.stringify({ shell, contentVersion })).slice(0, 24);
+  const manifest = { schemaVersion: 1, appId: 'adigun-aibible', basePath: base, cachePrefix: `adigun-bible-${digest(base).slice(0, 12)}-`, contentVersion, buildVersion, files };
+  const offlineMetadata = JSON.stringify(manifest, null, 2) + '\n';
+  await writeFile(resolve(dist, 'offline-manifest.json'), offlineMetadata);
+  shell['offline-manifest.json'] = { sha256: digest(offlineMetadata), bytes: Buffer.byteLength(offlineMetadata) };
+  await writeFile(resolve(dist, 'sw.js'), createServiceWorkerSource(manifest, shell));
+  let commit = sourceCommit ?? process.env.GITHUB_SHA ?? 'working-tree';
+  if (commit === 'working-tree') {
+    try {
+      if (!execFileSync('git', ['status', '--porcelain'], { cwd: root, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim()) {
+        commit = execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim();
+      }
+    } catch { /* Local previews may not have repository metadata. */ }
+  }
+  await writeFile(resolve(dist, 'build-info.json'), JSON.stringify({ sourceCommit: commit, buildVersion, contentVersion, builtAt: new Date().toISOString(), stage: 'core-development', policyVersion: '2.0' }, null, 2));
+  await writeFile(resolve(dist, '.nojekyll'), '');
+  return { manifest, sourceCommit: commit };
+}
+
+if (process.argv[1] && pathToFileURL(resolve(process.argv[1])).href === import.meta.url) {
+  const result = await finalizeBuild();
+  console.log(`Release metadata and verified offline inventory generated (${result.manifest.buildVersion}; content ${result.manifest.contentVersion}).`);
+}

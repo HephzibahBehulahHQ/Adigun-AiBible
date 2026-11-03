@@ -13,3 +13,5 @@ coverage/
 
 public/data/
 public/docs/
+data/editorial-published.json
+data/editions/*/search-index.json
