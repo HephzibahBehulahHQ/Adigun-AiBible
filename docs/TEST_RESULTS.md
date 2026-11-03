@@ -4,7 +4,7 @@
 
 The pre-integration checkpoint passed TypeScript, ESLint, 62 automated tests, English source validation, all additional-edition integrity checks and the production build. Subsequent targeted checks passed 14 editorial/source tests and two notebook recovery/edition-attribution tests.
 
-The integrated release also passed TypeScript, ESLint, 68 app/domain/source tests, 20 backend contract tests, corpus checks and a production build. Browser collection found 26 cases; runtime execution remains pending. The final release result and commit are recorded in [project status](agent/PROJECT_STATUS.md). Browser checks run against the built production artifact in GitHub Actions; merely collecting tests is not a pass.
+The integrated release also passed TypeScript, ESLint, 68 app/domain/source tests, 20 backend contract tests, corpus checks and a production build. The first actual CI browser run passed 24 of 26 cases. Both PNG cases exposed an ambiguous canvas-size accessible name; the control now has an explicit accessible name. The full browser gate is rerunning, and PNG verification is not yet claimed. The final release result and commit are recorded in [project status](agent/PROJECT_STATUS.md). Browser checks run against the built production artifact in GitHub Actions; merely collecting tests is not a pass.
 
 Commands: `npm run check`, `npm run test:e2e`, and `node --test backend/tests/*.test.mjs`. The browser suite covers functional navigation, durable study state, source identity, offline reading, exports and responsive layout. Backend tests use injected adapters and do not establish deployed RLS correctness.
 
