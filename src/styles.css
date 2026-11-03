@@ -16,3 +16,19 @@
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
 .mobile-reader-selects{display:none;gap:12px;margin-bottom:24px}.mobile-reader-selects label{display:flex;flex-direction:column;gap:6px;font-size:12px;color:var(--muted);min-width:0}.mobile-reader-selects select{width:100%;max-width:100%;padding:10px;border:1px solid var(--border);border-radius:9px;background:var(--panel);color:var(--ink)}.mobile-reader-selects label:first-child{flex:1}.update-notice{display:flex;align-items:center;gap:12px;margin:16px 32px;padding:14px;border:1px solid var(--accent);border-radius:12px;background:var(--panel);font-size:13px}.update-notice span{flex:1}.source-omission{font:italic 14px/1.6 system-ui;color:var(--muted)}@media(max-width:1050px){.mobile-reader-selects{display:flex}.update-notice{margin:12px;flex-wrap:wrap}}
+
+/* Keep every comparison beside its exact source verse and contain compact inspectors. */
+.comparison-group{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;align-items:start;border-bottom:1px solid var(--border);padding:12px 0}
+.comparison-group>.verse-row{min-width:0;margin:0}.comparison-group>.comparison-panel{margin:0;padding:18px;min-width:0;font:14px/1.65 system-ui}
+.comparison-group .comparison-panel>p{font-size:13px}.comparison-record{padding:15px}.comparison-record h3{font-size:18px}.comparison-record h4{font-size:14px}
+.comparison-source{overflow-wrap:anywhere}.comparison-source summary{cursor:pointer;padding:10px 0;color:var(--accent)}.comparison-source li{margin:8px 0}
+.comparison-links{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0}.comparison-links a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+.reader-layout:has(.comparison-group) .book-panel{display:none}.reader-layout:has(.comparison-group) .mobile-reader-selects{display:flex}
+.reader-title>div:first-child{min-width:0}.reader-title .eyebrow{display:block;overflow-wrap:anywhere;line-height:1.7}.reader-tools{flex-shrink:0}
+.source-edition>div:last-child{min-width:0}.source-edition h2,.source-edition a,.source-attribution{overflow-wrap:anywhere}
+.source-attribution{white-space:pre-line;font-size:12px;line-height:1.6}.edition-sources .panel{margin-bottom:20px}
+.inspector-scrim{position:fixed;inset:0;z-index:89;background:#0009;cursor:default}.inspector[role=dialog]{position:fixed;z-index:90;top:0;right:0;bottom:0;width:min(370px,100vw);margin:0;border-radius:0;overflow-y:auto;overscroll-behavior:contain;padding-bottom:env(safe-area-inset-bottom)}
+.focus-mode .inspector[role=dialog]{display:block}.inspector[role=dialog] .inspector-close{min-width:44px;min-height:44px}.inspector[role=dialog] .inspector-tabs{position:sticky;top:0;background:var(--panel);z-index:1}
+.quran-reader{margin-bottom:38px}.quran-controls{display:flex;flex-wrap:wrap;gap:14px;margin:20px 0}.quran-controls label{flex:1;min-width:min(220px,100%)}.quran-controls input,.quran-controls select{width:100%}.quran-verses{font:20px/1.8 Georgia,serif}.quran-verses p{scroll-margin-top:90px}.quran-verses .selected{background:var(--accent-soft);border-radius:8px}.quran-verses sup{font:12px/1.5 system-ui;color:var(--accent);margin-right:8px}
+@media(max-width:1050px){.reader-layout .inspector:not([role=dialog]){display:none}}
+@media(max-width:800px){.comparison-group{grid-template-columns:minmax(0,1fr);gap:10px}.comparison-group>.comparison-panel{margin:0 0 16px 30px}.reader-title{align-items:flex-start}.reader-title .eyebrow{font-size:9px}.reader-tools{gap:2px}.reader-tools .icon-button{width:36px;min-width:36px}.reader-title h1{font-size:34px}.quran-controls{flex-direction:column}.quran-controls label{min-width:0}.comparison-record .two-columns{grid-template-columns:1fr}}
