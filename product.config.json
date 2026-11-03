@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 3,
+  "brandKey": "evangelism",
+  "product": {
+    "name": "Adigun-AiBible",
+    "description": "Source Scripture, private study, and reviewed comparison.",
+    "repository": "HephzibahBehulahHQ/Adigun-AiBible",
+    "legacyRepository": null
+  },
+  "references": {
+    "corporateWebsiteRepository": "HephzibahBehulahHQ/HephzibahBehulahHQ.github.io",
+    "designSystemRepository": "HephzibahBehulahHQ/hb-design-system",
+    "divisionRepository": "HephzibahBehulahHQ/hb-evangelism"
+  },
+  "features": {
+    "languages": [
+      "en",
+      "de",
+      "yo",
+      "pcm"
+    ],
+    "defaultLanguage": "en",
+    "themeSwitcher": true,
+    "adigunBot": {
+      "enabled": true,
+      "displayName": "Adigun BOT",
+      "mode": "local-tools",
+      "actionsRequireConfirmation": true
+    },
+    "accounts": {
+      "enabled": false,
+      "provider": null,
+      "emailPassword": false,
+      "profileAvatar": false,
+      "guestAccess": {
+        "enabled": true,
+        "trialMinutes": null,
+        "permanentSaving": false
+      }
+    },
+    "projects": {
+      "localSaving": true,
+      "cloudSaving": false,
+      "ownerScopedAccess": false
+    },
+    "administration": {
+      "owner": "Hephzibah Behulah",
+      "serverAuthorizedRoles": false
+    }
+  },
+  "links": {
+    "documentation": "https://github.com/HephzibahBehulahHQ/Adigun-AiBible",
+    "support": null
+  },
+  "integrations": {
+    "assistantEndpoint": null,
+    "productActionAdapter": "src/Copilot.tsx",
+    "supabaseProject": null,
+    "cloudflareDeployment": null
+  },
+  "branding": {
+    "logoPolicy": "single-corporate-logo",
+    "corporateLogo": {
+      "asset": "public/assets/hephzibah-behulah-official.jpg",
+      "status": "uploaded",
+      "source": "user-supplied official logo image",
+      "alt": "Hephzibah Behulah"
+    },
+    "header": {
+      "productWordmark": true,
+      "divisionTextLabel": true,
+      "additionalBrandLogos": false,
+      "profilePosition": null
+    }
+  }
+}

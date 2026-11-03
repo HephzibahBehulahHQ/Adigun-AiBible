@@ -2,6 +2,7 @@
 import { readFile, writeFile, mkdir, rename } from 'node:fs/promises';
 import { resolve, dirname } from 'node:path';
 import { pathToFileURL } from 'node:url';
+import { installedEditorialSources } from './installed-editorial-sources.mjs';
 import { coverageCounts, expandReference, getCoverage, hashSourceText, referenceKey, validateComparison, validateCoverage, validateEditorialContent } from '../src/editorial.ts';
 
 const readJSON = async path => JSON.parse(await readFile(path, 'utf8'));
@@ -38,7 +39,14 @@ export async function publishEditorial({ root = resolve(import.meta.dirname, '..
     rights: { redistribute: /public domain/i.test(provenance.license ?? ''), adapt: /public domain/i.test(provenance.license ?? '') },
     rightsEvidence: provenance.licenseUrl ? [provenance.licenseUrl] : [],
     works: books.map(book => ({ id: book.id, chapters: book.chapters.map(ch => ({ chapter: ch.number, units: ch.verses.map(v => String(v.number)) })) })) };
-  const inventory = [baseInventory, ...extraEditions];
+  const needed = new Set([
+    ...comparisons.flatMap(c => [...(c.bibleEvidencePassageIds ?? []), ...(c.quranEvidencePassageIds ?? [])]),
+    ...content.flatMap(c => c.basePassageIds ?? []), ...coverageRows.flatMap(c => c.evidenceIds ?? []),
+  ]);
+  const installed = await installedEditorialSources(root, needed);
+  const importedEditionIds = new Set([editionId, ...installed.inventory.map(e => e.id)]);
+  for (const source of installed.sources) sourceMap.set(source.id, source);
+  const inventory = [baseInventory, ...installed.inventory, ...extraEditions];
   unique(inventory, e => e.id, 'edition ID');
   for (const edition of inventory) {
     if (!['bible','quran','historical','hadith'].includes(edition.corpus) || !edition.version || !edition.referenceSystemId || !edition.rights || !Array.isArray(edition.rightsEvidence) || !Array.isArray(edition.works)) throw new Error('Malformed edition inventory.');
@@ -51,10 +59,6 @@ export async function publishEditorial({ root = resolve(import.meta.dirname, '..
       }
     }
   }
-  const needed = new Set([
-    ...comparisons.flatMap(c => [...(c.bibleEvidencePassageIds ?? []), ...(c.quranEvidencePassageIds ?? [])]),
-    ...content.flatMap(c => c.basePassageIds ?? []), ...coverageRows.flatMap(c => c.evidenceIds ?? []),
-  ]);
   const allBibleRefs = [];
   for (const book of books) for (const chapter of book.chapters) for (const verse of chapter.verses) {
     const id = `${editionId}:${book.id}:${chapter.number}:${verse.number}`;
@@ -63,7 +67,7 @@ export async function publishEditorial({ root = resolve(import.meta.dirname, '..
     if (needed.has(id)) sourceMap.set(id, { id, ref, editionVersion: baseInventory.version, text: verse.text, sourceContentHash: await hashSourceText(verse.text) });
   }
   unique(extraSources, s => s.id, 'external source ID');
-  for (const source of extraSources) { if (sourceMap.has(source.id) || source.ref?.editionId === editionId) throw new Error('External sources cannot replace the imported Bible edition.'); sourceMap.set(source.id, source); }
+  for (const source of extraSources) { if (sourceMap.has(source.id) || importedEditionIds.has(source.ref?.editionId)) throw new Error('External sources cannot replace an installed edition.'); sourceMap.set(source.id, source); }
   const ctx = { inventory, reviewers, now, resolveSource: id => sourceMap.get(id) };
   const approvedComparisons = [], approvedParaphrases = [], approvedContent = [], blocked = [];
   let rejectedApprovals = 0;

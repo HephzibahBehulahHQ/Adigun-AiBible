@@ -175,6 +175,71 @@ create table aibible_private.assistant_quota (
   primary key (bucket, window_start)
 );
 
+-- RLS-protected write counters also apply to direct Data API writes. A gateway
+-- alone would be bypassable while authenticated table INSERT grants exist.
+create table aibible_private.write_quota (
+  user_id uuid not null references auth.users(id) on delete cascade,
+  action text not null check (action in ('posts', 'reports', 'invitations', 'circles')),
+  window_start timestamptz not null,
+  used integer not null check (used between 1 and 5),
+  primary key (user_id, action, window_start)
+);
+
+create function aibible_private.guard_quota_update()
+returns trigger language plpgsql security invoker set search_path = ''
+as $$
+begin
+  if (new.user_id, new.action, new.window_start) is distinct from (old.user_id, old.action, old.window_start)
+    or new.used <> old.used + 1 then
+    raise exception 'Quota can only increment' using errcode = '42501';
+  end if;
+  return new;
+end
+$$;
+create trigger guard_quota_update before update on aibible_private.write_quota
+for each row execute function aibible_private.guard_quota_update();
+
+create function aibible_private.consume_write_quota(requested_action text)
+returns void language plpgsql volatile security invoker set search_path = ''
+as $$
+declare written integer;
+begin
+  if not aibible_private.permanent_user() then raise exception 'Sign-in required' using errcode = '42501'; end if;
+  insert into aibible_private.write_quota as q (user_id, action, window_start, used)
+    values (auth.uid(), requested_action, date_trunc('minute', now()), 1)
+    on conflict (user_id, action, window_start) do update set used = q.used + 1 where q.used < 5
+    returning used into written;
+  if not found then raise exception 'Write rate limit exceeded' using errcode = 'P0001'; end if;
+end
+$$;
+
+create function aibible_private.limit_group_insert()
+returns trigger language plpgsql security invoker set search_path = ''
+as $$
+declare occupants bigint;
+begin
+  perform aibible_private.consume_write_quota(tg_argv[0]);
+  if tg_table_name = 'circle_invitations' then
+    if new.circle_owner_id is distinct from auth.uid() then raise exception 'Owner required' using errcode = '42501'; end if;
+    -- Owner can see all members/invitations; invitees cannot perform this lookup.
+    -- Serialize invitations and count members + still-usable invitations in one
+    -- snapshot. Acceptance exchanges one invitation for one membership.
+    perform pg_advisory_xact_lock(hashtextextended(new.circle_id::text, 18771));
+    select (select count(*) from aibible.circle_members where circle_id = new.circle_id)
+      + (select count(*) from aibible.circle_invitations where circle_id = new.circle_id and expires_at > clock_timestamp())
+      into occupants;
+    if occupants >= 14 then raise exception 'Circle capacity reached' using errcode = '23514'; end if;
+  end if;
+  return new;
+end
+$$;
+create trigger limit_circle_insert before insert on aibible.circles
+for each row execute function aibible_private.limit_group_insert('circles');
+create trigger limit_invitation_insert before insert on aibible.circle_invitations
+for each row execute function aibible_private.limit_group_insert('invitations');
+create trigger limit_report_insert before insert on aibible.moderation_reports
+for each row execute function aibible_private.limit_group_insert('reports');
+
 create function aibible_private.consume_assistant_quota(actor uuid)
 returns table (allowed boolean, retry_after_seconds integer)
 language plpgsql volatile security invoker set search_path = ''
@@ -190,10 +255,10 @@ begin
   begin
     -- Global bucket first gives all concurrent requests a consistent lock order.
     for target in select * from (values
-      ('assistant:global:day', window_day, 500, 86400),
-      ('assistant:' || actor::text || ':day', window_day, 50, 86400),
-      ('assistant:' || actor::text || ':minute', window_minute, 5, 60)
-    ) as limits(bucket, starts, cap, seconds)
+      (1, 'assistant:global:day', window_day, 500, 86400),
+      (2, 'assistant:' || actor::text || ':day', window_day, 50, 86400),
+      (3, 'assistant:' || actor::text || ':minute', window_minute, 5, 60)
+    ) as limits(position, bucket, starts, cap, seconds) order by position
     loop
       retry_seconds := greatest(1, ceil(extract(epoch from (target.starts + make_interval(secs => target.seconds) - clock_timestamp())))::integer);
       insert into aibible_private.assistant_quota as q (bucket, window_start, used)
@@ -285,6 +350,7 @@ begin
   if not aibible_private.circle_member(new.circle_id, new.circle_owner_id) then
     raise exception 'Circle membership required' using errcode = '42501';
   end if;
+  perform aibible_private.consume_write_quota('posts');
   if new.anonymous_to_group then new.display_label := 'Anonymous member';
   elsif new.circle_owner_id = auth.uid() then
     select owner_display_name into new.display_label from aibible.circles where id = new.circle_id;
@@ -325,6 +391,7 @@ begin
     (not aibible_private.post_author(old.id) or old.moderation_state <> 'visible') then
     raise exception 'Only the author may edit a visible post' using errcode = '42501';
   end if;
+  if new.body is distinct from old.body then perform aibible_private.consume_write_quota('posts'); end if;
   if new.moderation_state is distinct from old.moderation_state then
     if new.moderation_state = 'withdrawn' and aibible_private.post_author(old.id) then null;
     elsif aibible_private.circle_moderator(old.circle_id, old.circle_owner_id)
@@ -445,6 +512,16 @@ alter table aibible_private.assistant_quota enable row level security;
 alter table aibible_private.assistant_quota force row level security;
 -- No authenticated/anon policy exists for quota buckets.
 
+alter table aibible_private.write_quota enable row level security;
+alter table aibible_private.write_quota force row level security;
+create policy permanent_users on aibible_private.write_quota as restrictive for all to authenticated
+  using ((select aibible_private.permanent_user())) with check ((select aibible_private.permanent_user()));
+create policy write_quota_select on aibible_private.write_quota for select to authenticated using (user_id = (select auth.uid()));
+create policy write_quota_insert on aibible_private.write_quota for insert to authenticated
+  with check (user_id = (select auth.uid()) and used = 1 and window_start = date_trunc('minute', now()));
+create policy write_quota_update on aibible_private.write_quota for update to authenticated
+  using (user_id = (select auth.uid())) with check (user_id = (select auth.uid()));
+
 -- No broad client INSERT/UPDATE grants: clients cannot supply ownership,
 -- attribution, revision, timestamp, or moderation defaults outside this list.
 revoke all on all tables in schema aibible, aibible_private from public, anon, authenticated;
@@ -462,13 +539,16 @@ grant select on aibible_private.post_authors to authenticated;
 grant insert (post_id, user_id) on aibible_private.post_authors to authenticated;
 grant select on aibible.moderation_reports to authenticated;
 grant insert (post_id, circle_id, circle_owner_id, reason, details), update (state, resolution_note) on aibible.moderation_reports to authenticated;
+grant select on aibible_private.write_quota to authenticated;
+grant insert (user_id, action, window_start, used), update (used) on aibible_private.write_quota to authenticated;
 
 revoke execute on all functions in schema aibible_private from public, anon, authenticated;
 grant execute on function aibible_private.permanent_user(), aibible_private.valid_study_payload(jsonb),
   aibible_private.circle_member(uuid, uuid), aibible_private.circle_moderator(uuid, uuid),
   aibible_private.post_author(uuid), aibible_private.guard_study_update(), aibible_private.guard_circle_update(),
   aibible_private.guard_member_update(), aibible_private.consume_invitation(), aibible_private.prepare_post(),
-  aibible_private.record_post_author(), aibible_private.guard_post_update(), aibible_private.guard_report_update()
+  aibible_private.record_post_author(), aibible_private.guard_post_update(), aibible_private.guard_report_update(),
+  aibible_private.guard_quota_update(), aibible_private.consume_write_quota(text), aibible_private.limit_group_insert()
   to authenticated;
 
 -- service_role is operator/server-only and bypasses RLS. It is NEVER a browser

@@ -8,6 +8,7 @@ Updated: 3 November 2026, Europe/Berlin.
 - Verified deployed source: `f6e58b976dbfd30d65bf174b009340f3d3e30ea6`; GitHub Actions run `41728171389` succeeded. Live build-info returned HTTP 200 with the same source commit; the reader opened Genesis 1 in the browser.
 - Previous PR #1 merged after GitHub validation passed. The master specification is saved at `docs/specs/Adigun-AiBible_Codex_Master_Prompt.md` and the root text copy.
 - Baseline verification: TypeScript, ESLint, 28 automated tests, complete English corpus validation and production build passed locally and in GitHub Actions.
+- Last independently verified remote checkpoint: `8c98442a547dc6f74d50969a8dcef0275b85f047` on the hardening branch. This is work in progress, not the live deployment.
 - Latest completed changes: range/edition-aware saved-reference identity and pure reading-position recovery helpers; 14 additional regression tests passed. Reader integration is in progress, not yet claimed complete.
 - Active implementation: licensed German/Yoruba Bible and English Quran ingestion, reader integration, versioned offline downloads, and publication-data rendering. Parallel file ownership is bounded; the root integrates and publishes.
 - Content gates: no human-approved Gen Z/Pidgin paraphrases or interfaith comparison claims have been supplied. Production must retain honest review states.
