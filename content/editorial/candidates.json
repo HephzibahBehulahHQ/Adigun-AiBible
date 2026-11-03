@@ -1,0 +1,905 @@
+{
+  "schemaVersion": 1,
+  "candidates": [
+    {
+      "id": "seed-01",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Genesis 1:1",
+      "quranCandidateRaw": "6:101",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 01 | Genesis 1:1 | 6:101 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-02",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Isaiah 45:5",
+      "quranCandidateRaw": "112:1–2",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 02 | Isaiah 45:5 | 112:1–2 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-03",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Proverbs 15:3",
+      "quranCandidateRaw": "57:4",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 03 | Proverbs 15:3 | 57:4 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-04",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "1 Samuel 2:6",
+      "quranCandidateRaw": "2:258",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 04 | 1 Samuel 2:6 | 2:258 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-05",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Revelation 1:8",
+      "quranCandidateRaw": "57:3",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 05 | Revelation 1:8 | 57:3 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-06",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Luke 1:37",
+      "quranCandidateRaw": "2:284",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 06 | Luke 1:37 | 2:284 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-07",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "1 John 1:5",
+      "quranCandidateRaw": "24:35",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 07 | 1 John 1:5 | 24:35 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-08",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Acts 17:25",
+      "quranCandidateRaw": "29:6",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 08 | Acts 17:25 | 29:6 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-09",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Isaiah 40:8",
+      "quranCandidateRaw": "18:109",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 09 | Isaiah 40:8 | 18:109 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-10",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Psalm 86:15",
+      "quranCandidateRaw": "7:156",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 10 | Psalm 86:15 | 7:156 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-11",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Matthew 7:7",
+      "quranCandidateRaw": "40:60",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 11 | Matthew 7:7 | 40:60 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-12",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Psalm 145:18",
+      "quranCandidateRaw": "50:16",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 12 | Psalm 145:18 | 50:16 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-13",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Proverbs 3:5",
+      "quranCandidateRaw": "65:3",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 13 | Proverbs 3:5 | 65:3 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-14",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Isaiah 26:3",
+      "quranCandidateRaw": "13:28",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 14 | Isaiah 26:3 | 13:28 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-15",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "2 Chronicles 15:2",
+      "quranCandidateRaw": "2:152",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 15 | 2 Chronicles 15:2 | 2:152 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-16",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Romans 12:12",
+      "quranCandidateRaw": "2:153",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 16 | Romans 12:12 | 2:153 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-17",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "1 Corinthians 10:13",
+      "quranCandidateRaw": "2:286; compare scope carefully: temptation is not every kind of hardship",
+      "editorialRationale": "compare scope carefully: temptation is not every kind of hardship",
+      "originalTableRow": "| 17 | 1 Corinthians 10:13 | 2:286; compare scope carefully: temptation is not every kind of hardship |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-18",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Luke 6:31",
+      "quranCandidateRaw": "55:60; a thematic connection does not establish identical ethical formulation",
+      "editorialRationale": "a thematic connection does not establish identical ethical formulation",
+      "originalTableRow": "| 18 | Luke 6:31 | 55:60; a thematic connection does not establish identical ethical formulation |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-19",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Romans 12:21",
+      "quranCandidateRaw": "41:34",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 19 | Romans 12:21 | 41:34 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-20",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Proverbs 21:3",
+      "quranCandidateRaw": "4:135",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 20 | Proverbs 21:3 | 4:135 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-21",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Ephesians 4:32",
+      "quranCandidateRaw": "24:22; preserve the Bible verse's Christ-related qualification",
+      "editorialRationale": "preserve the Bible verse's Christ-related qualification",
+      "originalTableRow": "| 21 | Ephesians 4:32 | 24:22; preserve the Bible verse's Christ-related qualification |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-22",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Proverbs 16:18",
+      "quranCandidateRaw": "31:18",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 22 | Proverbs 16:18 | 31:18 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-23",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "James 1:26",
+      "quranCandidateRaw": "49:12",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 23 | James 1:26 | 49:12 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-24",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Ephesians 4:29",
+      "quranCandidateRaw": "2:83",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 24 | Ephesians 4:29 | 2:83 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-25",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Matthew 5:28",
+      "quranCandidateRaw": "24:30",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 25 | Matthew 5:28 | 24:30 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-26",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Exodus 20:16",
+      "quranCandidateRaw": "25:72",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 26 | Exodus 20:16 | 25:72 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-27",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Leviticus 19:36",
+      "quranCandidateRaw": "83:1–3",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 27 | Leviticus 19:36 | 83:1–3 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-28",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Matthew 23:28",
+      "quranCandidateRaw": "2:8–9",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 28 | Matthew 23:28 | 2:8–9 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-29",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "John 6:67–68",
+      "quranCandidateRaw": "2:256; distinguish the narrative scene from a general legal or doctrinal proposition",
+      "editorialRationale": "distinguish the narrative scene from a general legal or doctrinal proposition",
+      "originalTableRow": "| 29 | John 6:67–68 | 2:256; distinguish the narrative scene from a general legal or doctrinal proposition |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-30",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Exodus 20:12",
+      "quranCandidateRaw": "17:23",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 30 | Exodus 20:12 | 17:23 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-31",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Isaiah 58:7",
+      "quranCandidateRaw": "76:8",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 31 | Isaiah 58:7 | 76:8 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-32",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Matthew 6:3",
+      "quranCandidateRaw": "2:271",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 32 | Matthew 6:3 | 2:271 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-33",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Psalm 82:3",
+      "quranCandidateRaw": "93:9",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 33 | Psalm 82:3 | 93:9 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-34",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Proverbs 11:24",
+      "quranCandidateRaw": "2:261",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 34 | Proverbs 11:24 | 2:261 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-35",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "1 Corinthians 13:3",
+      "quranCandidateRaw": "2:264",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 35 | 1 Corinthians 13:3 | 2:264 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-36",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Ezekiel 18:21",
+      "quranCandidateRaw": "25:70",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 36 | Ezekiel 18:21 | 25:70 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-37",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Isaiah 1:18",
+      "quranCandidateRaw": "39:53",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 37 | Isaiah 1:18 | 39:53 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-38",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "1 Peter 5:8",
+      "quranCandidateRaw": "2:208",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 38 | 1 Peter 5:8 | 2:208 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-39",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Luke 15:7",
+      "quranCandidateRaw": "2:222",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 39 | Luke 15:7 | 2:222 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-40",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "James 4:6",
+      "quranCandidateRaw": "4:36",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 40 | James 4:6 | 4:36 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-41",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "1 John 2:17",
+      "quranCandidateRaw": "57:20; do not add a simulation claim",
+      "editorialRationale": "do not add a simulation claim",
+      "originalTableRow": "| 41 | 1 John 2:17 | 57:20; do not add a simulation claim |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-42",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Matthew 6:19–20",
+      "quranCandidateRaw": "87:17",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 42 | Matthew 6:19–20 | 87:17 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-43",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Ecclesiastes 12:14",
+      "quranCandidateRaw": "99:7–8",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 43 | Ecclesiastes 12:14 | 99:7–8 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-44",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Galatians 6:5",
+      "quranCandidateRaw": "35:18; inspect surrounding argument and the meaning of burden",
+      "editorialRationale": "inspect surrounding argument and the meaning of burden",
+      "originalTableRow": "| 44 | Galatians 6:5 | 35:18; inspect surrounding argument and the meaning of burden |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-45",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Hebrews 9:27",
+      "quranCandidateRaw": "3:185",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 45 | Hebrews 9:27 | 3:185 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-46",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Psalm 49:7 in some English editions",
+      "quranCandidateRaw": "2:48; verify Psalm numbering in the selected German and other editions",
+      "editorialRationale": "verify Psalm numbering in the selected German and other editions",
+      "originalTableRow": "| 46 | Psalm 49:7 in some English editions | 2:48; verify Psalm numbering in the selected German and other editions |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-47",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "1 Corinthians 15:52",
+      "quranCandidateRaw": "36:51",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 47 | 1 Corinthians 15:52 | 36:51 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-48",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "1 Corinthians 2:9",
+      "quranCandidateRaw": "Quran 32:17 is a separate candidate; the supplied longer saying is Hadith, Sahih al-Bukhari 3244",
+      "editorialRationale": "the supplied longer saying is Hadith, Sahih al-Bukhari 3244",
+      "originalTableRow": "| 48 | 1 Corinthians 2:9 | Quran 32:17 is a separate candidate; the supplied longer saying is Hadith, Sahih al-Bukhari 3244 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-49",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "John 6:44",
+      "quranCandidateRaw": "28:56",
+      "editorialRationale": "Research lead only; read both passages in context and define a limited proposition before review.",
+      "originalTableRow": "| 49 | John 6:44 | 28:56 |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    },
+    {
+      "id": "seed-50",
+      "status": "draft",
+      "coverageStatus": "unreviewed",
+      "bibleCandidateRaw": "Luke 24:36",
+      "quranCandidateRaw": "36:58; the Luke passage is a resurrection appearance, not a scene in heaven",
+      "editorialRationale": "the Luke passage is a resurrection appearance, not a scene in heaven",
+      "originalTableRow": "| 50 | Luke 24:36 | 36:58; the Luke passage is a resurrection appearance, not a scene in heaven |",
+      "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
+      "rightsIssues": [
+        "Quran edition and redistribution rights not yet attached to this candidate.",
+        "Exact source passages, edition hashes and context require resolution before review."
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": []
+      }
+    }
+  ]
+}

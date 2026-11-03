@@ -10,3 +10,6 @@ playwright-report/
 .checkpoint.lock
 .openai/
 coverage/
+
+public/data/
+public/docs/
