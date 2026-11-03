@@ -83,8 +83,8 @@ export async function comparisonContentHash(link: ComparisonLink): Promise<strin
 export async function explanationContentHash(locale: UiLocale, explanation: LocalizedExplanation, revision: string): Promise<string> {
   return hashContent({ locale, text: explanation.text, origin: explanation.origin, derivedFromRevision: explanation.derivedFromRevision, sourceRevision: revision });
 }
-export async function editorialContentHash(content: EditorialContent): Promise<string> { const { review: _review, ...payload } = content; return hashContent(payload); }
-export async function coverageContentHash(coverage: ComparisonCoverage): Promise<string> { const { review: _review, ...payload } = coverage; return hashContent(payload); }
+export async function editorialContentHash(content: EditorialContent): Promise<string> { return hashContent(Object.fromEntries(Object.entries(content).filter(([key]) => key !== 'review'))); }
+export async function coverageContentHash(coverage: ComparisonCoverage): Promise<string> { return hashContent(Object.fromEntries(Object.entries(coverage).filter(([key]) => key !== 'review'))); }
 function validateReview(review: ReviewRecord | undefined, hash: string, evidence: string[], ctx: ValidationContext): string[] {
   if (!review || review.status !== 'approved') return ['Human approval is pending.'];
   const errors: string[] = [];
