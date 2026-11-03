@@ -1,17 +1,17 @@
 # Project status
 
-Updated: 2026-11-03, Europe/Berlin.
+Updated: 3 November 2026, Europe/Berlin.
 
-- Stage: Core reader implementation and complete English corpus are present; release verification remains incomplete.
-- Source branch: `codex/bible-implementation-20261103-2105`.
-- Source of requirements: `docs/specs/Adigun-AiBible_Codex_Master_Prompt.md`, version 2.0; pinned policy `d42d4e04ac6ab77ebafa1d4fccb724a4dde8d02e`.
-- Last verified remote checkpoint before this correction: `8c1c016d3c9c227a48f74413d3dd1fd921f0435f`, confirmed through the GitHub branch reference on 3 November 2026. Subsequent exact synchronization evidence is recorded in the local checkpoint receipt.
-- Present: React/TypeScript reader, personal-study tools, export workflows, brand assets, scoped offline build, full master specification, and the licensed English baseline corpus.
-- Corrected: two unused-variable lint errors in editorial-content and coverage hashing; review metadata remains excluded from the hashed payload.
-- Verified in this continuation: `npm run check` passed, including TypeScript, ESLint, all 28 automated tests, corpus validation, and production build. Editorial tests exercise approval identity, source tampering, translation staleness, rights, malformed imports, and fail-closed publication.
-- Corpus validation: 66 books, 1,189 chapters, 31,103 numbered source records, of which 31,098 contain text and five are empty in the publisher source.
-- Not yet verified in this continuation: browser behavior, deployed revision, additional language editions, English Quran acquisition, live AI/backend integrations, and editorial approval.
-- External release gates: human editorial approval, additional edition rights, account/backend configuration, recorded-media rights and native-platform support must be verified before claiming them complete.
-- Next: verify browser workflows and deployment configuration against the specification before merging or publishing a release.
+- Objective: deploy first, then complete all unblocked implementation under the version 2 specification.
+- Branch: `codex/bible-release-hardening-20261103`.
+- Live URL: https://hephzibahbehulahhq.github.io/Adigun-AiBible/
+- Verified deployed source: `f6e58b976dbfd30d65bf174b009340f3d3e30ea6`; GitHub Actions run `41728171389` succeeded. Live build-info returned HTTP 200 with the same source commit; the reader opened Genesis 1 in the browser.
+- Previous PR #1 merged after GitHub validation passed. The master specification is saved at `docs/specs/Adigun-AiBible_Codex_Master_Prompt.md` and the root text copy.
+- Baseline verification: TypeScript, ESLint, 28 automated tests, complete English corpus validation and production build passed locally and in GitHub Actions.
+- Latest completed changes: range/edition-aware saved-reference identity and pure reading-position recovery helpers; 14 additional regression tests passed. Reader integration is in progress, not yet claimed complete.
+- Active implementation: licensed German/Yoruba Bible and English Quran ingestion, reader integration, versioned offline downloads, and publication-data rendering. Parallel file ownership is bounded; the root integrates and publishes.
+- Content gates: no human-approved Gen Z/Pidgin paraphrases or interfaith comparison claims have been supplied. Production must retain honest review states.
+- Integration gates: no Bible-specific backend project is selected; the two existing Supabase projects belong to other products. No unrelated database has been modified. AI/provider, recorded-media and native-widget dependencies remain unconfigured.
+- Next: integrate the validated reader helpers and edition sources, validate the release, then publish through the existing GitHub Pages workflow.
 
-Automated checks passing does not establish completed editorial review, live integrations, browser acceptance, or a published release. Full-task duration remains unknown while these gates are unresolved.
+This is ongoing implementation, not a claim that all requested content and integrations are finished. Preserve exact remote receipts and report remaining gates truthfully.

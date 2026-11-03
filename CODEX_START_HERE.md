@@ -3,7 +3,7 @@
 ## Current work
 
 Project: Adigun-AiBible
-Current implementation branch: `codex/bible-implementation-20261103-2105`
+Current implementation branch: `codex/bible-release-hardening-20261103`
 Current status and continuation record: `docs/agent/PROJECT_STATUS.md`
 Canonical product specification: `docs/specs/Adigun-AiBible_Codex_Master_Prompt.md` (version 2.0)
 Execution instructions: `AGENTS.md`
