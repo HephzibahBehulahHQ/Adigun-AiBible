@@ -1,0 +1,12 @@
+{
+  "id":"/Adigun-AiBible/",
+  "name":"Adigun-AiBible · Scripture Observatory",
+  "short_name":"Adigun-AiBible",
+  "description":"Read source Scripture, keep private notes, and study offline.",
+  "start_url":"/Adigun-AiBible/#/home",
+  "scope":"/Adigun-AiBible/",
+  "display":"standalone",
+  "background_color":"#0B1220",
+  "theme_color":"#0B1220",
+  "icons":[{"src":"assets/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}

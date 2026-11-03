@@ -1,0 +1,11 @@
+import { cp, mkdir, readFile, writeFile } from 'node:fs/promises';
+import { resolve } from 'node:path';
+const root = resolve(import.meta.dirname, '..');
+const manifest = JSON.parse(await readFile(resolve(root, 'data/manifest.json'), 'utf8'));
+if (!manifest.books?.length || !manifest.edition?.name) throw new Error('A validated source corpus is required before building.');
+await mkdir(resolve(root, 'public/data'), { recursive:true });
+await cp(resolve(root, 'data'), resolve(root, 'public/data'), { recursive:true, filter: path => !/\.(zip|usfm|usx|xml)$/i.test(path) });
+await mkdir(resolve(root, 'public/docs'), { recursive:true });
+const spec = await readFile(resolve(root, 'docs/specs/Adigun-AiBible_Codex_Master_Prompt.md'), 'utf8');
+await writeFile(resolve(root, 'public/docs/Adigun-AiBible_Codex_Master_Prompt.txt'), spec);
+console.log(`Prepared ${manifest.books.length} source books and the complete specification for the static build.`);
