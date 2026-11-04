@@ -40,6 +40,8 @@ test('second scenario keeps privacy and consent central without a scored correct
  assert.ok(scenario);
  assert.match(scenario.label,/Fictional/);
  assert.match(scenario.situation,/asks you to keep it private/);
+ assert.match(scenario.situation,/no immediate safety emergency/);
+ assert.match(scenario.considerations.join(' '),/immediate danger or abuse/);
  assert.equal(scenario.choices.length,3);
  assert.equal('correctAnswer' in scenario,false);
  assert.equal('score' in scenario,false);
