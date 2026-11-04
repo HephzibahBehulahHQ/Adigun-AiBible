@@ -65,3 +65,15 @@ No game code was changed because no standalone game exists to correct. The audit
 ## Next plan
 
 Continue the existing Version 3 sequence: advanced/private/saved search, after reconciling open navigation work and verifying the exact candidate gates. Game development remains later roadmap work and must use the checklist above before any game is marked complete.
+
+## Post-audit development — 4 November 2026
+
+- PR #12 added a guided, passage-linked interpretation challenge to private reflections. It is a self-guided study exercise, not a standalone game; no answer score or faith verdict is produced. PR checks and main deployment [41899161850](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41899161850) passed.
+- PR #14 added the first decision-simulation pilot: a fictional workplace-report scenario with three meaningful choices, plausible consequences, competing considerations, exact selected-edition passage links (Proverbs 12:22, Ephesians 4:25 and James 1:19), optional follow-up actions, replay and a private reflection saved to the existing device-local workspace. The pilot is English-only and for adult study use. It labels the scenario as fiction, never copies or generates Scripture, has no holiness score or divine-outcome prediction, and uses no AI/cloud service. PR CI [41900211198](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41900211198) and main deployment [41900926485](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41900926485) passed.
+- PR #15 added written, edition-bound retelling practice to the existing memorization flow. It preserves exact source passage access, stores user-authored retellings locally, supports deletion and workspace backups, and distinguishes paraphrase from verbatim recall. It does not claim speech recognition, automatic correction or generative AI coaching. PR CI [41901405361](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41901405361) passed; main deployment [41901945519](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41901945519) is pending.
+
+These are bounded learning increments, not completion of the games roadmap. Additional decision scenarios need content review; Nigerian parables require qualified cultural/native-language review; the translation simulator remains gated on licensed lexical/morphology/alignment data. Multiplayer rooms and 3D reconstructions remain unimplemented.
+
+## Next plan
+
+Continue M7 only where local source, privacy and accessibility behavior can be proven. Voice recording, transcription, automatic correction and Pidgin/Yorùbá/Hausa/Igbo speech support require a real permitted service and native-language review. Expand M8 decision simulations only with reviewed scenarios. Keep parables, translation simulation, blind/reveal modes and multiplayer rooms separately marked pending or externally gated until their source, rights, review, accessibility, safety and real-device requirements pass.

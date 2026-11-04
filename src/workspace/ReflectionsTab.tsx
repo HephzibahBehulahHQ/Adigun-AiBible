@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import type { FormEvent } from 'react';
 import { createInterpretationChallenge, explicitReference, newEntryBase, referenceLabel } from './model';
-import { createDecisionSimulationReflection, decisionSimulation, decisionSimulationReferences } from './decision-simulation';
+import { createDecisionSimulationReflection, decisionSimulation, decisionSimulations, decisionSimulationReferences, getDecisionSimulation } from './decision-simulation';
 import type { QuestionState, ReflectionEntry, ReflectionKind, WorkspaceState } from './model';
 import type { WorkspaceChange } from './useWorkspace';
 import { PassageLinks } from './shared';
@@ -18,7 +18,7 @@ const blankChallenge = { observation:'', context:'', alternatives:'', uncertaint
 export default function ReflectionsTab({ state, busy, commit, reference, onOpenReference }: WorkspaceProps & { state: WorkspaceState; busy: boolean; commit: WorkspaceChange }) {
   const [draft, setDraft] = useState(blank); const [editing, setEditing] = useState<ReflectionEntry | null>(null); const [search, setSearch] = useState(''); const [kindFilter, setKindFilter] = useState('all');
   const [challengeOpen,setChallengeOpen]=useState(false),[challenge,setChallenge]=useState(blankChallenge),[challengeError,setChallengeError]=useState('');
-  const [decisionOpen,setDecisionOpen]=useState(false),[decisionChoice,setDecisionChoice]=useState(''),[decisionReflection,setDecisionReflection]=useState(''),[decisionError,setDecisionError]=useState('');
+  const [decisionOpen,setDecisionOpen]=useState(false),[decisionChoice,setDecisionChoice]=useState(''),[decisionReflection,setDecisionReflection]=useState(''),[decisionError,setDecisionError]=useState(''),[decisionScenarioId,setDecisionScenarioId]=useState<string>(decisionSimulation.id);
   const reset = () => { setEditing(null); setDraft(blank); };
   async function saveChallenge(event:FormEvent) {
     event.preventDefault(); setChallengeError('');
@@ -30,7 +30,7 @@ export default function ReflectionsTab({ state, busy, commit, reference, onOpenR
   async function saveDecisionSimulation(event:FormEvent) {
     event.preventDefault();setDecisionError('');
     try {
-      const entry=createDecisionSimulationReflection(decisionChoice,decisionReflection,reference.editionId||'eng-web');
+      const entry=createDecisionSimulationReflection(decisionChoice,decisionReflection,reference.editionId||'eng-web',new Date(),decisionScenarioId);
       if(await commit(s=>({...s,reflections:[entry,...s.reflections]}))) {setDecisionOpen(false);setDecisionChoice('');setDecisionReflection('');}
     } catch(error) {setDecisionError(error instanceof Error?error.message:'Could not save this decision simulation.');}
   }
@@ -38,6 +38,7 @@ export default function ReflectionsTab({ state, busy, commit, reference, onOpenR
     const entry: ReflectionEntry = { ...(editing || newEntryBase()), title: draft.title.trim(), kind: draft.kind, state: draft.state, text: draft.text, reason: draft.reason, refs, sources: [...new Set(draft.sources.split('\n').map(s => s.trim()).filter(Boolean))], updatedAt: at, history: editing ? [...editing.history, { at: editing.updatedAt, text: editing.text, reason: editing.reason, state: editing.state, refs: editing.refs, sources: editing.sources }].slice(-50) : [] };
     if (await commit(s => { if (editing && s.reflections.find(r => r.id === editing.id)?.updatedAt !== editing.updatedAt) throw new Error('This reflection changed since editing began. Cancel and reopen its newest version; your draft is still here.'); return { ...s, reflections: editing ? s.reflections.map(r => r.id === editing.id ? entry : r) : [entry, ...s.reflections] }; })) reset();
   }
+  const activeDecisionSimulation = getDecisionSimulation(decisionScenarioId);
   const query = search.trim().toLocaleLowerCase(); const entries = state.reflections.filter(r => (kindFilter === 'all' || r.kind === kindFilter) && [r.title, r.text, r.reason, r.state, r.sources.join(' '), r.refs.map(referenceLabel).join(' ')].join(' ').toLocaleLowerCase().includes(query)).sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
   return <section aria-labelledby="reflections-heading"><h2 id="reflections-heading">Questions and reflections</h2><p className="muted">A private record of your questions, understanding and chosen actions. Status labels are yours; they are not editorial approval or an AI judgment.</p>
     <section className="workspace-card interpretation-challenge" aria-labelledby="interpretation-challenge-title">
@@ -55,18 +56,19 @@ export default function ReflectionsTab({ state, busy, commit, reference, onOpenR
       </fieldset></form>}
     </section>
     <section className="workspace-card decision-simulation" aria-labelledby="decision-simulation-title">
-      <div className="heading-with-actions"><div><p className="workspace-meta">FICTIONAL LEARNING EXERCISE · ENGLISH PILOT · ADULT STUDY USE</p><h3 id="decision-simulation-title">Decision simulation: {decisionSimulation.title}</h3></div>{!decisionOpen&&<button type="button" className="secondary" disabled={busy} onClick={()=>{setDecisionError('');setDecisionOpen(true);}}>Start simulation</button>}</div>
+      <div className="heading-with-actions"><div><p className="workspace-meta">FICTIONAL LEARNING EXERCISE · ENGLISH PILOT · ADULT STUDY USE</p><h3 id="decision-simulation-title">Decision simulation: {activeDecisionSimulation.title}</h3></div>{!decisionOpen&&<button type="button" className="secondary" disabled={busy} onClick={()=>{setDecisionError('');setDecisionOpen(true);}}>Start simulation</button>}</div>
       <p className="workspace-help">This is an illustrative scenario, not Scripture or a prediction. Choices are not scored, and no choice is treated as a verdict about faith or divine approval.</p>
+      <label>Choose a scenario<select aria-label="Decision scenario" value={decisionScenarioId} disabled={decisionOpen || busy} onChange={e=>{setDecisionScenarioId(e.target.value);setDecisionChoice('');setDecisionReflection('');setDecisionError('');}}>{decisionSimulations.map(item=><option key={item.id} value={item.id}>{item.title}</option>)}</select></label>
       {decisionOpen&&<div>
-        <p>{decisionSimulation.situation}</p>
-        <h4>Consider before choosing</h4><ul>{decisionSimulation.considerations.map(item=><li key={item}>{item}</li>)}</ul>
-        <h4>Relevant passages in the selected edition</h4><PassageLinks refs={decisionSimulationReferences(reference.editionId||'eng-web')} onOpenReference={onOpenReference}/>
-        <h4>Possible follow-up actions</h4><ul>{decisionSimulation.followUps.map(item=><li key={item}>{item}</li>)}</ul>
+        <p>{activeDecisionSimulation.situation}</p>
+        <h4>Consider before choosing</h4><ul>{activeDecisionSimulation.considerations.map(item=><li key={item}>{item}</li>)}</ul>
+        <h4>Relevant passages in the selected edition</h4><PassageLinks refs={decisionSimulationReferences(reference.editionId||'eng-web',decisionScenarioId)} onOpenReference={onOpenReference}/>
+        <h4>Possible follow-up actions</h4><ul>{activeDecisionSimulation.followUps.map(item=><li key={item}>{item}</li>)}</ul>
         <form onSubmit={saveDecisionSimulation}><fieldset disabled={busy}>
           <legend>What would you do?</legend>
-          {decisionSimulation.choices.map(choice=><label className="workspace-check" key={choice.id}><input type="radio" name="decision-simulation-choice" value={choice.id} required checked={decisionChoice===choice.id} onChange={()=>{setDecisionChoice(choice.id);setDecisionError('');}}/><span>{choice.label}</span></label>)}
-          {decisionChoice&&<section className="workspace-card" aria-live="polite"><h4>A plausible consequence — not a prediction</h4><p>{decisionSimulation.choices.find(choice=>choice.id===decisionChoice)?.consequence}</p></section>}
-          <label>{decisionSimulation.reflectionPrompt}<textarea rows={4} maxLength={5000} required value={decisionReflection} onChange={e=>setDecisionReflection(e.target.value)}/></label>
+          {activeDecisionSimulation.choices.map(choice=><label className="workspace-check" key={choice.id}><input type="radio" name="decision-simulation-choice" value={choice.id} required checked={decisionChoice===choice.id} onChange={()=>{setDecisionChoice(choice.id);setDecisionError('');}}/><span>{choice.label}</span></label>)}
+          {decisionChoice&&<section className="workspace-card" aria-live="polite"><h4>A plausible consequence — not a prediction</h4><p>{activeDecisionSimulation.choices.find(choice=>choice.id===decisionChoice)?.consequence}</p></section>}
+          <label>{activeDecisionSimulation.reflectionPrompt}<textarea rows={4} maxLength={5000} required value={decisionReflection} onChange={e=>setDecisionReflection(e.target.value)}/></label>
           {decisionError&&<p className="workspace-error" role="alert">{decisionError}</p>}
           <div className="button-row"><button type="submit" className="primary" disabled={!decisionChoice}>Save private reflection</button><button type="button" disabled={busy} onClick={()=>{setDecisionChoice('');setDecisionReflection('');setDecisionError('');}}>Replay</button><button type="button" disabled={busy} onClick={()=>{setDecisionOpen(false);setDecisionChoice('');setDecisionReflection('');setDecisionError('');}}>Cancel</button></div>
         </fieldset></form>

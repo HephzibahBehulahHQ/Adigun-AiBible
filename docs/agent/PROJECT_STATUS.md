@@ -2,13 +2,14 @@
 
 ## Latest continuation checkpoint — 4 November 2026
 
-Current main: `2619c0261ffa985f3da5bb5fd788bb240880488f`.
+Current main: `135e20127985c2f00238eef044d675546facbce6`.
 
-- PR #8 saved/private searches and PR #9 game-template audit are merged and their release workflows passed.
+- PR #8 saved/private searches and PR #9 game-template audit are merged; both release workflows passed.
 - PR #10 shared-passage route preservation and PR #11 private recent-search history are merged; both release workflows passed.
 - PR #12 guided private interpretation challenge is merged; PR checks passed.
-- PR #14 first sourced decision-simulation pilot is merged as the current main checkpoint. Exact candidate CI [41900211198](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41900211198) passed source/content/build, desktop/mobile browser and persistence checks. Main deployment [41900926485](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41900926485) is queued/pending; do not claim this increment is published until its public build receipt matches main.
-- PR #15 adds written retelling practice to the existing edition-bound memorization tool. It retains user-authored text locally, supports deletion and backups, distinguishes paraphrase from verbatim recall, and does not claim speech recognition or AI correction. Exact-candidate CI is running; merge/deployment are pending.
+- PR #14 decision-simulation pilot is merged. Exact candidate CI [41900211198](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41900211198) passed source/content/build, desktop/mobile browser and persistence checks. Main deployment [41900926485](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41900926485) passed and verified the public source receipt against `2619c0261ffa985f3da5bb5fd788bb240880488f`.
+- PR #15 written retelling practice is merged as `135e20127985c2f00238eef044d675546facbce6`. Exact candidate CI [41901405361](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41901405361) passed TypeScript, lint, unit/content/build, desktop/mobile browser, backup and persistence checks. Main deployment [41901945519](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41901945519) is in progress; verify its public receipt before claiming publication.
+- PR #17 expands the decision-simulation pilot with a second fictional adult-study scenario about confidentiality and consent. It preserves scenario-specific selected-edition references, private reflection and no scoring. Exact-candidate CI [41902172644](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41902172644) is queued/pending; merge and deployment are not yet accepted.
 
 The full Version 3 product remains in progress. Each bounded increment is separately accepted; none implies overall completion.
 
