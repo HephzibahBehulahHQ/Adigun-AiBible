@@ -18,5 +18,5 @@ test('adding prompts preserves an existing draft exactly', () => {
 test('repeated insertion does not overwrite prior notes', () => {
   const once = appendRetellingPrompts('Draft');
   const twice = appendRetellingPrompts(once);
-  assert.ok(twice.startsWith(once + '\n\n'));
+  assert.equal(twice, once);
 });
