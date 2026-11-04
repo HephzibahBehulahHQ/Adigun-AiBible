@@ -53,5 +53,6 @@ export function workspaceCommands(query: string, books: BookInfo[], editionId: s
     id: 'open-reference', label: `Open ${books.find(book => book.id === parsed.bookId)?.name} ${parsed.chapter}:${parsed.verse}${parsed.endVerse && parsed.endVerse !== parsed.verse ? `–${parsed.endVerse}` : ''}`,
     detail: `Use the selected edition (${editionId}).`, keywords: '', view: 'read', reference: { ...parsed, editionId },
   }] : [];
-  return [...direct, ...matching, { id: 'search-query', label: `Search source text for “${input}”`, detail: `Search only the selected edition (${editionId}).`, keywords: '', action: 'search', query: input }];
+  const textSearch: WorkspaceCommand[] = parsed ? [] : [{ id: 'search-query', label: `Search source text for “${input}”`, detail: `Search only the selected edition (${editionId}).`, keywords: '', action: 'search', query: input }];
+  return [...direct, ...matching, ...textSearch];
 }

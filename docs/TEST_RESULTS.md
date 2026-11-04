@@ -31,16 +31,22 @@ The reader-context/history/tabs slice on `codex/reader-context-20261104` is not 
 
 Desktop note/red-letter and desktop/mobile 320px poetry/note images from passing run41836214694 were inspected directly. The final candidate only scoped backup help text to included workspaces. Initial run41834090869 passed68/70; the narrow toolbar now wraps and the request-retry test disables service workers so an injected fetch failure reaches the app. The strengthened overflow assertion checks320 CSS pixels directly. No assertion was removed or retried away.
 
-Production workflow [41837242771](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41837242771) and the public receipt are pending verification at this checkpoint.
+This source-reader release is included in the verified PR #4 production revision below.
 
-## Private reading-session candidate: PR #4
+## Private reading-session release: PR #4
 
-[PR #4](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/4) adds capped private history, previous/next navigation, named study tabs, edition/revision-bound backup/restore, concurrent-window protection, cancellation of abandoned asynchronous actions and explicit damaged-session download/reset. It continues from the PR #5 source-reader release; it is not yet deployed.
+[PR #4](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/4) deployed private history, previous/next navigation, named study tabs, edition/revision-bound backup/restore, concurrent-window protection, cancellation of abandoned asynchronous actions and explicit damaged-session recovery.
 
-- All15 focused session model/source tests pass, bringing the complete local application suite to181; all20 backend contract tests, TypeScript, ESLint, source validation and production build also pass.
-- Eight history browser cases pass in run41836393302. That run passed76/78 overall; the legacy backup test used a global file-input selector that became ambiguous after the session importer was added. It now targets the existing accessible name, `Import study backup`, retaining the same persistence assertions.
-- A regression delays a real Genesis response, unmounts the old reader, opens and saves Psalm6, then proves the late response cannot navigate, change saved state or even begin a stale session write. Four further browser cases verify raw damaged-data preservation, explicit reset/restore and refusal to erase a session another window repaired.
-- The initial full-project lint check caught an unsupported suppression; it was removed. Review identified the stale-navigation lifecycle race; per-route abort controllers and storage guards now cancel abandoned work without treating cancellation as storage failure. Final integrated CI must establish the race/recovery browser result before merge.
+- Final candidate `8e47f75594d19b7acde51a2dc1ae826819553a33` passed [CI41837584115](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41837584115).
+- Integrated main `8ed0aa73cdf759a36c923d09e3889c979104379e` passed [production workflow41838579813](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41838579813):181 application/source/session tests,20 offline backend contracts,84 desktop/mobile browser cases and10 repeated persistence checks. TypeScript, ESLint, source validation, build and Pages deployment passed.
+- Public receipt reverified4 November2026: source `8ed0aa73cdf759a36c923d09e3889c979104379e`, build `cb36e75e60a3b0f500f96fac`, content `ebbf21b44f84c76c567d50b7`.
+- The original candidate failures were corrected without removing persistence assertions: the legacy import selector uses its accessible name, and asynchronous reading actions carry lifecycle guards. Production checks exercise delayed-source cancellation, damaged-record preservation, explicit reset/restore and protection of another window's healthy repair.
+
+## Active navigation and layout candidate
+
+The shared route registry, local command palette and saved display/panel layouts are implemented on `codex/workspace-navigation-20261104`. Twenty-six focused route/command/layout model and storage tests pass. Browser checks cover exact-source shared routes, palette keyboard/focus behavior and saved-layout persistence/recovery. Full exact-candidate release CI is pending; this section makes no deployment claim.
+
+Local Chromium is unavailable, so real browser execution uses the existing GitHub Actions gate. No test retry or weakened assertion is introduced.
 
 ## Historical hardening release
 

@@ -64,7 +64,7 @@ export function validateLayoutSnapshot(value: unknown): WorkspaceLayoutSnapshot 
   const snapshot = record(value, ['theme', 'fontSize', 'lineHeight', 'focus', 'inspector', 'inspectorVisible'], 'Layout settings');
   if (typeof snapshot.theme !== 'string' || !Object.hasOwn(layoutThemeNames, snapshot.theme)) throw new Error('Layout theme is unsupported.');
   if (typeof snapshot.focus !== 'boolean' || typeof snapshot.inspectorVisible !== 'boolean') throw new Error('Layout visibility settings are invalid.');
-  if (!['context', 'source', 'notes'].includes(String(snapshot.inspector))) throw new Error('Layout inspector is unsupported.');
+  if (typeof snapshot.inspector !== 'string' || !['context', 'source', 'notes'].includes(snapshot.inspector)) throw new Error('Layout inspector is unsupported.');
   return {
     theme: snapshot.theme as Theme,
     fontSize: bounded(snapshot.fontSize, 16, 28, 'Layout font size'),

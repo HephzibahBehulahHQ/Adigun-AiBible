@@ -15,7 +15,6 @@ export default function CommandPalette({ manifest, focus, onClose, onRun }: {
   const listId = useId(), input = useRef<HTMLInputElement>(null);
   const commands = useMemo(() => workspaceCommands(query, manifest?.books || [], manifest?.edition.id || '', focus, !!manifest), [query, manifest, focus]);
   const active = commands.length ? Math.min(selected, commands.length - 1) : -1;
-  useEffect(() => { input.current?.focus(); }, []);
   useEffect(() => { if (active >= 0) document.getElementById(`${listId}-${active}`)?.scrollIntoView({ block: 'nearest' }); }, [active, listId]);
   return <div className="dialog-backdrop command-backdrop" onClick={onClose}>
     <section className="command-dialog" role="dialog" aria-modal="true" aria-labelledby={`${listId}-title`} tabIndex={-1} lang="en" onClick={event => event.stopPropagation()}>

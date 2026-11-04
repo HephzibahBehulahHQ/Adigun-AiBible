@@ -8,6 +8,7 @@ test('a direct range opens in the selected edition with exact boundaries', () =>
   assert.equal(command.id, 'open-reference');
   assert.deepEqual(command.reference, { bookId: 'JHN', chapter: 3, verse: 16, endVerse: 18, editionId: 'eng-bsb' });
   assert.equal(command.view, 'read');
+  assert.ok(workspaceCommands('John 3:16', books, 'eng-bsb', false).every(item => item.action !== 'search'), 'a reference action must not be mislabeled as literal source search');
 });
 test('invalid references never manufacture an available passage', () => {
   for (const query of ['John 3:99', 'John 4:1', 'John 3:18-16', 'Missing 1:1']) {
