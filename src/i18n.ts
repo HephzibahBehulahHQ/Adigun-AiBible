@@ -1,5 +1,6 @@
 import type { Locale } from './types';
 const en = {
+  study: 'Personal workspace', evidence: 'Sermon evidence', editions: 'Bible editions', projection: 'Projection',
   home: 'Observatory', read: 'Read Scripture', compare: 'Compare passages', discover: 'Discover', plans: 'Reading plans', saved: 'Saved & notes', questions: 'My questions', library: 'Scripture library', sources: 'Sources & coverage', settings: 'Settings', atlas: 'Reference atlas', share: 'Share Studio',
   search: 'Search Scripture or enter a reference', searchShort: 'Search Scripture', searchScope: 'Full English Bible', searchHint: 'Try John 3:16 or a word such as hope',
   old: 'Old Testament', new: 'New Testament', chapter: 'Chapter', verse: 'Verse', book: 'Book', allBooks: 'All books', previous: 'Previous chapter', next: 'Next chapter',

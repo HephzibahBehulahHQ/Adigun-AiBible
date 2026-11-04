@@ -14,4 +14,4 @@ export interface StudyState { schemaVersion: 1; bookmarks: Reference[]; highligh
 export type Locale = 'en' | 'de' | 'yo' | 'pcm';
 export type Theme = 'observatory' | 'light' | 'parchment' | 'night' | 'retro';
 export interface Preferences { locale: Locale; preset: 'genz' | 'en' | 'de' | 'yo' | 'pcm'; theme: Theme; fontSize: number; lineHeight: number; focus: boolean }
-export type View = 'home' | 'read' | 'compare' | 'discover' | 'plans' | 'saved' | 'questions' | 'library' | 'sources' | 'settings' | 'share' | 'atlas';
+export type View = 'home' | 'read' | 'compare' | 'discover' | 'plans' | 'saved' | 'questions' | 'library' | 'sources' | 'settings' | 'share' | 'atlas' | 'study' | 'evidence' | 'editions' | 'projection';

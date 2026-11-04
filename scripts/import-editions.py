@@ -103,6 +103,25 @@ SOURCES = {
             'Only text is imported here; no recorded audio files are included.',
         ],
     },
+    'eng-bsb': {
+        'name': 'Berean Standard Bible', 'abbreviation': 'BSB', 'language': 'en', 'corpus': 'bible',
+        'publisher': 'BSB Publishing, LLC', 'translator': 'Berean Bible Translation Committee',
+        'revision': 'Publisher USJ release v5.19', 'canon': 'protestant-66',
+        'sourceUpdatedAt': '2026-10-27', 'rightsObservedAt': '2026-11-04',
+        'sourceUrl': 'https://berean.bible/',
+        'formatUrl': 'https://github.com/BSB-publishing/bsb2usfm/releases/tag/v5.19',
+        'downloadUrl': 'https://github.com/BSB-publishing/bsb2usfm/releases/download/v5.19/BSB_usj.zip',
+        'licenseUrl': 'https://berean.bible/terms.htm', 'license': 'Public domain',
+        'licenseIdentifier': 'LicenseRef-Public-Domain',
+        'attribution': 'Berean Standard Bible (BSB). BSB Publishing, LLC; Berean Bible Translation Committee. Publisher USJ release v5.19, 27 October 2026. Public domain. https://berean.bible/',
+        'sha256': '783aced3c3c8a2b145e4f8c48e3b94a5a5515e050719bb8621d094be78a5269f',
+        'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31086},
+        'format': 'usj-3.0',
+        'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': True, 'export': True},
+        'conditions': ['Keep exact BSB wording and source identity when identifying a quotation as BSB.',
+                       'The publisher asks that altered derivatives use a separate name.',
+                       'No third-party recorded audio is included or licensed by this text import.'],
+    },
 }
 
 
@@ -117,14 +136,17 @@ def json_bytes(value):
 def edition_metadata(edition_id):
     source = SOURCES[edition_id]
     fields = ('name', 'language', 'corpus', 'publisher', 'translator', 'sourceUpdatedAt', 'sourceUrl', 'formatUrl',
-              'downloadUrl', 'licenseUrl', 'license', 'licenseIdentifier', 'licenseDeedUrl', 'attribution', 'sha256', 'rights', 'conditions')
+              'downloadUrl', 'licenseUrl', 'license', 'licenseIdentifier', 'licenseDeedUrl', 'attribution', 'sha256', 'rights', 'conditions',
+              'abbreviation', 'revision', 'canon')
     value = {'id': edition_id, **{key: source[key] for key in fields if key in source}}
-    value.update({'rightsObservedAt': OBSERVED_ON, 'commercialUse': True,
+    value.update({'rightsObservedAt': source.get('rightsObservedAt', OBSERVED_ON), 'commercialUse': True,
                   'referenceSystemId': f'{edition_id}:publisher-numbering',
                   'noticePath': f'{edition_id}/NOTICE.txt', 'manifestPath': f'{edition_id}/manifest.json',
                   'totals': source['expectedTotals']})
     if source['corpus'] == 'bible':
         value.update({'booksPath': f'{edition_id}/books/', 'searchIndexPath': f'{edition_id}/search-index.json'})
+        if source.get('format') == 'usj-3.0':
+            value['chaptersPath'] = f'{edition_id}/chapters/'
     else:
         value['quranPath'] = f'{edition_id}/quran.json'
     return value
@@ -366,15 +388,188 @@ def quran_artifacts(edition_id, archive):
                                    'No Quran paraphrases or Bible–Quran editorial comparisons are approved by this import.']}
 
 
+def usj_bible_artifacts(edition_id, archive):
+    """Preserve publisher verse identifiers, notes, headings, and paragraph/character spans.
+
+    The publisher's unnumbered text-only export must not be used to derive verse
+    numbers: it omits absent verses. Only explicit USJ verse milestones identify
+    source units here. Source character offsets are Unicode code-point offsets.
+    """
+    source = SOURCES[edition_id]
+    expected_members = {f'{book_id}.usj' for book_id, _ in BOOKS}
+    if set(archive.namelist()) != expected_members or len(archive.namelist()) != len(expected_members):
+        raise ValueError('USJ archive must contain exactly the 66 identified source books.')
+    heading_styles = {'h', 'toc1', 'toc2', 'toc3', 'mt1', 's1', 's2', 'r', 'd', 'ms', 'qa'}
+    body_styles = {'p', 'b', 'li1', 'li2', 'q1', 'q2', 'lf', 'qr', 'pc'}
+    files, rows, inventory, omitted, source_members = {}, [], [], [], {}
+    annotation_totals = {'headings': 0, 'notes': 0, 'paragraphs': 0, 'characterSpans': 0}
+
+    def flatten(node):
+        if isinstance(node, str):
+            return node
+        if not isinstance(node, dict) or node.get('type') not in {'ref', 'char', 'note', 'para'}:
+            raise ValueError('Unsupported USJ annotation structure.')
+        return ''.join(flatten(child) for child in node.get('content', []))
+
+    for book_id, book_name in BOOKS:
+        raw = member(archive, f'{book_id}.usj')
+        source_members[f'{book_id}.usj'] = sha(raw)
+        doc = json.loads(raw.decode('utf-8'))
+        if doc.get('type') != 'USJ' or doc.get('version') != '3.0' or not isinstance(doc.get('content'), list):
+            raise ValueError('Unsupported USJ source version or root.')
+        book = {'id': book_id, 'name': book_name, 'chapters': [], 'frontMatter': []}
+        chapter, verse, paragraph = None, None, None
+        book_identity = False
+
+        def append(text):
+            if not isinstance(text, str) or not valid_text(text):
+                raise ValueError('Invalid USJ source text.')
+            if verse is not None:
+                start = len(verse['text'])
+                verse['text'] += text
+                if paragraph is not None and text:
+                    if paragraph['spans'] and paragraph['spans'][-1]['verse'] == verse['number']:
+                        paragraph['spans'][-1]['end'] = len(verse['text'])
+                    else:
+                        paragraph['spans'].append({'verse': verse['number'], 'start': start, 'end': len(verse['text'])})
+            elif text.strip(ASCII_PADDING):
+                raise ValueError('Unassigned body text before a source verse.')
+
+        def walk(node):
+            nonlocal verse
+            if isinstance(node, str):
+                append(node)
+                return
+            if not isinstance(node, dict):
+                raise ValueError('Invalid USJ body node.')
+            kind = node.get('type')
+            if kind == 'verse':
+                if chapter is None or node.get('marker') != 'v' or not re.fullmatch(r'[1-9]\d*', str(node.get('number', ''))):
+                    raise ValueError('Unsupported verse milestone/range; do not fabricate numbering.')
+                number = int(node['number'])
+                if node.get('sid') != f'{book_id} {chapter["number"]}:{number}' or (verse is not None and number <= verse['number']):
+                    raise ValueError('Duplicate, out-of-order or inconsistent USJ verse identity.')
+                verse = {'number': number, 'text': '', 'notes': [], 'characterSpans': []}
+                chapter['verses'].append(verse)
+            elif kind == 'note':
+                if verse is None or node.get('marker') != 'f':
+                    raise ValueError('Unassigned or unsupported source note.')
+                verse['notes'].append({'at': len(verse['text']), 'marker': node['marker'], 'caller': node.get('caller', ''),
+                                       'text': flatten(node), 'content': node.get('content', [])})
+            elif kind in {'char', 'ref'}:
+                if verse is None:
+                    raise ValueError('Unassigned USJ character span.')
+                if kind == 'char' and node.get('marker') not in {'add', 'wj'}:
+                    raise ValueError('Unsupported running-text character marker.')
+                start = len(verse['text'])
+                for child in node.get('content', []):
+                    walk(child)
+                verse['characterSpans'].append({'start': start, 'end': len(verse['text']),
+                                                'marker': node.get('marker', 'ref'), **({'loc': node['loc']} if kind == 'ref' else {})})
+            else:
+                raise ValueError(f'Unsupported USJ body node type: {kind}')
+
+        for node in doc['content']:
+            if not isinstance(node, dict):
+                raise ValueError('Unexpected top-level source text.')
+            if node.get('type') == 'book':
+                if book_identity or chapter is not None or node.get('code') != book_id:
+                    raise ValueError('USJ book identity mismatch.')
+                book_identity = True
+            elif node.get('type') == 'chapter':
+                number = int(node.get('number', 0))
+                if number != len(book['chapters']) + 1 or node.get('sid') != f'{book_id} {number}':
+                    raise ValueError('USJ chapter inventory or identity mismatch.')
+                chapter = {'number': number, 'verses': [], 'headings': [], 'paragraphs': [], 'offsetUnit': 'unicode-codepoint'}
+                book['chapters'].append(chapter)
+                verse, paragraph = None, None
+            elif node.get('type') == 'para':
+                style = node.get('marker')
+                if style in heading_styles:
+                    heading = {'style': style, 'text': flatten(node), 'content': node.get('content', [])}
+                    if chapter is None:
+                        book['frontMatter'].append(heading)
+                    else:
+                        chapter['headings'].append({'afterVerse': verse['number'] if verse is not None else None, **heading})
+                    annotation_totals['headings'] += 1
+                elif style in body_styles:
+                    if chapter is None:
+                        raise ValueError('Body paragraph before first chapter.')
+                    paragraph = {'style': style, 'spans': []}
+                    chapter['paragraphs'].append(paragraph)
+                    # USJ paragraph boundaries are layout, not punctuation. An
+                    # explicit separating space retains running-text words.
+                    if verse is not None and verse['text'] and not verse['text'][-1].isspace():
+                        verse['text'] += ' '
+                    for child in node.get('content', []):
+                        walk(child)
+                    paragraph = None
+                    annotation_totals['paragraphs'] += 1
+                else:
+                    raise ValueError(f'Unsupported USJ paragraph style: {style}')
+            else:
+                raise ValueError('Unsupported USJ top-level structure.')
+        if not book_identity:
+            raise ValueError('Missing USJ book identity.')
+        maxima, counts = [], []
+        for chapter in book['chapters']:
+            if not chapter['verses']:
+                raise ValueError('Empty source chapter.')
+            for verse in chapter['verses']:
+                trim_start = len(verse['text']) - len(verse['text'].lstrip(ASCII_PADDING))
+                verse['text'] = verse['text'].strip(ASCII_PADDING)
+                if not verse['text']:
+                    raise ValueError('Empty source verse needs explicit review.')
+                bound = lambda offset: max(0, min(len(verse['text']), offset - trim_start))
+                for note in verse['notes']:
+                    note['at'] = bound(note['at'])
+                for span in verse['characterSpans']:
+                    span.update(start=bound(span['start']), end=bound(span['end']))
+                for paragraph in chapter['paragraphs']:
+                    for span in paragraph['spans']:
+                        if span['verse'] == verse['number']:
+                            span.update(start=bound(span['start']), end=bound(span['end']))
+                annotation_totals['notes'] += len(verse['notes'])
+                annotation_totals['characterSpans'] += len(verse['characterSpans'])
+                rows.append({'bookId': book_id, 'chapter': chapter['number'], 'verse': verse['number'], 'text': verse['text'], 'editionId': edition_id})
+            numbers = [verse['number'] for verse in chapter['verses']]
+            maxima.append(max(numbers)); counts.append(len(numbers))
+            missing = sorted(set(range(1, max(numbers) + 1)) - set(numbers))
+            if missing:
+                omitted.append({'bookId': book_id, 'chapter': chapter['number'], 'verseNumbers': missing})
+            files[f'chapters/{book_id}/{chapter["number"]}.json'] = json_bytes({'schemaVersion': 1, 'editionId': edition_id, 'bookId': book_id, **chapter})
+        inventory.append({'id': book_id, 'name': book_name, 'chapters': len(book['chapters']), 'verseCounts': maxima, 'verseRecordCounts': counts})
+        files[f'books/{book_id}.json'] = json_bytes(book)
+    totals = {'books': len(inventory), 'chapters': sum(item['chapters'] for item in inventory), 'verses': len(rows)}
+    if totals != source['expectedTotals']:
+        raise ValueError(f'USJ source totals changed: {totals}')
+    manifest = {'schemaVersion': 1, 'edition': edition_metadata(edition_id), 'books': inventory, 'totals': totals,
+                'verseCountSemantics': 'Explicit publisher USJ verse milestones. Missing verse positions are absent, never renumbered.',
+                'sourceStructure': {**annotation_totals, 'offsetUnit': 'unicode-codepoint', 'speakerReviewStatus': 'publisher-markup-only-not-independently-reviewed'}}
+    notice = (source['attribution'] + '\n\nThe Berean Bible text was dedicated to the public domain on April 30, 2023. All uses are freely permitted.\n'
+              + '\n'.join(source['conditions']) + '\n\nPublisher terms: ' + source['licenseUrl'] + '\n'
+              + 'Pinned publisher release: ' + source['formatUrl'] + '\n')
+    files.update({'manifest.json': json_bytes(manifest), 'search-index.json': json_bytes(rows), 'NOTICE.txt': notice.encode('utf-8')})
+    return files, {'members': source_members, 'format': source['format'], 'totals': totals, 'annotationTotals': annotation_totals,
+                   'omittedNumberedPositions': omitted, 'emptySourceRecords': [],
+                   'normalization': ['Decode publisher USJ UTF-8 JSON.', 'Use explicit chapter/verse identifiers without renumbering.',
+                                     'Keep wording, punctuation and Unicode; concatenate adjacent inline text and separate body paragraph continuations with a space.',
+                                     'Remove only ASCII layout padding at verse boundaries.',
+                                     'Keep publisher headings, footnotes, poetic paragraph styles and character spans outside the canonical verse text.'],
+                   'limitations': ['Publisher words-of-Jesus markers are preserved as source metadata, not independently approved speaker annotations.',
+                                   'No interlinear, morphology, third-party lexicon or recorded-audio assets are imported.']}
+
+
 def build_artifacts(edition_id, raw):
     source = SOURCES[edition_id]
     with zipfile.ZipFile(io.BytesIO(raw)) as archive:
-        if len(archive.infolist()) > 20 or sum(i.file_size for i in archive.infolist()) > 80_000_000:
+        if len(archive.infolist()) > (66 if source.get('format') == 'usj-3.0' else 20) or sum(i.file_size for i in archive.infolist()) > 80_000_000:
             raise ValueError('Unexpected source archive inventory.')
-        files, extra = (bible_artifacts if source['corpus'] == 'bible' else quran_artifacts)(edition_id, archive)
+        importer = usj_bible_artifacts if source.get('format') == 'usj-3.0' else (bible_artifacts if source['corpus'] == 'bible' else quran_artifacts)
+        files, extra = importer(edition_id, archive)
     provenance = {'schemaVersion': 1, 'editionId': edition_id, 'sourceUrl': source['sourceUrl'],
                   'downloadUrl': source['downloadUrl'], 'archiveSha256': sha(raw), 'sourceUpdatedAt': source['sourceUpdatedAt'],
-                  'rightsObservedAt': OBSERVED_ON, 'licenseUrl': source['licenseUrl'], **extra,
+                  'rightsObservedAt': source.get('rightsObservedAt', OBSERVED_ON), 'licenseUrl': source['licenseUrl'], **extra,
                   'generatedFileSha256': {name: sha(content) for name, content in files.items()}}
     files['provenance.json'] = json_bytes(provenance)
     return files
@@ -451,6 +646,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--source-dir', type=Path, help='Directory outside the repository containing ID.zip files.')
     parser.add_argument('--download', action='store_true', help='Download missing pinned archives from publisher URLs.')
+    parser.add_argument('--edition', action='append', choices=list(SOURCES), help='Import/check only this source; existing editions are still verified. Repeat for multiple sources.')
     parser.add_argument('--output', type=Path, default=OUTPUT, help='Generated edition directory (default: data/editions).')
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument('--verify', action='store_true', help='Verify generated files without network or raw archives.')
@@ -466,7 +662,7 @@ def main():
     if not args.source_dir:
         parser.error('--source-dir is required for import or --check.')
     generated = {}
-    for edition_id in SOURCES:
+    for edition_id in args.edition or SOURCES:
         raw = archive_bytes(edition_id, args.source_dir, args.download)
         generated[edition_id] = build_artifacts(edition_id, raw)
     catalog = json_bytes({'schemaVersion': 1, 'editions': [edition_metadata(edition_id) for edition_id in SOURCES]})
