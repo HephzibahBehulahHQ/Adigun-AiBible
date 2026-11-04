@@ -113,7 +113,7 @@ export function createDecisionSimulationReflection(choiceId: string, reflection:
     `My chosen response: ${choice.label}`,
     `A plausible consequence: ${choice.consequence}`,
     `My reflection: ${reflection.trim()}`
-  ].join('\\n\\n');
+  ].join('\n\n');
   return { ...newEntryBase(now), title:`Decision simulation · ${simulation.title}`, kind:'application', state:'unresolved',
     text, reason:'', refs, sources:[`Decision simulation: ${simulation.id}`], history:[] };
 }
