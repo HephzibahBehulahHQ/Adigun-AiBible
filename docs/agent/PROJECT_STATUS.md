@@ -1,5 +1,18 @@
 # Project status
 
+## Latest continuation checkpoint — 4 November 2026
+
+Main now contains the accepted search, audit and route-preservation increments:
+
+- **PR #8 — private saved searches and personal-study search:** merged as `3806a3e1536a7486a5cf296b3fa1eb12e1eb77a6`. Full release workflow [41895760595](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41895760595) passed source/content/build, desktop/mobile browser checks and persistence regression, then deployed and verified the published source revision.
+- **PR #9 — game and learning template audit:** merged as `e32154a6fa606dc29bda8da5f97455b3be26c3a7`. [Workflow 41896538265](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41896538265) passed the full build/browser/persistence/deploy gate. No standalone game existed to certify; Verse Drop and memory exercises are study tools. The audit and future-game acceptance checklist are in [GAME_TEMPLATE_AUDIT.md](../GAME_TEMPLATE_AUDIT.md).
+- **PR #10 — explicit shared-passage route preservation:** merged as `616daf3554f9fdf4519bde2ea8f2c514e963b073`. It closes the route-recognition gap across all supported screens, prevents invalid deep links from restoring an unrelated saved passage, and adds regressions. [Workflow 41897171553](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41897171553) passed and verified the published source revision.
+- **PR #11 — private recent-search history:** merged as `3751ba557ed56d84a29a98417f5e49805ba326e8`. [PR workflow 41897478517](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41897478517) passed unit, desktop/mobile browser and repeated persistence checks. History stores at most 20 distinct recent source queries locally, retains edition and filters, and supports individual removal and explicit clearing. The main deployment workflow [41898329148](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41898329148) is still running; do not claim this latest main revision is published until its deployment receipt passes.
+- **PR #7:** closed as superseded by PR #6 because its duplicate layout/command work was already on main. No duplicate systems were merged.
+- **PR #12 — guided private interpretation challenge:** in progress. It extends the existing private reflections workspace, binds the exercise to the selected edition/passage, and makes no automatic correctness or faith judgment. Merge only after the exact latest candidate passes all release gates.
+
+Current main checkpoint: `3751ba557ed56d84a29a98417f5e49805ba326e8`. The complete Version 3 project remains in progress; none of these bounded increments implies overall completion.
+
 Updated: 4 November 2026 (Europe/Berlin). The complete Version 3 product remains in progress.
 
 ## Reader layouts and command palette: PR #6
@@ -23,7 +36,7 @@ Delivered implementation:
 - Production: https://hephzibahbehulahhq.github.io/Adigun-AiBible/
 - Exact current public receipt: https://hephzibahbehulahhq.github.io/Adigun-AiBible/build-info.json
 - Deployment evidence for this increment is retained in PR #6 and its production workflow. Do not infer publication from a branch checkpoint; inspect the merge/workflow and generated public receipt when resuming.
-- A separate overlapping branch, `codex/workspace-navigation-20261104` / PR #7, was discovered during verification. Its work has not been removed or rewritten. Inspect actual main and reconcile any remaining overlap before integrating it; do not install duplicate competing layout/palette systems.
+- The overlapping navigation branch / PR #7 was closed as superseded after confirming its layout and command systems already existed on main. The distinct shared-passage route defect was independently reproduced, fixed and tested in PR #10.
 
 ## Verification and recovery
 
@@ -33,7 +46,7 @@ Checkpoints `07aa031`, `a07a9f1`, `61dd3cf`, `5be157b` and `916d245` were read b
 
 ## Next bounded work
 
-Continue advanced/private/saved search from the deployed state. Review the separate navigation branch for independently useful route-preservation work and reconcile through normal reviewed Git changes. Do not rebuild the released source-reader or private-session features.
+Finish the PR #11 main deployment receipt, then complete PR #12's guided interpretation challenge through the exact-candidate release gate. After that, continue the Version 3 M7/M8 sequence with content/rights/review gates kept separate. Do not rebuild the released source-reader, layouts, command palette, search or private-session features.
 
 External gates remain: genuine human editorial/native-language review, edition-specific permissions, the interrupted dedicated backend setup, authenticated model service, permitted recorded narration and native-platform environments. Do not retry cancelled backend setup without explicit resumption. These dependencies do not block other local implementation.
 
