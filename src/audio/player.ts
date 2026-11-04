@@ -50,9 +50,15 @@ export class ListeningPlayer {
   private sleepAt: number | null = null;
   private cursor: AudioCursor | null = null;
   private phase: PlaybackState['phase'] = 'idle';
-  private entry: AudioEntry | undefined;
   private currentVoice: ListeningVoice | undefined;
-  constructor(private readonly driver: SpeechDriver, private readonly load: (entry: AudioEntry) => Promise<Verse[]>, private readonly onState: (state: PlaybackState) => void, private readonly onPosition: (cursor: AudioCursor) => void, private readonly online: () => boolean = () => navigator.onLine) {}
+  private readonly driver: SpeechDriver;
+  private readonly load: (entry: AudioEntry) => Promise<Verse[]>;
+  private readonly onState: (state: PlaybackState) => void;
+  private readonly onPosition: (cursor: AudioCursor) => void;
+  private readonly online: () => boolean;
+  constructor(driver: SpeechDriver, load: (entry: AudioEntry) => Promise<Verse[]>, onState: (state: PlaybackState) => void, onPosition: (cursor: AudioCursor) => void, online: () => boolean = () => navigator.onLine) {
+    this.driver = driver; this.load = load; this.onState = onState; this.onPosition = onPosition; this.online = online;
+  }
   private emit(phase: PlaybackState['phase'], message: string): void { this.phase = phase; this.onState({ phase, message, cursor: this.cursor ? { ...this.cursor } : null, sleepAt: this.sleepAt }); }
   private clearTimers(): void { if (this.sleepTimer) clearTimeout(this.sleepTimer); if (this.startTimer) clearTimeout(this.startTimer); this.sleepTimer = undefined; this.startTimer = undefined; }
   stop(message = 'Playback stopped. Resume begins at the start of the unfinished verse.'): void {
@@ -75,7 +81,8 @@ export class ListeningPlayer {
     this.stop('Preparing the listening queue…');
     if (!entries.length) { this.emit('error', 'Add a passage before playing.'); return; }
     const run = this.run; this.cursor = null;
-    let entryIndex = from && !from.completed ? entries.findIndex(entry => entry.id === from.entryId) : 0;
+    const startFrom = from;
+    let entryIndex = startFrom && !startFrom.completed ? entries.findIndex(entry => entry.id === startFrom.entryId) : 0;
     if (entryIndex < 0) entryIndex = 0;
     this.sleepAt = settings.sleepMinutes ? Date.now() + settings.sleepMinutes * 60_000 : null;
     if (this.sleepAt) this.sleepTimer = setTimeout(() => { if (this.run === run) this.stop('Sleep timer finished. Playback stopped at the current verse.'); }, settings.sleepMinutes * 60_000);
@@ -83,7 +90,7 @@ export class ListeningPlayer {
     const playEntry = async (): Promise<void> => {
       if (this.run !== run) return;
       if (entryIndex >= entries.length) { this.clearTimers(); this.sleepAt = null; this.currentVoice = undefined; if (this.cursor) { this.cursor = { ...this.cursor, completed: true }; this.onPosition(this.cursor); } this.emit('ended', 'Queue finished. Nothing else will play automatically.'); return; }
-      const entry = this.entry = entries[entryIndex];
+      const entry = entries[entryIndex];
       this.emit('loading', `Checking source and voice for ${entry.editionName}…`);
       try {
         const verses = await this.load(entry); if (this.run !== run) return;
@@ -93,8 +100,9 @@ export class ListeningPlayer {
         if (!selected.localService && !this.online()) throw new Error('The selected network voice needs an internet connection.');
         if (!verses.length) throw new Error('No source wording is available for this queue entry.');
         this.currentVoice = selected;
-        let repetition = from?.entryId === entry.id && !from.completed ? from.repetition : 0;
-        let index = from?.entryId === entry.id && !from.completed ? verses.findIndex(verse => verse.number === from.verse) : 0;
+        const resumeFrom = from;
+        let repetition = resumeFrom?.entryId === entry.id && !resumeFrom.completed ? resumeFrom.repetition : 0;
+        let index = resumeFrom?.entryId === entry.id && !resumeFrom.completed ? verses.findIndex(verse => verse.number === resumeFrom.verse) : 0;
         if (index < 0 || repetition >= entry.repeats) throw new Error('The saved listening position is absent from this source. Restart this queue entry.');
         from = null;
         const speakNext = (): void => {
@@ -104,12 +112,13 @@ export class ListeningPlayer {
           const verse = verses[index]; this.cursor = { entryId: entry.id, verse: verse.number, repetition, completed: false }; this.onPosition({ ...this.cursor });
           this.emit('loading', `Starting ${entry.ref.bookId} ${entry.ref.chapter}:${verse.number}, repeat ${repetition + 1} of ${entry.repeats}…`);
           this.startTimer = setTimeout(() => fail('The selected voice did not start. Check device audio or choose another available voice.'), 15_000);
-          const current = () => this.run === run;
+          let finished = false;
+          const current = () => this.run === run && !finished;
           try {
             this.driver.speak(verse.text, selected, settings.rate, {
               start: () => { if (!current()) return; if (this.startTimer) clearTimeout(this.startTimer); this.emit('playing', `Reading ${entry.ref.bookId} ${entry.ref.chapter}:${verse.number} · ${entry.editionName} · repeat ${repetition + 1} of ${entry.repeats}.`); },
-              end: () => { if (!current()) return; if (this.startTimer) clearTimeout(this.startTimer); index++; if (index >= verses.length) { index = 0; repetition++; } speakNext(); },
-              error: () => fail('The browser voice could not finish this verse. Playback stopped; no completed passage is claimed.'),
+              end: () => { if (!current()) return; finished = true; if (this.startTimer) clearTimeout(this.startTimer); index++; if (index >= verses.length) { index = 0; repetition++; } speakNext(); },
+              error: () => { if (!current()) return; finished = true; fail('The browser voice could not finish this verse. Playback stopped; no completed passage is claimed.'); },
               pause: () => { if (current()) this.emit('paused', 'Paused. The sleep timer continues to run.'); },
               resume: () => { if (current()) this.emit('playing', `Reading ${entry.ref.bookId} ${entry.ref.chapter}:${verse.number} · ${entry.editionName}.`); },
             });

@@ -8,6 +8,7 @@ const tools = [
   { view: 'family', icon: HeartHandshake, title: 'Family archive', description: 'Preserve authorized recordings, memories, photographs, and documents beside passages.' },
   { view: 'audio', icon: Headphones, title: 'Audio reader', description: 'Build a listening queue with available device voices, repetition, and a sleep timer.' },
   { view: 'evidence', icon: ScanText, title: 'Sermon evidence', description: 'Check references in a transcript against exact source wording and inspect uncertain findings.' },
+  { view: 'support', icon: HeartHandshake, title: 'Support resources', description: 'Choose a country and find verified official emergency, listening and health-service links.' },
   { view: 'projection', icon: Presentation, title: 'Projection', description: 'Prepare source passages for an audience, with separate presenter controls and a reading timer.' },
 ] as const;
 

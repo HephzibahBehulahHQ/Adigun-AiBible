@@ -1,5 +1,5 @@
 import { isReference } from '../domain.ts';
-import type { Reference } from '../types';
+import type { Edition, Reference } from '../types';
 
 export interface AudioEntry {
   id: string;
@@ -48,6 +48,9 @@ export function validateAudioEntry(value: unknown): AudioEntry {
   if (!/^[a-zA-Z]{2,3}(?:-[a-zA-Z0-9]{2,8})*$/.test(language)) throw new Error('Invalid source language.');
   if (!Number.isInteger(row.repeats) || Number(row.repeats) < 1 || Number(row.repeats) > 10) throw new Error('Choose between one and ten passage repetitions.');
   return { id: identifier(row.id), ref: { ...ref, endVerse: ref.endVerse ?? ref.verse }, editionName: text(row.editionName, 'edition name'), language, sourceSha256: checksum(row.sourceSha256), repeats: Number(row.repeats) };
+}
+export function assertAudioSourceIdentity(item: { ref: Reference; editionName: string; sourceSha256: string; language?: string }, edition: Edition): void {
+  if (item.ref.editionId !== edition.id || item.sourceSha256 !== edition.sha256 || item.editionName !== edition.name || (item.language !== undefined && item.language !== edition.language)) throw new Error('This listening record does not match the installed edition identity and revision. Add the passage again from its verified source.');
 }
 export function validateAudioState(value: unknown): AudioState {
   const state = record(value);
