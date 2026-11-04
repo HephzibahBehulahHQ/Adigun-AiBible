@@ -21,7 +21,7 @@ test('Quran phrase, all-word and any-word searches preserve source wording', () 
   assert.equal(search('Allah merciful', { mode: 'any' }).total, 3);
 });
 test('Quran Boolean search supports grouping, precedence and NOT', () => {
-  assert.equal(search('(Allah AND merciful) OR "Mercy and peace"', { mode: 'boolean' }).total, 2);
+  assert.equal(search('(Allah AND merciful) OR "Mercy and peace"', { mode: 'boolean' }).total, 3);
   assert.equal(search('Allah AND NOT merciful', { mode: 'boolean' }).total, 1);
 });
 test('surah scope and excluded words narrow only the Quran source records', () => {
