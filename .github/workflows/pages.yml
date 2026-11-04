@@ -34,6 +34,7 @@ jobs:
       - name: Validate source, content and production build
         run: npm run check
       - name: Install Chromium for production-browser checks
+        timeout-minutes: 5
         run: npx playwright install --with-deps chromium
       - name: Verify the built app in desktop and narrow browsers
         run: npm run test:e2e

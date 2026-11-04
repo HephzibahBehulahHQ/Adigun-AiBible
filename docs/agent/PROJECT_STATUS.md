@@ -36,3 +36,7 @@ Checkpoints `07aa031`, `a07a9f1`, `61dd3cf`, `5be157b` and `916d245` were read b
 Continue advanced/private/saved search from the deployed state. Review the separate navigation branch for independently useful route-preservation work and reconcile through normal reviewed Git changes. Do not rebuild the released source-reader or private-session features.
 
 External gates remain: genuine human editorial/native-language review, edition-specific permissions, the interrupted dedicated backend setup, authenticated model service, permitted recorded narration and native-platform environments. Do not retry cancelled backend setup without explicit resumption. These dependencies do not block other local implementation.
+
+## Runner setup recovery
+
+Final source checkpoint `065e12e11f7094e8e4237ad92bf882ceba44c2d8` passed its code/content/build gate in workflow 41874798330. Chromium installation began at 18:10:21 Europe/Berlin and remained at that step for over seven minutes, before any browser test ran. The install step now has a five-minute bound so an infrastructure stall yields a diagnosable failure instead of consuming the complete release job. The fresh exact-candidate run still requires every application, browser and persistence check. No setup delay is reported as an application-test success.
