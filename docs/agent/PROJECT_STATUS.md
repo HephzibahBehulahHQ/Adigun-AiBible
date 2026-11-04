@@ -11,6 +11,7 @@ Main now contains the accepted search, audit and route-preservation increments:
 - **PR #7:** closed as superseded by PR #6 because its duplicate layout/command work was already on main. No duplicate systems were merged.
 - **PR #12 — guided private interpretation challenge:** merged as `0d22af7dc7ddbaba22504ab1225107f49d95d870`. [PR workflow 41898436712](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41898436712) passed typecheck, build, unit tests, desktop/mobile browser checks and persistence regression. It extends private reflections, binds each exercise to the selected edition/passage, and makes no automatic correctness or faith judgment. Main deployment [workflow 41899161850](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41899161850) is pending.
 - **PR #13 — status/evidence refresh:** documentation-only, in review; its CI must pass before merge.
+- **PR #14 — first decision-simulation pilot:** in review at `dc965f2b2bccb71fcc1e69481aee6b10a6ea7538`. Its source/content, typecheck, unit tests and production build passed; Chromium/browser and persistence gates are still running. The scenario is fictional, English-only and for adult study use, with no score or divine-outcome claim.
 
 Current main checkpoint: `0d22af7dc7ddbaba22504ab1225107f49d95d870`. The complete Version 3 project remains in progress; none of these bounded increments implies overall completion.
 
