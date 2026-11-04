@@ -96,7 +96,6 @@ export default function ReadingSession({ reference, manifest, onOpenReference }:
     });
     return () => { cancelled = true; };
     // The route is intentionally the trigger: changing tabs or importing never records a second visit.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [key, reload]);
 
   async function action(work: () => Promise<void>) {

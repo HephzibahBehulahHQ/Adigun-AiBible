@@ -5,7 +5,7 @@
 .reading-session .button-row button { padding: .45rem .65rem; font-size: .85rem; }
 .reading-session-tabs { display: flex; flex-wrap: wrap; list-style: none; gap: .5rem; padding: 0; margin: .7rem 0; }
 .reading-session-tabs li { flex: 1 1 12rem; min-width: 0; max-width: 24rem; border: 1px solid var(--border); border-radius: .5rem; padding: .4rem; }
-.reading-session-tabs li.is-active { border-color: var(--gold); border-width: 2px; }
+.reading-session-tabs li.is-active { border-color: var(--accent); border-width: 2px; }
 .reading-session-tab { display: grid; gap: .2rem; width: 100%; background: transparent; color: inherit; border: 0; padding: .25rem; text-align: start; overflow-wrap: anywhere; }
 .reading-session-tab[aria-pressed="true"] strong::before { content: 'Current · '; }
 .reading-session-tab span, .reading-session-tab small, .reading-session-note, .reading-session-history small { font-size: .8rem; color: var(--muted); }
