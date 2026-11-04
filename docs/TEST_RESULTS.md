@@ -18,7 +18,7 @@ Earlier Version 3 browser runs `41823624648` (48/56 passed) and `41824204313` (5
 
 Live [build-info.json](https://hephzibahbehulahhq.github.io/Adigun-AiBible/build-info.json) was verified 4 November 2026, 13:17 Europe/Berlin: source `4d8943e60143a74e228c0bf7ed37b2d404d6776c`, build `76e65cbc808627c0d6a5b0b4`, content `ebbf21b44f84c76c567d50b7`. Production: https://hephzibahbehulahhq.github.io/Adigun-AiBible/ .
 
-The next reader-context/history/tabs slice on `codex/reader-context-20261104` is **NOT TESTED** and is not covered by these release receipts.
+The next source-reader release and the separately developing private history/tabs slice are not covered by the PR #3 production receipt. The source reader has 17 passing focused tests and an independent full BSB/ASV text and note-position audit. Initial CI [41834090869](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41834090869) passed 68/70 browser cases; toolbar wrapping and deterministic request-failure injection correct the two findings and await a new exact-candidate run. Private sessions are excluded from this smaller release.
 
 ## Historical hardening release
 
