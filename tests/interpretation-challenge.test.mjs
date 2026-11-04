@@ -25,6 +25,6 @@ test('guided interpretation challenge saves the exact passage, user reasoning an
 test('challenge creation requires an observation and rejects oversized or malformed source notes',()=>{
  assert.throws(()=>createInterpretationChallenge(passage,{...draft,observation:'   '}),/observation/);
  assert.throws(()=>createInterpretationChallenge(passage,{...draft,context:'x'.repeat(4001)}),/context/);
- assert.throws(()=>createInterpretationChallenge(passage,{...draft,sources:Array(21).fill('Source').join('\n')}),/20 sources/);
+ assert.throws(()=>createInterpretationChallenge(passage,{...draft,sources:Array.from({length:21},(_,i)=>`Source ${i}`).join('\n')}),/20 sources/);
  assert.throws(()=>createInterpretationChallenge(passage,{...draft,sources:'x'.repeat(5001)}),/sources/);
 });
