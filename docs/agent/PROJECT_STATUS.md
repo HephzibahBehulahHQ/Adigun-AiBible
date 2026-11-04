@@ -2,7 +2,7 @@
 
 ## Latest continuation checkpoint — 4 November 2026
 
-Current main: `462ab2c372b1ebabf9792f6eb229d14e26983835`.
+Current main: `a222a97f83683b5ecddced42cc58fb45ee5e7219`.
 
 - PR #8 saved/private searches and PR #9 game-template audit are merged; both release workflows passed.
 - PR #10 shared-passage route preservation and PR #11 private recent-search history are merged; both release workflows passed.
@@ -13,7 +13,8 @@ Current main: `462ab2c372b1ebabf9792f6eb229d14e26983835`.
 - PR #20 — Scripture Detective Mission: merged to main as `f9e0b4ab48418f8a6dfa78d43a1ac52fe376e885`. PR CI [41905075897](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41905075897) passed; main Pages deployment [41915528238](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41915528238) passed production build, desktop/mobile browser, persistence, publish and exact public source-receipt verification.
 - PR #19 — project/game audit reconciliation: merged as `82390cdf6c736abddee0de4bfdc143f2c021315b`.
 - PR #21 — release-record reconciliation: merged as `462ab2c372b1ebabf9792f6eb229d14e26983835`; main Pages deployment [41916140929](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41916140929) passed production build, desktop/mobile browser, persistence and exact public source-receipt verification.
-- PR #22 — advanced search for the standalone ClearQuran source: candidate `ea0b6ee57b8fe5fe57b327a73ed5a6c9e8324c43` passed exact-candidate CI [41917443849](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41917443849): 227 application tests, 20 offline backend contracts, 112 desktop/mobile browser cases and 10 repeated persistence checks. Merge and production deployment are pending.
+- PR #22 — advanced search for the standalone ClearQuran source: merged to main as `a222a97f83683b5ecddced42cc58fb45ee5e7219`. Exact-head CI [41919828778](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41919828778) passed source/content/build, Chromium setup, desktop/mobile browser checks and repeated persistence checks. Main Pages deployment [41920837036](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41920837036) passed production build, desktop/mobile browser checks, persistence regression, publication and exact public source-receipt verification for `a222a97f83683b5ecddced42cc58fb45ee5e7219`.
+- PR #23 — optional non-scoring prompts for private retelling practice: branch `codex/retelling-guidance-20261104`. CI [41921482363](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41921482363) exposed a repeated-insertion unit-test failure; fixed with idempotent insertion. CI [41921913983](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41921913983) passed source/build/unit tests but found an exact-label locator issue after the prompt update; the browser regression now uses the semantic textbox role. Latest exact-head CI pending.
 
 The full Version 3 product remains in progress. Each bounded increment is separately accepted; none implies overall completion.
 
