@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     permissions:
       contents: read
@@ -34,7 +34,7 @@ jobs:
       - name: Validate source, content and production build
         run: npm run check
       - name: Install Chromium for production-browser checks
-        timeout-minutes: 5
+        timeout-minutes: 10
         run: npx playwright install --with-deps chromium
       - name: Verify the built app in desktop and narrow browsers
         run: npm run test:e2e
@@ -62,7 +62,7 @@ jobs:
   deploy:
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     permissions:
       pages: write
