@@ -33,6 +33,11 @@ export const decisionSimulation = {
     }
   ],
   reflectionPrompt: 'What would you verify first? Who could be affected by the report? How could you raise the concern respectfully while protecting accuracy?',
+  followUps: [
+    'Compare the figure with the original source record and note what is still uncertain.',
+    'Ask the colleague what information they have and agree who will verify the discrepancy.',
+    'If the report is about to be sent and the risk remains unresolved, raise it with the responsible lead.'
+  ],
   passageReferences: [
     { bookId: 'PRO', chapter: 12, verse: 22 },
     { bookId: 'EPH', chapter: 4, verse: 25 },
