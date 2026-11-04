@@ -17,7 +17,7 @@ const cleanText = (value: unknown, max: number, label: string, required = false)
   return value.trim();
 };
 const timestamp = (value: unknown): string => {
-  if (typeof value !== 'string' || !/^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$/.test(value) || !Number.isFinite(Date.parse(value))) {
+  if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$/.test(value) || !Number.isFinite(Date.parse(value))) {
     throw new Error('Invalid saved Quran search date.');
   }
   return value;
