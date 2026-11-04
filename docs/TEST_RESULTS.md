@@ -44,7 +44,7 @@ This source-reader release is included in the verified PR #4 production revision
 
 ## Active navigation and layout candidate
 
-The shared route registry, local command palette and saved display/panel layouts are implemented on `codex/workspace-navigation-20261104`. Twenty-six focused route/command/layout model and storage tests pass. Browser checks cover exact-source shared routes, palette keyboard/focus behavior and saved-layout persistence/recovery. Full exact-candidate release CI is pending; this section makes no deployment claim.
+The shared route registry, local command palette and saved display/panel layouts are implemented on `codex/workspace-navigation-20261104`. The full local check passed207 application/source/session/layout tests,20 offline backend contracts, TypeScript, ESLint, content validation and the production build. Initial application JavaScript measured139.08KB gzip, with layouts lazy-loaded. Browser checks cover exact-source shared routes, palette keyboard/focus behavior and saved-layout persistence/recovery. Full exact-candidate release CI is pending; this section makes no deployment claim.
 
 Local Chromium is unavailable, so real browser execution uses the existing GitHub Actions gate. No test retry or weakened assertion is introduced.
 
