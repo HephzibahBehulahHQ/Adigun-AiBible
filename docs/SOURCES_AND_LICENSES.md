@@ -9,6 +9,7 @@ The authoritative edition records are [English provenance and importer](CONTENT_
 | Biblica Open Yoruba Contemporary Bible (`yor`) | CC BY-SA 4.0; copyright and trademark notices retained | Unchanged Yoruba source |
 | ClearQuran, Talal Itani Allah Edition (`eng-clearquran`) | CC BY-ND 4.0 plus publisher formatting permissions | Unchanged English Quran source; no adaptation |
 | Berean Standard Bible, publisher release v5.19 (`eng-bsb`) | [Publisher public-domain dedication](https://berean.bible/terms.htm) | Unchanged English source with publisher structure retained |
+| American Standard Version, 1901 (`eng-asv`) | [Publisher public-domain notice](https://ebible.org/eng-asv/copyright.htm) | Exact publisher VPL text, including supplied brackets |
 
 No Pidgin corpus is imported. Available Pidgin licenses differ by edition and do not establish rights for an arbitrary downloadable file. No generated study wording is passed off as a named translation.
 
@@ -31,3 +32,11 @@ The [publisher’s v5.19 release](https://github.com/BSB-publishing/bsb2usfm/rel
 The importer preserves footnotes, headings, poetry styles and character spans. Psalm superscriptions remain labeled context; Zechariah 12:1 retains its full opening sentence, cross-checked against [the publisher’s verse display](https://biblehub.com/bsb/zechariah/12.htm). Publisher words-of-Jesus markup is preserved as source metadata and is not represented as independently reviewed speaker data. Unsupported markers and range identities fail rather than being silently discarded or renumbered.
 
 Reproduce with `python scripts/import-editions.py --edition eng-bsb --source-dir OUTSIDE_REPO --download --check` (the archive is named `eng-bsb.zip`). `--rebuild-indexes` regenerates ignored search indexes and chapter chunks from committed books and checks every resulting hash before writing; `--verify` checks the installed output. No archive is committed. Full USJ provenance is in `data/editions/eng-bsb/provenance.json`.
+
+## American Standard Version source receipt
+
+The [eBible ASV archive](https://ebible.org/Scriptures/eng-asv_vpl.zip), source update 30 October 2026, has SHA-256 `6c41b8020cba9cf7041689f2356c55859e28023405537388be08bad93df2b050`. Its [rights notice](https://ebible.org/eng-asv/copyright.htm) declares the 1901 text public domain. The pinned import contains 66 books, 1,189 chapters and 31,102 numbered records.
+
+Display wording comes from `eng-asv_vpl.txt`, preserving publisher brackets rather than silently copying the differently formatted XML. Text, punctuation and references agree with the companion XML after comparison-only removal of recorded square-bracket markup. The provenance inventory distinguishes balanced supplied-word spans, unpaired brackets, Psalm markers and textual-variant brackets; it does not repair or renumber the source. This text-only VPL archive supplies no footnotes, headings or paragraph structure.
+
+Reproduce using `python scripts/import-editions.py --edition eng-asv --source-dir OUTSIDE_REPO --download --check`. Exact member hashes, differences and generated-file hashes are recorded in `data/editions/eng-asv/provenance.json`. Text permission does not license third-party recorded audio.

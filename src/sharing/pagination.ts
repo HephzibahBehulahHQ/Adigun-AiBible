@@ -7,7 +7,7 @@ export interface CardFragment { passage: CardPassage; lines: string[]; label: st
 export interface PassageCard { fragments: CardFragment[] }
 export interface CardLayout {
   width: number; height: number; margin: number; bodyFont: number; lineHeight: number; bodyTop: number; bodyBottom: number;
-  title: string; titleLines: string[]; noteLines: string[]; creditLines: string[]; creditTop: number; pages: PassageCard[];
+  title: string; titleLines: string[]; noteLines: string[]; creditText: string; creditLines: string[]; creditTop: number; pages: PassageCard[];
 }
 export interface CardOptions { size: CardSize; margin: number }
 export type MeasureCardText = (text: string, font: string) => number;
@@ -18,6 +18,7 @@ export const MAX_PASSAGE_CARDS = 128;
 /** Each returned string is an exact slice. Joining all slices reproduces the original text. */
 export function wrapExactText(text: string, width: number, measure: (value: string) => number): string[] {
   if (!Number.isFinite(width) || width <= 0) throw new Error('The card has no usable text width.');
+  if (typeof Intl.Segmenter !== 'function') throw new Error('This browser cannot safely wrap all source-language characters. Use an up-to-date browser to create cards; no text has been cropped.');
   const segmenter = new Intl.Segmenter(undefined, { granularity: 'grapheme' });
   const clusters = [...segmenter.segment(text)].map(segment => segment.segment);
   const lines: string[] = []; let start = 0, cursor = 0, lastBreak = -1, candidate = '';
@@ -52,7 +53,8 @@ export function paginatePassageCards(title: string, passages: readonly CardPassa
   const titleLines = wrap(title, `600 32px ${LABEL_FONT}`);
   const noteLines = wrap(sources.length > 1 ? 'Source Scripture · Editions paired by verse number' : 'Source Scripture', `18px ${LABEL_FONT}`);
   const bodyTop = margin + 42 + titleLines.length * 42 + noteLines.length * 26 + 24;
-  const creditLines = sources.flatMap(source => wrap(`${source.name}\n${source.credit}`, `18px ${LABEL_FONT}`));
+  const creditText = sources.map(source => `${source.name}\n${source.credit}`).join('\n\n');
+  const creditLines = wrap(creditText, `18px ${LABEL_FONT}`);
   const creditTop = height - margin - 30 - creditLines.length * 24, bodyBottom = creditTop - 36;
   if (bodyBottom - bodyTop < 150) throw new Error('Source attribution leaves too little reading space. Choose Story or reduce the safe margin. Nothing has been cropped.');
   const pages: PassageCard[] = []; let page: PassageCard = { fragments: [] }, y = bodyTop;
@@ -75,12 +77,12 @@ export function paginatePassageCards(title: string, passages: readonly CardPassa
     }
   }
   if (page.fragments.length) pages.push(page);
-  return { width, height, margin, bodyFont, lineHeight, bodyTop, bodyBottom, title, titleLines, noteLines, creditLines, creditTop, pages };
+  return { width, height, margin, bodyFont, lineHeight, bodyTop, bodyBottom, title, titleLines, noteLines, creditText, creditLines, creditTop, pages };
 }
 
 export function cardTextAlternative(layout: CardLayout, index: number): string {
   const page = layout.pages[index]; if (!page) throw new Error('That passage card does not exist.');
-  return [layout.title, `Card ${index + 1} of ${layout.pages.length}`, ...page.fragments.map(fragment => `${fragment.passage.reference} · ${fragment.passage.editionName}${fragment.continued ? ' · continued' : ''}\n${fragment.lines.join('')}`), 'Sources and permissions', layout.creditLines.join('')].join('\n\n');
+  return [layout.title, `Card ${index + 1} of ${layout.pages.length}`, ...page.fragments.map(fragment => `${fragment.passage.reference} · ${fragment.passage.editionName}${fragment.continued ? ' · continued' : ''}\n${fragment.lines.join('')}`), 'Sources and permissions', layout.creditText].join('\n\n');
 }
 
 export function drawPassageCard(canvas: HTMLCanvasElement, layout: CardLayout, index: number, palette: keyof typeof palettes): void {
@@ -104,5 +106,5 @@ export function drawPassageCard(canvas: HTMLCanvasElement, layout: CardLayout, i
   context.fillStyle = colors.ink; context.font = `18px ${LABEL_FONT}`;
   layout.creditLines.forEach((line, lineIndex) => context.fillText(visibleLine(line), layout.margin, layout.creditTop + lineIndex * 24));
   context.fillStyle = colors.accent; context.font = `16px ${LABEL_FONT}`;
-  context.fillText(`Card ${index + 1} of ${layout.pages.length}`, layout.margin, layout.height - layout.margin);
+  context.fillText(`Card ${index + 1} of ${layout.pages.length}`, layout.margin, layout.height - layout.margin - 16);
 }
