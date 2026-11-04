@@ -96,12 +96,12 @@ export function getDecisionSimulation(id: string) {
   return simulation;
 }
 
-export function decisionSimulationReferences(editionId: string, simulationId = decisionSimulation.id): Reference[] {
+export function decisionSimulationReferences(editionId: string, simulationId: string = decisionSimulation.id): Reference[] {
   if (typeof editionId !== 'string' || !editionId.trim() || editionId.length > 100) throw new Error('Choose a valid source edition for this exercise.');
   return getDecisionSimulation(simulationId).passageReferences.map(ref => ({ ...ref, editionId }));
 }
 
-export function createDecisionSimulationReflection(choiceId: string, reflection: string, editionId: string, now = new Date(), simulationId = decisionSimulation.id): ReflectionEntry {
+export function createDecisionSimulationReflection(choiceId: string, reflection: string, editionId: string, now = new Date(), simulationId: string = decisionSimulation.id): ReflectionEntry {
   const simulation = getDecisionSimulation(simulationId);
   const choice = simulation.choices.find(item => item.id === choiceId);
   if (!choice) throw new Error('Choose one of the available responses before saving.');
