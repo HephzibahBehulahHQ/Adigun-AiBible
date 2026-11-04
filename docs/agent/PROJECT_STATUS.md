@@ -27,4 +27,8 @@ Updated: 4 November 2026 (Europe/Berlin). The complete Version 3 product remains
 
 Keep [BLOCKERS.md](BLOCKERS.md) and the feature matrix's source, human review, licensing, authenticated service, recorded-media and native-platform dependencies. Do not retry the interrupted dedicated backend setup without explicit resumption. Continue other unblocked reader/search work.
 
-Next: implement and verify saved layouts and the command palette; merge and deploy under the existing authorization after all applicable checks pass, then verify the deployed revision.
+Next: finish the corrected layout/command release gate, merge and deploy under the existing authorization, then verify the public source revision. Following unblocked work is advanced/private/saved search.
+
+## Observed browser gate and correction
+
+[CI 41872693806](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41872693806) at `5be157b3677540a7efcff981c4f28f0f0a46f4c4` passed all 199 application tests, 20 backend contracts, source/content checks and build, then passed 93/98 browser cases. The five failures were retained: theme/pane label matching in both device profiles and an existing mobile note-focus regression. The fix adds explicit accessible control names and permits autofocus inside the mobile Notes inspector while preventing other overlays from taking focus. No assertions or retries were removed; the corrected candidate must pass the complete gate before release.
