@@ -34,13 +34,13 @@ export function createInterpretationChallenge(ref: Reference, draft: Interpretat
   const alternatives = challengeField(draft.alternatives, 'alternative readings');
   const uncertainty = challengeField(draft.uncertainty, 'uncertainty');
   const sourceText = challengeField(draft.sources, 'sources');
-  const sources = [...new Set(sourceText.split('\\n').map(value => value.trim()).filter(Boolean))];
+  const sources = [...new Set(sourceText.split('\n').map(value => value.trim()).filter(Boolean))];
   if (sources.length > 20 || sources.some(value => value.length > 500)) throw new Error('Use at most 20 sources, each no longer than 500 characters.');
   const text = [
-    `Observation — what the passage says\\n${observation}`,
-    context ? `Context — details that matter\\n${context}` : '',
-    alternatives ? `Alternative readings to consider\\n${alternatives}` : '',
-  ].filter(Boolean).join('\\n\\n');
+    `Observation — what the passage says\n${observation}`,
+    context ? `Context — details that matter\n${context}` : '',
+    alternatives ? `Alternative readings to consider\n${alternatives}` : '',
+  ].filter(Boolean).join('\n\n');
   if (text.length > 20000) throw new Error('This interpretation challenge is too long to save.');
   return { ...newEntryBase(now), title:`Interpretation challenge · ${referenceLabel(ref)}`, kind:'interpretation', state:'unresolved',
     text, reason:uncertainty, refs:[explicitReference(ref)], sources, history:[] };
