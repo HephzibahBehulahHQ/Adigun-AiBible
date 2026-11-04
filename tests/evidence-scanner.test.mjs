@@ -20,6 +20,13 @@ test('scanner retains invalid and cross-chapter citations as correction findings
   assert.equal(report.findings.length, 3);
   assert.ok(report.findings.every(finding => finding.category === 'insufficient_evidence' && !finding.evidence.length));
   assert.match(report.findings[1].uncertainty.join(' '), /crosses chapters/);
+  assert.ok(report.findings.every(finding=>!finding.references.length));
+});
+
+test('English reference names still resolve when a selected source uses localized book names', () => {
+  const localized = manifest.books.map(book=>({...book,name:book.id==='GEN'?'1. Mose':book.name}));
+  assert.equal(detectReferences('Genesis 1:1',localized)[0].reference.bookId,'GEN');
+  assert.equal(detectReferences('1. Mose 1:1',localized)[0].reference.bookId,'GEN');
 });
 
 test('exact source evidence retains edition, cited words, surrounding context and checksum', async () => {
@@ -60,6 +67,15 @@ test('explicit paraphrases remain labeled and alternative editions are compared 
   const alternatives = await scanTranscript('John 3:16 says "Fixture alternate wording for comparison testing only."', [source, fixtureSource]);
   assert.equal(alternatives.findings[0].category, 'likely_alternative_edition');
   assert.equal(alternatives.findings[0].evidence[1].reference.editionId, 'test-fixture');
+});
+
+test('different source inventories do not suppress a valid citation in another checked edition',async()=>{
+  const incomplete={manifest:{...manifest,books:manifest.books.map(book=>book.id==='JHN'?{...book,chapters:2,verseCounts:book.verseCounts.slice(0,2)}:book)},book:source.book};
+  const complete={...source,manifest:{...manifest,edition:{...manifest.edition,id:'test-fixture',name:'TEST FIXTURE alternative inventory'}}};
+  const report=await scanTranscript('John 3:16 says "For God so loved the world"',[incomplete,complete]);
+  assert.equal(report.findings[0].category,'likely_alternative_edition');
+  assert.equal(report.findings[0].evidence.length,1);
+  assert.equal(report.findings[0].evidence[0].reference.editionId,'test-fixture');
 });
 
 test('quotation association does not steal a nearby quote assigned to another reference', async () => {

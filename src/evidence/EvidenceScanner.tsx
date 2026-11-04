@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import type { ChangeEvent } from 'react';
-import { getBook, getManifest } from '../data';
-import type { Reference } from '../types';
+import { bibleEditionIds, getBook, getEditionCatalog, getManifest } from '../data';
+import { permissionFor, requirePermission } from '../permissions';
+import type { Edition, Reference } from '../types';
 import { categoryLabels, MAX_SCAN_REFERENCES, MAX_TRANSCRIPT_LENGTH, scanTranscript } from './scanner';
 import type { ScanReport, SermonFinding } from './scanner';
 import { buildEvidenceReport, currentReview, validateSession } from './session';
@@ -10,6 +11,7 @@ import { deleteEvidenceSession, listEvidenceSessions, saveEvidenceSession } from
 import './evidence.css';
 
 interface Props { onNavigate?: (reference: Reference) => void }
+interface SourceOption { edition: Edition; allowed: boolean; reason: string }
 const freshId = () => `session-${crypto.randomUUID()}`;
 const errorText = (error: unknown) => error instanceof Error ? error.message : 'The action could not be completed. Your transcript remains available to export.';
 function downloadFile(text: string, name: string, mime: string) {
@@ -23,6 +25,10 @@ export default function EvidenceScanner({ onNavigate }: Props) {
   const [transcript, setTranscript] = useState('');
   const [report, setReport] = useState<ScanReport | null>(null);
   const [reviews, setReviews] = useState<EvidenceSession['reviews']>({});
+  const [editionIds, setEditionIds] = useState(['eng-web']);
+  const [sourceOptions, setSourceOptions] = useState<SourceOption[]>([]);
+  const [sourceError, setSourceError] = useState('');
+  const [sourceRetry, setSourceRetry] = useState(0);
   const [sessionId, setSessionId] = useState(freshId);
   const [createdAt, setCreatedAt] = useState(() => new Date().toISOString());
   const [sessions, setSessions] = useState<EvidenceSession[]>([]);
@@ -45,22 +51,38 @@ export default function EvidenceScanner({ onNavigate }: Props) {
     listEvidenceSessions().then(items => { if (active) { setSessions(items); setStorageReady(true); } }).catch(problem => { if (active) setStorageError(errorText(problem)); });
     return () => { active = false; request.current?.abort(); };
   }, []);
+  useEffect(() => {
+    let active = true;
+    getEditionCatalog().then(async catalog => {
+      const options = await Promise.all(catalog.editions.filter(edition => bibleEditionIds.includes(edition.id)).map(async edition => {
+        const decisions = await Promise.all([permissionFor(edition, 'display'), permissionFor(edition, 'searchIndex'), permissionFor(edition, 'documentExport')]);
+        const denied = decisions.find(decision => !decision.allowed);
+        return { edition, allowed: !denied, reason: denied?.reason || 'Unchanged text may be checked and included with attribution in a report.' };
+      }));
+      if (active) { setSourceOptions(options); setSourceError(''); }
+    }).catch(problem => { if (active) setSourceError(errorText(problem)); });
+    return () => { active = false; };
+  }, [sourceRetry]);
 
   function markChanged() { revision.current++; setDirty(true); setError(''); }
   function editTranscript(text: string) {
-    markChanged(); request.current?.abort(); setTranscript(text); setReport(null); setReviews({}); setStatus('Transcript changed. Check it again to produce current evidence.');
+    markChanged(); request.current?.abort(); setTranscript(text); setReport(null); setStatus('Transcript changed. Check it again to produce current evidence. Previous review notes retain their original evidence binding.');
   }
   function draft(): EvidenceSession {
-    return validateSession({ schemaVersion: 1, id: sessionId, title, transcript, createdAt, updatedAt: new Date().toISOString(), reviews });
+    return validateSession({ schemaVersion: 1, id: sessionId, title, transcript, createdAt, updatedAt: new Date().toISOString(), editionIds, reviews });
   }
   async function analyze() {
     const controller = new AbortController(); request.current?.abort(); request.current = controller;
     const inputRevision = revision.current;
     setRunning(true); setError(''); setReport(null); setStatus('Opening the checked Scripture source…');
     try {
-      const manifest = await getManifest('eng-web');
+      const sources = await Promise.all(editionIds.map(async editionId => {
+        const manifest = await getManifest(editionId);
+        await Promise.all([requirePermission(manifest.edition, 'searchIndex'), requirePermission(manifest.edition, 'documentExport')]);
+        return { manifest, book: (id: string) => getBook(id, editionId) };
+      }));
       controller.signal.throwIfAborted();
-      const result = await scanTranscript(transcript, [{ manifest, book: id => getBook(id, 'eng-web') }], { signal: controller.signal, onProgress: (complete, total) => { if (!controller.signal.aborted) setStatus(`Checked ${complete} of ${total} reference mentions.`); } });
+      const result = await scanTranscript(transcript, sources, { signal: controller.signal, onProgress: (complete, total) => { if (!controller.signal.aborted) setStatus(`Checked ${complete} of ${total} reference mentions.`); } });
       if (controller.signal.aborted || revision.current !== inputRevision) return;
       setReport(result); setReviewFilter('all');
       setStatus(result.findings.length ? `Check finished. ${result.findings.length} evidence cards are ready for your review.` : 'No supported book chapter:verse references were detected. Add or correct explicit references in your transcript, then check again.');
@@ -84,11 +106,11 @@ export default function EvidenceScanner({ onNavigate }: Props) {
       if (backup) {
         let imported: EvidenceSession;
         try { imported = validateSession(JSON.parse(text)); } catch { throw new Error('This file is not a valid Adigun-AiBible transcript backup. Your working transcript was kept.'); }
-        revision.current++; setTranscript(imported.transcript); setTitle(imported.title); setReviews(imported.reviews); setSessionId(freshId()); setCreatedAt(imported.createdAt); setReport(null); setDirty(true);
+        revision.current++; setTranscript(imported.transcript); setTitle(imported.title); setReviews(imported.reviews); setEditionIds(imported.editionIds); setSessionId(freshId()); setCreatedAt(imported.createdAt); setReport(null); setDirty(true);
         setStatus('Backup opened as a new unsaved session. Check the transcript again against the installed source before relying on any findings.');
       } else {
         if (text.length > MAX_TRANSCRIPT_LENGTH) throw new Error(`This transcript exceeds ${MAX_TRANSCRIPT_LENGTH.toLocaleString('en')} characters. Split it into sections.`);
-        editTranscript(text); setTitle(file.name.replace(/\.(txt|srt|vtt)$/i, '').slice(0, 160)); setSessionId(freshId()); setCreatedAt(new Date().toISOString());
+        editTranscript(text); setReviews({}); setTitle(file.name.replace(/\.(txt|srt|vtt)$/i, '').slice(0, 160)); setSessionId(freshId()); setCreatedAt(new Date().toISOString());
         setStatus('Text transcript loaded. Correct any errors before checking it. Timestamp text has been preserved.');
       }
     } catch (problem) { setError(errorText(problem)); }
@@ -108,7 +130,7 @@ export default function EvidenceScanner({ onNavigate }: Props) {
   }
   function openSession(session: EvidenceSession) {
     if (dirty && !window.confirm('Open this saved transcript and replace the current unsaved changes?')) return;
-    revision.current++; setTranscript(session.transcript); setTitle(session.title); setReviews(session.reviews); setSessionId(session.id); setCreatedAt(session.createdAt); setReport(null); setDirty(false); setError('');
+    revision.current++; setTranscript(session.transcript); setTitle(session.title); setReviews(session.reviews); setEditionIds(session.editionIds); setSessionId(session.id); setCreatedAt(session.createdAt); setReport(null); setDirty(false); setError('');
     setStatus('Saved transcript opened. Check it again to load current source evidence. Previous review notes apply only when the transcript and source hashes still match.');
   }
   async function deleteSaved(session: EvidenceSession) {
@@ -134,8 +156,26 @@ export default function EvidenceScanner({ onNavigate }: Props) {
     try { downloadFile(JSON.stringify(draft(), null, 2) + '\n', 'adigun-sermon-transcript-backup.json', 'application/json;charset=utf-8'); setStatus('Transcript backup prepared. This file contains your private transcript and review notes.'); }
     catch (problem) { setError(errorText(problem)); }
   }
+  function chooseEdition(editionId: string, selected: boolean) {
+    if (!selected && editionIds.length === 1) { setError('Keep at least one edition selected for checking.'); return; }
+    if (selected && editionIds.length >= 8) { setError('Choose up to eight editions per check.'); return; }
+    markChanged(); setEditionIds(ids => selected ? [...ids, editionId] : ids.filter(id => id !== editionId)); setReport(null);
+    setStatus('Checked sources changed. Run another check to compare the selected editions.');
+  }
+  async function exportReport() {
+    if (!report) return;
+    setSaving(true); setError('');
+    try {
+      await Promise.all(report.checkedEditions.map(async edition => requirePermission((await getManifest(edition.id)).edition, 'documentExport')));
+      downloadFile(buildEvidenceReport(title, transcript, report, reviews), 'adigun-sermon-evidence-report.txt', 'text/plain;charset=utf-8');
+      setStatus('Evidence report prepared with transcript spans, source attribution, limitations and your review notes.');
+    } catch (problem) { setError(errorText(problem)); }
+    finally { setSaving(false); }
+  }
   const shownFindings = report?.findings.filter(finding => reviewFilter === 'all' || currentReview(report, finding, reviews).status === reviewFilter) || [];
   const pendingCount = report?.findings.filter(finding => currentReview(report, finding, reviews).status === 'pending').length || 0;
+  const staleReviews = Object.entries(reviews).filter(([id, review]) => { const finding = report?.findings.find(item => item.id === id); return (review.note || review.status !== 'pending') && (!report || !finding || currentReview(report, finding, reviews).evidenceKey !== review.evidenceKey); });
+  const sourcesReady = editionIds.every(id => sourceOptions.some(option => option.edition.id === id && option.allowed));
 
   return <section className="page evidence-workspace" aria-labelledby="evidence-title">
     <header className="page-heading">
@@ -145,12 +185,20 @@ export default function EvidenceScanner({ onNavigate }: Props) {
     </header>
     <div className="evidence-scope panel">
       <h2>Local transcript analysis</h2>
-      <p>Checks explicit Bible references and nearby double-quoted words against the <strong>World English Bible</strong>. It does not record or transcribe audio, search every translation, or judge the truth of a sermon’s interpretation.</p>
+      <p>Checks explicit Bible references and nearby double-quoted words against your selected, permitted editions. It does not record or transcribe audio, search every translation, or judge the truth of a sermon’s interpretation.</p>
       <p className="small muted">Your transcript is processed in this browser and is never sent to a model or transcription service. Public Scripture files may be downloaded when needed. Working text stays in memory until you explicitly save it here or export it; saved copies stay on this device until deleted. Other people using this browser profile can access them.</p>
     </div>
     <section className="panel evidence-editor" aria-labelledby="evidence-input-title">
       <h2 id="evidence-input-title">Correct your transcript</h2>
       <label>Session title<input value={title} maxLength={160} disabled={locked} onChange={event => { setTitle(event.target.value); markChanged(); }} /></label>
+      <fieldset className="evidence-editions" disabled={locked}><legend>Editions to check</legend>
+        <p className="small muted">The first selected edition is the primary comparison. Only installed sources with verified display, indexing and document-export permission can be checked.</p>
+        {!sourceOptions.length && !sourceError && <p role="status">Checking available source permissions…</p>}
+        {sourceOptions.map(option => <label key={option.edition.id}><span><input type="checkbox" checked={editionIds.includes(option.edition.id)} disabled={!option.allowed && !editionIds.includes(option.edition.id)} onChange={event => chooseEdition(option.edition.id, event.target.checked)} /> {option.edition.name}{editionIds[0] === option.edition.id ? ' · primary' : ''}</span><small>{option.edition.language} · {option.reason}</small></label>)}
+        {editionIds.filter(id => !sourceOptions.some(option => option.edition.id === id)).map(id => <p key={id}>Saved selection awaiting availability: {id} <button className="secondary" onClick={() => chooseEdition(id, false)}>Remove {id}</button></p>)}
+        {sourceError && <p role="alert">{sourceError}</p>}
+        <button className="secondary" onClick={() => setSourceRetry(value => value + 1)}>Refresh edition permissions</button>
+      </fieldset>
       <div className="evidence-file-row">
         <label>Open a text transcript<input type="file" accept=".txt,.srt,.vtt,text/plain,text/vtt" disabled={locked} onChange={event => void readFile(event)} /></label>
         <label>Import a transcript backup<input type="file" accept=".json,application/json" disabled={locked} onChange={event => void readFile(event, true)} /></label>
@@ -159,7 +207,7 @@ export default function EvidenceScanner({ onNavigate }: Props) {
       <textarea id="sermon-transcript" value={transcript} maxLength={MAX_TRANSCRIPT_LENGTH} rows={12} disabled={locked} onChange={event => editTranscript(event.target.value)} aria-describedby="transcript-help" spellCheck />
       <p id="transcript-help" className="small muted">Use references such as John 3:16 or 1 Corinthians 13:4–7. Put quoted Scripture in double quotation marks; identify paraphrases in your own words. Supplied timestamps such as [02:15] are preserved. Checks cover up to {MAX_SCAN_REFERENCES} reference mentions per run.</p>
       <div className="button-row">
-        <button className="primary" disabled={locked || !transcript.trim()} onClick={() => void analyze()}>Check transcript</button>
+        <button className="primary" disabled={locked || !transcript.trim() || !sourcesReady} onClick={() => void analyze()}>Check transcript</button>
         {running && <button className="secondary" onClick={cancelCheck}>Cancel check</button>}
         <button className="secondary" disabled={locked || !storageReady || !transcript.trim()} onClick={() => void save()}>Save on this device</button>
         <button className="secondary" disabled={locked || !transcript.trim()} onClick={exportBackup}>Export transcript backup</button>
@@ -173,7 +221,7 @@ export default function EvidenceScanner({ onNavigate }: Props) {
     {report && <section aria-labelledby="evidence-results-title">
       <div className="evidence-results-heading">
         <div><h2 id="evidence-results-title" ref={resultsHeading} tabIndex={-1}>Evidence cards</h2><p className="small muted">{report.findings.length} checked references · {pendingCount} pending your review</p></div>
-        <button className="secondary" disabled={locked} onClick={() => { downloadFile(buildEvidenceReport(title, transcript, report, reviews), 'adigun-sermon-evidence-report.txt', 'text/plain;charset=utf-8'); setStatus('Evidence report prepared with transcript spans, source attribution, limitations and your review notes.'); }}>Export evidence report</button>
+        <button className="secondary" disabled={locked} onClick={() => void exportReport()}>Export evidence report</button>
       </div>
       <p className="small muted">Checked source: {report.checkedEditions.map(edition => edition.name).join(', ')}. Different wording is not proof of misquotation. Interpretive, historical and uncited claims need separate research.</p>
       {report.detectedReferences > report.findings.length && <p role="status">Only the first {report.findings.length} of {report.detectedReferences} detected references were checked. Split the transcript to check the remaining references.</p>}
@@ -205,6 +253,7 @@ export default function EvidenceScanner({ onNavigate }: Props) {
         </article>;
       })}
     </section>}
+    {!!staleReviews.length && <details className="panel"><summary>Retained review notes from an earlier check</summary><p className="small muted">These notes refer to previous transcript or source evidence. They are not applied to current findings. They remain in your session backup.</p>{staleReviews.map(([id, review]) => <div key={id}><strong>{id} · {review.status}</strong><p>{review.note || 'No written note.'}</p></div>)}</details>}
     <section className="panel evidence-sessions" aria-labelledby="evidence-saved-title">
       <h2 id="evidence-saved-title">Saved on this device</h2>
       <p className="small muted">Saving is optional. No automatic cloud copy is created. Backups include your private writing; exported files must be deleted separately.</p>

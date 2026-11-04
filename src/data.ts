@@ -51,10 +51,11 @@ export function getEditionCatalog(): Promise<EditionCatalog> {
 }
 let quran: Promise<QuranSource> | undefined;
 export function getQuran(): Promise<QuranSource> {
-  if (!quran) quran = Promise.all([getEditionCatalog(), readJSON('data/editions/eng-clearquran/quran.json', 'The English Quran source is not downloaded. Reconnect to open it.')]).then(([editions, raw]) => {
+  if (!quran) quran = Promise.all([getEditionCatalog(), readJSON('data/editions/eng-clearquran/quran.json', 'The English Quran source is not downloaded. Reconnect to open it.')]).then(async ([editions, raw]) => {
     const data = raw as {schemaVersion:number;editionId:string;surahs:QuranSource['surahs']};
     const edition = editions.editions.find(e => e.id === 'eng-clearquran' && e.corpus === 'quran');
     if (!edition || data.schemaVersion !== 1 || data.editionId !== edition.id || !Array.isArray(data.surahs) || data.surahs.length !== 114 || data.surahs.some((s,i) => s.number !== i+1 || !Array.isArray(s.verses) || !s.verses.length || s.verses.some((v,j) => v.number !== j+1 || typeof v.text !== 'string'))) throw new Error('The Quran edition failed validation.');
+    await requirePermission(edition,'display');
     return {schemaVersion: 1, edition, surahs: data.surahs};
   }).catch(error => { quran = undefined; throw error; });
   return quran;

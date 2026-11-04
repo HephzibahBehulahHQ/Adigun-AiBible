@@ -4,7 +4,7 @@ import { readFile } from 'node:fs/promises';
 import { scanTranscript } from '../src/evidence/scanner.ts';
 import { buildEvidenceReport, currentReview, evidenceKey, validateSession } from '../src/evidence/session.ts';
 
-const session = {schemaVersion:1,id:'session-test',title:'My private transcript',transcript:'John 11:35 says "Jesus wept."',createdAt:'2026-11-04T07:00:00.000Z',updatedAt:'2026-11-04T07:00:00.000Z',reviews:{}};
+const session = {schemaVersion:1,id:'session-test',title:'My private transcript',transcript:'John 11:35 says "Jesus wept."',createdAt:'2026-11-04T07:00:00.000Z',updatedAt:'2026-11-04T07:00:00.000Z',editionIds:['eng-web'],reviews:{}};
 const manifest = JSON.parse(await readFile(new URL('../data/manifest.json', import.meta.url), 'utf8'));
 const report = await scanTranscript(session.transcript, [{manifest,book:async id=>JSON.parse(await readFile(new URL(`../data/books/${id}.json`, import.meta.url),'utf8'))}]);
 

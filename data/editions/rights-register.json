@@ -36,6 +36,12 @@
       "url": "https://clearquran.com/download/",
       "observedOn": "2026-11-04",
       "summary": "CC BY-ND 4.0 plus explicit format, excerpt and combination permissions; wording must remain unchanged and attribution retained."
+    },
+    {
+      "id": "berean-pd",
+      "url": "https://berean.bible/terms.htm",
+      "observedOn": "2026-11-04",
+      "summary": "The publisher dedicated Berean and Majority Bible texts to the public domain on April 30, 2023, permitting all uses. Altered derivatives should use a different name."
     }
   ],
   "editions": [
@@ -674,6 +680,165 @@
         "Do not change, add, or remove translation words; semantic paraphrase/adaptation is not licensed.",
         "The publisher download-page terms supersede old noncommercial readme notices; this pinned archive already states CC BY-ND 4.0.",
         "Only text is imported here; no recorded audio files are included."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "eng-bsb",
+      "sourceSha256": "783aced3c3c8a2b145e4f8c48e3b94a5a5515e050719bb8621d094be78a5269f",
+      "verifiedOn": "2026-11-04",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "allowed",
+        "evidenceIds": [
+          "berean-pd"
+        ],
+        "reason": "The exact public-domain text may be used; output/source identity and review requirements still apply."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "aiRetrieval": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "modelTraining": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "tts": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "No separate recording or narrator rights have been acquired; a text license does not license a third-party recording."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        }
+      },
+      "attribution": "Berean Standard Bible (BSB). BSB Publishing, LLC; Berean Bible Translation Committee. Publisher USJ release v5.19, 27 October 2026. Public domain. https://berean.bible/",
+      "conditions": [
+        "Keep exact BSB wording and source identity when identifying a quotation as BSB.",
+        "The publisher asks that altered derivatives use a separate name.",
+        "No third-party recorded audio is included or licensed by this text import."
       ],
       "cache": {
         "mode": "none-required"

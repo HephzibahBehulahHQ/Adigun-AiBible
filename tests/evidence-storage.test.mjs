@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-const session={schemaVersion:1,id:'session-storage-test',title:'TEST FIXTURE',transcript:'John 11:35',createdAt:'2026-11-04T07:00:00.000Z',updatedAt:'2026-11-04T07:00:00.000Z',reviews:{}};
+const session={schemaVersion:1,id:'session-storage-test',title:'TEST FIXTURE',transcript:'John 11:35',createdAt:'2026-11-04T07:00:00.000Z',updatedAt:'2026-11-04T07:00:00.000Z',editionIds:['eng-web'],reviews:{}};
 const flush=()=>new Promise(resolve=>setImmediate(resolve));
 
 // Offline transaction-contract fixture. Real browser IndexedDB remains a separate release gate.

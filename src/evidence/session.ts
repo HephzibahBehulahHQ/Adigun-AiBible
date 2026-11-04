@@ -10,6 +10,7 @@ export interface EvidenceSession {
   transcript: string;
   createdAt: string;
   updatedAt: string;
+  editionIds: string[];
   reviews: Record<string, FindingReview>;
 }
 
@@ -23,11 +24,13 @@ export function validateSession(value: unknown): EvidenceSession {
   if (typeof value.title !== 'string' || value.title.length > 160 || typeof value.transcript !== 'string' || value.transcript.length > MAX_TRANSCRIPT_LENGTH) throw new Error('The transcript title or text exceeds the supported limit.');
   if (!validDate(value.createdAt) || !validDate(value.updatedAt) || !object(value.reviews) || Object.keys(value.reviews).length > MAX_SCAN_REFERENCES) throw new Error('The transcript backup has invalid dates or review notes.');
   const reviews: Record<string, FindingReview> = {};
+  const editionIds = value.editionIds === undefined ? ['eng-web'] : value.editionIds;
+  if (!Array.isArray(editionIds) || !editionIds.length || editionIds.length > 8 || editionIds.some(id => typeof id !== 'string' || !/^[A-Za-z0-9][A-Za-z0-9._-]{0,99}$/.test(id)) || new Set(editionIds).size !== editionIds.length) throw new Error('Invalid checked editions in transcript backup.');
   for (const [id, item] of Object.entries(value.reviews)) {
     if (!/^finding-\d+-\d+$/.test(id) || !object(item) || !reviewStatuses.includes(item.status as FindingReviewStatus) || typeof item.note !== 'string' || item.note.length > 4000 || typeof item.evidenceKey !== 'string' || item.evidenceKey.length > 2000 || !/^[a-f\d:|.-]+$/.test(item.evidenceKey)) throw new Error('A review note is malformed. Existing saved sessions have not been changed.');
     reviews[id] = { status: item.status as FindingReviewStatus, note: item.note, evidenceKey: item.evidenceKey };
   }
-  return { schemaVersion: 1, id: value.id, title: value.title, transcript: value.transcript, createdAt: value.createdAt, updatedAt: value.updatedAt, reviews };
+  return { schemaVersion: 1, id: value.id, title: value.title, transcript: value.transcript, createdAt: value.createdAt, updatedAt: value.updatedAt, editionIds, reviews };
 }
 
 export function evidenceKey(report: ScanReport, finding: SermonFinding): string {

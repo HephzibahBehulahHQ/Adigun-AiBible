@@ -402,11 +402,16 @@ def usj_bible_artifacts(edition_id, archive):
     heading_styles = {'h', 'toc1', 'toc2', 'toc3', 'mt1', 's1', 's2', 'r', 'd', 'ms', 'qa'}
     body_styles = {'p', 'b', 'li1', 'li2', 'q1', 'q2', 'lf', 'qr', 'pc'}
     files, rows, inventory, omitted, source_members = {}, [], [], [], {}
-    annotation_totals = {'headings': 0, 'notes': 0, 'paragraphs': 0, 'characterSpans': 0}
+    annotation_totals = {'headings': 0, 'notes': 0, 'verseNotes': 0, 'headingNotes': 0, 'paragraphs': 0, 'characterSpans': 0}
+
+    def count_notes(node):
+        return 0 if isinstance(node, str) else int(node.get('type') == 'note') + sum(count_notes(child) for child in node.get('content', []))
 
     def flatten(node):
         if isinstance(node, str):
             return node
+        if isinstance(node, dict) and node.get('type') == 'verse':
+            return ''  # Milestones can occur inside a supplied Psalm superscription.
         if not isinstance(node, dict) or node.get('type') not in {'ref', 'char', 'note', 'para'}:
             raise ValueError('Unsupported USJ annotation structure.')
         return ''.join(flatten(child) for child in node.get('content', []))
@@ -485,14 +490,22 @@ def usj_bible_artifacts(edition_id, archive):
                 verse, paragraph = None, None
             elif node.get('type') == 'para':
                 style = node.get('marker')
-                if style in heading_styles:
+                # The publisher uses `d` for Psalm superscriptions, but also for
+                # the canonical first sentence of Zechariah 12:1. Preserve that
+                # sentence as verse text; retain Psalm titles as labeled context.
+                descriptive_body = style == 'd' and book_id != 'PSA'
+                if style in heading_styles and not descriptive_body:
                     heading = {'style': style, 'text': flatten(node), 'content': node.get('content', [])}
+                    annotation_totals['headingNotes'] += count_notes(node)
                     if chapter is None:
                         book['frontMatter'].append(heading)
                     else:
                         chapter['headings'].append({'afterVerse': verse['number'] if verse is not None else None, **heading})
+                    for child in node.get('content', []):
+                        if isinstance(child, dict) and child.get('type') == 'verse':
+                            walk(child)
                     annotation_totals['headings'] += 1
-                elif style in body_styles:
+                elif style in body_styles or descriptive_body:
                     if chapter is None:
                         raise ValueError('Body paragraph before first chapter.')
                     paragraph = {'style': style, 'spans': []}
@@ -529,7 +542,7 @@ def usj_bible_artifacts(edition_id, archive):
                     for span in paragraph['spans']:
                         if span['verse'] == verse['number']:
                             span.update(start=bound(span['start']), end=bound(span['end']))
-                annotation_totals['notes'] += len(verse['notes'])
+                annotation_totals['verseNotes'] += len(verse['notes'])
                 annotation_totals['characterSpans'] += len(verse['characterSpans'])
                 rows.append({'bookId': book_id, 'chapter': chapter['number'], 'verse': verse['number'], 'text': verse['text'], 'editionId': edition_id})
             numbers = [verse['number'] for verse in chapter['verses']]
@@ -543,6 +556,7 @@ def usj_bible_artifacts(edition_id, archive):
     totals = {'books': len(inventory), 'chapters': sum(item['chapters'] for item in inventory), 'verses': len(rows)}
     if totals != source['expectedTotals']:
         raise ValueError(f'USJ source totals changed: {totals}')
+    annotation_totals['notes'] = annotation_totals['verseNotes'] + annotation_totals['headingNotes']
     manifest = {'schemaVersion': 1, 'edition': edition_metadata(edition_id), 'books': inventory, 'totals': totals,
                 'verseCountSemantics': 'Explicit publisher USJ verse milestones. Missing verse positions are absent, never renumbered.',
                 'sourceStructure': {**annotation_totals, 'offsetUnit': 'unicode-codepoint', 'speakerReviewStatus': 'publisher-markup-only-not-independently-reviewed'}}
@@ -590,7 +604,7 @@ def verify_outputs(output, pending_indexes=None):
             target = (directory / name).resolve()
             if not target.is_relative_to(directory.resolve()):
                 raise ValueError(f'{edition_id}: generated path escapes edition directory: {name}')
-            if pending_indexes is not None and source['corpus'] == 'bible' and name == 'search-index.json':
+            if pending_indexes is not None and source['corpus'] == 'bible' and (name == 'search-index.json' or name.startswith('chapters/')):
                 continue  # Regenerate this derived file after validating all committed inputs.
             if sha(target.read_bytes()) != expected:
                 raise ValueError(f'{edition_id}: generated content hash mismatch: {name}')
@@ -601,13 +615,19 @@ def verify_outputs(output, pending_indexes=None):
             rows = []
             for meta in manifest['books']:
                 book = json.loads((directory / 'books' / (meta['id'] + '.json')).read_text(encoding='utf-8'))
-                if len(book['chapters']) != meta['chapters']:
+                if book['id'] != meta['id'] or len(book['chapters']) != meta['chapters']:
                     raise ValueError(f'{edition_id}: incorrect chapter count for {meta["id"]}.')
                 for i, chapter in enumerate(book['chapters']):
                     numbers = [v['number'] for v in chapter['verses']]
                     if chapter['number'] != i + 1 or numbers != sorted(set(numbers)) or max(numbers) != meta['verseCounts'][i] or len(numbers) != meta['verseRecordCounts'][i]:
                         raise ValueError(f'{edition_id}: incorrect chapter inventory for {meta["id"]} {i + 1}.')
                     rows.extend({'bookId': book['id'], 'chapter': chapter['number'], 'verse': v['number'], 'text': v['text'], 'editionId': edition_id} for v in chapter['verses'])
+                    if source.get('format') == 'usj-3.0' and pending_indexes is not None:
+                        name = f'chapters/{book["id"]}/{chapter["number"]}.json'
+                        chunk_bytes = json_bytes({'schemaVersion': 1, 'editionId': edition_id, 'bookId': book['id'], **chapter})
+                        if sha(chunk_bytes) != provenance['generatedFileSha256'].get(name):
+                            raise ValueError(f'{edition_id}: rebuilt chapter differs from pinned output: {name}')
+                        pending_indexes.append((directory / name, chunk_bytes))
             if len(rows) != manifest['totals']['verses']:
                 raise ValueError(f'{edition_id}: search index differs from displayed source text.')
             if pending_indexes is not None:
@@ -628,18 +648,20 @@ def verify_outputs(output, pending_indexes=None):
 
 
 def rebuild_indexes(output):
-    """Rebuild only the two derived indexes from verified committed source files."""
+    """Rebuild derived search indexes and USJ chapter chunks from verified books."""
     pending = []
     summaries = verify_outputs(output, pending_indexes=pending)
     # No writes occur until every edition's committed inputs and both resulting
     # index hashes have been validated. No archive or network code is involved.
     rebuilt = []
     for target, content in pending:
+        target.parent.mkdir(parents=True, exist_ok=True)
         temporary = target.with_name(target.name + '.importing')
         temporary.write_bytes(content)
         temporary.replace(target)
-        rebuilt.append({'id': target.parent.name, 'bytes': len(content), 'sha256': sha(content)})
-    return {'mode': 'rebuild-indexes', 'indexes': rebuilt, 'editions': summaries}
+        if target.name == 'search-index.json':
+            rebuilt.append({'id': target.parent.name, 'bytes': len(content), 'sha256': sha(content)})
+    return {'mode': 'rebuild-indexes', 'indexes': rebuilt, 'chapterChunks': sum('/chapters/' in str(path) for path, _ in pending), 'editions': summaries}
 
 
 def main():

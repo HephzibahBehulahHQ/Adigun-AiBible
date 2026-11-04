@@ -11,6 +11,7 @@ export interface DetectedReference {
   reference: Reference;
   timestamp?: TranscriptTimestamp;
   error?: string;
+  errorType?: 'cross_chapter' | 'inventory';
 }
 export interface PassageEvidence {
   reference: Reference;
@@ -80,6 +81,9 @@ const aliases: Record<string, string[]> = {
   '1TI': ['1 Tim'], '2TI': ['2 Tim'], TIT: ['Titus'], PHM: ['Philem', 'Phlm'], HEB: ['Heb'], JAS: ['James', 'Jas'],
   '1PE': ['1 Pet'], '2PE': ['2 Pet'], '1JN': ['1 Jn'], '2JN': ['2 Jn'], '3JN': ['3 Jn'], JUD: ['Jude'], REV: ['Rev', 'Revelation', 'Revelations'],
 };
+const englishNames: Record<string, string> = {
+  GEN:'Genesis',EXO:'Exodus',LEV:'Leviticus',NUM:'Numbers',DEU:'Deuteronomy',JOS:'Joshua',JDG:'Judges',RUT:'Ruth','1SA':'1 Samuel','2SA':'2 Samuel','1KI':'1 Kings','2KI':'2 Kings','1CH':'1 Chronicles','2CH':'2 Chronicles',EZR:'Ezra',NEH:'Nehemiah',EST:'Esther',JOB:'Job',PSA:'Psalms',PRO:'Proverbs',ECC:'Ecclesiastes',SNG:'Song of Solomon',ISA:'Isaiah',JER:'Jeremiah',LAM:'Lamentations',EZK:'Ezekiel',DAN:'Daniel',HOS:'Hosea',JOL:'Joel',AMO:'Amos',OBA:'Obadiah',JON:'Jonah',MIC:'Micah',NAM:'Nahum',HAB:'Habakkuk',ZEP:'Zephaniah',HAG:'Haggai',ZEC:'Zechariah',MAL:'Malachi',MAT:'Matthew',MRK:'Mark',LUK:'Luke',JHN:'John',ACT:'Acts',ROM:'Romans','1CO':'1 Corinthians','2CO':'2 Corinthians',GAL:'Galatians',EPH:'Ephesians',PHP:'Philippians',COL:'Colossians','1TH':'1 Thessalonians','2TH':'2 Thessalonians','1TI':'1 Timothy','2TI':'2 Timothy',TIT:'Titus',PHM:'Philemon',HEB:'Hebrews',JAS:'James','1PE':'1 Peter','2PE':'2 Peter','1JN':'1 John','2JN':'2 John','3JN':'3 John',JUD:'Jude',REV:'Revelation',
+};
 
 const escapeRegex = (text: string) => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const foldName = (text: string) => text.toLowerCase().replace(/\s+/g, ' ').trim();
@@ -103,7 +107,7 @@ export function detectReferences(text: string, books: BookInfo[]): DetectedRefer
   if (text.length > MAX_TRANSCRIPT_LENGTH) throw new Error(`Keep transcripts below ${MAX_TRANSCRIPT_LENGTH.toLocaleString('en')} characters, or split the recording into sections.`);
   const names = new Map<string, BookInfo>();
   for (const book of books) {
-    for (const name of [book.name, book.id, ...(aliases[book.id] || [])]) {
+    for (const name of [book.name, book.id, ...(englishNames[book.id] ? [englishNames[book.id]] : []), ...(aliases[book.id] || [])]) {
       names.set(foldName(name), book);
       if (/^[1-3] /.test(name)) {
         const number = Number(name[0]);
@@ -121,7 +125,7 @@ export function detectReferences(text: string, books: BookInfo[]): DetectedRefer
     let error: string | undefined;
     if (match[4] && Number(match[4]) !== chapter) error = 'This citation crosses chapters. Split it into one reference per chapter before checking.';
     else if (chapter < 1 || chapter > book.chapters || verse < 1 || verse > book.verseCounts[chapter - 1] || (endVerse !== undefined && (endVerse < verse || endVerse > book.verseCounts[chapter - 1]))) error = 'This reference is outside the checked edition’s book inventory. Correct it in the transcript.';
-    return { span: { start: match.index, end: match.index + match[0].length, text: match[0] }, reference, timestamp: timestampBefore(text, match.index), ...(error ? { error } : {}) };
+    return { span: { start: match.index, end: match.index + match[0].length, text: match[0] }, reference, timestamp: timestampBefore(text, match.index), ...(error ? { error, errorType: match[4] && Number(match[4]) !== chapter ? 'cross_chapter' as const : 'inventory' as const } : {}) };
   });
 }
 
@@ -175,7 +179,9 @@ export async function scanTranscript(transcript: string, sources: ScanSource[], 
   if (!transcript.trim()) throw new Error('Paste or upload a transcript before checking references.');
   if (!sources.length) throw new Error('No permitted Scripture source is available for this check.');
   if (sources.length > 8 || new Set(sources.map(source => source.manifest.edition.id)).size !== sources.length) throw new Error('Choose up to eight distinct permitted editions.');
-  const mentions = detectReferences(transcript, sources[0].manifest.books);
+  const referenceBooks = new Map<string, BookInfo>();
+  for (const source of sources) for (const book of source.manifest.books) if (!referenceBooks.has(book.id)) referenceBooks.set(book.id, book);
+  const mentions = detectReferences(transcript, [...referenceBooks.values()]);
   const findings: SermonFinding[] = [];
   const books = new Map<string, Promise<Book>>();
   for (const mention of mentions.slice(0, MAX_SCAN_REFERENCES)) {
@@ -185,7 +191,10 @@ export async function scanTranscript(transcript: string, sources: ScanSource[], 
     if (mention.timestamp) uncertainty.push('Timestamp copied from the nearest preceding transcript timestamp; audio timing has not been verified.');
     if (quotation) uncertainty.push('The nearest quoted span was linked by proximity. Confirm that it belongs to this reference.');
     if (mention.error) uncertainty.push(mention.error);
-    else for (const source of sources) {
+    if (!mention.error || (mention.errorType === 'inventory' && sources.some(source => {
+      const book = source.manifest.books.find(item => item.id === mention.reference.bookId), ref = mention.reference, end = ref.endVerse || ref.verse;
+      return book && ref.chapter >= 1 && ref.chapter <= book.chapters && ref.verse >= 1 && end >= ref.verse && end <= book.verseCounts[ref.chapter - 1];
+    }))) for (const source of sources) {
       const { manifest } = source, edition = manifest.edition, reference = { ...mention.reference, editionId: edition.id };
       try {
         const bookInfo = manifest.books.find(book => book.id === reference.bookId);
@@ -221,7 +230,7 @@ export async function scanTranscript(transcript: string, sources: ScanSource[], 
       category = 'approximate_quotation'; explanation = 'An ordered word comparison found similar wording. Even a small word change can alter meaning. A different edition, paraphrase or transcription error may explain the difference; inspect it yourself.';
     } else if (quotation && evidence.length) uncertainty.push('A non-match in these editions is not proof of misquotation. Other translations and legitimate paraphrases have not been ruled out.');
     if (evidence.length) uncertainty.push('The context excerpt is limited to two verses before and after the citation. The full chapter and wider literary setting may be needed.');
-    findings.push({ id: `finding-${mention.span.start}-${mention.span.end}`, transcriptSpan: span, referenceSpan: mention.span, ...(mention.timestamp ? { timestamp: mention.timestamp } : {}), ...(quotation ? { quotation } : {}), claim: quotation?.text || span.text, references: [mention.reference], category, evidence, explanation, uncertainty });
+    findings.push({ id: `finding-${mention.span.start}-${mention.span.end}`, transcriptSpan: span, referenceSpan: mention.span, ...(mention.timestamp ? { timestamp: mention.timestamp } : {}), ...(quotation ? { quotation } : {}), claim: quotation?.text || span.text, references: evidence.map(item => item.reference), category, evidence, explanation, uncertainty });
     options.onProgress?.(findings.length, Math.min(mentions.length, MAX_SCAN_REFERENCES));
   }
   options.signal?.throwIfAborted();
