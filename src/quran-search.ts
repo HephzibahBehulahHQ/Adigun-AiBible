@@ -10,12 +10,13 @@ const words = (value: string) => fold(value).match(/[\p{L}\p{N}]+/gu) || [];
 
 export function searchQuran(source: Pick<QuranSource, 'surahs'>, query: string, options: QuranSearchOptions): { total: number; results: QuranSearchResult[] } {
   const predicate = compileSearch(query, options.mode);
-  if (options.surah !== '' && (!Number.isSafeInteger(options.surah) || !source.surahs.some(item => item.number === options.surah))) {
+  const surahFilter = options.surah;
+  if (surahFilter !== '' && (!Number.isSafeInteger(surahFilter) || !source.surahs.some(item => item.number === surahFilter))) {
     throw new Error('Choose a surah included in this Quran edition.');
   }
   const excluded = words(options.exclude);
   const found = source.surahs
-    .filter(surah => options.surah === '' || surah.number === options.surah)
+    .filter(surah => surahFilter === '' || surah.number === surahFilter)
     .flatMap(surah => surah.verses.map(verse => ({ chapter: surah.number, number: verse.number, text: verse.text })))
     .filter(verse => {
       const normalized = fold(verse.text);
