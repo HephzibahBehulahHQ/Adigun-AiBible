@@ -9,7 +9,7 @@ test('Quran source search supports Boolean operators and surah scope without mix
   const query = form.getByRole('searchbox', { name: 'Search English Quran source' });
   await expect(query).toBeVisible();
   await query.fill('Allah AND Gracious');
-  await form.getByLabel('Match').selectOption('boolean');
+  await form.getByLabel('Quran search match').selectOption('boolean');
   await form.getByRole('button', { name: 'Search Quran source' }).click();
   const results = page.getByLabel('Quran source search results');
   await expect(results).toContainText('Quran 1:1');
