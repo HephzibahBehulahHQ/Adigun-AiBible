@@ -43,19 +43,20 @@ const workplaceReport = {
     { bookId: 'EPH', chapter: 4, verse: 25 },
     { bookId: 'JAS', chapter: 1, verse: 19 }
   ]
-} as const;;
+} as const;
 const privateSupport = {
   id: 'private-support',
   title: 'A request for private details',
   audience: 'Adult study use',
   language: 'English',
   label: 'Fictional learning exercise',
-  situation: 'A friend tells you about a personal difficulty and asks you to keep it private. Later, a group organizer asks for details so the group can offer support. You want to help without taking control of your friend’s story.',
+  situation: 'A friend tells you about a personal difficulty and asks you to keep it private. Later, a group organizer asks for details so the group can offer support. You want to help without taking control of your friend’s story. This exercise assumes no immediate safety emergency; if someone may be in immediate danger or abuse is suspected, seek appropriate urgent support rather than promising absolute secrecy.',
   considerations: [
     'Respect the confidence and your friend’s agency.',
     'Ask what kind of support your friend actually wants before acting on their behalf.',
     'Consider whether general practical help can be offered without identifying the person.',
-    'If your friend agrees to involve someone, share only the information needed for that purpose.'
+    'If your friend agrees to involve someone, share only the information needed for that purpose.',
+    'If immediate danger or abuse is suspected, involve appropriate safeguarding or emergency support and share only information necessary to protect someone.'
   ],
   choices: [
     {
@@ -74,11 +75,12 @@ const privateSupport = {
       consequence: 'This may prompt an immediate response, but it discloses personal details without permission and could damage trust or expose information beyond the intended audience.'
     }
   ],
-  reflectionPrompt: 'What did your friend actually consent to share? How could you offer useful support while respecting their privacy and choice?',
+  reflectionPrompt: 'What did your friend actually consent to share? Is anyone in immediate danger? How could you offer useful support while respecting privacy and seeking help if safety requires it?',
   followUps: [
     'Ask your friend what kind of help they want and whether anyone else may be told.',
     'Offer practical, non-identifying support while respecting the boundary they set.',
-    'If permission is given, agree exactly what to share, with whom and for what purpose.'
+    'If permission is given, agree exactly what to share, with whom and for what purpose.',
+    'If there is an immediate safety concern, contact appropriate safeguarding or emergency support and disclose only what is needed to protect someone.'
   ],
   passageReferences: [
     { bookId: 'PRO', chapter: 11, verse: 13 },
