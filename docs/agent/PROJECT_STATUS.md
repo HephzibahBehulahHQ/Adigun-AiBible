@@ -12,4 +12,4 @@ Updated: 4 November 2026, 17:57 Europe/Berlin.
 - Candidate checks: full local check passed207 application/source/session/layout tests,20 offline backend contracts, TypeScript, ESLint, source validation and production build. Initial application JavaScript is139.08KB gzip in this lab build. Real browser execution uses CI because local Chromium is absent; no browser result is claimed yet.
 
 - External gates remain unchanged in [BLOCKERS.md](BLOCKERS.md): real human editorial/native-language review, edition-specific acquisition and permissions, the interrupted dedicated backend setup, authenticated model service, licensed recorded narration and native-platform environments. No unrelated backend is reused and no interrupted setup is retried without explicit resumption. Offline contract tests do not establish live backend security.
-- Next: checkpoint the navigation slice, complete saved layouts, then run the exact-candidate release gates and deploy under standing authorization.
+- Next: run the corrected palette viewport candidate through all release gates, inspect its screenshots, then merge/deploy PR #7 and verify its live receipt.

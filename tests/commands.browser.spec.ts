@@ -11,6 +11,7 @@ test('command palette supports keyboard choice, Escape focus return and exact-ed
   const dialog = page.getByRole('dialog', { name: 'Command palette' });
   const input = dialog.getByRole('combobox', { name: 'Find an action or passage' });
   await expect(input).toBeFocused();
+  await expect.poll(() => dialog.evaluate(element => { const bounds = element.getBoundingClientRect(); return bounds.top >= 0 && bounds.bottom <= window.innerHeight; })).toBe(true);
   await page.screenshot({ path: testInfo.outputPath('command-palette.png') });
   await input.fill('listening queue');
   await expect(dialog.getByRole('option').first()).toHaveAttribute('aria-selected', 'true');
@@ -45,6 +46,11 @@ test('palette shortcut, focus trap, source search and narrow layout work without
   await expect(input).toBeFocused();
   await page.setViewportSize({ width: 320, height: 844 });
   await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await expect.poll(() => dialog.evaluate(element => { const bounds = element.getBoundingClientRect(); return bounds.top >= 0 && bounds.bottom <= window.innerHeight; })).toBe(true);
+  await input.press('Alt+End');
+  await expect(dialog.getByRole('option').last()).toHaveAttribute('aria-selected', 'true');
+  await expect.poll(() => dialog.getByRole('option').last().evaluate(element => element.getBoundingClientRect().bottom <= window.innerHeight)).toBe(true);
+  await input.press('Alt+Home');
   await page.screenshot({ path: testInfo.outputPath('command-palette-320.png') });
   await input.fill('begotten');
   await input.press('Enter');
