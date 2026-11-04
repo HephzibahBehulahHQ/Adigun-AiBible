@@ -7,6 +7,7 @@ test('closing commands and layouts restores their triggers while Notes is open, 
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto('#/read/JHN/3?verse=16&edition=eng-bsb');
   await expect(page.locator('#verse-16')).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Bookmark verse 16', exact: true })).toBeEnabled();
   const inspector = page.locator('.inspector');
   await expect(inspector).toBeVisible();
   await inspector.getByRole('button', { name: 'Notes', exact: true }).click();

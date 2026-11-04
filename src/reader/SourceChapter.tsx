@@ -1,4 +1,4 @@
-import { Fragment, useMemo, useState } from 'react';
+import { Fragment, useEffect, useMemo, useState } from 'react';
 import type { Dispatch, MouseEvent, ReactNode, SetStateAction } from 'react';
 import { Bookmark, Highlighter, NotebookPen } from 'lucide-react';
 import type { Chapter, Manifest, Reference, StudyState, Verse } from '../types';
@@ -27,6 +27,10 @@ export default function SourceChapter(props: Props) {
   const structure = useMemo(() => buildChapterStructure(chapter), [chapter]);
   const options = props.appearance, setOptions = props.onAppearanceChange;
   const [detail, setDetail] = useState<SourceDetail | null>(null);
+  const visibleDetail = detail && (detail.kind === 'footnote' ? options.notes : options.headings) ? detail : null;
+  useEffect(() => {
+    if (detail && (detail.kind === 'footnote' ? !options.notes : !options.headings)) setDetail(null);
+  }, [detail, options.notes, options.headings]);
   const bookName = manifest.books.find(book => book.id === reference.bookId)?.name || reference.bookId;
   const hasParagraphs = structure.paragraphs.some(paragraph => paragraph.spans.some(span => span.end > span.start));
   const markedVerses = structure.verses.filter(verse => verse.segments.some(segment => segment.markers.includes('wj'))).length;
@@ -109,6 +113,6 @@ export default function SourceChapter(props: Props) {
       })}</p>{block.pieces.filter(piece => piece.last).map(piece => <Fragment key={piece.verse.number}>{options.redLetters && piece.verse.segments.some(segment => segment.markers.includes('wj')) && <span className="source-speaker-label">Verse {piece.verse.number} · Jesus’ words marked by the publisher</span>}{props.renderParaphrase(piece.verse)}</Fragment>)}{block.headingsAfter.map(heading)}</Fragment>) : structure.verses.map(verse => <Fragment key={verse.number}><div className={comparison ? 'comparison-group' : 'verse-group'}><div className="source-verse"><article id={`verse-${verse.number}`} className={`verse-row ${selected(verse.number) ? 'selected' : ''} ${highlighted(verse.number) ? 'highlighted' : ''}`}><button type="button" className="verse-number" aria-label={`Select verse ${verse.number}`} onClick={() => props.onSelect(verseReference(verse.number))}>{String(verse.number).padStart(2, '0')}</button><p className="source-text" onClick={() => props.onSelect(verseReference(verse.number))}>{verseText(verse)}</p>{actions(verse.number)}</article>{options.redLetters && verse.segments.some(segment => segment.markers.includes('wj')) && <span className="source-speaker-label">Verse {verse.number} · Jesus’ words marked by the publisher</span>}{props.renderParaphrase(verse)}</div>{comparison && props.renderComparison(verse)}</div>{structure.headings.filter(row => row.validAnchor && row.afterVerse === verse.number).map(heading)}</Fragment>)}
       {structure.headings.some(row => !row.validAnchor) && <section className="source-unplaced"><h2>Unplaced publisher annotations</h2><p>The supplied verse anchor could not be validated.</p>{structure.headings.filter(row => !row.validAnchor).map(heading)}</section>}
     </div>
-    {detail && <SourceDetails detail={detail} manifest={manifest} onClose={() => setDetail(null)} onOpenReference={props.onOpenReference} />}
+    {visibleDetail && <SourceDetails detail={visibleDetail} manifest={manifest} onClose={() => setDetail(null)} onOpenReference={props.onOpenReference} />}
   </>;
 }

@@ -166,6 +166,8 @@ test('named layouts restore appearance and source presentation, preserve the pas
   await page.getByLabel('Publisher headings', { exact: true }).check();
   await page.getByLabel('Publisher notes', { exact: true }).check();
   await changeAppearance(page, 'night', false);
+  await page.getByRole('button', { name: /^Publisher note [0-9]+ for / }).first().click();
+  await expect(page.getByRole('region', { name: 'Publisher source details', exact: true })).toBeVisible();
   await openLayouts(page);
   const beforeApply = page.url();
   await savedLayout(page, renamed).getByRole('button', { name: 'Apply layout', exact: true }).click();
@@ -179,6 +181,7 @@ test('named layouts restore appearance and source presentation, preserve the pas
   await expect(page.getByLabel('Publisher red letters', { exact: true })).toBeChecked();
   await expect(page.getByLabel('Publisher headings', { exact: true })).not.toBeChecked();
   await expect(page.getByLabel('Publisher notes', { exact: true })).not.toBeChecked();
+  await expect(page.getByRole('region', { name: 'Publisher source details', exact: true })).toHaveCount(0);
 
   await openLayouts(page);
   const exported = await exportLayouts(page);
