@@ -62,6 +62,15 @@ Before a future game can receive PASS, its product-owned specification, implemen
 
 No game code was changed because no standalone game exists to correct. The audit records the distinction between current learning tools and the still-pending game experiences in Version 3. Existing learning features and personal data contracts are preserved.
 
+## Post-audit development — 4 November 2026
+
+- PR #12 added a guided, passage-linked interpretation challenge to private reflections. It is a self-guided study exercise, not a standalone game; no answer score or faith verdict is produced.
+- PR #14 added the first decision-simulation pilot: a fictional workplace-report scenario with three meaningful choices, plausible consequences, competing considerations, exact selected-edition passage links (Proverbs 12:22, Ephesians 4:25 and James 1:19), optional follow-up actions, replay and a private reflection saved to the existing device-local workspace.
+- The pilot is explicitly English-only and for adult study use. It labels the scenario as fiction, never copies or generates Scripture, has no holiness score or divine-outcome prediction, and uses no AI/cloud service.
+- Exact-candidate PR workflow [41900211198](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41900211198) passed source/content validation, unit tests, desktop/mobile browser checks and persistence regression. Main deployment remains pending.
+
+This is one bounded decision-simulation pilot, not completion of the games roadmap. Additional scenarios need content review; Nigerian parables require qualified cultural/native-language review; the translation simulator remains gated on licensed lexical/morphology/alignment data.
+
 ## Next plan
 
-Continue the existing Version 3 sequence: advanced/private/saved search, after reconciling open navigation work and verifying the exact candidate gates. Game development remains later roadmap work and must use the checklist above before any game is marked complete.
+Continue M7 with self-guided retelling practice using exact source text and private local reflection. Expand M8 decision simulations only with reviewed scenarios. Keep 3D reconstructions, Nigerian parables, translation simulation, blind/reveal modes and multiplayer rooms separately marked pending or externally gated until their source, rights, review, accessibility, safety and real-device requirements pass.
