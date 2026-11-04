@@ -3,9 +3,9 @@
 ## Current work
 
 Project: Adigun-AiBible
-Current implementation branch: `codex/reader-context-20261104`
-Verified production: PR #3, main `4d8943e60143a74e228c0bf7ed37b2d404d6776c`; live receipt checked 4 November 2026, 13:17 Europe/Berlin. See the status file for release and checkpoint evidence.
-Source-reader progress is merged through PR #5 at main `cce0f7495fc2064b0ee8686a30a9c687275fd175`; its exact candidate passed 70 browser cases and 10 repeated persistence checks. Production deployment is being verified. Active following slice: private reading history and study tabs in PR #4, with source-bound backup/restore, lifecycle cancellation and explicit damaged-data recovery. The complete local check passes; final browser and deployment gates remain pending.
+Current implementation branch: `codex/workspace-navigation-20261104`.
+Verified production: main `8ed0aa73cdf759a36c923d09e3889c979104379e`, PR #4, including PR #5. Live source receipt and workflow `41838579813` reverified 4 November 2026. The deployed source reader includes publisher structure, private history, return navigation and source-bound study tabs.
+Active slice: shared tool-link route correctness, accessible command palette, and saved workspace display layouts. Current release evidence and synchronization receipt belong in the status file below.
 Current status and continuation record: `docs/agent/PROJECT_STATUS.md`
 Canonical product specification: `docs/specs/Adigun-AiBible_Codex_Master_Prompt.md` (version 3.0, updated 4 November 2026)
 Execution instructions: `AGENTS.md`

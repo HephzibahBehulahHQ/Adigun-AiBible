@@ -1,4 +1,5 @@
 import { DEFAULT_EDITION_ID, validateReference } from './domain.ts';
+import { parseRoute } from './routes.ts';
 import type { BookInfo, Preferences, Reference } from './types';
 
 export const READING_POSITION_KEY = 'adigun-bible-reading-position';
@@ -13,7 +14,6 @@ export interface ReadingSelection {
   position: ReadingPosition | null;
 }
 const presets: readonly string[] = ['genz', 'en', 'de', 'yo', 'pcm'];
-const views = new Set(['home', 'read', 'compare', 'discover', 'plans', 'saved', 'questions', 'library', 'sources', 'settings', 'share', 'atlas']);
 
 function validatePosition(value: unknown, books: BookInfo[], editionId: string): ReadingPosition | null {
   if (!value || typeof value !== 'object' || Array.isArray(value)) return null;
@@ -41,29 +41,13 @@ export function serializeReadingPosition(position: ReadingPosition, books: BookI
   return valid ? JSON.stringify(valid) : null;
 }
 
-function integer(value: string): number {
-  return /^\d+$/.test(value) ? Number(value) : NaN;
-}
-
 /** Resolve startup only: an explicit passage never silently falls back to another passage. */
 export function resolveReadingPosition(hash: string, saved: ReadingPosition | null, books: BookInfo[], editionId = DEFAULT_EDITION_ID): ReadingSelection {
   const validSaved = validatePosition(saved, books, editionId);
-  const raw = hash.startsWith('#') ? hash.slice(1) : hash;
-  const question = raw.indexOf('?');
-  const path = question < 0 ? raw : raw.slice(0, question);
-  const pieces = path.split('/').filter(Boolean);
-  if (views.has(pieces[0]) && pieces.length > 1) {
-    const query = new URLSearchParams(question < 0 ? '' : raw.slice(question + 1));
-    let bookId: string;
-    try { bookId = decodeURIComponent(pieces[1]); } catch { return { source: 'invalid-link', position: null }; }
-    const ref: Reference = {
-      bookId,
-      chapter: integer(pieces[2] ?? '1'),
-      verse: integer(query.get('verse') ?? '1'),
-      ...(query.has('end') ? { endVerse: integer(query.get('end')!) } : {}),
-      editionId: query.get('edition') ?? editionId
-    };
-    if (pieces.length > 3 || !validateReference(ref, books, editionId)) return { source: 'invalid-link', position: null };
+  const route = parseRoute(hash);
+  if (route.explicitPassage) {
+    const ref: Reference = { ...route.ref, editionId: route.ref.editionId ?? editionId };
+    if (!validateReference(ref, books, editionId)) return { source: 'invalid-link', position: null };
     // A linked passage must not inherit the saved passage's scroll offset.
     return { source: 'link', position: { schemaVersion: 1, ref, ...(validSaved?.preset ? { preset: validSaved.preset } : {}) } };
   }
