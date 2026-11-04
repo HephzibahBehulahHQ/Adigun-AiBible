@@ -60,13 +60,17 @@ test('poetry, heading notes and narrow layout retain the supplied source structu
   expect((await page.locator('.source-heading-description [data-source-heading-run]').allTextContents()).join('')).toBe(heading.text);
   await page.getByRole('button', { name: 'Publisher note 1 for Psalms 6 heading 3', exact: true }).click();
   await expect(page.locator('.source-note-body')).toHaveText(heading.notes[0].text);
-  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
+  const layout = await page.evaluate(() => ({ width: document.documentElement.scrollWidth, overflowing: [...document.querySelectorAll('main *')].filter(element => element.getBoundingClientRect().right > 321).slice(0, 8).map(element => ({ tag: element.tagName, className: element.className, right: element.getBoundingClientRect().right })) }));
+  expect(layout.width, JSON.stringify(layout.overflowing)).toBeLessThanOrEqual(321);
   await page.screenshot({ path: testInfo.outputPath('publisher-poetry-note-320.png') });
   await page.getByRole('button', { name: 'Close publisher source details', exact: true }).click();
   await page.locator('#verse-1').scrollIntoViewIfNeeded();
   await page.screenshot({ path: testInfo.outputPath('publisher-poetry-320.png') });
 });
 
+test.describe('publisher reference network recovery', () => {
+test.use({ serviceWorkers: 'block' });
+// A service worker can satisfy a request outside page.route; this case isolates a real failed fetch.
 test('source cross-reference previews retry failed loads and open the same edition', async ({ page }) => {
   await page.goto('#/read/JHN/3?verse=16&edition=eng-bsb');
   await expectSourceVerse(page, 16, john.verses[15].text);
@@ -84,4 +88,5 @@ test('source cross-reference previews retry failed loads and open the same editi
   await expect(page).toHaveURL(/read\/GEN\/22\?verse=1&end=10&edition=eng-bsb/);
   await expectSourceVerse(page, 1, genesis.verses[0].text);
   await expect(page.getByRole('region', { name: 'Publisher source details', exact: true })).toHaveCount(0);
+});
 });

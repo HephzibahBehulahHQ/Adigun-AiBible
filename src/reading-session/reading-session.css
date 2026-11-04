@@ -1,0 +1,24 @@
+.reading-session { margin-block: 1rem; padding: .85rem 1rem; border: 1px solid var(--border); border-radius: .7rem; background: var(--panel); }
+.reading-session-bar { display: flex; flex-wrap: wrap; gap: .65rem 1rem; justify-content: space-between; align-items: center; }
+.reading-session-bar h2 { margin: 0; font-size: 1rem; }
+.reading-session .button-row { gap: .4rem; }
+.reading-session .button-row button { padding: .45rem .65rem; font-size: .85rem; }
+.reading-session-tabs { display: flex; flex-wrap: wrap; list-style: none; gap: .5rem; padding: 0; margin: .7rem 0; }
+.reading-session-tabs li { flex: 1 1 12rem; min-width: 0; max-width: 24rem; border: 1px solid var(--border); border-radius: .5rem; padding: .4rem; }
+.reading-session-tabs li.is-active { border-color: var(--gold); border-width: 2px; }
+.reading-session-tab { display: grid; gap: .2rem; width: 100%; background: transparent; color: inherit; border: 0; padding: .25rem; text-align: start; overflow-wrap: anywhere; }
+.reading-session-tab[aria-pressed="true"] strong::before { content: 'Current · '; }
+.reading-session-tab span, .reading-session-tab small, .reading-session-note, .reading-session-history small { font-size: .8rem; color: var(--muted); }
+.reading-session-note { margin: .6rem 0; }
+.reading-session-details { margin-top: .5rem; }
+.reading-session-details summary { cursor: pointer; font-size: .9rem; padding-block: .3rem; }
+.reading-session-rename { display: flex; flex-wrap: wrap; align-items: end; gap: .5rem; margin-block: .65rem; }
+.reading-session-rename label { display: grid; gap: .25rem; flex: 1 1 12rem; font-size: .85rem; }
+.reading-session-rename input { width: 100%; min-width: 0; }
+.reading-session-history { max-height: 18rem; overflow-y: auto; padding-inline-start: 1.4rem; }
+.reading-session-history li { margin-block: .5rem; }
+.reading-session-history small { display: block; }
+.reading-session-history button[aria-current="location"] { font-weight: 700; text-decoration: underline; }
+.reading-session-import { display: grid; gap: .4rem; margin-block: .7rem .2rem; font-size: .85rem; }
+.reading-session-import input { max-width: 100%; min-width: 0; }
+@media (max-width: 600px) { .reading-session { padding: .7rem; } .reading-session-tabs li { max-width: none; } }

@@ -1,6 +1,6 @@
 # Verification evidence
 
-## Current release: PR #3
+## Verified production release: PR #3
 
 Integrated production revision: `4d8943e60143a74e228c0bf7ed37b2d404d6776c`, merged through [PR #3](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/3). Production workflow [41826905145](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41826905145) succeeded after the final pre-merge run [41826113696](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41826113696) passed.
 
@@ -18,7 +18,17 @@ Earlier Version 3 browser runs `41823624648` (48/56 passed) and `41824204313` (5
 
 Live [build-info.json](https://hephzibahbehulahhq.github.io/Adigun-AiBible/build-info.json) was verified 4 November 2026, 13:17 Europe/Berlin: source `4d8943e60143a74e228c0bf7ed37b2d404d6776c`, build `76e65cbc808627c0d6a5b0b4`, content `ebbf21b44f84c76c567d50b7`. Production: https://hephzibahbehulahhq.github.io/Adigun-AiBible/ .
 
-The next reader-context/history/tabs slice on `codex/reader-context-20261104` is **NOT TESTED** and is not covered by these release receipts.
+The reader-context/history/tabs slice on `codex/reader-context-20261104` is not covered by these release receipts. Its candidate evidence is tracked below.
+
+## Reader-context candidate: PR #4
+
+Draft [PR #4](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/4) implements source-supplied headings, notes, poetry/paragraphs and optional publisher red-letter spans, with private history and study tabs under integration. It is not deployed.
+
+- 17 focused structure/reference tests pass, covering nested publisher spans, Unicode code-point offsets, invalid metadata fallback, note positions and canonical reference bounds.
+- An independent sweep checked all 2,378 installed BSB/ASV chapters: zero verse or heading text mismatches, invalid heading anchors or metadata issues. All 4,854 BSB notes remain represented exactly once in normalized rendering positions.
+- TypeScript and scoped reader lint passed. The initial whole-project check caught an unknown lint suppression in the in-progress session component; it must be removed before the final gate.
+- Eight source-reader browser cases are written for exact wording, paragraph actions, 320px poetry/notes, focus restoration, same-edition reference preview and retry. Initial CI [41834090869](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41834090869) passed 68/70 browser cases. Its failures exposed an overflowing edition toolbar at 320px and a service-worker fetch bypassing the injected page-route failure. The toolbar now wraps; the width assertion checks the actual 320px limit; the retry case blocks service workers to isolate a failed network fetch. These corrections await the next CI run.
+- Session persistence, backup/recovery and stale-navigation browser checks remain pending. A read-only review identified the need to invalidate asynchronous session navigation when its reader unmounts or changes; the final candidate must include that fix.
 
 ## Historical hardening release
 
