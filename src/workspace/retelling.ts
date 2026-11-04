@@ -8,6 +8,7 @@ export const retellingPrompts = [
 /** Add an optional reflection scaffold without discarding a person's existing draft. */
 export function appendRetellingPrompts(draft: string): string {
   const scaffold = retellingPrompts.map(prompt => `${prompt}\n`).join('\n');
+  if (draft.endsWith(scaffold)) return draft;
   const current = draft.trimEnd();
   return current ? `${current}\n\n${scaffold}` : scaffold;
 }
