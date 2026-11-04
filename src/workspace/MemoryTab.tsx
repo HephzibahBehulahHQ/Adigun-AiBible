@@ -34,7 +34,8 @@ function MemoryPractice({ card, busy, commit, onOpenReference }: { card: MemoryC
     const saved = await commit(s => ({ ...s, cards: s.cards.map(c => {
       if (c.id !== card.id) return c;
       if (JSON.stringify(c.retellings || []) !== retellingsBaseline.current) throw new Error('Your retelling history changed elsewhere. Copy your draft, then reopen this card.');
-      next = [...(c.retellings || []), { at, text: wording }].slice(-50);
+      if ((c.retellings || []).length >= 50) throw new Error('This passage already has 50 saved retellings. Delete one before adding another.');
+      next = [...(c.retellings || []), { at, text: wording }];
       return { ...c, retellings: next, updatedAt: at };
     }) }));
     if (saved) { retellingsBaseline.current = JSON.stringify(next); setRetelling(''); setPracticeError(''); }
