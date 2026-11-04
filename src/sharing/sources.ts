@@ -44,7 +44,11 @@ export async function loadCardSources(reference: Reference, secondEdition: strin
   return {
     title: `${books[0].name} ${reference.chapter}:${first}${last === first ? '' : `–${last}`}`,
     passages,
-    sources: manifests.map(manifest => ({ id: manifest.edition.id, name: manifest.edition.name, credit: dependencies.sourceCredit(manifest.edition) })),
+    sources: manifests.map(({ edition }) => {
+      const notice = dependencies.sourceCredit(edition);
+      const credit = edition.licenseDeedUrl && !notice.includes(edition.licenseDeedUrl) ? `${notice}\n${edition.licenseDeedUrl}` : notice;
+      return { id: edition.id, name: edition.name, credit };
+    }),
     editions: manifests.map(manifest => manifest.edition), wholeChapter,
   };
 }

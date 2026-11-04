@@ -16,7 +16,7 @@ export default function SupportResources() {
       <p>If someone is in immediate danger, contact local emergency services now.</p>
       <div className="tool-controls">
         <label htmlFor="support-country">Country
-          <select id="support-country" value={countryCode} onChange={event => setCountryCode(event.target.value)} aria-describedby="support-country-help">
+          <select aria-label="Country" id="support-country" value={countryCode} onChange={event => setCountryCode(event.target.value)} aria-describedby="support-country-help">
             <option value="">Choose a country</option>
             {supportCountries.map(item => <option key={item.code} value={item.code}>{item.name}</option>)}
           </select>

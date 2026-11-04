@@ -96,6 +96,7 @@ test('bilingual sources retain authentic wording, Unicode, edition identities an
   }
   assert.equal(prepared.sources.length, 2);
   assert.ok(prepared.sources[1].credit.includes(manifests.yor.edition.licenseUrl));
+  assert.ok(prepared.sources[1].credit.includes(manifests.yor.edition.licenseDeedUrl));
 });
 
 test('whole-chapter export is complete and duplicate edition choices do not multiply content', async () => {
