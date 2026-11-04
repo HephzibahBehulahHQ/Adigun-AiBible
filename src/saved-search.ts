@@ -34,10 +34,11 @@ export function validateSavedSearches(value: unknown): SavedSearch[] {
   return result;
 }
 export function saveSearch(items: SavedSearch[], item: SavedSearch): SavedSearch[] {
-  const current = validateSavedSearches(items), next = validateSavedSearches([item,...current.filter(old=>old.id!==item.id)]);
-  if (current.length >= MAX_SAVED_SEARCHES && !current.some(old=>old.id===item.id)) throw new Error('You can save up to 40 searches. Remove one before adding another.');
-  if (next.some(old=>old.id!==item.id && old.name.toLocaleLowerCase()===item.name.toLocaleLowerCase())) throw new Error('Choose a different saved-search name.');
-  return next;
+  const current = validateSavedSearches(items);
+  const candidate = validateSavedSearches([item])[0];
+  if (current.length >= MAX_SAVED_SEARCHES && !current.some(old=>old.id===candidate.id)) throw new Error('You can save up to 40 searches. Remove one before adding another.');
+  if (current.some(old=>old.id!==candidate.id && old.name.toLocaleLowerCase()===candidate.name.toLocaleLowerCase())) throw new Error('Choose a different saved-search name.');
+  return validateSavedSearches([candidate,...current.filter(old=>old.id!==candidate.id)]);
 }
 export function removeSavedSearch(items: SavedSearch[], id: string): SavedSearch[] {
   const current=validateSavedSearches(items);
