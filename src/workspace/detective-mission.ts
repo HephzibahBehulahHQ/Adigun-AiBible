@@ -57,14 +57,14 @@ export function detectiveMissionReferences(editionId:string, clueId?:string):Ref
 export function createDetectiveMissionReflection(editionId:string,solvedCount:number,now=new Date()):ReflectionEntry {
   if(solvedCount!==detectiveMission.clues.length) throw new Error('Solve all five evidence clues before saving the mission result.');
   const refs=detectiveMissionReferences(editionId).map(explicitReference);
-  const evidence=detectiveMission.clues.map((clue,index)=>`${index+1}. ${clue.question}\\nEvidence: ${clue.evidence}`).join('\\n\\n');
+  const evidence=detectiveMission.clues.map((clue,index)=>`${index+1}. ${clue.question}\nEvidence: ${clue.evidence}`).join('\n\n');
   const text=[
     'Scripture evidence mission — comprehension progress, not a faith score.',
     `Mission: ${detectiveMission.title}`,
     `Result: ${solvedCount}/${detectiveMission.clues.length} evidence clues solved.`,
     evidence,
     'Open the linked source passages in the selected edition to review the evidence.'
-  ].join('\\n\\n');
+  ].join('\n\n');
   return {...newEntryBase(now),title:`Detective mission · ${detectiveMission.title}`,kind:'application',state:'unresolved',
     text,reason:'',refs,sources:[`Scripture evidence mission: ${detectiveMission.id}`],history:[]};
 }
