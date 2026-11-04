@@ -3,6 +3,8 @@ import { assetUrl, getQuran, sourceCredit } from './data';
 import type { PassageRef } from './editorial';
 import { downloadOfflineFiles } from './offline';
 import { readQuranPassage } from './publication';
+import { searchQuran } from './quran-search';
+import type { QuranSearchMode } from './quran-search';
 import type { QuranSource } from './types';
 
 interface QuranReaderProps { initialRef?: PassageRef | null }
@@ -31,6 +33,10 @@ export default function QuranReader({ initialRef = null }: QuranReaderProps) {
   const [error, setError] = useState('');
   const [retry, setRetry] = useState(0);
   const [query, setQuery] = useState('');
+  const [searchMode, setSearchMode] = useState<QuranSearchMode>('phrase');
+  const [searchSurah, setSearchSurah] = useState<number | ''>('');
+  const [searchExclude, setSearchExclude] = useState('');
+  const [searchError, setSearchError] = useState('');
   const [results, setResults] = useState<{ chapter: number; number: number; text: string }[] | null>(null);
   const [resultCount, setResultCount] = useState(0);
   const [status, setStatus] = useState('');
@@ -76,6 +82,16 @@ export default function QuranReader({ initialRef = null }: QuranReaderProps) {
       setCopyText(''); setStatus('Passage copied with source attribution.');
     } catch {
       setCopyText(text); setStatus('Clipboard access is unavailable. Select and copy the text below.');
+    }
+  };
+  const runSearch = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    if (!source) return;
+    try {
+      const found = searchQuran(source, query, { mode: searchMode, surah: searchSurah, exclude: searchExclude });
+      setResultCount(found.total); setResults(found.results); setSearchError('');
+    } catch (reason) {
+      setResults(null); setResultCount(0); setSearchError(message(reason));
     }
   };
   const saveOffline = async () => {
@@ -132,16 +148,20 @@ export default function QuranReader({ initialRef = null }: QuranReaderProps) {
           <div className="quran-verses">{surah.verses.map(verse => <p key={verse.number}><sup>{surah.number}:{verse.number}</sup>{verse.text}</p>)}</div>
         </details>
       </>}
-      <form onSubmit={event => {
-        event.preventDefault();
-        const needle = query.trim().toLocaleLowerCase('en');
-        if (!needle) { setResults(null); setResultCount(0); return; }
-        const found = allVerses.filter(verse => verse.text.toLocaleLowerCase('en').includes(needle));
-        setResultCount(found.length); setResults(found.slice(0, 100));
-      }}>
-        <div className="quran-controls"><label>Search English Quran source<input type="search" value={query} onChange={event => setQuery(event.target.value)} /></label></div>
+      <form onSubmit={runSearch}>
+        <div className="quran-controls">
+          <label>Search English Quran source<input aria-label="Search English Quran source" type="search" value={query} onChange={event => setQuery(event.target.value)} /></label>
+          <label>Match<select aria-label="Quran search match" value={searchMode} onChange={event => setSearchMode(event.target.value as QuranSearchMode)}>
+            <option value="phrase">Exact phrase</option><option value="all">All words</option><option value="any">Any word</option><option value="boolean">Boolean (AND / OR / NOT)</option>
+          </select></label>
+          <label>Surah<select aria-label="Search Quran surah" value={searchSurah} onChange={event => setSearchSurah(event.target.value ? Number(event.target.value) : '')}>
+            <option value="">All surahs</option>{source.surahs.map(item => <option key={item.number} value={item.number}>{item.number}{item.name ? ` — ${item.name}` : ''}</option>)}
+          </select></label>
+          <label>Exclude words<input aria-label="Exclude Quran words" value={searchExclude} onChange={event => setSearchExclude(event.target.value)} /></label>
+        </div>
         <button type="submit">Search Quran source</button>
       </form>
+      {searchError && <p className="error-message" role="alert">{searchError}</p>}
       {results && <div aria-label="Quran source search results">
         <p role="status">{resultCount} source verses found.{resultCount > 100 ? ' Showing the first 100; refine your search to narrow results.' : ''}</p>
         {results.map(verse => <div key={`${verse.chapter}-${verse.number}`}><button onClick={() => choose(verse.chapter, verse.number)}>Open Quran {verse.chapter}:{verse.number}</button><p>{verse.text}</p></div>)}
