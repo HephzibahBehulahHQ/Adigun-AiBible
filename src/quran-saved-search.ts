@@ -86,7 +86,7 @@ function openDatabase(): Promise<IDBDatabase> {
       request.onblocked = () => reject(new Error('Close another Adigun-AiBible tab and retry.'));
     }).catch(error => { opening = undefined; throw error; });
   }
-  return opening;
+  return opening!;
 }
 
 export async function loadSavedQuranSearches(): Promise<SavedQuranSearch[]> {
