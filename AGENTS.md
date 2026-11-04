@@ -8,7 +8,7 @@ The user has authorized this project’s implementation, scoped commits and veri
 
 ## Start and resume
 
-Read `CODEX_START_HERE.md` and `docs/agent/PROJECT_STATUS.md`. The current implementation branch is `codex/reader-context-20261104`, continued from deployed main `4d8943e`; inspect the actual checkout before acting. Read `docs/specs/Adigun-AiBible_Codex_Master_Prompt.md` once per fresh execution context, then read only changed or relevant subsections. Preserve existing useful code, user changes, Git history, package-manager conventions, and completed work.
+Read `CODEX_START_HERE.md` and `docs/agent/PROJECT_STATUS.md`. The active implementation branch and verified production revision are recorded in `docs/agent/PROJECT_STATUS.md`; inspect the actual remote head before acting. Read `docs/specs/Adigun-AiBible_Codex_Master_Prompt.md` once per fresh execution context, then read only changed or relevant subsections. Preserve existing useful code, user changes, Git history, package-manager conventions, and completed work.
 
 Use compact searches and reads. Reuse clean supplied text as-is unless the user requests a rewrite. Do not repeat the full specification, unchanged plans, or large files in prompts or reports. Keep current evidence, actual blockers, last verified remote commit, and the next concrete action in the status file.
 
