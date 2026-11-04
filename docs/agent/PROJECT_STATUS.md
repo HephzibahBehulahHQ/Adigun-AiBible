@@ -1,9 +1,12 @@
 # Project status
 
-Updated: 3 November 2026, UTC. This file identifies the release evidence and outstanding gates.
+Updated: 4 November 2026, 07:47 Europe/Berlin. This file identifies release evidence and current continuation.
 
-- Objective: deploy first, then finish all implementation independent of external content and service prerequisites.
-- Branch: `codex/bible-release-hardening-20261103`; release pull request: https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/2
+- Objective: continue the verified release against Version 3.0, expanding all unblocked milestones without restarting.
+- Branch: `codex/bible-v3-expansion-20261104`, based on the user's specification update `2343a9137d3bfebf0563157ea558bfa8bd774664`; prior release pull request: https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/2
+- Latest verified remote checkpoint: `a4cfb601b8762f3d1c6b196630a42e743211786e`, 4 November 2026, 07:47 Europe/Berlin. Exact v3 specification copied to the canonical location, branch/start instructions reconciled; remote ref independently read back. This receipt and the requirement matrix are locally pending until the next checkpoint.
+- Live build-info HTTP 200 reports `2343a9137d3bfebf0563157ea558bfa8bd774664`, build `1f0e5eb4525ee8733ee97d07`, content `fc77a48ca0b4b13da8981389`, checked 07:45 Europe/Berlin. The user commit changes only the root prompt; no application code was replaced.
+- Version 3 scope and separate implementation/content/review/integration/deployment states: `docs/FEATURE_MATRIX.md`. Rights/acquisition, additive private study and local transcript evidence are active independent work; no new feature has passed release gates yet.
 - Public product: https://hephzibahbehulahhq.github.io/Adigun-AiBible/
 - Deployment-first receipt: `f6e58b976dbfd30d65bf174b009340f3d3e30ea6`, successful Actions run `41728171389`, matching live build-info and browser reader verification.
 - Verified hardening code checkpoint: `129a01e08761a5e1fccff34af06e1b2f0c030e24`. Actions run `41737114875` passed TypeScript, ESLint, 68 app/domain/source tests, 20 backend contract tests, all source integrity checks, production build and 25 browser cases on their first attempt. A mobile persistence retry exposed a stale save-status completion; the generation guard is fixed. The final gate uses no retries and repeats that persistence case five times per device profile; its actual result is recorded in the release PR checks. The initial 24/26 browser result exposed a canvas-size accessible-name defect; that defect was fixed without removing its tests.
@@ -11,4 +14,4 @@ Updated: 3 November 2026, UTC. This file identifies the release evidence and out
 - Production deployment uses the main-branch workflow. The latest machine-readable receipt is https://hephzibahbehulahhq.github.io/Adigun-AiBible/build-info.json . The release PR records the verified merged source and production run after publication. Do not infer a successful deployment from a development checkpoint alone.
 - Backend schema/handlers are prepared and tested offline. No SQL, RLS, live Auth, provider, account, cloud-sync or circle-posting activation is claimed. No unrelated infrastructure was modified.
 - The whole multi-milestone product is not complete: real human editorial approvals, exact Pidgin rights/review, dedicated backend/provider activation, native-language review, recorded narration and native widgets remain gated. See `BLOCKERS.md` and `CONNECTED_SERVICES.md`.
-- Continue only the concrete remaining gates in `NEXT_TASKS.md`; preserve the release evidence, source attribution and zero fabricated approval/activity policy.
+- The old external-only backlog is superseded by Version 3. Continue the new independent work in `NEXT_TASKS.md`; preserve release evidence, source attribution, existing user data and zero fabricated approval/activity policy.

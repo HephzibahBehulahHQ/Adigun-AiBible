@@ -7,6 +7,8 @@ Current implementation branch: `codex/bible-v3-expansion-20261104`
 Current status and continuation record: `docs/agent/PROJECT_STATUS.md`
 Canonical product specification: `docs/specs/Adigun-AiBible_Codex_Master_Prompt.md` (version 3.0, updated 4 November 2026)
 Execution instructions: `AGENTS.md`
+Requirement and evidence matrix: `docs/FEATURE_MATRIX.md`
+The root TXT is the supplied v3 source; the canonical Markdown copy is byte-identical. Do not independently rewrite either copy.
 Pinned policy: `HephzibahBehulahHQ/hb-AI-policy@d42d4e04ac6ab77ebafa1d4fccb724a4dde8d02e`
 
 ## Resume procedure
