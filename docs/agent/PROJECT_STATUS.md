@@ -9,9 +9,10 @@ Main now contains the accepted search, audit and route-preservation increments:
 - **PR #10 — explicit shared-passage route preservation:** merged as `616daf3554f9fdf4519bde2ea8f2c514e963b073`. It closes the route-recognition gap across all supported screens, prevents invalid deep links from restoring an unrelated saved passage, and adds regressions. [Workflow 41897171553](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41897171553) passed and verified the published source revision.
 - **PR #11 — private recent-search history:** merged as `3751ba557ed56d84a29a98417f5e49805ba326e8`. [PR workflow 41897478517](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41897478517) passed unit, desktop/mobile browser and repeated persistence checks. History stores at most 20 distinct recent source queries locally, retains edition and filters, and supports individual removal and explicit clearing. The main deployment workflow [41898329148](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41898329148) is still running; do not claim this latest main revision is published until its deployment receipt passes.
 - **PR #7:** closed as superseded by PR #6 because its duplicate layout/command work was already on main. No duplicate systems were merged.
-- **PR #12 — guided private interpretation challenge:** in progress. It extends the existing private reflections workspace, binds the exercise to the selected edition/passage, and makes no automatic correctness or faith judgment. Merge only after the exact latest candidate passes all release gates.
+- **PR #12 — guided private interpretation challenge:** merged as `0d22af7dc7ddbaba22504ab1225107f49d95d870`. [PR workflow 41898436712](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41898436712) passed typecheck, build, unit tests, desktop/mobile browser checks and persistence regression. It extends private reflections, binds each exercise to the selected edition/passage, and makes no automatic correctness or faith judgment. Main deployment [workflow 41899161850](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41899161850) is pending.
+- **PR #13 — status/evidence refresh:** documentation-only, in review; its CI must pass before merge.
 
-Current main checkpoint: `3751ba557ed56d84a29a98417f5e49805ba326e8`. The complete Version 3 project remains in progress; none of these bounded increments implies overall completion.
+Current main checkpoint: `0d22af7dc7ddbaba22504ab1225107f49d95d870`. The complete Version 3 project remains in progress; none of these bounded increments implies overall completion.
 
 Updated: 4 November 2026 (Europe/Berlin). The complete Version 3 product remains in progress.
 
@@ -46,7 +47,7 @@ Checkpoints `07aa031`, `a07a9f1`, `61dd3cf`, `5be157b` and `916d245` were read b
 
 ## Next bounded work
 
-Finish the PR #11 main deployment receipt, then complete PR #12's guided interpretation challenge through the exact-candidate release gate. After that, continue the Version 3 M7/M8 sequence with content/rights/review gates kept separate. Do not rebuild the released source-reader, layouts, command palette, search or private-session features.
+Finish the PR #11 and PR #12 main deployment receipts, then continue the Version 3 M7/M8 sequence with content/rights/review gates kept separate. Next local slices: self-guided retelling practice and a sourced decision-simulation pilot; translation and culturally adapted parables remain gated by licensed content and qualified review. Do not rebuild the released source-reader, layouts, command palette, search or private-session features.
 
 External gates remain: genuine human editorial/native-language review, edition-specific permissions, the interrupted dedicated backend setup, authenticated model service, permitted recorded narration and native-platform environments. Do not retry cancelled backend setup without explicit resumption. These dependencies do not block other local implementation.
 
