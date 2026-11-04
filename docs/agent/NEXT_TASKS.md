@@ -14,7 +14,7 @@ PR #6 implements saved reader layouts and accessible command navigation. Candida
 - PR #10 fixed explicit shared-passage startup resolution on all supported screens and added invalid-link/no-stale-scroll regressions.
 - PR #11 shipped bounded private recent-search history with edition/filter retention, individual removal, clear controls and reload persistence. Its PR workflow and main deployment passed; the public source revision was verified.
 - PR #12 shipped a guided private interpretation challenge with edition-bound passage refs, reflection prompts and no automatic score/verdict. Full PR CI passed; main deployment is pending.
-- PR #14 opened the first sourced decision-simulation pilot. Initial source/build/unit checks passed; browser and persistence verification are pending.
+- PR #14 merged the first sourced decision-simulation pilot with choices, consequences, source links, follow-up actions, replay and private reflection. Full PR CI passed; main deployment is pending.
 
 ## Next bounded slice
 
