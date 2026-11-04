@@ -2,8 +2,7 @@
 import { readFile } from 'node:fs/promises';
 import { resolve, join } from 'node:path';
 import { createHash } from 'node:crypto';
-
-const EDITIONS = new Set(['eng-web', 'deu1912', 'yor', 'eng-clearquran']);
+import { validateEditionRightsRegister, decideEditionOperation } from '../src/edition-rights.ts';
 
 export function createFileSourceResolver({ dataRoot } = {}) {
   if (typeof dataRoot !== 'string' || !dataRoot) return undefined;
@@ -14,12 +13,17 @@ export function createFileSourceResolver({ dataRoot } = {}) {
     return JSON.parse(bytes.toString('utf8'));
   }
   return async (ref, { signal } = {}) => {
-    if (!ref || !EDITIONS.has(ref.editionId) || !/^[A-Z0-9]{3}$/.test(ref.bookId)
+    if (!ref || typeof ref.editionId !== 'string' || !/^[a-zA-Z0-9][a-zA-Z0-9_-]{0,63}$/.test(ref.editionId) || !/^[A-Z0-9]{3}$/.test(ref.bookId)
       || !Number.isInteger(ref.chapter) || !Number.isInteger(ref.verse)
       || !Number.isInteger(ref.endVerse) || ref.verse < 1 || ref.endVerse < ref.verse || ref.endVerse - ref.verse >= 20) throw new Error('Invalid canonical reference');
     const dir = ref.editionId === 'eng-web' ? root : join(root, 'editions', ref.editionId);
     const manifest = await json(join(dir, 'manifest.json'), signal);
     if (manifest.edition?.id !== ref.editionId) throw new Error('Edition identity mismatch');
+    const rights = validateEditionRightsRegister(await json(join(root, 'editions', 'rights-register.json'), signal));
+    const permission = decideEditionOperation(rights.editions.find(edition => edition.editionId === ref.editionId), 'aiRetrieval', {
+      sourceSha256: manifest.edition.sha256, aiProductEnabled: true,
+    });
+    if (!permission.allowed) throw new Error(`Source is not licensed for this AI operation: ${permission.reason}`);
     let verses;
     if (ref.editionId === 'eng-clearquran') {
       if (ref.corpus !== 'quran' || ref.bookId !== 'QUR') throw new Error('Corpus mismatch');

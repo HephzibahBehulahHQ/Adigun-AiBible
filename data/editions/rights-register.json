@@ -1,0 +1,1017 @@
+{
+  "schemaVersion": 1,
+  "evidence": [
+    {
+      "id": "web-pd",
+      "url": "https://ebible.org/engwebp/copyright.htm",
+      "observedOn": "2026-11-04",
+      "summary": "The exact WEB edition is dedicated to the public domain; altered text must use a different name."
+    },
+    {
+      "id": "luther1912-pd",
+      "url": "https://ebible.org/deu1912/copyright.htm",
+      "observedOn": "2026-11-04",
+      "summary": "This 1912 Luther edition is identified as public domain; no modern Luther revision is included."
+    },
+    {
+      "id": "yor-cc",
+      "url": "https://ebible.org/yor/copyright.htm",
+      "observedOn": "2026-11-04",
+      "summary": "The Open Yoruba edition notice grants CC BY-SA 4.0 rights with attribution, ShareAlike and trademark conditions."
+    },
+    {
+      "id": "biblica-ai",
+      "url": "https://www.biblica.com/permissions/",
+      "observedOn": "2026-11-04",
+      "summary": "Biblica states that AI/ML/LLM/chatbot uses require a license expressly permitting them; general quotation permissions do not authorize full-app distribution."
+    },
+    {
+      "id": "biblica-ai-policy",
+      "url": "https://www.biblica.com/publisher-ai-policy/",
+      "observedOn": "2026-11-04",
+      "summary": "Publisher AI Policy version 1.2, effective June 1, 2026, applies in conjunction with an applicable license agreement. Product-wide applicability must be resolved before AI activation."
+    },
+    {
+      "id": "clearquran-nd",
+      "url": "https://clearquran.com/download/",
+      "observedOn": "2026-11-04",
+      "summary": "CC BY-ND 4.0 plus explicit format, excerpt and combination permissions; wording must remain unchanged and attribution retained."
+    },
+    {
+      "id": "berean-pd",
+      "url": "https://berean.bible/terms.htm",
+      "observedOn": "2026-11-04",
+      "summary": "The publisher dedicated Berean and Majority Bible texts to the public domain on April 30, 2023, permitting all uses. Altered derivatives should use a different name."
+    },
+    {
+      "id": "asv1901-pd",
+      "url": "https://ebible.org/eng-asv/copyright.htm",
+      "observedOn": "2026-11-04",
+      "summary": "The publisher identifies this exact American Standard Version (1901) source as public domain. The text notice does not license third-party recordings."
+    }
+  ],
+  "editions": [
+    {
+      "editionId": "eng-web",
+      "sourceSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+      "verifiedOn": "2026-11-04",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "allowed",
+        "evidenceIds": [
+          "web-pd"
+        ],
+        "reason": "The exact public-domain text may be used; output/source identity and review requirements still apply."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "web-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "web-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "web-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "web-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "web-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "web-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "web-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "aiRetrieval": {
+          "state": "allowed",
+          "evidenceIds": [
+            "web-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "modelTraining": {
+          "state": "allowed",
+          "evidenceIds": [
+            "web-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "tts": {
+          "state": "allowed",
+          "evidenceIds": [
+            "web-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "web-pd"
+          ],
+          "reason": "No separate recording or narrator rights have been acquired; a text license does not license a third-party recording."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "web-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "web-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "web-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "web-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "web-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "web-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "web-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        }
+      },
+      "attribution": "World English Bible (Protestant Edition). Public domain. https://ebible.org/engwebp/",
+      "conditions": [
+        "Keep exact source identity; label and separately name any altered study text."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "deu1912",
+      "sourceSha256": "af668fb39d9c96ceddc3af69cb22db809770d09e7999012aacdaedf85eb5de16",
+      "verifiedOn": "2026-11-04",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "allowed",
+        "evidenceIds": [
+          "luther1912-pd"
+        ],
+        "reason": "The exact public-domain text may be used; output/source identity and review requirements still apply."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "luther1912-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "luther1912-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "luther1912-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "luther1912-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "luther1912-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "luther1912-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "luther1912-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "aiRetrieval": {
+          "state": "allowed",
+          "evidenceIds": [
+            "luther1912-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "modelTraining": {
+          "state": "allowed",
+          "evidenceIds": [
+            "luther1912-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "tts": {
+          "state": "allowed",
+          "evidenceIds": [
+            "luther1912-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "luther1912-pd"
+          ],
+          "reason": "No separate recording or narrator rights have been acquired; a text license does not license a third-party recording."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "luther1912-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "luther1912-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "luther1912-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "luther1912-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "luther1912-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "luther1912-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "luther1912-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        }
+      },
+      "attribution": "Lutherbibel 1912. Martin Luther; 1912 revision. Public domain. Source: eBible.org.",
+      "conditions": [
+        "Retain accurate edition/source identity.",
+        "Public-domain status applies to this 1912 text, not modern Luther revisions."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "yor",
+      "sourceSha256": "afa5abe34101cd7ce7a49f7c45d8d34449721a3eafe8f20dd7a1acee543ed00b",
+      "verifiedOn": "2026-11-04",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "unknown",
+        "evidenceIds": [
+          "yor-cc",
+          "biblica-ai",
+          "biblica-ai-policy"
+        ],
+        "reason": "Open Yoruba text has a CC BY-SA notice, but applicability of Biblica’s AI product policy and an express AI license is unresolved. Do not activate an AI-enabled product using this edition before that product-wide review."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "yor-cc"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "yor-cc"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "yor-cc"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "yor-cc"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "yor-cc"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "yor-cc"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "yor-cc"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "aiRetrieval": {
+          "state": "unknown",
+          "evidenceIds": [
+            "yor-cc",
+            "biblica-ai",
+            "biblica-ai-policy"
+          ],
+          "reason": "No express AI license or reviewed TTS-engine arrangement is recorded for this Biblica edition."
+        },
+        "modelTraining": {
+          "state": "unknown",
+          "evidenceIds": [
+            "yor-cc",
+            "biblica-ai",
+            "biblica-ai-policy"
+          ],
+          "reason": "No express AI license or reviewed TTS-engine arrangement is recorded for this Biblica edition."
+        },
+        "tts": {
+          "state": "unknown",
+          "evidenceIds": [
+            "yor-cc",
+            "biblica-ai",
+            "biblica-ai-policy"
+          ],
+          "reason": "No express AI license or reviewed TTS-engine arrangement is recorded for this Biblica edition."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "yor-cc"
+          ],
+          "reason": "No separate recording or narrator rights have been acquired; a text license does not license a third-party recording."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "yor-cc"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "yor-cc"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "yor-cc"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "yor-cc"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "yor-cc"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "yor-cc"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "yor-cc"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        }
+      },
+      "attribution": "Biblica® Open Yoruba Contemporary Bible™. Copyright © 2009, 2017 by Biblica, Inc. CC BY-SA 4.0. Unmodified source text; full notice accompanies this edition.",
+      "conditions": [
+        "Include the complete publisher copyright/source notice and CC BY-SA 4.0 license.",
+        "Keep Biblica trademarks intact for unchanged copies; do not imply publisher endorsement.",
+        "For derivatives, remove the Biblica trademark, disclose changes, apply the prescribed attribution, and use CC BY-SA 4.0.",
+        "This text license does not grant unrelated photographs, maps, or third-party recorded audio rights."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "eng-clearquran",
+      "sourceSha256": "3ca939fee6186ce06db165df29dfa2b8e66179c198f41c4924bc2e15be725876",
+      "verifiedOn": "2026-11-04",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "unknown",
+        "evidenceIds": [
+          "clearquran-nd"
+        ],
+        "reason": "The complete AI product use has not been reviewed against the no-altered-wording terms."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "clearquran-nd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "clearquran-nd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "clearquran-nd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "clearquran-nd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "adaptation": {
+          "state": "denied",
+          "evidenceIds": [
+            "clearquran-nd"
+          ],
+          "reason": "The imported translation must retain its words; semantic adaptations are not permitted by the recorded license."
+        },
+        "translation": {
+          "state": "denied",
+          "evidenceIds": [
+            "clearquran-nd"
+          ],
+          "reason": "The imported translation must retain its words; semantic adaptations are not permitted by the recorded license."
+        },
+        "studyParaphrase": {
+          "state": "denied",
+          "evidenceIds": [
+            "clearquran-nd"
+          ],
+          "reason": "The imported translation must retain its words; semantic adaptations are not permitted by the recorded license."
+        },
+        "aiRetrieval": {
+          "state": "unknown",
+          "evidenceIds": [
+            "clearquran-nd"
+          ],
+          "reason": "No permission analysis establishes this AI operation while preserving the publisher’s no-altered-wording requirement."
+        },
+        "modelTraining": {
+          "state": "unknown",
+          "evidenceIds": [
+            "clearquran-nd"
+          ],
+          "reason": "No permission analysis establishes this AI operation while preserving the publisher’s no-altered-wording requirement."
+        },
+        "tts": {
+          "state": "allowed",
+          "evidenceIds": [
+            "clearquran-nd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "clearquran-nd"
+          ],
+          "reason": "No separate recording or narrator rights have been acquired; a text license does not license a third-party recording."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "clearquran-nd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "clearquran-nd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "clearquran-nd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "clearquran-nd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "clearquran-nd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "clearquran-nd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "clearquran-nd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        }
+      },
+      "attribution": "Translation by Talal Itani, ClearQuran.com (Allah Edition). CC BY-ND 4.0. Wording unchanged.",
+      "conditions": [
+        "Credit Translation by Talal Itani, ClearQuran.com and include the license; link to https://clearquran.com where possible.",
+        "Commercial use, storage, format conversion, selecting exact verses, and combining unchanged quotations with other content are expressly permitted.",
+        "Do not change, add, or remove translation words; semantic paraphrase/adaptation is not licensed.",
+        "The publisher download-page terms supersede old noncommercial readme notices; this pinned archive already states CC BY-ND 4.0.",
+        "Only text is imported here; no recorded audio files are included."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "eng-bsb",
+      "sourceSha256": "783aced3c3c8a2b145e4f8c48e3b94a5a5515e050719bb8621d094be78a5269f",
+      "verifiedOn": "2026-11-04",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "allowed",
+        "evidenceIds": [
+          "berean-pd"
+        ],
+        "reason": "The exact public-domain text may be used; output/source identity and review requirements still apply."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "aiRetrieval": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "modelTraining": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "tts": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "No separate recording or narrator rights have been acquired; a text license does not license a third-party recording."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "berean-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        }
+      },
+      "attribution": "Berean Standard Bible (BSB). BSB Publishing, LLC; Berean Bible Translation Committee. Publisher USJ release v5.19, 27 October 2026. Public domain. https://berean.bible/",
+      "conditions": [
+        "Keep exact BSB wording and source identity when identifying a quotation as BSB.",
+        "The publisher asks that altered derivatives use a separate name.",
+        "No third-party recorded audio is included or licensed by this text import."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "eng-asv",
+      "sourceSha256": "6c41b8020cba9cf7041689f2356c55859e28023405537388be08bad93df2b050",
+      "verifiedOn": "2026-11-04",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "allowed",
+        "evidenceIds": [
+          "asv1901-pd"
+        ],
+        "reason": "The exact public-domain text may be used; output/source identity and review requirements still apply."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "asv1901-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "asv1901-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "asv1901-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "asv1901-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "asv1901-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "asv1901-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "asv1901-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "aiRetrieval": {
+          "state": "allowed",
+          "evidenceIds": [
+            "asv1901-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "modelTraining": {
+          "state": "allowed",
+          "evidenceIds": [
+            "asv1901-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "tts": {
+          "state": "allowed",
+          "evidenceIds": [
+            "asv1901-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "asv1901-pd"
+          ],
+          "reason": "No separate recording or narrator rights have been acquired; a text license does not license a third-party recording."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "asv1901-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "asv1901-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "asv1901-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "asv1901-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "asv1901-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "asv1901-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "asv1901-pd"
+          ],
+          "reason": "Permitted for this exact text under its edition notice and the recorded conditions."
+        }
+      },
+      "attribution": "American Standard Version (1901). Public domain. Source: eBible.org, source dated 30 October 2026.",
+      "conditions": [
+        "Preserve this 1901 edition identity and the pinned publisher source.",
+        "The VPL source supplies scripture text without headings, footnotes or paragraph styles; no source annotation coverage is claimed.",
+        "No third-party recorded audio is included or licensed by this text import."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    }
+  ]
+}

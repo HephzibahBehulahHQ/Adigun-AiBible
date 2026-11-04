@@ -210,22 +210,22 @@ test('Supabase auth needs live session verifier and ignores editable metadata', 
   assert.equal(await revoked('test-token', { signal: new AbortController().signal }), null);
 });
 
-test('trusted file resolver preserves actual imported Bible and Quran text', async () => {
+test('trusted AI resolver preserves exact permitted source text and denies unresolved rights', async () => {
   const dataRoot = fileURLToPath(new URL('../../data/', import.meta.url));
   const resolveSource = createFileSourceResolver({ dataRoot });
   const source = await resolveSource({ ...reference, endVerse: 1 });
   const book = JSON.parse(await readFile(`${dataRoot}/books/GEN.json`, 'utf8'));
   assert.equal(source.text, book.chapters[0].verses[0].text);
   assert.match(source.sha256, /^[0-9a-f]{64}$/);
-  const quran = await resolveSource({ corpus: 'quran', editionId: 'eng-clearquran', bookId: 'QUR', chapter: 1, verse: 1, endVerse: 1 });
-  const original = JSON.parse(await readFile(`${dataRoot}/editions/eng-clearquran/quran.json`, 'utf8'));
-  assert.equal(quran.text, original.surahs[0].verses[0].text);
+  const german = await resolveSource({ ...reference, editionId: 'deu1912', endVerse: 1 });
+  const original = JSON.parse(await readFile(`${dataRoot}/editions/deu1912/books/GEN.json`, 'utf8'));
+  assert.equal(german.text, original.chapters[0].verses[0].text);
+  await assert.rejects(resolveSource({ corpus: 'quran', editionId: 'eng-clearquran', bookId: 'QUR', chapter: 1, verse: 1, endVerse: 1 }), /not licensed for this AI operation/);
 });
 
-test('trusted resolver does not fill omitted Yoruba verses or allow traversal', async () => {
+test('trusted resolver rejects Biblica AI use without the express license and prevents traversal', async () => {
   const resolveSource = createFileSourceResolver({ dataRoot: fileURLToPath(new URL('../../data/', import.meta.url)) });
   await assert.rejects(resolveSource({ ...reference, editionId: 'yor', bookId: 'MAT', chapter: 17, verse: 21, endVerse: 21 }));
   await assert.rejects(resolveSource({ ...reference, bookId: '../GEN', endVerse: 1 }));
-  const source = await resolveSource({ ...reference, editionId: 'yor', bookId: 'MAT', chapter: 17, verse: 22, endVerse: 22 });
-  assert.ok(source.text.length > 10);
+  await assert.rejects(resolveSource({ ...reference, editionId: 'yor', bookId: 'MAT', chapter: 17, verse: 22, endVerse: 22 }), /not licensed for this AI operation/);
 });

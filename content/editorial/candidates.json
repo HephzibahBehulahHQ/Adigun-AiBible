@@ -1,5 +1,9 @@
 {
   "schemaVersion": 1,
+  "originalTableRowsProvenance": {
+    "specificationVersion": "3.0",
+    "specificationCommit": "a4cfb601b8762f3d1c6b196630a42e743211786e"
+  },
   "candidates": [
     {
       "id": "seed-01",
@@ -296,7 +300,7 @@
       "bibleCandidateRaw": "1 Corinthians 10:13",
       "quranCandidateRaw": "2:286; compare scope carefully: temptation is not every kind of hardship",
       "editorialRationale": "compare scope carefully: temptation is not every kind of hardship",
-      "originalTableRow": "| 17 | 1 Corinthians 10:13 | 2:286; compare scope carefully: temptation is not every kind of hardship |",
+      "originalTableRow": "| 17 | 1 Corinthians 10:13 | 2:286; distinguish temptation from every kind of hardship |",
       "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
       "rightsIssues": [
         "Quran edition and redistribution rights not yet attached to this candidate.",
@@ -305,7 +309,14 @@
       "review": {
         "status": "draft",
         "evidenceIds": []
-      }
+      },
+      "originalTableRowHistory": [
+        {
+          "specificationVersion": "2.0",
+          "specificationCommit": "8c1c016d3c9c227a48f74413d3dd1fd921f0435f",
+          "originalTableRow": "| 17 | 1 Corinthians 10:13 | 2:286; compare scope carefully: temptation is not every kind of hardship |"
+        }
+      ]
     },
     {
       "id": "seed-18",
@@ -314,7 +325,7 @@
       "bibleCandidateRaw": "Luke 6:31",
       "quranCandidateRaw": "55:60; a thematic connection does not establish identical ethical formulation",
       "editorialRationale": "a thematic connection does not establish identical ethical formulation",
-      "originalTableRow": "| 18 | Luke 6:31 | 55:60; a thematic connection does not establish identical ethical formulation |",
+      "originalTableRow": "| 18 | Luke 6:31 | 55:60; thematic connection does not establish identical formulation |",
       "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
       "rightsIssues": [
         "Quran edition and redistribution rights not yet attached to this candidate.",
@@ -323,7 +334,14 @@
       "review": {
         "status": "draft",
         "evidenceIds": []
-      }
+      },
+      "originalTableRowHistory": [
+        {
+          "specificationVersion": "2.0",
+          "specificationCommit": "8c1c016d3c9c227a48f74413d3dd1fd921f0435f",
+          "originalTableRow": "| 18 | Luke 6:31 | 55:60; a thematic connection does not establish identical ethical formulation |"
+        }
+      ]
     },
     {
       "id": "seed-19",
@@ -368,7 +386,7 @@
       "bibleCandidateRaw": "Ephesians 4:32",
       "quranCandidateRaw": "24:22; preserve the Bible verse's Christ-related qualification",
       "editorialRationale": "preserve the Bible verse's Christ-related qualification",
-      "originalTableRow": "| 21 | Ephesians 4:32 | 24:22; preserve the Bible verse's Christ-related qualification |",
+      "originalTableRow": "| 21 | Ephesians 4:32 | 24:22; preserve the Christ-related qualification |",
       "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
       "rightsIssues": [
         "Quran edition and redistribution rights not yet attached to this candidate.",
@@ -377,7 +395,14 @@
       "review": {
         "status": "draft",
         "evidenceIds": []
-      }
+      },
+      "originalTableRowHistory": [
+        {
+          "specificationVersion": "2.0",
+          "specificationCommit": "8c1c016d3c9c227a48f74413d3dd1fd921f0435f",
+          "originalTableRow": "| 21 | Ephesians 4:32 | 24:22; preserve the Bible verse's Christ-related qualification |"
+        }
+      ]
     },
     {
       "id": "seed-22",
@@ -512,7 +537,7 @@
       "bibleCandidateRaw": "John 6:67–68",
       "quranCandidateRaw": "2:256; distinguish the narrative scene from a general legal or doctrinal proposition",
       "editorialRationale": "distinguish the narrative scene from a general legal or doctrinal proposition",
-      "originalTableRow": "| 29 | John 6:67–68 | 2:256; distinguish the narrative scene from a general legal or doctrinal proposition |",
+      "originalTableRow": "| 29 | John 6:67–68 | 2:256; distinguish a narrative scene from a general proposition |",
       "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
       "rightsIssues": [
         "Quran edition and redistribution rights not yet attached to this candidate.",
@@ -521,7 +546,14 @@
       "review": {
         "status": "draft",
         "evidenceIds": []
-      }
+      },
+      "originalTableRowHistory": [
+        {
+          "specificationVersion": "2.0",
+          "specificationCommit": "8c1c016d3c9c227a48f74413d3dd1fd921f0435f",
+          "originalTableRow": "| 29 | John 6:67–68 | 2:256; distinguish the narrative scene from a general legal or doctrinal proposition |"
+        }
+      ]
     },
     {
       "id": "seed-30",
@@ -728,7 +760,7 @@
       "bibleCandidateRaw": "1 John 2:17",
       "quranCandidateRaw": "57:20; do not add a simulation claim",
       "editorialRationale": "do not add a simulation claim",
-      "originalTableRow": "| 41 | 1 John 2:17 | 57:20; do not add a simulation claim |",
+      "originalTableRow": "| 41 | 1 John 2:17 | 57:20; do not introduce simulation theory |",
       "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
       "rightsIssues": [
         "Quran edition and redistribution rights not yet attached to this candidate.",
@@ -737,7 +769,14 @@
       "review": {
         "status": "draft",
         "evidenceIds": []
-      }
+      },
+      "originalTableRowHistory": [
+        {
+          "specificationVersion": "2.0",
+          "specificationCommit": "8c1c016d3c9c227a48f74413d3dd1fd921f0435f",
+          "originalTableRow": "| 41 | 1 John 2:17 | 57:20; do not add a simulation claim |"
+        }
+      ]
     },
     {
       "id": "seed-42",
@@ -782,7 +821,7 @@
       "bibleCandidateRaw": "Galatians 6:5",
       "quranCandidateRaw": "35:18; inspect surrounding argument and the meaning of burden",
       "editorialRationale": "inspect surrounding argument and the meaning of burden",
-      "originalTableRow": "| 44 | Galatians 6:5 | 35:18; inspect surrounding argument and the meaning of burden |",
+      "originalTableRow": "| 44 | Galatians 6:5 | 35:18; inspect the surrounding argument and meaning of burden |",
       "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
       "rightsIssues": [
         "Quran edition and redistribution rights not yet attached to this candidate.",
@@ -791,7 +830,14 @@
       "review": {
         "status": "draft",
         "evidenceIds": []
-      }
+      },
+      "originalTableRowHistory": [
+        {
+          "specificationVersion": "2.0",
+          "specificationCommit": "8c1c016d3c9c227a48f74413d3dd1fd921f0435f",
+          "originalTableRow": "| 44 | Galatians 6:5 | 35:18; inspect surrounding argument and the meaning of burden |"
+        }
+      ]
     },
     {
       "id": "seed-45",
@@ -818,7 +864,7 @@
       "bibleCandidateRaw": "Psalm 49:7 in some English editions",
       "quranCandidateRaw": "2:48; verify Psalm numbering in the selected German and other editions",
       "editorialRationale": "verify Psalm numbering in the selected German and other editions",
-      "originalTableRow": "| 46 | Psalm 49:7 in some English editions | 2:48; verify Psalm numbering in the selected German and other editions |",
+      "originalTableRow": "| 46 | Psalm 49:7 in some English editions | 2:48; verify edition-specific Psalm numbering |",
       "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
       "rightsIssues": [
         "Quran edition and redistribution rights not yet attached to this candidate.",
@@ -827,7 +873,14 @@
       "review": {
         "status": "draft",
         "evidenceIds": []
-      }
+      },
+      "originalTableRowHistory": [
+        {
+          "specificationVersion": "2.0",
+          "specificationCommit": "8c1c016d3c9c227a48f74413d3dd1fd921f0435f",
+          "originalTableRow": "| 46 | Psalm 49:7 in some English editions | 2:48; verify Psalm numbering in the selected German and other editions |"
+        }
+      ]
     },
     {
       "id": "seed-47",
@@ -854,7 +907,7 @@
       "bibleCandidateRaw": "1 Corinthians 2:9",
       "quranCandidateRaw": "Quran 32:17 is a separate candidate; the supplied longer saying is Hadith, Sahih al-Bukhari 3244",
       "editorialRationale": "the supplied longer saying is Hadith, Sahih al-Bukhari 3244",
-      "originalTableRow": "| 48 | 1 Corinthians 2:9 | Quran 32:17 is a separate candidate; the supplied longer saying is Hadith, Sahih al-Bukhari 3244 |",
+      "originalTableRow": "| 48 | 1 Corinthians 2:9 | Quran 32:17 is a separate candidate; the supplied longer saying belongs to Hadith, Sahih al-Bukhari 3244 |",
       "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
       "rightsIssues": [
         "Quran edition and redistribution rights not yet attached to this candidate.",
@@ -863,7 +916,14 @@
       "review": {
         "status": "draft",
         "evidenceIds": []
-      }
+      },
+      "originalTableRowHistory": [
+        {
+          "specificationVersion": "2.0",
+          "specificationCommit": "8c1c016d3c9c227a48f74413d3dd1fd921f0435f",
+          "originalTableRow": "| 48 | 1 Corinthians 2:9 | Quran 32:17 is a separate candidate; the supplied longer saying is Hadith, Sahih al-Bukhari 3244 |"
+        }
+      ]
     },
     {
       "id": "seed-49",
@@ -890,7 +950,7 @@
       "bibleCandidateRaw": "Luke 24:36",
       "quranCandidateRaw": "36:58; the Luke passage is a resurrection appearance, not a scene in heaven",
       "editorialRationale": "the Luke passage is a resurrection appearance, not a scene in heaven",
-      "originalTableRow": "| 50 | Luke 24:36 | 36:58; the Luke passage is a resurrection appearance, not a scene in heaven |",
+      "originalTableRow": "| 50 | Luke 24:36 | 36:58; preserve the resurrection-appearance context in Luke |",
       "source": "docs/specs/Adigun-AiBible_Codex_Master_Prompt.md#appendix-a-audit-of-the-original-comparison-examples",
       "rightsIssues": [
         "Quran edition and redistribution rights not yet attached to this candidate.",
@@ -899,7 +959,14 @@
       "review": {
         "status": "draft",
         "evidenceIds": []
-      }
+      },
+      "originalTableRowHistory": [
+        {
+          "specificationVersion": "2.0",
+          "specificationCommit": "8c1c016d3c9c227a48f74413d3dd1fd921f0435f",
+          "originalTableRow": "| 50 | Luke 24:36 | 36:58; the Luke passage is a resurrection appearance, not a scene in heaven |"
+        }
+      ]
     }
   ]
 }

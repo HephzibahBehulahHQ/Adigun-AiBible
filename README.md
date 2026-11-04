@@ -10,7 +10,9 @@ Requires Node.js 24 and Python 3. Install the locked dependencies with `npm ci`,
 
 ## Implemented product
 
-English WEB, German Luther 1912 and licensed Biblica Yoruba source reading; a separate English ClearQuran reader; edition-aware search and deep links; notes, highlights, bookmarks, plans, private questions and backups; verified offline packs; real PNG and supported silent WebM export; browser speech; five themes; four interface languages; local Adigun BOT actions; a separately sourced historical catalog.
+English WEB, German Luther 1912, Biblica Yoruba, Berean Standard Bible and American Standard Version source reading; a separate English ClearQuran reader; edition catalog and two-to-four source comparison; scoped search and deep links; private notes, prayer, collections, flexible plans, memorization and reflections; validated backups and verified offline packs; PNG and supported silent WebM export; finite Verse Drop; transcript evidence and projection; five themes and the existing interface locales.
+
+The Version 3 candidate adds a local family archive for authorized original recordings, photographs, documents and memories, plus a device-speech listening queue with real voice detection, finite loops, sleep timer, bookmarks and saved verse positions. Multi-card and bilingual passage exports preserve complete text and source credits. An official support directory uses a country selected by the visitor. See the current status for the exact candidate and deployment stage; a source checkpoint does not imply a released feature.
 
 Gen Z and Pidgin study wording and interfaith comparison claims require independent human approval. Their publication pipeline and verse-aligned interface are implemented, but the production dataset currently contains no approvals. Missing review data never proves that no parallel exists. Interface translations still require native-language review.
 

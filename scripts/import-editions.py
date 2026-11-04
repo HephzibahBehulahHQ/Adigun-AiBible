@@ -103,6 +103,48 @@ SOURCES = {
             'Only text is imported here; no recorded audio files are included.',
         ],
     },
+    'eng-bsb': {
+        'name': 'Berean Standard Bible', 'abbreviation': 'BSB', 'language': 'en', 'corpus': 'bible',
+        'publisher': 'BSB Publishing, LLC', 'translator': 'Berean Bible Translation Committee',
+        'revision': 'Publisher USJ release v5.19', 'canon': 'protestant-66',
+        'sourceUpdatedAt': '2026-10-27', 'rightsObservedAt': '2026-11-04',
+        'sourceUrl': 'https://berean.bible/',
+        'formatUrl': 'https://github.com/BSB-publishing/bsb2usfm/releases/tag/v5.19',
+        'downloadUrl': 'https://github.com/BSB-publishing/bsb2usfm/releases/download/v5.19/BSB_usj.zip',
+        'licenseUrl': 'https://berean.bible/terms.htm', 'license': 'Public domain',
+        'licenseIdentifier': 'LicenseRef-Public-Domain',
+        'attribution': 'Berean Standard Bible (BSB). BSB Publishing, LLC; Berean Bible Translation Committee. Publisher USJ release v5.19, 27 October 2026. Public domain. https://berean.bible/',
+        'sha256': '783aced3c3c8a2b145e4f8c48e3b94a5a5515e050719bb8621d094be78a5269f',
+        'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31086},
+        'format': 'usj-3.0',
+        'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': True, 'export': True},
+        'conditions': ['Keep exact BSB wording and source identity when identifying a quotation as BSB.',
+                       'The publisher asks that altered derivatives use a separate name.',
+                       'No third-party recorded audio is included or licensed by this text import.'],
+    },
+    'eng-asv': {
+        'name': 'American Standard Version (1901)', 'abbreviation': 'ASV', 'language': 'en', 'corpus': 'bible',
+        'publisher': 'eBible.org', 'translator': 'American Revision Committee',
+        'revision': '1901; eBible source dated 2026-10-30', 'canon': 'protestant-66',
+        'sourceUpdatedAt': '2026-10-30', 'rightsObservedAt': '2026-11-04',
+        'sourceUrl': 'https://ebible.org/eng-asv/',
+        'formatUrl': 'https://ebible.org/find/details.php?id=eng-asv',
+        'downloadUrl': 'https://ebible.org/Scriptures/eng-asv_vpl.zip',
+        'licenseUrl': 'https://ebible.org/eng-asv/copyright.htm', 'license': 'Public domain',
+        'licenseIdentifier': 'LicenseRef-Public-Domain',
+        'attribution': 'American Standard Version (1901). Public domain. Source: eBible.org, source dated 30 October 2026.',
+        'sha256': '6c41b8020cba9cf7041689f2356c55859e28023405537388be08bad93df2b050',
+        'xmlSha256': 'c1f2847ae9856ea062f675103f8931b6338949ba8ec673e9234140d5b60f6ce8',
+        'textSha256': '8924ef74086d572425b1e335f531c7c529a561969e5c851e456b84c2ce6ad858',
+        'noticeSha256': 'e39b826d64a43d79370e571aa74e01e6c40ed86537d2fd0cbf8a326d80dd7e86',
+        'bracketExceptionCount': 3748,
+        'bracketExceptionInventorySha256': 'd17944163b21e9910e36336df2e49f0c66e307a2b6a2fd961beb681ec2551bad',
+        'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31102},
+        'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': True, 'export': True},
+        'conditions': ['Preserve this 1901 edition identity and the pinned publisher source.',
+                       'The VPL source supplies scripture text without headings, footnotes or paragraph styles; no source annotation coverage is claimed.',
+                       'No third-party recorded audio is included or licensed by this text import.'],
+    },
 }
 
 
@@ -117,14 +159,17 @@ def json_bytes(value):
 def edition_metadata(edition_id):
     source = SOURCES[edition_id]
     fields = ('name', 'language', 'corpus', 'publisher', 'translator', 'sourceUpdatedAt', 'sourceUrl', 'formatUrl',
-              'downloadUrl', 'licenseUrl', 'license', 'licenseIdentifier', 'licenseDeedUrl', 'attribution', 'sha256', 'rights', 'conditions')
+              'downloadUrl', 'licenseUrl', 'license', 'licenseIdentifier', 'licenseDeedUrl', 'attribution', 'sha256', 'rights', 'conditions',
+              'abbreviation', 'revision', 'canon')
     value = {'id': edition_id, **{key: source[key] for key in fields if key in source}}
-    value.update({'rightsObservedAt': OBSERVED_ON, 'commercialUse': True,
+    value.update({'rightsObservedAt': source.get('rightsObservedAt', OBSERVED_ON), 'commercialUse': True,
                   'referenceSystemId': f'{edition_id}:publisher-numbering',
                   'noticePath': f'{edition_id}/NOTICE.txt', 'manifestPath': f'{edition_id}/manifest.json',
                   'totals': source['expectedTotals']})
     if source['corpus'] == 'bible':
         value.update({'booksPath': f'{edition_id}/books/', 'searchIndexPath': f'{edition_id}/search-index.json'})
+        if source.get('format') == 'usj-3.0':
+            value['chaptersPath'] = f'{edition_id}/chapters/'
     else:
         value['quranPath'] = f'{edition_id}/quran.json'
     return value
@@ -206,6 +251,38 @@ def valid_text(text):
     return '\ufffd' not in text and not any(ord(c) < 32 and c not in '\t\n\r' for c in text)
 
 
+def vpl_format_difference(edition_id, xml_row, text_row):
+    """Explain only the reviewed source-specific XML/TXT formatting differences.
+
+    Comparison normalization never changes the authoritative TXT display value.
+    ASV's exact bracket coordinates are additionally pinned for the whole source.
+    """
+    if xml_row['text'] == text_row['text']:
+        return None
+    text = text_row['text']
+    record = {'bookId': text_row['bookId'], 'chapter': text_row['chapter'], 'verse': text_row['verse']}
+    if edition_id == 'deu1912':
+        pattern = r'\[([1-9]\d*(?::[1-9]\d*)?[a-z]?)\]'
+        markers = list(re.finditer(pattern, text))
+        if markers and re.sub(pattern, r'\1', text) == xml_row['text']:
+            return {**record, 'publisherMarkers': [marker[0] for marker in markers]}
+    elif edition_id == 'eng-asv':
+        brackets = list(re.finditer(r'[\[\]]', text))
+        if brackets and text.replace('[', '').replace(']', '') == xml_row['text']:
+            return {**record, 'publisherMarkers': [marker[0] for marker in re.finditer(r'\[[^\[\]\r\n]+\]', text)],
+                    'bracketPositions': [{'offset': marker.start(), 'character': marker[0]} for marker in brackets]}
+    raise ValueError('Publisher exports disagree beyond the pinned source-specific bracket format exception.')
+
+
+def verify_vpl_format_inventory(edition_id, differences):
+    if edition_id == 'eng-asv':
+        source = SOURCES[edition_id]
+        if len(differences) != source['bracketExceptionCount'] or sha(json_bytes(differences)) != source['bracketExceptionInventorySha256']:
+            raise ValueError('ASV publisher bracket exception inventory changed.')
+    elif len(differences) != (358 if edition_id == 'deu1912' else 0):
+        raise ValueError('The publisher numbering-marker exception inventory changed.')
+
+
 def bible_artifacts(edition_id, archive):
     source = SOURCES[edition_id]
     xml_name, text_name, notice_name = (f'{edition_id}_{suffix}' for suffix in ('vpl.xml', 'vpl.txt', 'about.htm'))
@@ -256,20 +333,12 @@ def bible_artifacts(edition_id, archive):
     for xml_row, text_row in zip(rows, independent_rows):
         if {key: value for key, value in xml_row.items() if key != 'text'} != {key: value for key, value in text_row.items() if key != 'text'}:
             raise ValueError('Publisher XML and plain-text references disagree.')
-        if xml_row['text'] == text_row['text']:
-            continue
-        marker_pattern = r'\[([1-9]\d*(?::[1-9]\d*)?[a-z]?)\]'
-        markers = list(re.finditer(marker_pattern, text_row['text']))
-        comparison_text = re.sub(marker_pattern, r'\1', text_row['text']) if markers else None
-        if edition_id != 'deu1912' or comparison_text != xml_row['text']:
-            raise ValueError('Publisher exports disagree beyond the pinned numbering-marker format exception.')
-        formatting_differences.append({'bookId': text_row['bookId'], 'chapter': text_row['chapter'],
-                                       'verse': text_row['verse'], 'publisherMarkers': [marker[0] for marker in markers]})
-    if len(formatting_differences) != (358 if edition_id == 'deu1912' else 0):
-        raise ValueError('The publisher numbering-marker exception inventory changed.')
-    # The TXT export and publisher HTML retain bracketed numbering annotations.
-    # Keep their exact display text; the comparison-only removal above never
-    # modifies a source file or an output verse.
+        difference = vpl_format_difference(edition_id, xml_row, text_row)
+        if difference is not None:
+            formatting_differences.append(difference)
+    verify_vpl_format_inventory(edition_id, formatting_differences)
+    # Preserve every TXT bracket, including ASV brackets spanning source verses.
+    # Bracket removal is comparison-only, never a source or output modification.
     rows = independent_rows
     display_text = {(row['bookId'], row['chapter'], row['verse']): row['text'] for row in rows}
     for bid, book in books.items():
@@ -305,7 +374,7 @@ def bible_artifacts(edition_id, archive):
         'displayTextMember': text_name,
         'xmlAndPlainTextAgree': not formatting_differences,
         'xmlPlainTextCrossCheck': 'Exact agreement except the recorded publisher numeric-marker brackets; all other characters and references agree.' if formatting_differences else 'Exact agreement.',
-        'publisherNumberingMarkerFormatDifferences': formatting_differences,
+        'publisherNumberingMarkerFormatDifferences': formatting_differences if edition_id == 'deu1912' else [],
         'normalization': ['Decode source XML entities and UTF-8 byte-order marks.', 'Remove only ASCII XML/VPL padding at verse boundaries.',
                           'Map publisher VPL text book abbreviations to the equivalent XML book identifiers for validation.',
                           'Use the publisher VPL TXT as display text, retaining its bracketed alternate-numbering annotations.',
@@ -316,6 +385,15 @@ def bible_artifacts(edition_id, archive):
         'emptySourceRecords': [{'bookId': r['bookId'], 'chapter': r['chapter'], 'verse': r['verse']} for r in rows if not r['text']],
         'totals': totals,
     }
+    if edition_id == 'eng-asv':
+        provenance.update({
+            'xmlPlainTextCrossCheck': 'All words, punctuation and references agree after comparison-only removal of the recorded TXT square brackets. Display text retains every bracket unchanged.',
+            'publisherBracketFormatDifferences': formatting_differences,
+            'publisherBracketInventorySha256': sha(json_bytes(formatting_differences)),
+            'publisherBracketOffsetUnit': 'unicode-codepoint',
+            'publisherBracketScope': '4316 balanced supplied-word/other bracket spans and 76 verse-level unpaired cases, including Selah/Higgaion markers and John 7:53–8:11 textual-variant brackets. The original TXT is not repaired or renumbered.',
+        })
+        provenance['normalization'][3] = 'Use publisher VPL TXT unchanged as display text, retaining supplied-word, musical-marker and textual-variant brackets.'
     return files, provenance
 
 
@@ -366,15 +444,230 @@ def quran_artifacts(edition_id, archive):
                                    'No Quran paraphrases or Bible–Quran editorial comparisons are approved by this import.']}
 
 
+def usj_bible_artifacts(edition_id, archive):
+    """Preserve publisher verse identifiers, notes, headings, and paragraph/character spans.
+
+    The publisher's unnumbered text-only export must not be used to derive verse
+    numbers: it omits absent verses. Only explicit USJ verse milestones identify
+    source units here. Source character offsets are Unicode code-point offsets.
+    """
+    source = SOURCES[edition_id]
+    expected_members = {f'{book_id}.usj' for book_id, _ in BOOKS}
+    if set(archive.namelist()) != expected_members or len(archive.namelist()) != len(expected_members):
+        raise ValueError('USJ archive must contain exactly the 66 identified source books.')
+    heading_styles = {'h', 'toc1', 'toc2', 'toc3', 'mt1', 's1', 's2', 'r', 'd', 'ms', 'qa'}
+    body_styles = {'p', 'b', 'li1', 'li2', 'q1', 'q2', 'lf', 'qr', 'pc'}
+    files, rows, inventory, omitted, source_members = {}, [], [], [], {}
+    annotation_totals = {'headings': 0, 'notes': 0, 'verseNotes': 0, 'headingNotes': 0, 'paragraphs': 0, 'characterSpans': 0}
+
+    def flatten(node):
+        if isinstance(node, str):
+            return node
+        if isinstance(node, dict) and node.get('type') == 'verse':
+            return ''  # Milestones can occur inside a supplied Psalm superscription.
+        if not isinstance(node, dict) or node.get('type') not in {'ref', 'char', 'note', 'para'}:
+            raise ValueError('Unsupported USJ annotation structure.')
+        return ''.join(flatten(child) for child in node.get('content', []))
+
+    def heading_record(node):
+        # A footnote belongs to its own annotation, never to the visible heading.
+        parts, notes, offset = [], [], 0
+
+        def collect(part):
+            nonlocal offset
+            if isinstance(part, str):
+                if not valid_text(part):
+                    raise ValueError('Invalid USJ heading text.')
+                parts.append(part)
+                offset += len(part)
+            elif not isinstance(part, dict):
+                raise ValueError('Invalid USJ heading annotation.')
+            elif part.get('type') == 'verse':
+                return
+            elif part.get('type') == 'note':
+                if part.get('marker') != 'f':
+                    raise ValueError('Unsupported USJ heading note.')
+                notes.append({'at': offset, 'marker': part['marker'], 'caller': part.get('caller', ''),
+                              'text': flatten(part), 'content': part.get('content', [])})
+            elif part.get('type') in {'para', 'char', 'ref'}:
+                for child in part.get('content', []):
+                    collect(child)
+            else:
+                raise ValueError('Unsupported USJ heading annotation.')
+
+        collect(node)
+        return {'style': node['marker'], 'text': ''.join(parts), 'content': node.get('content', []),
+                **({'notes': notes, 'offsetUnit': 'unicode-codepoint'} if notes else {})}
+
+    for book_id, book_name in BOOKS:
+        raw = member(archive, f'{book_id}.usj')
+        source_members[f'{book_id}.usj'] = sha(raw)
+        doc = json.loads(raw.decode('utf-8'))
+        if doc.get('type') != 'USJ' or doc.get('version') != '3.0' or not isinstance(doc.get('content'), list):
+            raise ValueError('Unsupported USJ source version or root.')
+        book = {'id': book_id, 'name': book_name, 'chapters': [], 'frontMatter': []}
+        chapter, verse, paragraph = None, None, None
+        book_identity = False
+
+        def append(text):
+            if not isinstance(text, str) or not valid_text(text):
+                raise ValueError('Invalid USJ source text.')
+            if verse is not None:
+                start = len(verse['text'])
+                verse['text'] += text
+                if paragraph is not None and text:
+                    if paragraph['spans'] and paragraph['spans'][-1]['verse'] == verse['number']:
+                        paragraph['spans'][-1]['end'] = len(verse['text'])
+                    else:
+                        paragraph['spans'].append({'verse': verse['number'], 'start': start, 'end': len(verse['text'])})
+            elif text.strip(ASCII_PADDING):
+                raise ValueError('Unassigned body text before a source verse.')
+
+        def walk(node):
+            nonlocal verse
+            if isinstance(node, str):
+                append(node)
+                return
+            if not isinstance(node, dict):
+                raise ValueError('Invalid USJ body node.')
+            kind = node.get('type')
+            if kind == 'verse':
+                if chapter is None or node.get('marker') != 'v' or not re.fullmatch(r'[1-9]\d*', str(node.get('number', ''))):
+                    raise ValueError('Unsupported verse milestone/range; do not fabricate numbering.')
+                number = int(node['number'])
+                if node.get('sid') != f'{book_id} {chapter["number"]}:{number}' or (verse is not None and number <= verse['number']):
+                    raise ValueError('Duplicate, out-of-order or inconsistent USJ verse identity.')
+                verse = {'number': number, 'text': '', 'notes': [], 'characterSpans': []}
+                chapter['verses'].append(verse)
+            elif kind == 'note':
+                if verse is None or node.get('marker') != 'f':
+                    raise ValueError('Unassigned or unsupported source note.')
+                verse['notes'].append({'at': len(verse['text']), 'marker': node['marker'], 'caller': node.get('caller', ''),
+                                       'text': flatten(node), 'content': node.get('content', [])})
+            elif kind in {'char', 'ref'}:
+                if verse is None:
+                    raise ValueError('Unassigned USJ character span.')
+                if kind == 'char' and node.get('marker') not in {'add', 'wj'}:
+                    raise ValueError('Unsupported running-text character marker.')
+                start = len(verse['text'])
+                for child in node.get('content', []):
+                    walk(child)
+                verse['characterSpans'].append({'start': start, 'end': len(verse['text']),
+                                                'marker': node.get('marker', 'ref'), **({'loc': node['loc']} if kind == 'ref' else {})})
+            else:
+                raise ValueError(f'Unsupported USJ body node type: {kind}')
+
+        for node in doc['content']:
+            if not isinstance(node, dict):
+                raise ValueError('Unexpected top-level source text.')
+            if node.get('type') == 'book':
+                if book_identity or chapter is not None or node.get('code') != book_id:
+                    raise ValueError('USJ book identity mismatch.')
+                book_identity = True
+            elif node.get('type') == 'chapter':
+                number = int(node.get('number', 0))
+                if number != len(book['chapters']) + 1 or node.get('sid') != f'{book_id} {number}':
+                    raise ValueError('USJ chapter inventory or identity mismatch.')
+                chapter = {'number': number, 'verses': [], 'headings': [], 'paragraphs': [], 'offsetUnit': 'unicode-codepoint'}
+                book['chapters'].append(chapter)
+                verse, paragraph = None, None
+            elif node.get('type') == 'para':
+                style = node.get('marker')
+                # The publisher uses `d` for Psalm superscriptions, but also for
+                # the canonical first sentence of Zechariah 12:1. Preserve that
+                # sentence as verse text; retain Psalm titles as labeled context.
+                descriptive_body = style == 'd' and book_id != 'PSA'
+                if style in heading_styles and not descriptive_body:
+                    heading = heading_record(node)
+                    annotation_totals['headingNotes'] += len(heading.get('notes', []))
+                    if chapter is None:
+                        book['frontMatter'].append(heading)
+                    else:
+                        chapter['headings'].append({'afterVerse': verse['number'] if verse is not None else None, **heading})
+                    for child in node.get('content', []):
+                        if isinstance(child, dict) and child.get('type') == 'verse':
+                            walk(child)
+                    annotation_totals['headings'] += 1
+                elif style in body_styles or descriptive_body:
+                    if chapter is None:
+                        raise ValueError('Body paragraph before first chapter.')
+                    paragraph = {'style': style, 'spans': []}
+                    chapter['paragraphs'].append(paragraph)
+                    # USJ paragraph boundaries are layout, not punctuation. An
+                    # explicit separating space retains running-text words.
+                    if verse is not None and verse['text'] and not verse['text'][-1].isspace():
+                        verse['text'] += ' '
+                    for child in node.get('content', []):
+                        walk(child)
+                    paragraph = None
+                    annotation_totals['paragraphs'] += 1
+                else:
+                    raise ValueError(f'Unsupported USJ paragraph style: {style}')
+            else:
+                raise ValueError('Unsupported USJ top-level structure.')
+        if not book_identity:
+            raise ValueError('Missing USJ book identity.')
+        maxima, counts = [], []
+        for chapter in book['chapters']:
+            if not chapter['verses']:
+                raise ValueError('Empty source chapter.')
+            for verse in chapter['verses']:
+                trim_start = len(verse['text']) - len(verse['text'].lstrip(ASCII_PADDING))
+                verse['text'] = verse['text'].strip(ASCII_PADDING)
+                if not verse['text']:
+                    raise ValueError('Empty source verse needs explicit review.')
+                bound = lambda offset: max(0, min(len(verse['text']), offset - trim_start))
+                for note in verse['notes']:
+                    note['at'] = bound(note['at'])
+                for span in verse['characterSpans']:
+                    span.update(start=bound(span['start']), end=bound(span['end']))
+                for paragraph in chapter['paragraphs']:
+                    for span in paragraph['spans']:
+                        if span['verse'] == verse['number']:
+                            span.update(start=bound(span['start']), end=bound(span['end']))
+                annotation_totals['verseNotes'] += len(verse['notes'])
+                annotation_totals['characterSpans'] += len(verse['characterSpans'])
+                rows.append({'bookId': book_id, 'chapter': chapter['number'], 'verse': verse['number'], 'text': verse['text'], 'editionId': edition_id})
+            numbers = [verse['number'] for verse in chapter['verses']]
+            maxima.append(max(numbers)); counts.append(len(numbers))
+            missing = sorted(set(range(1, max(numbers) + 1)) - set(numbers))
+            if missing:
+                omitted.append({'bookId': book_id, 'chapter': chapter['number'], 'verseNumbers': missing})
+            files[f'chapters/{book_id}/{chapter["number"]}.json'] = json_bytes({'schemaVersion': 1, 'editionId': edition_id, 'bookId': book_id, **chapter})
+        inventory.append({'id': book_id, 'name': book_name, 'chapters': len(book['chapters']), 'verseCounts': maxima, 'verseRecordCounts': counts})
+        files[f'books/{book_id}.json'] = json_bytes(book)
+    totals = {'books': len(inventory), 'chapters': sum(item['chapters'] for item in inventory), 'verses': len(rows)}
+    if totals != source['expectedTotals']:
+        raise ValueError(f'USJ source totals changed: {totals}')
+    annotation_totals['notes'] = annotation_totals['verseNotes'] + annotation_totals['headingNotes']
+    manifest = {'schemaVersion': 1, 'edition': edition_metadata(edition_id), 'books': inventory, 'totals': totals,
+                'verseCountSemantics': 'Explicit publisher USJ verse milestones. Missing verse positions are absent, never renumbered.',
+                'sourceStructure': {**annotation_totals, 'offsetUnit': 'unicode-codepoint', 'speakerReviewStatus': 'publisher-markup-only-not-independently-reviewed'}}
+    notice = (source['attribution'] + '\n\nThe Berean Bible text was dedicated to the public domain on April 30, 2023. All uses are freely permitted.\n'
+              + '\n'.join(source['conditions']) + '\n\nPublisher terms: ' + source['licenseUrl'] + '\n'
+              + 'Pinned publisher release: ' + source['formatUrl'] + '\n')
+    files.update({'manifest.json': json_bytes(manifest), 'search-index.json': json_bytes(rows), 'NOTICE.txt': notice.encode('utf-8')})
+    return files, {'members': source_members, 'format': source['format'], 'totals': totals, 'annotationTotals': annotation_totals,
+                   'omittedNumberedPositions': omitted, 'emptySourceRecords': [],
+                   'normalization': ['Decode publisher USJ UTF-8 JSON.', 'Use explicit chapter/verse identifiers without renumbering.',
+                                     'Keep wording, punctuation and Unicode; concatenate adjacent inline text and separate body paragraph continuations with a space.',
+                                     'Remove only ASCII layout padding at verse boundaries.',
+                                     'Keep publisher headings, footnotes, poetic paragraph styles and character spans outside the canonical verse text.',
+                                     'Keep heading note bodies separate from heading text with Unicode code-point offsets and original note field markup.'],
+                   'limitations': ['Publisher words-of-Jesus markers are preserved as source metadata, not independently approved speaker annotations.',
+                                   'No interlinear, morphology, third-party lexicon or recorded-audio assets are imported.']}
+
+
 def build_artifacts(edition_id, raw):
     source = SOURCES[edition_id]
     with zipfile.ZipFile(io.BytesIO(raw)) as archive:
-        if len(archive.infolist()) > 20 or sum(i.file_size for i in archive.infolist()) > 80_000_000:
+        if len(archive.infolist()) > (66 if source.get('format') == 'usj-3.0' else 20) or sum(i.file_size for i in archive.infolist()) > 80_000_000:
             raise ValueError('Unexpected source archive inventory.')
-        files, extra = (bible_artifacts if source['corpus'] == 'bible' else quran_artifacts)(edition_id, archive)
+        importer = usj_bible_artifacts if source.get('format') == 'usj-3.0' else (bible_artifacts if source['corpus'] == 'bible' else quran_artifacts)
+        files, extra = importer(edition_id, archive)
     provenance = {'schemaVersion': 1, 'editionId': edition_id, 'sourceUrl': source['sourceUrl'],
                   'downloadUrl': source['downloadUrl'], 'archiveSha256': sha(raw), 'sourceUpdatedAt': source['sourceUpdatedAt'],
-                  'rightsObservedAt': OBSERVED_ON, 'licenseUrl': source['licenseUrl'], **extra,
+                  'rightsObservedAt': source.get('rightsObservedAt', OBSERVED_ON), 'licenseUrl': source['licenseUrl'], **extra,
                   'generatedFileSha256': {name: sha(content) for name, content in files.items()}}
     files['provenance.json'] = json_bytes(provenance)
     return files
@@ -395,7 +688,7 @@ def verify_outputs(output, pending_indexes=None):
             target = (directory / name).resolve()
             if not target.is_relative_to(directory.resolve()):
                 raise ValueError(f'{edition_id}: generated path escapes edition directory: {name}')
-            if pending_indexes is not None and source['corpus'] == 'bible' and name == 'search-index.json':
+            if pending_indexes is not None and source['corpus'] == 'bible' and (name == 'search-index.json' or name.startswith('chapters/')):
                 continue  # Regenerate this derived file after validating all committed inputs.
             if sha(target.read_bytes()) != expected:
                 raise ValueError(f'{edition_id}: generated content hash mismatch: {name}')
@@ -406,13 +699,19 @@ def verify_outputs(output, pending_indexes=None):
             rows = []
             for meta in manifest['books']:
                 book = json.loads((directory / 'books' / (meta['id'] + '.json')).read_text(encoding='utf-8'))
-                if len(book['chapters']) != meta['chapters']:
+                if book['id'] != meta['id'] or len(book['chapters']) != meta['chapters']:
                     raise ValueError(f'{edition_id}: incorrect chapter count for {meta["id"]}.')
                 for i, chapter in enumerate(book['chapters']):
                     numbers = [v['number'] for v in chapter['verses']]
                     if chapter['number'] != i + 1 or numbers != sorted(set(numbers)) or max(numbers) != meta['verseCounts'][i] or len(numbers) != meta['verseRecordCounts'][i]:
                         raise ValueError(f'{edition_id}: incorrect chapter inventory for {meta["id"]} {i + 1}.')
                     rows.extend({'bookId': book['id'], 'chapter': chapter['number'], 'verse': v['number'], 'text': v['text'], 'editionId': edition_id} for v in chapter['verses'])
+                    if source.get('format') == 'usj-3.0' and pending_indexes is not None:
+                        name = f'chapters/{book["id"]}/{chapter["number"]}.json'
+                        chunk_bytes = json_bytes({'schemaVersion': 1, 'editionId': edition_id, 'bookId': book['id'], **chapter})
+                        if sha(chunk_bytes) != provenance['generatedFileSha256'].get(name):
+                            raise ValueError(f'{edition_id}: rebuilt chapter differs from pinned output: {name}')
+                        pending_indexes.append((directory / name, chunk_bytes))
             if len(rows) != manifest['totals']['verses']:
                 raise ValueError(f'{edition_id}: search index differs from displayed source text.')
             if pending_indexes is not None:
@@ -433,24 +732,27 @@ def verify_outputs(output, pending_indexes=None):
 
 
 def rebuild_indexes(output):
-    """Rebuild only the two derived indexes from verified committed source files."""
+    """Rebuild derived search indexes and USJ chapter chunks from verified books."""
     pending = []
     summaries = verify_outputs(output, pending_indexes=pending)
     # No writes occur until every edition's committed inputs and both resulting
     # index hashes have been validated. No archive or network code is involved.
     rebuilt = []
     for target, content in pending:
+        target.parent.mkdir(parents=True, exist_ok=True)
         temporary = target.with_name(target.name + '.importing')
         temporary.write_bytes(content)
         temporary.replace(target)
-        rebuilt.append({'id': target.parent.name, 'bytes': len(content), 'sha256': sha(content)})
-    return {'mode': 'rebuild-indexes', 'indexes': rebuilt, 'editions': summaries}
+        if target.name == 'search-index.json':
+            rebuilt.append({'id': target.parent.name, 'bytes': len(content), 'sha256': sha(content)})
+    return {'mode': 'rebuild-indexes', 'indexes': rebuilt, 'chapterChunks': sum('/chapters/' in str(path) for path, _ in pending), 'editions': summaries}
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--source-dir', type=Path, help='Directory outside the repository containing ID.zip files.')
     parser.add_argument('--download', action='store_true', help='Download missing pinned archives from publisher URLs.')
+    parser.add_argument('--edition', action='append', choices=list(SOURCES), help='Import/check only this source; existing editions are still verified. Repeat for multiple sources.')
     parser.add_argument('--output', type=Path, default=OUTPUT, help='Generated edition directory (default: data/editions).')
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument('--verify', action='store_true', help='Verify generated files without network or raw archives.')
@@ -466,7 +768,7 @@ def main():
     if not args.source_dir:
         parser.error('--source-dir is required for import or --check.')
     generated = {}
-    for edition_id in SOURCES:
+    for edition_id in args.edition or SOURCES:
         raw = archive_bytes(edition_id, args.source_dir, args.download)
         generated[edition_id] = build_artifacts(edition_id, raw)
     catalog = json_bytes({'schemaVersion': 1, 'editions': [edition_metadata(edition_id) for edition_id in SOURCES]})

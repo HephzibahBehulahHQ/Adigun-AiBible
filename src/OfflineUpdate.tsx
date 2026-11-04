@@ -23,9 +23,14 @@ export default function OfflineUpdate({ saveBeforeUpdate }: { saveBeforeUpdate: 
   }, []);
   async function activate() {
     if (!waiting) return;
+    if (!window.dispatchEvent(new Event('adigun:before-update', { cancelable: true }))) {
+      setMessage('Save or finish the open study tool before updating. Your work remains open.');
+      return;
+    }
     setBusy(true);
     try {
       await saveBeforeUpdate();
+      if (!window.dispatchEvent(new Event('adigun:before-update', { cancelable: true }))) throw new Error('Save or finish the open study tool before updating.');
       navigator.serviceWorker.addEventListener('controllerchange', () => location.reload(), { once: true });
       waiting.postMessage({ type: 'ACTIVATE_UPDATE' });
       setMessage('Your study is saved. Activating the update…');

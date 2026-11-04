@@ -1,0 +1,9 @@
+Berean Standard Bible (BSB). BSB Publishing, LLC; Berean Bible Translation Committee. Publisher USJ release v5.19, 27 October 2026. Public domain. https://berean.bible/
+
+The Berean Bible text was dedicated to the public domain on April 30, 2023. All uses are freely permitted.
+Keep exact BSB wording and source identity when identifying a quotation as BSB.
+The publisher asks that altered derivatives use a separate name.
+No third-party recorded audio is included or licensed by this text import.
+
+Publisher terms: https://berean.bible/terms.htm
+Pinned publisher release: https://github.com/BSB-publishing/bsb2usfm/releases/tag/v5.19
