@@ -8,6 +8,7 @@ test('decision simulation provides a clearly fictional situation, meaningful cho
  assert.ok(decisionSimulation.considerations.length>=3);
  assert.ok(decisionSimulation.choices.every(choice=>choice.consequence.length>30));
  assert.match(decisionSimulation.reflectionPrompt,/Who could be affected/);
+ assert.ok(decisionSimulation.followUps.length>=2);
  assert.equal('correctAnswer' in decisionSimulation,false);
  assert.equal('score' in decisionSimulation,false);
 });
