@@ -65,3 +65,15 @@ Run `41728171389` deployed `f6e58b976dbfd30d65bf174b009340f3d3e30ea6`; live buil
 ## Explicit limits
 
 Database schema execution, RLS and concurrency tests, live Auth/model integration, independent editorial/native-language review, recorded narration and native widgets remain unverified or unavailable. Browser speech and silent WebM support depend on the browser; the PNG check does not certify every media platform. No independent accessibility certification is claimed.
+
+## Released private reading sessions and next continuation
+
+Main `8ed0aa73cdf759a36c923d09e3889c979104379e` supersedes the pending PR #4/PR #5 statements above. [Workflow 41838579813](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41838579813) passed **181 application tests, 20 backend contracts, 84 browser cases and 10 persistence repetitions**, then deployed successfully at **14:32:35 Europe/Berlin, 4 November 2026**. These counts were read from the actual build log.
+
+PR #6 adds saved reader layouts and command-palette regression coverage. Its exact-candidate Actions results remain pending at this checkpoint. This continuation has no local executor; no local Node, TypeScript or browser success is claimed. The command-filter model additionally passed five isolated V8 checks, which do not replace the Node or browser release gate.
+
+## Saved reader layouts and command palette: accepted implementation
+
+[PR #6](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/6), code candidate `916d245f75c709259f9b274b7f7df1b97a99cc9e`, passed [CI 41873797416](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41873797416): **199 application tests, 20 backend contracts, 98 desktop/mobile browser cases and 10 persistence repetitions**. TypeScript, lint, source validation and build also passed. The initial run's five browser failures (93/98 passed) were repaired through explicit control names and correct mobile inspector focus; no assertion was removed or retried away.
+
+Coverage includes actual layout/publisher/pane restoration, unchanged source wording and current reference, backup import preview, save/reload, concurrent windows, damaged-data preservation and guarded reset, denied storage, command filtering/keyboard navigation, 320px reflow and Notes-trigger restoration. The final follow-up extends the keyboard case to show the inspector from Reading Focus and must pass the same gate before merge. Its production workflow checks the public build-info source SHA and application response; final receipts are retained in PR #6.

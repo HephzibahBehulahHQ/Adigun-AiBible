@@ -1,0 +1,14 @@
+.layouts-backdrop{padding:clamp(12px,5vh,50px) 12px}
+.layouts-dialog{width:min(760px,100%);max-height:calc(100dvh - 24px);overflow:auto;overscroll-behavior:contain;min-width:0;padding:clamp(16px,4vw,28px);border:1px solid var(--border);border-radius:14px;background:var(--panel);color:var(--ink)}
+.layouts-dialog>header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:18px}
+.layouts-dialog>header>div{min-width:0}.layouts-dialog h2{font-size:24px;overflow-wrap:anywhere;margin-bottom:0}
+.layouts-dialog p{font-size:13px;line-height:1.65;overflow-wrap:anywhere}.layouts-dialog input{font-size:16px;min-width:0}.layouts-dialog input[type=file]{width:100%;font-size:12px}
+.layouts-dialog button{min-height:44px}.layouts-dialog [role=status]{min-height:22px;color:var(--muted)}
+.layouts-current{border-left:2px solid var(--accent);padding-left:12px}.layouts-error{color:var(--error)}
+.layouts-save{display:flex;align-items:flex-end;flex-wrap:wrap;gap:12px;margin:20px 0}.layouts-save label{flex:1;min-width:min(200px,100%)}
+.layouts-list{display:grid;gap:14px;margin-top:18px}.layouts-list article,.layouts-recovery,.layouts-import-preview{border:1px solid var(--border);border-radius:10px;padding:18px;background:var(--bg);min-width:0}
+.layouts-list h3{overflow-wrap:anywhere}.layouts-list form .button-row{margin-top:12px}.layouts-import-preview{margin-top:16px}
+.layouts-dialog footer{border-top:1px solid var(--border);margin-top:24px;padding-top:20px}.layouts-dialog footer>label{margin-top:18px}.layouts-dialog footer>p{margin:14px 0 0}
+.command-trigger{min-width:36px;min-height:36px}.global-search{min-width:0}.global-search input{min-width:0}
+.reader-layout-launcher{margin-bottom:14px}.reader-layout-launcher button{min-height:44px}
+@media(max-width:380px){.topbar{padding-left:10px;padding-right:10px;gap:6px}.topbar-actions{gap:5px}.topbar .global-search{gap:5px}.topbar .locale-control select{max-width:57px}.layouts-dialog h2{font-size:20px}.layouts-save>*{width:100%}.layouts-list article{padding:14px}.layouts-list .button-row{gap:7px}}
