@@ -282,7 +282,7 @@ test('malformed backups and damaged storage preserve data; reset cannot replace 
   await writeRawLayouts(page, damaged);
   await page.getByRole('button', { name: 'Saved reader layouts', exact: true }).click();
   await expect(layouts(page).getByRole('alert')).toContainText('Saved reader layouts are damaged.');
-  await expect(layouts(page).getByRole('button', { name: 'Save current layout', exact: true })).toBeDisabled();
+  await expect(layouts(page).getByRole('button', { name: 'Save current layout', exact: true })).toHaveCount(0);
   await expect(layouts(page).getByLabel('Import layouts backup', { exact: true })).toBeDisabled();
   expect(await readRawLayouts(page)).toEqual(damaged);
 

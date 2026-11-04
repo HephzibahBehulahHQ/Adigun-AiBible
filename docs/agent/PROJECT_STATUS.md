@@ -18,7 +18,9 @@ Updated: 4 November 2026 (Europe/Berlin). The complete Version 3 product remains
 - Preserve the current passage, notes, history, licensed source wording and all accepted flows. Layout backups must validate bounded fields and reject invalid data without replacing existing data.
 - Environment: the local executor is unavailable. Source is inspected and checkpointed through authenticated GitHub tools. The existing pull-request workflow supplies the actual TypeScript, unit, build and desktop/mobile browser release gates. No local checks are claimed.
 - Current changes are WIP until their exact candidate passes those gates. No changes are deployed by this status update.
-- Remote checkpoint receipts will be recorded here after exact-head verification; this initial update starts from `8ed0aa73cdf759a36c923d09e3889c979104379e`.
+- Verified remote checkpoints: `07aa031e59544b7878c2f0dd129689eae7fb4724` reconciled prior release records; `a07a9f104a7f0b18cbc245af3b0362fa74faccd3` added the integrated layouts, commands and regression coverage. [Draft PR #6](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/6) runs the real release gate. Initial CI is pending; no new release is claimed.
+- Independent review found that closing an overlay could steal focus back to the Notes inspector. The note-autofocus effect now runs only for inspector/passage changes; a dedicated regression is included in this candidate.
+- The deployment workflow now checks the public `build-info.json` source commit and application HTTP response after Pages publication, using the returned deployment URL. This verifies publication in the runner when direct web retrieval is unavailable.
 
 ## Remaining gates
 

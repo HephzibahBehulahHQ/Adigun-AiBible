@@ -142,7 +142,7 @@ export default function App() {
   }, [sourceAppearance]);
   useEffect(()=>{getPublication().then(setPublication);},[]);
   useEffect(()=>{const query=window.matchMedia('(max-width:1050px)');const change=()=>{setCompact(query.matches);if(query.matches)setShowInspector(false);};query.addEventListener('change',change);return()=>query.removeEventListener('change',change);},[]);
-  useEffect(()=>{if(showInspector&&inspector==='notes'&&!modalOpen)document.getElementById('verse-note')?.focus();},[showInspector,inspector,current.bookId,current.chapter,current.verse,modalOpen]);
+  useEffect(()=>{if(showInspector&&inspector==='notes'&&!modalOpen)document.getElementById('verse-note')?.focus();},[showInspector,inspector,current.bookId,current.chapter,current.verse]);
   useEffect(() => {
     const onHash = () => {
       const nextHash = location.hash;
