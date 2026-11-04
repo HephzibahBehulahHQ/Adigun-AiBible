@@ -3,7 +3,9 @@
 ## Current work
 
 Project: Adigun-AiBible
-Current implementation branch: `codex/bible-v3-expansion-20261104`
+Current implementation branch: `codex/reader-context-20261104`
+Verified production: PR #3, main `4d8943e60143a74e228c0bf7ed37b2d404d6776c`; live receipt checked 4 November 2026, 13:17 Europe/Berlin. See the status file for release and checkpoint evidence.
+Next slice: source-supplied headings, poetry, notes and red-letter metadata, plus private reading history and study tabs. This slice is not yet implemented or verified.
 Current status and continuation record: `docs/agent/PROJECT_STATUS.md`
 Canonical product specification: `docs/specs/Adigun-AiBible_Codex_Master_Prompt.md` (version 3.0, updated 4 November 2026)
 Execution instructions: `AGENTS.md`
