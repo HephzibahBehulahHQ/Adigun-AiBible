@@ -4,11 +4,13 @@ Read [PROJECT_STATUS.md](PROJECT_STATUS.md) for the exact main checkpoint, CI re
 
 ## Current bounded increment
 
-PR #17 merged the second decision-simulation scenario about confidentiality, consent and practical support. Its full exact-candidate CI passed, including selected-edition references, browser replay and persistence. Main deployment 41903597641 is queued; verify its public receipt against the merged SHA.
+PR #17 merged the second decision-simulation scenario about confidentiality, consent and practical support. Its full exact-candidate CI passed, including selected-edition references, browser replay and persistence. Main deployment 41903597641 passed and verified the published source revision.
+- PR #20 adds the first Scripture Detective Mission. Initial source/build/unit checks passed; complete desktop/mobile browser, clue replay and private persistence checks before merge.
 
 ## Next roadmap
 
-1. Finish main deployment verification for PR #17, then expand the decision-simulation catalog only with reviewed, source-linked adult-study scenarios. Keep scenarios clearly fictional, avoid spiritual scores or divine-outcome claims, and preserve safety exceptions.
+1. Complete PR #20's browser and persistence checks before merging the first detective mission.
+2. Expand the decision-simulation catalog only with reviewed, source-linked adult-study scenarios. Keep scenarios clearly fictional, avoid spiritual scores or divine-outcome claims, and preserve safety exceptions.
 2. Extend retelling only where source, privacy and accessibility behavior is proven. Written retelling is local; voice recording, transcription, automatic correction and Pidgin/Yorùbá/Hausa/Igbo speech support remain unavailable until a real permitted service and native-language review exist.
 3. Build Nigerian parable storytelling only with clear adaptation labels and native/cultural/editorial review.
 4. Keep translation simulation gated on licensed lexical, morphology and alignment data plus qualified linguistic review.
