@@ -20,15 +20,27 @@ Live [build-info.json](https://hephzibahbehulahhq.github.io/Adigun-AiBible/build
 
 The reader-context/history/tabs slice on `codex/reader-context-20261104` is not covered by these release receipts. Its candidate evidence is tracked below.
 
-## Reader-context candidate: PR #4
+## Source-reader release: PR #5
 
-Draft [PR #4](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/4) implements source-supplied headings, notes, poetry/paragraphs and optional publisher red-letter spans, with private history and study tabs under integration. It is not deployed.
+[PR #5](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/5) merged source-supplied headings, positioned notes, same-edition reference previews, poetry/paragraphs and optional publisher red-letter spans into main `cce0f7495fc2064b0ee8686a30a9c687275fd175`. Final candidate `b54026a5499a3c9c8a64b6782684601399431ff2` passed [CI 41836742071](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41836742071):
 
-- 17 focused structure/reference tests pass, covering nested publisher spans, Unicode code-point offsets, invalid metadata fallback, note positions and canonical reference bounds.
-- An independent sweep checked all 2,378 installed BSB/ASV chapters: zero verse or heading text mismatches, invalid heading anchors or metadata issues. All 4,854 BSB notes remain represented exactly once in normalized rendering positions.
-- TypeScript and scoped reader lint passed. The initial whole-project check caught an unknown lint suppression in the in-progress session component; it must be removed before the final gate.
-- Eight source-reader browser cases are written for exact wording, paragraph actions, 320px poetry/notes, focus restoration, same-edition reference preview and retry. Initial CI [41834090869](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41834090869) passed 68/70 browser cases. Its failures exposed an overflowing edition toolbar at 320px and a service-worker fetch bypassing the injected page-route failure. The toolbar now wraps; the width assertion checks the actual 320px limit; the retry case blocks service workers to isolate a failed network fetch. These corrections await the next CI run.
-- Session persistence, backup/recovery and stale-navigation browser checks remain pending. A read-only review identified the need to invalidate asynchronous session navigation when its reader unmounts or changes; the final candidate must include that fix.
+- 166 application/source tests and 20 offline backend contract tests.
+- TypeScript, ESLint, full source validation and production build.
+- 70 desktop/mobile browser cases with retries disabled, plus 10 repeated legacy persistence checks.
+- An independent sweep checked all 2,378 installed BSB/ASV chapters: zero verse or heading text mismatches, invalid heading anchors or metadata issues; all 4,854 BSB notes remain represented once.
+
+Desktop note/red-letter and desktop/mobile 320px poetry/note images from passing run41836214694 were inspected directly. The final candidate only scoped backup help text to included workspaces. Initial run41834090869 passed68/70; the narrow toolbar now wraps and the request-retry test disables service workers so an injected fetch failure reaches the app. The strengthened overflow assertion checks320 CSS pixels directly. No assertion was removed or retried away.
+
+Production workflow [41837242771](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41837242771) and the public receipt are pending verification at this checkpoint.
+
+## Private reading-session candidate: PR #4
+
+[PR #4](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/4) adds capped private history, previous/next navigation, named study tabs, edition/revision-bound backup/restore, concurrent-window protection, cancellation of abandoned asynchronous actions and explicit damaged-session download/reset. It continues from the PR #5 source-reader release; it is not yet deployed.
+
+- All15 focused session model/source tests pass, bringing the complete local application suite to181; all20 backend contract tests, TypeScript, ESLint, source validation and production build also pass.
+- Eight history browser cases pass in run41836393302. That run passed76/78 overall; the legacy backup test used a global file-input selector that became ambiguous after the session importer was added. It now targets the existing accessible name, `Import study backup`, retaining the same persistence assertions.
+- A regression delays a real Genesis response, unmounts the old reader, opens and saves Psalm6, then proves the late response cannot navigate, change saved state or even begin a stale session write. Four further browser cases verify raw damaged-data preservation, explicit reset/restore and refusal to erase a session another window repaired.
+- The initial full-project lint check caught an unsupported suppression; it was removed. Review identified the stale-navigation lifecycle race; per-route abort controllers and storage guards now cancel abandoned work without treating cancellation as storage failure. Final integrated CI must establish the race/recovery browser result before merge.
 
 ## Historical hardening release
 
