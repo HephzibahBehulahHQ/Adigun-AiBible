@@ -185,7 +185,7 @@ test('legacy WEB bookmarks keep their edition and remove correctly while German 
   await openEnglishReader(page,'GEN',1,1);
   await expect(page.getByRole('button',{name:'Bookmark verse 1',exact:true})).toBeEnabled();
   const legacy={schemaVersion:1,bookmarks:[{bookId:'GEN',chapter:1,verse:1}],highlights:[],notes:[],completedSessions:[],journal:[],readingDays:[]};
-  await page.locator('input[type="file"]').setInputFiles({name:'legacy-study.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(legacy))});
+  await page.getByLabel('Import study backup', { exact: true }).setInputFiles({name:'legacy-study.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(legacy))});
   await page.getByRole('button',{name:'Merge backup',exact:true}).click();
   await expect(page.getByText('Backup merged and saved on this device.',{exact:true})).toBeVisible();
   await page.getByLabel('Reading preset',{exact:true}).selectOption('de');
