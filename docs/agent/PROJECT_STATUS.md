@@ -2,7 +2,7 @@
 
 ## Latest continuation checkpoint — 4 November 2026
 
-Current main: `a222a97f83683b5ecddced42cc58fb45ee5e7219`.
+Current main: `45ecaea7a4c8db7f0f9584f1b765e4221886a290`.
 
 - PR #8 saved/private searches and PR #9 game-template audit are merged; both release workflows passed.
 - PR #10 shared-passage route preservation and PR #11 private recent-search history are merged; both release workflows passed.
@@ -14,7 +14,8 @@ Current main: `a222a97f83683b5ecddced42cc58fb45ee5e7219`.
 - PR #19 — project/game audit reconciliation: merged as `82390cdf6c736abddee0de4bfdc143f2c021315b`.
 - PR #21 — release-record reconciliation: merged as `462ab2c372b1ebabf9792f6eb229d14e26983835`; main Pages deployment [41916140929](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41916140929) passed production build, desktop/mobile browser, persistence and exact public source-receipt verification.
 - PR #22 — advanced search for the standalone ClearQuran source: merged to main as `a222a97f83683b5ecddced42cc58fb45ee5e7219`. Exact-head CI [41919828778](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41919828778) passed source/content/build, Chromium setup, desktop/mobile browser checks and repeated persistence checks. Main Pages deployment [41920837036](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41920837036) passed production build, desktop/mobile browser checks, persistence regression, publication and exact public source-receipt verification for `a222a97f83683b5ecddced42cc58fb45ee5e7219`.
-- PR #23 — optional non-scoring prompts for private retelling practice: branch `codex/retelling-guidance-20261104`. CI [41921482363](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41921482363) exposed a repeated-insertion unit-test failure; fixed with idempotent insertion. CI [41921913983](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41921913983) passed source/build/unit tests but found an exact-label locator issue after the prompt update; the browser regression now uses the semantic textbox role. Latest exact-head CI pending.
+- PR #23 — optional non-scoring prompts for private retelling practice: merged to main as `45ecaea7a4c8db7f0f9584f1b765e4221886a290`. Exact-head CI [41922834044](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41922834044) passed source/build, unit, desktop/mobile browser and persistence checks. Main Pages deployment [41923730739](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41923730739) passed publication and exact public source-receipt verification for `45ecaea7a4c8db7f0f9584f1b765e4221886a290`.
+- PR #24 — device-local saved Quran search profiles: branch `codex/quran-saved-searches-20261104`; adds named ClearQuran queries with mode, surah scope and exclusions, load/delete controls and a separate private IndexedDB store. Exact-head CI pending.
 
 The full Version 3 product remains in progress. Each bounded increment is separately accepted; none implies overall completion.
 
