@@ -47,4 +47,15 @@ test('closing commands and layouts restores their triggers while Notes is open, 
   await expect(note).toHaveValue('A private reflection kk');
   await expect(palette).toHaveCount(0);
   await expect(inspector.locator('.save-status')).toHaveText('Saved on this device');
+  await page.keyboard.press('Control+k');
+  await palette.getByLabel('Find a command', { exact: true }).fill('Toggle focus mode');
+  await palette.getByLabel('Find a command', { exact: true }).press('Enter');
+  await expect(page.locator('.app')).toHaveClass(/focus-mode/);
+  await expect(inspector).not.toBeVisible();
+  await page.keyboard.press('Control+k');
+  await palette.getByLabel('Find a command', { exact: true }).fill('Toggle passage inspector');
+  await palette.getByLabel('Find a command', { exact: true }).press('Enter');
+  await expect(page.locator('.app')).not.toHaveClass(/focus-mode/);
+  await expect(inspector).toBeVisible();
+  await expect(note).toHaveValue('A private reflection kk');
 });

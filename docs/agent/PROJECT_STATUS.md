@@ -2,33 +2,37 @@
 
 Updated: 4 November 2026 (Europe/Berlin). The complete Version 3 product remains in progress.
 
-## Verified starting release
+## Reader layouts and command palette: PR #6
 
-- Main: `8ed0aa73cdf759a36c923d09e3889c979104379e`, verified from GitHub.
-- [Release workflow 41838579813](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41838579813): build and Pages deployment succeeded; deployment completed 14:32:35 Europe/Berlin.
-- Actual release logs: **181 application tests, 20 backend contract tests, 84 desktop/mobile browser cases and 10 repeated persistence checks passed**. TypeScript, lint, content validation and production build passed. Offline backend contracts do not establish live backend operation.
-- Production URL: https://hephzibahbehulahhq.github.io/Adigun-AiBible/ . Build receipt: https://hephzibahbehulahhq.github.io/Adigun-AiBible/build-info.json .
-- The public build receipt has not yet been independently fetched in this continuation. The workflow success is verified separately.
-- Released increments include source-supplied publisher annotations, unchanged source rendering, private passage history, return navigation, named source-bound study tabs, backup/restore, concurrent-window protection and damaged-session recovery. Earlier status text that described PR #4 as pending was stale.
+Implementation is complete for this bounded slice. Source candidate `916d245f75c709259f9b274b7f7df1b97a99cc9e` passed [CI 41873797416](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41873797416): **199 application tests, 20 offline backend contracts, 98 desktop/mobile browser cases and 10 repeated persistence checks**, with no test retries or failures. TypeScript, lint, content validation and production build passed.
 
-## Current bounded slice
+The final follow-up also ensures the inspector command reveals the panel when leaving Reading Focus, with a real-keyboard regression. That checkpoint and this acceptance record must pass the same release workflow. [PR #6](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/6) records its final check, merge and production receipts. Main merges only after the applicable gate is green. The post-publication workflow verifies that the public build receipt equals its exact source SHA.
 
-- Branch: `codex/reader-layouts-commands-20261104`, created from the verified main above.
-- Scope: named device-local layouts for reading appearance, source presentation, inspector and comparison panes; accessible command palette integrated with the existing navigation and modal guards.
-- Preserve the current passage, notes, history, licensed source wording and all accepted flows. Layout backups must validate bounded fields and reject invalid data without replacing existing data.
-- Environment: the local executor is unavailable. Source is inspected and checkpointed through authenticated GitHub tools. The existing pull-request workflow supplies the actual TypeScript, unit, build and desktop/mobile browser release gates. No local checks are claimed.
-- Checkpoint `61dd3cfb7c7dce22e8846561c2928274afea5875` was read back exactly from the remote branch at 17:55:25 Europe/Berlin. This follow-up includes the reviewed source-detail reset and final browser assertions.
-- Current changes are WIP until their exact candidate passes those gates. No changes are deployed by this status update.
-- Verified remote checkpoints: `07aa031e59544b7878c2f0dd129689eae7fb4724` reconciled prior release records; `a07a9f104a7f0b18cbc245af3b0362fa74faccd3` added the integrated layouts, commands and regression coverage. [Draft PR #6](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/6) runs the real release gate. Initial CI passed the full source/content/build check; its browser run was superseded by the reviewed candidate. No new release is claimed.
-- Independent review found that closing an overlay could steal focus back to the Notes inspector. The note-autofocus effect now runs only for inspector/passage changes; a dedicated regression is included in this candidate. Restoring a layout that disables publisher notes/headings also closes the corresponding source-detail drawer.
-- The deployment workflow now checks the public `build-info.json` source commit and application HTTP response after Pages publication, using the returned deployment URL. This verifies publication in the runner when direct web retrieval is unavailable.
+Delivered implementation:
+- Up to 12 named device-local layouts: theme, size, spacing, focus, publisher paragraphs/headings/notes/red letters, inspector and 2–4 linked/independent comparison panes.
+- Save, apply, rename, removal, JSON export and explicitly confirmed validated replacement import.
+- Atomic concurrent-window protection, clear storage errors, damaged-record download and reset guarded against a newer repair.
+- Accessible command palette through the top-bar button or Control/Command + K, with filtering, real actions, keyboard traversal, modal focus restoration and ordinary typing preserved.
+- Current passage, Scripture wording, personal notes and reading history remain independently managed.
+- Applying a layout that disables publisher annotations closes its corresponding detail drawer. Small-screen inspector behavior and existing note autofocus are preserved.
 
-## Remaining gates
+## Integration and production identity
 
-Keep [BLOCKERS.md](BLOCKERS.md) and the feature matrix's source, human review, licensing, authenticated service, recorded-media and native-platform dependencies. Do not retry the interrupted dedicated backend setup without explicit resumption. Continue other unblocked reader/search work.
+- Feature branch: `codex/reader-layouts-commands-20261104`. Last read-back checkpoint before this record: `916d245f75c709259f9b274b7f7df1b97a99cc9e`.
+- Previous released main: `8ed0aa73cdf759a36c923d09e3889c979104379e`. [Workflow 41838579813](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41838579813) deployed it successfully at 14:32:35 Europe/Berlin.
+- Production: https://hephzibahbehulahhq.github.io/Adigun-AiBible/
+- Exact current public receipt: https://hephzibahbehulahhq.github.io/Adigun-AiBible/build-info.json
+- Deployment evidence for this increment is retained in PR #6 and its production workflow. Do not infer publication from a branch checkpoint; inspect the merge/workflow and generated public receipt when resuming.
+- A separate overlapping branch, `codex/workspace-navigation-20261104` / PR #7, was discovered during verification. Its work has not been removed or rewritten. Inspect actual main and reconcile any remaining overlap before integrating it; do not install duplicate competing layout/palette systems.
 
-Next: finish the corrected layout/command release gate, merge and deploy under the existing authorization, then verify the public source revision. Following unblocked work is advanced/private/saved search.
+## Verification and recovery
 
-## Observed browser gate and correction
+Initial [CI 41872693806](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41872693806) passed 93/98 browser cases. Failures exposed ambiguous theme/pane control names and mobile note autofocus. Explicit accessible names and corrected overlay guards fixed those failures; the later complete run passed all 98 without removing assertions or enabling retries.
 
-[CI 41872693806](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41872693806) at `5be157b3677540a7efcff981c4f28f0f0a46f4c4` passed all 199 application tests, 20 backend contracts, source/content checks and build, then passed 93/98 browser cases. The five failures were retained: theme/pane label matching in both device profiles and an existing mobile note-focus regression. The fix adds explicit accessible control names and permits autofocus inside the mobile Notes inspector while preventing other overlays from taking focus. No assertions or retries were removed; the corrected candidate must pass the complete gate before release.
+Checkpoints `07aa031`, `a07a9f1`, `61dd3cf`, `5be157b` and `916d245` were read back from the remote feature branch. The local executor is unavailable in this continuation; actual Node, build and browser verification runs in GitHub Actions. Browser artifacts are retained by those runs. No local browser or independent accessibility certification is claimed. Offline backend contracts do not establish live backend operation.
+
+## Next bounded work
+
+Continue advanced/private/saved search from the deployed state. Review the separate navigation branch for independently useful route-preservation work and reconcile through normal reviewed Git changes. Do not rebuild the released source-reader or private-session features.
+
+External gates remain: genuine human editorial/native-language review, edition-specific permissions, the interrupted dedicated backend setup, authenticated model service, permitted recorded narration and native-platform environments. Do not retry cancelled backend setup without explicit resumption. These dependencies do not block other local implementation.
