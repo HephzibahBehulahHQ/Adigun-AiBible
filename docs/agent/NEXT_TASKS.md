@@ -18,11 +18,12 @@ PR #6 implements saved reader layouts and accessible command navigation. Candida
 
 ## Next bounded slice
 
-1. Complete PR #12 guided interpretation challenge after its latest exact-candidate CI passes; retain edition-bound references, private storage and no automatic doctrinal/faith score.
-2. Continue M7: retelling practice/coach can be scoped to truthful local capability; the translation simulator remains gated on licensed lexical/morphology/alignment data and qualified review.
-3. Continue M8 decision simulations and Nigerian parables only with clearly labelled fictional adaptations, source passages, plausible consequences, reflection/replay, accessible controls and content review where applicable. No holiness scores or divine-outcome guarantees.
-4. Preserve source wording, edition identity, existing privacy/storage guards and all released reader/workspace flows. Keep game-like learning experiences distinct from actual standalone games until their complete gameplay, content, safety and test contracts pass.
-5. Checkpoint useful changes within five minutes and verify the remote head. Apply the existing release gates and verify the generated public source receipt before reporting deployment.
+1. Complete PR #14's first sourced decision-simulation pilot only after exact-candidate unit, desktop/mobile browser and private-persistence checks pass; then merge and verify the published source receipt.
+2. Continue M7 with a clearly scoped, truthful local retelling-practice coach; do not imply speech recognition or generative AI until a real permitted service is configured and tested.
+3. Keep translation simulation gated on licensed lexical, morphology and alignment data plus qualified linguistic review.
+4. Continue M8 with Nigerian parables only as clearly labelled adaptations, with native/cultural/editorial review; keep additional decision simulations source-linked, accessible and replayable, with no holiness scores or divine-outcome guarantees.
+5. Preserve source wording, edition identity, existing privacy/storage guards and all released reader/workspace flows. Keep game-like learning experiences distinct from complete standalone games until gameplay, content, safety and test contracts pass.
+6. Checkpoint useful changes within five minutes and verify the remote head. Apply the existing release gates and verify the generated public source receipt before reporting deployment.
 
 ## External gates
 
