@@ -1,18 +1,20 @@
 # Version 3 continuation
 
-Read [PROJECT_STATUS.md](PROJECT_STATUS.md) for current acceptance, exact checkpoints and release receipts.
+Read [PROJECT_STATUS.md](PROJECT_STATUS.md) for the exact main checkpoint, CI results and deployment receipts.
 
-## Reader/workspace increment
+## Current bounded increment
 
-PR #6 implements saved reader layouts and accessible command navigation. Candidate `916d245f75c709259f9b274b7f7df1b97a99cc9e` passed 199 application tests, 20 backend contracts, 98 browser cases and 10 persistence repetitions. The final inspector/focus regression and documentation follow-up use the same release gate. Confirm the actual merged/public revision before continuing; never rebuild this accepted functionality from scratch.
+PR #15 adds private written retelling practice to the existing edition-bound memorization flow. Complete typecheck, lint, unit/content/build, desktop/mobile browser, backup and persistence checks before merge. Then verify the main deployment and public build receipt against the merged SHA.
 
-## Next bounded slice
+## Next roadmap
 
-1. Reconcile the independently active PR #7/navigation branch with actual main, preserving useful route fixes and avoiding duplicate layout or command systems.
-2. Continue advanced/private/saved search: explicit source scopes, search in personal notes/bookmarks, bounded saved queries and deliberate history controls.
-3. Preserve source wording, edition identity, existing privacy/storage guards and all released reader/workspace flows.
-4. Checkpoint useful changes within five minutes and verify the remote head. Apply the existing release gates and verify the generated public source receipt.
+1. Extend retelling only where source, privacy and accessibility behavior is proven. Written retelling is local; voice recording, transcription, automatic correction and Pidgin/Yorùbá/Hausa/Igbo speech support remain unavailable until a real permitted service and native-language review exist.
+2. Continue decision simulations with additional source-linked scenarios and genuine replay/reflection tests. Keep scenarios clearly fictional, avoid spiritual scores or divine-outcome claims, and label adult-only content.
+3. Build Nigerian parable storytelling only with clear adaptation labels and native/cultural/editorial review.
+4. Keep translation simulation gated on licensed lexical, morphology and alignment data plus qualified linguistic review.
+5. Preserve exact Scripture wording, edition identity, private local storage, accessible controls and all released reader/workspace behavior.
+6. Checkpoint within five minutes, run the existing exact-candidate release gates, merge only green candidates and verify the generated public source receipt after every main deployment.
 
 ## External gates
 
-Actual editorial/native-language review, edition permissions, the explicitly interrupted dedicated backend setup, model service, recorded media and native platform environments remain separate dependencies. Do not fabricate their availability, substitute unrelated services or restart cancelled setup without explicit resumption.
+Human editorial/native-language review, edition-specific permissions, the interrupted dedicated backend setup, authenticated model service, permitted recorded narration and native-platform environments remain separate dependencies. Do not fabricate their availability or restart cancelled backend setup without explicit resumption.
