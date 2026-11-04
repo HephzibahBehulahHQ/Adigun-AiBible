@@ -19,15 +19,16 @@ test('Quran source search supports Boolean operators and surah scope without mix
   await expect(results).toContainText('Quran 2:');
   await expect(results).not.toContainText('Quran 1:');
 
+  const saved = page.getByRole('region', { name: 'Private saved Quran searches' });
   await page.getByLabel('Name this saved Quran search').fill('Mercy in Surah Two');
-  await page.getByRole('button', { name: 'Save search privately' }).click();
-  await expect(page.getByRole('status')).toContainText('Search saved privately on this device.');
+  await saved.getByRole('button', { name: 'Save search privately' }).click();
+  await expect(saved.getByRole('status')).toContainText('Search saved privately on this device.');
 
   await query.fill('gracious');
   await form.getByLabel('Quran search match').selectOption('phrase');
   await form.getByLabel('Search Quran surah').selectOption('');
   await form.getByLabel('Exclude Quran words').fill('worlds');
-  await page.getByRole('button', { name: 'Load saved search Mercy in Surah Two' }).click();
+  await saved.getByRole('button', { name: 'Load saved search Mercy in Surah Two' }).click();
   await expect(query).toHaveValue('Allah');
   await expect(form.getByLabel('Quran search match')).toHaveValue('boolean');
   await expect(form.getByLabel('Search Quran surah')).toHaveValue('2');
