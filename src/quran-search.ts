@@ -1,5 +1,5 @@
 import { fold } from './domain.ts';
-import { compileSearch } from './search-query';
+import { compileSearch } from './search-query.ts';
 import type { SearchMode } from './search-query';
 import type { QuranSource } from './types';
 
