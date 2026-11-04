@@ -1,0 +1,9 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {MAX_SAVED_SEARCHES,removeSavedSearch,saveSearch,validateSavedSearches} from '../src/saved-search.ts';
+const now='2026-11-04T18:00:00.000Z';
+const item=(id,name=id)=>({id,name,query:'hope AND peace',editionId:'eng-web',options:{mode:'boolean',bookId:'',testament:'',exclude:''},createdAt:now,updatedAt:now});
+test('saved searches validate and preserve exact query, edition and filters',()=>{const saved=saveSearch([],item('one','Hope study'));assert.equal(saved[0].query,'hope AND peace');assert.equal(saved[0].editionId,'eng-web');assert.deepEqual(validateSavedSearches(saved),saved);});
+test('saving updates one record, enforces unique names and a finite limit',()=>{let saved=saveSearch([],item('one','First'));saved=saveSearch(saved,{...item('one','Renamed'),query:'love'});assert.equal(saved.length,1);assert.equal(saved[0].query,'love');assert.throws(()=>saveSearch(saved,item('two','renamed')),/different/);for(let i=1;i<MAX_SAVED_SEARCHES;i++)saved=saveSearch(saved,item(String(i),`Search ${i}`));assert.equal(saved.length,MAX_SAVED_SEARCHES);assert.throws(()=>saveSearch(saved,item('overflow')),/up to 40/);});
+test('remove only the requested saved search and reject stale IDs',()=>{const saved=saveSearch(saveSearch([],item('one')),item('two'));assert.deepEqual(removeSavedSearch(saved,'one').map(x=>x.id),['two']);assert.throws(()=>removeSavedSearch(saved,'missing'),/no longer exists/);});
+test('malformed or duplicate backup data is rejected without mutating source',()=>{const saved=saveSearch([],item('one'));assert.throws(()=>validateSavedSearches({...saved}),/list/);assert.throws(()=>validateSavedSearches([saved[0],saved[0]]),/duplicate IDs/);assert.throws(()=>validateSavedSearches([{...saved[0],options:{...saved[0].options,mode:'alligator'}}]),/filters/);assert.throws(()=>validateSavedSearches([{...saved[0],createdAt:'yesterday'}]),/date/);assert.equal(saved.length,1);});
