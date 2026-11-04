@@ -12,7 +12,7 @@ test('written retelling is edition-bound, private, editable by deletion and reta
   await page.getByRole('button', { name: 'Write a retelling', exact: true }).click();
   await expect(page.getByRole('heading', { name: 'Retell in your own words', exact: true })).toBeVisible();
   await expect(page.getByText(/This is a personal paraphrase exercise, not a verbatim test/)).toBeVisible();
-  const retelling = page.getByLabel('My retelling', { exact: true });
+  const retelling = page.getByRole('textbox', { name: 'My retelling', exact: true });
   await retelling.fill('My opening thought.');
   await page.getByRole('button', { name: 'Insert optional reflection prompts' }).click();
   await expect(retelling).toHaveValue(/What happens in this passage\?/);
