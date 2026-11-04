@@ -2,14 +2,15 @@
 
 ## Latest continuation checkpoint — 4 November 2026
 
-Current main: `135e20127985c2f00238eef044d675546facbce6`.
+Current main: `814f78ec68a7deaac813f215de678740570f7e7e`.
 
 - PR #8 saved/private searches and PR #9 game-template audit are merged; both release workflows passed.
 - PR #10 shared-passage route preservation and PR #11 private recent-search history are merged; both release workflows passed.
 - PR #12 guided private interpretation challenge is merged; PR checks passed.
 - PR #14 decision-simulation pilot is merged. Exact candidate CI [41900211198](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41900211198) passed source/content/build, desktop/mobile browser and persistence checks. Main deployment [41900926485](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41900926485) passed and verified the public source receipt against `2619c0261ffa985f3da5bb5fd788bb240880488f`.
-- PR #15 written retelling practice is merged as `135e20127985c2f00238eef044d675546facbce6`. Exact candidate CI [41901405361](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41901405361) passed TypeScript, lint, unit/content/build, desktop/mobile browser, backup and persistence checks. Main deployment [41901945519](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41901945519) is in progress; verify its public receipt before claiming publication.
-- PR #17 expands the decision-simulation pilot with a second fictional adult-study scenario about confidentiality and consent. It preserves scenario-specific selected-edition references, private reflection and no scoring. Exact-candidate CI [41902172644](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41902172644) is queued/pending; merge and deployment are not yet accepted.
+- PR #15 written retelling practice is merged as `135e20127985c2f00238eef044d675546facbce6`. Exact candidate CI [41901405361](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41901405361) passed TypeScript, lint, unit/content/build, desktop/mobile browser, backup and persistence checks. Main deployment [41901945519](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41901945519) passed and verified the public source receipt.
+- PR #17 expands the decision-simulation pilot with a second fictional adult-study scenario about confidentiality, consent and practical support. It includes an immediate-safety exception, scenario-specific selected-edition references, private reflection, replay and no scoring. Exact-candidate CI [41902736395](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41902736395) passed source/content/build, desktop/mobile browser and persistence checks. It is merged as the current main checkpoint; main deployment [41903597641](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41903597641) passed and verified the published source revision.
+- PR #20 — Scripture Detective Mission: in review. Its source/content, typecheck, unit tests and production build passed; browser and persistence checks are running. The five-clue Good Samaritan mission uses exact selected-edition references, hints, retries, replay and private completion records; progress is comprehension-only, not a faith score.
 
 The full Version 3 product remains in progress. Each bounded increment is separately accepted; none implies overall completion.
 
