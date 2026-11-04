@@ -14,7 +14,7 @@ const cleanText = (value: unknown, max: number, label: string, required = false)
   return value.trim();
 };
 const timestamp = (value: unknown): string => {
-  if (typeof value !== 'string' || !/^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$/.test(value) || !Number.isFinite(Date.parse(value))) throw new Error('Invalid saved search date.');
+  if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$/.test(value) || !Number.isFinite(Date.parse(value))) throw new Error('Invalid saved search date.');
   return value;
 };
 export function validateSavedSearches(value: unknown): SavedSearch[] {
@@ -48,13 +48,16 @@ const databaseName='adigun-aibible-saved-searches';
 let opening:Promise<IDBDatabase>|undefined;
 function openDatabase():Promise<IDBDatabase> {
   if(typeof indexedDB==='undefined') return Promise.reject(new Error('Private saved-search storage is unavailable.'));
-  if(!opening) opening=new Promise((resolve,reject)=>{
-    const request=indexedDB.open(databaseName,1);
-    request.onupgradeneeded=()=>{if(!request.result.objectStoreNames.contains('searches'))request.result.createObjectStore('searches');};
-    request.onsuccess=()=>{const db=request.result;db.onversionchange=()=>db.close();resolve(db);};
-    request.onerror=()=>reject(new Error('Could not open saved-search storage.'));
-    request.onblocked=()=>reject(new Error('Close another Adigun-AiBible tab and retry.'));
-  }).catch(error=>{opening=undefined;throw error;});
+  if(!opening) {
+    const pending = new Promise<IDBDatabase>((resolve,reject)=>{
+      const request=indexedDB.open(databaseName,1);
+      request.onupgradeneeded=()=>{if(!request.result.objectStoreNames.contains('searches'))request.result.createObjectStore('searches');};
+      request.onsuccess=()=>{const db=request.result;db.onversionchange=()=>db.close();resolve(db);};
+      request.onerror=()=>reject(new Error('Could not open saved-search storage.'));
+      request.onblocked=()=>reject(new Error('Close another Adigun-AiBible tab and retry.'));
+    }).catch(error=>{opening=undefined;throw error;});
+    opening=pending;
+  }
   return opening;
 }
 export async function loadSavedSearches():Promise<SavedSearch[]> {
