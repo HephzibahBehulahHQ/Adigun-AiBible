@@ -1,9 +1,12 @@
 import { expect, test } from '@playwright/test';
 import type { Page } from '@playwright/test';
 import { readFile } from 'node:fs/promises';
+import { readFileSync } from 'node:fs';
 
 // Only synthetic family material is used; nothing enters production data or a remote service.
 const familyRoute = '#/family/JHN/3?verse=16&edition=eng-web';
+const webEditionName = JSON.parse(readFileSync(new URL('../data/manifest.json', import.meta.url), 'utf8')).edition.name;
+const linkedPassageLabel = `John 3:16 · ${webEditionName}`;
 const permittedLabel = 'I am authorized to keep and back up this item, including its original file.';
 async function openArchive(page: Page) {
   await page.goto(familyRoute);
@@ -31,7 +34,7 @@ test('family originals, source links and consent survive save, reload, backup an
   await fillMemory(page, title);
   await page.getByText('Link passages (0)', { exact: true }).click();
   await page.getByRole('button', { name: 'Add passage link', exact: true }).click();
-  await expect(page.locator('.family-link')).toContainText('John 3:16 · World English Bible');
+  await expect(page.locator('.family-link')).toContainText(linkedPassageLabel);
   await page.getByText('Original file or voice recording (optional)', { exact: true }).click();
   await page.getByLabel('Upload original file', { exact: true }).setInputFiles({ name: 'fixture-original.txt', mimeType: 'text/plain', buffer: original });
   await expect(page.getByRole('button', { name: 'Download original file', exact: true })).toBeVisible();
@@ -42,7 +45,7 @@ test('family originals, source links and consent survive save, reload, backup an
   const record = page.locator('.family-item');
   await expect(record).toHaveCount(1);
   await expect(record).toContainText('Àyọ̀ test fixture');
-  await expect(record.getByRole('button', { name: 'John 3:16 · World English Bible', exact: true })).toBeVisible();
+  await expect(record.getByRole('button', { name: linkedPassageLabel, exact: true })).toBeVisible();
   await record.getByText('Open original and full details', { exact: true }).click();
   const originalDownload = page.waitForEvent('download');
   await record.getByRole('button', { name: 'Download original file', exact: true }).click();
