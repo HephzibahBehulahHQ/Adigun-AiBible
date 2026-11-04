@@ -113,14 +113,15 @@ export default function QuranReader({ initialRef = null }: QuranReaderProps) {
   };
   const saveCurrentSearch = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (!query.trim() || !saveSearchName.trim()) return;
-    const now = new Date().toISOString();
-    const candidate: SavedQuranSearch = {
-      id: crypto.randomUUID(), name: saveSearchName.trim(), query: query.trim(), editionId,
-      options: { mode: searchMode, surah: searchSurah, exclude: searchExclude },
-      createdAt: now, updatedAt: now,
-    };
+    if (!source || !query.trim() || !saveSearchName.trim()) return;
     try {
+      searchQuran(source, query, { mode: searchMode, surah: searchSurah, exclude: searchExclude });
+      const now = new Date().toISOString();
+      const candidate: SavedQuranSearch = {
+        id: crypto.randomUUID(), name: saveSearchName.trim(), query: query.trim(), editionId,
+        options: { mode: searchMode, surah: searchSurah, exclude: searchExclude },
+        createdAt: now, updatedAt: now,
+      };
       const next = saveQuranSearch(savedSearches, candidate);
       await persistSavedQuranSearches(next);
       setSavedSearches(next); setSaveSearchName(''); setSavedSearchError('');
