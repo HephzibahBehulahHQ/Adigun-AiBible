@@ -15,10 +15,10 @@ test('Good Samaritan detective mission uses source evidence, retries clues and s
 
   await page.getByRole('radio', { name: 'A Roman soldier' }).check();
   await page.getByRole('button', { name: 'Check answer', exact: true }).click();
-  await expect(page.locator('.detective-mission [role="status"]')).toContainText('Not yet');
+  await expect(page.locator('.detective-mission p[role="status"]').last()).toContainText('Not yet');
   await page.getByRole('radio', { name: 'A lawyer' }).check();
   await page.getByRole('button', { name: 'Check answer', exact: true }).click();
-  await expect(page.locator('.detective-mission [role="status"]')).toContainText('Clue solved');
+  await expect(page.locator('.detective-mission p[role="status"]').last()).toContainText('Clue solved');
   await page.getByRole('button', { name: 'Next clue', exact: true }).click();
 
   const answers = [
@@ -30,7 +30,7 @@ test('Good Samaritan detective mission uses source evidence, retries clues and s
   for (let i = 0; i < answers.length; i++) {
     await page.getByRole('radio', { name: answers[i], exact: true }).check();
     await page.getByRole('button', { name: 'Check answer', exact: true }).click();
-    await expect(page.locator('.detective-mission [role="status"]')).toContainText('Clue solved');
+    await expect(page.locator('.detective-mission p[role="status"]').last()).toContainText('Clue solved');
     if (i < answers.length - 1) await page.getByRole('button', { name: 'Next clue', exact: true }).click();
   }
 
