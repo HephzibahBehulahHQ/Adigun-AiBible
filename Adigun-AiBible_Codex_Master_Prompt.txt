@@ -2252,6 +2252,353 @@ Recheck current content and terms when implementing. A link is a verification le
 
 ---
 
+
+# Adigun-AiBible — Continuation Prompt for the AI Agent
+
+**Read this entire prompt before touching any file.** You are continuing an existing project, not starting fresh. The repository already contains a verse-by-verse Bible–Quran comparison engine, five-language switching (Gen Z default, English, German, Yoruba, Pidgin), a GitHub Pages deployment pipeline, and a set of AI-policy trust badges. Your job in this session is to **extend** that project with a new top-level module called **The Law Diary**, plus the cross-cutting features listed below. Do not rewrite what already works. Do not merge the seven outstanding draft PRs. Do not fabricate data.
+
+---
+
+## 0. Non-Negotiable Operating Rules (read first, obey always)
+
+1. **No fabrication.** Every Quran reference must be a real surah and ayah. Every biblical reference must be a real book, chapter, and verse. If you are not certain a parallel exists, set the comparison array to empty and log the gap in `NOTES.md`. A missing entry is acceptable; a fabricated one fails the build.
+2. **No algorithmic relationship inference.** The field `relationship` (`agrees` / `opposes` / `both` / `none`) is assigned by a human editor, not by you. You may write a validator that checks the field is present and is one of the four values. You may **not** write logic of the form "if Bible text contains X and Quran text contains Y then relationship is Z."
+3. **No category mixing.** Lost books and deuterocanonical texts live in their own route, styled with the warning token, labeled "Non-canonical · Historical Text." They never appear inside canonical book navigation.
+4. **No BrowserRouter.** GitHub Pages is static hosting. Use `HashRouter` or anchor navigation. Deep-link refresh must not 404.
+5. **No lorem ipsum, no TODO comments, no empty function bodies, no placeholder arrays.** Every button works, every card has content, every route renders something real.
+6. **No proselytizing content.** The app compares texts. It does not invite conversion, does not rank religions, does not declare one scripture "correct." The TrustBadge disclaimer is mandatory on every comparison card: *"AI-assisted, human review status: [status] · Comparison relationships are editor-assigned · This app does not proselytize or call for conversion."*
+7. **Token discipline.** Read files with targeted searches (`rg`, bounded `sed -n`), not whole-file dumps. Batch independent shell commands into a single tool call. Do not re-read this prompt on every turn. When you finish a small unit of work, commit, push, verify the remote SHA, report, and **stop**. Do not chain multiple large units in one session.
+8. **Verify every push.** After `git push`, run `git ls-remote origin <branch>` and confirm the remote SHA matches your local HEAD. "Push attempted" is not "saved to GitHub." Report the SHA to the user.
+
+---
+
+## 1. What Already Exists (do not rebuild)
+
+- **Verse comparison engine** — chapter-by-chapter, verse-by-verse, rendering each Bible verse in the current language with a `quranComparisons` array beside it. Four relationship states: `agrees` / `opposes` / `both` / `none`. Empty array → "No direct Quran parallel for this verse."
+- **Five-language layer** — `LanguageContext` (or equivalent global state), default `genz`. Switching triggers no page reload. Missing Yoruba/Pidgin fields fall back to English with a visible `(EN fallback)` label; never silent.
+- **Data model** — `id`, `book`, `bookGenZ`, `chapter`, `verse`, `bibleText{genz,en,de,yo,pcm}`, `quranComparisons[]`, `aiReviewStatus`, `sources[]`. Follow this schema exactly for all new entries.
+- **Deployment** — Vite, `base: '/Adigun-AiBible/'`, GitHub Actions → Pages, PWA service worker caching core data JSON.
+- **TrustBadge component** — mandatory on every comparison card.
+
+If any of the above is missing or broken, fix it before starting new work. Report what you found and what you fixed.
+
+---
+
+## 2. New Module: The Law Diary
+
+### 2.1 Route and Navigation
+
+Top-level navigation entry: **The Law Diary** → `/law-diary`. This is a sibling of the verse comparison reader, not a child of it. The navigation bar becomes: Reader · Law Diary · Historical Texts · Mood · Verse Drop · Plans.
+
+Sub-routes (each must render real content on first load):
+
+| Route | Content |
+|---|---|
+| `/law-diary/timeline` | Chronological law layers, Before Moses → Karma comparison |
+| `/law-diary/social` | Social law topics (justice, property, slavery, marriage, inheritance, punishment) |
+| `/law-diary/money` | Law and the love of money |
+| `/law-diary/sermons` | All sermons of Jesus with layered interpretation |
+| `/law-diary/evangelism` | Descriptive, non-prescriptive module |
+| `/law-diary/apostles` | How the apostles died, with source labels |
+| `/law-diary/second-coming` | Jesus' return in Bible and Quran, side by side, never harmonized |
+
+### 2.2 Timeline Sub-Module (`/law-diary/timeline`)
+
+Two axes. Vertical: chronological law layers. Horizontal: Jewish law and Islamic law as parallel columns.
+
+**Vertical layers (each is a data record with at least one biblical citation):**
+
+1. **Law Before Moses** — Noahide Laws, patriarchal customs. Cite Genesis 9:1-7 (Noahide covenant), Genesis 22 (binding of Isaac), Genesis 28:20-22 (Jacob's vow). Note in the UI that the Noahide framework is a *later rabbinic systematization* of pre-Sinai material, not a biblical list.
+2. **Law During Moses** — Exodus 20 (Decalogue), Exodus 24 (covenant ratification).
+3. **Law of Moses** — the 613 commandments. Do not dump all 613 into the UI. Build a **filterable category view**: sacrifice, purity, festivals, civil, family, dietary. Each category shows a representative sample with full citations, plus a link "view all in this category" that expands. Cite the Torah directly; do not cite a later summary as if it were the source.
+4. **Law After Moses** — prophetic reaffirmation and internalization. Jeremiah 31:31-34 (new covenant written on hearts), Ezekiel 36:26-27 (new spirit), Isaiah 1:11-17 (critique of sacrifice without justice).
+5. **Law of the Prophets** — Hosea 6:6 ("I desire mercy, not sacrifice"), Micah 6:8 ("do justice, love mercy, walk humbly").
+6. **Law of the Kings** — Deuteronomy 17:14-20 (constraints on the king: no multiplying horses, no returning to Egypt, no multiplying silver and gold, must copy the Torah). Cite 1 Kings as the narrative of how kings failed these constraints.
+7. **Jewish Law (Halakha)** — this is a *post-biblical* development. Label it clearly: "Rabbinic legal tradition, developed after the biblical period." Cite representative sources (Mishnah, Talmud) with tractate names, not vague references. Do not present rabbinic law as if it were biblical law.
+8. **Pagan Laws** — **restrict this layer to what the Bible says about pagan law, not a catalogue of pagan legal codes.** Leviticus 18:3 ("do not follow the practices of Egypt and Canaan"), Deuteronomy 7:5 ("break down their altars, smash their sacred stones"). The UI framing: "What the Bible forbids regarding surrounding nations' legal and cultic customs." Do not build a pagan-law encyclopedia.
+9. **Law of Jesus** — Matthew 5:17 ("I have not come to abolish the law but to fulfill it"), Matthew 5:21-48 (the six antitheses), Matthew 22:37-40 (the two greatest commandments).
+10. **Law of Paul / Law of the Apostles** — Romans 3:31 ("do we then nullify the law? By no means"), Romans 7 (the law's ongoing role), Acts 15 (Jerusalem Council), Galatians 3 (law as tutor).
+11. **Karma Law** — a **comparative label, not a biblical or Quranic category.** UI framing: "Moral causation in the Bible and the Quran — not karma in the Hindu sense." Cite Galatians 6:7 ("whatever a man sows, that will he also reap"), Proverbs 22:8, and the Quranic parallel (e.g., Az-Zalzalah 99:7-8, "whoever does an atom's weight of good will see it"). Relationship: `agrees` on the general principle of moral consequence; add a note that the underlying metaphysics differ.
+
+**Horizontal axis (Islamic law):** each vertical layer that has a Quranic or hadith counterpart shows it in the parallel column with an explicit source type. Distinguish:
+- **Quran** — direct verse, cite surah:ayah.
+- **Hadith** — prophetic tradition, cite collection and number (e.g., Sahih al-Bukhari 1:1).
+- **Fiqh** — human juristic reasoning, cite the school (Hanafi, Maliki, Shafi'i, Hanbali) because fiqh is not monolithic.
+
+Required Islamic-law entries:
+- **Sharia** — the overall framework. UI note: "Classical Islamic theory distinguishes sharia (divinely revealed) from fiqh (human juristic interpretation); fiqh is considered fallible." Cite the Quranic verses on obedience to God and the Messenger (e.g., An-Nisa 4:59) and note that the systematization into four schools is post-Quranic.
+- **Hadith** — the second source. Explain the science of hadith classification (sahih / hasan / da'if) briefly. Do not present all hadith as equally authoritative.
+- **Law of Prophet Muhammad** — the Constitution of Medina, the farewell sermon. Cite Ibn Ishaq / al-Tabari as the historical sources, not the Quran directly, where the material is not Quranic.
+
+**Data schema for timeline entries:**
+
+```json
+{
+  "id": "law-before-moses-01",
+  "layer": "before_moses",
+  "title": { "genz": "...", "en": "...", "de": "...", "yo": "...", "pcm": "..." },
+  "bibleCitations": [{ "ref": "Genesis 9:1-7", "note": "..." }],
+  "quranComparisons": [
+    {
+      "relationship": "agrees" | "opposes" | "both" | "none",
+      "sourceType": "quran" | "hadith" | "fiqh",
+      "ref": "Surah Al-Baqarah 2:256",
+      "note": { "genz": "...", "en": "..." }
+    }
+  ],
+  "interpretationNote": { "genz": "...", "en": "..." },
+  "aiReviewStatus": "human_reviewed" | "ai_assisted" | "pending"
+}
+```
+
+### 2.3 Social Laws Sub-Module (`/law-diary/social`)
+
+Six required sub-topics, each rendered as a **three-column card** (Bible / Quran / relationship judgment + note). Relationship values are human-assigned.
+
+| Sub-topic | Bible anchor | Quran anchor | Suggested relationship |
+|---|---|---|---|
+| Justice and witness | Exodus 20:16; Deuteronomy 19:15-21 | An-Nisa 4:135; Al-Ma'idah 5:8 | `agrees` |
+| Property and boundaries | Deuteronomy 19:14; Proverbs 22:28 | An-Nisa 4:10 (orphans' property); Al-Baqarah 2:188 | `agrees` |
+| Slavery and servants | Exodus 21:2-11; Leviticus 25:39-55; Philemon | Al-Baqarah 2:177 (manumission as righteousness); Al-Balad 90:13 | `both` — both contain ameliorative provisions and both reflect historical settings |
+| Marriage and divorce | Deuteronomy 24:1-4; Matthew 19:3-9 | Al-Baqarah 2:228-232; At-Talaq 65:1-7 | `both` — both regulate procedure, terms differ |
+| Inheritance | Numbers 27:1-11 (Zelophehad's daughters) | An-Nisa 4:11-12 | `both` — both have inheritance rules, shares differ |
+| Punishment and restitution | Exodus 21:23-25 (lex talionis); Matthew 5:38-42 | Al-Ma'idah 5:45 (equivalent retaliation) | `both` — Quran and Torah share talionic principle; Jesus escalates in Matthew 5:38-42 |
+
+Each card must also carry a short note naming the historical setting (e.g., "Exodus 21 addresses a recently freed slave population in the ancient Near East; the Quranic manumission provisions address a 7th-century Arabian slave economy"). Do not present either text as a timeless legal code without context.
+
+### 2.4 Law and the Love of Money (`/law-diary/money`)
+
+Standalone topic page. Every entry must preserve the **love of money vs. having money** distinction. If a Gen Z paraphrase collapses that distinction, rewrite it.
+
+**Bible side:** Matthew 6:24; Matthew 19:23-24; 1 Timothy 6:10; Ecclesiastes 5:10; Proverbs 11:28; Luke 12:15-21 (parable of the rich fool); James 5:1-6.
+
+**Quran side:** Al-Kahf 18:46 (wealth as adornment of this world); At-Takathur 102:1-8 (competition in amassing wealth); At-Tawbah 9:34-35 (hoarding gold and silver); Al-Humazah 104:1-3 (the one who counts wealth and thinks it will make him immortal); Al-Baqarah 2:261 (parable of the seed that grows seven ears — generous spending multiplies).
+
+**Relationship:** most entries are `agrees` on the critique of the *love* of wealth. Add one or two entries labeled `both` where the texts address the same theme but with different reasoning (e.g., the Quran's framing of wealth as a *test* and the Bible's framing of wealth as a *rival god* — related but distinct).
+
+**UI requirement:** a persistent note at the top of the module: "Both scriptures critique the love of money without condemning wealth itself. Abraham and Job were wealthy; the Quran permits lawful trade. This module compares what each text says about *attachment* to wealth, not about whether wealth is permitted."
+
+### 2.5 All Sermons of Jesus and Their Interpretation (`/law-diary/sermons`)
+
+**Do not present a scholarly verdict on which sermons are "authentic."** Present a traceable collection with layered interpretation.
+
+**Minimum sermon list** (each is a data record):
+
+1. **Sermon on the Mount** — Matthew 5–7. Sub-sections: Beatitudes (5:3-12), fulfillment of the law (5:17-20), six antitheses (5:21-48), giving/praying/fasting (6:1-18), Lord's Prayer (6:9-13), treasures and anxiety (6:19-34), judging and the narrow gate (7:1-14), fruit and foundation (7:15-27).
+2. **Sermon on the Plain** — Luke 6:20-49. Four blessings, four woes.
+3. **Parable of the Sower and its explanation** — Matthew 13:1-23; Mark 4:1-20; Luke 8:4-15. Present all three versions side by side with the differences noted.
+4. **Olivet Discourse** — Matthew 24–25. Signs of the end, ten virgins, talents, sheep and goats.
+5. **Upper Room Discourse** — John 13–17. Foot washing, the Paraclete (14:15-31), the true vine (15:1-17), the high-priestly prayer (17).
+6. **Woes against the Pharisees** — Matthew 23.
+7. **First sermon at Nazareth** — Luke 4:16-30, quoting Isaiah 61:1-2.
+
+**Three-layer interpretation for each sermon:**
+
+- **Text and context** — who is present, when, what question or situation it addresses, the literary structure.
+- **Historical interpretation** — at least one representative reading each from (a) a church father (e.g., Augustine, Chrysostom, Gregory of Nyssa), (b) a Reformer (e.g., Luther, Calvin), (c) modern scholarship (e.g., a named scholar and work). Cite the source. Do not say "theologians say" without a name.
+- **Disagreement flag** — where Christians genuinely disagree, display a **"This is debated"** badge and list the main positions fairly. Example: is the Sermon on the Mount literally practicable or an idealized kingdom ethic? List the Anabaptist reading (literal), the Lutheran reading (law that drives to grace), the Reformed reading (pattern of gratitude), and the dispensational reading (future kingdom ethic).
+
+**Quran cross-reference:** sermon themes with genuine Quranic parallels (charity, prayer, anxiety, final judgment, Jesus' teaching authority) may be cross-linked to the existing verse-comparison engine, but do not force a Quran parallel onto a sermon that has none. **No parallel → no entry.**
+
+### 2.6 Evangelism (`/law-diary/evangelism`)
+
+**This module is descriptive, not prescriptive. It must not become a conversion script.** Header disclaimer, always visible: *"This module describes the Bible's teaching on evangelism and its historical practice. It is not an invitation for the reader to convert. See the app's non-proselytizing policy."*
+
+**Contents:**
+
+1. **Jesus' command** — Matthew 28:16-20 (Great Commission): text, context (post-resurrection, Galilee), historical interpretations (does "make disciples of all nations" supersede the earlier "go only to the lost sheep of Israel" in Matthew 10:5-6? Show both texts and the interpretive history).
+2. **Apostolic practice** — Acts 2 (Peter's Pentecost sermon), Acts 17 (Paul at Athens). Note the pattern: cite scripture or cultural touchstone, then point to Jesus. Note Paul's rhetorical adaptation in Acts 17:22-31 (quoting Greek poets), which is a distinct evangelistic method from Peter's.
+3. **Historical evolution** — apostolic proclamation → monastic mission → colonial-era mission (with the associated ethical critiques) → modern global Christianity and majority-world mission. Do not present the history as uniformly heroic.
+4. **Biblical teaching on those who reject** — Matthew 10:14 (shake the dust); Luke 9:54-55 (Jesus rebukes the disciples for wanting fire from heaven); Acts 13:46-51 (Paul and Barnabas shake the dust at Pisidian Antioch). The pattern: rejection is met with departure, not coercion.
+5. **Quranic parallels** — Al-Baqarah 2:256 ("no compulsion in religion"); Al-Ghashiyah 88:21-22 ("you are only a reminder, you are not a controller over them"); Al-Kahf 18:29 ("the truth is from your Lord, so whoever wills let him believe"). Relationship: `both` — both texts contain proclamation commands; the boundaries around coercion differ and must be stated, not glossed.
+
+**Forbidden in this module:** any "how to witness to a Muslim" content, any comparative "which is true" content, any ranking of religions. If you are tempted to add such content, do not. The module is a *description* of biblical and Quranic teaching on proclamation, not a training manual.
+
+### 2.7 How the Apostles Died (`/law-diary/apostles`)
+
+**Strict source separation.** Every record has a `source` field with value `"bible"` or `"tradition"`. The UI displays the label prominently: a green badge for biblical, a grey badge for tradition with the text "Early church tradition, not recorded in the Bible."
+
+**Records:**
+
+| Apostle | Source | Record | Citation |
+|---|---|---|---|
+| James son of Zebedee | `bible` | Killed by Herod Agrippa I with the sword | Acts 12:2 |
+| Judas Iscariot | `bible` | Suicide | Matthew 27:5; Acts 1:18 |
+| Peter | `bible` (imprisonment) / `tradition` (death) | Imprisoned by Herod; tradition says crucified upside down in Rome under Nero | Acts 12:3-5 (biblical); tradition from Eusebius, *Ecclesiastical History* 2.25, and 1 Clement 5 |
+| Andrew | `tradition` | Bound to an X-shaped cross in Achaia | Eusebius / later Acts of Andrew; label as tradition |
+| Thomas | `tradition` | Preached in India; martyred there | Acts of Thomas (3rd c.); label as tradition |
+| Bartholomew | `tradition` | Flayed or beheaded | Various traditions disagree; label as tradition and note the disagreement |
+| Philip | `tradition` | Martyred in Hierapolis | Label as tradition |
+| Matthew | `tradition` | Martyred in Ethiopia or Persia; manner disputed | Label as tradition, note the dispute |
+| James son of Alphaeus | `tradition` | Stoned | Label as tradition; note the identity confusion with James the Just |
+| Jude Thaddaeus | `tradition` | Martyred in Persia with Simon | Label as tradition |
+| Simon the Zealot | `tradition` | Sawn in half or crucified | Label as tradition |
+| Matthias | `tradition` | Stoned then beheaded in Ethiopia | Label as tradition |
+| John | `tradition` | Died naturally of old age in Ephesus | Label as tradition; note that John 21:20-23 explicitly corrects a rumor that John would not die |
+| Paul (not one of the Twelve) | `bible` (conversion and journeys) / `tradition` (death) | Tradition says beheaded in Rome under Nero | Acts (biblical); tradition from Eusebius and 1 Clement 5 |
+
+**Notes:**
+
+- Only **one** apostolic martyrdom is explicitly recorded in the Bible (James, Acts 12:2). Everything else about apostolic deaths is tradition. The UI must make this unmistakable.
+- The "uncertain / disputed" flag is required for Bartholomew, Matthew, James son of Alphaeus, and Simon the Zealot.
+- Do not present the tradition as a unified account. Where traditions disagree (e.g., Bartholomew's death), show the disagreement.
+
+### 2.8 The Second Coming of Jesus (`/law-diary/second-coming`)
+
+**Three-layer card** for every entry: Bible text → Quran text (if any) → relationship judgment plus a difference note. **Never write the two as "exactly the same."** Never harmonize.
+
+**Bible side (each is a card):**
+
+- Matthew 24:30-31 — Son of Man coming on the clouds, angels gathering the elect.
+- Acts 1:9-11 — angels: "This same Jesus... will come back in the same way."
+- 1 Thessalonians 4:13-18 — the Lord descends with a cry of command, the dead in Christ rise first.
+- Revelation 19:11-16 — the rider on the white horse, judging and making war.
+- 2 Thessalonians 2:1-12 — the lawless one, the return, the destruction.
+
+**Quran side (each is a card):**
+
+- An-Nisa 4:157-159 — the People of the Book will believe in him before his death; on the Day of Resurrection he will be a witness against them. **Note the interpretive dispute:** the phrase "before his death" is read by some as before Jesus' own death and by others as before the death of each People of the Book. State both readings.
+- Az-Zukhruf 43:61 — "He [Jesus] is a sign of the Hour." **Note the interpretive dispute:** some read "he" as Jesus, some as the Quran. State both.
+- **Hadith tradition (not Quran):** Sahih al-Bukhari and Sahih Muslim contain hadith about Jesus' descent at the end of time. Present these in a **separate sub-section** labeled "Hadith tradition (not Quranic text)" with the collection and number cited. Do not blend hadith into the Quran column.
+
+**Relationship judgment:**
+
+- Base relationship: `both` — both scriptures speak of Jesus' return, but the purpose and outcome differ. In the Bible, Jesus returns to judge the living and the dead and establish his kingdom. In the Quran and hadith, Jesus returns as a sign of the Hour and a witness, within an Islamic framework.
+- The difference note must state this explicitly. Do not soften it into "both traditions honor Jesus' return."
+
+**Optional third column (Jewish position):** Judaism does not accept Jesus as Messiah and therefore has no "second coming" category. This can be a small note, not a full column. If you add it, label it clearly as a note, not a comparison.
+
+---
+
+## 3. Additional Features to Add Beyond The Law Diary
+
+These are in scope for this session. Build them in the order listed, one commit each.
+
+### 3.1 Context Cards (every verse)
+
+Tap any verse in the reader → a context card opens: who wrote it, to whom, when, why, and what was happening politically and culturally. This was in your original feature list and is not yet built. Data source: a new `data/context/` directory with one JSON per book, keyed by chapter and verse range. Do not fabricate historical details; if the authorship of a book is disputed (e.g., Isaiah, Daniel, the Pastoral Epistles), state the dispute.
+
+### 3.2 "This Is Debated" Badges
+
+Where Christians genuinely disagree (baptism, predestination, women in ministry, the age of the earth, the authorship of disputed books, the meaning of Revelation), the app flags it and shows the main positions fairly. This was in your original list. Build the badge component and apply it to the debate-sensitive entries in the Sermons module and the Second Coming module. The badge links to a short "positions" card.
+
+### 3.3 Mental Health Integration
+
+A "When You're in Crisis" quick-access screen reachable from any page (a persistent small button, not a modal popup). Contents: crisis-line links (region-aware, at least US, UK, Nigeria, Germany, since those cover your language set), a note that therapy and medication are not a lack of faith, and a short list of psalms and Quranic verses traditionally read in distress — with the caveat that these are devotional resources, not a substitute for professional care. This was in your original list. Build it. Do not frame prayer as a replacement for treatment.
+
+### 3.4 No Prosperity-Gospel Filter
+
+Deliberately exclude or flag content that promises health or wealth as a reward for faith. This was in your original list. Implement it as a data field `prosperityGospelRisk: "none" | "flagged"` on every entry. Flagged entries display a small note: "This passage is sometimes read as a promise of health or wealth. The app does not endorse that reading. See the context card." Do not silently delete passages.
+
+### 3.5 Offline Mode Confirmation
+
+The PWA service worker is already configured. Add a UI indicator: when the app is offline, a small banner appears: "Offline — showing cached chapters." When the user taps a chapter that is not cached, a clear message: "This chapter isn't cached yet. Reconnect to load it." Do not show a broken page.
+
+### 3.6 Widgets and Lock-Screen Verses
+
+A `/widget` route that renders a single verse card optimized for a phone lock-screen aspect ratio, plus a "copy image" button. This is a web-only approximation; true OS widgets require native code and are out of scope. Do not pretend to build a native widget. The route gives the user something shareable.
+
+---
+
+## 4. Data Schema Additions
+
+Extend the existing verse schema with the following optional fields. Do not break existing data.
+
+```json
+{
+  "contextCard": {
+    "author": "...",
+    "authorDisputed": true,
+    "audience": "...",
+    "date": "...",
+    "occasion": "...",
+    "politicalContext": "..."
+  },
+  "debated": {
+    "isDebated": true,
+    "positions": [
+      { "name": "...", "summary": "...", "representativeSources": ["..."] }
+    ]
+  },
+  "prosperityGospelRisk": "none" | "flagged",
+  "crisisResourceRelevant": true
+}
+```
+
+Every new entry must include `aiReviewStatus`. Every new entry must include `sources[]` with the biblical and (if applicable) Quranic citations. Every relationship field must be human-assigned.
+
+---
+
+## 5. Codex Execution Order (strict — one commit per step)
+
+Work in this order. After each step: run `npm run build` once, run the data validator once, commit, push, verify remote SHA, report, **stop and wait for the user**. Do not chain steps.
+
+**Step 1 — Audit and report.** Check out the working branch. Run `git status`, `git log --oneline -10`, `git ls-remote origin <branch>`. Report: local HEAD, remote HEAD, uncommitted changes, untracked files. If local and remote match and the tree is clean, say so. Do not proceed until the user confirms.
+
+**Step 2 — Fix the push path.** Create `TOKEN_POLICY.md` with the operating rules from Section 0. Commit and push. Verify remote SHA. Report. Stop.
+
+**Step 3 — Scaffold The Law Diary.** Create the seven sub-routes with empty-but-real page shells (each page has a title, a one-line description from this prompt, and a "content loading" state that is not lorem ipsum — it says "Data for this section is being entered" and lists the entries in progress). Commit and push. Report. Stop.
+
+**Step 4 — Build the timeline module.** Enter the first three vertical layers (Before Moses, During Moses, Law of Moses — with the filterable category view, not all 613). Each entry has full five-language content or is explicitly marked `community_pending` for Yoruba/Pidgin with a visible fallback label. Commit, push, verify, report. Stop.
+
+**Step 5 — Build the social laws module.** Enter the six sub-topics as three-column cards. Commit, push, verify, report. Stop.
+
+**Step 6 — Build the money module.** Enter the Bible and Quran entries listed in Section 2.4. Commit, push, verify, report. Stop.
+
+**Step 7 — Build the sermons module.** Enter the seven sermons with the three-layer interpretation. Apply the "This is debated" badge where required. Commit, push, verify, report. Stop.
+
+**Step 8 — Build the evangelism module.** Enter the five content sections. Apply the descriptive-not-prescriptive header. Commit, push, verify, report. Stop.
+
+**Step 9 — Build the apostles module.** Enter the fourteen records with `source` labels. Apply the disputed flag where required. Commit, push, verify, report. Stop.
+
+**Step 10 — Build the second-coming module.** Enter the Bible cards, the Quran cards, and the separate hadith sub-section. Apply the `both` relationship with the difference note. Commit, push, verify, report. Stop.
+
+**Step 11 — Build the cross-cutting features.** Context cards (3.1), debated badges (3.2), mental health screen (3.3), prosperity-gospel flag (3.4), offline indicator (3.5), widget route (3.6). One commit per feature. After each, push, verify, report. Stop.
+
+**Step 12 — Final verification.** Run `npm run build`. Verify all asset paths in `dist/` start with `/Adigun-AiBible/`. Run `npx serve dist` locally and confirm: every Law Diary route renders, language switching works on every new card, the TrustBadge appears on every comparison card, no route 404s on refresh (HashRouter). Report the results. Do not deploy until the user confirms the local build.
+
+**Step 13 — Deploy.** After user confirmation, trigger the GitHub Actions workflow. Verify the deployment run succeeded and the deployed source SHA matches the release record. Report the deployment URL and the source SHA.
+
+---
+
+## 6. Red Lines (repeated for emphasis — violating any of these fails the session)
+
+1. **No fabricated Quran citations.** Real surah, real ayah. If uncertain, `quranComparisons: []` and log in `NOTES.md`.
+2. **No algorithmic relationship inference.** The `relationship` field is human-assigned. You may validate it; you may not compute it.
+3. **No mixing lost books with canonical books.** Separate route, separate label, warning color.
+4. **No BrowserRouter.** HashRouter or anchors. Deep-link refresh must not 404.
+5. **No proselytizing content.** The Evangelism module is descriptive. The TrustBadge disclaimer is mandatory. No "how to convert" content, no ranking of religions.
+6. **No harmonizing the Bible and Quran in the Second Coming module.** Show the difference. State it. Do not soften it.
+7. **No presenting church tradition as biblical fact.** The `source` field on apostle records is mandatory. The badge is mandatory.
+8. **No lorem ipsum, no TODO, no placeholder arrays, no empty function bodies.** Every route renders real content. Every button works.
+9. **No silent language fallback.** Missing Yoruba or Pidgin → visible `(EN fallback)` label.
+10. **No push without remote verification.** After every `git push`, run `git ls-remote` and confirm the SHA. Report it.
+
+---
+
+## 7. What the User Will Check After Each Step
+
+The user will verify, after each commit:
+
+- The remote SHA you reported matches the GitHub branch head.
+- The new route renders without a 404.
+- Every new card has real content in English and Gen Z at minimum, and Yoruba/Pidgin either filled or visibly labeled `community_pending`.
+- Every comparison card has a relationship badge and a TrustBadge.
+- No fabricated citation is visible.
+- The build passes.
+
+If any of these fail, the user will ask you to fix it before the next step. Do not proceed to the next step until the user confirms.
+
+---
+
+## 8. Final Instruction
+
+You are not building a demo. You are building the continuation of a real project that will be used by real readers to compare two scriptures side by side. The value of this app is **trust**: trust that every citation is real, every relationship is honestly labeled, every tradition is marked as tradition, every difference is stated rather than glossed. A missing entry is acceptable. A fabricated one destroys the project.
+
+Start with Step 1. Report what you find. Wait for confirmation. Then proceed one step at a time.
+
+
+
 ## Final execution instruction
 
 Resume the ongoing Adigun-AiBible project from its actual verified state.
