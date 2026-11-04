@@ -11,9 +11,9 @@ Main now contains the accepted search, audit and route-preservation increments:
 - **PR #7:** closed as superseded by PR #6 because its duplicate layout/command work was already on main. No duplicate systems were merged.
 - **PR #12 — guided private interpretation challenge:** merged as `0d22af7dc7ddbaba22504ab1225107f49d95d870`. [PR workflow 41898436712](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41898436712) passed typecheck, build, unit tests, desktop/mobile browser checks and persistence regression. It extends private reflections, binds each exercise to the selected edition/passage, and makes no automatic correctness or faith judgment. Main deployment [workflow 41899161850](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41899161850) is pending.
 - **PR #13 — status/evidence refresh:** documentation-only, in review; its CI must pass before merge.
-- **PR #14 — first decision-simulation pilot:** in review at `dc965f2b2bccb71fcc1e69481aee6b10a6ea7538`. Its source/content, typecheck, unit tests and production build passed; Chromium/browser and persistence gates are still running. The scenario is fictional, English-only and for adult study use, with no score or divine-outcome claim.
+- **PR #14 — first decision-simulation pilot:** merged as `2619c0261ffa985f3da5bb5fd788bb240880488f`. [PR workflow 41900211198](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41900211198) passed source/content validation, typecheck, 215+ unit tests, desktop/mobile browser checks and persistence regression. The pilot is fictional, English-only and for adult study use, with no score or divine-outcome claim. Its main deployment workflow is pending behind the current release queue.
 
-Current main checkpoint: `0d22af7dc7ddbaba22504ab1225107f49d95d870`. The complete Version 3 project remains in progress; none of these bounded increments implies overall completion.
+Current main checkpoint: `2619c0261ffa985f3da5bb5fd788bb240880488f`. The complete Version 3 project remains in progress; none of these bounded increments implies overall completion.
 
 Updated: 4 November 2026 (Europe/Berlin). The complete Version 3 product remains in progress.
 
@@ -48,7 +48,7 @@ Checkpoints `07aa031`, `a07a9f1`, `61dd3cf`, `5be157b` and `916d245` were read b
 
 ## Next bounded work
 
-Finish the PR #11 and PR #12 main deployment receipts, then continue the Version 3 M7/M8 sequence with content/rights/review gates kept separate. Next local slices: self-guided retelling practice and a sourced decision-simulation pilot; translation and culturally adapted parables remain gated by licensed content and qualified review. Do not rebuild the released source-reader, layouts, command palette, search or private-session features.
+Finish the PR #12 and PR #14 main deployment receipts, then continue the Version 3 M7/M8 sequence with content/rights/review gates kept separate. Next local slice: self-guided retelling practice; additional decision-simulation scenarios should follow content review. Translation and culturally adapted parables remain gated by licensed content and qualified review. Do not rebuild the released source-reader, layouts, command palette, search or private-session features.
 
 External gates remain: genuine human editorial/native-language review, edition-specific permissions, the interrupted dedicated backend setup, authenticated model service, permitted recorded narration and native-platform environments. Do not retry cancelled backend setup without explicit resumption. These dependencies do not block other local implementation.
 
