@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import type { FormEvent } from 'react';
 import { assetUrl, getQuran, sourceCredit } from './data';
 import type { PassageRef } from './editorial';
 import { downloadOfflineFiles } from './offline';
@@ -84,7 +85,7 @@ export default function QuranReader({ initialRef = null }: QuranReaderProps) {
       setCopyText(text); setStatus('Clipboard access is unavailable. Select and copy the text below.');
     }
   };
-  const runSearch = (event: React.FormEvent<HTMLFormElement>) => {
+  const runSearch = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (!source) return;
     try {
