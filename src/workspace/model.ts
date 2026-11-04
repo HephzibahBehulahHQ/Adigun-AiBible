@@ -23,6 +23,28 @@ export const MAX_BACKUP_BYTES = 12 * 1024 * 1024;
 export function newEntryBase(now = new Date()): EntryBase { return { id: crypto.randomUUID(), createdAt: now.toISOString(), updatedAt: now.toISOString() }; }
 export function explicitReference(ref: Reference): Reference { return { bookId: ref.bookId, chapter: ref.chapter, verse: ref.verse, ...(ref.endVerse !== undefined ? { endVerse: ref.endVerse } : {}), editionId: ref.editionId || 'eng-web' }; }
 export function referenceLabel(ref: Reference) { return `${ref.bookId} ${ref.chapter}:${ref.verse}${ref.endVerse && ref.endVerse !== ref.verse ? `–${ref.endVerse}` : ''} · ${ref.editionId || 'eng-web'}`; }
+export interface InterpretationChallengeDraft { observation: string; context: string; alternatives: string; uncertainty: string; sources: string }
+function challengeField(value: unknown, label: string, required = false): string {
+  if (typeof value !== 'string' || value.length > 4000 || (required && !value.trim())) throw new Error(`Invalid interpretation challenge ${label}.`);
+  return value.trim();
+}
+export function createInterpretationChallenge(ref: Reference, draft: InterpretationChallengeDraft, now = new Date()): ReflectionEntry {
+  const observation = challengeField(draft.observation, 'observation', true);
+  const context = challengeField(draft.context, 'context');
+  const alternatives = challengeField(draft.alternatives, 'alternative readings');
+  const uncertainty = challengeField(draft.uncertainty, 'uncertainty');
+  const sourceText = challengeField(draft.sources, 'sources');
+  const sources = [...new Set(sourceText.split('\n').map(value => value.trim()).filter(Boolean))];
+  if (sources.length > 20 || sources.some(value => value.length > 500)) throw new Error('Use at most 20 sources, each no longer than 500 characters.');
+  const text = [
+    `Observation — what the passage says\n${observation}`,
+    context ? `Context — details that matter\n${context}` : '',
+    alternatives ? `Alternative readings to consider\n${alternatives}` : '',
+  ].filter(Boolean).join('\n\n');
+  if (text.length > 20000) throw new Error('This interpretation challenge is too long to save.');
+  return { ...newEntryBase(now), title:`Interpretation challenge · ${referenceLabel(ref)}`, kind:'interpretation', state:'unresolved',
+    text, reason:uncertainty, refs:[explicitReference(ref)], sources, history:[] };
+}
 export function parseTags(value: string) { return [...new Set(value.split(',').map(x => x.trim()).filter(Boolean))].slice(0, 30); }
 function record(value: unknown, label: string): Record<string, unknown> { if (!value || typeof value !== 'object' || Array.isArray(value)) throw new Error(`Invalid ${label}.`); return value as Record<string, unknown>; }
 function text(value: unknown, label: string, max = 20000, allowEmpty = true): string { if (typeof value !== 'string' || value.length > max || (!allowEmpty && !value.trim())) throw new Error(`Invalid ${label}.`); return value; }
