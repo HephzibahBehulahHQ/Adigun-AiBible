@@ -58,7 +58,7 @@ function openDatabase():Promise<IDBDatabase> {
     }).catch(error=>{opening=undefined;throw error;});
     opening=pending;
   }
-  return opening;
+  return opening!;
 }
 export async function loadSavedSearches():Promise<SavedSearch[]> {
   const db=await openDatabase();
