@@ -1,6 +1,6 @@
 import type { Reference } from '../types';
 import type { ReflectionEntry } from './model.ts';
-import { explicitReference, newEntryBase } from './model';
+import { explicitReference, newEntryBase } from './model.ts';
 
 export const decisionSimulation = {
   id: 'workplace-report',
