@@ -6,6 +6,8 @@ import { downloadOfflineFiles } from './offline';
 import { readQuranPassage } from './publication';
 import { searchQuran } from './quran-search';
 import type { QuranSearchMode } from './quran-search';
+import { loadSavedQuranSearches, persistSavedQuranSearches, removeQuranSearch, saveQuranSearch } from './quran-saved-search';
+import type { SavedQuranSearch } from './quran-saved-search';
 import type { QuranSource } from './types';
 
 interface QuranReaderProps { initialRef?: PassageRef | null }
@@ -40,6 +42,11 @@ export default function QuranReader({ initialRef = null }: QuranReaderProps) {
   const [searchError, setSearchError] = useState('');
   const [results, setResults] = useState<{ chapter: number; number: number; text: string }[] | null>(null);
   const [resultCount, setResultCount] = useState(0);
+  const [savedSearches, setSavedSearches] = useState<SavedQuranSearch[]>([]);
+  const [saveSearchName, setSaveSearchName] = useState('');
+  const [savedSearchError, setSavedSearchError] = useState('');
+  const [savedSearchStatus, setSavedSearchStatus] = useState('');
+  const [savedSearchLoading, setSavedSearchLoading] = useState(false);
   const [status, setStatus] = useState('');
   const [copyText, setCopyText] = useState('');
   const [downloading, setDownloading] = useState(false);
@@ -59,6 +66,15 @@ export default function QuranReader({ initialRef = null }: QuranReaderProps) {
     }).catch(reason => { if (active) setError(message(reason)); });
     return () => { active = false; };
   }, [opened, retry]);
+  useEffect(() => {
+    if (!opened) return;
+    let active = true;
+    setSavedSearchLoading(true);
+    loadSavedQuranSearches().then(items => { if (active) setSavedSearches(items); })
+      .catch(reason => { if (active) setSavedSearchError(message(reason)); })
+      .finally(() => { if (active) setSavedSearchLoading(false); });
+    return () => { active = false; };
+  }, [opened]);
   useEffect(() => () => download.current?.abort(), []);
 
   if (!opened) return <section className="panel quran-reader" aria-labelledby="quran-reader-title">
@@ -94,6 +110,36 @@ export default function QuranReader({ initialRef = null }: QuranReaderProps) {
     } catch (reason) {
       setResults(null); setResultCount(0); setSearchError(message(reason));
     }
+  };
+  const saveCurrentSearch = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    if (!source || !query.trim() || !saveSearchName.trim()) return;
+    try {
+      searchQuran(source, query, { mode: searchMode, surah: searchSurah, exclude: searchExclude });
+      const now = new Date().toISOString();
+      const candidate: SavedQuranSearch = {
+        id: crypto.randomUUID(), name: saveSearchName.trim(), query: query.trim(), editionId,
+        options: { mode: searchMode, surah: searchSurah, exclude: searchExclude },
+        createdAt: now, updatedAt: now,
+      };
+      const next = saveQuranSearch(savedSearches, candidate);
+      await persistSavedQuranSearches(next);
+      setSavedSearches(next); setSaveSearchName(''); setSavedSearchError('');
+      setSavedSearchStatus('Search saved privately on this device.');
+    } catch (reason) { setSavedSearchError(message(reason)); }
+  };
+  const loadSavedSearch = (item: SavedQuranSearch) => {
+    setQuery(item.query); setSearchMode(item.options.mode); setSearchSurah(item.options.surah); setSearchExclude(item.options.exclude);
+    setResults(null); setSearchError('');
+    setSavedSearchStatus(`Loaded “${item.name}”. Run the search to view its results.`);
+  };
+  const deleteSavedSearch = async (id: string) => {
+    try {
+      const next = removeQuranSearch(savedSearches, id);
+      await persistSavedQuranSearches(next);
+      setSavedSearches(next); setSavedSearchError('');
+      setSavedSearchStatus('Saved Quran search removed from this device.');
+    } catch (reason) { setSavedSearchError(message(reason)); }
   };
   const saveOffline = async () => {
     if (downloading || source?.edition.rights?.offline !== true) return;
@@ -162,6 +208,24 @@ export default function QuranReader({ initialRef = null }: QuranReaderProps) {
         </div>
         <button type="submit">Search Quran source</button>
       </form>
+      <section className="quran-saved-searches" aria-label="Private saved Quran searches">
+        <h3>Saved Quran searches</h3>
+        <p className="muted">Save this query and its match mode, surah scope and exclusions privately on this device. Saved searches remain separate from Bible search.</p>
+        <form onSubmit={saveCurrentSearch}>
+          <label>Name this Quran search<input aria-label="Name this saved Quran search" value={saveSearchName} maxLength={80} onChange={event => setSaveSearchName(event.target.value)} /></label>
+          <button type="submit" disabled={!query.trim() || !saveSearchName.trim()}>Save search privately</button>
+        </form>
+        {savedSearchLoading && <p role="status">Loading private Quran searches…</p>}
+        {savedSearchError && <p className="error-message" role="alert">{savedSearchError}</p>}
+        {savedSearchStatus && <p role="status">{savedSearchStatus}</p>}
+        {savedSearches.length > 0 ? <ul>{savedSearches.map(item => <li key={item.id}>
+          <strong>{item.name}</strong><span>{item.query} · {item.options.mode} · {item.options.surah === '' ? 'All surahs' : `Surah ${item.options.surah}`}</span>
+          <div className="button-row">
+            <button type="button" onClick={() => loadSavedSearch(item)}>Load saved search {item.name}</button>
+            <button type="button" onClick={() => void deleteSavedSearch(item.id)}>Delete saved search {item.name}</button>
+          </div>
+        </li>)}</ul> : !savedSearchLoading && <p>No saved Quran searches yet.</p>}
+      </section>
       {searchError && <p className="error-message" role="alert">{searchError}</p>}
       {results && <div aria-label="Quran source search results">
         <p role="status">{resultCount} source verses found.{resultCount > 100 ? ' Showing the first 100; refine your search to narrow results.' : ''}</p>
