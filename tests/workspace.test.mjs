@@ -70,3 +70,20 @@ test('recitation compares exact edition words in sequence while preserving diacr
   assert.equal(assessRecall('Àánú', 'Aanu').accuracy, 0); assert.equal(assessRecall('hope love', 'love hope').matched, 1);
   assert.equal(clozeParts('One, two three four five.').map(p => p.text).join(''), 'One, two three four five.'); assert.equal(clozeParts('One, two three four five.').filter(p => p.gap !== undefined).length, 2);
 });
+
+
+test('written retellings validate, remain private workspace data, and survive JSON and readable backups', () => {
+  const card = { ...base, ref, timeZone:'Europe/Berlin', dueDate:'2026-11-04', intervalDays:0, successfulReviews:0, lapses:0, contextNotes:'', history:[] };
+  const legacy = validateWorkspace({ ...emptyWorkspace(), cards:[card] });
+  assert.deepEqual(legacy.cards[0].retellings, []);
+  const retelling = { at:'2026-11-04T18:00:00.000Z', text:'In my own words, the passage describes love expressed through action.' };
+  const current = validateWorkspace({ ...emptyWorkspace(), cards:[{ ...card, retellings:[retelling] }] });
+  assert.deepEqual(current.cards[0].retellings, [retelling]);
+  const json = workspaceBackup(current);
+  assert.deepEqual(previewImport(emptyWorkspace(), json).incoming.cards[0].retellings, [retelling]);
+  assert.match(workspaceNotebook(current), /In my own words, the passage describes love expressed through action/);
+  assert.throws(() => validateWorkspace({ ...emptyWorkspace(), cards:[{ ...card, retellings:[{ ...retelling, text:'   ' }] }] }), /retelling text/);
+  assert.throws(() => validateWorkspace({ ...emptyWorkspace(), cards:[{ ...card, retellings:[{ ...retelling, at:'yesterday' }] }] }), /retelling timestamp/);
+  assert.throws(() => validateWorkspace({ ...emptyWorkspace(), cards:[{ ...card, retellings:[{ ...retelling, text:'x'.repeat(5001) }] }] }), /retelling text/);
+  assert.throws(() => validateWorkspace({ ...emptyWorkspace(), cards:[{ ...card, retellings:Array.from({length:51},(_,i)=>({at:new Date(Date.UTC(2026,0,1,0,0,i)).toISOString(),text:'A retelling'})) }] }), /retellings/);
+});
