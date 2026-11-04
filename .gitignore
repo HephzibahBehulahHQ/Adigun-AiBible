@@ -16,3 +16,6 @@ public/docs/
 data/editorial-published.json
 data/editions/*/search-index.json
 data/editions/*/chapters/
+
+__pycache__/
+*.py[cod]

@@ -1,9 +1,20 @@
-import type { Edition, Verse } from './types';
-import { sourceCredit } from './data';
-import { requirePermission } from './permissions';
-export async function printPassage(edition:Edition,verses:Verse[],label:string):Promise<void>{
+import type { Edition, Reference, Verse } from './types';
+
+/** A missing source position must not disappear inside an apparently complete range. */
+export function assertCompletePassage(verses: readonly Verse[], range: Pick<Reference, 'verse' | 'endVerse'>): void {
+  const end = range.endVerse ?? range.verse;
+  if (!Number.isSafeInteger(range.verse) || !Number.isSafeInteger(end) || range.verse < 1 || end < range.verse) {
+    throw new Error('Choose a valid passage range.');
+  }
+  if (verses.length !== end - range.verse + 1 || verses.some((verse, index) => verse.number !== range.verse + index || !verse.text.trim())) {
+    throw new Error('This range has missing source wording. Choose a range with text at every verse number.');
+  }
+}
+
+export async function printPassage(edition:Edition,verses:Verse[],label:string,range:Pick<Reference,'verse'|'endVerse'>):Promise<void>{
+  assertCompletePassage(verses,range);
+  const [{ sourceCredit }, { requirePermission }] = await Promise.all([import('./data'), import('./permissions')]);
   await requirePermission(edition,'printExport');
-  if(!verses.length||verses.some(verse=>!verse.text.trim()))throw new Error('Choose a passage with complete source wording before printing.');
   const popup=window.open('','_blank','popup,width=850,height=800');
   if(!popup)throw new Error('Allow this site to open a print window, then try again.');
   const doc=popup.document;doc.title=`${label} · ${edition.name}`;

@@ -81,5 +81,51 @@ class SourceImportChecks(unittest.TestCase):
                 IMPORTER.archive_bytes('eng-bsb', Path(folder))
 
 
+    def test_heading_notes_remain_separate_with_exact_source_offsets(self):
+        source = copy.deepcopy(self.document)
+        note = {'type': 'note', 'marker': 'f', 'caller': '+', 'content': [
+            {'type': 'char', 'marker': 'ft', 'content': ['TEST HEADING NOTE']}]}
+        source['content'][2]['content'] = ['TEST ', {'type': 'char', 'marker': 'it', 'content': ['àánú', note]}, ' HEADING']
+        files, provenance = self.parse(source)
+        heading = json.loads(files['books/GEN.json'])['chapters'][0]['headings'][0]
+        self.assertEqual(heading['text'], 'TEST àánú HEADING')
+        self.assertEqual(heading['content'], source['content'][2]['content'])
+        self.assertEqual(heading['notes'][0]['at'], len('TEST àánú'))
+        self.assertEqual(heading['notes'][0]['text'], 'TEST HEADING NOTE')
+        self.assertEqual(heading['notes'][0]['content'], note['content'])
+        self.assertEqual(heading['offsetUnit'], 'unicode-codepoint')
+        self.assertEqual(provenance['annotationTotals']['headingNotes'], 1)
+        self.assertEqual(provenance['annotationTotals']['notes'], 2)
+
+
+class AsvFormatChecks(unittest.TestCase):
+    def rows(self, xml_text='TEST supplied WORDS', txt_text='TEST [supplied] WORDS'):
+        ref = {'bookId': 'GEN', 'chapter': 1, 'verse': 1, 'editionId': 'eng-asv'}
+        return {**ref, 'text': xml_text}, {**ref, 'text': txt_text}
+
+    def test_only_asv_may_explain_supplied_word_brackets_without_rewriting_text(self):
+        xml_row, text_row = self.rows()
+        original = copy.deepcopy(text_row)
+        difference = IMPORTER.vpl_format_difference('eng-asv', xml_row, text_row)
+        self.assertEqual(difference['publisherMarkers'], ['[supplied]'])
+        self.assertEqual(text_row, original)
+        for edition_id in ['yor', 'deu1912']:
+            with self.assertRaisesRegex(ValueError, 'source-specific bracket'):
+                IMPORTER.vpl_format_difference(edition_id, xml_row, text_row)
+
+    def test_non_bracket_word_changes_are_never_an_allowed_format_exception(self):
+        xml_row, text_row = self.rows(xml_text='TEST changed WORDS')
+        with self.assertRaisesRegex(ValueError, 'source-specific bracket'):
+            IMPORTER.vpl_format_difference('eng-asv', xml_row, text_row)
+
+    def test_exact_exception_inventory_pin_covers_references_and_bracket_coordinates(self):
+        provenance = json.loads((ROOT / 'data/editions/eng-asv/provenance.json').read_text(encoding='utf-8'))
+        differences = provenance['publisherBracketFormatDifferences']
+        IMPORTER.verify_vpl_format_inventory('eng-asv', differences)
+        differences[0]['bracketPositions'][0]['offset'] += 1
+        with self.assertRaisesRegex(ValueError, 'exception inventory changed'):
+            IMPORTER.verify_vpl_format_inventory('eng-asv', differences)
+
+
 if __name__ == '__main__':
     unittest.main()

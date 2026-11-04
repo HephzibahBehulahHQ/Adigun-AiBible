@@ -490,10 +490,12 @@
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 27,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "eng-asv",
+      "installedRevision": "1901; eBible source dated 2026-10-30",
+      "installedSourceSha256": "6c41b8020cba9cf7041689f2356c55859e28023405537388be08bad93df2b050"
     },
     {
       "provider": "eBible.org",
@@ -4648,19 +4650,25 @@
       "id": "priority-30",
       "title": "American Standard Version — ASV",
       "source": "Master prompt v3 section 5",
-      "status": "acquisition-request",
-      "providerId": null,
-      "editionId": null,
-      "revisionVerified": false
+      "status": "installed",
+      "providerId": "eng-asv",
+      "editionId": "eng-asv",
+      "revisionVerified": true,
+      "revision": "1901; eBible source dated 2026-10-30",
+      "sourceUrl": "https://ebible.org/eng-asv/",
+      "sourceSha256": "6c41b8020cba9cf7041689f2356c55859e28023405537388be08bad93df2b050"
     },
     {
       "id": "priority-31",
       "title": "Berean Standard Bible — BSB",
       "source": "Master prompt v3 section 5",
-      "status": "acquisition-request",
+      "status": "installed",
       "providerId": null,
-      "editionId": null,
-      "revisionVerified": false
+      "editionId": "eng-bsb",
+      "revisionVerified": true,
+      "revision": "Publisher USJ release v5.19",
+      "sourceUrl": "https://berean.bible/",
+      "sourceSha256": "783aced3c3c8a2b145e4f8c48e3b94a5a5515e050719bb8621d094be78a5269f"
     },
     {
       "id": "priority-32",
@@ -4772,4 +4780,3 @@
     }
   ]
 }
-

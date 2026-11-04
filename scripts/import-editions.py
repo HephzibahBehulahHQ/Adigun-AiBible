@@ -137,6 +137,8 @@ SOURCES = {
         'xmlSha256': 'c1f2847ae9856ea062f675103f8931b6338949ba8ec673e9234140d5b60f6ce8',
         'textSha256': '8924ef74086d572425b1e335f531c7c529a561969e5c851e456b84c2ce6ad858',
         'noticeSha256': 'e39b826d64a43d79370e571aa74e01e6c40ed86537d2fd0cbf8a326d80dd7e86',
+        'bracketExceptionCount': 3748,
+        'bracketExceptionInventorySha256': 'd17944163b21e9910e36336df2e49f0c66e307a2b6a2fd961beb681ec2551bad',
         'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31102},
         'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': True, 'export': True},
         'conditions': ['Preserve this 1901 edition identity and the pinned publisher source.',
@@ -249,6 +251,38 @@ def valid_text(text):
     return '\ufffd' not in text and not any(ord(c) < 32 and c not in '\t\n\r' for c in text)
 
 
+def vpl_format_difference(edition_id, xml_row, text_row):
+    """Explain only the reviewed source-specific XML/TXT formatting differences.
+
+    Comparison normalization never changes the authoritative TXT display value.
+    ASV's exact bracket coordinates are additionally pinned for the whole source.
+    """
+    if xml_row['text'] == text_row['text']:
+        return None
+    text = text_row['text']
+    record = {'bookId': text_row['bookId'], 'chapter': text_row['chapter'], 'verse': text_row['verse']}
+    if edition_id == 'deu1912':
+        pattern = r'\[([1-9]\d*(?::[1-9]\d*)?[a-z]?)\]'
+        markers = list(re.finditer(pattern, text))
+        if markers and re.sub(pattern, r'\1', text) == xml_row['text']:
+            return {**record, 'publisherMarkers': [marker[0] for marker in markers]}
+    elif edition_id == 'eng-asv':
+        brackets = list(re.finditer(r'[\[\]]', text))
+        if brackets and text.replace('[', '').replace(']', '') == xml_row['text']:
+            return {**record, 'publisherMarkers': [marker[0] for marker in re.finditer(r'\[[^\[\]\r\n]+\]', text)],
+                    'bracketPositions': [{'offset': marker.start(), 'character': marker[0]} for marker in brackets]}
+    raise ValueError('Publisher exports disagree beyond the pinned source-specific bracket format exception.')
+
+
+def verify_vpl_format_inventory(edition_id, differences):
+    if edition_id == 'eng-asv':
+        source = SOURCES[edition_id]
+        if len(differences) != source['bracketExceptionCount'] or sha(json_bytes(differences)) != source['bracketExceptionInventorySha256']:
+            raise ValueError('ASV publisher bracket exception inventory changed.')
+    elif len(differences) != (358 if edition_id == 'deu1912' else 0):
+        raise ValueError('The publisher numbering-marker exception inventory changed.')
+
+
 def bible_artifacts(edition_id, archive):
     source = SOURCES[edition_id]
     xml_name, text_name, notice_name = (f'{edition_id}_{suffix}' for suffix in ('vpl.xml', 'vpl.txt', 'about.htm'))
@@ -299,20 +333,12 @@ def bible_artifacts(edition_id, archive):
     for xml_row, text_row in zip(rows, independent_rows):
         if {key: value for key, value in xml_row.items() if key != 'text'} != {key: value for key, value in text_row.items() if key != 'text'}:
             raise ValueError('Publisher XML and plain-text references disagree.')
-        if xml_row['text'] == text_row['text']:
-            continue
-        marker_pattern = r'\[([1-9]\d*(?::[1-9]\d*)?[a-z]?)\]'
-        markers = list(re.finditer(marker_pattern, text_row['text']))
-        comparison_text = re.sub(marker_pattern, r'\1', text_row['text']) if markers else None
-        if edition_id != 'deu1912' or comparison_text != xml_row['text']:
-            raise ValueError('Publisher exports disagree beyond the pinned numbering-marker format exception.')
-        formatting_differences.append({'bookId': text_row['bookId'], 'chapter': text_row['chapter'],
-                                       'verse': text_row['verse'], 'publisherMarkers': [marker[0] for marker in markers]})
-    if len(formatting_differences) != (358 if edition_id == 'deu1912' else 0):
-        raise ValueError('The publisher numbering-marker exception inventory changed.')
-    # The TXT export and publisher HTML retain bracketed numbering annotations.
-    # Keep their exact display text; the comparison-only removal above never
-    # modifies a source file or an output verse.
+        difference = vpl_format_difference(edition_id, xml_row, text_row)
+        if difference is not None:
+            formatting_differences.append(difference)
+    verify_vpl_format_inventory(edition_id, formatting_differences)
+    # Preserve every TXT bracket, including ASV brackets spanning source verses.
+    # Bracket removal is comparison-only, never a source or output modification.
     rows = independent_rows
     display_text = {(row['bookId'], row['chapter'], row['verse']): row['text'] for row in rows}
     for bid, book in books.items():
@@ -348,7 +374,7 @@ def bible_artifacts(edition_id, archive):
         'displayTextMember': text_name,
         'xmlAndPlainTextAgree': not formatting_differences,
         'xmlPlainTextCrossCheck': 'Exact agreement except the recorded publisher numeric-marker brackets; all other characters and references agree.' if formatting_differences else 'Exact agreement.',
-        'publisherNumberingMarkerFormatDifferences': formatting_differences,
+        'publisherNumberingMarkerFormatDifferences': formatting_differences if edition_id == 'deu1912' else [],
         'normalization': ['Decode source XML entities and UTF-8 byte-order marks.', 'Remove only ASCII XML/VPL padding at verse boundaries.',
                           'Map publisher VPL text book abbreviations to the equivalent XML book identifiers for validation.',
                           'Use the publisher VPL TXT as display text, retaining its bracketed alternate-numbering annotations.',
@@ -359,6 +385,15 @@ def bible_artifacts(edition_id, archive):
         'emptySourceRecords': [{'bookId': r['bookId'], 'chapter': r['chapter'], 'verse': r['verse']} for r in rows if not r['text']],
         'totals': totals,
     }
+    if edition_id == 'eng-asv':
+        provenance.update({
+            'xmlPlainTextCrossCheck': 'All words, punctuation and references agree after comparison-only removal of the recorded TXT square brackets. Display text retains every bracket unchanged.',
+            'publisherBracketFormatDifferences': formatting_differences,
+            'publisherBracketInventorySha256': sha(json_bytes(formatting_differences)),
+            'publisherBracketOffsetUnit': 'unicode-codepoint',
+            'publisherBracketScope': '4316 balanced supplied-word/other bracket spans and 76 verse-level unpaired cases, including Selah/Higgaion markers and John 7:53–8:11 textual-variant brackets. The original TXT is not repaired or renumbered.',
+        })
+        provenance['normalization'][3] = 'Use publisher VPL TXT unchanged as display text, retaining supplied-word, musical-marker and textual-variant brackets.'
     return files, provenance
 
 
@@ -425,9 +460,6 @@ def usj_bible_artifacts(edition_id, archive):
     files, rows, inventory, omitted, source_members = {}, [], [], [], {}
     annotation_totals = {'headings': 0, 'notes': 0, 'verseNotes': 0, 'headingNotes': 0, 'paragraphs': 0, 'characterSpans': 0}
 
-    def count_notes(node):
-        return 0 if isinstance(node, str) else int(node.get('type') == 'note') + sum(count_notes(child) for child in node.get('content', []))
-
     def flatten(node):
         if isinstance(node, str):
             return node
@@ -436,6 +468,36 @@ def usj_bible_artifacts(edition_id, archive):
         if not isinstance(node, dict) or node.get('type') not in {'ref', 'char', 'note', 'para'}:
             raise ValueError('Unsupported USJ annotation structure.')
         return ''.join(flatten(child) for child in node.get('content', []))
+
+    def heading_record(node):
+        # A footnote belongs to its own annotation, never to the visible heading.
+        parts, notes, offset = [], [], 0
+
+        def collect(part):
+            nonlocal offset
+            if isinstance(part, str):
+                if not valid_text(part):
+                    raise ValueError('Invalid USJ heading text.')
+                parts.append(part)
+                offset += len(part)
+            elif not isinstance(part, dict):
+                raise ValueError('Invalid USJ heading annotation.')
+            elif part.get('type') == 'verse':
+                return
+            elif part.get('type') == 'note':
+                if part.get('marker') != 'f':
+                    raise ValueError('Unsupported USJ heading note.')
+                notes.append({'at': offset, 'marker': part['marker'], 'caller': part.get('caller', ''),
+                              'text': flatten(part), 'content': part.get('content', [])})
+            elif part.get('type') in {'para', 'char', 'ref'}:
+                for child in part.get('content', []):
+                    collect(child)
+            else:
+                raise ValueError('Unsupported USJ heading annotation.')
+
+        collect(node)
+        return {'style': node['marker'], 'text': ''.join(parts), 'content': node.get('content', []),
+                **({'notes': notes, 'offsetUnit': 'unicode-codepoint'} if notes else {})}
 
     for book_id, book_name in BOOKS:
         raw = member(archive, f'{book_id}.usj')
@@ -516,8 +578,8 @@ def usj_bible_artifacts(edition_id, archive):
                 # sentence as verse text; retain Psalm titles as labeled context.
                 descriptive_body = style == 'd' and book_id != 'PSA'
                 if style in heading_styles and not descriptive_body:
-                    heading = {'style': style, 'text': flatten(node), 'content': node.get('content', [])}
-                    annotation_totals['headingNotes'] += count_notes(node)
+                    heading = heading_record(node)
+                    annotation_totals['headingNotes'] += len(heading.get('notes', []))
                     if chapter is None:
                         book['frontMatter'].append(heading)
                     else:
@@ -590,7 +652,8 @@ def usj_bible_artifacts(edition_id, archive):
                    'normalization': ['Decode publisher USJ UTF-8 JSON.', 'Use explicit chapter/verse identifiers without renumbering.',
                                      'Keep wording, punctuation and Unicode; concatenate adjacent inline text and separate body paragraph continuations with a space.',
                                      'Remove only ASCII layout padding at verse boundaries.',
-                                     'Keep publisher headings, footnotes, poetic paragraph styles and character spans outside the canonical verse text.'],
+                                     'Keep publisher headings, footnotes, poetic paragraph styles and character spans outside the canonical verse text.',
+                                     'Keep heading note bodies separate from heading text with Unicode code-point offsets and original note field markup.'],
                    'limitations': ['Publisher words-of-Jesus markers are preserved as source metadata, not independently approved speaker annotations.',
                                    'No interlinear, morphology, third-party lexicon or recorded-audio assets are imported.']}
 

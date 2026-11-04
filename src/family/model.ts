@@ -4,6 +4,7 @@ import type { Reference } from '../types';
 export const MAX_FAMILY_FILE_BYTES = 32 * 1024 * 1024;
 export const MAX_FAMILY_BACKUP_BYTES = 128 * 1024 * 1024;
 export const MAX_FAMILY_TEXT = 200_000;
+export const MAX_FAMILY_ITEMS = 1000;
 export type FamilyCategory = 'memory' | 'testimony' | 'explanation' | 'family_record';
 export type FamilyMediaKind = 'audio' | 'photo' | 'document';
 export interface FamilyAttachment {
@@ -15,7 +16,7 @@ export interface FamilyAttachment {
   origin: 'upload' | 'microphone';
   blob: Blob;
 }
-export interface FamilyPassage { reference: Reference; label: string }
+export interface FamilyPassage { reference: Reference; label: string; sourceSha256?: string }
 export interface FamilyItem {
   schemaVersion: 1;
   id: string;
@@ -38,10 +39,12 @@ export interface FamilyItem {
 }
 export interface CaptionCue { start: number; end: number; text: string }
 export interface FamilyFilter { query?: string; person?: string; collection?: string; from?: string; to?: string; showHidden?: boolean }
+export interface FamilyState { schemaVersion: 1; revision: number; items: FamilyItem[] }
+export const emptyFamilyArchive = (): FamilyState => ({ schemaVersion: 1, revision: 0, items: [] });
 
 const object = (value: unknown): value is Record<string, unknown> => !!value && typeof value === 'object' && !Array.isArray(value);
 const smallText = (value: unknown, max: number, required = false): value is string => typeof value === 'string' && value.length <= max && (!required || !!value.trim());
-const validInstant = (value: unknown): value is string => typeof value === 'string' && /^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(?:\.\d{1,3})?Z$/.test(value) && Number.isFinite(Date.parse(value));
+const validInstant = (value: unknown): value is string => typeof value === 'string' && /^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(?:\.\d{1,3})?Z$/.test(value) && Number.isFinite(Date.parse(value)) && new Date(value).toISOString().slice(0, 19) === value.slice(0, 19);
 export const validFamilyDate = (value: unknown): value is string => typeof value === 'string' && /^\d{4}-\d\d-\d\d$/.test(value) && Number.isFinite(Date.parse(value)) && new Date(value).toISOString().slice(0, 10) === value;
 export const familyCategories: FamilyCategory[] = ['memory', 'testimony', 'explanation', 'family_record'];
 
@@ -56,23 +59,56 @@ export function validateFamilyItem(value: unknown): FamilyItem {
   if (value.occurredOn !== null && !validFamilyDate(value.occurredOn)) throw new Error('Use a valid recording or event date, or leave it unknown.');
   if (!smallText(value.body, MAX_FAMILY_TEXT) || !smallText(value.transcript, MAX_FAMILY_TEXT) || !smallText(value.captionsVtt, MAX_FAMILY_TEXT) || !smallText(value.stewardNote, 4000)) throw new Error('The writing, transcript, captions or recovery note is too long.');
   if (value.captionsVtt) parseCaptions(value.captionsVtt);
-  if (!Array.isArray(value.passages) || value.passages.length > 30 || value.passages.some(link => !object(link) || !isReference(link.reference) || !link.reference.editionId || !smallText(link.label, 250, true))) throw new Error('A family passage link is invalid or has no named edition.');
+  if (!Array.isArray(value.passages) || value.passages.length > 30 || value.passages.some(link => !object(link) || !isReference(link.reference) || !link.reference.editionId || !smallText(link.label, 250, true) || (link.sourceSha256 !== undefined && (typeof link.sourceSha256 !== 'string' || !/^[a-f0-9]{64}$/.test(link.sourceSha256))))) throw new Error('A family passage link is invalid or has no named edition.');
   if (!object(value.consent) || !['own_work', 'permission'].includes(String(value.consent.basis)) || !smallText(value.consent.grantedBy, 200, true) || !validInstant(value.consent.confirmedAt) || !smallText(value.consent.note, 4000)) throw new Error('Record who authorized this item before saving it.');
-  if (!['private', 'hidden'].includes(String(value.visibility)) || !validInstant(value.createdAt) || !validInstant(value.updatedAt)) throw new Error('Invalid privacy or date metadata.');
+  if (!['private', 'hidden'].includes(String(value.visibility)) || !validInstant(value.createdAt) || !validInstant(value.updatedAt) || Date.parse(value.updatedAt) < Date.parse(value.createdAt)) throw new Error('Invalid privacy or date metadata.');
   let attachment: FamilyAttachment | undefined;
   if (value.attachment !== undefined) {
     const file = value.attachment;
     if (!object(file) || !smallText(file.name, 240, true) || /[\u0000-\u001f/\\]/.test(file.name) || !smallText(file.type, 150, true) || !['audio', 'photo', 'document'].includes(String(file.kind)) || !['upload', 'microphone'].includes(String(file.origin)) || !Number.isInteger(file.size) || Number(file.size) < 1 || Number(file.size) > MAX_FAMILY_FILE_BYTES || typeof file.sha256 !== 'string' || !/^[a-f0-9]{64}$/.test(file.sha256) || !(file.blob instanceof Blob) || file.blob.size !== file.size || file.blob.type !== file.type) throw new Error('The original family file or its integrity metadata is invalid.');
     attachment = { name: file.name, type: file.type, size: Number(file.size), sha256: file.sha256, kind: file.kind as FamilyMediaKind, origin: file.origin as FamilyAttachment['origin'], blob: file.blob };
   }
-  if (!attachment && !(value.body as string).trim()) throw new Error('Add writing or an original file before saving this item.');
-  return { schemaVersion: 1, id: value.id, title: value.title as string, person: value.person as string, occurredOn: value.occurredOn as string | null, category: value.category as FamilyCategory, collection: value.collection as string, topics: [...new Set(value.topics as string[])], body: value.body as string, transcript: value.transcript as string, captionsVtt: value.captionsVtt as string, passages: (value.passages as FamilyPassage[]).map(link => ({ reference: { ...link.reference }, label: link.label })), consent: { basis: value.consent.basis as FamilyItem['consent']['basis'], grantedBy: value.consent.grantedBy, confirmedAt: value.consent.confirmedAt, note: value.consent.note }, stewardNote: value.stewardNote as string, visibility: value.visibility as FamilyItem['visibility'], createdAt: value.createdAt, updatedAt: value.updatedAt, ...(attachment ? { attachment } : {}) };
+  if (!attachment && !(value.body as string).trim() && !(value.transcript as string).trim()) throw new Error('Add writing, a transcript or an original file before saving this item.');
+  return { schemaVersion: 1, id: value.id, title: value.title as string, person: value.person as string, occurredOn: value.occurredOn as string | null, category: value.category as FamilyCategory, collection: value.collection as string, topics: [...new Set(value.topics as string[])], body: value.body as string, transcript: value.transcript as string, captionsVtt: value.captionsVtt as string, passages: (value.passages as FamilyPassage[]).map(link => ({ reference: { bookId: link.reference.bookId, chapter: link.reference.chapter, verse: link.reference.verse, ...(link.reference.endVerse === undefined ? {} : { endVerse: link.reference.endVerse }), editionId: link.reference.editionId }, label: link.label, ...(link.sourceSha256 ? { sourceSha256: link.sourceSha256 } : {}) })), consent: { basis: value.consent.basis as FamilyItem['consent']['basis'], grantedBy: value.consent.grantedBy, confirmedAt: value.consent.confirmedAt, note: value.consent.note }, stewardNote: value.stewardNote as string, visibility: value.visibility as FamilyItem['visibility'], createdAt: value.createdAt, updatedAt: value.updatedAt, ...(attachment ? { attachment } : {}) };
+}
+
+export function familyItemMetadata(item: FamilyItem) {
+  const { attachment, ...metadata } = item;
+  return { ...metadata, ...(attachment ? { attachment: { name: attachment.name, type: attachment.type, size: attachment.size, sha256: attachment.sha256, kind: attachment.kind, origin: attachment.origin } } : {}) };
+}
+
+export function familyFingerprint(item: FamilyItem): string { return JSON.stringify(familyItemMetadata(validateFamilyItem(item))); }
+
+/** Exact UTF-8 size of the canonical JSON export, including base64 expansion. */
+export function familyBackupSize(items: FamilyItem[]): number {
+  const shell = { format: 'adigun-aibible-family', schemaVersion: 1, exportedAt: '2000-01-01T00:00:00.000Z', items: items.map(item => { const meta = familyItemMetadata(item); return { ...meta, ...(meta.attachment ? { attachment: { ...meta.attachment, dataBase64: '' } } : {}) }; }) };
+  return new TextEncoder().encode(JSON.stringify(shell)).byteLength + items.reduce((bytes, item) => bytes + (item.attachment ? Math.ceil(item.attachment.size / 3) * 4 : 0), 0);
+}
+
+export function validateFamilyState(value: unknown): FamilyState {
+  if (!object(value) || value.schemaVersion !== 1) throw new Error('Unsupported family archive version. Existing device records have not been replaced.');
+  if (!Number.isSafeInteger(value.revision) || Number(value.revision) < 0 || !Array.isArray(value.items) || value.items.length > MAX_FAMILY_ITEMS) throw new Error('Invalid family archive inventory. Existing device records have not been replaced.');
+  const items = value.items.map(validateFamilyItem);
+  if (new Set(items.map(item => item.id)).size !== items.length) throw new Error('This family archive contains duplicate record IDs.');
+  if (familyBackupSize(items) > MAX_FAMILY_BACKUP_BYTES) throw new Error('The archive would exceed the 128 MiB portable-backup limit. Export existing records before removing items or use a smaller file.');
+  return { schemaVersion: 1, revision: Number(value.revision), items };
+}
+
+export async function verifyFamilyState(value: unknown): Promise<FamilyState> {
+  const state = validateFamilyState(value);
+  for (const item of state.items) {
+    if (!item.attachment) continue;
+    const verified = await prepareFamilyAttachment(item.attachment.blob, item.attachment.name, item.attachment.origin);
+    if (verified.sha256 !== item.attachment.sha256 || verified.type !== item.attachment.type || verified.kind !== item.attachment.kind) throw new Error(`The original file for “${item.title}” failed its integrity check. Existing device records have not been replaced.`);
+  }
+  return state;
 }
 
 function timeSeconds(value: string): number | null {
   const match = value.match(/^(?:(\d{2,}):)?(\d{2}):(\d{2})\.(\d{3})$/);
   if (!match || Number(match[2]) >= 60 || Number(match[3]) >= 60) return null;
-  return Number(match[1] || 0) * 3600 + Number(match[2]) * 60 + Number(match[3]) + Number(match[4]) / 1000;
+  const seconds = Number(match[1] || 0) * 3600 + Number(match[2]) * 60 + Number(match[3]) + Number(match[4]) / 1000;
+  return Number.isFinite(seconds) ? seconds : null;
 }
 export function parseCaptions(text: string): CaptionCue[] {
   if (!text.trim()) return [];
