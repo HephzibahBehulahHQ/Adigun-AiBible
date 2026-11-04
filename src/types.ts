@@ -1,5 +1,9 @@
-export interface Verse { number: number; text: string }
-export interface Chapter { number: number; verses: Verse[] }
+export interface SourceNote { at: number; marker: string; caller: string; text: string; content?: unknown[] }
+export interface SourceCharacterSpan { start: number; end: number; marker: string }
+export interface SourceHeading { afterVerse: number | null; style: string; text: string; content?: unknown[]; notes?: SourceNote[]; offsetUnit?: string }
+export interface SourceParagraph { style: string; spans: { verse: number; start: number; end: number }[] }
+export interface Verse { number: number; text: string; notes?: SourceNote[]; characterSpans?: SourceCharacterSpan[] }
+export interface Chapter { number: number; verses: Verse[]; headings?: SourceHeading[]; paragraphs?: SourceParagraph[]; offsetUnit?: string }
 export interface Book { id: string; name: string; chapters: Chapter[] }
 export interface BookInfo { id: string; name: string; chapters: number; verseCounts: number[]; verseRecordCounts?: number[] }
 export interface EditionRights { redistribute: boolean; adapt: boolean; offline: boolean; audio: boolean; export: boolean }

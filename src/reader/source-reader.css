@@ -1,0 +1,60 @@
+.source-reading-controls{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin:20px 0 10px;padding:14px 0;border-block:1px solid var(--border);font:13px/1.6 system-ui}
+.source-reading-controls label{display:flex;align-items:center;gap:9px;margin:0;min-width:0}
+.source-reading-controls select{max-width:100%;min-height:40px;margin:0;padding:7px 10px}
+.source-reading-controls input[type=checkbox]{width:18px;height:18px;min-width:18px;margin:0;accent-color:var(--accent)}
+.source-coverage{margin:10px 0 20px;color:var(--muted);font:12px/1.7 system-ui}
+.source-coverage summary{cursor:pointer;color:var(--ink);padding-block:8px}
+.source-coverage p{margin:6px 0}
+.source-heading{margin:26px 0 14px;padding:0 0 0 30px;color:var(--ink);font:600 17px/1.6 system-ui;overflow-wrap:anywhere}
+.source-heading:first-child{margin-top:8px}
+.source-heading.source-heading-reference{font-size:13px;font-weight:400;color:var(--muted);margin-top:-7px}
+.source-heading.source-heading-description{font:italic 16px/1.7 Georgia,serif;font-weight:400;margin-top:8px}
+.source-heading .source-heading-text{white-space:pre-wrap}
+.source-heading .source-heading-kind{display:block;font:10px/1.7 system-ui;font-style:normal;letter-spacing:.06em;text-transform:uppercase;color:var(--subtle)}
+.source-note-marker{display:inline-block;vertical-align:super;min-width:26px;min-height:28px;padding:1px 5px;margin-inline:2px;font:700 11px/1.5 system-ui;color:var(--accent);border:1px solid var(--border);border-radius:5px;background:var(--panel)}
+.source-heading-link{display:inline-block;font:12px/1.7 system-ui;color:var(--accent);text-decoration:underline;text-underline-offset:3px;padding:4px 6px;margin-left:8px}
+.source-publisher-jesus{color:#ffaaa1;text-decoration:underline;text-decoration-color:currentColor;text-decoration-thickness:1px;text-underline-offset:4px}
+html[data-theme=light] .source-publisher-jesus,html[data-theme=parchment] .source-publisher-jesus,html[data-theme=retro] .source-publisher-jesus{color:#9c2929}
+.source-added-word{font-style:italic}
+.source-speaker-label{display:block;font:10px/1.5 system-ui;color:var(--muted);margin-top:6px}
+.source-line{display:block;white-space:pre-wrap}
+.source-line[data-poetry-level="1"]{padding-inline-start:.6em}
+.source-line[data-poetry-level="2"]{padding-inline-start:1.5em}
+.source-line[data-poetry-level="3"]{padding-inline-start:2.4em}
+.source-line[data-poetry-level="4"]{padding-inline-start:3.3em}
+.source-paragraph-block{margin:0 0 18px;font:var(--reading-size)/var(--reading-line) Georgia,"Times New Roman",serif;white-space:pre-wrap;overflow-wrap:anywhere}
+.source-paragraph-block[data-poetry-level="1"]{padding-inline-start:.6em}
+.source-paragraph-block[data-poetry-level="2"]{padding-inline-start:1.5em}
+.source-paragraph-block[data-poetry-level="3"]{padding-inline-start:2.4em}
+.source-paragraph-block[data-poetry-level="4"]{padding-inline-start:3.3em}
+.source-paragraph-block .source-paragraph-verse{border-radius:4px;padding-block:3px}
+.source-paragraph-verse.selected{background:var(--accent-soft)}
+.source-paragraph-verse.highlighted{background:rgba(213,174,49,.18)}
+.source-paragraph-block .verse-number{font:11px/1.6 system-ui;vertical-align:super;padding:4px 6px;margin-inline:2px;min-width:25px;min-height:28px}
+.source-paragraph-actions{display:inline-flex;vertical-align:middle;gap:3px;margin:0 8px 0 3px}
+.source-paragraph-actions .icon-button{min-width:28px;min-height:28px}
+.source-paragraph-empty{display:block;font:14px/1.7 system-ui;color:var(--muted)}
+.source-detail-drawer{position:fixed;z-index:105;right:22px;bottom:86px;width:min(460px,calc(100vw - 32px));max-height:75dvh;overflow:auto;padding:22px;border:1px solid var(--border);border-radius:14px;background:var(--panel,#0e192a);color:var(--ink);box-shadow:0 16px 65px #0006;font:14px/1.7 system-ui;overscroll-behavior:contain}
+.source-detail-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.source-detail-heading h2{font:600 21px/1.4 system-ui;margin:8px 0 14px}
+.source-detail-heading .text-button{flex-shrink:0;min-height:40px}
+.source-note-body{white-space:pre-wrap;overflow-wrap:anywhere;font:17px/1.7 Georgia,serif}
+.source-detail-credit{font-size:12px;color:var(--muted);border-top:1px solid var(--border);padding-top:14px}
+.source-reference-links{display:flex;flex-wrap:wrap;gap:9px}
+.source-reference-links h3{width:100%;font-size:14px}
+.source-reference-links .secondary{white-space:normal;font-size:12px;text-align:left;overflow-wrap:anywhere}
+.source-reference-links button[aria-pressed=true]{border-color:var(--accent)}
+.source-reference-preview{border-top:1px solid var(--border);margin-top:18px;padding-top:10px}
+.source-reference-preview h3,.source-reference-preview h4{font:600 14px/1.7 system-ui;overflow-wrap:anywhere}
+.source-reference-preview section>p{font:16px/1.8 Georgia,serif;white-space:pre-wrap}
+.source-reference-preview sup{font:10px/1.5 system-ui;color:var(--accent);padding-right:4px}
+.source-reference-preview .secondary{margin:8px 0;white-space:normal;text-align:left;overflow-wrap:anywhere}
+.source-reference-preview .source-preview-gap{font:13px/1.7 system-ui;color:var(--muted)}
+@media(max-width:620px){.source-reading-controls{gap:12px;font-size:12px}.source-reading-controls>label:first-child{width:100%}.source-reading-controls select{flex:1;min-width:0}.source-heading{padding-left:12px;font-size:16px}.source-detail-drawer{left:12px;right:12px;width:auto;bottom:84px;padding:18px;max-height:70dvh}.source-paragraph-actions{gap:2px;margin-inline:2px}.source-line[data-poetry-level="4"]{padding-inline-start:2.4em}}
+@media print{.source-reading-controls,.source-coverage,.source-note-marker,.source-detail-drawer,.source-paragraph-actions,.source-heading-link{display:none}.source-publisher-jesus{color:inherit!important}}
+
+@media (max-width: 620px) {
+  .edition-row { flex-wrap: wrap; justify-content: flex-start; gap: 8px 14px; }
+  .edition-row > label { flex: 1 1 100%; min-width: 0; }
+  .edition-row > label select { flex: 1; min-width: 0; }
+}
