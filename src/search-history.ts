@@ -35,7 +35,7 @@ export function validateSearchHistory(value: unknown): SearchHistoryItem[] {
 export function recordSearchHistory(items: SearchHistoryItem[], item: SearchHistoryItem): SearchHistoryItem[] {
   const current=validateSearchHistory(items), candidate=validateSearchHistory([item])[0];
   const key=(x:SearchHistoryItem)=>JSON.stringify([x.query.toLocaleLowerCase(),x.editionId,x.options]);
-  return validateSearchHistory([candidate,...current.filter(old=>key(old)!==key(candidate))]).slice(0,MAX_SEARCH_HISTORY);
+  return validateSearchHistory([candidate,...current.filter(old=>key(old)!==key(candidate))].slice(0,MAX_SEARCH_HISTORY));
 }
 export function removeSearchHistory(items: SearchHistoryItem[], id: string): SearchHistoryItem[] {
   const current=validateSearchHistory(items);
