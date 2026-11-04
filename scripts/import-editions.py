@@ -122,6 +122,27 @@ SOURCES = {
                        'The publisher asks that altered derivatives use a separate name.',
                        'No third-party recorded audio is included or licensed by this text import.'],
     },
+    'eng-asv': {
+        'name': 'American Standard Version (1901)', 'abbreviation': 'ASV', 'language': 'en', 'corpus': 'bible',
+        'publisher': 'eBible.org', 'translator': 'American Revision Committee',
+        'revision': '1901; eBible source dated 2026-10-30', 'canon': 'protestant-66',
+        'sourceUpdatedAt': '2026-10-30', 'rightsObservedAt': '2026-11-04',
+        'sourceUrl': 'https://ebible.org/eng-asv/',
+        'formatUrl': 'https://ebible.org/find/details.php?id=eng-asv',
+        'downloadUrl': 'https://ebible.org/Scriptures/eng-asv_vpl.zip',
+        'licenseUrl': 'https://ebible.org/eng-asv/copyright.htm', 'license': 'Public domain',
+        'licenseIdentifier': 'LicenseRef-Public-Domain',
+        'attribution': 'American Standard Version (1901). Public domain. Source: eBible.org, source dated 30 October 2026.',
+        'sha256': '6c41b8020cba9cf7041689f2356c55859e28023405537388be08bad93df2b050',
+        'xmlSha256': 'c1f2847ae9856ea062f675103f8931b6338949ba8ec673e9234140d5b60f6ce8',
+        'textSha256': '8924ef74086d572425b1e335f531c7c529a561969e5c851e456b84c2ce6ad858',
+        'noticeSha256': 'e39b826d64a43d79370e571aa74e01e6c40ed86537d2fd0cbf8a326d80dd7e86',
+        'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31102},
+        'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': True, 'export': True},
+        'conditions': ['Preserve this 1901 edition identity and the pinned publisher source.',
+                       'The VPL source supplies scripture text without headings, footnotes or paragraph styles; no source annotation coverage is claimed.',
+                       'No third-party recorded audio is included or licensed by this text import.'],
+    },
 }
 
 

@@ -14,7 +14,7 @@ test('edition catalog opens genuine sources and compares explicitly numbered pas
   await page.getByRole('button',{name:'Read edition',exact:true}).click();await expect(page).toHaveURL(/edition=deu1912/);await expect(page.locator('.scripture')).toHaveAttribute('lang','de');
 });
 
-test('private prayer entry survives reload and malformed import preserves it',async({page})=>{
+test('private prayer entry survives reload',async({page})=>{
   await page.goto(path('study'));await expect(page.getByRole('heading',{name:'Prayer journal',exact:true})).toBeVisible();
   await page.getByLabel('Title',{exact:true}).fill('Private prayer verification');await page.getByLabel('Prayer',{exact:true}).fill('This user-authored entry remains on this device.');
   await page.getByRole('button',{name:/Save prayer/}).click();await expect(page.getByRole('heading',{name:'Private prayer verification',exact:true})).toBeVisible();
@@ -24,7 +24,7 @@ test('private prayer entry survives reload and malformed import preserves it',as
 test('transcript evidence resolves the real source and keeps uncertain wording qualified',async({page})=>{
   await page.goto(path('evidence'));await expect(page.getByRole('heading',{name:'Sermon Evidence Scanner',exact:true})).toBeVisible();
   await page.getByLabel('Transcript',{exact:true}).fill(`[00:12] John 3:16 says “${verse}”`);
-  await page.getByRole('button',{name:/Check references|Scan transcript|Scan references/}).click();
+  await page.getByRole('button',{name:'Check transcript',exact:true}).click();
   await expect(page.locator('.evidence-passage').first()).toContainText(verse);await expect(page.locator('.evidence-passage').first()).toContainText('World English Bible');
 });
 
