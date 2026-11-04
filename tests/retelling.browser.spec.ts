@@ -15,8 +15,8 @@ test('written retelling is edition-bound, private, editable by deletion and reta
   const retelling = page.getByLabel('My retelling', { exact: true });
   await retelling.fill('My opening thought.');
   await page.getByRole('button', { name: 'Insert optional reflection prompts' }).click();
-  await expect(retelling).toContainText('What happens in this passage?');
-  await expect(retelling).toContainText('My opening thought.');
+  await expect(retelling).toHaveValue(/What happens in this passage\?/);
+  await expect(retelling).toHaveValue(/^My opening thought\./);
   await retelling.fill('The passage describes love shown through giving, not merely words.');
   await page.getByRole('button', { name: 'Save private retelling', exact: true }).click();
   await expect(page.getByLabel('My retelling', { exact: true })).toHaveValue('');
