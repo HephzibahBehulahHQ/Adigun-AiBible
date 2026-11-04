@@ -23,6 +23,10 @@ html[data-theme=light] .source-publisher-jesus,html[data-theme=parchment] .sourc
 .source-line[data-poetry-level="3"]{padding-inline-start:2.4em}
 .source-line[data-poetry-level="4"]{padding-inline-start:3.3em}
 .source-paragraph-block{margin:0 0 18px;font:var(--reading-size)/var(--reading-line) Georgia,"Times New Roman",serif;white-space:pre-wrap;overflow-wrap:anywhere}
+.source-paragraph-block[data-poetry-level="1"]{padding-inline-start:.6em}
+.source-paragraph-block[data-poetry-level="2"]{padding-inline-start:1.5em}
+.source-paragraph-block[data-poetry-level="3"]{padding-inline-start:2.4em}
+.source-paragraph-block[data-poetry-level="4"]{padding-inline-start:3.3em}
 .source-paragraph-block .source-paragraph-verse{border-radius:4px;padding-block:3px}
 .source-paragraph-verse.selected{background:var(--accent-soft)}
 .source-paragraph-verse.highlighted{background:rgba(213,174,49,.18)}
