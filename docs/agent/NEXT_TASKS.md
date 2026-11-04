@@ -12,7 +12,7 @@ PR #6 implements saved reader layouts and accessible command navigation. Candida
 - PR #8 shipped bounded device-local saved searches and private search across notes, questions and bookmarks.
 - PR #9 shipped the game/learning template audit. No standalone game existed; current memory exercises and Verse Drop are not certified as games.
 - PR #10 fixed explicit shared-passage startup resolution on all supported screens and added invalid-link/no-stale-scroll regressions.
-- PR #11 shipped bounded private recent-search history with edition/filter retention, individual removal, clear controls and reload persistence. Its PR workflow passed; main deployment is still in progress.
+- PR #11 shipped bounded private recent-search history with edition/filter retention, individual removal, clear controls and reload persistence. Its PR workflow and main deployment passed; the public source revision was verified.
 - PR #12 shipped a guided private interpretation challenge with edition-bound passage refs, reflection prompts and no automatic score/verdict. Full PR CI passed; main deployment is pending.
 
 ## Next bounded slice
