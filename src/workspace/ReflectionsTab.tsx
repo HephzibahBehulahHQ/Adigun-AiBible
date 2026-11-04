@@ -61,6 +61,7 @@ export default function ReflectionsTab({ state, busy, commit, reference, onOpenR
         <p>{decisionSimulation.situation}</p>
         <h4>Consider before choosing</h4><ul>{decisionSimulation.considerations.map(item=><li key={item}>{item}</li>)}</ul>
         <h4>Relevant passages in the selected edition</h4><PassageLinks refs={decisionSimulationReferences(reference.editionId||'eng-web')} onOpenReference={onOpenReference}/>
+        <h4>Possible follow-up actions</h4><ul>{decisionSimulation.followUps.map(item=><li key={item}>{item}</li>)}</ul>
         <form onSubmit={saveDecisionSimulation}><fieldset disabled={busy}>
           <legend>What would you do?</legend>
           {decisionSimulation.choices.map(choice=><label className="workspace-check" key={choice.id}><input type="radio" name="decision-simulation-choice" value={choice.id} required checked={decisionChoice===choice.id} onChange={()=>{setDecisionChoice(choice.id);setDecisionError('');}}/><span>{choice.label}</span></label>)}
