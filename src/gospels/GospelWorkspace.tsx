@@ -3,6 +3,7 @@ import type { FormEvent } from 'react';
 import { getBook, getEditionCatalog, getManifest } from '../data';
 import { requirePermission } from '../permissions';
 import { sourceDirection, sourceFont } from '../source-typography';
+import { parseRoute } from '../routing';
 import type { Edition, Locale, Reference } from '../types';
 import { defaultGospelSelection, gospelBooks, gospelNames, gospelReferenceKey, readGospelSelection, resolvePaneReference, setPaneLinked, validateGospelSelection, withGospelSelection } from './model';
 import type { GospelBookId, GospelPane, GospelSelection } from './model';
@@ -16,7 +17,7 @@ const referenceLabel = (ref: Reference) => `${gospelNames[ref.bookId as GospelBo
 type SelectionState = { selection: GospelSelection; error?: never } | { selection?: never; error: string };
 
 function readSelection(editionId: string): SelectionState {
-  try { return { selection: readGospelSelection(location.hash, editionId) }; }
+  try { return { selection: readGospelSelection(location.hash, parseRoute(location.hash).ref.editionId || editionId) }; }
   catch (reason) { return { error: reason instanceof Error ? reason.message : 'This Gospel comparison link is invalid.' }; }
 }
 
