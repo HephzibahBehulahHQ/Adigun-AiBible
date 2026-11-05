@@ -5,7 +5,7 @@
 - Repository: `HephzibahBehulahHQ/Adigun-AiBible`.
 - Verified production: `75f2d35be4df3ab07f589c557f01a653acdfc8dc`, merged in [PR #29](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/29). [Main workflow 42013204493](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42013204493) passed. Independent public verification at 10:52:29 UTC on 5 November returned this exact source commit, build `317f9e564b634dcfee37a6a1`, HTTP 200, the app shell and an exact-byte match of the fourteen-edition source catalog.
 - Live URL: https://hephzibahbehulahhq.github.io/Adigun-AiBible/ . Public `build-info.json` is the deployed source receipt.
-- Current integration branch: `codex/concordance-integration-20261105`. Last verified root checkpoint: `483dda85b2de1f08de0714c7f04b13d40c9cddaa`, confirmed by GitHub and git ls-remote on 5 November 2026. Final concordance agent checkpoint `1cf36e215f274ed6209d9f183c3dfe7db32d512f` is integrated locally; complete candidate checks passed before the next synchronized release checkpoint.
+- Current integration branch: `codex/concordance-integration-20261105`. Last verified root checkpoint: `b2dc9289e628c3f6ea93b23b599b7706c38e130c`, confirmed by GitHub and git ls-remote at 11:33 UTC on 5 November 2026. Final concordance agent checkpoint `1cf36e215f274ed6209d9f183c3dfe7db32d512f` is integrated locally; complete candidate checks passed before the next synchronized release checkpoint.
 
 ## Released evidence
 
@@ -21,7 +21,11 @@ Sixteen focused concordance tests, nine routing/recovery checks, TypeScript and 
 
 Compact source transport from verified branch head `ed294f8558b17e79f7b427900ecc2d27ef82e7f7` is now integrated. Build-only gzip/base64 envelopes preserve canonical bytes, URLs and atomic pack behavior; concordance verifies transferred hashes before decoding. The production workflow enables the same packaging used by all candidate browser gates. Decoder streams, output/ratio limits and offline inventory limits (4 MiB, 16,384 paths) are bounded. Current packaged artifact: 87880962 bytes across 2260 files; 2194 offline paths. The copy/rewrite artifact mismatch is resolved by writing each source directly into a fresh staging directory, verifying it, then swapping the completed directory. Final artifact verification passed all 938 envelopes against 167,732,841 canonical bytes; two new regression cases reject raw replacements, missing files, changed canonical bytes and reused staging destinations. Browser execution remains pending.
 
-Independent isolated work continues on a pinned Open Scriptures Hebrew Bible source-study corpus and its viewer; neither is included in this candidate yet. OSHB uses its own source numbering and preserves ketiv/qere alternatives and annotations; it is not counted as another translated 66-book Bible or aligned automatically to translations.
+The verified Hebrew viewer branch `5db5dd2395351e27a38913976720bddd437c76cc`, including source-import branch `79d021b7df3d2f04675cfa106d501a2e42807d04`, is now integrated. OSHB contributes 39 independently numbered source books, 929 chapters and 23,213 verses, exact RTL text, supplied lemma/morphology fields, source alternatives including empty qere, exact within-book lemma pages and verified atomic book downloads with every required notice. It is counted separately from the fourteen translated Bible editions and never automatically aligned to them. Navigation and coverage use the validated pinned source manifest.
+
+The independent corpus audit matched 1,447,924 mixed XML events and reconstructed the upstream Git tree. Agent validation passed 16 viewer tests, four import tests and nine Python adversarial tests. Root's pre-Hebrew full application run passed 407 of 408 checks; the remaining checkpoint subprocess exceeded its 30-second timeout under shared execution pressure, then its entire 13-test group passed independently. The earlier full transport check passed all 406 then-existing application tests plus 20 backend contracts. The combined Hebrew candidate checks and all browser execution remain pending; no human/native-language review is inferred.
+
+The next twelve-source acquisition batch and complete private voice-retelling feature remain isolated work in progress, outside this candidate.
 
 ## Remaining scope and constraints
 
@@ -33,4 +37,4 @@ Local Chromium installation returned an invalid archive. Browser execution runs 
 
 ## Next action
 
-Finish and synchronize the concordance candidate, run its exact-candidate browser/persistence gates, inspect screenshots, then merge and verify the deployed revision. Keep Hebrew source-study work and the next acquisition batch isolated until their integrity and release checks pass.
+Finish and synchronize the concordance candidate, run its exact-candidate browser/persistence gates, inspect screenshots, then merge and verify the deployed revision. Run the combined Hebrew/concordance/transport release gates; keep the next acquisition batch and private voice-retelling implementation isolated until ready.

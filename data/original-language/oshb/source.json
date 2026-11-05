@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "id": "oshb",
+  "title": "Open Scriptures Hebrew Bible — pinned source-study corpus",
+  "upstream": {
+    "repository": "https://github.com/openscriptures/morphhb",
+    "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+    "tree": "50e6be1d06a80cef7d9285b3c8e4dff47e420bf6",
+    "commitDate": "2024-08-27T13:19:54Z",
+    "archiveUrl": "https://codeload.github.com/openscriptures/morphhb/tar.gz/3d15126fb1ef74867fc1434be1942e837932691f",
+    "archiveBytes": 20824328,
+    "archiveSha256": "f979b5357fb18391928cd42ee1b95594db6e4f71d8da4e893c6c18f2688093a6"
+  },
+  "license": {
+    "text": "Westminster Leningrad Codex text: Public Domain, as stated by upstream.",
+    "annotations": "Open Scriptures Hebrew Bible annotations and project morphology documentation: Creative Commons Attribution 4.0 International.",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "requiredAttribution": "Original work of the Open Scriptures Hebrew Bible available at https://github.com/openscriptures/morphhb",
+    "evidence": [
+      "LICENSE.md",
+      "README.md",
+      "parsing/README.md",
+      "parsing/HebrewMorphologyCodes.html"
+    ],
+    "localNoticeDirectory": "notices",
+    "independentLegalReview": false
+  },
+  "sourceFiles": [
+    {
+      "path": "LICENSE.md",
+      "bytes": 1476,
+      "gitBlobSha": "906e051438bf66ef6f2f7f36110504cba2b6867f",
+      "sha256": "9bf4a2890c25372e4c1dc750d550bfb4eacfbfcb63c53123b0628159370d1878"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5027,
+      "gitBlobSha": "0ab32e4de54f034368abd343b08caa8f3e36da99",
+      "sha256": "2da25acf89375558b843dab582bdf00833137baf1c8afe2b32cf09e251179999"
+    },
+    {
+      "path": "parsing/HebrewMorphologyCodes.html",
+      "bytes": 18944,
+      "gitBlobSha": "0b14b1b1aa434e096d67cec35a060fc51d5e56d7",
+      "sha256": "4ef067cd9f2508de19d81aab93bf2d7e24d1687a7664c5168de1411adaf4ee1d"
+    },
+    {
+      "path": "parsing/Oshm.xml",
+      "bytes": 456917,
+      "gitBlobSha": "c3362a788f09316ebcd50e8dd6c76ccc9e3f8ff1",
+      "sha256": "5e558dd4729e5c06165df839dcf3f9d1ab71e9f06c5b63a5e1568637b73070e8"
+    },
+    {
+      "path": "parsing/README.md",
+      "bytes": 7574,
+      "gitBlobSha": "3ee0c8721703d1c17a0982dc7b822aece9cc8534",
+      "sha256": "282f76791cc658e4a90843742ce0930e3a4f2091dbe94ed4bc4a993f60235fc1"
+    },
+    {
+      "path": "wlc/1Chr.xml",
+      "bytes": 1014881,
+      "gitBlobSha": "614ceb107774d9ed4010d3ecf33e46d189768a83",
+      "sha256": "8b59992b6607c6ca0fc423813be8cc244f011c1da32bc8485c0c0f581a897ed4"
+    },
+    {
+      "path": "wlc/1Kgs.xml",
+      "bytes": 1189874,
+      "gitBlobSha": "f28c90fa0604154a92629d578da88c1cddae0263",
+      "sha256": "832ba10f605dce34c4888ee0a795d91edc2b293391d6ae9c36c36c6350761a3e"
+    },
+    {
+      "path": "wlc/1Sam.xml",
+      "bytes": 1206608,
+      "gitBlobSha": "a098d99be40bc22a77a2abe646410b6f717fc788",
+      "sha256": "960432732c22286b82d80b6b25af8d10dc5f2e82a4e5e48b2e3a1b1eea17f3cb"
+    },
+    {
+      "path": "wlc/2Chr.xml",
+      "bytes": 1222694,
+      "gitBlobSha": "52ff350ffcffaaa35ab22940d8f1f0d996746345",
+      "sha256": "507294e8ca0fcf31ec25fe62fa24a7f2581f53116519bf08cfe96ff85e9c99fb"
+    },
+    {
+      "path": "wlc/2Kgs.xml",
+      "bytes": 1115537,
+      "gitBlobSha": "2a7134748a7292c858c4ee913f6d5bfeb59d33fd",
+      "sha256": "056db5393beaef0a1159d9bcaac7dfd865df9bab2eb240ea90e9fa3f0c0e7449"
+    },
+    {
+      "path": "wlc/2Sam.xml",
+      "bytes": 1013552,
+      "gitBlobSha": "ae33a1ca6871cbf2ce849b5bebb8056c26e3b495",
+      "sha256": "e7793e141ed94eadbd2dfb23936abbb4062e81a7dcd41114a6e36644f50b8333"
+    },
+    {
+      "path": "wlc/Amos.xml",
+      "bytes": 201588,
+      "gitBlobSha": "686510536da8691f7015ade8e472c17f8c50683f",
+      "sha256": "6ad94c6a18076762f1a458720c62156d354e5111ee25719b7792b70792d0084d"
+    },
+    {
+      "path": "wlc/Dan.xml",
+      "bytes": 569236,
+      "gitBlobSha": "2d3ede0464a1f313152276f8d4e97a0cf9e2d356",
+      "sha256": "bc69d0fa9708dacb11ea6d587509250bf1bcc1b4343eac2d6e97f8b41518fc0d"
+    },
+    {
+      "path": "wlc/Deut.xml",
+      "bytes": 1315399,
+      "gitBlobSha": "6966deedd88043fbef5a124d50e346711f652efa",
+      "sha256": "04f8087442a1e67a631cd70f2ac4e42fe0a780ae132edb165a3a29f3f290358f"
+    },
+    {
+      "path": "wlc/Eccl.xml",
+      "bytes": 285122,
+      "gitBlobSha": "8e071f175b233629e75b227da78e407f8fdb2d69",
+      "sha256": "2dfc858d19048f6479eca33b9fe781c2d7e9059e9ae3ab0b37b802d3afec02bb"
+    },
+    {
+      "path": "wlc/Esth.xml",
+      "bytes": 292184,
+      "gitBlobSha": "a644e4aedc0bcde6f609aff48bb17e3efa5d6fc1",
+      "sha256": "f9b5b8adaf504dcac409bb6a27c9328967f47eeb4e920070cd53ef5301299019"
+    },
+    {
+      "path": "wlc/Exod.xml",
+      "bytes": 1524391,
+      "gitBlobSha": "9397e001f25d14353793a3924d4e9c605cecfc6c",
+      "sha256": "04868367cdacb6ccdc61488e923e20f918172042e6437842a0621f63ac5b847f"
+    },
+    {
+      "path": "wlc/Ezek.xml",
+      "bytes": 1724378,
+      "gitBlobSha": "2b9cdaab9f434201f69d5a0d747d8a567f4b9432",
+      "sha256": "90bf8adfa66b2f6695c702263fe668755c99c6afc386202c12de4f704f5d4e46"
+    },
+    {
+      "path": "wlc/Ezra.xml",
+      "bytes": 369918,
+      "gitBlobSha": "86c6763390817450141661d48ef3c177dcb97ee8",
+      "sha256": "fb28ff697d0ee17eba5b4db47fb7261ee1870cea0d5701bfc77c9e28d4138129"
+    },
+    {
+      "path": "wlc/Gen.xml",
+      "bytes": 1859928,
+      "gitBlobSha": "09ac9cab0a47c5fae8d747c2868f1cf50d6d1131",
+      "sha256": "0526e5c9a5fb4d907847645f954ed3d1268fa69decbd872056cedd2668d86449"
+    },
+    {
+      "path": "wlc/Hab.xml",
+      "bytes": 79467,
+      "gitBlobSha": "f64d893d18e79842e85b6457ea643008a81a8f9c",
+      "sha256": "2592b212d816775adc8dac46bd0c46263982c308a186dde64dfb8239c57bd2d1"
+    },
+    {
+      "path": "wlc/Hag.xml",
+      "bytes": 71754,
+      "gitBlobSha": "f2334fa92e2229a8da8b68d3386335e9836a18ac",
+      "sha256": "26ebbae4fe491cf89ce70e1264cbcbf66a562b497cb214b677e67a9a43ad545c"
+    },
+    {
+      "path": "wlc/Hos.xml",
+      "bytes": 236712,
+      "gitBlobSha": "4e737ff7ae7bdf9f21a9c85eaa6e023005ed51cd",
+      "sha256": "f38ae44a3a97d142768bd5f4d40e77b69265184f9a5aec9e6af1b9b226e8daae"
+    },
+    {
+      "path": "wlc/Isa.xml",
+      "bytes": 1548674,
+      "gitBlobSha": "b64ca328892a998d0540b5a6bf89ac6a19b574b0",
+      "sha256": "0807678de609bdef284bed5400b94ddab570d101b593c7f59ae1939015572fa2"
+    },
+    {
+      "path": "wlc/Jer.xml",
+      "bytes": 1977728,
+      "gitBlobSha": "de440367b576a694094ab7c6e6a861481c8c7f0d",
+      "sha256": "1a7ad7bc26a2cae1d3964230e8eb73043bc1f32505cb86cd69a25261dc39f493"
+    },
+    {
+      "path": "wlc/Job.xml",
+      "bytes": 813715,
+      "gitBlobSha": "7145ccffb4bfe624c428acc90ecf3adf58974eab",
+      "sha256": "7db3311184122f37a8fd52f3c7c0c4a6d2da7b77ee82f4fdb26bcba9171d297f"
+    },
+    {
+      "path": "wlc/Joel.xml",
+      "bytes": 105277,
+      "gitBlobSha": "d1a160746190931dccd91014499558fae735586a",
+      "sha256": "c0fefc6881afe949b023968106cdccc05a690734b8bb6e9aa48914d77e5369af"
+    },
+    {
+      "path": "wlc/Jonah.xml",
+      "bytes": 80534,
+      "gitBlobSha": "158c18ecbf3026fa845105d34b8766d89bcd039e",
+      "sha256": "1e1afcc3aaba1399d5c884ee106894c6bfca87c8c81fa57783ab75a923eee17d"
+    },
+    {
+      "path": "wlc/Josh.xml",
+      "bytes": 919916,
+      "gitBlobSha": "8530c301a0211e8c7cb19ee868ca07bdac3aa2ab",
+      "sha256": "a066200ab2269c0a86a2e9ba119a3d0fce8c5f7ecc44bb53ec134b83dffc6006"
+    },
+    {
+      "path": "wlc/Judg.xml",
+      "bytes": 904347,
+      "gitBlobSha": "51062fc90a87e1cc2abedc78d8ec299cd154bbdf",
+      "sha256": "3b3a909f04041dbd52dc6b7293a96ce75d94db8a90fdeda878943db7b8fac57f"
+    },
+    {
+      "path": "wlc/Lam.xml",
+      "bytes": 167766,
+      "gitBlobSha": "c971eb03fbe9562c19e206e013bf657cfba948e8",
+      "sha256": "be68fc6a913313367280c2596e28733ee8cf877c12a65227237733b40d0248c4"
+    },
+    {
+      "path": "wlc/Lev.xml",
+      "bytes": 1085066,
+      "gitBlobSha": "71dca6003694912dd283b5d4f7e98d0790a123f6",
+      "sha256": "e21e70265c9ef500182f8ccb4f4e1186e5a79e1169d24cef23cc479baf07b191"
+    },
+    {
+      "path": "wlc/Mal.xml",
+      "bytes": 95722,
+      "gitBlobSha": "cbc6a0ee566e2911b2c8c4a229d8ee4af82b587b",
+      "sha256": "1583e6a701406dce7b8c2bf85e3522ec31383756de130685fc7c2eb6df8964b2"
+    },
+    {
+      "path": "wlc/Mic.xml",
+      "bytes": 145482,
+      "gitBlobSha": "91f1eb9525085bdf34d5554d93e38943ea350452",
+      "sha256": "267e111adc1b941e32444816af07aa136ecde02cb315cd42597f78b393e67a01"
+    },
+    {
+      "path": "wlc/Nah.xml",
+      "bytes": 69823,
+      "gitBlobSha": "dc0341e8b053449e92daae8197cd28240fd57d00",
+      "sha256": "5993b28bdbee3c922e3e93002d343a655493e8bd45e3472f3b62d77beadcb62c"
+    },
+    {
+      "path": "wlc/Neh.xml",
+      "bytes": 512876,
+      "gitBlobSha": "24319052ec0326b6ddaedb42f8607c2c21eb5b16",
+      "sha256": "be082e95c206469122455b9849d4dd08da50c817732d8198c1beece90402801a"
+    },
+    {
+      "path": "wlc/Num.xml",
+      "bytes": 1496830,
+      "gitBlobSha": "15339e5a99c7900cf37810f8d6d7f18c59ad0aa0",
+      "sha256": "02e4febfcc027d10b3e35e4f091eae67a40d26f37b6254faac6b4af053fe4896"
+    },
+    {
+      "path": "wlc/Obad.xml",
+      "bytes": 44626,
+      "gitBlobSha": "17496d001587f142484239a7337380c68a30e77e",
+      "sha256": "1e893e552a7ed7e2e6d4048637ff5da8a2853a9e4432f4095cede80b959d850c"
+    },
+    {
+      "path": "wlc/Prov.xml",
+      "bytes": 678669,
+      "gitBlobSha": "c999b67fd1b44bb9474ee9a2b2d66c2453ffdd90",
+      "sha256": "964f99c00239b53b854c4686c99490c8d1ac7664784a30afdfc23781a3abb161"
+    },
+    {
+      "path": "wlc/Ps.xml",
+      "bytes": 1925086,
+      "gitBlobSha": "2da40d4bfc7d1772eccb6f49cf027f460b8be4f4",
+      "sha256": "fe55eef316a65fb0f46d833d526ca2fd722e86ff7339f1a39f0c5b7f9062ced2"
+    },
+    {
+      "path": "wlc/Ruth.xml",
+      "bytes": 136188,
+      "gitBlobSha": "1f4a59a804900a13ace95054f60f854f15a53bb1",
+      "sha256": "fb6a2660383c7176941cb87b2be182ef634b66d49d057635869f4d9cb1f0a11e"
+    },
+    {
+      "path": "wlc/Song.xml",
+      "bytes": 138554,
+      "gitBlobSha": "1feee17dd05ab7e51e5f6b684d092ef70e9aa0bc",
+      "sha256": "5cd6ae36d32c059aaf794af5a5eaed914ac643486db3e412eb0b969760db82ca"
+    },
+    {
+      "path": "wlc/Zech.xml",
+      "bytes": 300202,
+      "gitBlobSha": "d2b0328e0611559396df3c1acbe9d8abe7238199",
+      "sha256": "2e287c8d0e0abd3bf601eb8ef9b4ee6ca3ae12cf36c0ed1612a7dcca54a2e777"
+    },
+    {
+      "path": "wlc/Zeph.xml",
+      "bytes": 87313,
+      "gitBlobSha": "db77292abc38d6c4655c892f080246883b8180a3",
+      "sha256": "eb5bd2a745fba1ffeed31dfafd834ce7c290929c992390be1a2b9451d22dea2e"
+    }
+  ]
+}

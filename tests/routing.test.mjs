@@ -11,7 +11,7 @@ test('Law Diary sections preserve the reader passage and edition in their query'
 
 test('new tools and existing reader routes retain exact source selections', () => {
   const ref = {bookId:'PSA',chapter:23,verse:1,editionId:'yor'};
-  for (const view of ['read','compare','widget','ministry','speakers','editorial-workbench', 'linguistics', 'time-travel', 'nearby', 'interpretation', 'concordance','support','tools']) {
+  for (const view of ['read','compare','widget','ministry','speakers','editorial-workbench', 'linguistics', 'time-travel', 'nearby', 'interpretation', 'concordance', 'hebrew-study','support','tools']) {
     assert.deepEqual(parseRoute(routeHref(view, ref)), {view,ref});
   }
 });

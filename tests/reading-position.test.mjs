@@ -11,7 +11,7 @@ const saved = {
   scrollY: 825,
 };
 const linked = { bookId: 'JHN', chapter: 3, verse: 16, endVerse: 17, editionId: 'eng-web' };
-const views = ['home','read','compare','discover','plans','saved','questions','library','sources','settings','share','atlas','study','evidence','editions','projection','tools','family','audio','drop','support','widget','ministry','speakers','editorial-workbench','linguistics','time-travel','nearby','interpretation', 'concordance'];
+const views = ['home','read','compare','discover','plans','saved','questions','library','sources','settings','share','atlas','study','evidence','editions','projection','tools','family','audio','drop','support','widget','ministry','speakers','editorial-workbench','linguistics','time-travel','nearby','interpretation', 'concordance', 'hebrew-study'];
 
 test('every supported screen preserves an explicit shared passage instead of restoring a different saved passage', () => {
   for (const view of views) {
