@@ -89,7 +89,7 @@ test.describe('private capture controls',{tag:'@retelling-audio'},()=>{
     page.once('dialog',dialog=>dialog.dismiss());await page.getByRole('button',{name:'Prayer journal',exact:true}).click();await expect(page.getByRole('button',{name:'Stop and keep recording',exact:true})).toBeVisible();
     page.once('dialog',dialog=>dialog.accept());await page.getByRole('button',{name:'Hide and reveal',exact:true}).click();await expect(page.getByRole('heading',{name:'Retell in your own words',exact:true})).toHaveCount(0);await expect.poll(()=>page.evaluate(()=>(window as any).__retellingTest.stopped)).toBe(1);expect((await deviceInventory(page)).media).toEqual([]);
   });
-  test('delayed Add preserves new writing and an original completed while its transaction is pending',async({page})=>{
+  test('delayed Add preserves new writing and an original completed while its transaction is pending',async({page},testInfo)=>{
     await microphone(page);await openRetelling(page);
     let releaseSource!:()=>void,sourceRequested!:()=>void;
     const sourceGate=new Promise<void>(resolve=>{releaseSource=resolve;});
@@ -139,6 +139,7 @@ test.describe('private capture controls',{tag:'@retelling-audio'},()=>{
       await expect(writing).toHaveValue('Keep the draft begun while another passage was loading.');
       await expect(page.getByRole('navigation',{name:'Memory cards'}).getByRole('button',{name:/^JHN 3:16/})).toHaveAttribute('aria-current','true');
       expect(await originalBytes(page)).toEqual(original);
+      await page.screenshot({path:testInfo.outputPath('retelling-delayed-add-draft-preserved.png'),fullPage:true});
       const added=await deviceInventory(page);expect(added.state.cards).toHaveLength(2);expect(added.media).toEqual([]);
       expect(added.state.cards.find((card:any)=>card.ref.bookId==='EXO').retellings).toEqual([]);
       await save(page);
@@ -226,7 +227,7 @@ test.describe('retelling data recovery',()=>{
     expect(after.state.cards[0].retellings).toEqual([{...second,text:'Keep my unsaved second transcript: àánú.'}]);
     expect(after.media).toEqual(before.media.filter(file=>file.recording.id===second.id));
   });
-  test('refresh after another tab deletes the edited original keeps its transcript separate and recoverable',async({page,context})=>{
+  test('refresh after another tab deletes the edited original keeps its transcript separate and recoverable',async({page,context},testInfo)=>{
     await microphone(page);await openRetelling(page);
     for(const text of ['First original transcript.','Second original transcript.']){await record(page);await page.getByLabel('My retelling',{exact:true}).fill(text);await save(page);}
     await page.getByText('Saved retellings (2)',{exact:true}).click();
@@ -244,6 +245,8 @@ test.describe('retelling data recovery',()=>{
     await expect(other.getByRole('region',{name:'Manual transcript editor',exact:true})).toContainText('will not overwrite another retelling');
     await expect(transcript).toHaveValue('Private draft belonging to the deleted first recording.');
     await expect(other.getByRole('button',{name:'Save manual transcript',exact:true})).toBeDisabled();
+    await other.setViewportSize({width:320,height:844});
+    await other.screenshot({path:testInfo.outputPath('retelling-transcript-recovery-320.png'),fullPage:true});
     expect((await deviceInventory(other)).state.cards[0].retellings).toEqual([second]);
     await other.getByRole('button',{name:'Use transcript as new written retelling',exact:true}).click();
     await expect(other.getByRole('textbox',{name:'My retelling',exact:true})).toHaveValue('Private draft belonging to the deleted first recording.');

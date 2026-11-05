@@ -62,3 +62,45 @@ test('device interruption, recorder error and unmount all stop capture and disca
   const f=setup();await f.capture.start(true,source);const before=f.states.length;f.capture.dispose();await turn();assert.equal(f.states.length,before);assert.equal(f.track.stopped,true);assert.equal(f.drafts.length,0);
   const pending=setup({pending:true});const opening=pending.capture.start(true,source);pending.capture.dispose();pending.resolve();await opening;assert.equal(pending.track.stopped,true);assert.equal(pending.drafts.length,0);
 });
+
+
+test('default browser capture uses native timer receivers and releases both scheduled callbacks',async()=>{
+  const names=['setTimeout','clearTimeout','setInterval','clearInterval','MediaRecorder'];
+  const descriptors=new Map(names.map(name=>[name,Object.getOwnPropertyDescriptor(globalThis,name)]));
+  const mediaDescriptor=Object.getOwnPropertyDescriptor(navigator,'mediaDevices');
+  const callbacks=new Map(),cleared=[];let serial=0;
+  function schedule(callback,delay){
+    assert.ok(this===globalThis||this===undefined,'Native Window timers require the global receiver.');
+    const id=++serial;callbacks.set(id,{callback,delay});return id;
+  }
+  function cancel(id){
+    assert.ok(this===globalThis||this===undefined,'Native Window timer cancellation requires the global receiver.');
+    cleared.push(id);callbacks.delete(id);
+  }
+  class Track extends EventTarget { stopped=false;stop(){this.stopped=true;} }
+  const track=new Track();
+  class Recorder {
+    static isTypeSupported(){return true;}
+    state='inactive';mimeType='audio/webm;codecs=opus';
+    start(){this.state='recording';}
+    stop(){this.state='inactive';this.onstop?.();}
+  }
+  let capture;
+  try{
+    for(const name of ['setTimeout','setInterval'])Object.defineProperty(globalThis,name,{configurable:true,writable:true,value:schedule});
+    for(const name of ['clearTimeout','clearInterval'])Object.defineProperty(globalThis,name,{configurable:true,writable:true,value:cancel});
+    Object.defineProperty(globalThis,'MediaRecorder',{configurable:true,writable:true,value:Recorder});
+    Object.defineProperty(navigator,'mediaDevices',{configurable:true,value:{getUserMedia:async()=>({getTracks:()=>[track]})}});
+    const {RetellingCapture:BrowserCapture}=await import('../src/workspace/retelling-capture.ts?native-timer-receivers');
+    const states=[];capture=new BrowserCapture(state=>states.push(state),()=>assert.fail('Disposal must not retain audio.'));
+    await capture.start(true,source);
+    assert.equal(states.at(-1).phase,'recording',states.at(-1).status);
+    assert.equal(states.at(-1).error,false);
+    assert.deepEqual([...callbacks.values()].map(value=>value.delay).sort((a,b)=>a-b),[1000,299000]);
+    capture.dispose();assert.equal(track.stopped,true);assert.equal(callbacks.size,0);assert.equal(new Set(cleared).size,2);
+  }finally{
+    capture?.dispose();
+    for(const [name,descriptor] of descriptors){if(descriptor)Object.defineProperty(globalThis,name,descriptor);else delete globalThis[name];}
+    if(mediaDescriptor)Object.defineProperty(navigator,'mediaDevices',mediaDescriptor);else delete navigator.mediaDevices;
+  }
+});

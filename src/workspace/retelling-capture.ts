@@ -11,7 +11,10 @@ export interface CaptureEnvironment {
 const browserEnvironment: CaptureEnvironment = {
   request: () => navigator.mediaDevices.getUserMedia({ audio:true, video:false }),
   supports: mime => MediaRecorder.isTypeSupported(mime), create: (stream,mime) => new MediaRecorder(stream,{ mimeType:mime }),
-  now: () => performance.now(), later:setTimeout, cancelLater:clearTimeout, every:setInterval, cancelEvery:clearInterval,
+  now: () => performance.now(),
+  // Native Window timers reject the environment object as their receiver.
+  later:globalThis.setTimeout.bind(globalThis), cancelLater:globalThis.clearTimeout.bind(globalThis),
+  every:globalThis.setInterval.bind(globalThis), cancelEvery:globalThis.clearInterval.bind(globalThis),
 };
 interface Session {
   run:number; recorder:MediaRecorder; stream:MediaStream; source:RetellingSource; mime:string;
