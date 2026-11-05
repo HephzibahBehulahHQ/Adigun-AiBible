@@ -2,6 +2,7 @@ import type { Book, Edition, EditionCatalog, Manifest, Preferences, QuranSource 
 import installedCatalog from '../data/editions/catalog.json';
 import { requirePermission } from './permissions';
 import { AsyncLruCache, SOURCE_BOOK_CACHE_LIMIT, SOURCE_MANIFEST_CACHE_LIMIT } from './source-cache.ts';
+import { readSourceJson } from './source-codec.ts';
 const base = import.meta.env?.BASE_URL || '/Adigun-AiBible/';
 export const assetUrl = (path: string) => `${base}${path}`;
 export const bibleEditionIds: string[] = ['eng-web', ...installedCatalog.editions.filter(edition => edition.corpus === 'bible').map(edition => edition.id)];
@@ -21,7 +22,7 @@ async function readJSON(path: string, message: string): Promise<unknown> {
     throw error;
   }
   if (!response.ok) throw new Error(typeof navigator !== 'undefined' && !navigator.onLine && path.includes('/books/') ? "This chapter isn't cached yet. Reconnect to load it." : message);
-  return response.json();
+  return readSourceJson(response);
 }
 const manifests = new AsyncLruCache<string, Manifest>(SOURCE_MANIFEST_CACHE_LIMIT);
 export function getManifest(editionId = 'eng-web'): Promise<Manifest> {
