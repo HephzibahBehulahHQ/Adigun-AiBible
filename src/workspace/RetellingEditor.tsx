@@ -1,3 +1,4 @@
+import { sourceDirection, sourceFont } from '../source-typography';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { FormEvent } from 'react';
 import type { Edition, Verse } from '../types';
@@ -74,11 +75,11 @@ export default function RetellingEditor({ card, source, busy, commit, onRecordin
   return <section aria-labelledby="retelling-heading">
     <h4 id="retelling-heading">Retell in your own words</h4>
     <p className="workspace-help">Read or listen to the exact passage, then explain its meaning in your own words. This is a personal paraphrase exercise, not a verbatim test. Your writing and optional voice recording stay on this device and are never automatically scored or sent to an AI service.</p>
-    {source && <details><summary>Review the exact source wording · {source.edition.name}</summary><div className="workspace-source">{source.verses.map(v => <p key={v.number}><sup>{v.number}</sup>{v.text}</p>)}</div><p className="workspace-source-credit">{sourceCredit(source.edition)}</p></details>}
+    {source && <details><summary>Review the exact source wording · {source.edition.name}</summary><div className="workspace-source" lang={source.edition.language} dir={source.edition.direction || sourceDirection(source.edition.language)} style={{ fontFamily:sourceFont(source.edition.language) }}>{source.verses.map(v => <p key={v.number}><sup>{v.number}</sup>{v.text}</p>)}</div><p className="workspace-source-credit">{sourceCredit(source.edition)}</p></details>}
     <form onSubmit={save}>
       <div className="button-row"><button type="button" disabled={busy || active} onClick={() => setText(current => appendRetellingPrompts(current))}>Insert optional reflection prompts</button></div>
       <p className="workspace-help">Use any prompts that help; leave out anything that does not fit. They are writing aids, not a checklist or score.</p>
-      <label>My retelling<textarea rows={6} maxLength={5000} disabled={busy} value={text} onChange={e => setText(e.target.value)} placeholder="Describe the passage in your own words…" /></label>
+      <label>My retelling<textarea dir="auto" rows={6} maxLength={5000} disabled={busy} value={text} onChange={e => setText(e.target.value)} placeholder="Describe the passage in your own words…" /></label>
       <p className="workspace-help">Up to 5,000 characters. With a recording, this writing is your optional manual transcript. No automatic transcription or source comparison is running.</p>
       <RetellingRecorder disabled={busy || !!draft || !!transcriptEdit} source={sourceBinding} onReady={setDraft} onActiveChange={value => { setActive(value); onRecordingChange(value); }} />
       {preview && <section className="retelling-draft" aria-label="Unsaved recording"><h5>Unsaved original recording</h5><RetellingPlayer recording={preview.recording} original={preview} disabled={active} /><button type="button" disabled={busy} onClick={() => setDraft(null)}>Discard unsaved recording</button></section>}
@@ -92,7 +93,7 @@ export default function RetellingEditor({ card, source, busy, commit, onRecordin
       <p className="workspace-help">Draft for the original recorded on {new Date(transcriptEdit.at).toLocaleString()}. Your own writing; it has not been transcribed or verified automatically.</p>
       {!transcriptTarget && <p role="alert" className="workspace-error">This original recording was removed or replaced. Your transcript draft is kept below and will not overwrite another retelling.</p>}
       <form onSubmit={saveTranscript}>
-        <label>Manual transcript<textarea aria-label="Manual transcript" rows={5} maxLength={5000} disabled={busy} value={transcriptEdit.text} onChange={e => setTranscriptEdit(current => current ? { ...current,text:e.target.value } : null)} /></label>
+        <label>Manual transcript<textarea dir="auto" aria-label="Manual transcript" rows={5} maxLength={5000} disabled={busy} value={transcriptEdit.text} onChange={e => setTranscriptEdit(current => current ? { ...current,text:e.target.value } : null)} /></label>
         <div className="button-row">
           <button type="submit" disabled={busy || active || !transcriptTarget}>Save manual transcript</button>
           {!transcriptTarget && <button type="button" disabled={busy || active || !!text || !!draft} onClick={() => { setText(transcriptEdit.text); setTranscriptEdit(null); setNotice('Transcript moved to a new written retelling draft. Save it to keep it on this device.'); }}>Use transcript as new written retelling</button>}
@@ -104,7 +105,7 @@ export default function RetellingEditor({ card, source, busy, commit, onRecordin
     {!!card.retellings.length && <details open={open} onToggle={e => setOpen(e.currentTarget.open)}><summary>Saved retellings ({card.retellings.length})</summary>{open && card.retellings.map((item,index) => <article className="workspace-history" key={item.id || `${item.at}-${index}`}>
       <time dateTime={item.at}>{new Date(item.at).toLocaleString()}</time>
       {item.recording && <RetellingPlayer recording={item.recording} disabled={active} />}
-      <p className="workspace-writing">{item.text || 'No manual transcript added.'}</p>{item.recording && <button type="button" disabled={busy || active || transcriptTarget?.id === item.id} onClick={() => editTranscript(item)}>Edit manual transcript</button>}
+      <p className="workspace-writing" dir="auto">{item.text || 'No manual transcript added.'}</p>{item.recording && <button type="button" disabled={busy || active || transcriptTarget?.id === item.id} onClick={() => editTranscript(item)}>Edit manual transcript</button>}
       <div className="button-row">{item.recording && <button type="button" disabled={busy || active} onClick={() => void remove(index,true)}>{item.text.trim() ? 'Delete recording, keep transcript' : 'Delete recording and empty retelling'}</button>}<button type="button" disabled={busy || active} aria-label={`Delete retelling from ${new Date(item.at).toLocaleString()}`} onClick={() => void remove(index)}>Delete retelling</button></div>
     </article>)}{card.retellings.length >= 50 && <p className="workspace-help">This passage has 50 saved retellings. Delete an entry before adding more; older entries are never silently removed.</p>}</details>}
   </section>;

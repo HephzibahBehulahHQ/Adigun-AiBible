@@ -111,6 +111,25 @@ test('real original audio survives offline reload, complete backup, restore, car
 
 test.describe('retelling data recovery',()=>{
   test.use({serviceWorkers:'block'});
+  test('source review retains exact Arabic and Myanmar wording with source fonts and direction',async({page})=>{
+    for(const fixture of [
+      {edition:'arb-vandyck',book:'JHN',chapter:3,verse:16,language:'ar',direction:'rtl',font:'Adigun Naskh'},
+      {edition:'mya-judson1840',book:'LEV',chapter:4,verse:2,language:'my',direction:'ltr',font:'Adigun Myanmar'}
+    ]){
+      const book=JSON.parse(await readFile(new URL(`../data/editions/${fixture.edition}/books/${fixture.book}.json`,import.meta.url),'utf8'));
+      const wording=book.chapters.find((item:{number:number})=>item.number===fixture.chapter).verses.find((item:{number:number})=>item.number===fixture.verse).text;
+      await page.goto(`#/study/${fixture.book}/${fixture.chapter}?verse=${fixture.verse}&edition=${fixture.edition}&tab=memory`);
+      await page.getByRole('button',{name:'Add to memorization',exact:true}).click();
+      await page.getByRole('button',{name:'Write a retelling',exact:true}).click();
+      await page.getByText(/^Review the exact source wording/).click();
+      const source=page.locator('section[aria-labelledby="retelling-heading"] .workspace-source');
+      await expect(source).toHaveAttribute('lang',fixture.language);await expect(source).toHaveAttribute('dir',fixture.direction);
+      expect(await source.locator('p').evaluate(element=>[...element.childNodes].filter(node=>node.nodeType===Node.TEXT_NODE).map(node=>node.textContent).join(''))).toBe(wording);
+      await expect.poll(()=>source.evaluate(element=>getComputedStyle(element).fontFamily)).toContain(fixture.font);
+      await expect(page.getByLabel('My retelling',{exact:true})).toHaveAttribute('dir','auto');
+      expect((await deviceInventory(page)).media).toEqual([]);
+    }
+  });
   test('scheduling a review keeps the loaded card selected and retains its unsaved retelling',async({page})=>{
     await openRetelling(page);
     await page.goto(route.replace('verse=16','verse=17'));
