@@ -65,8 +65,11 @@ export class RetellingCapture {
       // Leave one second for normal event scheduling. A suspended browser that exceeds five minutes fails closed.
       current.deadline = this.env.later(() => { current.limited = true; this.stop(true); },MAX_RETELLING_CAPTURE_MS - 1000);
     } catch (error) {
+      const current = run === this.generation && !this.disposed;
+      // Stopping native tracks can queue onstop. A failed start must never publish that partial capture.
+      if (current) this.generation++;
       stream?.getTracks().forEach(track => track.stop());
-      if (run !== this.generation || this.disposed) return;
+      if (!current) return;
       if (this.session) this.release(this.session);
       this.session = null;
       const name = error instanceof DOMException ? error.name : '';

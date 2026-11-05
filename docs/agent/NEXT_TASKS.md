@@ -4,7 +4,7 @@ Read [PROJECT_STATUS.md](PROJECT_STATUS.md) for the current integration branch, 
 
 ## Current release
 
-PR #31 merged as `e437600d66213544923a12df8d95f161654a15de` after 449 application tests, 20 backend contracts, all 268 browser cases and ten persistence repetitions passed. Its 26-edition release is independently verified live at 13:35:53 UTC, with exact source receipt and catalog identities. Private retelling PR #32 targets main at `ef3874bd`; its repaired 292-case gate and additional recovery screenshots are running. This combined Greek/three-edition candidate passed 502 application tests, 20 backend contracts and source/build checks; the delayed-Add retelling repair now requires its combined 336-case browser gate and final release receipts.
+PR #31 merged as `e437600d66213544923a12df8d95f161654a15de` after 449 application tests, 20 backend contracts, all 268 browser cases and ten persistence repetitions passed. Its 26-edition release is independently verified live at 13:35:53 UTC, with exact source receipt and catalog identities. Private retelling PR #32 targets main at `c414b62d`; its repaired 292-case gate and additional recovery screenshots are running. This combined Greek/three-edition candidate passed 502 application tests, 20 backend contracts and source/build checks; the delayed-Add retelling repair now requires its combined 336-case browser gate and final release receipts.
 
 ## Independent work to finish
 
