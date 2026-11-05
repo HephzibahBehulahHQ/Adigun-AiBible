@@ -11,6 +11,14 @@ const sections = [
   { id: 'second-coming', title: 'Second Coming', summary: 'Texts and interpretations presented side by side', icon: BookOpen, topics: ['Gospel passages', 'Pauline passages', 'Revelation', 'Interpretive approaches'] }
 ] as const;
 
+const categories = ['All', 'Origins', 'Family and ancestry', 'Covenant', 'Worship and law'] as const;
+type Category = typeof categories[number];
+const layers = [
+  { id: 'before-moses', title: 'Before Moses', description: 'Narrative material preceding the Moses cycle in the Torah. This is a literary grouping, not a claim that every event has a securely established modern date.', references: ['Genesis 1–11', 'Genesis 12–50'], categories: ['Origins', 'Family and ancestry'], jewish: 'The same narratives appear in the Torah within the Hebrew Bible. Jewish interpretive traditions will be added as separately sourced material.', islamic: 'Qur’anic narratives concerning creation and earlier figures require passage-by-passage mapping. No Qur’an, Hadith, or Fiqh sources are conflated here.' },
+  { id: 'during-moses', title: 'During Moses', description: 'The Exodus narrative before the Sinai covenant material. Chapter groupings are navigation aids, not precise chronological dating.', references: ['Exodus 1–18'], categories: ['Family and ancestry', 'Origins'], jewish: 'The Exodus account is part of the Torah. Historical and rabbinic commentary will be identified separately from the biblical text.', islamic: 'Moses (Musa) appears in multiple Qur’anic passages. A verified passage index is still being prepared; Hadith and Fiqh remain separate collections.' },
+  { id: 'law-of-moses', title: 'Law of Moses', description: 'The Torah’s covenant and legal material from Sinai through the wilderness narratives. This grouping follows the biblical text and does not assert a single scholarly date for composition.', references: ['Exodus 19–40', 'Leviticus 1–27', 'Numbers 1–36', 'Deuteronomy 1–34'], categories: ['Covenant', 'Worship and law'], jewish: 'Torah law and later Jewish legal interpretation are distinct layers. Mishnah, Talmud, and later rulings will only be shown with their own citations and dates.', islamic: 'Islamic legal traditions are not a continuation of Torah law by default. Qur’an, Hadith, and Fiqh comparisons will be presented independently and with explicit source labels.' }
+] as const;
+
 type SectionId = typeof sections[number]['id'];
 
 export default function LawDiary() {
@@ -19,7 +27,9 @@ export default function LawDiary() {
     return sections.some(section => section.id === parts[1]) ? parts[1] as SectionId : 'timeline';
   }, []);
   const [active, setActive] = useState<SectionId>(initial);
+  const [category, setCategory] = useState<Category>('All');
   const section = sections.find(item => item.id === active) || sections[0];
+  const visibleLayers = layers.filter(layer => category === 'All' || layer.categories.includes(category as typeof layer.categories[number]));
   function openSection(id: SectionId) {
     setActive(id);
     window.history.replaceState(window.history.state, '', `#/law-diary/${id}`);
@@ -38,11 +48,26 @@ export default function LawDiary() {
         </button>;
       })}
     </nav>
-    <section className="law-diary-section" aria-labelledby="law-diary-section-title">
+    {active === 'timeline' ? <section className="law-diary-section" aria-labelledby="law-diary-section-title">
+      <div className="law-diary-section-heading"><div><span className="eyebrow">TIMELINE · THREE INITIAL LAYERS</span><h2 id="law-diary-section-title">Textual timeline</h2><p>Filter by subject. These groupings follow canonical chapter ranges; they do not claim precise archaeological dates.</p></div></div>
+      <div className="law-diary-filters" role="group" aria-label="Filter timeline by category">
+        {categories.map(item => <button key={item} type="button" className={category === item ? 'law-diary-filter active' : 'law-diary-filter'} aria-pressed={category === item} onClick={() => setCategory(item)}>{item}</button>)}
+      </div>
+      <div className="law-diary-timeline">
+        {visibleLayers.map(layer => <article className="law-diary-layer" key={layer.id}>
+          <div className="law-diary-layer-main"><span className="eyebrow">BIBLICAL TEXT · {layer.id.toUpperCase()}</span><h3>{layer.title}</h3><p>{layer.description}</p><div className="law-diary-reference-list">{layer.references.map(ref => <span key={ref}>{ref}</span>)}</div></div>
+          <div className="law-diary-parallel-grid">
+            <section><h4>Jewish textual context</h4><p>{layer.jewish}</p></section>
+            <section><h4>Islamic textual context</h4><p>{layer.islamic}</p></section>
+          </div>
+        </article>)}
+      </div>
+      <p className="law-diary-honesty" role="status">Editorial status: initial chapter-range structure is present. Historical dating, Jewish commentary, and Qur’anic passage mappings remain under source review.</p>
+    </section> : <section className="law-diary-section" aria-labelledby="law-diary-section-title">
       <div className="law-diary-section-heading"><div><span className="eyebrow">SECTION IN PROGRESS</span><h2 id="law-diary-section-title">{section.title}</h2><p>{section.summary}</p></div></div>
       <ul className="law-diary-topic-list">{section.topics.map(topic => <li key={topic}><span>{topic}</span><span className="law-diary-pending">Research entry in progress</span></li>)}</ul>
       <p className="law-diary-honesty" role="status">Data for this section is being entered. No unsourced summaries or placeholder historical claims are presented as findings.</p>
       <p className="law-diary-method">Editorial method: every published entry must identify its source, distinguish primary text from later tradition, and record its AI review status. Hadith, Quran, and Fiqh are treated as separate source categories.</p>
-    </section>
+    </section>}
   </main>;
 }
