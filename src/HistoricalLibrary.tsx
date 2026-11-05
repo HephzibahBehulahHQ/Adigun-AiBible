@@ -1,6 +1,9 @@
-import { useState } from 'react';
+import { lazy, Suspense, useState } from 'react';
 import { BookOpen, ArrowRight } from 'lucide-react';
 import type { Reference } from './types';
+import { historicalManifest } from './historical/source';
+
+const HistoricalReader = lazy(() => import('./historical/HistoricalReader'));
 
 const records = [
   {id:'moses-six-seven',title:'The Sixth and Seventh Books of Moses',alternative:'Combined historical edition',classification:'Later esoteric / grimoire literature',attribution:'Associated with Moses in the title; the Library of Congress names L. W. de Laurence as contributor. Mosaic authorship is not established.',edition:'Chicago: De Laurence, Scott & Co., 1910. English, 190 pages.',translator:'Not identified in the catalog record.',dating:'1910 dates this edition, not the origin of the writings.',canon:'Separate from Genesis–Deuteronomy. Not part of this app’s 66-book Bible baseline.',rights:'Library of Congress states that this digitized collection is public domain and free to use and reuse.',source:'https://www.loc.gov/item/11000761/',sourceName:'Library of Congress',availability:'Catalog only in this app. The original digitized edition is available at the source; its text and images have not been imported or proofread here.'},
@@ -10,15 +13,17 @@ const records = [
 const candidates = [
   ['Deuterocanonical and related collections','Tobit; Judith; Wisdom of Solomon; Sirach; Baruch; Letter of Jeremiah; additions to Esther and Daniel; Maccabean works; Prayer of Manasseh'],
   ['Jewish pseudepigrapha and related writings','1 Enoch; Jubilees'],
-  ['Early Christian writings','Protoevangelium of James; Infancy Gospel of Thomas; Acts of Paul and Thecla; Epistle to the Laodiceans; Didache; individual editions of 1 Clement and Shepherd of Hermas'],
+  ['Early Christian writings','Protoevangelium of James; Infancy Gospel of Thomas; Acts of Paul and Thecla; Epistle to the Laodiceans; individual editions of 1 Clement and Shepherd of Hermas'],
 ];
 export default function HistoricalLibrary({onOpen}:{onOpen:(ref:Reference)=>void}) {
   const [filter,setFilter]=useState('');
   const shown=records.filter(record=>`${record.title} ${record.alternative} ${record.classification}`.toLocaleLowerCase().includes(filter.toLocaleLowerCase()));
   return <section className="historical-library" aria-labelledby="historical-title"><div className="page-heading"><span className="eyebrow">DISTINCT WORKS, CLEAR PROVENANCE</span><h2 id="historical-title">Historical &amp; Additional Texts</h2><p>Sometimes called “lost books”, these works belong to different periods and traditions. There is no single definitive collection. Catalog records and imported readable texts are counted separately.</p></div>
     <div className="context-notice"><BookOpen size={22}/><div><h3>The five books of the Torah / Pentateuch</h3><p>Genesis, Exodus, Leviticus, Numbers and Deuteronomy are available in the main Bible reader.</p><button className="text-button" onClick={()=>onOpen({bookId:'GEN',chapter:1,verse:1})}>Open Genesis <ArrowRight size={15}/></button></div></div>
-    <p className="muted small">{records.length} source-backed catalog records · 0 historical editions imported · No historical offline packs. Canon status is recorded for the named baseline only; other traditions require their own verified profiles.</p>
-    <label>Find a historical work<input type="search" value={filter} onChange={event=>setFilter(event.target.value)} placeholder="Moses, Clement, Hermas…"/></label>
+    <p className="muted small">{records.length} source-backed catalog records · {historicalManifest.editions.length} readable historical edition. The Didache reader includes a separate offline download and private notebook. Canon status is recorded for the named baseline only; other traditions require their own verified profiles.</p>
+    <Suspense fallback={<p role="status">Opening the historical reader…</p>}><HistoricalReader/></Suspense>
+    <h3>External historical catalogs</h3>
+    <label>Find a historical catalog record<input type="search" value={filter} onChange={event=>setFilter(event.target.value)} placeholder="Moses, Clement, Hermas…"/></label>
     <div className="historical-grid">{shown.map(record=><article className="panel" key={record.id}><span className="source-label">CATALOG ONLY · {record.classification}</span><h3>{record.title}</h3><p className="muted">{record.alternative}</p><dl className="metadata"><dt>Attribution</dt><dd>{record.attribution}</dd><dt>Edition</dt><dd>{record.edition}</dd><dt>Translator</dt><dd>{record.translator}</dd><dt>Dating</dt><dd>{record.dating}</dd><dt>Canonical scope</dt><dd>{record.canon}</dd><dt>Rights evidence</dt><dd>{record.rights}</dd></dl><p>{record.availability}</p><a className="secondary" href={record.source} target="_blank" rel="noreferrer">Open {record.sourceName} edition <ArrowRight size={15}/></a></article>)}</div>{!shown.length&&<p role="status">No catalog record matches that title.</p>}
     <details className="panel"><summary>Additional catalog research queue</summary><p>These requested candidates remain queued for edition, provenance, dating, translation rights and tradition-specific canon verification. No text or metadata approval is implied by inclusion in this queue.</p>{candidates.map(([group,titles])=><div key={group}><h3>{group}</h3><p>{titles}</p></div>)}</details>
   </section>;

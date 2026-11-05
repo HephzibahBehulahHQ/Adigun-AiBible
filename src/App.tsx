@@ -44,6 +44,8 @@ const LawDiary = lazy(() => import('./LawDiary'));
 const ContextCard = lazy(() => import('./context/ContextCard'));
 const MinistryWorkspace = lazy(() => import('./ministry/MinistryWorkspace'));
 const WidgetCard = lazy(() => import('./widget/WidgetCard'));
+const SpeakerExplorer = lazy(() => import('./speakers/SpeakerExplorer'));
+const EditorialWorkbench = lazy(() => import('./editorial-workbench/EditorialWorkbench'));
 const MultiPassageCards = lazy(() => import('./sharing/MultiPassageCards'));
 import SourceChapter from './reader/SourceChapter';
 import ReadingSession from './reading-session/ReadingSession';
@@ -282,6 +284,8 @@ export default function App() {
     {id:'read',label:'Read Scripture',description:'Return to the current passage and its source edition.',keywords:'bible passage reader',disabled:!readyToRead,run:()=>commandNavigate('read')},
     {id:'search',label:'Search source text',description:'Find a reference or words in the selected edition.',keywords:'find verse reference',disabled:!manifest,run:()=>requestAnimationFrame(()=>searchInput.current?.focus())},
     {id:'law-diary',label:'Law Diary',description:'Open source-linked law, teaching and history studies.',keywords:'law Moses money apostles sermons',run:()=>commandNavigate('law-diary')},
+    {id:'speakers',label:'Speaker Explorer',description:'Browse exact publisher red-letter spans and prepare source-bound corrections.',keywords:'Jesus words speaker red letter',run:()=>commandNavigate('speakers')},
+    {id:'editorial-workbench',label:'Coverage and editorial workbench',description:'Inspect real coverage and prepare private source-grounded drafts.',keywords:'review editorial coverage',run:()=>commandNavigate('editorial-workbench')},
     {id:'support',label:'Support resources',description:'Find official crisis, listening and health services.',keywords:'help crisis emergency',run:()=>commandNavigate('support')},
     {id:'layouts',label:'Saved reader layouts',description:'Save, restore and manage your reading workspace.',keywords:'appearance workspace display',run:openLayouts},
     {id:'settings',label:'Reading settings',description:'Adjust text size, spacing, language and theme.',keywords:'appearance font',run:()=>commandNavigate('settings')},
@@ -322,6 +326,8 @@ export default function App() {
         {route.view==='family'&&<FamilyArchive reference={current} onOpenReference={openPassage}/>}
         {route.view==='audio'&&<AudioReader reference={current} onOpenReference={openPassage}/>}
         {route.view==='law-diary'&&<LawDiary editionId={activeEditionId} locale={prefs.locale} reference={current} onOpenReference={openPassage}/>}
+        {route.view==='speakers'&&<SpeakerExplorer reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
+        {route.view==='editorial-workbench'&&<EditorialWorkbench reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
         {route.view==='widget'&&<WidgetCard reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
         {route.view==='ministry'&&<MinistryWorkspace reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
         {route.view==='drop'&&<div className="page"><VerseDrop editionId={activeEditionId} onOpen={openPassage} onSave={toggleBookmark} onShare={ref=>navigate('share',ref)}/></div>}

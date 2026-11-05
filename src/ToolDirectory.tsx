@@ -3,6 +3,8 @@ import type { View } from './types';
 import './tools.css';
 
 const tools = [
+  { view: 'speakers', icon: BookMarked, title: 'Speaker Explorer', description: 'Find publisher-marked sayings in the selected edition and prepare precise private correction proposals.' },
+  { view: 'editorial-workbench', icon: NotebookPen, title: 'Coverage and editorial workbench', description: 'Inspect actual source coverage and prepare private comparison or paraphrase drafts for independent review.' },
   { view: 'widget', icon: BookMarked, title: 'Lock-screen verse card', description: 'Create a 1080 × 1920 source verse image with clock space. This is a web export, not a native widget.' },
   { view: 'ministry', icon: NotebookPen, title: 'Teaching workspace', description: 'Prepare private outlines, source quotations, series and participant handouts on this device.' },
   { view: 'law-diary', icon: ScrollText, title: 'Law Diary', description: 'Explore source-led timelines, social laws, money, sermons, evangelism, apostles, and Second Coming texts.' },

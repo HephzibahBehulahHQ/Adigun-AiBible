@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "editions": [
+    {
+      "id": "didache-lightfoot",
+      "workId": "didache",
+      "title": "Didache — Lightfoot English transcription",
+      "translator": "Joseph Barber Lightfoot (1828–1889)",
+      "language": "en",
+      "classification": "Early Christian teaching text / church order",
+      "canonScope": "Historical text, separate from this app’s 66-book Bible baseline. No universal canon claim.",
+      "authorship": "Anonymous text traditionally titled Teaching of the Twelve Apostles; the title alone does not establish apostolic authorship.",
+      "dating": "Nineteenth-century English translation. Wikisource catalogs 1891 while the pinned page also carries an 1889 category; the exact digital revision is identified below. Ancient composition dates are not resolved by this import.",
+      "survival": "All 16 chapters present in the pinned digital transcription; no claim that every ancient form or ending survives.",
+      "sourceUrl": "https://en.wikisource.org/w/index.php?title=Didache_(Lightfoot_translation)&oldid=14637905",
+      "sourceRevision": "wikisource-14637905",
+      "attribution": "Didache, translated by J. B. Lightfoot. Transcription by Wikisource contributors, revision 14637905. HTML removed and whitespace normalized; wording and source numbering retained.",
+      "license": "Underlying translation: public domain. Wikisource transcription contributions: CC BY-SA 4.0 where applicable.",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "rightsEvidence": [
+        {
+          "label": "Pinned source and public-domain notice",
+          "url": "https://en.wikisource.org/w/index.php?title=Didache_(Lightfoot_translation)&oldid=14637905",
+          "note": "Source identifies this Lightfoot translation as public domain and retains a CC BY-SA 4.0 footer for contributor text."
+        },
+        {
+          "label": "Translator’s dates",
+          "url": "https://en.wikisource.org/wiki/Author:Joseph_Barber_Lightfoot",
+          "note": "The source library records Lightfoot as 1828–1889 and lists the 1891 Apostolic Fathers abridgment."
+        },
+        {
+          "label": "EU copyright term, Article 1",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006L0116",
+          "note": "Life plus 70 years; Lightfoot died in 1889. The imported historical translation is beyond that term."
+        },
+        {
+          "label": "Wikisource contributor history",
+          "url": "https://en.wikisource.org/w/index.php?title=Didache_(Lightfoot_translation)&action=history",
+          "note": "Attribution for transcription contributors. Share-alike terms are retained for any copyrightable transcription contribution."
+        }
+      ],
+      "rights": {
+        "display": true,
+        "search": true,
+        "offline": true,
+        "export": true
+      },
+      "path": "data/historical/didache-lightfoot.json",
+      "sha256": "328c82f7dc9e676b0bfe50b9edda620e905ad7ca549cfc7c5a281726d7fb3159",
+      "bytes": 29358,
+      "chapters": 16,
+      "units": 189,
+      "noticePath": "data/historical/didache-lightfoot-notice.txt",
+      "transcriptionStatus": "Source-derived import, not independently proofread against a print scan. Source unit numbering is preserved; no Scripture or historical text was generated."
+    }
+  ]
+}

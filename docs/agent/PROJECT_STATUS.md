@@ -3,20 +3,20 @@
 ## Active continuation — 5 November 2026 (Europe/Berlin)
 
 - Repository: `HephzibahBehulahHQ/Adigun-AiBible`.
-- Main observed at start: `5e7317bf888ecde0e1a1ea4546831a263e6630aa`.
-- Working branch / PR: `codex/law-diary-route-scaffold-20261105`, [PR #26](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/26).
-- Last verified remote checkpoint at start: `6640f39143ba3a005bc5e99f676b96acb693f4fc`. Its [CI 41993626943](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41993626943) passed source/content/build, desktop/mobile and repeated persistence checks. PR deployment was correctly skipped.
-- Verified checkpoint: `0798f998585d33b0cfa9288f3491b2d077932fb5` via GitHub connection and `git ls-remote`, 5 November 2026. Shell push has no credentials; authenticated GitHub tree/commit/ref operations preserve the exact Git tree and verify the expected parent.
-- Current work: complete source-linked Law Diary and section routing; add context cards, web verse cards and local ministry preparation; preserve source review gates.
-- Recovered the Law Diary addendum present only in the root TXT. Canonical Markdown now matches that complete supplied specification. Current user authorization to continue/finish overrides its older per-step stop requests. Content approval, accuracy and release gates remain.
-- Local Node 24 and locked dependencies are available. Routing, context, widget, teaching and assistant tests pass. TypeScript, ESLint, the application and backend unit suites, corpus validation and the first combined production build pass. Browser checks for the final candidate remain pending. Local Playwright browser download returned an invalid archive; browser release gates will run in GitHub Actions. Final combined source, content, browser and release checks are pending.
-- Root is the integration/synchronization owner. Law Diary, context/widget and ministry specialists own disjoint new modules.
-- No new deployment is claimed. Existing Pages target: https://hephzibahbehulahhq.github.io/Adigun-AiBible/ ; public source receipt: `build-info.json`.
+- Verified main: `8554f1eb85cb483ba5e40914547f862e74d95873`; Pages workflow [42000377767](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42000377767) succeeded.
+- Active branch: `codex/advanced-study-workspaces-20261105`, [PR #27](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/27).
+- Last verified remote checkpoint: `bfd848d75ca223b86e42bf3e09fcf61ba723e62a`, checked through GitHub and `git ls-remote` on 5 November 2026. The current commit adds the release fixes below; its exact receipt is the PR branch and Actions record.
+- Source-backed Speaker Explorer, private editorial drafts/coverage, and the complete pinned Lightfoot Didache are implemented in PR #27. Its previous CI passed source/content/build and 154 browser cases; eight failures exposed wrapped-label selectors, missing offline permission metadata, and the need to verify historical deep-link Bible context.
+- Current fixes: stable control labels, permission-register precaching and retention, library query-reference parsing and recovery, and regression tests. No permission or editorial gates were weakened.
+- Local Node 24 locked dependencies installed. Full baseline `npm run check` passed. Focused offline/routing/recovery tests passed after fixes; full exact-candidate CI and browser rerun pending. Local Chromium download returned an invalid archive, so release browser checks run in GitHub Actions.
+- Recoverable next increment: `codex/advanced-experiences-20261105` at `a790b87473149911fb1a46e9ccb5417944017d98`; contains lexical work, Athens tour, nearby transport and partial interpretation work. Its parent has the same tree as `bfd848d`; integrate only its distinct work after PR #27 is green.
+- Root owns integration, release and this status. An isolated specialist owns only nearby transport cancellation/reconnect hardening, tests and its module documentation.
+- Existing production: https://hephzibahbehulahhq.github.io/Adigun-AiBible/ ; exact published source receipt: `build-info.json`. No newer deployment is claimed yet.
 
 ## Exact remaining dependencies
 
-Human editorial/native-language approval, restricted edition rights, dedicated backend/provider configuration, permitted narration, and actual two-device offline validation are not established. Backend creation was previously cancelled; no unrelated infrastructure is reused. These gates do not excuse remaining independent software work. Full Version 3 is not yet complete.
+Human editorial/native-language approval, restricted edition rights, dedicated backend/provider configuration, permitted recorded narration and actual two-device offline validation are not established. Backend setup was previously cancelled; no unrelated infrastructure is reused. These gates do not excuse independent software work. Full Version 3 is not complete.
 
 ## Next action
 
-Complete and validate the owned modules, verify remote checkpoints, merge only the green candidate and verify the published source revision. Previous release receipts remain in Git history and Actions.
+Verify PR #27 fixes, merge the green candidate and verify production. Recover and finish the unmerged advanced experiences, then reconcile all remaining implementation and content gates with the feature matrix.
