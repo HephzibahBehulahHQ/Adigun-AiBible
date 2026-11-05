@@ -62,6 +62,17 @@ async function deviceInventory(page:Page){
 }
 async function save(page:Page){await page.getByRole('button',{name:'Save private retelling',exact:true}).click();await expect(page.getByRole('region',{name:'Unsaved recording',exact:true})).toHaveCount(0);await expect(page.getByLabel('My retelling',{exact:true})).toHaveValue('');}
 async function history(page:Page,count=1){await page.getByText(`Saved retellings (${count})`,{exact:true}).click();await expect(page.getByRole('link',{name:'Download original recording',exact:true})).toBeVisible();}
+async function captureWorkspace(page:Page,path:string,narrow=false){
+  if(narrow){
+    await page.setViewportSize({width:320,height:844});
+    const sidebar=page.locator('.sidebar');
+    await expect(sidebar).not.toHaveClass(/\bopen\b/);
+    await expect.poll(()=>sidebar.evaluate(element=>element.getBoundingClientRect().right)).toBeLessThanOrEqual(0);
+    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBe(true);
+  }
+  await page.evaluate(()=>window.scrollTo({top:0,left:0,behavior:'instant'}));
+  await page.screenshot({path,fullPage:true,animations:'disabled'});
+}
 
 test.describe('private capture controls',{tag:'@retelling-audio'},()=>{
   test.use({serviceWorkers:'block'});
@@ -74,7 +85,7 @@ test.describe('private capture controls',{tag:'@retelling-audio'},()=>{
     await page.getByRole('button',{name:'Edit manual transcript',exact:true}).click();await page.getByLabel('Manual transcript',{exact:true}).fill('My manual transcript: àánú.');await page.getByRole('button',{name:'Save manual transcript',exact:true}).click();
     await expect(page.getByText('My manual transcript: àánú.',{exact:true})).toBeVisible();expect(await originalBytes(page)).toEqual(original);
     const inventory=await deviceInventory(page);expect(inventory.state.schemaVersion).toBe(2);expect(inventory.state.cards[0].history).toEqual([]);expect(inventory.media[0].hash).toBe(createHash('sha256').update(original).digest('hex'));expect(inventory.media[0].recording.source.ref.editionId).toBe('eng-web');expect(inventory.media[0].recording.source.editionSha256).toMatch(/^[a-f0-9]{64}$/);
-    await page.screenshot({path:testInfo.outputPath('retelling-audio-workspace.png'),fullPage:true});await page.setViewportSize({width:320,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBe(true);await page.screenshot({path:testInfo.outputPath('retelling-audio-320.png'),fullPage:true});
+    await captureWorkspace(page,testInfo.outputPath('retelling-audio-workspace.png'));await captureWorkspace(page,testInfo.outputPath('retelling-audio-320.png'),true);
     await page.getByRole('button',{name:'Delete recording, keep transcript',exact:true}).click();await expect(page.getByRole('link',{name:'Download original recording',exact:true})).toHaveCount(0);expect((await deviceInventory(page)).media).toEqual([]);await expect(page.getByText('My manual transcript: àánú.',{exact:true})).toBeVisible();
     await page.getByRole('button',{name:'Undo last change',exact:true}).click();await expect(page.getByRole('link',{name:'Download original recording',exact:true})).toBeVisible();expect(await originalBytes(page)).toEqual(original);expect(writes).toEqual([]);
   });
@@ -139,7 +150,7 @@ test.describe('private capture controls',{tag:'@retelling-audio'},()=>{
       await expect(writing).toHaveValue('Keep the draft begun while another passage was loading.');
       await expect(page.getByRole('navigation',{name:'Memory cards'}).getByRole('button',{name:/^JHN 3:16/})).toHaveAttribute('aria-current','true');
       expect(await originalBytes(page)).toEqual(original);
-      await page.screenshot({path:testInfo.outputPath('retelling-delayed-add-draft-preserved.png'),fullPage:true});
+      await captureWorkspace(page,testInfo.outputPath('retelling-delayed-add-draft-preserved.png'));
       const added=await deviceInventory(page);expect(added.state.cards).toHaveLength(2);expect(added.media).toEqual([]);
       expect(added.state.cards.find((card:any)=>card.ref.bookId==='EXO').retellings).toEqual([]);
       await save(page);
@@ -249,8 +260,7 @@ test.describe('retelling data recovery',()=>{
     await expect(other.getByRole('region',{name:'Manual transcript editor',exact:true})).toContainText('will not overwrite another retelling');
     await expect(transcript).toHaveValue('Private draft belonging to the deleted first recording.');
     await expect(other.getByRole('button',{name:'Save manual transcript',exact:true})).toBeDisabled();
-    await other.setViewportSize({width:320,height:844});
-    await other.screenshot({path:testInfo.outputPath('retelling-transcript-recovery-320.png'),fullPage:true});
+    await captureWorkspace(other,testInfo.outputPath('retelling-transcript-recovery-320.png'),true);
     expect((await deviceInventory(other)).state.cards[0].retellings).toEqual([second]);
     await other.getByRole('button',{name:'Use transcript as new written retelling',exact:true}).click();
     await expect(other.getByRole('textbox',{name:'My retelling',exact:true})).toHaveValue('Private draft belonging to the deleted first recording.');
