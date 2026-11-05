@@ -84,7 +84,7 @@ export default function GreekStudyWorkspace({ locale = 'en' }: { locale?: Locale
     event.preventDefault(); const target = event.key === 'Home' ? 0 : event.key === 'End' ? verse.tokens.length - 1 : Math.max(0, Math.min(verse.tokens.length - 1, index + (event.key === 'ArrowRight' ? 1 : -1)));
     inspectToken(verse.tokens[target]); document.getElementById(`greek-token-${verse.tokens[target].sourceLine}`)?.focus();
   }
-  function navigateResult(result: TokenLocation) { applySelection({ book: bookId, chapter: result.chapter, verse: result.verse }, true); pendingFocus.current = result.token.sourceLine; setSelectedLine(result.token.sourceLine); }
+  function navigateResult(result: TokenLocation) { applySelection({ book: bookId, chapter: result.chapter, verse: result.verse }, true); pendingFocus.current = result.token.sourceLine; setSelectedLine(result.token.sourceLine); if (selectedLine === result.token.sourceLine) inspector.current?.focus(); }
   function searchLemma(value = lemmaInput) { setLemmaInput(value); setLemma(value); setPage(0); requestAnimationFrame(() => resultTitle.current?.focus()); }
   function changePage(next: number) { setPage(next); requestAnimationFrame(() => resultTitle.current?.focus()); }
   function retrySource() { metadataAbort.current?.abort(); loadAbort.current?.abort(); sequence.current++; loader.clear(); setBook(null); setSelectedLine(0); setRetry(value => value + 1); }
@@ -134,7 +134,7 @@ export default function GreekStudyWorkspace({ locale = 'en' }: { locale?: Locale
         </> : <p>Select a token’s lemma field or enter an exact field to find its occurrences.</p>}
       </section>
     </>}
-    {descriptor && <SourceDownloads key={bookId} baseUrl={baseUrl} bookId={bookId} bookName={descriptor.name} onRemoved={() => loader.clear()} />}
+    {descriptor && selectionReady && <SourceDownloads key={bookId} baseUrl={baseUrl} bookId={bookId} bookName={descriptor.name} onRemoved={() => loader.clear()} />}
     <section className="panel" aria-labelledby="greek-provenance-title"><h2 id="greek-provenance-title">Source provenance and separate license layers</h2>
       <h3>Greek text · CC BY 4.0</h3><p>{TEXT_ATTRIBUTION}</p><p><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">Creative Commons Attribution 4.0 International</a></p>
       <h3>Parsing and lemmatization · CC BY-SA 3.0</h3><p>{ANNOTATION_ATTRIBUTION}</p><p><a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noreferrer">Creative Commons Attribution-ShareAlike 3.0</a>. The source annotations and their lossless JSON reformatting retain these terms. The viewer presents the supplied rows interactively; no source wording or grammatical expansion is corrected.</p>

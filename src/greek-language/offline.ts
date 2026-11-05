@@ -1,5 +1,6 @@
 import { downloadOfflineFiles, getOfflineManifest, removeOfflineDownloads } from '../offline.ts';
 import type { OfflineManifest } from '../offline.ts';
+import { readSourceBytes } from '../source-codec.ts';
 import { SOURCE_PREFIX, pinFor, requiredSourcePaths, sourceAbort, sourceBase, verifiedSourceBytes } from './source.ts';
 
 export function assertSourceInventory(inventory: OfflineManifest, paths: readonly string[]): void {
@@ -12,24 +13,14 @@ export function assertSourceInventory(inventory: OfflineManifest, paths: readonl
 
 /** Read a bounded local pack marker. It grants eligibility only; every source byte is checked below. */
 async function markerPaths(response: Response, base: URL, inventory: OfflineManifest, signal?: AbortSignal): Promise<string[] | null> {
-  if (!response.ok || !response.body) return null;
-  const reader = response.body.getReader(), chunks: Uint8Array[] = []; let size = 0, done = false;
-  const cancel = () => { void reader.cancel().catch(() => undefined); }; signal?.addEventListener('abort', cancel, { once: true });
   try {
-    while (true) {
-      sourceAbort(signal); const next = await reader.read(); sourceAbort(signal);
-      if (next.done) { done = true; break; }
-      size += next.value.byteLength; if (size > 2 * 1024 * 1024) return null; chunks.push(next.value);
-    }
-  } finally { signal?.removeEventListener('abort', cancel); if (!done) void reader.cancel().catch(() => undefined); reader.releaseLock(); }
-  const bytes = new Uint8Array(size); let offset = 0; for (const chunk of chunks) { bytes.set(chunk, offset); offset += chunk.byteLength; }
-  try {
+    const bytes = await readSourceBytes(response, 2 * 1024 * 1024, signal);
     const value = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(bytes));
     if (value.schemaVersion !== 1 || value.appId !== 'adigun-aibible' || value.basePath !== base.pathname || value.contentVersion !== inventory.contentVersion
       || typeof value.packId !== 'string' || !Array.isArray(value.paths) || value.paths.length > 16384
       || value.paths.some((path: unknown) => typeof path !== 'string' || path.length > 512 || !Object.hasOwn(inventory.files, path))) return null;
     return value.paths;
-  } catch { return null; }
+  } catch { sourceAbort(signal); return null; }
 }
 
 export interface OfflineSourceStatus { verified: boolean; missing: string[]; bytes: number }
