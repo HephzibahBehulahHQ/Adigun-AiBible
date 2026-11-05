@@ -14,6 +14,7 @@ import { linguisticsBackup, mergeLinguisticsImport, newExperiment, parseLinguist
 import type { LinguisticsState, TranslationExperiment } from './model';
 import { resolveExperiment, verifyLinguisticsImport } from './source-core';
 import { useLinguistics, useLinguisticsGuard } from './useLinguistics';
+import LexiconDownloads from './LexiconDownloads';
 import './linguistics.css';
 
 const sourceAccess = { getBook, getManifest, getLexicon, requirePermission };
@@ -72,6 +73,7 @@ export default function LinguisticsWorkspace({ reference, locale, onOpenReferenc
     <p className="availability-note">Strong’s Greek (1890) and Hebrew/Aramaic (1894) dictionaries are historical sources. Their glosses, etymologies and pronunciation spellings need contextual evaluation. A dictionary definition does not establish a correct translation for every occurrence.</p>
     {error && <p role="alert">{error}</p>}{notice && <p role="status">{notice}</p>}
     {tab === 'lookup' ? <>
+      <LexiconDownloads/>
       {loading && <p role="status">Downloading and checking historical dictionary files…</p>}{loadError && <div role="alert"><p>{loadError}</p><button className="secondary" onClick={() => setRetry(value => value + 1)}>Retry dictionary download</button></div>}
       <section className="panel"><h2>Search dictionary entries</h2><div className="linguistics-controls"><label>Find a lexical entry<input value={query} onChange={event => { setQuery(event.target.value); setPage(0); }} placeholder="G26, H2, Greek/Hebrew lemma, transliteration or meaning"/></label><label>Dictionary<select aria-label="Dictionary" value={dictionary} onChange={event => { setDictionary(event.target.value); setPage(0); }}><option value="">Both dictionaries</option><option value="greek">Greek dictionary</option><option value="hebrew">Hebrew / Aramaic dictionary</option></select></label><label>Search fields<select aria-label="Search fields" value={scope} onChange={event => { setScope(event.target.value as typeof scope); setPage(0); }}><option value="all">All supplied fields</option><option value="lemma">Lemma and transliteration</option><option value="definition">Definition and historical renderings</option></select></label><label>Source language tag<select aria-label="Source language tag" value={language} onChange={event => { setLanguage(event.target.value); setPage(0); }}><option value="">All supplied tags</option><option value="grc">Greek</option><option value="heb">Hebrew</option><option value="arc">Aramaic</option><option value="x-pn">Proper names (x-pn)</option></select></label></div>
         <p>{entries.length.toLocaleString('en')} source records loaded · {results.length.toLocaleString('en')} matches. Diacritics can be included or omitted when searching. Unused historical number records remain visible.</p>

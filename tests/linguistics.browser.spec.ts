@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 import { readFile } from 'node:fs/promises';
-test.use({ serviceWorkers: 'block' });
+test.use({ serviceWorkers: 'allow' });
 
 test('historical lexical lookup preserves Aramaic evidence and private translation exercises', async ({ page }) => {
   await page.goto('#/linguistics/GEN/1?verse=1&end=2&edition=eng-web');
@@ -48,4 +48,21 @@ test('unused Strong numbers stay explicit and malformed restores keep private wr
   page.once('dialog', dialog => dialog.dismiss());
   expect(await page.evaluate(() => window.dispatchEvent(new Event('adigun:before-navigation', { cancelable: true })))).toBe(false);
   await page.setViewportSize({ width: 320, height: 844 }); expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
+});
+
+
+test('downloaded lexicons reopen offline with unchanged Aramaic wording and source notices', async ({ page, context }) => {
+  await page.goto('#/linguistics/GEN/1?verse=1&edition=eng-web');
+  await page.waitForFunction(() => !!navigator.serviceWorker.controller);
+  await page.getByRole('button', { name: /^(Download dictionaries and notices|Verify dictionary downloads)$/ }).click();
+  await expect(page.getByText('Both dictionaries and their source notices are verified for offline lookup.', { exact: true })).toBeVisible();
+  await context.setOffline(true);
+  try {
+    await page.reload();
+    await page.getByLabel('Find a lexical entry', { exact: true }).fill('H2');
+    await page.getByRole('button', { name: /H2 · אַב/ }).click();
+    const entry = page.getByRole('region', { name: 'Selected dictionary entry' });
+    await expect(entry.getByText('{father}', { exact: true })).toBeVisible();
+    await expect(page.getByText('Both historical dictionaries and the complete source notices are downloaded on this device.', { exact: false })).toBeVisible();
+  } finally { await context.setOffline(false); }
 });
