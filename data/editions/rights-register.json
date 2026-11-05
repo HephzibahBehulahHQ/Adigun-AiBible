@@ -114,6 +114,78 @@
       "url": "https://ebible.org/ita1885/copyright.htm",
       "observedOn": "2026-11-05",
       "summary": "The individual Diodati Bibbia 1885 notice and matching pinned archive notice declare this exact historical text public domain. Revision: 1885 edition title; notice: translated 1641 and revised 1821. No third-party recording rights are asserted."
+    },
+    {
+      "id": "fra-ostervald-pd",
+      "url": "https://ebible.org/fra_fob/copyright.htm",
+      "observedOn": "2026-11-05",
+      "summary": "The individual French Ostervald Bible notice and matching pinned archive notice declare this exact source text Public Domain. Identity: Ostervald; historical revision year is not specified in the individual notice. Source files dated 2026-10-30; archive SHA-256 db393ba4b0a91b4f631b35b0d27ba796514ff84182de06997669f4a14da52b21. Complete source notice bytes are retained. This is provider evidence, not independent human/legal certification or third-party recording permission."
+    },
+    {
+      "id": "epo-londona-pd",
+      "url": "https://ebible.org/epo/copyright.htm",
+      "observedOn": "2026-11-05",
+      "summary": "The individual Londona Biblio (Esperanto) notice and matching pinned archive notice declare this exact source text Public Domain. Identity: 1910, as identified by the publisher notice. Source files dated 2025-12-12; archive SHA-256 2e2859611073a1a023f92e1fd279078f5cedc5f4d97659fc2f8f84945450301d. Complete source notice bytes are retained. This is provider evidence, not independent human/legal certification or third-party recording permission."
+    },
+    {
+      "id": "arb-vandyck-pd",
+      "url": "https://ebible.org/arb-vd/copyright.htm",
+      "observedOn": "2026-11-05",
+      "summary": "The individual Arabic Van Dyck Bible notice and matching pinned archive notice declare this exact source text Public Domain. Identity: Van Dyck; no historical revision year is specified in the individual notice. Source files dated 2025-12-12; archive SHA-256 070404da2e13e641b7550b50d7e777480b2cc2667e9669f2194d909ca04cd68a. Complete source notice bytes are retained. This is provider evidence, not independent human/legal certification or third-party recording permission."
+    },
+    {
+      "id": "mya-judson1840-pd",
+      "url": "https://ebible.org/myajvb/copyright.htm",
+      "observedOn": "2026-11-05",
+      "summary": "The individual Judson Burmese Bible (1840) notice and matching pinned archive notice declare this exact source text Public Domain. Identity: Judson version of 1840, as identified by the publisher notice. Source files dated 2025-12-12; archive SHA-256 bbbabb35e8373c718a3eb1af4e30ba5efeadd08fc047abde644709bdd7951adf. Complete source notice bytes are retained. This is provider evidence, not independent human/legal certification or third-party recording permission."
+    },
+    {
+      "id": "nld-1917-pd",
+      "url": "https://ebible.org/nld/copyright.htm",
+      "observedOn": "2026-11-05",
+      "summary": "The individual De Heilige Schrift 1917 notice and matching pinned archive notice declare this exact source text Public Domain. Identity: 1917, as identified by the publisher notice; no further translation identity is inferred. Source files dated 2025-12-12; archive SHA-256 1b725d623e86e639516b59cc9c292184066f2b2ca58df2e500f2878883dc3938. Complete source notice bytes are retained. This is provider evidence, not independent human/legal certification or third-party recording permission."
+    },
+    {
+      "id": "haw-1868-pd",
+      "url": "https://ebible.org/haw1868/copyright.htm",
+      "observedOn": "2026-11-05",
+      "summary": "The individual Baibala Hemolele (1868) notice and matching pinned archive notice declare this exact source text Public Domain. Identity: 1868 revision, as identified by the publisher notice. Source files dated 2025-12-12; archive SHA-256 ed5a6d757d6532bc8a1cce2016c7ff53e7d9c9e0176c502261557e8de0fd85dc. Complete source notice bytes are retained. This is provider evidence, not independent human/legal certification or third-party recording permission."
+    },
+    {
+      "id": "rus-synodal-pd",
+      "url": "https://ebible.org/russyn/copyright.htm",
+      "observedOn": "2026-11-05",
+      "summary": "The individual Russian Synodal Bible notice and matching pinned archive notice declare this exact source text Public Domain. Identity: Synodal translation; no historical revision year is specified in the individual notice. Source files dated 2025-12-12; archive SHA-256 e8f12f3f3e5856a859034ac5614a8a67d112c7afa59c2af9f42be46e45d68198. Complete source notice bytes are retained. This is provider evidence, not independent human/legal certification or third-party recording permission."
+    },
+    {
+      "id": "ukr-kulish1905-pd",
+      "url": "https://ebible.org/ukr1871/copyright.htm",
+      "observedOn": "2026-11-05",
+      "summary": "The individual Ukrainian Kulish–Puluj Bible (1905) notice and matching pinned archive notice declare this exact source text Public Domain. Identity: 1905 in the publisher title and notice; ukr1871 is retained only as the provider identifier. Source files dated 2026-09-02; archive SHA-256 d1913e04db9f4e2fc3405a98e40a9358ef332ac9b463d0d2e8aeb0b6b90d7014. Complete source notice bytes are retained. This is provider evidence, not independent human/legal certification or third-party recording permission."
+    },
+    {
+      "id": "vie-cadman-pd",
+      "url": "https://ebible.org/vie1934/copyright.htm",
+      "observedOn": "2026-11-05",
+      "summary": "The individual Vietnamese Bible (NT 1923 / OT 1925) notice and matching pinned archive notice declare this exact source text Public Domain. Identity: New Testament first published 1923; Old Testament first published 1925. The provider ID vie1934 does not establish a 1934 revision. Source files dated 2025-12-12; archive SHA-256 54a1c70f875ac5c4315259665d7e1ad153b3b90f28a3a868db9cbd4c56e6e1d0. Complete source notice bytes are retained. This is provider evidence, not independent human/legal certification or third-party recording permission."
+    },
+    {
+      "id": "srp-danicic-karadzic-pd",
+      "url": "https://ebible.org/srp1868/copyright.htm",
+      "observedOn": "2026-11-05",
+      "summary": "The individual Serbian Daničić–Karadžić Bible (Cyrillic) notice and matching pinned archive notice declare this exact source text Public Domain. Identity: Daničić–Karadžić translation, Cyrillic alphabet; no historical revision year is specified in the individual notice. Source files dated 2026-01-03; archive SHA-256 40f38bfe0af0a6df4f31d2873cc76902caf576b3f54217d2c86adee6d57e196b. Complete source notice bytes are retained. This is provider evidence, not independent human/legal certification or third-party recording permission."
+    },
+    {
+      "id": "ton-revised-west-pd",
+      "url": "https://ebible.org/ton/copyright.htm",
+      "observedOn": "2026-11-05",
+      "summary": "The individual Tongan Revised West Version notice and matching pinned archive notice declare this exact source text Public Domain. Identity: Revised West Version; exact provider source dated 2025-12-12. Not an untouched nineteenth-century West edition. Source files dated 2025-12-12; archive SHA-256 24cea17bdf324d7f59ea40367e6340a3b52f8d0157dcd68c6dc55df3302bb5fb. Complete source notice bytes are retained. This is provider evidence, not independent human/legal certification or third-party recording permission. The provider public-domain use policy specifically lists Revised West among translations dedicated to the public domain; imported verse text excludes the credited artwork/layout."
+    },
+    {
+      "id": "eng-geneva1599-pd",
+      "url": "https://ebible.org/enggnv/copyright.htm",
+      "observedOn": "2026-11-05",
+      "summary": "The individual Geneva Bible 1599 notice and matching pinned archive notice declare this exact source text Public Domain. Identity: 1599; original historical English spelling, as identified by the publisher notice. Source files dated 2025-12-12; archive SHA-256 faa35b12d04bdacda78b5b53b35bc241d576c63e5d6cd5bccd99bb337b8f7ade. Complete source notice bytes are retained. This is provider evidence, not independent human/legal certification or third-party recording permission. The individual notice expressly permits this digital copy worldwide without copyright restrictions."
     }
   ],
   "editions": [
@@ -2861,6 +2933,2409 @@
         "The VPL source contains scripture text only; notes, introductions, headings and paragraph layout are not included.",
         "Changed study material must be separately labeled and must not be presented as unchanged publisher text.",
         "No third-party recorded audio, illustrations, maps or modern revisions are included or licensed by this text import."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "fra-ostervald",
+      "sourceSha256": "db393ba4b0a91b4f631b35b0d27ba796514ff84182de06997669f4a14da52b21",
+      "verifiedOn": "2026-11-05",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "allowed",
+        "evidenceIds": [
+          "fra-ostervald-pd",
+          "ebible-pd-uses",
+          "ebible-ip-policy"
+        ],
+        "reason": "The individual provider-declared public-domain text and published use policy support application use. This does not certify generated teaching, an altered translation, a connected AI service, or independent worldwide legal approval."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-ostervald-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-ostervald-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-ostervald-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-ostervald-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-ostervald-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-ostervald-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-ostervald-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "aiRetrieval": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-ostervald-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "modelTraining": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-ostervald-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "tts": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-ostervald-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "fra-ostervald-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "No recording or narrator rights were acquired; a text declaration does not license third-party audio."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-ostervald-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-ostervald-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-ostervald-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-ostervald-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-ostervald-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-ostervald-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-ostervald-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        }
+      },
+      "attribution": "French Ostervald Bible. La Sainte Bible. Ostervald. Ostervald; historical revision year is not specified in the individual notice. Public domain as declared by eBible.org; exact source files dated 2026-10-30; full publisher notice retained.",
+      "conditions": [
+        "Retain the exact edition identity, original source wording and complete publisher notice with redistributed/offline copies.",
+        "Rights evidence is the individual provider declaration and stated provider uses, not independent worldwide legal or human editorial approval; the provider inventory describes public-domain knowledge in the USA and its policy acknowledges national-law variation.",
+        "Publisher VPL supplies verse text without separate notes, introductions, headings or paragraph layout. Inline source annotations, historical spellings and alternate-numbering text remain unchanged where present.",
+        "Changed study material must be separately labeled and must not be presented as unchanged publisher text.",
+        "No third-party recorded audio, cover artwork, illustrations, maps or distinct modern revisions are included or licensed by this text import.",
+        "No provider certification badge or trademark license is included, and this application is not claimed to be provider-certified."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "epo-londona",
+      "sourceSha256": "2e2859611073a1a023f92e1fd279078f5cedc5f4d97659fc2f8f84945450301d",
+      "verifiedOn": "2026-11-05",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "allowed",
+        "evidenceIds": [
+          "epo-londona-pd",
+          "ebible-pd-uses",
+          "ebible-ip-policy"
+        ],
+        "reason": "The individual provider-declared public-domain text and published use policy support application use. This does not certify generated teaching, an altered translation, a connected AI service, or independent worldwide legal approval."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "epo-londona-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "epo-londona-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "epo-londona-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "epo-londona-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "epo-londona-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "epo-londona-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "epo-londona-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "aiRetrieval": {
+          "state": "allowed",
+          "evidenceIds": [
+            "epo-londona-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "modelTraining": {
+          "state": "allowed",
+          "evidenceIds": [
+            "epo-londona-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "tts": {
+          "state": "allowed",
+          "evidenceIds": [
+            "epo-londona-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "epo-londona-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "No recording or narrator rights were acquired; a text declaration does not license third-party audio."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "epo-londona-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "epo-londona-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "epo-londona-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "epo-londona-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "epo-londona-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "epo-londona-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "epo-londona-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        }
+      },
+      "attribution": "Londona Biblio (Esperanto). Londona Biblio. Not specified in the publisher notice.. 1910, as identified by the publisher notice. Public domain as declared by eBible.org; exact source files dated 2025-12-12; full publisher notice retained.",
+      "conditions": [
+        "Retain the exact edition identity, original source wording and complete publisher notice with redistributed/offline copies.",
+        "Rights evidence is the individual provider declaration and stated provider uses, not independent worldwide legal or human editorial approval; the provider inventory describes public-domain knowledge in the USA and its policy acknowledges national-law variation.",
+        "Publisher VPL supplies verse text without separate notes, introductions, headings or paragraph layout. Inline source annotations, historical spellings and alternate-numbering text remain unchanged where present.",
+        "Changed study material must be separately labeled and must not be presented as unchanged publisher text.",
+        "No third-party recorded audio, cover artwork, illustrations, maps or distinct modern revisions are included or licensed by this text import.",
+        "No provider certification badge or trademark license is included, and this application is not claimed to be provider-certified."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "arb-vandyck",
+      "sourceSha256": "070404da2e13e641b7550b50d7e777480b2cc2667e9669f2194d909ca04cd68a",
+      "verifiedOn": "2026-11-05",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "allowed",
+        "evidenceIds": [
+          "arb-vandyck-pd",
+          "ebible-pd-uses",
+          "ebible-ip-policy"
+        ],
+        "reason": "The individual provider-declared public-domain text and published use policy support application use. This does not certify generated teaching, an altered translation, a connected AI service, or independent worldwide legal approval."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "arb-vandyck-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "arb-vandyck-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "arb-vandyck-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "arb-vandyck-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "arb-vandyck-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "arb-vandyck-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "arb-vandyck-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "aiRetrieval": {
+          "state": "allowed",
+          "evidenceIds": [
+            "arb-vandyck-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "modelTraining": {
+          "state": "allowed",
+          "evidenceIds": [
+            "arb-vandyck-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "tts": {
+          "state": "allowed",
+          "evidenceIds": [
+            "arb-vandyck-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "arb-vandyck-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "No recording or narrator rights were acquired; a text declaration does not license third-party audio."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "arb-vandyck-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "arb-vandyck-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "arb-vandyck-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "arb-vandyck-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "arb-vandyck-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "arb-vandyck-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "arb-vandyck-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        }
+      },
+      "attribution": "Arabic Van Dyck Bible. الكتاب المقدس باللغة العربية، فان دايك. Syrian Mission; contributor: American Bible Society. Van Dyck; no historical revision year is specified in the individual notice. Public domain as declared by eBible.org; exact source files dated 2025-12-12; full publisher notice retained.",
+      "conditions": [
+        "Retain the exact edition identity, original source wording and complete publisher notice with redistributed/offline copies.",
+        "Rights evidence is the individual provider declaration and stated provider uses, not independent worldwide legal or human editorial approval; the provider inventory describes public-domain knowledge in the USA and its policy acknowledges national-law variation.",
+        "Publisher VPL supplies verse text without separate notes, introductions, headings or paragraph layout. Inline source annotations, historical spellings and alternate-numbering text remain unchanged where present.",
+        "Changed study material must be separately labeled and must not be presented as unchanged publisher text.",
+        "No third-party recorded audio, cover artwork, illustrations, maps or distinct modern revisions are included or licensed by this text import.",
+        "No provider certification badge or trademark license is included, and this application is not claimed to be provider-certified."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "mya-judson1840",
+      "sourceSha256": "bbbabb35e8373c718a3eb1af4e30ba5efeadd08fc047abde644709bdd7951adf",
+      "verifiedOn": "2026-11-05",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "allowed",
+        "evidenceIds": [
+          "mya-judson1840-pd",
+          "ebible-pd-uses",
+          "ebible-ip-policy"
+        ],
+        "reason": "The individual provider-declared public-domain text and published use policy support application use. This does not certify generated teaching, an altered translation, a connected AI service, or independent worldwide legal approval."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mya-judson1840-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mya-judson1840-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mya-judson1840-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mya-judson1840-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mya-judson1840-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mya-judson1840-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mya-judson1840-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "aiRetrieval": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mya-judson1840-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "modelTraining": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mya-judson1840-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "tts": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mya-judson1840-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "mya-judson1840-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "No recording or narrator rights were acquired; a text declaration does not license third-party audio."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mya-judson1840-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mya-judson1840-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mya-judson1840-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mya-judson1840-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mya-judson1840-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mya-judson1840-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mya-judson1840-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        }
+      },
+      "attribution": "Judson Burmese Bible (1840). မြန်မာကျမ်းစာ. Adoniram Judson. Judson version of 1840, as identified by the publisher notice. Public domain as declared by eBible.org; exact source files dated 2025-12-12; full publisher notice retained.",
+      "conditions": [
+        "Retain the exact edition identity, original source wording and complete publisher notice with redistributed/offline copies.",
+        "Rights evidence is the individual provider declaration and stated provider uses, not independent worldwide legal or human editorial approval; the provider inventory describes public-domain knowledge in the USA and its policy acknowledges national-law variation.",
+        "Publisher VPL supplies verse text without separate notes, introductions, headings or paragraph layout. Inline source annotations, historical spellings and alternate-numbering text remain unchanged where present.",
+        "Changed study material must be separately labeled and must not be presented as unchanged publisher text.",
+        "No third-party recorded audio, cover artwork, illustrations, maps or distinct modern revisions are included or licensed by this text import.",
+        "No provider certification badge or trademark license is included, and this application is not claimed to be provider-certified."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "nld-1917",
+      "sourceSha256": "1b725d623e86e639516b59cc9c292184066f2b2ca58df2e500f2878883dc3938",
+      "verifiedOn": "2026-11-05",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "allowed",
+        "evidenceIds": [
+          "nld-1917-pd",
+          "ebible-pd-uses",
+          "ebible-ip-policy"
+        ],
+        "reason": "The individual provider-declared public-domain text and published use policy support application use. This does not certify generated teaching, an altered translation, a connected AI service, or independent worldwide legal approval."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld-1917-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld-1917-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld-1917-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld-1917-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld-1917-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld-1917-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld-1917-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "aiRetrieval": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld-1917-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "modelTraining": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld-1917-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "tts": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld-1917-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "nld-1917-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "No recording or narrator rights were acquired; a text declaration does not license third-party audio."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld-1917-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld-1917-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld-1917-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld-1917-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld-1917-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld-1917-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld-1917-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        }
+      },
+      "attribution": "De Heilige Schrift 1917. De Heilige Schrift 1917. Not specified in the publisher notice.. 1917, as identified by the publisher notice; no further translation identity is inferred. Public domain as declared by eBible.org; exact source files dated 2025-12-12; full publisher notice retained.",
+      "conditions": [
+        "Retain the exact edition identity, original source wording and complete publisher notice with redistributed/offline copies.",
+        "Rights evidence is the individual provider declaration and stated provider uses, not independent worldwide legal or human editorial approval; the provider inventory describes public-domain knowledge in the USA and its policy acknowledges national-law variation.",
+        "Publisher VPL supplies verse text without separate notes, introductions, headings or paragraph layout. Inline source annotations, historical spellings and alternate-numbering text remain unchanged where present.",
+        "Changed study material must be separately labeled and must not be presented as unchanged publisher text.",
+        "No third-party recorded audio, cover artwork, illustrations, maps or distinct modern revisions are included or licensed by this text import.",
+        "No provider certification badge or trademark license is included, and this application is not claimed to be provider-certified."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "haw-1868",
+      "sourceSha256": "ed5a6d757d6532bc8a1cce2016c7ff53e7d9c9e0176c502261557e8de0fd85dc",
+      "verifiedOn": "2026-11-05",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "allowed",
+        "evidenceIds": [
+          "haw-1868-pd",
+          "ebible-pd-uses",
+          "ebible-ip-policy"
+        ],
+        "reason": "The individual provider-declared public-domain text and published use policy support application use. This does not certify generated teaching, an altered translation, a connected AI service, or independent worldwide legal approval."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "haw-1868-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "haw-1868-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "haw-1868-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "haw-1868-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "haw-1868-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "haw-1868-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "haw-1868-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "aiRetrieval": {
+          "state": "allowed",
+          "evidenceIds": [
+            "haw-1868-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "modelTraining": {
+          "state": "allowed",
+          "evidenceIds": [
+            "haw-1868-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "tts": {
+          "state": "allowed",
+          "evidenceIds": [
+            "haw-1868-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "haw-1868-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "No recording or narrator rights were acquired; a text declaration does not license third-party audio."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "haw-1868-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "haw-1868-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "haw-1868-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "haw-1868-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "haw-1868-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "haw-1868-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "haw-1868-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        }
+      },
+      "attribution": "Baibala Hemolele (1868). Baibala Hemolele. na na misionari i pai. 1868 revision, as identified by the publisher notice. Public domain as declared by eBible.org; exact source files dated 2025-12-12; full publisher notice retained.",
+      "conditions": [
+        "Retain the exact edition identity, original source wording and complete publisher notice with redistributed/offline copies.",
+        "Rights evidence is the individual provider declaration and stated provider uses, not independent worldwide legal or human editorial approval; the provider inventory describes public-domain knowledge in the USA and its policy acknowledges national-law variation.",
+        "Publisher VPL supplies verse text without separate notes, introductions, headings or paragraph layout. Inline source annotations, historical spellings and alternate-numbering text remain unchanged where present.",
+        "Changed study material must be separately labeled and must not be presented as unchanged publisher text.",
+        "No third-party recorded audio, cover artwork, illustrations, maps or distinct modern revisions are included or licensed by this text import.",
+        "No provider certification badge or trademark license is included, and this application is not claimed to be provider-certified."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "rus-synodal",
+      "sourceSha256": "e8f12f3f3e5856a859034ac5614a8a67d112c7afa59c2af9f42be46e45d68198",
+      "verifiedOn": "2026-11-05",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "allowed",
+        "evidenceIds": [
+          "rus-synodal-pd",
+          "ebible-pd-uses",
+          "ebible-ip-policy"
+        ],
+        "reason": "The individual provider-declared public-domain text and published use policy support application use. This does not certify generated teaching, an altered translation, a connected AI service, or independent worldwide legal approval."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "rus-synodal-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "rus-synodal-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "rus-synodal-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "rus-synodal-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "rus-synodal-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "rus-synodal-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "rus-synodal-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "aiRetrieval": {
+          "state": "allowed",
+          "evidenceIds": [
+            "rus-synodal-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "modelTraining": {
+          "state": "allowed",
+          "evidenceIds": [
+            "rus-synodal-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "tts": {
+          "state": "allowed",
+          "evidenceIds": [
+            "rus-synodal-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "rus-synodal-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "No recording or narrator rights were acquired; a text declaration does not license third-party audio."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "rus-synodal-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "rus-synodal-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "rus-synodal-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "rus-synodal-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "rus-synodal-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "rus-synodal-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "rus-synodal-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        }
+      },
+      "attribution": "Russian Synodal Bible. Синодальный перевод. Not specified in the publisher notice.. Synodal translation; no historical revision year is specified in the individual notice. Public domain as declared by eBible.org; exact source files dated 2025-12-12; full publisher notice retained.",
+      "conditions": [
+        "Retain the exact edition identity, original source wording and complete publisher notice with redistributed/offline copies.",
+        "Rights evidence is the individual provider declaration and stated provider uses, not independent worldwide legal or human editorial approval; the provider inventory describes public-domain knowledge in the USA and its policy acknowledges national-law variation.",
+        "Publisher VPL supplies verse text without separate notes, introductions, headings or paragraph layout. Inline source annotations, historical spellings and alternate-numbering text remain unchanged where present.",
+        "Changed study material must be separately labeled and must not be presented as unchanged publisher text.",
+        "No third-party recorded audio, cover artwork, illustrations, maps or distinct modern revisions are included or licensed by this text import.",
+        "No provider certification badge or trademark license is included, and this application is not claimed to be provider-certified."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "ukr-kulish1905",
+      "sourceSha256": "d1913e04db9f4e2fc3405a98e40a9358ef332ac9b463d0d2e8aeb0b6b90d7014",
+      "verifiedOn": "2026-11-05",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "allowed",
+        "evidenceIds": [
+          "ukr-kulish1905-pd",
+          "ebible-pd-uses",
+          "ebible-ip-policy"
+        ],
+        "reason": "The individual provider-declared public-domain text and published use policy support application use. This does not certify generated teaching, an altered translation, a connected AI service, or independent worldwide legal approval."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ukr-kulish1905-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ukr-kulish1905-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ukr-kulish1905-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ukr-kulish1905-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ukr-kulish1905-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ukr-kulish1905-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ukr-kulish1905-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "aiRetrieval": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ukr-kulish1905-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "modelTraining": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ukr-kulish1905-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "tts": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ukr-kulish1905-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "ukr-kulish1905-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "No recording or narrator rights were acquired; a text declaration does not license third-party audio."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ukr-kulish1905-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ukr-kulish1905-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ukr-kulish1905-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ukr-kulish1905-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ukr-kulish1905-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ukr-kulish1905-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ukr-kulish1905-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        }
+      },
+      "attribution": "Ukrainian Kulish–Puluj Bible (1905). Біблія в пер. П.Куліша та І.Пулюя, 1905. Panteleimon Kulish; contributors: Ivan Semenovych Nechui-Levytsky and Ivan Pavlovych Puluj. 1905 in the publisher title and notice; ukr1871 is retained only as the provider identifier. Public domain as declared by eBible.org; exact source files dated 2026-09-02; full publisher notice retained.",
+      "conditions": [
+        "Retain the exact edition identity, original source wording and complete publisher notice with redistributed/offline copies.",
+        "Rights evidence is the individual provider declaration and stated provider uses, not independent worldwide legal or human editorial approval; the provider inventory describes public-domain knowledge in the USA and its policy acknowledges national-law variation.",
+        "Publisher VPL supplies verse text without separate notes, introductions, headings or paragraph layout. Inline source annotations, historical spellings and alternate-numbering text remain unchanged where present.",
+        "Changed study material must be separately labeled and must not be presented as unchanged publisher text.",
+        "No third-party recorded audio, cover artwork, illustrations, maps or distinct modern revisions are included or licensed by this text import.",
+        "No provider certification badge or trademark license is included, and this application is not claimed to be provider-certified."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "vie-cadman",
+      "sourceSha256": "54a1c70f875ac5c4315259665d7e1ad153b3b90f28a3a868db9cbd4c56e6e1d0",
+      "verifiedOn": "2026-11-05",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "allowed",
+        "evidenceIds": [
+          "vie-cadman-pd",
+          "ebible-pd-uses",
+          "ebible-ip-policy"
+        ],
+        "reason": "The individual provider-declared public-domain text and published use policy support application use. This does not certify generated teaching, an altered translation, a connected AI service, or independent worldwide legal approval."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "vie-cadman-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "vie-cadman-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "vie-cadman-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "vie-cadman-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "vie-cadman-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "vie-cadman-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "vie-cadman-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "aiRetrieval": {
+          "state": "allowed",
+          "evidenceIds": [
+            "vie-cadman-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "modelTraining": {
+          "state": "allowed",
+          "evidenceIds": [
+            "vie-cadman-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "tts": {
+          "state": "allowed",
+          "evidenceIds": [
+            "vie-cadman-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "vie-cadman-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "No recording or narrator rights were acquired; a text declaration does not license third-party audio."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "vie-cadman-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "vie-cadman-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "vie-cadman-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "vie-cadman-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "vie-cadman-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "vie-cadman-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "vie-cadman-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        }
+      },
+      "attribution": "Vietnamese Bible (NT 1923 / OT 1925). Kinh Thánh. William Cadman (1883–1948); contributor: Christian and Missionary Alliance. New Testament first published 1923; Old Testament first published 1925. The provider ID vie1934 does not establish a 1934 revision. Public domain as declared by eBible.org; exact source files dated 2025-12-12; full publisher notice retained.",
+      "conditions": [
+        "Retain the exact edition identity, original source wording and complete publisher notice with redistributed/offline copies.",
+        "Rights evidence is the individual provider declaration and stated provider uses, not independent worldwide legal or human editorial approval; the provider inventory describes public-domain knowledge in the USA and its policy acknowledges national-law variation.",
+        "Publisher VPL supplies verse text without separate notes, introductions, headings or paragraph layout. Inline source annotations, historical spellings and alternate-numbering text remain unchanged where present.",
+        "Changed study material must be separately labeled and must not be presented as unchanged publisher text.",
+        "No third-party recorded audio, cover artwork, illustrations, maps or distinct modern revisions are included or licensed by this text import.",
+        "No provider certification badge or trademark license is included, and this application is not claimed to be provider-certified.",
+        "The notice asserts NT public-domain entry on 2019-01-01 and OT on 2021-01-01. These are retained as publisher statements, not an independent worldwide copyright conclusion."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "srp-danicic-karadzic",
+      "sourceSha256": "40f38bfe0af0a6df4f31d2873cc76902caf576b3f54217d2c86adee6d57e196b",
+      "verifiedOn": "2026-11-05",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "allowed",
+        "evidenceIds": [
+          "srp-danicic-karadzic-pd",
+          "ebible-pd-uses",
+          "ebible-ip-policy"
+        ],
+        "reason": "The individual provider-declared public-domain text and published use policy support application use. This does not certify generated teaching, an altered translation, a connected AI service, or independent worldwide legal approval."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "srp-danicic-karadzic-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "srp-danicic-karadzic-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "srp-danicic-karadzic-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "srp-danicic-karadzic-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "srp-danicic-karadzic-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "srp-danicic-karadzic-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "srp-danicic-karadzic-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "aiRetrieval": {
+          "state": "allowed",
+          "evidenceIds": [
+            "srp-danicic-karadzic-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "modelTraining": {
+          "state": "allowed",
+          "evidenceIds": [
+            "srp-danicic-karadzic-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "tts": {
+          "state": "allowed",
+          "evidenceIds": [
+            "srp-danicic-karadzic-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "srp-danicic-karadzic-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "No recording or narrator rights were acquired; a text declaration does not license third-party audio."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "srp-danicic-karadzic-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "srp-danicic-karadzic-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "srp-danicic-karadzic-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "srp-danicic-karadzic-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "srp-danicic-karadzic-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "srp-danicic-karadzic-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "srp-danicic-karadzic-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        }
+      },
+      "attribution": "Serbian Daničić–Karadžić Bible (Cyrillic). Свето писмо или Библија Превод Даничић-Караџић. Daničić–Karadžić, as named by the publisher. Daničić–Karadžić translation, Cyrillic alphabet; no historical revision year is specified in the individual notice. Public domain as declared by eBible.org; exact source files dated 2026-01-03; full publisher notice retained.",
+      "conditions": [
+        "Retain the exact edition identity, original source wording and complete publisher notice with redistributed/offline copies.",
+        "Rights evidence is the individual provider declaration and stated provider uses, not independent worldwide legal or human editorial approval; the provider inventory describes public-domain knowledge in the USA and its policy acknowledges national-law variation.",
+        "Publisher VPL supplies verse text without separate notes, introductions, headings or paragraph layout. Inline source annotations, historical spellings and alternate-numbering text remain unchanged where present.",
+        "Changed study material must be separately labeled and must not be presented as unchanged publisher text.",
+        "No third-party recorded audio, cover artwork, illustrations, maps or distinct modern revisions are included or licensed by this text import.",
+        "No provider certification badge or trademark license is included, and this application is not claimed to be provider-certified."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "ton-revised-west",
+      "sourceSha256": "24cea17bdf324d7f59ea40367e6340a3b52f8d0157dcd68c6dc55df3302bb5fb",
+      "verifiedOn": "2026-11-05",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "allowed",
+        "evidenceIds": [
+          "ton-revised-west-pd",
+          "ebible-pd-uses",
+          "ebible-ip-policy"
+        ],
+        "reason": "The individual provider-declared public-domain text and published use policy support application use. This does not certify generated teaching, an altered translation, a connected AI service, or independent worldwide legal approval."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ton-revised-west-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ton-revised-west-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ton-revised-west-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ton-revised-west-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ton-revised-west-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ton-revised-west-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ton-revised-west-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "aiRetrieval": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ton-revised-west-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "modelTraining": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ton-revised-west-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "tts": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ton-revised-west-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "ton-revised-west-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "No recording or narrator rights were acquired; a text declaration does not license third-party audio."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ton-revised-west-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ton-revised-west-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ton-revised-west-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ton-revised-west-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ton-revised-west-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ton-revised-west-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "ton-revised-west-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        }
+      },
+      "attribution": "Tongan Revised West Version. KO E TOHI TAPU KĀTOA. James Baxley; digital editions/layout credit: Michael Johnson. Revised West Version; exact provider source dated 2025-12-12. Not an untouched nineteenth-century West edition. Public domain as declared by eBible.org; exact source files dated 2025-12-12; full publisher notice retained.",
+      "conditions": [
+        "Retain the exact edition identity, original source wording and complete publisher notice with redistributed/offline copies.",
+        "Rights evidence is the individual provider declaration and stated provider uses, not independent worldwide legal or human editorial approval; the provider inventory describes public-domain knowledge in the USA and its policy acknowledges national-law variation.",
+        "Publisher VPL supplies verse text without separate notes, introductions, headings or paragraph layout. Inline source annotations, historical spellings and alternate-numbering text remain unchanged where present.",
+        "Changed study material must be separately labeled and must not be presented as unchanged publisher text.",
+        "No third-party recorded audio, cover artwork, illustrations, maps or distinct modern revisions are included or licensed by this text import.",
+        "No provider certification badge or trademark license is included, and this application is not claimed to be provider-certified.",
+        "The source credits cover/title-page artist Kitione Vailea and digital layout by Michael Johnson; cover art and layout are not imported. The provider explicitly lists Revised West among translations dedicated to the public domain."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "eng-geneva1599",
+      "sourceSha256": "faa35b12d04bdacda78b5b53b35bc241d576c63e5d6cd5bccd99bb337b8f7ade",
+      "verifiedOn": "2026-11-05",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "allowed",
+        "evidenceIds": [
+          "eng-geneva1599-pd",
+          "ebible-pd-uses",
+          "ebible-ip-policy"
+        ],
+        "reason": "The individual provider-declared public-domain text and published use policy support application use. This does not certify generated teaching, an altered translation, a connected AI service, or independent worldwide legal approval."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "eng-geneva1599-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "eng-geneva1599-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "eng-geneva1599-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "eng-geneva1599-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "eng-geneva1599-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "eng-geneva1599-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "eng-geneva1599-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "aiRetrieval": {
+          "state": "allowed",
+          "evidenceIds": [
+            "eng-geneva1599-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "modelTraining": {
+          "state": "allowed",
+          "evidenceIds": [
+            "eng-geneva1599-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "tts": {
+          "state": "allowed",
+          "evidenceIds": [
+            "eng-geneva1599-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "eng-geneva1599-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "No recording or narrator rights were acquired; a text declaration does not license third-party audio."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "eng-geneva1599-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "eng-geneva1599-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "eng-geneva1599-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "eng-geneva1599-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "eng-geneva1599-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "eng-geneva1599-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "eng-geneva1599-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted as a provider-declared public-domain text use under the individual notice and provider policy, bound to this exact source hash and the recorded qualifications. No independent legal or human editorial approval is asserted."
+        }
+      },
+      "attribution": "Geneva Bible 1599. Geneva Bible 1599. Not specified in the publisher notice.. 1599; original historical English spelling, as identified by the publisher notice. Public domain as declared by eBible.org; exact source files dated 2025-12-12; full publisher notice retained.",
+      "conditions": [
+        "Retain the exact edition identity, original source wording and complete publisher notice with redistributed/offline copies.",
+        "Rights evidence is the individual provider declaration and stated provider uses, not independent worldwide legal or human editorial approval; the provider inventory describes public-domain knowledge in the USA and its policy acknowledges national-law variation.",
+        "Publisher VPL supplies verse text without separate notes, introductions, headings or paragraph layout. Inline source annotations, historical spellings and alternate-numbering text remain unchanged where present.",
+        "Changed study material must be separately labeled and must not be presented as unchanged publisher text.",
+        "No third-party recorded audio, cover artwork, illustrations, maps or distinct modern revisions are included or licensed by this text import.",
+        "No provider certification badge or trademark license is included, and this application is not claimed to be provider-certified.",
+        "The individual notice expressly permits this digital copy worldwide without copyright restrictions. Preserve its historical English spelling; the notice uses the dialect label Old, which is not relabeled as the distinct Old English language code ang."
       ],
       "cache": {
         "mode": "none-required"
