@@ -5,7 +5,7 @@
 - Repository: `HephzibahBehulahHQ/Adigun-AiBible`.
 - Verified production: `1198bfcbff5aba6d27a9b22195d37c77635e2299`, merged in [PR #30](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/30). [Main workflow 42024305370](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42024305370) passed and deployed. Independent verification at 12:18:21 UTC on 5 November returned this exact source, build `8f30becf3385963714bcd6e8`, HTTP 200, fourteen Bible editions and byte-identical catalog/39-book OSHB manifest.
 - Live URL: https://hephzibahbehulahhq.github.io/Adigun-AiBible/ . Public `build-info.json` is the deployed source receipt.
-- Current integration branch: `codex/retelling-continuation-20261105`; recovered retelling base `bbb589274aa906a34c77268e804680cc7fc18c8e`. PR #31 repair `781fff0ab8cc986acac624c23d9dd983b89a1ed3` was verified by git ls-remote on 5 November at 12:51 UTC; its workflow `42030675423` is running. Last verified font/rendering checkpoint: `8144bc6ca53d6cc157c3403818ae2fbcb38a139c`, confirmed by GitHub and git ls-remote at 12:10 UTC on 5 November 2026. PR #30 merged as `1198bfcbff5aba6d27a9b22195d37c77635e2299`; its main deployment and public receipt are verified.
+- Current integration branch: `codex/source-study-continuation-20261105`, based on verified audio checkpoint `f21c616f5032dbe451c3aa35e7439c9eb9a43369`; recovered retelling base `bbb589274aa906a34c77268e804680cc7fc18c8e`. PR #31 repair `781fff0ab8cc986acac624c23d9dd983b89a1ed3` was verified by git ls-remote on 5 November at 12:51 UTC; its workflow `42030675423` is running. Last verified font/rendering checkpoint: `8144bc6ca53d6cc157c3403818ae2fbcb38a139c`, confirmed by GitHub and git ls-remote at 12:10 UTC on 5 November 2026. PR #30 merged as `1198bfcbff5aba6d27a9b22195d37c77635e2299`; its main deployment and public receipt are verified.
 
 ## Released evidence
 
@@ -36,6 +36,10 @@ Private retelling audio is complete in isolated branch `82a66210a447f176b8b28e33
 ## Private retelling continuation
 
 Recovered the optional microphone-recording increment with exact-original playback/download, manual transcripts, complete backups, atomic restore/delete/Undo and protection for active captures and unsaved writing. Transcript drafts bind to stable recording identities; rescheduling keeps the current card selected. Arabic/Myanmar source review retains its actual typography and private writing uses automatic direction. Independent checks of `bbb5892` passed 56 focused tests, TypeScript and workspace lint. Exact retelling candidate `dca1024854610d54bbe7154e99be5cdabc4eb469` passed all 472 application tests, 20 backend contracts, source validation, TypeScript, lint and production build. Draft PR #32 preserves that result. This continuation now integrates the newer PR #31 browser/staging repair; its combined 290-case browser gate remains pending. Local browser execution and physical microphone acceptance are not claimed.
+
+## Greek study integration
+
+Integrated verified branch `d09ab41dab433441ecddc2794ae1451463bae4b0` into the recovered audio/source candidate. It adds the lazy route, tool directory and keyboard command, independent source coordinates, exact token/parsing inspector, literal lemma pages, verified source coverage and complete-license atomic offline packs. The 27 source books and 137,554 tokens remain separate from Bible-edition counts and translated-word alignment. The isolated Greek candidate passed 50 focused checks, source validation and a packaged build, with all 36 source files verified; the combined source/audio/Greek TypeScript check also passes. Its 22 browser cases remain for combined CI. Three further source admissions are being completed on their isolated branch before final release validation.
 
 ## Remaining scope and constraints
 

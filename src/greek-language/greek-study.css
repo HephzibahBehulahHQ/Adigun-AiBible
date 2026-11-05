@@ -1,0 +1,22 @@
+.greek-workspace { max-width: 1160px; }
+.greek-workspace .panel { min-width: 0; }
+.greek-workspace p,.greek-workspace li,.greek-workspace dd,.greek-workspace code,.greek-workspace a { overflow-wrap: anywhere; }
+.greek-workspace code { white-space: pre-wrap; }
+.greek-workspace .button-row { flex-wrap: wrap; }
+.greek-workspace button { max-width: 100%; white-space: normal; min-height: 44px; }
+.greek-workspace button:focus-visible,.greek-workspace input:focus-visible,.greek-workspace select:focus-visible,.greek-workspace summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.greek-selectors { display: grid; grid-template-columns: max-content minmax(0,1fr); align-items: center; gap: 12px 18px; max-width: 720px; }
+.greek-selectors select { min-width: 0; width: 100%; }
+.greek-main-text { font: 28px/2.2 Georgia,"Times New Roman",serif; white-space: pre-wrap; }
+.greek-token { display: inline; font: inherit; line-height: inherit; color: var(--ink); border: 0; border-bottom: 1px dotted var(--muted); border-radius: 3px; padding: 2px 1px; background: transparent; cursor: pointer; }
+.greek-token[aria-pressed="true"] { background: var(--accent-soft); outline: 2px solid var(--accent); outline-offset: 2px; }
+.greek-selected-text { font: 27px/1.8 Georgia,"Times New Roman",serif; white-space: pre-wrap; }
+.greek-details { display: grid; grid-template-columns: minmax(150px,1fr) minmax(0,2fr); gap: 12px 18px; }
+.greek-details dt { font-weight: 600; }.greek-details dd { margin: 0; min-width: 0; }
+.greek-table-wrap { max-width: 100%; overflow-x: auto; }.greek-workspace table { border-collapse: collapse; width: 100%; font-size: 14px; }
+.greek-workspace th,.greek-workspace td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--border); overflow-wrap: anywhere; }
+.greek-workspace caption { text-align: left; padding: 12px 0; line-height: 1.6; }
+.greek-workspace summary { cursor: pointer; padding: 14px 0; line-height: 1.7; }
+.greek-token-list,.greek-lemma-results { padding-left: 24px; }.greek-token-list li,.greek-lemma-results li { margin: 12px 0; line-height: 1.8; }
+.greek-workspace form { display: flex; align-items: end; flex-wrap: wrap; gap: 12px; }.greek-workspace form label { width: 100%; }.greek-workspace form input { flex: 1 1 180px; min-width: 0; max-width: 100%; }
+@media (max-width: 600px) { .greek-workspace .panel { padding: 20px 16px; }.greek-selectors,.greek-details { grid-template-columns: minmax(0,1fr); gap: 8px; }.greek-details dd { margin-bottom: 12px; }.greek-main-text { font-size: 24px; }.greek-workspace th,.greek-workspace td { padding: 8px 4px; font-size: 12px; } }
