@@ -33,13 +33,35 @@ export class AsyncLruCache<Key, Value> {
   }
 }
 
-/** Bounds active expensive work to one task. Every queued caller still receives its own result. */
-export class SequentialTaskQueue {
-  private tail: Promise<void> = Promise.resolve();
+export class SupersededTaskError extends Error {
+  constructor() { super('This search was superseded by a newer request.'); this.name = 'SupersededTaskError'; }
+}
+
+/** One active task and one latest pending task; superseded callers get an explicit rejection. */
+export class LatestTaskQueue {
+  private running = false;
+  private pending?: { start: () => void; reject: (reason: Error) => void };
+
+  private complete(): void {
+    const next = this.pending;
+    this.pending = undefined;
+    this.running = false;
+    next?.start();
+  }
 
   run<Value>(task: () => Value | PromiseLike<Value>): Promise<Value> {
-    const result = this.tail.then(task);
-    this.tail = result.then(() => undefined, () => undefined);
-    return result;
+    return new Promise<Value>((resolve, reject) => {
+      const start = () => {
+        this.running = true;
+        void Promise.resolve().then(task).then(
+          value => { resolve(value); this.complete(); },
+          error => { reject(error); this.complete(); },
+        );
+      };
+      if (this.running) {
+        this.pending?.reject(new SupersededTaskError());
+        this.pending = { start, reject };
+      } else start();
+    });
   }
 }

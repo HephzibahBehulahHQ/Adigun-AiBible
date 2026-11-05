@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { AsyncLruCache, SequentialTaskQueue } from '../src/source-cache.ts';
+import { AsyncLruCache, LatestTaskQueue, SupersededTaskError } from '../src/source-cache.ts';
 
 function deferred() { let resolve, reject; const promise = new Promise((yes, no) => { resolve = yes; reject = no; }); return { promise, resolve, reject }; }
 
@@ -51,17 +51,28 @@ test('failed or synchronously throwing loads are removed and can be retried', as
   for (const capacity of [0, -1, 1.5, NaN, Infinity]) assert.throws(() => new AsyncLruCache(capacity), /positive integer/);
 });
 
-test('search queue runs one task at a time, preserves every result, and continues after failures', async () => {
-  const queue = new SequentialTaskQueue(), gate = deferred(), events = [];
+test('search queue bounds work to active and latest, explicitly rejects superseded callers, and returns both retained results', async () => {
+  const queue = new LatestTaskQueue(), gate = deferred(), events = [];
   const first = queue.run(async () => { events.push('first'); await gate.promise; return 1; });
-  const second = queue.run(() => { events.push('second'); throw new Error('missing index'); });
-  const failed = assert.rejects(second, /missing index/);
+  const second = queue.run(() => assert.fail('obsolete search should never run'));
+  const skipped = assert.rejects(second, SupersededTaskError);
   const third = queue.run(() => { events.push('third'); return 3; });
   await Promise.resolve();
   assert.deepEqual(events, ['first']);
   gate.resolve();
   assert.equal(await first, 1);
-  await failed;
+  await skipped;
   assert.equal(await third, 3);
-  assert.deepEqual(events, ['first', 'second', 'third']);
+  assert.deepEqual(events, ['first', 'third']);
+});
+
+test('a failed active search cannot block the latest queued request or future searches', async () => {
+  const queue = new LatestTaskQueue(), gate = deferred();
+  const first = queue.run(() => gate.promise);
+  const failed = assert.rejects(first, /missing index/);
+  const next = queue.run(() => 'latest');
+  gate.reject(new Error('missing index'));
+  await failed;
+  assert.equal(await next, 'latest');
+  assert.equal(await queue.run(() => 'future'), 'future');
 });

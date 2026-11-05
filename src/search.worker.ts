@@ -4,9 +4,9 @@ import { requirePermission } from './permissions';
 import { defaultSearchOptions, searchRows } from './search-query';
 import type { SearchOptions } from './search-query';
 import type { SearchResult } from './types';
-import { AsyncLruCache, SEARCH_INDEX_CACHE_LIMIT, SequentialTaskQueue } from './source-cache.ts';
+import { AsyncLruCache, SEARCH_INDEX_CACHE_LIMIT, LatestTaskQueue, SupersededTaskError } from './source-cache.ts';
 const indexes = new AsyncLruCache<string, SearchResult[]>(SEARCH_INDEX_CACHE_LIMIT);
-const searches = new SequentialTaskQueue();
+const searches = new LatestTaskQueue();
 type SearchRequest = { query: string; bookId: string; id: number; base: string; editionId?: string; options?: SearchOptions };
 async function respond(data: SearchRequest): Promise<void> {
   try {
@@ -27,4 +27,12 @@ async function respond(data: SearchRequest): Promise<void> {
     self.postMessage({ id: data.id, results: matches.slice(0,100), total: matches.length });
   } catch (error) { self.postMessage({ id: data.id, error: error instanceof Error ? error.message : 'Search is unavailable.' }); }
 }
-self.onmessage = ({ data }: MessageEvent<SearchRequest>) => { void searches.run(() => respond(data)); };
+// App owns this worker and ignores older request IDs. Explicit supersession replies
+// keep each request terminal while preventing obsolete queued searches from delaying the latest.
+self.onmessage = ({ data }: MessageEvent<SearchRequest>) => {
+  void searches.run(() => respond(data)).catch(error => self.postMessage({
+    id: data.id,
+    error: error instanceof Error ? error.message : 'Search is unavailable.',
+    superseded: error instanceof SupersededTaskError,
+  }));
+};
