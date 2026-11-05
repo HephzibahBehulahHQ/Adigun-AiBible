@@ -103,7 +103,8 @@ export default function LawDiary() {
         <p className="law-diary-entry-caution"><strong>Context note:</strong> {entry.caution}</p>
         <p className="law-diary-source-note">Sources: {entry.sources.map(source => `${source.type}: ${source.reference}`).join('; ')}. Edition-specific quotations and human editorial approval are pending.</p>
       </article>)}</div>
-      <p className="law-diary-honesty" role="status">These are AI-assisted research notes, not human-approved interpretations. Source references are provided for verification; no cross-religion relationship is inferred.</p> : <section className="law-diary-section" aria-labelledby="law-diary-section-title">
+      <p className="law-diary-honesty" role="status">These are AI-assisted research notes, not human-approved interpretations. Source references are provided for verification; no cross-religion relationship is inferred.</p>
+    </section> : <section className="law-diary-section" aria-labelledby="law-diary-section-title">
       <div className="law-diary-section-heading"><div><span className="eyebrow">SECTION IN PROGRESS</span><h2 id="law-diary-section-title">{section.title}</h2><p>{section.summary}</p></div></div>
       <ul className="law-diary-topic-list">{section.topics.map(topic => <li key={topic}><span>{topic}</span><span className="law-diary-pending">Research entry in progress</span></li>)}</ul>
       <p className="law-diary-honesty" role="status">Data for this section is being entered. No unsourced summaries or placeholder historical claims are presented as findings.</p>
