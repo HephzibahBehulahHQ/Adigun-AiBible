@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "oshb",
+  "sourceRevision": "3d15126fb1ef74867fc1434be1942e837932691f",
+  "sourcePinSha256": "3bf2206cf8dcfca974183b441c77a389a704c3439a86c025e7b2d0e5383fd46b",
+  "files": [
+    {
+      "path": "books/1Chr.json",
+      "bytes": 1634592,
+      "sha256": "4f21a67e8eb014474ad53218ba03a62c401ebf1e0066bd1e15b55e640d7d353b"
+    },
+    {
+      "path": "books/1Kgs.json",
+      "bytes": 1919901,
+      "sha256": "b04271d4dc8d011e3ebdff09f87fc71048307c33f9fc676225477940cc542c8a"
+    },
+    {
+      "path": "books/1Sam.json",
+      "bytes": 1948249,
+      "sha256": "c0e76345a86a5c86f03d58db639961b28c82434af97d7e0072cc5c74247c0d18"
+    },
+    {
+      "path": "books/2Chr.json",
+      "bytes": 1963361,
+      "sha256": "658d7275cec5d1f8efc85202aef346cfae034828ab7990b02c583ca1cff85d2f"
+    },
+    {
+      "path": "books/2Kgs.json",
+      "bytes": 1804703,
+      "sha256": "0a7cd7302f83f58354d80af8be0f7856207595ffac40a876b4c6d7d62b280df7"
+    },
+    {
+      "path": "books/2Sam.json",
+      "bytes": 1641652,
+      "sha256": "16cac4e7ac446bacd4df0568682a6c4e1bd5e178a5b43755ecb71ed7259c695d"
+    },
+    {
+      "path": "books/Amos.json",
+      "bytes": 323708,
+      "sha256": "7a103af4c7de1e458cfc416600953dd84c1b98bb6a7e63adf8ab017fe62515c7"
+    },
+    {
+      "path": "books/Dan.json",
+      "bytes": 911334,
+      "sha256": "dc3612df83de56c8355c63ac62b5e1fe6a062f07bb8eaeab2b73993f239b67ae"
+    },
+    {
+      "path": "books/Deut.json",
+      "bytes": 2115422,
+      "sha256": "397ad9337a5060784afcb9f31d350c24f00251d63875fe95f45449927b0e707a"
+    },
+    {
+      "path": "books/Eccl.json",
+      "bytes": 460025,
+      "sha256": "500c44114c600931109e02e5a4b80b8d55c7573a31fab9102b119b49363170f2"
+    },
+    {
+      "path": "books/Esth.json",
+      "bytes": 468835,
+      "sha256": "7a315822e4f31723bafc4d237e02ac25dad7e399fd7d4147f11e88e72ed60dba"
+    },
+    {
+      "path": "books/Exod.json",
+      "bytes": 2458328,
+      "sha256": "c32b4771b7ab7df66973a6e8a255c8b4ce473ba2296cd4399d4f8262ed8a8c8d"
+    },
+    {
+      "path": "books/Ezek.json",
+      "bytes": 2765961,
+      "sha256": "80bbef1b9d824f84b978f70dfa810b70b1f83a0352e0e41c78d0a664d0b1e6a0"
+    },
+    {
+      "path": "books/Ezra.json",
+      "bytes": 592035,
+      "sha256": "d4d50b940b4dd0d3e977d51289cb36a086585318acd3dec1d1eb83637bd769a9"
+    },
+    {
+      "path": "books/Gen.json",
+      "bytes": 2998714,
+      "sha256": "59d3ecefae7aef43ca3df7fc80cd9e0b56a4071f2afaa67f8df587c525bffa96"
+    },
+    {
+      "path": "books/Hab.json",
+      "bytes": 125831,
+      "sha256": "1cc4d1b7f894c3e2f7ad9a82efd90073275e14856301739015aa657d7881a39b"
+    },
+    {
+      "path": "books/Hag.json",
+      "bytes": 114979,
+      "sha256": "af995cbbfd02aa0dd9a8f93eda94d833e7f5a82df971d3c7f3b1e1d6b7c2c548"
+    },
+    {
+      "path": "books/Hos.json",
+      "bytes": 379393,
+      "sha256": "85bb005cbca10a254643bb7eaedfa2bd5add762ee8332cb21eda21d856d1281f"
+    },
+    {
+      "path": "books/Isa.json",
+      "bytes": 2482620,
+      "sha256": "ffa07de3e184cc0539304b28ddfb7252a2ca59d53a5810adcd110f5fab40bced"
+    },
+    {
+      "path": "books/Jer.json",
+      "bytes": 3206631,
+      "sha256": "64484d55a4747f234bd5f8eb5a2cce51c3ed526ba15b1186799cee00f4f19656"
+    },
+    {
+      "path": "books/Job.json",
+      "bytes": 1313557,
+      "sha256": "20686a617458177ced908cf2dc6e86bc35c770940ee9953c06a79e2f3bf0fa66"
+    },
+    {
+      "path": "books/Joel.json",
+      "bytes": 167417,
+      "sha256": "5c6c23857a7c4f39923ef9eaf8ba5e8c2a6ea4d780810a354c58c8ae93962bd5"
+    },
+    {
+      "path": "books/Jonah.json",
+      "bytes": 128462,
+      "sha256": "2d3c0d20a0e4b431f6380c3c283e3738e6e58243f7a642c0e06737f10cf6708f"
+    },
+    {
+      "path": "books/Josh.json",
+      "bytes": 1485273,
+      "sha256": "905f22be7951b9cc10d7816544fc8662ca546475600b0b7dc5299867bbc50977"
+    },
+    {
+      "path": "books/Judg.json",
+      "bytes": 1455856,
+      "sha256": "4a390c3effd45ecb6db650a36e7e0b35bd5ab4f65370b2fa089cb4a15ba29db3"
+    },
+    {
+      "path": "books/Lam.json",
+      "bytes": 268910,
+      "sha256": "3724c6fd997ab3d259d91bce014ae6619408ac4f3971480d5ba02f85ee007449"
+    },
+    {
+      "path": "books/Lev.json",
+      "bytes": 1753248,
+      "sha256": "13cd097e0b91b370f6ae59073f92bc57677a29bfbab804e7bed066ae21100c90"
+    },
+    {
+      "path": "books/Mal.json",
+      "bytes": 152450,
+      "sha256": "327396714714d5815cf83b22d1d2f646b8c0ee17f99234ad46134dea3f6e53e9"
+    },
+    {
+      "path": "books/Mic.json",
+      "bytes": 232028,
+      "sha256": "3a8d00f108be07be2c1de7410b0a9c0ef5a1d4dae4050c0f41beb38d43440ecd"
+    },
+    {
+      "path": "books/Nah.json",
+      "bytes": 110203,
+      "sha256": "1f17aa505fac7e0491f29d21fd5c42353f1ebc7a1114eb51ac757f7d0cd0f971"
+    },
+    {
+      "path": "books/Neh.json",
+      "bytes": 820673,
+      "sha256": "ba7245f3af4efc0691dc162412a4a82c750cb3efc9295943be54ca5282c71383"
+    },
+    {
+      "path": "books/Num.json",
+      "bytes": 2409238,
+      "sha256": "842827b3d4e41014530c59f8f4dc67cd79f3409526c1e5ce34a7bf2079c0c1ce"
+    },
+    {
+      "path": "books/Obad.json",
+      "bytes": 70419,
+      "sha256": "17b0166f302d40f712d04801b04573a17c611a3645b0342c151bc6cb1253111e"
+    },
+    {
+      "path": "books/Prov.json",
+      "bytes": 1094814,
+      "sha256": "01fb9d70e01fc96a5b5731d100e4d4dc51cb4527d7b8a2d4bc43d7eaa548679c"
+    },
+    {
+      "path": "books/Ps.json",
+      "bytes": 3109323,
+      "sha256": "a405cd1aaf6b4425c3a7826aa7858beea64dc2190e23e2d25b2ab0689ca7d9f5"
+    },
+    {
+      "path": "books/Ruth.json",
+      "bytes": 217966,
+      "sha256": "af6a14f491a204ae5240675869063af42b760cc6423ee6ac6315667b69798dc9"
+    },
+    {
+      "path": "books/Song.json",
+      "bytes": 219092,
+      "sha256": "a7dcb619f698acac167d570164f64b4ccf0348a50cc913f055c976a549186bf0"
+    },
+    {
+      "path": "books/Zech.json",
+      "bytes": 481732,
+      "sha256": "af72e40b337b20f9696da283bcea55fc35fe17fea3c58ea7bdeb3756ad0839d6"
+    },
+    {
+      "path": "books/Zeph.json",
+      "bytes": 139116,
+      "sha256": "c9f825a5e654b2fa89632e2fb9e28fabea1d04100b05d1f443124cb2c4547dd6"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 954363,
+      "sha256": "effcc95ce66eb9a1dde1fbe5692f99caa0d66b6a86c2ea8de7e57b0d33b918b9"
+    },
+    {
+      "path": "morphology.json",
+      "bytes": 369288,
+      "sha256": "e9148548abd6fa5f3892276cb27860a430b5ffec1569d1972cc6143e6ca1dfcb"
+    },
+    {
+      "path": "notices/HebrewMorphologyCodes.html.txt",
+      "bytes": 18944,
+      "sha256": "4ef067cd9f2508de19d81aab93bf2d7e24d1687a7664c5168de1411adaf4ee1d"
+    },
+    {
+      "path": "notices/LICENSE.md",
+      "bytes": 1476,
+      "sha256": "9bf4a2890c25372e4c1dc750d550bfb4eacfbfcb63c53123b0628159370d1878"
+    },
+    {
+      "path": "notices/Oshm.xml.txt",
+      "bytes": 456917,
+      "sha256": "5e558dd4729e5c06165df839dcf3f9d1ab71e9f06c5b63a5e1568637b73070e8"
+    },
+    {
+      "path": "notices/README.md",
+      "bytes": 5027,
+      "sha256": "2da25acf89375558b843dab582bdf00833137baf1c8afe2b32cf09e251179999"
+    },
+    {
+      "path": "notices/parsing-README.md",
+      "bytes": 7574,
+      "sha256": "282f76791cc658e4a90843742ce0930e3a4f2091dbe94ed4bc4a993f60235fc1"
+    }
+  ]
+}

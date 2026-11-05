@@ -23,7 +23,6 @@ import xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parents[1]
 DEST = ROOT / 'data/original-language/oshb'
 NS = 'http://www.bibletechnologies.net/2003/OSIS/namespace'
-XML = 'http://www.w3.org/XML/1998/namespace'
 BOOKS = [
     ('Gen', 'Genesis'), ('Exod', 'Exodus'), ('Lev', 'Leviticus'),
     ('Num', 'Numbers'), ('Deut', 'Deuteronomy'), ('Josh', 'Joshua'),
@@ -159,6 +158,9 @@ def parse_book(data: bytes, book_id: str, name: str, revision: str) -> dict:
     text = root[0]
     if [local_name(n) for n in text] != ['header', 'div']:
         raise ValueError('Unexpected OSIS text structure')
+    for container in (root, text):
+        if (container.text or '').strip() or any((child.tail or '').strip() for child in container):
+            raise ValueError('Unexpected text outside source book boundaries')
     div = text[1]
     if div.attrib != {'type': 'book', 'osisID': book_id}:
         raise ValueError(f'Unexpected book identity: {div.attrib}')
