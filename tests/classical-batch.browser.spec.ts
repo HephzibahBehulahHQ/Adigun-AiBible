@@ -131,6 +131,11 @@ test.describe('new source current-book offline lifecycle', () => {
       await page.goto(route('read', id));
       await page.reload({ waitUntil: 'domcontentloaded' });
       await expect.poll(() => page.evaluate(() => navigator.onLine), { message: 'The reloaded service-worker document must retain offline network state.' }).toBe(false);
+      expect(await page.evaluate(async () => {
+        // Query requests bypass this app's service worker and HTTP cache.
+        try { await fetch(new URL(`build-info.json?offline-probe=${Date.now()}`, location.href), { cache: 'no-store' }); return false; }
+        catch { return true; }
+      }), 'An uncached origin request must fail while the cached chapter remains readable.').toBe(true);
       await expect(page.locator('.offline-banner')).toBeVisible();
       await exactVerse(page, 16, sourceVerse(id));
       await page.getByRole('button', { name: 'Next chapter', exact: true }).first().click();

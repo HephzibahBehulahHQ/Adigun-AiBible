@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import type { Locator, Page } from '@playwright/test';
+import type { Locator, Page, TestInfo } from '@playwright/test';
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 
@@ -52,6 +52,15 @@ async function expectLoadedFont(page: Page, family: string) {
   expect(await page.evaluate(name => [...document.fonts].filter(face => face.family.replaceAll('"', '') === name).map(face => face.status), family)).toEqual(['loaded']);
 }
 
+async function attachExportedPng(page: Page, button: Locator, name: string, testInfo: TestInfo) {
+  const [download] = await Promise.all([page.waitForEvent('download'), button.click()]);
+  const path = await download.path();
+  expect(path, 'The actual source image download must be available for review.').not.toBeNull();
+  const bytes = readFileSync(path!);
+  expect(bytes.subarray(0, 8)).toEqual(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]));
+  await testInfo.attach(name, { body: bytes, contentType: 'image/png' });
+}
+
 function expectCompleteLines(rows: SourceDraw[], text: string, direction: 'rtl' | 'ltr') {
   expect(rows.length).toBeGreaterThan(0);
   expect(rows.map(row => row.text).join('')).toBe(text);
@@ -84,7 +93,7 @@ test.describe('source-script canvas rendering', () => {
       await expectLoadedFont(page, item.family);
       expectCompleteLines(await sourceDraws(canvas, item.family), text, item.direction);
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
-      await testInfo.attach(`${item.edition}-source-card`, { body: await canvas.screenshot(), contentType: 'image/png' });
+      await attachExportedPng(page, page.getByRole('button', { name: 'Download PNG', exact: true }), `${item.edition}-source-card`, testInfo);
     });
   }
 
@@ -110,7 +119,7 @@ test.describe('source-script canvas rendering', () => {
     expectCompleteLines(arabicRows, arabic, 'rtl');
     expectCompleteLines(myanmarRows, myanmar, 'ltr');
     await expectLoadedFont(page, 'Adigun Naskh'); await expectLoadedFont(page, 'Adigun Myanmar');
-    await testInfo.attach('bilingual-source-card', { body: await canvas.screenshot(), contentType: 'image/png' });
+    await attachExportedPng(page, cards.getByRole('button', { name: `Download card ${count} PNG`, exact: true }), 'bilingual-source-card', testInfo);
   });
 
   test('a delayed old font request cannot overwrite the newly selected share verse', async ({ page }) => {
