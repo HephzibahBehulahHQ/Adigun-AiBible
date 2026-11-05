@@ -1,8 +1,8 @@
-import { mkdir, readFile, writeFile, rm, mkdtemp, rename } from 'node:fs/promises';
+import { mkdir, readFile, writeFile, rm, rename } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { publishEditorial } from './publish-editorial.mjs';
-import { copySourceContent, verifySourceJsonTransport } from './pack-source-json.mjs';
+import { copySourceContent, verifySourceJsonTransport, createSourceStagingDirectory } from './pack-source-json.mjs';
 const root = resolve(import.meta.dirname, '..');
 execFileSync('python3', [resolve(root,'scripts/import-editions.py'), '--rebuild-indexes'], {cwd:root,stdio:'inherit'});
 execFileSync('python3', [resolve(root,'scripts/import-editions.py'), '--verify'], {cwd:root,stdio:'inherit'});
@@ -11,7 +11,7 @@ const manifest = JSON.parse(await readFile(resolve(root, 'data/manifest.json'), 
 if (!manifest.books?.length || !manifest.edition?.name) throw new Error('A validated source corpus is required before building.');
 const {totalSourceUnits,remainingSourceUnits,candidateCount} = editorial.backlog;
 await mkdir(resolve(root, 'public'), { recursive: true });
-const staged = await mkdtemp(resolve(root, 'public/.source-data-'));
+const staged = await createSourceStagingDirectory(resolve(root, 'public'));
 try {
   const transport = await copySourceContent({ sourceDirectory: resolve(root, 'data'), directory: staged });
   await writeFile(resolve(staged, 'editorial.json'),JSON.stringify({schemaVersion:1,editionId:editorial.editionId,approvedComparisons:editorial.approvedComparisons,approvedParaphrases:editorial.approvedParaphrases,approvedContent:editorial.approvedContent,coverage:editorial.coverage.filter(row=>row.status!=='unreviewed'),coverageCounts:editorial.coverageCounts,backlog:{totalSourceUnits,remainingSourceUnits,candidateCount}})+'\n');
