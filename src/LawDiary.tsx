@@ -47,7 +47,7 @@ export default function LawDiary() {
   const [active, setActive] = useState<SectionId>(initial);
   const [category, setCategory] = useState<Category>('All');
   const section = sections.find(item => item.id === active) || sections[0];
-  const visibleLayers = layers.filter(layer => category === 'All' || layer.categories.includes(category as typeof layer.categories[number]));
+  const visibleLayers = layers.filter(layer => category === 'All' || layer.categories.some(value => value === category));
   function openSection(id: SectionId) {
     setActive(id);
     window.history.replaceState(window.history.state, '', `#/law-diary/${id}`);
