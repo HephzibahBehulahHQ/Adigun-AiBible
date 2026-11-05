@@ -1,5 +1,5 @@
 import { sourceDirection, sourceFont } from '../source-typography';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import type { FormEvent } from 'react';
 import type { Edition, Verse } from '../types';
 import { sourceCredit } from '../data';
@@ -15,6 +15,7 @@ import { applyRetellingTranscript, beginRetellingTranscript, retellingTranscript
 import type { RetellingTranscriptDraft } from './retelling-transcript';
 
 export default function RetellingEditor({ card, source, busy, commit, onRecordingChange }: { card:MemoryCard; source:{ edition:Edition; verses:Verse[] } | null; busy:boolean; commit:WorkspaceChange; onRecordingChange:(active:boolean) => void }) {
+  const writingId = useId();
   const [text,setText] = useState(''); const [draft,setDraft] = useState<RetellingDraft | null>(null);
   const [active,setActive] = useState(false); const [error,setError] = useState(''); const [notice,setNotice] = useState('');
   const [open,setOpen] = useState(false); const [transcriptEdit,setTranscriptEdit] = useState<RetellingTranscriptDraft | null>(null);
@@ -79,7 +80,7 @@ export default function RetellingEditor({ card, source, busy, commit, onRecordin
     <form onSubmit={save}>
       <div className="button-row"><button type="button" disabled={busy || active} onClick={() => setText(current => appendRetellingPrompts(current))}>Insert optional reflection prompts</button></div>
       <p className="workspace-help">Use any prompts that help; leave out anything that does not fit. They are writing aids, not a checklist or score.</p>
-      <label>My retelling<textarea dir="auto" rows={6} maxLength={5000} disabled={busy} value={text} onChange={e => setText(e.target.value)} placeholder="Describe the passage in your own words…" /></label>
+      <div className="retelling-writing"><label htmlFor={writingId}>My retelling</label><textarea id={writingId} dir="auto" rows={6} maxLength={5000} disabled={busy} value={text} onChange={e => setText(e.target.value)} placeholder="Describe the passage in your own words…" /></div>
       <p className="workspace-help">Up to 5,000 characters. With a recording, this writing is your optional manual transcript. No automatic transcription or source comparison is running.</p>
       <RetellingRecorder disabled={busy || !!draft || !!transcriptEdit} source={sourceBinding} onReady={setDraft} onActiveChange={value => { setActive(value); onRecordingChange(value); }} />
       {preview && <section className="retelling-draft" aria-label="Unsaved recording"><h5>Unsaved original recording</h5><RetellingPlayer recording={preview.recording} original={preview} disabled={active} /><button type="button" disabled={busy} onClick={() => setDraft(null)}>Discard unsaved recording</button></section>}

@@ -2,6 +2,9 @@
 
 ## Active continuation — 5 November 2026 (Europe/Berlin)
 
+- Current release repair: PR #32 at `c414b62db459418dd9b1f0f8fdbd92c3e2a63760` and dependent PR #33 at `06ba1d6207b7d42af3f0da375d85d137aa70f720` were verified against GitHub on 5 November. Their latest workflows `42040100691` / `42040251499` passed source/application/build checks and 284/292 / 328/336 browser cases, respectively. Eight failures in each run remain diagnostic evidence, not release acceptance.
+- The current CI snapshots retain all three affected drafts and the expected disabled state. Exact implicit-label lookup included the controlled textarea's text content; the label now uses a separate native `htmlFor`/`id` association with unchanged field spacing. The corrupt-backup assertion now targets the backup section, keeping the independent offline-source warning visible. All original-byte, draft, disabled-state, conflict, transaction and inventory assertions are preserved.
+- Repair validation: TypeScript, scoped ESLint, 31 focused recording/storage/transcript checks and production build passed locally. Full current-candidate desktop/mobile and persistence gates remain required. An independent read-only review found no additional reproducible recovery defect. Local Chromium launch is blocked by this environment's socket restriction; no local browser pass is claimed.
 - Repository: `HephzibahBehulahHQ/Adigun-AiBible`.
 - Latest merged release: [PR #31](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/31), `e437600d66213544923a12df8d95f161654a15de`, merged 13:25 UTC. [Main workflow 42035599588](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42035599588) passed all source/application/backend/build gates, 268 browser cases and ten persistence repetitions, then deployed successfully.
 - Independently verified production: `e437600d66213544923a12df8d95f161654a15de`, confirmed at 13:36:08 UTC on 5 November through the public receipt and HTTP 200 home. Build `61d068d86be7cb2c2a310d66`; content `57185b83d1886c12c4db96ff`. Catalogue, rights register, offline inventory, font provenance and original OFL notices match merged source. Live UI verification passed Save and update, source reading, the 26-edition catalogue and Arabic Naskh/RTL rendering.
@@ -36,7 +39,7 @@ Full Version 3 is incomplete. The [feature matrix](../FEATURE_MATRIX.md) and [ne
 
 Independent human editorial/native-language review, restricted source rights, dedicated backend/provider configuration, permitted recorded narration and physical two-device offline validation remain separate dependencies. Backend setup was interrupted; unrelated infrastructure is not reused. True OS widgets are outside scope; the web verse-card export is implemented.
 
-Local Chromium installation is unavailable. Actual browser execution runs in GitHub Actions. Local browser execution and physical microphone/device acceptance are not claimed.
+Local Chromium launch is blocked by this environment's socket restriction. Actual browser acceptance runs in GitHub Actions. Local browser execution and physical microphone/device acceptance are not claimed.
 
 ## Next action
 
