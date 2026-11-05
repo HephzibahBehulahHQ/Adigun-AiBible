@@ -10,8 +10,8 @@ export function parseRoute(hash: string): { view: View; ref: Reference } {
   const q = new URLSearchParams(query);
   const sectionRoute = view === 'law-diary';
   return { view, ref: {
-    bookId: (sectionRoute ? q.get('book') : pieces[1]) || 'GEN',
-    chapter: Number((sectionRoute ? q.get('chapter') : pieces[2]) || 1),
+    bookId: (sectionRoute ? q.get('book') : pieces[1] || q.get('book')) || 'GEN',
+    chapter: Number((sectionRoute ? q.get('chapter') : pieces[2] || q.get('chapter')) || 1),
     verse: Number(q.get('verse') || 1),
     ...(q.has('end') ? { endVerse: Number(q.get('end')) } : {}),
     ...(q.get('edition') ? { editionId: q.get('edition')! } : {}),

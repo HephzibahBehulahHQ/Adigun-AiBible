@@ -41,3 +41,11 @@ test('a screen without an explicit passage still restores the validated saved po
   assert.deepEqual(resolveReadingPosition('#/home', valid, manifest.books, manifest.edition.id), { source: 'saved', position: valid });
   assert.equal(resolveReadingPosition('#/home', null, manifest.books, manifest.edition.id).source, 'default');
 });
+
+test('historical query links take precedence over a saved Bible passage', () => {
+  const hash = '#/library?book=JHN&chapter=3&verse=16&end=17&edition=eng-web&historical=didache-lightfoot&hchapter=16';
+  const result = resolveReadingPosition(hash, saved, manifest.books, manifest.edition.id);
+  assert.equal(result.source, 'link');
+  assert.deepEqual(result.position?.ref, linked);
+  assert.equal(result.position?.scrollY, undefined);
+});

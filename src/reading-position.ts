@@ -47,8 +47,8 @@ function integer(value: string): number {
 
 /** Resolve startup only: an explicit passage never silently falls back to another passage. */
 export function resolveReadingPosition(hash: string, saved: ReadingPosition | null, books: BookInfo[], editionId = DEFAULT_EDITION_ID): ReadingSelection {
-  // Law Diary stores its reader reference in query fields; the path contains a section.
-  if (/^#?\/law-diary(?:\/|$)/.test(hash)) {
+  // Section and library links may preserve the Bible location in query fields.
+  if (/^#?\/law-diary(?:\/|\?|$)/.test(hash) || /^#?\/library(?:\?|$)/.test(hash)) {
     const q = new URLSearchParams(hash.split('?')[1]);
     if (q.has('book') || q.has('chapter')) {
       return resolveReadingPosition(`#/read/${q.get('book') || 'GEN'}/${q.get('chapter') || '1'}?${q}`, saved, books, editionId);

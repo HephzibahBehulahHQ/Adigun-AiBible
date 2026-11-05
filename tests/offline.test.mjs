@@ -39,6 +39,7 @@ async function fixture() {
     'manifest.webmanifest': JSON.stringify({ name: 'Test fixture', start_url: './' }),
     'assets/app.js': '/* test-only application asset */',
     'data/manifest.json': JSON.stringify({ edition: { id: 'eng-web' }, books: [{ id: 'GEN' }, { id: 'EXO' }] }),
+    'data/editions/rights-register.json': JSON.stringify({ schemaVersion: 1, editions: [], testOnly: true }),
     'data/books/GEN.json': book('GEN', 'Synthetic source version one.'),
     'data/books/EXO.json': book('EXO', 'Another synthetic record.'),
     'data/search-index.json': JSON.stringify([{ bookId: 'GEN', text: 'Synthetic search data.' }]),
@@ -234,5 +235,18 @@ test('explicit staged fetches do not leak partial downloads, and a controlled sh
     f.failures.set('data/books/EXO.json', { status: 200, text: book('EXO', 'An unverified newer edition.') });
     assert.equal((await sw.request('data/books/EXO.json')).status, 503);
     assert.ok(!(await inspectOfflineDownloads(BASE)).includes('data/books/EXO.json'));
+  }); } finally { await f.close(); }
+});
+
+test('first installation retains permission metadata offline after source downloads are removed', async () => {
+  const f = await fixture();
+  try { await withBrowser(f, async () => {
+    const sw = await worker(f);
+    await sw.lifecycle('install');
+    await sw.lifecycle('activate');
+    f.failures.set('data/editions/rights-register.json', new Error('Offline'));
+    assert.equal(await (await sw.request('data/editions/rights-register.json')).text(), f.files['data/editions/rights-register.json']);
+    await removeOfflineDownloads(BASE);
+    assert.equal(await (await sw.request('data/editions/rights-register.json')).text(), f.files['data/editions/rights-register.json']);
   }); } finally { await f.close(); }
 });

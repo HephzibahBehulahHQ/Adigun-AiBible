@@ -20,6 +20,9 @@ test.describe('historical reading and private notebook', () => {
     await expect(page.getByRole('article', { name: 'Didache 1:1', exact: true })).toHaveClass(/selected/);
     await page.getByText('Historical identity, rights and source evidence', { exact: true }).click();
     await expect(page.getByRole('link', { name: 'Open pinned source transcription', exact: true })).toHaveAttribute('href', /oldid=14637905/);
+    await page.getByRole('button', { name: 'Open command palette', exact: true }).click();
+    await page.getByRole('dialog').getByRole('button', { name: /Read Scripture/ }).click();
+    await expect(page).toHaveURL(/#\/read\/JHN\/3\?verse=16/);
   });
 
   test('notes and bookmarks persist separately, exports preserve attribution and exclude private notes', async ({ page }) => {

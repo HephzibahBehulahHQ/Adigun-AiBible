@@ -21,3 +21,10 @@ test('invalid passage values are not silently changed to a different verse', () 
   assert.ok(Number.isNaN(parseRoute('#/law-diary/money?chapter=invalid').ref.chapter));
   assert.equal(parseRoute('#/unknown').view,'home');
 });
+
+test('historical query links retain their Bible context without treating historical locators as Bible chapters', () => {
+  assert.deepEqual(parseRoute('#/library?book=JHN&chapter=3&verse=16&edition=eng-web&historical=didache-lightfoot&hchapter=16&hunit=17'), {
+    view: 'library', ref: { bookId: 'JHN', chapter: 3, verse: 16, editionId: 'eng-web' },
+  });
+  assert.equal(parseRoute('#/library/PSA/23?book=JHN&chapter=3&verse=1').ref.bookId, 'PSA');
+});

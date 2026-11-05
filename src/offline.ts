@@ -27,7 +27,7 @@ const MARKER = '__adigun_offline_pack__.json';
 const locks = new Map<string, Promise<unknown>>();
 const validPath = (path: string) => /^data\/[A-Za-z0-9][A-Za-z0-9._/-]*$/.test(path)
   && !path.split('/').some(segment => segment === '..' || segment === '.' || segment === '');
-const essential = (path: string) => path.endsWith('/manifest.json') || path === 'data/editions/catalog.json';
+const essential = (path: string) => path.endsWith('/manifest.json') || path === 'data/editions/catalog.json' || path === 'data/editions/rights-register.json';
 
 function baseURL(value: string): URL {
   const base = new URL(value, typeof location === 'undefined' ? 'https://offline.invalid/' : location.href);

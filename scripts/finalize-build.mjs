@@ -27,7 +27,7 @@ function serviceWorkerRuntime(config) {
   const PACKS = `${PREFIX}pack-${manifest.contentVersion}-`;
   const MARKER = '__adigun_offline_pack__.json';
   const absolute = path => new URL(BASE + path, self.location.origin).href;
-  const essential = path => path.endsWith('/manifest.json') || path === 'data/editions/catalog.json';
+  const essential = path => path.endsWith('/manifest.json') || path === 'data/editions/catalog.json' || path === 'data/editions/rights-register.json';
   const pathOf = request => {
     const url = new URL(typeof request === 'string' ? request : request.url);
     return url.origin === self.location.origin && url.pathname.startsWith(BASE) && !url.search ? url.pathname.slice(BASE.length) : null;
