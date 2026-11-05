@@ -68,3 +68,5 @@ The tool writes no query history, personal study schema, analytics or telemetry.
 - Four Playwright scenarios cover genuine source counts/context, keyboard pagination and 320 px reflow, complete Czech offline search with unchanged Unicode, and cancellation/unavailable sources. They run under the existing desktop and mobile projects: eight browser cases after root integration.
 - Browser execution and screenshots are not claimed locally. Root integrates the route and runs the real candidate browser/build/release gates. This module is not live until that deployment is verified.
 - No independent human linguistic, editorial or legal approval is claimed. This software computes documented source-token counts; original-language alignment and the broader Version 3 study requirements remain separate work.
+
+The integrated release accepts the common build-only source envelope after verifying the transferred file hash. The shared decoder then verifies the canonical decoded byte count and hash; source record and permission checks remain unchanged. Both raw development JSON and packaged production data use the same counting model.

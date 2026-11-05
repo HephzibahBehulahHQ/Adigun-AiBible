@@ -5,7 +5,7 @@
 - Repository: `HephzibahBehulahHQ/Adigun-AiBible`.
 - Verified production: `75f2d35be4df3ab07f589c557f01a653acdfc8dc`, merged in [PR #29](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/29). [Main workflow 42013204493](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42013204493) passed. Independent public verification at 10:52:29 UTC on 5 November returned this exact source commit, build `317f9e564b634dcfee37a6a1`, HTTP 200, the app shell and an exact-byte match of the fourteen-edition source catalog.
 - Live URL: https://hephzibahbehulahhq.github.io/Adigun-AiBible/ . Public `build-info.json` is the deployed source receipt.
-- Current integration branch: `codex/concordance-integration-20261105`. Last verified root checkpoint: `b5615b516aee46d5bf4c72bc9740bfcb4cde4520`, confirmed by GitHub and git ls-remote on 5 November 2026. Final concordance agent checkpoint `1cf36e215f274ed6209d9f183c3dfe7db32d512f` is integrated locally; complete candidate checks passed before the next synchronized release checkpoint.
+- Current integration branch: `codex/concordance-integration-20261105`. Last verified root checkpoint: `0f86f30f9ee9415ceeaf8c6eb2c1e7d5e6df925d`, confirmed by GitHub and git ls-remote on 5 November 2026. Final concordance agent checkpoint `1cf36e215f274ed6209d9f183c3dfe7db32d512f` is integrated locally; complete candidate checks passed before the next synchronized release checkpoint.
 
 ## Released evidence
 
@@ -17,9 +17,11 @@ PR #28 remains included: 14,298 historical dictionary records, verified dictiona
 
 The standalone source-word/phrase concordance verifies source manifests, indexes and permissions before displaying counts; distinguishes occurrences from matching verses; preserves Unicode and exact highlight boundaries; provides book distributions and bounded pages beyond 100 results; and opens verified source context. Route, tool directory, keyboard commands and reading-position recovery preserve the selected edition and complete passage range. Streams, cancellation and stale responses are bounded and tested. Matching rules are explicit; no lemma/morphology/translation-equivalence claim is made.
 
-Sixteen focused concordance tests, nine routing/recovery checks, TypeScript and lint passed. The real verified loader accepted all fourteen source indexes and 435,581 source records. Full integrated `npm run check` passed 395 application tests, 20 backend contracts, TypeScript, lint, source validation and production build. Playwright collects 218 desktop/mobile cases, including eight agent-authored concordance cases and two navigation cases; execution and screenshot review remain pending in candidate CI.
+Sixteen focused concordance tests, nine routing/recovery checks, TypeScript and lint passed. The real verified loader accepted all fourteen source indexes and 435,581 source records. Full integrated `ADIGUN_SOURCE_TRANSPORT=gzip-base64-v1 npm run check` passed 406 application tests, 20 backend contracts, TypeScript, lint, source validation and production build. Playwright collects 226 desktop/mobile cases, including eight concordance cases, two navigation cases and eight required packaged-transport cases; execution and screenshot review remain pending in candidate CI.
 
-Independent isolated work continues on deterministic compact source transport and a pinned Open Scriptures Hebrew Bible source-study corpus. Neither is included in this candidate yet. OSHB uses its own source numbering and preserves ketiv/qere alternatives and annotations; it is not counted as another translated 66-book Bible or aligned automatically to translations.
+Compact source transport from verified branch head `ed294f8558b17e79f7b427900ecc2d27ef82e7f7` is now integrated. Build-only gzip/base64 envelopes preserve canonical bytes, URLs and atomic pack behavior; concordance verifies transferred hashes before decoding. The production workflow enables the same packaging used by all candidate browser gates. Decoder streams, output/ratio limits and offline inventory limits (4 MiB, 16,384 paths) are bounded. Current packaged artifact: 92209408 bytes across 2294 files; 2194 offline paths. Artifact inspection found 68 raw source payloads despite an enabled packaging pass; root is adding final-artifact verification and resolving that mismatch before opening the release PR. Browser execution remains pending.
+
+Independent isolated work continues on a pinned Open Scriptures Hebrew Bible source-study corpus and its viewer; neither is included in this candidate yet. OSHB uses its own source numbering and preserves ketiv/qere alternatives and annotations; it is not counted as another translated 66-book Bible or aligned automatically to translations.
 
 ## Remaining scope and constraints
 
@@ -31,4 +33,4 @@ Local Chromium installation returned an invalid archive. Browser execution runs 
 
 ## Next action
 
-Finish and synchronize the concordance candidate, run its exact-candidate browser/persistence gates, inspect screenshots, then merge and verify the deployed revision. Keep compact transport and Hebrew source-study work isolated until their integrity and release checks pass.
+Finish and synchronize the concordance candidate, run its exact-candidate browser/persistence gates, inspect screenshots, then merge and verify the deployed revision. Keep Hebrew source-study work and the next acquisition batch isolated until their integrity and release checks pass.

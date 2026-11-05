@@ -1,3 +1,7 @@
+import { readBoundedJson } from './source-codec.ts';
+
+export const OFFLINE_INVENTORY_MAX_FILES = 16_384;
+export const OFFLINE_METADATA_MAX_BYTES = 4 * 1024 * 1024;
 export interface OfflineFile { sha256: string; bytes: number }
 export interface OfflineManifest {
   schemaVersion: 1;
@@ -60,7 +64,7 @@ export async function getOfflineManifest(baseUrl: string): Promise<OfflineManife
   const base = baseURL(baseUrl);
   const response = await fetch(new URL('offline-manifest.json', base), { cache: 'no-cache' });
   if (!response.ok) throw new Error('Offline metadata is unavailable. Reconnect and update the application before downloading.');
-  const value = await response.json() as Partial<OfflineManifest>;
+  const value = await readBoundedJson(response, OFFLINE_METADATA_MAX_BYTES) as Partial<OfflineManifest>;
   const prefix = `adigun-bible-${(await sha256(new TextEncoder().encode(base.pathname))).slice(0, 12)}-`;
   if (value.schemaVersion !== 1 || value.appId !== 'adigun-aibible' || value.basePath !== base.pathname || value.cachePrefix !== prefix
     || !/^[a-f0-9]{16,64}$/.test(value.contentVersion ?? '') || !/^[a-f0-9]{12,64}$/.test(value.buildVersion ?? '')
@@ -68,7 +72,7 @@ export async function getOfflineManifest(baseUrl: string): Promise<OfflineManife
     throw new Error('The offline metadata is invalid. Existing downloads were preserved.');
   }
   const entries = Object.entries(value.files);
-  if (!entries.length || entries.length > 4096 || entries.some(([path, file]) => !validPath(path) || !file
+  if (!entries.length || entries.length > OFFLINE_INVENTORY_MAX_FILES || entries.some(([path, file]) => !validPath(path) || !file
     || !/^[a-f0-9]{64}$/.test(file.sha256) || !Number.isSafeInteger(file.bytes) || file.bytes < 0 || file.bytes > 64 * 1024 * 1024)) {
     throw new Error('The offline file inventory is invalid. Existing downloads were preserved.');
   }

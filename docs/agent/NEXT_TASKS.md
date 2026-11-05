@@ -4,12 +4,12 @@ Read [PROJECT_STATUS.md](PROJECT_STATUS.md) for the current integration branch, 
 
 ## Current release
 
-PR #29 is merged and verified deployed as `75f2d35be4df3ab07f589c557f01a653acdfc8dc`, with fourteen installed Bible editions, expanded coverage and bounded source/search caches. All 208 desktop/mobile browser cases, persistence repeats and source/build/unit/backend gates passed. The current candidate completes source-word/phrase concordance; compact transport and pinned Hebrew source study are separate work in progress.
+PR #29 is merged and verified deployed as `75f2d35be4df3ab07f589c557f01a653acdfc8dc`, with fourteen installed Bible editions, expanded coverage and bounded source/search caches. All 208 desktop/mobile browser cases, persistence repeats and source/build/unit/backend gates passed. The current candidate completes source-word/phrase concordance; compact transport is included in that candidate, while pinned Hebrew source study is separate work in progress.
 
 ## Independent work to finish
 
 1. Release the integrated concordance candidate after all real checks. Keep missing evidence distinct from zero and draft counts distinct from approvals.
-2. Continue beyond the nine verified additions toward the 100+ target. Address the measured Pages storage and 4,096-file inventory limits before large-scale expansion, then verify public-domain acquisition candidates against primary notices and exact source revisions. Deduplicate authentic editions, establish complete manifests and storage/performance budgets, and extend the reproducible importer. Provider metadata alone is not a usable Bible edition.
+2. Continue beyond the nine verified additions toward the 100+ target. Validate each new acquisition against the measured compact-build budget and bounded 16,384-path/4 MiB inventory, and verify public-domain acquisition candidates against primary notices and exact source revisions. Deduplicate authentic editions, establish complete manifests and storage/performance budgets, and extend the reproducible importer. Provider metadata alone is not a usable Bible edition.
 3. Complete occurrence-linked language tools, synchronized Gospel comparison, genealogy/relationship exploration, diagrams and textual-variant tooling with permitted data. Historical dictionary lookup does not satisfy these requirements by itself.
 4. Extend source-grounded speaker browsing beyond the current publisher spans and correction workflow; preserve explicit uncertainty and exact quotation boundaries.
 5. Implement the remaining Nigerian adaptation and multiplayer detective engines without inventing reviewed content, multiplayer activity or spiritual scores. Content review remains a separate gate.

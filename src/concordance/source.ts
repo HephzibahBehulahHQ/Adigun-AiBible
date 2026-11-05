@@ -2,6 +2,7 @@ import type { Edition } from '../types';
 import type { OfflineFile, OfflineManifest } from '../offline';
 import { validateConcordanceManifest, validateConcordanceRows } from './model.ts';
 import type { ConcordanceSource } from './model.ts';
+import { decodeSourceJsonBytes, readSourceBytes } from '../source-codec.ts';
 
 const MAX_INDEX_BYTES = 32 * 1024 * 1024;
 export interface ConcordanceSourceServices {
@@ -21,7 +22,7 @@ function descriptor(value: OfflineFile | undefined, label: string): OfflineFile 
 }
 
 /** Bound streamed bytes before combining chunks; headers alone cannot establish body size. */
-export async function readConcordanceBytes(response: Response, file: OfflineFile, signal?: AbortSignal): Promise<Uint8Array> {
+export async function readConcordanceBytes(response: Response, file: OfflineFile, signal?: AbortSignal): Promise<Uint8Array<ArrayBuffer>> {
   descriptor(file, 'The source file'); abort(signal);
   if (!response.ok || response.type === 'opaque') throw new Error('This edition’s source index or inventory is unavailable. Download the edition while online, then retry.');
   const declaredLength = response.headers.get('content-length');
@@ -29,25 +30,8 @@ export async function readConcordanceBytes(response: Response, file: OfflineFile
     await response.body?.cancel(); throw new Error('The source response exceeds its verified file size or concordance file limit.');
   }
   if (!response.body) throw new Error('This browser did not provide a readable source response. Counts are unavailable.');
-  const reader = response.body.getReader(), chunks: Uint8Array[] = []; let length = 0, complete = false;
-  const cancel = () => { void reader.cancel().catch(() => undefined); };
-  signal?.addEventListener('abort', cancel, { once: true });
-  try {
-    while (true) {
-      abort(signal); const next = await reader.read(); abort(signal);
-      if (next.done) { complete = true; break; }
-      length += next.value.byteLength;
-      if (length > file.bytes || length > MAX_INDEX_BYTES) throw new Error('The source file size changed or exceeds the concordance file limit. No bytes beyond its verified size are retained.');
-      chunks.push(next.value);
-    }
-  } finally {
-    signal?.removeEventListener('abort', cancel);
-    if (!complete) await reader.cancel().catch(() => undefined);
-    reader.releaseLock();
-  }
-  if (length !== file.bytes) throw new Error('The source file size changed. Update the application before counting occurrences.');
-  const bytes = new Uint8Array(length); let offset = 0;
-  for (const chunk of chunks) { bytes.set(chunk, offset); offset += chunk.byteLength; }
+  const bytes = await readSourceBytes(response, file.bytes, signal); abort(signal);
+  if (bytes.byteLength !== file.bytes) throw new Error('The source file size changed. Update the application before counting occurrences.');
   return bytes;
 }
 
@@ -56,11 +40,10 @@ export async function readVerifiedConcordanceJson(url: URL, file: OfflineFile, f
   abort(signal);
   const response = await fetcher(url, { cache: 'no-cache', signal });
   const bytes = await readConcordanceBytes(response, file, signal); abort(signal);
-  const digest = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', new Uint8Array(bytes).buffer)), byte => byte.toString(16).padStart(2, '0')).join('');
+  const digest = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)), byte => byte.toString(16).padStart(2, '0')).join('');
   abort(signal);
   if (digest !== file.sha256) throw new Error('The source file checksum changed. No concordance count is available; update the application and retry.');
-  try { return JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(bytes)); }
-  catch { throw new Error('The verified source file is not valid UTF-8 JSON. No concordance count is available.'); }
+  return decodeSourceJsonBytes(bytes, signal);
 }
 
 /** Retain at most one complete edition index in this worker; never persist private state. */
