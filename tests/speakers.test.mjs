@@ -20,6 +20,8 @@ async function proposal() {
 }
 
 test('publisher coverage exactly matches validated real metadata across every installed edition', () => {
+  const installed = ['eng-web', ...json('editions/catalog.json').editions.filter(edition => edition.corpus === 'bible').map(edition => edition.id)];
+  assert.deepEqual(publisherCoverage.editions.map(row => row.editionId).sort(), installed.sort(), 'Every installed edition needs an explicit audited publisher-metadata row, including zero-span editions.');
   for (const row of publisherCoverage.editions) {
     const source = manifest(row.editionId);
     assert.equal(row.sourceSha256, source.edition.sha256);

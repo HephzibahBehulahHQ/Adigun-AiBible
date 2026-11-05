@@ -1,0 +1,15 @@
+About engDBY_vpl
+This archive contains BIBLE TEXT ONLY. All formatting, paragraph breaks, notes, introductions, noncanonical section titles, etc., have been removed. The file ending "_vpl.txt" is designed for import into BibleWorks and similar Bible study programs. The file ending "_vpl.xml" contains the same information, but is in XML format and uses standard SIL/UBS book abbreviations.
+The file ending "_vpl.sql" contains the same information formatted to create a SQL data table.
+Check for updates and other Bible translations in this format at http:\\eBible.org\Scriptures\
+Darby Translation
+The Holy Scriptures, a New Translation from the Original Languages by J. N. Darby
+Public Domain
+Language: English
+Dialect: archaic British
+Translation by: J. N. Darby
+2019-11-15
+
+Source and rights notice: https://ebible.org/engDBY/copyright.htm
+Provider rights policy: https://ebible.org/legal.php
+Provider rights policy: https://ebible.org/publicdomain.htm

@@ -1,0 +1,16 @@
+About deutkw_vpl
+This archive contains BIBLE TEXT ONLY. All formatting, paragraph breaks, notes, introductions, noncanonical section titles, etc., have been removed. The file ending "_vpl.txt" is designed for import into BibleWorks and similar Bible study programs. The file ending "_vpl.xml" contains the same information, but is in XML format and uses standard SIL/UBS book abbreviations.
+The file ending "_vpl.sql" contains the same information formatted to create a SQL data table.
+Check for updates and other Bible translations in this format at http:\\eBible.org\Scriptures\
+Textbibel von Kautzsch und Weizsäcker
+The Holy Bible in German, translation by Kautzsch und Weizsäcker 1906
+Public Domain
+Language: Deutsch (German, Standard)
+Dieser Textbibel wird Ihnen mit freundlicher Genehmigung von  eBible.org  zur Verfügung gestellt, mit der Hilfe unserer Partner, die für den Erhalt unserer Dienste spenden.
+This Public Domain Bible text is provided to you courtesy of eBible.org with help from our partners who donate to keep our servers and services running.
+Quelle: Textbibel.de (Hans J. Herbst Mitarbeit bei der Digitalisierung) ist frei!
+2025-08-30
+
+Source and rights notice: https://ebible.org/deutkw/copyright.htm
+Provider rights policy: https://ebible.org/legal.php
+Provider rights policy: https://ebible.org/publicdomain.htm
