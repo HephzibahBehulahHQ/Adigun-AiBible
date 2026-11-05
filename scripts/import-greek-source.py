@@ -108,7 +108,7 @@ def archive_members(data: bytes, prefix: str) -> dict[str, tuple[str, bytes]]:
             if not path.startswith(prefix):
                 raise ValueError('Unexpected archive root')
             relative = path[len(prefix):]
-            if not relative or relative != str(PurePosixPath(relative)):
+            if not relative or relative == '.' or relative.startswith('/') or relative != str(PurePosixPath(relative)):
                 raise ValueError('Noncanonical archive path')
             if member.isdir():
                 continue

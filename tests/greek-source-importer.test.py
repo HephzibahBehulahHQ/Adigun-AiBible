@@ -104,7 +104,7 @@ class GreekImporterTests(unittest.TestCase):
                 importer.roundtrip_book(book)
 
     def test_unsafe_duplicate_and_wrong_root_members_rejected(self):
-        for path in ['../escape', '/absolute', 'root/../escape', 'other/file', 'root/./file', 'root/a\\b']:
+        for path in ['../escape', '/absolute', 'root/../escape', 'other/file', 'root/./file', 'root/a\\b', 'root//file', 'root/.']:
             with self.subTest(path=path), self.assertRaises(ValueError):
                 importer.archive_members(archive([(path, b'x', tarfile.REGTYPE)]), 'root/')
         with self.assertRaises(ValueError):
