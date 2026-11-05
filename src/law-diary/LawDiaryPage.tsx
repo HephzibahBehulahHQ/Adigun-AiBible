@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { BookOpen, Coins, Globe2, Hourglass, MessageSquareText, Scale, Users } from 'lucide-react';
 import { getBook, getManifest, getQuran, sourceCredit } from '../data';
 import type { Locale, Reference } from '../types';
-import { lawEntries } from './entries';
+import { islamicSourceGuides, lawEntries } from './entries';
 import { bibleReference, lawCategories, lawSectionHash, lawSections, readLawSection, searchLawEntries, sourceLabel } from './model';
 import type { BibleCitation, LawEntry, LawSection, LawSource, QuranCitation } from './model';
 import { bibleExcerpt, quranExcerpt } from './source';
@@ -121,6 +121,7 @@ export default function LawDiary({ editionId = 'eng-web', locale = 'en', referen
       {active === 'second-coming' && <p className="ld-method">Bible, Quran and Hadith remain distinct. An English Quran translation is not an approval of one interpretation; no human-reviewed cross-religion relationship is currently published.</p>}
       <p className="muted small" role="status">{entries.length} {entries.length === 1 ? 'entry' : 'entries'} shown{query.trim() ? ` for “${query.trim()}”` : ''}.</p>
       {entries.length ? <div className="ld-entries">{entries.map(entry => <EntryCard key={entry.id} entry={entry} editionId={editionId} locale={locale} onOpenReference={openReference}/>)}</div> : <div className="panel"><p>No entries in this section match your search.</p><button className="secondary" onClick={() => setQuery('')}>Clear search</button></div>}
+      {active === 'timeline' && !query.trim() && <section className="ld-source-guides" aria-labelledby="ld-islamic-sources"><h2 id="ld-islamic-sources">Islamic source categories</h2><p>These sources are indexed separately. They are not automatically mapped to the eleven biblical and historical study layers.</p><div className="ld-entries">{islamicSourceGuides.map(entry => <EntryCard key={entry.id} entry={entry} editionId={editionId} locale={locale} onOpenReference={openReference}/>)}</div></section>}
     </section>
   </div>;
 }

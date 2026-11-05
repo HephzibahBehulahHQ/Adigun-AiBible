@@ -83,3 +83,10 @@ export const lawEntries: LawEntry[] = [
 ];
 
 validateLawEntries(lawEntries);
+
+export const islamicSourceGuides: LawEntry[] = [
+  entry('timeline','islamic-authority','Sharia, Quran and juristic interpretation','Begin with Quran passages concerning authority and judgment. The wording below comes from the installed English translation.','Quran text and a jurist’s interpretation are different source types. A school-specific Fiqh ruling requires its school, author, work and passage; no ruling is assigned to all Muslims by this index.',[q(4,59),q(5,48)],{researchGap:'A reviewed introduction to sharia and fiqh, with named Hanafi, Maliki, Shafi’i and Hanbali sources, remains to be supplied.'}),
+  entry('timeline','hadith-source-guide','Hadith as a distinct source','Sahih al-Bukhari 1 provides a numbered report concerning deeds and intentions. It can be inspected separately from Quran verses.','A collection title is not a verse reference. Hadith authenticity classifications and differences between collections require qualified explanation; this tool does not grade reports.',[external('hadith','Sahih al-Bukhari 1','https://sunnah.com/bukhari:1','Book of Revelation, report attributed to Umar concerning deeds and intentions.')],{researchGap:'A qualified, sourced explanation of sahih, hasan and da’if classifications and their limits is still needed.'}),
+  entry('timeline','prophetic-history','Reports of Muhammad’s pilgrimage and public teaching','Sahih Muslim 1218a presents a lengthy pilgrimage report attributed to Jabir. Open the identified report to inspect it.','This is a Hadith report, not a Quran chapter or a single authenticated modern transcript assembled from multiple farewell-sermon versions.',[external('hadith','Sahih Muslim 1218a','https://sunnah.com/muslim:1218a','Book of Pilgrimage, report of the Prophet’s Hajj attributed to Jabir.')],{researchGap:'An edition and precise locator for the Constitution of Medina in Ibn Ishaq / Ibn Hisham and related historical sources must be verified before its provisions are summarized.'}),
+];
+validateLawEntries([...lawEntries, ...islamicSourceGuides]);

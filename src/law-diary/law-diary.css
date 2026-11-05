@@ -42,6 +42,7 @@
 .ld-filter { width: min(300px, 100%); margin: 12px 0; }
 .ld-category { border-top: 1px solid var(--border); }
 .ld-debate { border-top: 1px solid var(--border); margin-top: 14px; }
+.ld-source-guides { margin-top: 32px; }
 @media (max-width: 1150px) { .ld-evidence-grid.ld-has-comparison { grid-template-columns: repeat(2, minmax(0, 1fr)); } .ld-has-comparison .ld-context-note { grid-column: 1 / -1; } }
 @media (max-width: 720px) { .ld-entry { padding: 16px; } .ld-evidence-grid, .ld-evidence-grid.ld-has-comparison { grid-template-columns: minmax(0, 1fr); } .ld-nav { gap: 6px; } .ld-nav a { font-size: 13px; padding: 8px 10px; } .ld-entry .secondary { width: 100%; white-space: normal; min-height: 44px; } }
 @media (prefers-reduced-motion: reduce) { .ld-page *, .ld-page *::before, .ld-page *::after { transition: none !important; scroll-behavior: auto !important; } }

@@ -7,7 +7,7 @@ import './copilot/copilot.css';
 interface Props {
   onReference: (text: string) => void; onSearch: (text: string) => void;
   onBookmark: () => boolean; onNote: () => void; onSources: () => void;
-  onContext: () => void; onNavigate: (view:View) => boolean | void; selected: string;
+  onContext: () => void; onNavigate: (view:View, section?:string) => boolean | void; selected: string;
 }
 const viewport = () => ({width:window.innerWidth,height:window.innerHeight});
 function initialGeometry() {
@@ -52,8 +52,8 @@ export default function Copilot(props: Props) {
     const dy=e.key==='ArrowUp'?amount:e.key==='ArrowDown'?-amount:0;
     changeGeometry(kind==='move'?{right:geometry.right+dx,bottom:geometry.bottom+dy}:{width:geometry.width+dx,height:geometry.height+dy});
   }
-  function destination(view:View) {
-    if(props.onNavigate(view)!==false)close();
+  function destination(view:View, section?:string) {
+    if(props.onNavigate(view,section)!==false)close();
     else setReply('Navigation was cancelled. Your current writing remains open.');
   }
   return <>
@@ -72,7 +72,7 @@ export default function Copilot(props: Props) {
           <button type="button" onClick={()=>{close();props.onNote();}}><FileText size={17}/>Write a private note</button>
           <button type="button" onClick={()=>{close();props.onContext();}}><BookOpen size={17}/>Show passage context</button>
           <button type="button" onClick={()=>{close();props.onSources();}}><BookOpen size={17}/>Inspect the source edition</button>
-          {botDestinations.map(action=><button type="button" key={action.id} title={action.description} onClick={()=>destination(action.view)}>{action.label}</button>)}
+          {botDestinations.map(action=><button type="button" key={action.id} title={action.description} onClick={()=>destination(action.view,action.id==='plan'?'plans':undefined)}>{action.label}</button>)}
         </div><p className="bot-reply" role="status">{reply}</p>
       </div>
       <form className="bot-form" onSubmit={e=>{e.preventDefault();if(input.trim()){props.onReference(input);setReply('Reference sent to the reader. Any invalid reference is reported by the reader.');}}}>

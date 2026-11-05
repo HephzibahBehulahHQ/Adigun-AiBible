@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { lawEntries } from '../src/law-diary/entries.ts';
+import { islamicSourceGuides, lawEntries } from '../src/law-diary/entries.ts';
 import { bibleReference, lawSectionHash, readLawSection, searchLawEntries, validateLawEntries } from '../src/law-diary/model.ts';
 import { bibleExcerpt, quranExcerpt } from '../src/law-diary/source.ts';
 
@@ -14,9 +14,9 @@ const books = new Map();
 const getBook = id => { if (!books.has(id)) books.set(id, json(`../data/books/${id}.json`)); return books.get(id); };
 
 test('every Law Diary Bible and Quran citation resolves to real installed source units', () => {
-  validateLawEntries(lawEntries);
+  validateLawEntries([...lawEntries, ...islamicSourceGuides]);
   let checked = 0;
-  for (const entry of lawEntries) {
+  for (const entry of [...lawEntries, ...islamicSourceGuides]) {
     for (const source of [...entry.sources, ...(entry.categorySamples?.flatMap(group => group.sources) || [])]) {
       if (source.type === 'bible') {
         const result = bibleExcerpt(getBook(source.bookId), manifest, source);
