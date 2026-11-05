@@ -147,6 +147,399 @@ SOURCES = {
     },
 }
 
+# Individually inspected historical sources; provider IDs are distinct from app IDs.
+SOURCES.update({'eng-ylt': {'name': "Young's Literal Translation",
+             'abbreviation': 'YLT',
+             'language': 'en',
+             'corpus': 'bible',
+             'publisher': 'eBible.org',
+             'translator': 'Robert Young',
+             'providerId': 'engylt',
+             'revision': '1862/1898; provider identifies the 1898 edition',
+             'canon': 'protestant-66',
+             'sourceUpdatedAt': '2025-12-12',
+             'rightsObservedAt': '2026-11-05',
+             'sourceUrl': 'https://ebible.org/engylt/',
+             'formatUrl': 'https://ebible.org/find/details.php?id=engylt',
+             'downloadUrl': 'https://ebible.org/Scriptures/engylt_vpl.zip',
+             'downloadBytes': 4318747,
+             'licenseUrl': 'https://ebible.org/engylt/copyright.htm',
+             'license': 'Public domain (provider-declared)',
+             'licenseIdentifier': 'LicenseRef-Public-Domain',
+             'attribution': "Young's Literal Translation. Robert Young. 1862/1898; provider identifies the 1898 "
+                            'edition. Public domain as declared by eBible.org; source dated 2025-12-12.',
+             'sha256': '653e9f1d8487de46e11574165a6355d3135ae378fb2198ee4128dedc06c8ca56',
+             'xmlSha256': 'e98086cd743baf2d1b17fe10b4b644d55a19b9d4326a74ae599e1bb38d5541bf',
+             'textSha256': '627d7af1a95d267a8f31f45b279b81385edaa646027a865a2939f0878d1b8533',
+             'noticeSha256': '63f01c0cce0e187972a20c45dca85f6892b5a574400c17419a0fb5fe4fc73d31',
+             'bracketExceptionCount': 8233,
+             'bracketExceptionInventorySha256': '1bda1fe354e9548eac03149b0160ddc0914179f5464a526592f50a76884fa711',
+             'bracketExceptionScope': '8233 source records differ only in the recorded square-bracket positions. '
+                                      'Display text preserves the complete original TXT, including any brackets '
+                                      'crossing verse boundaries; no source text is repaired or renumbered.',
+             'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31102},
+             'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': True, 'export': True},
+             'conditions': ['Keep the exact historical edition, provider source and complete notice with '
+                            'redistributed/offline copies.',
+                            'The individual edition notice and provider policies declare this text public domain; this '
+                            'is provider evidence, not an independent worldwide legal opinion.',
+                            'The VPL source contains scripture text only; notes, introductions, headings and paragraph '
+                            'layout are not included.',
+                            'Changed study material must be separately labeled and must not be presented as unchanged '
+                            'publisher text.',
+                            'No third-party recorded audio, illustrations, maps or modern revisions are included or '
+                            'licensed by this text import.'],
+             'rightsEvidenceUrls': ['https://ebible.org/legal.php', 'https://ebible.org/publicdomain.htm']},
+ 'eng-dby': {'name': 'Darby Translation',
+             'abbreviation': 'DBY',
+             'language': 'en',
+             'corpus': 'bible',
+             'publisher': 'eBible.org',
+             'translator': 'J. N. Darby',
+             'providerId': 'engDBY',
+             'revision': 'Provider inventory: 1871/1884; eBible Darby source',
+             'canon': 'protestant-66',
+             'sourceUpdatedAt': '2019-11-16',
+             'rightsObservedAt': '2026-11-05',
+             'sourceUrl': 'https://ebible.org/engDBY/',
+             'formatUrl': 'https://ebible.org/find/details.php?id=engDBY',
+             'downloadUrl': 'https://ebible.org/Scriptures/engDBY_vpl.zip',
+             'downloadBytes': 4316919,
+             'licenseUrl': 'https://ebible.org/engDBY/copyright.htm',
+             'license': 'Public domain (provider-declared)',
+             'licenseIdentifier': 'LicenseRef-Public-Domain',
+             'attribution': 'Darby Translation. J. N. Darby. Provider inventory: 1871/1884; eBible Darby source. '
+                            'Public domain as declared by eBible.org; source dated 2019-11-16.',
+             'sha256': '7eb1df2a434f5bbd831591aa96c08e94b900b1458fda74ccf1d1739d5af73619',
+             'xmlSha256': 'b8bd5808e1b252fa0a2ff3e94d5b6b5832b4f0cfae460cf3bfbcfa5e4c1f6109',
+             'textSha256': 'd32881ff23f4ec80b643085b3dd60e908b74220d432578a06038aac6d6060f6f',
+             'noticeSha256': 'ec532372bd2b9a98d67db72e0793fe1556daa2b8e641de9ba9cc95d06eecccec',
+             'bracketExceptionCount': 6052,
+             'bracketExceptionInventorySha256': '50ab698b71e2c427577fa9d4f381bd8e5170fdb15a29b59427e6cdf064c93fb6',
+             'bracketExceptionScope': '6052 source records differ only in the recorded square-bracket positions. '
+                                      'Display text preserves the complete original TXT, including any brackets '
+                                      'crossing verse boundaries; no source text is repaired or renumbered.',
+             'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31099},
+             'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': True, 'export': True},
+             'conditions': ['Keep the exact historical edition, provider source and complete notice with '
+                            'redistributed/offline copies.',
+                            'The individual edition notice and provider policies declare this text public domain; this '
+                            'is provider evidence, not an independent worldwide legal opinion.',
+                            'The VPL source contains scripture text only; notes, introductions, headings and paragraph '
+                            'layout are not included.',
+                            'Changed study material must be separately labeled and must not be presented as unchanged '
+                            'publisher text.',
+                            'No third-party recorded audio, illustrations, maps or modern revisions are included or '
+                            'licensed by this text import.'],
+             'rightsEvidenceUrls': ['https://ebible.org/legal.php', 'https://ebible.org/publicdomain.htm']},
+ 'eng-webster': {'name': 'Noah Webster Bible (1833)',
+                 'abbreviation': 'WBT',
+                 'language': 'en',
+                 'corpus': 'bible',
+                 'publisher': 'eBible.org',
+                 'translator': 'Noah Webster',
+                 'providerId': 'engwebster',
+                 'revision': '1833',
+                 'canon': 'protestant-66',
+                 'sourceUpdatedAt': '2025-12-12',
+                 'rightsObservedAt': '2026-11-05',
+                 'sourceUrl': 'https://ebible.org/engwebster/',
+                 'formatUrl': 'https://ebible.org/find/details.php?id=engwebster',
+                 'downloadUrl': 'https://ebible.org/Scriptures/engwebster_vpl.zip',
+                 'downloadBytes': 4342864,
+                 'licenseUrl': 'https://ebible.org/engwebster/copyright.htm',
+                 'license': 'Public domain (provider-declared)',
+                 'licenseIdentifier': 'LicenseRef-Public-Domain',
+                 'attribution': 'Noah Webster Bible (1833). Noah Webster. 1833. Public domain as declared by '
+                                'eBible.org; source dated 2025-12-12.',
+                 'sha256': '402240da209b017c67a31b63773b42471ef7e2513aa76ef067f34af907537270',
+                 'xmlSha256': 'e1772e039327f99e21d9b949d06a95817e0408d467f9a209e29199f0c4bbef00',
+                 'textSha256': '989105cb7c414bae663f1198094455b6d5968f27ac03924c30542cafda11ce9b',
+                 'noticeSha256': 'eb6b63b49cf6b0a590779ed30199ad67af394c3dd657fd92190a482d3d31298e',
+                 'bracketExceptionCount': 14115,
+                 'bracketExceptionInventorySha256': '865b08178850e9a47f0682b2e59b914dceca775d64f62bc8fd47377fd3b24261',
+                 'bracketExceptionScope': '14115 source records differ only in the recorded square-bracket positions. '
+                                          'Display text preserves the complete original TXT, including any brackets '
+                                          'crossing verse boundaries; no source text is repaired or renumbered.',
+                 'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31102},
+                 'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': True, 'export': True},
+                 'conditions': ['Keep the exact historical edition, provider source and complete notice with '
+                                'redistributed/offline copies.',
+                                'The individual edition notice and provider policies declare this text public domain; '
+                                'this is provider evidence, not an independent worldwide legal opinion.',
+                                'The VPL source contains scripture text only; notes, introductions, headings and '
+                                'paragraph layout are not included.',
+                                'Changed study material must be separately labeled and must not be presented as '
+                                'unchanged publisher text.',
+                                'No third-party recorded audio, illustrations, maps or modern revisions are included '
+                                'or licensed by this text import.'],
+                 'rightsEvidenceUrls': ['https://ebible.org/legal.php', 'https://ebible.org/publicdomain.htm']},
+ 'fra-lsg1910': {'name': 'Louis Segond 1910',
+                 'abbreviation': 'LSG',
+                 'language': 'fr',
+                 'corpus': 'bible',
+                 'publisher': 'eBible.org',
+                 'translator': 'Louis Segond',
+                 'providerId': 'fraLSG',
+                 'revision': '1910',
+                 'canon': 'protestant-66',
+                 'sourceUpdatedAt': '2026-10-30',
+                 'rightsObservedAt': '2026-11-05',
+                 'sourceUrl': 'https://ebible.org/fraLSG/',
+                 'formatUrl': 'https://ebible.org/find/details.php?id=fraLSG',
+                 'downloadUrl': 'https://ebible.org/Scriptures/fraLSG_vpl.zip',
+                 'downloadBytes': 4592359,
+                 'licenseUrl': 'https://ebible.org/fraLSG/copyright.htm',
+                 'license': 'Public domain (provider-declared)',
+                 'licenseIdentifier': 'LicenseRef-Public-Domain',
+                 'attribution': 'Louis Segond 1910. Louis Segond. 1910. Public domain as declared by eBible.org; '
+                                'source dated 2026-10-30.',
+                 'sha256': 'fcdeac5aa1ebf857835a41bfa11f8fe5685c31ea602418a2998d4c870488f54b',
+                 'xmlSha256': '7bb5841c5be36826bdbca6a1a87b61043f56a359de584948aeedca2cd83e30ed',
+                 'textSha256': 'cfb948d3349cc4cc6e81c40d6e2fca7e09b9b8cf697864103e63a455880a1ea1',
+                 'noticeSha256': '33a599306291352bcc257296c101d36cb3d92980665333f0b82861619b65408a',
+                 'bracketExceptionCount': 2,
+                 'bracketExceptionInventorySha256': '72e676298e5970c27c84f469859ef74b487e09be3f98981c7455cb8b7df4d7d8',
+                 'bracketExceptionScope': '2 source records differ only in the recorded square-bracket positions. '
+                                          'Display text preserves the complete original TXT, including any brackets '
+                                          'crossing verse boundaries; no source text is repaired or renumbered.',
+                 'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31170},
+                 'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': True, 'export': True},
+                 'conditions': ['Keep the exact historical edition, provider source and complete notice with '
+                                'redistributed/offline copies.',
+                                'The individual edition notice and provider policies declare this text public domain; '
+                                'this is provider evidence, not an independent worldwide legal opinion.',
+                                'The VPL source contains scripture text only; notes, introductions, headings and '
+                                'paragraph layout are not included.',
+                                'Changed study material must be separately labeled and must not be presented as '
+                                'unchanged publisher text.',
+                                'No third-party recorded audio, illustrations, maps or modern revisions are included '
+                                'or licensed by this text import.'],
+                 'rightsEvidenceUrls': ['https://ebible.org/legal.php', 'https://ebible.org/publicdomain.htm']},
+ 'spa-rv1909': {'name': 'Santa Biblia — Reina Valera 1909',
+                'abbreviation': 'RV1909',
+                'language': 'es',
+                'corpus': 'bible',
+                'publisher': 'eBible.org',
+                'translator': 'Reina y Valera',
+                'providerId': 'spaRV1909',
+                'revision': '1909',
+                'canon': 'protestant-66',
+                'sourceUpdatedAt': '2015-08-10',
+                'rightsObservedAt': '2026-11-05',
+                'sourceUrl': 'https://ebible.org/spaRV1909/',
+                'formatUrl': 'https://ebible.org/find/details.php?id=spaRV1909',
+                'downloadUrl': 'https://ebible.org/Scriptures/spaRV1909_vpl.zip',
+                'downloadBytes': 4403456,
+                'licenseUrl': 'https://ebible.org/spaRV1909/copyright.htm',
+                'license': 'Public domain (provider-declared)',
+                'licenseIdentifier': 'LicenseRef-Public-Domain',
+                'attribution': 'Santa Biblia — Reina Valera 1909. Reina y Valera. 1909. Public domain as declared by '
+                               'eBible.org; source dated 2015-08-10.',
+                'sha256': 'f0b20b2473b3ed30dcee584b2311b6a1db27b32e714f1a2b0e97d01ba179f284',
+                'xmlSha256': '6e62b5d521fb67d71fc8478e50f2c5707e9086e40d847768eff0a483760adc24',
+                'textSha256': '9d7aff52765d9e67b5d11ff667b6953319af39454ea32c53d6743401720594aa',
+                'noticeSha256': '7151214d8a62e6b14a9d0a460427dd99672da3f0cd1ad92e1d16e20f9a35da36',
+                'bracketExceptionCount': 3080,
+                'bracketExceptionInventorySha256': 'f111f1dc00b23e85ce2aa59a9e0dc8ab7a76727cb0921a3925ecc2b0cc2897ae',
+                'bracketExceptionScope': '3080 source records differ only in the recorded square-bracket positions. '
+                                         'Display text preserves the complete original TXT, including any brackets '
+                                         'crossing verse boundaries; no source text is repaired or renumbered.',
+                'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31102},
+                'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': True, 'export': True},
+                'conditions': ['Keep the exact historical edition, provider source and complete notice with '
+                               'redistributed/offline copies.',
+                               'The individual edition notice and provider policies declare this text public domain; '
+                               'this is provider evidence, not an independent worldwide legal opinion.',
+                               'The VPL source contains scripture text only; notes, introductions, headings and '
+                               'paragraph layout are not included.',
+                               'Changed study material must be separately labeled and must not be presented as '
+                               'unchanged publisher text.',
+                               'No third-party recorded audio, illustrations, maps or modern revisions are included or '
+                               'licensed by this text import.'],
+                'rightsEvidenceUrls': ['https://ebible.org/legal.php', 'https://ebible.org/publicdomain.htm']},
+ 'deu-elberfelder1905': {'name': 'Unrevidierte Elberfelder 1905',
+                         'abbreviation': 'ELB1905',
+                         'language': 'de',
+                         'corpus': 'bible',
+                         'publisher': 'eBible.org',
+                         'translator': 'Julius Anton von Poseck, Carl Brockhaus, and John Nelson Darby',
+                         'providerId': 'deuelo',
+                         'revision': 'Unrevised 1905 edition',
+                         'canon': 'protestant-66',
+                         'sourceUpdatedAt': '2025-12-12',
+                         'rightsObservedAt': '2026-11-05',
+                         'sourceUrl': 'https://ebible.org/deuelo/',
+                         'formatUrl': 'https://ebible.org/find/details.php?id=deuelo',
+                         'downloadUrl': 'https://ebible.org/Scriptures/deuelo_vpl.zip',
+                         'downloadBytes': 4689332,
+                         'licenseUrl': 'https://ebible.org/deuelo/copyright.htm',
+                         'license': 'Public domain (provider-declared)',
+                         'licenseIdentifier': 'LicenseRef-Public-Domain',
+                         'attribution': 'Unrevidierte Elberfelder 1905. Julius Anton von Poseck, Carl Brockhaus, and '
+                                        'John Nelson Darby. Unrevised 1905 edition. Public domain as declared by '
+                                        'eBible.org; source dated 2025-12-12.',
+                         'sha256': '71a08dafdd8accb36a09fe757ab111a29b18cd25ade4b89013b542dc01d44b6a',
+                         'xmlSha256': '7f5cc5001c9674f925281660730c7fe1b2869fb4558cb4aa0346203180c9347e',
+                         'textSha256': 'a9cd10022e49e80ced94f60e8b781e383cce4a80cff595b95531622804b3e826',
+                         'noticeSha256': '85082e0e38eaa139341bafed3c4ebf63e7bb40332eb2c3199b213b855925c754',
+                         'bracketExceptionCount': 312,
+                         'bracketExceptionInventorySha256': '9fd042a7c4b1f5a6a90d1e155b4466fb58c7c22db085afcb273db990088b8b10',
+                         'bracketExceptionScope': '312 source records differ only in the recorded square-bracket '
+                                                  'positions. Display text preserves the complete original TXT, '
+                                                  'including any brackets crossing verse boundaries; no source text is '
+                                                  'repaired or renumbered.',
+                         'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31102},
+                         'rights': {'redistribute': True,
+                                    'adapt': True,
+                                    'offline': True,
+                                    'audio': True,
+                                    'export': True},
+                         'conditions': ['Keep the exact historical edition, provider source and complete notice with '
+                                        'redistributed/offline copies.',
+                                        'The individual edition notice and provider policies declare this text public '
+                                        'domain; this is provider evidence, not an independent worldwide legal '
+                                        'opinion.',
+                                        'The VPL source contains scripture text only; notes, introductions, headings '
+                                        'and paragraph layout are not included.',
+                                        'Changed study material must be separately labeled and must not be presented '
+                                        'as unchanged publisher text.',
+                                        'No third-party recorded audio, illustrations, maps or modern revisions are '
+                                        'included or licensed by this text import.'],
+                         'rightsEvidenceUrls': ['https://ebible.org/legal.php', 'https://ebible.org/publicdomain.htm']},
+ 'deu-textbibel1906': {'name': 'Textbibel von Kautzsch und Weizsäcker (1906)',
+                       'abbreviation': 'TKW',
+                       'language': 'de',
+                       'corpus': 'bible',
+                       'publisher': 'eBible.org',
+                       'translator': 'Emil Kautzsch and Carl Weizsäcker',
+                       'providerId': 'deutkw',
+                       'revision': '1906; Textbibel.de digitization with Hans J. Herbst',
+                       'canon': 'protestant-66',
+                       'sourceUpdatedAt': '2025-12-12',
+                       'rightsObservedAt': '2026-11-05',
+                       'sourceUrl': 'https://ebible.org/deutkw/',
+                       'formatUrl': 'https://ebible.org/find/details.php?id=deutkw',
+                       'downloadUrl': 'https://ebible.org/Scriptures/deutkw_vpl.zip',
+                       'downloadBytes': 4923760,
+                       'licenseUrl': 'https://ebible.org/deutkw/copyright.htm',
+                       'license': 'Public domain (provider-declared)',
+                       'licenseIdentifier': 'LicenseRef-Public-Domain',
+                       'attribution': 'Textbibel von Kautzsch und Weizsäcker (1906). Emil Kautzsch and Carl '
+                                      'Weizsäcker. 1906; Textbibel.de digitization with Hans J. Herbst. Public domain '
+                                      'as declared by eBible.org; source dated 2025-12-12.',
+                       'sha256': '0ecc099d7d8ad4cf6fedd3a35d3792423e38a70e4c23e8a9102b5164810298b5',
+                       'xmlSha256': '20def02a483b0b3c394cf9475f26d6f966b06a3a65d19c3e6bfa837b757f3cee',
+                       'textSha256': 'd8c190aa0013f0af130c45a501d2d221236a7bda14ff119bfc7436dd631c0246',
+                       'noticeSha256': '56e5434ca2980bd5cdff36300e206cc44ad55101911a290b2fb82e3977851501',
+                       'bracketExceptionCount': 0,
+                       'bracketExceptionInventorySha256': '37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570',
+                       'bracketExceptionScope': '0 source records differ only in the recorded square-bracket '
+                                                'positions. Display text preserves the complete original TXT, '
+                                                'including any brackets crossing verse boundaries; no source text is '
+                                                'repaired or renumbered.',
+                       'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31157},
+                       'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': True, 'export': True},
+                       'conditions': ['Keep the exact historical edition, provider source and complete notice with '
+                                      'redistributed/offline copies.',
+                                      'The individual edition notice and provider policies declare this text public '
+                                      'domain; this is provider evidence, not an independent worldwide legal opinion.',
+                                      'The VPL source contains scripture text only; notes, introductions, headings and '
+                                      'paragraph layout are not included.',
+                                      'Changed study material must be separately labeled and must not be presented as '
+                                      'unchanged publisher text.',
+                                      'No third-party recorded audio, illustrations, maps or modern revisions are '
+                                      'included or licensed by this text import.'],
+                       'rightsEvidenceUrls': ['https://ebible.org/legal.php', 'https://ebible.org/publicdomain.htm']},
+ 'ces-kralicka1613': {'name': 'Bible Kralická 1613',
+                      'abbreviation': 'BKR',
+                      'language': 'cs',
+                      'corpus': 'bible',
+                      'publisher': 'eBible.org',
+                      'translator': 'Jan Blahoslav et al',
+                      'providerId': 'ces1613',
+                      'revision': 'Last Kralická edition, 1613; translation history 1579–1593',
+                      'canon': 'protestant-66',
+                      'sourceUpdatedAt': '2025-12-12',
+                      'rightsObservedAt': '2026-11-05',
+                      'sourceUrl': 'https://ebible.org/ces1613/',
+                      'formatUrl': 'https://ebible.org/find/details.php?id=ces1613',
+                      'downloadUrl': 'https://ebible.org/Scriptures/ces1613_vpl.zip',
+                      'downloadBytes': 4668076,
+                      'licenseUrl': 'https://ebible.org/ces1613/copyright.htm',
+                      'license': 'Public domain (provider-declared)',
+                      'licenseIdentifier': 'LicenseRef-Public-Domain',
+                      'attribution': 'Bible Kralická 1613. Jan Blahoslav et al. Last Kralická edition, 1613; '
+                                     'translation history 1579–1593. Public domain as declared by eBible.org; source '
+                                     'dated 2025-12-12.',
+                      'sha256': 'a85f19f62f9e0c9d9d4b8735b2149772a745576ff4b73cfa15d17a6b4b2cd8ae',
+                      'xmlSha256': 'b0820cb0fe4110416fc07446397d433dfbfc7872c60d3c3a5d6e90e204d8b78b',
+                      'textSha256': 'a05101c669619e8edf825c577ab5ff09968595b951b7d76f7eafb5a9aa1e3fa2',
+                      'noticeSha256': 'a29cda27471143d1f44242f70db95fdeb8b6face6a972136fc024485a9b9f971',
+                      'bracketExceptionCount': 0,
+                      'bracketExceptionInventorySha256': '37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570',
+                      'bracketExceptionScope': '0 source records differ only in the recorded square-bracket positions. '
+                                               'Display text preserves the complete original TXT, including any '
+                                               'brackets crossing verse boundaries; no source text is repaired or '
+                                               'renumbered.',
+                      'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31172},
+                      'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': True, 'export': True},
+                      'conditions': ['Keep the exact historical edition, provider source and complete notice with '
+                                     'redistributed/offline copies.',
+                                     'The individual edition notice and provider policies declare this text public '
+                                     'domain; this is provider evidence, not an independent worldwide legal opinion.',
+                                     'The VPL source contains scripture text only; notes, introductions, headings and '
+                                     'paragraph layout are not included.',
+                                     'Changed study material must be separately labeled and must not be presented as '
+                                     'unchanged publisher text.',
+                                     'No third-party recorded audio, illustrations, maps or modern revisions are '
+                                     'included or licensed by this text import.'],
+                      'rightsEvidenceUrls': ['https://ebible.org/legal.php', 'https://ebible.org/publicdomain.htm']},
+ 'ita-diodati1885': {'name': 'Diodati Bibbia 1885',
+                     'abbreviation': 'DIO1885',
+                     'language': 'it',
+                     'corpus': 'bible',
+                     'publisher': 'eBible.org',
+                     'translator': 'Giovanni Diodati; United Bible Societies contributor',
+                     'providerId': 'ita1885',
+                     'revision': '1885 edition title; notice: translated 1641 and revised 1821',
+                     'canon': 'protestant-66',
+                     'sourceUpdatedAt': '2025-05-03',
+                     'rightsObservedAt': '2026-11-05',
+                     'sourceUrl': 'https://ebible.org/ita1885/',
+                     'formatUrl': 'https://ebible.org/find/details.php?id=ita1885',
+                     'downloadUrl': 'https://ebible.org/Scriptures/ita1885_vpl.zip',
+                     'downloadBytes': 4672839,
+                     'licenseUrl': 'https://ebible.org/ita1885/copyright.htm',
+                     'license': 'Public domain (provider-declared)',
+                     'licenseIdentifier': 'LicenseRef-Public-Domain',
+                     'attribution': 'Diodati Bibbia 1885. Giovanni Diodati; United Bible Societies contributor. 1885 '
+                                    'edition title; notice: translated 1641 and revised 1821. Public domain as '
+                                    'declared by eBible.org; source dated 2025-05-03.',
+                     'sha256': '9d2245ddc8b263cd5331225d8c3873a4a5d2471eaad9ea5a5d8a527625443ef7',
+                     'xmlSha256': '9de50cb296f3c3277c5bb9dfa2b4e6d922ade5ca8473a8b155be3c372c98a3e2',
+                     'textSha256': 'a5b7237987519ef0bf6828b595dcd0f1cf81e0a5cd748809ec2abe9cba7437de',
+                     'noticeSha256': '02b787a593a2fc3bcc95286b025da70f2fdf69e8c05bfc6dc9d354d537fa85d4',
+                     'bracketExceptionCount': 14560,
+                     'bracketExceptionInventorySha256': '48b26f4b6495dd80fdf0e8a0cb489dd1be562d6953cb7aeb3b278411acba92a1',
+                     'bracketExceptionScope': '14560 source records differ only in the recorded square-bracket '
+                                              'positions. Display text preserves the complete original TXT, including '
+                                              'any brackets crossing verse boundaries; no source text is repaired or '
+                                              'renumbered.',
+                     'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31095},
+                     'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': True, 'export': True},
+                     'conditions': ['Keep the exact historical edition, provider source and complete notice with '
+                                    'redistributed/offline copies.',
+                                    'The individual edition notice and provider policies declare this text public '
+                                    'domain; this is provider evidence, not an independent worldwide legal opinion.',
+                                    'The VPL source contains scripture text only; notes, introductions, headings and '
+                                    'paragraph layout are not included.',
+                                    'Changed study material must be separately labeled and must not be presented as '
+                                    'unchanged publisher text.',
+                                    'No third-party recorded audio, illustrations, maps or modern revisions are '
+                                    'included or licensed by this text import.'],
+                     'rightsEvidenceUrls': ['https://ebible.org/legal.php', 'https://ebible.org/publicdomain.htm']}})
+
 
 def sha(raw):
     return hashlib.sha256(raw).hexdigest()
@@ -160,7 +553,7 @@ def edition_metadata(edition_id):
     source = SOURCES[edition_id]
     fields = ('name', 'language', 'corpus', 'publisher', 'translator', 'sourceUpdatedAt', 'sourceUrl', 'formatUrl',
               'downloadUrl', 'licenseUrl', 'license', 'licenseIdentifier', 'licenseDeedUrl', 'attribution', 'sha256', 'rights', 'conditions',
-              'abbreviation', 'revision', 'canon')
+              'abbreviation', 'revision', 'canon', 'providerId', 'downloadBytes')
     value = {'id': edition_id, **{key: source[key] for key in fields if key in source}}
     value.update({'rightsObservedAt': source.get('rightsObservedAt', OBSERVED_ON), 'commercialUse': True,
                   'referenceSystemId': f'{edition_id}:publisher-numbering',
@@ -255,7 +648,7 @@ def vpl_format_difference(edition_id, xml_row, text_row):
     """Explain only the reviewed source-specific XML/TXT formatting differences.
 
     Comparison normalization never changes the authoritative TXT display value.
-    ASV's exact bracket coordinates are additionally pinned for the whole source.
+    Sources accepting omitted square brackets pin the complete coordinate inventory.
     """
     if xml_row['text'] == text_row['text']:
         return None
@@ -266,7 +659,7 @@ def vpl_format_difference(edition_id, xml_row, text_row):
         markers = list(re.finditer(pattern, text))
         if markers and re.sub(pattern, r'\1', text) == xml_row['text']:
             return {**record, 'publisherMarkers': [marker[0] for marker in markers]}
-    elif edition_id == 'eng-asv':
+    elif SOURCES[edition_id].get('bracketExceptionCount', 0) > 0:
         brackets = list(re.finditer(r'[\[\]]', text))
         if brackets and text.replace('[', '').replace(']', '') == xml_row['text']:
             return {**record, 'publisherMarkers': [marker[0] for marker in re.finditer(r'\[[^\[\]\r\n]+\]', text)],
@@ -275,17 +668,18 @@ def vpl_format_difference(edition_id, xml_row, text_row):
 
 
 def verify_vpl_format_inventory(edition_id, differences):
-    if edition_id == 'eng-asv':
-        source = SOURCES[edition_id]
+    source = SOURCES[edition_id]
+    if 'bracketExceptionCount' in source:
         if len(differences) != source['bracketExceptionCount'] or sha(json_bytes(differences)) != source['bracketExceptionInventorySha256']:
-            raise ValueError('ASV publisher bracket exception inventory changed.')
+            raise ValueError(f'{edition_id}: publisher bracket exception inventory changed.')
     elif len(differences) != (358 if edition_id == 'deu1912' else 0):
         raise ValueError('The publisher numbering-marker exception inventory changed.')
 
 
 def bible_artifacts(edition_id, archive):
     source = SOURCES[edition_id]
-    xml_name, text_name, notice_name = (f'{edition_id}_{suffix}' for suffix in ('vpl.xml', 'vpl.txt', 'about.htm'))
+    provider_id = source.get('providerId', edition_id)
+    xml_name, text_name, notice_name = (f'{provider_id}_{suffix}' for suffix in ('vpl.xml', 'vpl.txt', 'about.htm'))
     xml = member(archive, xml_name, source['xmlSha256'])
     plain = member(archive, text_name, source['textSha256'])
     notice = member(archive, notice_name, source['noticeSha256'])
@@ -367,6 +761,8 @@ def bible_artifacts(edition_id, archive):
     notice_text = parser.text() + '\nSource and rights notice: ' + source['licenseUrl'] + '\n'
     if source.get('licenseDeedUrl'):
         notice_text += 'License: ' + source['licenseDeedUrl'] + '\n'
+    for url in source.get('rightsEvidenceUrls', []):
+        notice_text += 'Provider rights policy: ' + url + '\n'
     files = {f'books/{bid}.json': json_bytes(book) for bid, book in books.items()}
     files.update({'manifest.json': json_bytes(manifest), 'search-index.json': json_bytes(rows), 'NOTICE.txt': notice_text.encode('utf-8')})
     provenance = {
@@ -385,13 +781,13 @@ def bible_artifacts(edition_id, archive):
         'emptySourceRecords': [{'bookId': r['bookId'], 'chapter': r['chapter'], 'verse': r['verse']} for r in rows if not r['text']],
         'totals': totals,
     }
-    if edition_id == 'eng-asv':
+    if 'bracketExceptionCount' in source:
         provenance.update({
             'xmlPlainTextCrossCheck': 'All words, punctuation and references agree after comparison-only removal of the recorded TXT square brackets. Display text retains every bracket unchanged.',
             'publisherBracketFormatDifferences': formatting_differences,
             'publisherBracketInventorySha256': sha(json_bytes(formatting_differences)),
             'publisherBracketOffsetUnit': 'unicode-codepoint',
-            'publisherBracketScope': '4316 balanced supplied-word/other bracket spans and 76 verse-level unpaired cases, including Selah/Higgaion markers and John 7:53–8:11 textual-variant brackets. The original TXT is not repaired or renumbered.',
+            'publisherBracketScope': source.get('bracketExceptionScope', '4316 balanced supplied-word/other bracket spans and 76 verse-level unpaired cases, including Selah/Higgaion markers and John 7:53–8:11 textual-variant brackets. The original TXT is not repaired or renumbered.'),
         })
         provenance['normalization'][3] = 'Use publisher VPL TXT unchanged as display text, retaining supplied-word, musical-marker and textual-variant brackets.'
     return files, provenance
