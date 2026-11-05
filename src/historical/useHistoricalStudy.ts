@@ -3,7 +3,7 @@ import type { HistoricalStudy } from './model';
 import { loadHistoricalStudy, saveHistoricalStudy } from './storage';
 
 export function useHistoricalStudy() {
-  const [state, setState] = useState<HistoricalStudy | null>(null), [busy, setBusy] = useState(false);
+  const [state, setState] = useState<HistoricalStudy | null>(null), [busy, setBusy] = useState(false), [saving, setSaving] = useState(false);
   const [error, setError] = useState(''), [status, setStatus] = useState('Opening private historical storage…');
   const current = useRef<HistoricalStudy | null>(null), locked = useRef(false), mounted = useRef(false);
   const reload = useCallback(async () => {
@@ -15,14 +15,14 @@ export function useHistoricalStudy() {
   useEffect(() => { mounted.current = true; void reload(); return () => { mounted.current = false; }; }, [reload]);
   const commit = useCallback(async (change: (state: HistoricalStudy) => HistoricalStudy): Promise<boolean> => {
     if (locked.current || !current.current) return false;
-    locked.current = true; setBusy(true); setError(''); setStatus('Saving historical records…');
+    locked.current = true; setBusy(true); setSaving(true); setError(''); setStatus('Saving historical records…');
     try {
       const next = await saveHistoricalStudy(change(current.current), current.current.revision); current.current = next;
       if (mounted.current) { setState(next); setStatus('Saved on this device only.'); } return true;
     } catch (reason) { if (mounted.current) { setError(reason instanceof Error ? reason.message : 'Historical changes were not saved.'); setStatus('Latest change was not saved. Keep or export your draft.'); } return false; }
-    finally { locked.current = false; if (mounted.current) setBusy(false); }
+    finally { locked.current = false; if (mounted.current) { setBusy(false); setSaving(false); } }
   }, []);
-  return { state, busy, error, status, reload, commit };
+  return { state, busy, saving, error, status, reload, commit };
 }
 
 export function useHistoricalGuard(dirty: boolean, busy: boolean) {
