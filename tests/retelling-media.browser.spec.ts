@@ -89,6 +89,67 @@ test.describe('private capture controls',{tag:'@retelling-audio'},()=>{
     page.once('dialog',dialog=>dialog.dismiss());await page.getByRole('button',{name:'Prayer journal',exact:true}).click();await expect(page.getByRole('button',{name:'Stop and keep recording',exact:true})).toBeVisible();
     page.once('dialog',dialog=>dialog.accept());await page.getByRole('button',{name:'Hide and reveal',exact:true}).click();await expect(page.getByRole('heading',{name:'Retell in your own words',exact:true})).toHaveCount(0);await expect.poll(()=>page.evaluate(()=>(window as any).__retellingTest.stopped)).toBe(1);expect((await deviceInventory(page)).media).toEqual([]);
   });
+  test('delayed Add preserves new writing and an original completed while its transaction is pending',async({page})=>{
+    await microphone(page);await openRetelling(page);
+    let releaseSource!:()=>void,sourceRequested!:()=>void;
+    const sourceGate=new Promise<void>(resolve=>{releaseSource=resolve;});
+    const sourceStarted=new Promise<void>(resolve=>{sourceRequested=resolve;});
+    const exodus=await readFile(new URL('../data/books/EXO.json',import.meta.url),'utf8');
+    await page.route('**/data/books/EXO.json',async request=>{
+      sourceRequested();await sourceGate;
+      await request.fulfill({status:200,contentType:'application/json',body:exodus}).catch(()=>undefined);
+    });
+    try{
+      await page.evaluate(()=>{location.hash='#/study/EXO/1?verse=1&edition=eng-web&tab=memory';});
+      await sourceStarted;
+      await page.getByRole('button',{name:'Add to memorization',exact:true}).click();
+      await expect(page.getByRole('button',{name:'Checking source passage…',exact:true})).toBeDisabled();
+      const writing=page.getByLabel('My retelling',{exact:true});
+      await expect(writing).toBeEnabled();await writing.fill('Keep the draft begun while another passage was loading.');
+      await page.getByLabel(consent,{exact:true}).check();
+      await page.getByRole('button',{name:'Start private recording',exact:true}).click();
+      await expect(page.getByRole('button',{name:'Stop and keep recording',exact:true})).toBeVisible();
+      await page.waitForFunction(()=>(window as any).__retellingTest.chunks>0);
+      // Keep the real shared IDB transaction active; no production storage seam or fake bytes.
+      await page.evaluate(()=>{
+        const original=IDBDatabase.prototype.transaction;
+        const w=window as typeof window & {__pendingRetellingAdd:{held:boolean;release:()=>void;restore:()=>void}};
+        let holding=true;
+        const control:typeof w.__pendingRetellingAdd=w.__pendingRetellingAdd={held:false,release:()=>{holding=false;},restore:()=>{holding=false;IDBDatabase.prototype.transaction=original;}};
+        IDBDatabase.prototype.transaction=function(...args:Parameters<IDBDatabase['transaction']>){
+          const tx=original.apply(this,args),names=typeof args[0]==='string'?[args[0]]:Array.from(args[0]);
+          if(this.name==='adigun-aibible-workspace'&&args[1]==='readwrite'&&names.includes('workspace')&&!control.held){
+            control.held=true;
+            const keepOpen=()=>{const read=tx.objectStore('workspace').get('personal');read.onsuccess=()=>{if(holding)keepOpen();};};
+            keepOpen();
+          }
+          return tx;
+        };
+      });
+      releaseSource();
+      await page.waitForFunction(()=>(window as any).__pendingRetellingAdd.held);
+      await expect(writing).toBeDisabled();
+      await page.getByRole('button',{name:'Stop and keep recording',exact:true}).click();
+      await expect(page.getByRole('region',{name:'Unsaved recording',exact:true})).toBeVisible();
+      const original=await originalBytes(page);expect(original.length).toBeGreaterThan(16);
+      const confirmation=page.waitForEvent('dialog').then(async dialog=>{expect(dialog.message()).toContain('Unsaved writing or recording');await dialog.dismiss();});
+      await page.evaluate(()=>(window as any).__pendingRetellingAdd.release());
+      await confirmation;
+      await expect(writing).toBeEnabled();
+      await expect(writing).toHaveValue('Keep the draft begun while another passage was loading.');
+      await expect(page.getByRole('navigation',{name:'Memory cards'}).getByRole('button',{name:/^JHN 3:16/})).toHaveAttribute('aria-current','true');
+      expect(await originalBytes(page)).toEqual(original);
+      const added=await deviceInventory(page);expect(added.state.cards).toHaveLength(2);expect(added.media).toEqual([]);
+      expect(added.state.cards.find((card:any)=>card.ref.bookId==='EXO').retellings).toEqual([]);
+      await save(page);
+      const saved=await deviceInventory(page),retelling=saved.state.cards.find((card:any)=>card.ref.bookId==='JHN').retellings[0];
+      expect(retelling.text).toBe('Keep the draft begun while another passage was loading.');
+      expect(saved.media).toHaveLength(1);expect(saved.media[0].hash).toBe(createHash('sha256').update(original).digest('hex'));
+      expect(saved.media[0].recording.source.ref.bookId).toBe('JHN');
+    }finally{
+      releaseSource();await page.evaluate(()=>(window as any).__pendingRetellingAdd?.restore()).catch(()=>undefined);
+    }
+  });
 });
 
 test('real original audio survives offline reload, complete backup, restore, card/workspace deletion and Undo',async({page,context})=>{

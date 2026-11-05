@@ -34,9 +34,35 @@ export default function MemoryTab({ state, busy, commit, reference, onOpenRefere
   const cards = state.cards.slice().sort((a, b) => a.dueDate.localeCompare(b.dueDate));
   const [selected, setSelected] = useState(() => cards[0]?.id || ''); const [adding, setAdding] = useState(false); const [addError, setAddError] = useState('');
   const active = cards.find(c => c.id === selected) || cards[0]; const activeId = active?.id || ''; const alreadyAdded = state.cards.some(c => referenceLabel(c.ref) === referenceLabel(reference));
+  const [pendingSelection, setPendingSelection] = useState<{ id:string; sequence:number } | null>(null);
+  const addSequence = useRef(0);
+  const activeKey = active ? `${active.id}-${referenceLabel(active.ref)}` : ''; const referenceKey = referenceLabel(reference);
+  // A different card/passage or an unmount cancels an abandoned Add continuation.
+  useEffect(() => {
+    addSequence.current++; setAdding(false); setPendingSelection(null);
+    return () => { addSequence.current++; };
+  },[activeKey,referenceKey]);
   // Keep a concrete card selected. Rescheduling must not turn a sorted fallback into navigation
   // and unmount private writing or an active recording without the navigation guard.
   useEffect(() => { if (activeId && selected !== activeId) setSelected(activeId); },[activeId,selected]);
-  async function add() { if (!requestRetellingNavigation()) return; setAdding(true); setAddError(''); try { await loadPassage(reference); const timeZone = deviceTimeZone(); const card: MemoryCard = { ...newEntryBase(), ref: explicitReference(reference), timeZone, dueDate: dayInTimeZone(new Date(), timeZone), intervalDays: 0, successfulReviews: 0, lapses: 0, contextNotes: '', history: [], retellings: [] }; if (await commit(s => ({ ...s, cards: [...s.cards, card] }))) setSelected(card.id); } catch (e) { setAddError(e instanceof Error ? e.message : 'Could not open this passage.'); } finally { setAdding(false); } }
+  // Wait for the saved state and busy flag to render, then guard the actual navigation.
+  // Writing or capture begun during source loading/commit still belongs to the current card.
+  useEffect(() => {
+    if (!pendingSelection || busy) return;
+    setPendingSelection(null);
+    if (pendingSelection.sequence === addSequence.current && requestRetellingNavigation()) setSelected(pendingSelection.id);
+  },[pendingSelection,busy]);
+  async function add() {
+    if (busy || adding) return;
+    const sequence = ++addSequence.current; const isCurrent = () => sequence === addSequence.current;
+    const target = explicitReference(reference); setAdding(true); setAddError('');
+    try {
+      await loadPassage(target); if (!isCurrent()) return;
+      const timeZone = deviceTimeZone();
+      const card: MemoryCard = { ...newEntryBase(), ref:target, timeZone, dueDate:dayInTimeZone(new Date(),timeZone), intervalDays:0, successfulReviews:0, lapses:0, contextNotes:'', history:[], retellings:[] };
+      if (await commit(s => ({ ...s,cards:[...s.cards,card] })) && isCurrent()) setPendingSelection({ id:card.id,sequence });
+    } catch (e) { if (isCurrent()) setAddError(e instanceof Error ? e.message : 'Could not open this passage.'); }
+    finally { if (isCurrent()) setAdding(false); }
+  }
   return <section aria-labelledby="memory-heading"><h2 id="memory-heading">Memorization and recall</h2><p className="muted">Practice real wording from a named edition. Your passage links and review history are private; source text is fetched from the reader’s installed edition.</p><div className="workspace-columns"><div><section className="workspace-card"><h3>Add your selected passage</h3><PassageLinks refs={[reference]} onOpenReference={onOpenReference} /><button type="button" className="primary" disabled={busy || adding || alreadyAdded} onClick={() => void add()}>{alreadyAdded ? 'Passage already in your practice list' : adding ? 'Checking source passage…' : 'Add to memorization'}</button>{addError && <p role="alert" className="workspace-error">{addError}</p>}<p className="workspace-help">Choose another passage or verse range in the reader, then return here to add it.</p></section><h3 className="workspace-subheading">Your practice list</h3><nav className="workspace-list" aria-label="Memory cards">{cards.map(c => <div className="workspace-memory-item" key={c.id}><button type="button" aria-current={active?.id === c.id ? 'true' : undefined} onClick={() => { if (c.id === active?.id || requestRetellingNavigation()) setSelected(c.id); }}><strong>{referenceLabel(c.ref)}</strong><span className="workspace-meta">{c.dueDate <= dayInTimeZone(new Date(), c.timeZone) ? 'Ready to review' : `Next review ${c.dueDate}`}</span></button><button type="button" disabled={busy} aria-label={`Delete memory card ${referenceLabel(c.ref)}`} onClick={() => { if (c.id !== active?.id || requestRetellingNavigation()) void commit(s => ({ ...s, cards: s.cards.filter(card => card.id !== c.id) })); }}>Delete</button></div>)}</nav>{!cards.length && <p className="workspace-empty">No memorization passages yet. Add a passage you want to practice.</p>}</div>{active && <MemoryPractice key={`${active.id}-${referenceLabel(active.ref)}`} card={active} busy={busy} commit={commit} onOpenReference={onOpenReference} />}</div></section>;
 }

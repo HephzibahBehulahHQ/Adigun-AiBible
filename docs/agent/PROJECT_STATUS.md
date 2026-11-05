@@ -6,7 +6,7 @@
 - Latest merged release: [PR #31](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/31), `e437600d66213544923a12df8d95f161654a15de`, merged 13:25 UTC. [Main workflow 42035599588](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42035599588) is running; its live receipt remains to be independently verified.
 - Last independently verified production: `1198bfcbff5aba6d27a9b22195d37c77635e2299`, PR #30, workflow `42024305370`. Public verification at 12:18:21 UTC confirmed HTTP 200, that source, build `8f30becf3385963714bcd6e8`, fourteen Bible editions and exact catalog/OSHB manifest bytes.
 - Live URL: https://hephzibahbehulahhq.github.io/Adigun-AiBible/ . Public `build-info.json` identifies the deployed source revision.
-- Current branch: `codex/retelling-continuation-20261105`; last verified remote `f21c616f5032dbe451c3aa35e7439c9eb9a43369`. This checkpoint integrates the PR #31 main merge and records completed release review. [PR #32](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/32) now targets main and is ready for its complete CI gate.
+- Current branch: `codex/retelling-continuation-20261105`; remote predecessor `710f66fe3595601135200b886e33b2b46ca02b01` was verified through GitHub and fetched on 5 November at 13:33 UTC. Its PR #31 merge and concurrent release-status updates are preserved. [PR #32](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/32) now targets main; this checkpoint adds the focused delayed-Add draft-preservation repair before its complete CI gate.
 
 ## Verified source and typography release
 
@@ -20,7 +20,9 @@ Downloaded Arabic, Myanmar and bilingual PNGs were visually inspected with compl
 
 Optional consent-based local microphone originals, exact playback/download, manual transcripts, complete backups, atomic restore/delete/Undo and unsaved-draft/capture protection are implemented. Stable recording IDs preserve transcript drafts during concurrent deletion/reordering; rescheduling keeps the selected card. Existing written practice migrates additively. Source review preserves Arabic/Myanmar typography; personal writing uses automatic direction.
 
-Candidate `dca1024854610d54bbe7154e99be5cdabc4eb469` passed all 472 application tests, 20 backend contracts, source validation, TypeScript, lint and the production build. Independent review passed 56 focused capture/storage/transcript/workspace/family checks. Current `f21c616f` includes the later source staging/browser repair. Actual Playwright 1.64.0 collects 290 browser cases including 22 retelling cases; execution and screenshot review remain required on the final candidate.
+Candidate `dca1024854610d54bbe7154e99be5cdabc4eb469` passed all 472 application tests, 20 backend contracts, source validation, TypeScript, lint and the production build. Independent review passed 56 focused capture/storage/transcript/workspace/family checks. The integrated candidate includes the later source staging/browser repair. The delayed-Add regression brings the browser gate to 292 cases, including 24 retelling-media cases; actual execution and screenshot review remain required on the final candidate.
+
+Independent review found that a delayed card addition could unmount writing or recording started during source loading or the storage commit. The focused repair keeps editing available while loading, invalidates abandoned Add operations and checks the current navigation guard after committed state and the cleared busy flag render. Its deterministic browser regression holds the real source request and IndexedDB transaction, then checks that rejected navigation retains the original card, writing and exact original audio bytes. TypeScript, strict browser-test typecheck, scoped ESLint, whitespace and 56 focused capture/storage/transcript/workspace/family tests passed. All 24 retelling-media browser cases collect; local Chromium execution is not claimed.
 
 Recordings stay in browser storage. There is no automatic transcription, voice scoring or claim of physical microphone acceptance. Limits are five minutes/8 MiB per original, 32 MiB retained device audio and 64 MiB for a complete backup. See [retelling evidence and limits](../RETELLING_AUDIO.md).
 
@@ -38,4 +40,4 @@ Local Chromium installation is unavailable. Actual browser execution runs in Git
 
 ## Next action
 
-Verify the merged PR #31 deployment and public source receipt. Pass PR #32's complete exact-candidate browser/persistence gates and inspect retelling evidence before merge/deployment. Release the separately verified Greek/three-edition increment afterward.
+Verify the merged PR #31 deployment and public source receipt. Pass PR #32's repaired 292-case exact-candidate browser/persistence gates and inspect retelling evidence before merge/deployment. Release the separately verified Greek/three-edition increment afterward.
