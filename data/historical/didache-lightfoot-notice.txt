@@ -1,0 +1,19 @@
+DIDACHE — LIGHTFOOT ENGLISH TRANSCRIPTION
+
+Translated by Joseph Barber Lightfoot (1828–1889).
+Digital transcription: Wikisource contributors, revision 14637905, last edited 11 November 2024.
+Source: https://en.wikisource.org/w/index.php?title=Didache_(Lightfoot_translation)&oldid=14637905
+Contributor history: https://en.wikisource.org/w/index.php?title=Didache_(Lightfoot_translation)&action=history
+
+The source identifies the underlying work as public domain. This nineteenth-century translation is beyond the United States publication term and the European Union author-life-plus-70-years term. The source page lists Lightfoot as translator; no modern translator's text is imported.
+Where Wikisource contributors' transcription work carries copyright, attribution and the Creative Commons Attribution-ShareAlike 4.0 International license are retained:
+https://creativecommons.org/licenses/by-sa/4.0/
+https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+Adigun-AiBible transformation: HTML presentation removed; inter-word whitespace normalized; source chapter numbers, numbered units and wording retained. This text dataset and any copyrightable contributions to its transcription/format adaptation are offered under CC BY-SA 4.0. This notice does not change the public-domain status of the underlying translation and does not license unrelated application software. No endorsement by the translator or Wikisource is implied.
+
+Scope: all 16 chapters and 189 units in this pinned digital transcription. Unit numbering belongs to this digital source and may differ from other Didache editions. This is not a collation against a scanned print edition or a certification of the ancient text. No missing ancient material has been reconstructed.
+
+The source catalog identifies a Lightfoot translation from 1891; the pinned page also carries an 1889 category. The app identifies the digital revision exactly without claiming a verified print pagination or resolving that catalog discrepancy.
+
+The work is displayed in the Historical & Additional Texts library, separate from the application's 66-book Bible baseline. Its title does not establish authorship by all twelve apostles or universal canonical status.
