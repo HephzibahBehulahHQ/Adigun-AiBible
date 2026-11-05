@@ -2,6 +2,15 @@
 
 ## Active continuation — 5 November 2026 (Europe/Berlin)
 
+### Concordance integration checkpoint
+
+- Current integration branch: `codex/concordance-integration-20261105`, based on verified main merge `75f2d35be4df3ab07f589c557f01a653acdfc8dc` from PR #29. The prior catalog checkpoint `1586f4714cf6b2df1280e1f47b7c062eb8db56a9` and the merge were verified through the authenticated GitHub API and fetched locally on 5 November 2026.
+- PR #29 exact-candidate workflow `42011864179` passed all 208 browser cases with zero failures, flaky results or skips, plus persistence repeats. Catalog and coverage desktop/320px screenshots were reviewed. Main build `42013204493` passed; its deployment/public receipt is still pending at this checkpoint. The verified production revision below remains authoritative until that receipt matches.
+- New isolated source-word concordance is integrated through agent checkpoint `74e5660c2ee965702b0330c4ae362ea810480ca0`. Route, tool directory, command palette and reading-position recovery preserve the complete source passage. Twelve concordance checks plus nine routing/recovery checks, TypeScript and lint pass. Stream-bound hardening and browser cases remain in progress; no browser execution is claimed yet.
+- Independent bounded follow-up work covers deterministic compact source transport and a pinned OSHB source-study corpus. Neither is integrated or published at this checkpoint. Original-language alignment to translated editions is not inferred.
+
+### Last verified production and prior catalog evidence
+
 - Repository: `HephzibahBehulahHQ/Adigun-AiBible`.
 - Verified production: `9711f529bff19f18458ab34e6c00c08c0af1c8bb`, merged in [PR #28](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/28). [Main workflow 42008544329](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42008544329) passed. Independent public verification returned this exact `sourceCommit`, build `8ec75289f225e2ccb7ab99b9`, HTTP 200 and the app shell on 5 November 2026.
 - Live URL: https://hephzibahbehulahhq.github.io/Adigun-AiBible/ . `build-info.json` is the exact public source receipt.
@@ -22,4 +31,4 @@ Independent human editorial/native-language approval, restricted source rights, 
 
 ## Next action
 
-Synchronize the complete catalog candidate, open its release PR and run all browser/persistence gates. Merge only after success, inspect the new screenshots and verify the published source receipt.
+Verify PR #29’s public deployment receipt, finish the concordance integration and run its exact-candidate release gates. Keep compact source transport and OSHB acquisition isolated until their source/integrity checks pass.

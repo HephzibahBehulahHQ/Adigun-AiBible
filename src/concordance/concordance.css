@@ -1,0 +1,29 @@
+.concordance-workspace,.concordance-workspace .panel{min-width:0;overflow-wrap:anywhere}
+.concordance-workspace .panel{margin-block:1rem}
+.concordance-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.concordance-workspace label{display:grid;gap:.4rem;min-width:0;font-weight:650}
+.concordance-workspace input,.concordance-workspace select{box-sizing:border-box;min-width:0;max-width:100%;width:100%;min-height:44px}
+.concordance-workspace .concordance-check{display:flex;align-items:center;gap:.7rem;min-height:44px}
+.concordance-workspace .concordance-check input{width:1.2rem;min-height:1.2rem;flex:0 0 auto}
+.concordance-status{min-height:1.5em;overflow-wrap:anywhere}
+.concordance-totals{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-block:1.4rem}
+.concordance-totals div{min-width:0;padding:1rem;border:1px solid var(--border);border-radius:10px}
+.concordance-totals dt{font-size:.85rem;color:var(--muted)}
+.concordance-totals dd{font-size:clamp(1.4rem,3vw,2rem);font-variant-numeric:tabular-nums;margin:.5rem 0 0;font-weight:700}
+.concordance-workspace details{margin-block:1rem}
+.concordance-workspace summary{cursor:pointer;font-weight:650;min-height:44px;padding-block:.6rem}
+.concordance-distribution table{width:100%;border-collapse:collapse;table-layout:fixed;font-variant-numeric:tabular-nums}
+.concordance-distribution th,.concordance-distribution td{padding:.6rem .4rem;border-bottom:1px solid var(--border);text-align:end;overflow-wrap:anywhere}
+.concordance-distribution th:first-child{width:44%;text-align:start}
+.concordance-distribution caption{text-align:start;margin-block:.7rem;color:var(--muted)}
+.concordance-pagination{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.8rem;margin-block:1.2rem}
+.concordance-pagination p{margin:0;flex:1 1 12rem;text-align:center}
+.concordance-matches{list-style:none;padding:0;margin:0;display:grid;gap:1rem}
+.concordance-matches article{border:1px solid var(--border);border-radius:10px;padding:1rem;min-width:0}
+.concordance-matches h3{margin:0}
+.concordance-source-text{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.85}
+.concordance-source-text mark{background:#efdc95;color:#33280a;border-radius:2px;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.concordance-hash{font-family:monospace;font-size:.8rem;overflow-wrap:anywhere}
+.concordance-workspace button{max-width:100%;min-height:44px;white-space:normal;overflow-wrap:anywhere}
+.concordance-workspace [tabindex="-1"]:focus{outline:2px solid var(--gold,#b18a32);outline-offset:5px}
+@media(max-width:650px){.concordance-controls,.concordance-totals{grid-template-columns:minmax(0,1fr)}.concordance-pagination{display:grid;grid-template-columns:minmax(0,1fr)}.concordance-pagination p{grid-row:1}.concordance-workspace .button-row{flex-wrap:wrap}}

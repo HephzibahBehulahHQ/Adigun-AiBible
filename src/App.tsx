@@ -50,6 +50,7 @@ const LinguisticsWorkspace = lazy(() => import('./linguistics/LinguisticsWorkspa
 const TimeTravel = lazy(() => import('./time-travel/TimeTravel'));
 const NearbyRoom = lazy(() => import('./nearby/NearbyRoom'));
 const BlindInterpretationWorkspace = lazy(() => import('./interpretation/BlindInterpretationWorkspace'));
+const ConcordanceWorkspace = lazy(() => import('./concordance/ConcordanceWorkspace'));
 const MultiPassageCards = lazy(() => import('./sharing/MultiPassageCards'));
 import SourceChapter from './reader/SourceChapter';
 import ReadingSession from './reading-session/ReadingSession';
@@ -289,6 +290,7 @@ export default function App() {
     {id:'search',label:'Search source text',description:'Find a reference or words in the selected edition.',keywords:'find verse reference',disabled:!manifest,run:()=>requestAnimationFrame(()=>searchInput.current?.focus())},
     {id:'law-diary',label:'Law Diary',description:'Open source-linked law, teaching and history studies.',keywords:'law Moses money apostles sermons',run:()=>commandNavigate('law-diary')},
     {id:'linguistics',label:'Original-language study',description:'Explore licensed historical lexicons and private wording experiments.',keywords:'Greek Hebrew Aramaic Strong lexicon',run:()=>commandNavigate('linguistics')},
+    {id:'concordance',label:'Edition concordance',description:'Count exact source words and phrases and follow their passages.',keywords:'concordance occurrences word phrase distribution',run:()=>commandNavigate('concordance')},
     {id:'time-travel',label:'Athens time travel',description:'Explore a source-linked schematic tour with a 2D alternative.',keywords:'Athens Acts history tour 3D',run:()=>commandNavigate('time-travel')},
     {id:'interpretation',label:'Blind interpretation workspace',description:'Read two historical interpretations, record reasons, then reveal their sources.',keywords:'blind study interpretation reflection traditions',run:()=>commandNavigate('interpretation')},
     {id:'nearby',label:'Nearby study room',description:'Try an explicitly approved local two-person study connection.',keywords:'offline peer room WebRTC',run:()=>commandNavigate('nearby')},
@@ -337,6 +339,7 @@ export default function App() {
         {route.view==='speakers'&&<SpeakerExplorer reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
         {route.view==='editorial-workbench'&&<EditorialWorkbench reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
         {route.view==='linguistics'&&<LinguisticsWorkspace reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
+        {route.view==='concordance'&&<ConcordanceWorkspace reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
         {route.view==='time-travel'&&<TimeTravel reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
         {route.view==='interpretation'&&<BlindInterpretationWorkspace reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
         {route.view==='nearby'&&<NearbyRoom reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
