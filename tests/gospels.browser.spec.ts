@@ -116,20 +116,20 @@ test('Study Tools and Law Diary open Gospel comparison without moving the origin
   await expect(page).toHaveURL(/#\/read\/JHN\/3\?verse=16&end=18&edition=yor$/);
 });
 
-test('mounted hash and history transitions derive the Gospel default from the current reader while respecting an explicit override', async ({ page }) => {
+test('same-document hash and history transitions derive the Gospel default from the current reader while respecting an explicit override', async ({ page }) => {
   const yoruba = '#/gospels/JHN/3?verse=16&end=18&edition=yor';
   const override = '&gospelGroup=sower&gospelEdition=deu1912&gospelBooks=MAT,MRK,LUK';
   const linkedEdition = page.getByLabel('Edition for linked Gospel panes', { exact: true });
-  const workspace = page.locator('.gospel-workspace');
+  const documentRoot = page.locator('body');
   await page.goto(route); await sower(page);
-  await workspace.evaluate(element => element.setAttribute('data-test-mounted-workspace', 'original'));
+  await documentRoot.evaluate(element => element.setAttribute('data-test-document', 'original'));
 
-  // These are same-component hash updates, rather than fresh page loads or the tool's own selector.
+  // Change the URL in the same document. Source loading may remount the workspace, but must retain the selected edition and original reader passage.
   await page.evaluate(hash => { location.hash = hash; }, yoruba);
   await expect(linkedEdition).toHaveValue('yor'); await sower(page, 'yor');
   await expect(page.locator('.gospel-return')).toContainText('John 3:16–18 · yor');
   expect(new URL(page.url()).hash).toBe(yoruba);
-  await expect(workspace).toHaveAttribute('data-test-mounted-workspace', 'original');
+  await expect(documentRoot).toHaveAttribute('data-test-document', 'original');
 
   await page.goBack(); await expect(linkedEdition).toHaveValue('eng-web'); await sower(page);
   expect(new URL(page.url()).hash).toBe(route);
@@ -141,7 +141,7 @@ test('mounted hash and history transitions derive the Gospel default from the cu
   await page.evaluate(hash => { location.hash = hash; }, route + override);
   await expect(page.locator('.gospel-return')).toContainText('John 3:16–18 · eng-web');
   await expect(linkedEdition).toHaveValue('deu1912'); await sower(page, 'deu1912');
-  await expect(workspace).toHaveAttribute('data-test-mounted-workspace', 'original');
+  await expect(documentRoot).toHaveAttribute('data-test-document', 'original');
 
   await page.goBack(); await sower(page, 'deu1912');
   expect(new URL(page.url()).hash).toBe(yoruba + override);
@@ -149,7 +149,7 @@ test('mounted hash and history transitions derive the Gospel default from the cu
   await page.goBack(); await expect(linkedEdition).toHaveValue('yor'); await sower(page, 'yor');
   expect(new URL(page.url()).hash).toBe(yoruba);
   await page.goForward(); await expect(linkedEdition).toHaveValue('deu1912'); await sower(page, 'deu1912');
-  await expect(workspace).toHaveAttribute('data-test-mounted-workspace', 'original');
+  await expect(documentRoot).toHaveAttribute('data-test-document', 'original');
   await page.getByRole('button', { name: 'Return to reader', exact: true }).click();
   await expect(page).toHaveURL(/#\/read\/JHN\/3\?verse=16&end=18&edition=yor$/);
 });
