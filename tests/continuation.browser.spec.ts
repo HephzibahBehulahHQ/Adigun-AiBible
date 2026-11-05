@@ -23,7 +23,7 @@ test('assistant actions preserve passage identity and window preferences',async(
   await page.getByRole('button',{name:'Show passage context',exact:true}).click();
   await expect(page.getByRole('heading',{name:'Passage context',exact:true})).toBeVisible();
   await expect(page).toHaveURL(/read\/JHN\/3\?verse=16&edition=eng-bsb/);
-  if(isMobile)await page.getByRole('button',{name:/Close passage inspector/}).click();
+  if(isMobile)await page.getByRole('button',{name:'Close inspector',exact:true}).click();
   await launcher.click();
   await page.getByRole('button',{name:'Open Law Diary',exact:true}).click();
   await expect(page.getByRole('heading',{name:'Law Diary',exact:true})).toBeVisible();

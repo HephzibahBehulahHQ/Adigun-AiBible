@@ -55,7 +55,7 @@ function TorahCategories({ entry, editionId, onOpenReference }: { entry: LawEntr
   const [category, setCategory] = useState<string>('all');
   if (!entry.categorySamples) return null;
   const groups = entry.categorySamples.filter(group => category === 'all' || group.category === category);
-  return <section className="ld-torah" aria-label="Torah category samples"><h4>Torah category samples</h4><label className="ld-filter">Category<select value={category} onChange={event => setCategory(event.target.value)}><option value="all">All six categories</option>{lawCategories.map(value => <option key={value} value={value}>{value[0].toUpperCase() + value.slice(1)}</option>)}</select></label>
+  return <section className="ld-torah" aria-label="Torah category samples"><h4>Torah category samples</h4><label className="ld-filter">Category<select aria-label="Category" value={category} onChange={event => setCategory(event.target.value)}><option value="all">All six categories</option>{lawCategories.map(value => <option key={value} value={value}>{value[0].toUpperCase() + value.slice(1)}</option>)}</select></label>
     {groups.map(group => <details key={group.category} className="ld-category"><summary>{group.category[0].toUpperCase() + group.category.slice(1)} · view all {group.sources.length} indexed samples</summary><p className="muted small">Representative passages only; not every commandment in this category.</p>{group.sources.map(source => <Source key={sourceLabel(source)} source={source} editionId={editionId} onOpenReference={onOpenReference}/>)}</details>)}
   </section>;
 }
