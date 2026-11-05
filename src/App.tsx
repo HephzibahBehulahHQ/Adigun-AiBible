@@ -54,6 +54,7 @@ const BlindInterpretationWorkspace = lazy(() => import('./interpretation/BlindIn
 const ConcordanceWorkspace = lazy(() => import('./concordance/ConcordanceWorkspace'));
 const HebrewStudyWorkspace = lazy(() => import('./original-language/HebrewStudyWorkspace'));
 const GreekStudyWorkspace = lazy(() => import('./greek-language/GreekStudyWorkspace'));
+const GospelWorkspace = lazy(() => import('./gospel/GospelWorkspace'));
 const MultiPassageCards = lazy(() => import('./sharing/MultiPassageCards'));
 import SourceChapter from './reader/SourceChapter';
 import ReadingSession from './reading-session/ReadingSession';
@@ -319,6 +320,7 @@ export default function App() {
     {id:'hebrew-study',label:'Hebrew and Aramaic source study',description:'Inspect exact source words, supplied morphology and reading alternatives.',keywords:'Hebrew Aramaic OSHB morphology lemma qere ketiv',run:()=>commandNavigate('hebrew-study')},
     {id:'greek-study',label:'Greek source study',description:'Inspect exact Greek source tokens, supplied parsing and literal lemma occurrences.',keywords:'Greek MorphGNT SBLGNT morphology parsing lemma',run:()=>commandNavigate('greek-study')},
     {id:'concordance',label:'Edition concordance',description:'Count exact source words and phrases and follow their passages.',keywords:'concordance occurrences word phrase distribution',run:()=>commandNavigate('concordance')},
+    {id:'gospels',label:'Gospel comparison',description:'Arrange exact Gospel ranges and move through private comparison rows together.',keywords:'Matthew Mark Luke John Gospel parallel synoptic',run:()=>commandNavigate('gospels')},
     {id:'time-travel',label:'Athens time travel',description:'Explore a source-linked schematic tour with a 2D alternative.',keywords:'Athens Acts history tour 3D',run:()=>commandNavigate('time-travel')},
     {id:'interpretation',label:'Blind interpretation workspace',description:'Read two historical interpretations, record reasons, then reveal their sources.',keywords:'blind study interpretation reflection traditions',run:()=>commandNavigate('interpretation')},
     {id:'nearby',label:'Nearby study room',description:'Try an explicitly approved local two-person study connection.',keywords:'offline peer room WebRTC',run:()=>commandNavigate('nearby')},
@@ -369,6 +371,7 @@ export default function App() {
         {route.view==='linguistics'&&<LinguisticsWorkspace reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
         {route.view==='hebrew-study'&&<HebrewStudyWorkspace locale={prefs.locale}/>}
         {route.view==='greek-study'&&<GreekStudyWorkspace locale={prefs.locale}/>}
+        {route.view==='gospels'&&<GospelWorkspace reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
         {route.view==='concordance'&&<ConcordanceWorkspace reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
         {route.view==='time-travel'&&<TimeTravel reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
         {route.view==='interpretation'&&<BlindInterpretationWorkspace reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}

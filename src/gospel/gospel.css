@@ -1,0 +1,35 @@
+.gospel-workspace { max-width: 1600px; }
+.gospel-workspace .panel { margin-block: 16px; }
+.gospel-workspace label { display: grid; gap: 8px; min-width: 0; }
+.gospel-workspace input, .gospel-workspace select, .gospel-workspace textarea { width: 100%; min-width: 0; max-width: 100%; }
+.gospel-workspace button, .gospel-workspace select, .gospel-workspace input, .gospel-workspace summary { min-height: 44px; }
+.gospel-workspace .button-row { flex-wrap: wrap; }
+.gospel-row-picker { flex: 1 1 220px; }
+.gospel-selectors { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-block: 16px; }
+.gospel-selectors fieldset { min-width: 0; padding: 16px; border: 1px solid var(--border); border-radius: 12px; }
+.gospel-selectors legend { padding-inline: 8px; font-weight: 700; }
+.gospel-selectors label + label { margin-top: 12px; }
+.gospel-range { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-block: 12px; }
+.gospel-range label + label { margin-top: 0; }
+.gospel-editor > label { margin-block: 16px; }
+.gospel-passages { display: grid; grid-template-columns: repeat(var(--gospel-columns), minmax(0, 1fr)); gap: 16px; align-items: start; }
+.gospel-passage { min-width: 0; overflow-wrap: anywhere; }
+.gospel-passage h3 { font-size: 1.25rem; margin-block: 12px 8px; }
+.gospel-passage header { border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+.gospel-source-text { font-size: 19px; line-height: 1.8; }
+.gospel-source-text p { color: var(--text); margin-block: 18px; }
+.gospel-source-text sup { color: var(--muted); font: 600 12px/1.5 system-ui, sans-serif; }
+.gospel-passage details { border-top: 1px solid var(--border); padding-block: 8px; }
+.gospel-passage summary { cursor: pointer; padding-block: 10px; }
+.gospel-credit { white-space: pre-wrap; overflow-wrap: anywhere; }
+.gospel-sha { overflow-wrap: anywhere; }
+.gospel-feedback { border-inline-start: 3px solid var(--gold); padding-inline: 16px; }
+.gospel-import { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border); }
+@media (max-width: 1280px) { .gospel-passages { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 700px) {
+  .gospel-passages, .gospel-selectors { grid-template-columns: minmax(0, 1fr); }
+  .gospel-workspace .panel { padding: 16px; }
+  .gospel-workspace .button-row > button { max-width: 100%; white-space: normal; }
+  .gospel-workspace .section-title { align-items: flex-start; gap: 12px; flex-wrap: wrap; }
+  .gospel-source-text { font-size: 18px; }
+}
