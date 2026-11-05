@@ -3,6 +3,7 @@ import { execFileSync } from 'node:child_process';
 import { relative, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { createHash } from 'node:crypto';
+import { verifySourceJsonTransport } from './pack-source-json.mjs';
 
 const digest = bytes => createHash('sha256').update(bytes).digest('hex');
 async function inventory(directory, root = directory) {
@@ -196,6 +197,9 @@ export async function finalizeBuild({ root = resolve(import.meta.dirname, '..'),
 }
 
 if (process.argv[1] && pathToFileURL(resolve(process.argv[1])).href === import.meta.url) {
+  const root = resolve(import.meta.dirname, '..');
+  const transport = await verifySourceJsonTransport({ directory: resolve(root, 'dist/data'), canonicalDirectory: resolve(root, 'data') });
+  if (transport.enabled) console.log(`Final source artifact verified: ${transport.files} envelopes, ${transport.canonicalBytes} exact canonical bytes, ${transport.transferredBytes} transferred bytes.`);
   const result = await finalizeBuild();
   console.log(`Release metadata and verified offline inventory generated (${result.manifest.buildVersion}; content ${result.manifest.contentVersion}).`);
 }

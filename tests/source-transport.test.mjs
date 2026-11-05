@@ -4,7 +4,7 @@ import { createHash } from 'node:crypto';
 import { mkdtemp, mkdir, readFile, writeFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { packSourceJson, sourceTransportEnabled } from '../scripts/pack-source-json.mjs';
+import { packSourceJson, sourceTransportEnabled, verifySourceJsonTransport, copySourceContent } from '../scripts/pack-source-json.mjs';
 import { decodeSourceJsonBytes } from '../src/source-codec.ts';
 import { finalizeBuild } from '../scripts/finalize-build.mjs';
 import { getOfflineManifest, OFFLINE_INVENTORY_MAX_FILES, OFFLINE_METADATA_MAX_BYTES } from '../src/offline.ts';
@@ -38,6 +38,45 @@ function inventory(count) {
   const basePath = '/Adigun-AiBible/';
   return { schemaVersion: 1, appId: 'adigun-aibible', basePath, cachePrefix: `adigun-bible-${createHash('sha256').update(basePath).digest('hex').slice(0, 12)}-`, contentVersion: 'a'.repeat(24), buildVersion: 'b'.repeat(24), files: Object.fromEntries(Array.from({ length: count }, (_, index) => [`data/source-${index}.json`, { sha256: 'c'.repeat(64), bytes: 2 }])) };
 }
+
+test('final artifact verification rejects raw replacements, missing files and changed canonical content', async t => {
+  const root = await mkdtemp(join(tmpdir(), 'source-final-artifact-'));
+  t.after(() => rm(root, { recursive: true, force: true }));
+  const canonicalDirectory = join(root, 'canonical'), directory = join(root, 'served');
+  const source = await readFile(new URL('../data/editions/yor/books/JHN.json', import.meta.url));
+  for (const target of [canonicalDirectory, directory]) { await mkdir(join(target, 'books'), { recursive: true }); await writeFile(join(target, 'books/JHN.json'), source); }
+  await packSourceJson({ directory, enabled: true });
+  const options = { canonicalDirectory, directory, enabled: true };
+  assert.equal((await verifySourceJsonTransport(options)).files, 1);
+  const encoded = await readFile(join(directory, 'books/JHN.json'));
+  await writeFile(join(directory, 'books/JHN.json'), source);
+  await assert.rejects(verifySourceJsonTransport(options), /not packaged/);
+  await writeFile(join(directory, 'books/JHN.json'), encoded);
+  await writeFile(join(canonicalDirectory, 'books/JHN.json'), Buffer.concat([source, Buffer.from('\n')]));
+  await assert.rejects(verifySourceJsonTransport(options), /canonical bytes/);
+  await writeFile(join(canonicalDirectory, 'books/JHN.json'), source);
+  await rm(join(directory, 'books/JHN.json'));
+  await assert.rejects(verifySourceJsonTransport(options), /ENOENT/);
+});
+
+test('fresh source staging writes each payload from canonical bytes and never accepts a reused destination', async t => {
+  const root = await mkdtemp(join(tmpdir(), 'source-fresh-staging-'));
+  t.after(() => rm(root, { recursive: true, force: true }));
+  const sourceDirectory = join(root, 'canonical'), directory = join(root, 'staged');
+  await mkdir(join(sourceDirectory, 'books'), { recursive: true }); await mkdir(directory);
+  const source = await readFile(new URL('../data/books/JHN.json', import.meta.url));
+  await writeFile(join(sourceDirectory, 'books/JHN.json'), source);
+  await writeFile(join(sourceDirectory, 'NOTICE.txt'), 'Exact test notice');
+  await writeFile(join(sourceDirectory, 'upstream.xml'), '<excluded-test-source/>');
+  const result = await copySourceContent({ sourceDirectory, directory, enabled: true });
+  assert.equal(result.files, 1);
+  assert.equal((await verifySourceJsonTransport({ directory, canonicalDirectory: sourceDirectory, enabled: true })).files, 1);
+  assert.deepEqual(await readFile(join(sourceDirectory, 'books/JHN.json')), source);
+  assert.equal(await readFile(join(directory, 'NOTICE.txt'), 'utf8'), 'Exact test notice');
+  await assert.rejects(readFile(join(directory, 'upstream.xml')), /ENOENT/);
+  await assert.rejects(copySourceContent({ sourceDirectory, directory, enabled: true }), /EEXIST/);
+  await assert.rejects(copySourceContent({ sourceDirectory, directory: sourceDirectory, enabled: true }), /separate/);
+});
 
 test('offline inventory admits the bounded expansion and rejects excessive counts or unsafe entries', async t => {
   const previous = globalThis.fetch;
