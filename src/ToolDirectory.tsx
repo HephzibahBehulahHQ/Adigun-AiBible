@@ -1,8 +1,9 @@
-import { ArrowRight, BookMarked, Headphones, HeartHandshake, NotebookPen, Presentation, ScanText } from 'lucide-react';
+import { ArrowRight, BookMarked, Headphones, HeartHandshake, NotebookPen, Presentation, ScanText, ScrollText } from 'lucide-react';
 import type { View } from './types';
 import './tools.css';
 
 const tools = [
+  { view: 'law-diary', icon: ScrollText, title: 'Law Diary', description: 'Explore source-led timelines, social laws, money, sermons, evangelism, apostles, and Second Coming texts.' },
   { view: 'editions', icon: BookMarked, title: 'Bible editions', description: 'Find an installed source, inspect its permissions, and compare two to four editions.' },
   { view: 'study', icon: NotebookPen, title: 'Personal workspace', description: 'Keep prayer entries, passage collections, reading plans, memory practice, and reflections on this device.' },
   { view: 'family', icon: HeartHandshake, title: 'Family archive', description: 'Preserve authorized recordings, memories, photographs, and documents beside passages.' },
