@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Adigun Naskh";
+  src: url('./assets/fonts/NotoNaskhArabic.ttf') format('truetype');
+  font-weight: 400 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Adigun Myanmar";
+  src: url('./assets/fonts/NotoSansMyanmar.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+}
+[lang|="ar"] {
+  direction: rtl;
+  unicode-bidi: isolate;
+  font-family: "Adigun Naskh", serif;
+  line-height: 1.8;
+  text-align: start;
+}
+[lang|="my"] {
+  font-family: "Adigun Myanmar", sans-serif;
+  line-height: 1.8;
+  word-break: normal;
+  overflow-wrap: normal;
+  line-break: auto;
+}
+.scripture[dir="rtl"] .source-text,
+.scripture[lang|="my"] .source-text {
+  font-family: inherit;
+  line-height: 1.8;
+}
+.scripture[dir="rtl"] .verse-number,
+.scripture[dir="rtl"] .verse-actions {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+.edition-pane p:lang(ar), .projection-text:lang(ar), .verse-drop-text p:lang(ar) { font-family: "Adigun Naskh", serif; line-height: 1.8; }
+.edition-pane p:lang(my), .projection-text:lang(my), .verse-drop-text p:lang(my) { font-family: "Adigun Myanmar", sans-serif; line-height: 1.8; }

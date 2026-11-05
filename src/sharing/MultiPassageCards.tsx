@@ -1,3 +1,4 @@
+import { ensureSourceFont, sourceDirection } from '../source-typography';
 import { useEffect, useId, useRef, useState } from 'react';
 import { getBook, getEditionCatalog, getManifest, sourceCredit } from '../data';
 import { dimensions, downloadBlob, palettes } from '../media';
@@ -42,6 +43,7 @@ export default function MultiPassageCards({ reference }: { reference: Reference 
     const run = ++generation.current; locked.current = true; setBusy(true); setPrepared(null); setError(''); setStatus('Checking source wording, permissions and card layout…');
     try {
       const sources = await loadCardSources(reference, secondEdition === editionId ? '' : secondEdition, wholeChapter, { getBook, getManifest, requirePermission, sourceCredit });
+      await Promise.all(sources.passages.map(passage => ensureSourceFont(passage.language, passage.text)));
       await document.fonts.ready;
       if (run !== generation.current) return;
       const measuringCanvas = document.createElement('canvas'), context = measuringCanvas.getContext('2d');
@@ -99,7 +101,7 @@ export default function MultiPassageCards({ reference }: { reference: Reference 
         <div className="multi-cards-navigation"><button type="button" disabled={busy || index === 0} onClick={() => setIndex(value => value - 1)} aria-label="Previous prepared card">Previous</button><label>Card<select aria-label="Prepared card number" value={index} disabled={busy} onChange={event => setIndex(Number(event.target.value))}>{prepared.layout.pages.map((_, pageIndex) => <option key={pageIndex} value={pageIndex}>{pageIndex + 1} of {prepared.layout.pages.length}</option>)}</select></label><button type="button" disabled={busy || index === prepared.layout.pages.length - 1} onClick={() => setIndex(value => value + 1)} aria-label="Next prepared card">Next</button></div>
         <canvas ref={canvas} role="img" aria-label={`Prepared passage card ${index + 1} of ${prepared.layout.pages.length}`} aria-describedby={alternativeId}/>
         <button type="button" className="secondary" disabled={busy} onClick={() => void exportCard(false)}>Download card {index + 1} PNG</button>
-        <details className="multi-cards-alternative" id={alternativeId}><summary>Text alternative for this card</summary><p>{prepared.sources.title} · Card {index + 1} of {prepared.layout.pages.length}</p>{page.fragments.map((fragment, fragmentIndex) => <div key={`${fragment.passage.id}:${fragmentIndex}`}><h3>{fragment.passage.reference} · {fragment.passage.editionName}{fragment.continued ? ' · continued' : ''}</h3><p lang={fragment.passage.language}>{fragment.lines.join('')}</p></div>)}<pre>{prepared.sources.sources.map(source => `${source.name}\n${source.credit}`).join('\n\n')}</pre></details>
+        <details className="multi-cards-alternative" id={alternativeId}><summary>Text alternative for this card</summary><p>{prepared.sources.title} · Card {index + 1} of {prepared.layout.pages.length}</p>{page.fragments.map((fragment, fragmentIndex) => <div key={`${fragment.passage.id}:${fragmentIndex}`}><h3>{fragment.passage.reference} · {fragment.passage.editionName}{fragment.continued ? ' · continued' : ''}</h3><p lang={fragment.passage.language} dir={sourceDirection(fragment.passage.language)}>{fragment.lines.join('')}</p></div>)}<pre>{prepared.sources.sources.map(source => `${source.name}\n${source.credit}`).join('\n\n')}</pre></details>
       </div> : <div className="multi-cards-empty"><p>Choose the passage, format and source editions, then prepare the cards. No image is downloaded automatically.</p></div>}
     </div>
   </section>;

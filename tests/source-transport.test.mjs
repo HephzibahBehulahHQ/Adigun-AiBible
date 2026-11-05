@@ -1,10 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
-import { mkdtemp, mkdir, readFile, writeFile, rm } from 'node:fs/promises';
+import { mkdtemp, mkdir, readFile, writeFile, rm, cp, readdir } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { packSourceJson, sourceTransportEnabled, verifySourceJsonTransport, copySourceContent } from '../scripts/pack-source-json.mjs';
+import { packSourceJson, sourceTransportEnabled, verifySourceJsonTransport, copySourceContent, createSourceStagingDirectory } from '../scripts/pack-source-json.mjs';
 import { decodeSourceJsonBytes } from '../src/source-codec.ts';
 import { finalizeBuild } from '../scripts/finalize-build.mjs';
 import { getOfflineManifest, OFFLINE_INVENTORY_MAX_FILES, OFFLINE_METADATA_MAX_BYTES } from '../src/offline.ts';
@@ -38,6 +38,39 @@ function inventory(count) {
   const basePath = '/Adigun-AiBible/';
   return { schemaVersion: 1, appId: 'adigun-aibible', basePath, cachePrefix: `adigun-bible-${createHash('sha256').update(basePath).digest('hex').slice(0, 12)}-`, contentVersion: 'a'.repeat(24), buildVersion: 'b'.repeat(24), files: Object.fromEntries(Array.from({ length: count }, (_, index) => [`data/source-${index}.json`, { sha256: 'c'.repeat(64), bytes: 2 }])) };
 }
+
+test('unfinished source preparation remains outside assets copied from public', async t => {
+  const root = await mkdtemp(join(tmpdir(), 'source-private-staging-'));
+  t.after(() => rm(root, { recursive: true, force: true }));
+  const directory = join(root, 'public'); await mkdir(directory);
+  await writeFile(join(directory, 'index.html'), '<title>Existing published shell</title>');
+  const staged = await createSourceStagingDirectory(directory);
+  await mkdir(join(staged, 'books')); await writeFile(join(staged, 'books/GEN.json'), '{"testOnly":"unfinished source"}');
+  // Model a stopped preparation: leave staging intact while copying public assets.
+  await cp(directory, join(root, 'dist'), { recursive: true });
+  assert.deepEqual(await readdir(join(root, 'dist')), ['index.html']);
+  assert.equal(await readFile(join(staged, 'books/GEN.json'), 'utf8'), '{"testOnly":"unfinished source"}');
+});
+
+test('a pre-existing public staging directory blocks preparation without deleting another operation', async t => {
+  const root = await mkdtemp(join(tmpdir(), 'source-existing-staging-'));
+  t.after(() => rm(root, { recursive: true, force: true }));
+  const directory = join(root, 'public'), existing = join(directory, '.source-data-existing');
+  await mkdir(existing, { recursive: true }); await writeFile(join(existing, 'owner.txt'), 'Retain until its owner confirms it is inactive.');
+  await assert.rejects(createSourceStagingDirectory(directory), /Unpublished source staging/);
+  assert.equal(await readFile(join(existing, 'owner.txt'), 'utf8'), 'Retain until its owner confirms it is inactive.');
+});
+
+test('finalization refuses a leaked staging tree instead of issuing a release receipt', async t => {
+  const root = await mkdtemp(join(tmpdir(), 'source-staging-release-'));
+  t.after(() => rm(root, { recursive: true, force: true }));
+  for (const [name, bytes] of Object.entries({ 'index.html': '<title>Test fixture</title>', 'manifest.webmanifest': '{}', 'assets/app.js': '/* test fixture */', 'data/manifest.json': '{}', '.source-data-leaked/partial.json': '{"testOnly":true}' })) {
+    await mkdir(join(root, 'dist', name, '..'), { recursive: true }); await writeFile(join(root, 'dist', name), bytes);
+  }
+  await assert.rejects(finalizeBuild({ root, sourceCommit: 'test-only-revision' }), /Unpublished source staging/);
+  await assert.rejects(readFile(join(root, 'dist/build-info.json')), /ENOENT/);
+  await assert.rejects(readFile(join(root, 'dist/sw.js')), /ENOENT/);
+});
 
 test('final artifact verification rejects raw replacements, missing files and changed canonical content', async t => {
   const root = await mkdtemp(join(tmpdir(), 'source-final-artifact-'));

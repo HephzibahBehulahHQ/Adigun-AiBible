@@ -1,3 +1,4 @@
+import { ensureSourceFont } from '../source-typography';
 import { useEffect, useId, useRef, useState } from 'react';
 import { getBook, getManifest, sourceCredit } from '../data';
 import { downloadBlob, palettes } from '../media';
@@ -27,6 +28,7 @@ export default function WidgetCard({ reference, locale, editionId, onOpenReferen
     void (async () => {
       try {
         const source = await loadWidgetSource(chosen, { getBook, getManifest, requirePermission, sourceCredit });
+        await ensureSourceFont(source.passages[0].language, source.passages[0].text);
         await document.fonts.ready;
         const measuring = document.createElement('canvas'), context = measuring.getContext('2d');
         if (!context) throw new Error('This browser cannot create verse images.');

@@ -1,3 +1,4 @@
+import { sourceDirection } from '../source-typography';
 import { Fragment, useEffect, useMemo, useState } from 'react';
 import type { Dispatch, MouseEvent, ReactNode, SetStateAction } from 'react';
 import { Bookmark, Highlighter, NotebookPen } from 'lucide-react';
@@ -105,7 +106,7 @@ export default function SourceChapter(props: Props) {
       <label><input type="checkbox" checked={options.redLetters} disabled={!markedVerses} onChange={event => setOptions(previous => ({ ...previous, redLetters: event.target.checked }))} />Publisher red letters</label>
     </div>
     <details className="source-coverage"><summary>Source annotation coverage · this chapter</summary><p>{structure.headings.length} supplied headings · {noteCount} notes · {markedVerses} of {chapter.verses.length} verse records contain publisher marks for Jesus’ words.</p><p>{structure.hasMetadata ? 'Headings, notes and formatting come from this edition’s imported source. Italics follow its marked additions. Publisher speech marks have not been independently reviewed by this app; unmarked text has no speaker assignment here.' : 'The imported source supplies verse wording without this annotation layer. Missing headings, paragraphs or speech assignments have not been invented.'}</p>{options.redLetters && markedVerses > 0 && <p>Red, underlined words follow the publisher’s Jesus-speech marks. Verse labels identify the same marking without relying on color.</p>}{structure.issues.length > 0 && <p role="alert">Some source annotations could not be positioned safely. Their text remains separate and the original verse wording is unchanged. {structure.issues.join(' ')}</p>}</details>
-    <div className={`scripture ${paragraphMode ? 'source-paragraph-view' : ''}`} lang={manifest.edition.language}>
+    <div className={`scripture ${paragraphMode ? 'source-paragraph-view' : ''}`} lang={manifest.edition.language} dir={sourceDirection(manifest.edition.language)}>
       {structure.headings.filter(row => row.validAnchor && row.afterVerse === null).map(heading)}
       {paragraphMode ? blocks.map((block, blockIndex) => <Fragment key={`${block.key}-${blockIndex}`}><p className="source-paragraph-block" data-poetry-level={poetryLevel(block.style)}>{block.pieces.map((piece, pieceIndex) => {
         const { verse } = piece, title = `${bookName} ${chapter.number}:${verse.number}`;

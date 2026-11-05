@@ -121,7 +121,10 @@ test('coverage uses actual record counts and keeps unavailable approval evidence
 test('provider inventory remains searchable metadata and rejects unsafe external URLs', async () => {
   const raw = await read('data/editions/acquisition-catalog.json'), inventory = validateAcquisition(raw);
   assert.equal(inventory.records.length, raw.records.length); assert.ok(filterAcquisition(inventory, 'Arabic').length > 0);
-  const row = inventory.records[0]; assert.ok(filterAcquisition(inventory, row.providerId).some(item => item.providerId === row.providerId));
+  const row = inventory.records.find(item => item.availability === 'metadata-only'); assert.ok(row, 'The acquisition inventory must retain real uninstalled source leads.');
+  assert.ok(filterAcquisition(inventory, row.providerId).some(item => item.providerId === row.providerId));
+  const installed = inventory.records.filter(item => item.availability === 'installed');
+  assert.ok(installed.length > 0); assert.ok(installed.every(item => typeof item.installedEditionId === 'string' && item.installedEditionId.length > 0));
   assert.equal(row.availability, 'metadata-only'); assert.equal(row.installedEditionId, null);
   const invalid = structuredClone(raw); invalid.records[0].sourceUrl = 'javascript:alert(1)'; assert.throws(() => validateAcquisition(invalid), /unsafe/);
 });

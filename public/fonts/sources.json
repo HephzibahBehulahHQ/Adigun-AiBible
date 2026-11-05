@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "sourceRevision": "fbe81817505e8aeadc53cc7a38a2b76fb57c333e",
+  "fonts": [
+    {
+      "name": "NotoNaskhArabic",
+      "path": "src/assets/fonts/NotoNaskhArabic.ttf",
+      "bytes": 307592,
+      "sha256": "67b5a525a661b607971fbd3f96a81b89d3a768e74534fca84f18ac97e6fab72f",
+      "gitBlob": "a8d2867262dc7bb28492ad746de5d56235735c8b",
+      "source": "https://raw.githubusercontent.com/google/fonts/fbe81817505e8aeadc53cc7a38a2b76fb57c333e/ofl/notonaskharabic/NotoNaskhArabic%5Bwght%5D.ttf",
+      "license": "SIL-OFL-1.1",
+      "noticePath": "public/fonts/NotoNaskhArabic-OFL.txt",
+      "noticeSha256": "a7a5a25eb188bf1cd96982030d53e23c33485c69b1044a562254226857ee13af",
+      "noticeSource": "https://raw.githubusercontent.com/google/fonts/fbe81817505e8aeadc53cc7a38a2b76fb57c333e/ofl/notonaskharabic/OFL.txt"
+    },
+    {
+      "name": "NotoSansMyanmar",
+      "path": "src/assets/fonts/NotoSansMyanmar.ttf",
+      "bytes": 784832,
+      "sha256": "7abbbfbe2514105d7ce94937aee3feb2ba89b73a256c8b77b5866bd9b83e32ec",
+      "gitBlob": "a7af8e405d24076f2930c0840523110b3236560b",
+      "source": "https://raw.githubusercontent.com/google/fonts/fbe81817505e8aeadc53cc7a38a2b76fb57c333e/ofl/notosansmyanmar/NotoSansMyanmar%5Bwdth%2Cwght%5D.ttf",
+      "license": "SIL-OFL-1.1",
+      "noticePath": "public/fonts/NotoSansMyanmar-OFL.txt",
+      "noticeSha256": "246a75859267af7da466823969d2e2b407ed8455ee5f74f4c8d63d8783be9b57",
+      "noticeSource": "https://raw.githubusercontent.com/google/fonts/fbe81817505e8aeadc53cc7a38a2b76fb57c333e/ofl/notosansmyanmar/OFL.txt"
+    }
+  ],
+  "modifications": "Original font and license bytes are unchanged; local filenames omit variable-axis punctuation."
+}

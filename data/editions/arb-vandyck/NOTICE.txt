@@ -1,0 +1,16 @@
+About arb-vd_vpl
+This archive contains BIBLE TEXT ONLY. All formatting, paragraph breaks, notes, introductions, noncanonical section titles, etc., have been removed. The file ending "_vpl.txt" is designed for import into BibleWorks and similar Bible study programs. The file ending "_vpl.xml" contains the same information, but is in XML format and uses standard SIL/UBS book abbreviations.
+The file ending "_vpl.sql" contains the same information formatted to create a SQL data table.
+Check for updates and other Bible translations in this format at http:\\eBible.org\Scriptures\
+الكتاب المقدس باللغة العربية، فان دايك
+Arabic Van Dyck translation of the Holy Bible
+Public Domain
+Language: العربية (Arabic)
+Dialect: standard
+Translation by: Syrian Mission
+Contributor: American Bible Society
+2020-08-03
+
+Source and rights notice: https://ebible.org/arb-vd/copyright.htm
+Provider rights policy: https://ebible.org/legal.php
+Provider rights policy: https://ebible.org/publicdomain.htm

@@ -1,0 +1,14 @@
+About fra_fob_vpl
+This archive contains BIBLE TEXT ONLY. All formatting, paragraph breaks, notes, introductions, noncanonical section titles, etc., have been removed. The file ending "_vpl.txt" is designed for import into BibleWorks and similar Bible study programs. The file ending "_vpl.xml" contains the same information, but is in XML format and uses standard SIL/UBS book abbreviations.
+The file ending "_vpl.sql" contains the same information formatted to create a SQL data table.
+Check for updates and other Bible translations in this format at http:\\eBible.org\Scriptures\
+La Sainte Bible
+The Holy Bible in French, Ostervald
+Public Domain
+Language: français (French)
+Translation by: Ostervald
+2026-10-30
+
+Source and rights notice: https://ebible.org/fra_fob/copyright.htm
+Provider rights policy: https://ebible.org/legal.php
+Provider rights policy: https://ebible.org/publicdomain.htm

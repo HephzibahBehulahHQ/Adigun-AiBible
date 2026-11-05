@@ -1,3 +1,5 @@
+import { wrapExactText } from '../exact-text-wrap.ts';
+import { sourceDirection, sourceFont, sourceLineHeight } from '../source-typography.ts';
 import { dimensions, palettes } from '../media.ts';
 import type { CardSize } from '../media';
 
@@ -15,30 +17,7 @@ export const BODY_FONT = 'Georgia, "Times New Roman", serif';
 export const LABEL_FONT = 'system-ui, sans-serif';
 export const MAX_PASSAGE_CARDS = 128;
 
-/** Each returned string is an exact slice. Joining all slices reproduces the original text. */
-export function wrapExactText(text: string, width: number, measure: (value: string) => number): string[] {
-  if (!Number.isFinite(width) || width <= 0) throw new Error('The card has no usable text width.');
-  if (typeof Intl.Segmenter !== 'function') throw new Error('This browser cannot safely wrap all source-language characters. Use an up-to-date browser to create cards; no text has been cropped.');
-  const segmenter = new Intl.Segmenter(undefined, { granularity: 'grapheme' });
-  const clusters = [...segmenter.segment(text)].map(segment => segment.segment);
-  const lines: string[] = []; let start = 0, cursor = 0, lastBreak = -1, candidate = '';
-  while (cursor < clusters.length) {
-    const cluster = clusters[cursor];
-    if (/^[\r\n]+$/.test(cluster)) {
-      lines.push(clusters.slice(start, cursor + 1).join('')); cursor++; start = cursor; lastBreak = -1; candidate = ''; continue;
-    }
-    if (measure(candidate + cluster) <= width) {
-      candidate += cluster;
-      if (/^\s+$/u.test(cluster)) lastBreak = cursor + 1;
-      cursor++; continue;
-    }
-    if (cursor === start) throw new Error('A text character exceeds the card width. Increase the usable width. Nothing has been cropped.');
-    const end = lastBreak > start ? lastBreak : cursor;
-    lines.push(clusters.slice(start, end).join('')); start = end; cursor = start; lastBreak = -1; candidate = '';
-  }
-  if (start < clusters.length) lines.push(clusters.slice(start).join(''));
-  return lines.length ? lines : [''];
-}
+export { wrapExactText } from '../exact-text-wrap.ts';
 
 const visibleLine = (line: string) => line.replace(/[\r\n]+$/g, '');
 
@@ -48,7 +27,7 @@ export function paginatePassageCards(title: string, passages: readonly CardPassa
   if (passages.some(passage => !passage.text.trim() || !sources.some(source => source.id === passage.editionId)) || passages.reduce((sum, passage) => sum + passage.text.length, 0) > 250_000) throw new Error('This selection is empty, lacks a source, or exceeds the export size limit.');
   const [width, height] = dimensions[options.size], margin = options.margin, usable = width - margin * 2;
   const bodyFont = options.size === 'story' ? 50 : options.size === 'portrait' ? 43 : 38;
-  const lineHeight = Math.ceil(bodyFont * 1.48);
+  const lineHeight = Math.ceil(bodyFont * Math.max(...passages.map(passage => sourceLineHeight(passage.language))));
   const wrap = (text: string, font: string) => wrapExactText(text, usable, value => measure(visibleLine(value), font));
   const titleLines = wrap(title, `600 32px ${LABEL_FONT}`);
   const noteLines = wrap(sources.length > 1 ? 'Source Scripture · Editions paired by verse number' : 'Source Scripture', `18px ${LABEL_FONT}`);
@@ -60,7 +39,7 @@ export function paginatePassageCards(title: string, passages: readonly CardPassa
   const pages: PassageCard[] = []; let page: PassageCard = { fragments: [] }, y = bodyTop;
   const nextPage = () => { if (page.fragments.length) pages.push(page); if (pages.length >= MAX_PASSAGE_CARDS) throw new Error('This selection needs more than 128 cards. Choose a shorter passage; no partial export was created.'); page = { fragments: [] }; y = bodyTop; };
   for (const passage of passages) {
-    const lines = wrap(passage.text, `${bodyFont}px ${BODY_FONT}`); let offset = 0;
+    const lines = wrap(passage.text, `${bodyFont}px ${sourceFont(passage.language)}`); let offset = 0;
     while (offset < lines.length) {
       const continued = offset > 0;
       const label = wrap(`${passage.reference} · ${passage.editionName}${continued ? ' · continued' : ''}`, `600 18px ${LABEL_FONT}`);
@@ -90,18 +69,21 @@ export function drawPassageCard(canvas: HTMLCanvasElement, layout: CardLayout, i
   canvas.width = layout.width; canvas.height = layout.height;
   const context = canvas.getContext('2d'); if (!context) throw new Error('This browser cannot create PNG passage cards.');
   const colors = palettes[palette]; context.fillStyle = colors.background; context.fillRect(0, 0, layout.width, layout.height);
-  context.textBaseline = 'top'; context.fillStyle = colors.accent; context.font = `600 19px ${LABEL_FONT}`;
+  context.textBaseline = 'top'; context.direction = 'ltr'; context.textAlign = 'left'; context.fillStyle = colors.accent; context.font = `600 19px ${LABEL_FONT}`;
   context.fillText('ADIGUN–AIBIBLE  /  HB EVANGELISM', layout.margin, layout.margin);
   let y = layout.margin + 42; context.font = `600 32px ${LABEL_FONT}`;
   for (const line of layout.titleLines) { context.fillText(visibleLine(line), layout.margin, y); y += 42; }
   context.fillStyle = colors.ink; context.font = `18px ${LABEL_FONT}`;
   for (const line of layout.noteLines) { context.fillText(visibleLine(line), layout.margin, y); y += 26; }
   for (const fragment of page.fragments) {
+    context.direction = 'ltr'; context.textAlign = 'left';
     context.fillStyle = colors.accent; context.font = `600 18px ${LABEL_FONT}`;
     fragment.label.forEach((line, lineIndex) => context.fillText(visibleLine(line), layout.margin, fragment.y + lineIndex * 24));
-    context.fillStyle = colors.ink; context.font = `${layout.bodyFont}px ${BODY_FONT}`;
-    fragment.lines.forEach((line, lineIndex) => context.fillText(visibleLine(line), layout.margin, fragment.textY + lineIndex * layout.lineHeight));
+    context.fillStyle = colors.ink; context.font = `${layout.bodyFont}px ${sourceFont(fragment.passage.language)}`;
+    const direction = sourceDirection(fragment.passage.language); context.direction = direction; context.textAlign = direction === 'rtl' ? 'right' : 'left';
+    fragment.lines.forEach((line, lineIndex) => context.fillText(visibleLine(line), direction === 'rtl' ? layout.width - layout.margin : layout.margin, fragment.textY + lineIndex * layout.lineHeight));
   }
+  context.direction = 'ltr'; context.textAlign = 'left';
   context.fillStyle = colors.accent; context.fillRect(layout.margin, layout.creditTop - 18, 64, 2);
   context.fillStyle = colors.ink; context.font = `18px ${LABEL_FONT}`;
   layout.creditLines.forEach((line, lineIndex) => context.fillText(visibleLine(line), layout.margin, layout.creditTop + lineIndex * 24));
