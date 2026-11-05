@@ -1,0 +1,14 @@
+About haw1868_vpl
+This archive contains BIBLE TEXT ONLY. All formatting, paragraph breaks, notes, introductions, noncanonical section titles, etc., have been removed. The file ending "_vpl.txt" is designed for import into BibleWorks and similar Bible study programs. The file ending "_vpl.xml" contains the same information, but is in XML format and uses standard SIL/UBS book abbreviations.
+The file ending "_vpl.sql" contains the same information formatted to create a SQL data table.
+Check for updates and other Bible translations in this format at http:\\eBible.org\Scriptures\
+Baibala Hemolele
+The Holy Bible in the Hawaiian language of the United States, 1868 revision
+Public Domain
+Language: 'Olelo Hawai'i (Hawaiian)
+Translation by: na na misionari i pai
+2015-11-10
+
+Source and rights notice: https://ebible.org/haw1868/copyright.htm
+Provider rights policy: https://ebible.org/legal.php
+Provider rights policy: https://ebible.org/publicdomain.htm
