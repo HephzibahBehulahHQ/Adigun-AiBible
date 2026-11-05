@@ -20,22 +20,27 @@ const layers = [
 ] as const;
 
 
-const researchEntries: Partial<Record<SectionId, { title: string; summary: string; references: string[]; caution: string }[]>> = {
-  social: [
+type ResearchDraft = { title: string; summary: string; references: string[]; caution: string; aiReviewStatus: string; sources: { type: 'biblical_text'; reference: string }[] };
+const withProvenance = (entry: { title: string; summary: string; references: string[]; caution: string }): ResearchDraft => ({
+  ...entry,
+  aiReviewStatus: 'AI-assisted draft · human review pending',
+  sources: entry.references.map(reference => ({ type: 'biblical_text', reference }))
+});
+const researchEntries: Partial<Record<SectionId, ResearchDraft[]>> = {
+  social: ([
     { title: 'Justice and witness', summary: 'The legal texts address impartial judgment, truthful testimony, and protection against corrupt influence. These passages describe ancient legal norms; they are not a complete modern legal code.', references: ['Exodus 23:1–9', 'Leviticus 19:15', 'Deuteronomy 16:18–20'], caution: 'Read alongside the surrounding covenant and community context. Later Jewish and Christian legal interpretations are separate research layers.' },
     { title: 'Property and boundaries', summary: 'The texts address theft, restitution, land boundaries, and the treatment of land within a wider covenantal order.', references: ['Exodus 22:1–15', 'Leviticus 25:23–28', 'Deuteronomy 19:14'], caution: 'Ancient agrarian property rules are not identical to modern private-property law.' },
     { title: 'Slavery and servants', summary: 'Biblical legal passages regulate several forms of servitude and contain provisions that differ by status, origin, and circumstance. Their presence raises serious historical and ethical questions.', references: ['Exodus 21:1–11', 'Exodus 21:20–21', 'Leviticus 25:39–46', 'Deuteronomy 23:15–16'], caution: 'Do not flatten these passages into a claim that all forms of slavery were the same or that regulation equals abolition. Interpretations and historical conditions are debated.' },
     { title: 'Marriage and divorce', summary: 'The Torah contains provisions concerning marital obligations and divorce. These texts belong to their ancient legal setting and were interpreted in differing ways in later traditions.', references: ['Exodus 21:10–11', 'Deuteronomy 24:1–4', 'Genesis 2:24'], caution: 'The descriptive legal text, later rabbinic interpretation, and later Christian teaching must remain distinguishable.' },
     { title: 'Inheritance', summary: 'The daughters of Zelophehad bring an inheritance claim that results in a stated rule for a particular succession circumstance; a later chapter addresses tribal land concerns.', references: ['Numbers 27:1–11', 'Numbers 36:1–12', 'Deuteronomy 21:15–17'], caution: 'Read the narrative and legal outcome together; do not generalize one case into a complete account of every inheritance practice.' },
     { title: 'Punishment and restitution', summary: 'These passages include penalties, compensation, and proportionality rules for different offenses and injuries.', references: ['Exodus 21:12–36', 'Leviticus 24:17–22', 'Deuteronomy 19:16–21'], caution: 'Ancient penalties must be presented in context, not as present-day legal advice or an endorsement of applying them today.' }
-  ],
-  money: [
+  ]).map(withProvenance),
+  money: ([
     { title: 'Possessing wealth', summary: 'Some passages acknowledge wealth and material provision while warning against treating prosperity as proof of personal merit or independence from God.', references: ['Deuteronomy 8:11–18', 'Proverbs 10:22', '1 Timothy 6:17–19'], caution: 'These texts do not promise that faithful people will become wealthy. Avoid turning descriptive statements into guaranteed outcomes.' },
     { title: 'The love of money', summary: 'The New Testament warns about desire for wealth and the damage caused by making money an ultimate priority. The warning concerns the love of money, not the mere fact of possessing it.', references: ['Ecclesiastes 5:10–20', 'Matthew 6:19–24', 'Luke 12:13–21', '1 Timothy 6:6–10'], caution: 'Read each passage in its literary setting. Do not use these texts to shame people experiencing poverty or financial hardship.' },
     { title: 'Giving, debt and responsibility', summary: 'Biblical material addresses generosity, lending, debt, and care for people in need across different genres and historical settings.', references: ['Exodus 22:25–27', 'Deuteronomy 15:7–11', 'Proverbs 22:7', '2 Corinthians 8:1–15'], caution: 'Narrative, legal instruction, wisdom sayings, and apostolic exhortation are different genres; do not collapse them into a single financial formula.' }
-  ]
+  ]).map(withProvenance)
 };
-const reviewStatus = 'AI-assisted draft · human review pending';
 
 type SectionId = typeof sections[number]['id'];
 
@@ -84,10 +89,10 @@ export default function LawDiary() {
     </section> : researchEntries[active] ? <section className="law-diary-section" aria-labelledby="law-diary-section-title">
       <div className="law-diary-section-heading"><div><span className="eyebrow">SOURCE-INDEXED STUDY · HUMAN REVIEW PENDING</span><h2 id="law-diary-section-title">{section.title}</h2><p>{section.summary}</p></div></div>
       <div className="law-diary-entry-grid">{researchEntries[active]?.map(entry => <article className="law-diary-entry" key={entry.title}>
-        <span className="eyebrow">{reviewStatus}</span><h3>{entry.title}</h3><p>{entry.summary}</p>
+        <span className="eyebrow">{entry.aiReviewStatus}</span><h3>{entry.title}</h3><p>{entry.summary}</p>
         <h4>Primary-text references</h4><ul>{entry.references.map(ref => <li key={ref}>{ref}</li>)}</ul>
         <p className="law-diary-entry-caution"><strong>Context note:</strong> {entry.caution}</p>
-        <p className="law-diary-source-note">Sources: biblical canonical text references listed above. Edition-specific quotations and human editorial approval are pending.</p>
+        <p className="law-diary-source-note">Sources: {entry.sources.map(source => `${source.type}: ${source.reference}`).join('; ')}. Edition-specific quotations and human editorial approval are pending.</p>
       </article>)}</div>
       <p className="law-diary-honesty" role="status">These are AI-assisted research notes, not human-approved interpretations. Source references are provided for verification; no cross-religion relationship is inferred.</p> : <section className="law-diary-section" aria-labelledby="law-diary-section-title">
       <div className="law-diary-section-heading"><div><span className="eyebrow">SECTION IN PROGRESS</span><h2 id="law-diary-section-title">{section.title}</h2><p>{section.summary}</p></div></div>
