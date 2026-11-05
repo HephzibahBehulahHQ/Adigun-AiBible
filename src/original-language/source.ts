@@ -27,7 +27,7 @@ export async function verifiedSourceBytes(response: Response, pin: FilePin, sign
   if (!response.ok || response.type === 'opaque') throw new Error('The Hebrew source is unavailable. Reconnect or download this source book and its notices, then retry.');
   if (!Number.isSafeInteger(pin.bytes) || pin.bytes < 1 || pin.bytes > MAX_SOURCE_BYTES || !/^[a-f0-9]{64}$/.test(pin.sha256)) throw new Error('The Hebrew source file size or checksum record is invalid.');
   const length = response.headers.get('content-length');
-  if (length !== null && (!/^\d+$/.test(length) || Number(length) > pin.bytes)) { await response.body?.cancel(); throw new Error('The Hebrew source response exceeds its pinned byte length.'); }
+  if (length !== null && (!/^\d+$/.test(length) || Number(length) > pin.bytes)) { if (response.body) void response.body.cancel().catch(() => undefined); throw new Error('The Hebrew source response exceeds its pinned byte length.'); }
   if (!response.body) throw new Error('This browser cannot read the Hebrew source response.');
   const reader = response.body.getReader(), chunks: Uint8Array[] = []; let total = 0, complete = false;
   const cancel = () => { void reader.cancel().catch(() => undefined); }; signal?.addEventListener('abort', cancel, { once: true });
@@ -39,7 +39,7 @@ export async function verifiedSourceBytes(response: Response, pin: FilePin, sign
       if (total > pin.bytes || total > MAX_SOURCE_BYTES) throw new Error('The Hebrew source response changed or exceeds its bounded byte length.');
       chunks.push(next.value);
     }
-  } finally { signal?.removeEventListener('abort', cancel); if (!complete) await reader.cancel().catch(() => undefined); reader.releaseLock(); }
+  } finally { signal?.removeEventListener('abort', cancel); if (!complete) void reader.cancel().catch(() => undefined); reader.releaseLock(); }
   if (total !== pin.bytes) throw new Error('The Hebrew source byte length changed. Update the application before opening this source.');
   const bytes = new Uint8Array(total); let offset = 0;
   for (const chunk of chunks) { bytes.set(chunk, offset); offset += chunk.byteLength; }

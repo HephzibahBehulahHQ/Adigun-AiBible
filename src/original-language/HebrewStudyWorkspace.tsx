@@ -1,10 +1,12 @@
-import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
+import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { Locale } from '../types';
 import { assetUrl } from '../data';
 import { HebrewSourceLoader, SOURCE_PREFIX } from './source';
 import { findWord, lemmaPage, mainContent, OSHB_ATTRIBUTION, OSHB_REVISION, sourceText, verseNotes } from './model';
 import type { Morphology, SourceBook, SourceContent, SourceManifest, SourceNode, WordLocation } from './model';
 import SourceDownloads from './SourceDownloads';
+import { sourceSelectionFromHash, withSourceSelection } from './selection';
+import type { SourceSelection } from './selection';
 import './hebrew-study.css';
 
 type RenderProps = { content: SourceContent[]; selectedId: string; onWord: (id: string) => void };
@@ -41,13 +43,24 @@ export default function HebrewStudyWorkspace({ locale = 'en' }: { locale?: Local
   const [bookId, setBookId] = useState('Gen'), [chapterNumber, setChapterNumber] = useState('1'), [verseNumber, setVerseNumber] = useState('1');
   const [book, setBook] = useState<SourceBook | null>(null), [selectedId, setSelectedId] = useState('');
   const [loading, setLoading] = useState(true), [error, setError] = useState(''), [retry, setRetry] = useState(0);
+  const [selectionReady, setSelectionReady] = useState(false);
   const [lemmaInput, setLemmaInput] = useState(''), [lemma, setLemma] = useState(''), [page, setPage] = useState(0);
   const loadAbort = useRef<AbortController | null>(null), sequence = useRef(0), resultTitle = useRef<HTMLHeadingElement>(null), inspector = useRef<HTMLHeadingElement>(null);
   const pendingFocus = useRef<string | null>(null);
+  const selectionRef = useRef<SourceSelection | null>(null);
+  const applySelection = useCallback((next: SourceSelection, persist: boolean) => {
+    const previous = selectionRef.current;
+    if (!previous || previous.book !== next.book) {
+      loadAbort.current?.abort(); sequence.current++; setBook(null); setLoading(true); setLemma(''); setLemmaInput(''); setPage(0);
+    }
+    if (!previous || previous.book !== next.book || previous.chapter !== next.chapter || previous.verse !== next.verse) { setSelectedId(''); pendingFocus.current = null; }
+    selectionRef.current = next; setBookId(next.book); setChapterNumber(next.chapter); setVerseNumber(next.verse); setSelectionReady(true); setError('');
+    if (persist) window.history.replaceState(window.history.state, '', withSourceSelection(location.hash, next));
+  }, []);
 
   useEffect(() => {
     const controller = new AbortController(); let current = true;
-    setManifest(null); setMorphology(null); setBook(null); setError(''); setLoading(true);
+    setManifest(null); setMorphology(null); setBook(null); setError(''); setLoading(true); setSelectionReady(false); selectionRef.current = null;
     void Promise.all([loader.loadManifest(controller.signal), loader.loadMorphology(controller.signal)]).then(([source, key]) => {
       if (!current || controller.signal.aborted) return; setManifest(source); setMorphology(key);
     }).catch(reason => { if (current && !controller.signal.aborted) { setError(errorMessage(reason)); setLoading(false); } });
@@ -55,6 +68,18 @@ export default function HebrewStudyWorkspace({ locale = 'en' }: { locale?: Local
   }, [loader, retry]);
   useEffect(() => {
     if (!manifest || !morphology) return;
+    const restore = () => {
+      if (!/^#\/hebrew-study(?:\/|\?|$)/.test(location.hash)) return;
+      try { applySelection(sourceSelectionFromHash(location.hash, manifest), false); }
+      catch (reason) {
+        loadAbort.current?.abort(); sequence.current++; selectionRef.current = null; setSelectionReady(false); setBook(null); setSelectedId(''); setLoading(false); setError(errorMessage(reason));
+      }
+    };
+    restore(); window.addEventListener('hashchange', restore); window.addEventListener('popstate', restore);
+    return () => { window.removeEventListener('hashchange', restore); window.removeEventListener('popstate', restore); };
+  }, [manifest, morphology, applySelection]);
+  useEffect(() => {
+    if (!manifest || !morphology || !selectionReady) return;
     const generation = ++sequence.current, controller = new AbortController(); loadAbort.current = controller;
     setBook(null); setSelectedId(''); setLemma(''); setLemmaInput(''); setPage(0); setError(''); setLoading(true);
     void loader.loadBook(bookId, controller.signal).then(source => {
@@ -62,12 +87,12 @@ export default function HebrewStudyWorkspace({ locale = 'en' }: { locale?: Local
       setBook(source); setLoading(false);
     }).catch(reason => { if (generation === sequence.current && !controller.signal.aborted) { setBook(null); setError(errorMessage(reason)); setLoading(false); } });
     return () => { sequence.current++; controller.abort(); };
-  }, [loader, manifest, morphology, bookId]);
+  }, [loader, manifest, morphology, bookId, selectionReady]);
   useEffect(() => () => loader.clear(), [loader]);
 
   const descriptor = manifest?.books.find(row => row.id === bookId);
   const chapterDescriptor = descriptor?.chapters.find(row => row.number === chapterNumber);
-  const currentBook = book?.book === bookId ? book : null;
+  const currentBook = selectionReady && book?.book === bookId ? book : null;
   const chapter = currentBook?.chapters.find(row => row.number === chapterNumber), verse = chapter?.verses.find(row => row.number === verseNumber);
   const selected = useMemo(() => currentBook && selectedId ? findWord(currentBook, selectedId) : undefined, [currentBook, selectedId]);
   const matches = useMemo(() => currentBook && lemma ? lemmaPage(currentBook, lemma, page) : null, [currentBook, lemma, page]);
@@ -78,17 +103,16 @@ export default function HebrewStudyWorkspace({ locale = 'en' }: { locale?: Local
 
   function chooseBook(id: string) {
     const next = manifest?.books.find(row => row.id === id); if (!next) return;
-    loadAbort.current?.abort(); sequence.current++; setBook(null); setSelectedId(''); setLemma(''); setError(''); setLoading(true);
-    setBookId(id); setChapterNumber(next.chapters[0].number); setVerseNumber(next.chapters[0].verseNumbers[0]);
+    applySelection({ book: id, chapter: next.chapters[0].number, verse: next.chapters[0].verseNumbers[0] }, true);
   }
   function chooseChapter(number: string) {
     const next = descriptor?.chapters.find(row => row.number === number); if (!next) return;
-    setChapterNumber(number); setVerseNumber(next.verseNumbers[0]); setSelectedId('');
+    applySelection({ book: bookId, chapter: number, verse: next.verseNumbers[0] }, true);
   }
-  function chooseVerse(number: string) { if (chapterDescriptor?.verseNumbers.includes(number)) { setVerseNumber(number); setSelectedId(''); } }
+  function chooseVerse(number: string) { if (chapterDescriptor?.verseNumbers.includes(number)) applySelection({ book: bookId, chapter: chapterNumber, verse: number }, true); }
   function inspectWord(id: string) { setSelectedId(id); }
   function navigateResult(result: WordLocation) {
-    pendingFocus.current = result.word.attributes.id; setChapterNumber(result.chapter); setVerseNumber(result.verse); setSelectedId(result.word.attributes.id);
+    applySelection({ book: bookId, chapter: result.chapter, verse: result.verse }, true); pendingFocus.current = result.word.attributes.id; setSelectedId(result.word.attributes.id);
   }
   function searchLemma(value = lemmaInput) { setLemmaInput(value); setLemma(value); setPage(0); requestAnimationFrame(() => resultTitle.current?.focus()); }
   function changePage(next: number) { setPage(next); requestAnimationFrame(() => resultTitle.current?.focus()); }

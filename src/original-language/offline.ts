@@ -21,7 +21,7 @@ async function markerPaths(response: Response, base: URL, inventory: OfflineMani
       if (next.done) { done = true; break; }
       size += next.value.byteLength; if (size > 2 * 1024 * 1024) return null; chunks.push(next.value);
     }
-  } finally { signal?.removeEventListener('abort', cancel); if (!done) await reader.cancel().catch(() => undefined); reader.releaseLock(); }
+  } finally { signal?.removeEventListener('abort', cancel); if (!done) void reader.cancel().catch(() => undefined); reader.releaseLock(); }
   const bytes = new Uint8Array(size); let offset = 0; for (const chunk of chunks) { bytes.set(chunk, offset); offset += chunk.byteLength; }
   try {
     const value = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(bytes));
