@@ -14,7 +14,15 @@ Merged as `75f2d35be4df3ab07f589c557f01a653acdfc8dc`. [Main workflow 42013204493
 
 # Verification evidence
 
-## Current verified release: PR #28
+## Current continuation: private Gospel studies
+
+The current production authority is [PROJECT_STATUS.md](agent/PROJECT_STATUS.md); Gospel comparison PR #35 is deployed at source `4be988a90fc6ff926d2c1e08fc33213735545a0a`. Older release receipts below remain historical evidence.
+
+The private notebook candidate adds 25 meaningful model/storage/source-export tests and 24 desktop/mobile browser cases. The integrated application suite passed **543 application tests and 20 backend contracts**, TypeScript, lint, full source validation and production build. Subsequent row-conflict, cancellable-preparation and history fixes passed focused tests, TypeScript and lint.
+
+The initial complete local Gospel run passed **38/42** cases, including mixed-pane persistence, source-pin refusal, exact notices and source gaps, backup validation/conflicts, two-tab draft recovery, quota/abort/denial, pending-write navigation guards and actual downloaded-source offline reload. The cached-edition history regression was fixed before this run. Desktop 320px overflow and a mobile checkbox hit-target failure are being repaired. Two unchanged uncached-edition offline tests fail under locally available Chromium 141; required Playwright Chromium 156 installation returned an invalid archive. The full unchanged GitHub gate must establish final acceptance with its matching browser. No failures are skipped or weakened.
+
+## Historical verified release: PR #28
 
 Production `9711f529bff19f18458ab34e6c00c08c0af1c8bb` is deployed at the existing Pages URL. [Candidate CI 42007343926](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42007343926) and [main deployment 42008544329](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42008544329) passed. Independent public verification on 5 November 2026 returned the exact source commit, build `8ec75289f225e2ccb7ab99b9` and HTTP 200.
 
