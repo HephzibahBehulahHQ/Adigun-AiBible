@@ -67,3 +67,11 @@
 .law-diary-parallel-grid section{padding:13px;border:1px solid var(--line);border-radius:10px}
 .law-diary-parallel-grid h4{margin:0;font-size:14px}
 @media(max-width:680px){.law-diary-parallel-grid{grid-template-columns:1fr}}
+
+.law-diary-entry-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:14px}
+.law-diary-entry{padding:18px;border:1px solid var(--line);border-radius:13px;background:var(--panel)}
+.law-diary-entry h3{margin:9px 0}.law-diary-entry p,.law-diary-entry li{line-height:1.65}
+.law-diary-entry h4{margin:15px 0 6px;font-size:13px}
+.law-diary-entry ul{padding-left:20px}
+.law-diary-entry-caution{padding:12px;border-left:3px solid var(--accent);background:var(--accent-soft)}
+.law-diary-source-note{font-size:12px;color:var(--muted)}
