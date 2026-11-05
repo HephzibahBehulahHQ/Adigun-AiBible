@@ -5,7 +5,7 @@
 - Repository: `HephzibahBehulahHQ/Adigun-AiBible`. Continuation/handoff branch: `codex/gospel-notebook-release-handoff-20261105`.
 - Private Gospel studies [PR #36](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/36) is merged into main `6e85085f704c44fb9726099cf243558cc7ccc47c`. Its application tree is identical to final tested candidate `94121dfbc8134af721c6702e5720c46da0c0647b`.
 - [Candidate CI 42076853766](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42076853766) passed 543 application/source tests, 20 backend contracts, TypeScript, lint, source validation, production build, 382 desktop/mobile browser cases and ten persistence repetitions. Browser retries are disabled; the report records zero unexpected, flaky or skipped cases.
-- [Production workflow 42079138366](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42079138366) is verifying the merged revision. Public publication verification remains pending at this draft handoff.
+- [Production workflow 42079138366](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42079138366) passed the same 543/20/382/10 gate and deployed successfully. The deployment job fetched the public application and its exact source receipt at **2026-11-05 18:04:02.676 UTC**: source `6e85085f704c44fb9726099cf243558cc7ccc47c`, build `86934180cd3a8b49fd5cd3e5`, content `319aca2f790aeeb5b317d35e`.
 - Production URL: https://hephzibahbehulahhq.github.io/Adigun-AiBible/ . Exact public receipts and final workflow links are also retained in PR #36.
 
 ## Completed increment
@@ -19,6 +19,7 @@ A cached-edition history regression and hidden-file-input overflow were found an
 ## Synchronization and continuation
 
 - Last verified application checkpoint on `codex/continue-study-20261105`: `94121dfbc8134af721c6702e5720c46da0c0647b`, read back at **2026-11-05 17:39:59 UTC**. Merged main `6e85085f704c44fb9726099cf243558cc7ccc47c` was read back at **2026-11-05 17:54:20 UTC**.
+- Last verified handoff checkpoint: `6eea6c057467420b8541f9906cb7a3a2b9199421`, read back at **2026-11-05 18:04:43 UTC**. The final receipt update follows on the same documentation-only branch.
 - This documentation-only release/continuation handoff is based on that accepted main revision. It does not change application code or claim a second application release. Inspect actual remote heads before starting the next implementation branch.
 - Root owns integration and synchronization. Bounded model/storage, source-helper, browser/layout and read-only review tasks are complete. Existing reference repositories remain read-only.
 - The earlier unshipped singular-route prototype remains preserved at `c243633a1f6c23a069bb927a312fcd92d83ea657`; do not merge it over the released plural `src/gospels/` route.

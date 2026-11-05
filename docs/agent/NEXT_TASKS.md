@@ -4,7 +4,7 @@ Read [PROJECT_STATUS.md](PROJECT_STATUS.md) for the current integration branch, 
 
 ## Current release
 
-Private Gospel studies PR #36 is merged into the existing Gospel workspace. Exact candidate checks, production verification and the documentation-only continuation checkpoint are recorded in [PROJECT_STATUS.md](PROJECT_STATUS.md) and PR #36.
+Private Gospel studies PR #36 is merged into the existing Gospel workspace and verified live at source `6e85085f704c44fb9726099cf243558cc7ccc47c`. Exact candidate checks, production verification and the documentation-only continuation checkpoint are recorded in [PROJECT_STATUS.md](PROJECT_STATUS.md) and PR #36.
 
 ## Independent work to finish
 
