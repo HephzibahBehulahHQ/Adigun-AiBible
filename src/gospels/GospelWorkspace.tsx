@@ -91,13 +91,16 @@ export default function GospelWorkspace({ reference, editionId, locale, onOpenRe
   const [addBook, setAddBook] = useState<GospelBookId>('JHN'), [message, setMessage] = useState('');
   const [savedPassages, setSavedPassages] = useState<GospelStudyPassage[]>([]), [studyBusy, setStudyBusy] = useState(false);
   const studyLock = useRef(false);
+  const fallbackEdition = useRef(editionId); fallbackEdition.current = editionId;
   const selectionHeading = useRef<HTMLHeadingElement | null>(null);
   useEffect(() => {
     // Read after the app's navigation guard has accepted or restored the hash.
-    const update = () => { queueMicrotask(() => { setState(readSelection(editionId)); setMessage(''); }); };
+    // Keep one listener while cached reader editions change during this same event.
+    let active = true;
+    const update = () => { queueMicrotask(() => { if (active) { setState(readSelection(fallbackEdition.current)); setMessage(''); } }); };
     window.addEventListener('hashchange', update);
-    return () => { window.removeEventListener('hashchange', update); };
-  }, [editionId]);
+    return () => { active = false; window.removeEventListener('hashchange', update); };
+  }, []);
   useEffect(() => {
     let active = true; setCatalogError('');
     getEditionCatalog().then(catalog => { if (active) setEditions(catalog.editions.filter(edition => edition.corpus === 'bible')); })

@@ -33,3 +33,8 @@ The listening engine loads the pinned source revision, rechecks speech rights an
 Passage cards paginate immutable source slices, preserve combining characters and source attribution, and recheck each edition’s export permission. Optional bilingual output pairs explicit verse numbers with an alignment qualification; missing source positions stop export. Audio and card modules load on demand.
 
 The support directory uses explicit country selection, primary-service links and verification dates. It does not infer country, store moods, send messages, or contact a service automatically.
+
+
+## Gospel notebook
+
+The single `src/gospels/` route retains its gap-aware exact-source reader. Its separate versioned IndexedDB notebook stores complete pane selections and source pins, never copied Scripture. Writes compare an atomic database revision and the editor’s original row; reloading the list cannot silently authorize a stale overwrite. Source preparation uses cancellable operation identities, while committed writes remain guarded until transaction completion. JSON import previews are revalidated before commit. Markdown exports require document-export permission and complete checksum-verified publisher notices; independent plain-text draft recovery requires neither source access nor a working database. See [private Gospel studies](GOSPEL_STUDIES.md).
