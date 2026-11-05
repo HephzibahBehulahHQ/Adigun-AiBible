@@ -1,6 +1,6 @@
 # Nine historical Bible editions: source acquisition
 
-Source inspection date: **5 November 2026**. This increment evaluates nine distinct historical translations/editions. It does not complete the 100-additional-edition target or certify human editorial review.
+Source inspection date: **5 November 2026**. This increment installs nine distinct historical translations/editions after exact source validation. Together with the five existing Bible editions, the library has **14 installed Bible editions, 11 additional to the original three-edition baseline**. The Quran remains a separate corpus. This does not complete the 100-additional-edition target or certify human editorial review.
 
 ## Exact downloaded sources
 
@@ -32,10 +32,52 @@ No third-party narration, publisher maps, illustrations or modern revisions are 
 
 The publisher VPL contains scripture text only. It excludes introductions, notes, paragraph formatting and noncanonical headings. No such coverage is claimed.
 
-All XML and plain-text references match. In seven archives the XML omits square brackets that remain in the plain-text display source. Comparison-only bracket removal produces exact character agreement; the original TXT is retained unchanged. The exact per-edition reference/offset inventory must be pinned before accepting this format discrepancy. Kralická and Textbibel require no such exception. No correction of spelling, diacritics, Unicode normalization, source omissions or verse numbering is permitted.
+All XML and plain-text references match. In seven archives the XML omits square brackets that remain in the plain-text display source. Comparison-only bracket removal produces exact character agreement; the original TXT is retained unchanged. The exact per-edition reference/Unicode-codepoint-offset inventory is pinned before accepting this format discrepancy. Kralická and Textbibel require no such exception and pin an empty difference inventory. No correction of spelling, diacritics, Unicode normalization, source omissions or verse numbering is permitted.
+
+| Application ID | Records with square-bracket formatting differences |
+| --- | ---: |
+| `eng-ylt` | 8,233 |
+| `eng-dby` | 6,052 |
+| `eng-webster` | 14,115 |
+| `fra-lsg1910` | 2 |
+| `spa-rv1909` | 3,080 |
+| `deu-elberfelder1905` | 312 |
+| `deu-textbibel1906` | 0 |
+| `ces-kralicka1613` | 0 |
+| `ita-diodati1885` | 14,560 |
+
+Each generated `provenance.json` records the complete difference inventory and its SHA-256. This exception is available only for individually configured sources with an exact inventory pin. A changed word, punctuation mark, reference or bracket position fails verification. Original TXT brackets are retained even when a bracket span crosses verse boundaries.
 
 ## Admission and validation
 
-Acquired archives are not yet an installed-reader claim. Admission requires complete source/notice pins, source-specific rights evidence, importer checks, generated-file hash verification, search/display agreement and source-specific regression checks. The batch remains limited to these nine candidates; no source is admitted by weakening a failed check.
+All nine sources passed source/notice pins, complete archive-to-output reproduction, importer checks, generated-file hash verification, exact source inventories, search/display agreement and source-specific regression checks. The batch remains limited to these nine editions; no source was admitted by weakening a failed check. Application browser/release checks run after root integration.
+
+The permissions register links each exact archive SHA-256 to its individual notice and the provider's use policies. Text uses are permitted according to that provider evidence, with original identity retained. Third-party recorded audio remains unavailable. The unrestricted provider-use scope is not presented as an independent determination of copyright law in every jurisdiction; the evidence and its limitations remain visible in the conditions.
+
+### Reproduce without network access
+
+After a clean checkout, regenerate ignored search indexes and BSB chapter chunks from the committed, hash-verified source files:
+
+```sh
+python3 -B scripts/import-editions.py --rebuild-indexes
+python3 -B scripts/import-editions.py --verify
+node --test tests/edition-expansion.test.mjs tests/edition-import.test.mjs tests/edition-rights.test.mjs
+```
+
+For complete reproduction from raw publisher archives, place each archive outside the repository as `<application-id>.zip`, then run:
+
+```sh
+python3 -B scripts/import-editions.py --source-dir /absolute/path/to/edition-sources --check \
+  --edition eng-ylt --edition eng-dby --edition eng-webster \
+  --edition fra-lsg1910 --edition spa-rv1909 \
+  --edition deu-elberfelder1905 --edition deu-textbibel1906 \
+  --edition ces-kralicka1613 --edition ita-diodati1885
+```
+
+For fresh retrieval of the exact pinned editions, omit `--check` and add `--download`. A changed publisher archive fails its checksum; review the update before changing a pin. Never bypass the check. Raw archives, SQL/XML source copies and redundant search indexes are not added to Git.
+
+### Bounded deployment footprint
+
+The nine editions add **621 tracked source files** and **630 built content files**, including nine regenerated search indexes. Their built packages total approximately **112 MB**. The full build succeeds with this batch; it stays below the existing 4,096-file offline-inventory ceiling. The VPL search indexes repeat the displayed text and remain a substantial part of the built footprint.
 
 The existing 4,096-file offline-inventory ceiling and GitHub Pages size ceiling must be addressed before a materially larger catalog. This batch does not introduce new hosting or paid services.
