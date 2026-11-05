@@ -1,31 +1,32 @@
 # Project status
 
-## Active continuation — 5 November 2026 (Europe/Berlin)
+## Release handoff — 5 November 2026 (Europe/Berlin)
 
-- Repository: `HephzibahBehulahHQ/Adigun-AiBible`. Work branch: `codex/continue-study-20261105`.
-- Main and production are verified at `4be988a90fc6ff926d2c1e08fc33213735545a0a`, merged Gospel comparison PR #35. Main workflow [42067257507](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42067257507) passed the required build, browser, persistence and deployment gates.
-- The deployment job fetched the public application and its exact source receipt at **2026-11-05 16:57:32.309 UTC**: build `f3487ca4decd8d53b7502894`, content `319aca2f790aeeb5b317d35e`.
-- Production: https://hephzibahbehulahhq.github.io/Adigun-AiBible/ . The Sower reading group, independent panes and verified offline reading are released.
+- Repository: `HephzibahBehulahHQ/Adigun-AiBible`. Continuation/handoff branch: `codex/gospel-notebook-release-handoff-20261105`.
+- Private Gospel studies [PR #36](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/36) is merged into main `6e85085f704c44fb9726099cf243558cc7ccc47c`. Its application tree is identical to final tested candidate `94121dfbc8134af721c6702e5720c46da0c0647b`.
+- [Candidate CI 42076853766](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42076853766) passed 543 application/source tests, 20 backend contracts, TypeScript, lint, source validation, production build, 382 desktop/mobile browser cases and ten persistence repetitions. Browser retries are disabled; the report records zero unexpected, flaky or skipped cases.
+- [Production workflow 42079138366](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42079138366) is verifying the merged revision. Public publication verification remains pending at this draft handoff.
+- Production URL: https://hephzibahbehulahhq.github.io/Adigun-AiBible/ . Exact public receipts and final workflow links are also retained in PR #36.
 
-## Current bounded increment
+## Completed increment
 
-Integrate private saved Gospel studies into the existing `src/gospels/` workspace. Preserve pane order, linked flags, retained independent selections, complete effective references and exact source hashes. Add private titles/notes, saved-study navigation, bounded JSON backup/import preview, conflict handling, deletion/Undo, independent draft text recovery and source-checked Markdown notebooks. Private writing must never enter public URLs or source caches.
+Private saved Gospel studies are integrated into the existing `src/gospels/` workspace. They preserve pane order, linked flags, retained independent selections, effective references and exact source hashes. The notebook includes titles/notes, ordered navigation, strict JSON backup/import previews, explicit conflict handling, deletion/Undo, independent draft-text recovery and source-checked Markdown exports with complete verified notices.
 
-Reuse the released gap-aware source loader. Reopening a saved study must enforce source pins and labels; unavailable or changed wording remains unavailable. No automatic relationship, chronology, human review or translation claim is introduced.
+Reload cannot authorize a stale editor to overwrite a newer saved row. Source preparation is cancellable; late responses cannot write, download or replace a preview. Actual IndexedDB transactions remain protected until completion. Explicit startup URLs and the original reader reference remain intact. Private writing never enters public selection URLs or source caches. Saved sources preserve numbering gaps and fail visibly when a revision is unavailable; no substitute wording or independent review is invented.
 
-The prior unshipped prototype remains recoverable at `c243633a1f6c23a069bb927a312fcd92d83ea657` on `codex/gospel-private-study-checkpoint-20261105`. Its route is not merged. The new notebook uses its own validated IndexedDB namespace and preserves the one released Gospel route.
+A cached-edition history regression and hidden-file-input overflow were found and repaired. Original normal-click and overflow assertions pass. All 24 new notebook browser cases pass in CI with Chromium 156.0.8078.4. The complete artifact (13438838719) matched its recorded SHA-256 digest; desktop/mobile native, 320px and offline notebook screenshots were inspected. The local Chromium 141 installation remains unsuitable for the two uncached-edition offline regressions; those unchanged tests pass in the required CI browser.
 
-## Verification and synchronization
+## Synchronization and continuation
 
-- New model/storage: 13 focused tests passed, including full selection round-trips, strict imports, atomic transaction completion, abort/quota/denial, and stale-tab conflicts.
-- Initial integrated candidate passed 543 application tests, 20 backend contracts, source validation and production build. All 25 new model/storage/source-export tests passed; TypeScript, scoped ESLint and whitespace checks passed after integration repairs.
-- The first complete local Gospel run passed 38/42 cases. The real cached-edition history regression is fixed and passes. The hidden backup input inherited full-width control styling, overflowing desktop 320px and expanding the mobile layout viewport. The scoped sizing correction passed all four affected desktop/mobile cases with normal clicks and unchanged assertions. Actual client/scroll/inner widths now agree at desktop 320px, mobile 390px and mobile 320px. Desktop and narrow screenshots were inspected. The other two local failures are the unchanged uncached-edition offline regression under Chromium 141; the locked Playwright requires Chromium 156, whose installation returned an invalid archive. Its service-worker offline behavior must be established by the unchanged full CI gate with the required browser. No local all-green full-suite claim is made.
-- [PR #36](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/36) is open as a draft. The complete unchanged gate collects 382 browser cases, followed by ten persistence repetitions.
-- Last verified remote checkpoint: `3675f75d8442f66c04f98921d8eb9ef2240590d9` on `codex/continue-study-20261105`, read back at **2026-11-05 17:38:01 UTC**. It includes the verified stylesheet correction. Exact final candidate and publication receipts are recorded in PR #36; no notebook deployment is claimed at this checkpoint.
-- Root owns integration and synchronization. Bounded specialist implementation, layout diagnosis and independent read-only integration review are complete. The last review found no further material source-pin, reader-reference, navigation or export-permission regression. Existing reference repositories remain read-only.
+- Last verified application checkpoint on `codex/continue-study-20261105`: `94121dfbc8134af721c6702e5720c46da0c0647b`, read back at **2026-11-05 17:39:59 UTC**. Merged main `6e85085f704c44fb9726099cf243558cc7ccc47c` was read back at **2026-11-05 17:54:20 UTC**.
+- This documentation-only release/continuation handoff is based on that accepted main revision. It does not change application code or claim a second application release. Inspect actual remote heads before starting the next implementation branch.
+- Root owns integration and synchronization. Bounded model/storage, source-helper, browser/layout and read-only review tasks are complete. Existing reference repositories remain read-only.
+- The earlier unshipped singular-route prototype remains preserved at `c243633a1f6c23a069bb927a312fcd92d83ea657`; do not merge it over the released plural `src/gospels/` route.
 
-## Next action
+## Next concrete implementation
 
-Pass all existing release gates on the exact candidate, merge under standing authorization and verify the deployed source receipt. After notebook acceptance, continue the next independent requirement in [NEXT_TASKS.md](NEXT_TASKS.md).
+Add private, source-pinned speech collections to the existing Speaker Explorer: name a collection, add an existing publisher-marked span, order entries, reopen exact speech with full context, remove/Undo, and validate private JSON backup/restore. Retain edition/revision, reference, Unicode code-point boundaries, text hash and publisher provenance. Changed sources or markings must fail visibly. Keep publisher annotations distinct from independent review; public curated collections, new speaker assignments, scheduling and audio remain separate increments.
 
-Full Version 3 remains incomplete. Human editorial/native-language review, restricted edition rights, backend/provider activation, permitted recorded narration and physical two-device/microphone acceptance are separate external dependencies. The interrupted backend setup is not resumed. See the feature matrix and blockers for remaining scope.
+No external service is needed for this bounded software work. Preserve runtime rights checks, private-data conflict/cancellation recovery, explicit offline downloads and accessible 320px/keyboard behavior. Pass the unchanged full release gate on the next final candidate, merge under standing authorization and verify its public source receipt.
+
+Full Version 3 remains incomplete. Authentic additional-edition imports, remaining language/study tools and other software work stay in the feature matrix. Human editorial/native-language review, restricted edition rights, backend/provider activation, permitted recorded narration and physical two-device/microphone acceptance remain separate external dependencies. The interrupted backend setup is not resumed.
