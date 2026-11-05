@@ -8,3 +8,5 @@
 - Require real human editorial review and real backend security verification. No test fixture, AI draft, sample member or counter enters production as an approval or live activity.
 - Preserve study data across atomic, verified source-cache updates. Use edition-and-range-aware reference identity and explicit recovery from invalid links.
 - Keep later esoteric Books of Moses separate from the Torah and from the 66-book baseline. Provide catalog provenance before any text import.
+
+- Gospel comparison initially uses only the supplied Sower ranges (Matthew 13:1–23, Mark 4:1–20 and Luke 8:4–15). Preserve each account’s wording and numbering, allow independent panes, and never infer a John counterpart or verse alignment. Human review remains pending; URL selections are not private notebook records.

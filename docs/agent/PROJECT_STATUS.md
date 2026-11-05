@@ -1,32 +1,24 @@
 # Project status
 
-## Active continuation — 5 November 2026 (Europe/Berlin)
+## Active Gospel release — 5 November 2026 (Europe/Berlin)
 
-- Repository: `HephzibahBehulahHQ/Adigun-AiBible`. Active repair branch: `codex/historical-navigation-20261105`.
-- Actual main is `59d9a999543d5add39643495df376736612ea1b4` (merged PR #33). The remote head was independently read through GitHub at continuation. It includes 29 Bible editions and the separate Greek source study, but its deployment failed.
-- Verified public production is `712b2eb91ed943e6d56a9fbb09f82f22e20c3154` (PR #32). Public `build-info.json` returned HTTP 200 at **2026-11-05 15:24:08 UTC**, with build `6d64516006ef9802528d1343` and content `57185b83d1886c12c4db96ff`. This release includes the 26-edition catalog and private retelling recordings. URL: https://hephzibahbehulahhq.github.io/Adigun-AiBible/ .
+- Repository: `HephzibahBehulahHQ/Adigun-AiBible`. Active release branch: `codex/gospel-comparison-20261105`, existing PR #35.
+- Actual main and verified production: `5d709eb88c18b51280bbcac701e1f9b8d09ec952` (PR #34). Main run [42057642086](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42057642086) passed build, browser gates and deployment. Its publication step fetched the public receipt and application successfully at **2026-11-05 15:51:25.539 UTC**, build `d873c878d16e410b8ed09d95`, content `319aca2f790aeeb5b317d35e`.
+- Production URL: https://hephzibahbehulahhq.github.io/Adigun-AiBible/ . The historical readonly-navigation repair is released.
+- The existing Gospel PR head was independently read as `39b863a7395c59f1d4247ce676c616997ebd4647`. Its browser run [42058776027](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42058776027) passed 344 of 356 cases. Twelve cases stopped at exact edition-selector label lookups.
 
-## Release repair
+## Current repair and verification
 
-[Main workflow 42050102248](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42050102248) passed 504 application tests, 20 backend contracts, TypeScript, lint, source validation and production build, then passed 335/336 browser cases. Only the mobile visual route check failed; deployment and persistence repetitions were skipped. PR #33's prior exact-candidate workflow `42046579957` passed 336 browser cases and ten persistence repetitions, but is not evidence of main deployment.
+The repair gives the linked-edition, independent-edition and add-Gospel selectors explicit accessible names matching their visible labels. It also derives the default Gospel edition from the current URL during mounted hash/history transitions, preserving an explicit Gospel-edition override. A desktop/mobile regression covers same-document navigation, default source changes, explicit overrides, history and return to the original reader range. It preserves existing behavioral assertions and timeouts. Local TypeScript, scoped ESLint, all 14 Gospel model/source tests and whitespace checks passed. The production build passed. The expanded full browser gate has 358 cases (18 Gospel cases). Local browser execution is unavailable: Chromium cannot create its required socket (Operation not permitted); the installation attempt also returned an invalid browser archive. No local browser pass is claimed. GitHub Actions remains the required browser acceptance environment. No Gospel deployment is claimed yet.
 
-The downloaded failure artifact's SHA-256 was verified against GitHub: `cefd503e167651e333384489eb43f5c867caa59aaa88ea241ca07c03fe6c21e9`. Its trace shows navigation to Sources being restored to Library while the initial private historical IndexedDB read was still pending. The notebook later opened successfully; there was no runtime crash. The historical guard incorrectly treated readonly loading as an unsaved mutation.
+This PR introduces the supplied Sower reading ranges, independent two-to-four Gospel panes, original source numbering and gaps, full chapter context, explicit edition attribution, URL/history retention and atomic offline source downloads. The original reader passage remains separate. The supplied group is editorial review pending, and John is an independent reading rather than an invented counterpart.
 
-The repair distinguishes pending writes from loading. Editing controls remain disabled during loading; navigation is permitted during a readonly read. Unsaved drafts, pending writes, restores/deletions and active downloads remain protected. Two browser regressions hold real scoped IndexedDB transactions open to exercise both the allowed read navigation and protected write path. Existing visual assertions, timeouts and release gates are unchanged.
+The earlier separate private-row implementation was preserved at **`c243633a1f6c23a069bb927a312fcd92d83ea657`** on `codex/gospel-private-study-checkpoint-20261105`, verified from GitHub at **2026-11-05 16:16:40 UTC**. Its `src/gospel/` prototype must NOT be merged beside this PR's `src/gospels/` route. It contains recoverable private storage/backup work and unexecuted acceptance tests for a future coherent integration. It is not part of this release and is not reported as shipped.
 
-## Current verification
-
-- Clean base checkout: `npm run check` passed (504 application tests, 20 backend contracts, source validation, lint, TypeScript and production build).
-- Repair: TypeScript, scoped ESLint, seven historical model/storage tests, strict browser-test TypeScript and diff checks passed.
-- Actual browser acceptance remains pending in GitHub Actions. Local Playwright's preview server did not become available within its 30-second startup bound; local browser execution is NOT TESTED.
-- This first repair checkpoint is being prepared for remote backup. Its exact verified SHA and subsequent CI receipts will be recorded in the pull request and next status update; no release success is claimed.
-
-## Preserved source and private-data acceptance
-
-Main retains all existing source editions, independently numbered Hebrew/Greek corpora, source notices, permission checks, private retelling recordings and complete backups. The 29-edition catalog represents 26 additional editions beyond the original three, 18 source languages and 19 exact tags. Imported scripture is unchanged by this repair.
+Git CLI pushing lacks credentials in this environment. The authorized GitHub connector provides scoped writes. Its GraphQL ref-update action failed twice; creating an immutable checkpoint branch safely preserved the work. Release repair uses guarded file updates against the existing PR, preserving its history. The accessible-name repair was verified remotely at `98a97481d585d1a12cda80556e442c7f0eda8ad0` at 2026-11-05 16:19:20 UTC. The URL/history regression is the next candidate. Final checkpoint, CI and release receipts are recorded in the PR and refreshed status when available.
 
 ## Next action
 
-Push and verify the scoped repair, pass the complete 340-case browser gate and ten persistence repetitions, inspect its evidence, merge after the exact candidate passes, and verify the resulting public source receipt. Then continue the explicitly requested synchronized Gospel comparison workspace using exact supplied ranges and honest editorial status.
+Pass the unchanged full browser/persistence gate on the repaired PR #35 candidate, inspect screenshot evidence, merge under standing authorization, and verify the new main workflow plus public `build-info.json`. Integrate private row storage only through this one Gospel workspace after the source-reading release is accepted.
 
-Full Version 3 remains incomplete. See [feature matrix](../FEATURE_MATRIX.md) for remaining software/content requirements. Human editorial/native-language review, restricted rights, configured provider/backend services, permitted recorded narration and physical two-device/microphone acceptance are separate dependencies. Backend setup was previously interrupted and is not resumed by this task; no unrelated infrastructure is reused.
+Full Version 3 remains incomplete. Editorial/native-language review, restricted edition rights, provider/backend activation, permitted recorded narration and real two-device/microphone acceptance remain separate dependencies. The interrupted Bible backend setup is not resumed. See the feature matrix for remaining requirements; no duplicate implementations or fabricated review claims are authorized.

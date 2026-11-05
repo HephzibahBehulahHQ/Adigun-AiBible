@@ -81,7 +81,7 @@ function EntryCard({ entry, editionId, locale, onOpenReference }: { entry: LawEn
   </article>;
 }
 
-export default function LawDiary({ editionId = 'eng-web', locale = 'en', reference, onOpenReference }: { editionId?: string; locale?: Locale; reference?: Reference; onOpenReference?: (ref: Reference) => void }) {
+export default function LawDiary({ editionId = 'eng-web', locale = 'en', reference, onOpenReference, onOpenGospels }: { editionId?: string; locale?: Locale; reference?: Reference; onOpenReference?: (ref: Reference) => void; onOpenGospels?: () => void }) {
   const [active, setActive] = useState<LawSection>(() => readLawSection(window.location.hash));
   const [query, setQuery] = useState('');
   useEffect(() => {
@@ -115,6 +115,7 @@ export default function LawDiary({ editionId = 'eng-web', locale = 'en', referen
     <nav className="ld-nav" aria-label="Law Diary sections">{lawSections.map(item => { const Icon = sectionIcons[item.id]; return <a key={item.id} href={sectionHref(item.id)} aria-current={active === item.id ? 'page' : undefined}><Icon size={18} aria-hidden="true"/>{item.title}</a>; })}</nav>
     <section aria-labelledby="law-diary-section-title"><div className="ld-section-heading"><div><h2 id="law-diary-section-title">{section.title === 'Timeline' ? 'Textual timeline' : section.title}</h2><p>{section.summary}</p></div><label className="ld-search">Search this section<input type="search" value={query} onChange={event => setQuery(event.target.value)} maxLength={200} placeholder="Topic, book or source reference"/></label></div>
       {active === 'timeline' && <p className="ld-method">These layers are a study arrangement, not a dated historical sequence. Rabbinic reception and the comparative “karma” label are explicitly separate from biblical law.</p>}
+      {active === 'sermons' && onOpenGospels && <p><button className="secondary" onClick={onOpenGospels}>Compare the Sower in three Gospels</button></p>}
       {active === 'money' && <p className="ld-method">Distinguish attachment to wealth from the fact of having resources. Read each passage’s own claim and context; this collection promises neither prosperity nor hardship as a measure of faith.</p>}
       {active === 'evangelism' && <p className="ld-method">This module describes the Bible’s teaching on evangelism and its historical practice. It is not an invitation for the reader to convert. The app’s comparison policy rejects coercion and religious rankings.</p>}
       {active === 'apostles' && <p className="ld-method">Acts 12 explicitly narrates James son of Zebedee’s killing. Judas has separate death accounts. Other death traditions require their own witnesses; later tradition is never presented as a biblical execution report.</p>}
