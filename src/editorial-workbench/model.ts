@@ -21,7 +21,7 @@ export interface EditorialDraft {
 export interface WorkbenchState { schemaVersion: 1; revision: number; drafts: EditorialDraft[] }
 export const MAX_PACKAGE_BYTES = 12_000_000;
 const object = (value: unknown): value is Record<string, unknown> => !!value && typeof value === 'object' && !Array.isArray(value);
-const fail = (message: string): never => { throw new Error(message); };
+function fail(message: string): never { throw new Error(message); }
 function exact(value: unknown, keys: string[], label: string): Record<string, unknown> {
   if (!object(value)) return fail(`${label} must be an object.`);
   if (Object.keys(value).some(key => !keys.includes(key))) fail(`${label} contains unsupported fields. Approval and reviewer claims cannot be imported into this authoring workspace.`);

@@ -43,6 +43,11 @@ export default function HistoricalReader() {
     return () => { active = false; };
   }, [edition]);
   useEffect(() => () => abort.current?.abort(), []);
+  useEffect(() => {
+    if (!chapter || !new URLSearchParams(location.hash.split('?')[1]).has('historical')) return;
+    const frame = requestAnimationFrame(() => document.getElementById(`historical-${chapter.number}-${selection.unit}`)?.scrollIntoView({ block: 'center' }));
+    return () => cancelAnimationFrame(frame);
+  }, [chapter, selection.unit]);
   function open(chapterNumber: number, unit = 1, editionId = selection.editionId) {
     const url = location.hash.split('?')[0] || '#/library';
     const params = new URLSearchParams(location.hash.split('?')[1]);
@@ -110,7 +115,7 @@ export default function HistoricalReader() {
     <div className="history-reader-heading"><span className="eyebrow">READABLE HISTORICAL EDITION</span><h3 id="historical-reader-title">Read the Didache</h3><p>All 16 chapters of the pinned Lightfoot transcription. This historical work stays separate from the Bible reader.</p></div>
     <div className="history-controls"><label>Historical edition<select value={selection.editionId} onChange={event => open(1, 1, event.target.value)}>{!edition && <option value={selection.editionId}>Unavailable edition</option>}{historicalManifest.editions.map(item => <option key={item.id} value={item.id}>{item.title}</option>)}</select></label>{edition && <label>Historical chapter<select value={selection.chapter} onChange={event => open(Number(event.target.value))}>{Array.from({ length: edition.chapters }, (_, index) => <option key={index + 1} value={index + 1}>Chapter {index + 1}</option>)}</select></label>}</div>
     {!edition ? <p role="alert">This historical edition is not installed. Choose an available edition.</p> : <>
-      <p className="history-identity">{edition.translator} · {edition.sourceRevision} · {edition.chapters} chapters / {edition.units} source units</p>
+      <p className="history-identity">{edition.translator} · {edition.sourceRevision} · {edition.chapters} chapters / {edition.units} source units</p><p className="muted small">English source translation. No other reviewed language edition of this historical work is installed.</p>
       <p className="availability-note">{edition.canonScope}</p>
       <details className="history-provenance"><summary>Historical identity, rights and source evidence</summary><dl className="metadata"><dt>Classification</dt><dd>{edition.classification}</dd><dt>Authorship</dt><dd>{edition.authorship}</dd><dt>Dating</dt><dd>{edition.dating}</dd><dt>Survival</dt><dd>{edition.survival}</dd><dt>License</dt><dd>{edition.license}</dd><dt>Transcription status</dt><dd>{edition.transcriptionStatus}</dd><dt>SHA-256</dt><dd className="history-hash">{edition.sha256}</dd></dl><p>{edition.attribution}</p><a href={edition.sourceUrl} target="_blank" rel="noreferrer">Open pinned source transcription</a><ul>{edition.rightsEvidence.map(item => <li key={item.url}><a href={item.url} target="_blank" rel="noreferrer">{item.label}</a> — {item.note}</li>)}</ul><a href={`${base}${edition.noticePath}`} target="_blank" rel="noreferrer">Full source and license notice</a></details>
       <div className="history-actions"><button className="secondary" disabled={busy || !edition.rights.offline} onClick={() => void download()}>{downloaded ? 'Verify historical download' : `Download historical text (${Math.ceil(edition.bytes / 1024)} KB + notice)`}</button>{downloading && abort.current && <button className="secondary" onClick={() => abort.current?.abort()}>Cancel download</button>}{downloaded && <button className="text-button" disabled={busy} onClick={() => void removeDownload()}>Remove historical download</button>}{currentWork && edition.rights.export && <button className="secondary" onClick={() => downloadPrivateFile(`${edition.id}.txt`, historicalPlainText(currentWork, edition), 'text/plain;charset=utf-8')}>Export historical text</button>}</div>
