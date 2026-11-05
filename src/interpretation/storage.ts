@@ -1,4 +1,4 @@
-import { emptyInterpretationNotebook, validateInterpretationNotebook } from './model.ts';
+import { assertPreservedReflection, emptyInterpretationNotebook, validateInterpretationNotebook } from './model.ts';
 import type { InterpretationNotebook } from './model';
 let opening: Promise<IDBDatabase> | undefined;
 function database(): Promise<IDBDatabase> {
@@ -32,6 +32,7 @@ export async function loadInterpretationNotebook(): Promise<InterpretationNotebo
   });
 }
 export async function saveInterpretationNotebook(value: InterpretationNotebook, expectedRevision: number): Promise<InterpretationNotebook> {
+  if (!Number.isSafeInteger(expectedRevision) || expectedRevision < 0 || expectedRevision >= Number.MAX_SAFE_INTEGER) throw new Error('Interpretation notebook revision is invalid.');
   const next = validateInterpretationNotebook({ ...value, revision: expectedRevision + 1 });
   const db = await database();
   return new Promise((resolve, reject) => {
@@ -42,6 +43,10 @@ export async function saveInterpretationNotebook(value: InterpretationNotebook, 
       try {
         const previous = request.result === undefined ? emptyInterpretationNotebook() : validateInterpretationNotebook(request.result);
         if (previous.revision !== expectedRevision) throw new Error('Another tab saved a newer interpretation notebook. Reload the saved records before trying again; your draft stays here.');
+        for (const reflection of next.reflections) {
+          const saved = previous.reflections.find(item => item.id === reflection.id);
+          if (saved) assertPreservedReflection(saved, reflection);
+        }
         store.put(next, 'private');
       } catch (error) { failure = error; transaction.abort(); }
     };
