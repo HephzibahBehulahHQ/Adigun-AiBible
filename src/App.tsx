@@ -180,7 +180,9 @@ export default function App() {
       setRoute(routeState());
     };
     window.addEventListener('hashchange', onHash);
-    return () => window.removeEventListener('hashchange', onHash);
+    const onGospelSelection = () => { if (routeState().view === 'gospels') permittedHash.current = location.hash; };
+    window.addEventListener('adigun:gospel-selection', onGospelSelection);
+    return () => { window.removeEventListener('hashchange', onHash); window.removeEventListener('adigun:gospel-selection', onGospelSelection); };
   }, []);
   useEffect(() => { loadStudy().then(s => { setStudy(s);setStorageReady(true);setSaveStatus('Saved on this device'); }).catch(e => setSaveStatus(e.message)); }, []);
   useEffect(() => { loadSavedSearches().then(setSavedSearches).catch(e => setPrivateSearchMessage(e instanceof Error ? e.message : 'Saved searches are unavailable.')); loadSearchHistory().then(setSearchHistory).catch(e => setPrivateSearchMessage(e instanceof Error ? e.message : 'Search history is unavailable.')); }, []);

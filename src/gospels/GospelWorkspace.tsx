@@ -10,6 +10,9 @@ import type { GospelBookId, GospelPane, GospelSelection } from './model';
 import { loadGospelExcerpt } from './source';
 import type { GospelExcerpt } from './source';
 import GospelDownloads from './GospelDownloads';
+import GospelNotebook from './GospelNotebook';
+import type { GospelStudyPassage, GospelStudyRow } from './study-model';
+import { loadSavedGospelPassage } from './study-source';
 import './gospels.css';
 
 const sources = { getBook, getManifest, requirePermission };
@@ -25,18 +28,21 @@ function EditionOptions({ editions, selected }: { editions: Edition[]; selected:
   return <>{!editions.some(edition => edition.id === selected) && <option value={selected}>{selected} · source availability being checked</option>}{editions.map(edition => <option key={edition.id} value={edition.id}>{edition.name} · {edition.language}</option>)}</>;
 }
 
-function GospelPaneCard({ selection, pane, editions, onChange, onLinked, onRemove, onOpenReference }: {
+function GospelPaneCard({ selection, pane, editions, savedPassages, disabled, onChange, onLinked, onRemove, onOpenReference }: {
   selection: GospelSelection; pane: GospelPane; editions: Edition[];
+  savedPassages: GospelStudyPassage[]; disabled: boolean;
   onChange: (pane: GospelPane) => void; onLinked: (linked: boolean) => void;
   onRemove: () => void; onOpenReference: (reference: Reference) => void;
 }) {
-  const reference = resolvePaneReference(selection, pane), key = gospelReferenceKey(reference);
+  const reference = resolvePaneReference(selection, pane);
+  const pin = savedPassages.find(value => gospelReferenceKey(value.reference) === gospelReferenceKey(reference));
+  const key = `${gospelReferenceKey(reference)}|${JSON.stringify(pin || null)}`;
   const [result, setResult] = useState<{ key: string; excerpt?: GospelExcerpt; error?: string }>();
   const [attempt, setAttempt] = useState(0), [formError, setFormError] = useState('');
   const [draft, setDraft] = useState({ editionId: reference.editionId, chapter: String(reference.chapter), verse: String(reference.verse), endVerse: String(reference.endVerse) });
   useEffect(() => {
     let active = true;
-    loadGospelExcerpt(reference, sources).then(excerpt => { if (active) setResult({ key, excerpt }); })
+    (pin ? loadSavedGospelPassage(pin, sources) : loadGospelExcerpt(reference, sources)).then(excerpt => { if (active) setResult({ key, excerpt }); })
       .catch(reason => { if (active) setResult({ key, error: reason instanceof Error ? reason.message : 'This Gospel passage could not be opened.' }); });
     return () => { active = false; };
   }, [key, attempt]);
@@ -56,12 +62,14 @@ function GospelPaneCard({ selection, pane, editions, onChange, onLinked, onRemov
     } catch (reason) { setFormError(reason instanceof Error ? reason.message : 'Choose a valid Gospel passage.'); }
   }
   return <article className="panel gospel-pane" aria-label={`${gospelNames[pane.bookId]} comparison pane`}>
-    <header className="gospel-pane-heading"><div><span className="eyebrow">{pane.linked ? 'LINKED SOWER PASSAGE' : 'YOUR INDEPENDENT SELECTION'}</span><h2>{gospelNames[pane.bookId]}</h2></div><button className="text-button" disabled={selection.panes.length <= 2} onClick={onRemove} aria-label={`Remove ${gospelNames[pane.bookId]} pane`}>Remove</button></header>
-    {pane.bookId !== 'JHN' ? <label className="gospel-link"><input type="checkbox" checked={pane.linked} onChange={event => onLinked(event.target.checked)}/>Follow the Sower selection</label> : <p className="muted small">John is an independent reading. No John counterpart is assigned to this selection.</p>}
+    <header className="gospel-pane-heading"><div><span className="eyebrow">{pane.linked ? 'LINKED SOWER PASSAGE' : 'YOUR INDEPENDENT SELECTION'}</span><h2>{gospelNames[pane.bookId]}</h2></div><button className="text-button" disabled={disabled || selection.panes.length <= 2} onClick={onRemove} aria-label={`Remove ${gospelNames[pane.bookId]} pane`}>Remove</button></header>
+    {pane.bookId !== 'JHN' ? <label className="gospel-link"><input type="checkbox" disabled={disabled} checked={pane.linked} onChange={event => onLinked(event.target.checked)}/>Follow the Sower selection</label> : <p className="muted small">John is an independent reading. No John counterpart is assigned to this selection.</p>}
     {!pane.linked && <form className="gospel-passage-form" onSubmit={apply}>
+      <fieldset disabled={disabled} className="gospel-pane-fields"><legend className="visually-hidden">Independent {gospelNames[pane.bookId]} passage</legend>
       <label>Independent edition<select aria-label="Independent edition" value={draft.editionId} onChange={event => setDraft(value => ({ ...value, editionId: event.target.value }))}><EditionOptions editions={editions} selected={draft.editionId}/></select></label>
       <div className="gospel-range-inputs"><label>Chapter<input type="number" min="1" max="28" required value={draft.chapter} onChange={event => setDraft(value => ({ ...value, chapter: event.target.value }))}/></label><label>From verse<input type="number" min="1" max="200" required value={draft.verse} onChange={event => setDraft(value => ({ ...value, verse: event.target.value }))}/></label><label>Through verse<input type="number" min="1" max="200" required value={draft.endVerse} onChange={event => setDraft(value => ({ ...value, endVerse: event.target.value }))}/></label></div>
       <button className="secondary" type="submit">Apply independent passage</button>{formError && <p role="alert">{formError}</p>}
+      </fieldset>
     </form>}
     <p className="gospel-reference">{referenceLabel(reference)} · {reference.editionId}</p>
     {error ? <div className="gospel-error"><p role="alert">{error} No other edition or range has been substituted.</p><button className="secondary" onClick={() => { setResult(undefined); setAttempt(value => value + 1); }}>Retry Gospel passage</button></div> : !excerpt ? <p role="status">Opening this exact Gospel passage…</p> : <>
@@ -81,11 +89,14 @@ export default function GospelWorkspace({ reference, editionId, locale, onOpenRe
   const [state, setState] = useState<SelectionState>(() => readSelection(editionId));
   const [editions, setEditions] = useState<Edition[]>([]), [catalogError, setCatalogError] = useState(''), [catalogAttempt, setCatalogAttempt] = useState(0);
   const [addBook, setAddBook] = useState<GospelBookId>('JHN'), [message, setMessage] = useState('');
+  const [savedPassages, setSavedPassages] = useState<GospelStudyPassage[]>([]), [studyBusy, setStudyBusy] = useState(false);
+  const studyLock = useRef(false);
   const selectionHeading = useRef<HTMLHeadingElement | null>(null);
   useEffect(() => {
-    const update = () => { setState(readSelection(editionId)); setMessage(''); };
-    window.addEventListener('hashchange', update); window.addEventListener('popstate', update);
-    return () => { window.removeEventListener('hashchange', update); window.removeEventListener('popstate', update); };
+    // Read after the app's navigation guard has accepted or restored the hash.
+    const update = () => { queueMicrotask(() => { setState(readSelection(editionId)); setMessage(''); }); };
+    window.addEventListener('hashchange', update);
+    return () => { window.removeEventListener('hashchange', update); };
   }, [editionId]);
   useEffect(() => {
     let active = true; setCatalogError('');
@@ -93,12 +104,20 @@ export default function GospelWorkspace({ reference, editionId, locale, onOpenRe
       .catch(reason => { if (active) setCatalogError(reason instanceof Error ? reason.message : 'The edition catalog is unavailable.'); });
     return () => { active = false; };
   }, [catalogAttempt]);
-  function change(next: GospelSelection, notice = '') {
+  function change(next: GospelSelection, notice = '', fromNotebook = false) {
+    if (studyLock.current && !fromNotebook) return;
     try {
       const valid = validateGospelSelection(next), hash = withGospelSelection(location.hash, valid);
-      if (hash !== location.hash) history.pushState(history.state, '', hash);
+      if (hash !== location.hash) {
+        history.pushState(history.state, '', hash);
+        window.dispatchEvent(new Event('adigun:gospel-selection'));
+      }
       setState({ selection: valid }); setMessage(notice);
     } catch (reason) { setMessage(reason instanceof Error ? reason.message : 'This selection could not be retained.'); }
+  }
+  function openStudy(row: GospelStudyRow | null) {
+    setSavedPassages(row?.passages || []);
+    if (row) change(row.selection, 'Opened this saved study with its original source revisions.', true);
   }
   const selection = state.selection, available = gospelBooks.filter(bookId => !selection?.panes.some(pane => pane.bookId === bookId));
   const chosen = available.includes(addBook) ? addBook : available[0];
@@ -109,15 +128,18 @@ export default function GospelWorkspace({ reference, editionId, locale, onOpenRe
   }
   return <div className="page gospel-workspace" lang="en">
     <div className="page-heading"><span className="eyebrow">READ EACH ACCOUNT IN ITS OWN WORDS</span><h1>Gospel comparison</h1><p>Read linked passages together, or choose two to four Gospel passages for your own comparison.</p>{locale !== 'en' && <p className="availability-note">(EN fallback) · These controls await reviewed {locale === 'de' ? 'German' : locale === 'yo' ? 'Yorùbá' : 'Nigerian Pidgin'} wording. Each Scripture pane keeps its actual source language.</p>}</div>
-    <div className="gospel-return"><p>Reader passage retained: <strong>{referenceLabel(reference)}</strong> · {editionId}</p><button className="secondary" onClick={() => onOpenReference({ ...reference, editionId })}>Return to reader</button></div>
+    <div className="gospel-return"><p>Reader passage retained: <strong>{referenceLabel(reference)}</strong> · {editionId}</p><button className="secondary" disabled={studyBusy} onClick={() => onOpenReference({ ...reference, editionId })}>Return to reader</button></div>
+    <GospelNotebook selection={state.selection} onOpenStudy={openStudy} onBusyChange={busy => { studyLock.current = busy; setStudyBusy(busy); }}/>
     {state.error ? <section className="panel"><p role="alert">{state.error} Your reader passage is unchanged.</p><button className="primary" onClick={() => change(defaultGospelSelection(editionId))}>Open the supplied Sower selection</button></section> : selection && <>
       <section className="panel gospel-selection" aria-labelledby="gospel-selection-title"><h2 id="gospel-selection-title" ref={selectionHeading} tabIndex={-1}>Parable of the Sower</h2><p>Matthew 13:1–23 · Mark 4:1–20 · Luke 8:4–15.</p><p className="muted">Study selection · editorial review pending. Each Gospel keeps its own wording and verse numbers. These ranges do not assert verse-by-verse equivalence or a common chronology. Independent panes are your selections, not reviewed parallel assignments.</p>
+        <fieldset disabled={studyBusy} className="gospel-selection-fields"><legend className="visually-hidden">Gospel comparison selection</legend>
         <div className="gospel-controls"><label>Edition for linked Gospel panes<select aria-label="Edition for linked Gospel panes" value={selection.editionId} onChange={event => change({ ...selection, editionId: event.target.value }, 'Linked panes now use the selected edition. Independent panes are unchanged.')}><EditionOptions editions={editions} selected={selection.editionId}/></select></label><button className="secondary" onClick={() => change(defaultGospelSelection(selection.editionId), 'The three supplied Sower passages are linked again.')}>Reset to Sower passages</button></div>
         {selection.panes.length < 4 && <div className="gospel-controls"><label>Gospel to add<select aria-label="Gospel to add" value={chosen} onChange={event => setAddBook(event.target.value as GospelBookId)}>{available.map(bookId => <option key={bookId} value={bookId}>{gospelNames[bookId]}</option>)}</select></label><button className="secondary" onClick={() => chosen && change({ ...selection, panes: [...selection.panes, { bookId: chosen, linked: false, independent: { editionId: selection.editionId, chapter: 1, verse: 1, endVerse: 1 } }] }, `${gospelNames[chosen]} added as an independent passage. Choose its range below.`)}>Add independent pane</button></div>}
+        </fieldset>
         {catalogError && <div><p role="alert">{catalogError}</p><button className="secondary" onClick={() => setCatalogAttempt(value => value + 1)}>Retry edition catalog</button></div>}{message && <p role="status">{message}</p>}
       </section>
-      <GospelDownloads selection={selection}/>
-      <div className="gospel-panes">{selection.panes.map(pane => <GospelPaneCard key={pane.bookId} selection={selection} pane={pane} editions={editions} onOpenReference={onOpenReference} onRemove={() => remove(pane.bookId)} onLinked={linked => change(setPaneLinked(selection, pane.bookId, linked))} onChange={next => change({ ...selection, panes: selection.panes.map(value => value.bookId === pane.bookId ? next : value) }, `${gospelNames[pane.bookId]} now uses your independent passage.`)}/>)}</div>
+      <GospelDownloads selection={selection} savedPassages={savedPassages} disabled={studyBusy}/>
+      <div className="gospel-panes">{selection.panes.map(pane => <GospelPaneCard key={pane.bookId} selection={selection} pane={pane} editions={editions} savedPassages={savedPassages} disabled={studyBusy} onOpenReference={onOpenReference} onRemove={() => remove(pane.bookId)} onLinked={linked => change(setPaneLinked(selection, pane.bookId, linked))} onChange={next => change({ ...selection, panes: selection.panes.map(value => value.bookId === pane.bookId ? next : value) }, `${gospelNames[pane.bookId]} now uses your independent passage.`)}/>)}</div>
     </>}
   </div>;
 }
