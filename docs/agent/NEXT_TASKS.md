@@ -4,11 +4,11 @@ Read [PROJECT_STATUS.md](PROJECT_STATUS.md) for the current integration branch, 
 
 ## Current release
 
-PRs #31–33 are merged. PR #32's private retelling release is independently verified live. PR #33 added the 29-edition catalog and Greek source study, but its main mobile navigation check blocked deployment. PR #34 repairs that loading/navigation race and has merged after 340 browser cases and ten persistence repeats passed; its main deployment is running. Current Gospel comparison adds the supplied three-account Sower group and two-to-four independent panes. Exact checkpoint and release evidence are maintained in the status file.
+Gospel comparison PR #35 is merged and verified live. The next bounded increment integrates private saved selections, notes and recovery into that same workspace. Exact checkpoint, checks and publication receipts remain in [PROJECT_STATUS.md](PROJECT_STATUS.md).
 
 ## Independent work to finish
 
-1. Verify the navigation repair's deployed source receipt, then pass and inspect the complete Gospel comparison browser/persistence gate, merge and verify its public release. Preserve every existing private-data and source check.
+1. Finish private Gospel notebook acceptance: exact source-bound save/reopen, conflicts, cancellation, backup/restore, offline reload and accessible narrow layouts. Pass the full unchanged candidate gate, merge and verify its public release. Preserve the released reader and all existing private-data checks.
 2. Continue toward the 100+ additional-edition target beyond the 29 editions in main, using exact source revisions, distinct edition identities, complete manifests, and the existing 16,384-path/4 MiB inventory bounds. BPC French Darby 2024, Simple Spanish 2026 and the CC BY-SA 4.0 Tandroy publisher draft retain their different rights and numbering. Provider metadata alone is not a usable Bible edition.
 3. Extend Gospel comparison with separately researched parallel groups; independent user selections are not reviewed mappings. Complete translated interlinear alignment, genealogy/relationship exploration, diagrams and textual-variant tooling with permitted data. Historical dictionaries and original-source morphology do not satisfy every language-tool requirement.
 4. Extend source-grounded speaker browsing beyond the current publisher spans and correction workflow; preserve explicit uncertainty and exact quotation boundaries.

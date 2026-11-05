@@ -26,6 +26,8 @@ Advanced workspaces add 14,298 pinned historical Greek/Hebrew/Aramaic dictionary
 
 Saved reader layouts retain appearance, publisher-display preferences, the passage inspector and two-to-four comparison pane choices. Open **Saved reader layouts** in the reader or Settings to save, apply, rename, delete or export them. Press **Control/Command + K**, or select the header command button, to find existing reader actions. Layouts remain on this device and have their own validated backup/recovery controls.
 
+The Gospel comparison workspace preserves two to four linked or independent source panes. Its [private Gospel studies](docs/GOSPEL_STUDIES.md) extension saves selections and notes with exact source revisions, ordered study navigation, validated JSON backup/restore, deletion/Undo and source-checked Markdown export. Draft text recovery remains available when source access or storage fails. Release acceptance is tracked in the current status.
+
 Gen Z and Pidgin study wording and interfaith comparison claims require independent human approval. Their publication pipeline and verse-aligned interface are implemented, but the production dataset currently contains no approvals. Missing review data never proves that no parallel exists. Interface translations still require native-language review.
 
 Accounts, cloud synchronization, private circles and generative AI are not activated. Reviewable backend contracts exist under `backend/`; their deployment and runtime security gates remain separate. No browser bundle contains service credentials, and no personal notes are sent to an AI provider.

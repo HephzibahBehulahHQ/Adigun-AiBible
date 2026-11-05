@@ -5,11 +5,13 @@ import { requirePermission } from '../permissions';
 import { gospelReferenceKey, resolvePaneReference } from './model';
 import type { GospelSelection } from './model';
 import { loadGospelExcerpt } from './source';
+import type { GospelStudyPassage } from './study-model';
+import { loadSavedGospelPassage } from './study-source';
 
 const base = import.meta.env.BASE_URL;
-export default function GospelDownloads({ selection }: { selection: GospelSelection }) {
+export default function GospelDownloads({ selection, savedPassages = [], disabled = false }: { selection: GospelSelection; savedPassages?: GospelStudyPassage[]; disabled?: boolean }) {
   const references = selection.panes.map(pane => resolvePaneReference(selection, pane));
-  const key = references.map(gospelReferenceKey).join('|');
+  const key = `${references.map(gospelReferenceKey).join('|')}|${JSON.stringify(savedPassages)}`;
   const [busy, setBusy] = useState(false), [status, setStatus] = useState(''), [error, setError] = useState('');
   const generation = useRef(0), controller = useRef<AbortController | null>(null);
   useEffect(() => {
@@ -28,11 +30,14 @@ export default function GospelDownloads({ selection }: { selection: GospelSelect
     setError('Gospel download cancelled. Existing complete downloads are retained.');
   }
   async function download() {
-    if (controller.current) return;
+    if (controller.current || disabled) return;
     const token = generation.current, abort = new AbortController(); controller.current = abort;
     setBusy(true); setError(''); setStatus('Checking the selected sources and offline permissions…');
     try {
-      const excerpts = await Promise.all(references.map(reference => loadGospelExcerpt(reference, { getManifest, getBook, requirePermission })));
+      const excerpts = await Promise.all(references.map(reference => {
+        const saved = savedPassages.find(value => gospelReferenceKey(value.reference) === gospelReferenceKey(reference));
+        return saved ? loadSavedGospelPassage(saved, { getManifest, getBook, requirePermission }) : loadGospelExcerpt(reference, { getManifest, getBook, requirePermission });
+      }));
       const paths = new Set(['data/manifest.json', 'data/editions/catalog.json', 'data/editions/rights-register.json', 'data/editorial.json']);
       for (const excerpt of excerpts) {
         await requirePermission(excerpt.edition, 'offline');
@@ -57,5 +62,5 @@ export default function GospelDownloads({ selection }: { selection: GospelSelect
       if (generation.current === token) { controller.current = null; setBusy(false); }
     }
   }
-  return <details className="panel gospel-downloads"><summary>Offline Gospel reading</summary><p>Download the books used by these panes with their edition details, permissions and included source notices. The comparison link retains your ranges; no private notebook is included. Changing a pane cancels an unfinished download.</p><div className="button-row"><button className="secondary" disabled={busy} onClick={() => void download()}>Download or verify these Gospel books</button>{busy && <button className="secondary" onClick={cancel}>Cancel Gospel download</button>}</div>{status && <p role="status">{status}</p>}{error && <p role="alert">{error}</p>}</details>;
+  return <details className="panel gospel-downloads"><summary>Offline Gospel reading</summary><p>Download the books used by these panes with their edition details, permissions and included source notices. The comparison link retains your ranges; private studies use their separate device storage and backup. Changing a pane cancels an unfinished download.</p><div className="button-row"><button className="secondary" disabled={busy || disabled} onClick={() => void download()}>Download or verify these Gospel books</button>{busy && <button className="secondary" onClick={cancel}>Cancel Gospel download</button>}</div>{status && <p role="status">{status}</p>}{error && <p role="alert">{error}</p>}</details>;
 }

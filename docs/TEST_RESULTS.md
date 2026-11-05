@@ -14,7 +14,17 @@ Merged as `75f2d35be4df3ab07f589c557f01a653acdfc8dc`. [Main workflow 42013204493
 
 # Verification evidence
 
-## Current verified release: PR #28
+## Current continuation: private Gospel studies
+
+The current production authority is [PROJECT_STATUS.md](agent/PROJECT_STATUS.md); Gospel comparison PR #35 is deployed at source `4be988a90fc6ff926d2c1e08fc33213735545a0a`. Older release receipts below remain historical evidence.
+
+The private notebook candidate adds 25 meaningful model/storage/source-export tests and 24 desktop/mobile browser cases. The integrated application suite passed **543 application tests and 20 backend contracts**, TypeScript, lint, full source validation and production build. Subsequent row-conflict, cancellable-preparation and history fixes passed focused tests, TypeScript and lint.
+
+The initial complete local Gospel run passed **38/42** cases, including mixed-pane persistence, source-pin refusal, exact notices and source gaps, backup validation/conflicts, two-tab draft recovery, quota/abort/denial, pending-write navigation guards and actual downloaded-source offline reload. The cached-edition history regression was fixed before this run. Desktop 320px overflow and mobile checkbox hit-target diagnosis found a hidden backup input incorrectly inheriting full-width control styling: desktop scroll width was 356px at 320px; mobile layout width expanded to 426px at 390px. The scoped correction passed **all four affected desktop/mobile cases** with original assertions and normal clicks. Actual client/scroll/inner widths now agree at desktop 320px, mobile 390px and mobile 320px. Desktop and 320px screenshots were directly inspected; notebook content, controls and focus outlines remain within the panel. No test was weakened.
+
+Two unchanged uncached-edition offline tests fail under locally available Chromium 141; required Playwright Chromium 156 installation returned an invalid archive. [PR #36](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/36) retains the complete unchanged **382-case** GitHub browser gate and ten persistence repetitions with its matching browser. Exact final candidate and public deployment receipts belong to that PR and current status. No local all-green full-suite result is claimed.
+
+## Historical verified release: PR #28
 
 Production `9711f529bff19f18458ab34e6c00c08c0af1c8bb` is deployed at the existing Pages URL. [Candidate CI 42007343926](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42007343926) and [main deployment 42008544329](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42008544329) passed. Independent public verification on 5 November 2026 returned the exact source commit, build `8ec75289f225e2ccb7ab99b9` and HTTP 200.
 
