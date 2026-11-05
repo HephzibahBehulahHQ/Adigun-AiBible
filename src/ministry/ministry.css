@@ -1,0 +1,28 @@
+.ministry-page { max-width: 1500px; }
+.ministry-page :is(input, textarea, select) { width: 100%; min-width: 0; }
+.ministry-page label { display: grid; gap: 8px; margin: 14px 0; }
+.ministry-page textarea { resize: vertical; line-height: 1.6; }
+.ministry-page fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+.ministry-page :is(button, summary, input:not([type=checkbox]), select) { min-height: 44px; }
+.ministry-page :is(p, h2, h3, h4, li, button, summary) { overflow-wrap: anywhere; }
+.ministry-page summary { cursor: pointer; display: list-item; padding: 10px 0; }
+.ministry-layout { display: grid; grid-template-columns: minmax(230px, 310px) minmax(0, 1fr); gap: 24px; align-items: start; }
+.ministry-index { display: grid; gap: 16px; min-width: 0; }
+.ministry-index .panel, .ministry-editor { margin: 0; min-width: 0; }
+.ministry-backup { margin: 20px 0; }
+.ministry-editor :is(h3, h4) { margin-top: 24px; }
+.ministry-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.ministry-section, .ministry-source-entry, .ministry-private, .ministry-preview { border: 1px solid var(--border); border-radius: 12px; padding: 16px; margin: 16px 0; }
+.ministry-private { border-left: 4px solid var(--gold, #d4af37); }
+.ministry-quotation blockquote { margin: 16px 0; padding-left: 16px; border-left: 3px solid var(--border); }
+.ministry-quotation blockquote p { font-family: Georgia, serif; font-size: 1.05rem; line-height: 1.8; }
+.ministry-credit, .ministry-hash { white-space: pre-wrap; overflow-wrap: anywhere; font-size: .8rem; line-height: 1.6; color: var(--muted); }
+.ministry-page .ministry-check { display: flex; align-items: start; gap: 10px; }
+.ministry-check input[type=checkbox] { width: 22px; height: 22px; margin-top: 2px; flex-shrink: 0; }
+.ministry-list article, .ministry-template { border-bottom: 1px solid var(--border); padding: 12px 0; }
+.ministry-calendar { padding-left: 20px; }
+.ministry-calendar li { margin-bottom: 18px; }
+.ministry-save { margin: 24px 0; }
+.ministry-message { border-left: 3px solid var(--gold, #d4af37); padding: 10px 14px; }
+@media (max-width: 1100px) { .ministry-layout { grid-template-columns: 1fr; } .ministry-index { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 620px) { .ministry-fields, .ministry-index { grid-template-columns: 1fr; } .ministry-page .panel { padding: 16px; } .ministry-section, .ministry-source-entry, .ministry-private { padding: 12px; } .ministry-page .button-row > button { flex-wrap: wrap; white-space: normal; } }

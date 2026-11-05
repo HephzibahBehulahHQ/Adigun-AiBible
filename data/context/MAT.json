@@ -1,0 +1,230 @@
+[
+  {
+    "id": "mount-discourse-setting",
+    "bookId": "MAT",
+    "fromChapter": 5,
+    "toChapter": 7,
+    "title": "The mountain discourse in Matthew",
+    "aiReviewStatus": "AI-assisted draft · human review pending",
+    "sources": [
+      {
+        "label": "USCCB · Introduction to Matthew",
+        "url": "https://bible.usccb.org/bible/matthew/0"
+      },
+      {
+        "label": "Matthew 5:1–2 · WEB",
+        "reference": {
+          "bookId": "MAT",
+          "chapter": 5,
+          "verse": 1,
+          "editionId": "eng-web",
+          "endVerse": 2
+        }
+      },
+      {
+        "label": "Matthew 7:28–29 · WEB",
+        "reference": {
+          "bookId": "MAT",
+          "chapter": 7,
+          "verse": 28,
+          "editionId": "eng-web",
+          "endVerse": 29
+        }
+      },
+      {
+        "label": "Matthew 7:24–29 · WEB",
+        "reference": {
+          "bookId": "MAT",
+          "chapter": 7,
+          "verse": 24,
+          "editionId": "eng-web",
+          "endVerse": 29
+        }
+      }
+    ],
+    "fields": [
+      {
+        "label": "Who wrote it?",
+        "text": "The Gospel is traditionally attributed to Matthew. The USCCB introduction treats its author as unknown and the attribution as disputed.",
+        "sources": [
+          {
+            "label": "USCCB · Introduction to Matthew",
+            "url": "https://bible.usccb.org/bible/matthew/0"
+          }
+        ]
+      },
+      {
+        "label": "To whom?",
+        "text": "Jesus teaches after the disciples come to him; the narrative also mentions the crowds. The audience in the scene is distinct from the Gospel’s later readers.",
+        "sources": [
+          {
+            "label": "Matthew 5:1–2 · WEB",
+            "reference": {
+              "bookId": "MAT",
+              "chapter": 5,
+              "verse": 1,
+              "editionId": "eng-web",
+              "endVerse": 2
+            }
+          },
+          {
+            "label": "Matthew 7:28–29 · WEB",
+            "reference": {
+              "bookId": "MAT",
+              "chapter": 7,
+              "verse": 28,
+              "editionId": "eng-web",
+              "endVerse": 29
+            }
+          }
+        ]
+      },
+      {
+        "label": "When?",
+        "text": "The USCCB introduction proposes composition after AD 70. This is an interpretation of the Gospel’s composition, not a date supplied for this speech.",
+        "sources": [
+          {
+            "label": "USCCB · Introduction to Matthew",
+            "url": "https://bible.usccb.org/bible/matthew/0"
+          }
+        ]
+      },
+      {
+        "label": "Why this setting matters",
+        "text": "Read the discourse with its opening and closing scenes instead of treating a selected sentence as an isolated maxim.",
+        "sources": [
+          {
+            "label": "Matthew 5:1–2 · WEB",
+            "reference": {
+              "bookId": "MAT",
+              "chapter": 5,
+              "verse": 1,
+              "editionId": "eng-web",
+              "endVerse": 2
+            }
+          },
+          {
+            "label": "Matthew 7:24–29 · WEB",
+            "reference": {
+              "bookId": "MAT",
+              "chapter": 7,
+              "verse": 24,
+              "editionId": "eng-web",
+              "endVerse": 29
+            }
+          }
+        ]
+      },
+      {
+        "label": "Political and cultural setting",
+        "text": "The USCCB introduction relates the Gospel’s composition to the period after Jerusalem’s destruction. Details of that proposal are in the linked introduction.",
+        "sources": [
+          {
+            "label": "USCCB · Introduction to Matthew",
+            "url": "https://bible.usccb.org/bible/matthew/0"
+          }
+        ]
+      }
+    ],
+    "prosperityGospelRisk": "flagged"
+  },
+  {
+    "id": "olivet-discourse-setting",
+    "bookId": "MAT",
+    "fromChapter": 24,
+    "toChapter": 25,
+    "title": "The disciples’ questions on the Mount of Olives",
+    "aiReviewStatus": "AI-assisted draft · human review pending",
+    "sources": [
+      {
+        "label": "Matthew 24:1–3 · WEB",
+        "reference": {
+          "bookId": "MAT",
+          "chapter": 24,
+          "verse": 1,
+          "editionId": "eng-web",
+          "endVerse": 3
+        }
+      },
+      {
+        "label": "Matthew 24:36–44 · WEB",
+        "reference": {
+          "bookId": "MAT",
+          "chapter": 24,
+          "verse": 36,
+          "editionId": "eng-web",
+          "endVerse": 44
+        }
+      },
+      {
+        "label": "Matthew 24:36 · WEB",
+        "reference": {
+          "bookId": "MAT",
+          "chapter": 24,
+          "verse": 36,
+          "editionId": "eng-web"
+        }
+      }
+    ],
+    "fields": [
+      {
+        "label": "Who is speaking, and to whom?",
+        "text": "The disciples privately ask Jesus about the temple and the signs of his coming and the end of the age.",
+        "sources": [
+          {
+            "label": "Matthew 24:1–3 · WEB",
+            "reference": {
+              "bookId": "MAT",
+              "chapter": 24,
+              "verse": 1,
+              "editionId": "eng-web",
+              "endVerse": 3
+            }
+          }
+        ]
+      },
+      {
+        "label": "When and why?",
+        "text": "Matthew places the questions after Jesus leaves the temple. The following teaching includes warnings about unknown timing and the need for watchfulness.",
+        "sources": [
+          {
+            "label": "Matthew 24:1–3 · WEB",
+            "reference": {
+              "bookId": "MAT",
+              "chapter": 24,
+              "verse": 1,
+              "editionId": "eng-web",
+              "endVerse": 3
+            }
+          },
+          {
+            "label": "Matthew 24:36–44 · WEB",
+            "reference": {
+              "bookId": "MAT",
+              "chapter": 24,
+              "verse": 36,
+              "editionId": "eng-web",
+              "endVerse": 44
+            }
+          }
+        ]
+      },
+      {
+        "label": "What is disputed?",
+        "text": "The passage’s chronology and fulfillment need a separately sourced interpretation study. The surrounding narrative is available here; it does not establish a modern prediction.",
+        "sources": [
+          {
+            "label": "Matthew 24:36 · WEB",
+            "reference": {
+              "bookId": "MAT",
+              "chapter": 24,
+              "verse": 36,
+              "editionId": "eng-web"
+            }
+          }
+        ]
+      }
+    ],
+    "prosperityGospelRisk": "none"
+  }
+]

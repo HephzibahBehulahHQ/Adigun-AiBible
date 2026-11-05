@@ -13,7 +13,7 @@ export interface ReadingSelection {
   position: ReadingPosition | null;
 }
 const presets: readonly string[] = ['genz', 'en', 'de', 'yo', 'pcm'];
-const views = new Set(['home', 'read', 'compare', 'discover', 'plans', 'saved', 'questions', 'library', 'sources', 'settings', 'share', 'atlas', 'study', 'evidence', 'editions', 'projection', 'tools', 'family', 'audio', 'drop', 'support']);
+const views = new Set(['home', 'read', 'compare', 'discover', 'plans', 'saved', 'questions', 'library', 'sources', 'settings', 'share', 'atlas', 'study', 'evidence', 'editions', 'projection', 'tools', 'family', 'audio', 'drop', 'support', 'widget', 'ministry']);
 
 function validatePosition(value: unknown, books: BookInfo[], editionId: string): ReadingPosition | null {
   if (!value || typeof value !== 'object' || Array.isArray(value)) return null;
@@ -47,6 +47,13 @@ function integer(value: string): number {
 
 /** Resolve startup only: an explicit passage never silently falls back to another passage. */
 export function resolveReadingPosition(hash: string, saved: ReadingPosition | null, books: BookInfo[], editionId = DEFAULT_EDITION_ID): ReadingSelection {
+  // Law Diary stores its reader reference in query fields; the path contains a section.
+  if (/^#?\/law-diary(?:\/|$)/.test(hash)) {
+    const q = new URLSearchParams(hash.split('?')[1]);
+    if (q.has('book') || q.has('chapter')) {
+      return resolveReadingPosition(`#/read/${q.get('book') || 'GEN'}/${q.get('chapter') || '1'}?${q}`, saved, books, editionId);
+    }
+  }
   const validSaved = validatePosition(saved, books, editionId);
   const raw = hash.startsWith('#') ? hash.slice(1) : hash;
   const question = raw.indexOf('?');

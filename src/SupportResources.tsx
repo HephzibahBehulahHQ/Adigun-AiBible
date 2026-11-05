@@ -9,7 +9,7 @@ export default function SupportResources() {
     <div className="page-heading">
       <span className="eyebrow">PRACTICAL SUPPORT</span>
       <h1>Support resources</h1>
-      <p>Find emergency, listening and health services for the country you choose. Seeking professional care is compatible with faith.</p>
+      <p>Find emergency, listening and health services for the country you choose. Seeking professional care, including therapy and prescribed medication, is not a lack of faith.</p>
     </div>
     <section className="panel" aria-labelledby="support-country-heading">
       <h2 id="support-country-heading">Where do you need support?</h2>

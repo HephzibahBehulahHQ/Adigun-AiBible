@@ -1,0 +1,125 @@
+[
+  {
+    "id": "sinai-covenant-setting",
+    "bookId": "EXO",
+    "fromChapter": 19,
+    "toChapter": 24,
+    "title": "Sinai: the narrative setting",
+    "aiReviewStatus": "AI-assisted draft · human review pending",
+    "sources": [
+      {
+        "label": "Exodus 24:3–4 · WEB",
+        "reference": {
+          "bookId": "EXO",
+          "chapter": 24,
+          "verse": 3,
+          "editionId": "eng-web",
+          "endVerse": 4
+        }
+      },
+      {
+        "label": "Exodus 19:1–8 · WEB",
+        "reference": {
+          "bookId": "EXO",
+          "chapter": 19,
+          "verse": 1,
+          "editionId": "eng-web",
+          "endVerse": 8
+        }
+      }
+    ],
+    "fields": [
+      {
+        "label": "Who wrote it?",
+        "text": "Exodus 24:4 describes Moses writing the covenant words. That statement does not establish the composition history of every part of Exodus; a complete authorship study remains under review.",
+        "sources": [
+          {
+            "label": "Exodus 24:3–4 · WEB",
+            "reference": {
+              "bookId": "EXO",
+              "chapter": 24,
+              "verse": 3,
+              "editionId": "eng-web",
+              "endVerse": 4
+            }
+          }
+        ]
+      },
+      {
+        "label": "To whom?",
+        "text": "The narrative identifies the house of Jacob, the children of Israel and their elders as the hearers.",
+        "sources": [
+          {
+            "label": "Exodus 19:1–8 · WEB",
+            "reference": {
+              "bookId": "EXO",
+              "chapter": 19,
+              "verse": 1,
+              "editionId": "eng-web",
+              "endVerse": 8
+            }
+          }
+        ]
+      },
+      {
+        "label": "When?",
+        "text": "The narrative places arrival at Sinai in the third month after departure from Egypt. It does not supply a modern calendar year here.",
+        "sources": [
+          {
+            "label": "Exodus 19:1–8 · WEB",
+            "reference": {
+              "bookId": "EXO",
+              "chapter": 19,
+              "verse": 1,
+              "editionId": "eng-web",
+              "endVerse": 8
+            }
+          }
+        ]
+      },
+      {
+        "label": "Why this setting matters",
+        "text": "Moses communicates covenant words and the people respond. Read the laws within that narrative sequence.",
+        "sources": [
+          {
+            "label": "Exodus 19:1–8 · WEB",
+            "reference": {
+              "bookId": "EXO",
+              "chapter": 19,
+              "verse": 1,
+              "editionId": "eng-web",
+              "endVerse": 8
+            }
+          },
+          {
+            "label": "Exodus 24:3–4 · WEB",
+            "reference": {
+              "bookId": "EXO",
+              "chapter": 24,
+              "verse": 3,
+              "editionId": "eng-web",
+              "endVerse": 4
+            }
+          }
+        ]
+      },
+      {
+        "label": "Political and cultural setting",
+        "text": "The text describes a community that has left Egypt and is camped before a mountain. Independently dated archaeological and political reconstruction is not supplied in this card.",
+        "sources": [
+          {
+            "label": "Exodus 19:1–8 · WEB",
+            "reference": {
+              "bookId": "EXO",
+              "chapter": 19,
+              "verse": 1,
+              "editionId": "eng-web",
+              "endVerse": 8
+            }
+          }
+        ]
+      }
+    ],
+    "prosperityGospelRisk": "none"
+  }
+]

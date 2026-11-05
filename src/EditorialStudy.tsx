@@ -1,3 +1,4 @@
+import TrustBadge from './TrustBadge';
 import { useEffect, useMemo, useState } from 'react';
 import { getQuran } from './data';
 import { coverageLabel } from './domain';
@@ -57,6 +58,7 @@ function ComparisonRecord({ link, publication, locale, corpus, loading, error, o
   const explanation = selectExplanation(publication, link, locale);
   if (!explanation) return null;
   return <article className="panel comparison-record">
+    <TrustBadge status={link.review.status} origin={explanation.explanation.origin}/>
     <span className="review-state">{relationships[link.relationship]}</span><h3 lang={link.sourceLocale}>{link.proposition}</h3>
     {link.relationship === 'thematic' && <p className="muted small">A thematic connection does not establish agreement on a specific claim.</p>}
     <BibleReferences refs={link.bibleRefs}/>
@@ -84,6 +86,7 @@ export function VerseComparison({ reference, locale, publication, onOpenQuran }:
   }, [needsQuran]);
   const reviewedRows = coverage.rows.filter(row => row.status === 'reviewed_no_match' || row.status === 'disputed');
   return <section className="comparison-panel" aria-label={`Comparison review for ${reference.bookId} ${reference.chapter}:${reference.verse}`}>
+    {!links.length&&<TrustBadge status={isValidatedPublication(publication) ? coverage.status.replaceAll('_', ' ') : 'unconfirmed'}/>}
     <span className="review-state">{coverage.status === 'partial' ? 'Partly reviewed selection' : coverage.status.replaceAll('_', ' ')}</span>
     <p>{coverage.status === 'partial' ? 'Review status differs within this selection. Read the scope attached to each published finding.' : coverageLabel(coverage.status)}</p>
     {coverage.totalUnits > 1 && <p className="muted small">{coverage.reviewedUnits} of {coverage.totalUnits} selected verses have completed comparison reviews. Remaining verses are not recorded as having no parallel.</p>}

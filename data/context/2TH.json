@@ -1,0 +1,93 @@
+[
+  {
+    "id": "thessalonian-letter-setting",
+    "bookId": "2TH",
+    "fromChapter": 1,
+    "toChapter": 3,
+    "title": "Second Thessalonians: address and purpose in the text",
+    "aiReviewStatus": "AI-assisted draft · human review pending",
+    "sources": [
+      {
+        "label": "2 Thessalonians 1:1–4 · WEB",
+        "reference": {
+          "bookId": "2TH",
+          "chapter": 1,
+          "verse": 1,
+          "editionId": "eng-web",
+          "endVerse": 4
+        }
+      },
+      {
+        "label": "2 Thessalonians 2:1–3 · WEB",
+        "reference": {
+          "bookId": "2TH",
+          "chapter": 2,
+          "verse": 1,
+          "editionId": "eng-web",
+          "endVerse": 3
+        }
+      },
+      {
+        "label": "2 Thessalonians 2:5–12 · WEB",
+        "reference": {
+          "bookId": "2TH",
+          "chapter": 2,
+          "verse": 5,
+          "editionId": "eng-web",
+          "endVerse": 12
+        }
+      }
+    ],
+    "fields": [
+      {
+        "label": "Named senders and audience",
+        "text": "The greeting names Paul, Silvanus and Timothy and addresses the assembly of the Thessalonians. Naming is textual evidence, not a complete resolution of historical authorship.",
+        "sources": [
+          {
+            "label": "2 Thessalonians 1:1–4 · WEB",
+            "reference": {
+              "bookId": "2TH",
+              "chapter": 1,
+              "verse": 1,
+              "editionId": "eng-web",
+              "endVerse": 4
+            }
+          }
+        ]
+      },
+      {
+        "label": "Why this passage is written",
+        "text": "Chapter 2 addresses alarm concerning the day of the Lord, including claims attributed to a message or letter.",
+        "sources": [
+          {
+            "label": "2 Thessalonians 2:1–3 · WEB",
+            "reference": {
+              "bookId": "2TH",
+              "chapter": 2,
+              "verse": 1,
+              "editionId": "eng-web",
+              "endVerse": 3
+            }
+          }
+        ]
+      },
+      {
+        "label": "Date and political history",
+        "text": "This card does not assign a composition date or identify the disputed figures in chapter 2. A separately sourced historical interpretation remains under review.",
+        "sources": [
+          {
+            "label": "2 Thessalonians 2:5–12 · WEB",
+            "reference": {
+              "bookId": "2TH",
+              "chapter": 2,
+              "verse": 5,
+              "editionId": "eng-web",
+              "endVerse": 12
+            }
+          }
+        ]
+      }
+    ],
+    "prosperityGospelRisk": "none"
+  }
+]

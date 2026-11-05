@@ -1,62 +1,22 @@
 # Project status
 
-## Latest continuation checkpoint — 4 November 2026
+## Active continuation — 5 November 2026 (Europe/Berlin)
 
-Current main: `a2bce0fcf53290f8b15d23b71ea0482807d9f5a8`.
+- Repository: `HephzibahBehulahHQ/Adigun-AiBible`.
+- Main observed at start: `5e7317bf888ecde0e1a1ea4546831a263e6630aa`.
+- Working branch / PR: `codex/law-diary-route-scaffold-20261105`, [PR #26](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/26).
+- Last verified remote checkpoint at start: `6640f39143ba3a005bc5e99f676b96acb693f4fc`. Its [CI 41993626943](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41993626943) passed source/content/build, desktop/mobile and repeated persistence checks. PR deployment was correctly skipped.
+- Verified checkpoint: `0798f998585d33b0cfa9288f3491b2d077932fb5` via GitHub connection and `git ls-remote`, 5 November 2026. Shell push has no credentials; authenticated GitHub tree/commit/ref operations preserve the exact Git tree and verify the expected parent.
+- Current work: complete source-linked Law Diary and section routing; add context cards, web verse cards and local ministry preparation; preserve source review gates.
+- Recovered the Law Diary addendum present only in the root TXT. Canonical Markdown now matches that complete supplied specification. Current user authorization to continue/finish overrides its older per-step stop requests. Content approval, accuracy and release gates remain.
+- Local Node 24 and locked dependencies are available. Routing, context, widget, teaching and assistant tests pass. TypeScript, ESLint, the application and backend unit suites, corpus validation and the first combined production build pass. Browser checks for the final candidate remain pending. Local Playwright browser download returned an invalid archive; browser release gates will run in GitHub Actions. Final combined source, content, browser and release checks are pending.
+- Root is the integration/synchronization owner. Law Diary, context/widget and ministry specialists own disjoint new modules.
+- No new deployment is claimed. Existing Pages target: https://hephzibahbehulahhq.github.io/Adigun-AiBible/ ; public source receipt: `build-info.json`.
 
-- PR #8 saved/private searches and PR #9 game-template audit are merged; both release workflows passed.
-- PR #10 shared-passage route preservation and PR #11 private recent-search history are merged; both release workflows passed.
-- PR #12 guided private interpretation challenge is merged; PR checks passed.
-- PR #14 decision-simulation pilot is merged. Exact candidate CI [41900211198](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41900211198) passed source/content/build, desktop/mobile browser and persistence checks. Main deployment [41900926485](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41900926485) passed and verified the public source receipt against `2619c0261ffa985f3da5bb5fd788bb240880488f`.
-- PR #15 written retelling practice is merged as `135e20127985c2f00238eef044d675546facbce6`. Exact candidate CI [41901405361](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41901405361) passed TypeScript, lint, unit/content/build, desktop/mobile browser, backup and persistence checks. Main deployment [41901945519](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41901945519) passed and verified the public source receipt.
-- PR #17 expands the decision-simulation pilot with a second fictional adult-study scenario about confidentiality, consent and practical support. It includes an immediate-safety exception, scenario-specific selected-edition references, private reflection, replay and no scoring. Exact-candidate CI [41902736395](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41902736395) passed source/content/build, desktop/mobile browser and persistence checks. It is merged as the current main checkpoint; main deployment [41903597641](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41903597641) passed and verified the published source revision.
-- PR #20 — Scripture Detective Mission: merged to main as `f9e0b4ab48418f8a6dfa78d43a1ac52fe376e885`. PR CI [41905075897](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41905075897) passed; main Pages deployment [41915528238](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41915528238) passed production build, desktop/mobile browser, persistence, publish and exact public source-receipt verification.
-- PR #19 — project/game audit reconciliation: merged as `82390cdf6c736abddee0de4bfdc143f2c021315b`.
-- PR #21 — release-record reconciliation: merged as `462ab2c372b1ebabf9792f6eb229d14e26983835`; main Pages deployment [41916140929](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41916140929) passed production build, desktop/mobile browser, persistence and exact public source-receipt verification.
-- PR #22 — advanced search for the standalone ClearQuran source: merged to main as `a222a97f83683b5ecddced42cc58fb45ee5e7219`. Exact-head CI [41919828778](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41919828778) passed source/content/build, Chromium setup, desktop/mobile browser checks and repeated persistence checks. Main Pages deployment [41920837036](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41920837036) passed production build, desktop/mobile browser checks, persistence regression, publication and exact public source-receipt verification for `a222a97f83683b5ecddced42cc58fb45ee5e7219`.
-- PR #23 — optional non-scoring prompts for private retelling practice: merged to main as `45ecaea7a4c8db7f0f9584f1b765e4221886a290`. Exact-head CI [41922834044](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41922834044) passed source/build, unit, desktop/mobile browser and persistence checks. Main Pages deployment [41923730739](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41923730739) passed publication and exact public source-receipt verification for `45ecaea7a4c8db7f0f9584f1b765e4221886a290`.
-- Main continuation brief — commit `a2bce0fcf53290f8b15d23b71ea0482807d9f5a8` adds the new Law Diary and cross-cutting feature requirements. Main Pages deployment [41924363609](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41924363609) passed production build, desktop/mobile browser checks, persistence regression, publication and exact public source-receipt verification for `a2bce0fcf53290f8b15d23b71ea0482807d9f5a8`. No new Law Diary implementation is claimed yet.
-- PR #24 — device-local saved Quran search profiles: branch `codex/quran-saved-searches-20261104`; adds named ClearQuran queries with mode, surah scope and exclusions, load/delete controls and a separate private IndexedDB store. The branch now also includes the latest continuation brief from main. Exact-head CI pending.
+## Exact remaining dependencies
 
-The full Version 3 product remains in progress. Each bounded increment is separately accepted; none implies overall completion.
+Human editorial/native-language approval, restricted edition rights, dedicated backend/provider configuration, permitted narration, and actual two-device offline validation are not established. Backend creation was previously cancelled; no unrelated infrastructure is reused. These gates do not excuse remaining independent software work. Full Version 3 is not yet complete.
 
-Updated: 4 November 2026 (Europe/Berlin).
+## Next action
 
-## Reader layouts and command palette: PR #6
-
-Implementation is complete for this bounded slice. Source candidate `916d245f75c709259f9b274b7f7df1b97a99cc9e` passed [CI 41873797416](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41873797416): **199 application tests, 20 offline backend contracts, 98 desktop/mobile browser cases and 10 repeated persistence checks**, with no test retries or failures. TypeScript, lint, content validation and production build passed.
-
-The final follow-up also ensures the inspector command reveals the panel when leaving Reading Focus, with a real-keyboard regression. That checkpoint and this acceptance record must pass the same release workflow. [PR #6](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/6) records its final check, merge and production receipts. Main merges only after the applicable gate is green. The post-publication workflow verifies that the public build receipt equals its exact source SHA.
-
-Delivered implementation:
-- Up to 12 named device-local layouts: theme, size, spacing, focus, publisher paragraphs/headings/notes/red letters, inspector and 2–4 linked/independent comparison panes.
-- Save, apply, rename, removal, JSON export and explicitly confirmed validated replacement import.
-- Atomic concurrent-window protection, clear storage errors, damaged-record download and reset guarded against a newer repair.
-- Accessible command palette through the top-bar button or Control/Command + K, with filtering, real actions, keyboard traversal, modal focus restoration and ordinary typing preserved.
-- Current passage, Scripture wording, personal notes and reading history remain independently managed.
-- Applying a layout that disables publisher annotations closes its corresponding detail drawer. Small-screen inspector behavior and existing note autofocus are preserved.
-
-## Integration and production identity
-
-- Feature branch: `codex/reader-layouts-commands-20261104`. Last read-back checkpoint before this record: `916d245f75c709259f9b274b7f7df1b97a99cc9e`.
-- Previous released main: `8ed0aa73cdf759a36c923d09e3889c979104379e`. [Workflow 41838579813](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41838579813) deployed it successfully at 14:32:35 Europe/Berlin.
-- Production: https://hephzibahbehulahhq.github.io/Adigun-AiBible/
-- Exact current public receipt: https://hephzibahbehulahhq.github.io/Adigun-AiBible/build-info.json
-- Deployment evidence for this increment is retained in PR #6 and its production workflow. Do not infer publication from a branch checkpoint; inspect the merge/workflow and generated public receipt when resuming.
-- A separate overlapping branch, `codex/workspace-navigation-20261104` / PR #7, was discovered during verification. Its work has not been removed or rewritten. Inspect actual main and reconcile any remaining overlap before integrating it; do not install duplicate competing layout/palette systems.
-
-## Verification and recovery
-
-Initial [CI 41872693806](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41872693806) passed 93/98 browser cases. Failures exposed ambiguous theme/pane control names and mobile note autofocus. Explicit accessible names and corrected overlay guards fixed those failures; the later complete run passed all 98 without removing assertions or enabling retries.
-
-Checkpoints `07aa031`, `a07a9f1`, `61dd3cf`, `5be157b` and `916d245` were read back from the remote feature branch. The local executor is unavailable in this continuation; actual Node, build and browser verification runs in GitHub Actions. Browser artifacts are retained by those runs. No local browser or independent accessibility certification is claimed. Offline backend contracts do not establish live backend operation.
-
-## Next bounded work
-
-Continue advanced/private/saved search from the deployed state. Review the separate navigation branch for independently useful route-preservation work and reconcile through normal reviewed Git changes. Do not rebuild the released source-reader or private-session features.
-
-External gates remain: genuine human editorial/native-language review, edition-specific permissions, the interrupted dedicated backend setup, authenticated model service, permitted recorded narration and native-platform environments. Do not retry cancelled backend setup without explicit resumption. These dependencies do not block other local implementation.
-
-## Runner setup recovery
-
-Final source checkpoint `065e12e11f7094e8e4237ad92bf882ceba44c2d8` passed its code/content/build gate in workflow 41874798330. Chromium installation began at 18:10:21 Europe/Berlin and remained at that step for over seven minutes, before any browser test ran. The install step now has a five-minute bound so an infrastructure stall yields a diagnosable failure instead of consuming the complete release job. The fresh exact-candidate run still requires every application, browser and persistence check. No setup delay is reported as an application-test success.
+Complete and validate the owned modules, verify remote checkpoints, merge only the green candidate and verify the published source revision. Previous release receipts remain in Git history and Actions.
