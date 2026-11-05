@@ -31,6 +31,8 @@ The optional `catalogOnlyWorks` prop accepts the canonical historical catalog's 
 
 Each independently loaded metadata family can fail without concealing available coverage. Failed or unavailable inputs remain Unknown and have visible errors; refresh retries metadata requests. A missing edition manifest remains an unknown offline row rather than shrinking the denominator to zero.
 
+Dictionary offline permission follows the existing pinned public-domain XML grant and complete notices. A changed or unsupported license declaration leaves offline permission unknown even when record counts remain valid. Publisher span totals require the exact installed edition revision; a later source revision cannot inherit older metadata counts.
+
 ## Offline boundaries
 
 Cache inspection is read-only and begins only when the visitor selects **Check cached content packs**. It reads this application's current content cache and committed current-version packs. Staging caches without completion markers, older releases, other apps, query-string entries and files outside the manifest are excluded. Shared files are hashed once per inspection. Cancellation stops inspection without presenting partial work as a complete count.

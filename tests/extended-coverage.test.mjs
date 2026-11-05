@@ -65,6 +65,8 @@ test('offline definitions retain source notices, search, permissions and missing
   assert.ok(missing.filter(row => row.id.startsWith('bible-')).every(row => row.permission === 'unknown' && row.paths.length === 0));
   const withdrawn = structuredClone(rights); withdrawn.editions.find(row => row.editionId === 'eng-bsb').withdrawn = true;
   assert.equal(offlinePackDefinitions(manifests, editions, null, null, withdrawn).find(row => row.id === 'bible-eng-bsb').permission, 'denied');
+  const changedLicense = structuredClone(dictionaries); changedLicense.dictionaries[0].license = 'Permission unknown';
+  assert.equal(offlinePackDefinitions([], [], null, dictionaryInventory(changedLicense), rights).find(row => row.id === 'historical-lexicons').permission, 'unknown');
 });
 
 test('cache inspection excludes unpublished staging, old releases, foreign apps and unlisted pack members', async () => {

@@ -33,15 +33,16 @@ export function matchedPublisherInventory(rows: PublisherInventoryRow[], manifes
   });
 }
 
-export interface DictionaryInventoryRow { id: string; title: string; path: string; records: number; headwords: number; dataSha256: string; sourceSha256: string; languageCounts: Record<string, number> }
+export interface DictionaryInventoryRow { id: string; title: string; path: string; records: number; headwords: number; dataSha256: string; sourceSha256: string; license: string; sourceUrl: string; languageCounts: Record<string, number> }
 export interface DictionaryInventory { sourceCommit: string; totalRecords: number; dictionaries: DictionaryInventoryRow[] }
 export function dictionaryInventory(value: unknown): DictionaryInventory {
   if (!object(value) || value.schemaVersion !== 1 || typeof value.sourceCommit !== 'string' || !/^[a-f0-9]{40}$/.test(value.sourceCommit) || !count(value.totalRecords) || !Array.isArray(value.dictionaries) || !value.dictionaries.length) throw new Error('The dictionary inventory is unavailable or malformed.');
   const dictionaries = value.dictionaries.map(raw => {
-    if (!object(raw) || !id(raw.id) || typeof raw.title !== 'string' || !raw.title.trim() || typeof raw.path !== 'string' || !/^[a-z0-9-]+\.json$/.test(raw.path) || !count(raw.records) || !count(raw.headwords) || raw.headwords > raw.records || !hash(raw.dataSha256) || !hash(raw.sourceSha256) || !object(raw.languageCounts) || !Object.values(raw.languageCounts).every(count)) throw new Error('Dictionary coverage lacks valid source metadata.');
+    if (!object(raw) || !id(raw.id) || typeof raw.title !== 'string' || !raw.title.trim() || typeof raw.path !== 'string' || !/^[a-z0-9-]+\.json$/.test(raw.path) || !count(raw.records) || !count(raw.headwords) || raw.headwords > raw.records || !hash(raw.dataSha256) || !hash(raw.sourceSha256) || typeof raw.license !== 'string' || !raw.license.trim() || typeof raw.sourceUrl !== 'string' || !object(raw.languageCounts) || !Object.values(raw.languageCounts).every(count)) throw new Error('Dictionary coverage lacks valid source metadata.');
+    try { const url = new URL(raw.sourceUrl); if (url.protocol !== 'https:' || url.username || url.password) throw new Error(); } catch { throw new Error('Dictionary rights evidence has an unsafe or missing source link.'); }
     const languageCounts = raw.languageCounts as Record<string, number>;
     if (Object.values(languageCounts).reduce((sum, total) => sum + total, 0) !== raw.records) throw new Error('Dictionary language counts do not match its records.');
-    return { id: raw.id, title: raw.title, path: raw.path, records: raw.records, headwords: raw.headwords, sourceSha256: raw.sourceSha256, dataSha256: raw.dataSha256, languageCounts };
+    return { id: raw.id, title: raw.title, path: raw.path, records: raw.records, headwords: raw.headwords, sourceSha256: raw.sourceSha256, dataSha256: raw.dataSha256, license: raw.license, sourceUrl: raw.sourceUrl, languageCounts };
   });
   if (new Set(dictionaries.map(row => row.id)).size !== dictionaries.length || dictionaries.reduce((sum, row) => sum + row.records, 0) !== value.totalRecords) throw new Error('Dictionary totals are duplicated or inconsistent.');
   return { sourceCommit: value.sourceCommit, totalRecords: value.totalRecords, dictionaries };
@@ -72,7 +73,10 @@ export function offlinePackDefinitions(manifests: Manifest[], editions: Edition[
   for (const edition of editions.filter(row => row.corpus === 'bible' && !manifests.some(manifest => manifest.edition.id === row.id))) packs.push({ id: `bible-${edition.id}`, title: `${edition.name} · complete text and search`, paths: [], permission: 'unknown', reason: 'The exact edition manifest is unavailable; required files cannot be counted.' });
   for (const edition of editions.filter(row => row.corpus === 'quran')) packs.push({ id: `quran-${edition.id}`, title: `${edition.name} · separate Quran corpus`, paths: [...essential, `data/editions/${edition.id}/manifest.json`, `data/editions/${edition.id}/quran.json`, ...(edition.noticePath ? [`data/editions/${edition.noticePath}`] : [])], ...permission(edition, register) });
   for (const edition of historical?.editions || []) packs.push({ id: `historical-${edition.id}`, title: edition.title, paths: ['data/historical/manifest.json', edition.path, edition.noticePath], permission: edition.rights.display && edition.rights.offline ? 'allowed' : 'denied', reason: 'The historical edition does not permit this offline use.' });
-  if (dictionaries) packs.push({ id: 'historical-lexicons', title: 'Both historical dictionaries and source notices', paths: ['data/linguistics/manifest.json', 'data/linguistics/NOTICE.txt', ...dictionaries.dictionaries.map(row => `data/linguistics/${row.path}`)], permission: 'allowed' });
+  if (dictionaries) {
+    const permitted = dictionaries.dictionaries.every(row => row.license === 'Public domain (source XML statement)');
+    packs.push({ id: 'historical-lexicons', title: 'Both historical dictionaries and source notices', paths: ['data/linguistics/manifest.json', 'data/linguistics/NOTICE.txt', ...dictionaries.dictionaries.map(row => `data/linguistics/${row.path}`)], permission: permitted ? 'allowed' : 'unknown', ...(!permitted ? { reason: 'The dictionary source grant differs from the supported public-domain XML import; offline permission needs verification.' } : {}) });
+  }
   return packs;
 }
 
