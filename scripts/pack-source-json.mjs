@@ -1,6 +1,6 @@
 import { createHash } from 'node:crypto';
-import { readdir, readFile, writeFile } from 'node:fs/promises';
-import { relative, resolve } from 'node:path';
+import { readdir, readFile, writeFile, realpath, stat } from 'node:fs/promises';
+import { relative, resolve, sep } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { gzipSync, gunzipSync } from 'node:zlib';
 import { SOURCE_ENVELOPE_KIND, SOURCE_JSON_MAX_BYTES, SOURCE_GZIP_MAX_BYTES, SOURCE_MAX_EXPANSION_RATIO } from '../src/source-codec.ts';
@@ -12,8 +12,8 @@ export function sourceTransportEnabled(value = process.env.ADIGUN_SOURCE_TRANSPO
 }
 
 export function packSourceJsonBytes(input) {
-  const bytes = Buffer.from(input);
-  if (!bytes.length || bytes.length > SOURCE_JSON_MAX_BYTES) throw new Error('Canonical source JSON exceeds the transport byte limit.');
+  if (!(input instanceof Uint8Array) || !input.byteLength || input.byteLength > SOURCE_JSON_MAX_BYTES) throw new Error('Canonical source JSON exceeds the transport byte limit.');
+  const bytes = Buffer.from(input.buffer, input.byteOffset, input.byteLength);
   const value = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(bytes));
   if (!value || typeof value !== 'object' || value.kind === SOURCE_ENVELOPE_KIND) throw new Error('Only raw source objects or arrays can be packaged.');
   const compressed = gzipSync(bytes, { level: 6 });
@@ -27,6 +27,8 @@ export function packSourceJsonBytes(input) {
 export async function packSourceJson({ directory, enabled = sourceTransportEnabled() }) {
   const root = resolve(directory), summary = { enabled, files: 0, canonicalBytes: 0, transferredBytes: 0 };
   if (!enabled) return summary;
+  const actual = await realpath(root), canonical = resolve(import.meta.dirname, '../data');
+  if (actual === canonical || actual.startsWith(canonical + sep) || canonical.startsWith(actual + sep)) throw new Error('Refusing to package canonical repository sources. Use the disposable public build copy.');
   async function walk(path) {
     for (const entry of (await readdir(path, { withFileTypes: true })).sort((a, b) => a.name.localeCompare(b.name))) {
       const file = resolve(path, entry.name);
@@ -34,6 +36,7 @@ export async function packSourceJson({ directory, enabled = sourceTransportEnabl
       if (!entry.isFile()) throw new Error('Source packaging does not follow links or special files.');
       const name = relative(root, file).replaceAll('\\', '/');
       if (!/(^|\/)books\/[1-3]?[A-Z]{2,3}\.json$/.test(name) && !/(^|\/)search-index\.json$/.test(name)) continue;
+      if ((await stat(file)).size > SOURCE_JSON_MAX_BYTES) throw new Error('Canonical source JSON exceeds the transport byte limit.');
       const canonical = await readFile(file), packed = packSourceJsonBytes(canonical);
       await writeFile(file, packed);
       summary.files++; summary.canonicalBytes += canonical.length; summary.transferredBytes += packed.length;

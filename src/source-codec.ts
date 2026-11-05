@@ -13,7 +13,7 @@ function byteLimit(value: number): void {
 }
 
 /** Fixed-size blocks also bound metadata overhead when a stream delivers very small chunks. */
-async function boundedBytes(stream: ReadableStream<Uint8Array> | null, limit: number, signal?: AbortSignal): Promise<Uint8Array> {
+async function boundedBytes(stream: ReadableStream<Uint8Array> | null, limit: number, signal?: AbortSignal): Promise<Uint8Array<ArrayBuffer>> {
   byteLimit(limit);
   abortIfNeeded(signal);
   if (!stream) return new Uint8Array();
@@ -61,7 +61,7 @@ export async function readBoundedJson(response: Response, maxBytes: number): Pro
   return parseJson(await boundedBytes(response.body, maxBytes));
 }
 
-function base64Bytes(payload: string): Uint8Array {
+function base64Bytes(payload: string): Uint8Array<ArrayBuffer> {
   if (!payload.length || payload.length > SOURCE_BASE64_MAX_CHARS || payload.length % 4 !== 0 || /[^A-Za-z0-9+/=]/.test(payload)) throw new Error('The source envelope has invalid base64 data.');
   const padding = payload.endsWith('==') ? 2 : payload.endsWith('=') ? 1 : 0;
   if (payload.slice(0, payload.length - padding).includes('=')) throw new Error('The source envelope has invalid base64 padding.');
@@ -95,9 +95,9 @@ export async function decodeSourceJsonBytes(bytes: Uint8Array, signal?: AbortSig
   if (value.decodedBytes > Math.max(1024, compressed.byteLength * SOURCE_MAX_EXPANSION_RATIO)) throw new Error('The source envelope exceeds the allowed expansion ratio.');
   if (typeof DecompressionStream !== 'function') throw new Error('This browser cannot decompress scripture. Use a current browser with gzip decompression support.');
   if (!globalThis.crypto?.subtle) throw new Error('This browser cannot verify compressed scripture. Use a current browser over HTTPS.');
-  let decoded: Uint8Array;
+  let decoded: Uint8Array<ArrayBuffer>;
   try {
-    const stream = new Blob([new Uint8Array(compressed).buffer]).stream().pipeThrough(new DecompressionStream('gzip'));
+    const stream = new Blob([compressed.buffer]).stream().pipeThrough(new DecompressionStream('gzip'));
     decoded = await boundedBytes(stream, value.decodedBytes, signal);
   } catch (error) {
     if (error instanceof DOMException && error.name === 'AbortError') throw error;
@@ -105,7 +105,7 @@ export async function decodeSourceJsonBytes(bytes: Uint8Array, signal?: AbortSig
     throw new Error('The compressed scripture could not be decoded. Reconnect and update the application.');
   }
   if (decoded.byteLength !== value.decodedBytes) throw new Error('The decoded source byte count does not match its envelope.');
-  const digest = await crypto.subtle.digest('SHA-256', new Uint8Array(decoded).buffer);
+  const digest = await crypto.subtle.digest('SHA-256', decoded);
   abortIfNeeded(signal);
   const hash = Array.from(new Uint8Array(digest), byte => byte.toString(16).padStart(2, '0')).join('');
   if (hash !== value.decodedSha256) throw new Error('The decoded source checksum does not match its envelope.');

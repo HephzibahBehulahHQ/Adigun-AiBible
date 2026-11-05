@@ -20,6 +20,12 @@ Changing an existing asset from raw JSON to an envelope changes its transfer has
 
 ## Capacity measurements
 
-The inspected 14-Bible build contained 2,257 files and 199,148,748 bytes, including 2,194 offline inventory entries. Its 938 book/search payloads totalled 167,732,841 canonical bytes. Deterministic gzip level 6 measured 42,429,122 bytes; JSON plus base64 envelopes measured 56,749,999 bytes. Keeping all other assets raw projects approximately 88.2 MB for that build. These are measured source-payload comparisons, not device heap measurements.
+The original inspected 14-Bible build contained 2,257 files and 199,148,748 bytes, including 2,194 offline inventory entries. Its 938 book/search payloads totalled 167,732,841 canonical bytes. A Python gzip comparison measured 42,429,122 binary bytes and 56,749,999 envelope bytes. The actual Node 24 packaged production build produced 56,395,067 envelope bytes and a total `dist` size of **87,818,700 bytes**, still 2,257 files. Its offline inventory retains 2,194 paths and accounts for 85,604,660 transferred bytes; metadata itself is 354,501 bytes. Compressor implementations can differ without changing decoded canonical hashes. These are artifact measurements, not device heap measurements.
 
 Using the nine recent source editions' measured mix, 104 total editions project approximately 534 MB with current books/indexes enveloped, or 645 MB if the current 14 remain raw; their projected inventory is 8,494 paths. Richer future source structures, provenance, and duplicated chapter chunks can change that estimate. A packaged production build and all-browser gates must establish actual release size and behavior.
+
+## Verification and release gates
+
+`node --test tests/source-codec.test.mjs tests/source-transport.test.mjs tests/offline.test.mjs tests/search-query.test.mjs` covers deterministic real-source round trips, bounded malformed inputs and output, cancellation, unsupported decompression, unchanged raw development JSON, build-only mutation, exact transferred hashes, bounded inventory expansion, and existing atomic pack/update/removal/search regressions.
+
+`tests/source-transport.browser.spec.ts` requires the actual served Genesis artifact to be an envelope with the canonical source hash; it never skips on an accidentally raw build. Desktop/mobile scenarios cover reading and search, complete atomic download and offline reload, corrupt cached envelopes failing closed and recovering after a clean reload, explicit unsupported-browser errors, and raw JSON compatibility. Local browser execution remains unavailable; collection alone is not a browser pass. The root release workflow owns execution against the opt-in artifact before enabling transport for production.
