@@ -41,3 +41,9 @@ Local Chromium installation is unavailable. Actual browser execution runs in Git
 ## Next action
 
 Pass PR #32's repaired 292-case exact-candidate browser/persistence gates and inspect retelling evidence before merge/deployment. Release the separately verified Greek/three-edition increment afterward.
+
+## Browser capture repair — 13:50 UTC
+
+Actual run `42036926748` at audio head `8208173d` completed 276 of 292 browser cases successfully and failed all sixteen working-recording scenarios across desktop/mobile (zero flaky/skipped cases). Capture stopped immediately; the visible empty-recording error resulted from native Window timer methods being invoked with the environment object as their receiver. The later screenshot-only checkpoint `80c3f4c0` preserved evidence but did not repair that defect.
+
+The repair binds all four native timer functions to `globalThis`, retaining the real MediaRecorder, exact-byte verification, five-minute/8-MiB bounds and cleanup behavior. A focused default-environment regression reproduced the failure before the change and passes afterward, including both scheduled timer releases. All 57 focused recording/storage/transcript/workspace/family tests, TypeScript and scoped ESLint passed. The complete 292-case browser and persistence gate must pass on this new candidate before merge; prior failed or cancelled runs are not release acceptance.
