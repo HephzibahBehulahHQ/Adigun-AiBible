@@ -6,7 +6,7 @@ const baseline = JSON.parse(readFileSync(new URL('../data/manifest.json', import
 const catalog = JSON.parse(readFileSync(new URL('../data/editions/catalog.json', import.meta.url), 'utf8'));
 const editions: { id: string; name: string; language: string }[] = [baseline.edition, ...catalog.editions.filter((edition: { corpus: string }) => edition.corpus === 'bible')];
 
-test('installed catalog exposes every actual source language and all paginated editions at 320px', async ({ page }) => {
+test('installed catalog exposes every actual source language and all paginated editions at 320px', async ({ page }, testInfo) => {
   await page.goto('#/editions/JHN/3?verse=16&edition=eng-web');
   await expect(page.getByText(`${editions.length} installed Bible text editions`, { exact: false })).toBeVisible();
   const languages = [...new Set(editions.map(edition => edition.language))];
@@ -28,8 +28,16 @@ test('installed catalog exposes every actual source language and all paginated e
   await expect(results.getByRole('article')).toHaveCount(editions.filter(edition => edition.language === 'de').length);
   await page.getByLabel('Find an edition', { exact: true }).fill('No edition has this name');
   await expect(page.getByText('No installed edition matches this search and language filter.', { exact: true })).toBeVisible();
+  await page.getByLabel('Find an edition', { exact: true }).fill('');
+  await expect(results.getByRole('article')).toHaveCount(Math.min(12, editions.length));
+  const normal = testInfo.outputPath(`edition-catalog-${testInfo.project.name}.png`);
+  await page.screenshot({ path: normal, animations: 'disabled' });
+  await testInfo.attach('Expanded catalog', { path: normal, contentType: 'image/png' });
   await page.setViewportSize({ width: 320, height: 844 });
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
+  const narrow = testInfo.outputPath('edition-catalog-320.png');
+  await page.screenshot({ path: narrow, animations: 'disabled' });
+  await testInfo.attach('Expanded catalog 320px', { path: narrow, contentType: 'image/png' });
 });
 
 test('opening another source edition retains the complete selected verse range', async ({ page }) => {

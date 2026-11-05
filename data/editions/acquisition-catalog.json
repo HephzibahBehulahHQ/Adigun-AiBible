@@ -406,10 +406,12 @@
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 23,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "ces-kralicka1613",
+      "installedRevision": "Last Kralická edition, 1613; translation history 1579–1593",
+      "installedSourceSha256": "a85f19f62f9e0c9d9d4b8735b2149772a745576ff4b73cfa15d17a6b4b2cd8ae"
     },
     {
       "provider": "eBible.org",
@@ -597,10 +599,12 @@
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 32,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "eng-dby",
+      "installedRevision": "Provider inventory: 1871/1884; eBible Darby source",
+      "installedSourceSha256": "7eb1df2a434f5bbd831591aa96c08e94b900b1458fda74ccf1d1739d5af73619"
     },
     {
       "provider": "eBible.org",
@@ -976,10 +980,12 @@
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 50,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "eng-webster",
+      "installedRevision": "1833",
+      "installedSourceSha256": "402240da209b017c67a31b63773b42471ef7e2513aa76ef067f34af907537270"
     },
     {
       "provider": "eBible.org",
@@ -1186,10 +1192,12 @@
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 60,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "eng-ylt",
+      "installedRevision": "1862/1898; provider identifies the 1898 edition",
+      "installedSourceSha256": "653e9f1d8487de46e11574165a6355d3135ae378fb2198ee4128dedc06c8ca56"
     },
     {
       "provider": "eBible.org",
@@ -1249,10 +1257,12 @@
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 63,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "fra-lsg1910",
+      "installedRevision": "1910",
+      "installedSourceSha256": "fcdeac5aa1ebf857835a41bfa11f8fe5685c31ea602418a2998d4c870488f54b"
     },
     {
       "provider": "eBible.org",
@@ -1354,10 +1364,12 @@
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 68,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "deu-textbibel1906",
+      "installedRevision": "1906; Textbibel.de digitization with Hans J. Herbst",
+      "installedSourceSha256": "0ecc099d7d8ad4cf6fedd3a35d3792423e38a70e4c23e8a9102b5164810298b5"
     },
     {
       "provider": "eBible.org",
@@ -1375,10 +1387,12 @@
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 69,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "deu-elberfelder1905",
+      "installedRevision": "Unrevised 1905 edition",
+      "installedSourceSha256": "71a08dafdd8accb36a09fe757ab111a29b18cd25ade4b89013b542dc01d44b6a"
     },
     {
       "provider": "eBible.org",
@@ -1690,10 +1704,12 @@
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 85,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "ita-diodati1885",
+      "installedRevision": "1885 edition title; notice: translated 1641 and revised 1821",
+      "installedSourceSha256": "9d2245ddc8b263cd5331225d8c3873a4a5d2471eaad9ea5a5d8a527625443ef7"
     },
     {
       "provider": "eBible.org",
@@ -2110,10 +2126,12 @@
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 105,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "spa-rv1909",
+      "installedRevision": "1909",
+      "installedSourceSha256": "f0b20b2473b3ed30dcee584b2311b6a1db27b32e714f1a2b0e97d01ba179f284"
     },
     {
       "provider": "eBible.org",

@@ -1,0 +1,16 @@
+About ces1613_vpl
+This archive contains BIBLE TEXT ONLY. All formatting, paragraph breaks, notes, introductions, noncanonical section titles, etc., have been removed. The file ending "_vpl.txt" is designed for import into BibleWorks and similar Bible study programs. The file ending "_vpl.xml" contains the same information, but is in XML format and uses standard SIL/UBS book abbreviations.
+The file ending "_vpl.sql" contains the same information formatted to create a SQL data table.
+Check for updates and other Bible translations in this format at http:\\eBible.org\Scriptures\
+Bible Kralická 1613
+The Holy Bible in the Czech language from the last Kralická edition of 1613.
+Public Domain
+Language: český (Czech)
+Translation by: Jan Blahoslav et al
+Bible Kralická: Bible svatá aneb všechna písma Starého i Nového zákona podle posledního vydání Kralického z roku 1613. První český překlad z originálních jazyků kladoucí důraz na liturgické užití a vroucí zbožnost. NZ přeložil Jan Blahoslav 1564. Pro překlad SZ byla vytvořena zvláštní rada nejvzdělanějších odborníků, vzdělaných na předních evropských evangelických universitách, které tehdy Jednota bratrská měla. Jejich překlad vyšel v pěti dílech v letech 1579-1593 (6. díl byl Blahoslavův překlad NZ). V r. 1613 vyšlo souhrnné vydání v jednom. Bratři vytvořili mistrné dílo, vrchol překladatelského úsilí slovanských národů. Bible Kralická měla navíc nemalý podíl na zachování českého jazyka v době pobělohorské a po staletí též tvořila most mezi Čechy a Slováky.
+This PUBLIC DOMAIN (not copyrighted) Bible translation is brought to you courtesy of eBible.org.
+2023-10-20
+
+Source and rights notice: https://ebible.org/ces1613/copyright.htm
+Provider rights policy: https://ebible.org/legal.php
+Provider rights policy: https://ebible.org/publicdomain.htm

@@ -4,12 +4,12 @@ Read [PROJECT_STATUS.md](PROJECT_STATUS.md) for the current integration branch, 
 
 ## Current release
 
-PR #27 is merged and deployed as `dfe6ad3d0fa37425fbcd6a44167f83b22b699c6d`. Its publisher speech explorer, editorial workbench, Didache reader and offline/deep-link fixes passed the complete release workflow. The integrated advanced candidate adds historical dictionaries and private wording exercises, Athens study, private blind interpretation and hardened nearby sessions. Complete its exact-candidate CI, merge and verify production before claiming deployment.
+PR #28 is merged and verified deployed as `9711f529bff19f18458ab34e6c00c08c0af1c8bb`. Its 192 desktop/mobile browser cases and persistence repeats passed, alongside source/build/unit/backend gates. The next candidate integrates nine exact-source editions (fourteen installed in total), expanded source/device coverage, bounded source/search caches and exact-range catalog navigation. Its 379 application and 20 backend tests pass locally; complete its exact-candidate browser and deployment gates before calling the new catalog live.
 
 ## Independent work to finish
 
-1. Expand coverage reporting from actual speaker, context, historical, lexical, experience, download and integration inventories. Keep missing evidence distinct from zero and draft counts distinct from approvals.
-2. Verify public-domain acquisition candidates against primary notices and exact source revisions. Deduplicate authentic editions, establish complete manifests and storage/performance budgets, and extend the reproducible importer. Provider metadata alone is not a usable Bible edition.
+1. Release the integrated coverage and source-catalog candidate after all real checks. Keep missing evidence distinct from zero and draft counts distinct from approvals.
+2. Continue beyond the nine verified additions toward the 100+ target. Address the measured Pages storage and 4,096-file inventory limits before large-scale expansion, then verify public-domain acquisition candidates against primary notices and exact source revisions. Deduplicate authentic editions, establish complete manifests and storage/performance budgets, and extend the reproducible importer. Provider metadata alone is not a usable Bible edition.
 3. Complete occurrence-linked language tools, synchronized Gospel comparison, genealogy/relationship exploration, diagrams and textual-variant tooling with permitted data. Historical dictionary lookup does not satisfy these requirements by itself.
 4. Extend source-grounded speaker browsing beyond the current publisher spans and correction workflow; preserve explicit uncertainty and exact quotation boundaries.
 5. Implement the remaining Nigerian adaptation and multiplayer detective engines without inventing reviewed content, multiplayer activity or spiritual scores. Content review remains a separate gate.

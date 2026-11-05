@@ -40,3 +40,11 @@ The [eBible ASV archive](https://ebible.org/Scriptures/eng-asv_vpl.zip), source 
 Display wording comes from `eng-asv_vpl.txt`, preserving publisher brackets rather than silently copying the differently formatted XML. Text, punctuation and references agree with the companion XML after comparison-only removal of recorded square-bracket markup. The provenance inventory distinguishes balanced supplied-word spans, unpaired brackets, Psalm markers and textual-variant brackets; it does not repair or renumber the source. This text-only VPL archive supplies no footnotes, headings or paragraph structure.
 
 Reproduce using `python scripts/import-editions.py --edition eng-asv --source-dir OUTSIDE_REPO --download --check`. Exact member hashes, differences and generated-file hashes are recorded in `data/editions/eng-asv/provenance.json`. Text permission does not license third-party recorded audio.
+
+## Nine-edition historical text expansion
+
+[EDITION_EXPANSION.md](EDITION_EXPANSION.md) records Young, Darby, Webster, Segond 1910, Reina-Valera 1909, unrevised Elberfelder 1905, Textbibel 1906, Kralická 1613 and Diodati 1885. Each has its own pinned archive and members, complete supplied notice, exact digital/historical edition identity, actual numbering inventory and source-specific XML/TXT comparison checks. The unchanged TXT wording is displayed; square-bracket normalization is comparison-only.
+
+Operation decisions cite individual provider notices and the provider's text-use terms. Evidence is labelled provider-declared public domain; the inventory's general USA qualification is retained and no independent worldwide legal or human editorial certification is inferred. Unknown, changed or withdrawn rights fail closed. Third-party recorded audio is not licensed by these text imports.
+
+The complete Didache transcription and historical dictionary notices are documented separately in [ADVANCED_STUDY.md](ADVANCED_STUDY.md) and their committed provenance manifests. Historical text, dictionary records, recorded audio and Bible editions remain separate categories.

@@ -1,5 +1,15 @@
 # Verification evidence
 
+## Current verified release: PR #28
+
+Production `9711f529bff19f18458ab34e6c00c08c0af1c8bb` is deployed at the existing Pages URL. [Candidate CI 42007343926](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42007343926) and [main deployment 42008544329](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42008544329) passed. Independent public verification on 5 November 2026 returned the exact source commit, build `8ec75289f225e2ccb7ab99b9` and HTTP 200.
+
+The browser report records 192 expected cases, zero unexpected/flaky/skipped cases, and both desktop/mobile Chromium projects. The workflow also passed its ten repeated legacy persistence checks, TypeScript, lint, application/source tests, backend contracts, content validation and production build. Desktop and mobile/320 px screenshots for the advanced tools were directly inspected. Browser execution took place in CI because the local Chromium installer returned an invalid archive.
+
+Coverage includes unchanged Aramaic dictionary lookup, private exercise and interpretation persistence/backup/recovery, actual offline dictionary reload, Athens keyboard/2D/3D behavior, full export notices and rejected corruption, and genuine two-page WebRTC approval/chat/navigation/package/reconnect flows. Two browser pages do not establish offline support on two physical devices. Draft research remains unreviewed; backend contracts do not establish live service configuration.
+
+Earlier release entries below are historical receipts. Their former pending statements are superseded by the current release/status record.
+
 ## Verified production release: PR #3
 
 Integrated production revision: `4d8943e60143a74e228c0bf7ed37b2d404d6776c`, merged through [PR #3](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/3). Production workflow [41826905145](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41826905145) succeeded after the final pre-merge run [41826113696](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41826113696) passed.
