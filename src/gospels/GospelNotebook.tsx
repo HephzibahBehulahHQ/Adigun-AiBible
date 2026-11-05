@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { downloadBlob } from '../media';
 import { gospelNames, resolvePaneReference, validateGospelSelection } from './model';
 import type { GospelSelection } from './model';
@@ -9,6 +9,7 @@ import { gospelStudySources } from './study-source-runtime';
 import { useGospelStudy, useGospelStudyGuard } from './useGospelStudy';
 
 type Draft = { title: string; note: string };
+type Operation = { check: () => void; commit: (change: (state: GospelStudyState) => GospelStudyState) => Promise<GospelStudyState | null> };
 const emptyDraft = (): Draft => ({ title: '', note: '' });
 const reasonText = (reason: unknown) => reason instanceof Error ? reason.message : 'This Gospel study operation could not be completed.';
 const snapshot = (draft: Draft, selection: GospelSelection | undefined) => JSON.stringify({ draft, selection });
@@ -23,11 +24,21 @@ export default function GospelNotebook({ selection, onOpenStudy, onBusyChange }:
   const [preview, setPreview] = useState<{ incoming: GospelStudyState; revision: number } | null>(null);
   const [conflict, setConflict] = useState<'keep-device' | 'use-backup'>('keep-device');
   const [removed, setRemoved] = useState<{ row: GospelStudyRow; index: number } | null>(null);
+  const [cancellable, setCancellable] = useState(false);
+  const generation = useRef(0), writing = useRef(false);
+  useEffect(() => () => { generation.current++; }, []);
   const lock = useRef(false), importInput = useRef<HTMLInputElement>(null), titleInput = useRef<HTMLInputElement>(null);
   const dirty = active ? snapshot(draft, selection) !== baseline : !!(draft.title || draft.note);
   const blocked = study.busy || !!operation;
   useGospelStudyGuard(dirty, study.saving || !!operation);
   const index = study.state?.rows.findIndex(row => row.id === active?.id) ?? -1;
+  const currentSaved = active && study.state?.rows.find(row => row.id === active.id);
+  const savedVersionChanged = !!active && !!study.state && JSON.stringify(currentSaved) !== JSON.stringify(active);
+  function requireUnchangedRow(state: GospelStudyState): GospelStudyRow {
+    const row = state.rows.find(item => item.id === active?.id);
+    if (!row || JSON.stringify(row) !== JSON.stringify(active)) throw new Error('This saved study changed since you opened it. Keep your draft, reopen the saved study, or save your draft as a new study.');
+    return row;
+  }
   function replace(row: GospelStudyRow | null) {
     const next = row ? { title: row.title, note: row.note } : emptyDraft();
     setActive(row); setDraft(next); setBaseline(row ? snapshot(next, row.selection) : '');
@@ -38,25 +49,37 @@ export default function GospelNotebook({ selection, onOpenStudy, onBusyChange }:
     if (!mayReplace()) return;
     replace(row); requestAnimationFrame(() => titleInput.current?.focus());
   }
-  async function run(label: string, action: () => Promise<void>) {
+  async function run(label: string, action: (operation: Operation) => Promise<void>) {
     if (lock.current || study.busy) return;
-    lock.current = true; onBusyChange(true); setOperation(label); setError(''); setNotice('');
-    try { await action(); } catch (reason) { setError(reasonText(reason)); }
-    finally { lock.current = false; onBusyChange(false); setOperation(''); }
+    const token = ++generation.current;
+    lock.current = true; writing.current = false; onBusyChange(true); setOperation(label); setCancellable(true); setError(''); setNotice('');
+    const check = () => { if (generation.current !== token) throw new Error('Gospel source preparation was cancelled.'); };
+    const commit: Operation['commit'] = async change => {
+      check(); writing.current = true; setCancellable(false);
+      const saved = await study.commit(change); check(); return saved;
+    };
+    try { await action({ check, commit }); }
+    catch (reason) { if (generation.current === token) setError(reasonText(reason)); }
+    finally { if (generation.current === token) { lock.current = false; writing.current = false; onBusyChange(false); setOperation(''); setCancellable(false); } }
   }
-  async function prepare(): Promise<GospelStudyRow> {
+  function cancelPreparation() {
+    if (!lock.current || writing.current) return;
+    generation.current++; lock.current = false; onBusyChange(false); setOperation(''); setCancellable(false);
+    setError('Gospel source preparation cancelled. Your draft and saved studies are unchanged.');
+  }
+  async function prepare(asNew = false): Promise<GospelStudyRow> {
     if (!selection) throw new Error('Choose valid Gospel panes before saving or exporting a source notebook.');
     if (!draft.title.trim()) throw new Error('Give this Gospel study a title.');
     const selected = validateGospelSelection(selection), text = { ...draft }, previous = active;
     const passages = await captureGospelStudyPassages(selected, gospelStudySources, previous?.passages || []);
     const now = new Date().toISOString();
-    return validateGospelStudyRow({ id: previous?.id || `gospel-${crypto.randomUUID()}`, title: text.title.trim(), note: text.note,
-      selection: selected, passages, createdAt: previous?.createdAt || now, updatedAt: now });
+    return validateGospelStudyRow({ id: (!asNew && previous?.id) || `gospel-${crypto.randomUUID()}`, title: text.title.trim(), note: text.note,
+      selection: selected, passages, createdAt: (!asNew && previous?.createdAt) || now, updatedAt: now });
   }
-  const save = () => run('Checking sources and saving this Gospel study…', async () => {
-    const row = await prepare();
-    const saved = await study.commit(state => {
-      if (active && !state.rows.some(item => item.id === active.id)) throw new Error('This study was removed from saved storage. Start a new study to retain your draft separately.');
+  const save = (asNew = false) => run('Checking sources and saving this Gospel study…', async work => {
+    const row = await prepare(asNew); work.check();
+    const saved = await work.commit(state => {
+      if (active && !asNew) requireUnchangedRow(state);
       return { ...state, rows: state.rows.some(item => item.id === row.id) ? state.rows.map(item => item.id === row.id ? row : item) : [...state.rows, row] };
     });
     if (saved) { replace(row); setRemoved(null); setNotice('Gospel study saved with its exact source revisions.'); }
@@ -74,8 +97,9 @@ export default function GospelNotebook({ selection, onOpenStudy, onBusyChange }:
       setNotice('Private draft downloaded as text. This does not save changes in the app.');
     } catch (reason) { setError(reasonText(reason)); }
   }
-  const exportNotebook = () => run('Preparing the source-checked notebook…', async () => {
-    const row = await prepare(), markdown = await gospelStudyMarkdown(row, gospelStudySources);
+  const exportNotebook = () => run('Preparing the source-checked notebook…', async work => {
+    const row = await prepare(); work.check();
+    const markdown = await gospelStudyMarkdown(row, gospelStudySources); work.check();
     downloadBlob(new Blob([markdown], { type: 'text/markdown;charset=utf-8' }), 'Adigun-Gospel-study.md');
     setNotice('Private notebook downloaded with exact source wording, source notices and your notes.');
   });
@@ -88,18 +112,21 @@ export default function GospelNotebook({ selection, onOpenStudy, onBusyChange }:
   }
   async function readBackup(file?: File) {
     if (!file || !study.state) return;
-    await run('Checking this backup and every saved source…', async () => {
+    await run('Checking this backup and every saved source…', async work => {
       if (file.size > MAX_GOSPEL_STUDY_BACKUP_BYTES) throw new Error('Choose a Gospel study backup no larger than 2 MiB.');
-      const incoming = await checkGospelStudySources(parseGospelStudyBackup(await file.text()), gospelStudySources);
+      const incoming = await checkGospelStudySources(parseGospelStudyBackup(await file.text()), gospelStudySources); work.check();
       setPreview({ incoming, revision: study.state!.revision }); setConflict('keep-device');
     });
   }
   function remove() {
     if (!active || !mayReplace() || !window.confirm('Delete this saved Gospel study and its note? Source downloads stay on this device.')) return;
-    const removedRow = active, removedIndex = index;
-    void run('Deleting this saved Gospel study…', async () => {
-      const saved = await study.commit(state => ({ ...state, rows: state.rows.filter(row => row.id !== removedRow.id) }));
-      if (saved) { replace(null); setRemoved({ row: removedRow, index: removedIndex }); setNotice('Gospel study deleted. Undo is available until the next saved change.'); }
+    void run('Deleting this saved Gospel study…', async work => {
+      let deletion: { row: GospelStudyRow; index: number } | null = null;
+      const saved = await work.commit(state => {
+        const row = requireUnchangedRow(state); deletion = { row, index: state.rows.findIndex(item => item.id === row.id) };
+        return { ...state, rows: state.rows.filter(item => item.id !== row.id) };
+      });
+      if (saved && deletion) { replace(null); setRemoved(deletion); setNotice('Gospel study deleted. Undo is available until the next saved change.'); }
     });
   }
   const summary = preview && study.state ? previewGospelStudyImport(study.state, preview.incoming) : null;
@@ -109,7 +136,8 @@ export default function GospelNotebook({ selection, onOpenStudy, onBusyChange }:
       <h2>Save your comparison and notes</h2>
       <p>Keep the pane order, linked or independent ranges, editions and exact source revisions with your own writing. These are private reading selections, not reviewed Gospel parallels.</p>
       <p className="small muted">Saved on this device, without cloud sync or encryption. Browser storage can be removed; keep a backup. Other applications on this GitHub Pages domain share the same origin.</p>
-      <p role="status">{operation || study.status}</p>{(error || study.error) && <p role="alert">{error || study.error}</p>}{notice && <p role="status">{notice}</p>}
+      <p role="status">{operation || study.status}</p>{cancellable && <button className="secondary" onClick={cancelPreparation}>Cancel source preparation</button>}{(error || study.error) && <p role="alert">{error || study.error}</p>}{notice && <p role="status">{notice}</p>}
+      {savedVersionChanged && <div className="availability-note"><p>A different version of this study is saved on this device. Your draft is retained; reopen the saved study or save this draft as a new study.</p><button className="secondary" disabled={blocked} onClick={() => open(currentSaved || null)}>Open saved version</button></div>}
       <div className="gospel-notebook-navigation">
         <label>Saved Gospel study<select aria-label="Saved Gospel study" value={active?.id && study.state?.rows.some(row => row.id === active.id) ? active.id : ''} disabled={blocked || !study.state} onChange={event => open(study.state?.rows.find(row => row.id === event.target.value) || null)}><option value="">New unsaved study</option>{study.state?.rows.map(row => <option key={row.id} value={row.id}>{row.title}</option>)}</select></label>
         <div className="button-row"><button className="secondary" disabled={blocked || index <= 0} onClick={() => open(study.state!.rows[index - 1])}>Previous saved study</button><button className="secondary" disabled={blocked || index < 0 || index >= (study.state?.rows.length || 0) - 1} onClick={() => open(study.state!.rows[index + 1])}>Next saved study</button><button className="secondary" disabled={blocked} onClick={() => open(null)}>New study from these panes</button></div>
@@ -118,14 +146,14 @@ export default function GospelNotebook({ selection, onOpenStudy, onBusyChange }:
         <fieldset disabled={!!operation || study.saving} className="gospel-notebook-form"><legend className="visually-hidden">Private Gospel study writing</legend>
           <label>Study title<input ref={titleInput} aria-label="Study title" maxLength={160} value={draft.title} onChange={event => setDraft(value => ({ ...value, title: event.target.value }))}/></label>
           <label>Private Gospel notes<textarea aria-label="Private Gospel notes" rows={5} maxLength={12000} value={draft.note} onChange={event => setDraft(value => ({ ...value, note: event.target.value }))}/></label>
-          <p className="small">{dirty ? 'Unsaved changes. Save or download your draft before leaving.' : active ? 'This study matches its saved selection and writing.' : 'Name this selection to save a private study.'}</p>
-          <div className="button-row"><button className="primary" type="submit" disabled={blocked || !study.state || !selection || (!active && study.state.rows.length >= MAX_GOSPEL_STUDIES)}>{active ? 'Save study changes' : 'Save Gospel study'}</button><button className="secondary" type="button" disabled={blocked || !selection} onClick={() => void exportNotebook()}>Export study notebook</button></div>
+          <p className="small">{dirty ? 'Unsaved changes. Save or download your draft before leaving.' : savedVersionChanged ? 'A newer saved version is available. Your editor has not been replaced.' : active ? 'This study matches its saved selection and writing.' : 'Name this selection to save a private study.'}</p>
+          <div className="button-row"><button className="primary" type="submit" disabled={blocked || !study.state || !selection || (!active && study.state.rows.length >= MAX_GOSPEL_STUDIES)}>{active ? 'Save study changes' : 'Save Gospel study'}</button>{active && <button className="secondary" type="button" disabled={blocked || !study.state || !selection || study.state.rows.length >= MAX_GOSPEL_STUDIES} onClick={() => void save(true)}>Save draft as new study</button>}<button className="secondary" type="button" disabled={blocked || !selection} onClick={() => void exportNotebook()}>Export study notebook</button></div>
         </fieldset>
       </form>
       <div className="button-row"><button className="secondary" onClick={recoverDraft}>Download draft text</button><button className="secondary" disabled={blocked} onClick={() => void study.reload()}>Reload saved studies</button><button className="text-button" disabled={blocked || !active} onClick={() => { if (mayReplace()) replace(study.state?.rows.find(row => row.id === active?.id) || null); }}>Discard unsaved changes</button></div>
-      {active && <div className="button-row"><button className="secondary" disabled={blocked || dirty || index <= 0} onClick={() => void run('Reordering saved studies…', async () => { if (await study.commit(state => moveGospelStudy(state, active.id, -1))) { setRemoved(null); setPreview(null); setNotice('Saved study moved earlier.'); } })}>Move study earlier</button><button className="secondary" disabled={blocked || dirty || index < 0 || index >= (study.state?.rows.length || 0) - 1} onClick={() => void run('Reordering saved studies…', async () => { if (await study.commit(state => moveGospelStudy(state, active.id, 1))) { setRemoved(null); setPreview(null); setNotice('Saved study moved later.'); } })}>Move study later</button><button className="text-button danger" disabled={blocked} onClick={remove}>Delete saved study</button></div>}
-      {removed && <button className="secondary" disabled={blocked} onClick={() => void run('Restoring the deleted study…', async () => {
-        if (await study.commit(state => {
+      {active && <div className="button-row"><button className="secondary" disabled={blocked || dirty || index <= 0} onClick={() => void run('Reordering saved studies…', async work => { if (await work.commit(state => moveGospelStudy(state, active.id, -1))) { setRemoved(null); setPreview(null); setNotice('Saved study moved earlier.'); } })}>Move study earlier</button><button className="secondary" disabled={blocked || dirty || index < 0 || index >= (study.state?.rows.length || 0) - 1} onClick={() => void run('Reordering saved studies…', async work => { if (await work.commit(state => moveGospelStudy(state, active.id, 1))) { setRemoved(null); setPreview(null); setNotice('Saved study moved later.'); } })}>Move study later</button><button className="text-button danger" disabled={blocked} onClick={remove}>Delete saved study</button></div>}
+      {removed && <button className="secondary" disabled={blocked} onClick={() => void run('Restoring the deleted study…', async work => {
+        if (await work.commit(state => {
           if (state.rows.some(row => row.id === removed.row.id)) throw new Error('This study identifier already exists. No saved study was overwritten.');
           const rows = [...state.rows]; rows.splice(Math.max(0, Math.min(removed.index, rows.length)), 0, removed.row); return { ...state, rows };
         })) { setRemoved(null); setPreview(null); setNotice('Deleted Gospel study restored. Your current draft is unchanged.'); }
@@ -137,9 +165,9 @@ export default function GospelNotebook({ selection, onOpenStudy, onBusyChange }:
           <label>When study IDs conflict<select aria-label="When study IDs conflict" disabled={blocked} value={conflict} onChange={event => setConflict(event.target.value as typeof conflict)}><option value="keep-device">Keep this device’s studies</option><option value="use-backup">Use the backup’s conflicting studies</option></select></label>
           <div className="button-row"><button className="primary" disabled={blocked} onClick={() => {
             if (!mayReplace()) return;
-            void run('Rechecking sources and restoring Gospel studies…', async () => {
-              const incoming = await checkGospelStudySources(preview.incoming, gospelStudySources);
-              const saved = await study.commit(state => {
+            void run('Rechecking sources and restoring Gospel studies…', async work => {
+              const incoming = await checkGospelStudySources(preview.incoming, gospelStudySources); work.check();
+              const saved = await work.commit(state => {
                 if (state.revision !== preview.revision) throw new Error('Saved studies changed after this preview. Choose the backup again before merging.');
                 return mergeGospelStudies(state, incoming, conflict);
               });

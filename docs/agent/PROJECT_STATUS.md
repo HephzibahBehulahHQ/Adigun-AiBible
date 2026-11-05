@@ -18,8 +18,8 @@ The prior unshipped prototype remains recoverable at `c243633a1f6c23a069bb927a31
 ## Verification and synchronization
 
 - New model/storage: 13 focused tests passed, including full selection round-trips, strict imports, atomic transaction completion, abort/quota/denial, and stale-tab conflicts.
-- All 25 new model/storage/source-export tests passed; TypeScript, scoped ESLint and whitespace checks passed. The notebook is connected to the released Gospel workspace. Browser and full release acceptance are pending. Local Chromium successfully launched, enabling real browser checks here.
-- Last verified remote checkpoint: `ff2daed7f4d3b4f5bad853bc86196aebdb7156a6` on `codex/continue-study-20261105`, read back at **2026-11-05 17:10:33 UTC**. The integrated notebook controls are the next WIP checkpoint; no new feature deployment is claimed.
+- Initial integrated candidate passed 543 application tests, 20 backend contracts, source validation and production build. All 25 new model/storage/source-export tests passed; TypeScript, scoped ESLint and whitespace checks passed. The notebook is connected to the released Gospel workspace. Browser and full release acceptance are pending. Local Chromium successfully launched, enabling real browser checks here.
+- Last verified remote checkpoint: `ce6a63a7738b405331c917d21c89b1d9f4011f30` on `codex/continue-study-20261105`, read back at **2026-11-05 17:14:58 UTC**. Conflict-safe reload recovery, cancellable source preparation and browser acceptance are the next WIP checkpoint; no new feature deployment is claimed.
 - Root owns integration and synchronization. Bounded specialists own only new model/storage and source-helper files. Existing reference repositories remain read-only.
 
 ## Next action
