@@ -31,6 +31,7 @@ export default function TourScene({ stops, selected, onSelect, lowDetail }: { st
   }, [camera,lowDetail,selected,stops]);
   const move = (movement: Movement) => setCamera(current => moveCamera(current,movement));
   function key(event: KeyboardEvent<HTMLCanvasElement>) {
+    if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey || event.nativeEvent.isComposing) return;
     const movement: Record<string,Movement> = { ArrowUp:'forward',ArrowDown:'back',ArrowLeft:'turnLeft',ArrowRight:'turnRight',w:'forward',s:'back',a:'left',d:'right',q:'lookUp',e:'lookDown' };
     const direction = movement[event.key] || movement[event.key.toLowerCase()];
     if (direction) { event.preventDefault(); move(direction); }
