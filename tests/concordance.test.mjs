@@ -32,6 +32,7 @@ test('Unicode matching preserves accents, NFC equivalence, original offsets, apo
   assert.equal(spans.length, 2); assert.equal(spans[0].start, 3);
   assert.equal(highlightParts(text, spans).map(part => part.text).join(''), text);
   assert.deepEqual(surfaceWords("Lord's Lord’s self-control").map(word => word.value), ["lord's", 'lord’s', 'self', 'control']);
+  assert.equal(occurrenceSpans('‘God’ God’s', surfaceWords('God')).length, 1);
   assert.equal(occurrenceSpans('𐐀', surfaceWords('𐐨')).length, 1);
   assert.throws(() => highlightParts(text, [{ start: 0, end: text.length + 1 }]), /boundary/);
 });

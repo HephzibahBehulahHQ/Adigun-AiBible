@@ -82,7 +82,7 @@ export default function ConcordanceWorkspace({ reference, locale = 'en', onOpenR
     invalidate();
     try { validateConcordanceQuery(query); }
     catch (reason) { setError(reason instanceof Error ? reason.message : 'Enter a valid source word or phrase.'); setStatus('The query needs a correction before counting.'); return; }
-    focusResults.current = page > 0; setBusy(true); setStatus('Checking source permissions and verified index…');
+    focusResults.current = page > 0 || result !== null; setBusy(true); setStatus('Checking source permissions and verified index…');
     worker.current.postMessage({ type: 'search', id: requestId.current, editionId, baseUrl: new URL(assetUrl(''), location.href).href, query, page } satisfies ConcordanceRequest);
   }
   async function openContext(match: ConcordanceMatch) {
@@ -120,7 +120,7 @@ export default function ConcordanceWorkspace({ reference, locale = 'en', onOpenR
       <p className="concordance-status" role="status" aria-label="Concordance status" aria-live="polite">{status}</p>
       {error && <p role="alert">{error}</p>}
       <details><summary>How words, phrases and counts work</summary><p>Words are Unicode letter and number runs, including attached accent marks. Internal straight and curly apostrophes remain part of the word and are distinct. Hyphens and other punctuation separate words. Canonically equivalent Unicode spelling is matched using NFC normalization; case is ignored unless you select “Match letter case.” Accents are never removed.</p><p>One verse can contain several occurrences. Overlapping phrase starts count separately, while the visual highlight joins overlapping spans. Phrases never cross a verse boundary. Blank source records contribute to coverage but contain no words.</p><p>This is analysis of the displayed edition’s wording. It does not identify Hebrew or Greek lemmas, morphology, Strong’s numbers, synonyms, themes or translation equivalents. No Scripture wording is changed.</p></details>
-      <p className="muted">Searches run in this browser. No query history, private records or telemetry are saved. To use a complete edition offline, download it in the existing Bible edition manager first; viewing some chapters alone does not install its search index.</p>
+      <p className="muted">Searches run in this browser. This tool saves no query history, private records or telemetry. To use an edition offline, select it in the reader, open Settings and choose “Download complete Bible.” Viewing some chapters alone does not install its search index.</p>
     </section>
     {result && <section className="panel" aria-labelledby="concordance-results-heading" aria-busy={opening}>
       <h2 id="concordance-results-heading" ref={resultsHeading} tabIndex={-1}>Concordance results</h2>
