@@ -111,6 +111,55 @@ test('real original audio survives offline reload, complete backup, restore, car
 
 test.describe('retelling data recovery',()=>{
   test.use({serviceWorkers:'block'});
+  test('an unsaved transcript survives deleting another retelling and requires consent before switching edits',async({page})=>{
+    await microphone(page);await openRetelling(page);
+    for(const text of ['First original transcript.','Second original transcript.']){await record(page);await page.getByLabel('My retelling',{exact:true}).fill(text);await save(page);}
+    await page.getByText('Saved retellings (2)',{exact:true}).click();
+    await expect(page.getByRole('link',{name:'Download original recording',exact:true})).toHaveCount(2);
+    const before=await deviceInventory(page),second=before.state.cards[0].retellings[1];
+    await page.getByRole('button',{name:'Edit manual transcript',exact:true}).nth(1).click();
+    const transcript=page.getByRole('textbox',{name:'Manual transcript',exact:true});
+    await transcript.fill('Keep my unsaved second transcript: àánú.');
+    page.once('dialog',dialog=>dialog.dismiss());await page.getByRole('button',{name:'Edit manual transcript',exact:true}).first().click();
+    await expect(transcript).toHaveValue('Keep my unsaved second transcript: àánú.');
+    await page.getByRole('button',{name:/^Delete retelling from /}).first().click();
+    await expect(page.getByText('Saved retellings (1)',{exact:true})).toBeVisible();
+    await expect(transcript).toHaveValue('Keep my unsaved second transcript: àánú.');
+    await page.getByRole('button',{name:'Save manual transcript',exact:true}).click();
+    await expect(page.getByRole('region',{name:'Manual transcript editor',exact:true})).toHaveCount(0);
+    const after=await deviceInventory(page);
+    expect(after.state.cards[0].retellings).toEqual([{...second,text:'Keep my unsaved second transcript: àánú.'}]);
+    expect(after.media).toEqual(before.media.filter(file=>file.recording.id===second.id));
+  });
+  test('refresh after another tab deletes the edited original keeps its transcript separate and recoverable',async({page,context})=>{
+    await microphone(page);await openRetelling(page);
+    for(const text of ['First original transcript.','Second original transcript.']){await record(page);await page.getByLabel('My retelling',{exact:true}).fill(text);await save(page);}
+    await page.getByText('Saved retellings (2)',{exact:true}).click();
+    const before=await deviceInventory(page),second=before.state.cards[0].retellings[1];
+    const other=await context.newPage();await openRetelling(other,false);await other.getByText('Saved retellings (2)',{exact:true}).click();
+    await other.getByRole('button',{name:'Edit manual transcript',exact:true}).first().click();
+    const transcript=other.getByRole('textbox',{name:'Manual transcript',exact:true});
+    await transcript.fill('Private draft belonging to the deleted first recording.');
+    await page.getByRole('button',{name:/^Delete retelling from /}).first().click();
+    await expect(page.getByText('Saved retellings (1)',{exact:true})).toBeVisible();
+    await other.getByRole('button',{name:'Save manual transcript',exact:true}).click();
+    await expect(other.getByRole('alert')).toContainText('Another tab saved a newer workspace');
+    other.once('dialog',dialog=>dialog.accept());await other.getByRole('button',{name:'Reload workspace',exact:true}).click();
+    await other.getByRole('button',{name:'Use refreshed history and keep draft',exact:true}).click();
+    await expect(other.getByRole('region',{name:'Manual transcript editor',exact:true})).toContainText('will not overwrite another retelling');
+    await expect(transcript).toHaveValue('Private draft belonging to the deleted first recording.');
+    await expect(other.getByRole('button',{name:'Save manual transcript',exact:true})).toBeDisabled();
+    expect((await deviceInventory(other)).state.cards[0].retellings).toEqual([second]);
+    await other.getByRole('button',{name:'Use transcript as new written retelling',exact:true}).click();
+    await expect(other.getByRole('textbox',{name:'My retelling',exact:true})).toHaveValue('Private draft belonging to the deleted first recording.');
+    await save(other);
+    const after=await deviceInventory(other);
+    expect(after.state.cards[0].retellings[0]).toEqual(second);
+    expect(after.state.cards[0].retellings[1].text).toBe('Private draft belonging to the deleted first recording.');
+    expect(after.state.cards[0].retellings[1].recording).toBeUndefined();
+    expect(after.media).toEqual(before.media.filter(file=>file.recording.id===second.id));
+    await other.close();
+  });
   test('stale-tab recording and writing survive conflict and can append after explicit history refresh',async({page,context})=>{
     await openRetelling(page);const second=await context.newPage();await microphone(second);await openRetelling(second,false);await record(second);const original=await originalBytes(second);await second.getByLabel('My retelling',{exact:true}).fill('Second tab draft must survive.');
     await page.getByLabel('My retelling',{exact:true}).fill('First tab saved writing.');await save(page);

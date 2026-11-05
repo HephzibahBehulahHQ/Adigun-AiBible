@@ -10,20 +10,23 @@ import type { RetellingDraft, RetellingMedia } from './retelling-media';
 import { useRetellingGuard } from './retelling-guard';
 import RetellingRecorder from './RetellingRecorder';
 import RetellingPlayer from './RetellingPlayer';
+import { applyRetellingTranscript, beginRetellingTranscript, retellingTranscriptChanged, retellingTranscriptTarget } from './retelling-transcript';
+import type { RetellingTranscriptDraft } from './retelling-transcript';
 
 export default function RetellingEditor({ card, source, busy, commit, onRecordingChange }: { card:MemoryCard; source:{ edition:Edition; verses:Verse[] } | null; busy:boolean; commit:WorkspaceChange; onRecordingChange:(active:boolean) => void }) {
   const [text,setText] = useState(''); const [draft,setDraft] = useState<RetellingDraft | null>(null);
   const [active,setActive] = useState(false); const [error,setError] = useState(''); const [notice,setNotice] = useState('');
-  const [open,setOpen] = useState(false); const [editing,setEditing] = useState<number | null>(null); const [transcript,setTranscript] = useState('');
+  const [open,setOpen] = useState(false); const [transcriptEdit,setTranscriptEdit] = useState<RetellingTranscriptDraft | null>(null);
   const baseline = useRef(JSON.stringify(card.retellings));
   const [,refresh] = useState(0);
   const sourceBinding = useMemo(() => source?.edition.sha256 && /^[a-f0-9]{64}$/.test(source.edition.sha256) ? { ref:explicitReference(card.ref),editionSha256:source.edition.sha256 } : null,[card.ref,source]);
   const preview = useMemo<RetellingMedia | undefined>(() => { if (!draft) return undefined; const { blob,...metadata } = draft; return { recording:{ id:'unsaved-preview',...metadata },blob }; },[draft]);
-  const dirty = !!text || !!draft || (editing !== null && transcript !== (card.retellings[editing]?.text || ''));
+  const transcriptTarget = transcriptEdit ? retellingTranscriptTarget(card.retellings,transcriptEdit) : undefined;
+  const dirty = !!text || !!draft || !!(transcriptEdit && retellingTranscriptChanged(transcriptEdit));
   useRetellingGuard(dirty,active,busy);
   const callback = useRef(onRecordingChange); callback.current = onRecordingChange;
   useEffect(() => () => callback.current(false),[]);
-  useEffect(() => { if (!dirty && !active && editing === null) baseline.current = JSON.stringify(card.retellings); },[card.retellings,dirty,active,editing]);
+  useEffect(() => { if (!dirty && !active && !transcriptEdit) baseline.current = JSON.stringify(card.retellings); },[card.retellings,dirty,active,transcriptEdit]);
 
   async function changeHistory(change:(items:MemoryRetelling[]) => MemoryRetelling[], media:RetellingMedia[] = []) {
     let next:MemoryRetelling[] = [];
@@ -51,17 +54,22 @@ export default function RetellingEditor({ card, source, busy, commit, onRecordin
     }
   }
   async function remove(index:number, audioOnly=false) {
-    if (editing === index && transcript !== card.retellings[index].text && !window.confirm('Discard this unsaved transcript edit?')) return;
+    const removesEditedOriginal = !!(transcriptEdit && retellingTranscriptTarget([card.retellings[index]],transcriptEdit));
+    if (removesEditedOriginal && transcriptEdit && retellingTranscriptChanged(transcriptEdit) && !window.confirm('Discard this unsaved transcript edit?')) return;
     const saved = await changeHistory(items => items.flatMap((item,i) => {
       if (i !== index) return [item];
       if (audioOnly && item.text.trim()) { const { recording:_recording,...writing } = item; void _recording; return [writing]; }
       return [];
     }));
-    if (saved) { setEditing(null); setNotice(audioOnly ? 'Original recording deleted. Undo last change can restore it.' : 'Retelling deleted. Undo last change can restore it.'); }
+    if (saved) { if (removesEditedOriginal) setTranscriptEdit(null); setNotice(audioOnly ? 'Original recording deleted. Undo last change can restore it.' : 'Retelling deleted. Undo last change can restore it.'); }
+  }
+  function editTranscript(item:MemoryRetelling) {
+    if (transcriptEdit && retellingTranscriptChanged(transcriptEdit) && !window.confirm('Discard this unsaved transcript edit and edit another retelling?')) return;
+    setTranscriptEdit(beginRetellingTranscript(item));
   }
   async function saveTranscript(event:FormEvent) {
-    event.preventDefault(); if (editing === null || transcript.length > 5000) return;
-    if (await changeHistory(items => items.map((item,index) => index === editing ? { ...item,text:transcript } : item))) { setEditing(null); setNotice('Manual transcript saved. The original recording was not changed.'); }
+    event.preventDefault(); if (!transcriptEdit) return;
+    if (await changeHistory(items => applyRetellingTranscript(items,transcriptEdit))) { setTranscriptEdit(null); setNotice('Manual transcript saved. The original recording was not changed.'); }
   }
   return <section aria-labelledby="retelling-heading">
     <h4 id="retelling-heading">Retell in your own words</h4>
@@ -72,17 +80,31 @@ export default function RetellingEditor({ card, source, busy, commit, onRecordin
       <p className="workspace-help">Use any prompts that help; leave out anything that does not fit. They are writing aids, not a checklist or score.</p>
       <label>My retelling<textarea rows={6} maxLength={5000} disabled={busy} value={text} onChange={e => setText(e.target.value)} placeholder="Describe the passage in your own words…" /></label>
       <p className="workspace-help">Up to 5,000 characters. With a recording, this writing is your optional manual transcript. No automatic transcription or source comparison is running.</p>
-      <RetellingRecorder disabled={busy || !!draft || editing !== null} source={sourceBinding} onReady={setDraft} onActiveChange={value => { setActive(value); onRecordingChange(value); }} />
+      <RetellingRecorder disabled={busy || !!draft || !!transcriptEdit} source={sourceBinding} onReady={setDraft} onActiveChange={value => { setActive(value); onRecordingChange(value); }} />
       {preview && <section className="retelling-draft" aria-label="Unsaved recording"><h5>Unsaved original recording</h5><RetellingPlayer recording={preview.recording} original={preview} disabled={active} /><button type="button" disabled={busy} onClick={() => setDraft(null)}>Discard unsaved recording</button></section>}
       <button type="submit" disabled={busy || active || (!text.trim() && !draft)}>Save private retelling</button>
     </form>
     {error && <p role="alert" className="workspace-error">{error}</p>}
     {notice && <p role="status">{notice}</p>}
     {baseline.current !== JSON.stringify(card.retellings) && <button type="button" disabled={busy || active} onClick={() => { baseline.current = JSON.stringify(card.retellings); refresh(n => n + 1); setNotice('Refreshed history selected. Your current draft has been kept.'); }}>Use refreshed history and keep draft</button>}
+    {transcriptEdit && <section className="workspace-history" aria-label="Manual transcript editor">
+      <h5>Edit manual transcript</h5>
+      <p className="workspace-help">Draft for the original recorded on {new Date(transcriptEdit.at).toLocaleString()}. Your own writing; it has not been transcribed or verified automatically.</p>
+      {!transcriptTarget && <p role="alert" className="workspace-error">This original recording was removed or replaced. Your transcript draft is kept below and will not overwrite another retelling.</p>}
+      <form onSubmit={saveTranscript}>
+        <label>Manual transcript<textarea aria-label="Manual transcript" rows={5} maxLength={5000} disabled={busy} value={transcriptEdit.text} onChange={e => setTranscriptEdit(current => current ? { ...current,text:e.target.value } : null)} /></label>
+        <div className="button-row">
+          <button type="submit" disabled={busy || active || !transcriptTarget}>Save manual transcript</button>
+          {!transcriptTarget && <button type="button" disabled={busy || active || !!text || !!draft} onClick={() => { setText(transcriptEdit.text); setTranscriptEdit(null); setNotice('Transcript moved to a new written retelling draft. Save it to keep it on this device.'); }}>Use transcript as new written retelling</button>}
+          <button type="button" disabled={busy} onClick={() => setTranscriptEdit(null)}>Cancel transcript edit</button>
+        </div>
+        {!transcriptTarget && (!!text || !!draft) && <p className="workspace-help">Save or discard your new retelling draft before moving this transcript into it. You can also copy the transcript from this field.</p>}
+      </form>
+    </section>}
     {!!card.retellings.length && <details open={open} onToggle={e => setOpen(e.currentTarget.open)}><summary>Saved retellings ({card.retellings.length})</summary>{open && card.retellings.map((item,index) => <article className="workspace-history" key={item.id || `${item.at}-${index}`}>
       <time dateTime={item.at}>{new Date(item.at).toLocaleString()}</time>
       {item.recording && <RetellingPlayer recording={item.recording} disabled={active} />}
-      {editing === index ? <form onSubmit={saveTranscript}><label>Manual transcript<textarea rows={5} maxLength={5000} disabled={busy} value={transcript} onChange={e => setTranscript(e.target.value)} /></label><p className="workspace-help">Your own writing; it has not been transcribed or verified automatically.</p><div className="button-row"><button type="submit" disabled={busy || active}>Save manual transcript</button><button type="button" disabled={busy} onClick={() => setEditing(null)}>Cancel transcript edit</button></div></form> : <><p className="workspace-writing">{item.text || 'No manual transcript added.'}</p>{item.recording && <button type="button" disabled={busy || active} onClick={() => { setEditing(index); setTranscript(item.text); }}>Edit manual transcript</button>}</>}
+      <p className="workspace-writing">{item.text || 'No manual transcript added.'}</p>{item.recording && <button type="button" disabled={busy || active || transcriptTarget?.id === item.id} onClick={() => editTranscript(item)}>Edit manual transcript</button>}
       <div className="button-row">{item.recording && <button type="button" disabled={busy || active} onClick={() => void remove(index,true)}>{item.text.trim() ? 'Delete recording, keep transcript' : 'Delete recording and empty retelling'}</button>}<button type="button" disabled={busy || active} aria-label={`Delete retelling from ${new Date(item.at).toLocaleString()}`} onClick={() => void remove(index)}>Delete retelling</button></div>
     </article>)}{card.retellings.length >= 50 && <p className="workspace-help">This passage has 50 saved retellings. Delete an entry before adding more; older entries are never silently removed.</p>}</details>}
   </section>;
