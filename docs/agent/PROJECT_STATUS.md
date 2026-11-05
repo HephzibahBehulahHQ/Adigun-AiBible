@@ -39,6 +39,13 @@ Independent human editorial/native-language approval, restricted source rights, 
 
 Local Chromium installation returned an invalid archive. Browser execution runs in GitHub Actions; local browser execution and physical-device testing are not claimed.
 
+## Isolated three-edition continuation
+
+- Owned branch: `codex/three-edition-continuation-20261105`; checkpoint `305e2cf90645958dc23ea629c2da878b28bb2f0a` confirmed with git ls-remote and reverified through the GitHub connector at 2026-11-05 13:06:48 UTC. This merge preserves source admission commits `735a573e24e92efa983c8c6350ecad1cee4bfa47` and `c4bd58b514ed9f2fd066e588f67e54e6a1d811f8` on repaired PR #31 head `781fff0ab8cc986acac624c23d9dd983b89a1ed3`.
+- Three pinned admissions: BPC French Darby 2024 v2.0, Spanish La Biblia en Español Sencillo 2026, and CC BY-SA 4.0 Tandroy publisher draft. Added source records: 93,353. This isolated candidate contains 29 Bible editions, 26 beyond the original three, across 18 source languages; regional/script tags remain distinct filters, not inflated language counts.
+- Source words, numbered gaps, empty records, exact notices, rights restrictions and draft status are unchanged. No new audio grant, model-training permission, human/native-language approval or service configuration is claimed.
+- Integration work is in progress: regenerate publisher inventories, add focused source/permission/numbering checks and actual browser flows, then validate the build and record receipts. No PR, merge or deployment is performed from this isolated branch; the primary implementer owns the combined release.
+
 ## Next action
 
 Synchronize the PR #31 repair, pass its exact-head browser/persistence gates and inspect evidence before merging and verifying the public deployment. Private retelling candidate `bbb589274aa906a34c77268e804680cc7fc18c8e` independently passed 56 focused tests, TypeScript and scoped lint; integrate it after PR #31. Greek source/viewer integration remains isolated.

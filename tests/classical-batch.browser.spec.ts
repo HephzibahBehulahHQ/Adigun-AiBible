@@ -37,21 +37,21 @@ async function cachedJohnFiles(page: Page, id: string): Promise<string[]> {
 test.describe('twelve-edition built catalog and source reading', () => {
   test.use({ serviceWorkers: 'block' });
 
-  test('the 26-edition catalog exposes the added languages and every paginated source', async ({ page }) => {
-    expect(editions).toHaveLength(26);
+  test('the 29-edition catalog exposes the added languages and every paginated source', async ({ page }) => {
+    expect(editions).toHaveLength(29);
     await page.goto(route('editions', 'eng-web', 3, 16, 18));
-    await expect(page.getByText('26 installed Bible text editions · 23 added beyond the verified three-edition baseline.', { exact: false })).toBeVisible();
+    await expect(page.getByText('29 installed Bible text editions · 26 added beyond the verified three-edition baseline.', { exact: false })).toBeVisible();
     const results = page.getByRole('region', { name: 'Installed Bible editions', exact: true });
     const language = page.getByRole('combobox', { name: 'Language', exact: true });
     const expectedLanguages = [...new Set(editions.map(edition => edition.language))];
     expect(await language.locator('option').evaluateAll(options => options.map(option => (option as HTMLOptionElement).value).filter(Boolean))).toEqual(expect.arrayContaining(expectedLanguages));
     await expect(language.locator('option')).toHaveCount(expectedLanguages.length + 1);
     const names: string[] = [];
-    for (let pageIndex = 0; pageIndex < 3; pageIndex++) {
-      await expect(results.getByRole('article')).toHaveCount(pageIndex < 2 ? 12 : 2);
+    for (let pageIndex = 0; pageIndex < Math.ceil(editions.length / 12); pageIndex++) {
+      await expect(results.getByRole('article')).toHaveCount(Math.min(12, editions.length - pageIndex * 12));
       names.push(...await results.getByRole('heading', { level: 2 }).allTextContents());
       const next = page.getByRole('button', { name: 'Next editions', exact: true });
-      if (pageIndex < 2) await next.click();
+      if (pageIndex + 1 < Math.ceil(editions.length / 12)) await next.click();
       else await expect(next).toBeDisabled();
     }
     expect(names.sort()).toEqual(editions.map(edition => edition.name).sort());
