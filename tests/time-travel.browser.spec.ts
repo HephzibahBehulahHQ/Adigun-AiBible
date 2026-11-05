@@ -47,3 +47,25 @@ test('Athens study pack includes all four stops and exact selected-edition wordi
   await page.getByRole('combobox', { name: 'Time frame', exact: true }).selectOption('archaeology');
   await expect(page.getByText(/ASCSA began its Agora excavation in 1931/)).toBeVisible();
 });
+
+test('Yorùbá study pack preserves the complete publisher notice and rejects changed notice bytes', async ({ page }) => {
+  await page.goto(route);
+  await page.getByRole('combobox', { name: 'Source edition', exact: true }).selectOption('yor');
+  const passage = page.getByRole('region', { name: 'Selected-edition passage' });
+  await expect(passage).toContainText('Open Yoruba Contemporary Bible');
+  const notice = await readFile(new URL('../data/editions/yor/NOTICE.txt', import.meta.url), 'utf8');
+  const escapedNotice = notice.replace(/[&<>"']/g, value => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[value]!);
+  const downloading = page.waitForEvent('download');
+  await page.getByRole('button', { name: 'Download Athens study pack', exact: true }).click();
+  const html = await readFile((await (await downloading).path())!, 'utf8');
+  expect(html).toContain(`<pre>${escapedNotice}</pre>`);
+  expect(html).toContain('https://creativecommons.org/licenses/by-sa/4.0/');
+  expect(html).toContain('lang="yo"');
+
+  await page.route('**/data/editions/yor/NOTICE.txt', request => request.fulfill({ status: 200, contentType: 'text/plain', body: notice.replace('Copyright', 'CopyrigHt') }));
+  let unexpectedDownloads = 0;
+  page.on('download', () => unexpectedDownloads++);
+  await page.getByRole('button', { name: 'Download Athens study pack', exact: true }).click();
+  await expect(page.getByRole('alert')).toContainText('does not match this build’s verified source');
+  expect(unexpectedDownloads).toBe(0);
+});

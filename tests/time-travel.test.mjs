@@ -1,12 +1,17 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { athens, experiencePack, loadExperiencePack, loadTourPassage, validateTour } from '../src/time-travel/model.ts';
+import { athens, escapeHtml, experiencePack, loadExperiencePack, loadTourPassage, tourNoticePath, validateTour, verifyTourNotice } from '../src/time-travel/model.ts';
+import { hashSourceText } from '../src/editorial.ts';
 import { clipNear, initialCamera, moveCamera, project, sceneGeometry, viewPoint } from '../src/time-travel/geometry.ts';
 
 const read = async path => JSON.parse(await readFile(new URL(`../${path}`, import.meta.url), 'utf8'));
 const manifest = await read('data/manifest.json'), acts = await read('data/books/ACT.json');
 const dependencies = { getManifest: async () => manifest, getBook: async () => acts, requirePermission: async () => {} };
+const yorubaManifest = await read('data/editions/yor/manifest.json'), yorubaActs = await read('data/editions/yor/books/ACT.json');
+const yorubaNoticeText = await readFile(new URL('../data/editions/yor/NOTICE.txt', import.meta.url), 'utf8');
+const yorubaNotice = { path: 'data/editions/yor/NOTICE.txt', text: yorubaNoticeText, sha256: await hashSourceText(yorubaNoticeText), bytes: new TextEncoder().encode(yorubaNoticeText).byteLength };
+const yorubaSources = { getManifest: async () => yorubaManifest, getBook: async () => yorubaActs, requirePermission: async () => {}, getNotice: async () => yorubaNotice };
 
 test('all researched stops resolve exact selected-edition passages and retain evidence limitations', async () => {
   for (const stop of athens.stops) {
@@ -70,4 +75,35 @@ test('walkthrough movement stays bounded and near-plane clipping produces finite
   assert.equal(project([0, 0, -1], 320, 400), null);
   assert.ok(viewPoint([0, 0, 0], initialCamera()).every(Number.isFinite));
   assert.ok(sceneGeometry(true).length < sceneGeometry(false).length);
+});
+
+test('Yorùbá offline export embeds the entire exact verified publisher notice and source license', async () => {
+  let noticeReads = 0;
+  const passages = await loadExperiencePack('yor', { ...yorubaSources, getNotice: async () => { noticeReads++; return yorubaNotice; } });
+  const html = experiencePack(passages);
+  assert.equal(noticeReads, 1);
+  assert.ok(passages.every(passage => passage.notice === passages[0].notice));
+  assert.ok(Object.isFrozen(passages[0].notice));
+  assert.ok(html.includes(`<pre>${escapeHtml(yorubaNoticeText)}</pre>`));
+  assert.ok(html.includes(yorubaNotice.sha256));
+  assert.ok(html.includes(yorubaManifest.edition.licenseDeedUrl));
+  assert.ok(html.includes('Copyright © 2009, 2017 by Biblica, Inc.'));
+  for (const passage of passages) for (const verse of passage.verses) assert.ok(html.includes(escapeHtml(verse.text)));
+});
+
+test('missing, altered or unavailable publisher notices fail closed before export', async () => {
+  await assert.rejects(loadExperiencePack('yor', { ...yorubaSources, getNotice: undefined }), /complete publisher notice is required/);
+  await assert.rejects(loadExperiencePack('yor', { ...yorubaSources, getNotice: async () => { throw new Error('Notice not downloaded'); } }), /not downloaded/);
+  for (const changed of [{ text: '' }, { sha256: 'a'.repeat(64) }, { bytes: yorubaNotice.bytes + 1 }, { path: 'data/editions/eng-web/NOTICE.txt' }]) {
+    await assert.rejects(verifyTourNotice(yorubaManifest.edition, { ...yorubaNotice, ...changed }), /does not match/);
+  }
+  const passages = await loadExperiencePack('yor', yorubaSources);
+  assert.throws(() => experiencePack(passages.map(passage => ({ ...passage, notice: undefined }))), /complete verified publisher notice/);
+  assert.throws(() => experiencePack(passages.map(passage => ({ ...passage, notice: { ...passage.notice, text: 'An incomplete copyright label' } }))), /complete verified publisher notice/);
+  assert.throws(() => tourNoticePath({ ...yorubaManifest.edition, noticePath: '../yor/NOTICE.txt' }), /edition-specific/);
+});
+
+test('cancellation while loading the complete publisher notice prevents export', async () => {
+  const controller = new AbortController();
+  await assert.rejects(loadExperiencePack('yor', { ...yorubaSources, getNotice: async () => { controller.abort(); return yorubaNotice; } }, controller.signal), /cancelled/);
 });
