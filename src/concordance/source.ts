@@ -7,7 +7,7 @@ import { decodeSourceJsonBytes, readSourceBytes } from '../source-codec.ts';
 const MAX_INDEX_BYTES = 32 * 1024 * 1024;
 export interface ConcordanceSourceServices {
   installedBibleIds: readonly string[];
-  getInventory: (baseUrl: string) => Promise<OfflineManifest>;
+  getInventory: (baseUrl: string, signal?: AbortSignal) => Promise<OfflineManifest>;
   fetch: (url: URL, options: RequestInit) => Promise<Response>;
   requirePermission: (edition: Edition, operation: 'display' | 'searchIndex') => Promise<void>;
 }
@@ -23,6 +23,7 @@ function descriptor(value: OfflineFile | undefined, label: string): OfflineFile 
 
 /** Bound streamed bytes before combining chunks; headers alone cannot establish body size. */
 export async function readConcordanceBytes(response: Response, file: OfflineFile, signal?: AbortSignal): Promise<Uint8Array<ArrayBuffer>> {
+  if (signal?.aborted && response.body) void response.body.cancel().catch(() => undefined);
   descriptor(file, 'The source file'); abort(signal);
   if (!response.ok || response.type === 'opaque') throw new Error('This edition’s source index or inventory is unavailable. Download the edition while online, then retry.');
   const declaredLength = response.headers.get('content-length');
@@ -61,7 +62,7 @@ export class ConcordanceSourceLoader {
     const base = new URL(baseUrl);
     if (!['https:', 'http:'].includes(base.protocol) || base.username || base.password || base.hash || base.search || !base.pathname.endsWith('/')) throw new Error('The application source location is invalid.');
     onStatus?.('Checking the current source inventory and permissions…');
-    const inventory = await this.services.getInventory(base.href); abort(signal);
+    const inventory = await this.services.getInventory(base.href, signal); abort(signal);
     if (inventory.basePath !== base.pathname) throw new Error('This source inventory belongs to another application path.');
     const prefix = editionId === 'eng-web' ? 'data' : `data/editions/${editionId}`;
     const manifestPath = `${prefix}/manifest.json`, indexPath = `${prefix}/search-index.json`;

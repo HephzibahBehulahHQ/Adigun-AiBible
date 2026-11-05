@@ -5,7 +5,7 @@ import { mkdtemp, mkdir, readFile, writeFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import vm from 'node:vm';
-import { finalizeBuild } from '../scripts/finalize-build.mjs';
+import { createServiceWorkerSource, finalizeBuild } from '../scripts/finalize-build.mjs';
 import { downloadOfflineFiles, getOfflineManifest, inspectOfflineDownloads, removeOfflineDownloads } from '../src/offline.ts';
 
 // These short text records are synthetic tests, never included in production corpus files.
@@ -78,12 +78,12 @@ async function withBrowser(f, action) {
     else delete globalThis.caches;
   }
 }
-async function worker(f) {
+async function worker(f, source) {
   const handlers = new Map();
   let waitingRequests = 0, claimed = 0;
   const self = { location: { origin: new URL(BASE).origin }, addEventListener: (name, handler) => handlers.set(name, handler),
     skipWaiting: () => { waitingRequests++; }, clients: { claim: async () => { claimed++; } } };
-  vm.runInNewContext(await readFile(join(f.root, 'dist/sw.js'), 'utf8'), { self, caches: f.cache, fetch: f.fetch, crypto: globalThis.crypto, URL, Request, Response, TextDecoder, Uint8Array, Date, console });
+  vm.runInNewContext(source ?? await readFile(join(f.root, 'dist/sw.js'), 'utf8'), { self, caches: f.cache, fetch: f.fetch, crypto: globalThis.crypto, URL, Request, Response, TextDecoder, Uint8Array, Date, console });
   return {
     async lifecycle(name) { let promise; handlers.get(name)({ waitUntil: value => { promise = value; } }); return promise; },
     async request(path, options = {}) { let promise; handlers.get('fetch')({ request: new Request(new URL(path, BASE), options), respondWith: value => { promise = value; } }); return promise; },
@@ -249,4 +249,76 @@ test('first installation retains permission metadata offline after source downlo
     await removeOfflineDownloads(BASE);
     assert.equal(await (await sw.request('data/editions/rights-register.json')).text(), f.files['data/editions/rights-register.json']);
   }); } finally { await f.close(); }
+});
+
+test('offline source validation stops an oversized stream at the pinned cap and preserves the previous complete pack', async () => {
+  const f = await fixture();
+  try { await withBrowser(f, async () => {
+    await downloadOfflineFiles(BASE, ['data/books/GEN.json'], { packId: 'existing' });
+    const before = await f.cache.keys(), fetcher = globalThis.fetch, cap = f.manifest.files['data/books/EXO.json'].bytes;
+    let chunks = 0, cancelled = false, sourceResponse;
+    globalThis.fetch = async (input, options) => key(input).endsWith('/data/books/EXO.json') ? (sourceResponse = new Response(new ReadableStream({
+      pull(controller) { chunks++; controller.enqueue(new Uint8Array(cap + 1)); }, cancel() { cancelled = true; },
+    }), { headers: { 'content-length': '1' } })) : fetcher(input, options);
+    await assert.rejects(downloadOfflineFiles(BASE, ['data/books/EXO.json'], { packId: 'new' }), /byte limit/);
+    assert.equal(cancelled, true); assert.ok(chunks <= 2, `read ${chunks} oversized chunks`); assert.equal(sourceResponse.body.locked, false);
+    assert.deepEqual(await f.cache.keys(), before);
+    const committed = await f.cache.open(before[0]);
+    assert.equal(await (await committed.match(new URL('data/books/GEN.json', BASE))).text(), f.files['data/books/GEN.json']);
+  }); } finally { await f.close(); }
+});
+
+test('cancelling an offline source body or metadata read stops the stream and removes only its staging pack', async () => {
+  const f = await fixture();
+  try { await withBrowser(f, async () => {
+    await downloadOfflineFiles(BASE, ['data/books/GEN.json'], { packId: 'existing' });
+    const before = await f.cache.keys(), fetcher = globalThis.fetch;
+    for (const target of ['data/books/EXO.json', 'offline-manifest.json']) {
+      const controller = new AbortController(); let started, cancelled = false, sourceResponse;
+      const reading = new Promise(resolve => { started = resolve; });
+      globalThis.fetch = async (input, options) => key(input).endsWith('/' + target) ? (sourceResponse = new Response(new ReadableStream({
+        pull() { started(); }, cancel() { cancelled = true; },
+      }))) : fetcher(input, options);
+      const pending = downloadOfflineFiles(BASE, ['data/books/EXO.json'], { packId: 'new', signal: controller.signal });
+      const rejected = assert.rejects(pending, { name: 'AbortError' });
+      await reading; controller.abort(); await rejected;
+      assert.equal(cancelled, true); assert.equal(sourceResponse.body.locked, false); assert.deepEqual(await f.cache.keys(), before);
+    }
+  }); } finally { await f.close(); }
+});
+
+test('service-worker source validation stops oversized streams early and returns intact verified bodies on success', async () => {
+  const f = await fixture();
+  try {
+    const fetcher = f.fetch, cap = f.manifest.files['data/books/EXO.json'].bytes;
+    let chunks = 0, cancelled = false, sourceResponse;
+    f.fetch = async (input, options) => key(input).endsWith('/data/books/EXO.json') ? (sourceResponse = new Response(new ReadableStream({
+      pull(controller) { chunks++; controller.enqueue(new Uint8Array(cap + 1)); }, cancel() { cancelled = true; },
+    }), { headers: { 'content-length': '1' } })) : fetcher(input, options);
+    const sw = await worker(f);
+    assert.equal((await sw.request('data/books/EXO.json', { cache: 'no-store' })).status, 503);
+    assert.equal(cancelled, true); assert.ok(chunks <= 2, `read ${chunks} oversized chunks`); assert.equal(sourceResponse.body.locked, false);
+    const response = await sw.request('data/books/GEN.json', { cache: 'no-store' });
+    assert.equal(response.status, 200); assert.equal(response.headers.get('content-type'), 'application/json');
+    assert.equal(await response.text(), f.files['data/books/GEN.json']);
+  } finally { await f.close(); }
+});
+
+test('service-worker validation follows request cancellation and enforces its independent 64 MiB ceiling', async () => {
+  const f = await fixture();
+  try {
+    const fetcher = f.fetch, controller = new AbortController(); let started, cancelled = false, sourceResponse, observedSignal;
+    const reading = new Promise(resolve => { started = resolve; });
+    f.fetch = async (input, options) => {
+      if (!key(input).endsWith('/data/books/EXO.json')) return fetcher(input, options);
+      observedSignal = options.signal;
+      return sourceResponse = new Response(new ReadableStream({ pull() { started(); }, cancel() { cancelled = true; } }));
+    };
+    const sw = await worker(f), pending = sw.request('data/books/EXO.json', { cache: 'no-store', signal: controller.signal });
+    await reading; controller.abort(); assert.equal((await pending).status, 503);
+    assert.equal(observedSignal.aborted, true); assert.equal(cancelled, true); assert.equal(sourceResponse.body.locked, false);
+    const invalid = structuredClone(f.manifest); invalid.files['data/books/EXO.json'].bytes = 64 * 1024 * 1024 + 1; cancelled = false;
+    const bounded = await worker(f, createServiceWorkerSource(invalid, {}));
+    assert.equal((await bounded.request('data/books/EXO.json', { cache: 'no-store' })).status, 503); assert.equal(cancelled, true);
+  } finally { await f.close(); }
 });

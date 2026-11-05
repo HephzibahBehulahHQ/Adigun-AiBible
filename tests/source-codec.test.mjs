@@ -74,6 +74,10 @@ test('missing browser decompression is explicit while raw development JSON remai
 test('aborting an already verified input or an in-flight body never returns a late decoded source', async () => {
   const controller = new AbortController(); controller.abort();
   await assert.rejects(decodeSourceJsonBytes(packSourceJsonBytes(raw), controller.signal), { name: 'AbortError' });
+  let cancelledBeforeRead = false;
+  const lateResponse = new Response(new ReadableStream({ cancel() { cancelledBeforeRead = true; } }));
+  await assert.rejects(readSourceBytes(lateResponse, 8, controller.signal), { name: 'AbortError' });
+  assert.equal(cancelledBeforeRead, true); assert.equal(lateResponse.body.locked, false);
   const active = new AbortController(); let cancelled = false;
   const response = new Response(new ReadableStream({ start() {}, cancel() { cancelled = true; } }));
   const reading = readSourceJson(response, active.signal);
@@ -104,4 +108,11 @@ test('aborting a cloned pending response releases its reader without awaiting th
     const result = await Promise.race([settled, new Promise(resolve => { timer = setTimeout(() => resolve({ kind: 'timeout' }), 1000); })]);
     assert.equal(result.kind, 'rejected'); assert.equal(result.error.name, 'AbortError'); assert.equal(clone.body.locked, false);
   } finally { clearTimeout(timer); void original.body.cancel().catch(() => undefined); await settled; }
+});
+
+test('zero-byte file caps accept empty bodies and reject the first supplied byte', async () => {
+  assert.equal((await readSourceBytes(new Response(null), 0)).byteLength, 0);
+  let cancelled = false;
+  const response = new Response(new ReadableStream({ start(controller) { controller.enqueue(new Uint8Array([1])); }, cancel() { cancelled = true; } }));
+  await assert.rejects(readSourceBytes(response, 0), /byte limit/); assert.equal(cancelled, true);
 });
