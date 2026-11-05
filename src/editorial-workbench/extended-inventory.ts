@@ -69,6 +69,7 @@ export function offlinePackDefinitions(manifests: Manifest[], editions: Edition[
     const edition = manifest.edition, base = edition.id === 'eng-web' ? 'data' : `data/editions/${edition.id}`;
     return { id: `bible-${edition.id}`, title: `${edition.name} · complete text and search`, paths: [...new Set([...essential, `${base}/manifest.json`, `${base}/search-index.json`, 'data/editorial.json', ...manifest.books.map(book => `${base}/books/${book.id}.json`), ...(edition.noticePath ? [`data/editions/${edition.noticePath}`] : [])])], ...permission(edition, register) };
   });
+  for (const edition of editions.filter(row => row.corpus === 'bible' && !manifests.some(manifest => manifest.edition.id === row.id))) packs.push({ id: `bible-${edition.id}`, title: `${edition.name} · complete text and search`, paths: [], permission: 'unknown', reason: 'The exact edition manifest is unavailable; required files cannot be counted.' });
   for (const edition of editions.filter(row => row.corpus === 'quran')) packs.push({ id: `quran-${edition.id}`, title: `${edition.name} · separate Quran corpus`, paths: [...essential, `data/editions/${edition.id}/manifest.json`, `data/editions/${edition.id}/quran.json`, ...(edition.noticePath ? [`data/editions/${edition.noticePath}`] : [])], ...permission(edition, register) });
   for (const edition of historical?.editions || []) packs.push({ id: `historical-${edition.id}`, title: edition.title, paths: ['data/historical/manifest.json', edition.path, edition.noticePath], permission: edition.rights.display && edition.rights.offline ? 'allowed' : 'denied', reason: 'The historical edition does not permit this offline use.' });
   if (dictionaries) packs.push({ id: 'historical-lexicons', title: 'Both historical dictionaries and source notices', paths: ['data/linguistics/manifest.json', 'data/linguistics/NOTICE.txt', ...dictionaries.dictionaries.map(row => `data/linguistics/${row.path}`)], permission: 'allowed' });
@@ -115,7 +116,7 @@ export async function verifyOfflinePacks(packs: OfflinePackDefinition[], manifes
   for (const pack of packs) {
     check(); const files = [...new Set(pack.paths)], present = files.filter(file => cached.paths.has(file)).length;
     let status: OfflinePackStatus, detail: string;
-    if (!files.length || files.some(file => !path(file) || !manifest.files[file])) { status = 'unknown'; detail = 'Required source files are absent from this build inventory.'; }
+    if (!files.length || files.some(file => !path(file) || !manifest.files[file])) { status = 'unknown'; detail = pack.reason || 'Required source files are absent from this build inventory.'; }
     else if (pack.permission === 'unknown') { status = 'unknown'; detail = pack.reason || 'Source permission is unknown.'; }
     else if (pack.permission === 'denied') { status = 'blocked'; detail = pack.reason || 'Source permission is unavailable.'; }
     else if (present < files.length) { status = present ? 'partial' : 'missing'; detail = `${present} of ${files.length} required source and notice files are present.`; }
