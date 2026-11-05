@@ -247,7 +247,24 @@
       "availability": "metadata-only",
       "coverage": "not-validated",
       "permissions": "not-reviewed",
-      "installedEditionId": null
+      "installedEditionId": null,
+      "sourceReview": {
+        "state": "deferred",
+        "observedOn": "2026-11-05",
+        "reasons": [
+          "The notice states possible local Myanmar copyright with CC BY-SA4.0 there, rather than an unqualified public-domain grant. The archive also contains83books/1391chapters and joined-reference differences."
+        ],
+        "evidenceUrls": [
+          "https://ebible.org/hltmcsb/copyright.htm",
+          "https://ebible.org/Scriptures/hltmcsb_vpl.zip"
+        ],
+        "archiveSha256": "6182cf784728ca7ae44825c3339ab067c10463febba18ccf8f9e67a3f6984649",
+        "observedTotals": {
+          "books": 83,
+          "chapters": 1391,
+          "verses": 37667
+        }
+      }
     },
     {
       "provider": "eBible.org",
@@ -394,7 +411,24 @@
       "availability": "metadata-only",
       "coverage": "not-validated",
       "permissions": "not-reviewed",
-      "installedEditionId": null
+      "installedEditionId": null,
+      "sourceReview": {
+        "state": "deferred",
+        "observedOn": "2026-11-05",
+        "reasons": [
+          "The exact archive contains73books/1328chapters and uses ESG for its Esther text. This is a canon/reference contract mismatch; it is not a claim that Esther content is absent. Extra books are not silently removed."
+        ],
+        "evidenceUrls": [
+          "https://ebible.org/hrv/copyright.htm",
+          "https://ebible.org/Scriptures/hrv_vpl.zip"
+        ],
+        "archiveSha256": "a9fc8665d3c1e5e806b2b33456c96d84cc4866cc6f9d9ab8d36d9e1c1ccb0e2a",
+        "observedTotals": {
+          "books": 73,
+          "chapters": 1328,
+          "verses": 35448
+        }
+      }
     },
     {
       "provider": "eBible.org",
@@ -548,7 +582,18 @@
       "availability": "metadata-only",
       "coverage": "not-validated",
       "permissions": "not-reviewed",
-      "installedEditionId": null
+      "installedEditionId": null,
+      "sourceReview": {
+        "state": "deferred",
+        "observedOn": "2026-11-05",
+        "reasons": [
+          "The individual notice expressly bases public-domain status in the United States on publication formalities; no worldwide operation grant is inferred."
+        ],
+        "evidenceUrls": [
+          "https://ebible.org/engBBE/copyright.htm",
+          "https://ebible.org/Scriptures/engBBE_vpl.zip"
+        ]
+      }
     },
     {
       "provider": "eBible.org",
@@ -911,7 +956,18 @@
       "availability": "metadata-only",
       "coverage": "not-validated",
       "permissions": "not-reviewed",
-      "installedEditionId": null
+      "installedEditionId": null,
+      "sourceReview": {
+        "state": "deferred",
+        "observedOn": "2026-11-05",
+        "reasons": [
+          "The exact individual notice identifies the Revised Version with Apocrypha(1895). No silent projection into a differently described66-book edition is admitted."
+        ],
+        "evidenceUrls": [
+          "https://ebible.org/eng-rv/copyright.htm",
+          "https://ebible.org/Scriptures/eng-rv_vpl.zip"
+        ]
+      }
     },
     {
       "provider": "eBible.org",
@@ -1254,7 +1310,24 @@
       "availability": "metadata-only",
       "coverage": "not-validated",
       "permissions": "not-reviewed",
-      "installedEditionId": null
+      "installedEditionId": null,
+      "sourceReview": {
+        "state": "deferred",
+        "observedOn": "2026-11-05",
+        "reasons": [
+          "The exact archive contains81books/1403chapters, including additional canon and joined-reference differences. No silent canon projection or verse splitting is admitted. Publisher draft."
+        ],
+        "evidenceUrls": [
+          "https://ebible.org/frasbl/copyright.htm",
+          "https://ebible.org/Scriptures/frasbl_vpl.zip"
+        ],
+        "archiveSha256": "a95ce4f974cfbe8e95e7ee2daac7b7e24bd41d5a2940d40ee32a8cafe1bd6506",
+        "observedTotals": {
+          "books": 81,
+          "chapters": 1403,
+          "verses": 38065
+        }
+      }
     },
     {
       "provider": "eBible.org",
@@ -1319,10 +1392,36 @@
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 65,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "fra-darby2024",
+      "installedRevision": "BPC JND v2.0, 2024 reissue; source files dated 2025-05-02. Not the distinct 2026 revised edition.",
+      "installedSourceSha256": "dbda2c381fd0cbf2bf0f65dac2052db6f728908a8b50a7518fd5ba8c9711dc60",
+      "installedObservedOn": "2026-11-05",
+      "publicationStatus": "published-edition",
+      "sourceReview": {
+        "state": "admitted-exact-source",
+        "observedOn": "2026-11-05",
+        "evidenceUrls": [
+          "https://ebible.org/frajnd/copyright.htm",
+          "https://ebible.org/Scriptures/frajnd_vpl.zip",
+          "https://ebible.org/legal.php",
+          "https://ebible.org/publicdomain.htm",
+          "https://editeurbpc.com/telechargements",
+          "https://ftp.editeurbpc.com/telechargements/JND"
+        ],
+        "archiveSha256": "dbda2c381fd0cbf2bf0f65dac2052db6f728908a8b50a7518fd5ba8c9711dc60",
+        "observedTotals": {
+          "books": 66,
+          "chapters": 1189,
+          "verses": 31170
+        },
+        "limitations": [
+          "Source text and format checks are not human editorial approval.",
+          "Publisher draft status is retained where declared; no source words or numbered positions are filled."
+        ]
+      }
     },
     {
       "provider": "eBible.org",
@@ -1599,7 +1698,18 @@
       "availability": "metadata-only",
       "coverage": "not-validated",
       "permissions": "not-reviewed",
-      "installedEditionId": null
+      "installedEditionId": null,
+      "sourceReview": {
+        "state": "deferred",
+        "observedOn": "2026-11-05",
+        "reasons": [
+          "The individual notice relies on absence of a1985copyright notice/subsequent registration. Broader territorial applicability remains unresolved."
+        ],
+        "evidenceUrls": [
+          "https://ebible.org/hat/copyright.htm",
+          "https://ebible.org/Scriptures/hat_vpl.zip"
+        ]
+      }
     },
     {
       "provider": "eBible.org",
@@ -1870,7 +1980,25 @@
       "availability": "metadata-only",
       "coverage": "not-validated",
       "permissions": "not-reviewed",
-      "installedEditionId": null
+      "installedEditionId": null,
+      "sourceReview": {
+        "state": "deferred",
+        "observedOn": "2026-11-05",
+        "reasons": [
+          "The archive has66books/1189chapters, but ten XML verse ranges collapse to start-only TXT labels and seventeen further bracket/spacing discrepancies remain. A source-range-aware workflow is required.",
+          "The individual notice does not establish1928 as the edition year; a Sword filename alone does not settle revision identity."
+        ],
+        "evidenceUrls": [
+          "https://ebible.org/kos/copyright.htm",
+          "https://ebible.org/Scriptures/kos_vpl.zip"
+        ],
+        "archiveSha256": "4ab91c6584a9188dad3cdd0ff2f8d86ac3e8a680673e97d126f632deadc62ecf",
+        "observedTotals": {
+          "books": 66,
+          "chapters": 1189,
+          "verses": 30946
+        }
+      }
     },
     {
       "provider": "eBible.org",
@@ -2035,7 +2163,24 @@
       "availability": "metadata-only",
       "coverage": "not-validated",
       "permissions": "not-reviewed",
-      "installedEditionId": null
+      "installedEditionId": null,
+      "sourceReview": {
+        "state": "deferred",
+        "observedOn": "2026-11-05",
+        "reasons": [
+          "The exact archive contains81books/1402chapters, including additional canon; six XML joined verse labels differ from TXT start-only labels. No silent canon projection or verse splitting is admitted. Publisher draft."
+        ],
+        "evidenceUrls": [
+          "https://ebible.org/porbrbsl/copyright.htm",
+          "https://ebible.org/Scriptures/porbrbsl_vpl.zip"
+        ],
+        "archiveSha256": "a78a124ec8df9989f4cef67144a44b205efa84dc6d7db105e91e642106776ba9",
+        "observedTotals": {
+          "books": 81,
+          "chapters": 1402,
+          "verses": 38058
+        }
+      }
     },
     {
       "provider": "eBible.org",
@@ -2077,7 +2222,18 @@
       "availability": "metadata-only",
       "coverage": "not-validated",
       "permissions": "not-reviewed",
-      "installedEditionId": null
+      "installedEditionId": null,
+      "sourceReview": {
+        "state": "deferred",
+        "observedOn": "2026-11-05",
+        "reasons": [
+          "The individual notice explicitly identifies a New Testament, not a complete Bible."
+        ],
+        "evidenceUrls": [
+          "https://ebible.org/ronbl/copyright.htm",
+          "https://ebible.org/Scriptures/ronbl_vpl.zip"
+        ]
+      }
     },
     {
       "provider": "eBible.org",
@@ -2098,7 +2254,24 @@
       "availability": "metadata-only",
       "coverage": "not-validated",
       "permissions": "not-reviewed",
-      "installedEditionId": null
+      "installedEditionId": null,
+      "sourceReview": {
+        "state": "deferred",
+        "observedOn": "2026-11-05",
+        "reasons": [
+          "The exact archive contains31books/531chapters, not a complete66-book Bible. Publisher draft."
+        ],
+        "evidenceUrls": [
+          "https://ebible.org/rusfb/copyright.htm",
+          "https://ebible.org/Scriptures/rusfb_vpl.zip"
+        ],
+        "archiveSha256": "336ac5be5eb7dbd72a40ff2ba9762e77bca9fc11053112e6e2febba159fa1ebb",
+        "observedTotals": {
+          "books": 31,
+          "chapters": 531,
+          "verses": 14080
+        }
+      }
     },
     {
       "provider": "eBible.org",
@@ -2185,10 +2358,35 @@
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 104,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "spa-simple2026",
+      "installedRevision": "Second edition 2026; translated and edited by Irma Flores; source files dated 2026-10-30.",
+      "installedSourceSha256": "b5397717e5031db82ce6c595ae1d3803626aaa3d11ce8750b31d5d766b3568e1",
+      "installedObservedOn": "2026-11-05",
+      "publicationStatus": "published-edition",
+      "sourceReview": {
+        "state": "admitted-exact-source",
+        "observedOn": "2026-11-05",
+        "evidenceUrls": [
+          "https://ebible.org/spabes/copyright.htm",
+          "https://ebible.org/Scriptures/spabes_vpl.zip",
+          "https://ebible.org/legal.php",
+          "https://ebible.org/publicdomain.htm",
+          "https://audiobiblia.org/spabes_ab/spabes.htm"
+        ],
+        "archiveSha256": "b5397717e5031db82ce6c595ae1d3803626aaa3d11ce8750b31d5d766b3568e1",
+        "observedTotals": {
+          "books": 66,
+          "chapters": 1189,
+          "verses": 31102
+        },
+        "limitations": [
+          "Source text and format checks are not human editorial approval.",
+          "Publisher draft status is retained where declared; no source words or numbered positions are filled."
+        ]
+      }
     },
     {
       "provider": "eBible.org",
@@ -2253,7 +2451,24 @@
       "availability": "metadata-only",
       "coverage": "not-validated",
       "permissions": "not-reviewed",
-      "installedEditionId": null
+      "installedEditionId": null,
+      "sourceReview": {
+        "state": "deferred",
+        "observedOn": "2026-11-05",
+        "reasons": [
+          "The exact archive contains81books/1402chapters, including additional canon and joined-reference differences. No silent canon projection or verse splitting is admitted. Publisher draft."
+        ],
+        "evidenceUrls": [
+          "https://ebible.org/spablm/copyright.htm",
+          "https://ebible.org/Scriptures/spablm_vpl.zip"
+        ],
+        "archiveSha256": "d45881576218d5738588221bef8eec267828291196f636dc6ba1501b1c158602",
+        "observedTotals": {
+          "books": 81,
+          "chapters": 1402,
+          "verses": 38058
+        }
+      }
     },
     {
       "provider": "eBible.org",
@@ -2364,7 +2579,30 @@
       "availability": "metadata-only",
       "coverage": "not-validated",
       "permissions": "not-reviewed",
-      "installedEditionId": null
+      "installedEditionId": null,
+      "sourceReview": {
+        "state": "deferred",
+        "observedOn": "2026-11-05",
+        "reasons": [
+          "The exact source shares all31,082 references with installed ukr-kulish1905;31,052 text records are byte-identical and only30 differ at punctuation/orthographic/typo scale. Excluded as a near-duplicate, not counted as an additional translation."
+        ],
+        "evidenceUrls": [
+          "https://ebible.org/ukrfb/copyright.htm",
+          "https://ebible.org/Scriptures/ukrfb_vpl.zip"
+        ],
+        "archiveSha256": "ab7e308de9991156ca6bdb1b8ec672ef9e6c275ac5d77904ca881b0f381f0f48",
+        "observedTotals": {
+          "books": 66,
+          "chapters": 1189,
+          "verses": 31082
+        },
+        "duplicateComparison": {
+          "installedEditionId": "ukr-kulish1905",
+          "sameReferences": 31082,
+          "identicalTextRecords": 31052,
+          "changedTextRecords": 30
+        }
+      }
     },
     {
       "provider": "eBible.org",
@@ -4489,6 +4727,50 @@
       "coverage": "not-validated",
       "permissions": "not-reviewed",
       "installedEditionId": null
+    },
+    {
+      "provider": "eBible.org",
+      "providerId": "tdx",
+      "languageName": "Malagasy, Tandroy-Mahafaly",
+      "nativeLanguageName": "Tandroy",
+      "dialect": null,
+      "nativeTitle": "Saontsin’ Añahare",
+      "title": "Tandroy Bible (publisher draft)",
+      "revision": "Copyright2023; publisher draft, source2026-10-17",
+      "providerRightsStatement": "Copyright2023 Steve Lellelid; CC BY-SA4.0",
+      "translator": null,
+      "contributor": "Steve Lellelid (copyright holder)",
+      "sourceUrl": "https://ebible.org/find/details.php?id=tdx",
+      "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
+      "inventoryLine": null,
+      "observedOn": "2026-11-05",
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "tdx-tandroy",
+      "installedRevision": "Publisher draft; copyright 2023 Steve Lellelid; source files dated 2026-10-17.",
+      "installedSourceSha256": "ca352f5888aa64896069f57cea898abadb3f2f851a1d4f555ab088b2a601e960",
+      "installedObservedOn": "2026-11-05",
+      "publicationStatus": "publisher-draft",
+      "sourceReview": {
+        "state": "admitted-exact-source",
+        "observedOn": "2026-11-05",
+        "evidenceUrls": [
+          "https://ebible.org/tdx/copyright.htm",
+          "https://ebible.org/Scriptures/tdx_vpl.zip",
+          "https://creativecommons.org/licenses/by-sa/4.0/"
+        ],
+        "archiveSha256": "ca352f5888aa64896069f57cea898abadb3f2f851a1d4f555ab088b2a601e960",
+        "observedTotals": {
+          "books": 66,
+          "chapters": 1189,
+          "verses": 31081
+        },
+        "limitations": [
+          "Source text and format checks are not human editorial approval.",
+          "Publisher draft status is retained where declared; no source words or numbered positions are filled."
+        ]
+      }
     }
   ],
   "priorityRequests": [

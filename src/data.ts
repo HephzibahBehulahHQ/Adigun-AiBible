@@ -67,4 +67,4 @@ export function getQuran(): Promise<QuranSource> {
   }).catch(error => { quran = undefined; throw error; });
   return quran;
 }
-export function sourceCredit(edition: Edition): string { return [edition.attribution || edition.name, edition.license, edition.licenseUrl, edition.sourceUrl].filter(Boolean).join('\n'); }
+export function sourceCredit(edition: Edition): string { return [edition.attribution || edition.name, edition.license, edition.licenseUrl, edition.licenseDeedUrl, edition.sourceUrl].filter(Boolean).join('\n'); }

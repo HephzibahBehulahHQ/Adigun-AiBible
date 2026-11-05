@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "morphgnt-sblgnt",
+  "sourceRevision": "aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d",
+  "sourcePath": "README.md",
+  "license": "CC-BY-SA-3.0",
+  "partOfSpeech": {
+    "A-": "adjective",
+    "C-": "conjunction",
+    "D-": "adverb",
+    "I-": "interjection",
+    "N-": "noun",
+    "P-": "preposition",
+    "RA": "definite article",
+    "RD": "demonstrative pronoun",
+    "RI": "interrogative/indefinite pronoun",
+    "RP": "personal pronoun",
+    "RR": "relative pronoun",
+    "V-": "verb",
+    "X-": "particle"
+  },
+  "positions": [
+    {
+      "index": 0,
+      "name": "person",
+      "codes": {
+        "1": "1st",
+        "2": "2nd",
+        "3": "3rd"
+      }
+    },
+    {
+      "index": 1,
+      "name": "tense",
+      "codes": {
+        "P": "present",
+        "I": "imperfect",
+        "F": "future",
+        "A": "aorist",
+        "X": "perfect",
+        "Y": "pluperfect"
+      }
+    },
+    {
+      "index": 2,
+      "name": "voice",
+      "codes": {
+        "A": "active",
+        "M": "middle",
+        "P": "passive"
+      }
+    },
+    {
+      "index": 3,
+      "name": "mood",
+      "codes": {
+        "I": "indicative",
+        "D": "imperative",
+        "S": "subjunctive",
+        "O": "optative",
+        "N": "infinitive",
+        "P": "participle"
+      }
+    },
+    {
+      "index": 4,
+      "name": "case",
+      "codes": {
+        "N": "nominative",
+        "G": "genitive",
+        "D": "dative",
+        "A": "accusative"
+      }
+    },
+    {
+      "index": 5,
+      "name": "number",
+      "codes": {
+        "S": "singular",
+        "P": "plural"
+      }
+    },
+    {
+      "index": 6,
+      "name": "gender",
+      "codes": {
+        "M": "masculine",
+        "F": "feminine",
+        "N": "neuter"
+      }
+    },
+    {
+      "index": 7,
+      "name": "degree",
+      "codes": {
+        "C": "comparative",
+        "S": "superlative"
+      }
+    }
+  ],
+  "placeholder": "-",
+  "placeholderPolicy": "A dash is retained as an unexpanded position; no grammatical meaning is inferred.",
+  "limitations": "Only descriptions printed in the pinned MorphGNT README are expanded. Unknown symbols stay raw. The upstream README says the inherited CCAT codes will be deprecated in a future major release."
+}
