@@ -3,26 +3,7 @@ import assert from 'node:assert/strict';
 import { setImmediate as tick } from 'node:timers/promises';
 import { emptyWorkspace } from '../src/workspace/model.ts';
 import { loadWorkspace, saveWorkspace, WorkspaceConflictError } from '../src/workspace/storage.ts';
-// Minimal transaction fixture: writes commit atomically; queued readwrite transactions see the prior commit.
-function fixture(initial) {
-  let stored = initial === undefined ? undefined : structuredClone(initial); const queue = []; let active; const options = { holdWrite: false, failWrite: false, failRead: false, failOpen: false };
-  const openedNames = [];
-  const db = {
-    objectStoreNames: { contains: () => true }, close() {}, createObjectStore() {},
-    transaction(_name, mode) {
-      const tx = { mode, aborted: false, pending: undefined, request: undefined, objectStore: () => ({
-        get() { const request = {}; tx.request = request; queue.push(tx); queueMicrotask(pump); return request; },
-        put(value) { tx.pending = structuredClone(value); if (options.failWrite) queueMicrotask(() => { tx.onerror?.(); tx.abort(); }); }
-      }), abort() { if (tx.aborted) return; tx.aborted = true; queueMicrotask(() => { tx.onabort?.(); if (active === tx) { active = undefined; pump(); } }); } };
-      return tx;
-    }
-  };
-  function finish() { const tx = active; if (!tx || tx.aborted) return; if (tx.pending !== undefined) stored = structuredClone(tx.pending); tx.oncomplete?.(); active = undefined; pump(); }
-  function pump() { if (active || !queue.length) return; const tx = active = queue.shift(); queueMicrotask(() => { if (options.failRead) { tx.onerror?.(); tx.abort(); return; } tx.request.result = stored === undefined ? undefined : structuredClone(stored); tx.request.onsuccess?.(); if (!tx.aborted && !(options.holdWrite && tx.mode === 'readwrite')) queueMicrotask(finish); }); }
-  const api = { open(name) { openedNames.push(name); const request = {}; queueMicrotask(() => { if (options.failOpen) request.onerror?.(); else { request.result = db; request.onsuccess?.(); } }); return request; } };
-  Object.defineProperty(globalThis, 'indexedDB', { value: api, configurable: true, writable: true });
-  return { options, finish, openedNames, stored: () => stored, dispose: () => { db.onversionchange?.(); delete globalThis.indexedDB; } };
-}
+import { fixture } from './retelling-media-idb-fixture.mjs';
 const base = { id: 'fixture-prayer', createdAt: '2026-11-04T10:00:00.000Z', updatedAt: '2026-11-04T10:00:00.000Z', title: 'Private fixture', text: 'Retain this entry.', category: '', tags: [], refs: [], reflection: '', outcome: '', followUp: '', history: [] };
 
 test('workspace uses its own database and resolves saves only after the complete transaction', async () => {
