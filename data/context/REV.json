@@ -1,0 +1,95 @@
+[
+  {
+    "id": "revelation-setting",
+    "bookId": "REV",
+    "fromChapter": 1,
+    "toChapter": 22,
+    "title": "Revelation: its named audience and literary setting",
+    "aiReviewStatus": "AI-assisted draft · human review pending",
+    "sources": [
+      {
+        "label": "Revelation 1:1–4 · WEB",
+        "reference": {
+          "bookId": "REV",
+          "chapter": 1,
+          "verse": 1,
+          "editionId": "eng-web",
+          "endVerse": 4
+        }
+      },
+      {
+        "label": "USCCB · Introduction to Revelation",
+        "url": "https://bible.usccb.org/bible/revelation/0"
+      },
+      {
+        "label": "Revelation 1:4–11 · WEB",
+        "reference": {
+          "bookId": "REV",
+          "chapter": 1,
+          "verse": 4,
+          "editionId": "eng-web",
+          "endVerse": 11
+        }
+      }
+    ],
+    "fields": [
+      {
+        "label": "Who wrote it?",
+        "text": "The text names John. The USCCB introduction notes that identifying this John with the apostle was accepted by some early writers and disputed by others.",
+        "sources": [
+          {
+            "label": "Revelation 1:1–4 · WEB",
+            "reference": {
+              "bookId": "REV",
+              "chapter": 1,
+              "verse": 1,
+              "editionId": "eng-web",
+              "endVerse": 4
+            }
+          },
+          {
+            "label": "USCCB · Introduction to Revelation",
+            "url": "https://bible.usccb.org/bible/revelation/0"
+          }
+        ]
+      },
+      {
+        "label": "To whom?",
+        "text": "John addresses seven assemblies in Asia. Read the opening and the individual messages before treating later visions as isolated predictions.",
+        "sources": [
+          {
+            "label": "Revelation 1:4–11 · WEB",
+            "reference": {
+              "bookId": "REV",
+              "chapter": 1,
+              "verse": 4,
+              "editionId": "eng-web",
+              "endVerse": 11
+            }
+          }
+        ]
+      },
+      {
+        "label": "When?",
+        "text": "The USCCB introduction proposes a date near the end of Domitian’s reign, AD 81–96. This is a dated scholarly proposal, not an uncontested date stated by the text.",
+        "sources": [
+          {
+            "label": "USCCB · Introduction to Revelation",
+            "url": "https://bible.usccb.org/bible/revelation/0"
+          }
+        ]
+      },
+      {
+        "label": "Political and cultural setting",
+        "text": "The USCCB introduction reads the book against pressure from Roman authority. Its symbolic visions require attention to literary context and interpretive differences.",
+        "sources": [
+          {
+            "label": "USCCB · Introduction to Revelation",
+            "url": "https://bible.usccb.org/bible/revelation/0"
+          }
+        ]
+      }
+    ],
+    "prosperityGospelRisk": "none"
+  }
+]

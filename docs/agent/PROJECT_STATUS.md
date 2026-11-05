@@ -6,9 +6,10 @@
 - Main observed at start: `5e7317bf888ecde0e1a1ea4546831a263e6630aa`.
 - Working branch / PR: `codex/law-diary-route-scaffold-20261105`, [PR #26](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/26).
 - Last verified remote checkpoint at start: `6640f39143ba3a005bc5e99f676b96acb693f4fc`. Its [CI 41993626943](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/41993626943) passed source/content/build, desktop/mobile and repeated persistence checks. PR deployment was correctly skipped.
+- Verified checkpoint: `3985bb2ff1374e8a9c96cfa3cae710472189e968` via GitHub connection and `git ls-remote`, 5 November 2026. Shell push has no credentials; authenticated GitHub tree/commit/ref operations preserve the exact Git tree and verify the expected parent.
 - Current work: complete source-linked Law Diary and section routing; add context cards, web verse cards and local ministry preparation; preserve source review gates.
 - Recovered the Law Diary addendum present only in the root TXT. Canonical Markdown now matches that complete supplied specification. Current user authorization to continue/finish overrides its older per-step stop requests. Content approval, accuracy and release gates remain.
-- Local Node 24 and locked dependencies are available. Seven routing/reading-position tests pass after preserving passage state through section routes. Final combined source, content, browser and release checks are pending.
+- Local Node 24 and locked dependencies are available. Seven routing/reading-position tests pass after preserving passage state through section routes. TypeScript passes. Local Playwright browser download returned an invalid archive; browser release gates will run in GitHub Actions. Final combined source, content, browser and release checks are pending.
 - Root is the integration/synchronization owner. Law Diary, context/widget and ministry specialists own disjoint new modules.
 - No new deployment is claimed. Existing Pages target: https://hephzibahbehulahhq.github.io/Adigun-AiBible/ ; public source receipt: `build-info.json`.
 

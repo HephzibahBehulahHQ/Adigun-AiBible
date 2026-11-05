@@ -1,0 +1,103 @@
+[
+  {
+    "id": "farewell-setting",
+    "bookId": "JHN",
+    "fromChapter": 13,
+    "toChapter": 17,
+    "title": "The meal and farewell teaching in John",
+    "aiReviewStatus": "AI-assisted draft · human review pending",
+    "sources": [
+      {
+        "label": "John 13:1–5 · WEB",
+        "reference": {
+          "bookId": "JHN",
+          "chapter": 13,
+          "verse": 1,
+          "editionId": "eng-web",
+          "endVerse": 5
+        }
+      },
+      {
+        "label": "John 17:1–5 · WEB",
+        "reference": {
+          "bookId": "JHN",
+          "chapter": 17,
+          "verse": 1,
+          "editionId": "eng-web",
+          "endVerse": 5
+        }
+      },
+      {
+        "label": "John 21:24–25 · WEB",
+        "reference": {
+          "bookId": "JHN",
+          "chapter": 21,
+          "verse": 24,
+          "editionId": "eng-web",
+          "endVerse": 25
+        }
+      }
+    ],
+    "fields": [
+      {
+        "label": "Speaker and audience",
+        "text": "John’s narrative opens this sequence with Jesus and his disciples at supper before Passover.",
+        "sources": [
+          {
+            "label": "John 13:1–5 · WEB",
+            "reference": {
+              "bookId": "JHN",
+              "chapter": 13,
+              "verse": 1,
+              "editionId": "eng-web",
+              "endVerse": 5
+            }
+          }
+        ]
+      },
+      {
+        "label": "When and why?",
+        "text": "The text presents departure, service and Jesus’ care for his disciples as part of this setting. John 17 changes to prayer.",
+        "sources": [
+          {
+            "label": "John 13:1–5 · WEB",
+            "reference": {
+              "bookId": "JHN",
+              "chapter": 13,
+              "verse": 1,
+              "editionId": "eng-web",
+              "endVerse": 5
+            }
+          },
+          {
+            "label": "John 17:1–5 · WEB",
+            "reference": {
+              "bookId": "JHN",
+              "chapter": 17,
+              "verse": 1,
+              "editionId": "eng-web",
+              "endVerse": 5
+            }
+          }
+        ]
+      },
+      {
+        "label": "Authorship and historical reconstruction",
+        "text": "The Gospel’s testimony about the disciple and the writing is available at John 21:24–25. A complete account of authorship, dating and composition is not established by this card.",
+        "sources": [
+          {
+            "label": "John 21:24–25 · WEB",
+            "reference": {
+              "bookId": "JHN",
+              "chapter": 21,
+              "verse": 24,
+              "editionId": "eng-web",
+              "endVerse": 25
+            }
+          }
+        ]
+      }
+    ],
+    "prosperityGospelRisk": "none"
+  }
+]

@@ -1,0 +1,184 @@
+[
+  {
+    "id": "nazareth-synagogue-setting",
+    "bookId": "LUK",
+    "fromChapter": 4,
+    "toChapter": 4,
+    "title": "Nazareth and the synagogue reading",
+    "aiReviewStatus": "AI-assisted draft · human review pending",
+    "sources": [
+      {
+        "label": "Luke 4:16–21 · WEB",
+        "reference": {
+          "bookId": "LUK",
+          "chapter": 4,
+          "verse": 16,
+          "editionId": "eng-web",
+          "endVerse": 21
+        }
+      },
+      {
+        "label": "Luke 4:16–30 · WEB",
+        "reference": {
+          "bookId": "LUK",
+          "chapter": 4,
+          "verse": 16,
+          "editionId": "eng-web",
+          "endVerse": 30
+        }
+      },
+      {
+        "label": "Luke 1:1–4 · WEB",
+        "reference": {
+          "bookId": "LUK",
+          "chapter": 1,
+          "verse": 1,
+          "editionId": "eng-web",
+          "endVerse": 4
+        }
+      }
+    ],
+    "fields": [
+      {
+        "label": "Speaker and audience",
+        "text": "Luke narrates Jesus reading from Isaiah in the synagogue at Nazareth and addressing those gathered there.",
+        "sources": [
+          {
+            "label": "Luke 4:16–21 · WEB",
+            "reference": {
+              "bookId": "LUK",
+              "chapter": 4,
+              "verse": 16,
+              "editionId": "eng-web",
+              "endVerse": 21
+            }
+          }
+        ]
+      },
+      {
+        "label": "When and why?",
+        "text": "The scene is set on the Sabbath. The response and conflict continue after the reading, so include the rest of the episode.",
+        "sources": [
+          {
+            "label": "Luke 4:16–30 · WEB",
+            "reference": {
+              "bookId": "LUK",
+              "chapter": 4,
+              "verse": 16,
+              "editionId": "eng-web",
+              "endVerse": 30
+            }
+          }
+        ]
+      },
+      {
+        "label": "Authorship, date and political history",
+        "text": "Those historical questions require a separately reviewed introduction. This card describes the setting explicitly present in Luke’s narrative.",
+        "sources": [
+          {
+            "label": "Luke 1:1–4 · WEB",
+            "reference": {
+              "bookId": "LUK",
+              "chapter": 1,
+              "verse": 1,
+              "editionId": "eng-web",
+              "endVerse": 4
+            }
+          }
+        ]
+      }
+    ],
+    "prosperityGospelRisk": "none"
+  },
+  {
+    "id": "plain-discourse-setting",
+    "bookId": "LUK",
+    "fromChapter": 6,
+    "toChapter": 6,
+    "title": "A level place in Luke’s account",
+    "aiReviewStatus": "AI-assisted draft · human review pending",
+    "sources": [
+      {
+        "label": "Luke 6:17–20 · WEB",
+        "reference": {
+          "bookId": "LUK",
+          "chapter": 6,
+          "verse": 17,
+          "editionId": "eng-web",
+          "endVerse": 20
+        }
+      },
+      {
+        "label": "Luke 6:20–26 · WEB",
+        "reference": {
+          "bookId": "LUK",
+          "chapter": 6,
+          "verse": 20,
+          "editionId": "eng-web",
+          "endVerse": 26
+        }
+      },
+      {
+        "label": "Luke 1:1–4 · WEB",
+        "reference": {
+          "bookId": "LUK",
+          "chapter": 1,
+          "verse": 1,
+          "editionId": "eng-web",
+          "endVerse": 4
+        }
+      }
+    ],
+    "fields": [
+      {
+        "label": "Speaker and audience",
+        "text": "Jesus stands on a level place with disciples and a crowd from Judea, Jerusalem, Tyre and Sidon. He then directs his gaze toward his disciples.",
+        "sources": [
+          {
+            "label": "Luke 6:17–20 · WEB",
+            "reference": {
+              "bookId": "LUK",
+              "chapter": 6,
+              "verse": 17,
+              "editionId": "eng-web",
+              "endVerse": 20
+            }
+          }
+        ]
+      },
+      {
+        "label": "Why read the whole scene?",
+        "text": "The account contains blessings and woes before its further teaching. Compare Luke’s wording directly rather than combining it with Matthew into a new quotation.",
+        "sources": [
+          {
+            "label": "Luke 6:20–26 · WEB",
+            "reference": {
+              "bookId": "LUK",
+              "chapter": 6,
+              "verse": 20,
+              "editionId": "eng-web",
+              "endVerse": 26
+            }
+          }
+        ]
+      },
+      {
+        "label": "Authorship, date and political history",
+        "text": "No calendar year or complete authorship finding is established by this scene. Further historical research is pending.",
+        "sources": [
+          {
+            "label": "Luke 1:1–4 · WEB",
+            "reference": {
+              "bookId": "LUK",
+              "chapter": 1,
+              "verse": 1,
+              "editionId": "eng-web",
+              "endVerse": 4
+            }
+          }
+        ]
+      }
+    ],
+    "prosperityGospelRisk": "none"
+  }
+]

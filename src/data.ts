@@ -11,7 +11,14 @@ export function editionDataPath(editionId = 'eng-web', path = ''): string {
   return `${editionId === 'eng-web' ? 'data' : `data/editions/${editionId}`}/${path}`;
 }
 async function readJSON(path: string, message: string): Promise<unknown> {
-  const response = await fetch(assetUrl(path));
+  let response: Response;
+  try { response = await fetch(assetUrl(path)); }
+  catch (error) {
+    if (typeof navigator !== 'undefined' && !navigator.onLine) {
+      throw new Error(path.includes('/books/') ? "This chapter isn't cached yet. Reconnect to load it." : message);
+    }
+    throw error;
+  }
   if (!response.ok) throw new Error(message);
   return response.json();
 }

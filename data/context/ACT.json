@@ -1,0 +1,184 @@
+[
+  {
+    "id": "acts-opening-setting",
+    "bookId": "ACT",
+    "fromChapter": 1,
+    "toChapter": 1,
+    "title": "Acts: the opening setting",
+    "aiReviewStatus": "AI-assisted draft · human review pending",
+    "sources": [
+      {
+        "label": "Acts 1:1–2 · WEB",
+        "reference": {
+          "bookId": "ACT",
+          "chapter": 1,
+          "verse": 1,
+          "editionId": "eng-web",
+          "endVerse": 2
+        }
+      },
+      {
+        "label": "Acts 1:3–8 · WEB",
+        "reference": {
+          "bookId": "ACT",
+          "chapter": 1,
+          "verse": 3,
+          "editionId": "eng-web",
+          "endVerse": 8
+        }
+      },
+      {
+        "label": "Acts 1:6–8 · WEB",
+        "reference": {
+          "bookId": "ACT",
+          "chapter": 1,
+          "verse": 6,
+          "editionId": "eng-web",
+          "endVerse": 8
+        }
+      }
+    ],
+    "fields": [
+      {
+        "label": "Author and addressee in the text",
+        "text": "The narrator addresses Theophilus and refers to a previous account. These opening verses do not name the narrator.",
+        "sources": [
+          {
+            "label": "Acts 1:1–2 · WEB",
+            "reference": {
+              "bookId": "ACT",
+              "chapter": 1,
+              "verse": 1,
+              "editionId": "eng-web",
+              "endVerse": 2
+            }
+          }
+        ]
+      },
+      {
+        "label": "When and why?",
+        "text": "The narrative describes forty days after Jesus’ suffering and instruction concerning the Holy Spirit and witness.",
+        "sources": [
+          {
+            "label": "Acts 1:3–8 · WEB",
+            "reference": {
+              "bookId": "ACT",
+              "chapter": 1,
+              "verse": 3,
+              "editionId": "eng-web",
+              "endVerse": 8
+            }
+          }
+        ]
+      },
+      {
+        "label": "Political and cultural setting",
+        "text": "The disciples ask about restoration of the kingdom to Israel. Jesus’ response withholds the timing and names the geographical scope of witness.",
+        "sources": [
+          {
+            "label": "Acts 1:6–8 · WEB",
+            "reference": {
+              "bookId": "ACT",
+              "chapter": 1,
+              "verse": 6,
+              "editionId": "eng-web",
+              "endVerse": 8
+            }
+          }
+        ]
+      }
+    ],
+    "prosperityGospelRisk": "none"
+  },
+  {
+    "id": "acts-james-peter-setting",
+    "bookId": "ACT",
+    "fromChapter": 12,
+    "toChapter": 12,
+    "title": "James and Peter in Acts 12",
+    "aiReviewStatus": "AI-assisted draft · human review pending",
+    "sources": [
+      {
+        "label": "Acts 12:1–5 · WEB",
+        "reference": {
+          "bookId": "ACT",
+          "chapter": 12,
+          "verse": 1,
+          "editionId": "eng-web",
+          "endVerse": 5
+        }
+      },
+      {
+        "label": "Acts 12:3–4 · WEB",
+        "reference": {
+          "bookId": "ACT",
+          "chapter": 12,
+          "verse": 3,
+          "editionId": "eng-web",
+          "endVerse": 4
+        }
+      },
+      {
+        "label": "Acts 12:1–19 · WEB",
+        "reference": {
+          "bookId": "ACT",
+          "chapter": 12,
+          "verse": 1,
+          "editionId": "eng-web",
+          "endVerse": 19
+        }
+      }
+    ],
+    "fields": [
+      {
+        "label": "What the narrative reports",
+        "text": "Acts names King Herod, the killing of James the brother of John and the subsequent arrest of Peter.",
+        "sources": [
+          {
+            "label": "Acts 12:1–5 · WEB",
+            "reference": {
+              "bookId": "ACT",
+              "chapter": 12,
+              "verse": 1,
+              "editionId": "eng-web",
+              "endVerse": 5
+            }
+          }
+        ]
+      },
+      {
+        "label": "When?",
+        "text": "The narrative places Peter’s arrest during the days of unleavened bread. This card does not assign a modern calendar year.",
+        "sources": [
+          {
+            "label": "Acts 12:3–4 · WEB",
+            "reference": {
+              "bookId": "ACT",
+              "chapter": 12,
+              "verse": 3,
+              "editionId": "eng-web",
+              "endVerse": 4
+            }
+          }
+        ]
+      },
+      {
+        "label": "Source boundary",
+        "text": "This is the account in Acts. Later death traditions about Peter and other apostles need their own dated sources; they are not quotations from this chapter.",
+        "sources": [
+          {
+            "label": "Acts 12:1–19 · WEB",
+            "reference": {
+              "bookId": "ACT",
+              "chapter": 12,
+              "verse": 1,
+              "editionId": "eng-web",
+              "endVerse": 19
+            }
+          }
+        ]
+      }
+    ],
+    "prosperityGospelRisk": "none"
+  }
+]
