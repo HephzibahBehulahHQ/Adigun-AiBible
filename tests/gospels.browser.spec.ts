@@ -116,6 +116,44 @@ test('Study Tools and Law Diary open Gospel comparison without moving the origin
   await expect(page).toHaveURL(/#\/read\/JHN\/3\?verse=16&end=18&edition=yor$/);
 });
 
+test('mounted hash and history transitions derive the Gospel default from the current reader while respecting an explicit override', async ({ page }) => {
+  const yoruba = '#/gospels/JHN/3?verse=16&end=18&edition=yor';
+  const override = '&gospelGroup=sower&gospelEdition=deu1912&gospelBooks=MAT,MRK,LUK';
+  const linkedEdition = page.getByLabel('Edition for linked Gospel panes', { exact: true });
+  const workspace = page.locator('.gospel-workspace');
+  await page.goto(route); await sower(page);
+  await workspace.evaluate(element => element.setAttribute('data-test-mounted-workspace', 'original'));
+
+  // These are same-component hash updates, rather than fresh page loads or the tool's own selector.
+  await page.evaluate(hash => { location.hash = hash; }, yoruba);
+  await expect(linkedEdition).toHaveValue('yor'); await sower(page, 'yor');
+  await expect(page.locator('.gospel-return')).toContainText('John 3:16–18 · yor');
+  expect(new URL(page.url()).hash).toBe(yoruba);
+  await expect(workspace).toHaveAttribute('data-test-mounted-workspace', 'original');
+
+  await page.goBack(); await expect(linkedEdition).toHaveValue('eng-web'); await sower(page);
+  expect(new URL(page.url()).hash).toBe(route);
+  await expect(page.locator('.gospel-return')).toContainText('John 3:16–18 · eng-web');
+  await page.goForward(); await expect(linkedEdition).toHaveValue('yor'); await sower(page, 'yor');
+
+  await page.evaluate(hash => { location.hash = hash; }, yoruba + override);
+  await expect(linkedEdition).toHaveValue('deu1912'); await sower(page, 'deu1912');
+  await page.evaluate(hash => { location.hash = hash; }, route + override);
+  await expect(page.locator('.gospel-return')).toContainText('John 3:16–18 · eng-web');
+  await expect(linkedEdition).toHaveValue('deu1912'); await sower(page, 'deu1912');
+  await expect(workspace).toHaveAttribute('data-test-mounted-workspace', 'original');
+
+  await page.goBack(); await sower(page, 'deu1912');
+  expect(new URL(page.url()).hash).toBe(yoruba + override);
+  await expect(page.locator('.gospel-return')).toContainText('John 3:16–18 · yor');
+  await page.goBack(); await expect(linkedEdition).toHaveValue('yor'); await sower(page, 'yor');
+  expect(new URL(page.url()).hash).toBe(yoruba);
+  await page.goForward(); await expect(linkedEdition).toHaveValue('deu1912'); await sower(page, 'deu1912');
+  await expect(workspace).toHaveAttribute('data-test-mounted-workspace', 'original');
+  await page.getByRole('button', { name: 'Return to reader', exact: true }).click();
+  await expect(page).toHaveURL(/#\/read\/JHN\/3\?verse=16&end=18&edition=yor$/);
+});
+
 test('independent BSB numbering gaps stay intact beside linked German sources across reload and history', async ({ page }, testInfo) => {
   await page.goto(route); await sower(page);
   await independent(page, 'MAT', 'eng-bsb', 17, 20, 22);
