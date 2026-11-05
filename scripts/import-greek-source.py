@@ -136,7 +136,8 @@ def archive_members(data: bytes, prefix: str) -> dict[str, tuple[str, bytes]]:
 def read_archive(path: Path, upstream: dict, selected: list[dict]) -> dict[str, bytes]:
     if path.stat().st_size > MAX_ARCHIVE_BYTES:
         raise ValueError('Archive exceeds the compressed-byte bound')
-    data = path.read_bytes()
+    with path.open('rb') as handle:
+        data = handle.read(MAX_ARCHIVE_BYTES + 1)
     verify_bytes(data, {'bytes': upstream['archiveBytes'], 'sha256': upstream['archiveSha256']}, 'archive')
     files = archive_members(data, upstream['archivePrefix'])
     if git_tree(files) != upstream['tree']:
@@ -377,7 +378,9 @@ def main() -> None:
     license_path = acquire(args.annotation_license, license_pin['rawUrl'], license_pin, 'CC-BY-SA-3.0.txt')
     if license_path.stat().st_size > 100_000:
         raise ValueError('Annotation license exceeds its bounded size')
-    outputs = build(pins, pin_bytes, sources[0], sources[1], license_path.read_bytes())
+    with license_path.open('rb') as handle:
+        annotation_license = handle.read(100_001)
+    outputs = build(pins, pin_bytes, sources[0], sources[1], annotation_license)
     unexpected = {p.relative_to(DEST).as_posix() for p in DEST.rglob('*') if p.is_file()} - set(outputs) - {'source.json'}
     if unexpected:
         raise ValueError('Unexpected files in the generated corpus: ' + ', '.join(sorted(unexpected)))
