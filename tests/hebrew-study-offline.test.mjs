@@ -103,6 +103,8 @@ test('streamed source data enforces the exact pin before allocation and cancella
   const pin = pinFor('notices/LICENSE.md'); let cancelled = false;
   const oversized = new ReadableStream({ start(controller) { controller.enqueue(new Uint8Array(pin.bytes + 1)); }, cancel() { cancelled = true; } });
   await assert.rejects(() => verifiedSourceBytes(new Response(oversized), pin), /bounded byte length/); assert.equal(cancelled, true);
+  const cloned = new Response('x'.repeat(pin.bytes + 1)).clone();
+  await assert.rejects(() => verifiedSourceBytes(cloned, pin), /bounded byte length/);
   const abort = new AbortController(); let cancelPending;
   const pending = new ReadableStream({ cancel() { cancelPending = true; } });
   const request = verifiedSourceBytes(new Response(pending), pin, abort.signal); abort.abort();

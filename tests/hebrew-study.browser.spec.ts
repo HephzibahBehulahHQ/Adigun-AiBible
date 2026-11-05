@@ -131,11 +131,13 @@ test.describe('source network failure boundaries', () => {
     await page.unroute('**/data/original-language/oshb/books/Gen.json');
     await page.getByRole('button', { name: 'Retry Hebrew source', exact: true }).click();
     await expect(page.getByTestId('hebrew-source-reference')).toHaveText('OSHB Gen.1.1');
-    let release: () => void = () => undefined; const gate = new Promise<void>(resolve => { release = resolve; });
-    await page.route('**/data/original-language/oshb/books/Exod.json', async request => { await gate; await request.fulfill({ status: 200, contentType: 'application/json', body: readFileSync(new URL('books/Exod.json', root)) }).catch(() => undefined); });
+    let release: () => void = () => undefined, reportStarted: () => void = () => undefined, reportFinished: () => void = () => undefined;
+    const gate = new Promise<void>(resolve => { release = resolve; }), started = new Promise<void>(resolve => { reportStarted = resolve; }), finished = new Promise<void>(resolve => { reportFinished = resolve; });
+    await page.route('**/data/original-language/oshb/books/Exod.json', async request => { reportStarted(); await gate; await request.fulfill({ status: 200, contentType: 'application/json', body: readFileSync(new URL('books/Exod.json', root)) }).catch(() => undefined); reportFinished(); });
     await page.getByRole('combobox', { name: 'Source book', exact: true }).selectOption('Exod');
+    await started;
     await page.getByRole('combobox', { name: 'Source book', exact: true }).selectOption('Ruth');
-    await expect(page.getByTestId('hebrew-source-reference')).toHaveText('OSHB Ruth.1.1'); release();
+    await expect(page.getByTestId('hebrew-source-reference')).toHaveText('OSHB Ruth.1.1'); release(); await finished;
     await expect(page.getByTestId('hebrew-source-reference')).toHaveText('OSHB Ruth.1.1');
   });
 

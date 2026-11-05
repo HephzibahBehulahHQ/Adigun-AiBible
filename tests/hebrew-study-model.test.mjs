@@ -100,3 +100,26 @@ test('clearing or aborting a pending source load cannot repopulate the fulfilled
   loader.clear(); controller.abort(); release(); await assert.rejects(pending, { name: 'AbortError' }); assert.equal(loader.cachedBookCount, 0);
   await loader.loadBook('Gen'); assert.equal(loader.cachedBookCount, 1);
 });
+
+test('an old failed request cannot evict a newer successful request for the same pinned book', async () => {
+  let rejectOld, reportStarted, bookRequests = 0;
+  const old = new Promise((_resolve, reject) => { rejectOld = reject; }), started = new Promise(resolve => { reportStarted = resolve; });
+  const loader = new HebrewSourceLoader('https://example.test/app/', async url => {
+    const path = url.pathname.split('/oshb/')[1];
+    if (path === 'books/Gen.json' && ++bookRequests === 1) { reportStarted(); await old; }
+    return new Response(await bytes(path));
+  });
+  await loader.loadManifest(); const previous = loader.loadBook('Gen'); const failure = assert.rejects(previous, /older request failed/); await started;
+  const current = await loader.loadBook('Gen'); rejectOld(new Error('older request failed')); await failure;
+  assert.equal(loader.cachedBookCount, 1); assert.equal(await loader.loadBook('Gen'), current); assert.equal(bookRequests, 2);
+});
+
+test('clearing during a successful un-aborted request returns its result without retaining an obsolete cache entry', async () => {
+  let release, reportStarted;
+  const gate = new Promise(resolve => { release = resolve; }), started = new Promise(resolve => { reportStarted = resolve; });
+  const loader = new HebrewSourceLoader('https://example.test/app/', async url => {
+    const path = url.pathname.split('/oshb/')[1]; if (path.startsWith('books/')) { reportStarted(); await gate; } return new Response(await bytes(path));
+  });
+  await loader.loadManifest(); const previous = loader.loadBook('Gen'); await started; loader.clear(); release();
+  assert.equal((await previous).book, 'Gen'); assert.equal(loader.cachedBookCount, 0);
+});

@@ -120,8 +120,8 @@ export default function HebrewStudyWorkspace({ locale = 'en' }: { locale?: Local
   function cancelLoad() { loadAbort.current?.abort(); sequence.current++; setBook(null); setLoading(false); setError('Source loading cancelled. Retry to open the selected source book.'); }
   const title = locale === 'yo' ? 'Ìkẹ́kọ̀ọ́ orísun Hébérù àti Árámáíkì' : locale === 'de' ? 'Hebräische und aramäische Quellentexte' : 'Hebrew and Aramaic source study';
   const verseIndex = chapterDescriptor?.verseNumbers.indexOf(verseNumber) ?? -1;
-  return <div className="hebrew-workspace">
-    <header className="panel"><p className="eyebrow">Open Scriptures Hebrew Bible</p><h1>{title}</h1>
+  return <div className="page tool-page hebrew-workspace" lang="en">
+    <header className="panel"><p className="eyebrow">Open Scriptures Hebrew Bible</p><h1 lang={locale === 'pcm' ? 'en' : locale}>{title}</h1>
       <p>Explore the supplied Hebrew and Aramaic words, exact lemma fields, morphology annotations and reading alternatives in 39 source books.</p>
       <p className="muted">This workspace uses its own source numbering and selection. Your Bible reading context stays separate; a source verse is not automatically aligned with a translated verse. Source descriptions and technical controls are currently in English.</p>
     </header>
@@ -148,7 +148,7 @@ export default function HebrewStudyWorkspace({ locale = 'en' }: { locale?: Local
       </section>
       <section className="panel" aria-labelledby="hebrew-inspector-title"><h2 id="hebrew-inspector-title" ref={inspector} tabIndex={-1}>Source word details</h2>
         {displayedSelection ? <>
-          <p className="hebrew-selected-word" dir="rtl" data-testid="hebrew-selected-word"><SourceNodes content={displayedSelection.word.content} selectedId="" onWord={inspectWord} /></p>
+          <p className="hebrew-selected-word" dir="rtl" lang={displayedSelection.word.attributes.morph.startsWith('A') ? 'arc' : 'he'} data-testid="hebrew-selected-word"><SourceNodes content={displayedSelection.word.content} selectedId="" onWord={inspectWord} /></p>
           <p>{displayedSelection.alternative ? 'This word belongs to a source reading alternative, separately from the main text.' : 'This word belongs to the main source text.'}</p>
           <dl className="hebrew-word-details">{(['id','lemma','morph','n','type'] as const).map(field => <Fragment key={field}><dt>{field === 'id' ? 'Original word ID' : field === 'lemma' ? 'Supplied lemma field' : field === 'morph' ? 'Raw morphology code' : `Source attribute ${field}`}</dt><dd><code>{displayedSelection.word.attributes[field] ?? 'Not supplied'}</code></dd></Fragment>)}</dl>
           <h3>Supplied morphology description</h3>
