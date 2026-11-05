@@ -42,6 +42,8 @@ Restore keeps the existing per-record conflict choice: keep device records or us
 
 The 5 November release repair gives the writing field a separate native label association. Current CI failure snapshots confirmed the draft value and disabled state remained intact; exact implicit-label lookup had included the textarea's controlled content. The offline corruption check is scoped to the backup section so its integrity error can coexist with a legitimate uncached-source warning. Recovery, byte identity, unchanged-device-inventory and pending-transaction assertions remain unchanged. Current-candidate browser execution and screenshot inspection are required before release.
 
+The subsequent complete run passed 290/292 browser cases; its remaining offline deletion check read the inventory immediately after an asynchronous click handler. It now awaits the precise deletion-complete notice, which follows IndexedDB transaction completion, and disappearance of the original link. Empty audio and retelling inventories are required before and after reload. This strengthens transaction/persistence verification without adding arbitrary delays or changing product behavior.
+
 Focused checks cover legacy migration of all five private collections and their histories; exact source identity; invalid MIME/signatures, sizes and hashes; complete and multi-megabyte backup roundtrips; duplicate/missing/orphan/tampered imports; two-store transaction completion and rollback; concurrent writes; recording/card/workspace deletion and Undo; explicit restore conflicts; consent, denied/pending permissions, time/byte limits, device interruptions and cancellation/unmount races. Existing written-retelling, workspace and family regressions are included in the focused command:
 
 ```sh

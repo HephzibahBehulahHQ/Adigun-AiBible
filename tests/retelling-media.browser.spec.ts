@@ -167,7 +167,11 @@ test('real original audio survives offline reload, complete backup, restore, car
     await page.getByRole('button',{name:'Delete personal workspace records',exact:true}).click();await page.getByRole('button',{name:'Confirm workspace deletion',exact:true}).click();await expect(page.getByRole('heading',{name:'Practice this passage',exact:true})).toHaveCount(0);expect((await deviceInventory(page)).media).toEqual([]);
     await page.getByLabel('Preview workspace backup',{exact:true}).setInputFiles({name:'complete.json',mimeType:'application/json',buffer:backup});await expect(page.getByRole('region',{name:'Import preview',exact:true})).toContainText('1 verified original recording');await page.getByRole('button',{name:'Import previewed records',exact:true}).click();await expect(page.getByRole('heading',{name:'Practice this passage',exact:true})).toBeVisible();
     await page.getByRole('button',{name:'Write a retelling',exact:true}).click();await history(page);expect(await originalBytes(page)).toEqual(original);await expect(page.getByText('Offline manual transcript with àánú.',{exact:true})).toBeVisible();expect(await page.evaluate(()=>localStorage.getItem('unrelated-retelling-fixture'))).toBe('retain');
-    await page.getByRole('button',{name:/^Delete retelling from /}).click();expect((await deviceInventory(page)).media).toEqual([]);await page.reload();expect((await deviceInventory(page)).media).toEqual([]);
+    await page.getByRole('button',{name:/^Delete retelling from /}).click();
+    await expect(page.getByText('Retelling deleted. Undo last change can restore it.',{exact:true})).toBeVisible();
+    await expect(page.getByRole('link',{name:'Download original recording',exact:true})).toHaveCount(0);
+    const deleted=await deviceInventory(page);expect(deleted.media).toEqual([]);expect(deleted.state.cards[0].retellings).toEqual([]);
+    await page.reload();const reloaded=await deviceInventory(page);expect(reloaded.media).toEqual([]);expect(reloaded.state.cards[0].retellings).toEqual([]);
   }finally{await context.setOffline(false);}
 });
 
