@@ -38,6 +38,7 @@ import ToolDirectory from './ToolDirectory';
 const FamilyArchive = lazy(() => import('./family/FamilyArchive'));
 const AudioReader = lazy(() => import('./audio/AudioReader'));
 const SupportResources = lazy(() => import('./SupportResources'));
+const LawDiary = lazy(() => import('./LawDiary'));
 const MultiPassageCards = lazy(() => import('./sharing/MultiPassageCards'));
 import SourceChapter from './reader/SourceChapter';
 import ReadingSession from './reading-session/ReadingSession';
@@ -50,7 +51,7 @@ import { validateLayoutSources } from './reader-layouts/sources';
 
 const defaultPrefs: Preferences = { locale:'en',preset:'genz',theme:'observatory',fontSize:20,lineHeight:1.8,focus:false };
 function initialPrefs(): Preferences { try { const p = JSON.parse(localStorage.getItem('adigun-bible-preferences') || '{}') as Partial<Preferences>; return { locale: ['en','de','yo','pcm'].includes(p.locale || '') ? p.locale! : 'en', preset:['genz','en','de','yo','pcm'].includes(p.preset || '') ? p.preset! : 'genz', theme:['observatory','light','parchment','night','retro'].includes(p.theme || '') ? p.theme! : 'observatory', fontSize:typeof p.fontSize === 'number' ? Math.min(28,Math.max(16,p.fontSize)) : 20, lineHeight:typeof p.lineHeight === 'number' ? Math.min(2.2,Math.max(1.5,p.lineHeight)) : 1.8,focus:p.focus === true }; } catch { return defaultPrefs; } }
-function routeState() { const [path, query] = location.hash.slice(1).split('?'); const pieces = (path || '/home').split('/').filter(Boolean); const view = (['home','read','compare','discover','plans','saved','questions','library','sources','settings','share','atlas','study','evidence','editions','projection','tools','family','audio','drop','support'].includes(pieces[0]) ? pieces[0] : 'home') as View; const q = new URLSearchParams(query); return { view, ref:{ bookId:pieces[1] || 'GEN',chapter:Number(pieces[2] || 1),verse:Number(q.get('verse') || 1),...(q.get('end') ? { endVerse:Number(q.get('end')) } : {}), ...(q.get('edition') ? {editionId:q.get('edition')!} : {}) } as Reference }; }
+function routeState() { const [path, query] = location.hash.slice(1).split('?'); const pieces = (path || '/home').split('/').filter(Boolean); const view = (['home','read','compare','discover','plans','saved','questions','library','sources','settings','share','atlas','study','evidence','editions','projection','tools','family','audio','drop','support','law-diary'].includes(pieces[0]) ? pieces[0] : 'home') as View; const q = new URLSearchParams(query); return { view, ref:{ bookId:pieces[1] || 'GEN',chapter:Number(pieces[2] || 1),verse:Number(q.get('verse') || 1),...(q.get('end') ? { endVerse:Number(q.get('end')) } : {}), ...(q.get('edition') ? {editionId:q.get('edition')!} : {}) } as Reference }; }
 function savedReference(r:Reference):Reference {return {...r,editionId:r.editionId||'eng-web'};}
 function referenceLabel(r: Reference, manifest: Manifest | null) { return `${manifest?.books.find(b => b.id === r.bookId)?.name || r.bookId} ${r.chapter}:${r.verse}${r.endVerse && r.endVerse !== r.verse ? `–${r.endVerse}` : ''}`; }
 function bibleDownloadPaths(manifest:Manifest, bookId:string, all:boolean) {
@@ -314,6 +315,7 @@ export default function App() {
         {route.view==='family'&&<FamilyArchive reference={current} onOpenReference={openPassage}/>}
         {route.view==='audio'&&<AudioReader reference={current} onOpenReference={openPassage}/>}
         {route.view==='support'&&<SupportResources/>}
+        {route.view==='law-diary'&&<LawDiary/>}
         {route.view==='drop'&&<div className="page"><VerseDrop editionId={activeEditionId} onOpen={openPassage} onSave={toggleBookmark} onShare={ref=>navigate('share',ref)}/></div>}
       </Suspense>
       {route.view==='discover'&&<div className="page"><div className="page-heading"><span className="eyebrow">MEET THE MOMENT</span><h1>A place to begin.</h1><p>Choose a theme, open a passage, and read its full context. Your selection is not stored as a mood history.</p></div><Suspense fallback={<p role="status">Opening Verse Drop…</p>}><VerseDrop editionId={activeEditionId} onOpen={openPassage} onSave={toggleBookmark} onShare={ref=>navigate('share',ref)}/></Suspense><div className="mood-grid full">{moods.map(m=><button key={m.id} className={`mood-card ${m.id===mood?'selected':''}`} onClick={()=>setMood(m.id)}><span className="mood-symbol">{m.symbol}</span><span>{m.name}</span></button>)}</div><div className="section-title"><h2>Reading for {currentMood.name.toLowerCase()} moments</h2><span className="tiny-tag">SCRIPTURE SELECTIONS</span></div><p className="muted small">Thematic selections are editorial suggestions awaiting independent review. The displayed passages are unchanged source Scripture, not a diagnosis or promise of relief.</p><div className="passage-grid">{currentMood.refs.map(r=><PassagePreview key={refKey(r)} passage={r} manifest={manifest} onOpen={openPassage}/>)}</div></div>}
