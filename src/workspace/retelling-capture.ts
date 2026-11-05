@@ -24,7 +24,10 @@ export class RetellingCapture {
   private disposed = false;
   private session: Session | null = null;
   private state: CaptureState = { phase:'idle', elapsedMs:0, status:'', error:false };
-  constructor(private changed:(state:CaptureState) => void, private ready:(draft:RetellingDraft) => void, private env:CaptureEnvironment = browserEnvironment) {}
+  private changed:(state:CaptureState) => void;
+  private ready:(draft:RetellingDraft) => void;
+  private env:CaptureEnvironment;
+  constructor(changed:(state:CaptureState) => void, ready:(draft:RetellingDraft) => void, env:CaptureEnvironment = browserEnvironment) { this.changed = changed; this.ready = ready; this.env = env; }
   private publish(change:Partial<CaptureState>) { this.state = { ...this.state,...change }; if (!this.disposed) this.changed(this.state); }
   private release(current:Session) {
     if (current.timer !== undefined) this.env.cancelEvery(current.timer);

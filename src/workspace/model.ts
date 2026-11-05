@@ -99,7 +99,7 @@ export function previewImport(current: WorkspaceState, raw: string): ImportPrevi
   if (new TextEncoder().encode(raw).byteLength > MAX_BACKUP_BYTES) throw new Error('Workspace text backups must be 12 MB or smaller.');
   let value: unknown; try { value = JSON.parse(raw); } catch { throw new Error('This file is not valid JSON.'); }
   const r = record(value, 'workspace backup');
-  if (r.format !== 'adigun-aibible-workspace' || ![1,2].includes(Number(r.schemaVersion))) throw new Error('Choose an Adigun personal-workspace backup. The reader backup is imported in Saved study.');
+  if (r.format !== 'adigun-aibible-workspace' || (r.schemaVersion !== 1 && r.schemaVersion !== 2)) throw new Error('Choose an Adigun personal-workspace backup. The reader backup is imported in Saved study.');
   const incoming = validateWorkspace(r.state);
   if (workspaceRecordings(incoming).length || (Array.isArray(r.media) && r.media.length)) throw new Error('Use the complete audio-backup importer for recording attachments.');
   return summarizeWorkspaceImport(current, incoming);

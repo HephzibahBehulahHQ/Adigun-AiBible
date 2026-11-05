@@ -17,13 +17,13 @@ export default function RetellingEditor({ card, source, busy, commit, onRecordin
   const [open,setOpen] = useState(false); const [editing,setEditing] = useState<number | null>(null); const [transcript,setTranscript] = useState('');
   const baseline = useRef(JSON.stringify(card.retellings));
   const [,refresh] = useState(0);
-  const sourceBinding = useMemo(() => source ? { ref:explicitReference(card.ref),editionSha256:source.edition.sha256 } : null,[card.ref,source]);
+  const sourceBinding = useMemo(() => source?.edition.sha256 && /^[a-f0-9]{64}$/.test(source.edition.sha256) ? { ref:explicitReference(card.ref),editionSha256:source.edition.sha256 } : null,[card.ref,source]);
   const preview = useMemo<RetellingMedia | undefined>(() => { if (!draft) return undefined; const { blob,...metadata } = draft; return { recording:{ id:'unsaved-preview',...metadata },blob }; },[draft]);
   const dirty = !!text || !!draft || (editing !== null && transcript !== (card.retellings[editing]?.text || ''));
   useRetellingGuard(dirty,active,busy);
   const callback = useRef(onRecordingChange); callback.current = onRecordingChange;
   useEffect(() => () => callback.current(false),[]);
-  useEffect(() => { if (!dirty && !active) baseline.current = JSON.stringify(card.retellings); },[card.retellings,dirty,active]);
+  useEffect(() => { if (!dirty && !active && editing === null) baseline.current = JSON.stringify(card.retellings); },[card.retellings,dirty,active,editing]);
 
   async function changeHistory(change:(items:MemoryRetelling[]) => MemoryRetelling[], media:RetellingMedia[] = []) {
     let next:MemoryRetelling[] = [];
