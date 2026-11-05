@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="haiola.css" type="text/css" />
+<meta name="viewport" content="initial-scale=1, width=device-width"/>
+<title>About vie1934_vpl</title>
+</head>
+<body class="mainDoc"
+<p>This archive contains BIBLE TEXT ONLY. All formatting, paragraph breaks, notes, introductions, noncanonical section titles, etc., have been removed. The file ending "_vpl.txt" is designed for import into BibleWorks and similar Bible study programs. The file ending "_vpl.xml" contains the same information, but is in XML format and uses standard SIL/UBS book abbreviations.
+The file ending "_vpl.sql" contains the same information formatted to create a SQL data table.</p>
+<p>Check for updates and other Bible translations in this format at <a href='https:\\eBible.org\Scriptures\'>http:\\eBible.org\Scriptures\</a></p>
+<hr />
+<h1 class='dejavu_serif'>Kinh Thánh</h1>
+<h2>The Holy Bible in the Vietnamese language (1923)</h2>
+<p><a href='http://en.wikipedia.org/wiki/Public_domain'>Public Domain</a><br />
+Language: <a href='http://www.ethnologue.org/language/vie' class='dejavu_serif' target='_blank'>Tiếng Việt (Vietnamese)</a><br />
+Translation by: William Cadman (1883-1948)<br />
+Contributor: Christian and Missionary Alliance<br />
+<br />
+This free Bible is provided to you courtesy of <a href="https://eBible.org">eBible.org</a>.<br />
+NT first published 1923, OT first published 1925. The New Testament permanently and irrevocably entered the Public Domain on January 1, 2019 due to copyright expiration. The Old Testament entered the Public Domain on January 1, 2021. It was probably already in the Public Domain due to failure to comply with formalities earlier.</p>
+<p><br/>2022-06-09</p>
+
+</body></html>
