@@ -18,6 +18,15 @@ export default function GospelDownloads({ selection }: { selection: GospelSelect
     window.addEventListener('adigun:before-update', guard);
     return () => { generation.current++; controller.current?.abort(); controller.current = null; window.removeEventListener('adigun:before-update', guard); };
   }, [key]);
+  function cancel() {
+    const active = controller.current;
+    if (!active) return;
+    generation.current++;
+    controller.current = null;
+    active.abort();
+    setBusy(false); setStatus('');
+    setError('Gospel download cancelled. Existing complete downloads are retained.');
+  }
   async function download() {
     if (controller.current) return;
     const token = generation.current, abort = new AbortController(); controller.current = abort;
@@ -48,5 +57,5 @@ export default function GospelDownloads({ selection }: { selection: GospelSelect
       if (generation.current === token) { controller.current = null; setBusy(false); }
     }
   }
-  return <details className="panel gospel-downloads"><summary>Offline Gospel reading</summary><p>Download the books used by these panes with their edition details, permissions and included source notices. The comparison link retains your ranges; no private notebook is included. Changing a pane cancels an unfinished download.</p><div className="button-row"><button className="secondary" disabled={busy} onClick={() => void download()}>Download or verify these Gospel books</button>{busy && <button className="secondary" onClick={() => controller.current?.abort()}>Cancel Gospel download</button>}</div>{status && <p role="status">{status}</p>}{error && <p role="alert">{error}</p>}</details>;
+  return <details className="panel gospel-downloads"><summary>Offline Gospel reading</summary><p>Download the books used by these panes with their edition details, permissions and included source notices. The comparison link retains your ranges; no private notebook is included. Changing a pane cancels an unfinished download.</p><div className="button-row"><button className="secondary" disabled={busy} onClick={() => void download()}>Download or verify these Gospel books</button>{busy && <button className="secondary" onClick={cancel}>Cancel Gospel download</button>}</div>{status && <p role="status">{status}</p>}{error && <p role="alert">{error}</p>}</details>;
 }

@@ -12,14 +12,27 @@ export interface GospelExcerpt {
   verses: Verse[]; gaps: { number: number; reason: 'absent' | 'empty' }[]; context: Verse[]; attribution: string;
 }
 const hashPattern = /^[a-f0-9]{64}$/;
+function httpsSource(value: unknown): void {
+  if (typeof value !== 'string' || !/^https:\/\//i.test(value) || [...value].some(character => character.charCodeAt(0) <= 32 || character.charCodeAt(0) === 127)) throw new Error('Source and permission links must be safe HTTPS URLs.');
+  let url: URL;
+  try { url = new URL(value); } catch { throw new Error('A source or permission URL is invalid.'); }
+  if (url.protocol !== 'https:' || !url.hostname || url.username || url.password) throw new Error('Source and permission links cannot contain credentials or unsafe protocols.');
+}
 function sourceMetadata(reference: GospelReference, manifest: Manifest, expectedSha256?: string): number {
   const edition = manifest?.edition;
   if (manifest?.schemaVersion !== 1 || !edition || edition.id !== reference.editionId || (edition.corpus !== undefined && edition.corpus !== 'bible')) throw new Error('The Gospel source does not match the selected Bible edition. No replacement text was loaded.');
   if (!edition.sha256 || !hashPattern.test(edition.sha256) || (expectedSha256 !== undefined && (!hashPattern.test(expectedSha256) || edition.sha256 !== expectedSha256))) throw new Error('The exact Gospel source revision is unavailable or has changed. No newer wording was substituted.');
   if (typeof edition.name !== 'string' || !edition.name.trim() || typeof edition.license !== 'string' || !edition.license.trim()
     || typeof edition.sourceUrl !== 'string' || !edition.sourceUrl.trim() || typeof edition.licenseUrl !== 'string' || !edition.licenseUrl.trim()) throw new Error('This source edition is missing its identity or required attribution.');
-  const descriptors = manifest.books?.filter(value => value.id === reference.bookId);
-  if (!descriptors || descriptors.length !== 1) throw new Error('This Gospel book is absent from the selected edition or its inventory is invalid.');
+  httpsSource(edition.sourceUrl); httpsSource(edition.licenseUrl);
+  if (edition.licenseDeedUrl !== undefined) httpsSource(edition.licenseDeedUrl);
+  if (edition.noticePath !== undefined && (typeof edition.noticePath !== 'string' || !/^[A-Za-z0-9][A-Za-z0-9._/-]*$/.test(edition.noticePath)
+    || edition.noticePath.split('/').some(part => !part || part === '.' || part === '..'))) throw new Error('The publisher notice path is outside the permitted source directory.');
+  if (edition.attribution !== undefined && (typeof edition.attribution !== 'string' || !edition.attribution.trim())) throw new Error('The edition attribution is invalid.');
+  if (edition.conditions !== undefined && (!Array.isArray(edition.conditions) || edition.conditions.some(value => typeof value !== 'string' || !value.trim()))) throw new Error('The edition conditions are invalid.');
+  if (!Array.isArray(manifest.books)) throw new Error('This edition has no valid Gospel source inventory.');
+  const descriptors = manifest.books.filter(value => value && value.id === reference.bookId);
+  if (descriptors.length !== 1 || typeof descriptors[0].name !== 'string' || !descriptors[0].name.trim()) throw new Error('This Gospel book is absent from the selected edition or its inventory is invalid.');
   const descriptor = descriptors[0];
   if (!Number.isSafeInteger(descriptor.chapters) || !Array.isArray(descriptor.verseCounts) || descriptor.verseCounts.length !== descriptor.chapters
     || reference.chapter > descriptor.chapters) throw new Error('This Gospel chapter is absent from the selected edition.');
@@ -31,8 +44,8 @@ function sourceMetadata(reference: GospelReference, manifest: Manifest, expected
 /** Keep source records and ordering intact; missing wording is evidence, never repaired text. */
 export function extractGospelExcerpt(value: GospelReference, manifest: Manifest, book: Book): GospelExcerpt {
   const reference = validateGospelReference(value), maximum = sourceMetadata(reference, manifest);
-  if (!book || book.id !== reference.bookId || typeof book.name !== 'string' || !book.name.trim() || !Array.isArray(book.chapters)) throw new Error('The loaded Gospel book does not match the requested source.');
-  const chapters = book.chapters.filter(value => value.number === reference.chapter);
+  if (!book || book.id !== reference.bookId || book.name !== manifest.books.find(value => value.id === reference.bookId)!.name || !Array.isArray(book.chapters)) throw new Error('The loaded Gospel book does not match the requested source.');
+  const chapters = book.chapters.filter(value => value && value.number === reference.chapter);
   if (chapters.length !== 1 || !Array.isArray(chapters[0].verses)) throw new Error('The requested source chapter is unavailable or duplicated.');
   const chapter = chapters[0]; let previous = 0;
   for (const verse of chapter.verses) {
