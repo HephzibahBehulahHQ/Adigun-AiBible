@@ -1,0 +1,31 @@
+.bi-page { max-width: 1200px; min-width: 0; }
+.bi-page .panel, .bi-page fieldset, .bi-page section, .bi-page article { min-width: 0; }
+.bi-page p, .bi-page li, .bi-page a, .bi-page summary, .bi-page legend { overflow-wrap: anywhere; }
+.bi-page h2:focus-visible, .bi-page summary:focus-visible { outline: 2px solid var(--gold, #d4af37); outline-offset: 5px; }
+.bi-page details { margin: 14px 0; }
+.bi-page summary { cursor: pointer; font-weight: 650; padding: 8px 0; }
+.bi-page label { display: block; margin: 12px 0 7px; font-weight: 650; }
+.bi-page textarea, .bi-page select, .bi-page input[type=file] { width: 100%; max-width: 100%; min-width: 0; box-sizing: border-box; }
+.bi-page textarea { resize: vertical; min-height: 120px; line-height: 1.65; }
+.bi-page textarea[readonly] { opacity: .86; }
+.bi-page fieldset { padding: 20px; margin: 20px 0; }
+.bi-page legend { padding: 0 8px; font-weight: 700; }
+.bi-workspace-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin: 16px 0; }
+.bi-page button { white-space: normal; overflow-wrap: anywhere; }
+.bi-readings { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin: 18px 0; align-items: start; }
+.bi-reading blockquote { margin: 16px 0; border-inline-start: 3px solid var(--gold, #d4af37); padding-inline-start: 15px; }
+.bi-reading blockquote p { font-family: Georgia, serif; line-height: 1.8; }
+.bi-page .bi-support, .bi-attribution, .bi-history { border-top: 1px solid var(--border, #465164); padding-top: 12px; margin-top: 16px; }
+.bi-credit, .bi-private-text { white-space: pre-wrap; overflow-wrap: anywhere; }
+.bi-hash { font-size: .78rem; overflow-wrap: anywhere; }
+.bi-saved-list { list-style: none; padding: 0; }
+.bi-saved-list li { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 12px 0; }
+.bi-saved-list li > button:first-child { text-align: start; display: flex; flex-direction: column; align-items: flex-start; gap: 5px; min-width: 0; flex: 1 1 240px; }
+.bi-saved-list small { font-weight: 400; }
+.bi-scripture sup, .bi-support-passage sup { font-size: .73em; margin-inline-end: 6px; }
+.bi-page .bi-notebook { margin-top: 30px; }
+@media (max-width: 700px) {
+  .bi-readings { grid-template-columns: minmax(0, 1fr); }
+  .bi-page fieldset { padding: 14px; }
+  .bi-workspace-actions > button { max-width: 100%; }
+}
