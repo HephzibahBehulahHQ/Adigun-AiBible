@@ -1,10 +1,10 @@
 # Next complete-edition batch
 
-This bounded acquisition assessment starts from the 26 installed Bible editions at `8144bc6ca53d6cc157c3403818ae2fbcb38a139c`. The goal is up to twelve additional authentic editions; a provider inventory label does not establish source identity, completeness or permission. The Quran and original-language study corpora remain separate.
+This bounded admission batch starts from the 26 installed Bible editions at `8144bc6ca53d6cc157c3403818ae2fbcb38a139c`. Three sources meet the present identity, rights and coverage contract; a provider inventory label does not establish source identity, completeness or permission. The Quran and original-language study corpora remain separate.
 
-## Current shortlist
+## Admitted source identities
 
-Admission is being completed for the following sources. This assessment checkpoint does not yet claim their generated output or release checks passed.
+The pinned generated outputs for these three sources are integrated on an isolated continuation of repaired PR #31. Source validation, application gates and deployment remain distinct; no human editorial or native-language approval is implied.
 
 | Provider | Exact identity | Source records | Rights evidence |
 | --- | --- | ---: | --- |
@@ -14,7 +14,7 @@ Admission is being completed for the following sources. This assessment checkpoi
 
 All three archives contain the canonical 66 source book IDs in order and 1,189 chapter sections. French Darby contains three empty source records and Tandroy six; no words are invented for them. French Darby uses the publisher's Hebrew-based verse numbering. Its 2024/v2.0 identity is corroborated by [BPC's revision history](https://ftp.editeurbpc.com/telechargements/JND); it is not labeled an untouched 1885 edition.
 
-French Darby XML/TXT differences consist of 4,030 exact square-bracket cases. Simple Spanish has exact XML/TXT agreement. Tandroy has ten bracket-only cases and seven XML-only terminal U+00A0 characters before omitted footnotes. The primary Tandroy USFM archive independently contains those separators immediately before footnote markers. A bounded, coordinate/hash/offset-pinned comparison exception is being verified; display text remains the complete original TXT, without Unicode trimming or wording repair.
+French Darby XML/TXT differences consist of 4,030 exact square-bracket cases. Simple Spanish has exact XML/TXT agreement. Tandroy has ten bracket-only cases and seven XML-only terminal U+00A0 characters before omitted footnotes. The primary Tandroy USFM archive independently contains those separators immediately before footnote markers. A bounded, coordinate/hash/offset-pinned comparison exception is covered by adversarial regression checks; display text remains the complete original TXT, without Unicode trimming or wording repair.
 
 ## Exclusions found through direct inspection
 
@@ -41,4 +41,16 @@ Earlier `ita1927`, `pesOPV`, `kor` and Biblica Hausa/Igbo deferrals remain uncha
 
 Only pinned source text and its notices may be imported. Text rights, third-party recordings, source annotations, publisher draft status, AI operations and human editorial approval remain separate. Public-domain claims remain attributed provider declarations with the existing territorial qualifications; this task does not certify worldwide legal clearance.
 
-The parent integration owns source delivery, publisher speaker inventory, frontend rendering and release CI. This branch owns the importer, new edition files, catalog/rights/acquisition metadata and focused source tests. Final reproduction commands, generated hashes and test receipts will be recorded here when the admission checks finish.
+The isolated continuation owns the three admitted sources, publisher inventory regeneration, exact conditions in the catalog/notebook, and focused source/browser checks. The primary integration owner owns the combined final release, dependency repair, required CI, merge and deployed receipt.
+
+The batch contains 29 installed Bible editions, 26 beyond the original three-edition baseline, and 18 source languages. There are 19 exact language tags because Spanish and Latin American Spanish remain separate filters; regional/script variants do not count as extra source languages. Quran, Hebrew/Aramaic and Greek study corpora remain separate.
+
+## Verification receipts
+
+- `node scripts/generate-publisher-coverage.mjs` regenerated all 29 exact-source inventories with 2,302 publisher-marked spans. Publisher metadata is not an independent editorial approval.
+- `node --test tests/next-editions.test.mjs`: nine checks passed, including the five Python adversarial cases in `tests/next_edition_checks.py`. These cover all 93,353 records, every generated artifact pin, source/acquisition/publisher identities, complete gap and empty-record inventories, revision-bound permissions, retained conditions in actual notebook output, and narrow formatting exceptions.
+- `playwright test tests/next-editions.browser.spec.ts --list` contributes 22 desktop/mobile cases: source selection and exact ranges; 18-language reporting and regional filters; French source numbering; blank/missing records; visible Tandroy draft/license terms; actual notebook downloads; and each source plus its exact notice across genuine offline document reload and unavailable-book behavior. Browser execution is NOT TESTED locally because Chromium is unavailable; the integration owner must run these cases with the repaired Playwright dependency before release.
+- The combined focused group passed **38 tests**, zero failures/skips: next editions, prior classical batch, notebook, rights, extended coverage and shared source transport. TypeScript and scoped ESLint passed.
+- Reproduced every artifact of all three admissions from the existing cached SHA-pinned archives using `python -B scripts/import-editions.py --source-dir /workspace/scratch/4c9fbfa89fd1/edition-source-cache --edition fra-darby2024 --edition spa-simple2026 --edition tdx-tandroy --check`. The cache directory contains aliases to already acquired archives, not fresh downloads. All generated output comparisons and the importer’s full installed-source validation passed. `npm run content:validate` also passed.
+- `ADIGUN_SOURCE_TRANSPORT=gzip-base64-v1 npm run build` passed on the working candidate. Final artifact verification accepted **1,943 envelopes**, preserving **376,983,453 exact canonical bytes** in **117,215,180 transferred bytes**. The offline inventory contains **3,309 paths / 536,723 bytes**, within the existing 16,384-path / 4 MiB bounds. No source staging directory was published. This working-tree build is not a deployed receipt.
+- The complete browser suite collects **290 cases across 42 files**, including the 22 new cases. Actual browser execution and narrow-screen screenshot inspection remain release gates on the integration owner’s final combined revision.
