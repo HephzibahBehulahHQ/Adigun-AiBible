@@ -1,0 +1,25 @@
+.extended-coverage { min-width: 0; margin-block: 2rem; }
+.extended-coverage-heading { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: space-between; }
+.extended-coverage-heading > div { flex: 1 1 24rem; min-width: 0; }
+.extended-coverage-heading button { flex: 0 1 auto; }
+.extended-coverage-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; align-items: start; }
+.extended-coverage-grid .panel { margin: 0; height: 100%; box-sizing: border-box; }
+.extended-coverage h3 { overflow-wrap: anywhere; }
+.extended-coverage dl { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,10rem),1fr)); gap: .8rem; margin-block: 1rem; }
+.extended-coverage dl > div { min-width: 0; }
+.extended-coverage dt { font-size: .85rem; color: var(--muted); }
+.extended-coverage dd { font-size: clamp(1.4rem,4vw,2rem); font-weight: 700; margin: .25rem 0 0; overflow-wrap: anywhere; }
+.extended-coverage a,.extended-coverage p,.extended-coverage li,.extended-coverage small { overflow-wrap: anywhere; }
+.extended-coverage details { margin-block: .8rem; }
+.extended-coverage summary { cursor: pointer; font-weight: 650; }
+.extended-coverage li { margin-block: .65rem; }
+.extended-coverage small { display: block; margin-top: .3rem; }
+.extended-coverage ul { padding-inline-start: 1.2rem; }
+.extended-coverage-hash { font-size: .8rem; font-family: ui-monospace,monospace; overflow-wrap: anywhere; }
+.extended-coverage-unknown { border-inline-start: 3px solid var(--gold,#caa96a); padding-inline-start: .7rem; }
+.extended-offline-list { list-style: none; padding: 0 !important; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .7rem; }
+.extended-offline-list li { border: 1px solid var(--border); padding: .8rem; border-radius: .65rem; margin: 0; min-width: 0; }
+.extended-offline-list strong { display: block; }
+.extended-pack-state { display: inline-block; margin-block: .5rem; padding: .15rem .5rem; border: 1px solid currentColor; border-radius: 1rem; font-size: .8rem; text-transform: capitalize; }
+.extended-offline .button-row { flex-wrap: wrap; }
+@media (max-width: 720px) { .extended-coverage-grid,.extended-offline-list { grid-template-columns: minmax(0,1fr); } .extended-coverage-heading button { width: 100%; } }
