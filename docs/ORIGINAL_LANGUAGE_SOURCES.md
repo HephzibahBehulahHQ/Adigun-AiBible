@@ -19,10 +19,10 @@ The complete LICENSE, project README, parsing README, original morphology-code H
 The importer uses only Python's standard library:
 
 ```sh
-python scripts/import-oshb.py
-python scripts/import-oshb.py --check
+python3 -B scripts/import-oshb.py
+python3 -B scripts/import-oshb.py --check
 # An already downloaded exact archive can be supplied without network access:
-python scripts/import-oshb.py --archive /path/outside/repository/pinned.tar.gz --check
+python3 -B scripts/import-oshb.py --archive /path/outside/repository/pinned.tar.gz --check
 node --test tests/oshb.test.mjs
 ```
 

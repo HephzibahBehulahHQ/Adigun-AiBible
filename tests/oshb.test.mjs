@@ -132,6 +132,6 @@ test('actual source alternatives, special-letter segments and source numbering r
 });
 
 test('importer fails closed on unfamiliar readings and bad pins while preserving unknown annotations', () => {
-  const run = spawnSync('python', [new URL('./oshb_checks.py', import.meta.url).pathname], { encoding: 'utf8' });
+  const run = spawnSync('python3', ['-B', new URL('./oshb_checks.py', import.meta.url).pathname], { encoding: 'utf8' });
   assert.equal(run.status, 0, `${run.stdout}\n${run.stderr}`);
 });
