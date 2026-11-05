@@ -3,6 +3,10 @@ import type { View } from './types';
 import './tools.css';
 
 const tools = [
+  { view: 'linguistics', icon: BookMarked, title: 'Original-language study', description: 'Explore source Greek, Hebrew and Aramaic dictionary records, and save your own translation exercises.' },
+  { view: 'time-travel', icon: BookMarked, title: 'Athens time travel', description: 'Follow an Acts 17 study tour with sourced stops, a schematic 3D view and an accessible 2D alternative.' },
+  { view: 'interpretation', icon: NotebookPen, title: 'Blind interpretation workspace', description: 'Compare two historical readings, save your own reasoning, then reveal the sources and revisit your judgment.' },
+  { view: 'nearby', icon: HeartHandshake, title: 'Nearby study room', description: 'Try a local host-and-guest connection with manual pairing, explicit approval and permitted passage sharing.' },
   { view: 'speakers', icon: BookMarked, title: 'Speaker Explorer', description: 'Find publisher-marked sayings in the selected edition and prepare precise private correction proposals.' },
   { view: 'editorial-workbench', icon: NotebookPen, title: 'Coverage and editorial workbench', description: 'Inspect actual source coverage and prepare private comparison or paraphrase drafts for independent review.' },
   { view: 'widget', icon: BookMarked, title: 'Lock-screen verse card', description: 'Create a 1080 × 1920 source verse image with clock space. This is a web export, not a native widget.' },

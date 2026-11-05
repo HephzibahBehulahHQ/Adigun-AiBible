@@ -3,20 +3,20 @@
 ## Active continuation — 5 November 2026 (Europe/Berlin)
 
 - Repository: `HephzibahBehulahHQ/Adigun-AiBible`.
-- Verified main: `8554f1eb85cb483ba5e40914547f862e74d95873`; Pages workflow [42000377767](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42000377767) succeeded.
-- Active branch: `codex/advanced-study-workspaces-20261105`, [PR #27](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/27).
-- Last verified remote checkpoint: `bfd848d75ca223b86e42bf3e09fcf61ba723e62a`, checked through GitHub and `git ls-remote` on 5 November 2026. The current commit adds the release fixes below; its exact receipt is the PR branch and Actions record.
-- Source-backed Speaker Explorer, private editorial drafts/coverage, and the complete pinned Lightfoot Didache are implemented in PR #27. Its previous CI passed source/content/build and 154 browser cases; eight failures exposed wrapped-label selectors, missing offline permission metadata, and the need to verify historical deep-link Bible context.
-- Current fixes: stable control labels, permission-register precaching and retention, library query-reference parsing and recovery, and regression tests. No permission or editorial gates were weakened.
-- Local Node 24 locked dependencies installed. Full baseline `npm run check` passed. Focused offline/routing/recovery tests passed after fixes; full exact-candidate CI and browser rerun pending. Local Chromium download returned an invalid archive, so release browser checks run in GitHub Actions.
-- Recoverable next increment: `codex/advanced-experiences-20261105` at `a790b87473149911fb1a46e9ccb5417944017d98`; contains lexical work, Athens tour, nearby transport and partial interpretation work. Its parent has the same tree as `bfd848d`; integrate only its distinct work after PR #27 is green.
-- Root owns integration, release and this status. An isolated specialist owns only nearby transport cancellation/reconnect hardening, tests and its module documentation.
-- Existing production: https://hephzibahbehulahhq.github.io/Adigun-AiBible/ ; exact published source receipt: `build-info.json`. No newer deployment is claimed yet.
+- Verified production: `dfe6ad3d0fa37425fbcd6a44167f83b22b699c6d`, merged in [PR #27](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/27). [Main workflow 42004990781](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42004990781) passed. Independent public verification returned this exact `sourceCommit`, HTTP 200 and the app shell on 5 November 2026.
+- Live URL: https://hephzibahbehulahhq.github.io/Adigun-AiBible/ . `build-info.json` is the exact public source receipt.
+- Current integration branch: `codex/complete-advanced-experiences-20261105`; last remote checkpoint `de1b77c80ac9445e926df27486844facc4ec2a51`, verified through GitHub and `git ls-remote` at 10:55 Europe/Berlin on 5 November 2026.
+- Integrated: 14,298 pinned historical dictionary records with verified offline packs, private translation exercises, Athens Acts 17 pilot, private blind interpretation notebook, and hardened two-person nearby transport. Routes, command navigation, tool directory and desktop/mobile/320 px visual checks are connected.
+- Focused checks passed: lexical importer/model/storage (12), Athens source/export/geometry and complete-notice checks (9), nearby protocol/transport/rights (18), interpretation model/storage (13), routing/recovery (9), TypeScript and lint. Integrated `npm run check` passed: 352 application tests, 20 backend contract tests, source validation, TypeScript, lint and production build. Playwright collects 192 desktop/mobile cases; exact-candidate browser execution remains pending.
+- Review follow-ups: fixed initial dictionary-inspection race and explicit English language metadata. Athens exports now include complete publisher notices verified against the build inventory; missing or altered notices block export. Root owns integration and release; other isolated work covers expanded coverage inventory and exact-source acquisition research.
+- Local Chromium download returned an invalid archive. Browser tests run in GitHub Actions; no local browser execution or physical two-device testing is claimed.
 
-## Exact remaining dependencies
+## Remaining scope
 
-Human editorial/native-language approval, restricted edition rights, dedicated backend/provider configuration, permitted recorded narration and actual two-device offline validation are not established. Backend setup was previously cancelled; no unrelated infrastructure is reused. These gates do not excuse independent software work. Full Version 3 is not complete.
+Version 3 is not complete. Unbuilt software/content-engineering work is enumerated in [FEATURE_MATRIX.md](../FEATURE_MATRIX.md) and [NEXT_TASKS.md](NEXT_TASKS.md), including larger authentic edition coverage, language alignment tools, advanced speaker/atlas features, remaining experience engines and complete localization. These are not all external blockers.
+
+Independent human editorial/native-language approval, restricted source rights, dedicated backend/provider configuration, permitted recorded narration and physical two-device offline validation remain separate dependencies. No unrelated infrastructure is reused, approval fabricated or live integration implied. The latest addendum excludes true OS widgets; the web lock-screen card is implemented.
 
 ## Next action
 
-Verify PR #27 fixes, merge the green candidate and verify production. Recover and finish the unmerged advanced experiences, then reconcile all remaining implementation and content gates with the feature matrix.
+Run the full integrated release checks, merge the green candidate and verify the deployed revision. Continue expanded source-backed coverage and verified acquisition work independently.

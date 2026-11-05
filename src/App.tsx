@@ -46,6 +46,10 @@ const MinistryWorkspace = lazy(() => import('./ministry/MinistryWorkspace'));
 const WidgetCard = lazy(() => import('./widget/WidgetCard'));
 const SpeakerExplorer = lazy(() => import('./speakers/SpeakerExplorer'));
 const EditorialWorkbench = lazy(() => import('./editorial-workbench/EditorialWorkbench'));
+const LinguisticsWorkspace = lazy(() => import('./linguistics/LinguisticsWorkspace'));
+const TimeTravel = lazy(() => import('./time-travel/TimeTravel'));
+const NearbyRoom = lazy(() => import('./nearby/NearbyRoom'));
+const BlindInterpretationWorkspace = lazy(() => import('./interpretation/BlindInterpretationWorkspace'));
 const MultiPassageCards = lazy(() => import('./sharing/MultiPassageCards'));
 import SourceChapter from './reader/SourceChapter';
 import ReadingSession from './reading-session/ReadingSession';
@@ -284,6 +288,10 @@ export default function App() {
     {id:'read',label:'Read Scripture',description:'Return to the current passage and its source edition.',keywords:'bible passage reader',disabled:!readyToRead,run:()=>commandNavigate('read')},
     {id:'search',label:'Search source text',description:'Find a reference or words in the selected edition.',keywords:'find verse reference',disabled:!manifest,run:()=>requestAnimationFrame(()=>searchInput.current?.focus())},
     {id:'law-diary',label:'Law Diary',description:'Open source-linked law, teaching and history studies.',keywords:'law Moses money apostles sermons',run:()=>commandNavigate('law-diary')},
+    {id:'linguistics',label:'Original-language study',description:'Explore licensed historical lexicons and private wording experiments.',keywords:'Greek Hebrew Aramaic Strong lexicon',run:()=>commandNavigate('linguistics')},
+    {id:'time-travel',label:'Athens time travel',description:'Explore a source-linked schematic tour with a 2D alternative.',keywords:'Athens Acts history tour 3D',run:()=>commandNavigate('time-travel')},
+    {id:'interpretation',label:'Blind interpretation workspace',description:'Read two historical interpretations, record reasons, then reveal their sources.',keywords:'blind study interpretation reflection traditions',run:()=>commandNavigate('interpretation')},
+    {id:'nearby',label:'Nearby study room',description:'Try an explicitly approved local two-person study connection.',keywords:'offline peer room WebRTC',run:()=>commandNavigate('nearby')},
     {id:'speakers',label:'Speaker Explorer',description:'Browse exact publisher red-letter spans and prepare source-bound corrections.',keywords:'Jesus words speaker red letter',run:()=>commandNavigate('speakers')},
     {id:'editorial-workbench',label:'Coverage and editorial workbench',description:'Inspect real coverage and prepare private source-grounded drafts.',keywords:'review editorial coverage',run:()=>commandNavigate('editorial-workbench')},
     {id:'support',label:'Support resources',description:'Find official crisis, listening and health services.',keywords:'help crisis emergency',run:()=>commandNavigate('support')},
@@ -328,6 +336,10 @@ export default function App() {
         {route.view==='law-diary'&&<LawDiary editionId={activeEditionId} locale={prefs.locale} reference={current} onOpenReference={openPassage}/>}
         {route.view==='speakers'&&<SpeakerExplorer reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
         {route.view==='editorial-workbench'&&<EditorialWorkbench reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
+        {route.view==='linguistics'&&<LinguisticsWorkspace reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
+        {route.view==='time-travel'&&<TimeTravel reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
+        {route.view==='interpretation'&&<BlindInterpretationWorkspace reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
+        {route.view==='nearby'&&<NearbyRoom reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
         {route.view==='widget'&&<WidgetCard reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
         {route.view==='ministry'&&<MinistryWorkspace reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
         {route.view==='drop'&&<div className="page"><VerseDrop editionId={activeEditionId} onOpen={openPassage} onSave={toggleBookmark} onShare={ref=>navigate('share',ref)}/></div>}

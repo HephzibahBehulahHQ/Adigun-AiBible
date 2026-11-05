@@ -1,0 +1,17 @@
+.linguistics-workspace,.linguistics-workspace .panel { min-width: 0; }
+.linguistics-workspace .panel { margin-block: 1rem; }
+.linguistics-workspace label { display: grid; gap: .4rem; min-width: 0; margin-block: .8rem; font-weight: 650; }
+.linguistics-workspace input,.linguistics-workspace select,.linguistics-workspace textarea { width: 100%; min-width: 0; max-width: 100%; box-sizing: border-box; }
+.linguistics-workspace textarea { resize: vertical; }
+.linguistics-fields { border: 0; padding: 0; margin: 0; min-width: 0; }
+.linguistics-controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%,15rem),1fr)); gap: .8rem; }
+.linguistics-results,.linguistics-saved { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%,16rem),1fr)); gap: .6rem; margin-block: 1rem; }
+.linguistics-results button,.linguistics-saved button { text-align: start; display: grid; gap: .35rem; align-content: start; overflow-wrap: anywhere; }
+.linguistics-results small { font-weight: 400; }
+.linguistics-choices { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; }
+.linguistics-context { border-inline-start: 3px solid var(--border,#d2c7b6); padding-inline-start: 1rem; margin-block: 1rem; }
+.linguistics-hash { font-family: monospace; font-size: .8rem; overflow-wrap: anywhere; }
+.linguistics-workspace details { margin-block: 1rem; }
+.linguistics-workspace summary { cursor: pointer; font-weight: 650; }
+.linguistics-workspace button { max-width: 100%; overflow-wrap: anywhere; }
+@media (max-width: 650px) { .linguistics-choices { grid-template-columns: minmax(0,1fr); } .linguistics-workspace .button-row { flex-wrap: wrap; } }
