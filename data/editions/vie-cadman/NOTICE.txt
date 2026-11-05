@@ -1,0 +1,17 @@
+About vie1934_vpl
+This archive contains BIBLE TEXT ONLY. All formatting, paragraph breaks, notes, introductions, noncanonical section titles, etc., have been removed. The file ending "_vpl.txt" is designed for import into BibleWorks and similar Bible study programs. The file ending "_vpl.xml" contains the same information, but is in XML format and uses standard SIL/UBS book abbreviations.
+The file ending "_vpl.sql" contains the same information formatted to create a SQL data table.
+Check for updates and other Bible translations in this format at http:\\eBible.org\Scriptures\
+Kinh Thánh
+The Holy Bible in the Vietnamese language (1923)
+Public Domain
+Language: Tiếng Việt (Vietnamese)
+Translation by: William Cadman (1883-1948)
+Contributor: Christian and Missionary Alliance
+This free Bible is provided to you courtesy of eBible.org.
+NT first published 1923, OT first published 1925. The New Testament permanently and irrevocably entered the Public Domain on January 1, 2019 due to copyright expiration. The Old Testament entered the Public Domain on January 1, 2021. It was probably already in the Public Domain due to failure to comply with formalities earlier.
+2022-06-09
+
+Source and rights notice: https://ebible.org/vie1934/copyright.htm
+Provider rights policy: https://ebible.org/legal.php
+Provider rights policy: https://ebible.org/publicdomain.htm

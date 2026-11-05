@@ -1,5 +1,5 @@
 import { sourceDirection, sourceFont, sourceLineHeight } from './source-typography.ts';
-import { wrapExactText } from './exact-text-wrap.ts';
+import { SourceUnitTooWideError, wrapExactText } from './exact-text-wrap.ts';
 import type { Verse } from './types';
 export type CardSize = 'story' | 'square' | 'portrait';
 export const dimensions = { story: [1080, 1920], square: [1080, 1080], portrait: [1080, 1350] } as const;
@@ -26,7 +26,12 @@ export function drawShareCard(canvas: HTMLCanvasElement, verses: Verse[], refere
   const footerTop = height - 70 - creditLines.length * 25;
   const text = verses.map(v => v.text).join(' '); let font = size === 'story' ? 64 : 52; let lines: string[] = [];
   const top = height * .22, bottom = Math.min(height - 300, footerTop - 195);
-  for (; font >= 30; font -= 2) { ctx.font = `${font}px ${sourceFont(language)}`; lines = wrapExactText(text, width - 192, value => ctx.measureText(value).width); if (lines.length * font * sourceLineHeight(language) <= bottom - top) break; }
+  for (; font >= 30; font -= 2) {
+    ctx.font = `${font}px ${sourceFont(language)}`;
+    try { lines = wrapExactText(text, width - 192, value => ctx.measureText(value).width); }
+    catch (error) { if (!(error instanceof SourceUnitTooWideError)) throw error; lines = []; continue; }
+    if (lines.length * font * sourceLineHeight(language) <= bottom - top) break;
+  }
   if (font < 30 || lines.length * font * sourceLineHeight(language) > bottom - top) throw new Error('This passage is too long for a legible card. Select fewer verses or choose Story. Nothing has been cropped.');
   ctx.fillStyle = colors.ink;
   const direction = sourceDirection(language); ctx.direction = direction; ctx.textAlign = direction === 'rtl' ? 'right' : 'left';
@@ -39,8 +44,14 @@ export function drawShareCard(canvas: HTMLCanvasElement, verses: Verse[], refere
   return canvas;
 }
 export function downloadBlob(blob: Blob, name: string) { const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(url), 10000); }
+export function cloneCanvas(canvas: HTMLCanvasElement): HTMLCanvasElement {
+  const snapshot = document.createElement('canvas'); snapshot.width = canvas.width; snapshot.height = canvas.height;
+  const context = snapshot.getContext('2d'); if (!context || !canvas.width || !canvas.height) throw new Error('Prepare the current passage image before exporting.');
+  context.drawImage(canvas, 0, 0); return snapshot;
+}
 export async function saveCanvas(canvas: HTMLCanvasElement) { const blob = await new Promise<Blob>((resolve, reject) => canvas.toBlob(b => b ? resolve(b) : reject(new Error('Could not create image.')), 'image/png')); downloadBlob(blob, 'Adigun-AiBible-passage.png'); }
 export async function recordCard(canvas: HTMLCanvasElement, onProgress: (seconds: number) => void, signal: AbortSignal) {
+  if (signal.aborted) throw new Error('Video export cancelled.');
   if (!canvas.captureStream || typeof MediaRecorder === 'undefined') throw new Error('Video export is not supported. Download the PNG instead.');
   const mime = ['video/webm;codecs=vp9', 'video/webm;codecs=vp8', 'video/webm'].find(type => MediaRecorder.isTypeSupported(type));
   if (!mime) throw new Error('This browser cannot export WebM. Download a PNG instead.');

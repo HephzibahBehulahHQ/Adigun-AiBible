@@ -28,10 +28,13 @@
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 5,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "arb-vandyck",
+      "installedRevision": "Van Dyck; no historical revision year is specified in the individual notice.",
+      "installedSourceSha256": "070404da2e13e641b7550b50d7e777480b2cc2667e9669f2194d909ca04cd68a",
+      "installedObservedOn": "2026-11-05"
     },
     {
       "provider": "eBible.org",
@@ -175,10 +178,13 @@
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 12,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "mya-judson1840",
+      "installedRevision": "Judson version of 1840, as identified by the publisher notice.",
+      "installedSourceSha256": "bbbabb35e8373c718a3eb1af4e30ba5efeadd08fc047abde644709bdd7951adf",
+      "installedObservedOn": "2026-11-05"
     },
     {
       "provider": "eBible.org",
@@ -450,10 +456,13 @@
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 25,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "nld-1917",
+      "installedRevision": "1917, as identified by the publisher notice; no further translation identity is inferred.",
+      "installedSourceSha256": "1b725d623e86e639516b59cc9c292184066f2b2ca58df2e500f2878883dc3938",
+      "installedObservedOn": "2026-11-05"
     },
     {
       "provider": "eBible.org",
@@ -665,10 +674,13 @@
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 35,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "eng-geneva1599",
+      "installedRevision": "1599; original historical English spelling, as identified by the publisher notice.",
+      "installedSourceSha256": "faa35b12d04bdacda78b5b53b35bc241d576c63e5d6cd5bccd99bb337b8f7ade",
+      "installedObservedOn": "2026-11-05"
     },
     {
       "provider": "eBible.org",
@@ -1215,10 +1227,13 @@
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 61,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "epo-londona",
+      "installedRevision": "1910, as identified by the publisher notice.",
+      "installedSourceSha256": "2e2859611073a1a023f92e1fd279078f5cedc5f4d97659fc2f8f84945450301d",
+      "installedObservedOn": "2026-11-05"
     },
     {
       "provider": "eBible.org",
@@ -1280,10 +1295,13 @@
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 64,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "fra-ostervald",
+      "installedRevision": "Ostervald; historical revision year is not specified in the individual notice.",
+      "installedSourceSha256": "db393ba4b0a91b4f631b35b0d27ba796514ff84182de06997669f4a14da52b21",
+      "installedObservedOn": "2026-11-05"
     },
     {
       "provider": "eBible.org",
@@ -1599,10 +1617,13 @@
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 80,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "haw-1868",
+      "installedRevision": "1868 revision, as identified by the publisher notice.",
+      "installedSourceSha256": "ed5a6d757d6532bc8a1cce2016c7ff53e7d9c9e0176c502261557e8de0fd85dc",
+      "installedObservedOn": "2026-11-05"
     },
     {
       "provider": "eBible.org",
@@ -1730,7 +1751,24 @@
       "availability": "metadata-only",
       "coverage": "not-validated",
       "permissions": "not-reviewed",
-      "installedEditionId": null
+      "installedEditionId": null,
+      "sourceReview": {
+        "state": "deferred",
+        "observedOn": "2026-11-05",
+        "reasons": [
+          "The individual and archive notices identify Riveduta 1927 but also describe Diodati 1885; the primary details page supplies the conflicting abbreviation DO885. Exact revision/identity is unresolved."
+        ],
+        "evidenceUrls": [
+          "https://ebible.org/ita1927/copyright.htm",
+          "https://ebible.org/details.php?id=ita1927"
+        ],
+        "archiveSha256": "d73ad51ec797dbc92691431795e42df0502cdbb0b21ac1707b389f8308a6d7d4",
+        "observedTotals": {
+          "books": 66,
+          "chapters": 1189,
+          "verses": 31102
+        }
+      }
     },
     {
       "provider": "eBible.org",
@@ -1793,7 +1831,25 @@
       "availability": "metadata-only",
       "coverage": "not-validated",
       "permissions": "not-reviewed",
-      "installedEditionId": null
+      "installedEditionId": null,
+      "sourceReview": {
+        "state": "deferred",
+        "observedOn": "2026-11-05",
+        "reasons": [
+          "The VPL archive contains 66 book IDs but only 1188 chapter sections; no 1PE chapter 5 section is supplied.",
+          "Seventeen XML/TXT differences contain additional bracket spacing and embedded English alternate verse labels. A separate coverage/numbering audit is required before calling this a complete source."
+        ],
+        "evidenceUrls": [
+          "https://ebible.org/kor/copyright.htm",
+          "https://ebible.org/Scriptures/kor_vpl.zip"
+        ],
+        "archiveSha256": "5d4957ebd5b186d6199e26c697131bc47578d9ff81bfef5aa3f8bb5dcfeddc6c",
+        "observedTotals": {
+          "books": 66,
+          "chapters": 1188,
+          "verses": 30991
+        }
+      }
     },
     {
       "provider": "eBible.org",
@@ -1898,7 +1954,25 @@
       "availability": "metadata-only",
       "coverage": "not-validated",
       "permissions": "not-reviewed",
-      "installedEditionId": null
+      "installedEditionId": null,
+      "sourceReview": {
+        "state": "deferred",
+        "observedOn": "2026-11-05",
+        "reasons": [
+          "The current copyright/archive notices omit a translator, while the primary details page credits Wycliffe Bible Translators and points to an 1895-named download. Attribution and exact historical revision identity are unresolved.",
+          "The observed Psalm 121:1 bracket/padding discrepancy was not admitted or normalized."
+        ],
+        "evidenceUrls": [
+          "https://ebible.org/pesOPV/copyright.htm",
+          "https://ebible.org/details.php?id=pesOPV"
+        ],
+        "archiveSha256": "50c3328dd2eab07a1235be21c7056dedc1d5957f1b1c336b21076221da058890",
+        "observedTotals": {
+          "books": 66,
+          "chapters": 1189,
+          "verses": 31090
+        }
+      }
     },
     {
       "provider": "eBible.org",
@@ -2042,10 +2116,13 @@
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 101,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "rus-synodal",
+      "installedRevision": "Synodal translation; no historical revision year is specified in the individual notice.",
+      "installedSourceSha256": "e8f12f3f3e5856a859034ac5614a8a67d112c7afa59c2af9f42be46e45d68198",
+      "installedObservedOn": "2026-11-05"
     },
     {
       "provider": "eBible.org",
@@ -2063,10 +2140,13 @@
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 102,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "srp-danicic-karadzic",
+      "installedRevision": "Daničić–Karadžić translation, Cyrillic alphabet; no historical revision year is specified in the individual notice.",
+      "installedSourceSha256": "40f38bfe0af0a6df4f31d2873cc76902caf576b3f54217d2c86adee6d57e196b",
+      "installedObservedOn": "2026-11-05"
     },
     {
       "provider": "eBible.org",
@@ -2233,10 +2313,13 @@
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 110,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "ton-revised-west",
+      "installedRevision": "Revised West Version; exact provider source dated 2025-12-12. Not an untouched nineteenth-century West edition.",
+      "installedSourceSha256": "24cea17bdf324d7f59ea40367e6340a3b52f8d0157dcd68c6dc55df3302bb5fb",
+      "installedObservedOn": "2026-11-05"
     },
     {
       "provider": "eBible.org",
@@ -2254,10 +2337,13 @@
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 111,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "ukr-kulish1905",
+      "installedRevision": "1905 in the publisher title and notice; ukr1871 is retained only as the provider identifier.",
+      "installedSourceSha256": "d1913e04db9f4e2fc3405a98e40a9358ef332ac9b463d0d2e8aeb0b6b90d7014",
+      "installedObservedOn": "2026-11-05"
     },
     {
       "provider": "eBible.org",
@@ -2296,10 +2382,13 @@
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 113,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "vie-cadman",
+      "installedRevision": "New Testament first published 1923; Old Testament first published 1925. The provider ID vie1934 does not establish a 1934 revision.",
+      "installedSourceSha256": "54a1c70f875ac5c4315259665d7e1ad153b3b90f28a3a868db9cbd4c56e6e1d0",
+      "installedObservedOn": "2026-11-05"
     },
     {
       "provider": "eBible.org",

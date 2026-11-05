@@ -1,0 +1,16 @@
+About ukr1871_vpl
+This archive contains BIBLE TEXT ONLY. All formatting, paragraph breaks, notes, introductions, noncanonical section titles, etc., have been removed. The file ending "_vpl.txt" is designed for import into BibleWorks and similar Bible study programs. The file ending "_vpl.xml" contains the same information, but is in XML format and uses standard SIL/UBS book abbreviations.
+The file ending "_vpl.sql" contains the same information formatted to create a SQL data table.
+Check for updates and other Bible translations in this format at http:\\eBible.org\Scriptures\
+Біблія в пер. П.Куліша та І.Пулюя, 1905
+The Holy Bible in Ukrainian, translated by P. Kulish and I. Pulyu in 1905
+Public Domain
+Language: Українська (Ukrainian)
+Translation by: Panteleimon Kulish
+Contributor: Ivan Semenovych Nechui-Levytsky, Ivan Pavlovych Puluj
+Повідомте про помилки тут: https://forms.gle/PAo2uKZqCNnoZGDe7
+2025-01-31
+
+Source and rights notice: https://ebible.org/ukr1871/copyright.htm
+Provider rights policy: https://ebible.org/legal.php
+Provider rights policy: https://ebible.org/publicdomain.htm

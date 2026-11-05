@@ -21,7 +21,8 @@
   font-family: "Adigun Myanmar", sans-serif;
   line-height: 1.8;
   word-break: normal;
-  overflow-wrap: anywhere;
+  overflow-wrap: normal;
+  line-break: auto;
 }
 .scripture[dir="rtl"] .source-text,
 .scripture[lang|="my"] .source-text {

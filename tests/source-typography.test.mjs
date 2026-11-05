@@ -77,3 +77,14 @@ test('font-dependent export waits for the loaded face and fails explicitly when 
   assert.equal(sourceDirection('ar-Latn'),'ltr');assert.equal(sourceDirection('sr-Cyrl'),'ltr');
   assert.equal(wrapExactText('မြန်မာစာ  العربية',120,t=>t.length*10).join(''),'မြန်မာစာ  العربية');
 });
+
+
+test('actual Myanmar long tokens wrap only at intact source word units', () => {
+  const book=JSON.parse(readFileSync(new URL('../data/editions/mya-judson1840/books/LEV.json',import.meta.url),'utf8'));
+  const text=book.chapters.find(c=>c.number===4).verses.find(v=>v.number===2).text;
+  const units=[...new Intl.Segmenter('my',{granularity:'word'}).segment(text)].map(v=>v.segment);
+  const boundaries=new Set([0]);let offset=0;for(const unit of units){offset+=unit.length;boundaries.add(offset);}
+  const lines=wrapExactText(text,120,s=>[...s].length*8);assert.equal(lines.join(''),text);
+  offset=0;for(const line of lines){assert.ok(!/^[\u102B-\u103E]/u.test(line));offset+=line.length;assert.ok(boundaries.has(offset));}
+  for(const value of ['ကာ','ငှာ','ရောက်'])assert.throws(()=>wrapExactText(value,1,s=>s.length*30),/Myanmar word or syllable/);
+});

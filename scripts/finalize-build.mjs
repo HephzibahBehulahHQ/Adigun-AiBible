@@ -27,25 +27,62 @@ function serviceWorkerRuntime(config) {
   const CONTENT = `${PREFIX}content-${manifest.contentVersion}`;
   const PACKS = `${PREFIX}pack-${manifest.contentVersion}-`;
   const MARKER = '__adigun_offline_pack__.json';
+  const MAX_FILE_BYTES = 64 * 1024 * 1024;
   const absolute = path => new URL(BASE + path, self.location.origin).href;
   const essential = path => path.endsWith('/manifest.json') || path === 'data/editions/catalog.json' || path === 'data/editions/rights-register.json';
   const pathOf = request => {
     const url = new URL(typeof request === 'string' ? request : request.url);
     return url.origin === self.location.origin && url.pathname.startsWith(BASE) && !url.search ? url.pathname.slice(BASE.length) : null;
   };
-  async function valid(response, file, path) {
+  function abortIfNeeded(signal) {
+    if (signal?.aborted) { const error = new Error('Source loading cancelled.'); error.name = 'AbortError'; throw error; }
+  }
+  async function sourceBytes(response, limit, signal) {
+    if (!Number.isSafeInteger(limit) || limit < 0 || limit > MAX_FILE_BYTES) {
+      if (response.body) void response.body.cancel().catch(() => undefined);
+      throw new Error('Invalid source byte limit.');
+    }
+    abortIfNeeded(signal);
+    if (!response.body) return new Uint8Array();
+    const reader = response.body.getReader(), blocks = [];
+    const blockSize = Math.max(1, Math.min(64 * 1024, limit));
+    let block = new Uint8Array(blockSize), used = 0, total = 0;
+    const cancel = () => { void reader.cancel().catch(() => undefined); };
+    signal?.addEventListener('abort', cancel, { once: true });
+    try {
+      while (true) {
+        const { done, value } = await reader.read(); abortIfNeeded(signal);
+        if (done) break;
+        if (!(value instanceof Uint8Array) || total + value.byteLength > limit) throw new Error('Source response exceeds its pinned byte limit.');
+        total += value.byteLength; let offset = 0;
+        while (offset < value.byteLength) {
+          const take = Math.min(blockSize - used, value.byteLength - offset);
+          block.set(value.subarray(offset, offset + take), used); used += take; offset += take;
+          if (used === blockSize) { blocks.push(block); block = new Uint8Array(blockSize); used = 0; }
+        }
+      }
+    } catch (error) { void reader.cancel().catch(() => undefined); throw error; }
+    finally { signal?.removeEventListener('abort', cancel); reader.releaseLock(); }
+    const bytes = new Uint8Array(total); let offset = 0;
+    for (const part of blocks) { bytes.set(part, offset); offset += part.byteLength; }
+    bytes.set(block.subarray(0, used), offset); return bytes;
+  }
+  async function valid(response, file, path, signal) {
+    if (signal?.aborted && response?.body) void response.body.cancel().catch(() => undefined);
+    abortIfNeeded(signal);
     if (!response?.ok || response.type === 'opaque') throw new Error(`Unavailable source file: ${path}`);
-    const bytes = await response.clone().arrayBuffer();
+    const bytes = await sourceBytes(response, file.bytes, signal);
     const hash = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)), n => n.toString(16).padStart(2, '0')).join('');
     if (bytes.byteLength !== file.bytes || hash !== file.sha256) throw new Error(`Changed source file: ${path}`);
+    abortIfNeeded(signal);
     if (/\.(json|webmanifest)$/.test(path)) {
       const value = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(bytes));
       if (!value || typeof value !== 'object') throw new Error(`Invalid source file: ${path}`);
     }
-    return response;
+    return new Response(bytes.byteLength ? bytes : null, { status: response.status, statusText: response.statusText, headers: response.headers });
   }
-  async function fresh(path, file) {
-    return valid(await fetch(absolute(path), { cache: 'no-store' }), file, path);
+  async function fresh(path, file, signal) {
+    return valid(await fetch(absolute(path), { cache: 'no-store', signal }), file, path, signal);
   }
   async function packRecord(cache) {
     const response = await cache.match(absolute(MARKER));
@@ -141,7 +178,7 @@ function serviceWorkerRuntime(config) {
       if (stored) return stored;
     }
     try {
-      const response = await fresh(path, manifest.files[path]);
+      const response = await fresh(path, manifest.files[path], request.signal);
       if (!staging) await (await caches.open(CONTENT)).put(absolute(path), response.clone()).catch(() => undefined);
       return response;
     } catch {
@@ -171,6 +208,13 @@ export async function finalizeBuild({ root = resolve(import.meta.dirname, '..'),
   const dist = resolve(root, 'dist');
   const data = await inventory(resolve(dist, 'data'), dist);
   const shell = await inventory(resolve(dist, 'assets'), dist);
+  try { Object.assign(shell, await inventory(resolve(dist, 'fonts'), dist)); }
+  catch (error) { if (error.code !== 'ENOENT') throw error; }
+  if (Object.keys(shell).some(path => /Noto(?:NaskhArabic|SansMyanmar).*\.ttf$/.test(path))) {
+    for (const path of ['fonts/NotoNaskhArabic-OFL.txt', 'fonts/NotoSansMyanmar-OFL.txt', 'fonts/sources.json']) {
+      if (!shell[path]) throw new Error(`Bundled source fonts require their complete offline notice: ${path}`);
+    }
+  }
   for (const path of ['index.html', 'manifest.webmanifest']) {
     const bytes = await readFile(resolve(dist, path));
     shell[path] = { sha256: digest(bytes), bytes: bytes.length };

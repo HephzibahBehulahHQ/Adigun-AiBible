@@ -8,7 +8,7 @@ PR #29 is merged and verified deployed as `75f2d35be4df3ab07f589c557f01a653acdfc
 
 ## Independent work to finish
 
-1. Release the integrated concordance, compact transport and Hebrew source-study candidate after all real checks. Keep missing evidence distinct from zero and draft counts distinct from approvals.
+1. Verify the merged PR #30 deployment, then release the 26-edition source/typography candidate after all real checks. Keep missing evidence distinct from zero and draft counts distinct from approvals.
 2. Continue beyond the nine verified additions toward the 100+ target. Validate each new acquisition against the measured compact-build budget and bounded 16,384-path/4 MiB inventory, and verify public-domain acquisition candidates against primary notices and exact source revisions. Deduplicate authentic editions, establish complete manifests and storage/performance budgets, and extend the reproducible importer. Provider metadata alone is not a usable Bible edition.
 3. Complete occurrence-linked language tools, synchronized Gospel comparison, genealogy/relationship exploration, diagrams and textual-variant tooling with permitted data. Historical dictionary lookup does not satisfy these requirements by itself.
 4. Extend source-grounded speaker browsing beyond the current publisher spans and correction workflow; preserve explicit uncertainty and exact quotation boundaries.

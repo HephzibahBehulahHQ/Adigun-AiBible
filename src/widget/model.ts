@@ -1,3 +1,4 @@
+import { SourceUnitTooWideError } from '../exact-text-wrap.ts';
 import { sourceDirection, sourceFont, sourceLineHeight } from '../source-typography.ts';
 import type { Reference } from '../types';
 import type { CardSourceDependencies, PreparedCardSources } from '../sharing/sources';
@@ -36,7 +37,8 @@ export function layoutWidget(source: PreparedCardSources, measure: (text: string
   const creditTop = height - 128 - creditLines.length * 24, textBottom = creditTop - 60;
   let textFont = 62, textLines: string[] = [], lineHeight = 0;
   for (; textFont >= 32; textFont -= 2) {
-    textLines = wrap(source.passages[0].text, `${textFont}px ${sourceFont(source.passages[0].language)}`);
+    try { textLines = wrap(source.passages[0].text, `${textFont}px ${sourceFont(source.passages[0].language)}`); }
+    catch (error) { if (!(error instanceof SourceUnitTooWideError)) throw error; textLines = []; continue; }
     lineHeight = Math.ceil(textFont * sourceLineHeight(source.passages[0].language));
     if (textTop + textLines.length * lineHeight <= textBottom) break;
   }

@@ -9,18 +9,19 @@ const envelopeLike = (value: unknown): boolean => object(value) && (value.kind =
 const abortIfNeeded = (signal?: AbortSignal): void => { if (signal?.aborted) throw new DOMException('Source loading cancelled.', 'AbortError'); };
 
 function byteLimit(value: number): void {
-  if (!Number.isSafeInteger(value) || value < 1 || value > SOURCE_JSON_MAX_BYTES) throw new Error('Invalid source JSON byte limit.');
+  if (!Number.isSafeInteger(value) || value < 0 || value > SOURCE_JSON_MAX_BYTES) throw new Error('Invalid source JSON byte limit.');
 }
 
 /** Fixed-size blocks also bound metadata overhead when a stream delivers very small chunks. */
 async function boundedBytes(stream: ReadableStream<Uint8Array> | null, limit: number, signal?: AbortSignal): Promise<Uint8Array<ArrayBuffer>> {
   byteLimit(limit);
+  if (signal?.aborted && stream) void stream.cancel().catch(() => undefined);
   abortIfNeeded(signal);
   if (!stream) return new Uint8Array();
   const reader = stream.getReader(), blocks: Uint8Array[] = [];
   const cancel = () => { void reader.cancel().catch(() => undefined); };
   signal?.addEventListener('abort', cancel, { once: true });
-  const blockSize = Math.min(64 * 1024, limit);
+  const blockSize = Math.max(1, Math.min(64 * 1024, limit));
   let block = new Uint8Array(blockSize), used = 0, total = 0;
   try {
     while (true) {
@@ -37,7 +38,9 @@ async function boundedBytes(stream: ReadableStream<Uint8Array> | null, limit: nu
       }
     }
   } catch (error) {
-    await reader.cancel().catch(() => undefined);
+    // Cancellation closes this reader immediately. Its promise can wait for an
+    // unread sibling of a cloned response; failure must not await that consumer.
+    void reader.cancel().catch(() => undefined);
     throw error;
   } finally { signal?.removeEventListener('abort', cancel); reader.releaseLock(); }
   const bytes = new Uint8Array(total);
@@ -61,8 +64,8 @@ export async function readSourceBytes(response: Response, maxBytes: number, sign
   return boundedBytes(response.body, maxBytes, signal);
 }
 
-export async function readBoundedJson(response: Response, maxBytes: number): Promise<unknown> {
-  return parseJson(await readSourceBytes(response, maxBytes));
+export async function readBoundedJson(response: Response, maxBytes: number, signal?: AbortSignal): Promise<unknown> {
+  return parseJson(await readSourceBytes(response, maxBytes, signal));
 }
 
 function base64Bytes(payload: string): Uint8Array<ArrayBuffer> {

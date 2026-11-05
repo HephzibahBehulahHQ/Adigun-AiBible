@@ -541,6 +541,922 @@ SOURCES.update({'eng-ylt': {'name': "Young's Literal Translation",
                      'rightsEvidenceUrls': ['https://ebible.org/legal.php', 'https://ebible.org/publicdomain.htm']}})
 
 
+# Additional distinct editions admitted from individually reviewed primary notices.
+SOURCES.update({'fra-ostervald': {'name': 'French Ostervald Bible',
+                   'nativeTitle': 'La Sainte Bible',
+                   'abbreviation': 'OST',
+                   'language': 'fr',
+                   'script': 'Latn',
+                   'direction': 'ltr',
+                   'corpus': 'bible',
+                   'publisher': 'eBible.org',
+                   'translator': 'Ostervald',
+                   'providerId': 'fra_fob',
+                   'revision': 'Ostervald; historical revision year is not specified in the individual '
+                               'notice.',
+                   'canon': 'protestant-66',
+                   'sourceUpdatedAt': '2026-10-30',
+                   'sourceNoticeDate': '2026-10-30',
+                   'rightsObservedAt': '2026-11-05',
+                   'sourceUrl': 'https://ebible.org/fra_fob/',
+                   'formatUrl': 'https://ebible.org/find/details.php?id=fra_fob',
+                   'downloadUrl': 'https://ebible.org/Scriptures/fra_fob_vpl.zip',
+                   'downloadBytes': 4624935,
+                   'licenseUrl': 'https://ebible.org/fra_fob/copyright.htm',
+                   'license': 'Public domain (provider-declared)',
+                   'licenseIdentifier': 'LicenseRef-Public-Domain',
+                   'attribution': 'French Ostervald Bible. La Sainte Bible. Ostervald. Ostervald; historical '
+                                  'revision year is not specified in the individual notice. Public domain as '
+                                  'declared by eBible.org; exact source files dated 2026-10-30; full '
+                                  'publisher notice retained.',
+                   'sha256': 'db393ba4b0a91b4f631b35b0d27ba796514ff84182de06997669f4a14da52b21',
+                   'xmlSha256': 'f9e9e97cba949bde4f86d9fe379be53dcc43a43a919fa7863901c7edca4703ba',
+                   'textSha256': 'd844608aa923e6bf3041cf374d9f9475dc9fcc3c23d4629bc51fdaaa8cd3d1b6',
+                   'noticeSha256': '31d2eb42b53cc4a4710e7870cc54ce68f54b91f47fc20254c7c7de0bfa0e0e5b',
+                   'bracketExceptionCount': 0,
+                   'bracketExceptionInventorySha256': '37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570',
+                   'bracketExceptionScope': '0 source records differ only at the exact pinned square-bracket '
+                                            'positions. All display text remains the complete original TXT; '
+                                            'no wording or numbering is repaired.',
+                   'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31107},
+                   'rights': {'redistribute': True,
+                              'adapt': True,
+                              'offline': True,
+                              'audio': True,
+                              'export': True},
+                   'conditions': ['Retain the exact edition identity, original source wording and complete '
+                                  'publisher notice with redistributed/offline copies.',
+                                  'Rights evidence is the individual provider declaration and stated '
+                                  'provider uses, not independent worldwide legal or human editorial '
+                                  'approval; the provider inventory describes public-domain knowledge in the '
+                                  'USA and its policy acknowledges national-law variation.',
+                                  'Publisher VPL supplies verse text without separate notes, introductions, '
+                                  'headings or paragraph layout. Inline source annotations, historical '
+                                  'spellings and alternate-numbering text remain unchanged where present.',
+                                  'Changed study material must be separately labeled and must not be '
+                                  'presented as unchanged publisher text.',
+                                  'No third-party recorded audio, cover artwork, illustrations, maps or '
+                                  'distinct modern revisions are included or licensed by this text import.',
+                                  'No provider certification badge or trademark license is included, and '
+                                  'this application is not claimed to be provider-certified.'],
+                   'rightsEvidenceUrls': ['https://ebible.org/legal.php',
+                                          'https://ebible.org/publicdomain.htm'],
+                   'preserveSourceNotice': True,
+                   'languageEvidence': {'registryUrl': 'https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry',
+                                        'registryFileDate': '2026-09-17',
+                                        'registrySha256': '755fad43283be7b41ebe3c89ad054b6eaf928f404f9c0edb74799e0eab74beb1',
+                                        'languageTag': 'fr',
+                                        'script': 'Latn',
+                                        'direction': 'ltr',
+                                        'sourceLetterBidiCounts': {'L': 3248287},
+                                        'sourceLetterUnicodeNamePrefixes': {'LATIN': 3248287},
+                                        'scope': 'Language identity is supplied by the individual publisher '
+                                                 'notice. The IANA registry validates the selected '
+                                                 'language/script subtags; direction and observed script are '
+                                                 'checked against every source letter. No native-language '
+                                                 'approval is asserted.'}},
+ 'epo-londona': {'name': 'Londona Biblio (Esperanto)',
+                 'nativeTitle': 'Londona Biblio',
+                 'abbreviation': 'LON',
+                 'language': 'eo',
+                 'script': 'Latn',
+                 'direction': 'ltr',
+                 'corpus': 'bible',
+                 'publisher': 'eBible.org',
+                 'translator': 'Not specified in the publisher notice.',
+                 'providerId': 'epo',
+                 'revision': '1910, as identified by the publisher notice.',
+                 'canon': 'protestant-66',
+                 'sourceUpdatedAt': '2025-12-12',
+                 'sourceNoticeDate': '2020-02-13',
+                 'rightsObservedAt': '2026-11-05',
+                 'sourceUrl': 'https://ebible.org/epo/',
+                 'formatUrl': 'https://ebible.org/find/details.php?id=epo',
+                 'downloadUrl': 'https://ebible.org/Scriptures/epo_vpl.zip',
+                 'downloadBytes': 4160085,
+                 'licenseUrl': 'https://ebible.org/epo/copyright.htm',
+                 'license': 'Public domain (provider-declared)',
+                 'licenseIdentifier': 'LicenseRef-Public-Domain',
+                 'attribution': 'Londona Biblio (Esperanto). Londona Biblio. Not specified in the publisher '
+                                'notice.. 1910, as identified by the publisher notice. Public domain as '
+                                'declared by eBible.org; exact source files dated 2025-12-12; full publisher '
+                                'notice retained.',
+                 'sha256': '2e2859611073a1a023f92e1fd279078f5cedc5f4d97659fc2f8f84945450301d',
+                 'xmlSha256': '91588c6d408d884d5330cdd7104023cbe7adefa7253c9e72a27c09ae7fd4dad6',
+                 'textSha256': '76c98d7933f2260d8383cc6db91632145e63403a79ca5e0cfd403f6f3251f2e6',
+                 'noticeSha256': 'f833af88cb2be31728ed8a8d9f171a40cd5788b7d7c618ee39984b894f6c1a07',
+                 'bracketExceptionCount': 2,
+                 'bracketExceptionInventorySha256': '85fe22277d74a087f5abd0d3038005c932049a35afb79e67297545c03e480882',
+                 'bracketExceptionScope': '2 source records differ only at the exact pinned square-bracket '
+                                          'positions. All display text remains the complete original TXT; no '
+                                          'wording or numbering is repaired.',
+                 'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31102},
+                 'rights': {'redistribute': True,
+                            'adapt': True,
+                            'offline': True,
+                            'audio': True,
+                            'export': True},
+                 'conditions': ['Retain the exact edition identity, original source wording and complete '
+                                'publisher notice with redistributed/offline copies.',
+                                'Rights evidence is the individual provider declaration and stated provider '
+                                'uses, not independent worldwide legal or human editorial approval; the '
+                                'provider inventory describes public-domain knowledge in the USA and its '
+                                'policy acknowledges national-law variation.',
+                                'Publisher VPL supplies verse text without separate notes, introductions, '
+                                'headings or paragraph layout. Inline source annotations, historical '
+                                'spellings and alternate-numbering text remain unchanged where present.',
+                                'Changed study material must be separately labeled and must not be presented '
+                                'as unchanged publisher text.',
+                                'No third-party recorded audio, cover artwork, illustrations, maps or '
+                                'distinct modern revisions are included or licensed by this text import.',
+                                'No provider certification badge or trademark license is included, and this '
+                                'application is not claimed to be provider-certified.'],
+                 'rightsEvidenceUrls': ['https://ebible.org/legal.php',
+                                        'https://ebible.org/publicdomain.htm'],
+                 'preserveSourceNotice': True,
+                 'languageEvidence': {'registryUrl': 'https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry',
+                                      'registryFileDate': '2026-09-17',
+                                      'registrySha256': '755fad43283be7b41ebe3c89ad054b6eaf928f404f9c0edb74799e0eab74beb1',
+                                      'languageTag': 'eo',
+                                      'script': 'Latn',
+                                      'direction': 'ltr',
+                                      'sourceLetterBidiCounts': {'L': 2960681},
+                                      'sourceLetterUnicodeNamePrefixes': {'LATIN': 2960681},
+                                      'scope': 'Language identity is supplied by the individual publisher '
+                                               'notice. The IANA registry validates the selected '
+                                               'language/script subtags; direction and observed script are '
+                                               'checked against every source letter. No native-language '
+                                               'approval is asserted.'}},
+ 'arb-vandyck': {'name': 'Arabic Van Dyck Bible',
+                 'nativeTitle': 'الكتاب المقدس باللغة العربية، فان دايك',
+                 'abbreviation': 'AVD',
+                 'language': 'ar',
+                 'script': 'Arab',
+                 'direction': 'rtl',
+                 'corpus': 'bible',
+                 'publisher': 'eBible.org',
+                 'translator': 'Syrian Mission; contributor: American Bible Society',
+                 'providerId': 'arb-vd',
+                 'revision': 'Van Dyck; no historical revision year is specified in the individual notice.',
+                 'canon': 'protestant-66',
+                 'sourceUpdatedAt': '2025-12-12',
+                 'sourceNoticeDate': '2020-08-03',
+                 'rightsObservedAt': '2026-11-05',
+                 'sourceUrl': 'https://ebible.org/arb-vd/',
+                 'formatUrl': 'https://ebible.org/find/details.php?id=arb-vd',
+                 'downloadUrl': 'https://ebible.org/Scriptures/arb-vd_vpl.zip',
+                 'downloadBytes': 5268940,
+                 'licenseUrl': 'https://ebible.org/arb-vd/copyright.htm',
+                 'license': 'Public domain (provider-declared)',
+                 'licenseIdentifier': 'LicenseRef-Public-Domain',
+                 'attribution': 'Arabic Van Dyck Bible. الكتاب المقدس باللغة العربية، فان دايك. Syrian '
+                                'Mission; contributor: American Bible Society. Van Dyck; no historical '
+                                'revision year is specified in the individual notice. Public domain as '
+                                'declared by eBible.org; exact source files dated 2025-12-12; full publisher '
+                                'notice retained.',
+                 'sha256': '070404da2e13e641b7550b50d7e777480b2cc2667e9669f2194d909ca04cd68a',
+                 'xmlSha256': 'bac591e723087bc6754a1377837960a969d5477816a6bf16c06a319bfce6f07d',
+                 'textSha256': '2cfdf72751acf12cc080dfc7a43843ebc086582481cd11f581956d5f0e7d6f5a',
+                 'noticeSha256': 'fc22145aee52f7d95cf3c73bdc5de12f634fa70369b34b6b662def1df4e8b465',
+                 'bracketExceptionCount': 0,
+                 'bracketExceptionInventorySha256': '37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570',
+                 'bracketExceptionScope': '0 source records differ only at the exact pinned square-bracket '
+                                          'positions. All display text remains the complete original TXT; no '
+                                          'wording or numbering is repaired.',
+                 'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31104},
+                 'rights': {'redistribute': True,
+                            'adapt': True,
+                            'offline': True,
+                            'audio': True,
+                            'export': True},
+                 'conditions': ['Retain the exact edition identity, original source wording and complete '
+                                'publisher notice with redistributed/offline copies.',
+                                'Rights evidence is the individual provider declaration and stated provider '
+                                'uses, not independent worldwide legal or human editorial approval; the '
+                                'provider inventory describes public-domain knowledge in the USA and its '
+                                'policy acknowledges national-law variation.',
+                                'Publisher VPL supplies verse text without separate notes, introductions, '
+                                'headings or paragraph layout. Inline source annotations, historical '
+                                'spellings and alternate-numbering text remain unchanged where present.',
+                                'Changed study material must be separately labeled and must not be presented '
+                                'as unchanged publisher text.',
+                                'No third-party recorded audio, cover artwork, illustrations, maps or '
+                                'distinct modern revisions are included or licensed by this text import.',
+                                'No provider certification badge or trademark license is included, and this '
+                                'application is not claimed to be provider-certified.'],
+                 'rightsEvidenceUrls': ['https://ebible.org/legal.php',
+                                        'https://ebible.org/publicdomain.htm'],
+                 'preserveSourceNotice': True,
+                 'languageEvidence': {'registryUrl': 'https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry',
+                                      'registryFileDate': '2026-09-17',
+                                      'registrySha256': '755fad43283be7b41ebe3c89ad054b6eaf928f404f9c0edb74799e0eab74beb1',
+                                      'languageTag': 'ar',
+                                      'script': 'Arab',
+                                      'direction': 'rtl',
+                                      'sourceLetterBidiCounts': {'AL': 1869689},
+                                      'sourceLetterUnicodeNamePrefixes': {'ARABIC': 1869689},
+                                      'scope': 'Language identity is supplied by the individual publisher '
+                                               'notice. The IANA registry validates the selected '
+                                               'language/script subtags; direction and observed script are '
+                                               'checked against every source letter. No native-language '
+                                               'approval is asserted.'}},
+ 'mya-judson1840': {'name': 'Judson Burmese Bible (1840)',
+                    'nativeTitle': 'မြန်မာကျမ်းစာ',
+                    'abbreviation': 'JUD1840',
+                    'language': 'my',
+                    'script': 'Mymr',
+                    'direction': 'ltr',
+                    'corpus': 'bible',
+                    'publisher': 'eBible.org',
+                    'translator': 'Adoniram Judson',
+                    'providerId': 'myajvb',
+                    'revision': 'Judson version of 1840, as identified by the publisher notice.',
+                    'canon': 'protestant-66',
+                    'sourceUpdatedAt': '2025-12-12',
+                    'sourceNoticeDate': '2025-10-20',
+                    'rightsObservedAt': '2026-11-05',
+                    'sourceUrl': 'https://ebible.org/myajvb/',
+                    'formatUrl': 'https://ebible.org/find/details.php?id=myajvb',
+                    'downloadUrl': 'https://ebible.org/Scriptures/myajvb_vpl.zip',
+                    'downloadBytes': 6159399,
+                    'licenseUrl': 'https://ebible.org/myajvb/copyright.htm',
+                    'license': 'Public domain (provider-declared)',
+                    'licenseIdentifier': 'LicenseRef-Public-Domain',
+                    'attribution': 'Judson Burmese Bible (1840). မြန်မာကျမ်းစာ. Adoniram Judson. Judson '
+                                   'version of 1840, as identified by the publisher notice. Public domain as '
+                                   'declared by eBible.org; exact source files dated 2025-12-12; full '
+                                   'publisher notice retained.',
+                    'sha256': 'bbbabb35e8373c718a3eb1af4e30ba5efeadd08fc047abde644709bdd7951adf',
+                    'xmlSha256': 'dac2c4796507d6068452d0c07983ea350520f19e071656c031098552f54d8d40',
+                    'textSha256': 'c8390a0f4f54a0c414796d8f415501c76abebfc5ed3d34c1c661e950c731c9e0',
+                    'noticeSha256': 'cd03f38e5f9493cb93dedf0c13c1d7d09e1435c090d3a40032bddea23d5506b5',
+                    'bracketExceptionCount': 0,
+                    'bracketExceptionInventorySha256': '37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570',
+                    'bracketExceptionScope': '0 source records differ only at the exact pinned '
+                                             'square-bracket positions. All display text remains the '
+                                             'complete original TXT; no wording or numbering is repaired.',
+                    'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31102},
+                    'rights': {'redistribute': True,
+                               'adapt': True,
+                               'offline': True,
+                               'audio': True,
+                               'export': True},
+                    'conditions': ['Retain the exact edition identity, original source wording and complete '
+                                   'publisher notice with redistributed/offline copies.',
+                                   'Rights evidence is the individual provider declaration and stated '
+                                   'provider uses, not independent worldwide legal or human editorial '
+                                   'approval; the provider inventory describes public-domain knowledge in '
+                                   'the USA and its policy acknowledges national-law variation.',
+                                   'Publisher VPL supplies verse text without separate notes, introductions, '
+                                   'headings or paragraph layout. Inline source annotations, historical '
+                                   'spellings and alternate-numbering text remain unchanged where present.',
+                                   'Changed study material must be separately labeled and must not be '
+                                   'presented as unchanged publisher text.',
+                                   'No third-party recorded audio, cover artwork, illustrations, maps or '
+                                   'distinct modern revisions are included or licensed by this text import.',
+                                   'No provider certification badge or trademark license is included, and '
+                                   'this application is not claimed to be provider-certified.'],
+                    'rightsEvidenceUrls': ['https://ebible.org/legal.php',
+                                           'https://ebible.org/publicdomain.htm'],
+                    'preserveSourceNotice': True,
+                    'languageEvidence': {'registryUrl': 'https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry',
+                                         'registryFileDate': '2026-09-17',
+                                         'registrySha256': '755fad43283be7b41ebe3c89ad054b6eaf928f404f9c0edb74799e0eab74beb1',
+                                         'languageTag': 'my',
+                                         'script': 'Mymr',
+                                         'direction': 'ltr',
+                                         'sourceLetterBidiCounts': {'L': 1618063},
+                                         'sourceLetterUnicodeNamePrefixes': {'MYANMAR': 1618063},
+                                         'scope': 'Language identity is supplied by the individual publisher '
+                                                  'notice. The IANA registry validates the selected '
+                                                  'language/script subtags; direction and observed script '
+                                                  'are checked against every source letter. No '
+                                                  'native-language approval is asserted.'}},
+ 'nld-1917': {'name': 'De Heilige Schrift 1917',
+              'nativeTitle': 'De Heilige Schrift 1917',
+              'abbreviation': 'NLD1917',
+              'language': 'nl',
+              'script': 'Latn',
+              'direction': 'ltr',
+              'corpus': 'bible',
+              'publisher': 'eBible.org',
+              'translator': 'Not specified in the publisher notice.',
+              'providerId': 'nld',
+              'revision': '1917, as identified by the publisher notice; no further translation identity is '
+                          'inferred.',
+              'canon': 'protestant-66',
+              'sourceUpdatedAt': '2025-12-12',
+              'sourceNoticeDate': '2023-01-23',
+              'rightsObservedAt': '2026-11-05',
+              'sourceUrl': 'https://ebible.org/nld/',
+              'formatUrl': 'https://ebible.org/find/details.php?id=nld',
+              'downloadUrl': 'https://ebible.org/Scriptures/nld_vpl.zip',
+              'downloadBytes': 4599195,
+              'licenseUrl': 'https://ebible.org/nld/copyright.htm',
+              'license': 'Public domain (provider-declared)',
+              'licenseIdentifier': 'LicenseRef-Public-Domain',
+              'attribution': 'De Heilige Schrift 1917. De Heilige Schrift 1917. Not specified in the '
+                             'publisher notice.. 1917, as identified by the publisher notice; no further '
+                             'translation identity is inferred. Public domain as declared by eBible.org; '
+                             'exact source files dated 2025-12-12; full publisher notice retained.',
+              'sha256': '1b725d623e86e639516b59cc9c292184066f2b2ca58df2e500f2878883dc3938',
+              'xmlSha256': '9f8818342a7d306fd0fa86a555db6758235681f47aebbc9d105d365c8d341876',
+              'textSha256': '93eda0e4813c02741810ec6c487857d14c2dd3be471dfe570f739acd53f5c686',
+              'noticeSha256': '61605d44d18246ebedcb032bb64cdec1db237d0024edc99c447323bd9e82b48d',
+              'bracketExceptionCount': 0,
+              'bracketExceptionInventorySha256': '37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570',
+              'bracketExceptionScope': '0 source records differ only at the exact pinned square-bracket '
+                                       'positions. All display text remains the complete original TXT; no '
+                                       'wording or numbering is repaired.',
+              'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31102},
+              'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': True, 'export': True},
+              'conditions': ['Retain the exact edition identity, original source wording and complete '
+                             'publisher notice with redistributed/offline copies.',
+                             'Rights evidence is the individual provider declaration and stated provider '
+                             'uses, not independent worldwide legal or human editorial approval; the '
+                             'provider inventory describes public-domain knowledge in the USA and its policy '
+                             'acknowledges national-law variation.',
+                             'Publisher VPL supplies verse text without separate notes, introductions, '
+                             'headings or paragraph layout. Inline source annotations, historical spellings '
+                             'and alternate-numbering text remain unchanged where present.',
+                             'Changed study material must be separately labeled and must not be presented as '
+                             'unchanged publisher text.',
+                             'No third-party recorded audio, cover artwork, illustrations, maps or distinct '
+                             'modern revisions are included or licensed by this text import.',
+                             'No provider certification badge or trademark license is included, and this '
+                             'application is not claimed to be provider-certified.'],
+              'rightsEvidenceUrls': ['https://ebible.org/legal.php', 'https://ebible.org/publicdomain.htm'],
+              'preserveSourceNotice': True,
+              'languageEvidence': {'registryUrl': 'https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry',
+                                   'registryFileDate': '2026-09-17',
+                                   'registrySha256': '755fad43283be7b41ebe3c89ad054b6eaf928f404f9c0edb74799e0eab74beb1',
+                                   'languageTag': 'nl',
+                                   'script': 'Latn',
+                                   'direction': 'ltr',
+                                   'sourceLetterBidiCounts': {'L': 3404856},
+                                   'sourceLetterUnicodeNamePrefixes': {'LATIN': 3404856},
+                                   'scope': 'Language identity is supplied by the individual publisher '
+                                            'notice. The IANA registry validates the selected '
+                                            'language/script subtags; direction and observed script are '
+                                            'checked against every source letter. No native-language '
+                                            'approval is asserted.'}},
+ 'haw-1868': {'name': 'Baibala Hemolele (1868)',
+              'nativeTitle': 'Baibala Hemolele',
+              'abbreviation': 'HAW1868',
+              'language': 'haw',
+              'script': 'Latn',
+              'direction': 'ltr',
+              'corpus': 'bible',
+              'publisher': 'eBible.org',
+              'translator': 'na na misionari i pai',
+              'providerId': 'haw1868',
+              'revision': '1868 revision, as identified by the publisher notice.',
+              'canon': 'protestant-66',
+              'sourceUpdatedAt': '2025-12-12',
+              'sourceNoticeDate': '2015-11-10',
+              'rightsObservedAt': '2026-11-05',
+              'sourceUrl': 'https://ebible.org/haw1868/',
+              'formatUrl': 'https://ebible.org/find/details.php?id=haw1868',
+              'downloadUrl': 'https://ebible.org/Scriptures/haw1868_vpl.zip',
+              'downloadBytes': 4189783,
+              'licenseUrl': 'https://ebible.org/haw1868/copyright.htm',
+              'license': 'Public domain (provider-declared)',
+              'licenseIdentifier': 'LicenseRef-Public-Domain',
+              'attribution': 'Baibala Hemolele (1868). Baibala Hemolele. na na misionari i pai. 1868 '
+                             'revision, as identified by the publisher notice. Public domain as declared by '
+                             'eBible.org; exact source files dated 2025-12-12; full publisher notice '
+                             'retained.',
+              'sha256': 'ed5a6d757d6532bc8a1cce2016c7ff53e7d9c9e0176c502261557e8de0fd85dc',
+              'xmlSha256': '177538c15c9e5a7174558f5a4b844b1a466a46757669c762825725fcc6ac21b5',
+              'textSha256': 'c0f7360a77f9714a490f930f7dff3566e7e40faa5830e249a43ccfbf6163ae1a',
+              'noticeSha256': '22797584ace2a630ebc22ce432e2faf02070c123c97a18199013a11b8aedb796',
+              'bracketExceptionCount': 39,
+              'bracketExceptionInventorySha256': '907d4c42524ad0a78b4fb9bbabcd081c153881c57706214041ac1b95895a7d31',
+              'bracketExceptionScope': '39 source records differ only at the exact pinned square-bracket '
+                                       'positions. All display text remains the complete original TXT; no '
+                                       'wording or numbering is repaired.',
+              'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31102},
+              'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': True, 'export': True},
+              'conditions': ['Retain the exact edition identity, original source wording and complete '
+                             'publisher notice with redistributed/offline copies.',
+                             'Rights evidence is the individual provider declaration and stated provider '
+                             'uses, not independent worldwide legal or human editorial approval; the '
+                             'provider inventory describes public-domain knowledge in the USA and its policy '
+                             'acknowledges national-law variation.',
+                             'Publisher VPL supplies verse text without separate notes, introductions, '
+                             'headings or paragraph layout. Inline source annotations, historical spellings '
+                             'and alternate-numbering text remain unchanged where present.',
+                             'Changed study material must be separately labeled and must not be presented as '
+                             'unchanged publisher text.',
+                             'No third-party recorded audio, cover artwork, illustrations, maps or distinct '
+                             'modern revisions are included or licensed by this text import.',
+                             'No provider certification badge or trademark license is included, and this '
+                             'application is not claimed to be provider-certified.'],
+              'rightsEvidenceUrls': ['https://ebible.org/legal.php', 'https://ebible.org/publicdomain.htm'],
+              'preserveSourceNotice': True,
+              'languageEvidence': {'registryUrl': 'https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry',
+                                   'registryFileDate': '2026-09-17',
+                                   'registrySha256': '755fad43283be7b41ebe3c89ad054b6eaf928f404f9c0edb74799e0eab74beb1',
+                                   'languageTag': 'haw',
+                                   'script': 'Latn',
+                                   'direction': 'ltr',
+                                   'sourceLetterBidiCounts': {'L': 3247208},
+                                   'sourceLetterUnicodeNamePrefixes': {'LATIN': 3247208},
+                                   'scope': 'Language identity is supplied by the individual publisher '
+                                            'notice. The IANA registry validates the selected '
+                                            'language/script subtags; direction and observed script are '
+                                            'checked against every source letter. No native-language '
+                                            'approval is asserted.'}},
+ 'rus-synodal': {'name': 'Russian Synodal Bible',
+                 'nativeTitle': 'Синодальный перевод',
+                 'abbreviation': 'SYN',
+                 'language': 'ru',
+                 'script': 'Cyrl',
+                 'direction': 'ltr',
+                 'corpus': 'bible',
+                 'publisher': 'eBible.org',
+                 'translator': 'Not specified in the publisher notice.',
+                 'providerId': 'russyn',
+                 'revision': 'Synodal translation; no historical revision year is specified in the '
+                             'individual notice.',
+                 'canon': 'protestant-66',
+                 'sourceUpdatedAt': '2025-12-12',
+                 'sourceNoticeDate': '2022-11-25',
+                 'rightsObservedAt': '2026-11-05',
+                 'sourceUrl': 'https://ebible.org/russyn/',
+                 'formatUrl': 'https://ebible.org/find/details.php?id=russyn',
+                 'downloadUrl': 'https://ebible.org/Scriptures/russyn_vpl.zip',
+                 'downloadBytes': 5066001,
+                 'licenseUrl': 'https://ebible.org/russyn/copyright.htm',
+                 'license': 'Public domain (provider-declared)',
+                 'licenseIdentifier': 'LicenseRef-Public-Domain',
+                 'attribution': 'Russian Synodal Bible. Синодальный перевод. Not specified in the publisher '
+                                'notice.. Synodal translation; no historical revision year is specified in '
+                                'the individual notice. Public domain as declared by eBible.org; exact '
+                                'source files dated 2025-12-12; full publisher notice retained.',
+                 'sha256': 'e8f12f3f3e5856a859034ac5614a8a67d112c7afa59c2af9f42be46e45d68198',
+                 'xmlSha256': '3b653989956d1d88b491894c6fa66f924c960757121eddd43440ef70465a3b6c',
+                 'textSha256': '40b3e2c17769439b4743f94c0cf7ec18c02dbc68a6967c5bf096874fbee6a872',
+                 'noticeSha256': '6288ef9de366517db3dc1b46af55e1f5688f13f6440ab78d23e7044d185ac8e9',
+                 'bracketExceptionCount': 0,
+                 'bracketExceptionInventorySha256': '37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570',
+                 'bracketExceptionScope': '0 source records differ only at the exact pinned square-bracket '
+                                          'positions. All display text remains the complete original TXT; no '
+                                          'wording or numbering is repaired.',
+                 'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31169},
+                 'rights': {'redistribute': True,
+                            'adapt': True,
+                            'offline': True,
+                            'audio': True,
+                            'export': True},
+                 'conditions': ['Retain the exact edition identity, original source wording and complete '
+                                'publisher notice with redistributed/offline copies.',
+                                'Rights evidence is the individual provider declaration and stated provider '
+                                'uses, not independent worldwide legal or human editorial approval; the '
+                                'provider inventory describes public-domain knowledge in the USA and its '
+                                'policy acknowledges national-law variation.',
+                                'Publisher VPL supplies verse text without separate notes, introductions, '
+                                'headings or paragraph layout. Inline source annotations, historical '
+                                'spellings and alternate-numbering text remain unchanged where present.',
+                                'Changed study material must be separately labeled and must not be presented '
+                                'as unchanged publisher text.',
+                                'No third-party recorded audio, cover artwork, illustrations, maps or '
+                                'distinct modern revisions are included or licensed by this text import.',
+                                'No provider certification badge or trademark license is included, and this '
+                                'application is not claimed to be provider-certified.'],
+                 'rightsEvidenceUrls': ['https://ebible.org/legal.php',
+                                        'https://ebible.org/publicdomain.htm'],
+                 'preserveSourceNotice': True,
+                 'languageEvidence': {'registryUrl': 'https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry',
+                                      'registryFileDate': '2026-09-17',
+                                      'registrySha256': '755fad43283be7b41ebe3c89ad054b6eaf928f404f9c0edb74799e0eab74beb1',
+                                      'languageTag': 'ru',
+                                      'script': 'Cyrl',
+                                      'direction': 'ltr',
+                                      'sourceLetterBidiCounts': {'L': 2683506},
+                                      'sourceLetterUnicodeNamePrefixes': {'CYRILLIC': 2683479, 'LATIN': 27},
+                                      'scope': 'Language identity is supplied by the individual publisher '
+                                               'notice. The IANA registry validates the selected '
+                                               'language/script subtags; direction and observed script are '
+                                               'checked against every source letter. No native-language '
+                                               'approval is asserted.'}},
+ 'ukr-kulish1905': {'name': 'Ukrainian Kulish–Puluj Bible (1905)',
+                    'nativeTitle': 'Біблія в пер. П.Куліша та І.Пулюя, 1905',
+                    'abbreviation': 'KUL1905',
+                    'language': 'uk',
+                    'script': 'Cyrl',
+                    'direction': 'ltr',
+                    'corpus': 'bible',
+                    'publisher': 'eBible.org',
+                    'translator': 'Panteleimon Kulish; contributors: Ivan Semenovych Nechui-Levytsky and '
+                                  'Ivan Pavlovych Puluj',
+                    'providerId': 'ukr1871',
+                    'revision': '1905 in the publisher title and notice; ukr1871 is retained only as the '
+                                'provider identifier.',
+                    'canon': 'protestant-66',
+                    'sourceUpdatedAt': '2026-09-02',
+                    'sourceNoticeDate': '2025-01-31',
+                    'rightsObservedAt': '2026-11-05',
+                    'sourceUrl': 'https://ebible.org/ukr1871/',
+                    'formatUrl': 'https://ebible.org/find/details.php?id=ukr1871',
+                    'downloadUrl': 'https://ebible.org/Scriptures/ukr1871_vpl.zip',
+                    'downloadBytes': 5310199,
+                    'licenseUrl': 'https://ebible.org/ukr1871/copyright.htm',
+                    'license': 'Public domain (provider-declared)',
+                    'licenseIdentifier': 'LicenseRef-Public-Domain',
+                    'attribution': 'Ukrainian Kulish–Puluj Bible (1905). Біблія в пер. П.Куліша та І.Пулюя, '
+                                   '1905. Panteleimon Kulish; contributors: Ivan Semenovych Nechui-Levytsky '
+                                   'and Ivan Pavlovych Puluj. 1905 in the publisher title and notice; '
+                                   'ukr1871 is retained only as the provider identifier. Public domain as '
+                                   'declared by eBible.org; exact source files dated 2026-09-02; full '
+                                   'publisher notice retained.',
+                    'sha256': 'd1913e04db9f4e2fc3405a98e40a9358ef332ac9b463d0d2e8aeb0b6b90d7014',
+                    'xmlSha256': '32e52721ee4034e08b66fe6e080cbbaf40e7c2e0a4a8f6bbcb2a6c5a860000eb',
+                    'textSha256': '1d2230822492a230c04fbea34f1b5ede7073a9d19c23a461d9738c87b85c2ec1',
+                    'noticeSha256': '1b091a037aea5ce324683798c575624d4cc4d4928b79fa4a5024db35916513eb',
+                    'bracketExceptionCount': 2,
+                    'bracketExceptionInventorySha256': '0a25e9c305da70604094bafefd8011e2e9edd6bf4fb2b62cf4b61853f9d6db14',
+                    'bracketExceptionScope': '2 source records differ only at the exact pinned '
+                                             'square-bracket positions. All display text remains the '
+                                             'complete original TXT; no wording or numbering is repaired.',
+                    'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31082},
+                    'rights': {'redistribute': True,
+                               'adapt': True,
+                               'offline': True,
+                               'audio': True,
+                               'export': True},
+                    'conditions': ['Retain the exact edition identity, original source wording and complete '
+                                   'publisher notice with redistributed/offline copies.',
+                                   'Rights evidence is the individual provider declaration and stated '
+                                   'provider uses, not independent worldwide legal or human editorial '
+                                   'approval; the provider inventory describes public-domain knowledge in '
+                                   'the USA and its policy acknowledges national-law variation.',
+                                   'Publisher VPL supplies verse text without separate notes, introductions, '
+                                   'headings or paragraph layout. Inline source annotations, historical '
+                                   'spellings and alternate-numbering text remain unchanged where present.',
+                                   'Changed study material must be separately labeled and must not be '
+                                   'presented as unchanged publisher text.',
+                                   'No third-party recorded audio, cover artwork, illustrations, maps or '
+                                   'distinct modern revisions are included or licensed by this text import.',
+                                   'No provider certification badge or trademark license is included, and '
+                                   'this application is not claimed to be provider-certified.'],
+                    'rightsEvidenceUrls': ['https://ebible.org/legal.php',
+                                           'https://ebible.org/publicdomain.htm'],
+                    'preserveSourceNotice': True,
+                    'languageEvidence': {'registryUrl': 'https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry',
+                                         'registryFileDate': '2026-09-17',
+                                         'registrySha256': '755fad43283be7b41ebe3c89ad054b6eaf928f404f9c0edb74799e0eab74beb1',
+                                         'languageTag': 'uk',
+                                         'script': 'Cyrl',
+                                         'direction': 'ltr',
+                                         'sourceLetterBidiCounts': {'L': 2649600},
+                                         'sourceLetterUnicodeNamePrefixes': {'CYRILLIC': 2649282,
+                                                                             'MODIFIER': 318},
+                                         'scope': 'Language identity is supplied by the individual publisher '
+                                                  'notice. The IANA registry validates the selected '
+                                                  'language/script subtags; direction and observed script '
+                                                  'are checked against every source letter. No '
+                                                  'native-language approval is asserted.'}},
+ 'vie-cadman': {'name': 'Vietnamese Bible (NT 1923 / OT 1925)',
+                'nativeTitle': 'Kinh Thánh',
+                'abbreviation': 'VCAD',
+                'language': 'vi',
+                'script': 'Latn',
+                'direction': 'ltr',
+                'corpus': 'bible',
+                'publisher': 'eBible.org',
+                'translator': 'William Cadman (1883–1948); contributor: Christian and Missionary Alliance',
+                'providerId': 'vie1934',
+                'revision': 'New Testament first published 1923; Old Testament first published 1925. The '
+                            'provider ID vie1934 does not establish a 1934 revision.',
+                'canon': 'protestant-66',
+                'sourceUpdatedAt': '2025-12-12',
+                'sourceNoticeDate': '2022-06-09',
+                'rightsObservedAt': '2026-11-05',
+                'sourceUrl': 'https://ebible.org/vie1934/',
+                'formatUrl': 'https://ebible.org/find/details.php?id=vie1934',
+                'downloadUrl': 'https://ebible.org/Scriptures/vie1934_vpl.zip',
+                'downloadBytes': 4692647,
+                'licenseUrl': 'https://ebible.org/vie1934/copyright.htm',
+                'license': 'Public domain (provider-declared)',
+                'licenseIdentifier': 'LicenseRef-Public-Domain',
+                'attribution': 'Vietnamese Bible (NT 1923 / OT 1925). Kinh Thánh. William Cadman '
+                               '(1883–1948); contributor: Christian and Missionary Alliance. New Testament '
+                               'first published 1923; Old Testament first published 1925. The provider ID '
+                               'vie1934 does not establish a 1934 revision. Public domain as declared by '
+                               'eBible.org; exact source files dated 2025-12-12; full publisher notice '
+                               'retained.',
+                'sha256': '54a1c70f875ac5c4315259665d7e1ad153b3b90f28a3a868db9cbd4c56e6e1d0',
+                'xmlSha256': '92f55f4ba3b4baecafdc33eed87995946e06e5901cef5533104b405e599472fd',
+                'textSha256': 'f8433c875bb670628a1f0b9cc548237f033c9320170731f3be1b38482e45705f',
+                'noticeSha256': '5e1f459b904964cc7ed77c445f8d5ef884007bd7713c79c29a6765929bc322df',
+                'bracketExceptionCount': 0,
+                'bracketExceptionInventorySha256': '37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570',
+                'bracketExceptionScope': '0 source records differ only at the exact pinned square-bracket '
+                                         'positions. All display text remains the complete original TXT; no '
+                                         'wording or numbering is repaired.',
+                'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31102},
+                'rights': {'redistribute': True,
+                           'adapt': True,
+                           'offline': True,
+                           'audio': True,
+                           'export': True},
+                'conditions': ['Retain the exact edition identity, original source wording and complete '
+                               'publisher notice with redistributed/offline copies.',
+                               'Rights evidence is the individual provider declaration and stated provider '
+                               'uses, not independent worldwide legal or human editorial approval; the '
+                               'provider inventory describes public-domain knowledge in the USA and its '
+                               'policy acknowledges national-law variation.',
+                               'Publisher VPL supplies verse text without separate notes, introductions, '
+                               'headings or paragraph layout. Inline source annotations, historical '
+                               'spellings and alternate-numbering text remain unchanged where present.',
+                               'Changed study material must be separately labeled and must not be presented '
+                               'as unchanged publisher text.',
+                               'No third-party recorded audio, cover artwork, illustrations, maps or '
+                               'distinct modern revisions are included or licensed by this text import.',
+                               'No provider certification badge or trademark license is included, and this '
+                               'application is not claimed to be provider-certified.',
+                               'The notice asserts NT public-domain entry on 2019-01-01 and OT on '
+                               '2021-01-01. These are retained as publisher statements, not an independent '
+                               'worldwide copyright conclusion.'],
+                'rightsEvidenceUrls': ['https://ebible.org/legal.php', 'https://ebible.org/publicdomain.htm'],
+                'preserveSourceNotice': True,
+                'languageEvidence': {'registryUrl': 'https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry',
+                                     'registryFileDate': '2026-09-17',
+                                     'registrySha256': '755fad43283be7b41ebe3c89ad054b6eaf928f404f9c0edb74799e0eab74beb1',
+                                     'languageTag': 'vi',
+                                     'script': 'Latn',
+                                     'direction': 'ltr',
+                                     'sourceLetterBidiCounts': {'L': 2855037},
+                                     'sourceLetterUnicodeNamePrefixes': {'LATIN': 2855037},
+                                     'scope': 'Language identity is supplied by the individual publisher '
+                                              'notice. The IANA registry validates the selected '
+                                              'language/script subtags; direction and observed script are '
+                                              'checked against every source letter. No native-language '
+                                              'approval is asserted.'}},
+ 'srp-danicic-karadzic': {'name': 'Serbian Daničić–Karadžić Bible (Cyrillic)',
+                          'nativeTitle': 'Свето писмо или Библија Превод Даничић-Караџић',
+                          'abbreviation': 'DKCYR',
+                          'language': 'sr-Cyrl',
+                          'script': 'Cyrl',
+                          'direction': 'ltr',
+                          'corpus': 'bible',
+                          'publisher': 'eBible.org',
+                          'translator': 'Daničić–Karadžić, as named by the publisher',
+                          'providerId': 'srp1868',
+                          'revision': 'Daničić–Karadžić translation, Cyrillic alphabet; no historical '
+                                      'revision year is specified in the individual notice.',
+                          'canon': 'protestant-66',
+                          'sourceUpdatedAt': '2026-01-03',
+                          'sourceNoticeDate': '2026-01-03',
+                          'rightsObservedAt': '2026-11-05',
+                          'sourceUrl': 'https://ebible.org/srp1868/',
+                          'formatUrl': 'https://ebible.org/find/details.php?id=srp1868',
+                          'downloadUrl': 'https://ebible.org/Scriptures/srp1868_vpl.zip',
+                          'downloadBytes': 4709500,
+                          'licenseUrl': 'https://ebible.org/srp1868/copyright.htm',
+                          'license': 'Public domain (provider-declared)',
+                          'licenseIdentifier': 'LicenseRef-Public-Domain',
+                          'attribution': 'Serbian Daničić–Karadžić Bible (Cyrillic). Свето писмо или Библија '
+                                         'Превод Даничић-Караџић. Daničić–Karadžić, as named by the '
+                                         'publisher. Daničić–Karadžić translation, Cyrillic alphabet; no '
+                                         'historical revision year is specified in the individual notice. '
+                                         'Public domain as declared by eBible.org; exact source files dated '
+                                         '2026-01-03; full publisher notice retained.',
+                          'sha256': '40f38bfe0af0a6df4f31d2873cc76902caf576b3f54217d2c86adee6d57e196b',
+                          'xmlSha256': '1ac75c19205e086a24260dd9050e7fe69ece31df7762012231a435fa3a59fd5a',
+                          'textSha256': '8c6180092f703d9032c75cc6e4b36b55573d6383a9abdf4b1065f1401763594e',
+                          'noticeSha256': '62693985619a1380c66f1506d899f89bb62a6ebf705df778e140821e1556841e',
+                          'bracketExceptionCount': 0,
+                          'bracketExceptionInventorySha256': '37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570',
+                          'bracketExceptionScope': '0 source records differ only at the exact pinned '
+                                                   'square-bracket positions. All display text remains the '
+                                                   'complete original TXT; no wording or numbering is '
+                                                   'repaired.',
+                          'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31111},
+                          'rights': {'redistribute': True,
+                                     'adapt': True,
+                                     'offline': True,
+                                     'audio': True,
+                                     'export': True},
+                          'conditions': ['Retain the exact edition identity, original source wording and '
+                                         'complete publisher notice with redistributed/offline copies.',
+                                         'Rights evidence is the individual provider declaration and stated '
+                                         'provider uses, not independent worldwide legal or human editorial '
+                                         'approval; the provider inventory describes public-domain knowledge '
+                                         'in the USA and its policy acknowledges national-law variation.',
+                                         'Publisher VPL supplies verse text without separate notes, '
+                                         'introductions, headings or paragraph layout. Inline source '
+                                         'annotations, historical spellings and alternate-numbering text '
+                                         'remain unchanged where present.',
+                                         'Changed study material must be separately labeled and must not be '
+                                         'presented as unchanged publisher text.',
+                                         'No third-party recorded audio, cover artwork, illustrations, maps '
+                                         'or distinct modern revisions are included or licensed by this text '
+                                         'import.',
+                                         'No provider certification badge or trademark license is included, '
+                                         'and this application is not claimed to be provider-certified.'],
+                          'rightsEvidenceUrls': ['https://ebible.org/legal.php',
+                                                 'https://ebible.org/publicdomain.htm'],
+                          'preserveSourceNotice': True,
+                          'languageEvidence': {'registryUrl': 'https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry',
+                                               'registryFileDate': '2026-09-17',
+                                               'registrySha256': '755fad43283be7b41ebe3c89ad054b6eaf928f404f9c0edb74799e0eab74beb1',
+                                               'languageTag': 'sr-Cyrl',
+                                               'script': 'Cyrl',
+                                               'direction': 'ltr',
+                                               'sourceLetterBidiCounts': {'L': 2473630},
+                                               'sourceLetterUnicodeNamePrefixes': {'CYRILLIC': 2473630},
+                                               'scope': 'Language identity is supplied by the individual '
+                                                        'publisher notice. The IANA registry validates the '
+                                                        'selected language/script subtags; direction and '
+                                                        'observed script are checked against every source '
+                                                        'letter. No native-language approval is asserted.'}},
+ 'ton-revised-west': {'name': 'Tongan Revised West Version',
+                      'nativeTitle': 'KO E TOHI TAPU KĀTOA',
+                      'abbreviation': 'RWV',
+                      'language': 'to',
+                      'script': 'Latn',
+                      'direction': 'ltr',
+                      'corpus': 'bible',
+                      'publisher': 'eBible.org',
+                      'translator': 'James Baxley; digital editions/layout credit: Michael Johnson',
+                      'providerId': 'ton',
+                      'revision': 'Revised West Version; exact provider source dated 2025-12-12. Not an '
+                                  'untouched nineteenth-century West edition.',
+                      'canon': 'protestant-66',
+                      'sourceUpdatedAt': '2025-12-12',
+                      'sourceNoticeDate': '2025-10-25',
+                      'rightsObservedAt': '2026-11-05',
+                      'sourceUrl': 'https://ebible.org/ton/',
+                      'formatUrl': 'https://ebible.org/find/details.php?id=ton',
+                      'downloadUrl': 'https://ebible.org/Scriptures/ton_vpl.zip',
+                      'downloadBytes': 4406673,
+                      'licenseUrl': 'https://ebible.org/ton/copyright.htm',
+                      'license': 'Public domain (provider-declared)',
+                      'licenseIdentifier': 'LicenseRef-Public-Domain',
+                      'attribution': 'Tongan Revised West Version. KO E TOHI TAPU KĀTOA. James Baxley; '
+                                     'digital editions/layout credit: Michael Johnson. Revised West Version; '
+                                     'exact provider source dated 2025-12-12. Not an untouched '
+                                     'nineteenth-century West edition. Public domain as declared by '
+                                     'eBible.org; exact source files dated 2025-12-12; full publisher notice '
+                                     'retained.',
+                      'sha256': '24cea17bdf324d7f59ea40367e6340a3b52f8d0157dcd68c6dc55df3302bb5fb',
+                      'xmlSha256': 'a7b3537755b4f6848ad04d99dd18bf0954f2c6b9989e9392a79ddeea4ad25405',
+                      'textSha256': 'bd6b91a6f39a692afe9f56d2d29177b897bcac818eaf89abe33adf2743a32c11',
+                      'noticeSha256': '6bfce522d0ed0e29a2e7a69ce94cdadf351ae2c0720a3a7f06b41ada2218802e',
+                      'bracketExceptionCount': 1238,
+                      'bracketExceptionInventorySha256': 'e0c67d2f53444c5934bf3efdfd04ef62a1fd260a1bd82223be1fa321852d37d7',
+                      'bracketExceptionScope': '1238 source records differ only at the exact pinned '
+                                               'square-bracket positions and one separately pinned ASCII '
+                                               'padding position at Mark 13:3. All display text remains the '
+                                               'complete original TXT; no wording or numbering is repaired.',
+                      'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31102},
+                      'rights': {'redistribute': True,
+                                 'adapt': True,
+                                 'offline': True,
+                                 'audio': True,
+                                 'export': True},
+                      'conditions': ['Retain the exact edition identity, original source wording and '
+                                     'complete publisher notice with redistributed/offline copies.',
+                                     'Rights evidence is the individual provider declaration and stated '
+                                     'provider uses, not independent worldwide legal or human editorial '
+                                     'approval; the provider inventory describes public-domain knowledge in '
+                                     'the USA and its policy acknowledges national-law variation.',
+                                     'Publisher VPL supplies verse text without separate notes, '
+                                     'introductions, headings or paragraph layout. Inline source '
+                                     'annotations, historical spellings and alternate-numbering text remain '
+                                     'unchanged where present.',
+                                     'Changed study material must be separately labeled and must not be '
+                                     'presented as unchanged publisher text.',
+                                     'No third-party recorded audio, cover artwork, illustrations, maps or '
+                                     'distinct modern revisions are included or licensed by this text '
+                                     'import.',
+                                     'No provider certification badge or trademark license is included, and '
+                                     'this application is not claimed to be provider-certified.',
+                                     'The source credits cover/title-page artist Kitione Vailea and digital '
+                                     'layout by Michael Johnson; cover art and layout are not imported. The '
+                                     'provider explicitly lists Revised West among translations dedicated to '
+                                     'the public domain.'],
+                      'rightsEvidenceUrls': ['https://ebible.org/legal.php',
+                                             'https://ebible.org/publicdomain.htm'],
+                      'preserveSourceNotice': True,
+                      'languageEvidence': {'registryUrl': 'https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry',
+                                           'registryFileDate': '2026-09-17',
+                                           'registrySha256': '755fad43283be7b41ebe3c89ad054b6eaf928f404f9c0edb74799e0eab74beb1',
+                                           'languageTag': 'to',
+                                           'script': 'Latn',
+                                           'direction': 'ltr',
+                                           'sourceLetterBidiCounts': {'L': 3737910},
+                                           'sourceLetterUnicodeNamePrefixes': {'LATIN': 3409561,
+                                                                               'MODIFIER': 328349},
+                                           'scope': 'Language identity is supplied by the individual '
+                                                    'publisher notice. The IANA registry validates the '
+                                                    'selected language/script subtags; direction and '
+                                                    'observed script are checked against every source '
+                                                    'letter. No native-language approval is asserted.'},
+                      'bracketPaddingExceptions': [{'bookId': 'MRK',
+                                                    'chapter': 13,
+                                                    'verse': 3,
+                                                    'xmlTextSha256': '9b87e6744f40bb888669b14652338b99828f55e82fa7cc36d8b67d25674100af',
+                                                    'textSha256': '1b02ae8342254c34bab5dfccfacaaddeddc0bac665a0a4e9e70287bac530915c',
+                                                    'paddingPositions': [{'offset': 158, 'character': ' '}]}],
+                      'formatEvidence': {'sourceUrl': 'https://ebible.org/Scriptures/ton_usfm.zip',
+                                         'archiveBytes': 1545882,
+                                         'archiveSha256': 'd217d40dd70eafcd31c6531dd5bc9ea08c84e66d57164977cc1fb822d3af1d6d',
+                                         'member': '71-MRKton.usfm',
+                                         'memberSha256': '93ab55a0188882ec870dc996d8466994c0920cad896ea8850cc64c91a84e6cbb',
+                                         'reference': {'bookId': 'MRK', 'chapter': 13, 'verse': 3},
+                                         'sourceExcerpt': 'Pea ʻi heʻene nofo ʻi he moʻunga ʻoe ʻOlive, ʻo '
+                                                          'hangatonu ki he falelotu lahi, naʻe fehuʻi '
+                                                          'fakafufū kiate ia ʻa Pita mo Semisi mo Sione mo '
+                                                          'ʻAnitelū, \\add ʻo pehē! \\add*  \n',
+                                         'explanation': 'The official USFM at Mark 13:3 marks the same '
+                                                        'phrase with \\add and includes one space before '
+                                                        '\\add*. Its VPL TXT encloses that phrase in square '
+                                                        'brackets and retains the space before ]. The '
+                                                        'comparison removes only the separately pinned '
+                                                        'brackets and that one exact ASCII space; display '
+                                                        'text remains the original TXT.'}},
+ 'eng-geneva1599': {'name': 'Geneva Bible 1599',
+                    'nativeTitle': 'Geneva Bible 1599',
+                    'abbreviation': 'GNV1599',
+                    'language': 'en',
+                    'script': 'Latn',
+                    'direction': 'ltr',
+                    'corpus': 'bible',
+                    'publisher': 'eBible.org',
+                    'translator': 'Not specified in the publisher notice.',
+                    'providerId': 'enggnv',
+                    'revision': '1599; original historical English spelling, as identified by the publisher '
+                                'notice.',
+                    'canon': 'protestant-66',
+                    'sourceUpdatedAt': '2025-12-12',
+                    'sourceNoticeDate': '2024-03-16',
+                    'rightsObservedAt': '2026-11-05',
+                    'sourceUrl': 'https://ebible.org/enggnv/',
+                    'formatUrl': 'https://ebible.org/find/details.php?id=enggnv',
+                    'downloadUrl': 'https://ebible.org/Scriptures/enggnv_vpl.zip',
+                    'downloadBytes': 4402877,
+                    'licenseUrl': 'https://ebible.org/enggnv/copyright.htm',
+                    'license': 'Public domain (provider-declared)',
+                    'licenseIdentifier': 'LicenseRef-Public-Domain',
+                    'attribution': 'Geneva Bible 1599. Geneva Bible 1599. Not specified in the publisher '
+                                   'notice.. 1599; original historical English spelling, as identified by '
+                                   'the publisher notice. Public domain as declared by eBible.org; exact '
+                                   'source files dated 2025-12-12; full publisher notice retained.',
+                    'sha256': 'faa35b12d04bdacda78b5b53b35bc241d576c63e5d6cd5bccd99bb337b8f7ade',
+                    'xmlSha256': '0c6ab214c47ff70c25f872798bcf96b3c2d23e468161bedeb9a7c52bc126e5ea',
+                    'textSha256': '85b72aa8e565b8283a85237cfa58148f3a4f34a6c22bc3d61cd2a07104d65ab8',
+                    'noticeSha256': 'b62c096ea6d271b310bb8aa5966d1fc274fe63c7ea6a8e9a8a9f8cf68ac5d946',
+                    'bracketExceptionCount': 0,
+                    'bracketExceptionInventorySha256': '37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570',
+                    'bracketExceptionScope': '0 source records differ only at the exact pinned '
+                                             'square-bracket positions. All display text remains the '
+                                             'complete original TXT; no wording or numbering is repaired.',
+                    'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31090},
+                    'rights': {'redistribute': True,
+                               'adapt': True,
+                               'offline': True,
+                               'audio': True,
+                               'export': True},
+                    'conditions': ['Retain the exact edition identity, original source wording and complete '
+                                   'publisher notice with redistributed/offline copies.',
+                                   'Rights evidence is the individual provider declaration and stated '
+                                   'provider uses, not independent worldwide legal or human editorial '
+                                   'approval; the provider inventory describes public-domain knowledge in '
+                                   'the USA and its policy acknowledges national-law variation.',
+                                   'Publisher VPL supplies verse text without separate notes, introductions, '
+                                   'headings or paragraph layout. Inline source annotations, historical '
+                                   'spellings and alternate-numbering text remain unchanged where present.',
+                                   'Changed study material must be separately labeled and must not be '
+                                   'presented as unchanged publisher text.',
+                                   'No third-party recorded audio, cover artwork, illustrations, maps or '
+                                   'distinct modern revisions are included or licensed by this text import.',
+                                   'No provider certification badge or trademark license is included, and '
+                                   'this application is not claimed to be provider-certified.',
+                                   'The individual notice expressly permits this digital copy worldwide '
+                                   'without copyright restrictions. Preserve its historical English '
+                                   'spelling; the notice uses the dialect label Old, which is not relabeled '
+                                   'as the distinct Old English language code ang.'],
+                    'rightsEvidenceUrls': ['https://ebible.org/legal.php',
+                                           'https://ebible.org/publicdomain.htm'],
+                    'preserveSourceNotice': True,
+                    'languageEvidence': {'registryUrl': 'https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry',
+                                         'registryFileDate': '2026-09-17',
+                                         'registrySha256': '755fad43283be7b41ebe3c89ad054b6eaf928f404f9c0edb74799e0eab74beb1',
+                                         'languageTag': 'en',
+                                         'script': 'Latn',
+                                         'direction': 'ltr',
+                                         'sourceLetterBidiCounts': {'L': 3276328},
+                                         'sourceLetterUnicodeNamePrefixes': {'LATIN': 3276328},
+                                         'scope': 'Language identity is supplied by the individual publisher '
+                                                  'notice. The IANA registry validates the selected '
+                                                  'language/script subtags; direction and observed script '
+                                                  'are checked against every source letter. No '
+                                                  'native-language approval is asserted.'}}})
+
+
 def sha(raw):
     return hashlib.sha256(raw).hexdigest()
 
@@ -553,7 +1469,8 @@ def edition_metadata(edition_id):
     source = SOURCES[edition_id]
     fields = ('name', 'language', 'corpus', 'publisher', 'translator', 'sourceUpdatedAt', 'sourceUrl', 'formatUrl',
               'downloadUrl', 'licenseUrl', 'license', 'licenseIdentifier', 'licenseDeedUrl', 'attribution', 'sha256', 'rights', 'conditions',
-              'abbreviation', 'revision', 'canon', 'providerId', 'downloadBytes')
+              'abbreviation', 'revision', 'canon', 'providerId', 'downloadBytes',
+              'nativeTitle', 'script', 'direction', 'sourceNoticeDate')
     value = {'id': edition_id, **{key: source[key] for key in fields if key in source}}
     value.update({'rightsObservedAt': source.get('rightsObservedAt', OBSERVED_ON), 'commercialUse': True,
                   'referenceSystemId': f'{edition_id}:publisher-numbering',
@@ -664,6 +1581,25 @@ def vpl_format_difference(edition_id, xml_row, text_row):
         if brackets and text.replace('[', '').replace(']', '') == xml_row['text']:
             return {**record, 'publisherMarkers': [marker[0] for marker in re.finditer(r'\[[^\[\]\r\n]+\]', text)],
                     'bracketPositions': [{'offset': marker.start(), 'character': marker[0]} for marker in brackets]}
+        # One reviewed source record retains an ASCII space inside its closing
+        # supplied-word bracket. Exact coordinates, text hashes and positions
+        # are pinned; this never permits generic trimming or display changes.
+        for exception in SOURCES[edition_id].get('bracketPaddingExceptions', []):
+            if any(exception[key] != record[key] for key in record):
+                continue
+            padding = exception['paddingPositions']
+            if (sha(xml_row['text'].encode('utf-8')) != exception['xmlTextSha256']
+                    or sha(text.encode('utf-8')) != exception['textSha256']
+                    or not padding or not brackets
+                    or any(marker.get('character') != ' ' or not isinstance(marker.get('offset'), int)
+                           or not 0 <= marker['offset'] < len(text) or text[marker['offset']] != ' '
+                           for marker in padding)):
+                raise ValueError('Pinned publisher bracket padding source record changed.')
+            excluded = {marker.start() for marker in brackets} | {marker['offset'] for marker in padding}
+            if ''.join(character for offset, character in enumerate(text) if offset not in excluded) == xml_row['text']:
+                return {**record, 'publisherMarkers': [marker[0] for marker in re.finditer(r'\[[^\[\]\r\n]+\]', text)],
+                        'bracketPositions': [{'offset': marker.start(), 'character': marker[0]} for marker in brackets],
+                        'publisherPaddingPositions': padding}
     raise ValueError('Publisher exports disagree beyond the pinned source-specific bracket format exception.')
 
 
@@ -765,6 +1701,10 @@ def bible_artifacts(edition_id, archive):
         notice_text += 'Provider rights policy: ' + url + '\n'
     files = {f'books/{bid}.json': json_bytes(book) for bid, book in books.items()}
     files.update({'manifest.json': json_bytes(manifest), 'search-index.json': json_bytes(rows), 'NOTICE.txt': notice_text.encode('utf-8')})
+    if source.get('preserveSourceNotice'):
+        files['SOURCE_NOTICE.html.txt'] = notice
+    if source.get('formatEvidence'):
+        files['FORMAT_EVIDENCE.json'] = json_bytes(source['formatEvidence'])
     provenance = {
         'members': {xml_name: sha(xml), text_name: sha(plain), notice_name: sha(notice)},
         'displayTextMember': text_name,
@@ -790,6 +1730,15 @@ def bible_artifacts(edition_id, archive):
             'publisherBracketScope': source.get('bracketExceptionScope', '4316 balanced supplied-word/other bracket spans and 76 verse-level unpaired cases, including Selah/Higgaion markers and John 7:53–8:11 textual-variant brackets. The original TXT is not repaired or renumbered.'),
         })
         provenance['normalization'][3] = 'Use publisher VPL TXT unchanged as display text, retaining supplied-word, musical-marker and textual-variant brackets.'
+    if source.get('preserveSourceNotice'):
+        provenance['sourceNoticeRawFile'] = 'SOURCE_NOTICE.html.txt'
+    if source.get('languageEvidence'):
+        provenance['languageEvidence'] = source['languageEvidence']
+    if source.get('bracketPaddingExceptions'):
+        provenance['xmlPlainTextCrossCheck'] = 'All source characters and references agree except the exact pinned TXT square brackets and separately pinned ASCII padding position. This comparison-only exception never changes displayed TXT.'
+        provenance['publisherBracketPaddingExceptions'] = source['bracketPaddingExceptions']
+        provenance['normalization'].append('Comparison only: remove the single pinned ASCII space before the supplied-word closing bracket at Tongan Mark 13:3; keep it in displayed TXT.')
+        provenance['formatEvidenceFile'] = 'FORMAT_EVIDENCE.json'
     return files, provenance
 
 
