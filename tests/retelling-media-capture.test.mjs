@@ -6,10 +6,10 @@ import { MAX_RETELLING_AUDIO_BYTES } from '../src/workspace/retelling-media.ts';
 import { ref } from './retelling-media-fixtures.mjs';
 const source={ref,editionSha256:'a'.repeat(64)};
 const bytes=new Uint8Array([0x1a,0x45,0xdf,0xa3,0x80,0,255,12]);
-function setup({pending=false,denied=false,unsupported=false}={}) {
+function setup({pending=false,denied=false,unsupported=false,timerFailure=false,autoStopOnTrackEnd=false}={}) {
   const states=[],drafts=[],idle=[];let time=0,requests=0,recorder,resolveRequest;
   const timers=new Map(),intervals=new Map();let serial=0;
-  class Track extends EventTarget { stopped=false;stop(){this.stopped=true;} }
+  class Track extends EventTarget { stopped=false;stop(){this.stopped=true;if(autoStopOnTrackEnd&&recorder?.state==='recording')recorder.stop();} }
   const track=new Track();const stream={getTracks:()=>[track]};
   class Recorder {
     state='inactive';mimeType='audio/webm;codecs=opus';
@@ -18,7 +18,7 @@ function setup({pending=false,denied=false,unsupported=false}={}) {
     stop(){this.state='inactive';queueMicrotask(()=>{this.data(new Blob([bytes],{type:this.mimeType}));this.onstop?.();});}
   }
   const env={request:()=>{requests++;return denied?Promise.reject(new DOMException('Denied','NotAllowedError')):pending?new Promise(resolve=>resolveRequest=resolve):Promise.resolve(stream);},supports:()=>!unsupported,create:()=>recorder=new Recorder(),now:()=>time,
-    later:(fn)=>{const id=++serial;timers.set(id,fn);return id;},cancelLater:id=>timers.delete(id),every:fn=>{const id=++serial;intervals.set(id,fn);return id;},cancelEvery:id=>intervals.delete(id)};
+    later:(fn)=>{const id=++serial;timers.set(id,fn);return id;},cancelLater:id=>timers.delete(id),every:fn=>{if(timerFailure)throw new Error('Timer scheduling failed.');const id=++serial;intervals.set(id,fn);return id;},cancelEvery:id=>intervals.delete(id)};
   const capture=new RetellingCapture(state=>{states.push(state);if(state.phase==='idle')while(idle.length)idle.shift()();},draft=>drafts.push(draft),env);
   return {capture,states,drafts,track,stream,timers,intervals,requests:()=>requests,recorder:()=>recorder,resolve:()=>resolveRequest(stream),time:ms=>{time=ms;},deadline:()=>[...timers.values()][0]?.(),idle:()=>new Promise(resolve=>idle.push(resolve))};
 }
@@ -103,4 +103,16 @@ test('default browser capture uses native timer receivers and releases both sche
     for(const [name,descriptor] of descriptors){if(descriptor)Object.defineProperty(globalThis,name,descriptor);else delete globalThis[name];}
     if(mediaDescriptor)Object.defineProperty(navigator,'mediaDevices',mediaDescriptor);else delete navigator.mediaDevices;
   }
+});
+
+
+test('failed startup invalidates a native stop callback and preserves the primary error',async()=>{
+  const f=setup({timerFailure:true,autoStopOnTrackEnd:true});
+  await f.capture.start(true,source);await turn();await turn();
+  assert.equal(f.track.stopped,true);
+  assert.equal(f.drafts.length,0,'A failed start must not publish bytes from its automatic stop callback.');
+  assert.equal(f.states.at(-1).phase,'idle');
+  assert.equal(f.states.at(-1).error,true);
+  assert.equal(f.states.at(-1).status,'Timer scheduling failed.');
+  assert.equal(f.timers.size,0);assert.equal(f.intervals.size,0);
 });
