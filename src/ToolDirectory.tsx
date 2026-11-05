@@ -3,6 +3,7 @@ import type { View } from './types';
 import './tools.css';
 
 const tools = [
+  { view: 'widget', icon: BookMarked, title: 'Lock-screen verse card', description: 'Create a 1080 × 1920 source verse image with clock space. This is a web export, not a native widget.' },
   { view: 'ministry', icon: NotebookPen, title: 'Teaching workspace', description: 'Prepare private outlines, source quotations, series and participant handouts on this device.' },
   { view: 'law-diary', icon: ScrollText, title: 'Law Diary', description: 'Explore source-led timelines, social laws, money, sermons, evangelism, apostles, and Second Coming texts.' },
   { view: 'editions', icon: BookMarked, title: 'Bible editions', description: 'Find an installed source, inspect its permissions, and compare two to four editions.' },

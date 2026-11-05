@@ -54,6 +54,7 @@ export function validateMinistryOutline(value: unknown): MinistryOutline {
   const timeZone = text(row.timeZone, 'Calendar timezone', 100, true);
   try { new Intl.DateTimeFormat('en', { timeZone }).format(); } catch { throw new Error('Enter a valid IANA timezone, such as Europe/Berlin.'); }
   const contentLanguage = text(row.contentLanguage, 'Writing language', 40, true);
+  if (contentLanguage.toLowerCase() === 'genz') throw new Error('Gen Z is a writing register. Use a language tag such as en.');
   try { if (!Intl.getCanonicalLocales(contentLanguage).length) throw new Error(); } catch { throw new Error('Enter a valid writing-language tag, such as en, de, yo or pcm.'); }
   if (!Array.isArray(row.quotes) || row.quotes.length > 80 || !Array.isArray(row.sections) || row.sections.length < 1 || row.sections.length > 40) throw new Error('An outline needs 1–40 sections and at most 80 source passages.');
   const quotes = row.quotes.map(raw => { const item = object(raw); return { id: id(item.id), passage: validateSavedPassage(item.passage) }; });
@@ -84,7 +85,9 @@ export function validateMinistry(value: unknown): MinistryState {
   return result;
 }
 export function ministryBackup(state: MinistryState): string {
-  return JSON.stringify({ kind: 'adigun-ministry-workspace', version: 1, workspace: { ...validateMinistry(state), revision: 0 } }, null, 2);
+  const output = JSON.stringify({ kind: 'adigun-ministry-workspace', version: 1, workspace: { ...validateMinistry(state), revision: 0 } });
+  if (new TextEncoder().encode(output).byteLength > MAX_MINISTRY_BACKUP_BYTES) throw new Error('The ministry backup exceeds 12 MB. Export individual outlines and remove older records first.');
+  return output;
 }
 export function parseMinistryBackup(raw: string): MinistryState {
   if (new TextEncoder().encode(raw).byteLength > MAX_MINISTRY_BACKUP_BYTES) throw new Error('Choose a ministry backup smaller than 12 MB.');

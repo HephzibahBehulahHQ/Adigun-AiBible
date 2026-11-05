@@ -29,7 +29,11 @@ export async function checkMinistryImportSources(state: MinistryState, sources: 
   const checked = new Set<string>();
   for (const outline of [...state.outlines, ...state.templates]) for (const quote of outline.quotes) {
     const key = JSON.stringify(quote.passage);
-    if (!checked.has(key)) { await resolveMinistrySource(quote.passage.reference, sources, quote.passage.sourceSha256); checked.add(key); }
+    if (!checked.has(key)) {
+      const resolved = await resolveMinistrySource(quote.passage.reference, sources, quote.passage.sourceSha256);
+      if (resolved.passage.editionName !== quote.passage.editionName || resolved.passage.bookName !== quote.passage.bookName) throw new Error('A saved source label does not match its original edition and book. Correct the backup before importing it.');
+      checked.add(key);
+    }
   }
 }
 const markdownText = (text: string) => text.replace(/([\\`*_{}\[\]<>()#+.!|~-])/g, '\\$1');

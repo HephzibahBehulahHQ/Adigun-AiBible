@@ -19,7 +19,7 @@ async function readJSON(path: string, message: string): Promise<unknown> {
     }
     throw error;
   }
-  if (!response.ok) throw new Error(message);
+  if (!response.ok) throw new Error(typeof navigator !== 'undefined' && !navigator.onLine && path.includes('/books/') ? "This chapter isn't cached yet. Reconnect to load it." : message);
   return response.json();
 }
 const manifests = new Map<string, Promise<Manifest>>();

@@ -1,0 +1,47 @@
+.ld-page { max-width: 1260px; }
+.ld-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 28px; }
+.ld-nav a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 8px 12px; border: 1px solid var(--border); border-radius: 10px; color: var(--ink); text-decoration: none; }
+.ld-nav a[aria-current="page"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.ld-nav a:focus-visible, .ld-page summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.ld-section-heading { display: flex; align-items: end; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; }
+.ld-search, .ld-filter { display: grid; gap: 6px; max-width: 100%; font-size: 14px; }
+.ld-search { width: min(320px, 100%); }
+.ld-page input, .ld-page select { min-height: 44px; width: 100%; max-width: 100%; color: var(--ink); background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; }
+.ld-page h3 { margin: 10px 0; }
+.ld-page h4 { margin: 0 0 12px; }
+.ld-page h5 { font-size: 1rem; margin: 12px 0; }
+.ld-page p { overflow-wrap: anywhere; }
+.ld-entries { display: grid; gap: 24px; }
+.ld-entry { padding: 24px; border: 1px solid var(--border); border-radius: 16px; background: var(--panel); min-width: 0; }
+.ld-entry > header { max-width: 76ch; margin-bottom: 20px; }
+.ld-evidence-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 20px; }
+.ld-evidence-grid.ld-has-comparison { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.ld-evidence-grid > :only-child { grid-column: 1 / -1; }
+.ld-corpus, .ld-context-note, .ld-torah, .ld-later-sources { min-width: 0; }
+.ld-context-note { padding: 16px; border: 1px solid var(--border); border-radius: 10px; }
+.ld-source { margin: 8px 0; border: 1px solid var(--border); border-radius: 10px; background: var(--bg); overflow-wrap: anywhere; }
+.ld-source summary { min-height: 44px; padding: 12px; cursor: pointer; }
+.ld-source summary span { font-weight: 600; }
+.ld-source summary small { display: block; margin: 5px 0 0 16px; color: var(--muted); font-size: 12px; }
+.ld-source[open] > summary { border-bottom: 1px solid var(--border); }
+.ld-quotation, .ld-load-error { padding: 14px; }
+.ld-source-text { line-height: 1.8; }
+.ld-source-text p, .ld-context p { margin: 12px 0; }
+.ld-source-text sup, .ld-context sup { color: var(--muted); margin-right: 5px; }
+.ld-context summary, .ld-source-credit summary, .ld-debate summary, .ld-category summary { min-height: 44px; padding: 12px 0; cursor: pointer; }
+.ld-credit-text { white-space: pre-line; font-size: 12px; line-height: 1.7; }
+.ld-hash { overflow-wrap: anywhere; font-size: 11px; color: var(--muted); }
+.ld-external-source { padding: 14px; margin: 12px 0; border: 1px solid var(--border); border-radius: 10px; }
+.ld-external-source a { display: block; margin: 10px 0; overflow-wrap: anywhere; }
+.ld-source-kind { font-size: 12px; font-weight: 600; }
+.ld-trust { font-size: 12px; line-height: 1.7; color: var(--muted); border-top: 1px solid var(--border); padding-top: 14px; margin: 18px 0 0; }
+.ld-method, .ld-prosperity, .ld-review-status, .ld-gap, .ld-fallback { border-left: 3px solid var(--accent); padding: 10px 14px; line-height: 1.7; }
+.ld-fallback, .ld-gap, .ld-prosperity { font-size: 13px; }
+.ld-method { background: var(--panel); border-radius: 4px; }
+.ld-torah, .ld-later-sources { margin-top: 20px; }
+.ld-filter { width: min(300px, 100%); margin: 12px 0; }
+.ld-category { border-top: 1px solid var(--border); }
+.ld-debate { border-top: 1px solid var(--border); margin-top: 14px; }
+@media (max-width: 1150px) { .ld-evidence-grid.ld-has-comparison { grid-template-columns: repeat(2, minmax(0, 1fr)); } .ld-has-comparison .ld-context-note { grid-column: 1 / -1; } }
+@media (max-width: 720px) { .ld-entry { padding: 16px; } .ld-evidence-grid, .ld-evidence-grid.ld-has-comparison { grid-template-columns: minmax(0, 1fr); } .ld-nav { gap: 6px; } .ld-nav a { font-size: 13px; padding: 8px 10px; } .ld-entry .secondary { width: 100%; white-space: normal; min-height: 44px; } }
+@media (prefers-reduced-motion: reduce) { .ld-page *, .ld-page *::before, .ld-page *::after { transition: none !important; scroll-behavior: auto !important; } }

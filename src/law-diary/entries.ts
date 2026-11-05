@@ -1,5 +1,5 @@
 import type { BibleCitation, ExternalCitation, LawEntry, LawSection, LawSource, QuranCitation } from './model';
-import { validateLawEntries } from './model';
+import { validateLawEntries } from './model.ts';
 
 const b = (bookId: string, bookName: string, chapter: number, verse: number, endVerse?: number): BibleCitation => ({ type: 'bible', bookId, bookName, chapter, verse, ...(endVerse ? { endVerse } : {}) });
 const q = (surah: number, ayah: number, endAyah?: number): QuranCitation => ({ type: 'quran', surah, ayah, ...(endAyah ? { endAyah } : {}) });

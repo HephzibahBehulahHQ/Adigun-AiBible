@@ -86,7 +86,7 @@ export function VerseComparison({ reference, locale, publication, onOpenQuran }:
   }, [needsQuran]);
   const reviewedRows = coverage.rows.filter(row => row.status === 'reviewed_no_match' || row.status === 'disputed');
   return <section className="comparison-panel" aria-label={`Comparison review for ${reference.bookId} ${reference.chapter}:${reference.verse}`}>
-    {!links.length&&<TrustBadge status="pending"/>}
+    {!links.length&&<TrustBadge status={isValidatedPublication(publication) ? coverage.status.replaceAll('_', ' ') : 'unconfirmed'}/>}
     <span className="review-state">{coverage.status === 'partial' ? 'Partly reviewed selection' : coverage.status.replaceAll('_', ' ')}</span>
     <p>{coverage.status === 'partial' ? 'Review status differs within this selection. Read the scope attached to each published finding.' : coverageLabel(coverage.status)}</p>
     {coverage.totalUnits > 1 && <p className="muted small">{coverage.reviewedUnits} of {coverage.totalUnits} selected verses have completed comparison reviews. Remaining verses are not recorded as having no parallel.</p>}

@@ -19,7 +19,6 @@ export default function ContextCard({ reference, locale, editionId, onOpenRefere
     void loadContextSource(chosen, { getBook, getManifest }).then(source => { if (active) setState({ key, source }); }).catch(error => { if (active) setState({ key, error: error instanceof Error ? error.message : 'Source context could not be loaded.' }); });
     return () => { active = false; };
   // Every part of the selected source reference is represented by key.
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [key, retry]);
   const source = state.key === key ? state.source : undefined, error = state.key === key ? state.error : undefined;
   const records = contextFor(chosen);
