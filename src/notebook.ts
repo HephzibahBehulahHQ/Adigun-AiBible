@@ -15,7 +15,7 @@ export async function buildNotebook(study:StudyState,sources:Sources):Promise<st
       title=`${book.name} ${ref.chapter}:${ref.verse}${ref.endVerse?`–${ref.endVerse}`:''}`;
       const verses=book.chapters.find(ch=>ch.number===ref.chapter)?.verses.filter(v=>v.number>=ref.verse&&v.number<=(ref.endVerse||ref.verse));
       excerpt=verses?.some(v=>v.text.trim())?verses.map(v=>`> ${v.number}. ${v.text}`).join('\n\n'):'The publisher has no main-text wording for this selection; no replacement text is supplied.';
-      const e=manifest.edition;credits.set(edition,[e.name,e.attribution,e.license,e.licenseUrl,e.sourceUrl].filter(Boolean).join('\n\n'));
+      const e=manifest.edition;credits.set(edition,[e.name,e.attribution,e.license,e.licenseUrl,e.licenseDeedUrl,e.sourceUrl,...(e.conditions||[])].filter(Boolean).join('\n\n'));
     }catch{ /* The saved note remains exportable independently of source downloads. */ }
     const notes=study.notes.filter(note=>refKey(note.ref)===refKey(ref)).map(note=>`### Personal note\n\n${note.text}\n\nUpdated: ${note.updatedAt}`).join('\n\n');
     const bookmarked=study.bookmarks.some(saved=>refKey(saved)===refKey(ref));

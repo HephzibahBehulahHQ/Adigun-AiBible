@@ -186,6 +186,48 @@
       "url": "https://ebible.org/enggnv/copyright.htm",
       "observedOn": "2026-11-05",
       "summary": "The individual Geneva Bible 1599 notice and matching pinned archive notice declare this exact source text Public Domain. Identity: 1599; original historical English spelling, as identified by the publisher notice. Source files dated 2025-12-12; archive SHA-256 faa35b12d04bdacda78b5b53b35bc241d576c63e5d6cd5bccd99bb337b8f7ade. Complete source notice bytes are retained. This is provider evidence, not independent human/legal certification or third-party recording permission. The individual notice expressly permits this digital copy worldwide without copyright restrictions."
+    },
+    {
+      "id": "fra-darby2024-pd",
+      "url": "https://ebible.org/frajnd/copyright.htm",
+      "observedOn": "2026-11-05",
+      "summary": "The exact Bible J.N. Darby (BPC 2024, v2.0) individual and archive notices identify this source under Public domain (provider-declared). Revision: BPC JND v2.0, 2024 reissue; source files dated 2025-05-02. Not the distinct 2026 revised edition. Archive SHA-256 dbda2c381fd0cbf2bf0f65dac2052db6f728908a8b50a7518fd5ba8c9711dc60. Complete notice bytes are retained. This is primary source evidence, not independent worldwide legal, linguistic or human editorial approval; recordings and images remain separate."
+    },
+    {
+      "id": "fra-darby2024-primary-1",
+      "url": "https://editeurbpc.com/telechargements",
+      "observedOn": "2026-11-05",
+      "summary": "BPC explicitly lists J.N. Darby Edition2024 revision2.0 as public domain and distinguishes the separately restricted2026 revised edition; its revision history identifies the2024 reissue."
+    },
+    {
+      "id": "fra-darby2024-primary-2",
+      "url": "https://ftp.editeurbpc.com/telechargements/JND",
+      "observedOn": "2026-11-05",
+      "summary": "BPC explicitly lists J.N. Darby Edition2024 revision2.0 as public domain and distinguishes the separately restricted2026 revised edition; its revision history identifies the2024 reissue."
+    },
+    {
+      "id": "spa-simple2026-pd",
+      "url": "https://ebible.org/spabes/copyright.htm",
+      "observedOn": "2026-11-05",
+      "summary": "The exact La Biblia en Español Sencillo 2026 individual and archive notices identify this source under Public domain (provider-declared). Revision: Second edition 2026; translated and edited by Irma Flores; source files dated 2026-10-30. Archive SHA-256 b5397717e5031db82ce6c595ae1d3803626aaa3d11ce8750b31d5d766b3568e1. Complete notice bytes are retained. This is primary source evidence, not independent worldwide legal, linguistic or human editorial approval; recordings and images remain separate."
+    },
+    {
+      "id": "spa-simple2026-primary-1",
+      "url": "https://audiobiblia.org/spabes_ab/spabes.htm",
+      "observedOn": "2026-11-05",
+      "summary": "AudioBiblia identifies La Biblia en Español Sencillo, second edition2026, and states unrestricted public-domain text use. This text admission does not register a separate audio asset or narrator inventory."
+    },
+    {
+      "id": "tdx-tandroy-cc-by-sa",
+      "url": "https://ebible.org/tdx/copyright.htm",
+      "observedOn": "2026-11-05",
+      "summary": "The exact Saontsin’ Añahare (Tandroy Bible, publisher draft) individual and archive notices identify this source under CC BY-SA 4.0. Revision: Publisher draft; copyright 2023 Steve Lellelid; source files dated 2026-10-17. Archive SHA-256 ca352f5888aa64896069f57cea898abadb3f2f851a1d4f555ab088b2a601e960. Complete notice bytes are retained. This is primary source evidence, not independent worldwide legal, linguistic or human editorial approval; recordings and images remain separate."
+    },
+    {
+      "id": "tdx-tandroy-cc-legal",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode",
+      "observedOn": "2026-11-05",
+      "summary": "CC BY-SA 4.0 grants reproduction, sharing and adaptation subject to attribution, indication of modifications, share-alike and no additional restrictions. This does not identify or license an uninspected third-party recording or certify a publisher draft."
     }
   ],
   "editions": [
@@ -5344,6 +5386,643 @@
         "requirement": "none",
         "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
       }
+    },
+    {
+      "editionId": "fra-darby2024",
+      "sourceSha256": "dbda2c381fd0cbf2bf0f65dac2052db6f728908a8b50a7518fd5ba8c9711dc60",
+      "verifiedOn": "2026-11-05",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "allowed",
+        "evidenceIds": [
+          "fra-darby2024-pd",
+          "ebible-pd-uses",
+          "ebible-ip-policy",
+          "fra-darby2024-primary-1",
+          "fra-darby2024-primary-2"
+        ],
+        "reason": "Primary provider-declared public-domain text and source-use policies support application text use, subject to exact identity and recorded qualifications. This does not approve generated teaching, a model service, or an independently reviewed translation."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-darby2024-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "fra-darby2024-primary-1",
+            "fra-darby2024-primary-2"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-darby2024-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "fra-darby2024-primary-1",
+            "fra-darby2024-primary-2"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-darby2024-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "fra-darby2024-primary-1",
+            "fra-darby2024-primary-2"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-darby2024-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "fra-darby2024-primary-1",
+            "fra-darby2024-primary-2"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-darby2024-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "fra-darby2024-primary-1",
+            "fra-darby2024-primary-2"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-darby2024-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "fra-darby2024-primary-1",
+            "fra-darby2024-primary-2"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-darby2024-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "fra-darby2024-primary-1",
+            "fra-darby2024-primary-2"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "aiRetrieval": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-darby2024-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "fra-darby2024-primary-1",
+            "fra-darby2024-primary-2"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "modelTraining": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-darby2024-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "fra-darby2024-primary-1",
+            "fra-darby2024-primary-2"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "tts": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-darby2024-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "fra-darby2024-primary-1",
+            "fra-darby2024-primary-2"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "fra-darby2024-pd"
+          ],
+          "reason": "Only exact text archives were admitted. No recording files, narrator inventory or recording hashes were inspected and registered; separate publisher audio claims require their own asset review."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-darby2024-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "fra-darby2024-primary-1",
+            "fra-darby2024-primary-2"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-darby2024-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "fra-darby2024-primary-1",
+            "fra-darby2024-primary-2"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-darby2024-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "fra-darby2024-primary-1",
+            "fra-darby2024-primary-2"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-darby2024-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "fra-darby2024-primary-1",
+            "fra-darby2024-primary-2"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-darby2024-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "fra-darby2024-primary-1",
+            "fra-darby2024-primary-2"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-darby2024-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "fra-darby2024-primary-1",
+            "fra-darby2024-primary-2"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "fra-darby2024-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "fra-darby2024-primary-1",
+            "fra-darby2024-primary-2"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        }
+      },
+      "attribution": "Bible J.N. Darby (BPC 2024, v2.0). J. N. Darby; BPC JND revision 2.0 BPC JND v2.0, 2024 reissue; source files dated 2025-05-02. Not the distinct 2026 revised edition. Public domain as declared by the source publisher; unchanged VPL text; complete source notice retained.",
+      "conditions": [
+        "Retain the exact edition/revision identity, original source wording and complete publisher notice with redistributed and offline copies.",
+        "Publisher VPL supplies verse text without separate notes, introductions, headings or paragraph layout. Source numbering, empty source records, inline characters and Unicode remain unchanged; no missing verse text is fabricated.",
+        "No third-party recorded audio, cover artwork, illustrations, maps or distinct modern revisions are included or licensed by this text import.",
+        "No provider certification badge, trademark endorsement or independent human editorial or native-language approval is asserted.",
+        "Rights evidence is the individual provider declaration and stated provider uses, not independent worldwide legal or human editorial approval; the provider inventory qualifies its public-domain knowledge in the USA and applicable national law may vary.",
+        "The publisher identifies this 2024 edition, revision 2.0, as public domain. The distinct 2026 revised edition is CC BY-NC-ND and is not imported. Separate Strong-number annotations are not imported.",
+        "This edition follows source Hebrew-based numbering, including Joel 4 chapters and Malachi 3; do not remap it to another edition."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      },
+      "publicationStatus": "published-edition"
+    },
+    {
+      "editionId": "spa-simple2026",
+      "sourceSha256": "b5397717e5031db82ce6c595ae1d3803626aaa3d11ce8750b31d5d766b3568e1",
+      "verifiedOn": "2026-11-05",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "allowed",
+        "evidenceIds": [
+          "spa-simple2026-pd",
+          "ebible-pd-uses",
+          "ebible-ip-policy",
+          "spa-simple2026-primary-1"
+        ],
+        "reason": "Primary provider-declared public-domain text and source-use policies support application text use, subject to exact identity and recorded qualifications. This does not approve generated teaching, a model service, or an independently reviewed translation."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spa-simple2026-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "spa-simple2026-primary-1"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spa-simple2026-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "spa-simple2026-primary-1"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spa-simple2026-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "spa-simple2026-primary-1"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spa-simple2026-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "spa-simple2026-primary-1"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spa-simple2026-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "spa-simple2026-primary-1"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spa-simple2026-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "spa-simple2026-primary-1"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spa-simple2026-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "spa-simple2026-primary-1"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "aiRetrieval": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spa-simple2026-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "spa-simple2026-primary-1"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "modelTraining": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spa-simple2026-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "spa-simple2026-primary-1"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "tts": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spa-simple2026-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "spa-simple2026-primary-1"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "spa-simple2026-pd"
+          ],
+          "reason": "Only exact text archives were admitted. No recording files, narrator inventory or recording hashes were inspected and registered; separate publisher audio claims require their own asset review."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spa-simple2026-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "spa-simple2026-primary-1"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spa-simple2026-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "spa-simple2026-primary-1"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spa-simple2026-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "spa-simple2026-primary-1"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spa-simple2026-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "spa-simple2026-primary-1"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spa-simple2026-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "spa-simple2026-primary-1"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spa-simple2026-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "spa-simple2026-primary-1"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spa-simple2026-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy",
+            "spa-simple2026-primary-1"
+          ],
+          "reason": "Permitted as the exact provider-declared public-domain text use under the individual primary notices and recorded qualifications. No independent worldwide legal or human editorial approval is asserted."
+        }
+      },
+      "attribution": "La Biblia en Español Sencillo 2026. Irma Flores; AudioBiblia.org Second edition 2026; translated and edited by Irma Flores; source files dated 2026-10-30. Public domain as declared by the source publisher; unchanged VPL text; complete source notice retained.",
+      "conditions": [
+        "Retain the exact edition/revision identity, original source wording and complete publisher notice with redistributed and offline copies.",
+        "Publisher VPL supplies verse text without separate notes, introductions, headings or paragraph layout. Source numbering, empty source records, inline characters and Unicode remain unchanged; no missing verse text is fabricated.",
+        "No third-party recorded audio, cover artwork, illustrations, maps or distinct modern revisions are included or licensed by this text import.",
+        "No provider certification badge, trademark endorsement or independent human editorial or native-language approval is asserted.",
+        "Rights evidence is the individual provider declaration and stated provider uses, not independent worldwide legal or human editorial approval; the provider inventory qualifies its public-domain knowledge in the USA and applicable national law may vary.",
+        "The source identifies the dialect as Latin America/Mexico; es-419 records that regional Spanish identity. Text permission is separate from AudioBiblia recordings."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      },
+      "publicationStatus": "published-edition"
+    },
+    {
+      "editionId": "tdx-tandroy",
+      "sourceSha256": "ca352f5888aa64896069f57cea898abadb3f2f851a1d4f555ab088b2a601e960",
+      "verifiedOn": "2026-11-05",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "allowed",
+        "evidenceIds": [
+          "tdx-tandroy-cc-by-sa",
+          "tdx-tandroy-cc-legal"
+        ],
+        "reason": "CC BY-SA4.0 covers this application’s source-text reproduction and attributed retrieval subject to the complete license conditions. Publisher draft status remains visible. Trained-model licensing and third-party AI service terms are not certified by this decision."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "tdx-tandroy-cc-by-sa",
+            "tdx-tandroy-cc-legal"
+          ],
+          "reason": "Permitted for the licensed text subject to attribution, complete notices, indication of changes and CC BY-SA4.0 share-alike obligations for redistributed contributions. Pictures, recordings and human editorial approval remain separate."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "tdx-tandroy-cc-by-sa",
+            "tdx-tandroy-cc-legal"
+          ],
+          "reason": "Permitted for the licensed text subject to attribution, complete notices, indication of changes and CC BY-SA4.0 share-alike obligations for redistributed contributions. Pictures, recordings and human editorial approval remain separate."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "tdx-tandroy-cc-by-sa",
+            "tdx-tandroy-cc-legal"
+          ],
+          "reason": "Permitted for the licensed text subject to attribution, complete notices, indication of changes and CC BY-SA4.0 share-alike obligations for redistributed contributions. Pictures, recordings and human editorial approval remain separate."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "tdx-tandroy-cc-by-sa",
+            "tdx-tandroy-cc-legal"
+          ],
+          "reason": "Permitted for the licensed text subject to attribution, complete notices, indication of changes and CC BY-SA4.0 share-alike obligations for redistributed contributions. Pictures, recordings and human editorial approval remain separate."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "tdx-tandroy-cc-by-sa",
+            "tdx-tandroy-cc-legal"
+          ],
+          "reason": "Permitted for the licensed text subject to attribution, complete notices, indication of changes and CC BY-SA4.0 share-alike obligations for redistributed contributions. Pictures, recordings and human editorial approval remain separate."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "tdx-tandroy-cc-by-sa",
+            "tdx-tandroy-cc-legal"
+          ],
+          "reason": "Permitted for the licensed text subject to attribution, complete notices, indication of changes and CC BY-SA4.0 share-alike obligations for redistributed contributions. Pictures, recordings and human editorial approval remain separate."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "tdx-tandroy-cc-by-sa",
+            "tdx-tandroy-cc-legal"
+          ],
+          "reason": "Permitted for the licensed text subject to attribution, complete notices, indication of changes and CC BY-SA4.0 share-alike obligations for redistributed contributions. Pictures, recordings and human editorial approval remain separate."
+        },
+        "aiRetrieval": {
+          "state": "allowed",
+          "evidenceIds": [
+            "tdx-tandroy-cc-by-sa",
+            "tdx-tandroy-cc-legal"
+          ],
+          "reason": "Permitted for the licensed text subject to attribution, complete notices, indication of changes and CC BY-SA4.0 share-alike obligations for redistributed contributions. Pictures, recordings and human editorial approval remain separate."
+        },
+        "modelTraining": {
+          "state": "unknown",
+          "evidenceIds": [
+            "tdx-tandroy-cc-by-sa",
+            "tdx-tandroy-cc-legal"
+          ],
+          "reason": "Text redistribution permission does not resolve how attribution/share-alike obligations would be met by a particular trained model. No model-training rights implementation has been assessed or enabled for this source."
+        },
+        "tts": {
+          "state": "allowed",
+          "evidenceIds": [
+            "tdx-tandroy-cc-by-sa",
+            "tdx-tandroy-cc-legal"
+          ],
+          "reason": "Permitted for the licensed text subject to attribution, complete notices, indication of changes and CC BY-SA4.0 share-alike obligations for redistributed contributions. Pictures, recordings and human editorial approval remain separate."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "tdx-tandroy-cc-by-sa"
+          ],
+          "reason": "Only exact text archives were admitted. No recording files, narrator inventory or recording hashes were inspected and registered; separate publisher audio claims require their own asset review."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "tdx-tandroy-cc-by-sa",
+            "tdx-tandroy-cc-legal"
+          ],
+          "reason": "Permitted for the licensed text subject to attribution, complete notices, indication of changes and CC BY-SA4.0 share-alike obligations for redistributed contributions. Pictures, recordings and human editorial approval remain separate."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "tdx-tandroy-cc-by-sa",
+            "tdx-tandroy-cc-legal"
+          ],
+          "reason": "Permitted for the licensed text subject to attribution, complete notices, indication of changes and CC BY-SA4.0 share-alike obligations for redistributed contributions. Pictures, recordings and human editorial approval remain separate."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "tdx-tandroy-cc-by-sa",
+            "tdx-tandroy-cc-legal"
+          ],
+          "reason": "Permitted for the licensed text subject to attribution, complete notices, indication of changes and CC BY-SA4.0 share-alike obligations for redistributed contributions. Pictures, recordings and human editorial approval remain separate."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "tdx-tandroy-cc-by-sa",
+            "tdx-tandroy-cc-legal"
+          ],
+          "reason": "Permitted for the licensed text subject to attribution, complete notices, indication of changes and CC BY-SA4.0 share-alike obligations for redistributed contributions. Pictures, recordings and human editorial approval remain separate."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "tdx-tandroy-cc-by-sa",
+            "tdx-tandroy-cc-legal"
+          ],
+          "reason": "Permitted for the licensed text subject to attribution, complete notices, indication of changes and CC BY-SA4.0 share-alike obligations for redistributed contributions. Pictures, recordings and human editorial approval remain separate."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "tdx-tandroy-cc-by-sa",
+            "tdx-tandroy-cc-legal"
+          ],
+          "reason": "Permitted for the licensed text subject to attribution, complete notices, indication of changes and CC BY-SA4.0 share-alike obligations for redistributed contributions. Pictures, recordings and human editorial approval remain separate."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "tdx-tandroy-cc-by-sa",
+            "tdx-tandroy-cc-legal"
+          ],
+          "reason": "Permitted for the licensed text subject to attribution, complete notices, indication of changes and CC BY-SA4.0 share-alike obligations for redistributed contributions. Pictures, recordings and human editorial approval remain separate."
+        }
+      },
+      "attribution": "Saontsin’ Añahare. Copyright © 2023 Steve Lellelid. Tandroy-Mahafaly Malagasy; publisher draft. CC BY-SA 4.0. Source: https://ebible.org/tdx/. Original VPL TXT wording unchanged; source formatting converted to JSON; full notice retained.",
+      "conditions": [
+        "Retain the exact edition/revision identity, original source wording and complete publisher notice with redistributed and offline copies.",
+        "Publisher VPL supplies verse text without separate notes, introductions, headings or paragraph layout. Source numbering, empty source records, inline characters and Unicode remain unchanged; no missing verse text is fabricated.",
+        "No third-party recorded audio, cover artwork, illustrations, maps or distinct modern revisions are included or licensed by this text import.",
+        "No provider certification badge, trademark endorsement or independent human editorial or native-language approval is asserted.",
+        "This source is licensed text under CC BY-SA 4.0, not public domain. License compliance is distinct from human editorial approval and from any external model or service configuration.",
+        "PUBLISHER DRAFT: the source explicitly says DRAFT VERSION. Its installed completeness and source checks do not mean editorial, theological or native-language approval.",
+        "Retain Copyright © 2023 Steve Lellelid, source identity, license URL and complete notice. CC BY-SA 4.0 permits sharing and adaptations subject to attribution, indication of changes and share-alike obligations for redistributed contributions to this text.",
+        "Pictures have separate restrictions and are not imported. The text license does not establish third-party recording permissions.",
+        "Source numbering includes Joel 4 chapters and Malachi 3. Embedded Hebrew acrostic letters are preserved alongside predominantly Latin-script Tandroy text."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      },
+      "publicationStatus": "publisher-draft"
     }
   ]
 }
