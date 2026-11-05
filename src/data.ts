@@ -1,6 +1,7 @@
 import type { Book, Edition, EditionCatalog, Manifest, Preferences, QuranSource } from './types';
 import installedCatalog from '../data/editions/catalog.json';
 import { requirePermission } from './permissions';
+import { AsyncLruCache, SOURCE_BOOK_CACHE_LIMIT, SOURCE_MANIFEST_CACHE_LIMIT } from './source-cache.ts';
 const base = import.meta.env?.BASE_URL || '/Adigun-AiBible/';
 export const assetUrl = (path: string) => `${base}${path}`;
 export const bibleEditionIds: string[] = ['eng-web', ...installedCatalog.editions.filter(edition => edition.corpus === 'bible').map(edition => edition.id)];
@@ -22,30 +23,28 @@ async function readJSON(path: string, message: string): Promise<unknown> {
   if (!response.ok) throw new Error(typeof navigator !== 'undefined' && !navigator.onLine && path.includes('/books/') ? "This chapter isn't cached yet. Reconnect to load it." : message);
   return response.json();
 }
-const manifests = new Map<string, Promise<Manifest>>();
+const manifests = new AsyncLruCache<string, Manifest>(SOURCE_MANIFEST_CACHE_LIMIT);
 export function getManifest(editionId = 'eng-web'): Promise<Manifest> {
   if (!bibleEditionIds.includes(editionId)) return Promise.reject(new Error('That Bible edition is not installed. Choose an available edition in the library.'));
-  if (!manifests.has(editionId)) manifests.set(editionId, readJSON(editionDataPath(editionId, 'manifest.json'), 'This edition is not downloaded. Reconnect to open it.').then(async raw => {
+  return manifests.getOrLoad(editionId, () => readJSON(editionDataPath(editionId, 'manifest.json'), 'This edition is not downloaded. Reconnect to open it.').then(async raw => {
     const data = raw as Manifest;
     if (data.schemaVersion !== 1 || data.edition?.id !== editionId || !Array.isArray(data.books) || !data.books.length || !data.totals || data.books.some(b => !/^[1-3]?[A-Z]{2,3}$/.test(b.id) || !Array.isArray(b.verseCounts) || b.chapters !== b.verseCounts.length)) throw new Error('This edition manifest failed validation.');
     await requirePermission(data.edition,'display');
     return data;
-  }).catch(error => { manifests.delete(editionId); throw error; }));
-  return manifests.get(editionId)!;
+  }));
 }
-const books = new Map<string, Promise<Book>>();
+const books = new AsyncLruCache<string, Book>(SOURCE_BOOK_CACHE_LIMIT);
 export function getBook(id: string, editionId = 'eng-web'): Promise<Book> {
   if (!/^[1-3]?[A-Z]{2,3}$/.test(id)) return Promise.reject(new Error('Invalid book identifier.'));
   const key = `${editionId}:${id}`;
-  if (!books.has(key)) books.set(key, getManifest(editionId).then(manifest => {
+  return books.getOrLoad(key, () => getManifest(editionId).then(manifest => {
     if (!manifest.books.some(book => book.id === id)) throw new Error('This book is absent from the selected edition.');
     return readJSON(editionDataPath(editionId, `books/${id}.json`), 'This book is not downloaded for the selected edition. Reconnect or choose a downloaded edition.');
   }).then(raw => {
     const book = raw as Book;
     if (book.id !== id || !Array.isArray(book.chapters) || book.chapters.some(ch => !Number.isInteger(ch.number) || !Array.isArray(ch.verses) || ch.verses.some(v => !Number.isInteger(v.number) || typeof v.text !== 'string'))) throw new Error('The downloaded book failed validation.');
     return book;
-  }).catch(error => { books.delete(key); throw error; }));
-  return books.get(key)!;
+  }));
 }
 let catalog: Promise<EditionCatalog> | undefined;
 export function getEditionCatalog(): Promise<EditionCatalog> {
