@@ -2,31 +2,34 @@
 
 ## Active continuation — 5 November 2026 (Europe/Berlin)
 
-- Repository: `HephzibahBehulahHQ/Adigun-AiBible`. Active repair branch: `codex/historical-navigation-20261105`.
-- Actual main is `59d9a999543d5add39643495df376736612ea1b4` (merged PR #33). The remote head was independently read through GitHub at continuation. It includes 29 Bible editions and the separate Greek source study, but its deployment failed.
-- Verified public production is `712b2eb91ed943e6d56a9fbb09f82f22e20c3154` (PR #32). Public `build-info.json` returned HTTP 200 at **2026-11-05 15:24:08 UTC**, with build `6d64516006ef9802528d1343` and content `57185b83d1886c12c4db96ff`. This release includes the 26-edition catalog and private retelling recordings. URL: https://hephzibahbehulahhq.github.io/Adigun-AiBible/ .
+- Repository: `HephzibahBehulahHQ/Adigun-AiBible`. Active feature branch: `codex/gospel-comparison-20261105`.
+- Last verified feature checkpoint: `df14e0ea00aff7b175814787c476159b3efd6e6a`, remotely read back at **2026-11-05 15:43 UTC**. Includes the comparison workspace, strict source/model validation, fourteen unit tests and immediate download cancellation. Browser coverage, typography and this handoff follow that checkpoint.
+- Actual main: `5d709eb88c18b51280bbcac701e1f9b8d09ec952`, merged [PR #34](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/34). Its [main workflow 42057642086](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42057642086) is running; deployment is not yet claimed.
+- Last independently verified public production: `712b2eb91ed943e6d56a9fbb09f82f22e20c3154` (PR #32). Public `build-info.json` returned HTTP 200 at **2026-11-05 15:24:08 UTC**, build `6d64516006ef9802528d1343`, content `57185b83d1886c12c4db96ff`. URL: https://hephzibahbehulahhq.github.io/Adigun-AiBible/ .
 
-## Release repair
+## Navigation repair
 
-[Main workflow 42050102248](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42050102248) passed 504 application tests, 20 backend contracts, TypeScript, lint, source validation and production build, then passed 335/336 browser cases. Only the mobile visual route check failed; deployment and persistence repetitions were skipped. PR #33's prior exact-candidate workflow `42046579957` passed 336 browser cases and ten persistence repetitions, but is not evidence of main deployment.
+Main PR #33's deployment failed only its mobile Sources route check. The trace showed the historical reader restoring the Library route while its initial readonly IndexedDB load was pending. No crash occurred. PR #34 separates initial reads from pending writes: navigation during readonly loading is allowed, while drafts, pending mutations and downloads retain their guards.
 
-The downloaded failure artifact's SHA-256 was verified against GitHub: `cefd503e167651e333384489eb43f5c867caa59aaa88ea241ca07c03fe6c21e9`. Its trace shows navigation to Sources being restored to Library while the initial private historical IndexedDB read was still pending. The notebook later opened successfully; there was no runtime crash. The historical guard incorrectly treated readonly loading as an unsaved mutation.
+Exact head `a0cc21e40417440c8ca73b228d43f32eb2b4bb82` passed [candidate workflow 42055116071](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42055116071): 504 application tests, 20 backend contracts, TypeScript, lint, source validation, production build, all 340 desktop/mobile browser cases and ten persistence repeats. Both new cases hold actual IndexedDB transactions open. The successful evidence archive's SHA-256 was checked (`334e7cdfe1a0686960847863203d3c638aeacb9db687f39826031bf2ecb9d0a1`); desktop reader and mobile Sources screenshots were inspected before merge. Main deployment requires its own final receipt.
 
-The repair distinguishes pending writes from loading. Editing controls remain disabled during loading; navigation is permitted during a readonly read. Unsaved drafts, pending writes, restores/deletions and active downloads remain protected. Two browser regressions hold real scoped IndexedDB transactions open to exercise both the allowed read navigation and protected write path. Existing visual assertions, timeouts and release gates are unchanged.
+## Gospel comparison candidate
 
-## Current verification
+- New lazy-loaded Study Tools workspace and Law Diary entry point; original reader passage and edition remain intact.
+- Two to four panes. The supplied Sower selection links Matthew 13:1–23, Mark 4:1–20 and Luke 8:4–15. Each can be unlinked to choose its own installed edition and range; John is always independent. No invented John counterpart, verse alignment or chronology is supplied.
+- Exact source wording, original numbering, full surrounding chapter, source identity and complete attribution. Real absent/empty verses remain explicit; invalid links or unavailable sources show recoverable errors without substituting text.
+- Selection lives in the link and supports reload/back/forward. Language/direction/font follow the actual edition; English controls show an explicit fallback outside English. This adds no private data store.
+- Selected source books and notices use the existing verified atomic offline downloader. Cancel releases the operation immediately even while a shared source read is pending; late results cannot publish completion or replace the current selection. Prior complete packs are retained.
+- Only the supplied Sower group is included, with editorial review pending. Wider researched parallel groups and translated control dictionaries remain separate work.
 
-- Clean base checkout: `npm run check` passed (504 application tests, 20 backend contracts, source validation, lint, TypeScript and production build).
-- Repair: TypeScript, scoped ESLint, seven historical model/storage tests, strict browser-test TypeScript and diff checks passed.
-- Actual browser acceptance remains pending in GitHub Actions. Local Playwright's preview server did not become available within its 30-second startup bound; local browser execution is NOT TESTED.
-- This first repair checkpoint is being prepared for remote backup. Its exact verified SHA and subsequent CI receipts will be recorded in the pull request and next status update; no release success is claimed.
+## Current checks and next action
 
-## Preserved source and private-data acceptance
+`npm run check` passed locally: 518 application tests (including fourteen Gospel tests), 20 backend contracts, TypeScript, lint, source validation and production build. That run preceded the final cancellation handler and browser-test integration; run affected checks and exact-candidate CI before release. Independent read-only source verification passed all 87 combinations across the 29 Bible editions: 1,595 exact selected records and 4,495 complete-context records, matching source revisions, permissions and link round-trips.
 
-Main retains all existing source editions, independently numbered Hebrew/Greek corpora, source notices, permission checks, private retelling recordings and complete backups. The 29-edition catalog represents 26 additional editions beyond the original three, 18 source languages and 19 exact tags. Imported scripture is unchanged by this repair.
+Local browser execution is NOT TESTED because the preview server did not start within Playwright's existing 30-second bound. Actual browser acceptance runs in GitHub Actions. Finish eight Gospel browser cases per project, including exact source/context, independent gaps/history, late responses, real-service-worker offline recovery, cancellation and narrow/keyboard screenshots. Submit the scoped candidate, inspect actual evidence, then merge and verify its resulting main deployment and public source receipt. Preserve existing timeouts, persistence repetitions and visual assertions.
 
-## Next action
+## Preserved acceptance boundaries
 
-Push and verify the scoped repair, pass the complete 340-case browser gate and ten persistence repetitions, inspect its evidence, merge after the exact candidate passes, and verify the resulting public source receipt. Then continue the explicitly requested synchronized Gospel comparison workspace using exact supplied ranges and honest editorial status.
+Main retains 29 Bible editions (26 additional beyond the original three), 18 source languages and 19 exact language tags, the separate Quran, independently numbered Hebrew/Greek source studies, private retelling recordings, source notices and backups. Gospel comparison changes no imported Scripture bytes.
 
-Full Version 3 remains incomplete. See [feature matrix](../FEATURE_MATRIX.md) for remaining software/content requirements. Human editorial/native-language review, restricted rights, configured provider/backend services, permitted recorded narration and physical two-device/microphone acceptance are separate dependencies. Backend setup was previously interrupted and is not resumed by this task; no unrelated infrastructure is reused.
+Full Version 3 remains incomplete; see the [feature matrix](../FEATURE_MATRIX.md) and [next tasks](NEXT_TASKS.md). Independent human editorial/native-language review, restricted rights, configured providers/backend services, permitted recorded narration and physical two-device/microphone acceptance remain separate dependencies. The interrupted backend setup is not resumed; no unrelated infrastructure is reused.
