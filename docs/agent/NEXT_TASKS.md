@@ -4,7 +4,7 @@ Read [PROJECT_STATUS.md](PROJECT_STATUS.md) for the current integration branch, 
 
 ## Current release
 
-PR #30 is merged and verified deployed as `1198bfcbff5aba6d27a9b22195d37c77635e2299`, including fourteen Bible editions, complete concordance, independently numbered Hebrew source study and bounded compact transport. All 246 browser cases and ten persistence repeats passed with the source/application/backend/build gates. The current candidate adds twelve more full-text editions and source-script typography; private voice retelling is integrated on the next branch, while the Greek source viewer is ready for separate integration.
+PR #31 merged as `e437600d66213544923a12df8d95f161654a15de` after 449 application tests, 20 backend contracts, all 268 browser cases and ten persistence repetitions passed. Its 26-edition release is undergoing public deployment verification. Private retelling PR #32 targets main at `710f66fe`; its 290-case gate is running. This combined Greek/three-edition candidate passed 502 application tests, 20 backend contracts and source/build checks; it requires its 334-case browser gate and final release receipts.
 
 ## Independent work to finish
 
