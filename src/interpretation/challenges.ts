@@ -22,7 +22,7 @@ export const blindChallenge = validateChallenge({
       rights: 'Only this brief historical translation excerpt is reproduced for the exercise. Full works, modern CCEL introductions and site assets are not imported. The linked source retains its publisher notices; no full-work redistribution permission is claimed. The AI-assisted summary is separate from the source quotation.',
       rightsSources: [
         { label: 'Original translation and revision credits', url: 'https://www.ccel.org/ccel/schaff/npnf110.iii.i.html' },
-        { label: '1888 editor’s preface and edition history', url: 'https://www.ccel.org/ccel/schaff/npnf110.ii.html' },
+        { label: 'Editor’s preface and edition history', url: 'https://www.ccel.org/ccel/schaff/npnf110.ii.html' },
         { label: 'Orthodox reception and author context', url: 'https://www.oca.org/orthodoxy/the-orthodox-faith/church-history/fourth-century/saint-john-chrysostom' },
         { label: 'CCEL site and special-content policy', url: 'https://www.ccel.org/about/copyright.html' },
       ],

@@ -88,6 +88,7 @@ export function validateInterpretationNotebook(value: unknown): InterpretationNo
     }
     if (firstReveal && (item.before !== firstReveal.before || item.initialPreference !== firstReveal.initialPreference || item.revealedAt !== firstReveal.revealedAt)) throw new Error('Before-reveal reasoning cannot be rewritten after reveal.');
   }
+  if (new TextEncoder().encode(JSON.stringify(value)).byteLength > MAX_NOTEBOOK_BYTES) throw new Error('The interpretation notebook exceeds its 4 MB backup limit. Export existing records and remove an older reflection before saving more.');
   return structuredClone(value) as unknown as InterpretationNotebook;
 }
 export function parseInterpretationBackup(raw: string): InterpretationNotebook {
