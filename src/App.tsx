@@ -35,6 +35,7 @@ const Projection = lazy(() => import('./Projection'));
 const VerseDrop = lazy(() => import('./VerseDrop'));
 import { assertCompletePassage, printPassage } from './print';
 import ToolDirectory from './ToolDirectory';
+import { parseRoute, routeHref } from './routing';
 const FamilyArchive = lazy(() => import('./family/FamilyArchive'));
 const AudioReader = lazy(() => import('./audio/AudioReader'));
 const SupportResources = lazy(() => import('./SupportResources'));
@@ -51,7 +52,7 @@ import { validateLayoutSources } from './reader-layouts/sources';
 
 const defaultPrefs: Preferences = { locale:'en',preset:'genz',theme:'observatory',fontSize:20,lineHeight:1.8,focus:false };
 function initialPrefs(): Preferences { try { const p = JSON.parse(localStorage.getItem('adigun-bible-preferences') || '{}') as Partial<Preferences>; return { locale: ['en','de','yo','pcm'].includes(p.locale || '') ? p.locale! : 'en', preset:['genz','en','de','yo','pcm'].includes(p.preset || '') ? p.preset! : 'genz', theme:['observatory','light','parchment','night','retro'].includes(p.theme || '') ? p.theme! : 'observatory', fontSize:typeof p.fontSize === 'number' ? Math.min(28,Math.max(16,p.fontSize)) : 20, lineHeight:typeof p.lineHeight === 'number' ? Math.min(2.2,Math.max(1.5,p.lineHeight)) : 1.8,focus:p.focus === true }; } catch { return defaultPrefs; } }
-function routeState() { const [path, query] = location.hash.slice(1).split('?'); const pieces = (path || '/home').split('/').filter(Boolean); const view = (['home','read','compare','discover','plans','saved','questions','library','sources','settings','share','atlas','study','evidence','editions','projection','tools','family','audio','drop','support','law-diary'].includes(pieces[0]) ? pieces[0] : 'home') as View; const q = new URLSearchParams(query); return { view, ref:{ bookId:pieces[1] || 'GEN',chapter:Number(pieces[2] || 1),verse:Number(q.get('verse') || 1),...(q.get('end') ? { endVerse:Number(q.get('end')) } : {}), ...(q.get('edition') ? {editionId:q.get('edition')!} : {}) } as Reference }; }
+function routeState() { return parseRoute(location.hash); }
 function savedReference(r:Reference):Reference {return {...r,editionId:r.editionId||'eng-web'};}
 function referenceLabel(r: Reference, manifest: Manifest | null) { return `${manifest?.books.find(b => b.id === r.bookId)?.name || r.bookId} ${r.chapter}:${r.verse}${r.endVerse && r.endVerse !== r.verse ? `–${r.endVerse}` : ''}`; }
 function bibleDownloadPaths(manifest:Manifest, bookId:string, all:boolean) {
@@ -63,7 +64,7 @@ function bibleDownloadPaths(manifest:Manifest, bookId:string, all:boolean) {
   return [...new Set(paths)];
 }
 const downloadSize=(bytes:number|null)=>bytes===null?'Size unavailable':bytes<1048576?`${Math.ceil(bytes/1024)} KB`:`${(bytes/1048576).toFixed(1)} MB`;
-const navigation = [{id:'home',icon:LayoutGrid},{id:'read',icon:BookOpen},{id:'compare',icon:Globe},{id:'discover',icon:Compass},{id:'plans',icon:ListChecks},{id:'saved',icon:Bookmark},{id:'tools',icon:NotebookPen},{id:'questions',icon:MessageCircle},{id:'library',icon:Library},{id:'atlas',icon:BookMarked}] as const;
+const navigation = [{id:'home',icon:LayoutGrid},{id:'read',icon:BookOpen},{id:'compare',icon:Globe},{id:'law-diary',icon:BookMarked},{id:'discover',icon:Compass},{id:'plans',icon:ListChecks},{id:'saved',icon:Bookmark},{id:'tools',icon:NotebookPen},{id:'questions',icon:MessageCircle},{id:'library',icon:Library},{id:'atlas',icon:BookMarked}] as const;
 function PassagePreview({ passage, manifest, onOpen }: { passage: Reference; manifest: Manifest; onOpen:(r:Reference)=>void }) {
   const [text, setText] = useState(''), [error, setError] = useState(''), [source, setSource] = useState(manifest);
   const editionId = passage.editionId || manifest.edition.id;
@@ -133,7 +134,7 @@ export default function App() {
   const permittedHash = useRef(location.hash);
   const requestedHash = useRef<string | null>(null);
   const navigate = useCallback((view: View, r:Reference = current) => {
-    const nextHash = `#/${view}/${r.bookId}/${r.chapter}?verse=${r.verse}${r.endVerse ? `&end=${r.endVerse}` : ''}&edition=${encodeURIComponent(r.editionId || activeEditionId)}`;
+    const nextHash = routeHref(view, r, activeEditionId);
     if (nextHash !== location.hash && !window.dispatchEvent(new Event('adigun:before-navigation', { cancelable: true }))) return false;
     requestedHash.current = nextHash;
     location.hash = nextHash;
