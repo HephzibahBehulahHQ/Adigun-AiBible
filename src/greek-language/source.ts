@@ -28,6 +28,11 @@ export async function verifiedSourceBytes(response: Response, pin: FilePin, sign
     if (response.body) void response.body.cancel().catch(() => undefined);
     sourceAbort(signal); throw new Error('The Greek source response or its compiled integrity record is unavailable. Reconnect or retry the selected source.');
   }
+  const length = response.headers.get('content-length');
+  if (length !== null && (!/^\d+$/.test(length) || Number(length) > pin.bytes)) {
+    if (response.body) void response.body.cancel().catch(() => undefined);
+    throw new Error('The Greek source response exceeds its pinned byte length.');
+  }
   // Only the bounded raw-byte reader is shared. Greek books never enter the
   // translated-Bible envelope decoder or its normalization/search pipeline.
   const bytes = await readSourceBytes(response, pin.bytes, signal);
