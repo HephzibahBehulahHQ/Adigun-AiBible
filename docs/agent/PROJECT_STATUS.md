@@ -2,6 +2,10 @@
 
 ## Active continuation — 5 November 2026 (Europe/Berlin)
 
+- Synchronized audio repair `8565eac09aa63c823855de9bf5896ab510a5b76d` was independently verified through GitHub at 14:17 UTC on 5 November; its complete PR #32 workflow is `42043441132`. This source-study merge preserves that commit and its stable-label/backup-locator repair. The previously verified source head is `06ba1d6207b7d42af3f0da375d85d137aa70f720`; this combined revision needs its own full 336-case and persistence gate.
+- Current release repair: PR #32 at `c414b62db459418dd9b1f0f8fdbd92c3e2a63760` and dependent PR #33 at `06ba1d6207b7d42af3f0da375d85d137aa70f720` were verified against GitHub on 5 November. Their latest workflows `42040100691` / `42040251499` passed source/application/build checks and 284/292 / 328/336 browser cases, respectively. Eight failures in each run remain diagnostic evidence, not release acceptance.
+- The current CI snapshots retain all three affected drafts and the expected disabled state. Exact implicit-label lookup included the controlled textarea's text content; the label now uses a separate native `htmlFor`/`id` association with unchanged field spacing. The corrupt-backup assertion now targets the backup section, keeping the independent offline-source warning visible. All original-byte, draft, disabled-state, conflict, transaction and inventory assertions are preserved.
+- Repair validation: TypeScript, scoped ESLint, 31 focused recording/storage/transcript checks and production build passed locally. Full current-candidate desktop/mobile and persistence gates remain required. An independent read-only review found no additional reproducible recovery defect. Local Chromium launch is blocked by this environment's socket restriction; no local browser pass is claimed.
 - Repository: `HephzibahBehulahHQ/Adigun-AiBible`.
 - Independently verified production: `e437600d66213544923a12df8d95f161654a15de`, PR #31, [main workflow 42035599588](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42035599588). All main build/browser/persistence/deployment gates passed. Independent public HTTPS verification at 13:35:53 UTC confirmed HTTP 200, that exact source, build `61d068d86be7cb2c2a310d66`, content `57185b83d1886c12c4db96ff` and all 26 catalog edition identities in source order.
 - Live URL: https://hephzibahbehulahhq.github.io/Adigun-AiBible/ . `build-info.json` is the public source receipt.
@@ -35,7 +39,7 @@ Full Version 3 is not complete. The [feature matrix](../FEATURE_MATRIX.md) and [
 
 Independent human editorial/native-language review, restricted source rights, dedicated backend/provider configuration, permitted recorded narration and physical two-device offline validation remain separate dependencies. Backend setup was previously interrupted; unrelated infrastructure is not reused. True OS widgets remain outside scope; the web verse card is implemented.
 
-Local Chromium installation remains unavailable, including the 1.64.0 browser-download attempt. Browser execution is verified in GitHub Actions. Physical microphone/device testing and local browser execution are not claimed.
+Local Chromium launch is blocked by this environment's socket restriction. Actual browser acceptance runs in GitHub Actions. Local browser execution and physical microphone/device acceptance are not claimed.
 
 ## Next action
 

@@ -40,6 +40,8 @@ Restore keeps the existing per-record conflict choice: keep device records or us
 
 ## Verification and remaining release gate
 
+The 5 November release repair gives the writing field a separate native label association. Current CI failure snapshots confirmed the draft value and disabled state remained intact; exact implicit-label lookup had included the textarea's controlled content. The offline corruption check is scoped to the backup section so its integrity error can coexist with a legitimate uncached-source warning. Recovery, byte identity, unchanged-device-inventory and pending-transaction assertions remain unchanged. Current-candidate browser execution and screenshot inspection are required before release.
+
 Focused checks cover legacy migration of all five private collections and their histories; exact source identity; invalid MIME/signatures, sizes and hashes; complete and multi-megabyte backup roundtrips; duplicate/missing/orphan/tampered imports; two-store transaction completion and rollback; concurrent writes; recording/card/workspace deletion and Undo; explicit restore conflicts; consent, denied/pending permissions, time/byte limits, device interruptions and cancellation/unmount races. Existing written-retelling, workspace and family regressions are included in the focused command:
 
 ```sh
