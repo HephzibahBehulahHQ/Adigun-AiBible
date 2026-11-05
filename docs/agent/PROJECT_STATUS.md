@@ -1,8 +1,8 @@
 # Project status
 
-## Release handoff — 5 November 2026 (Europe/Berlin)
+## Active continuation — 5 November 2026 (Europe/Berlin)
 
-- Repository: `HephzibahBehulahHQ/Adigun-AiBible`. Continuation/handoff branch: `codex/gospel-notebook-release-handoff-20261105`.
+- Repository: `HephzibahBehulahHQ/Adigun-AiBible`. Active implementation branch: `codex/speech-collections-20261105`, based on the accepted main and documentation handoff `467c008`.
 - Private Gospel studies [PR #36](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/36) is merged into main `6e85085f704c44fb9726099cf243558cc7ccc47c`. Its application tree is identical to final tested candidate `94121dfbc8134af721c6702e5720c46da0c0647b`.
 - [Candidate CI 42076853766](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42076853766) passed 543 application/source tests, 20 backend contracts, TypeScript, lint, source validation, production build, 382 desktop/mobile browser cases and ten persistence repetitions. Browser retries are disabled; the report records zero unexpected, flaky or skipped cases.
 - [Production workflow 42079138366](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42079138366) passed the same 543/20/382/10 gate and deployed successfully. The deployment job fetched the public application and its exact source receipt at **2026-11-05 18:04:02.676 UTC**: source `6e85085f704c44fb9726099cf243558cc7ccc47c`, build `86934180cd3a8b49fd5cd3e5`, content `319aca2f790aeeb5b317d35e`.
@@ -24,9 +24,14 @@ A cached-edition history regression and hidden-file-input overflow were found an
 - Root owns integration and synchronization. Bounded model/storage, source-helper, browser/layout and read-only review tasks are complete. Existing reference repositories remain read-only.
 - The earlier unshipped singular-route prototype remains preserved at `c243633a1f6c23a069bb927a312fcd92d83ea657`; do not merge it over the released plural `src/gospels/` route.
 
-## Next concrete implementation
+## Current bounded implementation
 
-Add private, source-pinned speech collections to the existing Speaker Explorer: name a collection, add an existing publisher-marked span, order entries, reopen exact speech with full context, remove/Undo, and validate private JSON backup/restore. Retain edition/revision, reference, Unicode code-point boundaries, text hash and publisher provenance. Changed sources or markings must fail visibly. Keep publisher annotations distinct from independent review; public curated collections, new speaker assignments, scheduling and audio remain separate increments.
+Private, source-pinned speech collections in the existing Speaker Explorer: name a collection, add an existing publisher-marked span, order entries, reopen exact speech with full context, remove/Undo, and validate private JSON backup/restore. Retain edition/revision, reference, Unicode code-point boundaries, full-verse text hash and publisher provenance. Changed sources or markings must fail visibly. Keep publisher annotations distinct from independent review; public curated collections, new speaker assignments, scheduling and audio remain separate increments.
+
+- Implementation is in progress. Strict metadata-only collection validation, separate transactional IndexedDB storage, cancellable exact-source checking and a guarded collection hook are being integrated. The UI and new browser acceptance are not yet complete or released.
+- Root owns UI, integration, documentation and synchronization. Bounded specialists own only new collection data/source/storage tests and new collection browser tests; independent review is read-only. Existing corrections and the released Gospel notebook remain intact.
+- Locked dependencies installed under Node 24.22.1. Candidate tests and release gates are pending; the prior release results above do not establish this increment's acceptance.
+- Next: complete collection controls, source-bound reopen/import and recovery, then run the material-risk checks and unchanged complete release gate.
 
 No external service is needed for this bounded software work. Preserve runtime rights checks, private-data conflict/cancellation recovery, explicit offline downloads and accessible 320px/keyboard behavior. Pass the unchanged full release gate on the next final candidate, merge under standing authorization and verify its public source receipt.
 
