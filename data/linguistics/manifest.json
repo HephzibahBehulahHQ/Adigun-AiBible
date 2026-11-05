@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "sourceRepository": "https://github.com/openscriptures/strongs",
+  "sourceCommit": "0acd2f251c2d35ff8db2dece4e0593979d3ac223",
+  "totalRecords": 14298,
+  "dictionaries": [
+    {
+      "id": "greek",
+      "title": "Strong's Dictionary of Greek Words",
+      "path": "greek.json",
+      "records": 5624,
+      "headwords": 5523,
+      "languageCounts": {
+        "grc": 5624
+      },
+      "sourceUrl": "https://github.com/openscriptures/strongs/blob/0acd2f251c2d35ff8db2dece4e0593979d3ac223/greek/StrongsGreekDictionaryXML_1.4/strongsgreek.xml",
+      "sourceSha256": "df928f01b37632f8af9f16289ce58d10b958014cb5dbd1e1ea715a8d311a0625",
+      "dataSha256": "cfd2abc42c02e86699d79ef57c1373068984dcc26cee5a8396f6aaab171ffab5",
+      "originalDate": "1890",
+      "digitalEdition": "XML 1.4, 2007-09-14; XML e-text prepared in 2006",
+      "license": "Public domain (source XML statement)",
+      "attribution": "James Strong; ASCII e-text by Michael Grier; Greek XML e-text by Ulrik Petersen; source hosted by Open Scriptures."
+    },
+    {
+      "id": "hebrew",
+      "title": "Strong's Hebrew and Aramaic Dictionary",
+      "path": "hebrew.json",
+      "records": 8674,
+      "headwords": 8674,
+      "languageCounts": {
+        "arc": 653,
+        "heb": 5393,
+        "x-pn": 2628
+      },
+      "sourceUrl": "https://github.com/openscriptures/strongs/blob/0acd2f251c2d35ff8db2dece4e0593979d3ac223/hebrew/StrongHebrewG.xml",
+      "sourceSha256": "1f9659ea208f4c498843a0280dacb1448627c33ca77712642d8705793ab66061",
+      "dataSha256": "eb174af2a4d20a5af28ac64de40a14ed9f06d26f2e49e72fa702aecdee1b94c8",
+      "originalDate": "1894",
+      "digitalEdition": "XML revisions through 2010-05-24",
+      "license": "Public domain (source XML statement)",
+      "attribution": "James Strong; Hebrew XML edited by David Troidl and David Instone-Brewer; source hosted by Open Scriptures."
+    }
+  ],
+  "normalization": [
+    "Independently parsed the pinned public-domain XML, not the separately licensed JavaScript/JSON derivatives.",
+    "Normalized presentation whitespace; preserved source lemma, transliteration, pronunciation, definitions, derivation and KJV-rendering wording.",
+    "Expanded inline lexical reference elements to Strong IDs; retained source-supplied cross references.",
+    "Hebrew import excludes foreign-word lists, numbered expanded gloss lists and TWOT metadata; only Strong headword and Strong notes are included.",
+    "Greek unused-number records and missing fields remain explicit; no definitions are invented.",
+    "Dictionary-level grammatical tags are not verse-level morphology or alignment. No Bible wording has been tagged or changed."
+  ],
+  "limitations": [
+    "Historical dictionaries dated 1890 and 1894; vocabulary and interpretations can differ from current linguistic scholarship.",
+    "English glosses are not approved equivalents for every occurrence. Context and grammar must be reviewed independently.",
+    "No verse token alignment, interlinear, manuscript apparatus, modern audio, or reviewer-certified translation alternatives are installed by this import."
+  ]
+}

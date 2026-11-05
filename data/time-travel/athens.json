@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "athens-acts-17",
+  "title": "Athens: listen, locate, question",
+  "ancientName": "Athens",
+  "modernName": "Athens, Greece",
+  "reviewStatus": "AI-assisted research draft · human editorial review pending",
+  "geometryNotice": "Illustrative layout, not to scale. The court, columns, paths and rocky rise are original schematic geometry, not surveyed remains or a reconstruction of Paul's exact route. No invented dialogue is included.",
+  "periods": [
+    { "id": "narrative", "label": "Roman-period setting · Acts 17", "note": "Follow the order of Acts 17:16–34. This pilot does not assign an exact year, duration or walking route to Paul's visit." },
+    { "id": "archaeology", "label": "Modern archaeological record", "note": "Read the same places through excavation and conservation evidence. ASCSA began its Agora excavation in 1931; the Greek Ministry documents site-presentation works in 1997–2004. These later records do not independently verify every event narrated in Acts.", "sourceIds": ["ascsa-project", "ministry-conservation"] }
+  ],
+  "sources": [
+    { "id": "ascsa-project", "title": "ASCSA · Athenian Agora excavation project", "url": "https://www.ascsa.org/excavations/athenian-agora", "kind": "Primary archaeological project account", "accessedOn": "2026-11-05" },
+    { "id": "ascsa-finds", "title": "ASCSA · About the excavations", "url": "https://www.ascsa.org/excavations/athenian-agora/about-the-excavations", "kind": "Primary archaeological project account", "accessedOn": "2026-11-05" },
+    { "id": "usccb-acts", "title": "USCCB · Acts 17, especially the note on 17:19", "url": "https://bible.usccb.org/bible/acts/17", "kind": "Publisher's scholarly note; secondary interpretation", "accessedOn": "2026-11-05" },
+    { "id": "ministry-conservation", "title": "Greek Ministry of Culture · Ancient Agora and Areopagus presentation works", "url": "https://www.culture.gov.gr/en/service/SitePages/view.aspx?iiD=1516", "kind": "Primary conservation project account", "accessedOn": "2026-11-05" }
+  ],
+  "stops": [
+    {
+      "id": "waiting", "title": "A visitor in Athens", "place": "Athens · city setting", "verse": 16, "endVerse": 16, "position": [-9, 7],
+      "textNote": "Acts places Paul in Athens while he waits for his companions. Read the verse's own account of his response to the city.",
+      "evidenceNote": "The Agora excavation project describes a civic setting that combined commercial, political and legal activity. That city context is broader than one episode in Acts.",
+      "sourceIds": ["ascsa-project"],
+      "uncertainty": "Acts 17:16 supplies no street address or route for this waiting scene. The opening marker is a reading aid, not a recovered location.",
+      "perspectives": { "paul": "Which response does the narrator attribute to Paul in verse 16? What does the verse leave unsaid?", "listener": "Before the conversations begin, whose view of the city has the narrator given you?", "archaeologist": "What kind of evidence could identify a city setting, and what would be needed to identify one person's movements?" }
+    },
+    {
+      "id": "market", "title": "Conversations in the marketplace", "place": "Agora · public square", "verse": 17, "endVerse": 18, "position": [-5, -3],
+      "textNote": "Acts describes discussions in the synagogue and marketplace, then encounters with Epicurean and Stoic philosophers. The scene below illustrates a public gathering space only.",
+      "evidenceNote": "ASCSA reports inscribed public documents, standards for weights and measures, and jurors' tickets and ballots among Agora finds. These objects support civic and administrative activity; they do not record this conversation.",
+      "sourceIds": ["ascsa-finds"],
+      "uncertainty": "The pilot does not identify a synagogue building, stall, philosopher's school or precise point at which Paul spoke.",
+      "perspectives": { "paul": "Which different audiences does verse 17 distinguish? What topic does verse 18 attribute to Paul's teaching?", "listener": "Compare the different reactions recorded in verse 18. Does the text make all listeners agree?", "archaeologist": "How do weights, legal records and ballots help describe a public space without establishing the words spoken there?" }
+    },
+    {
+      "id": "areopagus", "title": "What does Areopagus identify?", "place": "Areopagus · hill or council", "verse": 19, "endVerse": 21, "position": [7, -5],
+      "textNote": "The narrative moves to the Areopagus and records a request to hear the teaching explained. Keep the name in view while checking the translation and its notes.",
+      "evidenceNote": "The USCCB note on Acts 17:19 identifies two possible senses: the hill of Ares or the Athenian council. This interpretive uncertainty prevents a confident pin on the speaker's physical position.",
+      "sourceIds": ["usccb-acts"],
+      "uncertainty": "The rocky rise is a schematic reminder of one possible meaning. It is not evidence that the address occurred outdoors on that hill.",
+      "perspectives": { "paul": "What questions are put to Paul in verses 19–20? Separate those recorded questions from any motives you might imagine.", "listener": "What do the listeners say they want to understand? What information is absent about the meeting's procedure?", "archaeologist": "How does a name that can denote a hill or a council limit a reconstructed scene?" }
+    },
+    {
+      "id": "response", "title": "An address and varied responses", "place": "Areopagus episode · exact venue unresolved", "verse": 22, "endVerse": 34, "position": [9, 4],
+      "textNote": "Read the address as transmitted in Acts, followed by the distinct responses in verses 32–34. The perspective prompts ask about this text; they add no character dialogue.",
+      "evidenceNote": "The Greek Ministry's conservation account describes restored routes, conserved architectural remains and modern visitor facilities around the Agora and Areopagus. Today's visitor landscape therefore needs interpretation too.",
+      "sourceIds": ["ministry-conservation"],
+      "uncertainty": "No altar model, audience portrait or speech location is claimed here. Material remains and a narrated speech answer different historical questions.",
+      "perspectives": { "paul": "Which observations and quotations form the address in verses 22–31? Follow the sequence without supplying extra words.", "listener": "List the responses that verses 32–34 actually name. Which listeners are named, and which remain anonymous?", "archaeologist": "What can an excavated or restored place contribute to reading this episode, and what can it leave unresolved?" }
+    }
+  ]
+}
