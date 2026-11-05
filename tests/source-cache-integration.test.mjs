@@ -38,6 +38,7 @@ async function dataModule(t) {
     ["from '../data/editions/catalog.json'", `from '${new URL('data/editions/catalog.json', root).href}' with { type: 'json' }`],
     ["from './permissions'", `from '${permissionModule}'`],
     ["from './source-cache.ts'", `from '${new URL('src/source-cache.ts', root).href}'`],
+    ["from './source-codec.ts'", `from '${new URL('src/source-codec.ts', root).href}'`],
   ]);
   return { source, harness };
 }
@@ -93,6 +94,7 @@ async function workerModule(t) {
     ["from './permissions'", `from '${permissionModule}'`],
     ["from './search-query'", `from '${new URL('src/search-query.ts', root).href}'`],
     ["from './source-cache.ts'", `from '${new URL('src/source-cache.ts', root).href}'`],
+    ["from './source-codec.ts'", `from '${new URL('src/source-codec.ts', root).href}'`],
   ]);
   harness.request = (id, editionId = 'eng-web', extra = {}) => new Promise(resolve => {
     harness.waiting.set(id, resolve);

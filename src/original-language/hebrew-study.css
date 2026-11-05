@@ -1,0 +1,30 @@
+.hebrew-workspace { display: grid; gap: 1rem; min-width: 0; }
+.hebrew-workspace .panel, .hebrew-workspace form, .hebrew-workspace details { min-width: 0; }
+.hebrew-workspace p, .hebrew-workspace li, .hebrew-workspace code, .hebrew-workspace dd, .hebrew-workspace a { overflow-wrap: anywhere; }
+.hebrew-selectors { display: grid; grid-template-columns: max-content minmax(0, 1fr); align-items: center; gap: .6rem 1rem; }
+.hebrew-selectors select, .hebrew-workspace input { width: 100%; min-width: 0; }
+.hebrew-main-text, .hebrew-alternative-text, .hebrew-selected-word { font-family: 'SBL Hebrew', 'Noto Serif Hebrew', 'Times New Roman', serif; font-size: 1.9rem; line-height: 2.1; text-align: right; overflow-wrap: anywhere; }
+.hebrew-word { display: inline; appearance: none; color: inherit; background: transparent; font: inherit; line-height: inherit; border: 1px solid transparent; border-radius: .25rem; padding: .08em .1em; margin: 0; cursor: pointer; white-space: pre-wrap; overflow-wrap: anywhere; }
+.hebrew-word:hover, .hebrew-word[aria-pressed='true'] { background: var(--surface-hover, #e8d9b340); border-color: currentColor; }
+.hebrew-word[data-source-type='x-ketiv'] { text-decoration: underline dotted; text-underline-offset: .2em; }
+.hebrew-word:focus-visible { outline: 3px solid currentColor; outline-offset: 2px; }
+.hebrew-segment.x-large { font-size: 1.45em; }
+.hebrew-segment.x-small { font-size: .7em; }
+.hebrew-segment.x-suspended { position: relative; top: -.4em; font-size: .8em; }
+.hebrew-selected-word, .hebrew-morphology { white-space: pre-wrap; }
+.hebrew-word-details { display: grid; grid-template-columns: minmax(8rem, .6fr) minmax(0, 1fr); gap: .5rem 1rem; }
+.hebrew-word-details dt { font-weight: 700; }
+.hebrew-word-details dd { margin: 0; }
+.hebrew-notes, .hebrew-word-list, .hebrew-lemma-results { padding-inline-start: 1.4rem; }
+.hebrew-note, .hebrew-lemma-results li, .hebrew-word-list li { margin-block: .75rem; }
+.hebrew-reading { margin-block: .75rem; padding-inline-start: .75rem; border-inline-start: 3px solid currentColor; }
+.hebrew-catchword { font-size: 1.3em; }
+.hebrew-workspace form { display: grid; gap: .6rem; }
+.hebrew-workspace button { max-width: 100%; overflow-wrap: anywhere; }
+.hebrew-workspace h2[tabindex], .hebrew-workspace h3[tabindex] { scroll-margin-top: 5rem; }
+@media (max-width: 480px) {
+  .hebrew-selectors, .hebrew-word-details { grid-template-columns: minmax(0, 1fr); }
+  .hebrew-word-details dd { margin-block-end: .5rem; }
+  .hebrew-main-text, .hebrew-alternative-text { font-size: 1.65rem; }
+  .hebrew-workspace .button-row { flex-wrap: wrap; }
+}

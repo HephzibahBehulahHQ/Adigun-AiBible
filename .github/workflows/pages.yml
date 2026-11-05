@@ -32,6 +32,8 @@ jobs:
       - name: Install locked dependencies
         run: npm ci
       - name: Validate source, content and production build
+        env:
+          ADIGUN_SOURCE_TRANSPORT: gzip-base64-v1
         run: npm run check
       - name: Install Chromium for production-browser checks
         timeout-minutes: 10

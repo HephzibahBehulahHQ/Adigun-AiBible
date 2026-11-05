@@ -5,6 +5,7 @@ import { defaultSearchOptions, searchRows } from './search-query';
 import type { SearchOptions } from './search-query';
 import type { SearchResult } from './types';
 import { AsyncLruCache, SEARCH_INDEX_CACHE_LIMIT, LatestTaskQueue, SupersededTaskError } from './source-cache.ts';
+import { readSourceJson } from './source-codec.ts';
 const indexes = new AsyncLruCache<string, SearchResult[]>(SEARCH_INDEX_CACHE_LIMIT);
 const searches = new LatestTaskQueue();
 type SearchRequest = { query: string; bookId: string; id: number; base: string; editionId?: string; options?: SearchOptions };
@@ -18,7 +19,7 @@ async function respond(data: SearchRequest): Promise<void> {
       const path = editionId === 'eng-web' ? 'data/search-index.json' : `data/editions/${editionId}/search-index.json`;
       const response = await fetch(`${data.base}${path}`);
       if (!response.ok) throw new Error('Download this edition and its search index while online to search it.');
-      const rows = await response.json();
+      const rows = await readSourceJson(response);
       if (!Array.isArray(rows) || rows.some(v => typeof v.text !== 'string' || typeof v.bookId !== 'string')) throw new Error('The search index failed validation.');
       return rows as SearchResult[];
     });

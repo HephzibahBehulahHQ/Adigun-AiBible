@@ -1,3 +1,9 @@
+## Catalog release — PR #29 (5 November 2026)
+
+Exact candidate `1586f4714cf6b2df1280e1f47b7c062eb8db56a9`, tested merge preview `0d7917d12762995fc173fd3ce61dad4ac17afe0a`: [workflow 42011864179](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42011864179) passed 379 application tests, 20 backend contracts, source validation, TypeScript, lint, production build, all 208 browser cases and ten repeated persistence cases. Browser artifact statistics: 208 expected, 0 unexpected, 0 flaky, 0 skipped. New catalog/coverage desktop and 320px screenshots were inspected. The installation-error banner in controlled catalog screenshots comes from intentionally blocked service workers; the separate real Czech complete-edition download/offline reload/search test passed.
+
+Merged as `75f2d35be4df3ab07f589c557f01a653acdfc8dc`. [Main workflow 42013204493](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42013204493) and deployment passed. Independent public verification at 10:52:29 UTC returned the exact merge commit, build `317f9e564b634dcfee37a6a1`, HTTP 200 and the application shell; the published source catalog matched the repository bytes and contained fourteen installed Bible editions.
+
 # Verification evidence
 
 ## Current verified release: PR #28

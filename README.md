@@ -4,6 +4,8 @@ A Scripture study application from HB Evangelism, built around named source edit
 
 [Open the deployed app](https://hephzibahbehulahhq.github.io/Adigun-AiBible/) · [Current release status](docs/agent/PROJECT_STATUS.md) · [Complete specification](docs/specs/Adigun-AiBible_Codex_Master_Prompt.md)
 
+The current development candidate adds an edition-specific word and phrase concordance: complete occurrence counts, source-linked result pages, book distributions and exact Unicode highlighting. Matching rules and source-validation boundaries are documented in [docs/CONCORDANCE.md](docs/CONCORDANCE.md). It also adds [Hebrew and Aramaic source study](docs/HEBREW_STUDY.md): 39 separately numbered OSHB books, exact source words, supplied morphology and lemma fields, ketiv/qere alternatives, within-book lemma lookup and verified offline source packs. The [compact download format](docs/SOURCE_TRANSPORT.md) preserves canonical source bytes while reducing transferred Bible data. Candidate browser verification and deployment are tracked in the release status.
+
 ## Local development
 
 Requires Node.js 24 and Python 3. Install the locked dependencies with `npm ci`, run `npm run dev`, and validate with `npm run check`. `npm run build` produces `dist/` under the `/Adigun-AiBible/` base path. `npm run preview` serves that build. Browser checks use `npm run test:e2e` after Playwright Chromium is installed. Backend contract tests use `node --test backend/tests/*.test.mjs`.

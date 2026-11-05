@@ -26,6 +26,10 @@ test('extended coverage separates publisher, draft, approved and installed conte
   const lexical = region.getByRole('article', { name: 'Historical dictionaries', exact: true });
   await expect(metric(lexical, 'Dictionary number records')).toHaveText('14,298');
   await expect(metric(lexical, 'Supplied headwords')).toHaveText('14,197');
+  const hebrew = region.getByRole('article', { name: 'Hebrew and Aramaic source corpus', exact: true });
+  await expect(metric(hebrew, 'Original-language source books')).toHaveText('39');
+  await expect(metric(hebrew, 'Source chapters')).toHaveText('929');
+  await expect(metric(hebrew, 'Source verse records')).toHaveText('23,213');
   const pilots = region.getByRole('article', { name: 'Installed experience pilots', exact: true });
   await expect(metric(pilots, 'Named source or learning exercises')).toHaveText('5');
   await pilots.getByText('Available pilots and their limits', { exact: true }).click();
@@ -86,4 +90,19 @@ test('actual historical downloads count only while every cached source and notic
   await offline.getByRole('button', { name: 'Check cached content packs', exact: true }).click();
   await expect(didache.locator('.extended-pack-state')).toHaveText('partial');
   await expect(didache.getByText('2 of 3 required source and notice files are present.', { exact: true })).toBeVisible();
+});
+
+
+test('changed Hebrew inventory remains unknown and cannot borrow counts from another corpus', async ({ page }) => {
+  await page.route('**/data/original-language/oshb/manifest.json', route => route.fulfill({ status: 200, contentType: 'application/json', body: '{"bookCount":39,"verseCount":23213}' }));
+  const region = await openCoverage(page);
+  const hebrew = region.getByRole('article', { name: 'Hebrew and Aramaic source corpus', exact: true });
+  await expect(metric(hebrew, 'Original-language source books')).toHaveText('Unknown');
+  await expect(metric(hebrew, 'Source verse records')).toHaveText('Unknown');
+  await expect(region.getByRole('alert').filter({ hasText: 'Hebrew source inventory:' })).toBeVisible();
+  await expect(metric(region.getByRole('article', { name: 'Historical dictionaries', exact: true }), 'Dictionary number records')).toHaveText('14,298');
+  await page.unroute('**/data/original-language/oshb/manifest.json');
+  await region.getByRole('button', { name: 'Refresh coverage inventories', exact: true }).click();
+  await expect(metric(hebrew, 'Original-language source books')).toHaveText('39');
+  await expect(region.getByRole('alert')).toHaveCount(0);
 });

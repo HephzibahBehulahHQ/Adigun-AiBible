@@ -4,6 +4,8 @@ import './tools.css';
 
 const tools = [
   { view: 'linguistics', icon: BookMarked, title: 'Original-language study', description: 'Explore source Greek, Hebrew and Aramaic dictionary records, and save your own translation exercises.' },
+  { view: 'hebrew-study', icon: ScrollText, title: 'Hebrew and Aramaic source study', description: 'Read exact source words, inspect supplied lemma and morphology fields, and keep source reading alternatives visible.' },
+  { view: 'concordance', icon: ScanText, title: 'Edition concordance', description: 'Count exact source words and phrases across an edition, inspect their distribution, and read each occurrence in context.' },
   { view: 'time-travel', icon: BookMarked, title: 'Athens time travel', description: 'Follow an Acts 17 study tour with sourced stops, a schematic 3D view and an accessible 2D alternative.' },
   { view: 'interpretation', icon: NotebookPen, title: 'Blind interpretation workspace', description: 'Compare two historical readings, save your own reasoning, then reveal the sources and revisit your judgment.' },
   { view: 'nearby', icon: HeartHandshake, title: 'Nearby study room', description: 'Try a local host-and-guest connection with manual pairing, explicit approval and permitted passage sharing.' },
