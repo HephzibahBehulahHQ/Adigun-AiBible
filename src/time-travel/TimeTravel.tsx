@@ -1,6 +1,6 @@
 import { lazy, Suspense, useEffect, useRef, useState } from 'react';
-import { getBook, getEditionCatalog, getManifest, sourceCredit } from '../data';
-import { requirePermission } from '../permissions';
+import { getEditionCatalog, sourceCredit } from '../data';
+import { tourDependencies as dependencies } from './source';
 import { downloadBlob } from '../media';
 import type { Edition, Locale, Reference } from '../types';
 import { athens, experiencePack, loadExperiencePack, loadTourPassage, tourReference } from './model';
@@ -9,7 +9,6 @@ import './time-travel.css';
 
 const TourScene = lazy(() => import('./TourScene'));
 const TourNarration = lazy(() => import('./TourNarration'));
-const dependencies = {getBook,getManifest,requirePermission};
 
 export default function TimeTravel({reference,locale,onOpenReference}: {reference: Reference;locale: Locale;onOpenReference:(reference:Reference)=>void}) {
   const [editionId,setEditionId] = useState(reference.editionId || 'eng-web'), [editions,setEditions] = useState<Edition[]>([]), [selected,setSelected] = useState(0);

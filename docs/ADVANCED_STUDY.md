@@ -10,7 +10,7 @@ Private translation exercises bind an author-selected dictionary entry to an exa
 
 ## Athens pilot
 
-`#/time-travel/ACT/17?verse=16&edition=eng-web` provides four reading stops, two evidence/time frames, three perspective prompts, exact selected-edition Scripture, optional software 3D, local device narration when an eligible voice exists, and a complete standalone 2D HTML study pack. Every pack checks display, document export, redistribution and offline permissions against one source revision.
+`#/time-travel/ACT/17?verse=16&edition=eng-web` provides four reading stops, two evidence/time frames, three perspective prompts, exact selected-edition Scripture, optional software 3D, local device narration when an eligible voice exists, and a complete standalone 2D HTML study pack. Every pack checks display, document export, redistribution and offline permissions against one source revision. The complete publisher notice is verified against the current build inventory and embedded unchanged; a missing or altered notice prevents export.
 
 The map and scene are original schematic geometry, not surveyed archaeology or a reconstruction of Paul’s route. Notes are AI-assisted research drafts with human review pending. No invented character dialogue, external models or photographs are bundled.
 
@@ -25,6 +25,6 @@ Accessible 2D reading stays available when the optional scene cannot be drawn. K
 
 ## Verification and remaining boundaries
 
-Unit checks verify imported lexical counts/checksums, immutable source identity, invalid and conflicting restores, denied permissions, missing passages, source changes during exports, cancellation, safe HTML output and bounded scene geometry. Browser cases exercise source lookup, private persistence, blind-reveal flow when integrated, tour navigation, 320 px reflow and actual downloads. Current release receipts and unrun checks belong in `docs/agent/PROJECT_STATUS.md`.
+Unit checks verify imported lexical counts/checksums, immutable source identity, invalid and conflicting restores, denied permissions, missing passages, source changes during exports, cancellation, safe HTML output and bounded scene geometry. Browser cases exercise source lookup, private persistence, the integrated blind-reveal flow, tour navigation, 320 px reflow and actual downloads. Current release receipts and unrun checks belong in `docs/agent/PROJECT_STATUS.md`.
 
 Nearby transport and blind-interpretation details are maintained in their module documents. Real independent human editorial review, modern linguistic alignment, licensed recorded narration and physical two-device offline verification remain separate acceptance gates.

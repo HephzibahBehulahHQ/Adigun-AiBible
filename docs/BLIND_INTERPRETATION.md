@@ -2,7 +2,7 @@
 
 ## Implemented flow
 
-`src/interpretation/BlindInterpretationWorkspace.tsx` exports a default React component accepting `reference`, optional `locale`, and `onOpenReference`. Root integration must register the `interpretation` view, route and tool entry. Its expected URL is `#/interpretation/MAT/5?verse=17&end=20&edition=eng-web`; the selected Bible edition supplies unchanged Scripture. The exercise passage is explicitly Matthew 5:17–20, with Matthew 5:13–26 available as context.
+`src/interpretation/BlindInterpretationWorkspace.tsx` exports a default React component accepting `reference`, optional `locale`, and `onOpenReference`. The host registers the `interpretation` view, route, command and tool entry. Its expected URL is `#/interpretation/MAT/5?verse=17&end=20&edition=eng-web`; the selected Bible edition supplies unchanged Scripture. The exercise passage is explicitly Matthew 5:17–20, with Matthew 5:13–26 available as context.
 
 The user opens a private reflection, reads two shuffled historical readings, examines supporting passages and questions, and records reasoning plus an optional preference. Source names, work titles, tradition associations, provenance and external source links are absent from the exercise DOM before deliberate reveal. Their bundled research data is not a security boundary, and recognizing a historical quotation is possible.
 
@@ -41,7 +41,7 @@ Unsaved writing and in-flight persistence prevent app updates; leaving prompts t
 
 - `node --test tests/blind-interpretation*.test.mjs`: 13 model/source and IndexedDB checks passed during implementation.
 - `npm run typecheck` and `npx eslint src/interpretation`: passed for the component checkpoint.
-- `tests/blind-interpretation.browser.spec.ts`: five production-browser scenarios cover persistence/reveal/revisit, narrow layout and draft guards, restore/source validation/deletion, concurrent tabs and source retry. They require the host route integration. Local Chromium is unavailable; browser execution is **NOT TESTED locally** and remains an exact-candidate CI gate.
+- `tests/blind-interpretation.browser.spec.ts`: five production-browser scenarios cover persistence/reveal/revisit, narrow layout and draft guards, restore/source validation/deletion, concurrent tabs and source retry. They exercise the integrated host route. Local Chromium is unavailable; browser execution is **NOT TESTED locally** and remains an exact-candidate CI gate.
 - Last component checkpoint verified remotely before the final tests/documentation: `5a9e9d94ca85de480074f17a7a70efea8170fa46` on `codex/interpretation-completion-20261105`. Root owns the final integration and release receipt in `docs/agent/PROJECT_STATUS.md`.
 
 Human editorial/tradition review, broader sourced interpretation coverage and reviewed localization remain external content gates. No such approval or full-spec completion is claimed by this workspace.
