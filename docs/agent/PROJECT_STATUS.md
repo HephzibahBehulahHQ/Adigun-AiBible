@@ -26,6 +26,8 @@ A cached-edition history regression and hidden-file-input overflow were found an
 
 ## Current bounded implementation
 
+The active review is [PR #37](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/pull/37). Its exact-head CI, remote checkpoint and post-merge public source receipts are maintained in the PR body, avoiding self-referential documentation commits. Inspect that receipt and the actual main head when resuming; the Gospel release above is the accepted pre-collection baseline.
+
 Private, source-pinned speech collections in the existing Speaker Explorer: name a collection, add an existing publisher-marked span, order entries, reopen exact speech with full context, remove/Undo, and validate private JSON backup/restore. Retain edition/revision, reference, Unicode code-point boundaries, full-verse text hash and publisher provenance. Changed sources or markings must fail visibly. Keep publisher annotations distinct from independent review; public curated collections, new speaker assignments, scheduling and audio remain separate increments.
 
 - Implementation is in progress. Strict metadata-only collection validation, separate transactional IndexedDB storage, cancellable exact-source checking and a guarded collection UI are integrated. Names, ordered spans, complete source context, removal/Undo, draft recovery and backup preview/conflict handling now need browser acceptance. Nothing in this increment is released yet.

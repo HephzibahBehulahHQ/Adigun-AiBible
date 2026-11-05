@@ -137,8 +137,10 @@ test('ordered saved speech survives keyboard actions, removal and Undo with acce
   await cards.nth(1).getByRole('button', { name: 'Move speech earlier', exact: true }).focus();
   await page.keyboard.press('Enter');
   await expect.poll(async () => (await stored(page)).collections[0].entries.map(pin => pin.reference.verse)).toEqual([5, 3]);
+  await expect(cards.first()).toHaveAttribute('data-speech-id', sourcePin('JHN', 3, 5).id);
   await cards.first().getByRole('button', { name: 'Move speech later', exact: true }).click();
   await expect.poll(async () => (await stored(page)).collections[0].entries.map(pin => pin.reference.verse)).toEqual([3, 5]);
+  await expect(cards.first()).toHaveAttribute('data-speech-id', sourcePin().id);
   await cards.first().getByRole('button', { name: 'Remove saved speech', exact: true }).click();
   await expect.poll(async () => (await stored(page)).collections[0].entries.map(pin => pin.reference.verse)).toEqual([5]);
   await collections(page).getByRole('button', { name: 'Undo last removal', exact: true }).click();
