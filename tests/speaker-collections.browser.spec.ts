@@ -96,7 +96,9 @@ async function backup(page: Page): Promise<Backup> {
   expect(value.kind).toBe('adigun-speech-collections'); expect(value.version).toBe(1); expect(value.workspace.revision).toBe(0); return value;
 }
 async function restore(page: Page, value: unknown) {
-  await collections(page).getByLabel('Restore collection backup', { exact: true }).setInputFiles({ name: 'speech-collections.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(value)) });
+  const input = collections(page).getByLabel('Restore collection backup', { exact: true });
+  await expect(input).toBeEnabled();
+  await input.setInputFiles({ name: 'speech-collections.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(value)) });
 }
 async function openCollection(page: Page, title: string) {
   await collections(page).getByRole('button', { name: `Open collection ${title}`, exact: true }).click();
@@ -165,6 +167,7 @@ test('collection restore previews conflicts and rejects malformed, forged and st
   await restore(page, incoming);
   const preview = collections(page).getByRole('region', { name: 'Speech collection restore preview', exact: true });
   await expect(preview).toContainText('1 conflicting collections');
+  await expect(preview.getByRole('button', { name: 'Merge collection backup', exact: true })).toBeDisabled();
   await preview.getByLabel('Restore conflicts', { exact: true }).selectOption('keep-device');
   await preview.getByRole('button', { name: 'Merge collection backup', exact: true }).click();
   await expect(preview).toHaveCount(0);
@@ -174,6 +177,8 @@ test('collection restore previews conflicts and rejects malformed, forged and st
   await preview.getByRole('button', { name: 'Merge collection backup', exact: true }).click();
   await expect.poll(async () => (await stored(page)).collections[0].title).toBe('Backup collection');
   const preserved = await stored(page);
+  await restore(page, incoming); await expect(preview).toContainText('1 identical');
+  const preservedPreview = await preview.innerText();
   const stale = structuredClone(incoming); stale.workspace.collections[0].entries[0].editionSha256 = '0'.repeat(64);
   const changedWords = structuredClone(incoming); changedWords.workspace.collections[0].entries[0].sourceTextHash = '0'.repeat(64);
   const relabelled = structuredClone(incoming); relabelled.workspace.collections[0].entries[0].bookName = 'Forged publisher label';
@@ -186,6 +191,7 @@ test('collection restore previews conflicts and rejects malformed, forged and st
     await restore(page, value);
     await expect(collections(page).getByRole('alert').last()).toContainText(error);
     expect(await stored(page)).toEqual(preserved);
+    await expect(preview).toHaveText(preservedPreview, { useInnerText: true });
   }
   await collections(page).getByLabel('Restore collection backup', { exact: true }).setInputFiles({ name: 'broken.json', mimeType: 'application/json', buffer: Buffer.from('{ broken') });
   await expect(collections(page).getByRole('alert').last()).toContainText('not valid JSON');
@@ -193,6 +199,7 @@ test('collection restore previews conflicts and rejects malformed, forged and st
   await collections(page).getByLabel('Restore collection backup', { exact: true }).setInputFiles({ name: 'large.json', mimeType: 'application/json', buffer: Buffer.alloc(2 * 1024 * 1024 + 1, 32) });
   await expect(collections(page).getByRole('alert').last()).toContainText('no larger than 2 MiB');
   expect(await stored(page)).toEqual(preserved);
+  await expect(preview).toHaveText(preservedPreview, { useInnerText: true });
 });
 
 test('a stale speech collection editor survives Reload and cannot overwrite the newer saved name', async ({ page, context }) => {
@@ -222,6 +229,41 @@ test('a stale speech collection editor survives Reload and cannot overwrite the 
     expect(recovered.collections[1].title).toBe('Keep my second-tab draft');
     expect(recovered.collections[1].id).not.toBe(winner.collections[0].id);
     expect(recovered.collections[1].entries).toEqual(winner.collections[0].entries);
+  } finally { await other.close(); }
+});
+
+test('Undo and a restore preview cannot overwrite another tab’s newer collection after Reload', async ({ page, context }) => {
+  await openCollections(page); await createCollection(page, 'Before removal'); await addSpeech(page);
+  const withSpeech = await backup(page);
+  await collections(page).getByRole('button', { name: 'Remove saved speech', exact: true }).click();
+  await expect.poll(async () => (await stored(page)).collections[0].entries.length).toBe(0);
+  await restore(page, withSpeech);
+  const preview = collections(page).getByRole('region', { name: 'Speech collection restore preview', exact: true });
+  await expect(preview).toContainText('1 conflicting collections');
+  const other = await context.newPage();
+  try {
+    await openCollections(other); await openCollection(other, 'Before removal');
+    await collections(other).getByLabel('Collection name', { exact: true }).fill('Newer name after removal');
+    await collections(other).getByRole('button', { name: 'Save collection name', exact: true }).click();
+    await expect.poll(async () => (await stored(other)).collections[0].title).toBe('Newer name after removal');
+    const winner = await stored(other);
+    await preview.getByLabel('Restore conflicts', { exact: true }).selectOption('use-backup');
+    await preview.getByRole('button', { name: 'Merge collection backup', exact: true }).click();
+    await expect(collections(page).getByRole('alert').last()).toContainText(/another tab|newer|changed/i);
+    expect(await stored(page)).toEqual(winner);
+    await collections(page).getByRole('button', { name: 'Reload saved collections', exact: true }).click();
+    await expect(preview).toContainText('Saved collections changed');
+    await expect(preview.getByRole('button', { name: 'Merge collection backup', exact: true })).toBeDisabled();
+    await collections(page).getByRole('button', { name: 'Undo last removal', exact: true }).click();
+    await expect(collections(page).getByRole('alert').last()).toContainText('changed after removal');
+    expect(await stored(page)).toEqual(winner);
+    await expect(collections(page).getByRole('button', { name: 'Undo last removal', exact: true })).toBeVisible();
+    await preview.getByRole('button', { name: 'Refresh restore preview', exact: true }).click();
+    await expect(preview).not.toContainText('Saved collections changed');
+    await preview.getByLabel('Restore conflicts', { exact: true }).selectOption('keep-device');
+    await preview.getByRole('button', { name: 'Merge collection backup', exact: true }).click();
+    await expect(preview).toHaveCount(0);
+    expect((await stored(page)).collections).toEqual(winner.collections);
   } finally { await other.close(); }
 });
 
@@ -369,11 +411,52 @@ test.describe('speech collection source and storage failure boundaries', () => {
       const received = page.waitForEvent('requestfinished', { predicate: request => request.url().endsWith('/data/editions/eng-bsb/books/MAT.json') });
       release(); await done; await received;
       await page.evaluate(() => new Promise<void>(resolve => requestAnimationFrame(() => requestAnimationFrame(() => resolve()))));
-      await expect(preview).toHaveText(previousPreview);
+      await expect(preview).toHaveText(previousPreview, { useInnerText: true });
       await expect(collections(page).getByLabel('Collection name', { exact: true })).toHaveValue('My later unsaved name');
       expect(await stored(page)).toEqual(original);
       await expect(collections(page).getByRole('button', { name: 'Open collection Delayed source collection', exact: true })).toHaveCount(0);
     } finally { release(); }
+  });
+
+  test('cancelling a pending exact-source fingerprint cannot add the span after a later name edit', async ({ page }) => {
+    await openCollections(page); await createCollection(page, 'Before source cancellation');
+    await (await findSpeech(page, 3)).getByRole('button', { name: 'Collect marked speech', exact: true }).click();
+    type HashGate = { started: boolean; completed: boolean; release: () => void; restore: () => void };
+    type HashWindow = typeof window & { speechCollectionHash: HashGate };
+    await page.evaluate(expected => {
+      let release!: () => void;
+      const held = new Promise<void>(resolve => { release = resolve; }), original = SubtleCrypto.prototype.digest;
+      const gate: HashGate = { started: false, completed: false, release, restore: () => { SubtleCrypto.prototype.digest = original; } };
+      (window as HashWindow).speechCollectionHash = gate;
+      // The actual browser digest is preserved; only its source-check completion is delayed.
+      SubtleCrypto.prototype.digest = async function (algorithm, data) {
+        const result = original.call(this, algorithm, data);
+        if (new TextDecoder().decode(data) === expected) {
+          gate.started = true; await held; const digest = await result; gate.completed = true; return digest;
+        }
+        return result;
+      };
+    }, sourceSpeech().verse.text);
+    try {
+      const candidate = page.getByRole('region', { name: 'Speech to collect', exact: true });
+      await candidate.getByRole('button', { name: 'Add marked speech', exact: true }).click();
+      await page.waitForFunction(() => (window as HashWindow).speechCollectionHash.started);
+      await collections(page).getByRole('button', { name: 'Cancel source check', exact: true }).click();
+      await collections(page).getByLabel('Collection name', { exact: true }).fill('Later name draft after cancellation');
+      await page.evaluate(() => { (window as HashWindow).speechCollectionHash.release(); });
+      await page.waitForFunction(() => (window as HashWindow).speechCollectionHash.completed);
+      await page.evaluate(() => new Promise<void>(resolve => requestAnimationFrame(() => requestAnimationFrame(() => resolve()))));
+      expect((await stored(page)).collections[0].entries).toEqual([]);
+      await expect(collections(page).getByLabel('Collection name', { exact: true })).toHaveValue('Later name draft after cancellation');
+      await expect(candidate.getByRole('button', { name: 'Add marked speech', exact: true })).toBeEnabled();
+      await page.evaluate(() => { (window as HashWindow).speechCollectionHash.restore(); });
+      await candidate.getByRole('button', { name: 'Add marked speech', exact: true }).click();
+      await expect.poll(async () => (await stored(page)).collections[0].entries.length).toBe(1);
+      await expect(collections(page).getByLabel('Collection name', { exact: true })).toHaveValue('Later name draft after cancellation');
+      expect((await stored(page)).collections[0].title).toBe('Before source cancellation');
+    } finally {
+      await page.evaluate(() => { const gate = (window as HashWindow).speechCollectionHash; gate.release(); gate.restore(); });
+    }
   });
 
   test('collection work preserves an open correction draft and both names remain guarded without requiring source access for recovery', async ({ page }) => {

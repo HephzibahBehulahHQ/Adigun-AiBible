@@ -35,6 +35,12 @@ Passage cards paginate immutable source slices, preserve combining characters an
 The support directory uses explicit country selection, primary-service links and verification dates. It does not infer country, store moods, send messages, or contact a service automatically.
 
 
+## Private speech collections
+
+`src/speakers/collection-model.ts` validates a separate metadata-only workspace with at most 100 named collections, 200 spans per collection and a complete portable backup no larger than 2 MiB. Unknown fields, copied Scripture, review records and duplicate span identities are rejected. Each pin retains the edition revision, complete verse hash, source labels and URL, reference, publisher `wj` marker and Unicode code-point boundaries. `collection-source.ts` re-extracts the current publisher spans and checks rights and every pin before addition, reopening and import. Batch caches last only for one cancellable operation.
+
+`adigun-aibible-speech-collections` is an independent versioned IndexedDB database with the `workspace/private` record. Saves compare the atomic database revision and resolve only when the transaction completes. The UI additionally compares its original collection row so Reload cannot authorize a stale rename, reorder, deletion or Undo. Imports preview conflicts, recheck sources and verify the preview's original saved-state snapshot before merging. Source preparation can be cancelled; actual writes stay guarded through transaction completion. Saved metadata backup and plain-text name-draft recovery do not depend on source access. No names enter public URLs or corpus caches; no speaker assignment, human approval, schedule or audio playlist is inferred.
+
 ## Gospel notebook
 
 The single `src/gospels/` route retains its gap-aware exact-source reader. Its separate versioned IndexedDB notebook stores complete pane selections and source pins, never copied Scripture. Writes compare an atomic database revision and the editor’s original row; reloading the list cannot silently authorize a stale overwrite. Source preparation uses cancellable operation identities, while committed writes remain guarded until transaction completion. JSON import previews are revalidated before commit. Markdown exports require document-export permission and complete checksum-verified publisher notices; independent plain-text draft recovery requires neither source access nor a working database. See [private Gospel studies](GOSPEL_STUDIES.md).
