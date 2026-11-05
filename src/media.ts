@@ -1,3 +1,5 @@
+import { sourceDirection, sourceFont, sourceLineHeight } from './source-typography.ts';
+import { wrapExactText } from './exact-text-wrap.ts';
 import type { Verse } from './types';
 export type CardSize = 'story' | 'square' | 'portrait';
 export const dimensions = { story: [1080, 1920], square: [1080, 1080], portrait: [1080, 1350] } as const;
@@ -11,9 +13,10 @@ export function wrapText(ctx: CanvasRenderingContext2D, text: string, maxWidth: 
   }
   if (line) lines.push(line); return lines;
 }
-export function drawShareCard(canvas: HTMLCanvasElement, verses: Verse[], reference: string, edition: string, size: CardSize, palette: keyof typeof palettes, rightsNotice = 'Source Scripture · Public domain') {
+export function drawShareCard(canvas: HTMLCanvasElement, verses: Verse[], reference: string, edition: string, size: CardSize, palette: keyof typeof palettes, rightsNotice = 'Source Scripture · Public domain', language = 'en') {
   const [width, height] = dimensions[size]; canvas.width = width; canvas.height = height;
   const ctx = canvas.getContext('2d'); if (!ctx) throw new Error('Image export is not supported in this browser.');
+  ctx.direction = 'ltr'; ctx.textAlign = 'left';
   const colors = palettes[palette]; ctx.fillStyle = colors.background; ctx.fillRect(0, 0, width, height);
   ctx.strokeStyle = colors.accent; ctx.globalAlpha = .18;
   for (let i = 0; i < 4; i++) { ctx.beginPath(); ctx.ellipse(width - 40, 100, 180 + i * 65, 180 + i * 65, 0, 0, Math.PI * 2); ctx.stroke(); }
@@ -23,11 +26,13 @@ export function drawShareCard(canvas: HTMLCanvasElement, verses: Verse[], refere
   const footerTop = height - 70 - creditLines.length * 25;
   const text = verses.map(v => v.text).join(' '); let font = size === 'story' ? 64 : 52; let lines: string[] = [];
   const top = height * .22, bottom = Math.min(height - 300, footerTop - 195);
-  for (; font >= 30; font -= 2) { ctx.font = `${font}px Georgia, serif`; lines = wrapText(ctx, text, width - 192); if (lines.length * font * 1.48 <= bottom - top) break; }
-  if (font < 30 || lines.length * font * 1.48 > bottom - top) throw new Error('This passage is too long for a legible card. Select fewer verses or choose Story. Nothing has been cropped.');
+  for (; font >= 30; font -= 2) { ctx.font = `${font}px ${sourceFont(language)}`; lines = wrapExactText(text, width - 192, value => ctx.measureText(value).width); if (lines.length * font * sourceLineHeight(language) <= bottom - top) break; }
+  if (font < 30 || lines.length * font * sourceLineHeight(language) > bottom - top) throw new Error('This passage is too long for a legible card. Select fewer verses or choose Story. Nothing has been cropped.');
   ctx.fillStyle = colors.ink;
-  lines.forEach((line, i) => ctx.fillText(line, 96, top + i * font * 1.48));
-  const ruleY = Math.min(bottom + 60, top + lines.length * font * 1.48 + 65);
+  const direction = sourceDirection(language); ctx.direction = direction; ctx.textAlign = direction === 'rtl' ? 'right' : 'left';
+  lines.forEach((line, i) => ctx.fillText(line.replace(/[\r\n]+$/g, ''), direction === 'rtl' ? width - 96 : 96, top + i * font * sourceLineHeight(language)));
+  ctx.direction = 'ltr'; ctx.textAlign = 'left';
+  const ruleY = Math.min(bottom + 60, top + lines.length * font * sourceLineHeight(language) + 65);
   ctx.fillStyle = colors.accent; ctx.fillRect(96, ruleY, 66, 3); ctx.font = '600 32px system-ui'; ctx.fillText(reference, 96, ruleY + 68);
   ctx.fillStyle = colors.ink; ctx.font = '22px system-ui'; ctx.fillText(edition, 96, ruleY + 108);
   ctx.globalAlpha = .8; ctx.font = '18px system-ui'; creditLines.forEach((line,i)=>ctx.fillText(line,96,footerTop+i*25)); ctx.globalAlpha = 1;
