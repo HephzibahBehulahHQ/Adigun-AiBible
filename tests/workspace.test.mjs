@@ -17,7 +17,7 @@ test('workspace backup preserves user writing and explicit edition identity; ext
 });
 
 test('malformed versions, duplicate IDs, omitted editions and invalid dates are rejected before replacing data', () => {
-  const invalid = [{ ...state(), schemaVersion: 2 }, { ...state(), revision: -1 }, { ...state(), prayers: [prayer, prayer] }, { ...state(), prayers: [{ ...prayer, refs: [{ bookId: 'JHN', chapter: 3, verse: 16 }] }] }, { ...state(), prayers: [{ ...prayer, followUp: '2026-02-30' }] }, { ...state(), prayers: [{ ...prayer, followUp: '2026-99-99' }] }, { ...state(), prayers: [{ ...prayer, refs: [{ ...ref, editionId: '../private' }] }] }];
+  const invalid = [{ ...state(), schemaVersion: 99 }, { ...state(), revision: -1 }, { ...state(), prayers: [prayer, prayer] }, { ...state(), prayers: [{ ...prayer, refs: [{ bookId: 'JHN', chapter: 3, verse: 16 }] }] }, { ...state(), prayers: [{ ...prayer, followUp: '2026-02-30' }] }, { ...state(), prayers: [{ ...prayer, followUp: '2026-99-99' }] }, { ...state(), prayers: [{ ...prayer, refs: [{ ...ref, editionId: '../private' }] }] }];
   for (const value of invalid) assert.throws(() => validateWorkspace(value));
   assert.equal(validDate('2026-02-29'), false); assert.equal(validDate('2028-02-29'), true); assert.equal(validDate('2026-99-99'), false);
   assert.throws(() => previewImport(state(), '{broken'), /valid JSON/);
