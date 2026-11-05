@@ -11,8 +11,11 @@ Physical two-device testing with internet disabled is **NOT TESTED**. Browser or
 - Connection disposal cancels ICE gathering and blocked transfers, rejects late pairing results, detaches stale callbacks and emits closure once.
 - Cancellation and leave controls are processed without waiting behind a transfer callback. Content messages retain validated sequence order and explicit approval checks.
 - Buffer waits observe cancellation, channel closure and connection disposal; a cancellation racing a drained-buffer event cannot send another chunk.
-- Ten focused transport state-machine tests pass with a synthetic peer/channel harness. This is mocked coverage, not a physical-network result.
-- UI lifecycle/transfer repair, source-permission checks and actual-browser verification remain in progress at this checkpoint. This checkpoint is not a release candidate.
+- UI callbacks are bound to the active connection; resetting during pairing prevents late results from restoring it. Incoming cancellations discard late chunks and late source verification. Outgoing transfers do not block the incoming application queue.
+- Both sender and recipient enforce display, peer sharing, redistribution, document export and offline permissions. Receipt re-resolves the exact installed source rather than trusting peer-supplied text or hashes.
+- Eighteen focused protocol, source and synthetic transport tests pass. Synthetic peer/channel tests are mocked coverage, not a physical-network result.
+- Actual-browser verification remains pending. This checkpoint is not a release candidate.
+- Previous remote checkpoint: `9ee18257930b77aedf4525246cfe7b568af4f645`, verified on 5 November 2026 via the authenticated branch ref and `git ls-remote`.
 
 ## Physical-device acceptance still required
 
