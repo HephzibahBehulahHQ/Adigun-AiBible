@@ -10,7 +10,7 @@ const consent='I consent to this private recording and have permission from ever
 async function microphone(page:Page,mode:'working'|'pending'|'denied'='working') {
   await page.addInitScript(mode=>{
     const w=window as typeof window & {__retellingTest:{requests:number;stopped:number;chunks:number;resolve?:()=>Promise<void>;disconnect?:()=>void}};
-    const state=w.__retellingTest={requests:0,stopped:0,chunks:0};
+    const state:typeof w.__retellingTest=w.__retellingTest={requests:0,stopped:0,chunks:0};
     const NativeRecorder=window.MediaRecorder;
     class ObservedRecorder extends NativeRecorder {
       constructor(stream:MediaStream,options?:MediaRecorderOptions){super(stream,options);this.addEventListener('dataavailable',event=>{if(event.data.size)state.chunks++;});}

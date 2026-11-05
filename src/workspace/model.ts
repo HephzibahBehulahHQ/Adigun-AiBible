@@ -80,7 +80,7 @@ export function validateWorkspace(value: unknown): WorkspaceState {
   const recordings = workspaceRecordings(result);
   if (r.schemaVersion === 1 && recordings.length) throw new Error('Legacy workspace data cannot contain recording attachments. Use a complete version 2 backup.');
   if (recordings.reduce((total, item) => total + item.bytes, 0) > MAX_WORKSPACE_AUDIO_BYTES) throw new Error('Retelling recordings would exceed the 32 MiB device-workspace limit. Export before removing an older recording.');
-  const backupSize = new TextEncoder().encode(JSON.stringify({ format: 'adigun-aibible-workspace', schemaVersion: 1, exportedAt: '2000-01-01T00:00:00.000Z', state: result }, null, 2)).byteLength;
+  const backupSize = new TextEncoder().encode(JSON.stringify({ format: 'adigun-aibible-workspace', schemaVersion: 2, exportedAt: '2000-01-01T00:00:00.000Z', state: result, media: [] }, null, 2)).byteLength;
   if (backupSize > MAX_BACKUP_BYTES) throw new Error('This workspace exceeds the 12 MB portable-backup limit. The change was not saved; export your existing records before removing items.');
   return result;
 }

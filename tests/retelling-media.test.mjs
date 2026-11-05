@@ -74,3 +74,24 @@ test('restore conflict choice selects only bytes belonging to retained cards', a
   assert.equal(replace.cards[0].retellings[0].id,'b');
   const textOnly = emptyWorkspace(); assert.deepEqual(previewImport(textOnly,workspaceBackup(textOnly)).incoming,textOnly);
 });
+
+test('multi-megabyte originals survive chunked encoding with exact MIME and every byte', async () => {
+  const bytes=new Uint8Array(2*1024*1024+5);for(let i=0;i<bytes.length;i++)bytes[i]=i%251;bytes.set([0x1a,0x45,0xdf,0xa3]);
+  const {blob,...metadata}=await prepareRetellingDraft(new Blob([bytes],{type:'audio/webm;codecs=opus'}),1000,{ref,editionSha256:'a'.repeat(64)});
+  const recording={id:'large-original',...metadata};const state=validateWorkspace({...emptyWorkspace(),cards:[{...card,retellings:[{id:recording.id,at,text:'',recording}]}]});
+  const restored=await readCompleteWorkspaceBackup(await completeWorkspaceBackup({state,media:[{recording,blob}]}));
+  assert.deepEqual(await restored.media[0].blob.bytes(),bytes);assert.deepEqual(restored.media[0].recording,recording);
+});
+
+test('version-one migration preserves every private collection and existing revision histories', () => {
+  const base={id:'p',createdAt:at,updatedAt:at};
+  const legacy={...emptyWorkspace(),schemaVersion:1,revision:37,
+    prayers:[{...base,title:'Prayer',text:'Exact prayer à.',category:'Family',tags:['private'],refs:[ref],reflection:'My reflection',outcome:'Own label',followUp:'2026-11-06',history:[{at,title:'Earlier prayer',text:'Old writing',reflection:'Old reflection',outcome:''}]}],
+    boards:[{...base,id:'b',title:'Study',folder:'Own folder',tags:[],refs:[ref],notes:[{...base,id:'n',text:'My note',refs:[ref],links:[],history:[{at,text:'Old note'}]}]}],
+    cards:[{...card,retellings:[{at,text:'Retell exactly.'}],history:[{at,grade:'good',intervalDays:1}]}],
+    plans:[{...base,id:'plan',title:'My plan',kind:'custom',editionId:'eng-web',timeZone:'UTC',startDate:'2026-11-05',weekdays:[4],sessionsPerDay:1,paused:false,sessions:[{id:'session',ref,scheduledDate:'2026-11-05',completedAt:at}],history:[{sessionId:'session',at,action:'completed'}]}],
+    reflections:[{...base,id:'reflection',title:'Question',kind:'question',state:'researched',text:'Own answer',reason:'My sources',refs:[ref],sources:['Own source'],history:[{at,text:'Earlier question',reason:'Before study',state:'unresolved',refs:[ref],sources:[]}]}]
+  };
+  const migrated=validateWorkspace(legacy);assert.equal(migrated.schemaVersion,2);assert.equal(migrated.revision,37);
+  for(const key of ['prayers','boards','cards','plans','reflections'])assert.deepEqual(migrated[key],legacy[key]);
+});
