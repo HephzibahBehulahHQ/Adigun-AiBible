@@ -3,7 +3,7 @@ import { execFileSync } from 'node:child_process';
 import { relative, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { createHash } from 'node:crypto';
-import { verifySourceJsonTransport } from './pack-source-json.mjs';
+import { verifySourceJsonTransport, assertNoSourceStaging } from './pack-source-json.mjs';
 
 const digest = bytes => createHash('sha256').update(bytes).digest('hex');
 async function inventory(directory, root = directory) {
@@ -206,6 +206,7 @@ export function createServiceWorkerSource(manifest, shellFiles) {
 export async function finalizeBuild({ root = resolve(import.meta.dirname, '..'), base = '/Adigun-AiBible/', sourceCommit } = {}) {
   if (!/^\/[A-Za-z0-9_/-]*\/$/.test(base) || base.includes('..')) throw new Error('Invalid deployment base path.');
   const dist = resolve(root, 'dist');
+  await assertNoSourceStaging(dist);
   const data = await inventory(resolve(dist, 'data'), dist);
   const shell = await inventory(resolve(dist, 'assets'), dist);
   try { Object.assign(shell, await inventory(resolve(dist, 'fonts'), dist)); }

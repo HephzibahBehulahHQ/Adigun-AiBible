@@ -1,11 +1,24 @@
 import { createHash } from 'node:crypto';
-import { readdir, readFile, writeFile, realpath, stat, rename, rm, mkdir } from 'node:fs/promises';
+import { readdir, readFile, writeFile, realpath, stat, rename, rm, mkdir, mkdtemp } from 'node:fs/promises';
 import { relative, resolve, sep } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { gzipSync, gunzipSync } from 'node:zlib';
 import { SOURCE_ENVELOPE_KIND, SOURCE_JSON_MAX_BYTES, SOURCE_GZIP_MAX_BYTES, SOURCE_MAX_EXPANSION_RATIO, decodeSourceJsonBytes } from '../src/source-codec.ts';
 
 const isSourcePayload = name => /(^|\/)books\/[1-3]?[A-Z]{2,3}\.json$/.test(name) || /(^|\/)search-index\.json$/.test(name);
+
+/** A cancelled or failed preparation must never become a publicly copied asset. */
+export async function assertNoSourceStaging(directory) {
+  const leaked = (await readdir(directory)).filter(name => name.startsWith('.source-data-'));
+  if (leaked.length) throw new Error('Unpublished source staging exists in the served asset directory. Stop the build and remove only confirmed inactive staging before retrying.');
+}
+
+export async function createSourceStagingDirectory(publicDirectory) {
+  const publicRoot = await realpath(publicDirectory);
+  await assertNoSourceStaging(publicRoot);
+  // Keep incomplete data outside public even if the process ends before cleanup.
+  return mkdtemp(resolve(publicRoot, '../.source-data-'));
+}
 
 export function sourceTransportEnabled(value = process.env.ADIGUN_SOURCE_TRANSPORT) {
   if (value === undefined || value === '' || value === 'off') return false;
