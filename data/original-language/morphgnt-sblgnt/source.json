@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "id": "morphgnt-sblgnt",
+  "title": "MorphGNT: SBLGNT Edition — pinned original-language source corpus",
+  "upstream": {
+    "repository": "https://github.com/morphgnt/sblgnt",
+    "commit": "aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d",
+    "tree": "c518c6af640829bf882d884559bc8c77a01affec",
+    "commitDate": "2024-01-21T23:43:25Z",
+    "archiveUrl": "https://codeload.github.com/morphgnt/sblgnt/tar.gz/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d",
+    "archivePrefix": "sblgnt-aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/",
+    "archiveBytes": 1313320,
+    "archiveSha256": "e760c941eebae0eb25665a4937cf3b29b04a842f952f4b46d4181601d0e91872"
+  },
+  "license": {
+    "text": "CC-BY-4.0",
+    "annotations": "CC-BY-SA-3.0",
+    "textAttribution": "SBL Greek New Testament. Copyright 2010 by the Society of Biblical Literature and Logos Bible Software. Licensed under Creative Commons Attribution 4.0 International.",
+    "annotationAttribution": "Tauber, J. K., ed. (2017) MorphGNT: SBLGNT Edition. Version 6.12 [Data set]. https://github.com/morphgnt/sblgnt DOI: 10.5281/zenodo.376200",
+    "citationPolicy": "The upstream requested 2017 citation is retained verbatim in its README. The imported dataset identity is the exact 2024 commit, not an assertion that the snapshot equals an unmodified 2017 release.",
+    "conditions": "Retain attribution, copyright, both source links, both license links, complete notices and the reformatting statement. Annotation adaptations retain CC BY-SA 3.0 terms; the SBLGNT text keeps its distinct CC BY 4.0 terms. No endorsement or additional restrictions are implied.",
+    "modifications": "Lossless JSON reformatting and computed provenance/count inventories; original word-row fields and references remain unchanged.",
+    "independentLegalReview": false,
+    "humanEditorialApproval": false
+  },
+  "sourceFiles": [
+    {
+      "path": "61-Mt-morphgnt.txt",
+      "bytes": 1188216,
+      "gitBlobSha": "4745674bd63bf0bbec37b8b08f2c8f32b73266b4",
+      "sha256": "95b360228bedd1c2d06655469111d3f028a4ce1d46939d440ed549feee8b73ec"
+    },
+    {
+      "path": "62-Mk-morphgnt.txt",
+      "bytes": 742563,
+      "gitBlobSha": "d68222360b161cd6acba11746acfcb092b6af0c3",
+      "sha256": "4a2d2365cfe3e8d6c20b7c130c2c46363fa4459c3a6004992eba0a18231b183e"
+    },
+    {
+      "path": "63-Lk-morphgnt.txt",
+      "bytes": 1265076,
+      "gitBlobSha": "474e65703c49ef3890fca4b24403434ab6df6457",
+      "sha256": "a6f10ccf27a905f21ecbec96c3c01f220c39dd37aae118022113a52dfeb7528e"
+    },
+    {
+      "path": "64-Jn-morphgnt.txt",
+      "bytes": 964787,
+      "gitBlobSha": "c3dab42934edab531f7dc08b630be8181638bd61",
+      "sha256": "1b1de3e48e3f3d212ba19c76e5b2f1749833f888f5b52513099ec13cc01b619c"
+    },
+    {
+      "path": "65-Ac-morphgnt.txt",
+      "bytes": 1228900,
+      "gitBlobSha": "3aed8e1a1dd9d77b4c448a0893bd4ddee6eb6842",
+      "sha256": "04349afeba263d667698b37d39465d746530434b455fb6ac2941ec5c59fb85ca"
+    },
+    {
+      "path": "66-Ro-morphgnt.txt",
+      "bytes": 452306,
+      "gitBlobSha": "874480223c7f71bbc71f18d77ed3a6ad734561e1",
+      "sha256": "364b3b57c70e731920c7fa8a61f09ecd53eed858f7f3590596066484d0638cc6"
+    },
+    {
+      "path": "67-1Co-morphgnt.txt",
+      "bytes": 435113,
+      "gitBlobSha": "28dec6618da3a378f454b6c72776286855857920",
+      "sha256": "5233a5b099e2499baed34ec2d6f53ae44545d532a7e2fb12acafcf39ff6fdbf3"
+    },
+    {
+      "path": "68-2Co-morphgnt.txt",
+      "bytes": 291615,
+      "gitBlobSha": "9beb35c77da5ffbcf56a8d7c0e9d6054452a0b43",
+      "sha256": "1742d5076780a5338a858f2d83e615c87b2412cbefa56a4b8e14aa2c0ce326c4"
+    },
+    {
+      "path": "69-Ga-morphgnt.txt",
+      "bytes": 145242,
+      "gitBlobSha": "b6ba67c907b35700e32a8fa00c0b30328472a992",
+      "sha256": "ec249897464e8e8992e4869645471d6f3372e7373ba3a5d429516946d8cffada"
+    },
+    {
+      "path": "70-Eph-morphgnt.txt",
+      "bytes": 156655,
+      "gitBlobSha": "c506f4c4933b0c202f07742ca54aad26ff5495bc",
+      "sha256": "9f6444d3aff9791817c2ad84d8ff5b1c229d18a4e9ab07e5066ceb0068dee397"
+    },
+    {
+      "path": "71-Php-morphgnt.txt",
+      "bytes": 105215,
+      "gitBlobSha": "0dde9e397d8e0c8384eab85ca1f61b38b37a6272",
+      "sha256": "6e6133fba46c164c16264c4d9563b30d5634effba5792419f8ed5d5ec08961a4"
+    },
+    {
+      "path": "72-Col-morphgnt.txt",
+      "bytes": 102848,
+      "gitBlobSha": "8cdbc8e44370e7ffa2aa92419e2dd2ccaf40cdd2",
+      "sha256": "21e18b4310ce953cd786f8466824f24795cb46ef149dc501a330d55a05f7346a"
+    },
+    {
+      "path": "73-1Th-morphgnt.txt",
+      "bytes": 96313,
+      "gitBlobSha": "ced6898c215029bc8460c23d1b1600d3fd6f5243",
+      "sha256": "e322ec075748e81897dc0a2b87a821ee78e200f6ba833bbba07607e55a3c68d5"
+    },
+    {
+      "path": "74-2Th-morphgnt.txt",
+      "bytes": 53237,
+      "gitBlobSha": "123860bf9b3a59ffe1dd7ae0fdeb7a0eddd5d080",
+      "sha256": "309ba3338e0ccf2219bea7ee49f1e63bbefc1edcceedc5527c79395fd6b0bc19"
+    },
+    {
+      "path": "75-1Ti-morphgnt.txt",
+      "bytes": 110719,
+      "gitBlobSha": "b3a48cf39e72a1d5ab12e22dbfccf50d5273c450",
+      "sha256": "b4a6a446d163b8b651ba11119bbc211b4e14cb12871b48df175adb88d4f9db97"
+    },
+    {
+      "path": "76-2Ti-morphgnt.txt",
+      "bytes": 83507,
+      "gitBlobSha": "9e8982318844d411c26cb29f88fbe2e44f733f6a",
+      "sha256": "8af532322a0693ecb8d34b75c544c3b6a57e76e266be750d62d42bc07385376e"
+    },
+    {
+      "path": "77-Tit-morphgnt.txt",
+      "bytes": 46382,
+      "gitBlobSha": "20181fbb5729cc9fbd200b58241ac5e5612c2ec3",
+      "sha256": "16e9204306d616795f53f8627ff6ea05a80f572d7a21ed23ac7df99c6e00324d"
+    },
+    {
+      "path": "78-Phm-morphgnt.txt",
+      "bytes": 21103,
+      "gitBlobSha": "a4a64fb468e0110aec98d94d707af8a5188419fd",
+      "sha256": "e302779406b5405e8ff82a0dc2ded5ab49951f0d6245fe86894100bd83c51e33"
+    },
+    {
+      "path": "79-Heb-morphgnt.txt",
+      "bytes": 333352,
+      "gitBlobSha": "b6f41c7341e6b40dddf36eb7230f6ea2541cd879",
+      "sha256": "de7d5c7efe4cdb5e9023c8571c322c3b1a5a817de1d97c3275aef5e154b2756b"
+    },
+    {
+      "path": "80-Jas-morphgnt.txt",
+      "bytes": 114622,
+      "gitBlobSha": "462cf055ed12eb98f050da2d2ddcf040212304af",
+      "sha256": "205d4cdbb4c89aabd51ebf599fcfa622001af6e64dcd4e5ad487298ee4b7a204"
+    },
+    {
+      "path": "81-1Pe-morphgnt.txt",
+      "bytes": 114392,
+      "gitBlobSha": "5ac72702c9fba9872973d9ae477933ffd261caf7",
+      "sha256": "7eeeecddae91a5d103576f629e4fa536fa2217381f4a83eaa904b63d81ffc0b8"
+    },
+    {
+      "path": "82-2Pe-morphgnt.txt",
+      "bytes": 75995,
+      "gitBlobSha": "e00185e04d19766df22734e7bce8342916f1d695",
+      "sha256": "41c1bb93726bf66e46653bb369850f2e319869375f31746d120276dff73a310a"
+    },
+    {
+      "path": "83-1Jn-morphgnt.txt",
+      "bytes": 130821,
+      "gitBlobSha": "256ce436ae5bb07f405b8971b8355336dfe39e76",
+      "sha256": "99fb0d33100f9df25697e9b9ecaa04c599a277b5f2f65f8ed28e97902fed4df9"
+    },
+    {
+      "path": "84-2Jn-morphgnt.txt",
+      "bytes": 15330,
+      "gitBlobSha": "1dd4b1fd9bd6095ddbb6d9e178c193666fd43860",
+      "sha256": "bb90002d6b9bbbc43977a59c85ad04de873750b5e24187da064a319c2acd7fec"
+    },
+    {
+      "path": "85-3Jn-morphgnt.txt",
+      "bytes": 14477,
+      "gitBlobSha": "27a36b65129ba367a8ea92dc3507ef1a0cfee730",
+      "sha256": "a75df82d9007bb673e7d27bcb86681e011befc24cbaef1c658965803d7ae490a"
+    },
+    {
+      "path": "86-Jud-morphgnt.txt",
+      "bytes": 31986,
+      "gitBlobSha": "c401f296d69d02a78d0266a976bdd72db95fb318",
+      "sha256": "93c64857b492812544f1c5903bb63b5ec63ee5f32f69dd4c02d9d9c84b84624d"
+    },
+    {
+      "path": "87-Re-morphgnt.txt",
+      "bytes": 616102,
+      "gitBlobSha": "bf6fde5561b55eef837ae05067d270cdbc858c25",
+      "sha256": "5386b17ab6e3a8a68478cb0f4644009f6ad5322f379327629407ffd46a0e6dd3"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1630,
+      "gitBlobSha": "a3256051467a61ddb5099254dd9abaf5d03e5e80",
+      "sha256": "043bb6c0d654e85fa8a8db19e177ee035623e23b7ff1556e5431ad95184d5830"
+    }
+  ],
+  "textLicenseUpstream": {
+    "repository": "https://github.com/Faithlife/SBLGNT",
+    "commit": "d7f35adca9ec410e1d1499c63b4dd989d76c8d4d",
+    "tree": "551c17d822e6e0bb46586bd4bfe65f393beefbab",
+    "commitDate": "2026-10-25T01:05:20Z",
+    "archiveUrl": "https://codeload.github.com/Faithlife/SBLGNT/tar.gz/d7f35adca9ec410e1d1499c63b4dd989d76c8d4d",
+    "archivePrefix": "SBLGNT-d7f35adca9ec410e1d1499c63b4dd989d76c8d4d/",
+    "archiveBytes": 1336564,
+    "archiveSha256": "3db73c0966021a84376b274a15243c463bfc29cd4641530923d759d61173e872"
+  },
+  "textLicenseFiles": [
+    {
+      "path": "README.md",
+      "bytes": 1136,
+      "gitBlobSha": "949c3358b814fee23f58714217f03a0c24685e98",
+      "sha256": "ebf71e533322af33cdfeba2a2c75d80e06d6ad05d776b8e2c5ac4df2cc792877"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 18650,
+      "gitBlobSha": "2f244ac814036ecd9ba9f69782e89ce6b1dca9eb",
+      "sha256": "7e7170e3cebf88a9f60c7b8421418323c09304da1af4d5e90f4da1dc1c8a2661"
+    },
+    {
+      "path": "About.md",
+      "bytes": 3913,
+      "gitBlobSha": "c48dadeb63337a602c4ae91610253f1c45e59c69",
+      "sha256": "c9220bb3d5f051100751816f15d87a73e8dabe53c9cd828c0f743039ff669101"
+    }
+  ],
+  "annotationLicenseDocument": {
+    "repository": "https://github.com/creativecommons/cc-legal-tools-data",
+    "commit": "a0dac18d1a773b4cdb7d8dd5d9bf4efab7901030",
+    "tree": "34ac830911a7976016f20c3ec42731eb1788c852",
+    "commitDate": "2026-10-01T17:05:55Z",
+    "canonicalUrl": "https://creativecommons.org/licenses/by-sa/3.0/legalcode.txt",
+    "rawUrl": "https://raw.githubusercontent.com/creativecommons/cc-legal-tools-data/a0dac18d1a773b4cdb7d8dd5d9bf4efab7901030/docs/licenses/by-sa/3.0/legalcode.txt",
+    "path": "docs/licenses/by-sa/3.0/legalcode.txt",
+    "bytes": 22240,
+    "gitBlobSha": "604209a804632b6e5274005a22293976d07c3099",
+    "sha256": "3f941b3b89cf7b8370ceb83cc76d2120d471b58735d8ca60238a751a48d7f72f"
+  },
+  "sourceSelection": "Only the 27 MorphGNT word-row files are imported as Greek text. Faithlife files are license/attribution evidence only; neither newer SBLGNT text nor its apparatus is mixed into this snapshot.",
+  "acquiredAt": "2026-11-05"
+}
