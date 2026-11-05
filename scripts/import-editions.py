@@ -1457,6 +1457,409 @@ SOURCES.update({'fra-ostervald': {'name': 'French Ostervald Bible',
                                                   'native-language approval is asserted.'}}})
 
 
+# Next complete-edition batch: exact primary sources reviewed 2026-11-05.
+SOURCES.update({'fra-darby2024': {'name': 'Bible J.N. Darby (BPC 2024, v2.0)',
+                   'nativeTitle': 'Bible J.N. Darby',
+                   'abbreviation': 'JND24',
+                   'language': 'fr',
+                   'publisher': 'Bibles et Publications Chrétiennes; distributed by eBible.org',
+                   'translator': 'J. N. Darby; BPC JND revision 2.0',
+                   'revision': 'BPC JND v2.0, 2024 reissue; source files dated 2025-05-02. Not the distinct '
+                               '2026 revised edition.',
+                   'sourceUpdatedAt': '2025-05-02',
+                   'sourceNoticeDate': '2025-05-02',
+                   'publicationStatus': 'published-edition',
+                   'script': 'Latn',
+                   'direction': 'ltr',
+                   'corpus': 'bible',
+                   'providerId': 'frajnd',
+                   'canon': 'protestant-66',
+                   'rightsObservedAt': '2026-11-05',
+                   'sourceUrl': 'https://ebible.org/frajnd/',
+                   'formatUrl': 'https://ebible.org/find/details.php?id=frajnd',
+                   'downloadUrl': 'https://ebible.org/Scriptures/frajnd_vpl.zip',
+                   'downloadBytes': 4619813,
+                   'licenseUrl': 'https://ebible.org/frajnd/copyright.htm',
+                   'license': 'Public domain (provider-declared)',
+                   'licenseIdentifier': 'LicenseRef-Public-Domain',
+                   'attribution': 'Bible J.N. Darby (BPC 2024, v2.0). J. N. Darby; BPC JND revision 2.0 BPC '
+                                  'JND v2.0, 2024 reissue; source files dated 2025-05-02. Not the distinct '
+                                  '2026 revised edition. Public domain as declared by the source publisher; '
+                                  'unchanged VPL text; complete source notice retained.',
+                   'sha256': 'dbda2c381fd0cbf2bf0f65dac2052db6f728908a8b50a7518fd5ba8c9711dc60',
+                   'xmlSha256': '304906002e8a6ade7d424faf18d13cc97e407618cba6fa030db8047ea8c559c4',
+                   'textSha256': 'f6c6a62eb55c51270a02123d3a0464ed6c101621a1f56adc221abd347c0dc8ef',
+                   'noticeSha256': '24d271aef4497681b968daa2ef1fbe7e77c85f566f9a868f622f722aae9553f7',
+                   'bracketExceptionCount': 4030,
+                   'bracketExceptionInventorySha256': '777995e9a348c66b7362725b86c4863f7dd396eda4bdd41a95b6b89d4caeb7b9',
+                   'bracketExceptionScope': '4030 source records differ only at the exact pinned '
+                                            'square-bracket positions. Authoritative TXT display is '
+                                            'unchanged; no wording or source numbering is repaired.',
+                   'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31170},
+                   'rights': {'redistribute': True,
+                              'adapt': True,
+                              'offline': True,
+                              'audio': True,
+                              'export': True},
+                   'conditions': ['Retain the exact edition/revision identity, original source wording and '
+                                  'complete publisher notice with redistributed and offline copies.',
+                                  'Publisher VPL supplies verse text without separate notes, introductions, '
+                                  'headings or paragraph layout. Source numbering, empty source records, '
+                                  'inline characters and Unicode remain unchanged; no missing verse text is '
+                                  'fabricated.',
+                                  'No third-party recorded audio, cover artwork, illustrations, maps or '
+                                  'distinct modern revisions are included or licensed by this text import.',
+                                  'No provider certification badge, trademark endorsement or independent '
+                                  'human editorial or native-language approval is asserted.',
+                                  'Rights evidence is the individual provider declaration and stated '
+                                  'provider uses, not independent worldwide legal or human editorial '
+                                  'approval; the provider inventory qualifies its public-domain knowledge in '
+                                  'the USA and applicable national law may vary.',
+                                  'The publisher identifies this 2024 edition, revision 2.0, as public '
+                                  'domain. The distinct 2026 revised edition is CC BY-NC-ND and is not '
+                                  'imported. Separate Strong-number annotations are not imported.',
+                                  'This edition follows source Hebrew-based numbering, including Joel 4 '
+                                  'chapters and Malachi 3; do not remap it to another edition.'],
+                   'rightsEvidenceUrls': ['https://ebible.org/legal.php',
+                                          'https://ebible.org/publicdomain.htm',
+                                          'https://editeurbpc.com/telechargements',
+                                          'https://ftp.editeurbpc.com/telechargements/JND'],
+                   'preserveSourceNotice': True,
+                   'languageEvidence': {'registryUrl': 'https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry',
+                                        'registryFileDate': '2026-09-17',
+                                        'registrySha256': '755fad43283be7b41ebe3c89ad054b6eaf928f404f9c0edb74799e0eab74beb1',
+                                        'languageTag': 'fr',
+                                        'script': 'Latn',
+                                        'direction': 'ltr',
+                                        'sourceLetterBidiCounts': {'L': 3241350},
+                                        'sourceLetterUnicodeNamePrefixes': {'LATIN': 3241350},
+                                        'scope': 'Language identity is supplied by the individual publisher '
+                                                 'notice; IANA validates the selected language/region/script '
+                                                 'subtags. All source letters were inspected. Embedded '
+                                                 'Hebrew letters in Tandroy remain exact. This is not '
+                                                 'native-language approval.'}},
+ 'spa-simple2026': {'name': 'La Biblia en Español Sencillo 2026',
+                    'nativeTitle': 'La Biblia en Español Sencillo 2026',
+                    'abbreviation': 'BES26',
+                    'language': 'es-419',
+                    'publisher': 'AudioBiblia.org; distributed by eBible.org',
+                    'translator': 'Irma Flores; AudioBiblia.org',
+                    'revision': 'Second edition 2026; translated and edited by Irma Flores; source files '
+                                'dated 2026-10-30.',
+                    'sourceUpdatedAt': '2026-10-30',
+                    'sourceNoticeDate': '2026-10-30',
+                    'publicationStatus': 'published-edition',
+                    'script': 'Latn',
+                    'direction': 'ltr',
+                    'corpus': 'bible',
+                    'providerId': 'spabes',
+                    'canon': 'protestant-66',
+                    'rightsObservedAt': '2026-11-05',
+                    'sourceUrl': 'https://ebible.org/spabes/',
+                    'formatUrl': 'https://ebible.org/find/details.php?id=spabes',
+                    'downloadUrl': 'https://ebible.org/Scriptures/spabes_vpl.zip',
+                    'downloadBytes': 4189235,
+                    'licenseUrl': 'https://ebible.org/spabes/copyright.htm',
+                    'license': 'Public domain (provider-declared)',
+                    'licenseIdentifier': 'LicenseRef-Public-Domain',
+                    'attribution': 'La Biblia en Español Sencillo 2026. Irma Flores; AudioBiblia.org Second '
+                                   'edition 2026; translated and edited by Irma Flores; source files dated '
+                                   '2026-10-30. Public domain as declared by the source publisher; unchanged '
+                                   'VPL text; complete source notice retained.',
+                    'sha256': 'b5397717e5031db82ce6c595ae1d3803626aaa3d11ce8750b31d5d766b3568e1',
+                    'xmlSha256': '338919f40957f89859f145176effb9a430be0696ec3c1a58dd41ad0d82f5a0ce',
+                    'textSha256': 'bf8b20be57783c1668a26cf1677e456599b6a3cde69b4908df35471bc30aae46',
+                    'noticeSha256': 'db4e0fd74f2437906057a3ab26256eb9a59d12c5910b4a5ba6ec8b1f620bcf0e',
+                    'bracketExceptionCount': 0,
+                    'bracketExceptionInventorySha256': '37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570',
+                    'bracketExceptionScope': '0 source records differ only at the exact pinned '
+                                             'square-bracket positions. Authoritative TXT display is '
+                                             'unchanged; no wording or source numbering is repaired.',
+                    'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31102},
+                    'rights': {'redistribute': True,
+                               'adapt': True,
+                               'offline': True,
+                               'audio': True,
+                               'export': True},
+                    'conditions': ['Retain the exact edition/revision identity, original source wording and '
+                                   'complete publisher notice with redistributed and offline copies.',
+                                   'Publisher VPL supplies verse text without separate notes, introductions, '
+                                   'headings or paragraph layout. Source numbering, empty source records, '
+                                   'inline characters and Unicode remain unchanged; no missing verse text is '
+                                   'fabricated.',
+                                   'No third-party recorded audio, cover artwork, illustrations, maps or '
+                                   'distinct modern revisions are included or licensed by this text import.',
+                                   'No provider certification badge, trademark endorsement or independent '
+                                   'human editorial or native-language approval is asserted.',
+                                   'Rights evidence is the individual provider declaration and stated '
+                                   'provider uses, not independent worldwide legal or human editorial '
+                                   'approval; the provider inventory qualifies its public-domain knowledge '
+                                   'in the USA and applicable national law may vary.',
+                                   'The source identifies the dialect as Latin America/Mexico; es-419 '
+                                   'records that regional Spanish identity. Text permission is separate from '
+                                   'AudioBiblia recordings.'],
+                    'rightsEvidenceUrls': ['https://ebible.org/legal.php',
+                                           'https://ebible.org/publicdomain.htm',
+                                           'https://audiobiblia.org/spabes_ab/spabes.htm'],
+                    'preserveSourceNotice': True,
+                    'languageEvidence': {'registryUrl': 'https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry',
+                                         'registryFileDate': '2026-09-17',
+                                         'registrySha256': '755fad43283be7b41ebe3c89ad054b6eaf928f404f9c0edb74799e0eab74beb1',
+                                         'languageTag': 'es-419',
+                                         'script': 'Latn',
+                                         'direction': 'ltr',
+                                         'sourceLetterBidiCounts': {'L': 2919743},
+                                         'sourceLetterUnicodeNamePrefixes': {'LATIN': 2919743},
+                                         'scope': 'Language identity is supplied by the individual publisher '
+                                                  'notice; IANA validates the selected '
+                                                  'language/region/script subtags. All source letters were '
+                                                  'inspected. Embedded Hebrew letters in Tandroy remain '
+                                                  'exact. This is not native-language approval.'}},
+ 'tdx-tandroy': {'name': 'Saontsin’ Añahare (Tandroy Bible, publisher draft)',
+                 'nativeTitle': 'Saontsin’ Añahare',
+                 'abbreviation': 'TDX-DRAFT',
+                 'language': 'tdx',
+                 'publisher': 'eBible.org; copyright holder Steve Lellelid',
+                 'translator': 'Not specified in the individual publisher notice.',
+                 'revision': 'Publisher draft; copyright 2023 Steve Lellelid; source files dated 2026-10-17.',
+                 'sourceUpdatedAt': '2026-10-17',
+                 'sourceNoticeDate': '2024-12-05',
+                 'publicationStatus': 'publisher-draft',
+                 'script': 'Latn',
+                 'direction': 'ltr',
+                 'corpus': 'bible',
+                 'providerId': 'tdx',
+                 'canon': 'protestant-66',
+                 'rightsObservedAt': '2026-11-05',
+                 'sourceUrl': 'https://ebible.org/tdx/',
+                 'formatUrl': 'https://ebible.org/find/details.php?id=tdx',
+                 'downloadUrl': 'https://ebible.org/Scriptures/tdx_vpl.zip',
+                 'downloadBytes': 4464787,
+                 'licenseUrl': 'https://ebible.org/tdx/copyright.htm',
+                 'license': 'CC BY-SA 4.0',
+                 'licenseIdentifier': 'CC-BY-SA-4.0',
+                 'attribution': 'Saontsin’ Añahare. Copyright © 2023 Steve Lellelid. Tandroy-Mahafaly '
+                                'Malagasy; publisher draft. CC BY-SA 4.0. Source: https://ebible.org/tdx/. '
+                                'Original VPL TXT wording unchanged; source formatting converted to JSON; '
+                                'full notice retained.',
+                 'sha256': 'ca352f5888aa64896069f57cea898abadb3f2f851a1d4f555ab088b2a601e960',
+                 'xmlSha256': 'dd5191ff27a070311e44a278ab5c2f7565cb2e4a3bc2faed1ec7433af4772450',
+                 'textSha256': 'ee5a425ddb4553266f56611b5d6e4dda1b8530b1dbccf7fdeb096ae3522cadb0',
+                 'noticeSha256': '8404eb2b0401aec94dbaea7614894e28ad1c3140cc194e35c3be6ae4c00b7f0c',
+                 'bracketExceptionCount': 10,
+                 'bracketExceptionInventorySha256': '0cd3944e33ab07ce1374dd36f2719e436b89521e660a6678d1de0e52bf711040',
+                 'bracketExceptionScope': '10 source records differ only at the exact pinned square-bracket '
+                                          'positions. Authoritative TXT display is unchanged; no wording or '
+                                          'source numbering is repaired.',
+                 'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31081},
+                 'rights': {'redistribute': True,
+                            'adapt': True,
+                            'offline': True,
+                            'audio': True,
+                            'export': True},
+                 'conditions': ['Retain the exact edition/revision identity, original source wording and '
+                                'complete publisher notice with redistributed and offline copies.',
+                                'Publisher VPL supplies verse text without separate notes, introductions, '
+                                'headings or paragraph layout. Source numbering, empty source records, '
+                                'inline characters and Unicode remain unchanged; no missing verse text is '
+                                'fabricated.',
+                                'No third-party recorded audio, cover artwork, illustrations, maps or '
+                                'distinct modern revisions are included or licensed by this text import.',
+                                'No provider certification badge, trademark endorsement or independent human '
+                                'editorial or native-language approval is asserted.',
+                                'This source is licensed text under CC BY-SA 4.0, not public domain. License '
+                                'compliance is distinct from human editorial approval and from any external '
+                                'model or service configuration.',
+                                'PUBLISHER DRAFT: the source explicitly says DRAFT VERSION. Its installed '
+                                'completeness and source checks do not mean editorial, theological or '
+                                'native-language approval.',
+                                'Retain Copyright © 2023 Steve Lellelid, source identity, license URL and '
+                                'complete notice. CC BY-SA 4.0 permits sharing and adaptations subject to '
+                                'attribution, indication of changes and share-alike obligations for '
+                                'redistributed contributions to this text.',
+                                'Pictures have separate restrictions and are not imported. The text license '
+                                'does not establish third-party recording permissions.',
+                                'Source numbering includes Joel 4 chapters and Malachi 3. Embedded Hebrew '
+                                'acrostic letters are preserved alongside predominantly Latin-script Tandroy '
+                                'text.'],
+                 'rightsEvidenceUrls': ['https://creativecommons.org/licenses/by-sa/4.0/'],
+                 'preserveSourceNotice': True,
+                 'languageEvidence': {'registryUrl': 'https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry',
+                                      'registryFileDate': '2026-09-17',
+                                      'registrySha256': '755fad43283be7b41ebe3c89ad054b6eaf928f404f9c0edb74799e0eab74beb1',
+                                      'languageTag': 'tdx',
+                                      'script': 'Latn',
+                                      'direction': 'ltr',
+                                      'sourceLetterBidiCounts': {'L': 2940964, 'R': 178},
+                                      'sourceLetterUnicodeNamePrefixes': {'LATIN': 2940964, 'HEBREW': 178},
+                                      'scope': 'Language identity is supplied by the individual publisher '
+                                               'notice; IANA validates the selected language/region/script '
+                                               'subtags. All source letters were inspected. Embedded Hebrew '
+                                               'letters in Tandroy remain exact. This is not native-language '
+                                               'approval.'},
+                 'licenseDeedUrl': 'https://creativecommons.org/licenses/by-sa/4.0/',
+                 'xmlBoundaryNbspExceptions': [{'bookId': 'ROM',
+                                                'chapter': 11,
+                                                'verse': 34,
+                                                'xmlTextSha256': '0386c02186560260f0cbcbc6e15884f34a80bcdcfd655f895761f600e2b4d9e6',
+                                                'textSha256': '61df17ecd5879bdf0d27409b9ab37f5610bb5c7f45c5fc933937f29e4d5b7b5a',
+                                                'offset': 61,
+                                                'character': '\xa0'},
+                                               {'bookId': 'ROM',
+                                                'chapter': 11,
+                                                'verse': 35,
+                                                'xmlTextSha256': '5126ac42b67b34722af57730869b1f4fffa21add8d62c7ec6e6ac35d89720ea9',
+                                                'textSha256': '7519dd494a5f4b5007a2d5885fcd86fcae91aecf11ed3e6d9082893029c91e20',
+                                                'offset': 39,
+                                                'character': '\xa0'},
+                                               {'bookId': 'ROM',
+                                                'chapter': 15,
+                                                'verse': 9,
+                                                'xmlTextSha256': 'efaf0ed355d85e4bc0dc748b19e874ff6cdd20a2251ddfcfeb5bc054ed2d55ca',
+                                                'textSha256': 'f4b3711d68ae5a3c250b45cdcaeec9f0706d62ea2548068444258619ff1560c9',
+                                                'offset': 154,
+                                                'character': '\xa0'},
+                                               {'bookId': 'ROM',
+                                                'chapter': 15,
+                                                'verse': 12,
+                                                'xmlTextSha256': 'a860657ef31e2ea7f64fcdb1091a4c4b2cc39a78dd20c5b36642e433f0d3feb1',
+                                                'textSha256': '69d9fa73b4cc15e13e0e112b240fd04b1555b4bd7c44e0ad2e1fb92579fafa22',
+                                                'offset': 120,
+                                                'character': '\xa0'},
+                                               {'bookId': 'ROM',
+                                                'chapter': 15,
+                                                'verse': 21,
+                                                'xmlTextSha256': 'd465d2e0d0110103b40e04606440e594e24b74464c8da0af2459f496313f0566',
+                                                'textSha256': '3a22ce717da8fe221ce4b1590961f92cc8598d46b962d42a3b6507be89c43d93',
+                                                'offset': 95,
+                                                'character': '\xa0'},
+                                               {'bookId': '1CO',
+                                                'chapter': 15,
+                                                'verse': 55,
+                                                'xmlTextSha256': 'e14ceb3f11043da875a605f3610e968c08e40541112400996fa65a7ae383e629',
+                                                'textSha256': 'be98dc003bfa0e1efc09d3e1b82ccd95a9e465ed6a0ac18ad6d8014829d9ae72',
+                                                'offset': 68,
+                                                'character': '\xa0'},
+                                               {'bookId': '1PE',
+                                                'chapter': 4,
+                                                'verse': 18,
+                                                'xmlTextSha256': 'b600821f0a15a2344bb9b5eb7edfec3b2de00b08dccd177713cb9e5e42eb1189',
+                                                'textSha256': '73d9196e858aac417ae144ff55fd9f999e4537530a9aefd075c5e4c1e031fc14',
+                                                'offset': 103,
+                                                'character': '\xa0'}],
+                 'xmlBoundaryNbspInventorySha256': 'c8154b8a647450fafbd45bbb6a9c8edfc3309b38ec46f124fec54c1681255a98',
+                 'formatEvidence': {'schemaVersion': 1,
+                                    'sourceId': 'tdx-tandroy',
+                                    'purpose': 'Independently locate the seven XML-only terminal NBSPs '
+                                               'immediately before source USFM footnotes; comparison only, '
+                                               'original VPL TXT unchanged.',
+                                    'usfmArchive': {'url': 'https://ebible.org/Scriptures/tdx_usfm.zip',
+                                                    'bytes': 1550381,
+                                                    'sha256': 'ea4ce058200b73719aa62e989b371f19537cb6904c73b3aee66d83aac99b35b6'},
+                                    'members': {'75-ROMtdx.usfm': {'bytes': 58765,
+                                                                   'sha256': '2c5e7d746812d80a933398a24af7a15b6662b662e286f3701338e023ae43ae01'},
+                                                '76-1COtdx.usfm': {'bytes': 55502,
+                                                                   'sha256': 'adca90f3d2e96d3b67c7f2df15f8111dbdbb324e59fb60898ed2f4c715a1d3b0'},
+                                                '90-1PEtdx.usfm': {'bytes': 15875,
+                                                                   'sha256': 'f407a28242ad2d0b5bde78086ab4e5f6048b38441911c5ebe3d8d9200cc9fc0f'}},
+                                    'records': [{'bookId': 'ROM',
+                                                 'chapter': 11,
+                                                 'verse': 34,
+                                                 'usfmMember': '75-ROMtdx.usfm',
+                                                 'usfmExcerpt': '\\v 34 Ia ty nahafohiñe ty faharofoana’ i '
+                                                                'Talè?  \n'
+                                                                '\\q1 Ia ty nimpanoro aze?\xa0\\f + \\fr '
+                                                                '11:34 \\ft Ies 40:13\\f*   \n'
+                                                                '\\q1\n',
+                                                 'excerptSha256': '6c8af5418a33785da440ca14772436184ab0c9a7f21d1d5d28afff8de234145d',
+                                                 'xmlTextSha256': '0386c02186560260f0cbcbc6e15884f34a80bcdcfd655f895761f600e2b4d9e6',
+                                                 'textSha256': '61df17ecd5879bdf0d27409b9ab37f5610bb5c7f45c5fc933937f29e4d5b7b5a',
+                                                 'xmlNbspOffset': 61},
+                                                {'bookId': 'ROM',
+                                                 'chapter': 11,
+                                                 'verse': 35,
+                                                 'usfmMember': '75-ROMtdx.usfm',
+                                                 'usfmExcerpt': '\\v 35 Ia ty nanolotse ama’e aolo, '
+                                                                'hañavaha’e?\xa0\\f + \\fr 11:35 \\ft Iob '
+                                                                '35:7, 41:11\\f*   \n'
+                                                                '\\q1\n',
+                                                 'excerptSha256': '0fcc9a446240c16c1b41bbab328944b2a4fbb97df5d6749eb781986e94d34798',
+                                                 'xmlTextSha256': '5126ac42b67b34722af57730869b1f4fffa21add8d62c7ec6e6ac35d89720ea9',
+                                                 'textSha256': '7519dd494a5f4b5007a2d5885fcd86fcae91aecf11ed3e6d9082893029c91e20',
+                                                 'xmlNbspOffset': 39},
+                                                {'bookId': 'ROM',
+                                                 'chapter': 15,
+                                                 'verse': 9,
+                                                 'usfmMember': '75-ROMtdx.usfm',
+                                                 'usfmExcerpt': '\\v 9 naho fiferenaiñañe ty handrengea’ o '
+                                                                'kilakila’ ndatio an’ Andrianañahare, fa hoe '
+                                                                'ty pinatetse:  \n'
+                                                                '\\q1 Ie rengèko amo kilakila’ndatio, vaho '
+                                                                'ho saboeko ty tahina’o;\xa0\\f + \\fr 15:9 '
+                                                                '\\ft Sa II 22:50; Sab 18:49\\f*   \n'
+                                                                '\\p\n',
+                                                 'excerptSha256': 'a7c1afce3746614ebb739c692d2cfa122e9bd78b4b8c6929273d23ade7e04fa6',
+                                                 'xmlTextSha256': 'efaf0ed355d85e4bc0dc748b19e874ff6cdd20a2251ddfcfeb5bc054ed2d55ca',
+                                                 'textSha256': 'f4b3711d68ae5a3c250b45cdcaeec9f0706d62ea2548068444258619ff1560c9',
+                                                 'xmlNbspOffset': 154},
+                                                {'bookId': 'ROM',
+                                                 'chapter': 15,
+                                                 'verse': 12,
+                                                 'usfmMember': '75-ROMtdx.usfm',
+                                                 'usfmExcerpt': '\\v 12 le tinovo’ Isaia ty hoe:  \n'
+                                                                '\\q1 Hitotsake ty vaha’ i Jese le hitroatse '
+                                                                're hifehe o fifeheañeo,  \n'
+                                                                '\\q1 ie ty fitamà’ o kilakila’ndatio.\xa0'
+                                                                '\\f + \\fr 15:12 \\ft Ies 11:10\\f*   \n'
+                                                                '\\p\n',
+                                                 'excerptSha256': 'cd6aa19dcbd10d2e83f41bede525ec34b34abfb0eaf42082d9b9aade15abed93',
+                                                 'xmlTextSha256': 'a860657ef31e2ea7f64fcdb1091a4c4b2cc39a78dd20c5b36642e433f0d3feb1',
+                                                 'textSha256': '69d9fa73b4cc15e13e0e112b240fd04b1555b4bd7c44e0ad2e1fb92579fafa22',
+                                                 'xmlNbspOffset': 120},
+                                                {'bookId': 'ROM',
+                                                 'chapter': 15,
+                                                 'verse': 21,
+                                                 'usfmMember': '75-ROMtdx.usfm',
+                                                 'usfmExcerpt': '\\v 21 Fa hoe ty pinatetse:  \n'
+                                                                '\\q1 O tsy nitaliliañeo  \n'
+                                                                '\\q1 ro hahaoniñe;  \n'
+                                                                '\\q1 vaho o tsy nahajanjiñeo,  \n'
+                                                                '\\q1 ro haharendreke.\xa0\\f + \\fr 15:21 '
+                                                                '\\ft Ies 52:15\\f*   \n'
+                                                                '\\p\n',
+                                                 'excerptSha256': 'af88ed49d0b3cff3e5fba0b589f129d43917709b633b937d67d62a8b7a21e2c7',
+                                                 'xmlTextSha256': 'd465d2e0d0110103b40e04606440e594e24b74464c8da0af2459f496313f0566',
+                                                 'textSha256': '3a22ce717da8fe221ce4b1590961f92cc8598d46b962d42a3b6507be89c43d93',
+                                                 'xmlNbspOffset': 95},
+                                                {'bookId': '1CO',
+                                                 'chapter': 15,
+                                                 'verse': 55,
+                                                 'usfmMember': '76-1COtdx.usfm',
+                                                 'usfmExcerpt': '\\v 55 O Havilasio, aia ty fandrebaha’o?  \n'
+                                                                '\\q1 O Tsikeokeokeo, aia ty finipoha’o?\xa0'
+                                                                '\\f + \\fr 15:55 \\ft Hos 13:14\\f*   \n'
+                                                                '\\p\n',
+                                                 'excerptSha256': '655c384533857e819fc660138896c7def48301572e1e9b58fbf6e22adf1e8121',
+                                                 'xmlTextSha256': 'e14ceb3f11043da875a605f3610e968c08e40541112400996fa65a7ae383e629',
+                                                 'textSha256': 'be98dc003bfa0e1efc09d3e1b82ccd95a9e465ed6a0ac18ad6d8014829d9ae72',
+                                                 'xmlNbspOffset': 68},
+                                                {'bookId': '1PE',
+                                                 'chapter': 4,
+                                                 'verse': 18,
+                                                 'usfmMember': '90-1PEtdx.usfm',
+                                                 'usfmExcerpt': '\\v 18 Aa katao sarotse ho rombaheñe  \n'
+                                                                '\\q1 ty vantañe,  \n'
+                                                                '\\q1 akore ty hifetsak’ ami’ty tsy '
+                                                                'aman-Kake  \n'
+                                                                '\\q1 naho amy aman-kakeoy?\xa0\\f + \\fr '
+                                                                '4:18 \\ft Rzs 11.31\\f*   \n'
+                                                                '\\p\n',
+                                                 'excerptSha256': 'fdf6cb804d29dc84b6229d0721102d8d06d162497315b6bb7627da6eed210671',
+                                                 'xmlTextSha256': 'b600821f0a15a2344bb9b5eb7edfec3b2de00b08dccd177713cb9e5e42eb1189',
+                                                 'textSha256': '73d9196e858aac417ae144ff55fd9f999e4537530a9aefd075c5e4c1e031fc14',
+                                                 'xmlNbspOffset': 103}]}}})
+
+
 def sha(raw):
     return hashlib.sha256(raw).hexdigest()
 
@@ -1470,7 +1873,7 @@ def edition_metadata(edition_id):
     fields = ('name', 'language', 'corpus', 'publisher', 'translator', 'sourceUpdatedAt', 'sourceUrl', 'formatUrl',
               'downloadUrl', 'licenseUrl', 'license', 'licenseIdentifier', 'licenseDeedUrl', 'attribution', 'sha256', 'rights', 'conditions',
               'abbreviation', 'revision', 'canon', 'providerId', 'downloadBytes',
-              'nativeTitle', 'script', 'direction', 'sourceNoticeDate')
+              'nativeTitle', 'script', 'direction', 'sourceNoticeDate', 'publicationStatus')
     value = {'id': edition_id, **{key: source[key] for key in fields if key in source}}
     value.update({'rightsObservedAt': source.get('rightsObservedAt', OBSERVED_ON), 'commercialUse': True,
                   'referenceSystemId': f'{edition_id}:publisher-numbering',
@@ -1571,6 +1974,20 @@ def vpl_format_difference(edition_id, xml_row, text_row):
         return None
     text = text_row['text']
     record = {'bookId': text_row['bookId'], 'chapter': text_row['chapter'], 'verse': text_row['verse']}
+    # The Tandroy VPL XML retains seven exact NBSP separators before omitted
+    # footnotes; the TXT omits them. This is a source-pinned comparison only.
+    # Never trim Unicode whitespace generally or alter authoritative TXT.
+    for exception in SOURCES[edition_id].get('xmlBoundaryNbspExceptions', []):
+        if any(exception[key] != record[key] for key in record):
+            continue
+        if (sha(xml_row['text'].encode('utf-8')) != exception['xmlTextSha256']
+                or sha(text.encode('utf-8')) != exception['textSha256']
+                or exception['offset'] != len(text)
+                or exception['character'] != '\u00a0'
+                or xml_row['text'] != text + '\u00a0'):
+            raise ValueError('Pinned XML footnote-boundary NBSP record changed.')
+        return {**record, 'publisherXmlBoundaryNbsp': {'offset': exception['offset'], 'character': '\u00a0'},
+                'xmlTextSha256': exception['xmlTextSha256'], 'textSha256': exception['textSha256']}
     if edition_id == 'deu1912':
         pattern = r'\[([1-9]\d*(?::[1-9]\d*)?[a-z]?)\]'
         markers = list(re.finditer(pattern, text))
@@ -1605,8 +2022,13 @@ def vpl_format_difference(edition_id, xml_row, text_row):
 
 def verify_vpl_format_inventory(edition_id, differences):
     source = SOURCES[edition_id]
+    boundaries = [value for value in differences if 'publisherXmlBoundaryNbsp' in value]
+    if (len(boundaries) != len(source.get('xmlBoundaryNbspExceptions', []))
+            or boundaries and sha(json_bytes(boundaries)) != source.get('xmlBoundaryNbspInventorySha256')):
+        raise ValueError(f'{edition_id}: XML footnote-boundary exception inventory changed.')
+    bracket_differences = [value for value in differences if 'publisherXmlBoundaryNbsp' not in value]
     if 'bracketExceptionCount' in source:
-        if len(differences) != source['bracketExceptionCount'] or sha(json_bytes(differences)) != source['bracketExceptionInventorySha256']:
+        if len(bracket_differences) != source['bracketExceptionCount'] or sha(json_bytes(bracket_differences)) != source['bracketExceptionInventorySha256']:
             raise ValueError(f'{edition_id}: publisher bracket exception inventory changed.')
     elif len(differences) != (358 if edition_id == 'deu1912' else 0):
         raise ValueError('The publisher numbering-marker exception inventory changed.')
@@ -1722,14 +2144,25 @@ def bible_artifacts(edition_id, archive):
         'totals': totals,
     }
     if 'bracketExceptionCount' in source:
+        bracket_differences = [value for value in formatting_differences if 'publisherXmlBoundaryNbsp' not in value]
         provenance.update({
             'xmlPlainTextCrossCheck': 'All words, punctuation and references agree after comparison-only removal of the recorded TXT square brackets. Display text retains every bracket unchanged.',
-            'publisherBracketFormatDifferences': formatting_differences,
-            'publisherBracketInventorySha256': sha(json_bytes(formatting_differences)),
+            'publisherBracketFormatDifferences': bracket_differences,
+            'publisherBracketInventorySha256': sha(json_bytes(bracket_differences)),
             'publisherBracketOffsetUnit': 'unicode-codepoint',
             'publisherBracketScope': source.get('bracketExceptionScope', '4316 balanced supplied-word/other bracket spans and 76 verse-level unpaired cases, including Selah/Higgaion markers and John 7:53–8:11 textual-variant brackets. The original TXT is not repaired or renumbered.'),
         })
         provenance['normalization'][3] = 'Use publisher VPL TXT unchanged as display text, retaining supplied-word, musical-marker and textual-variant brackets.'
+    if source.get('xmlBoundaryNbspExceptions'):
+        boundaries = [value for value in formatting_differences if 'publisherXmlBoundaryNbsp' in value]
+        provenance.update({
+            'xmlPlainTextCrossCheck': 'All source references and characters agree except the separately pinned TXT square brackets and XML-only terminal NBSP separators before omitted source footnotes. Both comparison inventories are exact; displayed TXT is unchanged.',
+            'publisherXmlBoundaryNbspDifferences': boundaries,
+            'publisherXmlBoundaryNbspInventorySha256': sha(json_bytes(boundaries)),
+            'publisherXmlBoundaryNbspOffsetUnit': 'unicode-codepoint',
+            'formatEvidenceFile': 'FORMAT_EVIDENCE.json',
+        })
+        provenance['normalization'].append('Comparison only: omit one terminal XML U+00A0 at each exact coordinate/hash/offset-pinned footnote boundary independently evidenced by USFM. No general Unicode trimming or display-text change is performed.')
     if source.get('preserveSourceNotice'):
         provenance['sourceNoticeRawFile'] = 'SOURCE_NOTICE.html.txt'
     if source.get('languageEvidence'):

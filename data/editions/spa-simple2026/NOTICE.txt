@@ -1,0 +1,20 @@
+About spabes_vpl
+This archive contains BIBLE TEXT ONLY. All formatting, paragraph breaks, notes, introductions, noncanonical section titles, etc., have been removed. The file ending "_vpl.txt" is designed for import into BibleWorks and similar Bible study programs. The file ending "_vpl.xml" contains the same information, but is in XML format and uses standard SIL/UBS book abbreviations.
+The file ending "_vpl.sql" contains the same information formatted to create a SQL data table.
+Check for updates and other Bible translations in this format at http:\\eBible.org\Scriptures\
+La Biblia en Español Sencillo 2026
+The Holy Bible in Simple Spanish, 2026
+Public Domain
+Language: Español (Spanish)
+Dialect: Latin America/Mexico
+Translation by: AudioBiblia.org
+La Biblia en Español Sencillo 2026
+traducido y editado por Irma Flores
+email: info@audiobiblia.org
+audiobiblia.org
+2026-10-30
+
+Source and rights notice: https://ebible.org/spabes/copyright.htm
+Provider rights policy: https://ebible.org/legal.php
+Provider rights policy: https://ebible.org/publicdomain.htm
+Provider rights policy: https://audiobiblia.org/spabes_ab/spabes.htm
