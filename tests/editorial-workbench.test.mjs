@@ -1,6 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
+import { mkdtemp, readFile, rm } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { publishEditorial } from '../scripts/publish-editorial.mjs';
 import { hashSourceText } from '../src/editorial.ts';
 import { emptyWorkbench, mergeDraftImport, newEditorialDraft, parseWorkbenchPackage, previewDraftImport, pruneHistory, reviewPackage, reviseDraft, validateDraft, validateSnapshot, workbenchBackup, writingDiff } from '../src/editorial-workbench/model.ts';
 import { bibleSnapshot, quranSnapshot, verifyDraftSources, verifyWorkbenchSources } from '../src/editorial-workbench/source-core.ts';
@@ -98,7 +101,12 @@ test('restore preview and conflict-copy merge preserve existing drafts and origi
 });
 
 test('coverage uses actual record counts and keeps unavailable approval evidence unknown', async () => {
-  const bsb = await read('data/editions/eng-bsb/manifest.json'), publication = await read('data/editorial-published.json');
+  const bsb = await read('data/editions/eng-bsb/manifest.json');
+  const outputDirectory = await mkdtemp(join(tmpdir(), 'adigun-workbench-publication-'));
+  try {
+  // Derive the real publication from checked-in records and installed sources.
+  // No prebuilt ignored artifact or synthetic approval is accepted as a prerequisite.
+  const publication = await publishEditorial({ outputPath: join(outputDirectory, 'publication.json') });
   const actual = bookCoverage(bsb, publication), original = bookCoverage(manifest, publication);
   assert.equal(actual.reduce((sum, row) => sum + row.sourceUnits, 0), bsb.totals.verses);
   assert.equal(original.reduce((sum, row) => sum + row.sourceUnits, 0), manifest.totals.verses);
@@ -107,6 +115,7 @@ test('coverage uses actual record counts and keeps unavailable approval evidence
   assert.equal(bookCoverage(manifest, null)[0].publicationAvailable, false);
   const mixed = { ...publication, coverage: [{ bibleRef: { corpus: 'bible', editionId: 'eng-web', workId: 'GEN', start: { chapter: 1, unit: '1' } }, status: 'reviewed_no_match', approvedLinkIds: [] }] };
   const book = bookCoverage(manifest, mixed)[0]; assert.equal(book.counts.reviewed_no_match, 1); assert.equal(book.counts.unreviewed, book.sourceUnits - 1); assert.equal(book.counts.reviewed_with_links, 0);
+  } finally { await rm(outputDirectory, { recursive: true, force: true }); }
 });
 
 test('provider inventory remains searchable metadata and rejects unsafe external URLs', async () => {
