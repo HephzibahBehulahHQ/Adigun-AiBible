@@ -25,6 +25,8 @@ Every write reads and compares the expected workspace revision in the same trans
 
 Originals must correspond exactly to live recording references: no missing originals, orphan files, duplicate IDs, metadata substitutions or mismatched source bindings are accepted. Deleting a recording, retelling, card or complete workspace removes its originals atomically. One-step Undo carries removed bytes in memory and restores them atomically. The next successful change, reload or leaving the workspace releases that Undo snapshot. An old version 1 tab closes on database version change; attempting to reopen at version 1 fails rather than silently dropping attachment fields.
 
+Manual transcript drafts bind to the stable retelling ID and exact original recording metadata. Deleting or reordering another entry cannot redirect or close that draft. If the original was removed or replaced, its transcript remains visible and can be copied or moved into a new written retelling without overwriting an existing draft. Switching to another transcript asks before discarding changed writing. The selected memory card also stays selected when its review date changes, so sorting the practice list does not silently unmount its editor.
+
 ## Bounds and portable recovery
 
 - **Per recording:** 8 MiB and at most five minutes of measured microphone capture time.
@@ -41,11 +43,11 @@ Restore keeps the existing per-record conflict choice: keep device records or us
 Focused checks cover legacy migration of all five private collections and their histories; exact source identity; invalid MIME/signatures, sizes and hashes; complete and multi-megabyte backup roundtrips; duplicate/missing/orphan/tampered imports; two-store transaction completion and rollback; concurrent writes; recording/card/workspace deletion and Undo; explicit restore conflicts; consent, denied/pending permissions, time/byte limits, device interruptions and cancellation/unmount races. Existing written-retelling, workspace and family regressions are included in the focused command:
 
 ```sh
-node --test tests/retelling-media*.test.mjs tests/retelling.test.mjs tests/workspace*.test.mjs tests/family.test.mjs
+node --test tests/retelling-media*.test.mjs tests/retelling-transcript.test.mjs tests/retelling.test.mjs tests/workspace*.test.mjs tests/family.test.mjs
 npm run typecheck
 ./node_modules/.bin/eslint src/workspace
 ```
 
-`tests/retelling-media.browser.spec.ts` provides seven acceptance scenarios in both configured desktop/mobile projects. It uses controlled permission outcomes with real browser `AudioContext`, `MediaStream` and `MediaRecorder` originals; tests offline reload/byte-exact backup/restore/delete/Undo, manual transcripts and native playback, stale draft recovery, injected quota failure, actual IndexedDB upgrade and old-client rejection. Desktop/mobile and 320 px screenshots are emitted. These fixtures contain synthetic audio, not human voices.
+`tests/retelling-media.browser.spec.ts` provides ten acceptance scenarios in both configured desktop/mobile projects. It uses controlled permission outcomes with real browser `AudioContext`, `MediaStream` and `MediaRecorder` originals; tests offline reload/byte-exact backup/restore/delete/Undo, manual transcripts and native playback, stale draft recovery, injected quota failure, actual IndexedDB upgrade and old-client rejection. Regression scenarios cover transcript switching/deletion, a removed original after a competing-tab save, and card retention after rescheduling. Desktop/mobile and 320 px screenshots are emitted. These fixtures contain synthetic audio, not human voices.
 
-Final agent checks passed 53 focused Node tests, TypeScript and workspace ESLint; Playwright collected 14 desktop/mobile cases. Browser execution and screenshot inspection run in root CI; local browser execution, physical-device microphone acceptance and independent human/editorial/spoken-language review are not claimed. Any future model transcription or automated interpretation remains a separate feature and permission boundary.
+The originating increment passed 53 focused Node tests, TypeScript and workspace ESLint. The subsequent transcript-safety fix passed 26 focused capture/storage/backup/transcript tests, TypeScript, scoped ESLint and strict browser-test type checking; Playwright collected 20 desktop/mobile cases. Browser execution and screenshot inspection run in root CI; local browser execution, physical-device microphone acceptance and independent human/editorial/spoken-language review are not claimed. Any future model transcription or automated interpretation remains a separate feature and permission boundary.

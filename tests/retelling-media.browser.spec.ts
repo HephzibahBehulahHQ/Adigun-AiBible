@@ -111,6 +111,21 @@ test('real original audio survives offline reload, complete backup, restore, car
 
 test.describe('retelling data recovery',()=>{
   test.use({serviceWorkers:'block'});
+  test('scheduling a review keeps the loaded card selected and retains its unsaved retelling',async({page})=>{
+    await openRetelling(page);
+    await page.goto(route.replace('verse=16','verse=17'));
+    await page.getByRole('button',{name:'Add to memorization',exact:true}).click();
+    await expect(page.getByRole('button',{name:'Passage already in your practice list',exact:true})).toBeVisible();
+    await page.reload();
+    await page.getByRole('button',{name:'Write a retelling',exact:true}).click();
+    await page.getByRole('textbox',{name:'My retelling',exact:true}).fill('Keep the first card draft when its review moves later.');
+    await page.getByRole('button',{name:'Recalled well',exact:true}).click();
+    await expect(page.getByRole('textbox',{name:'My retelling',exact:true})).toHaveValue('Keep the first card draft when its review moves later.');
+    await save(page);
+    const saved=await deviceInventory(page),first=saved.state.cards.find((card:{ref:{verse:number}})=>card.ref.verse===16),second=saved.state.cards.find((card:{ref:{verse:number}})=>card.ref.verse===17);
+    expect(first.retellings[0].text).toBe('Keep the first card draft when its review moves later.');expect(first.history).toHaveLength(1);
+    expect(second.retellings).toEqual([]);expect(second.history).toEqual([]);
+  });
   test('an unsaved transcript survives deleting another retelling and requires consent before switching edits',async({page})=>{
     await microphone(page);await openRetelling(page);
     for(const text of ['First original transcript.','Second original transcript.']){await record(page);await page.getByLabel('My retelling',{exact:true}).fill(text);await save(page);}
