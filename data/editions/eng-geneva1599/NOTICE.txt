@@ -1,0 +1,15 @@
+About enggnv_vpl
+This archive contains BIBLE TEXT ONLY. All formatting, paragraph breaks, notes, introductions, noncanonical section titles, etc., have been removed. The file ending "_vpl.txt" is designed for import into BibleWorks and similar Bible study programs. The file ending "_vpl.xml" contains the same information, but is in XML format and uses standard SIL/UBS book abbreviations.
+The file ending "_vpl.sql" contains the same information formatted to create a SQL data table.
+Check for updates and other Bible translations in this format at http:\\eBible.org\Scriptures\
+Geneva Bible 1599
+The Geneva Bible in Old English of 1599
+Public Domain
+Language: English
+Dialect: Old
+This digital copy is freely available world-wide, with no copyright restrictions, courtesy of eBible.org and many others. Note that the spelling used is the original spelling, which is not modern English.
+2024-03-16
+
+Source and rights notice: https://ebible.org/enggnv/copyright.htm
+Provider rights policy: https://ebible.org/legal.php
+Provider rights policy: https://ebible.org/publicdomain.htm
