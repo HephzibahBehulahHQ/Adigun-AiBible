@@ -33,6 +33,13 @@ test('coverage separates installed text from metadata and malicious imports cann
   await page.getByRole('button', { name: 'Acquisition research', exact: true }).click();
   await page.getByLabel('Search acquisition records', { exact: true }).fill('arb-vd');
   await expect(page.getByText('Arabic Van Dyck Bible', { exact: true })).toBeVisible();
+  await expect(page.getByText('Separately installed manifest: arb-vandyck', { exact: true })).toBeVisible();
+  const inventory = JSON.parse(await readFile(new URL('../data/editions/acquisition-catalog.json', import.meta.url), 'utf8'));
+  const lead = inventory.records.find((record: { availability: string }) => record.availability === 'metadata-only');
+  expect(lead, 'The acquisition inventory must retain a real uninstalled research lead.').toBeTruthy();
+  expect(lead.installedEditionId).toBeNull();
+  await page.getByLabel('Search acquisition records', { exact: true }).fill(lead.title);
+  await expect(page.getByRole('heading', { name: lead.title, exact: true })).toBeVisible();
   await expect(page.getByText('Metadata only; no usable source verified by this record.', { exact: true })).toBeVisible();
   await page.getByRole('button', { name: 'Private author drafts', exact: true }).click();
   await page.getByRole('button', { name: 'Create source-linked draft', exact: true }).click();

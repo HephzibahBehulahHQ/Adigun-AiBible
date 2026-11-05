@@ -77,6 +77,7 @@ test.describe('twelve-edition built catalog and source reading', () => {
           const metadata = editions.find(edition => edition.id === id)!;
           await expect(page.locator('.reader-title .eyebrow')).toHaveText(metadata.name);
           await expect(page.locator('.scripture')).toHaveAttribute('lang', metadata.language);
+          await expect(page.getByText(`Gen Z study paraphrase awaits editorial approval. You are reading the unchanged source wording in ${metadata.name}.`, { exact: true })).toBeVisible();
           for (const number of [16, 17, 18]) {
             await exactVerse(page, number, sourceVerse(id, 3, number));
             await expect(page.locator(`#verse-${number}`)).toHaveClass(/\bselected\b/);
@@ -96,7 +97,7 @@ test.describe('twelve-edition built catalog and source reading', () => {
       await exactVerse(page, 16, text);
       // Search the complete supplied verse, retaining diacritics, spacing and Myanmar clusters.
       await page.locator('.global-search input').fill(text);
-      await page.getByRole('button', { name: 'Submit search', exact: true }).click();
+      await page.locator('.global-search input').press('Enter');
       const dialog = page.getByRole('dialog');
       await expect(dialog).toBeVisible();
       const result = dialog.locator('.search-results > button').filter({ hasText: text });
@@ -126,8 +127,10 @@ test.describe('new source current-book offline lifecycle', () => {
     expect((await cachedJohnFiles(page, id)).length).toBeGreaterThan(0);
     await context.setOffline(true);
     try {
+      await expect.poll(() => page.evaluate(() => navigator.onLine), { message: 'Offline emulation must reach the active document before navigation.' }).toBe(false);
       await page.goto(route('read', id));
       await page.reload({ waitUntil: 'domcontentloaded' });
+      await expect.poll(() => page.evaluate(() => navigator.onLine), { message: 'The reloaded service-worker document must retain offline network state.' }).toBe(false);
       await expect(page.locator('.offline-banner')).toBeVisible();
       await exactVerse(page, 16, sourceVerse(id));
       await page.getByRole('button', { name: 'Next chapter', exact: true }).first().click();

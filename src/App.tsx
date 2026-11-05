@@ -195,6 +195,8 @@ export default function App() {
   useEffect(() => {
     const status = () => setOnline(navigator.onLine);
     window.addEventListener('online',status); window.addEventListener('offline',status);
+    // A network change can arrive between the first render and effect subscription.
+    status();
     return () => { window.removeEventListener('online',status); window.removeEventListener('offline',status); };
   }, []);
   useEffect(() => {
@@ -278,7 +280,7 @@ export default function App() {
       speechSynthesis.speak(utterance);
     } catch (error) { if (run === speechGeneration.current) notify(error instanceof Error ? error.message : 'Speech permission is unavailable.'); }
   }
-  const fallback = prefs.preset==='genz' ? (publication?.approvedParaphrases.length?'Reviewed study paraphrases are labelled where available. All other verses retain their named source wording.':'Gen Z study paraphrase awaits editorial approval. You are reading the unchanged English source.') : prefs.preset==='pcm' ? 'A Nigerian Pidgin edition is not installed. Displaying the named English source while edition-specific rights and review are resolved.' : null;
+  const fallback = prefs.preset==='genz' ? (publication?.approvedParaphrases.length?'Reviewed study paraphrases are labelled where available. All other verses retain their named source wording.':`Gen Z study paraphrase awaits editorial approval. You are reading the unchanged source wording in ${manifest?.edition.name || 'the selected edition'}.`) : prefs.preset==='pcm' ? `A Nigerian Pidgin edition is not installed. Displaying ${manifest?.edition.name || 'the selected source edition'} while edition-specific rights and review are resolved.` : null;
   const plan = plans.find(p=>p.id===planId) || plans[0];
   const currentMood = moods.find(m=>m.id===mood) || moods[0];
   const dayPassage = dailyRefs[Math.floor(Date.now()/86400000)%dailyRefs.length];

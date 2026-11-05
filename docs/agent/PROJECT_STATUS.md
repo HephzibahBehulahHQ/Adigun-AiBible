@@ -21,6 +21,8 @@ The release adds complete edition-specific source-word/phrase counts and pages; 
 
 ## Current twelve-edition / typography candidate
 
+Continuation on 5 November: PR #31 head `aee5376dc6a3ff5d4063a4b059d0e0e0654e1ba1` passed source/content/build, but workflow `42027061980` passed only 263/268 browser cases. Three failures were obsolete test assumptions: desktop search has an Enter-key submission path and Arabic is now installed. Recovered fixes preserve those flows and name the actual selected source in fallback notices. Two offline document-reload cases need revalidation; the network subscription now re-reads status after attaching listeners, and the browser gate explicitly checks actual navigator state before/after reload. All original offline/cache-removal assertions remain. Repairs are staged in an isolated continuation checkout; remote checkpoint and final release gates remain pending.
+
 Complete source batch `fd8dc782fa496f8c0f77899846c1a26a355365b6` is integrated: French Ostervald, Esperanto Londona, Arabic Van Dyck, Burmese Judson, Dutch 1917, Hawaiian 1868, Russian Synodal, Ukrainian Kulish, Vietnamese Cadman, Serbian Cyrillic Daničić/Karadžić, Tongan Revised West and English Geneva. Each has 66 books and 1,189 chapters; all 373,275 additional source records were reconstructed from pinned archives. There are 26 Bible editions, 23 beyond the original three, and 17 source languages. Quran, historical works and OSHB are separate counts. Provider-qualified public-domain notices are preserved; there is no claim of independent worldwide legal certification. Italian identity conflict, Persian attribution conflict and inconsistent Korean coverage remain deferred.
 
 Source imports, indexes and permission negatives passed 17 focused tests. Ten new batch browser cases collect. All 26 publisher inventories are regenerated from actual source metadata using the production extractor.
@@ -39,4 +41,4 @@ Local Chromium installation returned an invalid archive. Browser execution runs 
 
 ## Next action
 
-Verify PR #30’s main deployment receipt, finish the 26-edition typography candidate’s combined checks and release it. Integrate private retelling only after the independent draft-safety fix; retain the Greek corpus as separate work until its fidelity and license gates pass.
+Synchronize the PR #31 repair, pass its exact-head browser/persistence gates and inspect evidence before merging and verifying the public deployment. Private retelling candidate `bbb589274aa906a34c77268e804680cc7fc18c8e` independently passed 56 focused tests, TypeScript and scoped lint; integrate it after PR #31. Greek source/viewer integration remains isolated.
