@@ -1,10 +1,30 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
-import { ConcordanceSourceLoader } from '../src/concordance/source.ts';
+import { ConcordanceSourceLoader, readConcordanceBytes } from '../src/concordance/source.ts';
 import { createConcordanceEngine } from '../src/concordance/engine.ts';
 
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
+
+test('source streams without length headers are cancelled before retaining bytes beyond the pinned limit', async () => {
+  let cancelled = false, chunks = 0;
+  const stream = new ReadableStream({ pull(controller) { chunks++; controller.enqueue(new Uint8Array(60)); }, cancel() { cancelled = true; } });
+  await assert.rejects(readConcordanceBytes(new Response(stream), { bytes: 100, sha256: 'a'.repeat(64) }), /size changed|limit/);
+  assert.equal(cancelled, true); assert.ok(chunks < 5);
+  let declaredCancelled = false;
+  const declared = new Response(new ReadableStream({ cancel() { declaredCancelled = true; } }), { headers: { 'content-length': '101' } });
+  await assert.rejects(readConcordanceBytes(declared, { bytes: 100, sha256: 'a'.repeat(64) }), /verified file size/);
+  assert.equal(declaredCancelled, true);
+});
+
+test('aborting a pending source stream cancels its reader and produces no completed bytes', async () => {
+  const controller = new AbortController(); let cancelled = false, started;
+  const reading = new Promise(resolve => { started = resolve; });
+  const response = new Response(new ReadableStream({ pull() { started(); }, cancel() { cancelled = true; } }));
+  const result = readConcordanceBytes(response, { bytes: 100, sha256: 'a'.repeat(64) }, controller.signal);
+  await reading; controller.abort();
+  await assert.rejects(result, { name: 'AbortError' }); assert.equal(cancelled, true);
+});
 function setup() {
   const manifest = { schemaVersion: 1, edition: { id: 'eng-web', name: 'Test source', language: 'en', sha256: 'a'.repeat(64) }, books: [{ id: 'GEN', name: 'Genesis', chapters: 1, verseCounts: [2] }], totals: { books: 1, chapters: 1, verses: 2 } };
   const rows = [{ bookId: 'GEN', chapter: 1, verse: 1, text: 'Love love.' }, { bookId: 'GEN', chapter: 1, verse: 2, text: 'Peace.' }];
