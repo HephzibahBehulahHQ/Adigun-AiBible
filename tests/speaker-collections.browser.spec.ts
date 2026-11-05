@@ -72,8 +72,8 @@ async function createCollection(page: Page, title: string) {
 }
 async function findSpeech(page: Page, verse: number) {
   if (await page.getByLabel('Find words in marked speech', { exact: true }).count() === 0) {
-    await expect(page.getByLabel('Book scope').locator('option[value="JHN"]')).toHaveCount(1);
-    await page.getByLabel('Book scope', { exact: true }).selectOption('JHN');
+    await expect(page.getByRole('combobox', { name: 'Book scope', exact: true }).locator('option[value="JHN"]')).toHaveCount(1);
+    await page.getByRole('combobox', { name: 'Book scope', exact: true }).selectOption('JHN');
     await page.getByRole('button', { name: 'Load publisher-marked speech', exact: true }).click();
   }
   await page.getByLabel('Find words in marked speech', { exact: true }).fill(verse === 3 ? 'no one can see the kingdom of God' : 'no one can enter the kingdom of God');
@@ -170,12 +170,12 @@ test('collection restore previews conflicts and rejects malformed, forged and st
   const preview = collections(page).getByRole('region', { name: 'Speech collection restore preview', exact: true });
   await expect(preview).toContainText('1 conflicting collections');
   await expect(preview.getByRole('button', { name: 'Merge collection backup', exact: true })).toBeDisabled();
-  await preview.getByLabel('Restore conflicts', { exact: true }).selectOption('keep-device');
+  await preview.getByRole('combobox', { name: 'Restore conflicts', exact: true }).selectOption('keep-device');
   await preview.getByRole('button', { name: 'Merge collection backup', exact: true }).click();
   await expect(preview).toHaveCount(0);
   expect((await stored(page)).collections).toEqual(original.workspace.collections);
   await restore(page, incoming); await expect(preview).toContainText('1 conflicting collections');
-  await preview.getByLabel('Restore conflicts', { exact: true }).selectOption('use-backup');
+  await preview.getByRole('combobox', { name: 'Restore conflicts', exact: true }).selectOption('use-backup');
   await preview.getByRole('button', { name: 'Merge collection backup', exact: true }).click();
   await expect.poll(async () => (await stored(page)).collections[0].title).toBe('Backup collection');
   const preserved = await stored(page);
@@ -249,7 +249,7 @@ test('Undo and a restore preview cannot overwrite another tab’s newer collecti
     await collections(other).getByRole('button', { name: 'Save collection name', exact: true }).click();
     await expect.poll(async () => (await stored(other)).collections[0].title).toBe('Newer name after removal');
     const winner = await stored(other);
-    await preview.getByLabel('Restore conflicts', { exact: true }).selectOption('use-backup');
+    await preview.getByRole('combobox', { name: 'Restore conflicts', exact: true }).selectOption('use-backup');
     await preview.getByRole('button', { name: 'Merge collection backup', exact: true }).click();
     await expect(collections(page).getByRole('alert').last()).toContainText(/another tab|newer|changed/i);
     expect(await stored(page)).toEqual(winner);
@@ -262,7 +262,7 @@ test('Undo and a restore preview cannot overwrite another tab’s newer collecti
     await expect(collections(page).getByRole('button', { name: 'Undo last removal', exact: true })).toBeVisible();
     await preview.getByRole('button', { name: 'Refresh restore preview', exact: true }).click();
     await expect(preview).not.toContainText('Saved collections changed');
-    await preview.getByLabel('Restore conflicts', { exact: true }).selectOption('keep-device');
+    await preview.getByRole('combobox', { name: 'Restore conflicts', exact: true }).selectOption('keep-device');
     await preview.getByRole('button', { name: 'Merge collection backup', exact: true }).click();
     await expect(preview).toHaveCount(0);
     expect((await stored(page)).collections).toEqual(winner.collections);
@@ -475,8 +475,8 @@ test.describe('speech collection source and storage failure boundaries', () => {
     await expect(correction.getByLabel('Your reason and supporting evidence', { exact: true })).toHaveValue(reason);
     await expect(collections(page).getByLabel('Collection name', { exact: true })).toHaveValue('My unsaved collection name');
     page.on('dialog', dialog => dialog.dismiss());
-    await page.getByLabel('Speech source edition', { exact: true }).selectOption('eng-web');
-    await expect(page.getByLabel('Speech source edition', { exact: true })).toHaveValue('eng-bsb');
+    await page.getByRole('combobox', { name: 'Speech source edition', exact: true }).selectOption('eng-web');
+    await expect(page.getByRole('combobox', { name: 'Speech source edition', exact: true })).toHaveValue('eng-bsb');
     await expect(correction.getByLabel('Your reason and supporting evidence', { exact: true })).toHaveValue(reason);
     await expect(collections(page).getByLabel('Collection name', { exact: true })).toHaveValue('My unsaved collection name');
     expect(await page.evaluate(() => window.dispatchEvent(new Event('adigun:before-update', { cancelable: true })))).toBe(false);
