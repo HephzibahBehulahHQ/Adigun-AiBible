@@ -3,6 +3,7 @@ import type { View } from './types';
 import './tools.css';
 
 const tools = [
+  { view: 'gospels', icon: BookMarked, title: 'Gospel comparison', description: 'Read Matthew, Mark and Luke together with their own passage ranges, or choose two to four independent Gospel passages.' },
   { view: 'linguistics', icon: BookMarked, title: 'Original-language study', description: 'Explore source Greek, Hebrew and Aramaic dictionary records, and save your own translation exercises.' },
   { view: 'hebrew-study', icon: ScrollText, title: 'Hebrew and Aramaic source study', description: 'Read exact source words, inspect supplied lemma and morphology fields, and keep source reading alternatives visible.' },
   { view: 'greek-study', icon: ScrollText, title: 'Greek source study', description: 'Inspect exact Greek tokens and supplied parsing fields, find literal lemma occurrences, and download source books with complete notices.' },

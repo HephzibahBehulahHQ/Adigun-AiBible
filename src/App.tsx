@@ -54,6 +54,7 @@ const BlindInterpretationWorkspace = lazy(() => import('./interpretation/BlindIn
 const ConcordanceWorkspace = lazy(() => import('./concordance/ConcordanceWorkspace'));
 const HebrewStudyWorkspace = lazy(() => import('./original-language/HebrewStudyWorkspace'));
 const GreekStudyWorkspace = lazy(() => import('./greek-language/GreekStudyWorkspace'));
+const GospelWorkspace = lazy(() => import('./gospels/GospelWorkspace'));
 const MultiPassageCards = lazy(() => import('./sharing/MultiPassageCards'));
 import SourceChapter from './reader/SourceChapter';
 import ReadingSession from './reading-session/ReadingSession';
@@ -318,6 +319,7 @@ export default function App() {
     {id:'linguistics',label:'Original-language study',description:'Explore licensed historical lexicons and private wording experiments.',keywords:'Greek Hebrew Aramaic Strong lexicon',run:()=>commandNavigate('linguistics')},
     {id:'hebrew-study',label:'Hebrew and Aramaic source study',description:'Inspect exact source words, supplied morphology and reading alternatives.',keywords:'Hebrew Aramaic OSHB morphology lemma qere ketiv',run:()=>commandNavigate('hebrew-study')},
     {id:'greek-study',label:'Greek source study',description:'Inspect exact Greek source tokens, supplied parsing and literal lemma occurrences.',keywords:'Greek MorphGNT SBLGNT morphology parsing lemma',run:()=>commandNavigate('greek-study')},
+    {id:'gospels',label:'Gospel comparison',description:'Read linked or independent Gospel passages with exact source wording.',keywords:'Matthew Mark Luke John Sower parallel synopsis',run:()=>commandNavigate('gospels')},
     {id:'concordance',label:'Edition concordance',description:'Count exact source words and phrases and follow their passages.',keywords:'concordance occurrences word phrase distribution',run:()=>commandNavigate('concordance')},
     {id:'time-travel',label:'Athens time travel',description:'Explore a source-linked schematic tour with a 2D alternative.',keywords:'Athens Acts history tour 3D',run:()=>commandNavigate('time-travel')},
     {id:'interpretation',label:'Blind interpretation workspace',description:'Read two historical interpretations, record reasons, then reveal their sources.',keywords:'blind study interpretation reflection traditions',run:()=>commandNavigate('interpretation')},
@@ -363,12 +365,13 @@ export default function App() {
         {route.view==='projection'&&<Projection reference={current}/>}
         {route.view==='family'&&<FamilyArchive reference={current} onOpenReference={openPassage}/>}
         {route.view==='audio'&&<AudioReader reference={current} onOpenReference={openPassage}/>}
-        {route.view==='law-diary'&&<LawDiary editionId={activeEditionId} locale={prefs.locale} reference={current} onOpenReference={openPassage}/>}
+        {route.view==='law-diary'&&<LawDiary editionId={activeEditionId} locale={prefs.locale} reference={current} onOpenReference={openPassage} onOpenGospels={()=>navigate('gospels',current)}/>}
         {route.view==='speakers'&&<SpeakerExplorer reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
         {route.view==='editorial-workbench'&&<EditorialWorkbench reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
         {route.view==='linguistics'&&<LinguisticsWorkspace reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
         {route.view==='hebrew-study'&&<HebrewStudyWorkspace locale={prefs.locale}/>}
         {route.view==='greek-study'&&<GreekStudyWorkspace locale={prefs.locale}/>}
+        {route.view==='gospels'&&<GospelWorkspace reference={current} editionId={activeEditionId} locale={prefs.locale} onOpenReference={openPassage}/>}
         {route.view==='concordance'&&<ConcordanceWorkspace reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
         {route.view==='time-travel'&&<TimeTravel reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
         {route.view==='interpretation'&&<BlindInterpretationWorkspace reference={current} locale={prefs.locale} onOpenReference={openPassage}/>}
