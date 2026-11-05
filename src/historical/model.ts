@@ -13,7 +13,7 @@ export interface HistoricalEdition {
 export interface HistoricalManifest { schemaVersion: 1; editions: HistoricalEdition[] }
 export interface HistoricalLocator { workId: string; editionId: string; sourceRevision: string; chapter: number; unit: number }
 export interface HistoricalNote { id: string; locator: HistoricalLocator; text: string; updatedAt: string }
-export interface HistoricalStudy { schemaVersion: 1; revision: number; notes: HistoricalNote[]; bookmarks: HistoricalLocator[] }
+export interface HistoricalStudy { kind: 'adigun-historical-notebook'; schemaVersion: 1; revision: number; notes: HistoricalNote[]; bookmarks: HistoricalLocator[] }
 const identifier = (value: unknown): value is string => typeof value === 'string' && /^[a-z0-9][a-z0-9-]{1,79}$/.test(value);
 const integer = (value: unknown): value is number => Number.isSafeInteger(value) && (value as number) > 0;
 const object = (value: unknown): value is Record<string, unknown> => !!value && typeof value === 'object' && !Array.isArray(value);
@@ -45,14 +45,19 @@ export function validateHistoricalWork(value: unknown, edition: HistoricalEditio
   if (total !== edition.units) throw new Error('Historical source coverage does not match the manifest.');
   return value as unknown as HistoricalWork;
 }
+export async function verifyHistoricalBytes(bytes: ArrayBuffer, edition: HistoricalEdition): Promise<HistoricalWork> {
+  const hash = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)), value => value.toString(16).padStart(2, '0')).join('');
+  if (bytes.byteLength !== edition.bytes || hash !== edition.sha256) throw new Error('The historical text failed its edition checksum. Update and retry; no substitute text was shown.');
+  return validateHistoricalWork(JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(bytes)), edition);
+}
 export function locatorKey(locator: HistoricalLocator): string { return `${locator.workId}:${locator.editionId}:${locator.sourceRevision}:${locator.chapter}:${locator.unit}`; }
 export function validateHistoricalLocator(value: unknown): HistoricalLocator {
   if (!object(value) || !identifier(value.workId) || !identifier(value.editionId) || !string(value.sourceRevision, 100) || !/^[a-z0-9-]+$/.test(value.sourceRevision) || !integer(value.chapter) || value.chapter > 1000 || !integer(value.unit) || value.unit > 10000) throw new Error('Historical note reference is invalid.');
   return { workId: value.workId, editionId: value.editionId, sourceRevision: value.sourceRevision, chapter: value.chapter, unit: value.unit };
 }
-export function emptyHistoricalStudy(): HistoricalStudy { return { schemaVersion: 1, revision: 0, notes: [], bookmarks: [] }; }
+export function emptyHistoricalStudy(): HistoricalStudy { return { kind: 'adigun-historical-notebook', schemaVersion: 1, revision: 0, notes: [], bookmarks: [] }; }
 export function validateHistoricalStudy(value: unknown): HistoricalStudy {
-  if (!object(value) || value.schemaVersion !== 1 || !Number.isSafeInteger(value.revision) || (value.revision as number) < 0 || !Array.isArray(value.notes) || value.notes.length > 2000 || !Array.isArray(value.bookmarks) || value.bookmarks.length > 5000) throw new Error('Historical study backup is invalid. Existing records were not changed.');
+  if (!object(value) || value.kind !== 'adigun-historical-notebook' || value.schemaVersion !== 1 || !Number.isSafeInteger(value.revision) || (value.revision as number) < 0 || !Array.isArray(value.notes) || value.notes.length > 2000 || !Array.isArray(value.bookmarks) || value.bookmarks.length > 5000) throw new Error('Historical study backup is invalid. Existing records were not changed.');
   const ids = new Set<string>();
   const notes = value.notes.map(item => {
     if (!object(item) || !string(item.id, 100) || !/^[a-zA-Z0-9-]+$/.test(item.id) || ids.has(item.id) || !string(item.text, 10000) || !string(item.updatedAt, 40) || !Number.isFinite(Date.parse(item.updatedAt))) throw new Error('Historical note is invalid or duplicated.');
@@ -61,7 +66,7 @@ export function validateHistoricalStudy(value: unknown): HistoricalStudy {
   });
   const bookmarks = value.bookmarks.map(validateHistoricalLocator);
   if (new Set(bookmarks.map(locatorKey)).size !== bookmarks.length) throw new Error('Historical bookmarks contain duplicates.');
-  return { schemaVersion: 1, revision: value.revision as number, notes, bookmarks };
+  return { kind: 'adigun-historical-notebook', schemaVersion: 1, revision: value.revision as number, notes, bookmarks };
 }
 export function searchHistorical(work: HistoricalWork, query: string): { chapter: number; unit: number; text: string }[] {
   const normalize = (text: string) => text.normalize('NFD').replace(/\p{M}/gu, '').toLocaleLowerCase().replace(/\s+/g, ' ');

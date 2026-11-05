@@ -26,3 +26,5 @@
 .editorial-diff h3 { grid-column: 1 / -1; margin-bottom: 0; }
 .editorial-diff pre { white-space: pre-wrap; overflow-wrap: anywhere; font: inherit; border-inline-start: 3px solid var(--border, #d3cbbb); padding-inline-start: .7rem; }
 @media (max-width: 700px) { .editorial-layout,.editorial-diff { grid-template-columns: minmax(0,1fr); } .editorial-workbench .button-row { flex-wrap: wrap; } .editorial-workbench button { max-width: 100%; overflow-wrap: anywhere; } }
+
+.editorial-notice { white-space: pre-wrap; overflow-wrap: anywhere; font: inherit; }

@@ -1,6 +1,6 @@
 import type { Reference, View } from './types';
 
-const views = new Set<View>(['home','read','compare','discover','plans','saved','questions','library','sources','settings','share','atlas','study','evidence','editions','projection','tools','family','audio','drop','support','law-diary','widget','ministry']);
+const views = new Set<View>(['home','read','compare','discover','plans','saved','questions','library','sources','settings','share','atlas','study','evidence','editions','projection','tools','family','audio','drop','support','law-diary','widget','ministry','speakers','editorial-workbench']);
 
 /** Section names are navigation state, never Scripture book identifiers. */
 export function parseRoute(hash: string): { view: View; ref: Reference } {

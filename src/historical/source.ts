@@ -1,5 +1,5 @@
 import rawManifest from '../../data/historical/manifest.json';
-import { validateHistoricalManifest, validateHistoricalWork } from './model.ts';
+import { validateHistoricalManifest, verifyHistoricalBytes } from './model.ts';
 import type { HistoricalWork } from './model';
 export const historicalManifest = validateHistoricalManifest(rawManifest);
 const base = import.meta.env?.BASE_URL || '/Adigun-AiBible/';
@@ -10,10 +10,7 @@ export async function loadHistoricalWork(editionId: string): Promise<HistoricalW
   if (!cache.has(editionId)) cache.set(editionId, (async () => {
     const response = await fetch(`${base}${edition.path}`);
     if (!response.ok) throw new Error('This historical text is not cached. Reconnect to open or download it.');
-    const bytes = await response.arrayBuffer();
-    const hash = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)), value => value.toString(16).padStart(2, '0')).join('');
-    if (bytes.byteLength !== edition.bytes || hash !== edition.sha256) throw new Error('The historical text failed its edition checksum. Update and retry; no substitute text was shown.');
-    return validateHistoricalWork(JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(bytes)), edition);
+    return verifyHistoricalBytes(await response.arrayBuffer(), edition);
   })().catch(error => { cache.delete(editionId); throw error; }));
   return cache.get(editionId)!;
 }

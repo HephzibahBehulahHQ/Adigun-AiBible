@@ -19,6 +19,7 @@ export async function loadPublisherStudy(editionId: string, bookId: string, depe
   check();
   if (manifest.edition.id !== editionId) throw new Error('The selected source edition does not match.');
   await dependencies.requirePermission(manifest.edition, 'searchIndex');
+  await dependencies.requirePermission(manifest.edition, 'display');
   check();
   const index = coverage.editions.find(row => row.editionId === editionId);
   if (!index || index.sourceSha256 !== manifest.edition.sha256) throw new Error('Publisher speech coverage has not been verified for this source revision. No substitute annotation has been used.');

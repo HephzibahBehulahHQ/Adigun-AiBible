@@ -12,6 +12,7 @@ export default function CorrectionForm({ speech, storageBusy, onSave, onClose }:
   guard.current = { dirty, busy: busy || storageBusy };
   useEffect(() => {
     heading.current?.focus({ preventScroll: true });
+    heading.current?.scrollIntoView({ block: 'start' });
     const unload = (event: BeforeUnloadEvent) => { if (guard.current.dirty || guard.current.busy) { event.preventDefault(); event.returnValue = ''; } };
     const navigate = (event: Event) => { if (guard.current.busy || guard.current.dirty && !window.confirm('Leave this unsaved speaker correction? Save it or copy your writing first.')) event.preventDefault(); };
     const update = (event: Event) => { if (guard.current.dirty || guard.current.busy) event.preventDefault(); };

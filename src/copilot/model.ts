@@ -22,6 +22,7 @@ export function restoreGeometry(raw: string | null, viewport: {width:number;heig
 }
 
 export const botDestinations: {id:string;label:string;description:string;view:View}[] = [
+  {id:'speakers',label:'Open speaker collections',description:'Browse source-marked speech and its review coverage.',view:'speakers'},
   {id:'coverage',label:'Show comparison coverage',description:'Inspect the real source and editorial counts.',view:'sources'},
   {id:'comparisons',label:'Open reviewed comparisons',description:'See recorded comparisons or their explicit review gap.',view:'compare'},
   {id:'plan',label:'Draft a reading plan',description:'Open the private plan editor; no generated plan is implied.',view:'study'},

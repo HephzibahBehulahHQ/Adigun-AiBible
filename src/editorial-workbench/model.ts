@@ -4,7 +4,7 @@ import type { Locale } from '../types';
 export interface SourceSnapshot {
   corpus: 'bible' | 'quran'; editionId: string; editionSha256: string; referenceSystemId: string;
   workId: string; workName: string; chapter: number; start: number; end: number; editionName: string;
-  sourceUrl: string; licenseUrl: string; attribution: string;
+  sourceUrl: string; licenseUrl: string; attribution: string; conditions: string[]; notice: string;
   units: { number: number; text: string; sha256: string }[];
 }
 export interface DraftWriting {
@@ -37,7 +37,7 @@ function id(value: unknown): string { return typeof value === 'string' && /^[A-Z
 function date(value: unknown): string { return typeof value === 'string' && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$/.test(value) && Number.isFinite(Date.parse(value)) && new Date(value).toISOString() === value ? value : fail('Record timestamp is invalid.'); }
 function url(value: unknown): string { const raw = string(value, 2000, 'Source URL', true); try { if (new URL(raw).protocol === 'https:') return raw; } catch { /* Reject unsafe URLs. */ } return fail('Source URLs must use HTTPS.'); }
 export function validateSnapshot(value: unknown): SourceSnapshot {
-  const row = exact(value, ['corpus','editionId','editionSha256','referenceSystemId','workId','workName','chapter','start','end','editionName','sourceUrl','licenseUrl','attribution','units'], 'Source snapshot');
+  const row = exact(value, ['corpus','editionId','editionSha256','referenceSystemId','workId','workName','chapter','start','end','editionName','sourceUrl','licenseUrl','attribution','conditions','notice','units'], 'Source snapshot');
   if (row.corpus !== 'bible' && row.corpus !== 'quran') fail('Only installed Bible and Quran sources can ground these drafts.');
   const start = integer(row.start, 300, 'First unit'), end = integer(row.end, 300, 'Last unit');
   if (end < start || end - start >= 40 || !Array.isArray(row.units) || row.units.length !== end - start + 1) fail('A source snapshot requires a complete range of 1–40 units.');
@@ -48,9 +48,10 @@ export function validateSnapshot(value: unknown): SourceSnapshot {
   });
   const workId = id(row.workId);
   if (row.corpus === 'quran' ? workId !== 'QUR' : !/^[1-3]?[A-Z]{2,3}$/.test(workId)) fail('Source work does not match its corpus.');
+  if (!Array.isArray(row.conditions) || row.conditions.length > 50) fail('Edition conditions are missing or invalid.');
   return { corpus: row.corpus as SourceSnapshot['corpus'], editionId: id(row.editionId), editionSha256: sha(row.editionSha256), referenceSystemId: string(row.referenceSystemId, 120, 'Reference system', true), workId,
     workName: string(row.workName, 200, 'Work name', true), chapter: integer(row.chapter, row.corpus === 'quran' ? 114 : 150, 'Chapter'), start, end,
-    editionName: string(row.editionName, 300, 'Edition name', true), sourceUrl: url(row.sourceUrl), licenseUrl: url(row.licenseUrl), attribution: string(row.attribution, 10000, 'Attribution', true), units };
+    editionName: string(row.editionName, 300, 'Edition name', true), sourceUrl: url(row.sourceUrl), licenseUrl: url(row.licenseUrl), attribution: string(row.attribution, 10000, 'Attribution', true), conditions: (row.conditions as unknown[]).map(value => string(value, 4000, 'Edition condition', true)), notice: string(row.notice, 30000, 'Publisher notice'), units };
 }
 export function validateWriting(value: unknown): DraftWriting {
   const row = exact(value, ['title','text','proposition','evidenceNotes','locale','origin','register','proposedRelationship'], 'Draft writing');
@@ -86,7 +87,9 @@ export function validateWorkbench(value: unknown): WorkbenchState {
   if (row.schemaVersion !== 1 || !Number.isSafeInteger(row.revision) || Number(row.revision) < 0 || Number(row.revision) >= Number.MAX_SAFE_INTEGER || !Array.isArray(row.drafts) || row.drafts.length > 80) fail('Workbench version, revision or draft count is invalid.');
   const drafts = (row.drafts as unknown[]).map(validateDraft);
   if (new Set(drafts.map(draft => draft.id)).size !== drafts.length) fail('Duplicate draft identities.');
-  return { schemaVersion: 1, revision: Number(row.revision), drafts };
+  const state: WorkbenchState = { schemaVersion: 1, revision: Number(row.revision), drafts };
+  if (new TextEncoder().encode(JSON.stringify(state)).byteLength > MAX_PACKAGE_BYTES - 1000) fail('This workspace has reached its 12 MB backup limit. Export a backup, then remove drafts or clear older history before saving more.');
+  return state;
 }
 export function newEditorialDraft(kind: EditorialDraft['kind'], sources: SourceSnapshot[], locale: Locale = 'en', now = new Date()): EditorialDraft {
   const writing: DraftWriting = { title: kind === 'comparison' ? 'Untitled comparison proposal' : 'Untitled study paraphrase', text: '', proposition: '', evidenceNotes: '', locale, origin: 'human_authored', register: 'plain', proposedRelationship: '' };
@@ -97,11 +100,13 @@ export function reviseDraft(value: EditorialDraft, writing: DraftWriting, privat
   return validateDraft({ ...before, writing: next, privateNotes, updatedAt: at, history: changed ? [...before.history, { at, reason, before: before.writing, after: next }] : before.history });
 }
 export function pruneHistory(value: EditorialDraft, now = new Date()): EditorialDraft { const at = now.toISOString(); return validateDraft({ ...value, history: [], historyPrunedAt: at, updatedAt: at }); }
-export function workbenchBackup(value: WorkbenchState): string { return JSON.stringify({ kind: 'adigun-editorial-private-backup', schemaVersion: 1, drafts: validateWorkbench(value).drafts }, null, 2); }
+export function workbenchBackup(value: WorkbenchState): string { return JSON.stringify({ kind: 'adigun-editorial-private-backup', schemaVersion: 1, drafts: validateWorkbench(value).drafts }); }
 export function reviewPackage(value: EditorialDraft): string {
   const draft = validateDraft(value);
   if (!draft.writing.text.trim() || (draft.kind === 'comparison' && (!draft.writing.proposition.trim() || !draft.writing.proposedRelationship))) fail('Add draft writing, a proposition and an author-proposed relationship before exporting a comparison for review.');
-  return JSON.stringify({ kind: 'adigun-editorial-review-package', schemaVersion: 1, drafts: [{ ...draft, privateNotes: '' }] }, null, 2);
+  const raw = JSON.stringify({ kind: 'adigun-editorial-review-package', schemaVersion: 1, drafts: [{ ...draft, privateNotes: '' }] });
+  if (new TextEncoder().encode(raw).byteLength > MAX_PACKAGE_BYTES) fail('This review package exceeds 12 MB. Export your private backup and deliberately clear older correction history first.');
+  return raw;
 }
 export function parseWorkbenchPackage(raw: string): WorkbenchState {
   if (new TextEncoder().encode(raw).byteLength > MAX_PACKAGE_BYTES) fail('Choose a draft package smaller than 12 MB.');

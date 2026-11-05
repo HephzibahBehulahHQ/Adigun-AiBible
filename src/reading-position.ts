@@ -13,7 +13,7 @@ export interface ReadingSelection {
   position: ReadingPosition | null;
 }
 const presets: readonly string[] = ['genz', 'en', 'de', 'yo', 'pcm'];
-const views = new Set(['home', 'read', 'compare', 'discover', 'plans', 'saved', 'questions', 'library', 'sources', 'settings', 'share', 'atlas', 'study', 'evidence', 'editions', 'projection', 'tools', 'family', 'audio', 'drop', 'support', 'widget', 'ministry']);
+const views = new Set(['home', 'read', 'compare', 'discover', 'plans', 'saved', 'questions', 'library', 'sources', 'settings', 'share', 'atlas', 'study', 'evidence', 'editions', 'projection', 'tools', 'family', 'audio', 'drop', 'support', 'widget', 'ministry', 'speakers', 'editorial-workbench']);
 
 function validatePosition(value: unknown, books: BookInfo[], editionId: string): ReadingPosition | null {
   if (!value || typeof value !== 'object' || Array.isArray(value)) return null;

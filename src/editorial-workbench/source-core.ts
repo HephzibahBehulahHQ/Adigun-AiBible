@@ -10,12 +10,15 @@ export interface WorkbenchSources {
   getManifest: (id: string) => Promise<Manifest>;
   getBook: (book: string, edition: string) => Promise<Book>;
   getQuran: () => Promise<QuranSource>;
+  getNotice: (edition: Edition) => Promise<string>;
   requirePermission: (edition: Edition, operation: EditionOperation) => Promise<void>;
 }
 const system = (edition: Edition) => (edition as Edition & { referenceSystemId?: string }).referenceSystemId || `${edition.id}:publisher-numbering`;
-async function snapshot(edition: Edition, corpus: SourceSnapshot['corpus'], workId: string, workName: string, chapter: number, start: number, end: number, units: { number: number; text: string }[]): Promise<SourceSnapshot> {
+async function snapshot(edition: Edition, corpus: SourceSnapshot['corpus'], workId: string, workName: string, chapter: number, start: number, end: number, units: { number: number; text: string }[], sources: WorkbenchSources): Promise<SourceSnapshot> {
+  const notice = edition.noticePath ? await sources.getNotice(edition) : '';
+  if (edition.noticePath && !notice.trim()) throw new Error('The complete publisher notice is unavailable. Source snapshots cannot omit it.');
   return validateSnapshot({ corpus, editionId: edition.id, editionSha256: edition.sha256, referenceSystemId: system(edition), workId, workName, chapter, start, end, editionName: edition.name, sourceUrl: edition.sourceUrl, licenseUrl: edition.licenseUrl,
-    attribution: [edition.attribution || edition.name, edition.license, edition.licenseUrl, edition.sourceUrl].join('\n'),
+    attribution: [edition.attribution || edition.name, edition.license, edition.licenseUrl, edition.sourceUrl].join('\n'), conditions: edition.conditions || [], notice,
     units: await Promise.all(units.map(async unit => ({ number: unit.number, text: unit.text, sha256: await hashSourceText(unit.text) }))) });
 }
 export async function bibleSnapshot(reference: Reference, sources: WorkbenchSources, operation: EditionOperation = 'display'): Promise<SourceSnapshot> {
@@ -28,7 +31,7 @@ export async function bibleSnapshot(reference: Reference, sources: WorkbenchSour
   if (book.id !== reference.bookId || !chapter) throw new Error('The original Bible source chapter is unavailable.');
   const units = chapter.verses.filter(row => row.number >= normalized.verse && row.number <= normalized.endVerse);
   assertCompletePassage(units, normalized);
-  return snapshot(manifest.edition, 'bible', book.id, book.name, reference.chapter, normalized.verse, normalized.endVerse, units);
+  return snapshot(manifest.edition, 'bible', book.id, book.name, reference.chapter, normalized.verse, normalized.endVerse, units, sources);
 }
 export async function quranSnapshot(chapter: number, start: number, end: number, sources: WorkbenchSources, operation: EditionOperation = 'display'): Promise<SourceSnapshot> {
   if (![chapter,start,end].every(Number.isSafeInteger) || chapter < 1 || chapter > 114 || start < 1 || end < start || end - start >= 40) throw new Error('Choose an installed Quran passage of 1–40 ayat.');
@@ -37,7 +40,7 @@ export async function quranSnapshot(chapter: number, start: number, end: number,
   if (!surah) throw new Error('The Quran surah is absent from the installed source.');
   const units = surah.verses.filter(row => row.number >= start && row.number <= end);
   assertCompletePassage(units, { verse: start, endVerse: end });
-  return snapshot(source.edition, 'quran', 'QUR', surah.name || `Surah ${chapter}`, chapter, start, end, units);
+  return snapshot(source.edition, 'quran', 'QUR', surah.name || `Surah ${chapter}`, chapter, start, end, units, sources);
 }
 /** Re-resolve every byte, label and dependency from installed content; imported hashes are not trusted. */
 export async function verifyDraftSources(value: EditorialDraft, sources: WorkbenchSources, exporting = false): Promise<void> {

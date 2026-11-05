@@ -1,0 +1,51 @@
+import { expect, test } from '@playwright/test';
+import { readFile } from 'node:fs/promises';
+test.use({ serviceWorkers: 'block' });
+
+test('editorial drafts retain exact source evidence, private notes and unreviewed review export', async ({ page }) => {
+  await page.goto('#/editorial-workbench/GEN/1?verse=1&end=2&edition=eng-web');
+  await expect(page.getByRole('heading', { name: 'Coverage and editorial workbench', exact: true })).toBeVisible();
+  await page.getByRole('button', { name: 'Private author drafts', exact: true }).click();
+  await page.getByRole('button', { name: 'Create source-linked draft', exact: true }).click();
+  await page.getByLabel('Editorial draft title', { exact: true }).fill('Genesis author draft');
+  await page.getByLabel('Draft paraphrase', { exact: true }).fill('My own study wording for review.');
+  await page.getByLabel('Private author notes', { exact: true }).fill('PRIVATE NOTE EXCLUDED FROM HANDOFF');
+  await expect(page.getByRole('heading', { name: /Genesis 1:1–2 · World English Bible/ })).toBeVisible();
+  await page.getByRole('button', { name: 'Save editorial draft', exact: true }).click();
+  await expect(page.getByText('Editorial draft saved privately. Human review remains pending.', { exact: true })).toBeVisible();
+  await page.reload();
+  await page.getByRole('button', { name: 'Private author drafts', exact: true }).click();
+  await page.getByRole('button', { name: /Genesis author draft/ }).click();
+  await expect(page.getByLabel('Private author notes', { exact: true })).toHaveValue('PRIVATE NOTE EXCLUDED FROM HANDOFF');
+  await page.getByText('Prepare for human review', { exact: true }).click();
+  const downloading = page.waitForEvent('download');
+  await page.getByRole('button', { name: 'Download draft review package', exact: true }).click();
+  const download = await downloading, raw = await readFile((await download.path())!, 'utf8'), value = JSON.parse(raw);
+  expect(raw).not.toContain('PRIVATE NOTE EXCLUDED FROM HANDOFF'); expect(value.drafts[0].approvalState).toBe('unreviewed_draft');
+  expect(value.drafts[0].sources[0].units[0].text).toContain('In the beginning'); expect(value.drafts[0].sources[0].editionId).toBe('eng-web');
+  expect(value.drafts[0].history.length).toBe(1);
+});
+
+test('coverage separates installed text from metadata and malicious imports cannot replace author drafts', async ({ page }) => {
+  await page.goto('#/editorial-workbench/GEN/1?verse=1&edition=eng-web');
+  await expect(page.getByRole('table', { name: 'Installed Bible manifests and exact source records' })).toBeVisible();
+  await expect(page.getByRole('table', { name: 'Installed Bible manifests and exact source records' })).toContainText('31,103');
+  await page.getByRole('button', { name: 'Acquisition research', exact: true }).click();
+  await page.getByLabel('Search acquisition records', { exact: true }).fill('arb-vd');
+  await expect(page.getByText('Arabic Van Dyck Bible', { exact: true })).toBeVisible();
+  await expect(page.getByText('Metadata only; no usable source verified by this record.', { exact: true })).toBeVisible();
+  await page.getByRole('button', { name: 'Private author drafts', exact: true }).click();
+  await page.getByRole('button', { name: 'Create source-linked draft', exact: true }).click();
+  await page.getByLabel('Editorial draft title').fill('Keep my draft');
+  await page.getByRole('button', { name: 'Save editorial draft', exact: true }).click();
+  await expect(page.getByText('Editorial draft saved privately. Human review remains pending.', { exact: true })).toBeVisible();
+  await page.getByLabel('Preview editorial package', { exact: true }).setInputFiles({ name: 'forged.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify({ kind: 'adigun-editorial-private-backup', schemaVersion: 1, drafts: [], review: { status: 'approved' } })) });
+  await expect(page.getByRole('alert').filter({ hasText: 'Approval and reviewer claims cannot be imported' })).toBeVisible();
+  await expect(page.getByLabel('Editorial draft title')).toHaveValue('Keep my draft');
+  await page.getByLabel('Draft paraphrase', { exact: true }).fill('Unsaved thought');
+  expect(await page.evaluate(() => window.dispatchEvent(new Event('adigun:before-update', { cancelable: true })))).toBe(false);
+  page.once('dialog', dialog => dialog.dismiss());
+  expect(await page.evaluate(() => window.dispatchEvent(new Event('adigun:before-navigation', { cancelable: true })))).toBe(false);
+  await page.setViewportSize({ width: 320, height: 844 });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
+});

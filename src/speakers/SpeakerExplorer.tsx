@@ -24,6 +24,7 @@ export default function SpeakerExplorer({ reference, locale, onOpenReference }: 
   const [selected, setSelected] = useState<PublisherSpeech | null>(null), [importPreview, setImportPreview] = useState<SpeakerCorrections | null>(null), [fileBusy, setFileBusy] = useState(false);
   const [reviewed, setReviewed] = useState<{ key: string; status: string; records: (SpeakerAnnotation & { text: string })[]; blocked: number }>({ key: '', status: 'Loading review publication…', records: [], blocked: 0 });
   const controller = useRef<AbortController | null>(null), generation = useRef(0), store = useCorrections(), fileLock = useRef(false), fileGuard = useRef(false);
+  const suggestionTrigger = useRef<HTMLButtonElement | null>(null);
   fileGuard.current = fileBusy || store.busy;
   const key = `${editionId}:${bookId}`, index = publisherCoverage.editions.find(row => row.editionId === editionId), current = study?.key === key ? study.data : null;
   const deferredQuery = useDeferredValue(query), results = useMemo(() => searchPublisherSpeeches(current?.speeches || [], deferredQuery), [current, deferredQuery]);
@@ -60,7 +61,8 @@ export default function SpeakerExplorer({ reference, locale, onOpenReference }: 
     } catch (cause) { if (run === generation.current) setError(cause instanceof Error ? cause.message : 'Publisher speech could not be loaded.'); }
     finally { if (run === generation.current) setLoading(false); }
   }
-  function suggest(speech: PublisherSpeech) { if (window.dispatchEvent(new Event('adigun:before-navigation', { cancelable: true }))) setSelected(speech); }
+  function suggest(speech: PublisherSpeech, trigger: HTMLButtonElement) { if (window.dispatchEvent(new Event('adigun:before-navigation', { cancelable: true }))) { suggestionTrigger.current = trigger; setSelected(speech); } }
+  function closeCorrection() { setSelected(null); requestAnimationFrame(() => { if (suggestionTrigger.current?.isConnected) suggestionTrigger.current.focus(); }); }
   async function verifyProposal(proposal: CorrectionProposal) {
     const ref = proposal.annotation.reference, source = await getManifest(ref.editionId), book = await getBook(ref.bookId, ref.editionId);
     const verse = book.chapters.find(chapter => chapter.number === ref.chapter)?.verses.find(verse => verse.number === ref.verse);
@@ -106,11 +108,11 @@ export default function SpeakerExplorer({ reference, locale, onOpenReference }: 
       <div className="speaker-result-heading"><h3>{speech.bookName} {speech.reference.chapter}:{speech.reference.verse}</h3><span className="speaker-badge">Publisher annotation · not independent review</span></div>
       <blockquote lang={speech.edition.language}>{speech.text}</blockquote><p className="speaker-help">{speech.edition.name} · Marked span {speech.start + 1}–{speech.end}</p>
       <details><summary>Read the complete source verse</summary><p className="speaker-full-verse" lang={speech.edition.language}>{Array.from(speech.fullVerse).slice(0, speech.start).join('')}<mark>{speech.text}</mark>{Array.from(speech.fullVerse).slice(speech.end).join('')}</p></details>
-      <div className="speaker-actions"><button type="button" className="secondary" onClick={() => onOpenReference(speech.reference)}>Open full context</button><button type="button" className="text-button" disabled={!store.state || store.busy} onClick={() => suggest(speech)}>Suggest correction</button></div>
+      <div className="speaker-actions"><button type="button" className="secondary" onClick={() => onOpenReference(speech.reference)}>Open full context</button><button type="button" className="text-button" disabled={!store.state || store.busy} onClick={event => suggest(speech, event.currentTarget)}>Suggest correction</button></div>
     </article>)}</div>
     {results.length > limit && <button type="button" className="secondary" onClick={() => setLimit(value => value + 30)}>Show 30 more marked spans</button>}
     {current && <details className="speaker-source-credit"><summary>Publisher source and revision</summary><pre>{sourceCredit(current.edition)}</pre><p>Source revision: {current.edition.sha256}</p><p>These are publisher-supplied <code>wj</code> spans. No editor approval is inferred from the marker.</p></details>}
-    {selected && <CorrectionForm key={selected.id} speech={selected} storageBusy={store.busy || fileBusy} onSave={proposal => store.commit(previous => ({ ...previous, proposals: [...previous.proposals, proposal] }))} onClose={() => setSelected(null)}/>}
+    {selected && <CorrectionForm key={selected.id} speech={selected} storageBusy={store.busy || fileBusy} onSave={proposal => store.commit(previous => ({ ...previous, proposals: [...previous.proposals, proposal] }))} onClose={closeCorrection}/>}
     <section className="panel speaker-reviewed" aria-label="Independent speaker review coverage"><h2>Reviewed speaker collections</h2>
       {reviewed.key !== editionId ? <p role="status">Checking reviewed annotations…</p> : reviewed.status !== 'verified' ? <p>{reviewed.status}</p> : <><p>{reviewedRecords.length} independently approved annotations for this edition passed their source checks.</p>{!reviewedRecords.length && <p>Reviewed collections for Moses, individual prophets, apostles, narrators and other speakers are not available yet. The publisher layer above does not establish those assignments.</p>}</>}
       {reviewed.blocked > 0 && <p className="speaker-warning">{reviewed.blocked} published annotations could not be matched to the current source revision and are not displayed.</p>}
