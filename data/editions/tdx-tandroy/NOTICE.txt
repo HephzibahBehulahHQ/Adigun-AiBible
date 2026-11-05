@@ -1,0 +1,24 @@
+About tdx_vpl
+This archive contains BIBLE TEXT ONLY. All formatting, paragraph breaks, notes, introductions, noncanonical section titles, etc., have been removed. The file ending "_vpl.txt" is designed for import into BibleWorks and similar Bible study programs. The file ending "_vpl.xml" contains the same information, but is in XML format and uses standard SIL/UBS book abbreviations.
+The file ending "_vpl.sql" contains the same information formatted to create a SQL data table.
+Check for updates and other Bible translations in this format at http:\\eBible.org\Scriptures\
+Saontsin’ Añahare
+The Holy Bible in the Tandroy language of Madagascar
+La Sainte Bible en langue tandroy de Madagascar
+Copyright © 2023 Steve Lellelid
+Language: Tandroy (Malagasy, Tandroy-Mahafaly)
+DRAFT VERSION
+This translation is made available to you under the terms of the
+Creative Commons Attribution Share-Alike license 4.0.
+You have permission to share and redistribute this Bible translation in any format and to make reasonable revisions and adaptations of this translation, provided that:
+You include the above copyright and source information.
+If you make any changes to the text, you must indicate that you did so in a way that makes it clear that the original licensor is not necessarily endorsing your changes.
+If you redistribute this text, you must distribute your contributions under the same license as the original.
+Pictures included with Scriptures and other documents on this site are licensed just for use with those Scriptures and documents.
+For other uses, please contact the respective copyright owners.
+Note that in addition to the rules above, revising and adapting God's Word involves a great responsibility to be true to God's Word. See Revelation 22:18-19.
+2024-12-05
+
+Source and rights notice: https://ebible.org/tdx/copyright.htm
+License: https://creativecommons.org/licenses/by-sa/4.0/
+Provider rights policy: https://creativecommons.org/licenses/by-sa/4.0/
