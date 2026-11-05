@@ -37,7 +37,9 @@ async function boundedBytes(stream: ReadableStream<Uint8Array> | null, limit: nu
       }
     }
   } catch (error) {
-    await reader.cancel().catch(() => undefined);
+    // Cancellation closes this reader immediately. Its promise can wait for an
+    // unread sibling of a cloned response; failure must not await that consumer.
+    void reader.cancel().catch(() => undefined);
     throw error;
   } finally { signal?.removeEventListener('abort', cancel); reader.releaseLock(); }
   const bytes = new Uint8Array(total);

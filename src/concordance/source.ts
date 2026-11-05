@@ -27,7 +27,10 @@ export async function readConcordanceBytes(response: Response, file: OfflineFile
   if (!response.ok || response.type === 'opaque') throw new Error('This edition’s source index or inventory is unavailable. Download the edition while online, then retry.');
   const declaredLength = response.headers.get('content-length');
   if (declaredLength && (!/^\d+$/.test(declaredLength) || Number(declaredLength) > file.bytes || Number(declaredLength) > MAX_INDEX_BYTES)) {
-    await response.body?.cancel(); throw new Error('The source response exceeds its verified file size or concordance file limit.');
+    // A cloned response may have an unread sibling. Request cancellation without
+    // waiting for that independent consumer before reporting this size failure.
+    if (response.body) void response.body.cancel().catch(() => undefined);
+    throw new Error('The source response exceeds its verified file size or concordance file limit.');
   }
   if (!response.body) throw new Error('This browser did not provide a readable source response. Counts are unavailable.');
   const bytes = await readSourceBytes(response, file.bytes, signal); abort(signal);
