@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "morphgnt-sblgnt",
+  "sourceRevision": "aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d",
+  "sourcePinSha256": "f2e3ebfdad44002721c9070899abcad10c02d785cc27ff50ac08202db66d3c12",
+  "files": [
+    {
+      "path": "books/1Co.json",
+      "bytes": 1119559,
+      "sha256": "7d40fcad3aeb9f55ed7e75713a950f723284094d406c3c120b7f199885d5364c"
+    },
+    {
+      "path": "books/1Jn.json",
+      "bytes": 343652,
+      "sha256": "621f3f581d68c7f31e4f0b69fb5b78b60a68d33a44fba842711fc1866af25485"
+    },
+    {
+      "path": "books/1Pe.json",
+      "bytes": 282241,
+      "sha256": "c1e7188ebc4279a5f9a522371872b15b29e83fcd15f72db705328bbc18c87afd"
+    },
+    {
+      "path": "books/1Th.json",
+      "bytes": 243491,
+      "sha256": "50ce164f0ff3e9b45c1f91260b7aaedb0c8d3571a9767677b595a0bc3c01d14c"
+    },
+    {
+      "path": "books/1Ti.json",
+      "bytes": 270424,
+      "sha256": "69c3c85ef3fb2ee57c1ebf134bd5f8f9ed3080a06a39d02db0529e5298003855"
+    },
+    {
+      "path": "books/2Co.json",
+      "bytes": 739603,
+      "sha256": "23a9509d7d920abbdefa42b693b0224ed79493df45d50d552a65b1e7f2411904"
+    },
+    {
+      "path": "books/2Jn.json",
+      "bytes": 39743,
+      "sha256": "0956b17b179edeb5ae5ff58d3796b8556f7b9814a62a1424a113a6d52ea01535"
+    },
+    {
+      "path": "books/2Pe.json",
+      "bytes": 185200,
+      "sha256": "f68898af757704e8de1da29000e06087f213e6dfc8b5c9c941d00ae59cc98631"
+    },
+    {
+      "path": "books/2Th.json",
+      "bytes": 134841,
+      "sha256": "5f22e9a546afe15e78034651c6c10c7d501e44b70127db083b0c528c21ea2d77"
+    },
+    {
+      "path": "books/2Ti.json",
+      "bytes": 207055,
+      "sha256": "551ebe1b24c7a97002e771a31cd7ae297ad6493b0db7b3a2e66d704e19ae449c"
+    },
+    {
+      "path": "books/3Jn.json",
+      "bytes": 36446,
+      "sha256": "230771b66a4aa0a1cee1375ed9fa7e59840f8a3232689a6c5c93b86e24e4134b"
+    },
+    {
+      "path": "books/Ac.json",
+      "bytes": 3081052,
+      "sha256": "2b104ffb13c335d05545a070bffa9c1e89ad946aea531d0ad2d2e5f45cad51fe"
+    },
+    {
+      "path": "books/Col.json",
+      "bytes": 260665,
+      "sha256": "bb6fba1e4c6f9860e3d7973d59085d84aa885b6a9728448323c91dacbd846fb3"
+    },
+    {
+      "path": "books/Eph.json",
+      "bytes": 398839,
+      "sha256": "8838e616d38a4611b42f404e7c7303e5e44273cdd6cd42f8ed2cd48f4b083dc0"
+    },
+    {
+      "path": "books/Ga.json",
+      "bytes": 368575,
+      "sha256": "227d470da9f3bd878491d15525fdde6a0834f45765740d8e864aa9a9dde8cbe2"
+    },
+    {
+      "path": "books/Heb.json",
+      "bytes": 828454,
+      "sha256": "c0e26497a88639e0227f433708187769a39576d13a393fbf7ebd096592f5e048"
+    },
+    {
+      "path": "books/Jas.json",
+      "bytes": 288566,
+      "sha256": "a6264cc0916cfe614dd714e17090015cac7225c4b9d69511d971a7c62a24b14d"
+    },
+    {
+      "path": "books/Jn.json",
+      "bytes": 2516947,
+      "sha256": "977af4733268add8183615c3193d113c15e62566c0bdff200856351a7f727353"
+    },
+    {
+      "path": "books/Jud.json",
+      "bytes": 77630,
+      "sha256": "65ed7c795e7b281293843f797b255b893d65adc1109bfbef57e8fd8ec7fe2ace"
+    },
+    {
+      "path": "books/Lk.json",
+      "bytes": 3225252,
+      "sha256": "3bbe60ceab1b83f0e0c1af29da43d9ac0af9876707e4b9f551ebd2bbe9ff9af0"
+    },
+    {
+      "path": "books/Mk.json",
+      "bytes": 1875967,
+      "sha256": "da19b71364d644d0fce06808e19f3d185a41e690d5fc7a0608e99ce459b5de2c"
+    },
+    {
+      "path": "books/Mt.json",
+      "bytes": 3034782,
+      "sha256": "cbf3734f2e8d3f1f4efda1095148f9390a3e345d69cefc632727578034e26018"
+    },
+    {
+      "path": "books/Phm.json",
+      "bytes": 54621,
+      "sha256": "520d818cce36fbcb2719218d89067b29f47b03d67eda03d683e7ce07c996bc4f"
+    },
+    {
+      "path": "books/Php.json",
+      "bytes": 267895,
+      "sha256": "360a59c5baeb876fd00df9050ef05feb72c3b38695f503ab3dcd0afa2a9c2796"
+    },
+    {
+      "path": "books/Re.json",
+      "bytes": 1595518,
+      "sha256": "12a2cceaa00bde07b0739c60990a43a1f5f563f5f64663ee7c5c81a826d1af8b"
+    },
+    {
+      "path": "books/Ro.json",
+      "bytes": 1160258,
+      "sha256": "fb4f539a188de172b1ab8d561bbbe2b1b5e63c7a920b4912a7c8c1f3fee00e32"
+    },
+    {
+      "path": "books/Tit.json",
+      "bytes": 112327,
+      "sha256": "a1e549d5b6bbf2358d66fe2fc8507f92c3b6f17898465852ad81a955e16c2055"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 218921,
+      "sha256": "fcae63c6558b426c5e03497b28617171f330051cc2c5482a220574c381412d80"
+    },
+    {
+      "path": "morphology.json",
+      "bytes": 2259,
+      "sha256": "f63cf07ce5b6c79d6c324baa1e7cd08cb8698394f5e797ff685df2cc0df31a86"
+    },
+    {
+      "path": "notices/CC-BY-4.0.txt",
+      "bytes": 18650,
+      "sha256": "7e7170e3cebf88a9f60c7b8421418323c09304da1af4d5e90f4da1dc1c8a2661"
+    },
+    {
+      "path": "notices/CC-BY-SA-3.0.txt",
+      "bytes": 22240,
+      "sha256": "3f941b3b89cf7b8370ceb83cc76d2120d471b58735d8ca60238a751a48d7f72f"
+    },
+    {
+      "path": "notices/MorphGNT-README.md",
+      "bytes": 1630,
+      "sha256": "043bb6c0d654e85fa8a8db19e177ee035623e23b7ff1556e5431ad95184d5830"
+    },
+    {
+      "path": "notices/SBLGNT-About.md",
+      "bytes": 3913,
+      "sha256": "c9220bb3d5f051100751816f15d87a73e8dabe53c9cd828c0f743039ff669101"
+    },
+    {
+      "path": "notices/SBLGNT-README.md",
+      "bytes": 1136,
+      "sha256": "ebf71e533322af33cdfeba2a2c75d80e06d6ad05d776b8e2c5ac4df2cc792877"
+    }
+  ]
+}
