@@ -1,4 +1,5 @@
 import { hashSourceText } from '../editorial.ts';
+import type { Manifest } from '../types';
 import type { PublisherSpeech } from './model';
 import { loadPublisherStudy } from './source.ts';
 import type { PublisherStudy, SpeakerDependencies } from './source';
@@ -43,13 +44,36 @@ export async function loadPinnedSpeeches(values: SpeechPin[], dependencies: Spea
     if (previous && JSON.stringify(previous) !== JSON.stringify(pin)) throw new Error('The same speech identifier has conflicting source pins. Nothing was changed.');
     unique.set(pin.id, pin);
   }
-  const studies = new Map<string, PublisherStudy>(), verified = new Map<string, PublisherSpeech>();
+  const studies = new Map<string, PublisherStudy>(), verified = new Map<string, PublisherSpeech>(), manifests = new Map<string, Manifest>();
+  const checkedDependencies: SpeakerDependencies = {
+    getManifest: async editionId => {
+      checkCancellation(signal);
+      let manifest = manifests.get(editionId);
+      if (!manifest) {
+        manifest = await dependencies.getManifest(editionId);
+        checkCancellation(signal);
+        manifests.set(editionId, manifest);
+      }
+      return manifest;
+    },
+    getBook: async (bookId, editionId) => {
+      checkCancellation(signal);
+      const book = await dependencies.getBook(bookId, editionId);
+      checkCancellation(signal);
+      return book;
+    },
+    requirePermission: async (edition, operation) => {
+      checkCancellation(signal);
+      await dependencies.requirePermission(edition, operation);
+      checkCancellation(signal);
+    },
+  };
   for (const pin of unique.values()) {
     checkCancellation(signal);
     const key = `${pin.reference.editionId}:${pin.reference.bookId}`;
     let study = studies.get(key);
     if (!study) {
-      study = await loadPublisherStudy(pin.reference.editionId, pin.reference.bookId, dependencies, signal);
+      study = await loadPublisherStudy(pin.reference.editionId, pin.reference.bookId, checkedDependencies, signal);
       checkCancellation(signal);
       studies.set(key, study);
     }

@@ -97,6 +97,7 @@ export function validateSpeechCollections(value: unknown): SpeechCollectionsStat
   if (new Set(collections.map(collection => collection.id)).size !== collections.length) throw new Error('Duplicate speech collection identifiers.');
   const result: SpeechCollectionsState = { schemaVersion: 1, revision: Number(state.revision), collections };
   boundedJson(result);
+  boundedJson({ kind: 'adigun-speech-collections', version: 1, workspace: { ...result, revision: 0 } });
   return result;
 }
 

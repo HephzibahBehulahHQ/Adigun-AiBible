@@ -11,6 +11,8 @@ import { loadPublisherStudy, loadReviewedSpeakers, publisherCoverage } from './s
 import type { PublisherStudy } from './source';
 import { useCorrections } from './useCorrections';
 import CorrectionForm from './CorrectionForm';
+import SpeechCollections from './SpeechCollections';
+import type { CollectionCandidate } from './SpeechCollections';
 import './speakers.css';
 
 interface Props { reference: Reference; locale: Locale; onOpenReference: (reference: Reference) => void }
@@ -25,6 +27,8 @@ export default function SpeakerExplorer({ reference, locale, onOpenReference }: 
   const [reviewed, setReviewed] = useState<{ key: string; status: string; records: (SpeakerAnnotation & { text: string })[]; blocked: number }>({ key: '', status: 'Loading review publication…', records: [], blocked: 0 });
   const controller = useRef<AbortController | null>(null), generation = useRef(0), store = useCorrections(), fileLock = useRef(false), fileGuard = useRef(false);
   const suggestionTrigger = useRef<HTMLButtonElement | null>(null);
+  const [collectionCandidate, setCollectionCandidate] = useState<CollectionCandidate | null>(null), [collectionsBusy, setCollectionsBusy] = useState(false);
+  const collectionTrigger = useRef<HTMLButtonElement | null>(null), collectionRequest = useRef(0);
   fileGuard.current = fileBusy || store.busy;
   const key = `${editionId}:${bookId}`, index = publisherCoverage.editions.find(row => row.editionId === editionId), current = study?.key === key ? study.data : null;
   const deferredQuery = useDeferredValue(query), results = useMemo(() => searchPublisherSpeeches(current?.speeches || [], deferredQuery), [current, deferredQuery]);
@@ -63,6 +67,8 @@ export default function SpeakerExplorer({ reference, locale, onOpenReference }: 
   }
   function suggest(speech: PublisherSpeech, trigger: HTMLButtonElement) { if (window.dispatchEvent(new Event('adigun:before-navigation', { cancelable: true }))) { suggestionTrigger.current = trigger; setSelected(speech); } }
   function closeCorrection() { setSelected(null); requestAnimationFrame(() => { if (suggestionTrigger.current?.isConnected) suggestionTrigger.current.focus(); }); }
+  function collect(speech: PublisherSpeech, trigger: HTMLButtonElement) { collectionTrigger.current = trigger; setCollectionCandidate({ speech, request: ++collectionRequest.current }); }
+  function clearCollectionCandidate() { setCollectionCandidate(null); requestAnimationFrame(() => { if (collectionTrigger.current?.isConnected) collectionTrigger.current.focus({ preventScroll: true }); }); }
   async function verifyProposal(proposal: CorrectionProposal) {
     const ref = proposal.annotation.reference, source = await getManifest(ref.editionId), book = await getBook(ref.bookId, ref.editionId);
     const verse = book.chapters.find(chapter => chapter.number === ref.chapter)?.verses.find(verse => verse.number === ref.verse);
@@ -104,11 +110,12 @@ export default function SpeakerExplorer({ reference, locale, onOpenReference }: 
       {current && !current.speeches.length && <p className="speaker-empty">This imported source supplies no Jesus-speech markings in this scope. Choose an edition with supplied publisher annotations to browse them. This is an annotation-availability state, not a finding that a speaker is absent.</p>}
       {current?.issues.length ? <p className="speaker-warning">{current.issues.length} source-metadata issues were excluded from marked-speech display.</p> : null}
     </section>
+    <SpeechCollections candidate={collectionCandidate} onClearCandidate={clearCollectionCandidate} onBusyChange={setCollectionsBusy} onOpenReference={onOpenReference}/>
     <div className="speaker-results">{results.slice(0, limit).map(speech => <article className="panel speaker-result" key={speech.id}>
       <div className="speaker-result-heading"><h3>{speech.bookName} {speech.reference.chapter}:{speech.reference.verse}</h3><span className="speaker-badge">Publisher annotation · not independent review</span></div>
       <blockquote lang={speech.edition.language}>{speech.text}</blockquote><p className="speaker-help">{speech.edition.name} · Marked span {speech.start + 1}–{speech.end}</p>
       <details><summary>Read the complete source verse</summary><p className="speaker-full-verse" lang={speech.edition.language}>{Array.from(speech.fullVerse).slice(0, speech.start).join('')}<mark>{speech.text}</mark>{Array.from(speech.fullVerse).slice(speech.end).join('')}</p></details>
-      <div className="speaker-actions"><button type="button" className="secondary" onClick={() => onOpenReference(speech.reference)}>Open full context</button><button type="button" className="text-button" disabled={!store.state || store.busy} onClick={event => suggest(speech, event.currentTarget)}>Suggest correction</button></div>
+      <div className="speaker-actions"><button type="button" className="secondary" onClick={() => onOpenReference(speech.reference)}>Open full context</button><button type="button" className="secondary" disabled={collectionsBusy} onClick={event => collect(speech, event.currentTarget)}>Collect marked speech</button><button type="button" className="text-button" disabled={!store.state || store.busy} onClick={event => suggest(speech, event.currentTarget)}>Suggest correction</button></div>
     </article>)}</div>
     {results.length > limit && <button type="button" className="secondary" onClick={() => setLimit(value => value + 30)}>Show 30 more marked spans</button>}
     {current && <details className="speaker-source-credit"><summary>Publisher source and revision</summary><pre>{sourceCredit(current.edition)}</pre><p>Source revision: {current.edition.sha256}</p><p>These are publisher-supplied <code>wj</code> spans. No editor approval is inferred from the marker.</p></details>}
