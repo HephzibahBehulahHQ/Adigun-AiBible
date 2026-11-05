@@ -23,7 +23,7 @@ export default function HistoricalReader() {
   const notebook = useHistoricalStudy();
   const busy = notebook.busy || downloading;
   const dirty = draft !== baseline;
-  useHistoricalGuard(dirty, busy);
+  useHistoricalGuard(dirty, notebook.saving || downloading);
   const edition = historicalManifest.editions.find(item => item.id === selection.editionId);
   const currentWork = work?.editionId === selection.editionId ? work : null;
   const chapter = currentWork?.chapters.find(item => item.number === selection.chapter);
