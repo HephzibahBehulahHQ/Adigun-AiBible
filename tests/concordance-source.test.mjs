@@ -25,6 +25,17 @@ test('aborting a pending source stream cancels its reader and produces no comple
   await reading; controller.abort();
   await assert.rejects(result, { name: 'AbortError' }); assert.equal(cancelled, true);
 });
+
+test('oversized cloned source headers reject promptly without waiting for the original branch', async () => {
+  const original = new Response(new ReadableStream({ start() {} }), { headers: { 'content-length': '101' } });
+  const clone = original.clone(), reading = readConcordanceBytes(clone, { bytes: 100, sha256: 'a'.repeat(64) }); let timer;
+  const settled = reading.then(() => ({ kind: 'resolved' }), error => ({ kind: 'rejected', error }));
+  try {
+    const result = await Promise.race([settled, new Promise(resolve => { timer = setTimeout(() => resolve({ kind: 'timeout' }), 1000); })]);
+    assert.equal(result.kind, 'rejected', 'a size failure must not await an unread cloned-response sibling');
+    assert.match(result.error.message, /verified file size/); assert.equal(clone.body.locked, false);
+  } finally { clearTimeout(timer); void original.body.cancel().catch(() => undefined); await settled; }
+});
 function setup() {
   const manifest = { schemaVersion: 1, edition: { id: 'eng-web', name: 'Test source', language: 'en', sha256: 'a'.repeat(64) }, books: [{ id: 'GEN', name: 'Genesis', chapters: 1, verseCounts: [2] }], totals: { books: 1, chapters: 1, verses: 2 } };
   const rows = [{ bookId: 'GEN', chapter: 1, verse: 1, text: 'Love love.' }, { bookId: 'GEN', chapter: 1, verse: 2, text: 'Peace.' }];

@@ -1,4 +1,4 @@
-import { readBoundedJson } from './source-codec.ts';
+import { readBoundedJson, readSourceBytes, SOURCE_JSON_MAX_BYTES } from './source-codec.ts';
 
 export const OFFLINE_INVENTORY_MAX_FILES = 16_384;
 export const OFFLINE_METADATA_MAX_BYTES = 4 * 1024 * 1024;
@@ -60,11 +60,12 @@ async function exclusive<T>(key: string, action: () => Promise<T>): Promise<T> {
   finally { if (locks.get(key) === current) locks.delete(key); }
 }
 
-export async function getOfflineManifest(baseUrl: string): Promise<OfflineManifest> {
+export async function getOfflineManifest(baseUrl: string, signal?: AbortSignal): Promise<OfflineManifest> {
+  abortIfNeeded(signal);
   const base = baseURL(baseUrl);
-  const response = await fetch(new URL('offline-manifest.json', base), { cache: 'no-cache' });
+  const response = await fetch(new URL('offline-manifest.json', base), { cache: 'no-cache', signal });
   if (!response.ok) throw new Error('Offline metadata is unavailable. Reconnect and update the application before downloading.');
-  const value = await readBoundedJson(response, OFFLINE_METADATA_MAX_BYTES) as Partial<OfflineManifest>;
+  const value = await readBoundedJson(response, OFFLINE_METADATA_MAX_BYTES, signal) as Partial<OfflineManifest>;
   const prefix = `adigun-bible-${(await sha256(new TextEncoder().encode(base.pathname))).slice(0, 12)}-`;
   if (value.schemaVersion !== 1 || value.appId !== 'adigun-aibible' || value.basePath !== base.pathname || value.cachePrefix !== prefix
     || !/^[a-f0-9]{16,64}$/.test(value.contentVersion ?? '') || !/^[a-f0-9]{12,64}$/.test(value.buildVersion ?? '')
@@ -79,17 +80,28 @@ export async function getOfflineManifest(baseUrl: string): Promise<OfflineManife
   return value as OfflineManifest;
 }
 
-async function validateResponse(response: Response, file: OfflineFile, path: string): Promise<Response> {
+async function validateResponse(response: Response, file: OfflineFile, path: string, signal?: AbortSignal): Promise<Response> {
+  if (signal?.aborted && response.body) void response.body.cancel().catch(() => undefined);
+  abortIfNeeded(signal);
   if (!response.ok || response.type === 'opaque') throw new Error(`Could not download ${path}. Existing downloads were preserved.`);
-  const bytes = await response.clone().arrayBuffer();
-  if (bytes.byteLength !== file.bytes || await sha256(bytes) !== file.sha256) {
+  if (!Number.isSafeInteger(file.bytes) || file.bytes < 0 || file.bytes > SOURCE_JSON_MAX_BYTES) {
+    if (response.body) void response.body.cancel().catch(() => undefined);
+    throw new Error('The source file exceeds the bounded offline byte limit.');
+  }
+  // Consume once under the pinned cap. Cloning an unverified stream would let
+  // its unused sibling accumulate bytes before validation has finished.
+  const bytes = await readSourceBytes(response, file.bytes, signal);
+  if (bytes.byteLength !== file.bytes || await sha256(bytes.buffer) !== file.sha256) {
     throw new Error('Source files changed during the download. Save and update the application, then retry. Existing downloads were preserved.');
   }
+  abortIfNeeded(signal);
   if (path.endsWith('.json')) {
     const value: unknown = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(bytes));
     if (!value || typeof value !== 'object') throw new Error(`The source file ${path} is invalid. Existing downloads were preserved.`);
   }
-  return response;
+  // Cache.put/returning a response needs a fresh body; the verified bytes are
+  // bounded and the original body has been fully consumed, not cancelled.
+  return new Response(bytes.byteLength ? bytes : null, { status: response.status, statusText: response.statusText, headers: response.headers });
 }
 async function openPacks(storage: CacheStorage, base: URL, manifest: OfflineManifest): Promise<OpenPack[]> {
   const prefix = `${manifest.cachePrefix}pack-${manifest.contentVersion}-`;
@@ -110,22 +122,22 @@ async function openPacks(storage: CacheStorage, base: URL, manifest: OfflineMani
   }
   return result;
 }
-async function existingResponse(storage: CacheStorage, base: URL, manifest: OfflineManifest, packs: OpenPack[], path: string): Promise<Response | undefined> {
+async function existingResponse(storage: CacheStorage, base: URL, manifest: OfflineManifest, packs: OpenPack[], path: string, signal?: AbortSignal): Promise<Response | undefined> {
   const url = new URL(path, base).href;
   for (const pack of packs) {
     if (!pack.record.paths.includes(path)) continue;
     const response = await pack.cache.match(url);
     if (response) {
-      try { return await validateResponse(response, manifest.files[path], path); }
-      catch { /* Fetch a clean copy instead of propagating corrupt local bytes. */ }
+      try { return await validateResponse(response, manifest.files[path], path, signal); }
+      catch { abortIfNeeded(signal); /* Fetch a clean copy instead of propagating corrupt local bytes. */ }
     }
   }
   const content = `${manifest.cachePrefix}content-${manifest.contentVersion}`;
   if ((await storage.keys()).includes(content)) {
     const response = await (await storage.open(content)).match(url);
     if (response) {
-      try { return await validateResponse(response, manifest.files[path], path); }
-      catch { /* A failed validation must not replace an existing good pack. */ }
+      try { return await validateResponse(response, manifest.files[path], path, signal); }
+      catch { abortIfNeeded(signal); /* A failed validation must not replace an existing good pack. */ }
     }
   }
   return undefined;
@@ -155,7 +167,7 @@ export async function downloadOfflineFiles(baseUrl: string, paths: string[], opt
   if (!paths.length || paths.some(path => !validPath(path))) throw new Error('Choose public scripture files from this application to download.');
   return exclusive(`adigun-bible-offline:${base.href}`, async () => {
     abortIfNeeded(options.signal);
-    const manifest = await getOfflineManifest(base.href);
+    const manifest = await getOfflineManifest(base.href, options.signal);
     const targets = [...new Set(paths)];
     if (targets.some(path => !manifest.files[path])) throw new Error('This edition is not in the current offline inventory. Update the application before downloading.');
     const packs = await openPacks(storage, base, manifest);
@@ -170,8 +182,8 @@ export async function downloadOfflineFiles(baseUrl: string, paths: string[], opt
       for (const path of publishedPaths) {
         abortIfNeeded(options.signal);
         const url = new URL(path, base).href;
-        const cached = await existingResponse(storage, base, manifest, packs, path);
-        const response = cached ?? await validateResponse(await fetch(url, { cache: 'no-store', signal: options.signal }), manifest.files[path], path);
+        const cached = await existingResponse(storage, base, manifest, packs, path, options.signal);
+        const response = cached ?? await validateResponse(await fetch(url, { cache: 'no-store', signal: options.signal }), manifest.files[path], path, options.signal);
         await staged.put(url, response);
         if (targets.includes(path)) options.onProgress?.(++completed, targets.length);
       }

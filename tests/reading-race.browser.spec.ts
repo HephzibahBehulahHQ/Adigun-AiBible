@@ -9,6 +9,7 @@ declare global { interface Window { readingRaceProbe: RaceProbe } }
 const databaseName = 'adigun-aibible-reading-session';
 const editionId = 'eng-bsb';
 const genesisRequest = '**/data/editions/eng-bsb/books/GEN.json';
+const canonicalGenesis = readFileSync(new URL('../data/editions/eng-bsb/books/GEN.json', import.meta.url), 'utf8');
 const manifest = JSON.parse(readFileSync(new URL('../data/editions/eng-bsb/manifest.json', import.meta.url), 'utf8'));
 const fixture = (book: string): BookFixture => JSON.parse(readFileSync(new URL(`../data/editions/eng-bsb/books/${book}.json`, import.meta.url), 'utf8'));
 const books = { JHN: fixture('JHN'), GEN: fixture('GEN'), PSA: fixture('PSA') };
@@ -72,7 +73,7 @@ async function openSessionPanel(page: Page) {
 }
 
 test('an abandoned study-tab load cannot write or navigate after a different reader session opens', async ({ page }) => {
-  await page.addInitScript(() => {
+  await page.addInitScript((expectedGenesis: string) => {
     const probe: RaceProbe = { documentId: crypto.randomUUID(), readingWrites: 0, genesisBodiesConsumed: 0 };
     window.readingRaceProbe = probe;
     const transaction = IDBDatabase.prototype.transaction;
@@ -81,23 +82,24 @@ test('an abandoned study-tab load cannot write or navigate after a different rea
       if (this.name === 'adigun-aibible-reading-session' && result.mode === 'readwrite') probe.readingWrites++;
       return result;
     };
-    const json = Response.prototype.json;
-    Response.prototype.json = function (this: Response) {
-      const result = json.call(this);
-      if (!this.url.endsWith('/data/editions/eng-bsb/books/GEN.json')) return result;
-      return result.then(value => {
-        // Signal in the next task, after the real JSON consumers have drained their
-        // promise continuations and either cancelled or entered a storage transaction.
-        const channel = new MessageChannel();
-        channel.port1.onmessage = () => {
-          probe.genesisBodiesConsumed++;
-          channel.port1.close(); channel.port2.close();
-        };
-        channel.port2.postMessage(null);
-        return value;
-      });
+    const parse = JSON.parse;
+    JSON.parse = function (...args: Parameters<typeof JSON.parse>) {
+      const value = parse.apply(JSON, args);
+      // The shared decoder consumes streams, then parses exact canonical JSON.
+      // Match the complete source, not its envelope or an unrelated Genesis book.
+      // This observes both raw development JSON and verified compact transport.
+      if (args[0] !== expectedGenesis) return value;
+      // Signal in the next task, after the real source consumers have drained their
+      // promise continuations and either cancelled or entered a storage transaction.
+      const channel = new MessageChannel();
+      channel.port1.onmessage = () => {
+        probe.genesisBodiesConsumed++;
+        channel.port1.close(); channel.port2.close();
+      };
+      channel.port2.postMessage(null);
+      return value;
     };
-  });
+  }, canonicalGenesis);
 
   await page.goto('#/home/JHN/3?verse=16&edition=eng-bsb');
   await expect(page.locator('.home-page')).toBeVisible();

@@ -4,7 +4,7 @@ import { readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { gzipSync } from 'node:zlib';
 import { packSourceJsonBytes } from '../scripts/pack-source-json.mjs';
-import { decodeSourceJsonBytes, readBoundedJson, readSourceJson, SOURCE_BASE64_MAX_CHARS, SOURCE_JSON_MAX_BYTES } from '../src/source-codec.ts';
+import { decodeSourceJsonBytes, readBoundedJson, readSourceBytes, readSourceJson, SOURCE_BASE64_MAX_CHARS, SOURCE_JSON_MAX_BYTES } from '../src/source-codec.ts';
 
 const raw = Buffer.from(JSON.stringify({ id: 'ACT', name: 'Àwọn Ìṣe', chapters: [{ number: 17, verses: [{ number: 16, text: 'Àpẹẹrẹ ẹ̀rí [fún ìdánwò] — <source> & é.' }] }] }));
 const envelope = () => JSON.parse(packSourceJsonBytes(raw));
@@ -74,10 +74,45 @@ test('missing browser decompression is explicit while raw development JSON remai
 test('aborting an already verified input or an in-flight body never returns a late decoded source', async () => {
   const controller = new AbortController(); controller.abort();
   await assert.rejects(decodeSourceJsonBytes(packSourceJsonBytes(raw), controller.signal), { name: 'AbortError' });
+  let cancelledBeforeRead = false;
+  const lateResponse = new Response(new ReadableStream({ cancel() { cancelledBeforeRead = true; } }));
+  await assert.rejects(readSourceBytes(lateResponse, 8, controller.signal), { name: 'AbortError' });
+  assert.equal(cancelledBeforeRead, true); assert.equal(lateResponse.body.locked, false);
   const active = new AbortController(); let cancelled = false;
   const response = new Response(new ReadableStream({ start() {}, cancel() { cancelled = true; } }));
   const reading = readSourceJson(response, active.signal);
   active.abort();
   await assert.rejects(reading, { name: 'AbortError' });
   assert.equal(cancelled, true);
+});
+
+test('oversized cloned response rejects and releases its reader without waiting for the unread sibling', async () => {
+  const original = new Response(new ReadableStream({ start(controller) { controller.enqueue(new Uint8Array(9)); } }));
+  const clone = original.clone(), reading = readSourceBytes(clone, 8); let timer;
+  const settled = reading.then(() => ({ kind: 'resolved' }), error => ({ kind: 'rejected', error }));
+  try {
+    const result = await Promise.race([settled, new Promise(resolve => { timer = setTimeout(() => resolve({ kind: 'timeout' }), 1000); })]);
+    assert.equal(result.kind, 'rejected', 'size rejection must not wait for an unrelated stream consumer');
+    assert.match(result.error.message, /byte limit/); assert.equal(clone.body.locked, false);
+    const sibling = original.body.getReader();
+    try { assert.equal((await sibling.read()).value.length, 9, 'rejecting one branch must not consume the sibling'); }
+    finally { void sibling.cancel().catch(() => undefined); sibling.releaseLock(); }
+  } finally { clearTimeout(timer); if (!original.body.locked) void original.body.cancel().catch(() => undefined); await settled; }
+});
+
+test('aborting a cloned pending response releases its reader without awaiting the untouched sibling', async () => {
+  const original = new Response(new ReadableStream({ start() {} })), clone = original.clone(), controller = new AbortController();
+  const reading = readSourceBytes(clone, 8, controller.signal); let timer; controller.abort();
+  const settled = reading.then(() => ({ kind: 'resolved' }), error => ({ kind: 'rejected', error }));
+  try {
+    const result = await Promise.race([settled, new Promise(resolve => { timer = setTimeout(() => resolve({ kind: 'timeout' }), 1000); })]);
+    assert.equal(result.kind, 'rejected'); assert.equal(result.error.name, 'AbortError'); assert.equal(clone.body.locked, false);
+  } finally { clearTimeout(timer); void original.body.cancel().catch(() => undefined); await settled; }
+});
+
+test('zero-byte file caps accept empty bodies and reject the first supplied byte', async () => {
+  assert.equal((await readSourceBytes(new Response(null), 0)).byteLength, 0);
+  let cancelled = false;
+  const response = new Response(new ReadableStream({ start(controller) { controller.enqueue(new Uint8Array([1])); }, cancel() { cancelled = true; } }));
+  await assert.rejects(readSourceBytes(response, 0), /byte limit/); assert.equal(cancelled, true);
 });
