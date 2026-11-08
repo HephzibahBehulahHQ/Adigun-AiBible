@@ -203,7 +203,7 @@ export function createServiceWorkerSource(manifest, shellFiles) {
   return `(${serviceWorkerRuntime.toString()})(${JSON.stringify({ manifest, shellFiles })});\n`;
 }
 
-export async function finalizeBuild({ root = resolve(import.meta.dirname, '..'), base = '/Adigun-AiBible/', sourceCommit } = {}) {
+export async function finalizeBuild({ root = resolve(import.meta.dirname, '..'), base = '/', sourceCommit } = {}) {
   if (!/^\/[A-Za-z0-9_/-]*\/$/.test(base) || base.includes('..')) throw new Error('Invalid deployment base path.');
   const dist = resolve(root, 'dist');
   await assertNoSourceStaging(dist);
