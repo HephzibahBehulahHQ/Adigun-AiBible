@@ -17,7 +17,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-24.04
-    timeout-minutes: 20
+    timeout-minutes: 60
     permissions:
       contents: read
       pages: read
@@ -35,6 +35,16 @@ jobs:
         env:
           ADIGUN_SOURCE_TRANSPORT: gzip-base64-v1
         run: npm run check
+      - name: Verify custom-domain asset paths
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFile } from 'node:fs/promises';
+          const html = await readFile('dist/index.html', 'utf8');
+          const modules = [...html.matchAll(/<script[^>]+src="([^"]+)"/g)].map(match => match[1]);
+          if (!modules.length || modules.some(path => !path.startsWith('/assets/'))) {
+            throw new Error('Production JavaScript must load from the custom-domain /assets/ root.');
+          }
+          NODE
       - name: Install Chromium for production-browser checks
         timeout-minutes: 10
         run: npx playwright install --with-deps chromium
@@ -104,6 +114,15 @@ jobs:
 
               const home = await fetch(deployed, { cache: 'no-store', signal: AbortSignal.timeout(15000) });
               if (!home.ok) throw new Error('Published application HTTP ' + home.status);
+              const html = await home.text();
+              const modules = [...html.matchAll(/<script[^>]+src="([^"]+)"/g)].map(match => match[1]);
+              if (!modules.length || modules.some(path => !path.startsWith('/assets/'))) {
+                throw new Error('Published application references an incorrect JavaScript base path.');
+              }
+              for (const path of modules) {
+                const asset = await fetch(new URL(path, deployed), { cache: 'no-store', signal: AbortSignal.timeout(15000) });
+                if (!asset.ok) throw new Error('Published JavaScript asset HTTP ' + asset.status + ': ' + path);
+              }
 
               console.log(JSON.stringify({
                 url: deployed.href,
