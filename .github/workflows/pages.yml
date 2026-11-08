@@ -44,6 +44,10 @@ jobs:
           if (!modules.length || modules.some(path => !path.startsWith('/assets/'))) {
             throw new Error('Production JavaScript must load from the custom-domain /assets/ root.');
           }
+          const offline = JSON.parse(await readFile('dist/offline-manifest.json', 'utf8'));
+          if (offline.basePath !== '/') {
+            throw new Error(`The service worker base path must match the custom-domain root; received ${offline.basePath}.`);
+          }
           NODE
       - name: Install Chromium for production-browser checks
         timeout-minutes: 10
