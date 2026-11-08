@@ -11,7 +11,7 @@ export default defineConfig({
   expect: { timeout: 12_000 },
   reporter: [['list'], ['html', { open: 'never' }]],
   use: {
-    baseURL: 'http://127.0.0.1:4173/Adigun-AiBible/',
+    baseURL: 'http://127.0.0.1:4173/',
     acceptDownloads: true,
     serviceWorkers: 'allow',
     trace: 'retain-on-failure',
@@ -29,7 +29,7 @@ export default defineConfig({
   ],
   webServer: {
     command: 'npm run preview -- --host 127.0.0.1 --port 4173 --strictPort',
-    url: 'http://127.0.0.1:4173/Adigun-AiBible/',
+    url: 'http://127.0.0.1:4173/',
     reuseExistingServer: !process.env.CI,
     timeout: 30_000,
   },
