@@ -1,47 +1,125 @@
-- name: Verify the published source revision
-  env:
-    ADIGUN_DEPLOYED_URL: ${{ steps.deployment.outputs.page_url }}
-    ADIGUN_EXPECTED_COMMIT: ${{ github.sha }}
-  run: |
-    node --input-type=module <<'NODE'
-    const base = process.env.ADIGUN_DEPLOYED_URL;
-    const expected = process.env.ADIGUN_EXPECTED_COMMIT;
-    if (!base || !/^[a-f0-9]{40}$/.test(expected || '')) throw new Error('Missing deployment identity.');
+name: Validate and deploy Adigun-AiBible
 
-    const deployed = new URL(base);
-    if (deployed.protocol !== 'https:' || deployed.hostname !== 'adigun-aibible.hephzibahbehulah.com' || deployed.pathname !== '/') {
-      throw new Error('Unexpected deployment URL: ' + deployed.href);
-    }
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
 
-    const receipt = new URL('build-info.json', deployed);
-    let failure;
-    for (let attempt = 0; attempt < 12; attempt++) {
-      try {
-        receipt.searchParams.set('verify', expected + '-' + attempt);
-        const response = await fetch(receipt, { cache: 'no-store', signal: AbortSignal.timeout(15000) });
-        if (!response.ok) throw new Error('Receipt HTTP ' + response.status);
+permissions:
+  contents: read
 
-        const info = await response.json();
-        if (info.sourceCommit !== expected) throw new Error('The public receipt has not reached this source revision.');
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
-        const home = await fetch(deployed, { cache: 'no-store', signal: AbortSignal.timeout(15000) });
-        if (!home.ok) throw new Error('Published application HTTP ' + home.status);
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - name: Check out the requested revision
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Set up Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Validate source, content and production build
+        env:
+          ADIGUN_SOURCE_TRANSPORT: gzip-base64-v1
+        run: npm run check
+      - name: Install Chromium for production-browser checks
+        timeout-minutes: 10
+        run: npx playwright install --with-deps chromium
+      - name: Verify the built app in desktop and narrow browsers
+        run: npm run test:e2e
+      - name: Preserve browser evidence
+        if: always()
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
+        with:
+          name: browser-evidence-${{ github.sha }}
+          path: |
+            test-results/
+            playwright-report/
+          retention-days: 7
+          if-no-files-found: ignore
+      - name: Repeat the previously failing persistence regression
+        run: npx playwright test --grep "legacy WEB bookmarks" --repeat-each=5
+      - name: Configure GitHub Pages
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+      - name: Upload the verified website
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: dist
 
-        console.log(JSON.stringify({
-          url: deployed.href,
-          sourceCommit: info.sourceCommit,
-          buildVersion: info.buildVersion,
-          contentVersion: info.contentVersion,
-          verifiedAt: new Date().toISOString()
-        }));
-        failure = null;
-        break;
-      } catch (error) {
-        failure = error;
-        console.log('Publication verification attempt ' + (attempt + 1) + ': ' + error.message);
-        if (attempt < 11) await new Promise(resolve => setTimeout(resolve, 5000));
-      }
-    }
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish the verified website
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
+      - name: Verify the published source revision
+        env:
+          ADIGUN_DEPLOYED_URL: ${{ steps.deployment.outputs.page_url }}
+          ADIGUN_EXPECTED_COMMIT: ${{ github.sha }}
+        run: |
+          node --input-type=module <<'NODE'
+          const base = process.env.ADIGUN_DEPLOYED_URL;
+          const expected = process.env.ADIGUN_EXPECTED_COMMIT;
+          if (!base || !/^[a-f0-9]{40}$/.test(expected || '')) throw new Error('Missing deployment identity.');
 
-    if (failure) throw failure;
-    NODE
+          const deployed = new URL(base);
+          if (deployed.protocol !== 'https:' || deployed.hostname !== 'adigun-aibible.hephzibahbehulah.com' || deployed.pathname !== '/') {
+            throw new Error('Unexpected deployment URL: ' + deployed.href);
+          }
+
+          const receipt = new URL('build-info.json', deployed);
+          let failure;
+          for (let attempt = 0; attempt < 12; attempt++) {
+            try {
+              receipt.searchParams.set('verify', expected + '-' + attempt);
+              const response = await fetch(receipt, { cache: 'no-store', signal: AbortSignal.timeout(15000) });
+              if (!response.ok) throw new Error('Receipt HTTP ' + response.status);
+
+              const info = await response.json();
+              if (info.sourceCommit !== expected) throw new Error('The public receipt has not reached this source revision.');
+
+              const home = await fetch(deployed, { cache: 'no-store', signal: AbortSignal.timeout(15000) });
+              if (!home.ok) throw new Error('Published application HTTP ' + home.status);
+
+              console.log(JSON.stringify({
+                url: deployed.href,
+                sourceCommit: info.sourceCommit,
+                buildVersion: info.buildVersion,
+                contentVersion: info.contentVersion,
+                verifiedAt: new Date().toISOString()
+              }));
+              failure = null;
+              break;
+            } catch (error) {
+              failure = error;
+              console.log('Publication verification attempt ' + (attempt + 1) + ': ' + error.message);
+              if (attempt < 11) await new Promise(resolve => setTimeout(resolve, 5000));
+            }
+          }
+
+          if (failure) throw failure;
+          NODE
