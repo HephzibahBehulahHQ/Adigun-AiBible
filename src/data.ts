@@ -3,7 +3,7 @@ import installedCatalog from '../data/editions/catalog.json';
 import { requirePermission } from './permissions';
 import { AsyncLruCache, SOURCE_BOOK_CACHE_LIMIT, SOURCE_MANIFEST_CACHE_LIMIT } from './source-cache.ts';
 import { readSourceJson } from './source-codec.ts';
-const base = import.meta.env?.BASE_URL || '/Adigun-AiBible/';
+const base = import.meta.env?.BASE_URL || '/';
 export const assetUrl = (path: string) => `${base}${path}`;
 export const bibleEditionIds: string[] = ['eng-web', ...installedCatalog.editions.filter(edition => edition.corpus === 'bible').map(edition => edition.id)];
 export function presetEditionId(preset: Preferences['preset']): string { return preset === 'de' ? 'deu1912' : preset === 'yo' ? 'yor' : 'eng-web'; }
