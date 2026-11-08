@@ -86,7 +86,7 @@ jobs:
           const expected = process.env.ADIGUN_EXPECTED_COMMIT;
           if (!base || !/^[a-f0-9]{40}$/.test(expected || '')) throw new Error('Missing deployment identity.');
           const receipt = new URL('build-info.json', base);
-          if (receipt.protocol !== 'https:' || receipt.hostname !== 'hephzibahbehulahhq.github.io' || !receipt.pathname.startsWith('/Adigun-AiBible/')) throw new Error('Unexpected deployment URL.');
+          if (receipt.protocol !== 'https:' || receipt.hostname !== 'adigun-aibible.hephzibahbehulah.com' || receipt.pathname !== '/') throw new Error('Unexpected deployment URL.');
           let failure;
           for (let attempt = 0; attempt < 12; attempt++) {
             try {
