@@ -77,7 +77,7 @@ test.describe('twelve-edition built catalog and source reading', () => {
           const metadata = editions.find(edition => edition.id === id)!;
           await expect(page.locator('.reader-title .eyebrow')).toHaveText(metadata.name);
           await expect(page.locator('.scripture')).toHaveAttribute('lang', metadata.language);
-          await expect(page.getByText(`Gen Z study paraphrase awaits editorial approval. You are reading the unchanged source wording in ${metadata.name}.`, { exact: true })).toBeVisible();
+          await expect(page.getByText('Reviewed study paraphrases are labelled where available. All other verses retain their named source wording.', { exact: true })).toBeVisible();
           for (const number of [16, 17, 18]) {
             await exactVerse(page, number, sourceVerse(id, 3, number));
             await expect(page.locator(`#verse-${number}`)).toHaveClass(/\bselected\b/);
