@@ -30,7 +30,7 @@ function harnessFor(t) {
 async function dataModule(t) {
   const harness = harnessFor(t);
   globalThis.fetch = async address => {
-    const path = String(address).replace(/^\/Adigun-AiBible\//, '');
+    const path = String(address).replace(/^\/(?:Adigun-AiBible\/)?/, '');
     harness.calls.set(path, (harness.calls.get(path) || 0) + 1);
     return Response.json(await json(path));
   };
