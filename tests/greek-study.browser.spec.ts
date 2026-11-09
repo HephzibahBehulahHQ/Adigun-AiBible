@@ -114,7 +114,7 @@ test('a selected source book and all five notices verify after genuine offline r
     expect(await page.getByTestId('greek-main-text').textContent()).toBe(sourceText('Phm', '1', '1'));
     await expect(page.getByTestId('greek-download-status')).toHaveText(verified);
     const actual = await page.evaluate(async ({ paths, prefix }) => {
-      const base = new URL('/Adigun-AiBible/', location.origin), result = [];
+      const base = new URL('/', location.origin), result = [];
       for (const path of paths) {
         const response = await fetch(new URL(prefix + path, base)); if (!response.ok) throw new Error(`Missing offline source notice or book: ${path}`);
         const bytes = await response.arrayBuffer(), sha256 = [...new Uint8Array(await crypto.subtle.digest('SHA-256', bytes))].map(byte => byte.toString(16).padStart(2, '0')).join('');
