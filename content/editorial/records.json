@@ -1,6 +1,132 @@
 {
   "schemaVersion": 1,
   "comparisons": [],
-  "content": [],
+  "content": [
+    {
+      "id": "genz-draft-eng-web-gen-1-1",
+      "kind": "paraphrase",
+      "locale": "en",
+      "register": "genz",
+      "text": "At the start of everything, God created the heavens and the earth.",
+      "origin": "ai_assisted",
+      "basePassageIds": [
+        "eng-web:GEN:1:1"
+      ],
+      "reviewedSourceHashes": {
+        "eng-web:GEN:1:1": "e1e1f5e1738c9f78a106da32b1b203168c41b74d4a4f8d3e0ef4d1f7759ea766"
+      },
+      "sourceIds": [
+        "https://ebible.org/engwebp/",
+        "https://ebible.org/engwebp/copyright.htm"
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": [
+          "eng-web:GEN:1:1"
+        ],
+        "notes": "AI-assisted pilot draft. Awaiting the project owner’s review of this exact wording."
+      }
+    },
+    {
+      "id": "genz-draft-eng-web-gen-1-2",
+      "kind": "paraphrase",
+      "locale": "en",
+      "register": "genz",
+      "text": "The earth had no shape and was empty. Darkness covered the deep, and God’s Spirit hovered over the waters.",
+      "origin": "ai_assisted",
+      "basePassageIds": [
+        "eng-web:GEN:1:2"
+      ],
+      "reviewedSourceHashes": {
+        "eng-web:GEN:1:2": "9d91d29443beddc745b58a90073f1a3a72a256fb74589ed13227eaed540642e7"
+      },
+      "sourceIds": [
+        "https://ebible.org/engwebp/",
+        "https://ebible.org/engwebp/copyright.htm"
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": [
+          "eng-web:GEN:1:2"
+        ],
+        "notes": "AI-assisted pilot draft. Awaiting the project owner’s review of this exact wording."
+      }
+    },
+    {
+      "id": "genz-draft-eng-web-gen-1-3",
+      "kind": "paraphrase",
+      "locale": "en",
+      "register": "genz",
+      "text": "God said, “Let there be light,” and light appeared.",
+      "origin": "ai_assisted",
+      "basePassageIds": [
+        "eng-web:GEN:1:3"
+      ],
+      "reviewedSourceHashes": {
+        "eng-web:GEN:1:3": "cb4a1430431bea285e7b033d04f804b09c7668deadba586d3626b0683ad7441c"
+      },
+      "sourceIds": [
+        "https://ebible.org/engwebp/",
+        "https://ebible.org/engwebp/copyright.htm"
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": [
+          "eng-web:GEN:1:3"
+        ],
+        "notes": "AI-assisted pilot draft. Awaiting the project owner’s review of this exact wording."
+      }
+    },
+    {
+      "id": "genz-draft-eng-web-gen-1-4",
+      "kind": "paraphrase",
+      "locale": "en",
+      "register": "genz",
+      "text": "God saw that the light was good, then separated the light from the darkness.",
+      "origin": "ai_assisted",
+      "basePassageIds": [
+        "eng-web:GEN:1:4"
+      ],
+      "reviewedSourceHashes": {
+        "eng-web:GEN:1:4": "3c41138c7007002504deb57c0b6eb993af328252c61ee2fd39937123e1be71f6"
+      },
+      "sourceIds": [
+        "https://ebible.org/engwebp/",
+        "https://ebible.org/engwebp/copyright.htm"
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": [
+          "eng-web:GEN:1:4"
+        ],
+        "notes": "AI-assisted pilot draft. Awaiting the project owner’s review of this exact wording."
+      }
+    },
+    {
+      "id": "genz-draft-eng-web-gen-1-5",
+      "kind": "paraphrase",
+      "locale": "en",
+      "register": "genz",
+      "text": "God named the light Day and the darkness Night. Evening came, then morning: day one.",
+      "origin": "ai_assisted",
+      "basePassageIds": [
+        "eng-web:GEN:1:5"
+      ],
+      "reviewedSourceHashes": {
+        "eng-web:GEN:1:5": "0dce18f172a1a967fd2892300f6e619c8c25fb12e77ad233243170498c5aa9aa"
+      },
+      "sourceIds": [
+        "https://ebible.org/engwebp/",
+        "https://ebible.org/engwebp/copyright.htm"
+      ],
+      "review": {
+        "status": "draft",
+        "evidenceIds": [
+          "eng-web:GEN:1:5"
+        ],
+        "notes": "AI-assisted pilot draft. Awaiting the project owner’s review of this exact wording."
+      }
+    }
+  ],
   "coverage": []
 }
