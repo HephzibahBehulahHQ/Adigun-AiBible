@@ -70,7 +70,7 @@ test('actual historical downloads count only while every cached source and notic
   const didache = offline.getByRole('listitem').filter({ hasText: 'Didache — Lightfoot English transcription' });
   await expect(didache.locator('.extended-pack-state')).toHaveText('complete');
   const changed = await page.evaluate(async () => {
-    const base = new URL('/Adigun-AiBible/', location.origin), metadata = await (await fetch(new URL('offline-manifest.json', base))).json();
+    const base = new URL('/', location.origin), metadata = await (await fetch(new URL('offline-manifest.json', base))).json();
     const notice = new URL('data/historical/didache-lightfoot-notice.txt', base); let changed = 0;
     for (const name of await caches.keys()) {
       if (name !== `${metadata.cachePrefix}content-${metadata.contentVersion}` && !name.startsWith(`${metadata.cachePrefix}pack-${metadata.contentVersion}-`)) continue;
@@ -84,7 +84,7 @@ test('actual historical downloads count only while every cached source and notic
   await expect(didache.locator('.extended-pack-state')).toHaveText('invalid');
   await expect(didache.getByText('A cached file is missing or differs from this build. It is not counted as complete.', { exact: true })).toBeVisible();
   await page.evaluate(async () => {
-    const base = new URL('/Adigun-AiBible/', location.origin), metadata = await (await fetch(new URL('offline-manifest.json', base))).json();
+    const base = new URL('/', location.origin), metadata = await (await fetch(new URL('offline-manifest.json', base))).json();
     for (const name of await caches.keys()) if (name === `${metadata.cachePrefix}content-${metadata.contentVersion}` || name.startsWith(`${metadata.cachePrefix}pack-${metadata.contentVersion}-`)) await (await caches.open(name)).delete(new URL('data/historical/didache-lightfoot-notice.txt', base));
   });
   await offline.getByRole('button', { name: 'Check cached content packs', exact: true }).click();
