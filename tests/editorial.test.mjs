@@ -111,7 +111,8 @@ test('all 50 original research leads survive verbatim and production has no test
   assert.equal(candidates.length,50); assert.deepEqual(candidates.map(c=>c.originalTableRow),rows);
   assert.ok(candidates.every(c=>c.status==='draft'&&c.review.status==='draft'&&c.coverageStatus==='unreviewed'));
   const registry=JSON.parse(await readFile(new URL('content/editorial/reviewers.json',root),'utf8'));
-  assert.deepEqual(registry.reviewers,[]);
+  assert.deepEqual(registry.reviewers,[{id:'github:HephzibahBehulah',displayName:'Hephzibah Behulah',kind:'human',active:true}]);
+  assert.ok(registry.reviewers.every(r=>r.kind==='human'&&!/test|fixture/i.test(`${r.id} ${r.displayName}`)));
 });
 test('publisher derives full backlog, publishes no fake approval, and fails closed on a forged approval', async () => {
   const root=await mkdtemp(join(tmpdir(),'editorial-tests-'));
