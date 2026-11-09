@@ -31,10 +31,26 @@ jobs:
           cache: npm
       - name: Install locked dependencies
         run: npm ci
-      - name: Validate source, content and production build
+      - name: Typecheck source
+        run: npm run typecheck
+      - name: Lint source
+        run: npm run lint
+      - name: Test application and source contracts
+        run: npm test
+      - name: Test backend contracts
+        run: npm run test:backend
+      - name: Validate imported content
+        run: npm run content:validate
+      - name: Typecheck production build
+        run: npm run typecheck
+      - name: Prepare and verify production content
         env:
           ADIGUN_SOURCE_TRANSPORT: gzip-base64-v1
-        run: npm run check
+        run: node scripts/prepare-content.mjs
+      - name: Build production assets
+        run: npm exec -- vite build
+      - name: Finalize production build
+        run: node scripts/finalize-build.mjs
       - name: Verify custom-domain asset paths
         run: |
           node --input-type=module <<'NODE'
