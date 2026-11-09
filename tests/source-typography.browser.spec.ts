@@ -180,7 +180,7 @@ test('both pinned fonts and their original license notices remain verifiable aft
   await expect(page.locator('#verse-16')).toBeVisible();
   await page.waitForFunction(() => !!navigator.serviceWorker.controller);
   const paths = await page.evaluate(async pins => {
-    const base = new URL('/Adigun-AiBible/', location.origin);
+    const base = new URL('/', location.origin);
     const metadata = await (await fetch(new URL('offline-manifest.json', base))).json();
     const cache = await caches.open(`${metadata.cachePrefix}shell-${metadata.buildVersion}`);
     const keys = (await cache.keys()).map(request => new URL(request.url).pathname.slice(base.pathname.length));
@@ -203,7 +203,7 @@ test('both pinned fonts and their original license notices remain verifiable aft
     await page.reload();
     await expect(page.locator('#verse-16')).toBeVisible();
     const verified = await page.evaluate(async paths => {
-      const base = new URL('/Adigun-AiBible/', location.origin), result = [];
+      const base = new URL('/', location.origin), result = [];
       for (const file of paths) {
         const response = await fetch(new URL(file.path, base), { cache: 'no-store' });
         if (!response.ok) throw new Error(`Offline font request failed: ${file.path}`);

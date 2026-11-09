@@ -36,7 +36,7 @@ test('packaged reader and search survive a complete atomic download and offline 
   await page.getByRole('button', { name: 'Download complete Bible', exact: true }).click();
   await expect(page.getByRole('status').filter({ hasText: 'and its search index are available offline.' })).toBeVisible();
   const retained = await page.evaluate(async () => {
-    const base = new URL('/Adigun-AiBible/', location.origin), metadata = await (await fetch(new URL('offline-manifest.json', base))).json();
+    const base = new URL('/', location.origin), metadata = await (await fetch(new URL('offline-manifest.json', base))).json();
     for (const name of await caches.keys()) {
       if (!name.startsWith(`${metadata.cachePrefix}pack-${metadata.contentVersion}-`)) continue;
       const cache = await caches.open(name), marker = await cache.match(new URL('__adigun_offline_pack__.json', base));
@@ -60,7 +60,7 @@ test('a corrupt cached envelope fails closed after reload and a fresh source res
   await expect(page.locator('#verse-1')).toContainText(firstVerse);
   await page.waitForFunction(() => !!navigator.serviceWorker.controller);
   const changed = await page.evaluate(async () => {
-    const base = new URL('/Adigun-AiBible/', location.origin), url = new URL('data/books/GEN.json', base);
+    const base = new URL('/', location.origin), url = new URL('data/books/GEN.json', base);
     const metadata = await (await fetch(new URL('offline-manifest.json', base))).json();
     await fetch(url); // Ensure the controlled worker has retained this public source.
     let changed = 0;
@@ -79,7 +79,7 @@ test('a corrupt cached envelope fails closed after reload and a fresh source res
     await expect(page.locator('#verse-1')).toHaveCount(0);
   } finally { await context.setOffline(false); }
   await page.evaluate(async () => {
-    const base = new URL('/Adigun-AiBible/', location.origin), metadata = await (await fetch(new URL('offline-manifest.json', base))).json();
+    const base = new URL('/', location.origin), metadata = await (await fetch(new URL('offline-manifest.json', base))).json();
     for (const name of await caches.keys()) if (name === `${metadata.cachePrefix}content-${metadata.contentVersion}` || name.startsWith(`${metadata.cachePrefix}pack-${metadata.contentVersion}-`)) await (await caches.open(name)).delete(new URL('data/books/GEN.json', base));
   });
   await page.reload();
