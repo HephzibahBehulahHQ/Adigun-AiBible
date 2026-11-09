@@ -50,7 +50,7 @@ async function fixture() {
     await mkdir(join(root, 'dist', path, '..'), { recursive: true });
     await writeFile(join(root, 'dist', path), content);
   }
-  const { manifest } = await finalizeBuild({ root, sourceCommit: 'test-only-revision' });
+  const { manifest } = await finalizeBuild({ root, base: new URL(BASE).pathname, sourceCommit: 'test-only-revision' });
   const cache = new MemoryCacheStorage(), failures = new Map(), requests = [];
   const fetch = async (input, options = {}) => {
     if (options.signal?.aborted) throw new DOMException('Cancelled', 'AbortError');
@@ -96,11 +96,11 @@ test('a corpus-only edit changes its offline version and worker, with stable ver
   const f = await fixture();
   try {
     const first = f.manifest, originalWorker = await readFile(join(f.root, 'dist/sw.js'), 'utf8');
-    const unchanged = await finalizeBuild({ root: f.root, sourceCommit: 'different-metadata-only-revision' });
+    const unchanged = await finalizeBuild({ root: f.root, base: new URL(BASE).pathname, sourceCommit: 'different-metadata-only-revision' });
     assert.equal(unchanged.manifest.contentVersion, first.contentVersion);
     assert.equal(unchanged.manifest.buildVersion, first.buildVersion);
     await writeFile(join(f.root, 'dist/data/books/GEN.json'), book('GEN', 'Synthetic source version two.'));
-    const changed = await finalizeBuild({ root: f.root, sourceCommit: 'test-only-revision-two' });
+    const changed = await finalizeBuild({ root: f.root, base: new URL(BASE).pathname, sourceCommit: 'test-only-revision-two' });
     assert.notEqual(changed.manifest.contentVersion, first.contentVersion);
     assert.notEqual(changed.manifest.buildVersion, first.buildVersion);
     assert.notEqual(await readFile(join(f.root, 'dist/sw.js'), 'utf8'), originalWorker);
