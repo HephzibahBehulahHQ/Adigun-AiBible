@@ -21,7 +21,7 @@ export default class AppErrorBoundary extends Component<Props, State> {
           <p>A problem interrupted this view. You can reload the application or return to the Bible reader. Neither action clears your saved study data.</p>
           <div className="button-row">
             <button type="button" className="primary" onClick={() => window.location.reload()}>Reload application</button>
-            <a className="secondary" href="/#/read/GEN/1?verse=1&amp;edition=eng-web">Open Bible reader</a>
+            <button type="button" className="secondary" onClick={() => { window.location.hash = '#/read/GEN/1?verse=1&edition=eng-web'; window.location.reload(); }}>Open Bible reader</button>
           </div>
         </section>
       </main>
