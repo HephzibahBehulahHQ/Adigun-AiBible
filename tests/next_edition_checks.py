@@ -27,6 +27,17 @@ def verse(edition, record):
 
 
 class NextEditionChecks(unittest.TestCase):
+    def test_generated_text_hash_normalizes_git_line_endings_but_keeps_publisher_bytes_exact(self):
+        canonical = IMPORTER.json_bytes({'text': 'cælum'})
+        windows = canonical.replace(b'\n', b'\r\n')
+        self.assertEqual(IMPORTER.canonical_generated_bytes('manifest.json', windows), canonical)
+        self.assertEqual(IMPORTER.canonical_generated_bytes('NOTICE.txt', windows), canonical)
+        self.assertEqual(IMPORTER.canonical_generated_bytes('SOURCE_NOTICE.html.txt', windows), canonical)
+        self.assertTrue(IMPORTER.generated_hash_matches('SOURCE_NOTICE.html.txt', windows, IMPORTER.sha(windows)))
+        self.assertTrue(IMPORTER.generated_hash_matches('SOURCE_NOTICE.html.txt', windows, IMPORTER.sha(canonical)))
+        changed = windows.replace('cælum'.encode(), 'caelum'.encode())
+        self.assertFalse(IMPORTER.generated_hash_matches('manifest.json', changed, IMPORTER.sha(canonical)))
+
     def test_complete_exception_inventories_reject_changed_counts_coordinates_and_offsets(self):
         for edition, count in zip(IDS, [4030, 0, 10]):
             with self.subTest(edition=edition):

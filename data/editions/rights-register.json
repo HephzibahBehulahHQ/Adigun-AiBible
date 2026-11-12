@@ -228,6 +228,12 @@
       "url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode",
       "observedOn": "2026-11-05",
       "summary": "CC BY-SA 4.0 grants reproduction, sharing and adaptation subject to attribution, indication of modifications, share-alike and no additional restrictions. This does not identify or license an uninspected third-party recording or certify a publisher draft."
+    },
+    {
+      "id": "lat-vulgate-pd",
+      "url": "https://ebible.org/latVUC/copyright.htm",
+      "observedOn": "2026-11-12",
+      "summary": "The exact publisher notice identifies the Clementine Vulgate of 1598 with the Glossa Ordinaria Migne edition 1880 and marks it Public Domain. The imported archive is Bible verse text only."
     }
   ],
   "editions": [
@@ -6023,6 +6029,205 @@
         "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
       },
       "publicationStatus": "publisher-draft"
+    },
+    {
+      "editionId": "lat-clementine1598",
+      "sourceSha256": "bf13a76cc8131fd469a48158c79d9b2adcaad15766ec53852322fb71ca25301b",
+      "verifiedOn": "2026-11-12",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "allowed",
+        "evidenceIds": [
+          "lat-vulgate-pd",
+          "ebible-pd-uses",
+          "ebible-ip-policy"
+        ],
+        "reason": "The provider-declared public-domain text may be used in applications; this does not approve generated teaching, a new translation or a connected AI provider."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "lat-vulgate-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "lat-vulgate-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "lat-vulgate-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "lat-vulgate-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "lat-vulgate-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "lat-vulgate-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "lat-vulgate-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "aiRetrieval": {
+          "state": "allowed",
+          "evidenceIds": [
+            "lat-vulgate-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "modelTraining": {
+          "state": "allowed",
+          "evidenceIds": [
+            "lat-vulgate-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "tts": {
+          "state": "allowed",
+          "evidenceIds": [
+            "lat-vulgate-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "lat-vulgate-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "No third-party recording or narrator rights have been acquired; the text archive supplies no recorded audio."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "lat-vulgate-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "lat-vulgate-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "lat-vulgate-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "lat-vulgate-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "lat-vulgate-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "lat-vulgate-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "lat-vulgate-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        }
+      },
+      "attribution": "Clementine Vulgate of 1598 with Glossa Ordinaria Migne edition 1880 in Latin. Verse text only. Source: eBible.org.",
+      "conditions": [
+        "Retain the exact Clementine Vulgate source identity, source revision and complete publisher notice with redistributed and offline copies.",
+        "The publisher marks this text Public Domain. Its general policy asks users to verify applicable intellectual-property law; this record is not an independent worldwide legal review.",
+        "The publisher ZIP archive contains Bible verse text only. No Glossa Ordinaria commentary, notes, introductions, headings, artwork or recorded audio are imported.",
+        "The profile records the 73 ordered source-book entries in this archive. It does not claim one canon for all Christian traditions or assert review of theological claims.",
+        "No provider endorsement, certification badge or independent human editorial review is asserted."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
     }
   ]
 }

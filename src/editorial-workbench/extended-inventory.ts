@@ -15,7 +15,8 @@ export function publisherInventory(value: unknown): PublisherInventoryRow[] {
   if (!object(value) || value.schemaVersion !== 1 || !Array.isArray(value.editions) || !value.editions.length) throw new Error('Publisher speaker inventory is unavailable or malformed.');
   const ids = new Set<string>();
   return value.editions.map(raw => {
-    if (!object(raw) || !id(raw.editionId) || ids.has(raw.editionId) || !hash(raw.sourceSha256) || raw.status !== 'publisher-metadata' || raw.marker !== 'wj' || raw.offsetUnit !== 'unicode-codepoint' || !count(raw.totalSpans) || !count(raw.totalVerses) || !Array.isArray(raw.books) || !raw.books.length) throw new Error('Publisher speaker counts have invalid identity or provenance.');
+    const noPublisherMarkers = object(raw) && raw.marker === 'none' && raw.offsetUnit === 'not-applicable' && raw.totalSpans === 0 && raw.totalVerses === 0;
+    if (!object(raw) || !id(raw.editionId) || ids.has(raw.editionId) || !hash(raw.sourceSha256) || raw.status !== 'publisher-metadata' || !(raw.marker === 'wj' && raw.offsetUnit === 'unicode-codepoint' || noPublisherMarkers) || !count(raw.totalSpans) || !count(raw.totalVerses) || !Array.isArray(raw.books) || !raw.books.length) throw new Error('Publisher speaker counts have invalid identity or provenance.');
     ids.add(raw.editionId);
     const books = raw.books.map(book => {
       if (!object(book) || typeof book.bookId !== 'string' || !/^[1-3]?[A-Z]{2,3}$/.test(book.bookId) || !count(book.spans) || !count(book.verses) || book.verses > book.spans) throw new Error('Publisher speaker book counts are inconsistent.');

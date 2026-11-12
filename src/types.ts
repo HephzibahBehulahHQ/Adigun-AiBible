@@ -6,8 +6,9 @@ export interface Verse { number: number; text: string; notes?: SourceNote[]; cha
 export interface Chapter { number: number; verses: Verse[]; headings?: SourceHeading[]; paragraphs?: SourceParagraph[]; offsetUnit?: string }
 export interface Book { id: string; name: string; chapters: Chapter[] }
 export interface BookInfo { id: string; name: string; chapters: number; verseCounts: number[]; verseRecordCounts?: number[] }
+export interface CanonProfile { id: string; label: string; description: string; sourceUrl: string; bookCount: number; oldTestamentBookCount?: number }
 export interface EditionRights { redistribute: boolean; adapt: boolean; offline: boolean; audio: boolean; export: boolean }
-export interface Edition { id: string; name: string; language: string; script?: string; direction?: 'ltr' | 'rtl'; nativeTitle?: string; sourceNoticeDate?: string; license: string; sourceUrl: string; licenseUrl: string; sha256?: string; attribution?: string; rights?: EditionRights; corpus?: 'bible' | 'quran'; noticePath?: string; licenseDeedUrl?: string; conditions?: string[] }
+export interface Edition { id: string; name: string; language: string; script?: string; direction?: 'ltr' | 'rtl'; nativeTitle?: string; sourceNoticeDate?: string; license: string; sourceUrl: string; licenseUrl: string; sha256?: string; attribution?: string; rights?: EditionRights; corpus?: 'bible' | 'quran'; noticePath?: string; licenseDeedUrl?: string; conditions?: string[]; canonProfile?: CanonProfile }
 export interface EditionCatalog { schemaVersion: number; editions: Edition[] }
 export interface QuranSource { schemaVersion: number; edition: Edition; surahs: {number: number; name?: string; verses: Verse[]}[] }
 export interface Manifest { schemaVersion: number; edition: Edition; books: BookInfo[]; totals: { books: number; chapters: number; verses: number } }

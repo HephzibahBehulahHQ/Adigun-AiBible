@@ -29,6 +29,9 @@ class FakeCaches {
 test('publisher totals require exact edition revisions and do not infer coverage for missing manifests', () => {
   const rows = publisherInventory(publishers), matched = matchedPublisherInventory(rows, manifests);
   assert.ok(matched.every(row => row.matched));
+  const vulgate = publishers.editions.find(row => row.editionId === 'lat-clementine1598');
+  assert.equal(vulgate.marker, 'none'); assert.equal(vulgate.offsetUnit, 'not-applicable');
+  assert.equal(vulgate.totalSpans, 0); assert.equal(vulgate.totalVerses, 0);
   const berean = matched.find(row => row.editionId === 'eng-bsb');
   assert.equal(berean.totalSpans, 2302); assert.equal(berean.totalVerses, 2047);
   assert.equal(matchedPublisherInventory(rows, []).every(row => row.sourceUnits === null && !row.matched), true);
