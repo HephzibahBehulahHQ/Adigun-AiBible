@@ -1,5 +1,12 @@
 # Project status
 
+## Current release and active bounded continuation — 11 November 2026
+
+- Verified remote `main` before this increment: `d9862111ec97f35d55ff5bcac733746a8c2675d4`, merged PR #40 (five independently approved Genesis 1:1–5 study paraphrases). [Production workflow 42578196748](https://github.com/HephzibahBehulahHQ/Adigun-AiBible/actions/runs/42578196748) completed successfully on 9 November: required build, source, browser, persistence and Pages deployment/receipt verification steps all succeeded. The custom-domain homepage previously had an incorrect asset base; the current workflow enforces root `/assets/` paths and checks the deployed source revision. A fresh independent public-browser check from this execution environment is not available; do not report it as newly performed.
+- Bounded next increment: feature branch `codex/startup-recovery-20261111`, from the exact verified `main` SHA above. Add a React root render error boundary and a browser regression that intentionally blocks a lazy-workspace chunk, verifies actionable recovery, then reloads the real Bible reader. This is a resilience improvement, not a replacement for correct hosting or successful source loading. The existing editorial, licensed-content, rights and safety gates remain unchanged.
+- Release gate: the new PR must pass required CI before merging; after merge verify the exact new public `build-info.json` receipt and deployment workflow. Never present pushed changes as already deployed.
+- Follow-up: maintain small independent feature increments and deploy each accepted PR; do not accumulate a large unmerged queue. Full Version 3 remains incomplete, with externally gated content/approval/provider requirements tracked in the feature matrix.
+
 ## Active continuation — 5 November 2026 (Europe/Berlin)
 
 - Repository: `HephzibahBehulahHQ/Adigun-AiBible`. Active implementation branch: `codex/speech-collections-20261105`, based on the accepted main and documentation handoff `467c008`.
