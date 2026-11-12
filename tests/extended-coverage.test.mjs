@@ -37,7 +37,7 @@ test('publisher totals require exact edition revisions and do not infer coverage
   assert.equal(matchedPublisherInventory(rows, []).every(row => row.sourceUnits === null && !row.matched), true);
   const changed = structuredClone(manifests); changed.find(row => row.edition.id === 'eng-bsb').edition.sha256 = 'a'.repeat(64);
   assert.equal(matchedPublisherInventory(rows, changed).find(row => row.editionId === 'eng-bsb').matched, false);
-  const forged = structuredClone(publishers); forged.editions[0].totalSpans++;
+  const forged = structuredClone(publishers); forged.editions.find(row => row.totalSpans > 0).totalSpans++;
   assert.throws(() => publisherInventory(forged), /totals/);
 });
 

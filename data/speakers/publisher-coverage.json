@@ -7,7 +7,7 @@
       "sourceSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -414,7 +414,7 @@
       "sourceSha256": "af668fb39d9c96ceddc3af69cb22db809770d09e7999012aacdaedf85eb5de16",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -821,7 +821,7 @@
       "sourceSha256": "afa5abe34101cd7ce7a49f7c45d8d34449721a3eafe8f20dd7a1acee543ed00b",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -1635,7 +1635,7 @@
       "sourceSha256": "6c41b8020cba9cf7041689f2356c55859e28023405537388be08bad93df2b050",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -2042,7 +2042,7 @@
       "sourceSha256": "653e9f1d8487de46e11574165a6355d3135ae378fb2198ee4128dedc06c8ca56",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -2449,7 +2449,7 @@
       "sourceSha256": "7eb1df2a434f5bbd831591aa96c08e94b900b1458fda74ccf1d1739d5af73619",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -2856,7 +2856,7 @@
       "sourceSha256": "402240da209b017c67a31b63773b42471ef7e2513aa76ef067f34af907537270",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -3263,7 +3263,7 @@
       "sourceSha256": "fcdeac5aa1ebf857835a41bfa11f8fe5685c31ea602418a2998d4c870488f54b",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -3670,7 +3670,7 @@
       "sourceSha256": "f0b20b2473b3ed30dcee584b2311b6a1db27b32e714f1a2b0e97d01ba179f284",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -4077,7 +4077,7 @@
       "sourceSha256": "71a08dafdd8accb36a09fe757ab111a29b18cd25ade4b89013b542dc01d44b6a",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -4484,7 +4484,7 @@
       "sourceSha256": "0ecc099d7d8ad4cf6fedd3a35d3792423e38a70e4c23e8a9102b5164810298b5",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -4891,7 +4891,7 @@
       "sourceSha256": "a85f19f62f9e0c9d9d4b8735b2149772a745576ff4b73cfa15d17a6b4b2cd8ae",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -5298,7 +5298,7 @@
       "sourceSha256": "9d2245ddc8b263cd5331225d8c3873a4a5d2471eaad9ea5a5d8a527625443ef7",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -5705,7 +5705,7 @@
       "sourceSha256": "db393ba4b0a91b4f631b35b0d27ba796514ff84182de06997669f4a14da52b21",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -6112,7 +6112,7 @@
       "sourceSha256": "2e2859611073a1a023f92e1fd279078f5cedc5f4d97659fc2f8f84945450301d",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -6519,7 +6519,7 @@
       "sourceSha256": "070404da2e13e641b7550b50d7e777480b2cc2667e9669f2194d909ca04cd68a",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -6926,7 +6926,7 @@
       "sourceSha256": "bbbabb35e8373c718a3eb1af4e30ba5efeadd08fc047abde644709bdd7951adf",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -7333,7 +7333,7 @@
       "sourceSha256": "1b725d623e86e639516b59cc9c292184066f2b2ca58df2e500f2878883dc3938",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -7740,7 +7740,7 @@
       "sourceSha256": "ed5a6d757d6532bc8a1cce2016c7ff53e7d9c9e0176c502261557e8de0fd85dc",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -8147,7 +8147,7 @@
       "sourceSha256": "e8f12f3f3e5856a859034ac5614a8a67d112c7afa59c2af9f42be46e45d68198",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -8554,7 +8554,7 @@
       "sourceSha256": "d1913e04db9f4e2fc3405a98e40a9358ef332ac9b463d0d2e8aeb0b6b90d7014",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -8961,7 +8961,7 @@
       "sourceSha256": "54a1c70f875ac5c4315259665d7e1ad153b3b90f28a3a868db9cbd4c56e6e1d0",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -9368,7 +9368,7 @@
       "sourceSha256": "40f38bfe0af0a6df4f31d2873cc76902caf576b3f54217d2c86adee6d57e196b",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -9775,7 +9775,7 @@
       "sourceSha256": "24cea17bdf324d7f59ea40367e6340a3b52f8d0157dcd68c6dc55df3302bb5fb",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -10182,7 +10182,7 @@
       "sourceSha256": "faa35b12d04bdacda78b5b53b35bc241d576c63e5d6cd5bccd99bb337b8f7ade",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -10589,7 +10589,7 @@
       "sourceSha256": "dbda2c381fd0cbf2bf0f65dac2052db6f728908a8b50a7518fd5ba8c9711dc60",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -10996,7 +10996,7 @@
       "sourceSha256": "b5397717e5031db82ce6c595ae1d3803626aaa3d11ce8750b31d5d766b3568e1",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -11403,7 +11403,7 @@
       "sourceSha256": "ca352f5888aa64896069f57cea898abadb3f2f851a1d4f555ab088b2a601e960",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -11810,7 +11810,7 @@
       "sourceSha256": "bf13a76cc8131fd469a48158c79d9b2adcaad15766ec53852322fb71ca25301b",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -12259,7 +12259,7 @@
       "sourceSha256": "7e267290077a9ac9432ac4bd95e53096c77bf9aedc8ba4020503402863f2a7f0",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -12708,7 +12708,7 @@
       "sourceSha256": "179d9cbd450da032f259f60914af3d61f6cb5e03cd8d32538872401896f9b5d9",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
@@ -13115,7 +13115,7 @@
       "sourceSha256": "a9fc8665d3c1e5e806b2b33456c96d84cc4866cc6f9d9ab8d36d9e1c1ccb0e2a",
       "status": "publisher-metadata",
       "marker": "none",
-      "offsetUnit": "unicode-codepoint",
+      "offsetUnit": "not-applicable",
       "totalSpans": 0,
       "totalVerses": 0,
       "books": [
