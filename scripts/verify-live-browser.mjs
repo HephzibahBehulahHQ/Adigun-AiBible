@@ -43,8 +43,9 @@ try {
 
       const reader = new URL(deployed.href);
       reader.hash = '/read/GEN/1?verse=1&edition=eng-web';
-      const readerResponse = await page.goto(reader.href, { waitUntil: 'domcontentloaded', timeout: 30_000 });
-      if (!readerResponse?.ok()) throw new Error('The public reader did not return HTTP 2xx.');
+      // This is a same-document hash navigation; the successful homepage response
+      // above covers HTTP status, while the verse assertion below covers the reader.
+      await page.goto(reader.href, { waitUntil: 'domcontentloaded', timeout: 30_000 });
       await page.waitForFunction(
         () => document.querySelector('#verse-1 > p')?.textContent?.toLowerCase().includes('beginning') === true,
         undefined,
