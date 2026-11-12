@@ -77,6 +77,35 @@ test('a bookmark and personal note persist after reload', async ({ page }) => {
   await expect(page.locator('#verse-note')).toHaveValue(note);
 });
 
+test('custom reading plans retain their edition, pause state and completion history after reload', async ({ page }) => {
+  const title = 'Browser acceptance · private reading plan';
+  await page.goto(route('plans', 'GEN', 1, 1, 'eng-web'));
+  await expect(page.getByRole('heading', { name: 'Flexible reading plans', exact: true })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Create reading plan', exact: true })).toBeEnabled();
+  await page.getByLabel('Plan type', { exact: true }).selectOption('custom');
+  await page.getByLabel('Plan name (optional)', { exact: true }).fill(title);
+  await page.getByRole('button', { name: 'Create reading plan', exact: true }).click();
+  const detail = page.locator('.workspace-card').filter({ has: page.getByRole('heading', { name: title, exact: true }) });
+  await expect(detail).toContainText('Edition: eng-web');
+  await expect(detail).toContainText('0 of 1 reading sessions completed');
+  await expect(detail).toContainText('Scheduled ');
+  await page.getByRole('button', { name: 'Pause plan', exact: true }).click();
+  await expect(detail.locator('.workspace-badge')).toHaveText('Paused');
+
+  await page.reload();
+  const reloaded = page.locator('.workspace-card').filter({ has: page.getByRole('heading', { name: title, exact: true }) });
+  await expect(reloaded).toContainText('Edition: eng-web');
+  await expect(reloaded.locator('.workspace-badge')).toHaveText('Paused');
+  await page.getByRole('button', { name: 'Resume from today', exact: true }).click();
+  await expect(reloaded.locator('.workspace-badge')).toHaveText('Active');
+  await page.getByLabel('Completed: GEN 1:1', { exact: true }).check();
+  await expect(reloaded).toContainText('1 of 1 reading sessions completed');
+  await page.reload();
+  const completed = page.locator('.workspace-card').filter({ has: page.getByRole('heading', { name: title, exact: true }) });
+  await expect(completed).toContainText('1 of 1 reading sessions completed');
+  await expect(completed.getByText('Completion history (1)', { exact: true })).toBeVisible();
+});
+
 for (const edition of [
   { preset: 'en', id: 'eng-web', path: 'data' },
   { preset: 'de', id: 'deu1912', path: 'data/editions/deu1912' },
