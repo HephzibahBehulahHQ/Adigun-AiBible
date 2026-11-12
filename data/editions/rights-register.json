@@ -240,6 +240,12 @@
       "url": "https://ebible.org/engDRA/copyright.htm",
       "observedOn": "2026-11-12",
       "summary": "The individual eBible notice identifies the Douay-Rheims American Edition of 1899, credits the English College, Douai, and declares this text Public Domain."
+    },
+    {
+      "id": "hat-1985-pd",
+      "url": "https://ebible.org/hat/copyright.htm",
+      "observedOn": "2026-11-12",
+      "summary": "The individual eBible.org notice identifies Bib La, the Holy Bible in Haitian Creole, and declares it Public Domain due to publication without copyright notice in 1985 and no subsequent registration within five years."
     }
   ],
   "editions": [
@@ -6424,6 +6430,204 @@
         "eBible.org identifies this exact text as Public Domain and describes copying, distribution, adaptation, printing, and sale. Its policy asks users to verify applicable intellectual-property law; this record does not claim independent worldwide legal review.",
         "Only the archive’s Bible verse text is imported. No introductions, study notes, artwork, or recorded audio are included.",
         "The profile describes this publisher archive’s 73 ordered book entries and 46-entry Old Testament boundary; it does not claim one canon for all Christian traditions.",
+        "No provider endorsement or independent human editorial review is asserted."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "hat-1985",
+      "sourceSha256": "179d9cbd450da032f259f60914af3d61f6cb5e03cd8d32538872401896f9b5d9",
+      "verifiedOn": "2026-11-12",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "allowed",
+        "evidenceIds": [
+          "hat-1985-pd",
+          "ebible-pd-uses",
+          "ebible-ip-policy"
+        ],
+        "reason": "The provider-declared public-domain text may be used in applications; this does not approve generated teaching, a new translation or a connected AI provider."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hat-1985-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hat-1985-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hat-1985-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hat-1985-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hat-1985-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hat-1985-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hat-1985-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "aiRetrieval": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hat-1985-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "modelTraining": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hat-1985-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "tts": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hat-1985-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "hat-1985-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "No third-party recording or narrator rights have been acquired; the text archive supplies no recorded audio."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hat-1985-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hat-1985-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hat-1985-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hat-1985-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hat-1985-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hat-1985-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hat-1985-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Permitted for this exact provider-declared public-domain text under its individual notice and the provider use policy; retain source identity and the recorded conditions."
+        }
+      },
+      "attribution": "Bib La. The Holy Bible in Haitian Creole, Haitian Creole Bible 1985. Public domain as declared by eBible.org. Source: eBible.org.",
+      "conditions": [
+        "Retain the exact Bib La / Haitian Creole Bible 1985 identity and complete eBible.org source notice with redistributed and offline copies.",
+        "eBible.org states this edition is Public Domain due to publication without copyright notice in 1985 and no subsequent registration within five years. This is the provider’s rights statement, not an independent worldwide legal opinion.",
+        "Only the archive’s Bible verse text is imported. The source archive omits formatting, paragraph breaks, notes, introductions and noncanonical section titles.",
         "No provider endorsement or independent human editorial review is asserted."
       ],
       "cache": {
