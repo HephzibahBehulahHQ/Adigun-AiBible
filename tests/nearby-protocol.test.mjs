@@ -31,6 +31,17 @@ test('references exclude private edition preferences and unknown message fields'
   assert.throws(() => validatePayload({ type: 'reference', reference: { bookId: 'GEN', chapter: 1, verse: 1, endVerse: 41 } }), /reference/);
 });
 
+test('shared detective mission messages enforce the known mission and bounded clue sequence', () => {
+  assert.deepEqual(validatePayload({ type: 'mission-state', missionId: 'good-samaritan-evidence', nextClueIndex: 0, status: 'active' }), { type: 'mission-state', missionId: 'good-samaritan-evidence', nextClueIndex: 0, status: 'active' });
+  assert.deepEqual(validatePayload({ type: 'mission-state', missionId: 'good-samaritan-evidence', nextClueIndex: 5, status: 'complete' }), { type: 'mission-state', missionId: 'good-samaritan-evidence', nextClueIndex: 5, status: 'complete' });
+  assert.deepEqual(validatePayload({ type: 'mission-answer', missionId: 'good-samaritan-evidence', clueIndex: 0, clueId: 'questioner', answerId: 'lawyer' }), { type: 'mission-answer', missionId: 'good-samaritan-evidence', clueIndex: 0, clueId: 'questioner', answerId: 'lawyer' });
+  assert.deepEqual(validatePayload({ type: 'mission-result', missionId: 'good-samaritan-evidence', clueIndex: 0, clueId: 'questioner', answerId: 'lawyer', correct: true }), { type: 'mission-result', missionId: 'good-samaritan-evidence', clueIndex: 0, clueId: 'questioner', answerId: 'lawyer', correct: true });
+  assert.throws(() => validatePayload({ type: 'mission-state', missionId: 'invented-mission', nextClueIndex: 0, status: 'active' }), /mission state/);
+  assert.throws(() => validatePayload({ type: 'mission-state', missionId: 'good-samaritan-evidence', nextClueIndex: 5, status: 'active' }), /mission state/);
+  assert.throws(() => validatePayload({ type: 'mission-answer', missionId: 'good-samaritan-evidence', clueIndex: 5, clueId: 'questioner', answerId: 'lawyer' }), /mission answer/);
+  assert.throws(() => validatePayload({ type: 'mission-answer', missionId: 'good-samaritan-evidence', clueIndex: 0, clueId: 'questioner', answerId: 'lawyer', privateNotes: 'not shared' }), /invalid/);
+});
+
 test('multi-chunk receipt verifies exact byte count, ordering and SHA before returning content', async () => {
   const bytes = new TextEncoder().encode('Yorùbá · Ελληνικά · עברית\n'.repeat(800));
   const chunks = encodeChunks(bytes), transferId = crypto.randomUUID();
@@ -47,3 +58,4 @@ test('multi-chunk receipt verifies exact byte count, ordering and SHA before ret
   await assert.rejects(badHash.add({ type: 'pack-chunk', transferId, index: chunks.length - 1, data: chunks.at(-1) }), /checksum/);
   assert.throws(() => encodeChunks(new Uint8Array(250_001)), /250 KB/);
 });
+
