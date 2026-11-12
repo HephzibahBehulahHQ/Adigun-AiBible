@@ -82,7 +82,7 @@ test('custom reading plans retain their edition, pause state and completion hist
   await page.goto(`${route('study', 'GEN', 1, 1, 'eng-web')}&tab=plans`);
   await expect(page.getByRole('heading', { name: 'Flexible reading plans', exact: true })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Create reading plan', exact: true })).toBeEnabled();
-  await page.getByLabel('Plan type', { exact: true }).selectOption('custom');
+  await page.locator('form.workspace-card select').selectOption('custom');
   await page.getByLabel('Plan name (optional)', { exact: true }).fill(title);
   await page.getByRole('button', { name: 'Create reading plan', exact: true }).click();
   const detail = page.locator('.workspace-card').filter({ has: page.getByRole('heading', { name: title, exact: true }) });
