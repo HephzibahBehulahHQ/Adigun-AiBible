@@ -27,7 +27,7 @@ test('nine exact historical editions retain independent source identity, notices
     assert.equal(provenance.displayTextMember, `${edition.providerId}_vpl.txt`);
     assert.equal(provenance.totals.verses, verses);
     const notice = readFileSync(new URL(`../data/editions/${id}/NOTICE.txt`, import.meta.url));
-    assert.equal(hash(notice), provenance.generatedFileSha256['NOTICE.txt']);
+    assert.equal(hash(notice.toString('utf8').replace(/\r\n/g, '\n')), provenance.generatedFileSha256['NOTICE.txt']);
     assert.match(notice.toString(), /Public Domain/);
     assert.ok(notice.toString().includes(edition.licenseUrl));
     assert.ok(notice.toString().includes('https://ebible.org/legal.php'));
@@ -57,7 +57,7 @@ test('new source operation decisions bind individual evidence and deny changed r
 });
 
 test('source formatting exceptions remain narrowly pinned and never rewrite original text', () => {
-  execFileSync('python3', ['-B', fileURLToPath(new URL('./edition_expansion_checks.py', import.meta.url))], { stdio: 'pipe' });
+  execFileSync(process.platform === 'win32' ? 'python' : 'python3', ['-B', fileURLToPath(new URL('./edition_expansion_checks.py', import.meta.url))], { stdio: 'pipe' });
 });
 
 test('new editions remain within the current bounded batch file budget without claiming 100 editions', () => {

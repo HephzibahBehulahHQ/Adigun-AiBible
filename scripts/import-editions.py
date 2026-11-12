@@ -1859,6 +1859,48 @@ SOURCES.update({'fra-darby2024': {'name': 'Bible J.N. Darby (BPC 2024, v2.0)',
                                                  'textSha256': '73d9196e858aac417ae144ff55fd9f999e4537530a9aefd075c5e4c1e031fc14',
                                                  'xmlNbspOffset': 103}]}}})
 
+SOURCES['lat-clementine1598'] = {
+    'name': 'Clementine Vulgate 1598', 'language': 'la', 'corpus': 'bible', 'publisher': 'eBible.org',
+    'translator': 'Jerome', 'revision': 'Clementine Vulgate of 1598; publisher title also identifies the Glossa Ordinaria Migne edition 1880; verse text only',
+    'abbreviation': 'VULC', 'nativeTitle': 'Bibbia Vulgata Clementina na 1598', 'script': 'Latn', 'direction': 'ltr',
+    'sourceNoticeDate': '2014-08-23', 'sourceUpdatedAt': '2025-12-12', 'rightsObservedAt': '2026-11-12',
+    'sourceUrl': 'https://ebible.org/latVUC/',
+    'formatUrl': 'https://ebible.org/find/details.php?id=latVUC',
+    'downloadUrl': 'https://ebible.org/Scriptures/latVUC_vpl.zip',
+    'licenseUrl': 'https://ebible.org/latVUC/copyright.htm', 'license': 'Public domain',
+    'licenseIdentifier': 'LicenseRef-Public-Domain',
+    'attribution': 'Clementine Vulgate of 1598 with Glossa Ordinaria Migne edition 1880 in Latin. Verse text only. Source: eBible.org.',
+    'sha256': 'bf13a76cc8131fd469a48158c79d9b2adcaad15766ec53852322fb71ca25301b',
+    'xmlSha256': '5f6ad319ea6877a1cfb10e55794f43f43922f346ad3064e35803252ec70cb9cf',
+    'textSha256': '41de172765e2209386d273d352695df54dc2ac85a8ce522fd807f52f6e3fc398',
+    'noticeSha256': '05651383a53a2759af4656570a766e62ce0fb021dcdeef0f3c7bd1559041f91f',
+    'bracketExceptionCount': 1826,
+    'bracketExceptionInventorySha256': '060b65dc2f9e8c9dfb71fed57834f74ecec9de3913a445c34cbef32d9031e556',
+    'bracketExceptionScope': '1826 exact TXT square-bracket positions differ from the XML representation. Display preserves the complete publisher TXT; no wording, punctuation or book/chapter/verse numbering is changed.',
+    'providerId': 'latVUC', 'downloadBytes': 4920214, 'canon': 'latin-vulgate-73',
+    'canonProfile': {
+        'id': 'latin-vulgate-73', 'label': 'Clementine Vulgate source list · 73 books',
+        'description': 'The list and order describe the 73 book entries supplied in this publisher archive. They record this edition’s coverage and do not claim one canon for all Christian traditions.',
+        'sourceUrl': 'https://ebible.org/find/details.php?id=latVUC', 'bookCount': 73, 'oldTestamentBookCount': 46,
+    },
+    'bookOrder': [
+        ('GEN','Genesis'),('EXO','Exodus'),('LEV','Leviticus'),('NUM','Numbers'),('DEU','Deuteronomy'),('JOS','Joshua'),('JDG','Judges'),('RUT','Ruth'),('1SA','1 Samuel'),('2SA','2 Samuel'),('1KI','1 Kings'),('2KI','2 Kings'),('1CH','1 Chronicles'),('2CH','2 Chronicles'),('EZR','Ezra'),('NEH','Nehemiah'),('EST','Esther'),('JOB','Job'),('PSA','Psalms'),('PRO','Proverbs'),('ECC','Ecclesiastes'),('SNG','Song of Solomon'),('ISA','Isaiah'),('JER','Jeremiah'),('LAM','Lamentations'),('EZK','Ezekiel'),('DAN','Daniel'),('HOS','Hosea'),('JOL','Joel'),('AMO','Amos'),('OBA','Obadiah'),('JON','Jonah'),('MIC','Micah'),('NAM','Nahum'),('HAB','Habakkuk'),('ZEP','Zephaniah'),('HAG','Haggai'),('ZEC','Zechariah'),('MAL','Malachi'),
+        ('TOB','Tobit'),('JDT','Judith'),('WIS','Wisdom'),('SIR','Sirach'),('BAR','Baruch'),('1MA','1 Maccabees'),('2MA','2 Maccabees'),
+        ('MAT','Matthew'),('MRK','Mark'),('LUK','Luke'),('JHN','John'),('ACT','Acts'),('ROM','Romans'),('1CO','1 Corinthians'),('2CO','2 Corinthians'),('GAL','Galatians'),('EPH','Ephesians'),('PHP','Philippians'),('COL','Colossians'),('1TH','1 Thessalonians'),('2TH','2 Thessalonians'),('1TI','1 Timothy'),('2TI','2 Timothy'),('TIT','Titus'),('PHM','Philemon'),('HEB','Hebrews'),('JAS','James'),('1PE','1 Peter'),('2PE','2 Peter'),('1JN','1 John'),('2JN','2 John'),('3JN','3 John'),('JUD','Jude'),('REV','Revelation'),
+    ],
+    'expectedTotals': {'books': 73, 'chapters': 1334, 'verses': 35809},
+    'rightsEvidenceUrls': ['https://ebible.org/legal.php', 'https://ebible.org/publicdomain.htm'],
+    'preserveSourceNotice': True,
+    'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': True, 'export': True},
+    'conditions': [
+        'Retain the exact Clementine Vulgate source identity, source revision and complete publisher notice with redistributed and offline copies.',
+        'The publisher marks this text Public Domain. Its general policy asks users to verify applicable intellectual-property law; this record does not claim independent worldwide legal review.',
+        'The publisher ZIP archive contains Bible verse text only. No Glossa Ordinaria commentary, notes, introductions, headings, artwork or recorded audio are imported.',
+        'The profile records the 73 ordered source-book entries in this archive. It does not claim one canon for all Christian traditions or assert review of theological claims.',
+        'No provider endorsement, certification badge or independent human editorial review is asserted.',
+    ],
+}
+
 
 def sha(raw):
     return hashlib.sha256(raw).hexdigest()
@@ -1868,11 +1910,24 @@ def json_bytes(value):
     return (json.dumps(value, ensure_ascii=False, separators=(',', ':')) + '\n').encode('utf-8')
 
 
+def canonical_generated_bytes(name, raw):
+    # Git may check out generated text with CRLF on Windows. Normalize only
+    # line endings for verification; source members remain pinned by archive
+    # hashes, and preserved notice files are protected by .gitattributes.
+    if name.endswith(('.json', '.txt')):
+        return raw.replace(b'\r\n', b'\n')
+    return raw
+
+
+def generated_hash_matches(name, raw, expected):
+    return sha(raw) == expected or sha(canonical_generated_bytes(name, raw)) == expected
+
+
 def edition_metadata(edition_id):
     source = SOURCES[edition_id]
     fields = ('name', 'language', 'corpus', 'publisher', 'translator', 'sourceUpdatedAt', 'sourceUrl', 'formatUrl',
               'downloadUrl', 'licenseUrl', 'license', 'licenseIdentifier', 'licenseDeedUrl', 'attribution', 'sha256', 'rights', 'conditions',
-              'abbreviation', 'revision', 'canon', 'providerId', 'downloadBytes',
+              'abbreviation', 'revision', 'canon', 'canonProfile', 'providerId', 'downloadBytes',
               'nativeTitle', 'script', 'direction', 'sourceNoticeDate', 'publicationStatus')
     value = {'id': edition_id, **{key: source[key] for key in fields if key in source}}
     value.update({'rightsObservedAt': source.get('rightsObservedAt', OBSERVED_ON), 'commercialUse': True,
@@ -2046,12 +2101,14 @@ def bible_artifacts(edition_id, archive):
     document = ET.fromstring(xml)
     if document.tag != 'verseFile':
         raise ValueError('Unexpected publisher XML root.')
-    books = OrderedDict((bid, {'id': bid, 'name': name, 'chapters': []}) for bid, name in BOOKS)
+    edition_books = source.get('bookOrder', BOOKS)
+    books = OrderedDict((bid, {'id': bid, 'name': name, 'chapters': []}) for bid, name in edition_books)
     rows, seen_book_order = [], []
     for verse in document:
         if verse.tag != 'v' or len(verse) or set(verse.attrib) != {'b', 'c', 'v'}:
             raise ValueError('Unexpected XML structure; source review is required.')
-        bid, chapter_label, verse_label = (verse.attrib[key] for key in ('b', 'c', 'v'))
+        source_bid, chapter_label, verse_label = (verse.attrib[key] for key in ('b', 'c', 'v'))
+        bid = TEXT_IDS.get(source_bid, source_bid)
         if bid not in books or not re.fullmatch(r'[1-9]\d*', chapter_label) or not re.fullmatch(r'[1-9]\d*', verse_label):
             raise ValueError(f'Unsupported publisher reference: {verse.attrib}')
         chapter, number = int(chapter_label), int(verse_label)
@@ -2070,7 +2127,7 @@ def bible_artifacts(edition_id, archive):
         chapters[-1]['verses'].append({'number': number, 'text': text})
         rows.append({'bookId': bid, 'chapter': chapter, 'verse': number, 'text': text, 'editionId': edition_id})
     if seen_book_order != list(books):
-        raise ValueError('The publisher export must contain all 66 canonical books in order.')
+        raise ValueError(f'The publisher export book list/order does not match the pinned {len(books)}-book profile.')
     independent_rows = []
     for line in plain.decode('utf-8-sig').splitlines():
         match = re.fullmatch(r'([A-Z0-9]{3}) (\d+):(\d+) (.*)', line)
@@ -2277,7 +2334,7 @@ def usj_bible_artifacts(edition_id, archive):
         return {'style': node['marker'], 'text': ''.join(parts), 'content': node.get('content', []),
                 **({'notes': notes, 'offsetUnit': 'unicode-codepoint'} if notes else {})}
 
-    for book_id, book_name in BOOKS:
+    for book_id, book_name in source.get('bookOrder', BOOKS):
         raw = member(archive, f'{book_id}.usj')
         source_members[f'{book_id}.usj'] = sha(raw)
         doc = json.loads(raw.decode('utf-8'))
@@ -2468,7 +2525,7 @@ def verify_outputs(output, pending_indexes=None):
                 raise ValueError(f'{edition_id}: generated path escapes edition directory: {name}')
             if pending_indexes is not None and source['corpus'] == 'bible' and (name == 'search-index.json' or name.startswith('chapters/')):
                 continue  # Regenerate this derived file after validating all committed inputs.
-            if sha(target.read_bytes()) != expected:
+            if not generated_hash_matches(name, target.read_bytes(), expected):
                 raise ValueError(f'{edition_id}: generated content hash mismatch: {name}')
         manifest = json.loads((directory / 'manifest.json').read_text(encoding='utf-8'))
         if manifest['edition'] != edition_metadata(edition_id) or manifest['totals'] != source['expectedTotals']:
@@ -2550,7 +2607,7 @@ def main():
         raw = archive_bytes(edition_id, args.source_dir, args.download)
         generated[edition_id] = build_artifacts(edition_id, raw)
     catalog = json_bytes({'schemaVersion': 1, 'editions': [edition_metadata(edition_id) for edition_id in SOURCES]})
-    # Validate all three archives before replacing any generated output.
+    # Validate all selected archives before replacing any generated output.
     for edition_id, files in generated.items():
         for name, content in files.items():
             target = args.output / edition_id / name

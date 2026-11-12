@@ -2016,10 +2016,18 @@
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 91,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "lat-clementine1598",
+      "installedRevision": "Clementine Vulgate of 1598; publisher title identifies the Glossa Ordinaria Migne edition 1880; verse text only.",
+      "installedSourceSha256": "bf13a76cc8131fd469a48158c79d9b2adcaad15766ec53852322fb71ca25301b",
+      "installedObservedOn": "2026-11-12",
+      "installedTotals": {
+        "books": 73,
+        "chapters": 1334,
+        "verses": 35809
+      }
     },
     {
       "provider": "eBible.org",
