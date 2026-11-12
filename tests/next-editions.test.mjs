@@ -82,23 +82,23 @@ for (const [id, pin] of Object.entries(expected)) {
 }
 
 test('the installed inventory counts distinct source languages, editions and regional tags accurately', () => {
-  assert.equal(editions.length, 31);
-  assert.equal(new Set(editions.map(row => row.id)).size, 31);
+  assert.equal(editions.length, 32);
+  assert.equal(new Set(editions.map(row => row.id)).size, 32);
   const original = new Set(['eng-web', 'deu1912', 'yor']);
-  assert.equal(editions.filter(row => !original.has(row.id)).length, 28);
-  assert.equal(new Set(editions.map(row => row.language)).size, 20);
-  assert.equal(new Set(editions.map(row => new Intl.Locale(row.language).language)).size, 19);
+  assert.equal(editions.filter(row => !original.has(row.id)).length, 29);
+  assert.equal(new Set(editions.map(row => row.language)).size, 21);
+  assert.equal(new Set(editions.map(row => new Intl.Locale(row.language).language)).size, 20);
   assert.equal(new Intl.Locale(manifest('spa-simple2026').edition.language).language, 'es');
-  assert.equal(Object.values(expected).reduce((total, row) => total + row.records, 0) + manifest('eng-douay-rheims1899').totals.verses, 129164);
+  assert.equal(Object.values(expected).reduce((total, row) => total + row.records, 0) + manifest('eng-douay-rheims1899').totals.verses + manifest('hat-1985').totals.verses, 160266);
   const french = manifest('fra-darby2024').edition;
   assert.match(french.name, /BPC 2024/);
   assert.match(french.revision, /Not the distinct 2026 revised edition/);
   assert.ok(french.conditions.some(condition => condition.includes('2026 revised edition is CC BY-NC-ND and is not imported')));
 });
 
-test('all 31 publisher inventories identify the current revision and match real source metadata', () => {
+test('all 32 publisher inventories identify the current revision and match real source metadata', () => {
   const coverage = JSON.parse(readFileSync(new URL('../data/speakers/publisher-coverage.json', import.meta.url)));
-  assert.equal(coverage.editions.length, 31);
+  assert.equal(coverage.editions.length, 32);
   assert.deepEqual(coverage.editions.map(row => row.editionId).sort(), editions.map(row => row.id).sort());
   for (const edition of editions) {
     const entry = coverage.editions.find(row => row.editionId === edition.id);

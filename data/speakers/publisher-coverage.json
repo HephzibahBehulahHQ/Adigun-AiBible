@@ -13106,7 +13106,9 @@
           "verses": 0,
           "rejectedMetadata": 0
         }
-      ]
+      ],
+      "marker": "none",
+      "offsetUnit": "not-applicable"
     }
   ]
 }
