@@ -12,8 +12,11 @@ const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 
 export async function validateCorpus({ dataDir = resolve(root, 'data'), curationPath = resolve(root, 'src/curation.ts') } = {}) {
   const provenanceBytes = await readFile(resolve(dataDir, 'provenance.json'));
-  check(sha(provenanceBytes) === PINNED_PROVENANCE, 'Provenance does not match the reviewed import. Reimport the pinned archive.');
-  const provenance = JSON.parse(provenanceBytes);
+  // Windows checkouts may normalize the single final line ending. Verify the
+  // canonical JSON bytes used for the reviewed source pin, not checkout style.
+  const canonicalProvenanceBytes = Buffer.from(provenanceBytes.toString('utf8').replace(/\r\n/g, '\n'));
+  check(sha(canonicalProvenanceBytes) === PINNED_PROVENANCE, 'Provenance does not match the reviewed import. Reimport the pinned archive.');
+  const provenance = JSON.parse(canonicalProvenanceBytes);
   check(provenance.archiveSha256 === PINNED_ARCHIVE, 'Unexpected source archive.');
   const files = Object.entries(provenance.generatedFileSha256);
   check(files.length === 68, 'Expected 66 books, one manifest, and one search index.');
@@ -21,8 +24,9 @@ export async function validateCorpus({ dataDir = resolve(root, 'data'), curation
   for (const [relative, expected] of files) {
     check(/^(books\/[1-3]?[A-Z]{2,3}|manifest|search-index)\.json$/.test(relative), 'Unsafe or unexpected content path.');
     const raw = await readFile(resolve(dataDir, relative));
-    check(sha(raw) === expected, `Source integrity failed: ${relative}`);
-    documents.set(relative, JSON.parse(raw));
+    const canonicalBytes = Buffer.from(raw.toString('utf8').replace(/\r\n/g, '\n'));
+    check(sha(canonicalBytes) === expected, `Source integrity failed: ${relative}`);
+    documents.set(relative, JSON.parse(canonicalBytes));
   }
   const bookFiles = await readdir(resolve(dataDir, 'books'));
   check(bookFiles.length === 66 && bookFiles.every(file => documents.has(`books/${file}`)), 'Unexpected, missing, or duplicate book files.');

@@ -9,7 +9,7 @@ const catalog = JSON.parse(readFileSync(new URL('../data/editions/catalog.json',
 const editions: Edition[] = [baseline.edition, ...catalog.editions.filter((edition: Edition) => edition.corpus === 'bible')];
 const added = [
   'fra-ostervald', 'epo-londona', 'arb-vandyck', 'mya-judson1840', 'nld-1917', 'haw-1868',
-  'rus-synodal', 'ukr-kulish1905', 'vie-cadman', 'srp-danicic-karadzic', 'ton-revised-west', 'eng-geneva1599',
+  'rus-synodal', 'ukr-kulish1905', 'vie-cadman', 'srp-danicic-karadzic', 'ton-revised-west', 'eng-geneva1599', 'hat-1985',
 ];
 const sourceBooks = new Map(added.map(id => [id, JSON.parse(readFileSync(new URL(`../data/editions/${id}/books/JHN.json`, import.meta.url), 'utf8')) as SourceBook]));
 const sourceVerse = (id: string, chapter = 3, verse = 16): string => sourceBooks.get(id)!.chapters.find(row => row.number === chapter)!.verses.find(row => row.number === verse)!.text;
@@ -34,13 +34,13 @@ async function cachedJohnFiles(page: Page, id: string): Promise<string[]> {
   }, id);
 }
 
-test.describe('twelve-edition built catalog and source reading', () => {
+test.describe('thirteen-edition built catalog and source reading', () => {
   test.use({ serviceWorkers: 'block' });
 
-test('the 31-edition catalog exposes the added languages and every paginated source', async ({ page }) => {
-    expect(editions).toHaveLength(31);
+test('the 32-edition catalog exposes the added languages and every paginated source', async ({ page }) => {
+    expect(editions).toHaveLength(32);
     await page.goto(route('editions', 'eng-web', 3, 16, 18));
-    await expect(page.getByText('31 installed Bible text editions · 28 added beyond the verified three-edition baseline.', { exact: false })).toBeVisible();
+    await expect(page.getByText('32 installed Bible text editions · 29 added beyond the verified three-edition baseline.', { exact: false })).toBeVisible();
     const results = page.getByRole('region', { name: 'Installed Bible editions', exact: true });
     const language = page.getByRole('combobox', { name: 'Language', exact: true });
     const expectedLanguages = [...new Set(editions.map(edition => edition.language))];
@@ -63,8 +63,8 @@ test('the 31-edition catalog exposes the added languages and every paginated sou
     }
   });
 
-  for (const [index, ids] of [added.slice(0, 6), added.slice(6)].entries()) {
-    test(`six imported editions retain the exact selected source range — group ${index + 1}`, async ({ page }) => {
+  for (const [index, ids] of [added.slice(0, 6), added.slice(6, 12), added.slice(12)].entries()) {
+    test(`${ids.length} imported editions retain the exact selected source range — group ${index + 1}`, async ({ page }) => {
       test.setTimeout(90_000);
       for (const id of ids) {
         await test.step(id, async () => {

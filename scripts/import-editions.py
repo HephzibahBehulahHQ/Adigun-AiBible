@@ -1940,6 +1940,37 @@ SOURCES['eng-douay-rheims1899'] = {
     ],
 }
 
+SOURCES['hat-1985'] = {
+    'name': 'Bib La · Haitian Creole 1985', 'language': 'hat', 'corpus': 'bible', 'publisher': 'eBible.org',
+    'translator': None,
+    'revision': 'Bib La, Haitian Creole Bible 1985; verse text only',
+    'abbreviation': 'HAT', 'nativeTitle': 'Bib La', 'script': 'Latn', 'direction': 'ltr',
+    'sourceNoticeDate': '2020-03-10', 'sourceUpdatedAt': '2025-12-12', 'rightsObservedAt': '2026-11-12',
+    'sourceUrl': 'https://ebible.org/hat/', 'formatUrl': 'https://ebible.org/details.php?id=hat',
+    'downloadUrl': 'https://ebible.org/Scriptures/hat_vpl.zip',
+    'licenseUrl': 'https://ebible.org/hat/copyright.htm', 'license': 'Public domain',
+    'licenseIdentifier': 'LicenseRef-Public-Domain',
+    'attribution': 'Bib La. The Holy Bible in Haitian Creole, Haitian Creole Bible 1985. Public domain as declared by eBible.org. Source: eBible.org.',
+    'sha256': '179d9cbd450da032f259f60914af3d61f6cb5e03cd8d32538872401896f9b5d9',
+    'xmlSha256': 'c53cc29e21aaa40b0e73e2e44df26965586c3b4f7401d4395fb28c3597436f84',
+    'textSha256': '0725fadf13202d5356ff8026bc930655d632efffa9868ffe6cf195882a4d3fd6',
+    'noticeSha256': '6d02516e4cf7fd16cbfce8db3a0db90ec5dfc48688daa8889340ee0dbf7ba2dd',
+    'providerId': 'hat', 'downloadBytes': 4460556,
+    'bracketExceptionCount': 0,
+    'bracketExceptionInventorySha256': '37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570',
+    'bracketExceptionScope': 'Publisher TXT and XML exports have identical verse references and text.',
+    'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31102},
+    'rightsEvidenceUrls': ['https://ebible.org/hat/copyright.htm', 'https://ebible.org/publicdomain.htm', 'https://ebible.org/legal.php'],
+    'preserveSourceNotice': True,
+    'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': True, 'export': True},
+    'conditions': [
+        'Retain the exact Bib La / Haitian Creole Bible 1985 identity and the complete eBible.org source notice with redistributed and offline copies.',
+        'eBible.org states this edition is Public Domain due to publication without copyright notice in 1985 and no subsequent registration within five years. This is the provider’s rights statement, not an independent worldwide legal opinion.',
+        'Only the archive’s Bible verse text is imported. The source archive omits formatting, paragraph breaks, notes, introductions and noncanonical section titles.',
+        'No provider endorsement or independent human editorial review is asserted.',
+    ],
+}
+
 
 def sha(raw):
     return hashlib.sha256(raw).hexdigest()

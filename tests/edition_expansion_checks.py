@@ -1,4 +1,4 @@
-"""Focused source-fidelity checks for the nine individually pinned VPL imports."""
+"""Focused source-fidelity checks for the ten individually pinned VPL imports."""
 import copy
 import importlib.util
 import io
@@ -14,7 +14,7 @@ SPEC = importlib.util.spec_from_file_location('edition_importer', ROOT / 'script
 IMPORTER = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(IMPORTER)
 IDS = ['eng-ylt', 'eng-dby', 'eng-webster', 'fra-lsg1910', 'spa-rv1909',
-       'deu-elberfelder1905', 'deu-textbibel1906', 'ces-kralicka1613', 'ita-diodati1885']
+       'deu-elberfelder1905', 'deu-textbibel1906', 'ces-kralicka1613', 'ita-diodati1885', 'hat-1985']
 
 
 class ExpansionChecks(unittest.TestCase):

@@ -7,12 +7,12 @@ import { createHash } from 'node:crypto';
 import { validateEditionRightsRegister, decideEditionOperation } from '../src/edition-rights.ts';
 
 const counts = { 'eng-ylt': 31102, 'eng-dby': 31099, 'eng-webster': 31102, 'fra-lsg1910': 31170,
-  'spa-rv1909': 31102, 'deu-elberfelder1905': 31102, 'deu-textbibel1906': 31157,
+  'spa-rv1909': 31102, 'deu-elberfelder1905': 31102, 'deu-textbibel1906': 31157, 'hat-1985': 31102,
   'ces-kralicka1613': 31172, 'ita-diodati1885': 31095 };
 const read = path => JSON.parse(readFileSync(new URL(`../data/editions/${path}`, import.meta.url), 'utf8'));
 const hash = content => createHash('sha256').update(content).digest('hex');
 
-test('nine exact historical editions retain independent source identity, notices and actual source counts', () => {
+test('ten exact historical editions retain independent source identity, notices and actual source counts', () => {
   const catalog = read('catalog.json');
   const inventory = read('acquisition-catalog.json');
   for (const [id, verses] of Object.entries(counts)) {
@@ -60,6 +60,21 @@ test('source formatting exceptions remain narrowly pinned and never rewrite orig
   execFileSync(process.platform === 'win32' ? 'python' : 'python3', ['-B', fileURLToPath(new URL('./edition_expansion_checks.py', import.meta.url))], { stdio: 'pipe' });
 });
 
+test('Bib La keeps its publisher identity, source notice, and exact Haitian Creole wording', () => {
+  const edition = read('catalog.json').editions.find(row => row.id === 'hat-1985');
+  assert.equal(edition.name, 'Bib La · Haitian Creole 1985');
+  assert.equal(edition.language, 'hat');
+  const genesis = read('hat-1985/books/GEN.json');
+  assert.equal(genesis.chapters[0].verses[0].text, 'Nan konmansman, Bondye kreye syèl la ak latè a.');
+  const john = read('hat-1985/books/JHN.json');
+  assert.equal(john.chapters[2].verses[15].text, "Paske, Bondye sitèlman renmen lèzòm li bay sèl Pitit li a pou yo. Tout moun ki va mete konfyans yo nan li p'ap pedi lavi yo. Okontrè y'a gen lavi ki p'ap janm fini an.");
+  const provenance = read('hat-1985/provenance.json');
+  assert.equal(provenance.archiveSha256, '179d9cbd450da032f259f60914af3d61f6cb5e03cd8d32538872401896f9b5d9');
+  assert.equal(provenance.displayTextMember, 'hat_vpl.txt');
+  assert.equal(provenance.publisherBracketFormatDifferences.length, 0);
+  assert.equal(hash(readFileSync(new URL('../data/editions/hat-1985/SOURCE_NOTICE.html.txt', import.meta.url))), provenance.generatedFileSha256['SOURCE_NOTICE.html.txt']);
+});
+
 test('new editions remain within the current bounded batch file budget without claiming 100 editions', () => {
   let files = 0;
   for (const id of Object.keys(counts)) {
@@ -70,5 +85,5 @@ test('new editions remain within the current bounded batch file budget without c
     const actual = manifest.books.reduce((total, book) => total + book.verseRecordCounts.reduce((sum, count) => sum + count, 0), 0);
     assert.equal(actual, counts[id]);
   }
-  assert.equal(files, 630);
+  assert.equal(files, 701);
 });

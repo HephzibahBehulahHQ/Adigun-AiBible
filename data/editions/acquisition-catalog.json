@@ -1703,10 +1703,10 @@
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 79,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null,
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "hat-1985",
       "sourceReview": {
         "state": "deferred",
         "observedOn": "2026-11-05",
@@ -1717,6 +1717,14 @@
           "https://ebible.org/hat/copyright.htm",
           "https://ebible.org/Scriptures/hat_vpl.zip"
         ]
+      },
+      "installedRevision": "Bib La, Haitian Creole Bible 1985; verse text only",
+      "installedSourceSha256": "179d9cbd450da032f259f60914af3d61f6cb5e03cd8d32538872401896f9b5d9",
+      "installedObservedOn": "2026-11-12",
+      "installedTotals": {
+        "books": 66,
+        "chapters": 1189,
+        "verses": 31102
       }
     },
     {
