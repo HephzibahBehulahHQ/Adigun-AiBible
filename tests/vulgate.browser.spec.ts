@@ -8,7 +8,7 @@ test('Clementine Vulgate advertises its source book list and opens Tobit', async
   await page.getByLabel('Find an edition', { exact: true }).fill('lat-clementine1598');
   const card = page.getByRole('region', { name: 'Installed Bible editions', exact: true }).getByRole('article');
   await expect(card.getByRole('heading', { name: 'Clementine Vulgate 1598', exact: true })).toBeVisible();
-  await expect(card.getByText('Clementine Vulgate source list · 73 books', { exact: true })).toBeVisible();
+  await expect(card.locator('p.availability-note').first()).toContainText('Clementine Vulgate source list · 73 books');
   await card.getByRole('button', { name: 'Read edition', exact: true }).click();
   await expect(page).toHaveURL(/edition=lat-clementine1598/);
   await page.getByRole('button', { name: 'Old Testament', exact: true }).click();

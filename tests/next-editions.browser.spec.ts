@@ -33,14 +33,14 @@ async function cachedNotice(page: Page, id: string) {
 test.describe('three exact source admissions', () => {
   test.use({ serviceWorkers: 'block' });
 
-  test('29 editions report 18 source languages and preserve the separate regional filters', async ({ page }) => {
-    expect(editions).toHaveLength(29);
-    expect(new Set(editions.map(edition => new Intl.Locale(edition.language).language)).size).toBe(18);
+  test('30 editions report 19 source languages and preserve the separate regional filters', async ({ page }) => {
+    expect(editions).toHaveLength(30);
+    expect(new Set(editions.map(edition => new Intl.Locale(edition.language).language)).size).toBe(19);
     await page.goto(route('editions', 'eng-web'));
-    await expect(page.getByText('29 installed Bible text editions · 26 added beyond the verified three-edition baseline.', { exact: false })).toBeVisible();
-    await expect(page.getByText(/^Installed source languages \(18\):/)).toBeVisible();
+    await expect(page.getByText('30 installed Bible text editions · 27 added beyond the verified three-edition baseline.', { exact: false })).toBeVisible();
+    await expect(page.getByText(/^Installed source languages \(19\):/)).toBeVisible();
     const languages = page.getByRole('combobox', { name: 'Language', exact: true });
-    await expect(languages.locator('option')).toHaveCount(20); // 19 exact tags plus the all-languages option.
+    await expect(languages.locator('option')).toHaveCount(21); // 20 exact tags plus the all-languages option.
     const results = page.getByRole('region', { name: 'Installed Bible editions', exact: true });
     for (const tag of ['es', 'es-419']) {
       await languages.selectOption(tag);
