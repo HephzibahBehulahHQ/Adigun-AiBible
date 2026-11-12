@@ -1886,17 +1886,24 @@
       "observedOn": "2026-11-04",
       "availability": "metadata-only",
       "coverage": "not-validated",
-      "permissions": "not-reviewed",
+      "permissions": "provider-declared Public Domain (USA-qualified); territorial display gate unresolved",
       "installedEditionId": null,
       "sourceReview": {
         "state": "deferred",
-        "observedOn": "2026-11-05",
+        "observedOn": "2026-11-13",
         "reasons": [
-          "The individual and archive notices identify Riveduta 1927 but also describe Diodati 1885; the primary details page supplies the conflicting abbreviation DO885. Exact revision/identity is unresolved."
+          "Provider title/ID, the separate inventory entries for ita1927 and ita1885, and an exact Genesis 1:1 comparison resolve this archive as Riveduta 1927. The DO885 abbreviation and Diodati 1885 boilerplate line remain recorded metadata conflicts; no translator is attributed because the reviewed provider page does not name one.",
+          "The pinned archive contains 66 ordered books, 1,189 chapters and 31,102 unique references. XML/TXT references match in order after 11 VPL-to-SIL book-code aliases; all text differences are trailing ASCII padding in XML, and unchanged TXT wording is the proposed display text.",
+          "The provider inventory qualifies its public-domain list as U.S.-only to the best of its knowledge. The current static reader does not enforce a country-limited display grant, so keep this source uninstalled until broader rights evidence or a real territory-aware serving/display gate exists."
         ],
         "evidenceUrls": [
+          "https://ebible.org/bible/details.php?id=ita1927",
           "https://ebible.org/ita1927/copyright.htm",
-          "https://ebible.org/details.php?id=ita1927"
+          "https://ebible.org/Scriptures/copyright.php",
+          "https://ebible.org/Scriptures/ita1927_vpl.zip",
+          "https://ebible.org/ita1927/GEN01.htm",
+          "https://ebible.org/ita1885/GEN01.htm",
+          "https://ebible.org/legal.php"
         ],
         "archiveSha256": "d73ad51ec797dbc92691431795e42df0502cdbb0b21ac1707b389f8308a6d7d4",
         "observedTotals": {

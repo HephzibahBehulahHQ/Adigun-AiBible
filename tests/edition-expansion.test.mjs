@@ -75,6 +75,19 @@ test('Bib La keeps its publisher identity, source notice, and exact Haitian Creo
   assert.equal(hash(readFileSync(new URL('../data/editions/hat-1985/SOURCE_NOTICE.html.txt', import.meta.url))), provenance.generatedFileSha256['SOURCE_NOTICE.html.txt']);
 });
 
+test('Italian Riveduta identity evidence stays separate from the unresolved U.S.-only display grant', () => {
+  const source = read('acquisition-catalog.json').records.find(row => row.providerId === 'ita1927');
+  assert.ok(source);
+  assert.equal(source.sourceReview.state, 'deferred');
+  assert.equal(source.sourceReview.archiveSha256, 'd73ad51ec797dbc92691431795e42df0502cdbb0b21ac1707b389f8308a6d7d4');
+  assert.deepEqual(source.sourceReview.observedTotals, { books: 66, chapters: 1189, verses: 31102 });
+  assert.ok(source.sourceReview.evidenceUrls.includes('https://ebible.org/ita1885/GEN01.htm'));
+  assert.match(source.permissions, /USA-qualified/);
+  assert.equal(source.availability, 'metadata-only');
+  assert.equal(read('catalog.json').editions.some(row => row.id === 'ita-riveduta1927'), false);
+  assert.equal(read('rights-register.json').editions.some(row => row.editionId === 'ita-riveduta1927'), false);
+});
+
 test('new editions remain within the current bounded batch file budget without claiming 100 editions', () => {
   let files = 0;
   for (const id of Object.keys(counts)) {
