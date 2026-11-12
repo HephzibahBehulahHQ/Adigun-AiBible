@@ -31,6 +31,8 @@ jobs:
           cache: npm
       - name: Install locked dependencies
         run: npm ci
+      - name: Check live browser smoke script syntax
+        run: node --check scripts/verify-live-browser.mjs
       - name: Typecheck source
         run: npm run typecheck
       - name: Lint source
