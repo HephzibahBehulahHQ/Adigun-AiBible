@@ -402,23 +402,25 @@
       "title": "Croatian Bible",
       "revision": "1941-1942",
       "providerRightsStatement": "Public Domain",
-      "translator": null,
+      "translator": "Ivan Šarić",
       "contributor": null,
       "sourceUrl": "https://ebible.org/find/details.php?id=hrv",
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 22,
       "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null,
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "hrv-saric",
       "sourceReview": {
-        "state": "deferred",
-        "observedOn": "2026-11-05",
+        "state": "completed",
+        "observedOn": "2026-11-12",
         "reasons": [
-          "The exact archive contains73books/1328chapters and uses ESG for its Esther text. This is a canon/reference contract mismatch; it is not a claim that Esther content is absent. Extra books are not silently removed."
+          "The earlier book-ID/profile deferral is resolved by preserving the publisher’s exact 73-book order, ESG ID for Esther and 46-entry Old Testament boundary in the edition-specific hrv-saric-source-order-73 profile.",
+          "The provider declares this text Public Domain; no independent worldwide legal opinion is asserted."
         ],
         "evidenceUrls": [
+          "https://ebible.org/details.php?id=hrv",
           "https://ebible.org/hrv/copyright.htm",
           "https://ebible.org/Scriptures/hrv_vpl.zip"
         ],
@@ -428,6 +430,14 @@
           "chapters": 1328,
           "verses": 35448
         }
+      },
+      "installedRevision": "The Holy Bible in the Croatian language, translated by Ivan Šarić Sarajevo; verse text only",
+      "installedSourceSha256": "a9fc8665d3c1e5e806b2b33456c96d84cc4866cc6f9d9ab8d36d9e1c1ccb0e2a",
+      "installedObservedOn": "2026-11-12",
+      "installedTotals": {
+        "books": 73,
+        "chapters": 1328,
+        "verses": 35448
       }
     },
     {
