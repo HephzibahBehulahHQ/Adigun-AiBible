@@ -98,7 +98,9 @@ test('custom reading plans retain their edition, pause state and completion hist
   await expect(reloaded.locator('.workspace-badge')).toHaveText('Paused');
   await page.getByRole('button', { name: 'Resume from today', exact: true }).click();
   await expect(reloaded.locator('.workspace-badge')).toHaveText('Active');
-  await page.getByLabel('Completed: GEN 1:1', { exact: false }).check();
+  const completedSession = page.getByLabel('Completed: GEN 1:1', { exact: false });
+  await completedSession.click();
+  await expect(completedSession).toBeChecked();
   await expect(reloaded).toContainText('1 of 1 reading sessions completed');
   await page.reload();
   const completed = page.locator('.workspace-card').filter({ has: page.getByRole('heading', { name: title, exact: true }) });
