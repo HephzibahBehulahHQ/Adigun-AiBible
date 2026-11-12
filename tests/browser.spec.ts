@@ -79,7 +79,7 @@ test('a bookmark and personal note persist after reload', async ({ page }) => {
 
 test('custom reading plans retain their edition, pause state and completion history after reload', async ({ page }) => {
   const title = 'Browser acceptance · private reading plan';
-  await page.goto(route('plans', 'GEN', 1, 1, 'eng-web'));
+  await page.goto(`${route('study', 'GEN', 1, 1, 'eng-web')}&tab=plans`);
   await expect(page.getByRole('heading', { name: 'Flexible reading plans', exact: true })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Create reading plan', exact: true })).toBeEnabled();
   await page.getByLabel('Plan type', { exact: true }).selectOption('custom');
