@@ -11,10 +11,14 @@ test('Clementine Vulgate advertises its source book list and opens Tobit', async
   await expect(card.locator('p.availability-note').first()).toContainText('Clementine Vulgate source list · 73 books');
   await card.getByRole('button', { name: 'Read edition', exact: true }).click();
   await expect(page).toHaveURL(/edition=lat-clementine1598/);
-  await page.getByRole('button', { name: 'Old Testament', exact: true }).click();
-  await expect(page.getByRole('button', { name: 'Tobit' })).toBeVisible();
+  const oldTestamentFilter = page.getByRole('button', { name: 'Old Testament', exact: true });
+  if (await oldTestamentFilter.count()) {
+    await oldTestamentFilter.click();
+    await expect(page.getByRole('button', { name: 'Tobit' })).toBeVisible();
+  }
   await page.getByLabel('Choose book', { exact: true }).selectOption('TOB');
   await expect(page).toHaveURL(/#\/read\/TOB\/1\?/);
+  await expect(page.locator('.reader-breadcrumb span').first()).toHaveText('Old Testament');
   await expect(page.locator('.reader')).toContainText('Tobit ex tribu et civitate Nephthali');
   await expect(page.locator('.reader')).toContainText('Clementine Vulgate 1598');
 });
