@@ -1971,6 +1971,58 @@ SOURCES['hat-1985'] = {
     ],
 }
 
+SOURCES['hrv-saric'] = {
+    'name': 'Sveta Biblija · Croatian', 'language': 'hrv', 'corpus': 'bible', 'publisher': 'eBible.org',
+    'translator': 'Ivan Šarić',
+    'revision': 'The Holy Bible in the Croatian language, translated by Ivan Šarić Sarajevo; verse text only',
+    'abbreviation': 'HRV', 'nativeTitle': 'Sveta Biblija', 'script': 'Latn', 'direction': 'ltr',
+    'sourceUpdatedAt': '2019-12-16', 'rightsObservedAt': '2026-11-12',
+    'sourceUrl': 'https://ebible.org/hrv/', 'formatUrl': 'https://ebible.org/details.php?id=hrv',
+    'downloadUrl': 'https://ebible.org/Scriptures/hrv_vpl.zip',
+    'licenseUrl': 'https://ebible.org/hrv/copyright.htm', 'license': 'Public domain',
+    'licenseIdentifier': 'LicenseRef-Public-Domain',
+    'attribution': 'Sveta Biblija. The Holy Bible in the Croatian language, translated by Ivan Šarić Sarajevo. Public domain as declared by eBible.org. Source: eBible.org.',
+    'sha256': 'a9fc8665d3c1e5e806b2b33456c96d84cc4866cc6f9d9ab8d36d9e1c1ccb0e2a',
+    'xmlSha256': '176c28d2b64c14f267371f7117e1d106bf3500c1c5de3ffeba34d564d9ac65f0',
+    'textSha256': 'b35e8a54804809409d2214e72b8cd1dc58420e0ec79b3a09de6dc8f46c858f39',
+    'noticeSha256': '157d83548e21a20211997975627005102b495ccda9b0a396bfbea39e3b5097c4',
+    'providerId': 'hrv', 'downloadBytes': 5050617,
+    'canon': 'hrv-saric-source-order-73',
+    'canonProfile': {
+        'id': 'hrv-saric-source-order-73', 'label': 'Croatian source list · 73 books',
+        'description': 'This profile preserves the 73 book IDs and order supplied in the eBible.org archive, including its ESG ID for Esther. It records source coverage and the archive’s 46-entry Old Testament boundary; it does not claim one canon for all Christian traditions.',
+        'sourceUrl': 'https://ebible.org/details.php?id=hrv', 'bookCount': 73, 'oldTestamentBookCount': 46,
+    },
+    'bracketExceptionCount': 29,
+    'bracketExceptionInventorySha256': '976cce505eb62b5c01e2c7ba5c2b3f566552067ef85c30eb0fd21fa3505c5d7c',
+    'bracketExceptionScope': 'Twenty-nine exact publisher TXT square-bracket formatting differences from XML. They are pinned by source reference, Unicode offset and bracket character; unchanged TXT remains the display source.',
+    'referenceOrderExceptions': [
+        {'bookId':'1SA','chapter':9,'verseOrder':[1,2,3,4,5,6,7,8,10,11,9,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27]},
+        {'bookId':'JOB','chapter':36,'verseOrder':[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,31,29,30,32,33]},
+        {'bookId':'ISA','chapter':33,'verseOrder':[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,23,22,24]},
+        {'bookId':'JER','chapter':29,'verseOrder':[1,2,3,4,5,6,7,10,11,12,13,14,15,8,9,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32]},
+        {'bookId':'JER','chapter':36,'verseOrder':[1,2,3,4,9,5,6,7,8,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32]},
+        {'bookId':'NAM','chapter':2,'verseOrder':[1,3,2,4,5,6,7,8,9,10,11,12,13,14]},
+        {'bookId':'HAB','chapter':2,'verseOrder':[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,18,20]},
+    ],
+    'bookOrder': [
+        ('GEN','Genesis'),('EXO','Exodus'),('LEV','Leviticus'),('NUM','Numbers'),('DEU','Deuteronomy'),('JOS','Joshua'),('JDG','Judges'),('RUT','Ruth'),('1SA','1 Samuel'),('2SA','2 Samuel'),('1KI','1 Kings'),('2KI','2 Kings'),('1CH','1 Chronicles'),('2CH','2 Chronicles'),('EZR','Ezra'),('NEH','Nehemiah'),('JOB','Job'),('PSA','Psalms'),('PRO','Proverbs'),('ECC','Ecclesiastes'),('SNG','Song of Solomon'),('ISA','Isaiah'),('JER','Jeremiah'),('LAM','Lamentations'),('EZK','Ezekiel'),('DAN','Daniel'),('HOS','Hosea'),('JOL','Joel'),('AMO','Amos'),('OBA','Obadiah'),('JON','Jonah'),('MIC','Micah'),('NAM','Nahum'),('HAB','Habakkuk'),('ZEP','Zephaniah'),('HAG','Haggai'),('ZEC','Zechariah'),('MAL','Malachi'),
+        ('TOB','Tobit'),('JDT','Judith'),('ESG','Esther'),('WIS','Wisdom'),('SIR','Sirach'),('BAR','Baruch'),('1MA','1 Maccabees'),('2MA','2 Maccabees'),
+        ('MAT','Matthew'),('MRK','Mark'),('LUK','Luke'),('JHN','John'),('ACT','Acts'),('ROM','Romans'),('1CO','1 Corinthians'),('2CO','2 Corinthians'),('GAL','Galatians'),('EPH','Ephesians'),('PHP','Philippians'),('COL','Colossians'),('1TH','1 Thessalonians'),('2TH','2 Thessalonians'),('1TI','1 Timothy'),('2TI','2 Timothy'),('TIT','Titus'),('PHM','Philemon'),('HEB','Hebrews'),('JAS','James'),('1PE','1 Peter'),('2PE','2 Peter'),('1JN','1 John'),('2JN','2 John'),('3JN','3 John'),('JUD','Jude'),('REV','Revelation'),
+    ],
+    'expectedTotals': {'books': 73, 'chapters': 1328, 'verses': 35448},
+    'rightsEvidenceUrls': ['https://ebible.org/hrv/copyright.htm', 'https://ebible.org/publicdomain.htm', 'https://ebible.org/legal.php'],
+    'preserveSourceNotice': True,
+    'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': True, 'export': True},
+    'conditions': [
+        'Retain the exact Sveta Biblija / Ivan Šarić Sarajevo source identity and complete eBible.org archive notice with redistributed and offline copies.',
+        'eBible.org identifies this source as Public Domain. This is the provider’s statement, not an independent worldwide legal opinion.',
+        'Only the archive’s Bible verse text is imported. The source archive identifies itself as Bible text only and omits formatting, paragraph breaks, notes, introductions and section titles.',
+        'The profile preserves the publisher archive’s 73 ordered book IDs, including ESG for Esther, and its source-order boundary. It does not claim one canon for all Christian traditions.',
+        'No provider endorsement or independent human editorial review is asserted.',
+    ],
+}
+
 
 def sha(raw):
     return hashlib.sha256(raw).hexdigest()
@@ -2174,6 +2226,8 @@ def bible_artifacts(edition_id, archive):
     edition_books = source.get('bookOrder', BOOKS)
     books = OrderedDict((bid, {'id': bid, 'name': name, 'chapters': []}) for bid, name in edition_books)
     rows, seen_book_order = [], []
+    reference_order_exceptions = {(exception['bookId'], exception['chapter']): exception
+                                  for exception in source.get('referenceOrderExceptions', [])}
     for verse in document:
         if verse.tag != 'v' or len(verse) or set(verse.attrib) != {'b', 'c', 'v'}:
             raise ValueError('Unexpected XML structure; source review is required.')
@@ -2192,12 +2246,22 @@ def bible_artifacts(edition_id, archive):
         chapters = books[bid]['chapters']
         if chapter == len(chapters) + 1:
             chapters.append({'number': chapter, 'verses': []})
-        if chapter != len(chapters) or (chapters[-1]['verses'] and number <= chapters[-1]['verses'][-1]['number']):
+        current_verses = [item['number'] for item in chapters[-1]['verses']]
+        is_order_exception = (bid, chapter) in reference_order_exceptions
+        if (chapter != len(chapters) or number in current_verses
+                or (current_verses and number <= current_verses[-1] and not is_order_exception)):
             raise ValueError(f'Duplicate/out-of-order reference: {bid} {chapter}:{number}')
         chapters[-1]['verses'].append({'number': number, 'text': text})
         rows.append({'bookId': bid, 'chapter': chapter, 'verse': number, 'text': text, 'editionId': edition_id})
     if seen_book_order != list(books):
         raise ValueError(f'The publisher export book list/order does not match the pinned {len(books)}-book profile.')
+    observed_reference_order_exceptions = []
+    for (bid, chapter), expected in reference_order_exceptions.items():
+        observed = [verse['number'] for verse in books[bid]['chapters'][chapter - 1]['verses']]
+        record = {'bookId': bid, 'chapter': chapter, 'verseOrder': observed}
+        if observed != expected['verseOrder']:
+            raise ValueError(f'{edition_id}: publisher reference-order exception changed at {bid} {chapter}.')
+        observed_reference_order_exceptions.append(record)
     independent_rows = []
     for line in plain.decode('utf-8-sig').splitlines():
         match = re.fullmatch(r'([A-Z0-9]{3}) (\d+):(\d+) (.*)', line)
@@ -2224,6 +2288,9 @@ def bible_artifacts(edition_id, archive):
         for chapter in book['chapters']:
             for verse in chapter['verses']:
                 verse['text'] = display_text[(bid, chapter['number'], verse['number'])]
+            chapter['verses'].sort(key=lambda verse: verse['number'])
+    book_positions = {bid: index for index, (bid, _) in enumerate(edition_books)}
+    rows.sort(key=lambda row: (book_positions[row['bookId']], row['chapter'], row['verse']))
     inventory, omitted = [], []
     for bid, book in books.items():
         maxima, record_counts = [], []
@@ -2299,6 +2366,13 @@ def bible_artifacts(edition_id, archive):
         provenance['publisherBracketPaddingExceptions'] = source['bracketPaddingExceptions']
         provenance['normalization'].append('Comparison only: remove the single pinned ASCII space before the supplied-word closing bracket at Tongan Mark 13:3; keep it in displayed TXT.')
         provenance['formatEvidenceFile'] = 'FORMAT_EVIDENCE.json'
+    if edition_id == 'hrv-saric':
+        provenance['xmlPlainTextCrossCheck'] = 'Publisher references agree exactly; text differs only at the pinned bracket positions. Display uses the unchanged publisher TXT.'
+        provenance['normalization'][3] = 'Use the publisher VPL TXT unchanged as display text; retain every bracket character.'
+    if observed_reference_order_exceptions:
+        provenance['publisherReferenceOrderExceptions'] = observed_reference_order_exceptions
+        provenance['publisherReferenceOrderExceptionInventorySha256'] = sha(json_bytes(observed_reference_order_exceptions))
+        provenance['renderedReferenceOrder'] = 'ascending numeric verse reference after exact source-order verification'
     return files, provenance
 
 
