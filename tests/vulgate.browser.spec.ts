@@ -19,6 +19,6 @@ test('Clementine Vulgate advertises its source book list and opens Tobit', async
   await page.getByLabel('Choose book', { exact: true }).selectOption('TOB');
   await expect(page).toHaveURL(/#\/read\/TOB\/1\?/);
   await expect(page.locator('.reader-breadcrumb span').first()).toHaveText('Old Testament');
-  await expect(page.locator('.reader')).toContainText('Tobit ex tribu et civitate Nephthali');
+  await expect(page.locator('.reader')).toContainText('Tobias ex tribu et civitate Nephthali');
   await expect(page.locator('.reader')).toContainText('Clementine Vulgate 1598');
 });
