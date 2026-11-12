@@ -22,7 +22,7 @@ export default function NearbyRoom({reference,locale,onOpenReference}:{reference
   const [reading,setReading]=useState<Reference>(reference),[edition,setEdition]=useState(reference.editionId||'eng-web'),[passage,setPassage]=useState<SourceSnapshot|null>(null),[sourceError,setSourceError]=useState('');
   const [book,setBook]=useState(reference.bookId),[chapter,setChapter]=useState(String(reference.chapter)),[first,setFirst]=useState(String(reference.verse)),[last,setLast]=useState(String(reference.endVerse||reference.verse)),[follow,setFollow]=useState(false),[proposed,setProposed]=useState<Reference|null>(null);
   const [writing,setWriting]=useState(''),[annotation,setAnnotation]=useState(false),[log,setLog]=useState<LogEntry[]>([]),[offer,setOffer]=useState<PackOffer|null>(null),[progress,setProgress]=useState(''),[received,setReceived]=useState<SourceSnapshot|null>(null);
-  const [mission,setMission]=useState<MissionProgress|null>(null),[missionAnswer,setMissionAnswer]=useState(''),[suggestion,setSuggestion]=useState<MissionSuggestion|null>(null),[missionResult,setMissionResult]=useState<MissionResult|null>(null);
+  const [mission,setMission]=useState<MissionProgress|null>(null),[missionAnswer,setMissionAnswer]=useState(''),[missionWaiting,setMissionWaiting]=useState(false),[suggestion,setSuggestion]=useState<MissionSuggestion|null>(null),[missionResult,setMissionResult]=useState<MissionResult|null>(null);
   const link = useRef<NearbyLink|null>(null), incoming = useRef<IncomingTransfer|null>(null), outgoing = useRef<{id:string;chunks:string[]}|null>(null);
   const offered = useRef<PackOffer|null>(null), cancelled = useRef(new Set<string>()), transferAbort = useRef<AbortController|null>(null);
   const messageHandler = useRef<(payload:RoomPayload, owner:NearbyLink)=>Promise<void>>(async()=>{});
@@ -55,15 +55,17 @@ export default function NearbyRoom({reference,locale,onOpenReference}:{reference
     if(payload.type==='reference'){if(follow)applyReference(payload.reference);else setProposed(payload.reference);return;}
     if(payload.type==='mission-state'){
       if(owner.role!=='guest')throw new Error('Only the host can update the shared mission.');
-      setMission(payload);setSuggestion(null);setMissionAnswer('');return;
+      setMission(payload);setSuggestion(null);setMissionAnswer('');setMissionWaiting(false);return;
     }
     if(payload.type==='mission-answer'){
-      if(owner.role!=='host'||!mission||mission.status!=='active'||payload.missionId!==mission.missionId||payload.clueIndex!==mission.nextClueIndex||payload.clueId!==detectiveMission.clues[mission.nextClueIndex]?.id)throw new Error('The suggested mission answer is out of date.');
+      const clue=mission&&detectiveMission.clues[mission.nextClueIndex];
+      if(owner.role!=='host'||!mission||mission.status!=='active'||!clue||payload.missionId!==mission.missionId||payload.clueIndex!==mission.nextClueIndex||payload.clueId!==clue.id||!clue.options.some(option=>option.id===payload.answerId)||suggestion)throw new Error('The suggested mission answer is out of date or invalid.');
       setSuggestion({...payload,name:owner.remoteName||'Guest'});return;
     }
     if(payload.type==='mission-result'){
-      if(owner.role!=='guest'||!mission||mission.status!=='active'||payload.missionId!==mission.missionId||payload.clueIndex!==mission.nextClueIndex||payload.clueId!==detectiveMission.clues[mission.nextClueIndex]?.id)throw new Error('The shared mission result is out of date.');
-      setMissionResult(payload);return;
+      const clue=mission&&detectiveMission.clues[mission.nextClueIndex];
+      if(owner.role!=='guest'||!mission||mission.status!=='active'||!clue||payload.missionId!==mission.missionId||payload.clueIndex!==mission.nextClueIndex||payload.clueId!==clue.id||!clue.options.some(option=>option.id===payload.answerId)||payload.correct!==(payload.answerId===clue.answerId))throw new Error('The shared mission result is out of date or invalid.');
+      setMissionResult(payload);setMissionWaiting(false);return;
     }
     if('transferId' in payload&&cancelled.current.has(payload.transferId))return;
     if(payload.type==='pack-offer'){
@@ -103,18 +105,18 @@ export default function NearbyRoom({reference,locale,onOpenReference}:{reference
   };
   function createLink(nextRole:Role){
     const previous=link.current;link.current=null;clearTransfers();previous?.close();cancelled.current.clear();
-    setConnected(false);setLocalApproved(false);setRemoteApproved(false);setCode('');setRemoteName('');setOutput('');setOffer(null);setReceived(null);setProgress('');setMission(null);setMissionAnswer('');setSuggestion(null);setMissionResult(null);setStatus('Preparing local connection…');
+    setConnected(false);setLocalApproved(false);setRemoteApproved(false);setCode('');setRemoteName('');setOutput('');setOffer(null);setReceived(null);setProgress('');setMission(null);setMissionAnswer('');setMissionWaiting(false);setSuggestion(null);setMissionResult(null);setStatus('Preparing local connection…');
     const created:NearbyLink=new NearbyLink(nextRole,name,{
       status:value=>{if(currentLink(created)){setStatus(value);setConnected(created.connected);}},
       code:value=>{if(currentLink(created)){setCode(value);setRemoteName(created.remoteName);}},
       message:payload=>currentLink(created)?messageHandler.current(payload,created):undefined,
       error:value=>{if(currentLink(created))setError(value);},
-      closed:()=>{if(currentLink(created)){clearTransfers();setOffer(null);setMission(null);setMissionAnswer('');setSuggestion(null);setMissionResult(null);setConnected(false);setLocalApproved(false);setRemoteApproved(false);setStatus('Disconnected · create a fresh offer to reconnect');}}
+      closed:()=>{if(currentLink(created)){clearTransfers();setOffer(null);setMission(null);setMissionAnswer('');setMissionWaiting(false);setSuggestion(null);setMissionResult(null);setConnected(false);setLocalApproved(false);setRemoteApproved(false);setStatus('Disconnected · create a fresh offer to reconnect');}}
     });link.current=created;return created;
   }
   function reset(){
     actionRun.current++;locked.current=false;const previous=link.current;link.current=null;clearTransfers();previous?.close();cancelled.current.clear();
-    setBusy(false);setConnected(false);setLocalApproved(false);setRemoteApproved(false);setInput('');setOutput('');setCode('');setRemoteName('');setOffer(null);setReceived(null);setProgress('');setMission(null);setMissionAnswer('');setSuggestion(null);setMissionResult(null);setError('');setNotice('');setStatus('Not connected');
+    setBusy(false);setConnected(false);setLocalApproved(false);setRemoteApproved(false);setInput('');setOutput('');setCode('');setRemoteName('');setOffer(null);setReceived(null);setProgress('');setMission(null);setMissionAnswer('');setMissionWaiting(false);setSuggestion(null);setMissionResult(null);setError('');setNotice('');setStatus('Not connected');
   }
   async function pairRoom(){
     if(role==='guest'){const owner=createLink('guest'),answer=await owner.answerOffer(input);if(currentLink(owner))setOutput(answer);}
@@ -131,9 +133,9 @@ export default function NearbyRoom({reference,locale,onOpenReference}:{reference
     const state:MissionProgress={type:'mission-state',missionId:detectiveMission.id,nextClueIndex:0,status:'active'};owner.send(state);setMission(state);setSuggestion(null);setMissionResult(null);setNotice('Shared Good Samaritan mission started.');
   }
   function suggestMissionAnswer(){
-    const owner=link.current;if(role!=='guest'||!owner?.approved||!mission||mission.status!=='active')throw new Error('Wait for the host to start the shared mission.');
+    const owner=link.current;if(role!=='guest'||!owner?.approved||!mission||mission.status!=='active'||missionWaiting)throw new Error('Wait for the host to start the shared mission or check your current answer.');
     const clue=detectiveMission.clues[mission.nextClueIndex];if(!clue||!missionAnswer)throw new Error('Choose an answer for the current clue.');
-    owner.send({type:'mission-answer',missionId:mission.missionId,clueIndex:mission.nextClueIndex,clueId:clue.id,answerId:missionAnswer});setMissionResult(null);setNotice('Answer sent to the host for review.');
+    owner.send({type:'mission-answer',missionId:mission.missionId,clueIndex:mission.nextClueIndex,clueId:clue.id,answerId:missionAnswer});setMissionWaiting(true);setMissionResult(null);setNotice('Answer sent to the host for review.');
   }
   function checkMissionSuggestion(){
     const owner=link.current;if(role!=='host'||!owner?.approved||!mission||mission.status!=='active'||!suggestion)throw new Error('There is no current guest answer to check.');
@@ -141,7 +143,7 @@ export default function NearbyRoom({reference,locale,onOpenReference}:{reference
     const result:MissionResult={type:'mission-result',missionId:mission.missionId,clueIndex:mission.nextClueIndex,clueId:clue.id,answerId:suggestion.answerId,correct:suggestion.answerId===clue.answerId};owner.send(result);setMissionResult(result);setSuggestion(null);
     if(result.correct){const nextIndex=mission.nextClueIndex+1,state:MissionProgress={type:'mission-state',missionId:mission.missionId,nextClueIndex:nextIndex,status:nextIndex===detectiveMission.clues.length?'complete':'active'};owner.send(state);setMission(state);}
   }
-  function openMissionSource(){const clue=mission&&detectiveMission.clues[mission.nextClueIndex];const source=clue?.references[0];if(source){const ref={...source,editionId:edition};applyReference(ref);onOpenReference(ref);}}
+  function openMissionSource(){const clue=mission&&detectiveMission.clues[mission.nextClueIndex];const source=clue?.references[0];if(source)applyReference({...source,editionId:edition});}
   async function offerPassage(){
     const owner=link.current;if(!owner?.approved)throw new Error('Approve the current connection before sharing a passage.');
     if(outgoing.current||incoming.current||offered.current)throw new Error('Finish or cancel the existing passage offer first.');
@@ -185,7 +187,7 @@ export default function NearbyRoom({reference,locale,onOpenReference}:{reference
       {!approved?<p role="status">Approve the nearby connection before starting a shared mission.</p>:role==='host'&&!mission?<button className="primary" disabled={busy} onClick={()=>void run(startSharedMission)}>Start shared Good Samaritan mission</button>:role==='guest'&&!mission?<p role="status">Waiting for the host to start the Good Samaritan mission.</p>:null}
       {mission&&mission.status==='complete'&&<div aria-live="polite"><h3>Mission complete</h3><p>All five source-linked evidence clues were solved together. This is a comprehension result, not a faith score.</p></div>}
       {mission&&mission.status==='active'&&(()=>{const clue=detectiveMission.clues[mission.nextClueIndex];return clue?<article className="nearby-mission-clue"><p className="workspace-meta">Evidence clue {mission.nextClueIndex+1} of {detectiveMission.clues.length} · {detectiveMission.title}</p><h3>{clue.question}</h3><button type="button" className="text-button" onClick={openMissionSource}>Open this clue in my selected edition</button>
-        {role==='guest'?<><fieldset disabled={!approved||busy}><legend>Suggest an answer to the host</legend>{clue.options.map(option=><label className="nearby-check" key={option.id}><input type="radio" name="shared-mission-answer" value={option.id} checked={missionAnswer===option.id} onChange={()=>setMissionAnswer(option.id)}/>{option.label}</label>)}</fieldset><button className="primary" disabled={!approved||busy||!missionAnswer} onClick={()=>void run(suggestMissionAnswer)}>Send answer to host</button></>:<><p>The host checks the guest’s answer before the group moves to the next clue.</p>{suggestion?<div className="availability-note"><p>{suggestion.name} suggested: {clue.options.find(option=>option.id===suggestion.answerId)?.label||'An unavailable answer'}</p><button className="primary" disabled={busy} onClick={()=>void run(checkMissionSuggestion)}>Check guest answer</button></div>:<p role="status">Waiting for the guest to suggest an answer.</p>}</>}
+        {role==='guest'?<><fieldset disabled={!approved||busy||missionWaiting}><legend>Suggest an answer to the host</legend>{clue.options.map(option=><label className="nearby-check" key={option.id}><input type="radio" name="shared-mission-answer" value={option.id} checked={missionAnswer===option.id} onChange={()=>setMissionAnswer(option.id)}/>{option.label}</label>)}</fieldset><button className="primary" disabled={!approved||busy||missionWaiting||!missionAnswer} onClick={()=>void run(suggestMissionAnswer)}>Send answer to host</button>{missionWaiting&&<p role="status">Waiting for the host to check this answer.</p>}</>:<><p>The host checks the guest’s answer before the group moves to the next clue.</p>{suggestion?<div className="availability-note"><p>{suggestion.name} suggested: {clue.options.find(option=>option.id===suggestion.answerId)?.label||'An unavailable answer'}</p><button className="primary" disabled={busy} onClick={()=>void run(checkMissionSuggestion)}>Check guest answer</button></div>:<p role="status">Waiting for the guest to suggest an answer.</p>}</>}
         {missionResult?.clueIndex===mission.nextClueIndex&&<p role="status">{missionResult.correct?'Correct. The host can advance the shared mission.':'Not quite. Re-read the cited passage and discuss it before trying again.'}</p>}
         <p className="nearby-mission-evidence">Hint: {clue.hint}</p>
       </article>:null})()}
@@ -198,4 +200,3 @@ export default function NearbyRoom({reference,locale,onOpenReference}:{reference
     </section><details className="panel"><summary>Transport references and verification limits</summary><p><a href="https://www.w3.org/TR/webrtc/" target="_blank" rel="noreferrer">W3C WebRTC specification</a> · <a href="https://webrtc.org/getting-started/data-channels" target="_blank" rel="noreferrer">WebRTC data-channel documentation</a></p><p>Browser automation can check pairing and messages between pages. It cannot establish support for two real offline phones. Treat this as an experimental paired-room feature until a physical-device receipt is recorded.</p></details>
   </div>;
 }
-
