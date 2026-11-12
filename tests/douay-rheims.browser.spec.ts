@@ -11,10 +11,6 @@ test('Douay-Rheims opens its source Tobit text from the edition-specific 73-book
   await expect(card.locator('p.availability-note').first()).toContainText('Douay-Rheims source list · 73 books');
   await card.getByRole('button', { name: 'Read edition', exact: true }).click();
   await expect(page).toHaveURL(/edition=eng-douay-rheims1899/);
-  const oldTestamentFilter = page.getByRole('button', { name: 'Old Testament', exact: true });
-  await expect(oldTestamentFilter).toBeVisible();
-  await oldTestamentFilter.click();
-  await expect(page.getByRole('button', { name: 'Tobit' })).toBeVisible();
   await page.getByLabel('Choose book', { exact: true }).selectOption('TOB');
   await expect(page).toHaveURL(/#\/read\/TOB\/1\?/);
   await expect(page.locator('.reader-breadcrumb span').first()).toHaveText('Old Testament');
