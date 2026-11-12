@@ -88,6 +88,57 @@ test('nearby RTC pages require approval, retain personal editions, transfer veri
   await control(host, 'Disconnect and reset pairing').click(); await control(guest, 'Disconnect and reset pairing').click();
 });
 
+test('approved nearby readers complete the source-linked detective mission together', async ({ page: host, context }) => {
+  test.setTimeout(90_000);
+  const guest = await context.newPage();
+  await host.goto(route); await guest.goto(route);
+  await pair(host, guest);
+  await control(host, 'Approve this guest').click();
+  await expect(guest.getByText('The other participant has approved.', { exact: true })).toBeVisible();
+  await control(guest, 'Confirm this host').click();
+  await expect(control(host, 'Start shared Good Samaritan mission')).toBeEnabled();
+  await guest.getByRole('combobox', { name: 'Your Bible edition', exact: true }).selectOption('deu1912');
+  await control(host, 'Start shared Good Samaritan mission').click();
+  await expect(host.getByText('Evidence clue 1 of 5', { exact: false })).toBeVisible();
+  await expect(guest.getByText('Evidence clue 1 of 5', { exact: false })).toBeVisible();
+  await control(guest, 'Open this clue in my selected edition').click();
+  const german = JSON.parse(await readFile(new URL('../data/editions/deu1912/books/LUK.json', import.meta.url), 'utf8'));
+  const germanVerse = german.chapters.find((row: {number:number}) => row.number === 10).verses.find((row: {number:number}) => row.number === 25).text;
+  await expect(guest.locator('.nearby-source')).toContainText('Lutherbibel 1912');
+  await expect(guest.locator('.nearby-source')).toContainText(germanVerse);
+
+  await guest.getByLabel('A Roman soldier', { exact: true }).check();
+  await control(guest, 'Send answer to host').click();
+  await expect(control(guest, 'Send answer to host')).toBeDisabled();
+  await expect(host.getByText('Guest reader suggested: A Roman soldier', { exact: true })).toBeVisible();
+  await control(host, 'Check guest answer').click();
+  await expect(guest.getByText('Not quite. Re-read the cited passage and discuss it before trying again.', { exact: true })).toBeVisible();
+  await expect(control(guest, 'Send answer to host')).toBeEnabled();
+  await guest.getByLabel('A lawyer', { exact: true }).check();
+  await control(guest, 'Send answer to host').click();
+  await expect(host.getByText('Guest reader suggested: A lawyer', { exact: true })).toBeVisible();
+  await control(host, 'Check guest answer').click();
+  await expect(host.getByText('Evidence clue 2 of 5', { exact: false })).toBeVisible();
+  await expect(guest.getByText('Evidence clue 2 of 5', { exact: false })).toBeVisible();
+
+  const answers = [
+    ['A priest and a Levite', 'Evidence clue 3 of 5'],
+    ['A Samaritan', 'Evidence clue 4 of 5'],
+    ['He treated the wounds, used his animal and arranged care at an inn', 'Evidence clue 5 of 5'],
+    ['The one who showed mercy', 'Mission complete'],
+  ] as const;
+  for (const [answer, next] of answers) {
+    await guest.getByLabel(answer, { exact: true }).check();
+    await control(guest, 'Send answer to host').click();
+    await expect(host.getByRole('button', { name: 'Check guest answer', exact: true })).toBeEnabled();
+    await control(host, 'Check guest answer').click();
+    await expect(host.getByText(next, { exact: false })).toBeVisible();
+    await expect(guest.getByText(next, { exact: false })).toBeVisible();
+  }
+  await control(host, 'Disconnect and reset pairing').click();
+  await control(guest, 'Disconnect and reset pairing').click();
+});
+
 test('reset remains available during pairing and stale completion cannot restore the old connection', async ({ page }) => {
   await page.addInitScript(() => {
     const state = window as typeof window & { releaseNearbyOffer?: () => void };

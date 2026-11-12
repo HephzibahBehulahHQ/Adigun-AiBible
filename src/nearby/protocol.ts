@@ -7,6 +7,9 @@ export type RoomPayload =
   | { type: 'chat'; text: string }
   | { type: 'annotation'; text: string; reference: Reference }
   | { type: 'reference'; reference: Reference }
+  | { type: 'mission-state'; missionId: 'good-samaritan-evidence'; nextClueIndex: number; status: 'active' | 'complete' }
+  | { type: 'mission-answer'; missionId: 'good-samaritan-evidence'; clueIndex: number; clueId: string; answerId: string }
+  | { type: 'mission-result'; missionId: 'good-samaritan-evidence'; clueIndex: number; clueId: string; answerId: string; correct: boolean }
   | { type: 'pack-offer'; transferId: string; title: string; bytes: number; sha256: string; chunks: number }
   | { type: 'pack-accept'; transferId: string }
   | { type: 'pack-chunk'; transferId: string; index: number; data: string }
@@ -55,6 +58,16 @@ export function validatePayload(v:unknown):RoomPayload{
     return t==='chat'?{type:t,text:v.text}:{type:t,text:v.text,reference:roomReference(v.reference)};
   }
   if(t==='reference'){exact(v,['type','reference']);return {type:t,reference:roomReference(v.reference)};}
+  if(t==='mission-state'){
+    exact(v,['type','missionId','nextClueIndex','status']);
+    if(v.missionId!=='good-samaritan-evidence'||!integer(v.nextClueIndex,0,5)||(v.status!=='active'&&v.status!=='complete')||(v.status==='active'&&v.nextClueIndex===5)||(v.status==='complete'&&v.nextClueIndex!==5))fail('The shared mission state is invalid.');
+    return {type:t,missionId:v.missionId,nextClueIndex:v.nextClueIndex,status:v.status};
+  }
+  if(t==='mission-answer'||t==='mission-result'){
+    exact(v,t==='mission-answer'?['type','missionId','clueIndex','clueId','answerId']:['type','missionId','clueIndex','clueId','answerId','correct']);
+    if(v.missionId!=='good-samaritan-evidence'||!integer(v.clueIndex,0,4)||typeof v.clueId!=='string'||!/^[a-z][a-z0-9-]{0,63}$/.test(v.clueId)||typeof v.answerId!=='string'||!/^[a-z][a-z0-9-]{0,63}$/.test(v.answerId)||(t==='mission-result'&&typeof v.correct!=='boolean'))fail('The shared mission answer is invalid.');
+    return t==='mission-answer'?{type:t,missionId:v.missionId,clueIndex:v.clueIndex,clueId:v.clueId,answerId:v.answerId}:{type:t,missionId:v.missionId,clueIndex:v.clueIndex,clueId:v.clueId,answerId:v.answerId,correct:v.correct as boolean};
+  }
   if(t==='pack-offer'){
     exact(v,['type','transferId','title','bytes','sha256','chunks']);
     if(!validId(v.transferId)||typeof v.title!=='string'||!v.title.trim()||v.title.length>250||!integer(v.bytes,1,MAX_PACK_BYTES)||!sha(v.sha256)||!integer(v.chunks,1,Math.ceil(MAX_PACK_BYTES/CHUNK_BYTES))||v.chunks!==Math.ceil(v.bytes/CHUNK_BYTES))fail('The offered passage package exceeds the supported limits.');
@@ -92,3 +105,4 @@ export class IncomingTransfer{
     if(await digest(full)!==this.offer.sha256)fail('The transferred package checksum failed. Nothing was imported.');return full;
   }
 }
+
