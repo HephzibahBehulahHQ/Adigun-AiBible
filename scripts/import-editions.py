@@ -1901,6 +1901,45 @@ SOURCES['lat-clementine1598'] = {
     ],
 }
 
+SOURCES['eng-douay-rheims1899'] = {
+    'name': 'Douay-Rheims 1899', 'language': 'en', 'corpus': 'bible', 'publisher': 'eBible.org',
+    'translator': 'English College, Douai',
+    'revision': 'The Holy Bible in English, Douay-Rheims American Edition of 1899, translated from the Latin Vulgate; verse text only',
+    'abbreviation': 'DRV', 'nativeTitle': 'Douay-Rheims 1899', 'script': 'Latn', 'direction': 'ltr',
+    'sourceNoticeDate': '2022-11-03', 'sourceUpdatedAt': '2022-11-03', 'rightsObservedAt': '2026-11-12',
+    'sourceUrl': 'https://ebible.org/engDRA/', 'formatUrl': 'https://ebible.org/find/details.php?id=engDRA',
+    'downloadUrl': 'https://ebible.org/Scriptures/engDRA_vpl.zip',
+    'licenseUrl': 'https://ebible.org/engDRA/copyright.htm', 'license': 'Public domain',
+    'licenseIdentifier': 'LicenseRef-Public-Domain',
+    'attribution': 'The Holy Bible in English, Douay-Rheims American Edition of 1899. Translation by English College, Douai. Public domain as declared by eBible.org. Source: eBible.org.',
+    'sha256': '7e267290077a9ac9432ac4bd95e53096c77bf9aedc8ba4020503402863f2a7f0',
+    'xmlSha256': '5a0f1e8d430909cc12b425212fdedfe522f5ebe1745b51bb0d89bdf65c5a4000',
+    'textSha256': '96282bfa7c89a74680cea66fe873aafa5e7cd446407f0ff2531a723e19eee2c2',
+    'noticeSha256': '4b102b25fc82f25a433640cf3a204a14cc5087faf946c820bd5fdcf3fe28eb97',
+    'providerId': 'engDRA', 'downloadBytes': 4997223,
+    'bracketExceptionCount': 6,
+    'bracketExceptionInventorySha256': 'f6c15c67956cc7acaee1294940735c68942d4dd23db5232945067c3d1e12f5cd',
+    'bracketExceptionScope': 'Six Psalm superscription cross-references omit square bracket characters in the publisher XML. The unchanged publisher TXT remains the display source; each exact source reference and bracket position is pinned.',
+    'canon': 'douay-rheims-73',
+    'canonProfile': {
+        'id': 'douay-rheims-73', 'label': 'Douay-Rheims source list · 73 books',
+        'description': 'This edition profile follows the publisher archive’s 73-book order and 46-book Old Testament boundary. It describes this source edition and does not claim one canon for all Christian traditions.',
+        'sourceUrl': 'https://ebible.org/find/details.php?id=engDRA', 'bookCount': 73, 'oldTestamentBookCount': 46,
+    },
+    'bookOrder': SOURCES['lat-clementine1598']['bookOrder'],
+    'expectedTotals': {'books': 73, 'chapters': 1334, 'verses': 35811},
+    'rightsEvidenceUrls': ['https://ebible.org/engDRA/copyright.htm', 'https://ebible.org/publicdomain.htm', 'https://ebible.org/legal.php'],
+    'preserveSourceNotice': True,
+    'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': True, 'export': True},
+    'conditions': [
+        'Retain the exact Douay-Rheims American Edition of 1899 identity, the publisher’s translation credit, and the complete source notice with redistributed and offline copies.',
+        'eBible.org identifies this exact text as Public Domain and describes copying, distribution, adaptation, printing, and sale. Its policy asks users to verify applicable intellectual-property law; this record does not claim independent worldwide legal review.',
+        'Only the archive’s Bible verse text is imported. No introductions, study notes, artwork, or recorded audio are included.',
+        'The profile describes the publisher archive’s 73 ordered book entries and its 46-entry Old Testament boundary. It does not establish one canon for all Christian traditions.',
+        'No provider endorsement or independent human editorial review is asserted.',
+    ],
+}
+
 
 def sha(raw):
     return hashlib.sha256(raw).hexdigest()
@@ -2638,3 +2677,4 @@ if __name__ == '__main__':
     except (ValueError, OSError, KeyError, ET.ParseError, zipfile.BadZipFile) as error:
         print(f'Edition import failed: {error}', file=sys.stderr)
         raise SystemExit(1)
+
