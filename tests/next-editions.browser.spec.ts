@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 
 type Edition = { id: string; name: string; language: string; corpus: string; attribution: string; conditions: string[]; licenseDeedUrl?: string };
 type SourceBook = { name: string; chapters: { number: number; verses: { number: number; text: string }[] }[] };
-const ids = ['fra-darby2024', 'spa-simple2026', 'tdx-tandroy'];
+const ids = ['fra-darby2024', 'spa-simple2026', 'tdx-tandroy', 'hausa2020'];
 const catalog = JSON.parse(readFileSync(new URL('../data/editions/catalog.json', import.meta.url), 'utf8'));
 const baseline = JSON.parse(readFileSync(new URL('../data/manifest.json', import.meta.url), 'utf8'));
 const editions: Edition[] = [baseline.edition, ...catalog.editions.filter((edition: Edition) => edition.corpus === 'bible')];

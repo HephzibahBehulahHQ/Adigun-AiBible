@@ -252,6 +252,12 @@
       "url": "https://ebible.org/hrv/copyright.htm",
       "observedOn": "2026-11-12",
       "summary": "The individual eBible.org notice identifies Sveta Biblija, the Croatian Bible translated by Ivan Šarić Sarajevo, and declares it Public Domain."
+    },
+    {
+      "id": "hausa-cc",
+      "url": "https://ebible.org/hausa/copyright.htm",
+      "observedOn": "2026-11-13",
+      "summary": "The exact Hausa archive and individual copyright page identify Biblica® Open Hausa Contemporary Bible™, copyright 2009/2020, and permit redistribution in any format and reasonable adaptation under CC BY-SA 4.0 with attribution, ShareAlike, change disclosure and Biblica mark conditions."
     }
   ],
   "editions": [
@@ -6833,6 +6839,169 @@
         "eBible.org states this edition is Public Domain due to publication without copyright notice in 1985 and no subsequent registration within five years. This is the provider’s rights statement, not an independent worldwide legal opinion.",
         "Only the archive’s Bible verse text is imported. The source archive omits formatting, paragraph breaks, notes, introductions and noncanonical section titles.",
         "No provider endorsement or independent human editorial review is asserted."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "hausa2020",
+      "sourceSha256": "b4780ea28fc95ee7ca58ce7b0f75dc35a04201561735cb304cf557459d60d821",
+      "verifiedOn": "2026-11-13",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "unknown",
+        "evidenceIds": [
+          "hausa-cc",
+          "biblica-ai",
+          "biblica-ai-policy"
+        ],
+        "reason": "The edition notice grants CC BY-SA 4.0 rights for the text, but the application of Biblica’s product-wide AI policies and express permission for an AI-enabled product have not been established. Keep AI use gated pending that separate review."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hausa-cc"
+          ],
+          "reason": "Permitted for this exact text under the publisher’s CC BY-SA 4.0 notice and recorded attribution, ShareAlike and trademark conditions."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hausa-cc"
+          ],
+          "reason": "Permitted for this exact text under the publisher’s CC BY-SA 4.0 notice and recorded attribution, ShareAlike and trademark conditions."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hausa-cc"
+          ],
+          "reason": "Permitted for this exact text under the publisher’s CC BY-SA 4.0 notice and recorded attribution, ShareAlike and trademark conditions."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hausa-cc"
+          ],
+          "reason": "Permitted for this exact text under the publisher’s CC BY-SA 4.0 notice and recorded attribution, ShareAlike and trademark conditions."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hausa-cc"
+          ],
+          "reason": "Permitted for this exact text under the publisher’s CC BY-SA 4.0 notice and recorded attribution, ShareAlike and trademark conditions."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hausa-cc"
+          ],
+          "reason": "Permitted for this exact text under the publisher’s CC BY-SA 4.0 notice and recorded attribution, ShareAlike and trademark conditions."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hausa-cc"
+          ],
+          "reason": "Permitted for this exact text under the publisher’s CC BY-SA 4.0 notice and recorded attribution, ShareAlike and trademark conditions."
+        },
+        "aiRetrieval": {
+          "state": "unknown",
+          "evidenceIds": [
+            "hausa-cc"
+          ],
+          "reason": "Permitted for this exact text under the publisher’s CC BY-SA 4.0 notice and recorded attribution, ShareAlike and trademark conditions."
+        },
+        "modelTraining": {
+          "state": "unknown",
+          "evidenceIds": [
+            "hausa-cc"
+          ],
+          "reason": "Permitted for this exact text under the publisher’s CC BY-SA 4.0 notice and recorded attribution, ShareAlike and trademark conditions."
+        },
+        "tts": {
+          "state": "unknown",
+          "evidenceIds": [
+            "hausa-cc"
+          ],
+          "reason": "Permitted for this exact text under the publisher’s CC BY-SA 4.0 notice and recorded attribution, ShareAlike and trademark conditions."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "hausa-cc"
+          ],
+          "reason": "Permitted for this exact text under the publisher’s CC BY-SA 4.0 notice and recorded attribution, ShareAlike and trademark conditions."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hausa-cc"
+          ],
+          "reason": "Permitted for this exact text under the publisher’s CC BY-SA 4.0 notice and recorded attribution, ShareAlike and trademark conditions."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hausa-cc"
+          ],
+          "reason": "Permitted for this exact text under the publisher’s CC BY-SA 4.0 notice and recorded attribution, ShareAlike and trademark conditions."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hausa-cc"
+          ],
+          "reason": "Permitted for this exact text under the publisher’s CC BY-SA 4.0 notice and recorded attribution, ShareAlike and trademark conditions."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hausa-cc"
+          ],
+          "reason": "Permitted for this exact text under the publisher’s CC BY-SA 4.0 notice and recorded attribution, ShareAlike and trademark conditions."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hausa-cc"
+          ],
+          "reason": "Permitted for this exact text under the publisher’s CC BY-SA 4.0 notice and recorded attribution, ShareAlike and trademark conditions."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hausa-cc"
+          ],
+          "reason": "Permitted for this exact text under the publisher’s CC BY-SA 4.0 notice and recorded attribution, ShareAlike and trademark conditions."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "hausa-cc"
+          ],
+          "reason": "Permitted for this exact text under the publisher’s CC BY-SA 4.0 notice and recorded attribution, ShareAlike and trademark conditions."
+        }
+      },
+      "attribution": "Biblica® Open Hausa Contemporary Bible™. Copyright © 2009, 2020 by Biblica, Inc. CC BY-SA 4.0. Unmodified publisher wording; complete source notice retained. Source: https://ebible.org/hausa/.",
+      "conditions": [
+        "Retain the exact Biblica® Open Hausa Contemporary Bible™ identity and the complete publisher source notice with redistributed and offline copies.",
+        "The source notice grants CC BY-SA 4.0 redistribution in any format and reasonable adaptation, subject to attribution, disclosure of changes, ShareAlike and the Biblica trademark conditions.",
+        "This import preserves publisher verse wording; the VPL package omits notes, introductions, headings, paragraph layout and third-party recordings or images.",
+        "Keep Biblica marks intact for the unmodified source text and do not imply publisher endorsement. A modified text must remove the Biblica mark, disclose changes and remain CC BY-SA 4.0.",
+        "License permission is distinct from native-language approval, editorial review and any external AI service configuration."
       ],
       "cache": {
         "mode": "none-required"

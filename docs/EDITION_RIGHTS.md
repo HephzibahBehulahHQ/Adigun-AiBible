@@ -1,6 +1,6 @@
 # Additional edition sources, rights and reproducible import
 
-Verified publisher notices and source files: **3 November 2026**. These imports add published source text. They do not approve generated teaching, paraphrases, comparisons, or new translations. Software licensing is separate from these edition-specific licenses.
+Verified publisher notices and source files: **13 November 2026**. These imports add published source text. They do not approve generated teaching, paraphrases, comparisons, or new translations. Software licensing is separate from these edition-specific licenses.
 
 ## Imported editions
 
@@ -8,6 +8,7 @@ Verified publisher notices and source files: **3 November 2026**. These imports 
 | --- | --- | --- | --- | --- |
 | `deu1912` | Lutherbibel 1912 | Bible / German (`de`) | 66 books, 1,189 chapters, 31,102 numbered source records | Publisher declares this historical text public domain. This does not cover modern Luther revisions. |
 | `yor` | Biblica® Open Yoruba Contemporary Bible™ | Bible / Yorùbá (`yo`) | 66 books, 1,189 chapters, 31,087 numbered source records | CC BY-SA 4.0, with the publisher's attribution and trademark requirements. |
+| `hausa2020` | Biblica® Open Hausa Contemporary Bible™ | Bible / Hausa (`ha`) | 66 books, 1,189 chapters, 31,087 numbered source records | CC BY-SA 4.0; retain attribution, ShareAlike, change disclosure and exact-source Biblica trademark conditions. See [source record](HAUSA_2020_IMPORT.md). |
 | `eng-clearquran` | ClearQuran — Allah Edition, translated by Talal Itani | Quran translation / English (`en`) | 114 surahs, 6,236 numbered verses | CC BY-ND 4.0 plus express publisher permissions for formatting and unchanged excerpts, including commercial use. |
 
 The English Quran translation is Talal Itani's **ClearQuran**, not Mustafa Khattab's *The Clear Quran*. This import does not include Arabic text, Hadith, recorded audio, or approved Bible–Quran mappings.
@@ -21,6 +22,10 @@ The English Quran translation is Talal Itani's **ClearQuran**, not Mustafa Khatt
 | `eng-clearquran` | [Publisher terms and downloads](https://clearquran.com/download/) | [Allah Edition plain-text archive](https://d.clearquran.com/text/clearquran-txt-allah-edition.zip) | 9 October 2026, as stated in the pinned archive |
 
 Each edition includes `NOTICE.txt`, retaining the publisher's supplied notice in readable text, plus current source/license URLs. Keep these notices with redistributed or offline copies. The catalog's short attribution is not a replacement for the complete edition notice.
+
+### Hausa conditions
+
+The exact source notice grants CC BY-SA 4.0 display, redistribution and reasonable adaptation in any format, subject to attribution, ShareAlike, change-disclosure and Biblica trademark rules. The import keeps publisher wording unchanged, retains the complete source notice, and does not include third-party images or recordings. Keep Biblica marks with unchanged text and do not imply endorsement. AI product use remains gated pending review of Biblica's separate product-wide policy; native-language/editorial approval is also pending.
 
 ### Yorùbá conditions
 
