@@ -4,7 +4,7 @@ Read [PROJECT_STATUS.md](PROJECT_STATUS.md) for the current exact production rev
 
 ## Current release
 
-PR #58 is merged and deployed at source `b270e04b8b4575a2c3a053ffe4fa928870831485`. Main workflow 43359144851 passed production validation, desktop/mobile browser checks, persistence, Pages deployment, exact-source verification and live smoke. The public receipt at `2026-11-13T03:38:26.387Z` records build `5ec470f6a0bdac70663aabe3` and content `59bf268077e45f645c75ce78`. Main has 34 Bible editions (31 additional), including the full Biblica® Open Hausa Contemporary Bible™. PR #56 prevents static publication without exact active worldwide display rights; country-selective delivery remains unavailable. Physical two-device offline acceptance remains pending.
+PR #60 is merged and deployed at source `3cb1fe2374bf5e0fcafa909bb6de5dfa1f7ac580`. Main workflow 43365223314 passed production validation, desktop/mobile browser checks, persistence, Pages deployment, exact-source verification and live desktop/mobile Chromium smoke. The public receipt at `2026-11-13T04:35:48.285Z` records build `dd9fb5a7191d271b3572d9ac` and content `731ec02f0d29768381e269e1`. Main has 35 Bible editions (32 additional) across 23 source languages, including publisher-pinned Hausa 2020 and Igbo 2020 editions. PR #56 requires exact active worldwide display rights at build time; country-selective delivery remains unavailable. Native-language/editorial and product-wide AI review are not implied by display rights. Physical two-device offline acceptance remains pending.
 
 ## Independent work to finish
 
