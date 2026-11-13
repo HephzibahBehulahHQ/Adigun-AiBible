@@ -2062,6 +2062,45 @@ SOURCES['hausa2020'] = {
     ],
 }
 
+SOURCES['igbo2020'] = {
+    'name': 'Biblica® Open Igbo Contemporary Bible™', 'language': 'ig', 'corpus': 'bible',
+    'publisher': 'Biblica, Inc.; distributed by eBible.org', 'translator': 'Biblica, Inc.',
+    'revision': 'Biblica® Open Igbo Contemporary Bible™ (1980, 1988, 2019, 2020); publisher verse text only',
+    'abbreviation': 'BIUO', 'nativeTitle': 'Biblica® Baịbụlụ Nsọ nʼIgbo Ndị Ugbu a nke dịrị onye ọbụla ịgụ',
+    'script': 'Latn', 'direction': 'ltr', 'sourceNoticeDate': '2023-04-12',
+    'sourceUpdatedAt': '2023-04-12', 'rightsObservedAt': '2026-11-13',
+    'sourceUrl': 'https://ebible.org/ibo/', 'formatUrl': 'https://ebible.org/details.php?id=ibo',
+    'downloadUrl': 'https://ebible.org/Scriptures/ibo_vpl.zip',
+    'licenseUrl': 'https://ebible.org/ibo/copyright.htm', 'license': 'CC BY-SA 4.0',
+    'licenseIdentifier': 'CC-BY-SA-4.0', 'licenseDeedUrl': 'https://creativecommons.org/licenses/by-sa/4.0/',
+    'attribution': 'Biblica® Open Igbo Contemporary Bible™. Copyright © 1980, 1988, 2019, 2020 by Biblica, Inc. CC BY-SA 4.0. Unmodified publisher wording; complete source notice retained. Source: https://ebible.org/ibo/.',
+    'sha256': 'fe4030d183c5514c879b93f863abbe5f12f707024168d05925a129b093fef684',
+    'xmlSha256': 'bf5c3fcc875d1b762b86669f481702248f6bf8ec0ee0c70dd739c72dfbb22497',
+    'textSha256': 'b75fea29a54cd89c3b445142883d5c3024118778225aaddf75dfccafe31f411a',
+    'noticeSha256': '08d7a18c6d6af7906ae62f83fc5224a28eca2e9ac7c6b3007907187444fe6dfb',
+    'providerId': 'ibo', 'downloadBytes': 4766484,
+    'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31103},
+    'rightsEvidenceUrls': ['https://ebible.org/ibo/copyright.htm', 'https://creativecommons.org/licenses/by-sa/4.0/'],
+    'preserveSourceNotice': True,
+    'languageEvidence': {
+        'registryUrl': 'https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry',
+        'registryFileDate': '2026-09-17',
+        'registrySha256': '755fad43283be7b41ebe3c89ad054b6eaf928f404f9c0edb74799e0eab74beb1',
+        'languageTag': 'ig', 'script': 'Latn', 'direction': 'ltr',
+        'sourceLetterBidiCounts': {'L': 3159137},
+        'sourceLetterUnicodeNamePrefixes': {'LATIN': 3113644, 'MODIFIER': 45493},
+        'scope': 'The publisher identifies the text as Igbo; the IANA registry validates the BCP 47 tag. Letters in the exact publisher TXT were inspected and are left-to-right Latin or modifier letters. This is not native-language approval.',
+    },
+    'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': True, 'export': True},
+    'conditions': [
+        'Retain the exact Biblica® Open Igbo Contemporary Bible™ identity and the complete publisher source notice with redistributed and offline copies.',
+        'The source notice grants CC BY-SA 4.0 redistribution in any format and reasonable adaptation, subject to attribution, disclosure of changes, ShareAlike and the Biblica trademark conditions.',
+        'This import preserves publisher verse wording; the VPL package omits notes, introductions, headings, paragraph layout and third-party recordings or images.',
+        'Keep Biblica marks intact for the unmodified source text and do not imply publisher endorsement. A modified text must remove the Biblica mark, disclose changes and remain CC BY-SA 4.0.',
+        'License permission is distinct from native-language approval, editorial review and any external AI service configuration.',
+    ],
+}
+
 
 def sha(raw):
     return hashlib.sha256(raw).hexdigest()

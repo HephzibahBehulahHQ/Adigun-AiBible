@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SPEC = importlib.util.spec_from_file_location('edition_importer', ROOT / 'scripts/import-editions.py')
 IMPORTER = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(IMPORTER)
-IDS = ['fra-darby2024', 'spa-simple2026', 'tdx-tandroy', 'hausa2020']
+IDS = ['fra-darby2024', 'spa-simple2026', 'tdx-tandroy', 'hausa2020', 'igbo2020']
 
 
 def read(edition, path):
@@ -39,7 +39,7 @@ class NextEditionChecks(unittest.TestCase):
         self.assertFalse(IMPORTER.generated_hash_matches('manifest.json', changed, IMPORTER.sha(canonical)))
 
     def test_complete_exception_inventories_reject_changed_counts_coordinates_and_offsets(self):
-        for edition, count in zip(IDS, [4030, 0, 10, 0]):
+        for edition, count in zip(IDS, [4030, 0, 10, 0, 0]):
             with self.subTest(edition=edition):
                 provenance = read(edition, 'provenance.json')
                 brackets = provenance.get('publisherBracketFormatDifferences', [])
