@@ -173,7 +173,7 @@ test.describe('eight exact source admissions', () => {
     }
     await page.goto(route('saved', 'tdx-tandroy'));
     await page.reload();
-    await expect(page.locator('.saved-card')).toHaveCount(6);
+    await expect(page.locator('.saved-card')).toHaveCount(7);
     const downloadPromise = page.waitForEvent('download');
     await page.getByRole('button', { name: 'Export notebook', exact: true }).click();
     const download = await downloadPromise;
