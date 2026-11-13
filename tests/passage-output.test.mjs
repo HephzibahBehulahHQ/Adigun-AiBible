@@ -15,6 +15,14 @@ test('passage output accepts exact contiguous source units without changing thei
   assert.deepEqual(verses, original);
 });
 
+test('publisher source ranges cover their stated verse positions without fabricating records', () => {
+  const sourceRange = [{ number: 6, endNumber: 8, text: 'Publisher text spanning the stated source range.' }];
+  assert.doesNotThrow(() => assertCompletePassage(sourceRange, { verse: 6, endVerse: 8 }));
+  assert.doesNotThrow(() => assertCompletePassage(sourceRange, { verse: 7 }));
+  assert.throws(() => assertCompletePassage([{ number: 6, text: 'Only verse six.' }], { verse: 6, endVerse: 8 }), /missing source wording/);
+  assert.throws(() => assertCompletePassage([{ number: 6, endNumber: 8, text: 'Range.' }, { number: 8, text: 'Overlap.' }], { verse: 6, endVerse: 8 }), /missing source wording/);
+});
+
 test('BSB omitted positions cannot silently disappear from projected or printed ranges', async () => {
   for (const [first, last] of [[20, 22], [21, 22], [20, 21], [21, 21]]) {
     const range = { verse: first, endVerse: last };

@@ -264,6 +264,12 @@
       "url": "https://ebible.org/ibo/copyright.htm",
       "observedOn": "2026-11-13",
       "summary": "The exact Open Igbo Contemporary Bible notice grants CC BY-SA 4.0 redistribution and reasonable adaptation with attribution, change disclosure, ShareAlike and Biblica trademark conditions."
+    },
+    {
+      "id": "duya-cc",
+      "url": "https://ebible.org/ldb/copyright.htm",
+      "observedOn": "2026-11-13",
+      "summary": "The exact Duya NT copyright notice grants Creative Commons Attribution-ShareAlike 4.0 International rights, subject to attribution, change disclosure, ShareAlike and the stated attribution notice."
     }
   ],
   "editions": [
@@ -7178,6 +7184,167 @@
       "providerReporting": {
         "requirement": "none",
         "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "ldb-duya2024",
+      "sourceSha256": "c394cc2836c21f41e42f9610c836fa093983b6c11802b288b233fc47ba61d4c0",
+      "verifiedOn": "2026-11-13",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "unknown",
+        "evidenceIds": [
+          "duya-cc"
+        ],
+        "reason": "The CC BY-SA 4.0 notice permits sharing and adaptation of the text, but it does not establish this product’s separate AI retrieval or training authorization. Keep AI operations gated pending specific review."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "duya-cc"
+          ],
+          "reason": "Permitted for the exact source text under the publisher’s CC BY-SA 4.0 notice, subject to attribution, change disclosure and ShareAlike."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "duya-cc"
+          ],
+          "reason": "Permitted for the exact source text under the publisher’s CC BY-SA 4.0 notice, subject to attribution, change disclosure and ShareAlike."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "duya-cc"
+          ],
+          "reason": "Permitted for the exact source text under the publisher’s CC BY-SA 4.0 notice, subject to attribution, change disclosure and ShareAlike."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "duya-cc"
+          ],
+          "reason": "Permitted for the exact source text under the publisher’s CC BY-SA 4.0 notice, subject to attribution, change disclosure and ShareAlike."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "duya-cc"
+          ],
+          "reason": "Permitted for the exact source text under the publisher’s CC BY-SA 4.0 notice, subject to attribution, change disclosure and ShareAlike."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "duya-cc"
+          ],
+          "reason": "Permitted for the exact source text under the publisher’s CC BY-SA 4.0 notice, subject to attribution, change disclosure and ShareAlike."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "duya-cc"
+          ],
+          "reason": "Permitted for the exact source text under the publisher’s CC BY-SA 4.0 notice, subject to attribution, change disclosure and ShareAlike."
+        },
+        "aiRetrieval": {
+          "state": "unknown",
+          "evidenceIds": [
+            "duya-cc"
+          ],
+          "reason": "No separate evidence has been established for this operation; the CC BY-SA notice applies to the text and does not establish external AI-provider or recorded-audio permissions."
+        },
+        "modelTraining": {
+          "state": "unknown",
+          "evidenceIds": [
+            "duya-cc"
+          ],
+          "reason": "No separate evidence has been established for this operation; the CC BY-SA notice applies to the text and does not establish external AI-provider or recorded-audio permissions."
+        },
+        "tts": {
+          "state": "unknown",
+          "evidenceIds": [
+            "duya-cc"
+          ],
+          "reason": "No separate evidence has been established for this operation; the CC BY-SA notice applies to the text and does not establish external AI-provider or recorded-audio permissions."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "duya-cc"
+          ],
+          "reason": "No separate evidence has been established for this operation; the CC BY-SA notice applies to the text and does not establish external AI-provider or recorded-audio permissions."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "duya-cc"
+          ],
+          "reason": "Permitted for the exact source text under the publisher’s CC BY-SA 4.0 notice, subject to attribution, change disclosure and ShareAlike."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "duya-cc"
+          ],
+          "reason": "Permitted for the exact source text under the publisher’s CC BY-SA 4.0 notice, subject to attribution, change disclosure and ShareAlike."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "duya-cc"
+          ],
+          "reason": "Permitted for the exact source text under the publisher’s CC BY-SA 4.0 notice, subject to attribution, change disclosure and ShareAlike."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "duya-cc"
+          ],
+          "reason": "Permitted for the exact source text under the publisher’s CC BY-SA 4.0 notice, subject to attribution, change disclosure and ShareAlike."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "duya-cc"
+          ],
+          "reason": "Permitted for the exact source text under the publisher’s CC BY-SA 4.0 notice, subject to attribution, change disclosure and ShareAlike."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "duya-cc"
+          ],
+          "reason": "Permitted for the exact source text under the publisher’s CC BY-SA 4.0 notice, subject to attribution, change disclosure and ShareAlike."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "duya-cc"
+          ],
+          "reason": "Permitted for the exact source text under the publisher’s CC BY-SA 4.0 notice, subject to attribution, change disclosure and ShareAlike."
+        }
+      },
+      "attribution": "Duya: Ibibemuwe-Num Iyiki Ifa Ru Dũya (New Testament). Copyright © 2024 Wycliffe Bible Translators, Inc. Translation by Dũya Development Association; contributor: SIL Nigeria. CC BY-SA 4.0. Unmodified publisher wording; full source notice retained. Source: https://ebible.org/ldb/.",
+      "conditions": [
+        "Retain the exact Duya NT identity and complete publisher source notice with redistributed and offline copies.",
+        "CC BY-SA 4.0 permits sharing and adaptation subject to attribution, disclosure of changes and ShareAlike.",
+        "The unmodified publisher TXT supplies display wording. Its VPL XML identifies two combined verse ranges, which are preserved as source ranges; no missing wording is fabricated.",
+        "The VPL archive omits introductions, headings, footnotes, paragraph layout and third-party recorded audio or images.",
+        "License permission is distinct from native-language approval, editorial review and any external AI service configuration."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No provider telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
       }
     }
   ]

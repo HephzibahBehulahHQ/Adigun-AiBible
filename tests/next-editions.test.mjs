@@ -90,23 +90,23 @@ for (const [id, pin] of Object.entries(expected)) {
 }
 
 test('the installed inventory counts distinct source languages, editions and regional tags accurately', () => {
-  assert.equal(editions.length, 35);
-  assert.equal(new Set(editions.map(row => row.id)).size, 35);
+  assert.equal(editions.length, 36);
+  assert.equal(new Set(editions.map(row => row.id)).size, 36);
   const original = new Set(['eng-web', 'deu1912', 'yor']);
-  assert.equal(editions.filter(row => !original.has(row.id)).length, 32);
-  assert.equal(new Set(editions.map(row => row.language)).size, 24);
-  assert.equal(new Set(editions.map(row => new Intl.Locale(row.language).language)).size, 23);
+  assert.equal(editions.filter(row => !original.has(row.id)).length, 33);
+  assert.equal(new Set(editions.map(row => row.language)).size, 25);
+  assert.equal(new Set(editions.map(row => new Intl.Locale(row.language).language)).size, 24);
   assert.equal(new Intl.Locale(manifest('spa-simple2026').edition.language).language, 'es');
-  assert.equal(Object.values(expected).reduce((total, row) => total + row.records, 0) + manifest('eng-douay-rheims1899').totals.verses + manifest('hat-1985').totals.verses + manifest('hrv-saric').totals.verses, 257904);
+  assert.equal(Object.values(expected).reduce((total, row) => total + row.records, 0) + manifest('eng-douay-rheims1899').totals.verses + manifest('hat-1985').totals.verses + manifest('hrv-saric').totals.verses + manifest('ldb-duya2024').totals.verses, 265844);
   const french = manifest('fra-darby2024').edition;
   assert.match(french.name, /BPC 2024/);
   assert.match(french.revision, /Not the distinct 2026 revised edition/);
   assert.ok(french.conditions.some(condition => condition.includes('2026 revised edition is CC BY-NC-ND and is not imported')));
 });
 
-test('all 35 publisher inventories identify the current revision and match real source metadata', () => {
+test('all 36 publisher inventories identify the current revision and match real source metadata', () => {
   const coverage = JSON.parse(readFileSync(new URL('../data/speakers/publisher-coverage.json', import.meta.url)));
-  assert.equal(coverage.editions.length, 35);
+  assert.equal(coverage.editions.length, 36);
   assert.deepEqual(coverage.editions.map(row => row.editionId).sort(), editions.map(row => row.id).sort());
   for (const edition of editions) {
     const entry = coverage.editions.find(row => row.editionId === edition.id);
@@ -124,6 +124,31 @@ test('all 35 publisher inventories identify the current revision and match real 
       assert.equal(row.rejectedMetadata, actual.issues.length);
     }
   }
+});
+
+test('Duya NT source records preserve its exact publisher verse ranges and edition scope', () => {
+  const edition = catalog.editions.find(row => row.id === 'ldb-duya2024');
+  const source = manifest('ldb-duya2024'), provenance = read('ldb-duya2024/provenance.json');
+  const acquisition = read('acquisition-catalog.json').records.find(row => row.providerId === 'ldb');
+  assert.equal(edition.name, 'Duya NT');
+  assert.equal(edition.language, 'ldb');
+  assert.equal(edition.scope, 'new-testament');
+  assert.equal(edition.license, 'CC BY-SA 4.0');
+  assert.deepEqual(source.totals, { books: 27, chapters: 260, verses: 7940 });
+  assert.equal(provenance.archiveSha256, 'c394cc2836c21f41e42f9610c836fa093983b6c11802b288b233fc47ba61d4c0');
+  assert.equal(provenance.xmlAndPlainTextAgree, true);
+  assert.deepEqual(provenance.publisherSourceVerseRanges, [
+    { bookId: 'ACT', chapter: 24, start: 6, end: 8 },
+    { bookId: 'ROM', chapter: 9, start: 11, end: 12 },
+  ]);
+  const acts = book('ldb-duya2024', 'ACT').chapters.find(row => row.number === 24);
+  const range = acts.verses.find(row => row.number === 6);
+  assert.equal(range.endNumber, 8);
+  assert.equal(acts.verses.some(row => row.number === 7 || row.number === 8), false);
+  assert.equal(acquisition.coverage, 'validated-new-testament');
+  assert.equal(acquisition.installedSourceSha256, edition.sha256);
+  assert.deepEqual(acquisition.publisherVerseRanges, provenance.publisherSourceVerseRanges);
+  assert.ok(source.edition.conditions.some(condition => condition.includes('no missing wording is fabricated')));
 });
 
 test('licensed text uses stay revision-bound and do not grant recordings or unreviewed Biblica AI use', () => {

@@ -22,6 +22,7 @@ export interface SourceSegment {
 
 export interface VerseStructure {
   number: number;
+  endNumber?: number;
   text: string;
   segments: SourceSegment[];
   notes: NormalizedNote[];
@@ -280,6 +281,7 @@ export function buildChapterStructure(chapter: Chapter): ChapterStructure {
     for (const issue of localIssues) issues.push(`Verse ${verse.number}: ${issue}`);
     return {
       number: verse.number,
+      ...(verse.endNumber === undefined ? {} : { endNumber: verse.endNumber }),
       text: verse.text,
       segments: valid ? makeSegments(verse.text, characters, notes, paragraphRanges.get(verse.number) ?? []) : plainSegments(verse.text),
       notes: valid ? notes : [],

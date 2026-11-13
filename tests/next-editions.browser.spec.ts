@@ -3,7 +3,7 @@ import type { Page } from '@playwright/test';
 import { readFileSync } from 'node:fs';
 
 type Edition = { id: string; name: string; language: string; corpus: string; attribution: string; conditions: string[]; licenseDeedUrl?: string };
-type SourceBook = { name: string; chapters: { number: number; verses: { number: number; text: string }[] }[] };
+type SourceBook = { name: string; chapters: { number: number; verses: { number: number; endNumber?: number; text: string }[] }[] };
 const ids = ['fra-darby2024', 'spa-simple2026', 'tdx-tandroy', 'hausa2020', 'igbo2020'];
 const catalog = JSON.parse(readFileSync(new URL('../data/editions/catalog.json', import.meta.url), 'utf8'));
 const baseline = JSON.parse(readFileSync(new URL('../data/manifest.json', import.meta.url), 'utf8'));
@@ -30,17 +30,17 @@ async function cachedNotice(page: Page, id: string) {
   }, id);
 }
 
-test.describe('five exact source admissions', () => {
+test.describe('six exact source admissions', () => {
   test.use({ serviceWorkers: 'block' });
 
-  test('35 editions report 23 source languages and preserve the separate regional filters', async ({ page }) => {
-    expect(editions).toHaveLength(35);
-    expect(new Set(editions.map(edition => new Intl.Locale(edition.language).language)).size).toBe(23);
+  test('36 editions report 24 source languages and preserve the separate regional filters', async ({ page }) => {
+    expect(editions).toHaveLength(36);
+    expect(new Set(editions.map(edition => new Intl.Locale(edition.language).language)).size).toBe(24);
     await page.goto(route('editions', 'eng-web'));
-    await expect(page.getByText('35 installed Bible text editions · 32 added beyond the verified three-edition baseline.', { exact: false })).toBeVisible();
-    await expect(page.getByText(/^Installed source languages \(23\):/)).toBeVisible();
+    await expect(page.getByText('36 installed Bible text editions · 33 added beyond the verified three-edition baseline.', { exact: false })).toBeVisible();
+    await expect(page.getByText(/^Installed source languages \(24\):/)).toBeVisible();
     const languages = page.getByRole('combobox', { name: 'Language', exact: true });
-    await expect(languages.locator('option')).toHaveCount(25); // 24 exact tags plus the all-languages option.
+    await expect(languages.locator('option')).toHaveCount(26); // 25 exact tags plus the all-languages option.
     const results = page.getByRole('region', { name: 'Installed Bible editions', exact: true });
     for (const tag of ['es', 'es-419']) {
       await languages.selectOption(tag);
@@ -67,6 +67,24 @@ test.describe('five exact source admissions', () => {
       await expect(page.locator('#verse-19')).not.toHaveClass(/\bselected\b/);
     });
   }
+
+  test('Duya NT selection opens the first available book and keeps publisher verse ranges intact', async ({ page }) => {
+    const id = 'ldb-duya2024';
+    await page.goto(route('editions', 'eng-web', 'GEN', 1, 1));
+    await page.getByRole('textbox', { name: 'Find an edition', exact: true }).fill('Duya NT');
+    const results = page.getByRole('region', { name: 'Installed Bible editions', exact: true });
+    await expect(results.getByRole('article')).toHaveCount(1);
+    await results.getByRole('button', { name: 'Read edition', exact: true }).click();
+    await expect(page).toHaveURL(/#\/read\/MAT\/1\?verse=1&edition=ldb-duya2024$/);
+    await expect(page.locator('.reader-title .eyebrow')).toHaveText(metadata(id).name);
+    await exactVerse(page, 1, verse(id, 'MAT', 1, 1));
+
+    await page.goto(route('read', id, 'ACT', 24, 6, 8));
+    await exactVerse(page, 6, verse(id, 'ACT', 24, 6));
+    await expect(page.locator('#verse-6 .verse-number')).toHaveText('06–8');
+    await expect(page.locator('#verse-7, #verse-8')).toHaveCount(0);
+    await expect(page.locator('#verse-6')).toHaveClass(/\bselected\b/);
+  });
 
   test('French source numbering retains Joel 4 and Malachi 3 before crossing book boundaries', async ({ page }) => {
     const id = 'fra-darby2024';
