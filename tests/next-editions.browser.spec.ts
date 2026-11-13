@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 
 type Edition = { id: string; name: string; language: string; corpus: string; attribution: string; conditions: string[]; licenseDeedUrl?: string };
 type SourceBook = { name: string; chapters: { number: number; verses: { number: number; text: string }[] }[] };
-const ids = ['fra-darby2024', 'spa-simple2026', 'tdx-tandroy', 'hausa2020'];
+const ids = ['fra-darby2024', 'spa-simple2026', 'tdx-tandroy', 'hausa2020', 'igbo2020'];
 const catalog = JSON.parse(readFileSync(new URL('../data/editions/catalog.json', import.meta.url), 'utf8'));
 const baseline = JSON.parse(readFileSync(new URL('../data/manifest.json', import.meta.url), 'utf8'));
 const editions: Edition[] = [baseline.edition, ...catalog.editions.filter((edition: Edition) => edition.corpus === 'bible')];
@@ -30,17 +30,17 @@ async function cachedNotice(page: Page, id: string) {
   }, id);
 }
 
-test.describe('four exact source admissions', () => {
+test.describe('five exact source admissions', () => {
   test.use({ serviceWorkers: 'block' });
 
-  test('34 editions report 22 source languages and preserve the separate regional filters', async ({ page }) => {
-    expect(editions).toHaveLength(34);
-    expect(new Set(editions.map(edition => new Intl.Locale(edition.language).language)).size).toBe(22);
+  test('35 editions report 23 source languages and preserve the separate regional filters', async ({ page }) => {
+    expect(editions).toHaveLength(35);
+    expect(new Set(editions.map(edition => new Intl.Locale(edition.language).language)).size).toBe(23);
     await page.goto(route('editions', 'eng-web'));
-    await expect(page.getByText('34 installed Bible text editions · 31 added beyond the verified three-edition baseline.', { exact: false })).toBeVisible();
-    await expect(page.getByText(/^Installed source languages \(22\):/)).toBeVisible();
+    await expect(page.getByText('35 installed Bible text editions · 32 added beyond the verified three-edition baseline.', { exact: false })).toBeVisible();
+    await expect(page.getByText(/^Installed source languages \(23\):/)).toBeVisible();
     const languages = page.getByRole('combobox', { name: 'Language', exact: true });
-    await expect(languages.locator('option')).toHaveCount(24); // 23 exact tags plus the all-languages option.
+    await expect(languages.locator('option')).toHaveCount(25); // 24 exact tags plus the all-languages option.
     const results = page.getByRole('region', { name: 'Installed Bible editions', exact: true });
     for (const tag of ['es', 'es-419']) {
       await languages.selectOption(tag);
@@ -127,7 +127,7 @@ test.describe('four exact source admissions', () => {
     await testInfo.attach('Tandroy draft, change notice and share-alike obligations at 320px', { path: licenseScreenshot, contentType: 'image/png' });
   });
 
-  test('a downloaded notebook preserves all four exact sources and the Tandroy license conditions', async ({ page }) => {
+  test('a downloaded notebook preserves all five exact sources and the Tandroy license conditions', async ({ page }) => {
     for (const id of ids) {
       await page.goto(route('read', id));
       await exactVerse(page, 16, verse(id));
@@ -138,7 +138,7 @@ test.describe('four exact source admissions', () => {
     }
     await page.goto(route('saved', 'tdx-tandroy'));
     await page.reload();
-    await expect(page.locator('.saved-card')).toHaveCount(4);
+    await expect(page.locator('.saved-card')).toHaveCount(5);
     const downloadPromise = page.waitForEvent('download');
     await page.getByRole('button', { name: 'Export notebook', exact: true }).click();
     const download = await downloadPromise;

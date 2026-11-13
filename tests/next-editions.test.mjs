@@ -15,11 +15,18 @@ const expected = {
   'spa-simple2026': { provider: 'spabes', language: 'es-419', records: 31102, empty: 0, files: 70, sha: 'b5397717e5031db82ce6c595ae1d3803626aaa3d11ce8750b31d5d766b3568e1' },
   'tdx-tandroy': { provider: 'tdx', language: 'tdx', records: 31081, empty: 6, files: 71, sha: 'ca352f5888aa64896069f57cea898abadb3f2f851a1d4f555ab088b2a601e960' },
   'hausa2020': { provider: 'hausa', language: 'ha', records: 31087, empty: 0, files: 70, sha: 'b4780ea28fc95ee7ca58ce7b0f75dc35a04201561735cb304cf557459d60d821' },
+  'igbo2020': { provider: 'ibo', language: 'ig', records: 31103, empty: 0, files: 70, sha: 'fe4030d183c5514c879b93f863abbe5f12f707024168d05925a129b093fef684' },
 };
 const root = new URL('../data/editions/', import.meta.url);
 const bytes = path => readFileSync(new URL(path, root));
 const read = path => JSON.parse(bytes(path));
 const hash = value => createHash('sha256').update(value).digest('hex');
+const generatedHash = path => {
+  const raw = bytes(path);
+  // Publisher notices are pinned as raw source members and kept byte-exact.
+  if (path.endsWith('/SOURCE_NOTICE.html.txt')) return hash(raw);
+  return hash(Buffer.from(raw.toString('utf8').replace(/\r\n/g, '\n')));
+};
 const pythonCommand = process.env.PYTHON ?? (process.platform === 'win32' ? 'python' : 'python3');
 const manifest = id => read(id + '/manifest.json');
 const book = (id, bookId) => read(id + '/books/' + bookId + '.json');
@@ -73,7 +80,7 @@ for (const [id, pin] of Object.entries(expected)) {
     assert.equal(hash(JSON.stringify(rows) + '\n'), provenance.generatedFileSha256['search-index.json']);
     for (const [path, digest] of Object.entries(provenance.generatedFileSha256)) {
       if (path === 'search-index.json' && !existsSync(new URL(id + '/' + path, root))) continue;
-      assert.equal(hash(bytes(id + '/' + path)), digest, id + '/' + path);
+      assert.equal(generatedHash(id + '/' + path), digest, id + '/' + path);
     }
     const acquired = read('acquisition-catalog.json').records.find(row => row.providerId === pin.provider);
     assert.equal(acquired.installedEditionId, id);
@@ -83,23 +90,23 @@ for (const [id, pin] of Object.entries(expected)) {
 }
 
 test('the installed inventory counts distinct source languages, editions and regional tags accurately', () => {
-  assert.equal(editions.length, 34);
-  assert.equal(new Set(editions.map(row => row.id)).size, 34);
+  assert.equal(editions.length, 35);
+  assert.equal(new Set(editions.map(row => row.id)).size, 35);
   const original = new Set(['eng-web', 'deu1912', 'yor']);
-  assert.equal(editions.filter(row => !original.has(row.id)).length, 31);
-  assert.equal(new Set(editions.map(row => row.language)).size, 23);
-  assert.equal(new Set(editions.map(row => new Intl.Locale(row.language).language)).size, 22);
+  assert.equal(editions.filter(row => !original.has(row.id)).length, 32);
+  assert.equal(new Set(editions.map(row => row.language)).size, 24);
+  assert.equal(new Set(editions.map(row => new Intl.Locale(row.language).language)).size, 23);
   assert.equal(new Intl.Locale(manifest('spa-simple2026').edition.language).language, 'es');
-  assert.equal(Object.values(expected).reduce((total, row) => total + row.records, 0) + manifest('eng-douay-rheims1899').totals.verses + manifest('hat-1985').totals.verses + manifest('hrv-saric').totals.verses, 226801);
+  assert.equal(Object.values(expected).reduce((total, row) => total + row.records, 0) + manifest('eng-douay-rheims1899').totals.verses + manifest('hat-1985').totals.verses + manifest('hrv-saric').totals.verses, 257904);
   const french = manifest('fra-darby2024').edition;
   assert.match(french.name, /BPC 2024/);
   assert.match(french.revision, /Not the distinct 2026 revised edition/);
   assert.ok(french.conditions.some(condition => condition.includes('2026 revised edition is CC BY-NC-ND and is not imported')));
 });
 
-test('all 34 publisher inventories identify the current revision and match real source metadata', () => {
+test('all 35 publisher inventories identify the current revision and match real source metadata', () => {
   const coverage = JSON.parse(readFileSync(new URL('../data/speakers/publisher-coverage.json', import.meta.url)));
-  assert.equal(coverage.editions.length, 34);
+  assert.equal(coverage.editions.length, 35);
   assert.deepEqual(coverage.editions.map(row => row.editionId).sort(), editions.map(row => row.id).sort());
   for (const edition of editions) {
     const entry = coverage.editions.find(row => row.editionId === edition.id);
@@ -119,7 +126,7 @@ test('all 34 publisher inventories identify the current revision and match real 
   }
 });
 
-test('licensed text uses stay revision-bound and do not grant recordings or unreviewed Hausa AI use', () => {
+test('licensed text uses stay revision-bound and do not grant recordings or unreviewed Biblica AI use', () => {
   const rights = validateEditionRightsRegister(read('rights-register.json'));
   for (const [id, pin] of Object.entries(expected)) {
     const row = rights.editions.find(entry => entry.editionId === id);
@@ -136,7 +143,7 @@ test('licensed text uses stay revision-bound and do not grant recordings or unre
     assert.equal(decideEditionOperation({ ...row, expiresOn: '2026-11-04' }, 'documentExport', context).allowed, false);
     assert.equal(decideEditionOperation({ ...row, territory: { scope: 'unknown', countries: [] } }, 'display', context).allowed, false);
     assert.equal(decideEditionOperation({ ...row, aiProductUse: { ...row.aiProductUse, state: 'unknown' } }, 'display', { ...context, aiProductEnabled: true }).allowed, false);
-    if (id === 'hausa2020') assert.equal(row.aiProductUse.state, 'unknown');
+    if (id === 'hausa2020' || id === 'igbo2020') assert.equal(row.aiProductUse.state, 'unknown');
   }
   const tandroy = rights.editions.find(row => row.editionId === 'tdx-tandroy');
   assert.equal(tandroy.operations.modelTraining.state, 'unknown');
