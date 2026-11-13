@@ -203,10 +203,52 @@ export function createServiceWorkerSource(manifest, shellFiles) {
   return `(${serviceWorkerRuntime.toString()})(${JSON.stringify({ manifest, shellFiles })});\n`;
 }
 
+/** Public Pages publishes edition text as static files, so only worldwide display grants can ship. */
+export function assertPublicStaticEditionRights(catalog, rightsRegister, today = new Date().toISOString().slice(0, 10)) {
+  const validDate = value => typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value)
+    && Number.isFinite(Date.parse(value)) && new Date(value).toISOString().slice(0, 10) === value;
+  if (!catalog || !Array.isArray(catalog.editions) || !rightsRegister || !Array.isArray(rightsRegister.editions) || !validDate(today)) {
+    throw new Error('Static deployment requires a valid edition catalog, rights register, and check date.');
+  }
+  const rightsById = new Map();
+  for (const record of rightsRegister.editions) {
+    if (!record || typeof record.editionId !== 'string' || rightsById.has(record.editionId)) {
+      throw new Error('Static deployment rights register has an invalid or duplicate edition identity.');
+    }
+    rightsById.set(record.editionId, record);
+  }
+  const installedIds = new Set();
+  for (const edition of catalog.editions) {
+    if (!edition || typeof edition.id !== 'string' || installedIds.has(edition.id)
+      || typeof edition.sha256 !== 'string' || !/^[a-f0-9]{64}$/.test(edition.sha256)) {
+      throw new Error('Static deployment catalog has an invalid or duplicate edition identity.');
+    }
+    installedIds.add(edition.id);
+    const record = rightsById.get(edition.id);
+    if (!record) throw new Error(`Static deployment rejected: ${edition.id} has no rights record.`);
+    if (record.sourceSha256 !== edition.sha256) throw new Error(`Static deployment rejected: ${edition.id} rights do not match its source revision.`);
+    if (record.territory?.scope !== 'worldwide') throw new Error(`Static deployment rejected: ${edition.id} has no worldwide territorial delivery grant.`);
+    if (record.withdrawn !== false) throw new Error(`Static deployment rejected: ${edition.id} permission is withdrawn or unknown.`);
+    if (record.expiresOn !== null && (!validDate(record.expiresOn) || today > record.expiresOn)) {
+      throw new Error(`Static deployment rejected: ${edition.id} permission is expired or has an invalid expiry.`);
+    }
+    if (record.operations?.display?.state !== 'allowed') {
+      throw new Error(`Static deployment rejected: ${edition.id} display permission is not allowed.`);
+    }
+  }
+  return installedIds.size;
+}
+
 export async function finalizeBuild({ root = resolve(import.meta.dirname, '..'), base = '/', sourceCommit } = {}) {
    if (base !== '/' && (!/^\/[A-Za-z0-9_/-]*\/$/.test(base) || base.includes('..'))) throw new Error('Invalid deployment base path.');
   const dist = resolve(root, 'dist');
   await assertNoSourceStaging(dist);
+  const editionData = resolve(dist, 'data/editions');
+  const [catalog, rightsRegister] = await Promise.all([
+    readFile(resolve(editionData, 'catalog.json'), 'utf8').then(JSON.parse),
+    readFile(resolve(editionData, 'rights-register.json'), 'utf8').then(JSON.parse),
+  ]);
+  assertPublicStaticEditionRights(catalog, rightsRegister);
   const data = await inventory(resolve(dist, 'data'), dist);
   const shell = await inventory(resolve(dist, 'assets'), dist);
   try { Object.assign(shell, await inventory(resolve(dist, 'fonts'), dist)); }
