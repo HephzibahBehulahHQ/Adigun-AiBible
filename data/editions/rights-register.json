@@ -288,6 +288,12 @@
       "url": "https://ebible.org/yor/copyright.htm",
       "observedOn": "2026-11-04",
       "summary": "The Open Yoruba edition notice grants CC BY-SA 4.0 rights with attribution, ShareAlike and trademark conditions."
+    },
+    {
+      "id": "mdyeth-cc",
+      "url": "https://ebible.org/mdyeth/copyright.htm",
+      "observedOn": "2026-11-13",
+      "summary": "eBible's exact Maale Full Bible notice identifies The Word for the World International and the Bible Society of Ethiopia, grants CC BY-SA 4.0 sharing/adaptation rights with attribution, change disclosure and ShareAlike, and dates the source 2025-05-13. The matching pinned VPL archive SHA-256 is 01b434547c7ea95f5b07b6ea935e0a87e841701206b0427f4feac8a278f17207; the complete notice bytes are retained. The notice does not establish AI-provider use, model-training, TTS or third-party recorded-audio permission."
     }
   ],
   "editions": [
@@ -7524,6 +7530,166 @@
       "providerReporting": {
         "requirement": "none",
         "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "mdyeth",
+      "sourceSha256": "01b434547c7ea95f5b07b6ea935e0a87e841701206b0427f4feac8a278f17207",
+      "verifiedOn": "2026-11-13",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "unknown",
+        "evidenceIds": [
+          "mdyeth-cc"
+        ],
+        "reason": "CC BY-SA permits sharing/adaptation of the source text but does not establish this product’s separate AI retrieval or model-training permission."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "aiRetrieval": {
+          "state": "unknown",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "The publisher’s CC BY-SA text license does not establish permission for this separate AI-provider or recorded-audio operation."
+        },
+        "modelTraining": {
+          "state": "unknown",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "The publisher’s CC BY-SA text license does not establish permission for this separate AI-provider or recorded-audio operation."
+        },
+        "tts": {
+          "state": "unknown",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "The publisher’s CC BY-SA text license does not establish permission for this separate AI-provider or recorded-audio operation."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "The publisher’s CC BY-SA text license does not establish permission for this separate AI-provider or recorded-audio operation."
+        }
+      },
+      "conditions": [
+        "Retain the exact Maale Bible title, copyright, translators/contributors and source notice with redistributed and offline copies.",
+        "For adaptations, disclose changes and distribute contributions under CC BY-SA 4.0; do not imply endorsement by the original licensors.",
+        "The publisher VPL archive contains Bible text only; it omits introductions, headings, notes, paragraph layout, pictures and recorded audio.",
+        "The text license does not establish AI retrieval, model training, TTS or recorded-audio rights, nor native-language/editorial approval."
+      ],
+      "attribution": "Maale Bible (Ethiopic script), ጌኤዦ ማፃኣፖ. Copyright © 2008 The Word for the World International and The Bible Society of Ethiopia. Translation by The Word for the World; contributor: Bible Society of Ethiopia. CC BY-SA 4.0. Source: https://ebible.org/mdyeth/.",
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No provider telemetry obligation is stated in the publisher notice. No provider telemetry is enabled."
       }
     }
   ]

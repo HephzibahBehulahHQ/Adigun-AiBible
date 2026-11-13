@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SPEC = importlib.util.spec_from_file_location('edition_importer', ROOT / 'scripts/import-editions.py')
 IMPORTER = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(IMPORTER)
-IDS = ['fra-darby2024', 'spa-simple2026', 'tdx-tandroy', 'hausa2020', 'igbo2020']
+IDS = ['fra-darby2024', 'spa-simple2026', 'tdx-tandroy', 'hausa2020', 'igbo2020', 'mdyeth']
 
 
 def read(edition, path):
@@ -39,7 +39,7 @@ class NextEditionChecks(unittest.TestCase):
         self.assertFalse(IMPORTER.generated_hash_matches('manifest.json', changed, IMPORTER.sha(canonical)))
 
     def test_complete_exception_inventories_reject_changed_counts_coordinates_and_offsets(self):
-        for edition, count in zip(IDS, [4030, 0, 10, 0, 0]):
+        for edition, count in zip(IDS, [4030, 0, 10, 0, 0, 55]):
             with self.subTest(edition=edition):
                 provenance = read(edition, 'provenance.json')
                 brackets = provenance.get('publisherBracketFormatDifferences', [])
@@ -179,6 +179,26 @@ class NextEditionChecks(unittest.TestCase):
         self.assertIn('[o Deuel]', displayed)
         self.assertEqual(read(edition, 'provenance.json')['totals']['verses'], 29102)
 
+
+    def test_maale_pins_ethiopic_ranges_and_unmodified_vpl_brackets(self):
+        edition = 'mdyeth'
+        source = IMPORTER.SOURCES[edition]
+        manifest = read(edition, 'manifest.json')
+        provenance = read(edition, 'provenance.json')
+        self.assertEqual(manifest['totals'], {'books': 66, 'chapters': 1189, 'verses': 30506})
+        self.assertEqual(manifest['edition']['language'], 'mdy-Ethi')
+        self.assertEqual(manifest['edition']['script'], 'Ethi')
+        ranges = provenance['publisherSourceVerseRanges']
+        self.assertEqual(len(ranges), 238)
+        self.assertEqual(IMPORTER.sha(IMPORTER.json_bytes(ranges)), source['sourceVerseRangesSha256'])
+        differences = provenance['publisherBracketFormatDifferences']
+        self.assertEqual(len(differences), 55)
+        self.assertEqual(IMPORTER.sha(IMPORTER.json_bytes(differences)), source['bracketExceptionInventorySha256'])
+        padding = provenance['publisherBracketPaddingExceptions']
+        self.assertEqual(len(padding), 13)
+        self.assertEqual(len(provenance['publisherBracketFormatDifferences']), source['bracketExceptionCount'])
+        self.assertTrue(verse(edition, {'bookId': 'GEN', 'chapter': 1, 'verse': 9}))
+        self.assertIn('Ethiopic', provenance['languageEvidence']['scope'])
 
 if __name__ == '__main__':
     unittest.main()

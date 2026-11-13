@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 
 type Edition = { id: string; name: string; language: string; corpus: string; attribution: string; conditions: string[]; licenseDeedUrl?: string };
 type SourceBook = { name: string; chapters: { number: number; verses: { number: number; endNumber?: number; text: string }[] }[] };
-const ids = ['fra-darby2024', 'spa-simple2026', 'spaonbv', 'tdx-tandroy', 'hausa2020', 'igbo2020'];
+const ids = ['fra-darby2024', 'spa-simple2026', 'spaonbv', 'tdx-tandroy', 'hausa2020', 'igbo2020', 'mdyeth'];
 const catalog = JSON.parse(readFileSync(new URL('../data/editions/catalog.json', import.meta.url), 'utf8'));
 const baseline = JSON.parse(readFileSync(new URL('../data/manifest.json', import.meta.url), 'utf8'));
 const editions: Edition[] = [baseline.edition, ...catalog.editions.filter((edition: Edition) => edition.corpus === 'bible')];
@@ -30,17 +30,17 @@ async function cachedNotice(page: Page, id: string) {
   }, id);
 }
 
-test.describe('seven exact source admissions', () => {
+test.describe('eight exact source admissions', () => {
   test.use({ serviceWorkers: 'block' });
 
-  test('37 editions report 24 source languages and preserve the separate regional filters', async ({ page }) => {
-    expect(editions).toHaveLength(37);
-    expect(new Set(editions.map(edition => new Intl.Locale(edition.language).language)).size).toBe(24);
+  test('38 editions report 25 source languages and preserve the separate regional filters', async ({ page }) => {
+    expect(editions).toHaveLength(38);
+    expect(new Set(editions.map(edition => new Intl.Locale(edition.language).language)).size).toBe(25);
     await page.goto(route('editions', 'eng-web'));
-    await expect(page.getByText('37 installed Bible text editions · 34 added beyond the verified three-edition baseline.', { exact: false })).toBeVisible();
-    await expect(page.getByText(/^Installed source languages \(24\):/)).toBeVisible();
+    await expect(page.getByText('38 installed Bible text editions · 35 added beyond the verified three-edition baseline.', { exact: false })).toBeVisible();
+    await expect(page.getByText(/^Installed source languages \(25\):/)).toBeVisible();
     const languages = page.getByRole('combobox', { name: 'Language', exact: true });
-    await expect(languages.locator('option')).toHaveCount(26); // 25 exact tags plus the all-languages option.
+    await expect(languages.locator('option')).toHaveCount(27); // 26 exact tags plus the all-languages option.
     const results = page.getByRole('region', { name: 'Installed Bible editions', exact: true });
     for (const tag of ['es', 'es-419']) {
       await languages.selectOption(tag);
@@ -74,6 +74,15 @@ test.describe('seven exact source admissions', () => {
     await exactVerse(page, 11, verse(id, 'GEN', 1, 11));
     await expect(page.locator('#verse-11 .verse-number')).toHaveText('11–12');
     await expect(page.locator('#verse-12')).toHaveCount(0);
+  });
+
+  test('Maale keeps Ethiopic text and publisher combined verse records', async ({ page }) => {
+    const id = 'mdyeth';
+    await page.goto(route('read', id, 'GEN', 9, 9, 10));
+    await exactVerse(page, 9, verse(id, 'GEN', 9, 9));
+    await expect(page.locator('.scripture')).toHaveAttribute('lang', 'mdy-Ethi');
+    await expect(page.locator('#verse-9 .verse-number')).toHaveText('09–10');
+    await expect(page.locator('#verse-10')).toHaveCount(0);
   });
 
   test('Duya NT selection opens the first available book and keeps publisher verse ranges intact', async ({ page }) => {
