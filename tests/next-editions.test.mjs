@@ -13,6 +13,7 @@ import { buildNotebook } from '../src/notebook.ts';
 const expected = {
   'fra-darby2024': { provider: 'frajnd', language: 'fr', records: 31170, empty: 3, files: 70, sha: 'dbda2c381fd0cbf2bf0f65dac2052db6f728908a8b50a7518fd5ba8c9711dc60' },
   'spa-simple2026': { provider: 'spabes', language: 'es-419', records: 31102, empty: 0, files: 70, sha: 'b5397717e5031db82ce6c595ae1d3803626aaa3d11ce8750b31d5d766b3568e1' },
+  spaonbv: { provider: 'spaonbv', language: 'es', records: 29102, empty: 0, files: 70, sha: '10e3eb835f65e08d549d7f1aa43b42fdf974de8cfb6cd72f6952e054e8e7b780' },
   'tdx-tandroy': { provider: 'tdx', language: 'tdx', records: 31081, empty: 6, files: 71, sha: 'ca352f5888aa64896069f57cea898abadb3f2f851a1d4f555ab088b2a601e960' },
   'hausa2020': { provider: 'hausa', language: 'ha', records: 31087, empty: 0, files: 70, sha: 'b4780ea28fc95ee7ca58ce7b0f75dc35a04201561735cb304cf557459d60d821' },
   'igbo2020': { provider: 'ibo', language: 'ig', records: 31103, empty: 0, files: 70, sha: 'fe4030d183c5514c879b93f863abbe5f12f707024168d05925a129b093fef684' },
@@ -62,12 +63,13 @@ for (const [id, pin] of Object.entries(expected)) {
         const numbers = section.verses.map(verse => verse.number);
         assert.equal(section.number, index + 1);
         assert.deepEqual(numbers, [...new Set(numbers)].sort((a, b) => a - b));
-        assert.equal(Math.max(...numbers), entry.verseCounts[index]);
+        assert.equal(Math.max(...section.verses.map(verse => verse.endNumber ?? verse.number)), entry.verseCounts[index]);
         assert.equal(numbers.length, entry.verseRecordCounts[index]);
-        const gaps = Array.from({ length: Math.max(...numbers) }, (_, offset) => offset + 1).filter(number => !numbers.includes(number));
+        const covered = new Set(section.verses.flatMap(verse => Array.from({ length: (verse.endNumber ?? verse.number) - verse.number + 1 }, (_, offset) => verse.number + offset)));
+        const gaps = Array.from({ length: entry.verseCounts[index] }, (_, offset) => offset + 1).filter(number => !covered.has(number));
         if (gaps.length) omitted.push({ bookId: entry.id, chapter: section.number, verseNumbers: gaps });
         for (const verse of section.verses) {
-          rows.push({ bookId: entry.id, chapter: section.number, verse: verse.number, text: verse.text, editionId: id });
+          rows.push({ bookId: entry.id, chapter: section.number, verse: verse.number, text: verse.text, editionId: id, ...(verse.endNumber && verse.endNumber !== verse.number ? { endVerse: verse.endNumber } : {}) });
           if (verse.text === '') empty.push({ bookId: entry.id, chapter: section.number, verse: verse.number });
         }
       }
@@ -90,23 +92,23 @@ for (const [id, pin] of Object.entries(expected)) {
 }
 
 test('the installed inventory counts distinct source languages, editions and regional tags accurately', () => {
-  assert.equal(editions.length, 36);
-  assert.equal(new Set(editions.map(row => row.id)).size, 36);
+  assert.equal(editions.length, 37);
+  assert.equal(new Set(editions.map(row => row.id)).size, 37);
   const original = new Set(['eng-web', 'deu1912', 'yor']);
-  assert.equal(editions.filter(row => !original.has(row.id)).length, 33);
+  assert.equal(editions.filter(row => !original.has(row.id)).length, 34);
   assert.equal(new Set(editions.map(row => row.language)).size, 25);
   assert.equal(new Set(editions.map(row => new Intl.Locale(row.language).language)).size, 24);
   assert.equal(new Intl.Locale(manifest('spa-simple2026').edition.language).language, 'es');
-  assert.equal(Object.values(expected).reduce((total, row) => total + row.records, 0) + manifest('eng-douay-rheims1899').totals.verses + manifest('hat-1985').totals.verses + manifest('hrv-saric').totals.verses + manifest('ldb-duya2024').totals.verses, 265844);
+  assert.equal(Object.values(expected).reduce((total, row) => total + row.records, 0) + manifest('eng-douay-rheims1899').totals.verses + manifest('hat-1985').totals.verses + manifest('hrv-saric').totals.verses + manifest('ldb-duya2024').totals.verses, 294946);
   const french = manifest('fra-darby2024').edition;
   assert.match(french.name, /BPC 2024/);
   assert.match(french.revision, /Not the distinct 2026 revised edition/);
   assert.ok(french.conditions.some(condition => condition.includes('2026 revised edition is CC BY-NC-ND and is not imported')));
 });
 
-test('all 36 publisher inventories identify the current revision and match real source metadata', () => {
+test('all 37 publisher inventories identify the current revision and match real source metadata', () => {
   const coverage = JSON.parse(readFileSync(new URL('../data/speakers/publisher-coverage.json', import.meta.url)));
-  assert.equal(coverage.editions.length, 36);
+  assert.equal(coverage.editions.length, 37);
   assert.deepEqual(coverage.editions.map(row => row.editionId).sort(), editions.map(row => row.id).sort());
   for (const edition of editions) {
     const entry = coverage.editions.find(row => row.editionId === edition.id);

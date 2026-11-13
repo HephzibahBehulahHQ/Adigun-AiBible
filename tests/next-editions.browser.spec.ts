@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 
 type Edition = { id: string; name: string; language: string; corpus: string; attribution: string; conditions: string[]; licenseDeedUrl?: string };
 type SourceBook = { name: string; chapters: { number: number; verses: { number: number; endNumber?: number; text: string }[] }[] };
-const ids = ['fra-darby2024', 'spa-simple2026', 'tdx-tandroy', 'hausa2020', 'igbo2020'];
+const ids = ['fra-darby2024', 'spa-simple2026', 'spaonbv', 'tdx-tandroy', 'hausa2020', 'igbo2020'];
 const catalog = JSON.parse(readFileSync(new URL('../data/editions/catalog.json', import.meta.url), 'utf8'));
 const baseline = JSON.parse(readFileSync(new URL('../data/manifest.json', import.meta.url), 'utf8'));
 const editions: Edition[] = [baseline.edition, ...catalog.editions.filter((edition: Edition) => edition.corpus === 'bible')];
@@ -30,14 +30,14 @@ async function cachedNotice(page: Page, id: string) {
   }, id);
 }
 
-test.describe('six exact source admissions', () => {
+test.describe('seven exact source admissions', () => {
   test.use({ serviceWorkers: 'block' });
 
-  test('36 editions report 24 source languages and preserve the separate regional filters', async ({ page }) => {
-    expect(editions).toHaveLength(36);
+  test('37 editions report 24 source languages and preserve the separate regional filters', async ({ page }) => {
+    expect(editions).toHaveLength(37);
     expect(new Set(editions.map(edition => new Intl.Locale(edition.language).language)).size).toBe(24);
     await page.goto(route('editions', 'eng-web'));
-    await expect(page.getByText('36 installed Bible text editions · 33 added beyond the verified three-edition baseline.', { exact: false })).toBeVisible();
+    await expect(page.getByText('37 installed Bible text editions · 34 added beyond the verified three-edition baseline.', { exact: false })).toBeVisible();
     await expect(page.getByText(/^Installed source languages \(24\):/)).toBeVisible();
     const languages = page.getByRole('combobox', { name: 'Language', exact: true });
     await expect(languages.locator('option')).toHaveCount(26); // 25 exact tags plus the all-languages option.
@@ -67,6 +67,14 @@ test.describe('six exact source admissions', () => {
       await expect(page.locator('#verse-19')).not.toHaveClass(/\bselected\b/);
     });
   }
+
+  test('ONBV combined source ranges remain one displayed publisher record', async ({ page }) => {
+    const id = 'spaonbv';
+    await page.goto(route('read', id, 'GEN', 1, 11, 12));
+    await exactVerse(page, 11, verse(id, 'GEN', 1, 11));
+    await expect(page.locator('#verse-11 .verse-number')).toHaveText('11–12');
+    await expect(page.locator('#verse-12')).toHaveCount(0);
+  });
 
   test('Duya NT selection opens the first available book and keeps publisher verse ranges intact', async ({ page }) => {
     const id = 'ldb-duya2024';
@@ -156,7 +164,7 @@ test.describe('six exact source admissions', () => {
     }
     await page.goto(route('saved', 'tdx-tandroy'));
     await page.reload();
-    await expect(page.locator('.saved-card')).toHaveCount(5);
+    await expect(page.locator('.saved-card')).toHaveCount(6);
     const downloadPromise = page.waitForEvent('download');
     await page.getByRole('button', { name: 'Export notebook', exact: true }).click();
     const download = await downloadPromise;
