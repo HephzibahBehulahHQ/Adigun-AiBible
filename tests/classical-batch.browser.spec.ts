@@ -37,10 +37,10 @@ async function cachedJohnFiles(page: Page, id: string): Promise<string[]> {
 test.describe('fourteen-edition built catalog and source reading', () => {
   test.use({ serviceWorkers: 'block' });
 
-test('the 33-edition catalog exposes the added languages and every paginated source', async ({ page }) => {
-    expect(editions).toHaveLength(33);
+test('the 34-edition catalog exposes the added languages and every paginated source', async ({ page }) => {
+    expect(editions).toHaveLength(34);
     await page.goto(route('editions', 'eng-web', 3, 16, 18));
-    await expect(page.getByText('33 installed Bible text editions · 30 added beyond the verified three-edition baseline.', { exact: false })).toBeVisible();
+    await expect(page.getByText('34 installed Bible text editions · 31 added beyond the verified three-edition baseline.', { exact: false })).toBeVisible();
     const results = page.getByRole('region', { name: 'Installed Bible editions', exact: true });
     const language = page.getByRole('combobox', { name: 'Language', exact: true });
     const expectedLanguages = [...new Set(editions.map(edition => edition.language))];
