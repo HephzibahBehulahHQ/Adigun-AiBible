@@ -162,6 +162,23 @@ class NextEditionChecks(unittest.TestCase):
         self.assertEqual(json.loads(output['books/GEN.json'])['chapters'][0]['verses'][0]['text'], text)
         self.assertEqual(json.loads(output['search-index.json'])[0]['text'], text)
 
+    def test_onbv_pins_combined_verse_ranges_and_keeps_the_publisher_txt_bracket(self):
+        edition = 'spaonbv'
+        source = IMPORTER.SOURCES[edition]
+        provenance = read(edition, 'provenance.json')
+        ranges = provenance['publisherSourceVerseRanges']
+        self.assertEqual(len(ranges), source['sourceVerseRangeCount'])
+        self.assertEqual(IMPORTER.sha(IMPORTER.json_bytes(ranges)), source['sourceVerseRangesSha256'])
+        self.assertEqual(IMPORTER.sha(IMPORTER.json_bytes(ranges)), 'd805624ce12efdc073565a7efc5795cce9db474b85b6d1272558c06c4799531f')
+        differences = provenance['publisherBracketFormatDifferences']
+        self.assertEqual(len(differences), 1)
+        self.assertEqual(differences[0]['bookId'], 'NUM')
+        self.assertEqual((differences[0]['chapter'], differences[0]['verse']), (2, 3))
+        self.assertEqual(IMPORTER.sha(IMPORTER.json_bytes(differences)), source['bracketExceptionInventorySha256'])
+        displayed = verse(edition, differences[0])
+        self.assertIn('[o Deuel]', displayed)
+        self.assertEqual(read(edition, 'provenance.json')['totals']['verses'], 29102)
+
 
 if __name__ == '__main__':
     unittest.main()
