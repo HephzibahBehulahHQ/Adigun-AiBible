@@ -14,6 +14,7 @@ const expected = {
   'fra-darby2024': { provider: 'frajnd', language: 'fr', records: 31170, empty: 3, files: 70, sha: 'dbda2c381fd0cbf2bf0f65dac2052db6f728908a8b50a7518fd5ba8c9711dc60' },
   'spa-simple2026': { provider: 'spabes', language: 'es-419', records: 31102, empty: 0, files: 70, sha: 'b5397717e5031db82ce6c595ae1d3803626aaa3d11ce8750b31d5d766b3568e1' },
   'tdx-tandroy': { provider: 'tdx', language: 'tdx', records: 31081, empty: 6, files: 71, sha: 'ca352f5888aa64896069f57cea898abadb3f2f851a1d4f555ab088b2a601e960' },
+  'hausa2020': { provider: 'hausa', language: 'ha', records: 31087, empty: 0, files: 70, sha: 'b4780ea28fc95ee7ca58ce7b0f75dc35a04201561735cb304cf557459d60d821' },
 };
 const root = new URL('../data/editions/', import.meta.url);
 const bytes = path => readFileSync(new URL(path, root));
@@ -82,23 +83,23 @@ for (const [id, pin] of Object.entries(expected)) {
 }
 
 test('the installed inventory counts distinct source languages, editions and regional tags accurately', () => {
-  assert.equal(editions.length, 33);
-  assert.equal(new Set(editions.map(row => row.id)).size, 33);
+  assert.equal(editions.length, 34);
+  assert.equal(new Set(editions.map(row => row.id)).size, 34);
   const original = new Set(['eng-web', 'deu1912', 'yor']);
-  assert.equal(editions.filter(row => !original.has(row.id)).length, 30);
-  assert.equal(new Set(editions.map(row => row.language)).size, 22);
-  assert.equal(new Set(editions.map(row => new Intl.Locale(row.language).language)).size, 21);
+  assert.equal(editions.filter(row => !original.has(row.id)).length, 31);
+  assert.equal(new Set(editions.map(row => row.language)).size, 23);
+  assert.equal(new Set(editions.map(row => new Intl.Locale(row.language).language)).size, 22);
   assert.equal(new Intl.Locale(manifest('spa-simple2026').edition.language).language, 'es');
-  assert.equal(Object.values(expected).reduce((total, row) => total + row.records, 0) + manifest('eng-douay-rheims1899').totals.verses + manifest('hat-1985').totals.verses + manifest('hrv-saric').totals.verses, 195714);
+  assert.equal(Object.values(expected).reduce((total, row) => total + row.records, 0) + manifest('eng-douay-rheims1899').totals.verses + manifest('hat-1985').totals.verses + manifest('hrv-saric').totals.verses, 226801);
   const french = manifest('fra-darby2024').edition;
   assert.match(french.name, /BPC 2024/);
   assert.match(french.revision, /Not the distinct 2026 revised edition/);
   assert.ok(french.conditions.some(condition => condition.includes('2026 revised edition is CC BY-NC-ND and is not imported')));
 });
 
-test('all 33 publisher inventories identify the current revision and match real source metadata', () => {
+test('all 34 publisher inventories identify the current revision and match real source metadata', () => {
   const coverage = JSON.parse(readFileSync(new URL('../data/speakers/publisher-coverage.json', import.meta.url)));
-  assert.equal(coverage.editions.length, 33);
+  assert.equal(coverage.editions.length, 34);
   assert.deepEqual(coverage.editions.map(row => row.editionId).sort(), editions.map(row => row.id).sort());
   for (const edition of editions) {
     const entry = coverage.editions.find(row => row.editionId === edition.id);
@@ -118,11 +119,11 @@ test('all 33 publisher inventories identify the current revision and match real 
   }
 });
 
-test('licensed text uses stay revision-bound and do not grant recordings or Tandroy model training', () => {
+test('licensed text uses stay revision-bound and do not grant recordings or unreviewed Hausa AI use', () => {
   const rights = validateEditionRightsRegister(read('rights-register.json'));
   for (const [id, pin] of Object.entries(expected)) {
     const row = rights.editions.find(entry => entry.editionId === id);
-    const context = { today: '2026-11-05', sourceSha256: pin.sha };
+    const context = { today: '2026-11-13', sourceSha256: pin.sha };
     for (const operation of ['display', 'offline', 'searchIndex', 'documentExport', 'redistribution', 'peerSharing']) {
       const decision = decideEditionOperation(row, operation, context);
       assert.equal(decision.allowed, true, id + ':' + operation);
@@ -135,6 +136,7 @@ test('licensed text uses stay revision-bound and do not grant recordings or Tand
     assert.equal(decideEditionOperation({ ...row, expiresOn: '2026-11-04' }, 'documentExport', context).allowed, false);
     assert.equal(decideEditionOperation({ ...row, territory: { scope: 'unknown', countries: [] } }, 'display', context).allowed, false);
     assert.equal(decideEditionOperation({ ...row, aiProductUse: { ...row.aiProductUse, state: 'unknown' } }, 'display', { ...context, aiProductEnabled: true }).allowed, false);
+    if (id === 'hausa2020') assert.equal(row.aiProductUse.state, 'unknown');
   }
   const tandroy = rights.editions.find(row => row.editionId === 'tdx-tandroy');
   assert.equal(tandroy.operations.modelTraining.state, 'unknown');

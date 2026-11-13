@@ -4812,6 +4812,30 @@
           "Publisher draft status is retained where declared; no source words or numbered positions are filled."
         ]
       }
+    },
+    {
+      "provider": "eBible.org",
+      "providerId": "hausa",
+      "languageName": "Hausa",
+      "nativeLanguageName": "Hausa",
+      "dialect": "Nigeria",
+      "nativeTitle": "Biblica® Buɗaɗɗen Littafi Mai Tsarki, Sabon Rai Don Kowa™",
+      "title": "Biblica® Open Hausa Contemporary Bible™",
+      "revision": "Copyright © 2009, 2020; source archive dated 2025-05-03.",
+      "providerRightsStatement": "CC BY-SA 4.0",
+      "translator": "Biblica, Inc.",
+      "contributor": "Biblica, Inc.",
+      "sourceUrl": "https://ebible.org/details.php?id=hausa",
+      "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
+      "inventoryLine": 493,
+      "observedOn": "2026-11-13",
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "hausa2020",
+      "installedRevision": "Biblica® Open Hausa Contemporary Bible™ (2009, 2020); publisher verse text only.",
+      "installedSourceSha256": "b4780ea28fc95ee7ca58ce7b0f75dc35a04201561735cb304cf557459d60d821",
+      "installedObservedOn": "2026-11-13"
     }
   ],
   "priorityRequests": [

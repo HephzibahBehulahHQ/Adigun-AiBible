@@ -4,7 +4,7 @@ Read [PROJECT_STATUS.md](PROJECT_STATUS.md) for the current exact production rev
 
 ## Current release
 
-PR #56 is merged and deployed at source `ca46fe9001b49b9616941645675783f5df8f34b9`. Main workflow 43344898226 passed type/lint, application/backend contracts, content validation, production build, desktop/mobile browser checks, five persistence repetitions, Pages deployment, exact-source verification and live smoke. The public receipt at `2026-11-13T01:38:56.604Z` records build `f9b7e96130f4164c4f451a68` and content `f8088c9c2c1560ad77099822`. Main has 33 Bible editions (30 beyond the original three-edition baseline), including Croatian *Sveta Biblija* (Ivan Šarić). PR #56 prevents static publication of editions lacking active worldwide display rights; country-selective delivery remains unavailable. Physical two-device offline acceptance remains pending. See [PROJECT_STATUS.md](PROJECT_STATUS.md) for the full receipt.
+PR #57 is merged and deployed at source `a0ea16b6d0691591a3983ed77e405760bac6cde4`. Main workflow 43348635473 passed production validation, desktop/mobile browser checks, persistence, Pages deployment, exact-source verification and live smoke. The public receipt at `2026-11-13T02:08:05.230Z` records build `f9b7e96130f4164c4f451a68` and content `f8088c9c2c1560ad77099822`. Main has 33 Bible editions (30 additional), including Croatian *Sveta Biblija* (Ivan Šarić). PR #56 prevents static publication without exact active worldwide display rights; country-selective delivery remains unavailable. Physical two-device offline acceptance remains pending.
 
 ## Independent work to finish
 

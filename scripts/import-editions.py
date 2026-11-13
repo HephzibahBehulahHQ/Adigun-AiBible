@@ -2023,6 +2023,45 @@ SOURCES['hrv-saric'] = {
     ],
 }
 
+SOURCES['hausa2020'] = {
+    'name': 'Biblica® Open Hausa Contemporary Bible™', 'language': 'ha', 'corpus': 'bible',
+    'publisher': 'Biblica, Inc.; distributed by eBible.org', 'translator': 'Biblica, Inc.',
+    'revision': 'Biblica® Open Hausa Contemporary Bible™ (2009, 2020); publisher verse text only',
+    'abbreviation': 'BSRK', 'nativeTitle': 'Biblica® Buɗaɗɗen Littafi Mai Tsarki, Sabon Rai Don Kowa™',
+    'script': 'Latn', 'direction': 'ltr', 'sourceNoticeDate': '2025-05-03',
+    'sourceUpdatedAt': '2025-05-03', 'rightsObservedAt': '2026-11-13',
+    'sourceUrl': 'https://ebible.org/hausa/', 'formatUrl': 'https://ebible.org/details.php?id=hausa',
+    'downloadUrl': 'https://ebible.org/Scriptures/hausa_vpl.zip',
+    'licenseUrl': 'https://ebible.org/hausa/copyright.htm', 'license': 'CC BY-SA 4.0',
+    'licenseIdentifier': 'CC-BY-SA-4.0', 'licenseDeedUrl': 'https://creativecommons.org/licenses/by-sa/4.0/',
+    'attribution': 'Biblica® Open Hausa Contemporary Bible™. Copyright © 2009, 2020 by Biblica, Inc. CC BY-SA 4.0. Unmodified publisher wording; complete source notice retained. Source: https://ebible.org/hausa/.',
+    'sha256': 'b4780ea28fc95ee7ca58ce7b0f75dc35a04201561735cb304cf557459d60d821',
+    'xmlSha256': '508a394c4d641132ae0b1ef4fd3d8859497e4f499ddcc6744ec9ae860eb2238e',
+    'textSha256': '27e785e204d15c7a7be1764290d22258cc7e7019f582cf5d96ef41a6b0048ee2',
+    'noticeSha256': '86396fb3432a9d0820a6da0a11ab7d866f4bed4b72c210dd0c5a182cbb7bf78f',
+    'providerId': 'hausa', 'downloadBytes': 4208783,
+    'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31087},
+    'rightsEvidenceUrls': ['https://ebible.org/hausa/copyright.htm', 'https://creativecommons.org/licenses/by-sa/4.0/'],
+    'preserveSourceNotice': True,
+    'languageEvidence': {
+        'registryUrl': 'https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry',
+        'registryFileDate': '2026-09-17',
+        'registrySha256': '755fad43283be7b41ebe3c89ad054b6eaf928f404f9c0edb74799e0eab74beb1',
+        'languageTag': 'ha', 'script': 'Latn', 'direction': 'ltr',
+        'sourceLetterBidiCounts': {'L': 3037775},
+        'sourceLetterUnicodeNamePrefixes': {'LATIN': 3037775},
+        'scope': 'The publisher identifies the text as Hausa; the IANA registry validates the BCP 47 tag. Letters in the exact publisher TXT were inspected and are Latin. This is not native-language approval.',
+    },
+    'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': True, 'export': True},
+    'conditions': [
+        'Retain the exact Biblica® Open Hausa Contemporary Bible™ identity and the complete publisher source notice with redistributed and offline copies.',
+        'The source notice grants CC BY-SA 4.0 redistribution in any format and reasonable adaptation, subject to attribution, disclosure of changes, ShareAlike and the Biblica trademark conditions.',
+        'This import preserves publisher verse wording; the VPL package omits notes, introductions, headings, paragraph layout and third-party recordings or images.',
+        'Keep Biblica marks intact for the unmodified source text and do not imply publisher endorsement. A modified text must remove the Biblica mark, disclose changes and remain CC BY-SA 4.0.',
+        'License permission is distinct from native-language approval, editorial review and any external AI service configuration.',
+    ],
+}
+
 
 def sha(raw):
     return hashlib.sha256(raw).hexdigest()
@@ -2669,6 +2708,8 @@ def verify_outputs(output, pending_indexes=None):
                 raise ValueError(f'{edition_id}: generated path escapes edition directory: {name}')
             if pending_indexes is not None and source['corpus'] == 'bible' and (name == 'search-index.json' or name.startswith('chapters/')):
                 continue  # Regenerate this derived file after validating all committed inputs.
+            if name == 'search-index.json' and source['corpus'] == 'bible' and not target.exists():
+                continue  # The index is derived from the pinned book files and may be absent from Git.
             if not generated_hash_matches(name, target.read_bytes(), expected):
                 raise ValueError(f'{edition_id}: generated content hash mismatch: {name}')
         manifest = json.loads((directory / 'manifest.json').read_text(encoding='utf-8'))
@@ -2699,9 +2740,13 @@ def verify_outputs(output, pending_indexes=None):
                     raise ValueError(f'{edition_id}: rebuilt index differs from the pinned generated output.')
                 pending_indexes.append((directory / 'search-index.json', index_bytes))
             else:
-                search = json.loads((directory / 'search-index.json').read_text(encoding='utf-8'))
-                if rows != search:
-                    raise ValueError(f'{edition_id}: search index differs from displayed source text.')
+                index_path = directory / 'search-index.json'
+                if index_path.exists():
+                    search = json.loads(index_path.read_text(encoding='utf-8'))
+                    if rows != search:
+                        raise ValueError(f'{edition_id}: search index differs from displayed source text.')
+                elif sha(json_bytes(rows)) != provenance['generatedFileSha256']['search-index.json']:
+                    raise ValueError(f'{edition_id}: missing search index cannot be rebuilt from source books.')
         else:
             corpus = json.loads((directory / 'quran.json').read_text(encoding='utf-8'))
             if len(corpus['surahs']) != 114 or sum(len(s['verses']) for s in corpus['surahs']) != 6236:
@@ -2756,6 +2801,8 @@ def main():
         for name, content in files.items():
             target = args.output / edition_id / name
             if args.check:
+                if name == 'search-index.json' and not target.exists():
+                    continue  # Compare the derived index against its pinned hash in verify_outputs().
                 if not target.exists() or target.read_bytes() != content:
                     raise ValueError(f'Reproducibility mismatch: {edition_id}/{name}')
             else:
