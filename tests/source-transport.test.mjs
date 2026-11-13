@@ -138,7 +138,10 @@ test('raw-to-envelope builds keep logical inventory paths and canonical bytes wh
   const root = await mkdtemp(join(tmpdir(), 'source-transport-release-'));
   t.after(() => rm(root, { recursive: true, force: true }));
   const original = await readFile(new URL('../data/books/ACT.json', import.meta.url));
-  for (const [name, bytes] of Object.entries({ 'index.html': '<title>Transport test</title>', 'manifest.webmanifest': '{}', 'assets/app.js': '/* test fixture */', 'data/manifest.json': '{"schemaVersion":1}', 'data/books/ACT.json': original })) {
+  const fixtureHash = 'c'.repeat(64);
+  const catalog = JSON.stringify({ schemaVersion: 1, editions: [{ id: 'eng-web', sha256: fixtureHash }] });
+  const rights = JSON.stringify({ schemaVersion: 1, editions: [{ editionId: 'eng-web', sourceSha256: fixtureHash, territory: { scope: 'worldwide', countries: [] }, withdrawn: false, expiresOn: null, operations: { display: { state: 'allowed' } } }] });
+  for (const [name, bytes] of Object.entries({ 'index.html': '<title>Transport test</title>', 'manifest.webmanifest': '{}', 'assets/app.js': '/* test fixture */', 'data/manifest.json': '{"schemaVersion":1}', 'data/editions/catalog.json': catalog, 'data/editions/rights-register.json': rights, 'data/books/ACT.json': original })) {
     await mkdir(join(root, 'dist', name, '..'), { recursive: true }); await writeFile(join(root, 'dist', name), bytes);
   }
   const first = await finalizeBuild({ root, sourceCommit: 'transport-test' });

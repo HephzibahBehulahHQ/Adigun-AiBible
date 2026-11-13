@@ -9,8 +9,8 @@ import { finalizeBuild } from '../scripts/finalize-build.mjs';
 test('font notices share the verified offline shell and missing licenses block packaging', async () => {
   const root=await mkdtemp(join(tmpdir(),'adigun-font-shell-'));
   try {
-    for(const dir of ['assets','data','fonts'])await mkdir(join(root,'dist',dir),{recursive:true});
-    const files={'assets/NotoSansMyanmar-fixture.ttf':'test-only font bytes','data/manifest.json':'{}','index.html':'<main>Test fixture</main>','manifest.webmanifest':'{}','fonts/NotoNaskhArabic-OFL.txt':'test-only Arabic notice','fonts/NotoSansMyanmar-OFL.txt':'test-only Myanmar notice','fonts/sources.json':'{"fixture":true}'};
+    for(const dir of ['assets','data','data/editions','fonts'])await mkdir(join(root,'dist',dir),{recursive:true});
+    const files={'assets/NotoSansMyanmar-fixture.ttf':'test-only font bytes','data/editions/catalog.json':JSON.stringify({schemaVersion:1,editions:[{id:'eng-web',sha256:'b'.repeat(64)}]}),'data/editions/rights-register.json':JSON.stringify({schemaVersion:1,editions:[{editionId:'eng-web',sourceSha256:'b'.repeat(64),territory:{scope:'worldwide',countries:[]},withdrawn:false,expiresOn:null,operations:{display:{state:'allowed'}}}]}),'data/manifest.json':'{}','index.html':'<main>Test fixture</main>','manifest.webmanifest':'{}','fonts/NotoNaskhArabic-OFL.txt':'test-only Arabic notice','fonts/NotoSansMyanmar-OFL.txt':'test-only Myanmar notice','fonts/sources.json':'{"fixture":true}'};
     for(const [path,value] of Object.entries(files))await writeFile(join(root,'dist',path),value);
     const first=await finalizeBuild({root,sourceCommit:'test-only'}),sw=await readFile(join(root,'dist/sw.js'),'utf8');
     const config=JSON.parse(sw.slice(sw.lastIndexOf(')(')+2,-3));

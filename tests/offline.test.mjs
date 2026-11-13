@@ -11,6 +11,8 @@ import { downloadOfflineFiles, getOfflineManifest, inspectOfflineDownloads, remo
 // These short text records are synthetic tests, never included in production corpus files.
 const BASE = 'https://example.test/Adigun-AiBible/';
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
+const staticEdition = id => ({ id, sha256: hash(Buffer.from(`fixture-${id}`)) });
+const staticRights = id => ({ editionId: id, sourceSha256: staticEdition(id).sha256, territory: { scope: 'worldwide', countries: [] }, withdrawn: false, expiresOn: null, operations: { display: { state: 'allowed' } } });
 const book = (id, text) => JSON.stringify({ id, name: id, chapters: [{ number: 1, verses: [{ number: 1, text }] }] });
 const key = input => input instanceof Request ? input.url : String(input);
 class MemoryCache {
@@ -39,7 +41,8 @@ async function fixture() {
     'manifest.webmanifest': JSON.stringify({ name: 'Test fixture', start_url: './' }),
     'assets/app.js': '/* test-only application asset */',
     'data/manifest.json': JSON.stringify({ edition: { id: 'eng-web' }, books: [{ id: 'GEN' }, { id: 'EXO' }] }),
-    'data/editions/rights-register.json': JSON.stringify({ schemaVersion: 1, editions: [], testOnly: true }),
+    'data/editions/catalog.json': JSON.stringify({ schemaVersion: 1, editions: ['eng-web', 'yor'].map(staticEdition) }),
+    'data/editions/rights-register.json': JSON.stringify({ schemaVersion: 1, editions: ['eng-web', 'yor'].map(staticRights) }),
     'data/books/GEN.json': book('GEN', 'Synthetic source version one.'),
     'data/books/EXO.json': book('EXO', 'Another synthetic record.'),
     'data/search-index.json': JSON.stringify([{ bookId: 'GEN', text: 'Synthetic search data.' }]),
