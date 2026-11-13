@@ -117,17 +117,18 @@ export function validateConcordanceManifest(value: unknown, editionId: string): 
 export function validateConcordanceRows(value: unknown, manifest: Manifest): SearchResult[] {
   if (!Array.isArray(value) || value.length !== manifest.totals.verses || value.length > MAX_CONCORDANCE_RECORDS) throw new Error('The source index is incomplete. No concordance count is available.');
   const books = new Map(manifest.books.map((book, index) => [book.id, { book, index }]));
-  const counts = new Map<string, number>(); let previous = -1;
+  const counts = new Map<string, number>(); let previous = -1, previousEnd = 0, previousChapter = '';
   for (const raw of value) {
     const row = raw as SearchResult, entry = row && books.get(row.bookId);
     if (!entry || typeof row.text !== 'string' || row.text.length > 100_000
       || !Number.isInteger(row.chapter) || row.chapter < 1 || row.chapter > entry.book.chapters
       || !Number.isInteger(row.verse) || row.verse < 1 || row.verse > entry.book.verseCounts[row.chapter - 1]
       || (row.editionId !== undefined && row.editionId !== manifest.edition.id)
-      || (row.endVerse !== undefined && row.endVerse !== row.verse)) throw new Error('The source index contains an invalid edition or verse record.');
+      || (row.endVerse !== undefined && (!Number.isInteger(row.endVerse) || row.endVerse < row.verse || row.endVerse > entry.book.verseCounts[row.chapter - 1]))) throw new Error('The source index contains an invalid edition or verse record.');
     const position = entry.index * 1_000_000 + row.chapter * 1_000 + row.verse;
-    if (position <= previous) throw new Error('The source index has duplicate or unordered references.');
-    previous = position; const key = `${row.bookId}:${row.chapter}`; counts.set(key, (counts.get(key) || 0) + 1);
+    const chapterKey = `${row.bookId}:${row.chapter}`, endVerse = row.endVerse ?? row.verse;
+    if (position <= previous || (chapterKey === previousChapter && row.verse <= previousEnd)) throw new Error('The source index has duplicate, overlapping, or unordered references.');
+    previous = position; previousEnd = endVerse; previousChapter = chapterKey; counts.set(chapterKey, (counts.get(chapterKey) || 0) + 1);
   }
   for (const book of manifest.books) for (let chapter = 1; chapter <= book.chapters; chapter++) {
     if (counts.get(`${book.id}:${chapter}`) !== (book.verseRecordCounts || book.verseCounts)[chapter - 1]) throw new Error('The source index chapter coverage is incomplete.');

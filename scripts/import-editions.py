@@ -2101,6 +2101,47 @@ SOURCES['igbo2020'] = {
     ],
 }
 
+SOURCES['ldb-duya2024'] = {
+    'name': 'Duya NT', 'nativeTitle': 'Ibibemuwe-Num Iyiki Ifa Ru Dũya', 'language': 'ldb', 'script': 'Latn', 'direction': 'ltr',
+    'corpus': 'bible', 'scope': 'new-testament', 'publisher': 'Wycliffe Bible Translators, Inc.; distributed by eBible.org',
+    'translator': 'Dũya Development Association', 'contributor': 'SIL Nigeria', 'revision': 'Duya NT (2024); publisher verse text only',
+    'sourceUpdatedAt': '2025-05-08', 'sourceNoticeDate': '2025-05-08', 'rightsObservedAt': '2026-11-13',
+    'sourceUrl': 'https://ebible.org/ldb/', 'formatUrl': 'https://ebible.org/details.php?id=ldb',
+    'downloadUrl': 'https://ebible.org/Scriptures/ldb_vpl.zip', 'licenseUrl': 'https://ebible.org/ldb/copyright.htm',
+    'license': 'CC BY-SA 4.0', 'licenseIdentifier': 'CC-BY-SA-4.0',
+    'licenseDeedUrl': 'https://creativecommons.org/licenses/by-sa/4.0/',
+    'attribution': 'Duya: Ibibemuwe-Num Iyiki Ifa Ru Dũya (New Testament). Copyright © 2024 Wycliffe Bible Translators, Inc. Translation by Dũya Development Association; contributor: SIL Nigeria. CC BY-SA 4.0. Unmodified publisher wording; full source notice retained. Source: https://ebible.org/ldb/.',
+    'sha256': 'c394cc2836c21f41e42f9610c836fa093983b6c11802b288b233fc47ba61d4c0',
+    'xmlSha256': 'd5df57ed186b30eb28d45758de4bba6ecb549d81f6b432f2109f7323e60005a7',
+    'textSha256': 'dd9aa41645afb075d25ff3d2971ba4071dc87f9f129d3e88d901c3a3e3424cdd',
+    'noticeSha256': '1ddf29cfeb2d5ff6fb2de57efa02fb775ebfa00d944bcc7904900b7553562e89',
+    'providerId': 'ldb', 'downloadBytes': 1071229,
+    'bookOrder': [book for book in BOOKS if book[0] in {'MAT', 'MRK', 'LUK', 'JHN', 'ACT', 'ROM', '1CO', '2CO', 'GAL', 'EPH', 'PHP', 'COL', '1TH', '2TH', '1TI', '2TI', 'TIT', 'PHM', 'HEB', 'JAS', '1PE', '2PE', '1JN', '2JN', '3JN', 'JUD', 'REV'}],
+    'expectedTotals': {'books': 27, 'chapters': 260, 'verses': 7940},
+    'sourceVerseRanges': [
+        {'bookId': 'ACT', 'chapter': 24, 'start': 6, 'end': 8},
+        {'bookId': 'ROM', 'chapter': 9, 'start': 11, 'end': 12},
+    ],
+    'rightsEvidenceUrls': ['https://ebible.org/details.php?id=ldb', 'https://ebible.org/ldb/copyright.htm', 'https://creativecommons.org/licenses/by-sa/4.0/'],
+    'preserveSourceNotice': True,
+    'languageEvidence': {
+        'registryUrl': 'https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry',
+        'registryFileDate': '2026-09-17',
+        'registrySha256': '755fad43283be7b41ebe3c89ad054b6eaf928f404f9c0edb74799e0eab74beb1',
+        'languageTag': 'ldb', 'script': 'Latn', 'direction': 'ltr',
+        'sourceLetterBidiCounts': {'L': 829515}, 'sourceLetterUnicodeNamePrefixes': {'LATIN': 829515},
+        'scope': 'The publisher identifies this NT as Duya and uses language code ldb. The IANA registry validates the language tag. Letters in the exact publisher TXT were inspected and are left-to-right Latin; this is not native-language approval.',
+    },
+    'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': False, 'export': True},
+    'conditions': [
+        'Retain the exact Duya NT identity and complete publisher source notice with redistributed and offline copies.',
+        'CC BY-SA 4.0 permits sharing and adaptation subject to attribution, disclosure of changes and ShareAlike.',
+        'The unmodified publisher TXT supplies display wording. Its VPL XML identifies two combined verse ranges, which are preserved as source ranges; no missing wording is fabricated.',
+        'The VPL archive omits introductions, headings, footnotes, paragraph layout and third-party recorded audio or images.',
+        'License permission is distinct from native-language approval, editorial review and any external AI service configuration.',
+    ],
+}
+
 
 def sha(raw):
     return hashlib.sha256(raw).hexdigest()
@@ -2125,7 +2166,7 @@ def generated_hash_matches(name, raw, expected):
 
 def edition_metadata(edition_id):
     source = SOURCES[edition_id]
-    fields = ('name', 'language', 'corpus', 'publisher', 'translator', 'sourceUpdatedAt', 'sourceUrl', 'formatUrl',
+    fields = ('name', 'language', 'corpus', 'scope', 'publisher', 'translator', 'sourceUpdatedAt', 'sourceUrl', 'formatUrl',
               'downloadUrl', 'licenseUrl', 'license', 'licenseIdentifier', 'licenseDeedUrl', 'attribution', 'sha256', 'rights', 'conditions',
               'abbreviation', 'revision', 'canon', 'canonProfile', 'providerId', 'downloadBytes',
               'nativeTitle', 'script', 'direction', 'sourceNoticeDate', 'publicationStatus')
@@ -2304,6 +2345,9 @@ def bible_artifacts(edition_id, archive):
     edition_books = source.get('bookOrder', BOOKS)
     books = OrderedDict((bid, {'id': bid, 'name': name, 'chapters': []}) for bid, name in edition_books)
     rows, seen_book_order = [], []
+    expected_ranges = {(item['bookId'], item['chapter'], item['start']): item['end']
+                       for item in source.get('sourceVerseRanges', [])}
+    observed_ranges = []
     reference_order_exceptions = {(exception['bookId'], exception['chapter']): exception
                                   for exception in source.get('referenceOrderExceptions', [])}
     for verse in document:
@@ -2311,9 +2355,19 @@ def bible_artifacts(edition_id, archive):
             raise ValueError('Unexpected XML structure; source review is required.')
         source_bid, chapter_label, verse_label = (verse.attrib[key] for key in ('b', 'c', 'v'))
         bid = TEXT_IDS.get(source_bid, source_bid)
-        if bid not in books or not re.fullmatch(r'[1-9]\d*', chapter_label) or not re.fullmatch(r'[1-9]\d*', verse_label):
+        match = re.fullmatch(r'([1-9]\d*)(?:-([1-9]\d*))?', verse_label)
+        if bid not in books or not re.fullmatch(r'[1-9]\d*', chapter_label) or not match:
             raise ValueError(f'Unsupported publisher reference: {verse.attrib}')
-        chapter, number = int(chapter_label), int(verse_label)
+        chapter, number = int(chapter_label), int(match.group(1))
+        end_number = int(match.group(2)) if match.group(2) else number
+        expected_end = expected_ranges.get((bid, chapter, number))
+        if end_number != number:
+            record = {'bookId': bid, 'chapter': chapter, 'start': number, 'end': end_number}
+            if expected_end != end_number or end_number <= number:
+                raise ValueError(f'{edition_id}: unpinned publisher verse range at {record}')
+            observed_ranges.append(record)
+        elif expected_end is not None:
+            raise ValueError(f'{edition_id}: expected publisher verse range is absent at {bid} {chapter}:{number}')
         text = (verse.text or '').strip(ASCII_PADDING)
         if not valid_text(text):
             raise ValueError(f'Invalid source characters at {bid} {chapter}:{number}')
@@ -2324,15 +2378,25 @@ def bible_artifacts(edition_id, archive):
         chapters = books[bid]['chapters']
         if chapter == len(chapters) + 1:
             chapters.append({'number': chapter, 'verses': []})
-        current_verses = [item['number'] for item in chapters[-1]['verses']]
+        current_verses = chapters[-1]['verses']
+        previous_end = current_verses[-1].get('endNumber', current_verses[-1]['number']) if current_verses else 0
         is_order_exception = (bid, chapter) in reference_order_exceptions
-        if (chapter != len(chapters) or number in current_verses
-                or (current_verses and number <= current_verses[-1] and not is_order_exception)):
+        duplicate = any(item['number'] == number for item in current_verses)
+        if (chapter != len(chapters) or duplicate
+                or (current_verses and number <= previous_end and not is_order_exception)):
             raise ValueError(f'Duplicate/out-of-order reference: {bid} {chapter}:{number}')
-        chapters[-1]['verses'].append({'number': number, 'text': text})
-        rows.append({'bookId': bid, 'chapter': chapter, 'verse': number, 'text': text, 'editionId': edition_id})
+        verse_record = {'number': number, 'text': text}
+        if end_number != number:
+            verse_record['endNumber'] = end_number
+        chapters[-1]['verses'].append(verse_record)
+        row = {'bookId': bid, 'chapter': chapter, 'verse': number, 'text': text, 'editionId': edition_id}
+        if end_number != number:
+            row['endVerse'] = end_number
+        rows.append(row)
     if seen_book_order != list(books):
         raise ValueError(f'The publisher export book list/order does not match the pinned {len(books)}-book profile.')
+    if observed_ranges != source.get('sourceVerseRanges', []):
+        raise ValueError(f'{edition_id}: publisher verse-range inventory changed.')
     observed_reference_order_exceptions = []
     for (bid, chapter), expected in reference_order_exceptions.items():
         observed = [verse['number'] for verse in books[bid]['chapters'][chapter - 1]['verses']]
@@ -2346,8 +2410,13 @@ def bible_artifacts(edition_id, archive):
         if not match:
             raise ValueError('Unexpected publisher VPL text line.')
         bid, chapter, number, text = match.groups()
-        independent_rows.append({'bookId': TEXT_IDS.get(bid, bid), 'chapter': int(chapter), 'verse': int(number),
-                                 'text': text.strip(ASCII_PADDING), 'editionId': edition_id})
+        book_id, chapter_number, verse_number = TEXT_IDS.get(bid, bid), int(chapter), int(number)
+        text_row = {'bookId': book_id, 'chapter': chapter_number, 'verse': verse_number,
+                    'text': text.strip(ASCII_PADDING), 'editionId': edition_id}
+        range_end = expected_ranges.get((book_id, chapter_number, verse_number))
+        if range_end is not None and range_end != verse_number:
+            text_row['endVerse'] = range_end
+        independent_rows.append(text_row)
     formatting_differences = []
     if len(rows) != len(independent_rows):
         raise ValueError('Publisher XML and plain-text exports have different reference counts.')
@@ -2374,9 +2443,11 @@ def bible_artifacts(edition_id, archive):
         maxima, record_counts = [], []
         for chapter in book['chapters']:
             numbers = [verse['number'] for verse in chapter['verses']]
-            maxima.append(max(numbers))
+            ends = [verse.get('endNumber', verse['number']) for verse in chapter['verses']]
+            maxima.append(max(ends))
             record_counts.append(len(numbers))
-            missing = sorted(set(range(1, max(numbers) + 1)) - set(numbers))
+            covered = {number for verse in chapter['verses'] for number in range(verse['number'], verse.get('endNumber', verse['number']) + 1)}
+            missing = sorted(set(range(1, max(ends) + 1)) - covered)
             if missing:
                 omitted.append({'bookId': bid, 'chapter': chapter['number'], 'verseNumbers': missing})
         inventory.append({'id': bid, 'name': book['name'], 'chapters': len(book['chapters']),
@@ -2385,7 +2456,7 @@ def bible_artifacts(edition_id, archive):
     if totals != source['expectedTotals']:
         raise ValueError(f'{edition_id}: unexpected source totals {totals}')
     manifest = {'schemaVersion': 1, 'edition': edition_metadata(edition_id), 'books': inventory, 'totals': totals,
-                'verseCountSemantics': 'verseCounts is the maximum numbered verse in each chapter; verseRecordCounts is the number of source records. Omitted positions are not fabricated.'}
+                'verseCountSemantics': ('verseCounts is the maximum numbered verse position in each chapter; verseRecordCounts is the number of source text records. Explicit publisher ranges are preserved on the source record and are not expanded into fabricated verse text.' if expected_ranges else 'verseCounts is the maximum numbered verse in each chapter; verseRecordCounts is the number of source records. Omitted positions are not fabricated.')}
     parser = NoticeText()
     parser.feed(notice.decode('utf-8-sig'))
     notice_text = parser.text() + '\nSource and rights notice: ' + source['licenseUrl'] + '\n'
@@ -2403,7 +2474,8 @@ def bible_artifacts(edition_id, archive):
         'members': {xml_name: sha(xml), text_name: sha(plain), notice_name: sha(notice)},
         'displayTextMember': text_name,
         'xmlAndPlainTextAgree': not formatting_differences,
-        'xmlPlainTextCrossCheck': 'Exact agreement except the recorded publisher numeric-marker brackets; all other characters and references agree.' if formatting_differences else 'Exact agreement.',
+        'xmlPlainTextCrossCheck': ('Source text wording and range-start references agree exactly. The XML supplies two explicit multi-verse range labels absent from the TXT reference syntax; those publisher ranges are pinned and preserved on the corresponding unchanged TXT records.' if expected_ranges else ('Exact agreement except the recorded publisher numeric-marker brackets; all other characters and references agree.' if formatting_differences else 'Exact agreement.')),
+        **({'publisherSourceVerseRanges': observed_ranges} if expected_ranges else {}),
         'publisherNumberingMarkerFormatDifferences': formatting_differences if edition_id == 'deu1912' else [],
         'normalization': ['Decode source XML entities and UTF-8 byte-order marks.', 'Remove only ASCII XML/VPL padding at verse boundaries.',
                           'Map publisher VPL text book abbreviations to the equivalent XML book identifiers for validation.',
@@ -2756,21 +2828,34 @@ def verify_outputs(output, pending_indexes=None):
             raise ValueError(f'{edition_id}: manifest metadata mismatch.')
         if source['corpus'] == 'bible':
             rows = []
+            observed_ranges = []
             for meta in manifest['books']:
                 book = json.loads((directory / 'books' / (meta['id'] + '.json')).read_text(encoding='utf-8'))
                 if book['id'] != meta['id'] or len(book['chapters']) != meta['chapters']:
                     raise ValueError(f'{edition_id}: incorrect chapter count for {meta["id"]}.')
                 for i, chapter in enumerate(book['chapters']):
                     numbers = [v['number'] for v in chapter['verses']]
-                    if chapter['number'] != i + 1 or numbers != sorted(set(numbers)) or max(numbers) != meta['verseCounts'][i] or len(numbers) != meta['verseRecordCounts'][i]:
+                    ends = [v.get('endNumber', v['number']) for v in chapter['verses']]
+                    if (chapter['number'] != i + 1 or numbers != sorted(set(numbers))
+                            or max(ends) != meta['verseCounts'][i] or len(numbers) != meta['verseRecordCounts'][i]
+                            or any(start_end < start for start, start_end in zip(numbers, ends))
+                            or any(numbers[index] <= ends[index - 1] for index in range(1, len(numbers)) if numbers[index] > numbers[index - 1])):
                         raise ValueError(f'{edition_id}: incorrect chapter inventory for {meta["id"]} {i + 1}.')
-                    rows.extend({'bookId': book['id'], 'chapter': chapter['number'], 'verse': v['number'], 'text': v['text'], 'editionId': edition_id} for v in chapter['verses'])
+                    for verse in chapter['verses']:
+                        if verse.get('endNumber', verse['number']) != verse['number']:
+                            observed_ranges.append({'bookId': book['id'], 'chapter': chapter['number'], 'start': verse['number'], 'end': verse['endNumber']})
+                        row = {'bookId': book['id'], 'chapter': chapter['number'], 'verse': verse['number'], 'text': verse['text'], 'editionId': edition_id}
+                        if verse.get('endNumber', verse['number']) != verse['number']:
+                            row['endVerse'] = verse['endNumber']
+                        rows.append(row)
                     if source.get('format') == 'usj-3.0' and pending_indexes is not None:
                         name = f'chapters/{book["id"]}/{chapter["number"]}.json'
                         chunk_bytes = json_bytes({'schemaVersion': 1, 'editionId': edition_id, 'bookId': book['id'], **chapter})
                         if sha(chunk_bytes) != provenance['generatedFileSha256'].get(name):
                             raise ValueError(f'{edition_id}: rebuilt chapter differs from pinned output: {name}')
                         pending_indexes.append((directory / name, chunk_bytes))
+            if observed_ranges != source.get('sourceVerseRanges', []):
+                raise ValueError(f'{edition_id}: committed publisher verse ranges changed.')
             if len(rows) != manifest['totals']['verses']:
                 raise ValueError(f'{edition_id}: search index differs from displayed source text.')
             if pending_indexes is not None:

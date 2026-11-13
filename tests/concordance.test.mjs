@@ -46,6 +46,16 @@ test('all result pages retain complete totals and reach beyond the old 100-verse
   await assert.rejects(countConcordance(source, query('love'), 6), /unavailable/);
 });
 
+test('concordance accepts publisher verse ranges and rejects overlapping source records', () => {
+  const manifest = { edition: { id: 'range-fixture' }, totals: { verses: 2 }, books: [{ id: 'ACT', chapters: 1, verseCounts: [9], verseRecordCounts: [2] }] };
+  const rows = [
+    { bookId: 'ACT', chapter: 1, verse: 6, endVerse: 8, editionId: 'range-fixture', text: 'One publisher record for verses six through eight.' },
+    { bookId: 'ACT', chapter: 1, verse: 9, editionId: 'range-fixture', text: 'The following source record.' },
+  ];
+  assert.deepEqual(validateConcordanceRows(rows, manifest), rows);
+  assert.throws(() => validateConcordanceRows([rows[0], { ...rows[1], verse: 8 }], manifest), /overlapping/);
+});
+
 test('verified zero is distinct from an incomplete, duplicate, wrong-edition or invalid source index', async () => {
   const source = fixture();
   assert.equal(validateConcordanceManifest(source.manifest, 'eng-web'), source.manifest);

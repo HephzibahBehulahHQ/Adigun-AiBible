@@ -14372,6 +14372,179 @@
           "rejectedMetadata": 0
         }
       ]
+    },
+    {
+      "editionId": "ldb-duya2024",
+      "sourceSha256": "c394cc2836c21f41e42f9610c836fa093983b6c11802b288b233fc47ba61d4c0",
+      "status": "publisher-metadata",
+      "marker": "none",
+      "offsetUnit": "not-applicable",
+      "totalSpans": 0,
+      "totalVerses": 0,
+      "books": [
+        {
+          "bookId": "MAT",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "MRK",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "LUK",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "JHN",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "ACT",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "ROM",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "1CO",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "2CO",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "GAL",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "EPH",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "PHP",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "COL",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "1TH",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "2TH",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "1TI",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "2TI",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "TIT",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "PHM",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "HEB",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "JAS",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "1PE",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "2PE",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "1JN",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "2JN",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "3JN",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "JUD",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "REV",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        }
+      ]
     }
   ]
 }
