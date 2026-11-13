@@ -103,6 +103,51 @@ SOURCES = {
             'Only text is imported here; no recorded audio files are included.',
         ],
     },
+    'spaonbv': {
+        'name': 'Biblica® Open Nueva Biblia Viva 2008', 'nativeTitle': 'Biblica® Open Nueva Biblia Viva™',
+        'abbreviation': 'ONBV', 'language': 'es', 'script': 'Latn', 'direction': 'ltr',
+        'corpus': 'bible', 'publisher': 'Biblica, Inc.; distributed by eBible.org',
+        'translator': 'Biblica, Inc.', 'revision': '2008 edition; publisher verse text only',
+        'sourceUpdatedAt': '2025-05-21', 'sourceNoticeDate': '2025-05-21',
+        'publicationStatus': 'published-edition', 'providerId': 'spaonbv', 'canon': 'protestant-66',
+        'rightsObservedAt': '2026-11-13',
+        'sourceUrl': 'https://ebible.org/spaonbv/',
+        'formatUrl': 'https://ebible.org/Bible/details.php?id=spaonbv',
+        'downloadUrl': 'https://ebible.org/Scriptures/spaonbv_vpl.zip',
+        'downloadBytes': 4721477,
+        'licenseUrl': 'https://ebible.org/spaonbv/copyright.htm',
+        'license': 'CC BY-SA 4.0', 'licenseIdentifier': 'CC-BY-SA-4.0',
+        'licenseDeedUrl': 'https://creativecommons.org/licenses/by-sa/4.0/',
+        'attribution': 'Biblica® Open Nueva Biblia Viva™. Copyright © 2006, 2008 by Biblica, Inc. Translation by Biblica, Inc. CC BY-SA 4.0. Unmodified publisher wording; full source notice retained. The original Work by its copyright holders is available for free at www.biblica.com and open.bible. Source: https://ebible.org/spaonbv/.',
+        'sha256': '10e3eb835f65e08d549d7f1aa43b42fdf974de8cfb6cd72f6952e054e8e7b780',
+        'xmlSha256': '0567de8322bcaf6c2e298684677c92bd59f4756dedc06766f15b44760cbcaf25',
+        'textSha256': '64c6325e7aa4962ccf6b52714d1c0c409812fd2a4192c81cab10be8f14cb81c5',
+        'noticeSha256': 'b9adfdc39c50aca3676de796c5f1d88e8a0fd43f5293e72056dda00e37c4bb03',
+        'bracketExceptionCount': 1,
+        'bracketExceptionInventorySha256': '0c79619802800eb928251cd86c38a5d8841ed8b33bca5f5b6cb4f6296c3f57a1',
+        'bracketExceptionScope': 'The only TXT/XML text difference is Biblica’s exact bracketed alternative “[o Deuel]” at Numbers 2:3; display preserves the publisher TXT. The XML supplies 1,147 combined verse range endpoints absent from TXT reference labels; the ordered coordinate inventory is separately hash-pinned and the text is never expanded.',
+        'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 29102},
+        'sourceVerseRangeCount': 1147,
+        'sourceVerseRangesSha256': 'd805624ce12efdc073565a7efc5795cce9db474b85b6d1272558c06c4799531f',
+        'rightsEvidenceUrls': ['https://ebible.org/Bible/details.php?id=spaonbv', 'https://ebible.org/spaonbv/copyright.htm', 'https://creativecommons.org/licenses/by-sa/4.0/'],
+        'preserveSourceNotice': True,
+        'languageEvidence': {
+            'registryUrl': 'https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry',
+            'languageTag': 'es', 'script': 'Latn', 'direction': 'ltr',
+            'registryFileDate': '2026-09-17',
+            'registrySha256': '755fad43283be7b41ebe3c89ad054b6eaf928f404f9c0edb74799e0eab74beb1',
+            'sourceLetterBidiCounts': {'L': 3165045},
+            'sourceLetterUnicodeNamePrefixes': {'LATIN': 3165045},
+            'scope': 'The publisher identifies the edition as Spanish. The language tag, Latin script and left-to-right direction identify the source encoding and are not native-language or editorial approval.'},
+        'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': False, 'export': True},
+        'conditions': [
+            'Retain the exact Biblica® Open Nueva Biblia Viva™ identity and complete publisher copyright/source notice with redistributed and offline copies.',
+            'For adaptations, disclose changes, identify the original source as available at www.biblica.com and open.bible, and license contributions under CC BY-SA 4.0.',
+            'Keep Biblica trademarks intact for unchanged copies and do not imply publisher endorsement.',
+            'The VPL archive contains Bible text only; it omits introductions, headings, notes, paragraph layout, pictures and recorded audio.',
+            'License permission is distinct from native-language approval, editorial review and any external AI service configuration.',
+        ],
+    },
     'eng-bsb': {
         'name': 'Berean Standard Bible', 'abbreviation': 'BSB', 'language': 'en', 'corpus': 'bible',
         'publisher': 'BSB Publishing, LLC', 'translator': 'Berean Bible Translation Committee',
@@ -2342,11 +2387,25 @@ def bible_artifacts(edition_id, archive):
     document = ET.fromstring(xml)
     if document.tag != 'verseFile':
         raise ValueError('Unexpected publisher XML root.')
+    range_inventory = []
+    for verse in document:
+        label = verse.attrib.get('v', '')
+        match = re.fullmatch(r'([1-9]\d*)-([1-9]\d*)', label)
+        if match:
+            range_inventory.append({'bookId': TEXT_IDS.get(verse.attrib['b'], verse.attrib['b']),
+                                    'chapter': int(verse.attrib['c']), 'start': int(match.group(1)),
+                                    'end': int(match.group(2))})
+    if 'sourceVerseRangesSha256' in source:
+        if (len(range_inventory) != source['sourceVerseRangeCount']
+                or sha(json_bytes(range_inventory)) != source['sourceVerseRangesSha256']):
+            raise ValueError(f'{edition_id}: publisher verse-range inventory changed.')
+        pinned_ranges = range_inventory
+    else:
+        pinned_ranges = source.get('sourceVerseRanges', [])
     edition_books = source.get('bookOrder', BOOKS)
     books = OrderedDict((bid, {'id': bid, 'name': name, 'chapters': []}) for bid, name in edition_books)
     rows, seen_book_order = [], []
-    expected_ranges = {(item['bookId'], item['chapter'], item['start']): item['end']
-                       for item in source.get('sourceVerseRanges', [])}
+    expected_ranges = {(item['bookId'], item['chapter'], item['start']): item['end'] for item in pinned_ranges}
     observed_ranges = []
     reference_order_exceptions = {(exception['bookId'], exception['chapter']): exception
                                   for exception in source.get('referenceOrderExceptions', [])}
@@ -2395,7 +2454,7 @@ def bible_artifacts(edition_id, archive):
         rows.append(row)
     if seen_book_order != list(books):
         raise ValueError(f'The publisher export book list/order does not match the pinned {len(books)}-book profile.')
-    if observed_ranges != source.get('sourceVerseRanges', []):
+    if observed_ranges != pinned_ranges:
         raise ValueError(f'{edition_id}: publisher verse-range inventory changed.')
     observed_reference_order_exceptions = []
     for (bid, chapter), expected in reference_order_exceptions.items():
@@ -2490,7 +2549,7 @@ def bible_artifacts(edition_id, archive):
     if 'bracketExceptionCount' in source:
         bracket_differences = [value for value in formatting_differences if 'publisherXmlBoundaryNbsp' not in value]
         provenance.update({
-            'xmlPlainTextCrossCheck': 'All words, punctuation and references agree after comparison-only removal of the recorded TXT square brackets. Display text retains every bracket unchanged.',
+            'xmlPlainTextCrossCheck': ('XML and TXT source verse starts and wording agree after comparison-only removal of the exact recorded TXT bracket. The XML separately supplies 1,147 hash-pinned combined range endpoints absent from TXT labels; displayed TXT remains unchanged.' if expected_ranges else 'All words, punctuation and references agree after comparison-only removal of the recorded TXT square brackets. Display text retains every bracket unchanged.'),
             'publisherBracketFormatDifferences': bracket_differences,
             'publisherBracketInventorySha256': sha(json_bytes(bracket_differences)),
             'publisherBracketOffsetUnit': 'unicode-codepoint',
@@ -2854,7 +2913,11 @@ def verify_outputs(output, pending_indexes=None):
                         if sha(chunk_bytes) != provenance['generatedFileSha256'].get(name):
                             raise ValueError(f'{edition_id}: rebuilt chapter differs from pinned output: {name}')
                         pending_indexes.append((directory / name, chunk_bytes))
-            if observed_ranges != source.get('sourceVerseRanges', []):
+            if 'sourceVerseRangesSha256' in source:
+                if (len(observed_ranges) != source['sourceVerseRangeCount']
+                        or sha(json_bytes(observed_ranges)) != source['sourceVerseRangesSha256']):
+                    raise ValueError(f'{edition_id}: committed publisher verse ranges changed.')
+            elif observed_ranges != source.get('sourceVerseRanges', []):
                 raise ValueError(f'{edition_id}: committed publisher verse ranges changed.')
             if len(rows) != manifest['totals']['verses']:
                 raise ValueError(f'{edition_id}: search index differs from displayed source text.')
