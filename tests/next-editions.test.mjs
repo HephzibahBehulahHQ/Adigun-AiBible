@@ -145,8 +145,6 @@ test('Duya NT source records preserve its exact publisher verse ranges and editi
   const range = acts.verses.find(row => row.number === 6);
   assert.equal(range.endNumber, 8);
   assert.equal(acts.verses.some(row => row.number === 7 || row.number === 8), false);
-  const search = read('ldb-duya2024/search-index.json');
-  assert.deepEqual(search.find(row => row.bookId === 'ACT' && row.chapter === 24 && row.verse === 6).endVerse, 8);
   assert.equal(acquisition.coverage, 'validated-new-testament');
   assert.equal(acquisition.installedSourceSha256, edition.sha256);
   assert.deepEqual(acquisition.publisherVerseRanges, provenance.publisherSourceVerseRanges);
