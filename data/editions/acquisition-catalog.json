@@ -4945,6 +4945,52 @@
       "coverage": "not-validated",
       "permissions": "not-reviewed",
       "installedEditionId": null
+    },
+    {
+      "provider": "eBible.org",
+      "providerId": "mdyeth",
+      "languageName": "Maale",
+      "nativeLanguageName": "Maale (Male)",
+      "nativeTitle": "ጌኤዦ ማፃኣፖ",
+      "title": "Maale Full Bible",
+      "revision": "Publisher source files dated 2025-05-13",
+      "providerRightsStatement": "CC BY-SA 4.0",
+      "translator": "The Word for the World",
+      "contributor": "Bible Society of Ethiopia",
+      "sourceUrl": "https://ebible.org/details.php?id=mdyeth",
+      "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
+      "observedOn": "2026-11-13",
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "mdyeth",
+      "installedRevision": "Maale Full Bible; eBible source dated 2025-05-13",
+      "installedSourceSha256": "01b434547c7ea95f5b07b6ea935e0a87e841701206b0427f4feac8a278f17207",
+      "installedObservedOn": "2026-11-13",
+      "publicationStatus": "published-edition",
+      "sourceReview": {
+        "state": "admitted-exact-source",
+        "observedOn": "2026-11-13",
+        "evidenceUrls": [
+          "https://ebible.org/details.php?id=mdyeth",
+          "https://ebible.org/mdyeth/copyright.htm",
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://ebible.org/Scriptures/mdyeth_vpl.zip",
+          "https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry"
+        ],
+        "archiveSha256": "01b434547c7ea95f5b07b6ea935e0a87e841701206b0427f4feac8a278f17207",
+        "observedTotals": {
+          "books": 66,
+          "chapters": 1189,
+          "verses": 30506
+        },
+        "limitations": [
+          "The publisher TXT is displayed unchanged. Its 55 XML/TXT bracket-marker differences are pinned; 13 adjacent ASCII padding positions are comparison-only exceptions.",
+          "The XML supplies 238 combined range endpoints; the ordered coordinate inventory is hash-pinned and the ranges are not expanded into fabricated text.",
+          "The VPL omits introductions, headings, notes, paragraph layout, pictures and recorded audio.",
+          "Source and format checks do not establish native-language or editorial approval."
+        ]
+      }
     }
   ],
   "priorityRequests": [
