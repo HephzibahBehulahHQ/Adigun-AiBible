@@ -38,7 +38,7 @@ test.describe('four exact source admissions', () => {
     expect(new Set(editions.map(edition => new Intl.Locale(edition.language).language)).size).toBe(22);
     await page.goto(route('editions', 'eng-web'));
     await expect(page.getByText('34 installed Bible text editions · 31 added beyond the verified three-edition baseline.', { exact: false })).toBeVisible();
-    await expect(page.getByText(/^Installed source languages \(21\):/)).toBeVisible();
+    await expect(page.getByText(/^Installed source languages \(22\):/)).toBeVisible();
     const languages = page.getByRole('combobox', { name: 'Language', exact: true });
     await expect(languages.locator('option')).toHaveCount(24); // 23 exact tags plus the all-languages option.
     const results = page.getByRole('region', { name: 'Installed Bible editions', exact: true });
