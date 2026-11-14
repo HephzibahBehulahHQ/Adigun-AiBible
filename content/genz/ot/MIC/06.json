@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "MIC",
+  "bookName": "Micah",
+  "chapterNumber": 6,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:MIC:6:1","text":"Listen to what the LORD says: “Stand up and plead your case before the mountains. Let the hills hear your voice."},
+    {"number":2,"sourceRef":"eng-web:MIC:6:2","text":"“Hear the LORD’s case, you mountains, and you enduring foundations of the earth. The LORD has a case against his people; he is bringing charges against Israel."},
+    {"number":3,"sourceRef":"eng-web:MIC:6:3","text":"“My people, what have I done to you? How have I worn you out? Answer me!"},
+    {"number":4,"sourceRef":"eng-web:MIC:6:4","text":"“I brought you out of Egypt and freed you from slavery. I sent Moses, Aaron, and Miriam to lead you."},
+    {"number":5,"sourceRef":"eng-web:MIC:6:5","text":"“My people, remember what Balak king of Moab planned and how Balaam son of Beor answered him—from Shittim to Gilgal—so you may know the LORD’s righteous acts.”"},
+    {"number":6,"sourceRef":"eng-web:MIC:6:6","text":"What should I bring when I come before the LORD and bow before God on high? Should I bring burnt offerings, year-old calves?"},
+    {"number":7,"sourceRef":"eng-web:MIC:6:7","text":"Will the LORD be pleased with thousands of rams or rivers of oil without number? Should I give my firstborn for my rebellion, the child of my body for my own sin?"},
+    {"number":8,"sourceRef":"eng-web:MIC:6:8","text":"He has already shown you what is good. What does the LORD ask of you? Do what is right, love mercy, and walk humbly with your God."},
+    {"number":9,"sourceRef":"eng-web:MIC:6:9","text":"The LORD’s voice calls to the city—and wisdom reveres your name: “Pay attention to the rod and to the one who appointed it."},
+    {"number":10,"sourceRef":"eng-web:MIC:6:10","text":"“Are dishonest treasures still in the wicked person’s house, along with a cursed, undersized measure?"},
+    {"number":11,"sourceRef":"eng-web:MIC:6:11","text":"“Can I tolerate dishonest scales and a bag of rigged weights?"},
+    {"number":12,"sourceRef":"eng-web:MIC:6:12","text":"“The rich are full of violence. The people speak lies, and their tongues are deceitful."},
+    {"number":13,"sourceRef":"eng-web:MIC:6:13","text":"“So I have struck you with a painful wound and made you desolate because of your sins."},
+    {"number":14,"sourceRef":"eng-web:MIC:6:14","text":"“You will eat but never feel satisfied; your hunger will remain. You will save things, but won’t keep them. Whatever you do save, I will hand over to the sword."},
+    {"number":15,"sourceRef":"eng-web:MIC:6:15","text":"“You will plant but not harvest. You will press olives but won’t have oil to rub on yourself; you will crush grapes but won’t drink the wine."},
+    {"number":16,"sourceRef":"eng-web:MIC:6:16","text":"“You have kept Omri’s rules and followed everything Ahab’s family did. You live by their advice, so I will make you a ruin, your people an object of scorn, and you will bear my people’s reproach.”"}
+  ]
+}
+
