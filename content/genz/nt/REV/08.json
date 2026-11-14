@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "REV",
+  "bookName": "Revelation",
+  "chapterNumber": 8,
+  "verses": [
+    {
+      "sourceRef": "eng-web:REV:8:1",
+      "number": 1,
+      "text": "When the Lamb opened the seventh seal, there was silence in heaven for about half an hour."
+    },
+    {
+      "sourceRef": "eng-web:REV:8:2",
+      "number": 2,
+      "text": "Then I saw the seven angels who stand before God, and they were given seven trumpets."
+    },
+    {
+      "sourceRef": "eng-web:REV:8:3",
+      "number": 3,
+      "text": "Another angel came and stood at the altar with a gold incense burner. He was given a lot of incense to offer, along with the prayers of all God’s people, on the golden altar before the throne."
+    },
+    {
+      "sourceRef": "eng-web:REV:8:4",
+      "number": 4,
+      "text": "The smoke of the incense, together with the prayers of God’s people, rose up before God from the angel’s hand."
+    },
+    {
+      "sourceRef": "eng-web:REV:8:5",
+      "number": 5,
+      "text": "Then the angel took the incense burner, filled it with fire from the altar, and threw it onto the earth. There were thunderclaps, rumblings, flashes of lightning, and an earthquake."
+    },
+    {
+      "sourceRef": "eng-web:REV:8:6",
+      "number": 6,
+      "text": "Then the seven angels who had the seven trumpets prepared to blow them."
+    },
+    {
+      "sourceRef": "eng-web:REV:8:7",
+      "number": 7,
+      "text": "The first angel blew his trumpet, and hail and fire mixed with blood were thrown down on the earth. A third of the earth was burned up, along with a third of the trees and all the green grass."
+    },
+    {
+      "sourceRef": "eng-web:REV:8:8",
+      "number": 8,
+      "text": "The second angel blew his trumpet, and something like a huge mountain ablaze with fire was thrown into the sea. A third of the sea turned to blood,"
+    },
+    {
+      "sourceRef": "eng-web:REV:8:9",
+      "number": 9,
+      "text": "a third of the living creatures in the sea died, and a third of the ships were destroyed."
+    },
+    {
+      "sourceRef": "eng-web:REV:8:10",
+      "number": 10,
+      "text": "The third angel blew his trumpet, and a great star blazing like a torch fell from the sky on a third of the rivers and springs."
+    },
+    {
+      "sourceRef": "eng-web:REV:8:11",
+      "number": 11,
+      "text": "The star was called Wormwood. A third of the waters turned bitter, and many people died from the bitter water."
+    },
+    {
+      "sourceRef": "eng-web:REV:8:12",
+      "number": 12,
+      "text": "The fourth angel blew his trumpet, and a third of the sun, moon, and stars was struck, so a third of them went dark. A third of the day and a third of the night had no light."
+    },
+    {
+      "sourceRef": "eng-web:REV:8:13",
+      "number": 13,
+      "text": "Then I looked and heard an eagle flying high overhead, calling loudly, “Woe! Woe! Woe to those who live on earth because of the remaining trumpet blasts the three angels are about to sound!”"
+    }
+  ]
+}

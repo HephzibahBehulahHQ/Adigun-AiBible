@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "REV",
+  "bookName": "Revelation",
+  "chapterNumber": 10,
+  "verses": [
+    {
+      "sourceRef": "eng-web:REV:10:1",
+      "text": "Then I saw another mighty angel coming down from heaven, wrapped in a cloud, with a rainbow over his head. His face was like the sun, and his legs were like pillars of fire.",
+      "number": 1
+    },
+    {
+      "sourceRef": "eng-web:REV:10:2",
+      "text": "He held a small open scroll in his hand. He put his right foot on the sea and his left foot on the land,",
+      "number": 2
+    },
+    {
+      "sourceRef": "eng-web:REV:10:3",
+      "text": "and he shouted loudly, like a lion roaring. When he shouted, the seven thunders spoke.",
+      "number": 3
+    },
+    {
+      "sourceRef": "eng-web:REV:10:4",
+      "text": "When the seven thunders spoke, I was about to write. But I heard a voice from heaven say, “Seal up what the seven thunders said. Don’t write it down.”",
+      "number": 4
+    },
+    {
+      "sourceRef": "eng-web:REV:10:5",
+      "text": "Then the angel I’d seen standing on the sea and the land raised his right hand to heaven.",
+      "number": 5
+    },
+    {
+      "sourceRef": "eng-web:REV:10:6",
+      "text": "He swore by the one who lives forever and ever, who created heaven and everything in it, the earth and everything in it, and the sea and everything in it: “There will be no more delay!",
+      "number": 6
+    },
+    {
+      "sourceRef": "eng-web:REV:10:7",
+      "text": "When the seventh angel is about to blow his trumpet, God’s mystery will be fulfilled, just as he announced to his servants the prophets.”",
+      "number": 7
+    },
+    {
+      "sourceRef": "eng-web:REV:10:8",
+      "text": "Then the voice from heaven that I’d heard spoke to me again: “Go, take the open scroll from the hand of the angel standing on the sea and the land.”",
+      "number": 8
+    },
+    {
+      "sourceRef": "eng-web:REV:10:9",
+      "text": "So I went to the angel and asked him to give me the small scroll. He said, “Take it and eat it. It’ll turn your stomach sour, but in your mouth it’ll taste as sweet as honey.”",
+      "number": 9
+    },
+    {
+      "sourceRef": "eng-web:REV:10:10",
+      "text": "I took the small scroll from the angel’s hand and ate it. It tasted as sweet as honey in my mouth, but after I’d eaten it, my stomach turned sour.",
+      "number": 10
+    },
+    {
+      "sourceRef": "eng-web:REV:10:11",
+      "text": "Then I was told, “You must prophesy again about many peoples, nations, languages, and kings.”",
+      "number": 11
+    }
+  ]
+}

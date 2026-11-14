@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "REV",
+  "bookName": "Revelation",
+  "chapterNumber": 9,
+  "verses": [
+    {
+      "sourceRef": "eng-web:REV:9:1",
+      "text": "The fifth angel blew his trumpet, and I saw a star that had fallen from the sky to the earth. The star was given the key to the shaft of the Abyss.",
+      "number": 1
+    },
+    {
+      "sourceRef": "eng-web:REV:9:2",
+      "text": "When it opened the shaft, smoke rose like smoke from a huge furnace, and the sun and sky were darkened by the smoke.",
+      "number": 2
+    },
+    {
+      "sourceRef": "eng-web:REV:9:3",
+      "text": "Out of the smoke came locusts onto the earth, and they were given power like the power of scorpions.",
+      "number": 3
+    },
+    {
+      "sourceRef": "eng-web:REV:9:4",
+      "text": "They were told not to harm the grass, plants, or trees, but only the people who didn’t have God’s seal on their foreheads.",
+      "number": 4
+    },
+    {
+      "sourceRef": "eng-web:REV:9:5",
+      "text": "They weren’t allowed to kill them, but to torment them for five months. Their torment was like the sting of a scorpion.",
+      "number": 5
+    },
+    {
+      "sourceRef": "eng-web:REV:9:6",
+      "text": "During those days people will look for death but won’t find it. They’ll long to die, but death will run away from them.",
+      "number": 6
+    },
+    {
+      "sourceRef": "eng-web:REV:9:7",
+      "text": "The locusts looked like horses prepared for battle. On their heads were something like gold crowns, and their faces looked human.",
+      "number": 7
+    },
+    {
+      "sourceRef": "eng-web:REV:9:8",
+      "text": "Their hair was like women’s hair, and their teeth were like lions’ teeth.",
+      "number": 8
+    },
+    {
+      "sourceRef": "eng-web:REV:9:9",
+      "text": "They had breastplates like iron, and the sound of their wings was like the roar of many horses and chariots rushing into battle.",
+      "number": 9
+    },
+    {
+      "sourceRef": "eng-web:REV:9:10",
+      "text": "They had tails with stingers like scorpions, and their power to hurt people for five months was in their tails.",
+      "number": 10
+    },
+    {
+      "sourceRef": "eng-web:REV:9:11",
+      "text": "They had as king over them the angel of the Abyss, whose name in Hebrew is Abaddon and in Greek is Apollyon.",
+      "number": 11
+    },
+    {
+      "sourceRef": "eng-web:REV:9:12",
+      "text": "The first woe has passed. Two more woes are still coming.",
+      "number": 12
+    },
+    {
+      "sourceRef": "eng-web:REV:9:13",
+      "text": "The sixth angel blew his trumpet, and I heard a voice from the four horns of the golden altar before God.",
+      "number": 13
+    },
+    {
+      "sourceRef": "eng-web:REV:9:14",
+      "text": "It said to the sixth angel with the trumpet, “Release the four angels who are bound at the great river Euphrates.”",
+      "number": 14
+    },
+    {
+      "sourceRef": "eng-web:REV:9:15",
+      "text": "The four angels, who had been kept ready for that hour, day, month, and year, were released to kill a third of humanity.",
+      "number": 15
+    },
+    {
+      "sourceRef": "eng-web:REV:9:16",
+      "text": "I heard the number of their mounted troops: two hundred million.",
+      "number": 16
+    },
+    {
+      "sourceRef": "eng-web:REV:9:17",
+      "text": "In my vision I saw the horses and riders: their breastplates were fiery red, dark blue, and sulfur yellow. The horses’ heads looked like lions’ heads, and fire, smoke, and sulfur came out of their mouths.",
+      "number": 17
+    },
+    {
+      "sourceRef": "eng-web:REV:9:18",
+      "text": "A third of humanity was killed by these three plagues—the fire, smoke, and sulfur coming out of their mouths.",
+      "number": 18
+    },
+    {
+      "sourceRef": "eng-web:REV:9:19",
+      "text": "The horses’ power was in their mouths and their tails, for their tails were like snakes with heads that could inflict injuries.",
+      "number": 19
+    },
+    {
+      "sourceRef": "eng-web:REV:9:20",
+      "text": "The rest of humanity, who weren’t killed by these plagues, still didn’t turn away from the works of their hands. They didn’t stop worshiping demons and idols of gold, silver, bronze, stone, and wood—idols that can’t see, hear, or walk.",
+      "number": 20
+    },
+    {
+      "sourceRef": "eng-web:REV:9:21",
+      "text": "They didn’t turn away from their murders, magic arts, sexual immorality, or thefts.",
+      "number": 21
+    }
+  ]
+}
