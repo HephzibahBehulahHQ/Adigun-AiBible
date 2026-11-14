@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "JON",
+  "bookName": "Jonah",
+  "chapterNumber": 1,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:JON:1:1","text":"The LORD’s word came to Jonah son of Amittai:"},
+    {"number":2,"sourceRef":"eng-web:JON:1:2","text":"“Get up and go to the great city of Nineveh. Speak against it, because its wickedness has come to my attention.”"},
+    {"number":3,"sourceRef":"eng-web:JON:1:3","text":"But Jonah got up to run away from the LORD, heading for Tarshish. He went down to Joppa and found a ship sailing there. He paid the fare and boarded, trying to get away from the LORD."},
+    {"number":4,"sourceRef":"eng-web:JON:1:4","text":"But the LORD sent a powerful wind over the sea, and a fierce storm came up. The ship was close to breaking apart."},
+    {"number":5,"sourceRef":"eng-web:JON:1:5","text":"The sailors were terrified, and each cried out to his own god. They threw the cargo overboard to lighten the ship. Meanwhile Jonah had gone below deck, lain down, and fallen fast asleep."},
+    {"number":6,"sourceRef":"eng-web:JON:1:6","text":"The captain came to him and said, “How can you be sleeping? Get up and call on your God! Maybe he will notice us, and we won’t die.”"},
+    {"number":7,"sourceRef":"eng-web:JON:1:7","text":"The sailors said to one another, “Come on, let’s cast lots to find out who caused this disaster.” They cast lots, and the lot landed on Jonah."},
+    {"number":8,"sourceRef":"eng-web:JON:1:8","text":"They asked him, “Please tell us: who brought this disaster on us? What do you do? Where are you from? What country and people are you from?”"},
+    {"number":9,"sourceRef":"eng-web:JON:1:9","text":"He answered, “I am a Hebrew, and I fear the LORD, the God of heaven, who made the sea and the dry land.”"},
+    {"number":10,"sourceRef":"eng-web:JON:1:10","text":"The men were terrified and asked, “What have you done?” They knew he was running away from the LORD, because he had told them."},
+    {"number":11,"sourceRef":"eng-web:JON:1:11","text":"They asked him, “What should we do to you so the sea will calm down?” The sea was growing more and more violent."},
+    {"number":12,"sourceRef":"eng-web:JON:1:12","text":"He said, “Pick me up and throw me into the sea. Then it will calm down for you. I know this fierce storm is happening because of me.”"},
+    {"number":13,"sourceRef":"eng-web:JON:1:13","text":"Still, the men rowed hard to get back to land, but they couldn’t. The sea kept growing more violent against them."},
+    {"number":14,"sourceRef":"eng-web:JON:1:14","text":"So they cried out to the LORD: “Please, LORD, don’t let us die because of this man! Don’t hold us responsible for innocent blood! You, LORD, have done what you wanted.”"},
+    {"number":15,"sourceRef":"eng-web:JON:1:15","text":"Then they picked up Jonah and threw him into the sea, and the sea stopped raging."},
+    {"number":16,"sourceRef":"eng-web:JON:1:16","text":"The men were overwhelmed with fear of the LORD. They offered a sacrifice to the LORD and made vows."},
+    {"number":17,"sourceRef":"eng-web:JON:1:17","text":"The LORD sent a huge fish to swallow Jonah. Jonah stayed inside the fish for three days and three nights."}
+  ]
+}
+
