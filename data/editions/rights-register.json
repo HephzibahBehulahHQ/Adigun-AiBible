@@ -306,24 +306,6 @@
       "url": "https://ebible.org/nld1939/copyright.htm",
       "observedOn": "2026-11-14",
       "summary": "The individual notice identifies the first complete 1939 edition, records contact with the original publisher and relevant organizations with no objections, and says the edition can be considered free of copyright under the applicable legal terms. This is the provider’s conclusion, not independent worldwide legal advice."
-    },
-    {
-      "id": "spapddpt-cc",
-      "url": "https://ebible.org/spapddpt/copyright.htm",
-      "observedOn": "2026-11-14",
-      "summary": "The exact publisher notice identifies Palabra de Dios para ti as CC BY 4.0 and requires attribution and disclosure of changes. The notice does not establish separate AI retrieval, model-training or third-party audio rights."
-    },
-    {
-      "id": "spapddpt-details",
-      "url": "https://ebible.org/details.php?id=spapddpt",
-      "observedOn": "2026-11-14",
-      "summary": "Publisher metadata identifies Palabra de Dios para ti (PdDpt), Spanish, Asociacion Biblica Latinoamericana, contributor Latinamerican Textual Bible Foundation, Inc.; source files dated 2026-10-30."
-    },
-    {
-      "id": "spapddpt-license",
-      "url": "https://creativecommons.org/licenses/by/4.0/",
-      "observedOn": "2026-11-14",
-      "summary": "Creative Commons Attribution 4.0 International license deed."
     }
   ],
   "editions": [
@@ -5232,166 +5214,6 @@
       }
     },
     {
-      "editionId": "mdyeth",
-      "sourceSha256": "01b434547c7ea95f5b07b6ea935e0a87e841701206b0427f4feac8a278f17207",
-      "verifiedOn": "2026-11-13",
-      "expiresOn": null,
-      "withdrawn": false,
-      "territory": {
-        "scope": "worldwide",
-        "countries": []
-      },
-      "aiProductUse": {
-        "state": "unknown",
-        "evidenceIds": [
-          "mdyeth-cc"
-        ],
-        "reason": "CC BY-SA permits sharing/adaptation of the source text but does not establish this product’s separate AI retrieval or model-training permission."
-      },
-      "operations": {
-        "display": {
-          "state": "allowed",
-          "evidenceIds": [
-            "mdyeth-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
-        },
-        "redistribution": {
-          "state": "allowed",
-          "evidenceIds": [
-            "mdyeth-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
-        },
-        "offline": {
-          "state": "allowed",
-          "evidenceIds": [
-            "mdyeth-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
-        },
-        "searchIndex": {
-          "state": "allowed",
-          "evidenceIds": [
-            "mdyeth-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
-        },
-        "adaptation": {
-          "state": "allowed",
-          "evidenceIds": [
-            "mdyeth-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
-        },
-        "translation": {
-          "state": "allowed",
-          "evidenceIds": [
-            "mdyeth-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
-        },
-        "studyParaphrase": {
-          "state": "allowed",
-          "evidenceIds": [
-            "mdyeth-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
-        },
-        "publicPerformance": {
-          "state": "allowed",
-          "evidenceIds": [
-            "mdyeth-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
-        },
-        "imageExport": {
-          "state": "allowed",
-          "evidenceIds": [
-            "mdyeth-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
-        },
-        "videoExport": {
-          "state": "allowed",
-          "evidenceIds": [
-            "mdyeth-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
-        },
-        "printExport": {
-          "state": "allowed",
-          "evidenceIds": [
-            "mdyeth-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
-        },
-        "documentExport": {
-          "state": "allowed",
-          "evidenceIds": [
-            "mdyeth-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
-        },
-        "peerSharing": {
-          "state": "allowed",
-          "evidenceIds": [
-            "mdyeth-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
-        },
-        "commercialUse": {
-          "state": "allowed",
-          "evidenceIds": [
-            "mdyeth-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
-        },
-        "aiRetrieval": {
-          "state": "unknown",
-          "evidenceIds": [
-            "mdyeth-cc"
-          ],
-          "reason": "The publisher’s CC BY-SA text license does not establish permission for this separate AI-provider or recorded-audio operation."
-        },
-        "modelTraining": {
-          "state": "unknown",
-          "evidenceIds": [
-            "mdyeth-cc"
-          ],
-          "reason": "The publisher’s CC BY-SA text license does not establish permission for this separate AI-provider or recorded-audio operation."
-        },
-        "tts": {
-          "state": "unknown",
-          "evidenceIds": [
-            "mdyeth-cc"
-          ],
-          "reason": "The publisher’s CC BY-SA text license does not establish permission for this separate AI-provider or recorded-audio operation."
-        },
-        "recordedAudio": {
-          "state": "unknown",
-          "evidenceIds": [
-            "mdyeth-cc"
-          ],
-          "reason": "The publisher’s CC BY-SA text license does not establish permission for this separate AI-provider or recorded-audio operation."
-        }
-      },
-      "conditions": [
-        "Retain the exact Maale Bible title, copyright, translators/contributors and source notice with redistributed and offline copies.",
-        "For adaptations, disclose changes and distribute contributions under CC BY-SA 4.0; do not imply endorsement by the original licensors.",
-        "The publisher VPL archive contains Bible text only; it omits introductions, headings, notes, paragraph layout, pictures and recorded audio.",
-        "The text license does not establish AI retrieval, model training, TTS or recorded-audio rights, nor native-language/editorial approval."
-      ],
-      "attribution": "Maale Bible (Ethiopic script), ጌኤዦ ማፃኣፖ. Copyright © 2008 The Word for the World International and The Bible Society of Ethiopia. Translation by The Word for the World; contributor: Bible Society of Ethiopia. CC BY-SA 4.0. Source: https://ebible.org/mdyeth/.",
-      "cache": {
-        "mode": "none-required"
-      },
-      "providerReporting": {
-        "requirement": "none",
-        "description": "No provider telemetry obligation is stated in the publisher notice. No provider telemetry is enabled."
-      }
-    },
-    {
       "editionId": "mya-judson1840",
       "sourceSha256": "bbbabb35e8373c718a3eb1af4e30ba5efeadd08fc047abde644709bdd7951adf",
       "verifiedOn": "2026-11-05",
@@ -5782,205 +5604,6 @@
         "Changed study material must be separately labeled and must not be presented as unchanged publisher text.",
         "No third-party recorded audio, cover artwork, illustrations, maps or distinct modern revisions are included or licensed by this text import.",
         "No provider certification badge or trademark license is included, and this application is not claimed to be provider-certified."
-      ],
-      "cache": {
-        "mode": "none-required"
-      },
-      "providerReporting": {
-        "requirement": "none",
-        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
-      }
-    },
-    {
-      "editionId": "nld1939",
-      "sourceSha256": "37386d6f0c2cee93d24509d622eac616f2a129cf359b56c96a0b389826be47c1",
-      "verifiedOn": "2026-11-14",
-      "expiresOn": null,
-      "withdrawn": false,
-      "territory": {
-        "scope": "worldwide",
-        "countries": []
-      },
-      "aiProductUse": {
-        "state": "allowed",
-        "evidenceIds": [
-          "nld1939-pd",
-          "ebible-pd-uses",
-          "ebible-ip-policy"
-        ],
-        "reason": "eBible.org identifies this exact edition as public domain after describing its publisher/organization checks and publishes app and adaptation uses for public-domain texts. This records provider evidence, not independent worldwide legal or human editorial approval."
-      },
-      "operations": {
-        "display": {
-          "state": "allowed",
-          "evidenceIds": [
-            "nld1939-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
-        },
-        "redistribution": {
-          "state": "allowed",
-          "evidenceIds": [
-            "nld1939-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
-        },
-        "offline": {
-          "state": "allowed",
-          "evidenceIds": [
-            "nld1939-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
-        },
-        "searchIndex": {
-          "state": "allowed",
-          "evidenceIds": [
-            "nld1939-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
-        },
-        "adaptation": {
-          "state": "allowed",
-          "evidenceIds": [
-            "nld1939-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
-        },
-        "translation": {
-          "state": "allowed",
-          "evidenceIds": [
-            "nld1939-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
-        },
-        "studyParaphrase": {
-          "state": "allowed",
-          "evidenceIds": [
-            "nld1939-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
-        },
-        "aiRetrieval": {
-          "state": "allowed",
-          "evidenceIds": [
-            "nld1939-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
-        },
-        "modelTraining": {
-          "state": "allowed",
-          "evidenceIds": [
-            "nld1939-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
-        },
-        "tts": {
-          "state": "allowed",
-          "evidenceIds": [
-            "nld1939-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
-        },
-        "recordedAudio": {
-          "state": "unknown",
-          "evidenceIds": [
-            "nld1939-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "The source archive contains text only; no permission for third-party recordings is asserted."
-        },
-        "publicPerformance": {
-          "state": "allowed",
-          "evidenceIds": [
-            "nld1939-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
-        },
-        "imageExport": {
-          "state": "allowed",
-          "evidenceIds": [
-            "nld1939-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
-        },
-        "videoExport": {
-          "state": "allowed",
-          "evidenceIds": [
-            "nld1939-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
-        },
-        "printExport": {
-          "state": "allowed",
-          "evidenceIds": [
-            "nld1939-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
-        },
-        "documentExport": {
-          "state": "allowed",
-          "evidenceIds": [
-            "nld1939-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
-        },
-        "peerSharing": {
-          "state": "allowed",
-          "evidenceIds": [
-            "nld1939-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
-        },
-        "commercialUse": {
-          "state": "allowed",
-          "evidenceIds": [
-            "nld1939-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
-        }
-      },
-      "attribution": "De Heilige Schrift, Petrus Canisiusvertaling, 1939. First complete edition published by Het Spectrum, Utrecht and Brussels. Public domain as identified by eBible.org. Source: https://ebible.org/nld1939/.",
-      "conditions": [
-        "Retain the exact edition identity and complete eBible.org source notice with redistributed and offline copies.",
-        "eBible.org identifies this edition as public domain and says it contacted the original publisher and relevant organizations without finding objections; this record attributes that provider conclusion and is not an independent worldwide legal opinion.",
-        "The provider-supplied 73-book list and its order describe this edition and do not define one canon for all Christian traditions.",
-        "The VPL archive supplies verse text only; introductions, annotations, headings, images and third-party recordings are not included.",
-        "The source record does not establish independent human editorial review, native-language approval or provider endorsement."
       ],
       "cache": {
         "mode": "none-required"
@@ -6768,167 +6391,6 @@
       }
     },
     {
-      "editionId": "spapddpt",
-      "sourceSha256": "5d43f304b291c081551478cf43d08f0942fd8d151a067ba85bb313a73e87188a",
-      "verifiedOn": "2026-11-14",
-      "expiresOn": null,
-      "withdrawn": false,
-      "territory": {
-        "scope": "worldwide",
-        "countries": []
-      },
-      "aiProductUse": {
-        "state": "unknown",
-        "evidenceIds": [
-          "spapddpt-cc"
-        ],
-        "reason": "CC BY 4.0 allows sharing and adaptation with attribution but does not establish this product’s separate AI retrieval or model-training permission."
-      },
-      "operations": {
-        "display": {
-          "state": "allowed",
-          "evidenceIds": [
-            "spapddpt-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
-        },
-        "redistribution": {
-          "state": "allowed",
-          "evidenceIds": [
-            "spapddpt-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
-        },
-        "offline": {
-          "state": "allowed",
-          "evidenceIds": [
-            "spapddpt-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
-        },
-        "searchIndex": {
-          "state": "allowed",
-          "evidenceIds": [
-            "spapddpt-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
-        },
-        "adaptation": {
-          "state": "allowed",
-          "evidenceIds": [
-            "spapddpt-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
-        },
-        "translation": {
-          "state": "allowed",
-          "evidenceIds": [
-            "spapddpt-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
-        },
-        "studyParaphrase": {
-          "state": "allowed",
-          "evidenceIds": [
-            "spapddpt-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
-        },
-        "publicPerformance": {
-          "state": "allowed",
-          "evidenceIds": [
-            "spapddpt-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
-        },
-        "imageExport": {
-          "state": "allowed",
-          "evidenceIds": [
-            "spapddpt-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
-        },
-        "videoExport": {
-          "state": "allowed",
-          "evidenceIds": [
-            "spapddpt-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
-        },
-        "printExport": {
-          "state": "allowed",
-          "evidenceIds": [
-            "spapddpt-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
-        },
-        "documentExport": {
-          "state": "allowed",
-          "evidenceIds": [
-            "spapddpt-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
-        },
-        "peerSharing": {
-          "state": "allowed",
-          "evidenceIds": [
-            "spapddpt-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
-        },
-        "commercialUse": {
-          "state": "allowed",
-          "evidenceIds": [
-            "spapddpt-cc"
-          ],
-          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
-        },
-        "aiRetrieval": {
-          "state": "unknown",
-          "evidenceIds": [
-            "spapddpt-cc"
-          ],
-          "reason": "The source license does not separately establish permission for this operation."
-        },
-        "modelTraining": {
-          "state": "unknown",
-          "evidenceIds": [
-            "spapddpt-cc"
-          ],
-          "reason": "The source license does not separately establish permission for this operation."
-        },
-        "tts": {
-          "state": "unknown",
-          "evidenceIds": [
-            "spapddpt-cc"
-          ],
-          "reason": "The source license does not separately establish permission for this operation."
-        },
-        "recordedAudio": {
-          "state": "unknown",
-          "evidenceIds": [
-            "spapddpt-cc"
-          ],
-          "reason": "The source license does not separately establish permission for this operation."
-        }
-      },
-      "conditions": [
-        "Retain the exact edition identity, copyright/source notice and CC BY 4.0 attribution with redistributed and offline copies.",
-        "The publisher license permits sharing and adaptation with attribution and disclosure of changes. The imported TXT remains unchanged.",
-        "The publisher-supplied 66-book list and order describe this edition and do not define one canon for all Christian traditions.",
-        "Preserve the three XML combined verse ranges and all TXT bracket markers exactly; no missing wording or verse numbering is fabricated.",
-        "The VPL archive contains verse text only; images and third-party recorded audio are not included. The source notice does not establish separate AI service permissions or independent editorial/native-language review."
-      ],
-      "attribution": "Palabra de Dios para ti. Translation by Asociacion Biblica Latinoamericana; contributor Latinamerican Textual Bible Foundation, Inc. ©2020. CC BY 4.0. Unmodified publisher wording; full source notice retained. Source: https://ebible.org/spapddpt/.",
-      "cache": {
-        "mode": "none-required"
-      },
-      "providerReporting": {
-        "requirement": "none",
-        "description": "No provider telemetry obligation is stated in the publisher notice. No provider telemetry is enabled."
-      }
-    },
-    {
       "editionId": "srp-danicic-karadzic",
       "sourceSha256": "40f38bfe0af0a6df4f31d2873cc76902caf576b3f54217d2c86adee6d57e196b",
       "verifiedOn": "2026-11-05",
@@ -7311,198 +6773,6 @@
         "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
       },
       "publicationStatus": "publisher-draft"
-    },
-    {
-      "editionId": "thafb",
-      "sourceSha256": "c5b68af1e8909640435d4ed66e02bc75ef00061ef755a20b8b3fb44cb8f5b769",
-      "verifiedOn": "2026-11-14",
-      "expiresOn": null,
-      "withdrawn": false,
-      "territory": {
-        "scope": "worldwide",
-        "countries": []
-      },
-      "aiProductUse": {
-        "state": "allowed",
-        "evidenceIds": [
-          "thafb-pd",
-          "ebible-pd-uses",
-          "ebible-ip-policy"
-        ],
-        "reason": "The individual provider-declared Public Domain notice and published provider policy support use of this exact text in an application. This does not establish human editorial approval, certify generated teaching, or independently certify applicable law worldwide."
-      },
-      "operations": {
-        "display": {
-          "state": "allowed",
-          "evidenceIds": [
-            "thafb-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
-        },
-        "redistribution": {
-          "state": "allowed",
-          "evidenceIds": [
-            "thafb-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
-        },
-        "offline": {
-          "state": "allowed",
-          "evidenceIds": [
-            "thafb-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
-        },
-        "searchIndex": {
-          "state": "allowed",
-          "evidenceIds": [
-            "thafb-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
-        },
-        "adaptation": {
-          "state": "allowed",
-          "evidenceIds": [
-            "thafb-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
-        },
-        "translation": {
-          "state": "allowed",
-          "evidenceIds": [
-            "thafb-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
-        },
-        "studyParaphrase": {
-          "state": "allowed",
-          "evidenceIds": [
-            "thafb-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
-        },
-        "aiRetrieval": {
-          "state": "allowed",
-          "evidenceIds": [
-            "thafb-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
-        },
-        "modelTraining": {
-          "state": "unknown",
-          "evidenceIds": [
-            "thafb-pd"
-          ],
-          "reason": "The Public Domain notice concerns the source text; it does not identify or license any third-party recording or confirm model-training or TTS configuration for this product."
-        },
-        "tts": {
-          "state": "unknown",
-          "evidenceIds": [
-            "thafb-pd"
-          ],
-          "reason": "The Public Domain notice concerns the source text; it does not identify or license any third-party recording or confirm model-training or TTS configuration for this product."
-        },
-        "recordedAudio": {
-          "state": "unknown",
-          "evidenceIds": [
-            "thafb-pd"
-          ],
-          "reason": "The Public Domain notice concerns the source text; it does not identify or license any third-party recording or confirm model-training or TTS configuration for this product."
-        },
-        "publicPerformance": {
-          "state": "allowed",
-          "evidenceIds": [
-            "thafb-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
-        },
-        "imageExport": {
-          "state": "allowed",
-          "evidenceIds": [
-            "thafb-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
-        },
-        "videoExport": {
-          "state": "allowed",
-          "evidenceIds": [
-            "thafb-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
-        },
-        "printExport": {
-          "state": "allowed",
-          "evidenceIds": [
-            "thafb-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
-        },
-        "documentExport": {
-          "state": "allowed",
-          "evidenceIds": [
-            "thafb-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
-        },
-        "peerSharing": {
-          "state": "allowed",
-          "evidenceIds": [
-            "thafb-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
-        },
-        "commercialUse": {
-          "state": "allowed",
-          "evidenceIds": [
-            "thafb-pd",
-            "ebible-pd-uses",
-            "ebible-ip-policy"
-          ],
-          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
-        }
-      },
-      "attribution": "Thai Freedom Bible (พระคัมภีร์แห่งเสรีภาพ), publisher draft. Public domain as identified by eBible.org. Source: https://ebible.org/thafb/.",
-      "conditions": [
-        "Retain the exact Thai Freedom Bible identity, publisher draft status and complete source notice with redistributed and offline copies.",
-        "The publisher identifies this exact source as Public Domain; the provider policy describes app use, copying, distribution and adaptation. This records provider statements, not independent legal certification.",
-        "The VPL archive contains Bible text only and does not include third-party recorded audio, artwork or supplementary material.",
-        "The text import does not establish native-language or editorial approval, AI model training, TTS or recorded-audio rights."
-      ],
-      "cache": {
-        "mode": "none-required"
-      },
-      "providerReporting": {
-        "requirement": "none",
-        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
-      }
     },
     {
       "editionId": "ton-revised-west",
@@ -8272,6 +7542,718 @@
       "providerReporting": {
         "requirement": "none",
         "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "mdyeth",
+      "sourceSha256": "01b434547c7ea95f5b07b6ea935e0a87e841701206b0427f4feac8a278f17207",
+      "verifiedOn": "2026-11-13",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "unknown",
+        "evidenceIds": [
+          "mdyeth-cc"
+        ],
+        "reason": "CC BY-SA permits sharing/adaptation of the source text but does not establish this product’s separate AI retrieval or model-training permission."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY-SA 4.0, subject to attribution, change disclosure and ShareAlike conditions."
+        },
+        "aiRetrieval": {
+          "state": "unknown",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "The publisher’s CC BY-SA text license does not establish permission for this separate AI-provider or recorded-audio operation."
+        },
+        "modelTraining": {
+          "state": "unknown",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "The publisher’s CC BY-SA text license does not establish permission for this separate AI-provider or recorded-audio operation."
+        },
+        "tts": {
+          "state": "unknown",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "The publisher’s CC BY-SA text license does not establish permission for this separate AI-provider or recorded-audio operation."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "mdyeth-cc"
+          ],
+          "reason": "The publisher’s CC BY-SA text license does not establish permission for this separate AI-provider or recorded-audio operation."
+        }
+      },
+      "conditions": [
+        "Retain the exact Maale Bible title, copyright, translators/contributors and source notice with redistributed and offline copies.",
+        "For adaptations, disclose changes and distribute contributions under CC BY-SA 4.0; do not imply endorsement by the original licensors.",
+        "The publisher VPL archive contains Bible text only; it omits introductions, headings, notes, paragraph layout, pictures and recorded audio.",
+        "The text license does not establish AI retrieval, model training, TTS or recorded-audio rights, nor native-language/editorial approval."
+      ],
+      "attribution": "Maale Bible (Ethiopic script), ጌኤዦ ማፃኣፖ. Copyright © 2008 The Word for the World International and The Bible Society of Ethiopia. Translation by The Word for the World; contributor: Bible Society of Ethiopia. CC BY-SA 4.0. Source: https://ebible.org/mdyeth/.",
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No provider telemetry obligation is stated in the publisher notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "thafb",
+      "sourceSha256": "c5b68af1e8909640435d4ed66e02bc75ef00061ef755a20b8b3fb44cb8f5b769",
+      "verifiedOn": "2026-11-14",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "allowed",
+        "evidenceIds": [
+          "thafb-pd",
+          "ebible-pd-uses",
+          "ebible-ip-policy"
+        ],
+        "reason": "The individual provider-declared Public Domain notice and published provider policy support use of this exact text in an application. This does not establish human editorial approval, certify generated teaching, or independently certify applicable law worldwide."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "aiRetrieval": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "modelTraining": {
+          "state": "unknown",
+          "evidenceIds": [
+            "thafb-pd"
+          ],
+          "reason": "The Public Domain notice concerns the source text; it does not identify or license any third-party recording or confirm model-training or TTS configuration for this product."
+        },
+        "tts": {
+          "state": "unknown",
+          "evidenceIds": [
+            "thafb-pd"
+          ],
+          "reason": "The Public Domain notice concerns the source text; it does not identify or license any third-party recording or confirm model-training or TTS configuration for this product."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "thafb-pd"
+          ],
+          "reason": "The Public Domain notice concerns the source text; it does not identify or license any third-party recording or confirm model-training or TTS configuration for this product."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        }
+      },
+      "attribution": "Thai Freedom Bible (พระคัมภีร์แห่งเสรีภาพ), publisher draft. Public domain as identified by eBible.org. Source: https://ebible.org/thafb/.",
+      "conditions": [
+        "Retain the exact Thai Freedom Bible identity, publisher draft status and complete source notice with redistributed and offline copies.",
+        "The publisher identifies this exact source as Public Domain; the provider policy describes app use, copying, distribution and adaptation. This records provider statements, not independent legal certification.",
+        "The VPL archive contains Bible text only and does not include third-party recorded audio, artwork or supplementary material.",
+        "The text import does not establish native-language or editorial approval, AI model training, TTS or recorded-audio rights."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "nld1939",
+      "sourceSha256": "37386d6f0c2cee93d24509d622eac616f2a129cf359b56c96a0b389826be47c1",
+      "verifiedOn": "2026-11-14",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "allowed",
+        "evidenceIds": [
+          "nld1939-pd",
+          "ebible-pd-uses",
+          "ebible-ip-policy"
+        ],
+        "reason": "eBible.org identifies this exact edition as public domain after describing its publisher/organization checks and publishes app and adaptation uses for public-domain texts. This records provider evidence, not independent worldwide legal or human editorial approval."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "aiRetrieval": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "modelTraining": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "tts": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "The source archive contains text only; no permission for third-party recordings is asserted."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        }
+      },
+      "attribution": "De Heilige Schrift, Petrus Canisiusvertaling, 1939. First complete edition published by Het Spectrum, Utrecht and Brussels. Public domain as identified by eBible.org. Source: https://ebible.org/nld1939/.",
+      "conditions": [
+        "Retain the exact edition identity and complete eBible.org source notice with redistributed and offline copies.",
+        "eBible.org identifies this edition as public domain and says it contacted the original publisher and relevant organizations without finding objections; this record attributes that provider conclusion and is not an independent worldwide legal opinion.",
+        "The provider-supplied 73-book list and its order describe this edition and do not define one canon for all Christian traditions.",
+        "The VPL archive supplies verse text only; introductions, annotations, headings, images and third-party recordings are not included.",
+        "The source record does not establish independent human editorial review, native-language approval or provider endorsement."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "spapddpt",
+      "sourceSha256": "5d43f304b291c081551478cf43d08f0942fd8d151a067ba85bb313a73e87188a",
+      "verifiedOn": "2026-11-14",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "unknown",
+        "evidenceIds": [
+          "spapddpt-cc"
+        ],
+        "reason": "CC BY 4.0 allows sharing and adaptation with attribution but does not establish this product’s separate AI retrieval or model-training permission."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "aiRetrieval": {
+          "state": "unknown",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "The source license does not separately establish permission for this operation."
+        },
+        "modelTraining": {
+          "state": "unknown",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "The source license does not separately establish permission for this operation."
+        },
+        "tts": {
+          "state": "unknown",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "The source license does not separately establish permission for this operation."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "The source license does not separately establish permission for this operation."
+        }
+      },
+      "conditions": [
+        "Retain the exact edition identity, copyright/source notice and CC BY 4.0 attribution with redistributed and offline copies.",
+        "The publisher license permits sharing and adaptation with attribution and disclosure of changes. The imported TXT remains unchanged.",
+        "The publisher-supplied 66-book list and order describe this edition and do not define one canon for all Christian traditions.",
+        "Preserve the three XML combined verse ranges and all TXT bracket markers exactly; no missing wording or verse numbering is fabricated.",
+        "The VPL archive contains verse text only; images and third-party recorded audio are not included. The source notice does not establish separate AI service permissions or independent editorial/native-language review."
+      ],
+      "attribution": "Palabra de Dios para ti. Translation by Asociacion Biblica Latinoamericana; contributor Latinamerican Textual Bible Foundation, Inc. ©2020. CC BY 4.0. Unmodified publisher wording; full source notice retained. Source: https://ebible.org/spapddpt/.",
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No provider telemetry obligation is stated in the publisher notice. No provider telemetry is enabled."
       }
     }
   ]
