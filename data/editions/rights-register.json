@@ -306,6 +306,24 @@
       "url": "https://ebible.org/nld1939/copyright.htm",
       "observedOn": "2026-11-14",
       "summary": "The individual notice identifies the first complete 1939 edition, records contact with the original publisher and relevant organizations with no objections, and says the edition can be considered free of copyright under the applicable legal terms. This is the provider’s conclusion, not independent worldwide legal advice."
+    },
+    {
+      "id": "spapddpt-cc",
+      "url": "https://ebible.org/spapddpt/copyright.htm",
+      "observedOn": "2026-11-14",
+      "summary": "The exact publisher notice identifies Palabra de Dios para ti as CC BY 4.0 and requires attribution and disclosure of changes. The notice does not establish separate AI retrieval, model-training or third-party audio rights."
+    },
+    {
+      "id": "spapddpt-details",
+      "url": "https://ebible.org/details.php?id=spapddpt",
+      "observedOn": "2026-11-14",
+      "summary": "Publisher metadata identifies Palabra de Dios para ti (PdDpt), Spanish, Asociacion Biblica Latinoamericana, contributor Latinamerican Textual Bible Foundation, Inc.; source files dated 2026-10-30."
+    },
+    {
+      "id": "spapddpt-license",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "observedOn": "2026-11-14",
+      "summary": "Creative Commons Attribution 4.0 International license deed."
     }
   ],
   "editions": [
