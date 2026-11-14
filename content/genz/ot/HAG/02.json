@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "HAG",
+  "bookName": "Haggai",
+  "chapterNumber": 2,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:HAG:2:1","text":"On the twenty-first day of the seventh month, the LORD’s word came through the prophet Haggai:"},
+    {"number":2,"sourceRef":"eng-web:HAG:2:2","text":"“Speak to Zerubbabel son of Shealtiel, governor of Judah, and Joshua son of Jehozadak, the high priest, and to the people who remain. Tell them:"},
+    {"number":3,"sourceRef":"eng-web:HAG:2:3","text":"‘Who among you is left who saw this house in its former glory? How does it look to you now? Doesn’t it seem like nothing by comparison?"},
+    {"number":4,"sourceRef":"eng-web:HAG:2:4","text":"But now be strong, Zerubbabel,’ says the LORD. ‘Be strong, Joshua son of Jehozadak, the high priest. Be strong, all you people of the land,’ says the LORD, ‘and get to work, because I am with you,’ says the LORD of Armies."},
+    {"number":5,"sourceRef":"eng-web:HAG:2:5","text":"‘This is the promise I made to you when you came out of Egypt. My Spirit remains among you. Don’t be afraid.’”"},
+    {"number":6,"sourceRef":"eng-web:HAG:2:6","text":"“The LORD of Armies says: ‘In a little while, I will shake the heavens, the earth, the sea, and the dry land."},
+    {"number":7,"sourceRef":"eng-web:HAG:2:7","text":"I will shake all the nations, and the treasures of all nations will come here. I will fill this house with glory,’ says the LORD of Armies."},
+    {"number":8,"sourceRef":"eng-web:HAG:2:8","text":"‘The silver is mine, and the gold is mine,’ says the LORD of Armies."},
+    {"number":9,"sourceRef":"eng-web:HAG:2:9","text":"‘The future glory of this house will be greater than its former glory,’ says the LORD of Armies. ‘And in this place I will give peace,’ says the LORD of Armies.”"},
+    {"number":10,"sourceRef":"eng-web:HAG:2:10","text":"On the twenty-fourth day of the ninth month in Darius’s second year, the LORD’s word came through the prophet Haggai:"},
+    {"number":11,"sourceRef":"eng-web:HAG:2:11","text":"“The LORD of Armies says: Ask the priests what the law teaches:"},
+    {"number":12,"sourceRef":"eng-web:HAG:2:12","text":"‘If someone carries holy meat in a fold of their clothing, and that fold touches bread, stew, wine, oil, or any other food, does the food become holy?’” The priests answered, “No.”"},
+    {"number":13,"sourceRef":"eng-web:HAG:2:13","text":"Then Haggai asked, “If someone made unclean by touching a dead body touches any of these things, does it become unclean?” The priests answered, “It becomes unclean.”"},
+    {"number":14,"sourceRef":"eng-web:HAG:2:14","text":"Then Haggai said, “The LORD says: ‘That’s how this people and this nation are before me, and that’s how every work of their hands is. What they offer there is unclean."},
+    {"number":15,"sourceRef":"eng-web:HAG:2:15","text":"Now think carefully about what happened before this day, before one stone was laid on another in the LORD’s temple."},
+    {"number":16,"sourceRef":"eng-web:HAG:2:16","text":"“When someone expected a pile of twenty measures, there were only ten. When someone went to the wine vat expecting fifty measures, there were only twenty."},
+    {"number":17,"sourceRef":"eng-web:HAG:2:17","text":"“I struck all your work with blight, mildew, and hail, but you still didn’t turn back to me,’ says the LORD."},
+    {"number":18,"sourceRef":"eng-web:HAG:2:18","text":"‘Think carefully from this day on, from the twenty-fourth day of the ninth month—the day the foundation of the LORD’s temple was laid."},
+    {"number":19,"sourceRef":"eng-web:HAG:2:19","text":"Is there seed left in the barn? The vine, fig tree, pomegranate, and olive tree have not yet produced. But from today on, I will bless you.’”"},
+    {"number":20,"sourceRef":"eng-web:HAG:2:20","text":"The LORD’s word came to Haggai a second time on the twenty-fourth day of the month:"},
+    {"number":21,"sourceRef":"eng-web:HAG:2:21","text":"“Tell Zerubbabel, governor of Judah: ‘I will shake the heavens and the earth."},
+    {"number":22,"sourceRef":"eng-web:HAG:2:22","text":"I will overthrow royal thrones and destroy the power of the kingdoms of the nations. I will overturn chariots and their riders. Horses and riders will fall, each by the sword of his own brother."},
+    {"number":23,"sourceRef":"eng-web:HAG:2:23","text":"‘On that day,’ says the LORD of Armies, ‘I will take you, my servant Zerubbabel son of Shealtiel,’ says the LORD, ‘and make you like a signet ring, because I have chosen you,’ says the LORD of Armies.”"}
+  ]
+}
+
