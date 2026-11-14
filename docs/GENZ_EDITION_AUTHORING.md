@@ -6,7 +6,7 @@ Adigun is creating an original English Bible edition under the owner's direction
 
 The edition is authored from the project's pinned World English Bible text (`eng-web`). The WEB publisher dedicates the text to the public domain and expressly permits adaptation and redistribution, asking that changed text not use the WEB name: [official WEB notice](https://ebible.org/engwebp/copyright.htm). The edition identity is **Adigun Edition** (`adigun-edition`).
 
-The edition preserves the project's WEB 66-book order and every source chapter/verse address. It uses original, clear contemporary English in the project's chosen voice, without adding slang or changing the source meaning. Genesis 1:1–3 begins with wording supplied by the project owner.
+The edition preserves the project's WEB 66-book order and every source chapter/verse address. Its voice should be unmistakably conversational and current: natural youth idioms, direct speech, varied cadence, and occasional playful turns where they fit the passage. Avoid flattening it into standard modern English or sprinkling slang mechanically into every sentence. Keep the meaning, people, actions, and relationships faithful to the source; do not add events, doctrine, or claims. Use the supplied Genesis and Joshua examples as tone references, not text to copy. Genesis 1:1–3 begins with wording supplied by the project owner.
 
 ## Authoring state
 
