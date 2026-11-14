@@ -113,10 +113,10 @@ test('the installed inventory counts distinct source languages, editions and reg
   assert.ok(french.conditions.some(condition => condition.includes('2026 revised edition is CC BY-NC-ND and is not imported')));
 });
 
-test('all 41 publisher inventories identify the current revision and match real source metadata', () => {
+test('all 42 publisher inventories identify the current revision and match real source metadata', () => {
   const coverage = JSON.parse(readFileSync(new URL('../data/speakers/publisher-coverage.json', import.meta.url)));
-  assert.equal(coverage.editions.length, 41);
-  const publisherEditions = editions.filter(edition => edition.id !== 'adigun-edition');
+  assert.equal(coverage.editions.length, 42);
+  const publisherEditions = editions;
   assert.deepEqual(coverage.editions.map(row => row.editionId).sort(), publisherEditions.map(row => row.id).sort());
   for (const edition of publisherEditions) {
     const entry = coverage.editions.find(row => row.editionId === edition.id);
