@@ -27,7 +27,7 @@ Deliver a complete, responsive Bible website and installable application with:
 - A full Bible reader.
 - More than 100 additional authentic Bible editions as a tracked acquisition and integration target.
 - English, German, Yorùbá, Nigerian Pidgin, Hausa, and Igbo support.
-- Clearly labeled Gen Z study paraphrases.
+- Clearly labeled Gen Z Bible edition text.
 - Advanced search, original-language study, speaker filtering, and historical context.
 - Verse-aligned Bible–Quran comparison.
 - A carefully classified historical and additional-texts library.
@@ -364,7 +364,7 @@ Keep these settings separate:
 
 Use appropriate language tags, including `en`, `de`, `yo`, `pcm`, `ha`, and `ig`. Model additional scripts and regional variants when a particular edition requires them.
 
-Gen Z is a writing register, not a separate language. Do not use `lang="genz"`.
+Gen Z Bible is a distinct edition. Use its verified language tag (such as `en`), not `lang="genz"`.
 
 Implement:
 
@@ -785,7 +785,7 @@ Do not create religious superiority scores or winner/loser rankings.
 
 ## 13. Gen Z and contemporary-language editorial standard
 
-Use the label **Gen Z study paraphrase**.
+Use the selected Gen Z Bible edition’s verified name.
 
 Keep source quotation, paraphrase, commentary, interpretation, and application visually distinguishable.
 
@@ -1726,7 +1726,7 @@ Display separate, data-derived measures for:
 - Full Bible text.
 - Each edition and language.
 - New Testament and portions.
-- Approved Gen Z paraphrases.
+- Approved Gen Z Bible edition text.
 - Other approved study paraphrases.
 - Comparison review.
 - Speaker annotations.
@@ -2368,7 +2368,7 @@ Each card must also carry a short note naming the historical setting (e.g., "Exo
 
 ### 2.4 Law and the Love of Money (`/law-diary/money`)
 
-Standalone topic page. Every entry must preserve the **love of money vs. having money** distinction. If a Gen Z paraphrase collapses that distinction, rewrite it.
+Standalone topic page. Every entry must preserve the **love of money vs. having money** distinction. If a Gen Z Bible edition collapses that distinction, rewrite it.
 
 **Bible side:** Matthew 6:24; Matthew 19:23-24; 1 Timothy 6:10; Ecclesiastes 5:10; Proverbs 11:28; Luke 12:15-21 (parable of the rich fool); James 5:1-6.
 

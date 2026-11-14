@@ -2,7 +2,7 @@
 
 ## Included edition
 
-The application includes the complete **World English Bible, Protestant Edition** from eBible.org (`engwebp`): 66 books and 1,189 chapters. The publisher’s source is dated **30 October 2026**; its provenance and public-domain rights were checked on **3 November 2026**. This is English source scripture, not a Gen Z paraphrase or a translation into another interface language.
+The application includes the complete **World English Bible, Protestant Edition** from eBible.org (`engwebp`): 66 books and 1,189 chapters. The publisher’s source is dated **30 October 2026**; its provenance and public-domain rights were checked on **3 November 2026**. This is a distinct English Bible edition. Gen Z is tracked as its own Bible edition, separate from interface language.
 
 - [Official edition](https://ebible.org/engwebp/)
 - [Publisher’s download and format directory](https://ebible.org/find/details.php?id=engwebp)
