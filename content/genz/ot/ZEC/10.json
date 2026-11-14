@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ZEC",
+  "bookName": "Zechariah",
+  "chapterNumber": 10,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:ZEC:10:1","text":"Ask the LORD for rain in spring. The LORD makes storm clouds and sends showers, giving everyone in the fields what they need."},
+    {"number":2,"sourceRef":"eng-web:ZEC:10:2","text":"Household idols speak nonsense, and fortune-tellers see lies. They tell false dreams and offer empty comfort. So the people wander like sheep, suffering because they have no shepherd."},
+    {"number":3,"sourceRef":"eng-web:ZEC:10:3","text":"“My anger burns against the shepherds, and I’ll punish the male goats. The LORD of Armies has visited his flock, the people of Judah, and will make them like a royal warhorse."},
+    {"number":4,"sourceRef":"eng-web:ZEC:10:4","text":"“From Judah will come the cornerstone, the tent peg, the battle bow, and every kind of ruler."},
+    {"number":5,"sourceRef":"eng-web:ZEC:10:5","text":"“They’ll be warriors who trample muddy streets in battle. They’ll fight because the LORD is with them, and the horse riders will be thrown into confusion."},
+    {"number":6,"sourceRef":"eng-web:ZEC:10:6","text":"“I’ll strengthen Judah’s family and save Joseph’s family. I’ll bring them back because I have compassion on them. It will be as though I never rejected them, because I am the LORD their God, and I’ll answer them."},
+    {"number":7,"sourceRef":"eng-web:ZEC:10:7","text":"“Ephraim will be like a warrior. Their hearts will rejoice as if they’d been drinking wine. Their children will see it and celebrate; their hearts will be glad in the LORD."},
+    {"number":8,"sourceRef":"eng-web:ZEC:10:8","text":"“I’ll whistle for them and gather them, because I’ve redeemed them. They’ll become as numerous as before."},
+    {"number":9,"sourceRef":"eng-web:ZEC:10:9","text":"“I scattered them among the peoples, but in distant lands they’ll remember me. They and their children will live and then return."},
+    {"number":10,"sourceRef":"eng-web:ZEC:10:10","text":"“I’ll bring them back from Egypt and gather them from Assyria. I’ll lead them into Gilead and Lebanon, and there won’t be room enough for them."},
+    {"number":11,"sourceRef":"eng-web:ZEC:10:11","text":"“They’ll pass through a sea of distress. I’ll strike the waves, and the Nile’s depths will dry up. Assyria’s pride will fall, and Egypt’s royal power will disappear."},
+    {"number":12,"sourceRef":"eng-web:ZEC:10:12","text":"“I’ll make them strong in the LORD, and they’ll live by his name,” says the LORD."}
+  ]
+}
+
