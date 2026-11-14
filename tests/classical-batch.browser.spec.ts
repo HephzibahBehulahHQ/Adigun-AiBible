@@ -37,10 +37,10 @@ async function cachedJohnFiles(page: Page, id: string): Promise<string[]> {
 test.describe('fifteen-edition built catalog and source reading', () => {
   test.use({ serviceWorkers: 'block' });
 
-test('the 40-edition catalog exposes the added languages and every paginated source', async ({ page }) => {
-    expect(editions).toHaveLength(40);
+test('the 41-edition catalog exposes the added languages and every paginated source', async ({ page }) => {
+    expect(editions).toHaveLength(41);
     await page.goto(route('editions', 'eng-web', 3, 16, 18));
-    await expect(page.getByText('40 installed Bible text editions · 37 added beyond the verified three-edition baseline.', { exact: false })).toBeVisible();
+    await expect(page.getByText('41 installed Bible text editions · 38 added beyond the verified three-edition baseline.', { exact: false })).toBeVisible();
     const results = page.getByRole('region', { name: 'Installed Bible editions', exact: true });
     const language = page.getByRole('combobox', { name: 'Language', exact: true });
     const expectedLanguages = [...new Set(editions.map(edition => edition.language))];
@@ -77,7 +77,7 @@ test('the 40-edition catalog exposes the added languages and every paginated sou
           const metadata = editions.find(edition => edition.id === id)!;
           await expect(page.locator('.reader-title .eyebrow')).toHaveText(metadata.name);
           await expect(page.locator('.scripture')).toHaveAttribute('lang', metadata.language);
-          await expect(page.locator('.edition-row select option[value="genz"]')).toHaveText('Gen Z Edition');
+          await expect(page.locator('.edition-row select option[value=\"genz\"]')).toHaveText('Gen Z Edition');
           await expect(page.locator('.availability-note')).toHaveCount(0);
           for (const number of [16, 17, 18]) {
             await exactVerse(page, number, sourceVerse(id, 3, number));

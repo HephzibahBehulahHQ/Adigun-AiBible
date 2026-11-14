@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="haiola.css" type="text/css" />
+<meta name="viewport" content="initial-scale=1, width=device-width"/>
+<title>About spapddpt_vpl</title>
+</head>
+<body class="mainDoc"
+<p>This archive contains BIBLE TEXT ONLY. All formatting, paragraph breaks, notes, introductions, noncanonical section titles, etc., have been removed. The file ending "_vpl.txt" is designed for import into BibleWorks and similar Bible study programs. The file ending "_vpl.xml" contains the same information, but is in XML format and uses standard SIL/UBS book abbreviations.
+The file ending "_vpl.sql" contains the same information formatted to create a SQL data table.</p>
+<p>Check for updates and other Bible translations in this format at <a href='https:\\eBible.org\Scriptures\'>http:\\eBible.org\Scriptures\</a></p>
+<hr />
+<h1 class='liberation_sans'>Palabra de Dios para ti</h1>
+<h2>The Holy Bible in Spanish, Palabra de Dios para ti translation</h2>
+<p>copyright © 2020 <a href="https://rnova2.com">Asociacion Biblica Latinoamericana</a><br />
+Language: <a href='http://www.ethnologue.org/language/spa' class='liberation_sans' target='_blank'>Español (Spanish)</a><br />
+Dialect: South America<br />
+Translation by: Asociacion Biblica Latinoamericana<br />
+Contributor: Latinamerican Textual Bible Foundation, Inc.<br />
+<br />
+Si encuentra algún error, infórmenos en spapddpt@eBible.org.</p>
+<p>This translation is made available to you under the terms of the
+<a href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution license 4.0.</a></p>
+<p>You may share and redistribute this Bible translation or extracts from it in any format, provided that:</p>
+<ul>
+<li>You include the above copyright and source information.</li>
+<li>If you make any changes to the text, you must indicate that you did so in a way that makes it clear that the original licensor is not necessarily endorsing your changes.</li>
+</ul>
+<p>Pictures included with Scriptures and other documents on this site are licensed just for use with those Scriptures and documents.
+For other uses, please contact the respective copyright owners.</p>
+<p>Note that in addition to the rules above, revising and adapting God's Word involves a great responsibility to be true to God's Word. See Revelation 22:18-19.</p>
+<p><br/>2026-10-30</p>
+
+</body></html>
