@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1PE",
+  "bookName": "1 Peter",
+  "chapterNumber": 1,
+  "verses": [
+    {
+      "sourceRef": "eng-web:1PE:1:1",
+      "number": 1,
+      "text": "Peter, an apostle of Jesus Christ, to God’s chosen people living as foreigners scattered throughout Pontus, Galatia, Cappadocia, Asia, and Bithynia,"
+    },
+    {
+      "sourceRef": "eng-web:1PE:1:2",
+      "number": 2,
+      "text": "chosen according to the foreknowledge of God the Father, made holy by the Spirit, to obey Jesus Christ and be sprinkled with his blood: May grace and peace increase for you."
+    },
+    {
+      "sourceRef": "eng-web:1PE:1:3",
+      "number": 3,
+      "text": "Praise the God and Father of our Lord Jesus Christ! In his great mercy he gave us new birth into a living hope through Jesus Christ’s resurrection from the dead,"
+    },
+    {
+      "sourceRef": "eng-web:1PE:1:4",
+      "number": 4,
+      "text": "and into an inheritance that can never decay, spoil, or fade. It’s kept in heaven for you,"
+    },
+    {
+      "sourceRef": "eng-web:1PE:1:5",
+      "number": 5,
+      "text": "who are protected by God’s power through faith for the salvation ready to be revealed in the last time."
+    },
+    {
+      "sourceRef": "eng-web:1PE:1:6",
+      "number": 6,
+      "text": "Because of this, you celebrate, even though for a little while you may have to suffer grief in all kinds of trials."
+    },
+    {
+      "sourceRef": "eng-web:1PE:1:7",
+      "number": 7,
+      "text": "These trials show that your faith is genuine. It’s more valuable than gold, which can be destroyed even though it’s tested by fire. Your faith will bring praise, glory, and honor when Jesus Christ is revealed."
+    },
+    {
+      "sourceRef": "eng-web:1PE:1:8",
+      "number": 8,
+      "text": "You love him even though you haven’t seen him. Though you don’t see him now, you believe in him and celebrate with a joy too glorious for words,"
+    },
+    {
+      "sourceRef": "eng-web:1PE:1:9",
+      "number": 9,
+      "text": "because you’re receiving the goal of your faith: the salvation of your souls."
+    },
+    {
+      "sourceRef": "eng-web:1PE:1:10",
+      "number": 10,
+      "text": "The prophets searched carefully and investigated this salvation. They prophesied about the grace meant for you,"
+    },
+    {
+      "sourceRef": "eng-web:1PE:1:11",
+      "number": 11,
+      "text": "trying to learn when and in what circumstances the Spirit of Christ in them was pointing when he predicted Christ’s sufferings and the glories that would follow."
+    },
+    {
+      "sourceRef": "eng-web:1PE:1:12",
+      "number": 12,
+      "text": "They were shown that they weren’t serving themselves but you, when they spoke about the things now announced to you by those who preached the good news through the Holy Spirit sent from heaven. Even angels long to look into these things."
+    },
+    {
+      "sourceRef": "eng-web:1PE:1:13",
+      "number": 13,
+      "text": "So prepare your minds for action, stay clearheaded, and set your hope completely on the grace you’ll receive when Jesus Christ is revealed."
+    },
+    {
+      "sourceRef": "eng-web:1PE:1:14",
+      "number": 14,
+      "text": "As obedient children, don’t let your old desires shape you, the desires you had when you lived in ignorance."
+    },
+    {
+      "sourceRef": "eng-web:1PE:1:15",
+      "number": 15,
+      "text": "Instead, just as the one who called you is holy, be holy in everything you do,"
+    },
+    {
+      "sourceRef": "eng-web:1PE:1:16",
+      "number": 16,
+      "text": "because Scripture says, “Be holy, because I am holy.”"
+    },
+    {
+      "sourceRef": "eng-web:1PE:1:17",
+      "number": 17,
+      "text": "Since you call on a Father who judges everyone’s work impartially, live with reverent respect during your time as foreigners here."
+    },
+    {
+      "sourceRef": "eng-web:1PE:1:18",
+      "number": 18,
+      "text": "You know you weren’t bought back from the empty way of life handed down by your ancestors with things that perish, like silver or gold,"
+    },
+    {
+      "sourceRef": "eng-web:1PE:1:19",
+      "number": 19,
+      "text": "but with Christ’s precious blood, like that of a spotless lamb without defect."
+    },
+    {
+      "sourceRef": "eng-web:1PE:1:20",
+      "number": 20,
+      "text": "He was chosen before the creation of the world, but was revealed in these last times for your sake."
+    },
+    {
+      "sourceRef": "eng-web:1PE:1:21",
+      "number": 21,
+      "text": "Through him you believe in God, who raised him from the dead and gave him glory, so your faith and hope are in God."
+    },
+    {
+      "sourceRef": "eng-web:1PE:1:22",
+      "number": 22,
+      "text": "Now that you’ve purified yourselves by obeying the truth, so that you have sincere love for your brothers and sisters, love one another deeply from the heart."
+    },
+    {
+      "sourceRef": "eng-web:1PE:1:23",
+      "number": 23,
+      "text": "You’ve been born again, not from seed that perishes, but from seed that can’t perish, through God’s living and lasting word."
+    },
+    {
+      "sourceRef": "eng-web:1PE:1:24",
+      "number": 24,
+      "text": "For, “All people are like grass, and all their glory is like the flowers of the field; the grass withers and the flowers fall,"
+    },
+    {
+      "sourceRef": "eng-web:1PE:1:25",
+      "number": 25,
+      "text": "but the Lord’s word lasts forever.” This is the word that was preached to you as good news."
+    }
+  ]
+}
