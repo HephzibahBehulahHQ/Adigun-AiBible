@@ -4,7 +4,7 @@ Read [PROJECT_STATUS.md](PROJECT_STATUS.md) for the current exact production rev
 
 ## Current release
 
-PR #73 is merged and deployed as main commit `8da4a668f7d74198267c84c18c57829af554e5d9`. Main workflow #331 (43617616738) passed build, deployment and live-browser checks; production receipt: build `75f7dc46af5269312b5bc9a2`, content `dbc3a3510fb5fdaa1cdd8c09`, built `2026-11-14T16:50:49.685Z`. Production: https://adigun-aibible.hephzibahbehulah.com/. Main has 41 installed Bible editions. The project owner directed us to create the original Adigun Gen Z Bible from WEB across all 66 books; Genesis 1's 31-verse candidate is staged at `content/genz/ot/GEN/01.json`. Old and New Testament authoring use disjoint paths in [AGENTS.md](../../AGENTS.md). The complete corpus, edition integration and reader migration remain active.
+PR #73 is merged and deployed as main commit `8da4a668f7d74198267c84c18c57829af554e5d9`. Main workflow #331 (43617616738) passed build, deployment and live-browser checks; production receipt: build `75f7dc46af5269312b5bc9a2`, content `dbc3a3510fb5fdaa1cdd8c09`, built `2026-11-14T16:50:49.685Z`. Production: https://adigun-aibible.hephzibahbehulah.com/. Main has 41 installed Bible editions. The project owner directed us to create the original Adigun Gen Z Bible from WEB across all 66 books; Genesis 1–3 (80 verses) are staged at `content/genz/ot/GEN/01.json`. Old and New Testament authoring use disjoint paths in [AGENTS.md](../../AGENTS.md). The complete corpus, edition integration and reader migration remain active.
 
 ## Independent work to finish
 

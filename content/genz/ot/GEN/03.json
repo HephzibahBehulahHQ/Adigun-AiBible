@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "GEN",
+  "bookName": "Genesis",
+  "chapterNumber": 3,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:GEN:3:1",
+      "text": "The serpent was craftier than any wild animal Yahweh God had made. It asked the woman, \"Did God really say you can't eat from any tree in the garden?\""
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:GEN:3:2",
+      "text": "The woman said to the serpent, \"We can eat fruit from the garden's trees,"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:GEN:3:3",
+      "text": "but not from the tree in the middle of the garden. God said, 'Don't eat from it or even touch it, or you'll die.'\""
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:GEN:3:4",
+      "text": "The serpent said to the woman, \"You won't really die."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:GEN:3:5",
+      "text": "God knows that the day you eat it, your eyes will open. You'll be like God, knowing good and evil.\""
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:GEN:3:6",
+      "text": "The woman saw that the tree's fruit was good to eat, beautiful to look at, and tempting because it could make someone wise. She took some fruit and ate it. Then she gave some to her husband, who was right there with her, and he ate too."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:GEN:3:7",
+      "text": "Then both their eyes opened, and they realized they were naked. They stitched fig leaves together and made coverings for themselves."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:GEN:3:8",
+      "text": "They heard Yahweh God's sound as he moved through the garden in the evening breeze. The man and his wife hid from Yahweh God among the garden's trees."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:GEN:3:9",
+      "text": "Yahweh God called out to the man, \"Where are you?\""
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:GEN:3:10",
+      "text": "The man answered, \"I heard you in the garden, and I was afraid because I was naked, so I hid.\""
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:GEN:3:11",
+      "text": "God said, \"Who told you that you were naked? Did you eat from the tree I told you not to eat from?\""
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:GEN:3:12",
+      "text": "The man said, \"The woman you put here with me gave me fruit from the tree, and I ate it.\""
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:GEN:3:13",
+      "text": "Yahweh God asked the woman, \"What have you done?\" She said, \"The serpent tricked me, and I ate.\""
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:GEN:3:14",
+      "text": "Yahweh God said to the serpent, \"Because you did this, you are cursed beyond all livestock and every wild animal. You'll crawl on your belly and eat dust all your life."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:GEN:3:15",
+      "text": "I'll put hostility between you and the woman, and between your offspring and hers. He will strike your head, and you will strike his heel.\""
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:GEN:3:16",
+      "text": "To the woman he said, \"I will greatly increase the pain you experience in pregnancy. You'll give birth in pain. Your desire will be for your husband, and he will rule over you.\""
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:GEN:3:17",
+      "text": "To Adam he said, \"You listened to your wife's voice and ate from the tree I commanded you not to eat from. So the ground is cursed because of you. You'll get food from it through hard work all your life."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:GEN:3:18",
+      "text": "It will grow thorns and thistles for you, and you'll eat the plants of the field."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:GEN:3:19",
+      "text": "You'll sweat for your food until you return to the ground you came from. You were taken from dust, and you'll return to dust.\""
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:GEN:3:20",
+      "text": "The man named his wife Eve, because she would become the mother of everyone living."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:GEN:3:21",
+      "text": "Yahweh God made clothes from animal skins for Adam and his wife, and dressed them."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:GEN:3:22",
+      "text": "Yahweh God said, \"Look, the human has become like one of us, knowing good and evil. Now he must not reach out, take fruit from the tree of life, eat it, and live forever—\""
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:GEN:3:23",
+      "text": "So Yahweh God sent him out of the garden of Eden to work the ground he had come from."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:GEN:3:24",
+      "text": "God drove the human out. On the east side of the garden of Eden, he stationed cherubim and a flaming sword flashing back and forth to guard the way to the tree of life."
+    }
+  ]
+}
