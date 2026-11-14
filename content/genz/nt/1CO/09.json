@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1CO",
+  "bookName": "1 Corinthians",
+  "chapterNumber": 9,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1CO:9:1",
+      "text": "Am I not free? Am I not an apostle? Haven't I seen Jesus our Lord? Aren't you the result of my work in the Lord?"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1CO:9:2",
+      "text": "Even if others don't consider me an apostle, I certainly am to you. You are the proof of my apostleship in the Lord."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1CO:9:3",
+      "text": "Here's my defense to those who question me:"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1CO:9:4",
+      "text": "Don't we have the right to food and drink?"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1CO:9:5",
+      "text": "Don't we have the right to travel with a believing wife, like the other apostles, the Lord's brothers, and Cephas?"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1CO:9:6",
+      "text": "Or are Barnabas and I the only ones who have to work for a living?"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1CO:9:7",
+      "text": "Which soldier serves at their own expense? Who plants a vineyard without eating its fruit? Who tends a flock without drinking its milk?"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1CO:9:8",
+      "text": "Am I saying this just from a human point of view? Doesn't the law say the same thing?"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1CO:9:9",
+      "text": "Moses' law says, ‘Don't muzzle an ox while it's threshing grain.’ Is God concerned only about oxen?"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1CO:9:10",
+      "text": "Isn't he speaking for our sake? It was written for us, because the one who plows should plow with hope, and the one who threshes should do so expecting a share of the harvest."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1CO:9:11",
+      "text": "If we planted spiritual things among you, is it too much to receive material support from you?"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1CO:9:12",
+      "text": "If others have this right to your support, don't we have it even more? Still, we haven't used this right. We put up with everything so we won't create an obstacle to Christ's Good News."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1CO:9:13",
+      "text": "Don't you know that those who serve in the temple eat food from the temple, and those who serve at the altar share in what is offered there?"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1CO:9:14",
+      "text": "In the same way, the Lord directed that those who announce the Good News should receive their living from it."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:1CO:9:15",
+      "text": "But I haven't used any of these rights. And I'm not writing to ask you to do this for me. I'd rather die than let anyone take away this reason I have to boast."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:1CO:9:16",
+      "text": "If I preach the Good News, I have nothing to brag about—I'm obligated to do it. How terrible it would be for me if I didn't preach it!"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:1CO:9:17",
+      "text": "If I chose to do this on my own, I could expect a reward. But even if I don't choose it, I've still been entrusted with a responsibility."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:1CO:9:18",
+      "text": "So what is my reward? That when I preach the Good News, I can offer it free of charge and not make full use of my rights as a preacher."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:1CO:9:19",
+      "text": "Even though I'm free from everyone, I made myself everyone's servant so I could win as many as possible."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:1CO:9:20",
+      "text": "To the Jews I became like a Jew, to win the Jews. To those under the law, I became like one under the law—though I'm not under the law myself—so I could win those under it."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:1CO:9:21",
+      "text": "To those without the law, I became like one without the law—though I'm not outside God's law, but under Christ's law—so I could win those without the law."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:1CO:9:22",
+      "text": "To the weak I became weak, to win the weak. I've become all things to all people so that by every possible means I might save some."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:1CO:9:23",
+      "text": "I do all this for the sake of the Good News, so I can share in its blessings."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:1CO:9:24",
+      "text": "Don't you know that in a race everyone runs, but only one gets the prize? Run in a way that wins it."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:1CO:9:25",
+      "text": "Everyone who competes in the games trains with discipline. They do it for a crown that won't last, but we do it for one that lasts forever."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:1CO:9:26",
+      "text": "So I don't run without a clear goal. I don't fight like someone swinging at the air."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:1CO:9:27",
+      "text": "I train my body and make it my servant, so that after preaching to others I won't be disqualified myself."
+    }
+  ]
+}
