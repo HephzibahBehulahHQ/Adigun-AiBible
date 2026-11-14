@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "2CO",
+  "bookName": "2 Corinthians",
+  "chapterNumber": 1,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:2CO:1:1",
+      "text": "Paul, an apostle of Christ Jesus by God's will, and our brother Timothy, to God's church in Corinth and all God's people throughout Achaia:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:2CO:1:2",
+      "text": "Grace and peace to you from God our Father and the Lord Jesus Christ."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:2CO:1:3",
+      "text": "Praise the God and Father of our Lord Jesus Christ, the Father of compassion and the God who comforts us in every way."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:2CO:1:4",
+      "text": "He comforts us in all our troubles so we can comfort others in any trouble with the comfort we ourselves receive from God."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:2CO:1:5",
+      "text": "Just as we share deeply in Christ's sufferings, we also receive abundant comfort through Christ."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:2CO:1:6",
+      "text": "If we go through trouble, it's for your comfort and salvation. If we're comforted, it's for your comfort too, helping you endure the same sufferings we face."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:2CO:1:7",
+      "text": "Our hope for you is firm, because we know that as you share in our sufferings, you also share in our comfort."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:2CO:1:8",
+      "text": "Brothers and sisters, we want you to know about the trouble we faced in Asia. We were weighed down far beyond our strength, so much that we gave up hope of staying alive."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:2CO:1:9",
+      "text": "We felt as if we had received a death sentence, so we wouldn't rely on ourselves but on God, who raises the dead."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:2CO:1:10",
+      "text": "He rescued us from such a deadly danger, and he will keep rescuing us. We've set our hope on him that he will rescue us again,"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:2CO:1:11",
+      "text": "as you help us through your prayers. Then many people will give thanks for the blessing granted to us through the prayers of many."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:2CO:1:12",
+      "text": "Here's what we're proud of: our conscience confirms that we have lived in the world—and especially among you—with holiness and sincerity from God, not with human wisdom but with God's grace."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:2CO:1:13",
+      "text": "We're not writing anything beyond what you can read and understand. I hope you'll understand it fully,"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:2CO:1:14",
+      "text": "just as you've partly understood us: that you can be proud of us, as we can be proud of you, on the day of our Lord Jesus."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:2CO:1:15",
+      "text": "Because I was confident about this, I planned to visit you first so you could receive a double blessing,"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:2CO:1:16",
+      "text": "then travel through you to Macedonia, return from Macedonia to you, and have you send me on my way to Judea."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:2CO:1:17",
+      "text": "When I made those plans, was I being careless? Do I make plans like people who say ‘Yes, yes’ and ‘No, no’ at the same time?"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:2CO:1:18",
+      "text": "As surely as God is faithful, our message to you wasn't both ‘Yes’ and ‘No.’"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:2CO:1:19",
+      "text": "God's Son, Jesus Christ, whom Silvanus, Timothy, and I preached among you, wasn't ‘Yes’ and ‘No.’ In him it has always been ‘Yes.’"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:2CO:1:20",
+      "text": "Every promise God has made is ‘Yes’ in Christ. That's why through him we say ‘Amen’ to God's glory."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:2CO:1:21",
+      "text": "God is the one who makes both us and you stand firm in Christ. He has anointed us,"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:2CO:1:22",
+      "text": "put his seal on us, and given us the Spirit in our hearts as a guarantee."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:2CO:1:23",
+      "text": "I call God as my witness, and stake my life on this: I didn't come back to Corinth because I wanted to spare you."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:2CO:1:24",
+      "text": "We aren't trying to control your faith. We're working with you for your joy, because you stand firm through faith."
+    }
+  ]
+}

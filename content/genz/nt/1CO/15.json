@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1CO",
+  "bookName": "1 Corinthians",
+  "chapterNumber": 15,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1CO:15:1",
+      "text": "Now, brothers and sisters, I'm reminding you of the Good News I preached to you, which you received and now stand in."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1CO:15:2",
+      "text": "Through this message you're being saved, if you hold firmly to what I preached to you—unless your faith was for nothing."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1CO:15:3",
+      "text": "What I passed on to you as most important is what I also received: Christ died for our sins, just as the Scriptures said."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1CO:15:4",
+      "text": "He was buried and was raised on the third day, just as the Scriptures said."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1CO:15:5",
+      "text": "He appeared to Cephas, then to the Twelve."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1CO:15:6",
+      "text": "After that, he appeared to more than five hundred brothers and sisters at once. Most of them are still alive, though some have died."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1CO:15:7",
+      "text": "Then he appeared to James, and after that to all the apostles."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1CO:15:8",
+      "text": "Last of all, he appeared to me too, as to someone born at the wrong time."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1CO:15:9",
+      "text": "I'm the least of the apostles and don't deserve to be called an apostle, because I persecuted God's church."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1CO:15:10",
+      "text": "But by God's grace I am what I am, and his grace to me wasn't wasted. I worked harder than all of them—though it wasn't really me, but God's grace working with me."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1CO:15:11",
+      "text": "So whether it was I or they, this is what we preach, and this is what you believed."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1CO:15:12",
+      "text": "If we preach that Christ was raised from the dead, how can some of you say there is no resurrection of the dead?"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1CO:15:13",
+      "text": "If the dead aren't raised, then Christ wasn't raised either."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1CO:15:14",
+      "text": "And if Christ wasn't raised, our preaching is pointless, and your faith is pointless too."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:1CO:15:15",
+      "text": "Then we'd also be false witnesses about God, because we testified that he raised Christ from the dead—which he couldn't have done if the dead aren't raised."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:1CO:15:16",
+      "text": "If the dead aren't raised, Christ wasn't raised either."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:1CO:15:17",
+      "text": "And if Christ wasn't raised, your faith is useless and you're still guilty of your sins."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:1CO:15:18",
+      "text": "Then those who died trusting Christ are lost."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:1CO:15:19",
+      "text": "If our hope in Christ is only for this life, we're more pitiful than anyone."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:1CO:15:20",
+      "text": "But Christ really has been raised from the dead. He is the first of a great harvest of those who have died."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:1CO:15:21",
+      "text": "Death came through a human being, and resurrection from the dead also comes through a human being."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:1CO:15:22",
+      "text": "Just as everyone dies because of Adam, everyone who belongs to Christ will be made alive."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:1CO:15:23",
+      "text": "But each in the right order: Christ first, then, when he comes, those who belong to him."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:1CO:15:24",
+      "text": "Then the end will come, when Christ hands the Kingdom over to God the Father, after he has brought every ruler, authority, and power to nothing."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:1CO:15:25",
+      "text": "He must reign until he has placed all his enemies under his feet."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:1CO:15:26",
+      "text": "The last enemy to be destroyed is death."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:1CO:15:27",
+      "text": "Scripture says, ‘He has placed everything under his feet.’ When it says ‘everything,’ that clearly doesn't include God, who placed everything under Christ."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:1CO:15:28",
+      "text": "When everything has been placed under Christ, then the Son himself will also be subject to the one who placed everything under him, so that God may be all in all."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:1CO:15:29",
+      "text": "Otherwise, what are people doing when they are baptized on behalf of the dead? If the dead aren't raised at all, why be baptized on their behalf?"
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:1CO:15:30",
+      "text": "And why do we put ourselves in danger every hour?"
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:1CO:15:31",
+      "text": "Brothers and sisters, I face death every day—this is as true as my pride in you in Christ Jesus our Lord."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:1CO:15:32",
+      "text": "What did I gain by fighting wild animals in Ephesus—if it was only for human reasons? If the dead aren't raised, then ‘Let's eat and drink, because tomorrow we die.’"
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:1CO:15:33",
+      "text": "Don't be fooled: ‘Bad company ruins good character.’"
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:1CO:15:34",
+      "text": "Come to your senses and stop sinning. Some of you don't know God at all. I say this to your shame."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:1CO:15:35",
+      "text": "But someone may ask, ‘How are the dead raised? What kind of body will they have?’"
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:1CO:15:36",
+      "text": "Don't be foolish. What you plant doesn't come to life unless it first dies."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:1CO:15:37",
+      "text": "And what you plant isn't the body that will be. It's only a bare seed, perhaps wheat or something else."
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:1CO:15:38",
+      "text": "But God gives it a body as he chooses, and each kind of seed gets its own body."
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:1CO:15:39",
+      "text": "Not all flesh is the same: humans have one kind, animals another, birds another, and fish another."
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:1CO:15:40",
+      "text": "There are heavenly bodies and earthly bodies, but the glory of the heavenly is different from the glory of the earthly."
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:1CO:15:41",
+      "text": "The sun has one kind of glory, the moon another, and the stars another. Even one star differs from another in glory."
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:1CO:15:42",
+      "text": "It's the same with the resurrection of the dead. The body is planted perishable and raised imperishable."
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:1CO:15:43",
+      "text": "It's planted in dishonor and raised in glory; planted in weakness and raised in power."
+    },
+    {
+      "number": 44,
+      "sourceRef": "eng-web:1CO:15:44",
+      "text": "It's planted as a natural body and raised as a spiritual body. If there is a natural body, there is also a spiritual body."
+    },
+    {
+      "number": 45,
+      "sourceRef": "eng-web:1CO:15:45",
+      "text": "Scripture says, ‘The first man, Adam, became a living being.’ The last Adam became a life-giving spirit."
+    },
+    {
+      "number": 46,
+      "sourceRef": "eng-web:1CO:15:46",
+      "text": "But the spiritual doesn't come first. The natural comes first, and then the spiritual."
+    },
+    {
+      "number": 47,
+      "sourceRef": "eng-web:1CO:15:47",
+      "text": "The first man came from the earth and was made of dust; the second man came from heaven."
+    },
+    {
+      "number": 48,
+      "sourceRef": "eng-web:1CO:15:48",
+      "text": "Those made from dust are like the man of dust, and those who belong to heaven are like the man from heaven."
+    },
+    {
+      "number": 49,
+      "sourceRef": "eng-web:1CO:15:49",
+      "text": "Just as we've borne the image of the man made of dust, we'll also bear the image of the man from heaven."
+    },
+    {
+      "number": 50,
+      "sourceRef": "eng-web:1CO:15:50",
+      "text": "Brothers and sisters, here's what I mean: flesh and blood can't inherit God's Kingdom, and what decays can't inherit what never decays."
+    },
+    {
+      "number": 51,
+      "sourceRef": "eng-web:1CO:15:51",
+      "text": "Listen, I'm telling you a mystery: we won't all die, but we will all be changed."
+    },
+    {
+      "number": 52,
+      "sourceRef": "eng-web:1CO:15:52",
+      "text": "It will happen in a flash, in the blink of an eye, at the last trumpet. The trumpet will sound, the dead will be raised imperishable, and we will be changed."
+    },
+    {
+      "number": 53,
+      "sourceRef": "eng-web:1CO:15:53",
+      "text": "This perishable body must put on what can't decay, and this mortal body must put on immortality."
+    },
+    {
+      "number": 54,
+      "sourceRef": "eng-web:1CO:15:54",
+      "text": "When this perishable body has put on what can't decay, and this mortal body has put on immortality, then the Scripture will come true: ‘Death has been swallowed up in victory.’"
+    },
+    {
+      "number": 55,
+      "sourceRef": "eng-web:1CO:15:55",
+      "text": "‘Death, where is your victory? Death, where is your sting?’"
+    },
+    {
+      "number": 56,
+      "sourceRef": "eng-web:1CO:15:56",
+      "text": "Death's sting is sin, and sin gets its power from the law."
+    },
+    {
+      "number": 57,
+      "sourceRef": "eng-web:1CO:15:57",
+      "text": "But thanks be to God, who gives us the victory through our Lord Jesus Christ."
+    },
+    {
+      "number": 58,
+      "sourceRef": "eng-web:1CO:15:58",
+      "text": "So, my dear brothers and sisters, stand firm and don't be shaken. Always give yourselves fully to the Lord's work, because you know that your work in the Lord isn't wasted."
+    }
+  ]
+}
