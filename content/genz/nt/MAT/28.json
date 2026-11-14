@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "MAT",
+  "bookName": "Matthew",
+  "chapterNumber": 28,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:MAT:28:1","text":"After the Sabbath, as the first day of the week was beginning to dawn, Mary Magdalene and the other Mary went to look at the tomb."},
+    {"number":2,"sourceRef":"eng-web:MAT:28:2","text":"Suddenly there was a powerful earthquake. An angel of the Lord came down from heaven, rolled the stone away from the entrance, and sat on it."},
+    {"number":3,"sourceRef":"eng-web:MAT:28:3","text":"His appearance flashed like lightning, and his clothes were white as snow."},
+    {"number":4,"sourceRef":"eng-web:MAT:28:4","text":"The guards shook with fear and became like dead men."},
+    {"number":5,"sourceRef":"eng-web:MAT:28:5","text":"The angel told the women, “Don’t be afraid. I know you’re looking for Jesus, who was crucified."},
+    {"number":6,"sourceRef":"eng-web:MAT:28:6","text":"“He isn’t here. He has risen, just as he said. Come and see the place where he was lying."},
+    {"number":7,"sourceRef":"eng-web:MAT:28:7","text":"“Then go quickly and tell his disciples, ‘He has risen from the dead. He is going ahead of you to Galilee, and you will see him there.’ I’ve given you the message.”"},
+    {"number":8,"sourceRef":"eng-web:MAT:28:8","text":"The women hurried away from the tomb, afraid but full of joy, and ran to tell his disciples."},
+    {"number":9,"sourceRef":"eng-web:MAT:28:9","text":"Suddenly Jesus met them. “Greetings!” he said. They came up, held on to his feet, and worshiped him."},
+    {"number":10,"sourceRef":"eng-web:MAT:28:10","text":"Then Jesus told them, “Don’t be afraid. Go tell my brothers to leave for Galilee. They will see me there.”"},
+    {"number":11,"sourceRef":"eng-web:MAT:28:11","text":"While the women were on their way, some of the guards went into the city and reported everything that had happened to the chief priests."},
+    {"number":12,"sourceRef":"eng-web:MAT:28:12","text":"The priests met with the elders, discussed what to do, and gave the soldiers a large amount of money."},
+    {"number":13,"sourceRef":"eng-web:MAT:28:13","text":"They told them, “Say that his disciples came during the night and stole him while we were asleep."},
+    {"number":14,"sourceRef":"eng-web:MAT:28:14","text":"“If the governor hears about it, we’ll talk to him and make sure you don’t get in trouble.”"},
+    {"number":15,"sourceRef":"eng-web:MAT:28:15","text":"The soldiers took the money and did as they were instructed. This story spread among the Jews and is still told today."},
+    {"number":16,"sourceRef":"eng-web:MAT:28:16","text":"The eleven disciples went to Galilee, to the mountain where Jesus had told them to go."},
+    {"number":17,"sourceRef":"eng-web:MAT:28:17","text":"When they saw him, they bowed down to worship him, though some still doubted."},
+    {"number":18,"sourceRef":"eng-web:MAT:28:18","text":"Jesus came over and said to them, “All authority in heaven and on earth has been given to me."},
+    {"number":19,"sourceRef":"eng-web:MAT:28:19","text":"“So go and make disciples among all nations. Baptize them in the name of the Father, the Son, and the Holy Spirit,"},
+    {"number":20,"sourceRef":"eng-web:MAT:28:20","text":"“and teach them to obey everything I have commanded you. Remember, I am with you always, right up to the end of the age.” Amen."}
+  ]
+}
