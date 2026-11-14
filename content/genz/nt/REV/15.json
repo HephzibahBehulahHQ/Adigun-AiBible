@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "REV",
+  "bookName": "Revelation",
+  "chapterNumber": 15,
+  "verses": [
+    {
+      "sourceRef": "eng-web:REV:15:1",
+      "text": "Then I saw another great and amazing sign in heaven: seven angels with the seven last plagues, which complete God’s anger.",
+      "number": 1
+    },
+    {
+      "sourceRef": "eng-web:REV:15:2",
+      "text": "I saw what looked like a sea of glass mixed with fire. Those who had conquered the beast, its image, and the number of its name were standing beside the sea of glass, holding harps God had given them.",
+      "number": 2
+    },
+    {
+      "sourceRef": "eng-web:REV:15:3",
+      "text": "They sang the song of Moses, God’s servant, and the song of the Lamb: “Great and amazing are your works, Lord God Almighty. Just and true are your ways, King of the nations.",
+      "number": 3
+    },
+    {
+      "sourceRef": "eng-web:REV:15:4",
+      "text": "Who won’t fear you, Lord, and glorify your name? For you alone are holy. All nations will come and worship before you, because your righteous acts have been revealed.”",
+      "number": 4
+    },
+    {
+      "sourceRef": "eng-web:REV:15:5",
+      "text": "After this I looked, and the temple—the tent of the covenant law—was opened in heaven.",
+      "number": 5
+    },
+    {
+      "sourceRef": "eng-web:REV:15:6",
+      "text": "The seven angels with the seven plagues came out of the temple, dressed in clean, shining linen and wearing gold sashes around their chests.",
+      "number": 6
+    },
+    {
+      "sourceRef": "eng-web:REV:15:7",
+      "text": "One of the four living creatures gave the seven angels seven golden bowls filled with the anger of God, who lives forever and ever.",
+      "number": 7
+    },
+    {
+      "sourceRef": "eng-web:REV:15:8",
+      "text": "The temple filled with smoke from God’s glory and power, and no one could enter it until the seven plagues of the seven angels were finished.",
+      "number": 8
+    }
+  ]
+}
