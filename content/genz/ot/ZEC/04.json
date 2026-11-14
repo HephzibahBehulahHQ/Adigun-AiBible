@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ZEC",
+  "bookName": "Zechariah",
+  "chapterNumber": 4,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:ZEC:4:1","text":"The angel who had been speaking with me returned and woke me, like someone being roused from sleep."},
+    {"number":2,"sourceRef":"eng-web:ZEC:4:2","text":"He asked me, “What do you see?” I answered, “I see a gold lampstand with a bowl on top and seven lamps on it. Each lamp has seven channels."},
+    {"number":3,"sourceRef":"eng-web:ZEC:4:3","text":"“There are also two olive trees beside it, one to the right of the bowl and one to the left.”"},
+    {"number":4,"sourceRef":"eng-web:ZEC:4:4","text":"I asked the angel speaking with me, “What are these, sir?”"},
+    {"number":5,"sourceRef":"eng-web:ZEC:4:5","text":"The angel answered, “Don’t you know what these are?” I said, “No, sir.”"},
+    {"number":6,"sourceRef":"eng-web:ZEC:4:6","text":"He told me, “This is the LORD’s message to Zerubbabel: ‘Not by might or power, but by my Spirit,’ says the LORD of Armies."},
+    {"number":7,"sourceRef":"eng-web:ZEC:4:7","text":"“Who are you, mighty mountain? Before Zerubbabel you will become level ground. He will bring out the top stone as people shout, ‘Grace, grace to it!’”"},
+    {"number":8,"sourceRef":"eng-web:ZEC:4:8","text":"Then the LORD’s word came to me:"},
+    {"number":9,"sourceRef":"eng-web:ZEC:4:9","text":"“Zerubbabel laid the foundation of this temple, and he will finish building it. Then you will know that the LORD of Armies sent me to you."},
+    {"number":10,"sourceRef":"eng-web:ZEC:4:10","text":"“Who would dare despise a day of small beginnings? These seven will rejoice when they see the plumb line in Zerubbabel’s hand. They are the LORD’s eyes, roaming throughout the earth.”"},
+    {"number":11,"sourceRef":"eng-web:ZEC:4:11","text":"Then I asked him, “What are these two olive trees on the right and left sides of the lampstand?”"},
+    {"number":12,"sourceRef":"eng-web:ZEC:4:12","text":"I asked him again, “What are these two olive branches beside the two gold pipes that pour out golden oil?”"},
+    {"number":13,"sourceRef":"eng-web:ZEC:4:13","text":"He answered, “Don’t you know what these are?” I said, “No, sir.”"},
+    {"number":14,"sourceRef":"eng-web:ZEC:4:14","text":"He said, “These are the two anointed ones who stand beside the Lord of all the earth.”"}
+  ]
+}
+
