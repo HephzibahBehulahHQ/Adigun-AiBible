@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "GEN",
+  "bookName": "Genesis",
+  "chapterNumber": 5,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:GEN:5:1",
+      "text": "This is the record of Adam's family line. When God created humankind, he made them to reflect God."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:GEN:5:2",
+      "text": "He created them male and female, blessed them, and named them Humankind on the day they were created."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:GEN:5:3",
+      "text": "Adam was 130 years old when he had a son who looked like him and reflected his image. He named him Seth."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:GEN:5:4",
+      "text": "After Seth was born, Adam lived another 800 years and had other sons and daughters."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:GEN:5:5",
+      "text": "Adam lived 930 years in all, then he died."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:GEN:5:6",
+      "text": "Seth was 105 years old when he had Enosh."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:GEN:5:7",
+      "text": "After Enosh was born, Seth lived another 807 years and had other sons and daughters."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:GEN:5:8",
+      "text": "Seth lived 912 years in all, then he died."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:GEN:5:9",
+      "text": "Enosh was 90 years old when he had Kenan."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:GEN:5:10",
+      "text": "After Kenan was born, Enosh lived another 815 years and had other sons and daughters."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:GEN:5:11",
+      "text": "Enosh lived 905 years in all, then he died."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:GEN:5:12",
+      "text": "Kenan was 70 years old when he had Mahalalel."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:GEN:5:13",
+      "text": "After Mahalalel was born, Kenan lived another 840 years and had other sons and daughters."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:GEN:5:14",
+      "text": "Kenan lived 910 years in all, then he died."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:GEN:5:15",
+      "text": "Mahalalel was 65 years old when he had Jared."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:GEN:5:16",
+      "text": "After Jared was born, Mahalalel lived another 830 years and had other sons and daughters."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:GEN:5:17",
+      "text": "Mahalalel lived 895 years in all, then he died."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:GEN:5:18",
+      "text": "Jared was 162 years old when he had Enoch."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:GEN:5:19",
+      "text": "After Enoch was born, Jared lived another 800 years and had other sons and daughters."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:GEN:5:20",
+      "text": "Jared lived 962 years in all, then he died."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:GEN:5:21",
+      "text": "Enoch was 65 years old when he had Methuselah."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:GEN:5:22",
+      "text": "After Methuselah was born, Enoch walked with God for another 300 years and had other sons and daughters."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:GEN:5:23",
+      "text": "Enoch lived 365 years in all."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:GEN:5:24",
+      "text": "Enoch walked with God, and then he was gone, because God took him."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:GEN:5:25",
+      "text": "Methuselah was 187 years old when he had Lamech."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:GEN:5:26",
+      "text": "After Lamech was born, Methuselah lived another 782 years and had other sons and daughters."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:GEN:5:27",
+      "text": "Methuselah lived 969 years in all, then he died."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:GEN:5:28",
+      "text": "Lamech was 182 years old when he had a son."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:GEN:5:29",
+      "text": "He named him Noah, saying, \"This one will bring us relief from our work and the hard labor of our hands caused by the ground Yahweh cursed.\""
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:GEN:5:30",
+      "text": "After Noah was born, Lamech lived another 595 years and had other sons and daughters."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:GEN:5:31",
+      "text": "Lamech lived 777 years in all, then he died."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:GEN:5:32",
+      "text": "When Noah was 500 years old, he became the father of Shem, Ham, and Japheth."
+    }
+  ]
+}
