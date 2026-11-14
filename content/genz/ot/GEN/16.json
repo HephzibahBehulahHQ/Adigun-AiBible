@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "GEN",
+  "bookName": "Genesis",
+  "chapterNumber": 16,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:GEN:16:1",
+      "text": "Sarai, Abram's wife, had not given him children. She had an Egyptian servant named Hagar."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:GEN:16:2",
+      "text": "Sarai said to Abram, \"Yahweh has kept me from having children. Please sleep with my servant; maybe I can have a family through her.\" Abram listened to Sarai."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:GEN:16:3",
+      "text": "After Abram had lived in Canaan for ten years, his wife Sarai took Hagar the Egyptian, her servant, and gave her to Abram as his wife."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:GEN:16:4",
+      "text": "Abram slept with Hagar, and she became pregnant. When Hagar realized she was pregnant, she began looking down on her mistress."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:GEN:16:5",
+      "text": "Sarai said to Abram, \"This wrong is on you. I gave my servant to you, and now that she's pregnant she looks down on me. May Yahweh judge between us.\""
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:GEN:16:6",
+      "text": "Abram replied, \"Your servant is in your hands. Do whatever you think is right.\" So Sarai treated Hagar harshly, and Hagar ran away."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:GEN:16:7",
+      "text": "Yahweh's angel found Hagar by a spring in the wilderness, beside the spring on the road to Shur."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:GEN:16:8",
+      "text": "He asked, \"Hagar, Sarai's servant, where have you come from, and where are you going?\" She answered, \"I'm running away from my mistress Sarai.\""
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:GEN:16:9",
+      "text": "Yahweh's angel told her, \"Go back to your mistress and place yourself under her authority.\""
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:GEN:16:10",
+      "text": "He also said, \"I will give you so many descendants they can't be counted.\""
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:GEN:16:11",
+      "text": "Then Yahweh's angel said, \"You're pregnant and will have a son. Name him Ishmael, because Yahweh has heard how you've been mistreated."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:GEN:16:12",
+      "text": "He will be like a wild donkey among people. He will oppose everyone, and everyone will oppose him; he'll live in conflict with all his brothers.\""
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:GEN:16:13",
+      "text": "Hagar gave Yahweh, who spoke to her, this name: \"You are the God who sees me.\" She said, \"Have I really seen the One who sees me and still stayed alive?\""
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:GEN:16:14",
+      "text": "That's why the well was named Beer Lahai Roi. It's between Kadesh and Bered."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:GEN:16:15",
+      "text": "Hagar gave Abram a son, and Abram named him Ishmael."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:GEN:16:16",
+      "text": "Abram was 86 years old when Hagar gave birth to Ishmael."
+    }
+  ]
+}
