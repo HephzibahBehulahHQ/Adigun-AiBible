@@ -6,10 +6,10 @@ const path=(view:string)=>`#/${view}/JHN/3?verse=16&edition=eng-web`;
 
 test('edition catalog opens genuine sources and compares explicitly numbered passages',async({page})=>{
   await page.goto(path('editions'));await expect(page.getByRole('heading',{name:'Bible editions',exact:true})).toBeVisible();
-  await page.getByRole('button',{name:'Compare 2–4 editions',exact:true}).click();
+  await page.getByRole('button',{name:'Parallel versions · 2–5',exact:true}).click();
   await expect(page.locator('.edition-pane')).toHaveCount(2);await expect(page.locator('.edition-pane').first()).toContainText(verse);
-  await page.getByRole('button',{name:'Add pane',exact:true}).click();await expect(page.locator('.edition-pane')).toHaveCount(3);
-  await page.getByRole('button',{name:'Add pane',exact:true}).click();await expect(page.locator('.edition-pane')).toHaveCount(4);
+  await page.getByRole('button',{name:'Add version',exact:true}).click();await expect(page.locator('.edition-pane')).toHaveCount(3);
+  await page.getByRole('button',{name:'Add version',exact:true}).click();await expect(page.locator('.edition-pane')).toHaveCount(4);
   await page.getByRole('button',{name:'Installed editions',exact:true}).click();await page.getByLabel('Find an edition').fill('Luther');
   await page.getByRole('button',{name:'Read edition',exact:true}).click();await expect(page).toHaveURL(/edition=deu1912/);await expect(page.locator('.scripture')).toHaveAttribute('lang','de');
 });

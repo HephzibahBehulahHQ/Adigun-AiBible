@@ -77,7 +77,7 @@ test('the 41-edition catalog exposes the added languages and every paginated sou
           const metadata = editions.find(edition => edition.id === id)!;
           await expect(page.locator('.reader-title .eyebrow')).toHaveText(metadata.name);
           await expect(page.locator('.scripture')).toHaveAttribute('lang', metadata.language);
-          await expect(page.locator('.edition-row select option[value=\"genz\"]')).toHaveText('Gen Z Edition');
+          await expect(page.getByLabel('Bible version', { exact: true })).toHaveValue(id);
           await expect(page.locator('.availability-note')).toHaveCount(0);
           for (const number of [16, 17, 18]) {
             await exactVerse(page, number, sourceVerse(id, 3, number));

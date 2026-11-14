@@ -211,9 +211,9 @@ test('named layouts restore appearance and source presentation, preserve the pas
 test('a layout retains linked and independent comparison-pane choices across apply', async ({ page }) => {
   await openReader(page);
   await page.evaluate(() => { location.hash = '#/editions/JHN/3?verse=16&end=17&edition=eng-bsb'; });
-  await page.getByRole('button', { name: 'Compare 2–4 editions', exact: true }).click();
-  await page.getByLabel('Pane 1', { exact: true }).selectOption('eng-asv');
-  await page.getByLabel('Pane 2', { exact: true }).selectOption('yor');
+  await page.getByRole('button', { name: 'Parallel versions · 2–5', exact: true }).click();
+  await page.getByLabel('Version 1', { exact: true }).selectOption('eng-asv');
+  await page.getByLabel('Version 2', { exact: true }).selectOption('yor');
   const first = page.locator('.edition-pane').nth(0);
   await first.getByLabel('Follow selected chapter', { exact: true }).uncheck();
   await first.getByLabel('Book', { exact: true }).selectOption('JHN');
@@ -229,8 +229,8 @@ test('a layout retains linked and independent comparison-pane choices across app
     { id: 'yor', linked: true, bookId: 'JHN', chapter: 3 },
   ]);
   await closeLayouts(page);
-  await page.getByLabel('Pane 1', { exact: true }).selectOption('eng-web');
-  await page.getByLabel('Pane 2', { exact: true }).selectOption('deu1912');
+  await page.getByLabel('Version 1', { exact: true }).selectOption('eng-web');
+  await page.getByLabel('Version 2', { exact: true }).selectOption('deu1912');
   await first.getByLabel('Follow selected chapter', { exact: true }).check();
   await page.getByRole('button', { name: 'Open command palette', exact: true }).click();
   await palette(page).getByLabel('Find a command', { exact: true }).fill('saved reader layouts');
@@ -240,8 +240,8 @@ test('a layout retains linked and independent comparison-pane choices across app
   await savedLayout(page, 'Comparison desk').getByRole('button', { name: 'Apply layout', exact: true }).click();
   await expect(layouts(page)).toHaveCount(0);
   await expect(page).toHaveURL(before);
-  await expect(page.getByLabel('Pane 1', { exact: true })).toHaveValue('eng-asv');
-  await expect(page.getByLabel('Pane 2', { exact: true })).toHaveValue('yor');
+  await expect(page.getByLabel('Version 1', { exact: true })).toHaveValue('eng-asv');
+  await expect(page.getByLabel('Version 2', { exact: true })).toHaveValue('yor');
   await expect(first.getByLabel('Follow selected chapter', { exact: true })).not.toBeChecked();
   await expect(first.getByLabel('Chapter', { exact: true })).toHaveValue('4');
   await expect(page.locator('.edition-pane').nth(1).getByLabel('Follow selected chapter', { exact: true })).toBeChecked();
