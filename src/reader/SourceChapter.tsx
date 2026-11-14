@@ -1,8 +1,8 @@
 import { sourceDirection } from '../source-typography';
 import { Fragment, useEffect, useMemo, useState } from 'react';
-import type { Dispatch, MouseEvent, ReactNode, SetStateAction } from 'react';
+import type { Dispatch, MouseEvent, SetStateAction } from 'react';
 import { Bookmark, Highlighter, NotebookPen } from 'lucide-react';
-import type { Chapter, Manifest, Reference, StudyState, Verse } from '../types';
+import type { Chapter, Manifest, Reference, StudyState } from '../types';
 import { refKey } from '../domain';
 import { buildChapterStructure } from './source-structure';
 import type { HeadingStructure, NormalizedNote, SourceSegment, VerseStructure } from './source-structure';
@@ -14,17 +14,16 @@ import type { SourceAppearance } from '../reader-layouts/model';
 const poetryLevel = (style: string | null) => style?.match(/^qm?([1-4])?$/)?.[1] || (style === 'q' ? '1' : undefined);
 interface Props {
   appearance: SourceAppearance; onAppearanceChange: Dispatch<SetStateAction<SourceAppearance>>;
-  chapter: Chapter; manifest: Manifest; reference: Reference; study: StudyState; storageReady: boolean; comparison: boolean;
+  chapter: Chapter; manifest: Manifest; reference: Reference; study: StudyState; storageReady: boolean;
   labels: { bookmark: string; removeBookmark: string; note: string; highlight: string };
   onSelect: (reference: Reference) => void; onOpenReference: (reference: Reference) => void;
   onBookmark: (reference: Reference) => void; onNote: (reference: Reference) => void; onHighlight: (reference: Reference) => void;
-  renderParaphrase: (verse: Verse) => ReactNode; renderComparison: (verse: Verse) => ReactNode;
 }
 interface ParagraphPiece { verse: VerseStructure; segments: SourceSegment[]; first: boolean; last: boolean }
 interface ParagraphBlock { key: string; style: string | null; pieces: ParagraphPiece[]; headingsAfter: HeadingStructure[] }
 
 export default function SourceChapter(props: Props) {
-  const { chapter, manifest, reference, study, storageReady, comparison, labels } = props;
+  const { chapter, manifest, reference, study, storageReady, labels } = props;
   const structure = useMemo(() => buildChapterStructure(chapter), [chapter]);
   const options = props.appearance, setOptions = props.onAppearanceChange;
   const [detail, setDetail] = useState<SourceDetail | null>(null);
@@ -36,7 +35,7 @@ export default function SourceChapter(props: Props) {
   const hasParagraphs = structure.paragraphs.some(paragraph => paragraph.spans.some(span => span.end > span.start));
   const markedVerses = structure.verses.filter(verse => verse.segments.some(segment => segment.markers.includes('wj'))).length;
   const noteCount = structure.verses.reduce((sum, verse) => sum + verse.notes.length, 0) + structure.headings.reduce((sum, heading) => sum + heading.notes.length, 0);
-  const paragraphMode = !comparison && hasParagraphs && options.layout === 'paragraphs';
+  const paragraphMode = hasParagraphs && options.layout === 'paragraphs';
   const verseReference = (number: number, endNumber?: number): Reference => ({ bookId: reference.bookId, chapter: chapter.number, verse: number, ...(endNumber === undefined ? {} : { endVerse: endNumber }), editionId: manifest.edition.id });
   const selected = (number: number, endNumber?: number) => number <= (reference.endVerse || reference.verse) && (endNumber ?? number) >= reference.verse;
   const highlighted = (number: number, endNumber?: number) => study.highlights.includes(refKey(verseReference(number, endNumber)));
@@ -101,7 +100,7 @@ export default function SourceChapter(props: Props) {
   }
   return <>
     <div className="source-reading-controls" aria-label="Source presentation">
-      <label>Reading layout<select aria-label="Reading layout" value={paragraphMode ? 'paragraphs' : 'verses'} onChange={event => setOptions(previous => ({ ...previous, layout: event.target.value as SourceAppearance['layout'] }))}><option value="verses">Verse by verse</option><option value="paragraphs" disabled={!hasParagraphs || comparison}>{hasParagraphs ? comparison ? 'Paragraphs · use the reader view' : 'Publisher paragraphs and poetry' : 'Paragraph layout not supplied'}</option></select></label>
+<label>Reading layout<select aria-label="Reading layout" value={paragraphMode ? 'paragraphs' : 'verses'} onChange={event => setOptions(previous => ({ ...previous, layout: event.target.value as SourceAppearance['layout'] }))}><option value="verses">Verse by verse</option><option value="paragraphs" disabled={!hasParagraphs}>{hasParagraphs ? 'Publisher paragraphs and poetry' : 'Paragraph layout not supplied'}</option></select></label>
       <label><input type="checkbox" checked={options.headings} disabled={!structure.headings.length} onChange={event => setOptions(previous => ({ ...previous, headings: event.target.checked }))} />Publisher headings</label>
       <label><input type="checkbox" checked={options.notes} disabled={!noteCount} onChange={event => { setDetail(null); setOptions(previous => ({ ...previous, notes: event.target.checked })); }} />Publisher notes</label>
       <label><input type="checkbox" checked={options.redLetters} disabled={!markedVerses} onChange={event => setOptions(previous => ({ ...previous, redLetters: event.target.checked }))} />Publisher red letters</label>
@@ -112,7 +111,7 @@ export default function SourceChapter(props: Props) {
       {paragraphMode ? blocks.map((block, blockIndex) => <Fragment key={`${block.key}-${blockIndex}`}><p className="source-paragraph-block" data-poetry-level={poetryLevel(block.style)}>{block.pieces.map((piece, pieceIndex) => {
         const { verse } = piece, label = verse.endNumber && verse.endNumber !== verse.number ? `${verse.number}–${verse.endNumber}` : String(verse.number), title = `${bookName} ${chapter.number}:${label}`;
         return <Fragment key={`${verse.number}:${pieceIndex}`}>{pieceIndex > 0 && piece.first ? ' ' : null}<span id={piece.first ? `verse-${verse.number}` : undefined} data-verse={verse.number} className={`source-paragraph-verse ${selected(verse.number, verse.endNumber) ? 'selected' : ''} ${highlighted(verse.number, verse.endNumber) ? 'highlighted' : ''}`} onClick={() => props.onSelect(verseReference(verse.number, verse.endNumber))}>{piece.first && <button type="button" className="verse-number" aria-label={`Select ${verse.endNumber && verse.endNumber !== verse.number ? 'verses' : 'verse'} ${label}`} onClick={event => { event.stopPropagation(); props.onSelect(verseReference(verse.number, verse.endNumber)); }}>{label}</button>}<span className="source-text">{runs(piece.segments, title)}{piece.last && noteButtons(verse.trailingNotes, title)}{!verse.text && <span className="source-paragraph-empty">No main-text wording at this number in this edition.</span>}</span>{piece.last && actions(verse.number, true, verse.endNumber)}</span></Fragment>;
-      })}</p>{block.pieces.filter(piece => piece.last).map(piece => <Fragment key={piece.verse.number}>{options.redLetters && piece.verse.segments.some(segment => segment.markers.includes('wj')) && <span className="source-speaker-label">Verse {piece.verse.number} · Jesus’ words marked by the publisher</span>}{props.renderParaphrase(piece.verse)}</Fragment>)}{block.headingsAfter.map(heading)}</Fragment>) : structure.verses.map(verse => <Fragment key={verse.number}><div className={comparison ? 'comparison-group' : 'verse-group'}><div className="source-verse"><article id={`verse-${verse.number}`} className={`verse-row ${selected(verse.number, verse.endNumber) ? 'selected' : ''} ${highlighted(verse.number, verse.endNumber) ? 'highlighted' : ''}`}><button type="button" className="verse-number" aria-label={`Select ${verse.endNumber && verse.endNumber !== verse.number ? 'verses' : 'verse'} ${verse.number}${verse.endNumber && verse.endNumber !== verse.number ? `–${verse.endNumber}` : ''}`} onClick={() => props.onSelect(verseReference(verse.number, verse.endNumber))}>{String(verse.number).padStart(2, '0')}{verse.endNumber && verse.endNumber !== verse.number ? `–${verse.endNumber}` : ''}</button><p className="source-text" onClick={() => props.onSelect(verseReference(verse.number, verse.endNumber))}>{verseText(verse)}</p>{actions(verse.number, false, verse.endNumber)}</article>{options.redLetters && verse.segments.some(segment => segment.markers.includes('wj')) && <span className="source-speaker-label">Verse{verse.endNumber && verse.endNumber !== verse.number ? 's' : ''} {verse.number}{verse.endNumber && verse.endNumber !== verse.number ? `–${verse.endNumber}` : ''} · Jesus’ words marked by the publisher</span>}{props.renderParaphrase(verse)}</div>{comparison && props.renderComparison(verse)}</div>{structure.headings.filter(row => row.validAnchor && row.afterVerse === verse.number).map(heading)}</Fragment>)}
+})}</p>{block.pieces.filter(piece => piece.last).map(piece => <Fragment key={piece.verse.number}>{options.redLetters && piece.verse.segments.some(segment => segment.markers.includes('wj')) && <span className="source-speaker-label">Verse {piece.verse.number} · Jesus’ words marked by the publisher</span>}</Fragment>)}{block.headingsAfter.map(heading)}</Fragment>) : structure.verses.map(verse => <Fragment key={verse.number}><div className="verse-group"><div className="source-verse"><article id={`verse-${verse.number}`} className={`verse-row ${selected(verse.number, verse.endNumber) ? 'selected' : ''} ${highlighted(verse.number, verse.endNumber) ? 'highlighted' : ''}`}><button type="button" className="verse-number" aria-label={`Select ${verse.endNumber && verse.endNumber !== verse.number ? 'verses' : 'verse'} ${verse.number}${verse.endNumber && verse.endNumber !== verse.number ? `–${verse.endNumber}` : ''}`} onClick={() => props.onSelect(verseReference(verse.number, verse.endNumber))}>{String(verse.number).padStart(2, '0')}{verse.endNumber && verse.endNumber !== verse.number ? `–${verse.endNumber}` : ''}</button><p className="source-text" onClick={() => props.onSelect(verseReference(verse.number, verse.endNumber))}>{verseText(verse)}</p>{actions(verse.number, false, verse.endNumber)}</article>{options.redLetters && verse.segments.some(segment => segment.markers.includes('wj')) && <span className="source-speaker-label">Verse{verse.endNumber && verse.endNumber !== verse.number ? 's' : ''} {verse.number}{verse.endNumber && verse.endNumber !== verse.number ? `–${verse.endNumber}` : ''} · Jesus’ words marked by the publisher</span>}</div>{structure.headings.filter(row => row.validAnchor && row.afterVerse === verse.number).map(heading)}</Fragment>)}
       {structure.headings.some(row => !row.validAnchor) && <section className="source-unplaced"><h2>Unplaced publisher annotations</h2><p>The supplied verse anchor could not be validated.</p>{structure.headings.filter(row => !row.validAnchor).map(heading)}</section>}
     </div>
     {visibleDetail && <SourceDetails detail={visibleDetail} manifest={manifest} onClose={() => setDetail(null)} onOpenReference={props.onOpenReference} />}
