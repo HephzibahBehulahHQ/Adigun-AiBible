@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1TI",
+  "bookName": "1 Timothy",
+  "chapterNumber": 1,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1TI:1:1",
+      "text": "Paul, an apostle of Christ Jesus by the command of God our Savior and Christ Jesus our hope,"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1TI:1:2",
+      "text": "to Timothy, my true child in the faith: Grace, mercy, and peace from God the Father and Christ Jesus our Lord."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1TI:1:3",
+      "text": "As I urged you when I went to Macedonia, stay in Ephesus and instruct certain people not to teach different doctrines"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1TI:1:4",
+      "text": "or get caught up in myths and endless family trees. These things lead to arguments instead of advancing God's work, which happens through faith."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1TI:1:5",
+      "text": "The goal of this instruction is love that comes from a pure heart, a good conscience, and genuine faith."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1TI:1:6",
+      "text": "Some have wandered away from these things and turned to empty talk."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1TI:1:7",
+      "text": "They want to be teachers of the law, but they don't understand what they're saying or what they're so sure about."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1TI:1:8",
+      "text": "We know the law is good when someone uses it properly."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1TI:1:9",
+      "text": "We also know that the law wasn't made for those who do right, but for the lawless and rebellious, the ungodly and sinful, the unholy and irreverent, those who kill their fathers or mothers, murderers,"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1TI:1:10",
+      "text": "the sexually immoral, men who have sex with men, slave traders, liars, perjurers, and anyone else who acts against sound teaching."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1TI:1:11",
+      "text": "That teaching agrees with the Good News of the glory of the blessed God, which he entrusted to me."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1TI:1:12",
+      "text": "I thank Christ Jesus our Lord, who gave me strength. He considered me faithful and appointed me to serve him,"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1TI:1:13",
+      "text": "even though I used to blaspheme, persecute, and act violently. But I received mercy because I acted in ignorance and unbelief."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1TI:1:14",
+      "text": "The grace of our Lord overflowed for me, along with the faith and love found in Christ Jesus."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:1TI:1:15",
+      "text": "This saying is trustworthy and deserves full acceptance: Christ Jesus came into the world to save sinners—and I'm the worst of them."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:1TI:1:16",
+      "text": "But I received mercy for this reason: so that in me, the worst sinner, Christ Jesus could show his complete patience as an example for those who would believe in him and receive eternal life."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:1TI:1:17",
+      "text": "To the King of the ages, immortal and invisible, the only God, be honor and glory forever and ever. Amen."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:1TI:1:18",
+      "text": "Timothy, my child, I'm giving you this instruction in line with the prophecies made about you, so you can fight the good fight,"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:1TI:1:19",
+      "text": "holding on to faith and a good conscience. Some have rejected these and shipwrecked their faith."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:1TI:1:20",
+      "text": "Among them are Hymenaeus and Alexander, whom I handed over to Satan so they would learn not to blaspheme."
+    }
+  ]
+}

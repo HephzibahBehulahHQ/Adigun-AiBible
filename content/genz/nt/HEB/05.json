@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "HEB",
+  "bookName": "Hebrews",
+  "chapterNumber": 5,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:HEB:5:1",
+      "text": "Every high priest is chosen from among people and appointed to represent them before God, offering gifts and sacrifices for sins."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:HEB:5:2",
+      "text": "A high priest can deal gently with those who don't understand and those who have gone astray, because he too is subject to weakness."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:HEB:5:3",
+      "text": "Because of this, he must offer sacrifices for his own sins as well as for the people's sins."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:HEB:5:4",
+      "text": "No one takes this honor for themselves. They must be called by God, just as Aaron was."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:HEB:5:5",
+      "text": "In the same way, Christ didn't take the honor of becoming high priest for himself. God said to him, ‘You are my Son; today I have become your Father.’"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:HEB:5:6",
+      "text": "And elsewhere God says, ‘You are a priest forever, in the order of Melchizedek.’"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:HEB:5:7",
+      "text": "During his life on earth, Jesus prayed and pleaded with loud cries and tears to the one who could save him from death. Because of his reverent submission, God heard him."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:HEB:5:8",
+      "text": "Although he was the Son, he learned obedience through what he suffered."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:HEB:5:9",
+      "text": "After being made complete, he became the source of eternal salvation for everyone who obeys him,"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:HEB:5:10",
+      "text": "and God appointed him high priest in the order of Melchizedek."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:HEB:5:11",
+      "text": "We have much to say about this, but it's hard to explain because you've become slow to understand."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:HEB:5:12",
+      "text": "By now you should be teachers, but you still need someone to teach you the basic truths of God's message. You need milk, not solid food."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:HEB:5:13",
+      "text": "Anyone who lives on milk is inexperienced in the message about righteousness, like a baby."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:HEB:5:14",
+      "text": "Solid food is for mature people, who have trained themselves through practice to distinguish good from evil."
+    }
+  ]
+}
