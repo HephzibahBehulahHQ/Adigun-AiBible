@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "MIC",
+  "bookName": "Micah",
+  "chapterNumber": 3,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:MIC:3:1","text":"I said, “Please listen, leaders of Jacob and rulers of Israel! Isn’t it your job to know what is just?"},
+    {"number":2,"sourceRef":"eng-web:MIC:3:2","text":"“But you hate what is good and love what is evil. You tear off people’s skin and strip flesh from their bones."},
+    {"number":3,"sourceRef":"eng-web:MIC:3:3","text":"“You eat my people’s flesh, strip their skin, break their bones, and chop them up like meat for a pot, like food for a cooking kettle."},
+    {"number":4,"sourceRef":"eng-web:MIC:3:4","text":"“Then they will cry out to the LORD, but he won’t answer. At that time he will hide his face from them, because their actions have been evil."},
+    {"number":5,"sourceRef":"eng-web:MIC:3:5","text":"The LORD says this about prophets who lead my people astray: if people feed them, they announce peace; if not, they declare war against them."},
+    {"number":6,"sourceRef":"eng-web:MIC:3:6","text":"“So night will come for you, with no visions; darkness, with no divination. The sun will set on these prophets, and their day will turn black."},
+    {"number":7,"sourceRef":"eng-web:MIC:3:7","text":"“The seers will be ashamed and the fortune-tellers disgraced. They will all cover their mouths, because God has no answer for them.”"},
+    {"number":8,"sourceRef":"eng-web:MIC:3:8","text":"But as for me, I am filled with power by the LORD’s Spirit, with justice and strength, to announce Jacob’s rebellion and Israel’s sin."},
+    {"number":9,"sourceRef":"eng-web:MIC:3:9","text":"Please listen, leaders of Jacob and rulers of Israel, you who hate justice and twist everything that is right,"},
+    {"number":10,"sourceRef":"eng-web:MIC:3:10","text":"who build Zion with bloodshed and Jerusalem with injustice."},
+    {"number":11,"sourceRef":"eng-web:MIC:3:11","text":"Her leaders judge for bribes, her priests teach for a fee, and her prophets tell fortunes for money. Yet they lean on the LORD and say, ‘Isn’t the LORD among us? No disaster will come.’"},
+    {"number":12,"sourceRef":"eng-web:MIC:3:12","text":"“Because of you, Zion will be plowed like a field; Jerusalem will become piles of rubble, and the temple mountain will become overgrown like a forest hill.”"}
+  ]
+}
+
