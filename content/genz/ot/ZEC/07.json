@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ZEC",
+  "bookName": "Zechariah",
+  "chapterNumber": 7,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:ZEC:7:1","text":"In the fourth year of King Darius, the LORD’s word came to Zechariah on the fourth day of the ninth month, Chislev."},
+    {"number":2,"sourceRef":"eng-web:ZEC:7:2","text":"The people of Bethel sent Sharezer, Regem-melech, and their men to seek the LORD’s favor."},
+    {"number":3,"sourceRef":"eng-web:ZEC:7:3","text":"They asked the priests of the house of the LORD of Armies and the prophets, “Should we weep and go without food in the fifth month, as we have done for so many years?”"},
+    {"number":4,"sourceRef":"eng-web:ZEC:7:4","text":"Then the word of the LORD of Armies came to me:"},
+    {"number":5,"sourceRef":"eng-web:ZEC:7:5","text":"“Tell all the people of the land and the priests: ‘For these seventy years, when you fasted and mourned in the fifth and seventh months, were you really fasting for me?"},
+    {"number":6,"sourceRef":"eng-web:ZEC:7:6","text":"And when you eat and drink, aren’t you eating and drinking for yourselves?"},
+    {"number":7,"sourceRef":"eng-web:ZEC:7:7","text":"Aren’t these the words the LORD announced through the earlier prophets, back when Jerusalem and its surrounding towns were inhabited and prosperous, and the Negev and foothills were settled too?’”"},
+    {"number":8,"sourceRef":"eng-web:ZEC:7:8","text":"The LORD’s word came to Zechariah:"},
+    {"number":9,"sourceRef":"eng-web:ZEC:7:9","text":"“The LORD of Armies says: ‘Judge fairly. Show kindness and compassion to one another."},
+    {"number":10,"sourceRef":"eng-web:ZEC:7:10","text":"Don’t oppress widows, orphans, foreigners, or the poor. Don’t plot evil against one another in your hearts.’"},
+    {"number":11,"sourceRef":"eng-web:ZEC:7:11","text":"But they refused to listen. They turned away and blocked their ears so they wouldn’t hear."},
+    {"number":12,"sourceRef":"eng-web:ZEC:7:12","text":"They made their hearts as hard as flint, so they wouldn’t hear the law or the words the LORD of Armies had sent by his Spirit through the earlier prophets. So the LORD of Armies became fiercely angry."},
+    {"number":13,"sourceRef":"eng-web:ZEC:7:13","text":"“Just as I called and they wouldn’t listen,” says the LORD of Armies, “now they will call, and I won’t listen."},
+    {"number":14,"sourceRef":"eng-web:ZEC:7:14","text":"I scattered them like a storm among nations they had never known. The land was left empty after they were gone; no one traveled through it or returned. They turned that pleasant land into a wasteland.”"}
+  ]
+}
+
