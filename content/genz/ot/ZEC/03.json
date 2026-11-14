@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ZEC",
+  "bookName": "Zechariah",
+  "chapterNumber": 3,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:ZEC:3:1","text":"He showed me Joshua the high priest standing before the LORD’s angel, with Satan standing at his right side to accuse him."},
+    {"number":2,"sourceRef":"eng-web:ZEC:3:2","text":"The LORD said to Satan, “The LORD rebuke you, Satan! The LORD, who has chosen Jerusalem, rebuke you! Isn’t this man a stick pulled from the fire?”"},
+    {"number":3,"sourceRef":"eng-web:ZEC:3:3","text":"Joshua was wearing filthy clothes as he stood before the angel."},
+    {"number":4,"sourceRef":"eng-web:ZEC:3:4","text":"The angel told those standing there, “Take off his filthy clothes.” Then he told Joshua, “Look, I’ve taken away your guilt, and I’ll dress you in fine clothes.”"},
+    {"number":5,"sourceRef":"eng-web:ZEC:3:5","text":"I said, “Put a clean turban on his head.” So they put a clean turban on him and dressed him, while the LORD’s angel stood nearby."},
+    {"number":6,"sourceRef":"eng-web:ZEC:3:6","text":"Then the LORD’s angel gave Joshua this solemn assurance:"},
+    {"number":7,"sourceRef":"eng-web:ZEC:3:7","text":"“The LORD of Armies says: ‘If you live by my ways and follow my instructions, you will govern my house and guard my courts. I’ll give you a place among those standing here."},
+    {"number":8,"sourceRef":"eng-web:ZEC:3:8","text":"Listen, Joshua the high priest—you and your companions who sit before you. They are a sign. Look, I am bringing out my servant, the Branch."},
+    {"number":9,"sourceRef":"eng-web:ZEC:3:9","text":"Look at the stone I have placed before Joshua. It has seven eyes. I will engrave an inscription on it,’ says the LORD of Armies, ‘and I will remove the guilt of this land in a single day."},
+    {"number":10,"sourceRef":"eng-web:ZEC:3:10","text":"On that day,’ says the LORD of Armies, ‘each of you will invite your neighbor to sit under your vine and fig tree.’”"}
+  ]
+}
+
