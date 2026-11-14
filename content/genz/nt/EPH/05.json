@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "EPH",
+  "bookName": "Ephesians",
+  "chapterNumber": 5,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:EPH:5:1",
+      "text": "So imitate God, as his dearly loved children."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:EPH:5:2",
+      "text": "Live in love, just as Christ loved us and gave himself for us as an offering and sacrifice to God, a pleasing aroma."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:EPH:5:3",
+      "text": "Among you, God's holy people, there shouldn't even be a hint of sexual immorality, impurity, or greed."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:EPH:5:4",
+      "text": "Don't use obscene language, foolish talk, or crude jokes. Instead, give thanks."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:EPH:5:5",
+      "text": "Be sure of this: no sexually immoral or impure person, and no greedy person (who is an idol worshiper), has any inheritance in the Kingdom of Christ and God."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:EPH:5:6",
+      "text": "Don't let anyone deceive you with empty arguments. These are the things that bring God's anger on those who disobey."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:EPH:5:7",
+      "text": "So don't join in with them."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:EPH:5:8",
+      "text": "Once you were darkness, but now you are light in the Lord. Live as children of light,"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:EPH:5:9",
+      "text": "whose fruit is every kind of goodness, righteousness, and truth."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:EPH:5:10",
+      "text": "Find out what pleases the Lord."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:EPH:5:11",
+      "text": "Don't take part in the fruitless works of darkness. Instead, expose them."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:EPH:5:12",
+      "text": "It's shameful even to talk about the secret things people do."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:EPH:5:13",
+      "text": "But when anything is exposed by the light, it becomes visible,"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:EPH:5:14",
+      "text": "because everything that becomes visible is light. That's why Scripture says, ‘Wake up, sleeper! Rise from the dead, and Christ will shine on you.’"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:EPH:5:15",
+      "text": "So pay close attention to how you live—not like foolish people, but like wise people."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:EPH:5:16",
+      "text": "Make the most of every opportunity, because these are evil days."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:EPH:5:17",
+      "text": "Don't be foolish. Understand what the Lord wants."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:EPH:5:18",
+      "text": "Don't get drunk on wine, which leads to reckless living. Instead, be filled with the Spirit."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:EPH:5:19",
+      "text": "Encourage one another with psalms, hymns, and spiritual songs. Sing and make music in your heart to the Lord."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:EPH:5:20",
+      "text": "Always give thanks to God the Father for everything, in the name of our Lord Jesus Christ."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:EPH:5:21",
+      "text": "Submit to one another out of reverence for Christ."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:EPH:5:22",
+      "text": "Wives, submit to your own husbands as you do to the Lord."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:EPH:5:23",
+      "text": "The husband is the head of the wife, just as Christ is the head of the church—his body, of which he is the Savior."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:EPH:5:24",
+      "text": "Just as the church submits to Christ, wives should submit to their husbands in everything."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:EPH:5:25",
+      "text": "Husbands, love your wives, just as Christ loved the church and gave himself up for her"
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:EPH:5:26",
+      "text": "to make her holy, cleansing her by washing with water through the word,"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:EPH:5:27",
+      "text": "and to present her to himself as a glorious church, without stain, wrinkle, or anything like that, but holy and blameless."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:EPH:5:28",
+      "text": "In the same way, husbands should love their wives as their own bodies. Whoever loves his wife loves himself."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:EPH:5:29",
+      "text": "No one ever hated their own body. Instead, they feed and care for it, just as Christ does for the church,"
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:EPH:5:30",
+      "text": "because we are parts of his body."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:EPH:5:31",
+      "text": "Scripture says, ‘For this reason a man will leave his father and mother and be united with his wife, and the two will become one flesh.’"
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:EPH:5:32",
+      "text": "This mystery is profound, and I'm talking about Christ and the church."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:EPH:5:33",
+      "text": "However, each of you must love his wife as he loves himself, and the wife should respect her husband."
+    }
+  ]
+}
