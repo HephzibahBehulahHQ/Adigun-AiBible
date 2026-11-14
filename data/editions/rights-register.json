@@ -294,6 +294,12 @@
       "url": "https://ebible.org/mdyeth/copyright.htm",
       "observedOn": "2026-11-13",
       "summary": "eBible's exact Maale Full Bible notice identifies The Word for the World International and the Bible Society of Ethiopia, grants CC BY-SA 4.0 sharing/adaptation rights with attribution, change disclosure and ShareAlike, and dates the source 2025-05-13. The matching pinned VPL archive SHA-256 is 01b434547c7ea95f5b07b6ea935e0a87e841701206b0427f4feac8a278f17207; the complete notice bytes are retained. The notice does not establish AI-provider use, model-training, TTS or third-party recorded-audio permission."
+    },
+    {
+      "id": "thafb-pd",
+      "url": "https://ebible.org/thafb/copyright.htm",
+      "observedOn": "2026-11-14",
+      "summary": "The individual Thai Freedom Bible notice and matching pinned source archive label this exact publisher draft Public Domain. The provider’s Public Domain and intellectual-property pages describe app use, free copying and distribution, while instructing users to check each work’s exact notice. Publisher statements are not independent legal or editorial certification; recorded-audio and model-training permissions remain unverified."
     }
   ],
   "editions": [
@@ -7690,6 +7696,198 @@
       "providerReporting": {
         "requirement": "none",
         "description": "No provider telemetry obligation is stated in the publisher notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "thafb",
+      "sourceSha256": "c5b68af1e8909640435d4ed66e02bc75ef00061ef755a20b8b3fb44cb8f5b769",
+      "verifiedOn": "2026-11-14",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "allowed",
+        "evidenceIds": [
+          "thafb-pd",
+          "ebible-pd-uses",
+          "ebible-ip-policy"
+        ],
+        "reason": "The individual provider-declared Public Domain notice and published provider policy support use of this exact text in an application. This does not establish human editorial approval, certify generated teaching, or independently certify applicable law worldwide."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "aiRetrieval": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "modelTraining": {
+          "state": "unknown",
+          "evidenceIds": [
+            "thafb-pd"
+          ],
+          "reason": "The Public Domain notice concerns the source text; it does not identify or license any third-party recording or confirm model-training or TTS configuration for this product."
+        },
+        "tts": {
+          "state": "unknown",
+          "evidenceIds": [
+            "thafb-pd"
+          ],
+          "reason": "The Public Domain notice concerns the source text; it does not identify or license any third-party recording or confirm model-training or TTS configuration for this product."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "thafb-pd"
+          ],
+          "reason": "The Public Domain notice concerns the source text; it does not identify or license any third-party recording or confirm model-training or TTS configuration for this product."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "thafb-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact publisher-declared Public Domain text under its individual notice and the provider policy, bound to the pinned source hash. No independent legal or human editorial approval is asserted."
+        }
+      },
+      "attribution": "Thai Freedom Bible (พระคัมภีร์แห่งเสรีภาพ), publisher draft. Public domain as identified by eBible.org. Source: https://ebible.org/thafb/.",
+      "conditions": [
+        "Retain the exact Thai Freedom Bible identity, publisher draft status and complete source notice with redistributed and offline copies.",
+        "The publisher identifies this exact source as Public Domain; the provider policy describes app use, copying, distribution and adaptation. This records provider statements, not independent legal certification.",
+        "The VPL archive contains Bible text only and does not include third-party recorded audio, artwork or supplementary material.",
+        "The text import does not establish native-language or editorial approval, AI model training, TTS or recorded-audio rights."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
       }
     }
   ]

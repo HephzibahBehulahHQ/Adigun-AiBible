@@ -10070,6 +10070,413 @@
       ]
     },
     {
+      "editionId": "mdyeth",
+      "sourceSha256": "01b434547c7ea95f5b07b6ea935e0a87e841701206b0427f4feac8a278f17207",
+      "status": "publisher-metadata",
+      "marker": "none",
+      "offsetUnit": "not-applicable",
+      "totalSpans": 0,
+      "totalVerses": 0,
+      "books": [
+        {
+          "bookId": "GEN",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "EXO",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "LEV",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "NUM",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "DEU",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "JOS",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "JDG",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "RUT",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "1SA",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "2SA",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "1KI",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "2KI",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "1CH",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "2CH",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "EZR",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "NEH",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "EST",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "JOB",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "PSA",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "PRO",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "ECC",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "SNG",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "ISA",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "JER",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "LAM",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "EZK",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "DAN",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "HOS",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "JOL",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "AMO",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "OBA",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "JON",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "MIC",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "NAM",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "HAB",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "ZEP",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "HAG",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "ZEC",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "MAL",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "MAT",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "MRK",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "LUK",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "JHN",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "ACT",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "ROM",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "1CO",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "2CO",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "GAL",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "EPH",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "PHP",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "COL",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "1TH",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "2TH",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "1TI",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "2TI",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "TIT",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "PHM",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "HEB",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "JAS",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "1PE",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "2PE",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "1JN",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "2JN",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "3JN",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "JUD",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "REV",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        }
+      ]
+    },
+    {
       "editionId": "mya-judson1840",
       "sourceSha256": "bbbabb35e8373c718a3eb1af4e30ba5efeadd08fc047abde644709bdd7951adf",
       "status": "publisher-metadata",
@@ -13326,6 +13733,413 @@
       ]
     },
     {
+      "editionId": "thafb",
+      "sourceSha256": "c5b68af1e8909640435d4ed66e02bc75ef00061ef755a20b8b3fb44cb8f5b769",
+      "status": "publisher-metadata",
+      "marker": "none",
+      "offsetUnit": "not-applicable",
+      "totalSpans": 0,
+      "totalVerses": 0,
+      "books": [
+        {
+          "bookId": "GEN",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "EXO",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "LEV",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "NUM",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "DEU",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "JOS",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "JDG",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "RUT",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "1SA",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "2SA",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "1KI",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "2KI",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "1CH",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "2CH",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "EZR",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "NEH",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "EST",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "JOB",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "PSA",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "PRO",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "ECC",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "SNG",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "ISA",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "JER",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "LAM",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "EZK",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "DAN",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "HOS",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "JOL",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "AMO",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "OBA",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "JON",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "MIC",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "NAM",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "HAB",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "ZEP",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "HAG",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "ZEC",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "MAL",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "MAT",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "MRK",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "LUK",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "JHN",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "ACT",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "ROM",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "1CO",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "2CO",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "GAL",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "EPH",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "PHP",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "COL",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "1TH",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "2TH",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "1TI",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "2TI",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "TIT",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "PHM",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "HEB",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "JAS",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "1PE",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "2PE",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "1JN",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "2JN",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "3JN",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "JUD",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "REV",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        }
+      ]
+    },
+    {
       "editionId": "ton-revised-west",
       "sourceSha256": "24cea17bdf324d7f59ea40367e6340a3b52f8d0157dcd68c6dc55df3302bb5fb",
       "status": "publisher-metadata",
@@ -14549,413 +15363,6 @@
     {
       "editionId": "yor",
       "sourceSha256": "afa5abe34101cd7ce7a49f7c45d8d34449721a3eafe8f20dd7a1acee543ed00b",
-      "status": "publisher-metadata",
-      "marker": "none",
-      "offsetUnit": "not-applicable",
-      "totalSpans": 0,
-      "totalVerses": 0,
-      "books": [
-        {
-          "bookId": "GEN",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "EXO",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "LEV",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "NUM",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "DEU",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "JOS",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "JDG",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "RUT",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "1SA",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "2SA",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "1KI",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "2KI",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "1CH",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "2CH",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "EZR",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "NEH",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "EST",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "JOB",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "PSA",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "PRO",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "ECC",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "SNG",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "ISA",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "JER",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "LAM",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "EZK",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "DAN",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "HOS",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "JOL",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "AMO",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "OBA",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "JON",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "MIC",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "NAM",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "HAB",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "ZEP",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "HAG",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "ZEC",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "MAL",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "MAT",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "MRK",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "LUK",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "JHN",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "ACT",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "ROM",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "1CO",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "2CO",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "GAL",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "EPH",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "PHP",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "COL",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "1TH",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "2TH",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "1TI",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "2TI",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "TIT",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "PHM",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "HEB",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "JAS",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "1PE",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "2PE",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "1JN",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "2JN",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "3JN",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "JUD",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        },
-        {
-          "bookId": "REV",
-          "spans": 0,
-          "verses": 0,
-          "rejectedMetadata": 0
-        }
-      ]
-    },
-    {
-      "editionId": "mdyeth",
-      "sourceSha256": "01b434547c7ea95f5b07b6ea935e0a87e841701206b0427f4feac8a278f17207",
       "status": "publisher-metadata",
       "marker": "none",
       "offsetUnit": "not-applicable",

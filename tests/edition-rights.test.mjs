@@ -7,6 +7,7 @@ const raw = JSON.parse(readFileSync(new URL('../data/editions/rights-register.js
 const register = validateEditionRightsRegister(raw);
 const web = register.editions.find(record => record.editionId === 'eng-web');
 const context = { today: '2026-11-04', sourceSha256: web.sourceSha256 };
+const thaiDraft = register.editions.find(record => record.editionId === 'thafb');
 
 test('rights registry requires evidence for every allowed operation and binds source revisions', () => {
   for (const record of register.editions) assert.equal(Object.keys(record.operations).length, editionOperations.length);
@@ -19,6 +20,13 @@ test('rights registry requires evidence for every allowed operation and binds so
   assert.throws(() => validateEditionRightsRegister(missing), /Invalid rights entry/);
   const invented = structuredClone(raw); invented.editions[0].operations.display.evidenceIds = ['not-evidence'];
   assert.throws(() => validateEditionRightsRegister(invented), /Invalid rights entry/);
+});
+
+test('Thai Freedom draft rights are source-bound and keep unverified media rights unknown', () => {
+  assert.equal(thaiDraft.sourceSha256, 'c5b68af1e8909640435d4ed66e02bc75ef00061ef755a20b8b3fb44cb8f5b769');
+  assert.equal(decideEditionOperation(thaiDraft, 'aiRetrieval', { today: '2026-11-14', sourceSha256: thaiDraft.sourceSha256 }).allowed, true);
+  assert.equal(decideEditionOperation(thaiDraft, 'recordedAudio', { today: '2026-11-14', sourceSha256: thaiDraft.sourceSha256 }).allowed, false);
+  assert.equal(decideEditionOperation(thaiDraft, 'modelTraining', { today: '2026-11-14', sourceSha256: thaiDraft.sourceSha256 }).allowed, false);
 });
 
 test('licensing expiry, withdrawals, territorial restrictions and provider reporting fail closed', () => {
