@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "GEN",
+  "bookName": "Genesis",
+  "chapterNumber": 20,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:GEN:20:1","text":"Abraham moved south into the Negev and settled between Kadesh and Shur. For a time he lived in Gerar."},
+    {"number":2,"sourceRef":"eng-web:GEN:20:2","text":"Abraham said Sarah his wife was his sister. So Abimelech, king of Gerar, sent for Sarah and took her."},
+    {"number":3,"sourceRef":"eng-web:GEN:20:3","text":"But God came to Abimelech in a dream that night and said, \"You're as good as dead because of the woman you took. She's married.\""},
+    {"number":4,"sourceRef":"eng-web:GEN:20:4","text":"Abimelech had not gone near her. He said, \"Lord, will you destroy an innocent nation too?"},
+    {"number":5,"sourceRef":"eng-web:GEN:20:5","text":"Didn't he tell me, 'She's my sister'? And didn't she herself say, 'He's my brother'? I did this with an honest heart and clean hands.\""},
+    {"number":6,"sourceRef":"eng-web:GEN:20:6","text":"God said to him in the dream, \"Yes, I know your heart was honest. I also kept you from sinning against me; that's why I didn't let you touch her."},
+    {"number":7,"sourceRef":"eng-web:GEN:20:7","text":"Now return the man's wife. He's a prophet, and he'll pray for you so you can live. But if you don't return her, know for sure that you and everyone who belongs to you will die.\""},
+    {"number":8,"sourceRef":"eng-web:GEN:20:8","text":"Abimelech got up early, called all his servants, and told them what had happened. They were terrified."},
+    {"number":9,"sourceRef":"eng-web:GEN:20:9","text":"Then Abimelech called Abraham and said, \"What have you done to us? What wrong did I do to you that you brought such guilt on me and my kingdom? You've done something that should never be done!\""},
+    {"number":10,"sourceRef":"eng-web:GEN:20:10","text":"Abimelech asked Abraham, \"What were you thinking when you did this?\""},
+    {"number":11,"sourceRef":"eng-web:GEN:20:11","text":"Abraham replied, \"I thought, 'People here don't fear God. They'll kill me to get my wife.'"},
+    {"number":12,"sourceRef":"eng-web:GEN:20:12","text":"Besides, she really is my sister: she's my father's daughter, but not my mother's daughter. And she became my wife."},
+    {"number":13,"sourceRef":"eng-web:GEN:20:13","text":"When God sent me wandering from my father's household, I asked her, 'Show me this kindness wherever we go: say I'm your brother.'\""},
+    {"number":14,"sourceRef":"eng-web:GEN:20:14","text":"Abimelech gave Abraham sheep, cattle, male and female servants, and returned Sarah his wife to him."},
+    {"number":15,"sourceRef":"eng-web:GEN:20:15","text":"Abimelech said, \"My land is open to you. Settle wherever you like.\""},
+    {"number":16,"sourceRef":"eng-web:GEN:20:16","text":"He said to Sarah, \"I've given your brother a thousand pieces of silver. This clears your name in front of everyone with you; you're fully vindicated.\""},
+    {"number":17,"sourceRef":"eng-web:GEN:20:17","text":"Abraham prayed to God, and God healed Abimelech, his wife, and his female servants so they could have children."},
+    {"number":18,"sourceRef":"eng-web:GEN:20:18","text":"For Yahweh had made every woman in Abimelech's household unable to have children because of Sarah, Abraham's wife."}
+  ]
+}
+
