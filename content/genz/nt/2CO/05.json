@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "2CO",
+  "bookName": "2 Corinthians",
+  "chapterNumber": 5,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:2CO:5:1",
+      "text": "We know that if our earthly tent—this body we live in—is destroyed, God has a building ready for us: an eternal home in heaven, not made by human hands."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:2CO:5:2",
+      "text": "While we're in this tent, we groan and long to put on our heavenly home,"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:2CO:5:3",
+      "text": "if indeed, when we put it on, we won't be found naked."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:2CO:5:4",
+      "text": "While we're in this tent, we groan under the burden. We don't want to be unclothed; we want to be clothed with our heavenly home, so that what is mortal may be swallowed up by life."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:2CO:5:5",
+      "text": "God is the one who prepared us for this very thing, and he gave us the Spirit as a guarantee."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:2CO:5:6",
+      "text": "So we're always confident. We know that as long as we live in the body, we're away from the Lord,"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:2CO:5:7",
+      "text": "because we live by faith, not by what we see."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:2CO:5:8",
+      "text": "We're confident, I say, and would rather leave the body and be at home with the Lord."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:2CO:5:9",
+      "text": "So whether we're at home in the body or away from it, our goal is to please him."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:2CO:5:10",
+      "text": "We must all appear before Christ's judgment seat, so each person may receive what is due for what they did in the body, whether good or bad."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:2CO:5:11",
+      "text": "Because we know what it means to fear the Lord, we try to persuade people. God already knows us completely, and I hope you know us in your conscience too."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:2CO:5:12",
+      "text": "We're not trying to recommend ourselves to you again. We're giving you a reason to be proud of us, so you'll have an answer for those who boast about appearances instead of the heart."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:2CO:5:13",
+      "text": "If we seem out of our minds, it's for God; if we're clear-minded, it's for you."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:2CO:5:14",
+      "text": "Christ's love compels us, because we've concluded this: one died for everyone, and so everyone died."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:2CO:5:15",
+      "text": "He died for everyone so that those who live would no longer live for themselves, but for the one who died and was raised for them."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:2CO:5:16",
+      "text": "So from now on, we don't judge anyone from a merely human point of view. Even if we once viewed Christ that way, we don't anymore."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:2CO:5:17",
+      "text": "So if anyone is in Christ, they are a new creation. The old has passed away; look, the new has come!"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:2CO:5:18",
+      "text": "All this comes from God, who reconciled us to himself through Christ and gave us the ministry of reconciliation:"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:2CO:5:19",
+      "text": "God was in Christ reconciling the world to himself, no longer counting people's trespasses against them. And he entrusted us with the message of reconciliation."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:2CO:5:20",
+      "text": "So we are ambassadors for Christ, as though God were making his appeal through us. We beg you on Christ's behalf: be reconciled to God."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:2CO:5:21",
+      "text": "God made the one who knew no sin to be a sin offering for us, so that in him we could become God's righteousness."
+    }
+  ]
+}
