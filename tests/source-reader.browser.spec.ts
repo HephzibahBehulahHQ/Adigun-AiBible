@@ -18,8 +18,9 @@ test('Adigun Edition opens its own Genesis text without an overlay or fallback',
   await expect(page.locator('.reviewed-paraphrase')).toHaveCount(0);
   await expect(page.locator('.edition-row select')).toHaveValue('adigun-edition');
   await expect(page.getByRole('button', { name: 'Next chapter' })).toBeEnabled();
-  await page.goto('#/read/GEN/21?verse=1&edition=adigun-edition');
-  await expectSourceVerse(page, 1, adigun.chapters[20].verses[0].text);
+  await page.goto('#/read/GEN/24?verse=1&edition=adigun-edition');
+  await expect(page.getByRole('heading', { name: 'Genesis 24', exact: true })).toBeVisible();
+  await expectSourceVerse(page, 1, adigun.chapters[23].verses[0].text);
   await expect(page.getByRole('button', { name: 'Next chapter' })).toBeDisabled();
 });
 
