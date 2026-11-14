@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ZEC",
+  "bookName": "Zechariah",
+  "chapterNumber": 5,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:ZEC:5:1","text":"I looked up again and saw a flying scroll."},
+    {"number":2,"sourceRef":"eng-web:ZEC:5:2","text":"He asked me, “What do you see?” I answered, “I see a flying scroll, twenty cubits long and ten cubits wide.”"},
+    {"number":3,"sourceRef":"eng-web:ZEC:5:3","text":"He told me, “This is the curse going out across the whole land. Everyone who steals will be removed, as the writing on one side says, and everyone who swears falsely will be removed, as the writing on the other side says."},
+    {"number":4,"sourceRef":"eng-web:ZEC:5:4","text":"‘I am sending it out,’ says the LORD of Armies. ‘It will enter the thief’s house and the house of anyone who swears falsely by my name. It will remain there and destroy the house, its timber and stones alike.’”"},
+    {"number":5,"sourceRef":"eng-web:ZEC:5:5","text":"The angel who had been speaking with me came forward and said, “Look up and see what is coming.”"},
+    {"number":6,"sourceRef":"eng-web:ZEC:5:6","text":"I asked, “What is it?” He said, “It’s an ephah basket appearing.” He added, “This is what they look like throughout the whole land.”"},
+    {"number":7,"sourceRef":"eng-web:ZEC:5:7","text":"Then the lead cover was lifted, and there was a woman sitting inside the basket. The cover weighed one talent."},
+    {"number":8,"sourceRef":"eng-web:ZEC:5:8","text":"He said, “This is Wickedness.” Then he pushed her down into the basket and slammed the lead cover over its opening."},
+    {"number":9,"sourceRef":"eng-web:ZEC:5:9","text":"I looked up again and saw two women coming, with the wind in their wings. Their wings were like a stork’s. They lifted the basket between earth and sky."},
+    {"number":10,"sourceRef":"eng-web:ZEC:5:10","text":"I asked the angel who was speaking with me, “Where are they taking the basket?”"},
+    {"number":11,"sourceRef":"eng-web:ZEC:5:11","text":"He answered, “To build a house for it in Shinar. When the house is ready, the basket will be set there in its own place.”"}
+  ]
+}
+
