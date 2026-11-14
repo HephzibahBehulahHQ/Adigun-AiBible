@@ -2195,17 +2195,50 @@
       "nativeTitle": "King James (Authorized) Version",
       "title": "King James Version",
       "revision": "1611, 1769",
-      "providerRightsStatement": "Public Domain",
+      "providerRightsStatement": "Public domain outside the United Kingdom; publisher notice identifies UK letters-patent restrictions for printing and importing printed copies.",
       "translator": null,
       "contributor": null,
       "sourceUrl": "https://ebible.org/find/details.php?id=eng-kjv2006",
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 37,
-      "observedOn": "2026-11-04",
+      "observedOn": "2026-11-14",
       "availability": "metadata-only",
       "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "permissions": "worldwide-display-scope-unresolved",
+      "installedEditionId": null,
+      "sourceReview": {
+        "state": "deferred",
+        "observedOn": "2026-11-14",
+        "reasons": [
+          "The exact source is the King James (Authorized) Version, 1769 standardized text, protocanon only. The archive has 66 books, 1,189 chapters, 31,102 records and 0 combined verse ranges.",
+          "The individual publisher notice says this text is public domain outside the United Kingdom, while UK letters patent require permission to print or import printed copies. The project has no proven worldwide display permission or country-selective delivery; this candidate is not admitted or installed."
+        ],
+        "evidenceUrls": [
+          "https://ebible.org/find/details.php?id=eng-kjv2006",
+          "https://ebible.org/eng-kjv2006/copyright.htm",
+          "https://ebible.org/Scriptures/eng-kjv2006_vpl.zip"
+        ],
+        "archiveSha256": "ee4cae32cddded36d9dfcb524c70c03dcf930cf04924ca34c9b805bac39210d4",
+        "observedTotals": {
+          "books": 66,
+          "chapters": 1189,
+          "verses": 31102
+        },
+        "sourceMembers": {
+          "eng-kjv2006_vpl.xml": "7cb3b9b9891ac0162897ba0064cfc343fee134c8e962d067372aa2dfc61bf96e",
+          "eng-kjv2006_vpl.txt": "68c5f764bf1c204868c3eb72592035c0947f057b608c2149dbff765d8ddd86f6",
+          "eng-kjv2006_about.htm": "8ddd5c93c4f7d326a9d2a4f4072b20b04cde70b793e500fff6bff083568b540c"
+        },
+        "sourceStructure": {
+          "canonicalBookOrder": true,
+          "emptyRecords": 0,
+          "combinedRanges": 0,
+          "xmlTxtReferencesAgree": true,
+          "recordsEqualExceptPublisherBracketMarkersAndTrailingAsciiPadding": true,
+          "xmlTxtBracketMarkerDifferences": 14241,
+          "exactExceptTrailingAsciiPadding": 16861
+        }
+      }
     },
     {
       "provider": "eBible.org",
@@ -5075,8 +5108,8 @@
       "id": "priority-01",
       "title": "King James Version — KJV",
       "source": "Master prompt v3 section 5",
-      "status": "acquisition-request",
-      "providerId": null,
+      "status": "source-review-deferred",
+      "providerId": "eng-kjv2006",
       "editionId": null,
       "revisionVerified": false
     },
