@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "2TH",
+  "bookName": "2 Thessalonians",
+  "chapterNumber": 3,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:2TH:3:1",
+      "text": "Finally, brothers and sisters, pray for us, that the Lord's message will spread quickly and be honored, just as it was among you."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:2TH:3:2",
+      "text": "Pray that we will be rescued from unreasonable and evil people, because not everyone has faith."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:2TH:3:3",
+      "text": "But the Lord is faithful. He will strengthen you and protect you from the evil one."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:2TH:3:4",
+      "text": "We trust in the Lord that you're doing, and will keep doing, what we instructed."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:2TH:3:5",
+      "text": "May the Lord guide your hearts into God's love and Christ's endurance."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:2TH:3:6",
+      "text": "Brothers and sisters, in the name of our Lord Jesus Christ, we instruct you to stay away from any believer who lives idly and doesn't follow the teaching you received from us."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:2TH:3:7",
+      "text": "You know how you should imitate us. We didn't live idle lives among you."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:2TH:3:8",
+      "text": "We didn't accept anyone's food without paying. We worked hard night and day so we wouldn't burden any of you."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:2TH:3:9",
+      "text": "We did this not because we lacked the right to support, but to give you an example to follow."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:2TH:3:10",
+      "text": "Even when we were with you, we gave you this rule: ‘Anyone unwilling to work shouldn't eat.’"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:2TH:3:11",
+      "text": "We hear that some among you are living idly. They're not working; they're just interfering in other people's business."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:2TH:3:12",
+      "text": "We instruct and urge such people in the Lord Jesus Christ to settle down, work, and earn their own food."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:2TH:3:13",
+      "text": "But you, brothers and sisters, don't get tired of doing what is right."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:2TH:3:14",
+      "text": "If anyone doesn't obey what we say in this letter, take note of them and don't associate with them, so they may feel ashamed."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:2TH:3:15",
+      "text": "Still, don't treat them as an enemy. Warn them as a brother or sister."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:2TH:3:16",
+      "text": "May the Lord of peace himself give you peace at all times and in every way. The Lord be with you all."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:2TH:3:17",
+      "text": "I, Paul, write this greeting in my own hand. This is how I mark every letter; this is my handwriting."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:2TH:3:18",
+      "text": "May the grace of our Lord Jesus Christ be with you all. Amen."
+    }
+  ]
+}

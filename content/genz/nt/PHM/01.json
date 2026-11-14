@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PHM",
+  "bookName": "Philemon",
+  "chapterNumber": 1,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PHM:1:1",
+      "text": "Paul, a prisoner for Christ Jesus, and our brother Timothy, to Philemon, our dear co-worker,"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PHM:1:2",
+      "text": "to our dear sister Apphia, to Archippus, our fellow soldier, and to the church that meets in your home:"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PHM:1:3",
+      "text": "Grace and peace to you from God our Father and the Lord Jesus Christ."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PHM:1:4",
+      "text": "I always thank my God when I remember you in my prayers,"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PHM:1:5",
+      "text": "because I've heard about your love and faith in the Lord Jesus and toward all God's people."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PHM:1:6",
+      "text": "I pray that sharing your faith will help you recognize every good thing we have in Christ."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PHM:1:7",
+      "text": "Your love has brought me great joy and encouragement, because you, brother, have refreshed the hearts of God's people."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PHM:1:8",
+      "text": "So even though I have every right in Christ to tell you what you should do,"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PHM:1:9",
+      "text": "I'd rather appeal to you on the basis of love. I, Paul, am an old man now, and I'm also a prisoner for Christ Jesus."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PHM:1:10",
+      "text": "I'm appealing to you for my child Onesimus, whose spiritual father I became while in chains."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PHM:1:11",
+      "text": "Once he was useless to you, but now he's useful both to you and to me."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PHM:1:12",
+      "text": "I'm sending him back to you—and with him, my own heart."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PHM:1:13",
+      "text": "I would have liked to keep him with me so he could serve me on your behalf while I'm in chains for the Good News."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PHM:1:14",
+      "text": "But I didn't want to do anything without your consent, so your kindness would come from choice, not obligation."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PHM:1:15",
+      "text": "Perhaps he was separated from you for a while so you could have him back forever—"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PHM:1:16",
+      "text": "no longer as an enslaved person, but as more than that: a dearly loved brother. He's especially dear to me, and even more to you, both as a person and as a brother in the Lord."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PHM:1:17",
+      "text": "So if you consider me a partner, welcome him as you would welcome me."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PHM:1:18",
+      "text": "If he has wronged you in any way or owes you anything, charge it to me."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PHM:1:19",
+      "text": "I, Paul, am writing this with my own hand: I'll repay it. (I won't mention that you owe me your very self.)"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PHM:1:20",
+      "text": "Yes, brother, let me have this joy from you in the Lord. Refresh my heart in Christ."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PHM:1:21",
+      "text": "I'm confident you'll obey. I'm writing because I know you'll do even more than I'm asking."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PHM:1:22",
+      "text": "One more thing: prepare a guest room for me, because I hope your prayers will bring me back to you."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PHM:1:23",
+      "text": "Epaphras, my fellow prisoner in Christ Jesus, sends greetings."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PHM:1:24",
+      "text": "So do Mark, Aristarchus, Demas, and Luke, my co-workers."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PHM:1:25",
+      "text": "May the grace of our Lord Jesus Christ be with your spirit. Amen."
+    }
+  ]
+}

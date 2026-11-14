@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "2TH",
+  "bookName": "2 Thessalonians",
+  "chapterNumber": 1,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:2TH:1:1",
+      "text": "Paul, Silvanus, and Timothy, to the church of the Thessalonians in God our Father and the Lord Jesus Christ:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:2TH:1:2",
+      "text": "Grace and peace to you from God our Father and the Lord Jesus Christ."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:2TH:1:3",
+      "text": "Brothers and sisters, we should always thank God for you, as is right, because your faith is growing greatly and the love each of you has for one another keeps increasing."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:2TH:1:4",
+      "text": "That's why we proudly talk about you in God's churches: you stay strong and keep believing through all the persecution and hardships you're enduring."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:2TH:1:5",
+      "text": "All this shows that God's judgment is right, and that you will be counted worthy of God's Kingdom, for which you are suffering."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:2TH:1:6",
+      "text": "God is just: he will repay with trouble those who trouble you,"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:2TH:1:7",
+      "text": "and give relief to you who are troubled, and to us too. This will happen when the Lord Jesus is revealed from heaven with his mighty angels"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:2TH:1:8",
+      "text": "in blazing fire. He will punish those who don't know God and those who don't obey the Good News of our Lord Jesus."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:2TH:1:9",
+      "text": "They will suffer the punishment of eternal destruction, shut out from the Lord's presence and from his glorious power,"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:2TH:1:10",
+      "text": "when he comes on that day to be glorified among his holy people and admired by all who believe. You believed our testimony to you."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:2TH:1:11",
+      "text": "With this in mind, we always pray for you, asking our God to make you worthy of his calling and to fulfill every good purpose and every work of faith through his power."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:2TH:1:12",
+      "text": "Then the name of our Lord Jesus will be honored in you, and you in him, through the grace of our God and the Lord Jesus Christ."
+    }
+  ]
+}
