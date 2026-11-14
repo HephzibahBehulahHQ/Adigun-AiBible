@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "MRK",
+  "bookName": "Mark",
+  "chapterNumber": 1,
+  "verses": [
+    {
+      "text": "This is where the good news about Jesus Christ, God’s Son, begins.",
+      "sourceRef": "eng-web:MRK:1:1",
+      "number": 1
+    },
+    {
+      "text": "As the prophets wrote: “Look, I’m sending my messenger ahead of you; he’ll prepare your way.",
+      "sourceRef": "eng-web:MRK:1:2",
+      "number": 2
+    },
+    {
+      "text": "He’s a voice calling out in the wilderness: ‘Prepare the Lord’s way! Make his paths straight!’”",
+      "sourceRef": "eng-web:MRK:1:3",
+      "number": 3
+    },
+    {
+      "text": "John appeared in the wilderness, baptizing and preaching a baptism of repentance for the forgiveness of sins.",
+      "sourceRef": "eng-web:MRK:1:4",
+      "number": 4
+    },
+    {
+      "text": "People from the whole Judean countryside and Jerusalem came out to him. As they confessed their sins, John baptized them in the Jordan River.",
+      "sourceRef": "eng-web:MRK:1:5",
+      "number": 5
+    },
+    {
+      "text": "John wore clothes made of camel hair with a leather belt around his waist. He ate locusts and wild honey.",
+      "sourceRef": "eng-web:MRK:1:6",
+      "number": 6
+    },
+    {
+      "text": "He preached, “Someone stronger than me is coming after me. I’m not even worthy to bend down and untie his sandal straps.",
+      "sourceRef": "eng-web:MRK:1:7",
+      "number": 7
+    },
+    {
+      "text": "I baptized you with water, but he’ll baptize you with the Holy Spirit.”",
+      "sourceRef": "eng-web:MRK:1:8",
+      "number": 8
+    },
+    {
+      "text": "Around that time, Jesus came from Nazareth in Galilee, and John baptized him in the Jordan.",
+      "sourceRef": "eng-web:MRK:1:9",
+      "number": 9
+    },
+    {
+      "text": "As Jesus came up out of the water, he saw the heavens split open and the Spirit coming down on him like a dove.",
+      "sourceRef": "eng-web:MRK:1:10",
+      "number": 10
+    },
+    {
+      "text": "A voice came from heaven: “You are my beloved Son. I’m pleased with you.”",
+      "sourceRef": "eng-web:MRK:1:11",
+      "number": 11
+    },
+    {
+      "text": "Right away, the Spirit sent him out into the wilderness.",
+      "sourceRef": "eng-web:MRK:1:12",
+      "number": 12
+    },
+    {
+      "text": "He was there for forty days, tempted by Satan. He was with the wild animals, and angels took care of him.",
+      "sourceRef": "eng-web:MRK:1:13",
+      "number": 13
+    },
+    {
+      "text": "After John was arrested, Jesus went into Galilee, announcing God’s good news.",
+      "sourceRef": "eng-web:MRK:1:14",
+      "number": 14
+    },
+    {
+      "text": "He said, “The time has come! God’s kingdom is near. Turn back and believe the good news.”",
+      "sourceRef": "eng-web:MRK:1:15",
+      "number": 15
+    },
+    {
+      "text": "As Jesus walked beside the Sea of Galilee, he saw Simon and his brother Andrew throwing a net into the water. They were fishermen.",
+      "sourceRef": "eng-web:MRK:1:16",
+      "number": 16
+    },
+    {
+      "text": "Jesus said, “Come follow me, and I’ll teach you to fish for people.”",
+      "sourceRef": "eng-web:MRK:1:17",
+      "number": 17
+    },
+    {
+      "text": "They immediately left their nets and followed him.",
+      "sourceRef": "eng-web:MRK:1:18",
+      "number": 18
+    },
+    {
+      "text": "A little farther along, he saw James son of Zebedee and his brother John. They were in a boat mending their nets.",
+      "sourceRef": "eng-web:MRK:1:19",
+      "number": 19
+    },
+    {
+      "text": "He called them, and they left their father Zebedee in the boat with the hired workers and followed him.",
+      "sourceRef": "eng-web:MRK:1:20",
+      "number": 20
+    },
+    {
+      "text": "They went to Capernaum. On the Sabbath, Jesus went into the synagogue and began teaching.",
+      "sourceRef": "eng-web:MRK:1:21",
+      "number": 21
+    },
+    {
+      "text": "People were amazed at his teaching, because he taught with authority, unlike the legal experts.",
+      "sourceRef": "eng-web:MRK:1:22",
+      "number": 22
+    },
+    {
+      "text": "Just then, a man with an impure spirit was in their synagogue, and he shouted,",
+      "sourceRef": "eng-web:MRK:1:23",
+      "number": 23
+    },
+    {
+      "text": "“What do you want with us, Jesus of Nazareth? Have you come to destroy us? I know who you are—the Holy One of God!”",
+      "sourceRef": "eng-web:MRK:1:24",
+      "number": 24
+    },
+    {
+      "text": "Jesus ordered him, “Be quiet! Come out of him!”",
+      "sourceRef": "eng-web:MRK:1:25",
+      "number": 25
+    },
+    {
+      "text": "The impure spirit shook the man violently, cried out, and came out of him.",
+      "sourceRef": "eng-web:MRK:1:26",
+      "number": 26
+    },
+    {
+      "text": "Everyone was stunned and asked each other, “What’s this? A new teaching—and with authority! He even commands impure spirits, and they obey him!”",
+      "sourceRef": "eng-web:MRK:1:27",
+      "number": 27
+    },
+    {
+      "text": "News about Jesus quickly spread throughout the whole region of Galilee.",
+      "sourceRef": "eng-web:MRK:1:28",
+      "number": 28
+    },
+    {
+      "text": "As soon as they left the synagogue, they went with James and John to the home of Simon and Andrew.",
+      "sourceRef": "eng-web:MRK:1:29",
+      "number": 29
+    },
+    {
+      "text": "Simon’s mother-in-law was in bed with a fever, and they told Jesus about her right away.",
+      "sourceRef": "eng-web:MRK:1:30",
+      "number": 30
+    },
+    {
+      "text": "He went to her, took her hand, and helped her up. The fever left her, and she began serving them.",
+      "sourceRef": "eng-web:MRK:1:31",
+      "number": 31
+    },
+    {
+      "text": "That evening after sunset, people brought Jesus everyone who was sick or possessed by demons.",
+      "sourceRef": "eng-web:MRK:1:32",
+      "number": 32
+    },
+    {
+      "text": "The whole town gathered at the door.",
+      "sourceRef": "eng-web:MRK:1:33",
+      "number": 33
+    },
+    {
+      "text": "Jesus healed many people with all kinds of diseases and drove out many demons. He wouldn’t let the demons speak, because they knew who he was.",
+      "sourceRef": "eng-web:MRK:1:34",
+      "number": 34
+    },
+    {
+      "text": "Very early the next morning, while it was still dark, Jesus got up, went outside, and headed to a quiet place to pray.",
+      "sourceRef": "eng-web:MRK:1:35",
+      "number": 35
+    },
+    {
+      "text": "Simon and the others went searching for him.",
+      "sourceRef": "eng-web:MRK:1:36",
+      "number": 36
+    },
+    {
+      "text": "When they found him, they said, “Everyone’s looking for you.”",
+      "sourceRef": "eng-web:MRK:1:37",
+      "number": 37
+    },
+    {
+      "text": "He replied, “Let’s go to the nearby towns so I can preach there too. That’s why I came.”",
+      "sourceRef": "eng-web:MRK:1:38",
+      "number": 38
+    },
+    {
+      "text": "He traveled throughout Galilee, preaching in their synagogues and driving out demons.",
+      "sourceRef": "eng-web:MRK:1:39",
+      "number": 39
+    },
+    {
+      "text": "A man with a skin disease came to Jesus. He begged him, knelt down, and said, “If you’re willing, you can make me clean.”",
+      "sourceRef": "eng-web:MRK:1:40",
+      "number": 40
+    },
+    {
+      "text": "Jesus was moved with compassion. He reached out, touched him, and said, “I am willing. Be clean!”",
+      "sourceRef": "eng-web:MRK:1:41",
+      "number": 41
+    },
+    {
+      "text": "Immediately the disease left him, and he was clean.",
+      "sourceRef": "eng-web:MRK:1:42",
+      "number": 42
+    },
+    {
+      "text": "Jesus sent him away at once, sternly warning him,",
+      "sourceRef": "eng-web:MRK:1:43",
+      "number": 43
+    },
+    {
+      "text": "“Don’t tell anyone. Go show yourself to the priest, and bring the offering Moses commanded for your cleansing as a testimony to them.”",
+      "sourceRef": "eng-web:MRK:1:44",
+      "number": 44
+    },
+    {
+      "text": "But the man went out and started telling everyone what happened, spreading the news everywhere. As a result, Jesus could no longer enter a town openly. He stayed outside in quiet places, but people came to him from all over.",
+      "sourceRef": "eng-web:MRK:1:45",
+      "number": 45
+    }
+  ]
+}

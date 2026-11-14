@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "REV",
+  "bookName": "Revelation",
+  "chapterNumber": 4,
+  "verses": [
+    {
+      "sourceRef": "eng-web:REV:4:1",
+      "text": "After this I looked, and there in heaven was an open door. The voice like a trumpet that I’d heard speaking to me first said, “Come up here, and I’ll show you what must happen after this.”",
+      "number": 1
+    },
+    {
+      "sourceRef": "eng-web:REV:4:2",
+      "text": "At once I was in the Spirit, and there in heaven was a throne with someone sitting on it.",
+      "number": 2
+    },
+    {
+      "sourceRef": "eng-web:REV:4:3",
+      "text": "The one sitting there looked like jasper and ruby, and a rainbow that looked like emerald surrounded the throne.",
+      "number": 3
+    },
+    {
+      "sourceRef": "eng-web:REV:4:4",
+      "text": "Around the throne were twenty-four other thrones, and seated on them were twenty-four elders dressed in white, with gold crowns on their heads.",
+      "number": 4
+    },
+    {
+      "sourceRef": "eng-web:REV:4:5",
+      "text": "Flashes of lightning, rumblings, and thunder came from the throne. In front of it burned seven torches, which are the seven spirits of God.",
+      "number": 5
+    },
+    {
+      "sourceRef": "eng-web:REV:4:6",
+      "text": "In front of the throne was something like a sea of glass, clear as crystal. Around the throne, on each side, were four living creatures covered with eyes, front and back.",
+      "number": 6
+    },
+    {
+      "sourceRef": "eng-web:REV:4:7",
+      "text": "The first creature looked like a lion, the second like an ox, the third had a face like a human, and the fourth looked like a flying eagle.",
+      "number": 7
+    },
+    {
+      "sourceRef": "eng-web:REV:4:8",
+      "text": "Each of the four living creatures had six wings and was covered with eyes all around, even under its wings. Day and night they never stop saying: “Holy, holy, holy is the Lord God Almighty, who was, who is, and who is coming.”",
+      "number": 8
+    },
+    {
+      "sourceRef": "eng-web:REV:4:9",
+      "text": "Whenever the living creatures give glory, honor, and thanks to the one seated on the throne, who lives forever and ever,",
+      "number": 9
+    },
+    {
+      "sourceRef": "eng-web:REV:4:10",
+      "text": "the twenty-four elders fall down before the one seated on the throne and worship him, who lives forever and ever. They lay their crowns before the throne and say:",
+      "number": 10
+    },
+    {
+      "sourceRef": "eng-web:REV:4:11",
+      "text": "“You are worthy, our Lord and God, to receive glory, honor, and power, because you created all things, and by your will they existed and were created.”",
+      "number": 11
+    }
+  ]
+}

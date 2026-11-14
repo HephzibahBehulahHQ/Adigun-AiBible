@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1JN",
+  "bookName": "1 John",
+  "chapterNumber": 3,
+  "verses": [
+    {
+      "sourceRef": "eng-web:1JN:3:1",
+      "number": 1,
+      "text": "See what great love the Father has given us, that we should be called God’s children—and that’s what we are! The world doesn’t know us because it didn’t know him."
+    },
+    {
+      "sourceRef": "eng-web:1JN:3:2",
+      "number": 2,
+      "text": "Dear friends, we are God’s children now, and what we will be hasn’t been revealed yet. But we know that when Christ appears, we’ll be like him, because we’ll see him as he is."
+    },
+    {
+      "sourceRef": "eng-web:1JN:3:3",
+      "number": 3,
+      "text": "Everyone who has this hope in him purifies themselves, just as he is pure."
+    },
+    {
+      "sourceRef": "eng-web:1JN:3:4",
+      "number": 4,
+      "text": "Everyone who keeps sinning breaks the law; sin is lawlessness."
+    },
+    {
+      "sourceRef": "eng-web:1JN:3:5",
+      "number": 5,
+      "text": "You know that Christ appeared to take away sins, and there’s no sin in him."
+    },
+    {
+      "sourceRef": "eng-web:1JN:3:6",
+      "number": 6,
+      "text": "No one who remains in him keeps on sinning. Whoever keeps sinning hasn’t seen him or known him."
+    },
+    {
+      "sourceRef": "eng-web:1JN:3:7",
+      "number": 7,
+      "text": "Dear children, don’t let anyone mislead you. Whoever does what is right is righteous, just as Christ is righteous."
+    },
+    {
+      "sourceRef": "eng-web:1JN:3:8",
+      "number": 8,
+      "text": "Whoever keeps sinning belongs to the devil, because the devil has been sinning from the beginning. The Son of God appeared for this reason: to destroy the devil’s works."
+    },
+    {
+      "sourceRef": "eng-web:1JN:3:9",
+      "number": 9,
+      "text": "No one born of God keeps on sinning, because God’s seed remains in them. They can’t keep sinning, because they’ve been born of God."
+    },
+    {
+      "sourceRef": "eng-web:1JN:3:10",
+      "number": 10,
+      "text": "This is how God’s children and the devil’s children are made clear: anyone who doesn’t do what is right doesn’t belong to God, and neither does anyone who doesn’t love their brother or sister."
+    },
+    {
+      "sourceRef": "eng-web:1JN:3:11",
+      "number": 11,
+      "text": "This is the message you heard from the beginning: we should love one another."
+    },
+    {
+      "sourceRef": "eng-web:1JN:3:12",
+      "number": 12,
+      "text": "Don’t be like Cain, who belonged to the evil one and murdered his brother. Why did Cain murder him? Because Cain’s actions were evil and his brother’s were righteous."
+    },
+    {
+      "sourceRef": "eng-web:1JN:3:13",
+      "number": 13,
+      "text": "So don’t be surprised, brothers and sisters, if the world hates you."
+    },
+    {
+      "sourceRef": "eng-web:1JN:3:14",
+      "number": 14,
+      "text": "We know that we’ve passed from death to life because we love our brothers and sisters. Anyone who doesn’t love remains in death."
+    },
+    {
+      "sourceRef": "eng-web:1JN:3:15",
+      "number": 15,
+      "text": "Anyone who hates a brother or sister is a murderer, and you know that no murderer has eternal life remaining in them."
+    },
+    {
+      "sourceRef": "eng-web:1JN:3:16",
+      "number": 16,
+      "text": "This is how we know what love is: Jesus Christ laid down his life for us, and we should lay down our lives for our brothers and sisters."
+    },
+    {
+      "sourceRef": "eng-web:1JN:3:17",
+      "number": 17,
+      "text": "If someone has material things and sees a brother or sister in need but shuts their heart against them, how can God’s love remain in them?"
+    },
+    {
+      "sourceRef": "eng-web:1JN:3:18",
+      "number": 18,
+      "text": "Dear children, let’s not love with words or speech but with actions and truth."
+    },
+    {
+      "sourceRef": "eng-web:1JN:3:19",
+      "number": 19,
+      "text": "This is how we know we belong to the truth, and how we set our hearts at rest in his presence:"
+    },
+    {
+      "sourceRef": "eng-web:1JN:3:20",
+      "number": 20,
+      "text": "whenever our hearts condemn us, God is greater than our hearts and knows everything."
+    },
+    {
+      "sourceRef": "eng-web:1JN:3:21",
+      "number": 21,
+      "text": "Dear friends, if our hearts don’t condemn us, we have confidence before God"
+    },
+    {
+      "sourceRef": "eng-web:1JN:3:22",
+      "number": 22,
+      "text": "and receive from him whatever we ask, because we keep his commands and do what pleases him."
+    },
+    {
+      "sourceRef": "eng-web:1JN:3:23",
+      "number": 23,
+      "text": "And this is his command: believe in the name of his Son, Jesus Christ, and love one another, just as he commanded us."
+    },
+    {
+      "sourceRef": "eng-web:1JN:3:24",
+      "number": 24,
+      "text": "Whoever keeps God’s commands remains in him, and he in them. And this is how we know he remains in us: by the Spirit he gave us."
+    }
+  ]
+}

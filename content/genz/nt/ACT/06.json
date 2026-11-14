@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ACT",
+  "bookName": "Acts",
+  "chapterNumber": 6,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:ACT:6:1","text":"As the number of disciples kept growing, the Greek-speaking believers complained against the Hebrew-speaking believers because their widows were being overlooked in the daily food distribution."},
+    {"number":2,"sourceRef":"eng-web:ACT:6:2","text":"The Twelve called all the disciples together and said, “It wouldn’t be right for us to stop teaching God’s word so we can manage the food service."},
+    {"number":3,"sourceRef":"eng-web:ACT:6:3","text":"“So, brothers and sisters, choose seven respected men from among you, full of the Spirit and wisdom. We’ll put them in charge of this work."},
+    {"number":4,"sourceRef":"eng-web:ACT:6:4","text":"“Then we can keep giving ourselves to prayer and to serving through the word.”"},
+    {"number":5,"sourceRef":"eng-web:ACT:6:5","text":"This proposal pleased everyone. They chose Stephen, a man full of faith and the Holy Spirit; Philip, Prochorus, Nicanor, Timon, Parmenas, and Nicolaus, a convert from Antioch."},
+    {"number":6,"sourceRef":"eng-web:ACT:6:6","text":"They brought these men to the apostles, who prayed and laid their hands on them."},
+    {"number":7,"sourceRef":"eng-web:ACT:6:7","text":"God’s word continued to spread, and the number of disciples in Jerusalem grew rapidly. A large number of priests also accepted the faith."},
+    {"number":8,"sourceRef":"eng-web:ACT:6:8","text":"Stephen, full of grace and power, performed great wonders and signs among the people."},
+    {"number":9,"sourceRef":"eng-web:ACT:6:9","text":"But some people from the synagogue called the Freedmen—including people from Cyrene, Alexandria, Cilicia, and Asia—started arguing with Stephen."},
+    {"number":10,"sourceRef":"eng-web:ACT:6:10","text":"They couldn’t stand up to the wisdom and the Spirit with which he spoke."},
+    {"number":11,"sourceRef":"eng-web:ACT:6:11","text":"So they secretly persuaded some men to claim, “We heard him speak against Moses and God.”"},
+    {"number":12,"sourceRef":"eng-web:ACT:6:12","text":"They stirred up the people, elders, and scribes, then came after Stephen, seized him, and brought him before the council."},
+    {"number":13,"sourceRef":"eng-web:ACT:6:13","text":"They brought in false witnesses, who said, “This man is always speaking against this holy place and the law."},
+    {"number":14,"sourceRef":"eng-web:ACT:6:14","text":"“We heard him say that Jesus of Nazareth will destroy this place and change the customs Moses handed down to us.”"},
+    {"number":15,"sourceRef":"eng-web:ACT:6:15","text":"Everyone sitting in the council stared at Stephen and saw that his face looked like an angel’s."}
+  ]
+}
