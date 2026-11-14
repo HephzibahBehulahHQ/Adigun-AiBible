@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SPEC = importlib.util.spec_from_file_location('edition_importer', ROOT / 'scripts/import-editions.py')
 IMPORTER = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(IMPORTER)
-IDS = ['fra-darby2024', 'spa-simple2026', 'tdx-tandroy', 'hausa2020', 'igbo2020', 'mdyeth']
+IDS = ['fra-darby2024', 'spa-simple2026', 'tdx-tandroy', 'hausa2020', 'igbo2020', 'mdyeth', 'thafb']
 
 
 def read(edition, path):
@@ -39,7 +39,7 @@ class NextEditionChecks(unittest.TestCase):
         self.assertFalse(IMPORTER.generated_hash_matches('manifest.json', changed, IMPORTER.sha(canonical)))
 
     def test_complete_exception_inventories_reject_changed_counts_coordinates_and_offsets(self):
-        for edition, count in zip(IDS, [4030, 0, 10, 0, 0, 55]):
+        for edition, count in zip(IDS, [4030, 0, 10, 0, 0, 55, 0]):
             with self.subTest(edition=edition):
                 provenance = read(edition, 'provenance.json')
                 brackets = provenance.get('publisherBracketFormatDifferences', [])
@@ -60,6 +60,20 @@ class NextEditionChecks(unittest.TestCase):
                     changed[0]['verse'] += 1
                     with self.assertRaisesRegex(ValueError, 'exception inventory changed'):
                         IMPORTER.verify_vpl_format_inventory(edition, changed + boundaries)
+
+    def test_thai_freedom_is_kept_as_a_publisher_draft_with_pinned_exact_source(self):
+        edition = 'thafb'
+        source = IMPORTER.SOURCES[edition]
+        manifest = read(edition, 'manifest.json')
+        provenance = read(edition, 'provenance.json')
+        self.assertEqual(manifest['edition']['publicationStatus'], 'publisher-draft')
+        self.assertEqual(manifest['edition']['language'], 'th')
+        self.assertEqual(manifest['totals'], {'books': 66, 'chapters': 1189, 'verses': 31103})
+        self.assertEqual(provenance['archiveSha256'], source['sha256'])
+        self.assertEqual(provenance['totals']['verses'], 31103)
+        self.assertTrue(provenance['xmlAndPlainTextAgree'])
+        self.assertEqual(IMPORTER.sha((ROOT / 'data/editions/thafb/SOURCE_NOTICE.html.txt').read_bytes()), source['noticeSha256'])
+        self.assertTrue(any('draft' in condition.lower() for condition in manifest['edition']['conditions']))
 
     def test_actual_bracket_receipts_preserve_display_and_reject_other_character_changes(self):
         for edition in ['fra-darby2024', 'tdx-tandroy']:

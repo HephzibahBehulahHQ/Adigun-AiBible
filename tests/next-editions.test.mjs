@@ -18,6 +18,7 @@ const expected = {
   'hausa2020': { provider: 'hausa', language: 'ha', records: 31087, empty: 0, files: 70, sha: 'b4780ea28fc95ee7ca58ce7b0f75dc35a04201561735cb304cf557459d60d821' },
   'igbo2020': { provider: 'ibo', language: 'ig', records: 31103, empty: 0, files: 70, sha: 'fe4030d183c5514c879b93f863abbe5f12f707024168d05925a129b093fef684' },
   'mdyeth': { provider: 'mdyeth', language: 'mdy-Ethi', records: 30506, empty: 0, files: 70, sha: '01b434547c7ea95f5b07b6ea935e0a87e841701206b0427f4feac8a278f17207' },
+  'thafb': { provider: 'thafb', language: 'th', records: 31103, empty: 5, files: 70, sha: 'c5b68af1e8909640435d4ed66e02bc75ef00061ef755a20b8b3fb44cb8f5b769' },
 };
 const root = new URL('../data/editions/', import.meta.url);
 const bytes = path => readFileSync(new URL(path, root));
@@ -93,23 +94,23 @@ for (const [id, pin] of Object.entries(expected)) {
 }
 
 test('the installed inventory counts distinct source languages, editions and regional tags accurately', () => {
-  assert.equal(editions.length, 38);
-  assert.equal(new Set(editions.map(row => row.id)).size, 38);
+  assert.equal(editions.length, 39);
+  assert.equal(new Set(editions.map(row => row.id)).size, 39);
   const original = new Set(['eng-web', 'deu1912', 'yor']);
-  assert.equal(editions.filter(row => !original.has(row.id)).length, 35);
-  assert.equal(new Set(editions.map(row => row.language)).size, 26);
-  assert.equal(new Set(editions.map(row => new Intl.Locale(row.language).language)).size, 25);
+  assert.equal(editions.filter(row => !original.has(row.id)).length, 36);
+  assert.equal(new Set(editions.map(row => row.language)).size, 27);
+  assert.equal(new Set(editions.map(row => new Intl.Locale(row.language).language)).size, 26);
   assert.equal(new Intl.Locale(manifest('spa-simple2026').edition.language).language, 'es');
-  assert.equal(Object.values(expected).reduce((total, row) => total + row.records, 0) + manifest('eng-douay-rheims1899').totals.verses + manifest('hat-1985').totals.verses + manifest('hrv-saric').totals.verses + manifest('ldb-duya2024').totals.verses, 325452);
+  assert.equal(Object.values(expected).reduce((total, row) => total + row.records, 0) + manifest('eng-douay-rheims1899').totals.verses + manifest('hat-1985').totals.verses + manifest('hrv-saric').totals.verses + manifest('ldb-duya2024').totals.verses, 356555);
   const french = manifest('fra-darby2024').edition;
   assert.match(french.name, /BPC 2024/);
   assert.match(french.revision, /Not the distinct 2026 revised edition/);
   assert.ok(french.conditions.some(condition => condition.includes('2026 revised edition is CC BY-NC-ND and is not imported')));
 });
 
-test('all 38 publisher inventories identify the current revision and match real source metadata', () => {
+test('all 39 publisher inventories identify the current revision and match real source metadata', () => {
   const coverage = JSON.parse(readFileSync(new URL('../data/speakers/publisher-coverage.json', import.meta.url)));
-  assert.equal(coverage.editions.length, 38);
+  assert.equal(coverage.editions.length, 39);
   assert.deepEqual(coverage.editions.map(row => row.editionId).sort(), editions.map(row => row.id).sort());
   for (const edition of editions) {
     const entry = coverage.editions.find(row => row.editionId === edition.id);
@@ -147,6 +148,23 @@ test('Maale preserves Ethiopic source text, exact ranges and publisher bracket e
   assert.equal(row.aiProductUse.state, 'unknown');
   assert.equal(row.operations.recordedAudio.state, 'unknown');
 });
+
+test('Thai Freedom is clearly identified as a draft with exact Thai source and notice', () => {
+  const id = 'thafb', source = manifest(id), provenance = read(id + '/provenance.json');
+  const metadata = catalog.editions.find(row => row.id === id);
+  assert.equal(metadata.name, 'Thai Freedom Bible (publisher draft)');
+  assert.equal(metadata.publicationStatus, 'publisher-draft');
+  assert.equal(metadata.language, 'th');
+  assert.equal(metadata.script, 'Thai');
+  assert.deepEqual(source.totals, { books: 66, chapters: 1189, verses: 31103 });
+  assert.equal(provenance.xmlAndPlainTextAgree, true);
+  assert.deepEqual(provenance.publisherSourceVerseRanges || [], []);
+  assert.equal(provenance.members['thafb_about.htm'], 'db70a4547058cd0ca8e7db41a3824326d9bff598370b64940c4e293df7123c61');
+  assert.match(bytes(id + '/SOURCE_NOTICE.html.txt').toString('utf8'), /This is a draft translation/);
+  assert.equal(provenance.languageEvidence.languageTag, 'th');
+  assert.deepEqual(provenance.languageEvidence.sourceLetterUnicodeNamePrefixes, { THAI: 2473248 });
+});
+
 test('Duya NT source records preserve its exact publisher verse ranges and edition scope', () => {
   const edition = catalog.editions.find(row => row.id === 'ldb-duya2024');
   const source = manifest('ldb-duya2024'), provenance = read('ldb-duya2024/provenance.json');

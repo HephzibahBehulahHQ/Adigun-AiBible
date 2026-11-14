@@ -4750,22 +4750,47 @@
       "provider": "eBible.org",
       "providerId": "thafb",
       "languageName": "Thai",
-      "nativeLanguageName": "แบบไทย",
-      "dialect": null,
+      "nativeLanguageName": "Thai",
       "nativeTitle": "พระคัมภีร์แห่งเสรีภาพ",
       "title": "Thai Freedom Bible",
-      "revision": "2026",
+      "revision": "Publisher source files dated 2026-10-13; publisher draft.",
       "providerRightsStatement": "Public Domain",
-      "translator": null,
+      "translator": "Not specified in the individual publisher notice.",
       "contributor": null,
-      "sourceUrl": "https://ebible.org/find/details.php?id=thafb",
+      "sourceUrl": "https://ebible.org/details.php?id=thafb",
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
-      "inventoryLine": 109,
-      "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "observedOn": "2026-11-14",
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "thafb",
+      "installedRevision": "Publisher draft; source files dated 2026-10-13.",
+      "installedSourceSha256": "c5b68af1e8909640435d4ed66e02bc75ef00061ef755a20b8b3fb44cb8f5b769",
+      "installedObservedOn": "2026-11-14",
+      "publicationStatus": "publisher-draft",
+      "sourceReview": {
+        "state": "admitted-exact-source",
+        "observedOn": "2026-11-14",
+        "evidenceUrls": [
+          "https://ebible.org/details.php?id=thafb",
+          "https://ebible.org/thafb/copyright.htm",
+          "https://ebible.org/publicdomain.htm",
+          "https://ebible.org/legal.php",
+          "https://ebible.org/Scriptures/thafb_vpl.zip"
+        ],
+        "archiveSha256": "c5b68af1e8909640435d4ed66e02bc75ef00061ef755a20b8b3fb44cb8f5b769",
+        "observedTotals": {
+          "books": 66,
+          "chapters": 1189,
+          "verses": 31103
+        },
+        "limitations": [
+          "Publisher identifies this as a draft translation; no native-language or editorial approval is asserted.",
+          "Publisher TXT and XML agree exactly across all 31,103 source records after documented VPL book-ID alias mapping.",
+          "VPL archive contains Bible text only; it does not include third-party recorded audio or supplementary media.",
+          "Provider Public Domain statements support application use and redistribution; no independent legal certification is asserted. Model-training, TTS configuration and recorded-audio rights remain unverified."
+        ]
+      }
     },
     {
       "provider": "eBible.org",

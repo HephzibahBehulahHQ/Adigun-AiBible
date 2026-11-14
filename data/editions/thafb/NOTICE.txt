@@ -1,0 +1,15 @@
+About thafb_vpl
+This archive contains BIBLE TEXT ONLY. All formatting, paragraph breaks, notes, introductions, noncanonical section titles, etc., have been removed. The file ending "_vpl.txt" is designed for import into BibleWorks and similar Bible study programs. The file ending "_vpl.xml" contains the same information, but is in XML format and uses standard SIL/UBS book abbreviations.
+The file ending "_vpl.sql" contains the same information formatted to create a SQL data table.
+Check for updates and other Bible translations in this format at http:\\eBible.org\Scriptures\
+พระคัมภีร์แห่งเสรีภาพ
+The Holy Bible in Thai, Freedom Bible translation
+Public Domain
+Language: แบบไทย (Thai)
+นี่เป็นร่างคำแปล โปรดส่งข้อเสนอแนะเพื่อการปรับปรุงมาที่ ebible.org+thafb@gmail.com
+This is a draft translation. Please send suggestions for improvement to ebible.org+thafb@gmail.com.
+2026-10-13
+
+Source and rights notice: https://ebible.org/thafb/copyright.htm
+Provider rights policy: https://ebible.org/publicdomain.htm
+Provider rights policy: https://ebible.org/legal.php
