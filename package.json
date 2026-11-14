@@ -10,6 +10,7 @@
     "dev": "vite --host 0.0.0.0",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src",
+    "pretest": "node scripts/build-adigun-edition.mjs && node scripts/generate-publisher-coverage.mjs",
     "test": "node --test tests/*.test.mjs",
     "test:e2e": "playwright test",
     "content:import": "node scripts/import-corpus.mjs",
