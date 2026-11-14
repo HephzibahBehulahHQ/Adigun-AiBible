@@ -19,6 +19,7 @@ const expected = {
   'igbo2020': { provider: 'ibo', language: 'ig', records: 31103, empty: 0, files: 70, sha: 'fe4030d183c5514c879b93f863abbe5f12f707024168d05925a129b093fef684' },
   'mdyeth': { provider: 'mdyeth', language: 'mdy-Ethi', records: 30506, empty: 0, files: 70, sha: '01b434547c7ea95f5b07b6ea935e0a87e841701206b0427f4feac8a278f17207' },
   'thafb': { provider: 'thafb', language: 'th', records: 31103, empty: 5, files: 70, sha: 'c5b68af1e8909640435d4ed66e02bc75ef00061ef755a20b8b3fb44cb8f5b769' },
+  'nld1939': { provider: 'nld1939', language: 'nl', records: 35335, empty: 0, files: 77, sha: '37386d6f0c2cee93d24509d622eac616f2a129cf359b56c96a0b389826be47c1' },
 };
 const root = new URL('../data/editions/', import.meta.url);
 const bytes = path => readFileSync(new URL(path, root));
@@ -48,7 +49,7 @@ for (const [id, pin] of Object.entries(expected)) {
     assert.equal(metadata.sha256, pin.sha);
     assert.equal(provenance.archiveSha256, pin.sha);
     assert.deepEqual(source.edition, metadata);
-    assert.deepEqual(source.totals, { books: 66, chapters: 1189, verses: pin.records });
+    assert.deepEqual(source.totals, { books: id === 'nld1939' ? 73 : 66, chapters: id === 'nld1939' ? 1328 : 1189, verses: pin.records });
     assert.deepEqual(metadata.totals, source.totals);
     assert.equal(provenance.displayTextMember, pin.provider + '_vpl.txt');
     assert.equal(provenance.languageEvidence.languageTag, pin.language);
@@ -94,23 +95,23 @@ for (const [id, pin] of Object.entries(expected)) {
 }
 
 test('the installed inventory counts distinct source languages, editions and regional tags accurately', () => {
-  assert.equal(editions.length, 39);
-  assert.equal(new Set(editions.map(row => row.id)).size, 39);
+  assert.equal(editions.length, 40);
+  assert.equal(new Set(editions.map(row => row.id)).size, 40);
   const original = new Set(['eng-web', 'deu1912', 'yor']);
-  assert.equal(editions.filter(row => !original.has(row.id)).length, 36);
+  assert.equal(editions.filter(row => !original.has(row.id)).length, 37);
   assert.equal(new Set(editions.map(row => row.language)).size, 27);
   assert.equal(new Set(editions.map(row => new Intl.Locale(row.language).language)).size, 26);
   assert.equal(new Intl.Locale(manifest('spa-simple2026').edition.language).language, 'es');
-  assert.equal(Object.values(expected).reduce((total, row) => total + row.records, 0) + manifest('eng-douay-rheims1899').totals.verses + manifest('hat-1985').totals.verses + manifest('hrv-saric').totals.verses + manifest('ldb-duya2024').totals.verses, 356555);
+  assert.equal(Object.values(expected).reduce((total, row) => total + row.records, 0) + manifest('eng-douay-rheims1899').totals.verses + manifest('hat-1985').totals.verses + manifest('hrv-saric').totals.verses + manifest('ldb-duya2024').totals.verses + manifest('nld1939').totals.verses, 427225);
   const french = manifest('fra-darby2024').edition;
   assert.match(french.name, /BPC 2024/);
   assert.match(french.revision, /Not the distinct 2026 revised edition/);
   assert.ok(french.conditions.some(condition => condition.includes('2026 revised edition is CC BY-NC-ND and is not imported')));
 });
 
-test('all 39 publisher inventories identify the current revision and match real source metadata', () => {
+test('all 40 publisher inventories identify the current revision and match real source metadata', () => {
   const coverage = JSON.parse(readFileSync(new URL('../data/speakers/publisher-coverage.json', import.meta.url)));
-  assert.equal(coverage.editions.length, 39);
+  assert.equal(coverage.editions.length, 40);
   assert.deepEqual(coverage.editions.map(row => row.editionId).sort(), editions.map(row => row.id).sort());
   for (const edition of editions) {
     const entry = coverage.editions.find(row => row.editionId === edition.id);
@@ -128,6 +129,23 @@ test('all 39 publisher inventories identify the current revision and match real 
       assert.equal(row.rejectedMetadata, actual.issues.length);
     }
   }
+});
+
+test('Petrus Canisius 1939 preserves its publisher identity, Dutch source, Catholic inventory and combined verse range', () => {
+  const id = 'nld1939', source = manifest(id), provenance = read(id + '/provenance.json');
+  const metadata = catalog.editions.find(row => row.id === id);
+  assert.match(metadata.name, /Petrus Canisius.*1939/);
+  assert.equal(metadata.language, 'nl');
+  assert.equal(metadata.canonProfile.bookCount, 73);
+  assert.equal(metadata.canonProfile.oldTestamentBookCount, 46);
+  assert.deepEqual(source.books.slice(38, 45).map(row => row.id), ['TOB', 'JDT', 'WIS', 'SIR', 'BAR', '1MA', '2MA']);
+  assert.equal(source.books[45].id, 'DAN');
+  assert.equal(source.books[46].id, 'MAT');
+  assert.equal(source.books.filter(row => row.id === 'DAN').length, 1);
+  assert.deepEqual(provenance.publisherSourceVerseRanges, [{ bookId: 'PSA', chapter: 84, start: 9, end: 10 }]);
+  assert.equal(provenance.publisherBracketFormatDifferences.length, 7);
+  assert.match(bytes(id + '/SOURCE_NOTICE.html.txt').toString('utf8'), /can be considered to be in the public domain/i);
+  assert.match(bytes(id + '/NOTICE.txt').toString('utf8'), /eBible.org/);
 });
 
 test('Maale preserves Ethiopic source text, exact ranges and publisher bracket exceptions', () => {

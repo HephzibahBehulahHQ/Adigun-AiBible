@@ -4098,11 +4098,19 @@
       "sourceUrl": "https://ebible.org/find/details.php?id=nld1939",
       "inventoryUrl": "https://ebible.org/Scriptures/copyright.php",
       "inventoryLine": 26,
-      "observedOn": "2026-11-04",
-      "availability": "metadata-only",
-      "coverage": "not-validated",
-      "permissions": "not-reviewed",
-      "installedEditionId": null
+      "observedOn": "2026-11-14",
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "nld1939",
+      "installedRevision": "First complete edition published in 1939; 73 publisher-ordered books; verse text only",
+      "installedSourceSha256": "37386d6f0c2cee93d24509d622eac616f2a129cf359b56c96a0b389826be47c1",
+      "installedObservedOn": "2026-11-14",
+      "installedTotals": {
+        "books": 73,
+        "chapters": 1328,
+        "verses": 35335
+      }
     },
     {
       "provider": "eBible.org",

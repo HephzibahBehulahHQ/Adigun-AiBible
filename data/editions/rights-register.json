@@ -300,6 +300,12 @@
       "url": "https://ebible.org/thafb/copyright.htm",
       "observedOn": "2026-11-14",
       "summary": "The individual Thai Freedom Bible notice and matching pinned source archive label this exact publisher draft Public Domain. The provider’s Public Domain and intellectual-property pages describe app use, free copying and distribution, while instructing users to check each work’s exact notice. Publisher statements are not independent legal or editorial certification; recorded-audio and model-training permissions remain unverified."
+    },
+    {
+      "id": "nld1939-pd",
+      "url": "https://ebible.org/nld1939/copyright.htm",
+      "observedOn": "2026-11-14",
+      "summary": "The individual notice identifies the first complete 1939 edition, records contact with the original publisher and relevant organizations with no objections, and says the edition can be considered free of copyright under the applicable legal terms. This is the provider’s conclusion, not independent worldwide legal advice."
     }
   ],
   "editions": [
@@ -7881,6 +7887,205 @@
         "The publisher identifies this exact source as Public Domain; the provider policy describes app use, copying, distribution and adaptation. This records provider statements, not independent legal certification.",
         "The VPL archive contains Bible text only and does not include third-party recorded audio, artwork or supplementary material.",
         "The text import does not establish native-language or editorial approval, AI model training, TTS or recorded-audio rights."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "nld1939",
+      "sourceSha256": "37386d6f0c2cee93d24509d622eac616f2a129cf359b56c96a0b389826be47c1",
+      "verifiedOn": "2026-11-14",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "allowed",
+        "evidenceIds": [
+          "nld1939-pd",
+          "ebible-pd-uses",
+          "ebible-ip-policy"
+        ],
+        "reason": "eBible.org identifies this exact edition as public domain after describing its publisher/organization checks and publishes app and adaptation uses for public-domain texts. This records provider evidence, not independent worldwide legal or human editorial approval."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "aiRetrieval": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "modelTraining": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "tts": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "The source archive contains text only; no permission for third-party recordings is asserted."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "nld1939-pd",
+            "ebible-pd-uses",
+            "ebible-ip-policy"
+          ],
+          "reason": "Allowed for this exact provider-declared public-domain edition under its individual notice and the provider policy, bound to the pinned source hash. This does not independently certify applicable law worldwide."
+        }
+      },
+      "attribution": "De Heilige Schrift, Petrus Canisiusvertaling, 1939. First complete edition published by Het Spectrum, Utrecht and Brussels. Public domain as identified by eBible.org. Source: https://ebible.org/nld1939/.",
+      "conditions": [
+        "Retain the exact edition identity and complete eBible.org source notice with redistributed and offline copies.",
+        "eBible.org identifies this edition as public domain and says it contacted the original publisher and relevant organizations without finding objections; this record attributes that provider conclusion and is not an independent worldwide legal opinion.",
+        "The provider-supplied 73-book list and its order describe this edition and do not define one canon for all Christian traditions.",
+        "The VPL archive supplies verse text only; introductions, annotations, headings, images and third-party recordings are not included.",
+        "The source record does not establish independent human editorial review, native-language approval or provider endorsement."
       ],
       "cache": {
         "mode": "none-required"
