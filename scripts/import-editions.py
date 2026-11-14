@@ -42,7 +42,7 @@ BOOKS = [
     ('2PE', '2 Peter'), ('1JN', '1 John'), ('2JN', '2 John'), ('3JN', '3 John'), ('JUD', 'Jude'), ('REV', 'Revelation'),
 ]
 TEXT_IDS = {'SOL': 'SNG', 'EZE': 'EZK', 'JOE': 'JOL', 'NAH': 'NAM', 'MAR': 'MRK', 'JOH': 'JHN',
-            'PHI': 'PHP', 'JAM': 'JAS', '1JO': '1JN', '2JO': '2JN', '3JO': '3JN'}
+            'PHI': 'PHP', 'JAM': 'JAS', '1JO': '1JN', '2JO': '2JN', '3JO': '3JN', 'DAG': 'DAN', 'DNG': 'DAN'}
 SOURCES = {
     'deu1912': {
         'name': 'Lutherbibel 1912', 'language': 'de', 'corpus': 'bible', 'publisher': 'eBible.org',
@@ -2397,6 +2397,76 @@ SOURCES['mdyeth'] = {'name': 'Maale Bible (Ethiopic script)',
                 'notes, paragraph layout, pictures and recorded audio.',
                 'The text license does not establish AI retrieval, model training, TTS or recorded-audio '
                 'rights, nor native-language/editorial approval.']}
+SOURCES['nld1939'] = {
+    'name': 'De Heilige Schrift, Petrus Canisiusvertaling, 1939',
+    'nativeTitle': 'De Heilige Schrift, Petrus Canisiusvertaling, 1939',
+    'abbreviation': 'NLD1939', 'language': 'nl', 'script': 'Latn', 'direction': 'ltr',
+    'corpus': 'bible', 'publisher': 'eBible.org; first complete edition published by Het Spectrum, Utrecht and Brussels',
+    'translator': 'Not specified in the publisher notice; the title identifies the Petrus Canisius translation.',
+    'revision': 'First complete edition published in 1939; verse text only',
+    'sourceUpdatedAt': '2025-12-12', 'sourceNoticeDate': '2024-08-06',
+    'sourceUrl': 'https://ebible.org/nld1939/',
+    'formatUrl': 'https://ebible.org/details.php?id=nld1939',
+    'downloadUrl': 'https://ebible.org/Scriptures/nld1939_vpl.zip', 'downloadBytes': 5342102,
+    'licenseUrl': 'https://ebible.org/nld1939/copyright.htm',
+    'rightsEvidenceUrls': ['https://ebible.org/Scriptures/details.php?id=nld1939',
+                          'https://ebible.org/publicdomain.htm', 'https://ebible.org/legal.php'],
+    'license': 'Public domain as identified by eBible.org', 'licenseIdentifier': 'LicenseRef-Public-Domain',
+    'attribution': 'De Heilige Schrift, Petrus Canisiusvertaling, 1939. First complete edition published by Het Spectrum, Utrecht and Brussels. Public domain as identified by eBible.org. Source: https://ebible.org/nld1939/.',
+    'sha256': '37386d6f0c2cee93d24509d622eac616f2a129cf359b56c96a0b389826be47c1',
+    'xmlSha256': '0a319488ac3fc51b12a408a5c8e271aabfb2cd1e98e8a7769ebeb8b582f9afe6',
+    'textSha256': '98d21b6d74846d31091d901746e1c0f6c5a625c5753c9565aaae5c885ba0410b',
+    'noticeSha256': '266a761b10d1e8f7f2a6ddac993a1059e4a9a1b1f81bccdaf3eddad92ae124ea',
+    'providerId': 'nld1939', 'canon': 'dutch-catholic-73',
+    'canonProfile': {
+        'id': 'dutch-catholic-73', 'label': 'Publisher supplied 73-book list · Dutch Catholic Bible',
+        'description': 'The list and order describe the 73 book entries supplied in this publisher archive; they do not define one canon for all Christian traditions.',
+        'sourceUrl': 'https://ebible.org/nld1939/', 'bookCount': 73, 'oldTestamentBookCount': 46,
+    },
+    'bookOrder': [
+        ('GEN', 'Genesis'), ('EXO', 'Exodus'), ('LEV', 'Leviticus'), ('NUM', 'Numbers'), ('DEU', 'Deuteronomy'),
+        ('JOS', 'Joshua'), ('JDG', 'Judges'), ('RUT', 'Ruth'), ('1SA', '1 Samuel'), ('2SA', '2 Samuel'),
+        ('1KI', '1 Kings'), ('2KI', '2 Kings'), ('1CH', '1 Chronicles'), ('2CH', '2 Chronicles'), ('EZR', 'Ezra'),
+        ('NEH', 'Nehemiah'), ('EST', 'Esther'), ('JOB', 'Job'), ('PSA', 'Psalms'), ('PRO', 'Proverbs'),
+        ('ECC', 'Ecclesiastes'), ('SNG', 'Song of Solomon'), ('ISA', 'Isaiah'), ('JER', 'Jeremiah'),
+        ('LAM', 'Lamentations'), ('EZK', 'Ezekiel'), ('HOS', 'Hosea'), ('JOL', 'Joel'), ('AMO', 'Amos'),
+        ('OBA', 'Obadiah'), ('JON', 'Jonah'), ('MIC', 'Micah'), ('NAM', 'Nahum'), ('HAB', 'Habakkuk'),
+        ('ZEP', 'Zephaniah'), ('HAG', 'Haggai'), ('ZEC', 'Zechariah'), ('MAL', 'Malachi'), ('TOB', 'Tobit'),
+        ('JDT', 'Judith'), ('WIS', 'Wisdom'), ('SIR', 'Sirach'), ('BAR', 'Baruch'), ('1MA', '1 Maccabees'),
+        ('2MA', '2 Maccabees'), ('DAN', 'Daniel'), ('MAT', 'Matthew'), ('MRK', 'Mark'), ('LUK', 'Luke'),
+        ('JHN', 'John'), ('ACT', 'Acts'), ('ROM', 'Romans'), ('1CO', '1 Corinthians'), ('2CO', '2 Corinthians'),
+        ('GAL', 'Galatians'), ('EPH', 'Ephesians'), ('PHP', 'Philippians'), ('COL', 'Colossians'),
+        ('1TH', '1 Thessalonians'), ('2TH', '2 Thessalonians'), ('1TI', '1 Timothy'), ('2TI', '2 Timothy'),
+        ('TIT', 'Titus'), ('PHM', 'Philemon'), ('HEB', 'Hebrews'), ('JAS', 'James'), ('1PE', '1 Peter'),
+        ('2PE', '2 Peter'), ('1JN', '1 John'), ('2JN', '2 John'), ('3JN', '3 John'), ('JUD', 'Jude'), ('REV', 'Revelation'),
+    ],
+    'languageEvidence': {
+        'registryUrl': 'https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry',
+        'languageTag': 'nl', 'script': 'Latn', 'direction': 'ltr',
+        'registryFileDate': '2026-09-17',
+        'registrySha256': '755fad43283be7b41ebe3c89ad054b6eaf928f404f9c0edb74799e0eab74beb1',
+        'sourceLetterBidiCounts': {'L': 3607017},
+        'sourceLetterUnicodeNamePrefixes': {'LATIN': 3607017},
+        'scope': 'The publisher identifies the source as Dutch. The IANA registry validates the language tag; all source letters are Latin script. This evidence does not establish native-language or editorial approval.',
+    },
+    'expectedTotals': {'books': 73, 'chapters': 1328, 'verses': 35335},
+    'sourceVerseRangeCount': 1,
+    'sourceVerseRangesSha256': '75955376004b71e8a9af436e55c809952d8b9d30e35232ab64c9ed4b0e69c06d',
+    'bracketExceptionCount': 7,
+    'bracketExceptionInventorySha256': '0882aa4032c5ad4f5858fd9ea9f51022f6682aff13234fd319dd7ae4fcdf33d3',
+    'bracketExceptionScope': 'Seven exact TXT square-bracket format markers differ from XML; removing only those markers for comparison produces exact text agreement. Ordered coordinates, marker positions and record hashes are pinned; display retains the original TXT unchanged.',
+    'rightsObservedAt': '2026-11-14', 'preserveSourceNotice': True,
+    'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': True, 'export': True},
+    'conditions': [
+        'Retain the exact edition identity and complete eBible.org source notice with redistributed and offline copies.',
+        'eBible.org identifies this edition as public domain and says it contacted the original publisher and relevant organizations without finding objections; this record attributes that provider conclusion and is not an independent worldwide legal opinion.',
+        'The provider-supplied 73-book list and its order describe this edition and do not define one canon for all Christian traditions.',
+        'The VPL archive supplies verse text only; introductions, annotations, headings, images and third-party recordings are not included.',
+        'The source record does not establish independent human editorial review, native-language approval or provider endorsement.',
+    ],
+}
+
+
 def edition_metadata(edition_id):
     source = SOURCES[edition_id]
     fields = ('name', 'language', 'corpus', 'scope', 'publisher', 'translator', 'sourceUpdatedAt', 'sourceUrl', 'formatUrl',
