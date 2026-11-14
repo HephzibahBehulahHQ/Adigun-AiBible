@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "GEN",
+  "bookName": "Genesis",
+  "chapterNumber": 23,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:GEN:23:1","text":"Sarah lived for 127 years."},
+    {"number":2,"sourceRef":"eng-web:GEN:23:2","text":"She died in Kiriath-arba, also called Hebron, in Canaan. Abraham went in to mourn for Sarah and weep over her."},
+    {"number":3,"sourceRef":"eng-web:GEN:23:3","text":"Then Abraham stood up from beside his dead wife and spoke to the Hethites."},
+    {"number":4,"sourceRef":"eng-web:GEN:23:4","text":"\"I'm a foreigner living among you,\" he said. \"Sell me a burial place here so I can bury my dead.\""},
+    {"number":5,"sourceRef":"eng-web:GEN:23:5","text":"The Hethites answered Abraham:"},
+    {"number":6,"sourceRef":"eng-web:GEN:23:6","text":"\"Listen to us, sir. You're a prince of God among us. Bury your dead in the best of our tombs. None of us would refuse you a tomb for her.\""},
+    {"number":7,"sourceRef":"eng-web:GEN:23:7","text":"Abraham stood up and bowed to the people of the land, the Hethites."},
+    {"number":8,"sourceRef":"eng-web:GEN:23:8","text":"He said to them, \"If you agree that I should bury my dead here, please speak to Ephron son of Zohar for me."},
+    {"number":9,"sourceRef":"eng-web:GEN:23:9","text":"Ask him to sell me the cave of Machpelah at the edge of his field. Let him sell it to me at its full price as a burial property among you.\""},
+    {"number":10,"sourceRef":"eng-web:GEN:23:10","text":"Ephron the Hittite was sitting there among the Hethites. He answered Abraham in the hearing of the Hethites and everyone who had come through the gate of his city:"},
+    {"number":11,"sourceRef":"eng-web:GEN:23:11","text":"\"No, sir, listen to me. I'll give you the field and the cave in it. Here, in front of my people, I give it to you. Bury your dead.\""},
+    {"number":12,"sourceRef":"eng-web:GEN:23:12","text":"Abraham bowed before the people of the land."},
+    {"number":13,"sourceRef":"eng-web:GEN:23:13","text":"Then he said to Ephron in front of them, \"Please listen to me. I'll pay the price of the field. Take the money from me, and I'll bury my dead there.\""},
+    {"number":14,"sourceRef":"eng-web:GEN:23:14","text":"Ephron answered Abraham:"},
+    {"number":15,"sourceRef":"eng-web:GEN:23:15","text":"\"Sir, listen to me. A piece of land worth 400 shekels of silver—is that much between you and me? Go ahead and bury your dead.\""},
+    {"number":16,"sourceRef":"eng-web:GEN:23:16","text":"Abraham accepted Ephron's terms and weighed out the 400 shekels of silver he had named in front of the Hethites, using the standard measure merchants used."},
+    {"number":17,"sourceRef":"eng-web:GEN:23:17","text":"So Ephron's field in Machpelah, near Mamre—the field, the cave in it, and every tree inside its boundaries—was transferred"},
+    {"number":18,"sourceRef":"eng-web:GEN:23:18","text":"to Abraham as property in front of the Hethites and everyone who had entered through his city's gate."},
+    {"number":19,"sourceRef":"eng-web:GEN:23:19","text":"After that, Abraham buried his wife Sarah in the cave of the field of Machpelah near Mamre, which is Hebron, in Canaan."},
+    {"number":20,"sourceRef":"eng-web:GEN:23:20","text":"The Hethites transferred the field and the cave in it to Abraham as a burial property."}
+  ]
+}
+
