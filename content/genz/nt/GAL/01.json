@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "GAL",
+  "bookName": "Galatians",
+  "chapterNumber": 1,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:GAL:1:1",
+      "text": "Paul, an apostle—not sent by people or appointed through a human being, but through Jesus Christ and God the Father, who raised Jesus from the dead—"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:GAL:1:2",
+      "text": "and all the brothers and sisters with me, to the churches in Galatia:"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:GAL:1:3",
+      "text": "Grace and peace to you from God our Father and the Lord Jesus Christ,"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:GAL:1:4",
+      "text": "who gave himself for our sins to rescue us from this present evil age, in keeping with the will of our God and Father."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:GAL:1:5",
+      "text": "To him be glory forever and ever. Amen."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:GAL:1:6",
+      "text": "I'm shocked that you're turning away so quickly from the one who called you by Christ's grace and following a different message."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:GAL:1:7",
+      "text": "There's no other Good News. Some people are confusing you and trying to twist Christ's Good News."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:GAL:1:8",
+      "text": "But even if we—or an angel from heaven—preach a different message than the one we preached to you, let them be condemned."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:GAL:1:9",
+      "text": "We've said it before, and I'll say it again: if anyone preaches a different message than the one you received, let them be condemned."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:GAL:1:10",
+      "text": "Am I trying to win people's approval or God's? Am I trying to please people? If I were still trying to please people, I wouldn't be Christ's servant."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:GAL:1:11",
+      "text": "Brothers and sisters, I want you to know that the Good News I preached didn't come from a human source."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:GAL:1:12",
+      "text": "I didn't receive it from a person or get taught it by one. It came through a revelation from Jesus Christ."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:GAL:1:13",
+      "text": "You've heard how I used to live in Judaism: I persecuted God's church viciously and tried to destroy it."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:GAL:1:14",
+      "text": "I advanced in Judaism beyond many of my own age and people, because I was even more devoted to my ancestors' traditions."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:GAL:1:15",
+      "text": "But God, who set me apart before I was born and called me by his grace,"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:GAL:1:16",
+      "text": "was pleased to reveal his Son in me so I could preach him among the Gentiles. I didn't immediately consult with anyone,"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:GAL:1:17",
+      "text": "or go to Jerusalem to see those who were apostles before me. Instead, I went to Arabia, then returned to Damascus."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:GAL:1:18",
+      "text": "After three years, I went up to Jerusalem to visit Cephas and stayed with him for fifteen days."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:GAL:1:19",
+      "text": "I didn't see any other apostles—only James, the Lord's brother."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:GAL:1:20",
+      "text": "I'm telling you the truth before God; I'm not lying about what I'm writing."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:GAL:1:21",
+      "text": "After that, I went to the regions of Syria and Cilicia."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:GAL:1:22",
+      "text": "The churches in Judea that are in Christ still didn't know me personally."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:GAL:1:23",
+      "text": "They had only heard, ‘The man who once persecuted us is now preaching the faith he once tried to destroy.’"
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:GAL:1:24",
+      "text": "And they praised God because of me."
+    }
+  ]
+}

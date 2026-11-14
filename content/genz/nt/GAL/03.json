@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "GAL",
+  "bookName": "Galatians",
+  "chapterNumber": 3,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:GAL:3:1",
+      "text": "You foolish Galatians! Who put a spell on you? Jesus Christ was clearly portrayed to you as crucified."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:GAL:3:2",
+      "text": "Tell me this: Did you receive the Spirit by doing what the law requires, or by hearing and believing?"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:GAL:3:3",
+      "text": "Are you really this foolish? You began by the Spirit—are you now trying to finish by human effort?"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:GAL:3:4",
+      "text": "Did you go through so much for nothing? Was it really for nothing?"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:GAL:3:5",
+      "text": "Does God give you the Spirit and work miracles among you because you do what the law requires, or because you hear and believe?"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:GAL:3:6",
+      "text": "In the same way, Abraham ‘believed God, and it was counted to him as righteousness.’"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:GAL:3:7",
+      "text": "So understand this: those who have faith are Abraham's children."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:GAL:3:8",
+      "text": "Scripture foresaw that God would make the Gentiles right through faith, and announced the Good News to Abraham in advance: ‘All nations will be blessed through you.’"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:GAL:3:9",
+      "text": "So those who have faith are blessed along with Abraham, the man of faith."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:GAL:3:10",
+      "text": "Everyone who relies on doing what the law requires is under a curse. Scripture says, ‘Cursed is everyone who doesn't keep doing everything written in the book of the law.’"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:GAL:3:11",
+      "text": "It's clear that no one is made right with God through the law, because Scripture says, ‘The righteous will live by faith.’"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:GAL:3:12",
+      "text": "But the law isn't based on faith. It says, ‘The one who does these things will live by them.’"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:GAL:3:13",
+      "text": "Christ rescued us from the law's curse by becoming a curse for us. Scripture says, ‘Cursed is everyone who hangs on a tree.’"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:GAL:3:14",
+      "text": "He did this so Abraham's blessing could reach the Gentiles through Christ Jesus, and so that through faith we could receive the promised Spirit."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:GAL:3:15",
+      "text": "Brothers and sisters, let me use a human example: once a person's covenant is confirmed, no one can cancel it or add conditions to it."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:GAL:3:16",
+      "text": "The promises were made to Abraham and his descendant. Scripture doesn't say ‘to descendants,’ as if it meant many, but ‘to your descendant’—meaning Christ."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:GAL:3:17",
+      "text": "Here's what I mean: the law, which came 430 years later, doesn't cancel the covenant God had already confirmed, or nullify the promise."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:GAL:3:18",
+      "text": "If the inheritance came through the law, it wouldn't come through a promise. But God freely gave it to Abraham by promise."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:GAL:3:19",
+      "text": "So why was the law given? It was added because of wrongdoing, until the descendant came to whom the promise was made. Angels delivered it through a mediator."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:GAL:3:20",
+      "text": "But a mediator represents more than one party, while God is one."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:GAL:3:21",
+      "text": "So is the law against God's promises? Absolutely not! If a law had been given that could make people alive, then righteousness would indeed come through the law."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:GAL:3:22",
+      "text": "But Scripture has locked everything under sin, so that the promise through faith in Jesus Christ could be given to those who believe."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:GAL:3:23",
+      "text": "Before faith came, the law kept us in custody, locked up until the faith that was coming would be revealed."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:GAL:3:24",
+      "text": "So the law became our guardian until Christ came, so we could be made right through faith."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:GAL:3:25",
+      "text": "But now that faith has come, we're no longer under a guardian."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:GAL:3:26",
+      "text": "Through faith in Christ Jesus, you are all God's children."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:GAL:3:27",
+      "text": "All of you who were baptized into Christ have put on Christ."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:GAL:3:28",
+      "text": "There is no Jew or Greek, slave or free, male and female. You are all one in Christ Jesus."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:GAL:3:29",
+      "text": "And if you belong to Christ, then you are Abraham's descendants and heirs according to the promise."
+    }
+  ]
+}
