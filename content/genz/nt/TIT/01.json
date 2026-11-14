@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "TIT",
+  "bookName": "Titus",
+  "chapterNumber": 1,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:TIT:1:1",
+      "text": "Paul, a servant of God and an apostle of Jesus Christ, appointed to strengthen the faith of God's chosen people and help them know the truth that leads to godliness,"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:TIT:1:2",
+      "text": "and to give them hope of eternal life. God, who never lies, promised that life before time began."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:TIT:1:3",
+      "text": "At the right time, he revealed his message through the proclamation entrusted to me by the command of God our Savior."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:TIT:1:4",
+      "text": "To Titus, my true child in our shared faith: Grace, mercy, and peace from God the Father and Christ Jesus our Savior."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:TIT:1:5",
+      "text": "I left you in Crete for this reason: to set right what was unfinished and appoint elders in every town, as I directed you."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:TIT:1:6",
+      "text": "An elder must be above reproach, faithful to one wife, and have children who believe and aren't known for wild or rebellious behavior."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:TIT:1:7",
+      "text": "An overseer, as God's steward, must be above reproach. They must not be arrogant, quick-tempered, addicted to wine, violent, or greedy for dishonest gain."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:TIT:1:8",
+      "text": "Instead, they should welcome guests, love what is good, be sensible, fair, holy, and self-controlled."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:TIT:1:9",
+      "text": "They must hold firmly to the trustworthy message as it was taught, so they can encourage others with sound teaching and correct those who oppose it."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:TIT:1:10",
+      "text": "There are many rebellious people, empty talkers, and deceivers, especially among those who insist on circumcision."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:TIT:1:11",
+      "text": "They must be silenced, because they are upsetting whole households by teaching what they shouldn't for dishonest profit."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:TIT:1:12",
+      "text": "One of their own prophets said, ‘Cretans are always liars, vicious beasts, and lazy gluttons.’"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:TIT:1:13",
+      "text": "That statement is true. So correct them sharply, so they may become sound in the faith"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:TIT:1:14",
+      "text": "and stop paying attention to Jewish myths and commands from people who turn away from the truth."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:TIT:1:15",
+      "text": "To the pure, everything is pure. But to those who are corrupted and don't believe, nothing is pure; both their minds and consciences are corrupted."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:TIT:1:16",
+      "text": "They claim to know God, but their actions deny him. They are detestable, disobedient, and unfit for any good work."
+    }
+  ]
+}
