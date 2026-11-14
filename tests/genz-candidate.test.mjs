@@ -26,7 +26,7 @@ for (const [bookId, bookChapters] of Object.entries(chapters)) {
     if (chapterNumber === 1) {
       assert.deepEqual(candidate.verses.slice(0, 3).map(verse => verse.text), [
         'Before anything was even on the map, God made the heavens and the earth. The whole universe? God set it up from scratch. 🌌',
-        "Earth was unformed and empty—nothing laid out, just darkness covering the deep. God's Spirit hovered over the waters. Creation was still at the loading screen.",
+        "Earth was unformed and empty—nothing laid out, just darkness covering the deep. God's Spirit hovered over the waters. Creation was still at the loading screen. 🌊",
         'God said, ‘Let there be light.’ And light pulled up—immediately. 💡',
       ]);
     }
