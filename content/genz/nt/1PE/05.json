@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1PE",
+  "bookName": "1 Peter",
+  "chapterNumber": 5,
+  "verses": [
+    {
+      "text": "I appeal to the elders among you, as a fellow elder and witness of Christ’s sufferings, who will also share in the glory about to be revealed:",
+      "number": 1,
+      "sourceRef": "eng-web:1PE:5:1"
+    },
+    {
+      "text": "Care for God’s flock among you, watching over them—not because you have to, but willingly, as God wants; not for greedy gain, but eagerly;",
+      "number": 2,
+      "sourceRef": "eng-web:1PE:5:2"
+    },
+    {
+      "text": "not bossing around those entrusted to you, but being examples to the flock.",
+      "number": 3,
+      "sourceRef": "eng-web:1PE:5:3"
+    },
+    {
+      "text": "And when the Chief Shepherd appears, you’ll receive the crown of glory that never fades.",
+      "number": 4,
+      "sourceRef": "eng-web:1PE:5:4"
+    },
+    {
+      "text": "In the same way, younger people, submit to the elders. All of you, clothe yourselves with humility toward one another, because “God opposes the proud but gives grace to the humble.”",
+      "number": 5,
+      "sourceRef": "eng-web:1PE:5:5"
+    },
+    {
+      "text": "So humble yourselves under God’s mighty hand, so he may lift you up at the right time.",
+      "number": 6,
+      "sourceRef": "eng-web:1PE:5:6"
+    },
+    {
+      "text": "Throw all your worries on him, because he cares about you.",
+      "number": 7,
+      "sourceRef": "eng-web:1PE:5:7"
+    },
+    {
+      "text": "Stay alert and clearheaded. Your enemy the devil prowls around like a roaring lion, looking for someone to devour.",
+      "number": 8,
+      "sourceRef": "eng-web:1PE:5:8"
+    },
+    {
+      "text": "Stand firm against him in faith, knowing that believers throughout the world are going through the same kinds of suffering.",
+      "number": 9,
+      "sourceRef": "eng-web:1PE:5:9"
+    },
+    {
+      "text": "After you’ve suffered for a little while, the God of all grace, who called you to his eternal glory in Christ, will restore you, make you strong, and set you firmly in place.",
+      "number": 10,
+      "sourceRef": "eng-web:1PE:5:10"
+    },
+    {
+      "text": "To him be power forever. Amen.",
+      "number": 11,
+      "sourceRef": "eng-web:1PE:5:11"
+    },
+    {
+      "text": "I’ve written briefly to you through Silvanus, whom I consider a faithful brother. I want to encourage you and testify that this is the true grace of God. Stand firm in it.",
+      "number": 12,
+      "sourceRef": "eng-web:1PE:5:12"
+    },
+    {
+      "text": "The church in Babylon, chosen together with you, sends greetings, and so does my son Mark.",
+      "number": 13,
+      "sourceRef": "eng-web:1PE:5:13"
+    },
+    {
+      "text": "Greet one another with a kiss of love. Peace to all of you who are in Christ.",
+      "number": 14,
+      "sourceRef": "eng-web:1PE:5:14"
+    }
+  ]
+}
