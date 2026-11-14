@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ZEP",
+  "bookName": "Zephaniah",
+  "chapterNumber": 2,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:ZEP:2:1","text":"Gather yourselves; yes, gather together, shameless nation,"},
+    {"number":2,"sourceRef":"eng-web:ZEP:2:2","text":"before the appointed time passes like chaff, before the LORD’s fierce anger comes on you, before the day of the LORD’s anger arrives."},
+    {"number":3,"sourceRef":"eng-web:ZEP:2:3","text":"Seek the LORD, all you humble people of the land who obey his commands. Seek what is right; seek humility. Maybe you will be sheltered on the day of the LORD’s anger."},
+    {"number":4,"sourceRef":"eng-web:ZEP:2:4","text":"“Gaza will be abandoned, Ashkelon left in ruins. Ashdod’s people will be driven out at noon, and Ekron will be uprooted."},
+    {"number":5,"sourceRef":"eng-web:ZEP:2:5","text":"“Woe to you who live by the sea, nation of the Cherethites! The LORD’s word is against you, Canaan, land of the Philistines: ‘I will destroy you until no one is left.’”"},
+    {"number":6,"sourceRef":"eng-web:ZEP:2:6","text":"The coast will become pastureland, with shelters for shepherds and pens for sheep."},
+    {"number":7,"sourceRef":"eng-web:ZEP:2:7","text":"The coast will belong to the survivors from Judah’s people. They will find pasture there. In the evening they will lie down in Ashkelon’s houses, because the LORD their God will care for them and restore them."},
+    {"number":8,"sourceRef":"eng-web:ZEP:2:8","text":"“I have heard Moab’s insults and the Ammonites’ taunts against my people. They mocked them and threatened to take their land."},
+    {"number":9,"sourceRef":"eng-web:ZEP:2:9","text":"“So, as surely as I live,” says the LORD of Armies, the God of Israel, “Moab will become like Sodom and the Ammonites like Gomorrah: a place overgrown with nettles and salt pits, a wasteland forever. The remnant of my people will take their property, and those left of my nation will inherit it."},
+    {"number":10,"sourceRef":"eng-web:ZEP:2:10","text":"“This is what they get for their pride, because they insulted and exalted themselves over the people of the LORD of Armies."},
+    {"number":11,"sourceRef":"eng-web:ZEP:2:11","text":"“The LORD will be awesome against them, because he will starve all the gods of the earth. Then people from every place—even the distant coastlands—will worship him."},
+    {"number":12,"sourceRef":"eng-web:ZEP:2:12","text":"“You Cushites too will be killed by my sword.”"},
+    {"number":13,"sourceRef":"eng-web:ZEP:2:13","text":"He will reach out against the north, destroy Assyria, and turn Nineveh into a wasteland, dry as a desert."},
+    {"number":14,"sourceRef":"eng-web:ZEP:2:14","text":"“Herds will lie down right in the middle of it, all kinds of wild animals. Pelicans and porcupines will nest on its capitals. Their calls will echo through the windows. Rubble will cover the doorways, because the cedar beams have been stripped bare."},
+    {"number":15,"sourceRef":"eng-web:ZEP:2:15","text":"“This was the city that celebrated carelessly, telling herself, ‘I’m the one—there’s nobody else.’ Look how she has become a wasteland, a place where animals lie down! Everyone who passes by will hiss and shake a fist at her.”"}
+  ]
+}
+
