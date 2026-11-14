@@ -25,7 +25,7 @@ function validatePosition(value: unknown, books: BookInfo[], editionId: string):
   return {
     schemaVersion: 1,
     ref: { bookId: r.bookId, chapter: r.chapter, verse: r.verse, ...(r.endVerse !== undefined ? { endVerse: r.endVerse } : {}), ...(r.editionId !== undefined ? { editionId: r.editionId } : {}) },
-    ...(p.preset !== undefined ? { preset: p.preset as Preferences['preset'] } : {}),
+    ...(p.preset !== undefined ? { preset: (p.preset === 'genz' ? 'en' : p.preset) as Preferences['preset'] } : {}),
     ...(p.scrollY !== undefined ? { scrollY: p.scrollY as number } : {})
   };
 }
