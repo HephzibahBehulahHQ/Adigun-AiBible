@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "MAT",
+  "bookName": "Matthew",
+  "chapterNumber": 3,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:MAT:3:1","text":"In those days, John the Baptist appeared in the Judean wilderness, preaching:"},
+    {"number":2,"sourceRef":"eng-web:MAT:3:2","text":"“Turn back to God, because the Kingdom of Heaven is near!”"},
+    {"number":3,"sourceRef":"eng-web:MAT:3:3","text":"John was the one Isaiah the prophet spoke about: “A voice is calling in the wilderness: Prepare the Lord’s way; make his paths straight.”"},
+    {"number":4,"sourceRef":"eng-web:MAT:3:4","text":"John wore clothes made of camel’s hair with a leather belt around his waist. He ate locusts and wild honey."},
+    {"number":5,"sourceRef":"eng-web:MAT:3:5","text":"People came out to him from Jerusalem, all Judea, and the whole region around the Jordan."},
+    {"number":6,"sourceRef":"eng-web:MAT:3:6","text":"They were baptized by him in the Jordan River as they confessed their sins."},
+    {"number":7,"sourceRef":"eng-web:MAT:3:7","text":"When John saw many Pharisees and Sadducees coming for baptism, he said, “You brood of snakes! Who warned you to run from the coming judgment?"},
+    {"number":8,"sourceRef":"eng-web:MAT:3:8","text":"Live in a way that shows you’ve truly turned back to God."},
+    {"number":9,"sourceRef":"eng-web:MAT:3:9","text":"Don’t tell yourselves, ‘Abraham is our father.’ I’m telling you, God can raise up children for Abraham from these stones."},
+    {"number":10,"sourceRef":"eng-web:MAT:3:10","text":"The ax is already at the trees’ roots. Every tree that doesn’t produce good fruit will be cut down and thrown into the fire."},
+    {"number":11,"sourceRef":"eng-web:MAT:3:11","text":"“I baptize you in water as you turn back to God, but someone more powerful than I is coming after me. I’m not even worthy to carry his sandals. He will baptize you in the Holy Spirit."},
+    {"number":12,"sourceRef":"eng-web:MAT:3:12","text":"He holds a winnowing fork and will thoroughly clear his threshing floor. He’ll gather the wheat into his barn, but burn the chaff in an unquenchable fire.”"},
+    {"number":13,"sourceRef":"eng-web:MAT:3:13","text":"Then Jesus came from Galilee to the Jordan to be baptized by John."},
+    {"number":14,"sourceRef":"eng-web:MAT:3:14","text":"John tried to stop him. “I’m the one who needs to be baptized by you, and you’re coming to me?”"},
+    {"number":15,"sourceRef":"eng-web:MAT:3:15","text":"Jesus answered, “Let it happen for now. This is the right way for us to fulfill everything God requires.” So John agreed."},
+    {"number":16,"sourceRef":"eng-web:MAT:3:16","text":"As soon as Jesus was baptized, he came up out of the water. The heavens opened, and he saw God’s Spirit coming down like a dove and settling on him."},
+    {"number":17,"sourceRef":"eng-web:MAT:3:17","text":"A voice from heaven said, “This is my beloved Son. I’m pleased with him.”"}
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1CO",
+  "bookName": "1 Corinthians",
+  "chapterNumber": 12,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1CO:12:1",
+      "text": "Now, brothers and sisters, about spiritual gifts: I don't want you to be uninformed."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1CO:12:2",
+      "text": "You remember that when you were Gentiles, you were led astray to worship idols that can't speak, however you were influenced."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1CO:12:3",
+      "text": "So I want you to know: no one speaking by God's Spirit says, ‘Jesus is cursed,’ and no one can say, ‘Jesus is Lord,’ except by the Holy Spirit."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1CO:12:4",
+      "text": "There are different kinds of gifts, but the same Spirit gives them."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1CO:12:5",
+      "text": "There are different kinds of service, but the same Lord is served."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1CO:12:6",
+      "text": "There are different kinds of work, but the same God empowers everyone in every way."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1CO:12:7",
+      "text": "The Spirit's presence is given to each person for the good of all."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1CO:12:8",
+      "text": "To one, the Spirit gives a message of wisdom; to another, a message of knowledge, by the same Spirit."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1CO:12:9",
+      "text": "To another, faith by the same Spirit; to another, gifts of healing by that one Spirit."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1CO:12:10",
+      "text": "To another, miraculous powers; to another, prophecy; to another, the ability to discern spirits; to another, different kinds of languages; and to another, the interpretation of languages."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1CO:12:11",
+      "text": "One and the same Spirit brings all of this about, giving each person gifts as he chooses."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1CO:12:12",
+      "text": "Just as one body has many parts, and all its many parts form one body, so it is with Christ."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1CO:12:13",
+      "text": "We were all baptized by one Spirit into one body—Jews or Greeks, enslaved or free—and we were all given the same Spirit to drink."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1CO:12:14",
+      "text": "The body isn't made up of one part, but many."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:1CO:12:15",
+      "text": "If the foot says, ‘I'm not a hand, so I don't belong to the body,’ that doesn't make it any less part of the body."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:1CO:12:16",
+      "text": "And if the ear says, ‘I'm not an eye, so I don't belong to the body,’ that doesn't make it any less part of the body."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:1CO:12:17",
+      "text": "If the whole body were an eye, how would it hear? If the whole body were an ear, how would it smell?"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:1CO:12:18",
+      "text": "But God arranged every part in the body exactly as he wanted it."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:1CO:12:19",
+      "text": "If all the parts were the same, where would the body be?"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:1CO:12:20",
+      "text": "As it is, there are many parts but one body."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:1CO:12:21",
+      "text": "The eye can't tell the hand, ‘I don't need you!’ And the head can't tell the feet, ‘I don't need you!’"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:1CO:12:22",
+      "text": "On the contrary, the parts that seem weaker are necessary."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:1CO:12:23",
+      "text": "The parts we think less honorable we treat with greater honor, and the parts we consider less presentable get special care,"
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:1CO:12:24",
+      "text": "while the presentable parts don't need extra care. God put the body together and gave greater honor to the parts that lacked it,"
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:1CO:12:25",
+      "text": "so there would be no division in the body, but that all the parts would care equally for one another."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:1CO:12:26",
+      "text": "If one part suffers, every part suffers with it. If one part is honored, every part celebrates with it."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:1CO:12:27",
+      "text": "You are Christ's body, and each of you is a part of it."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:1CO:12:28",
+      "text": "God has appointed people in the church: first apostles, second prophets, third teachers, then those who do miracles, those with gifts of healing, those who help, those who lead, and those who speak different languages."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:1CO:12:29",
+      "text": "Are all apostles? Are all prophets? Are all teachers? Do all work miracles?"
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:1CO:12:30",
+      "text": "Do all have gifts of healing? Do all speak in different languages? Do all interpret?"
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:1CO:12:31",
+      "text": "Eagerly seek the greater gifts. And now I'll show you a way that's far better."
+    }
+  ]
+}

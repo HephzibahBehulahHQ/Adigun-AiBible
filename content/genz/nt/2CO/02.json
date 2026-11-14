@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "2CO",
+  "bookName": "2 Corinthians",
+  "chapterNumber": 2,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:2CO:2:1",
+      "text": "So I decided not to make another painful visit to you."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:2CO:2:2",
+      "text": "If I cause you pain, who can make me glad except the person I hurt?"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:2CO:2:3",
+      "text": "I wrote as I did so that, when I came, I wouldn't be saddened by the very people who should make me glad. I was confident that all of you would share in my joy."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:2CO:2:4",
+      "text": "I wrote to you with many tears and much pain in my heart—not to make you sad, but to show you how deeply I love you."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:2CO:2:5",
+      "text": "If anyone has caused sorrow, they haven't hurt me so much as they've hurt all of you, though I don't want to overstate it."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:2CO:2:6",
+      "text": "The punishment given by most of you to that person is enough."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:2CO:2:7",
+      "text": "Now you should forgive and comfort them instead. Otherwise, they may be overwhelmed by too much sorrow."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:2CO:2:8",
+      "text": "So I urge you to reaffirm your love for them."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:2CO:2:9",
+      "text": "I wrote to you for this reason too: I wanted to see whether you would stand the test and obey in everything."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:2CO:2:10",
+      "text": "If you forgive anyone, I forgive them too. And whatever I have forgiven—if there was anything to forgive—I have forgiven for your sake in Christ's presence,"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:2CO:2:11",
+      "text": "so that Satan can't get the upper hand over us. We know how his schemes work."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:2CO:2:12",
+      "text": "When I came to Troas to share Christ's Good News, the Lord opened a door for me."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:2CO:2:13",
+      "text": "But I had no peace of mind because I couldn't find my brother Titus. So I said goodbye to them and went on to Macedonia."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:2CO:2:14",
+      "text": "Thanks be to God, who always leads us in Christ's victory parade and spreads the knowledge of him through us everywhere like a sweet fragrance."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:2CO:2:15",
+      "text": "We are the fragrance of Christ to God among those being saved and those who are perishing."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:2CO:2:16",
+      "text": "To some, we are a smell that leads from death to death; to others, a fragrance that leads from life to life. Who is up to this task?"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:2CO:2:17",
+      "text": "We aren't like so many people who peddle God's word for profit. Instead, in Christ we speak sincerely, as people sent by God and standing in God's presence."
+    }
+  ]
+}

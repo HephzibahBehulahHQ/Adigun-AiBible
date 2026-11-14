@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ROM",
+  "bookName": "Romans",
+  "chapterNumber": 7,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ROM:7:1",
+      "text": "Brothers and sisters, since I'm speaking to people who know the law, don't you know that the law has authority over someone only as long as they live?"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ROM:7:2",
+      "text": "A married woman is bound by law to her husband while he is alive. But if he dies, she is released from the law concerning her husband."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ROM:7:3",
+      "text": "So if she marries another man while her husband is alive, she's called an adulteress. But if her husband dies, she's free from that law, and marrying another man doesn't make her an adulteress."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ROM:7:4",
+      "text": "In the same way, my brothers and sisters, you died to the law through Christ's body so you could belong to another—to Christ, who was raised from the dead—so that we could bear fruit for God."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ROM:7:5",
+      "text": "When we lived by our human nature, sinful desires stirred up by the law were at work in us, producing fruit that led to death."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ROM:7:6",
+      "text": "But now we've been released from the law, having died to what held us captive, so we can serve in the new way of the Spirit, not the old way of the written code."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ROM:7:7",
+      "text": "So what should we say? Is the law sinful? Absolutely not! I wouldn't have known what sin was except through the law. I wouldn't have known what it means to covet if the law hadn't said, ‘You must not covet.’"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ROM:7:8",
+      "text": "But sin seized the opportunity the commandment gave it and stirred up every kind of coveting in me. Without the law, sin is dead."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ROM:7:9",
+      "text": "There was a time when I was alive apart from the law. But when the commandment came, sin sprang to life, and I died."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ROM:7:10",
+      "text": "The commandment that was meant to lead to life turned out to bring death to me."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ROM:7:11",
+      "text": "Sin used the commandment to trick me and, through it, kill me."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ROM:7:12",
+      "text": "So the law is holy, and the commandment is holy, right, and good."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:ROM:7:13",
+      "text": "So did something good bring death to me? Absolutely not! Sin did, using what is good to produce death in me, so sin would be exposed as sin and shown to be utterly sinful through the commandment."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:ROM:7:14",
+      "text": "We know the law is spiritual, but I am human, sold as a slave to sin."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:ROM:7:15",
+      "text": "I don't understand what I'm doing. I don't do what I want to do; instead, I do what I hate."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:ROM:7:16",
+      "text": "And if I do what I don't want to do, I agree that the law is good."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:ROM:7:17",
+      "text": "So it's no longer I who do it, but sin living in me."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:ROM:7:18",
+      "text": "I know that nothing good lives in me—that is, in my human nature. I want to do what is good, but I can't carry it out."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:ROM:7:19",
+      "text": "I don't do the good I want to do. Instead, I keep doing the evil I don't want to do."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:ROM:7:20",
+      "text": "So if I do what I don't want to do, it's no longer I doing it, but sin living in me."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:ROM:7:21",
+      "text": "Here's the pattern I find: I want to do what is good, but evil is right there with me."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:ROM:7:22",
+      "text": "Deep down, I delight in God's law,"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:ROM:7:23",
+      "text": "but I see another law at work in my body, fighting against the law in my mind and making me a prisoner of the law of sin at work in me."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:ROM:7:24",
+      "text": "What a miserable person I am! Who will rescue me from this body headed for death?"
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:ROM:7:25",
+      "text": "Thank God—he rescues me through Jesus Christ our Lord! So then, in my mind I serve God's law, but in my human nature I serve sin's law."
+    }
+  ]
+}
