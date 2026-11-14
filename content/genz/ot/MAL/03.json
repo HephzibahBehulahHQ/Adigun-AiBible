@@ -1,0 +1,33 @@
+Warning: truncated output (original token count: 1014)
+Total output lines: 30
+
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "MAL",
+  "bookName": "Malachi",
+  "chapterNumber": 3,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:MAL:3:1","text":"“Look, I’m sending my messenger ahead of me. He’ll clear the way. The Lord you keep seeking will suddenly arrive at his temple. The messenger of the covenant you long for is coming,” says the LORD of Armies."},
+    {"number":2,"sourceRef":"eng-web:MAL:3:2","text":"“But who can survive the day he comes? Who can stand when he appears? He’ll be like a refiner’s fire and a washer’s soap."},
+    {"number":3,"sourceRef":"eng-web:MAL:3:3","text":"“He’ll take his seat like a silversmith refining and purifying silver. He’ll cleanse the sons of Levi and refine them like gold and silver. Then they’ll bring offerings to the LORD in righteousness."},
+    {"number":4,"sourceRef":"eng-web:MAL:3:4","text":"“Then Judah and Jerusalem’s offerings will please the LORD, as they did long ago.”"},
+    {"number":5,"sourceRef":"eng-web:MAL:3:5","text":"“I will come to judge you. I’ll quickly testify against sorcerers, adulterers, and people who lie under oath; against those who cheat workers out of their wages, oppress widows and orphans, deny justice to foreigners, and don’t fear me,” says the LORD of Armies."},
+    {"number":6,"sourceRef":"eng-web:MAL:3:6","text":"“I am the LORD; I do not change. That is why you descendants of Jacob have not been wiped out."},
+    {"number":7,"sourceRef":"eng-web:MAL:3:7","text":"“Since your ancestors’ time, you’ve turned away from my instructions and ignored them. Come back to me, and I’ll come back to you,” says the LORD of Armies. But you ask, “How should we come back?”"},
+    {"number":8,"sourceRef":"eng-web:MAL:3:8","text":"“Can a person rob God? Yet you’re robbing me.” You ask, “H…14 tokens truncated…s."},
+    {"number":9,"sourceRef":"eng-web:MAL:3:9","text":"“You’re under a curse, because you—the whole nation—are robbing me."},
+    {"number":10,"sourceRef":"eng-web:MAL:3:10","text":"“Bring the full tithe into the storehouse so there will be food in my house. Test me in this,” says the LORD of Armies. “See whether I won’t open heaven’s windows and pour out a blessing so abundant there won’t be room to contain it."},
+    {"number":11,"sourceRef":"eng-web:MAL:3:11","text":"“I’ll keep the devourer from ruining your crops. Your vines won’t drop their fruit before it’s ripe in the field,” says the LORD of Armies."},
+    {"number":12,"sourceRef":"eng-web:MAL:3:12","text":"“All nations will call you blessed, because your land will be a delight,” says the LORD of Armies."},
+    {"number":13,"sourceRef":"eng-web:MAL:3:13","text":"“You’ve spoken harshly about me,” says the LORD. You ask, “What have we said against you?”"},
+    {"number":14,"sourceRef":"eng-web:MAL:3:14","text":"“You’ve said, ‘Serving God is pointless. What have we gained by keeping his instructions and walking around in sorrow before the LORD of Armies?’”"},
+    {"number":15,"sourceRef":"eng-web:MAL:3:15","text":"“Now we call arrogant people blessed. Evildoers prosper; they challenge God and get away with it.”"},
+    {"number":16,"sourceRef":"eng-web:MAL:3:16","text":"Then those who honored the LORD talked with one another. The LORD listened and heard them, and a scroll of remembrance was written before him for those who honored and revered his name."},
+    {"number":17,"sourceRef":"eng-web:MAL:3:17","text":"“They’ll be mine,” says the LORD of Armies, “my special possession on the day I act. I’ll spare them as a father spares a son who serves him."},
+    {"number":18,"sourceRef":"eng-web:MAL:3:18","text":"Then you’ll see the difference between the righteous and the wicked, between those who serve God and those who don’t.”"}
+  ]
+}
+
