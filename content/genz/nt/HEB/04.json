@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "HEB",
+  "bookName": "Hebrews",
+  "chapterNumber": 4,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:HEB:4:1",
+      "text": "So be careful, or one of you may miss the promise of entering God's rest."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:HEB:4:2",
+      "text": "We've heard the Good News just as they did. But their message did them no good, because they didn't join what they heard with faith."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:HEB:4:3",
+      "text": "But we who have believed do enter that rest. God said, ‘In my anger I swore they would never enter my rest,’ even though his works were finished since the creation of the world."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:HEB:4:4",
+      "text": "Somewhere God spoke about the seventh day: ‘God rested on the seventh day from all his work.’"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:HEB:4:5",
+      "text": "And in this passage he says again, ‘They will never enter my rest.’"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:HEB:4:6",
+      "text": "Since it remains true that some will enter that rest, and those who first heard the Good News failed to enter because of disobedience,"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:HEB:4:7",
+      "text": "God set another day—‘Today’—when, long afterward, he spoke through David, as already quoted: ‘Today, if you hear his voice, don't harden your hearts.’"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:HEB:4:8",
+      "text": "If Joshua had given them rest, God wouldn't have spoken later about another day."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:HEB:4:9",
+      "text": "So a Sabbath rest remains for God's people."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:HEB:4:10",
+      "text": "Those who enter God's rest also rest from their work, just as God rested from his."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:HEB:4:11",
+      "text": "So let's make every effort to enter that rest, so no one will fall by following the same example of disobedience."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:HEB:4:12",
+      "text": "God's word is alive and active, sharper than any double-edged sword. It cuts through to divide soul and spirit, joints and marrow, and judges the thoughts and intentions of the heart."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:HEB:4:13",
+      "text": "Nothing in creation is hidden from God. Everything is exposed and laid bare before the eyes of the one to whom we must give an account."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:HEB:4:14",
+      "text": "So since we have a great high priest who has gone through the heavens—Jesus, the Son of God—let's hold firmly to what we believe."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:HEB:4:15",
+      "text": "We don't have a high priest who can't understand our weaknesses. He was tempted in every way just as we are, but he didn't sin."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:HEB:4:16",
+      "text": "So let's approach the throne of grace with confidence, where we'll receive mercy and find grace to help us when we need it."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "HEB",
+  "bookName": "Hebrews",
+  "chapterNumber": 8,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:HEB:8:1",
+      "text": "Here's the main point of what we're saying: we have a high priest like this, who sat down at the right hand of the throne of the Majesty in heaven."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:HEB:8:2",
+      "text": "He serves in the holy place, the true tent set up by the Lord, not by a human being."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:HEB:8:3",
+      "text": "Every high priest is appointed to offer gifts and sacrifices. So this high priest also had to have something to offer."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:HEB:8:4",
+      "text": "If he were on earth, he wouldn't be a priest at all, since there are already priests who offer gifts according to the law."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:HEB:8:5",
+      "text": "They serve in a place that is only a copy and shadow of what's in heaven. Moses was warned by God before he built the tent: ‘Be sure to make everything according to the pattern you were shown on the mountain.’"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:HEB:8:6",
+      "text": "But Jesus has received a ministry far greater than theirs, just as the covenant he mediates is better and rests on better promises."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:HEB:8:7",
+      "text": "If the first covenant had been faultless, there would have been no need to look for a second."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:HEB:8:8",
+      "text": "But God found fault with the people and said: ‘The days are coming, says the Lord, when I will make a new covenant with the people of Israel and Judah."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:HEB:8:9",
+      "text": "It won't be like the covenant I made with their ancestors when I took them by the hand and led them out of Egypt. They didn't remain faithful to my covenant, so I turned away from them, says the Lord."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:HEB:8:10",
+      "text": "This is the covenant I will make with the people of Israel after those days, says the Lord: I will put my laws in their minds and write them on their hearts. I will be their God, and they will be my people."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:HEB:8:11",
+      "text": "No longer will each person teach a neighbor or a brother and say, ‘Know the Lord.’ Everyone, from the least to the greatest, will know me."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:HEB:8:12",
+      "text": "I will forgive their wrongdoing and never again remember their sins.’"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:HEB:8:13",
+      "text": "By calling it a new covenant, God has made the first one outdated. And what is outdated and growing old will soon disappear."
+    }
+  ]
+}

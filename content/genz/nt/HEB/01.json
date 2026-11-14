@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "HEB",
+  "bookName": "Hebrews",
+  "chapterNumber": 1,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:HEB:1:1",
+      "text": "Long ago, God spoke to our ancestors through the prophets many times and in many different ways."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:HEB:1:2",
+      "text": "But in these final days, he has spoken to us through his Son. God appointed him heir of everything, and through him he created the universe."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:HEB:1:3",
+      "text": "The Son is the shining brightness of God's glory and the exact expression of God's nature. He sustains everything by his powerful word. After he made purification for sins, he sat down at the right hand of the Majesty in heaven."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:HEB:1:4",
+      "text": "So he became greater than the angels, just as the name he inherited is greater than theirs."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:HEB:1:5",
+      "text": "God never said to any angel, ‘You are my Son; today I have become your Father.’ And he never said, ‘I will be his Father, and he will be my Son.’"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:HEB:1:6",
+      "text": "But when God brings his firstborn into the world, he says, ‘Let all God's angels worship him.’"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:HEB:1:7",
+      "text": "About the angels, he says, ‘He makes his angels like winds, and his servants like flames of fire.’"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:HEB:1:8",
+      "text": "But about the Son, he says, ‘Your throne, O God, lasts forever and ever. Your Kingdom's scepter is a scepter of justice."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:HEB:1:9",
+      "text": "You have loved what is right and hated what is wrong. That's why God, your God, has anointed you with joy beyond your companions.’"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:HEB:1:10",
+      "text": "He also says, ‘Lord, in the beginning you laid the earth's foundation, and the heavens are the work of your hands."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:HEB:1:11",
+      "text": "They will wear out, but you remain. They will all grow old like clothing."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:HEB:1:12",
+      "text": "You will roll them up like a cloak, and they'll be changed. But you remain the same, and your years will never end.’"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:HEB:1:13",
+      "text": "Has God ever said to an angel, ‘Sit at my right hand until I make your enemies a footstool for your feet’?"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:HEB:1:14",
+      "text": "All angels are serving spirits, sent to help those who will inherit salvation, aren't they?"
+    }
+  ]
+}

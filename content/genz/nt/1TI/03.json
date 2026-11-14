@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1TI",
+  "bookName": "1 Timothy",
+  "chapterNumber": 3,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1TI:3:1",
+      "text": "This saying is trustworthy: if someone wants to serve as an overseer, they desire a good work."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1TI:3:2",
+      "text": "So an overseer must be above reproach, faithful to one wife, clear-minded, self-controlled, respectable, welcoming to guests, and able to teach."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1TI:3:3",
+      "text": "They must not be a drunkard or violent, but gentle, not argumentative or greedy for money."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1TI:3:4",
+      "text": "They must manage their own household well and have children who respect them."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1TI:3:5",
+      "text": "If someone doesn't know how to manage their own household, how can they care for God's church?"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1TI:3:6",
+      "text": "They must not be a recent convert, or they may become conceited and fall into the same judgment as the devil."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1TI:3:7",
+      "text": "They must also have a good reputation with outsiders, so they won't fall into disgrace or the devil's trap."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1TI:3:8",
+      "text": "In the same way, church servants must be dignified, sincere, not drinking too much wine, and not chasing dishonest gain."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1TI:3:9",
+      "text": "They must hold on to the mystery of the faith with a clear conscience."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1TI:3:10",
+      "text": "Let them first be tested; then, if nothing is found against them, let them serve."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1TI:3:11",
+      "text": "In the same way, women must be dignified, not slanderers, clear-minded, and faithful in everything."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1TI:3:12",
+      "text": "Church servants must be faithful to one wife and manage their children and households well."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1TI:3:13",
+      "text": "Those who serve well earn a good standing and great confidence in the faith they have in Christ Jesus."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1TI:3:14",
+      "text": "I'm writing these things to you, though I hope to come to you soon."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:1TI:3:15",
+      "text": "If I'm delayed, you'll know how people should conduct themselves in God's household, which is the church of the living God, the pillar and foundation of the truth."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:1TI:3:16",
+      "text": "Without question, the mystery of godliness is great: He was revealed in the flesh, vindicated by the Spirit, seen by angels, preached among the nations, believed on in the world, and taken up in glory."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1TI",
+  "bookName": "1 Timothy",
+  "chapterNumber": 2,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1TI:2:1",
+      "text": "First of all, I urge that requests, prayers, intercessions, and thanksgivings be made for everyone,"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1TI:2:2",
+      "text": "including kings and all those in authority, so we can live peaceful and quiet lives in all godliness and dignity."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1TI:2:3",
+      "text": "This is good and pleasing to God our Savior,"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1TI:2:4",
+      "text": "who wants everyone to be saved and to come to know the truth fully."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1TI:2:5",
+      "text": "There is one God and one mediator between God and humanity: Christ Jesus, himself human,"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1TI:2:6",
+      "text": "who gave himself as a ransom for everyone. This was the testimony given at the right time."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1TI:2:7",
+      "text": "For this I was appointed a preacher and an apostle—I am telling the truth in Christ, not lying—a teacher of the Gentiles in faith and truth."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1TI:2:8",
+      "text": "So I want men everywhere to pray, lifting holy hands without anger or argument."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1TI:2:9",
+      "text": "In the same way, women should dress modestly and with good judgment, not with elaborate hairstyles, gold, pearls, or expensive clothes,"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1TI:2:10",
+      "text": "but with good deeds, as is fitting for women who claim to honor God."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1TI:2:11",
+      "text": "A woman should learn quietly and with full submission."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1TI:2:12",
+      "text": "I don't permit a woman to teach or to exercise authority over a man; she should remain quiet."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1TI:2:13",
+      "text": "Adam was formed first, then Eve."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1TI:2:14",
+      "text": "Adam wasn't deceived, but the woman was deceived and became a transgressor."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:1TI:2:15",
+      "text": "But women will be saved through childbearing, if they continue in faith, love, and holiness with good judgment."
+    }
+  ]
+}
