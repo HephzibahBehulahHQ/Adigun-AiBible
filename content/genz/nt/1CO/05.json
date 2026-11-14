@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1CO",
+  "bookName": "1 Corinthians",
+  "chapterNumber": 5,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1CO:5:1",
+      "text": "It's actually been reported that there's sexual immorality among you—so serious that even people outside the church don't do this: one man is living with his father's wife."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1CO:5:2",
+      "text": "And you're proud? You should be grieving instead, so the person who did this would be removed from your community."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1CO:5:3",
+      "text": "Though I'm away from you physically, I'm with you in spirit. I've already judged the person who did this, as if I were there."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1CO:5:4",
+      "text": "When you gather in the name of our Lord Jesus, and my spirit is with you, act with the power of our Lord Jesus:"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1CO:5:5",
+      "text": "hand this person over to Satan for the destruction of the flesh, so that their spirit may be saved on the day of the Lord Jesus."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1CO:5:6",
+      "text": "Your bragging isn't good. Don't you know a little yeast spreads through the whole batch of dough?"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1CO:5:7",
+      "text": "Clear out the old yeast so you can be a fresh batch, as you really are unleavened. For Christ, our Passover lamb, has been sacrificed."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1CO:5:8",
+      "text": "So let's celebrate—not with the old yeast of malice and wickedness, but with the unleavened bread of sincerity and truth."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1CO:5:9",
+      "text": "I wrote to you in my letter not to associate with sexually immoral people."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1CO:5:10",
+      "text": "I didn't mean the sexually immoral people of this world, or the greedy, swindlers, or idol worshipers. You'd have to leave the world to avoid them all."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1CO:5:11",
+      "text": "What I meant was: don't associate with anyone who claims to be a brother or sister but is sexually immoral, greedy, an idol worshiper, an abusive slanderer, a drunkard, or a swindler. Don't even share a meal with such a person."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1CO:5:12",
+      "text": "Why should I judge people outside the church? Aren't you supposed to judge those inside?"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1CO:5:13",
+      "text": "God will judge those outside. As Scripture says, ‘Remove the evil person from among you.’"
+    }
+  ]
+}
