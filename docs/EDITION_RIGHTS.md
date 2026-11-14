@@ -33,7 +33,7 @@ The text is copyrighted by Biblica, Inc., and is distributed under [CC BY-SA 4.0
 
 ### ClearQuran conditions
 
-Use the credit **Translation by Talal Itani, ClearQuran.com**, link to [ClearQuran](https://clearquran.com/) where possible, and include [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/). The current publisher page expressly permits storage, redistribution, commercial use, format conversion, selected exact verses, and combining unchanged quotations with other content. It forbids changing, adding or removing translation words. Therefore `rights.adapt` is `false`: this translation must not be used as a licensed base for a distributed Gen Z or Pidgin paraphrase.
+Use the credit **Translation by Talal Itani, ClearQuran.com**, link to [ClearQuran](https://clearquran.com/) where possible, and include [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/). The current publisher page expressly permits storage, redistribution, commercial use, format conversion, selected exact verses, and combining unchanged quotations with other content. It forbids changing, adding or removing translation words. Therefore `rights.adapt` is `false`: this translation must not be used as a licensed base for another Bible edition.
 
 The current publisher terms supersede older readme notices mentioning a noncommercial license. The pinned October 2026 archive itself already states CC BY-ND 4.0. Permission to use text or publisher-provided media is not evidence that recorded media has been imported or that a browser can play or export every format.
 
