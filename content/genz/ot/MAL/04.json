@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "MAL",
+  "bookName": "Malachi",
+  "chapterNumber": 4,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:MAL:4:1","text":"“Look, the day is coming, blazing like a furnace. All the arrogant and everyone who does evil will be like straw. That day will burn them up,” says the LORD of Armies. “They’ll be left with no root or branch."},
+    {"number":2,"sourceRef":"eng-web:MAL:4:2","text":"“But for you who honor my name, the sun of righteousness will rise with healing in its rays. You’ll go out and leap like calves released from their stall."},
+    {"number":3,"sourceRef":"eng-web:MAL:4:3","text":"“You’ll trample the wicked; they’ll be ashes under your feet on the day I act,” says the LORD of Armies."},
+    {"number":4,"sourceRef":"eng-web:MAL:4:4","text":"“Remember the teaching of Moses, my servant: the statutes and ordinances I gave him at Horeb for all Israel."},
+    {"number":5,"sourceRef":"eng-web:MAL:4:5","text":"“Look, I’m sending you Elijah the prophet before the great and awe-inspiring day of the LORD arrives."},
+    {"number":6,"sourceRef":"eng-web:MAL:4:6","text":"“He will turn parents’ hearts toward their children and children’s hearts toward their parents. Otherwise, I’ll come and strike the land with a curse.”"}
+  ]
+}
+
