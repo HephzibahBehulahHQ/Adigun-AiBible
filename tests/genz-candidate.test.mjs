@@ -5,10 +5,10 @@ import { readFileSync } from 'node:fs';
 const read = path => JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'));
 const sourceManifest = read('../data/manifest.json');
 const sourceBook = read('../data/books/GEN.json');
-const chapters = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17];
+const chapters = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21];
 
 for (const chapterNumber of chapters) {
-  test(`Adigun Gen Z Genesis ${chapterNumber} is complete and source-aligned`, () => {
+  test(`Adigun Edition Genesis ${chapterNumber} is complete and source-aligned`, () => {
     const path = `../content/genz/ot/GEN/${String(chapterNumber).padStart(2, '0')}.json`;
     const candidate = read(path);
     const source = sourceBook.chapters.find(chapter => chapter.number === chapterNumber);
