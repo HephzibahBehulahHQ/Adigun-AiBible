@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "GEN",
+  "bookName": "Genesis",
+  "chapterNumber": 11,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:GEN:11:1",
+      "text": "At that time, everyone on earth spoke the same language and used the same words."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:GEN:11:2",
+      "text": "As they traveled east, they came to a plain in Shinar and settled there."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:GEN:11:3",
+      "text": "They said to each other, \"Come on, let's make bricks and bake them hard.\" They used brick instead of stone and tar for mortar."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:GEN:11:4",
+      "text": "Then they said, \"Come on, let's build a city and a tower reaching into the sky. We'll make a name for ourselves so we don't get scattered across the earth.\""
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:GEN:11:5",
+      "text": "Yahweh came down to see the city and tower the people were building."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:GEN:11:6",
+      "text": "Yahweh said, \"Look, they're one people and speak one language. This is only the beginning. If they keep going, they could carry out whatever they plan."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:GEN:11:7",
+      "text": "Come on, let's go down and mix up their language so they can't understand one another.\""
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:GEN:11:8",
+      "text": "So Yahweh scattered them from there across the earth, and they stopped building the city."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:GEN:11:9",
+      "text": "That's why the city was called Babel: there Yahweh mixed up the language of the whole earth, and from there he scattered the people everywhere."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:GEN:11:10",
+      "text": "Here is the family line of Shem: two years after the flood, when Shem was 100, he became the father of Arpachshad."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:GEN:11:11",
+      "text": "After Arpachshad was born, Shem lived another 500 years and had other sons and daughters."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:GEN:11:12",
+      "text": "Arpachshad was 35 when he became the father of Shelah."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:GEN:11:13",
+      "text": "After Shelah was born, Arpachshad lived another 403 years and had other sons and daughters."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:GEN:11:14",
+      "text": "Shelah was 30 when he became the father of Eber."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:GEN:11:15",
+      "text": "After Eber was born, Shelah lived another 403 years and had other sons and daughters."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:GEN:11:16",
+      "text": "Eber was 34 when he became the father of Peleg."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:GEN:11:17",
+      "text": "After Peleg was born, Eber lived another 430 years and had other sons and daughters."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:GEN:11:18",
+      "text": "Peleg was 30 when he became the father of Reu."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:GEN:11:19",
+      "text": "After Reu was born, Peleg lived another 209 years and had other sons and daughters."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:GEN:11:20",
+      "text": "Reu was 32 when he became the father of Serug."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:GEN:11:21",
+      "text": "After Serug was born, Reu lived another 207 years and had other sons and daughters."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:GEN:11:22",
+      "text": "Serug was 30 when he became the father of Nahor."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:GEN:11:23",
+      "text": "After Nahor was born, Serug lived another 200 years and had other sons and daughters."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:GEN:11:24",
+      "text": "Nahor was 29 when he became the father of Terah."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:GEN:11:25",
+      "text": "After Terah was born, Nahor lived another 119 years and had other sons and daughters."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:GEN:11:26",
+      "text": "Terah was 70 when he became the father of Abram, Nahor, and Haran."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:GEN:11:27",
+      "text": "Here is Terah's family line: Terah became the father of Abram, Nahor, and Haran. Haran became the father of Lot."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:GEN:11:28",
+      "text": "Haran died in the land where he was born, in Ur of the Chaldees, while his father Terah was still alive."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:GEN:11:29",
+      "text": "Abram and Nahor both married. Abram's wife was Sarai, and Nahor's wife was Milcah, Haran's daughter; Haran was also Iscah's father."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:GEN:11:30",
+      "text": "Sarai couldn't have children; she had no child."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:GEN:11:31",
+      "text": "Terah took his son Abram, his grandson Lot (Haran's son), and his daughter-in-law Sarai (Abram's wife). They left Ur of the Chaldees to go to Canaan. They reached Haran and settled there."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:GEN:11:32",
+      "text": "Terah lived 205 years, then died in Haran."
+    }
+  ]
+}
