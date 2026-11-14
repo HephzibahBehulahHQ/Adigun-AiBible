@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ZEC",
+  "bookName": "Zechariah",
+  "chapterNumber": 13,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:ZEC:13:1","text":"“On that day a fountain will be opened for David’s family and Jerusalem’s residents, to cleanse sin and impurity."},
+    {"number":2,"sourceRef":"eng-web:ZEC:13:2","text":"“On that day,” says the LORD of Armies, “I’ll wipe the names of idols from the land so no one remembers them. I’ll also remove the prophets and the unclean spirit from the land."},
+    {"number":3,"sourceRef":"eng-web:ZEC:13:3","text":"“If anyone still prophesies, the father and mother who gave birth to him will tell him, ‘You must die, because you’re telling lies in the LORD’s name.’ Then his own parents will stab him for prophesying."},
+    {"number":4,"sourceRef":"eng-web:ZEC:13:4","text":"“On that day each prophet will be ashamed of his vision. He won’t wear a prophet’s hairy cloak to deceive anyone."},
+    {"number":5,"sourceRef":"eng-web:ZEC:13:5","text":"“He’ll say, ‘I’m not a prophet; I work the land. I’ve been a servant since I was young.’”"},
+    {"number":6,"sourceRef":"eng-web:ZEC:13:6","text":"“Someone will ask him, ‘What are those wounds between your hands?’ He’ll answer, ‘The wounds I got in the house of my friends.’”"},
+    {"number":7,"sourceRef":"eng-web:ZEC:13:7","text":"“Wake up, sword, and strike my shepherd, my close companion,” says the LORD of Armies. “Strike the shepherd, and the sheep will scatter. I’ll turn my hand against the little ones."},
+    {"number":8,"sourceRef":"eng-web:ZEC:13:8","text":"“Across the whole land,” says the LORD, “two-thirds will be cut off and die, but one-third will remain."},
+    {"number":9,"sourceRef":"eng-web:ZEC:13:9","text":"“I’ll bring that third through the fire and refine them like silver; I’ll test them like gold. They’ll call on my name, and I’ll answer. I’ll say, ‘They are my people,’ and they’ll say, ‘The LORD is my God.’”"}
+  ]
+}
+
