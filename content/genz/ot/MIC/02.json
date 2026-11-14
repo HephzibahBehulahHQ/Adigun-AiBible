@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "MIC",
+  "bookName": "Micah",
+  "chapterNumber": 2,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:MIC:2:1","text":"Woe to people who plan evil in bed and are already plotting trouble! When morning comes, they carry it out because they have the power to do it."},
+    {"number":2,"sourceRef":"eng-web:MIC:2:2","text":"They covet fields and seize them, and they take houses too. They oppress people, stealing their homes and family inheritance."},
+    {"number":3,"sourceRef":"eng-web:MIC:2:3","text":"So the LORD says: “Look, I am planning disaster against this family. You won’t be able to escape it or walk around proudly. These are evil times."},
+    {"number":4,"sourceRef":"eng-web:MIC:2:4","text":"“That day people will mock you with a bitter song: ‘We are completely ruined! My people’s land is divided up. He takes it from me and gives our fields to traitors!’”"},
+    {"number":5,"sourceRef":"eng-web:MIC:2:5","text":"“So no one will be left to assign land by lot in the LORD’s assembly."},
+    {"number":6,"sourceRef":"eng-web:MIC:2:6","text":"“Don’t preach!” they say. “Stop preaching about these things! Disgrace won’t catch up with us!”"},
+    {"number":7,"sourceRef":"eng-web:MIC:2:7","text":"“House of Jacob, should people say, ‘Is the LORD’s Spirit angry? Is this really how he acts?’ Don’t my words do good for anyone who lives uprightly?"},
+    {"number":8,"sourceRef":"eng-web:MIC:2:8","text":"“But lately my people have acted like enemies. You strip the robe and cloak from peaceful travelers returning from battle."},
+    {"number":9,"sourceRef":"eng-web:MIC:2:9","text":"“You drive the women of my people out of their comfortable homes and take my blessing from their children forever."},
+    {"number":10,"sourceRef":"eng-web:MIC:2:10","text":"“Get up and leave! This is no place to rest, because its uncleanness will destroy it with a terrible ruin."},
+    {"number":11,"sourceRef":"eng-web:MIC:2:11","text":"“If someone comes along who speaks lies and falsehood, saying, ‘I’ll preach to you about wine and strong drink,’ that’s exactly the kind of prophet this people wants."},
+    {"number":12,"sourceRef":"eng-web:MIC:2:12","text":"“I will surely gather all of you, Jacob; I will bring together the survivors of Israel. I will gather them like sheep in Bozrah, like a flock in its pasture. The place will be crowded with people."},
+    {"number":13,"sourceRef":"eng-web:MIC:2:13","text":"“The one who breaks open the way goes ahead of them. They break through the gate and leave. Their king goes ahead of them, and the LORD leads them.”"}
+  ]
+}
+
