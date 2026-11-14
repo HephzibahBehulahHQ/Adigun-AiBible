@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "GEN",
+  "bookName": "Genesis",
+  "chapterNumber": 12,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:GEN:12:1",
+      "text": "Yahweh told Abram, \"Leave your country, your relatives, and your father's house. Go to the land I'll show you."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:GEN:12:2",
+      "text": "I'll make you into a great nation, bless you, and make your name great. You will be a blessing."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:GEN:12:3",
+      "text": "I'll bless those who bless you, and I'll curse anyone who treats you with contempt. Every family on earth will be blessed through you.\""
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:GEN:12:4",
+      "text": "Abram went just as Yahweh told him, and Lot went with him. Abram was 75 when he left Haran."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:GEN:12:5",
+      "text": "Abram took his wife Sarai, his nephew Lot, all the possessions they'd gathered, and the people they'd acquired in Haran. They set out for Canaan and arrived there."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:GEN:12:6",
+      "text": "Abram traveled through the land as far as Shechem and the oak of Moreh. At that time, the Canaanites were living there."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:GEN:12:7",
+      "text": "Yahweh appeared to Abram and said, \"I will give this land to your descendants.\" Abram built an altar there to Yahweh, who had appeared to him."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:GEN:12:8",
+      "text": "From there Abram moved to the hills east of Bethel and pitched his tent, with Bethel to the west and Ai to the east. He built an altar to Yahweh there and called on Yahweh's name."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:GEN:12:9",
+      "text": "Then Abram kept traveling toward the south."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:GEN:12:10",
+      "text": "A famine hit the land, and because it was severe, Abram went down to Egypt to live there as a foreigner."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:GEN:12:11",
+      "text": "As he was about to enter Egypt, Abram said to his wife Sarai, \"I know you're a beautiful woman."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:GEN:12:12",
+      "text": "When the Egyptians see you, they'll say, 'She's his wife.' They'll kill me but let you live."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:GEN:12:13",
+      "text": "Please say you're my sister, so things go well for me because of you, and my life will be spared.\""
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:GEN:12:14",
+      "text": "When Abram entered Egypt, the Egyptians saw that Sarai was very beautiful."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:GEN:12:15",
+      "text": "Pharaoh's officials saw her and praised her to Pharaoh, and she was taken into his palace."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:GEN:12:16",
+      "text": "Pharaoh treated Abram well because of her. Abram received sheep, cattle, male donkeys, male and female servants, female donkeys, and camels."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:GEN:12:17",
+      "text": "Yahweh struck Pharaoh and his household with severe plagues because of Sarai, Abram's wife."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:GEN:12:18",
+      "text": "Pharaoh summoned Abram and said, \"What have you done to me? Why didn't you tell me she was your wife?"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:GEN:12:19",
+      "text": "Why did you say, 'She's my sister,' so I took her as my wife? Here—take your wife and leave.\""
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:GEN:12:20",
+      "text": "Pharaoh ordered his men to escort Abram away, along with his wife and everything he owned."
+    }
+  ]
+}
