@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1JN",
+  "bookName": "1 John",
+  "chapterNumber": 2,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1JN:2:1",
+      "text": "My dear children, I’m writing these things so you won’t sin. But if anyone does sin, we have an advocate with the Father: Jesus Christ, the Righteous One."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1JN:2:2",
+      "text": "He is the atoning sacrifice for our sins, and not only ours but also the sins of the whole world."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1JN:2:3",
+      "text": "Here’s how we know that we’ve come to know him: we keep his commands."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1JN:2:4",
+      "text": "Anyone who says, “I know him,” but doesn’t keep his commands is a liar, and the truth isn’t in that person."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1JN:2:5",
+      "text": "But if anyone obeys his word, God’s love is truly made complete in them. This is how we know we’re in him:"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1JN:2:6",
+      "text": "whoever claims to live in him must live as Jesus lived."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1JN:2:7",
+      "text": "Dear friends, I’m not writing you a new command, but an old one you’ve had from the beginning. This old command is the message you heard."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1JN:2:8",
+      "text": "Yet I’m writing you a new command, which is true in him and in you, because the darkness is passing and the true light is already shining."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1JN:2:9",
+      "text": "Anyone who says they’re in the light but hates a brother or sister is still in the darkness."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1JN:2:10",
+      "text": "Anyone who loves their brother or sister lives in the light, and there’s nothing in them to make them stumble."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1JN:2:11",
+      "text": "But anyone who hates a brother or sister is in the darkness, walks in the darkness, and doesn’t know where they’re going, because the darkness has blinded them."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1JN:2:12",
+      "text": "I’m writing to you, dear children, because your sins have been forgiven through his name."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1JN:2:13",
+      "text": "I’m writing to you, fathers, because you know the one who has existed from the beginning. I’m writing to you, young people, because you’ve conquered the evil one."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1JN:2:14",
+      "text": "I’ve written to you, children, because you know the Father. I’ve written to you, fathers, because you know the one who has existed from the beginning. I’ve written to you, young people, because you’re strong, God’s word lives in you, and you’ve conquered the evil one."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:1JN:2:15",
+      "text": "Don’t love the world or the things in the world. If anyone loves the world, the Father’s love isn’t in them."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:1JN:2:16",
+      "text": "Everything in the world—the cravings of sinful people, the lust of the eyes, and the pride in what they own and do—doesn’t come from the Father. It comes from the world."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:1JN:2:17",
+      "text": "The world and its cravings are passing away, but the one who does God’s will lives forever."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:1JN:2:18",
+      "text": "Dear children, this is the last hour. You’ve heard that the antichrist is coming, and many antichrists have already appeared. That’s how we know it’s the last hour."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:1JN:2:19",
+      "text": "They went out from us, but they didn’t really belong to us. If they had belonged to us, they would have stayed with us. Their leaving showed that none of them truly belonged to us."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:1JN:2:20",
+      "text": "But you have an anointing from the Holy One, and all of you know the truth."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:1JN:2:21",
+      "text": "I’m not writing because you don’t know the truth, but because you do know it and because no lie comes from the truth."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:1JN:2:22",
+      "text": "Who is the liar? It’s whoever denies that Jesus is the Christ. That person is the antichrist, denying the Father and the Son."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:1JN:2:23",
+      "text": "Anyone who denies the Son doesn’t have the Father. Whoever acknowledges the Son has the Father too."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:1JN:2:24",
+      "text": "As for you, let what you heard from the beginning remain in you. If it does, you’ll remain in the Son and in the Father."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:1JN:2:25",
+      "text": "And this is what he promised us: eternal life."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:1JN:2:26",
+      "text": "I’m writing these things to you about those who are trying to lead you astray."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:1JN:2:27",
+      "text": "As for you, the anointing you received from him remains in you, and you don’t need anyone to teach you. His anointing teaches you about everything, and it’s true, not a lie. So remain in him, just as it taught you."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:1JN:2:28",
+      "text": "And now, dear children, remain in him, so that when he appears, we can be confident and not shrink back in shame when he comes."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:1JN:2:29",
+      "text": "If you know that he is righteous, you also know that everyone who does what is right has been born from him."
+    }
+  ]
+}
