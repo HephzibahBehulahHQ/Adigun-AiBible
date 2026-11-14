@@ -30,7 +30,7 @@ function route(view = 'read', book = 'JHN', chapter = 3, verse = 16, edition = '
 async function openEnglishReader(page: Page, book = 'JHN', chapter = 3, verse = 16): Promise<void> {
   await page.goto(route('read', book, chapter, verse));
   await expect(page.locator(`#verse-${verse} > p`)).toBeVisible();
-  await page.getByLabel('Reading preset', { exact: true }).selectOption('en');
+  await page.getByLabel('Bible version', { exact: true }).selectOption('eng-web');
   await expect(page.locator('.scripture')).toHaveAttribute('lang', 'en');
 }
 
@@ -108,15 +108,15 @@ test('custom reading plans retain their edition, pause state and completion hist
 });
 
 for (const edition of [
-  { preset: 'en', id: 'eng-web', path: 'data' },
-  { preset: 'de', id: 'deu1912', path: 'data/editions/deu1912' },
-  { preset: 'yo', id: 'yor', path: 'data/editions/yor' },
+  { id: 'eng-web', path: 'data' },
+  { id: 'deu1912', path: 'data/editions/deu1912' },
+  { id: 'yor', path: 'data/editions/yor' },
 ]) {
-  test(`${edition.preset} reading preset shows its identified source edition and exact text`, async ({ page }) => {
+  test(`${edition.id} version shows its identified source edition and exact text`, async ({ page }) => {
     const manifest = readSource<SourceManifest>(`${edition.path}/manifest.json`);
     const book = readSource<SourceBook>(`${edition.path}/books/GEN.json`);
     await openEnglishReader(page, 'GEN', 1, 1);
-    await page.getByLabel('Reading preset', { exact: true }).selectOption(edition.preset);
+    await page.getByLabel('Bible version', { exact: true }).selectOption(edition.id);
     await expect(page).toHaveURL(new RegExp(`edition=${edition.id}(?:&|$)`));
     await expect(page.locator('.reader-title .eyebrow')).toHaveText(manifest.edition.name);
     await expect(page.locator('.scripture')).toHaveAttribute('lang', manifest.edition.language);
@@ -218,7 +218,7 @@ test('legacy WEB bookmarks keep their edition and remove correctly while German 
   await page.getByLabel('Import study backup', { exact: true }).setInputFiles({name:'legacy-study.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(legacy))});
   await page.getByRole('button',{name:'Merge backup',exact:true}).click();
   await expect(page.getByText('Backup merged and saved on this device.',{exact:true})).toBeVisible();
-  await page.getByLabel('Reading preset',{exact:true}).selectOption('de');
+  await page.getByLabel('Bible version',{exact:true}).selectOption('deu1912');
   await page.goto(route('saved','GEN',1,1,'deu1912'));
   await expect(page.locator('.saved-card .passage-preview p')).toHaveText(sourceVerse(englishGenesis,1,1));
   await expect(page.locator('.saved-card .passage-preview small')).toContainText('World English Bible');
