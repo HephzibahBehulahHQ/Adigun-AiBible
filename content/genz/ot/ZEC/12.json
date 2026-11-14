@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ZEC",
+  "bookName": "Zechariah",
+  "chapterNumber": 12,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:ZEC:12:1","text":"This is the LORD’s message about Israel. The LORD stretched out the heavens, laid the earth’s foundations, and formed the human spirit within each person. He says:"},
+    {"number":2,"sourceRef":"eng-web:ZEC:12:2","text":"“I will make Jerusalem a cup that makes the nearby nations stagger. This will happen when they attack Jerusalem and Judah."},
+    {"number":3,"sourceRef":"eng-web:ZEC:12:3","text":"“On that day I’ll make Jerusalem a heavy stone for every nation. Anyone who tries to move it will be badly hurt, and all the nations of the earth will gather against it."},
+    {"number":4,"sourceRef":"eng-web:ZEC:12:4","text":"“On that day,” says the LORD, “I’ll terrify every horse and drive its rider mad. I’ll watch over Judah, but strike the horses of the other peoples with blindness."},
+    {"number":5,"sourceRef":"eng-web:ZEC:12:5","text":"The leaders of Judah will say to themselves, “The people of Jerusalem are strong because the LORD of Armies is their God.”"},
+    {"number":6,"sourceRef":"eng-web:ZEC:12:6","text":"“On that day I’ll make Judah’s leaders like a firepan among wood, like a flaming torch among bundles of grain. They’ll consume the peoples around them on every side, while Jerusalem remains inhabited in its own place."},
+    {"number":7,"sourceRef":"eng-web:ZEC:12:7","text":"The LORD will save Judah’s tents first, so David’s family and Jerusalem’s residents won’t be honored above the rest of Judah."},
+    {"number":8,"sourceRef":"eng-web:ZEC:12:8","text":"“On that day the LORD will protect Jerusalem’s people. Even the weakest among them will be like David, and David’s family will be like God, like the LORD’s angel leading them."},
+    {"number":9,"sourceRef":"eng-web:ZEC:12:9","text":"“On that day I will set out to destroy every nation that attacks Jerusalem."},
+    {"number":10,"sourceRef":"eng-web:ZEC:12:10","text":"“I will pour a spirit of grace and pleading on David’s family and Jerusalem’s residents. They will look toward me, the one they pierced, and mourn for him like someone mourning an only son. They’ll grieve bitterly for him as for a firstborn.”"},
+    {"number":11,"sourceRef":"eng-web:ZEC:12:11","text":"“On that day Jerusalem will mourn greatly, like the mourning at Hadadrimmon in the valley of Megiddo."},
+    {"number":12,"sourceRef":"eng-web:ZEC:12:12","text":"“The whole land will mourn, each family by itself: David’s family and their wives by themselves, Nathan’s family and their wives by themselves;"},
+    {"number":13,"sourceRef":"eng-web:ZEC:12:13","text":"“Levi’s family and their wives by themselves, the Shimeite family and their wives by themselves;"},
+    {"number":14,"sourceRef":"eng-web:ZEC:12:14","text":"“and every other family, each by itself, with their wives apart.”"}
+  ]
+}
+
