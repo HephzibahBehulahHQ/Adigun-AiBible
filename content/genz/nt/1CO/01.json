@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1CO",
+  "bookName": "1 Corinthians",
+  "chapterNumber": 1,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1CO:1:1",
+      "text": "Paul, called by God's will to be an apostle of Jesus Christ, and our brother Sosthenes,"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1CO:1:2",
+      "text": "to God's church in Corinth—to those made holy in Christ Jesus and called to be his holy people, along with everyone everywhere who calls on the name of our Lord Jesus Christ, their Lord and ours:"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1CO:1:3",
+      "text": "Grace and peace to you from God our Father and the Lord Jesus Christ."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1CO:1:4",
+      "text": "I always thank my God for the grace he gave you in Christ Jesus."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1CO:1:5",
+      "text": "In him you have been enriched in every way—with all kinds of speech and knowledge—"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1CO:1:6",
+      "text": "just as the message about Christ was firmly established among you."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1CO:1:7",
+      "text": "So you aren't missing any spiritual gift as you wait for our Lord Jesus Christ to be revealed."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1CO:1:8",
+      "text": "He will keep you strong to the end, so you will be blameless on the day of our Lord Jesus Christ."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1CO:1:9",
+      "text": "God is faithful. He called you into fellowship with his Son, Jesus Christ our Lord."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1CO:1:10",
+      "text": "Brothers and sisters, in the name of our Lord Jesus Christ, I urge you all to agree with one another. Don't let there be divisions among you; be united in your thinking and purpose."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1CO:1:11",
+      "text": "People from Chloe's household have told me, my brothers and sisters, that there are arguments among you."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1CO:1:12",
+      "text": "Here's what I mean: each of you says, ‘I follow Paul,’ ‘I follow Apollos,’ ‘I follow Cephas,’ or ‘I follow Christ.’"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1CO:1:13",
+      "text": "Is Christ divided? Was Paul crucified for you? Were you baptized in Paul's name?"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1CO:1:14",
+      "text": "I'm thankful I baptized none of you except Crispus and Gaius,"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:1CO:1:15",
+      "text": "so no one can say you were baptized in my name."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:1CO:1:16",
+      "text": "(I also baptized Stephanas's household. Beyond that, I don't remember baptizing anyone else.)"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:1CO:1:17",
+      "text": "Christ didn't send me to baptize, but to announce the Good News—and not with clever speech, so that Christ's cross wouldn't lose its power."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:1CO:1:18",
+      "text": "The message of the cross sounds foolish to those headed for destruction, but to us who are being saved, it's God's power."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:1CO:1:19",
+      "text": "As Scripture says, ‘I will destroy the wisdom of the wise and bring the cleverness of the clever to nothing.’"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:1CO:1:20",
+      "text": "Where are the wise? Where are the experts in the law? Where are the debaters of this age? Hasn't God shown the world's wisdom to be foolish?"
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:1CO:1:21",
+      "text": "Since the world couldn't know God through its own wisdom, God was pleased to save those who believe through what the world calls the foolish message we preach."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:1CO:1:22",
+      "text": "Jews ask for signs, and Greeks look for wisdom,"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:1CO:1:23",
+      "text": "but we preach Christ crucified—a stumbling block to Jews and foolishness to Gentiles."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:1CO:1:24",
+      "text": "But to those God has called, both Jews and Greeks, Christ is God's power and God's wisdom."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:1CO:1:25",
+      "text": "For God's foolishness is wiser than human wisdom, and God's weakness is stronger than human strength."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:1CO:1:26",
+      "text": "Brothers and sisters, look at who God called: not many of you were wise by human standards, powerful, or high-born."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:1CO:1:27",
+      "text": "But God chose what the world calls foolish to shame the wise, and what the world calls weak to shame the strong."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:1CO:1:28",
+      "text": "God chose what the world considers low and despised—even what seems to be nothing—to bring to nothing what the world considers important,"
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:1CO:1:29",
+      "text": "so that no one can brag in God's presence."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:1CO:1:30",
+      "text": "Because of God, you are in Christ Jesus, who has become for us wisdom from God—our righteousness, holiness, and redemption."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:1CO:1:31",
+      "text": "So, as Scripture says, ‘If you brag, brag about the Lord.’"
+    }
+  ]
+}

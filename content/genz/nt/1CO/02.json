@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1CO",
+  "bookName": "1 Corinthians",
+  "chapterNumber": 2,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1CO:2:1",
+      "text": "When I came to you, brothers and sisters, I didn't come with impressive words or human wisdom as I announced God's truth."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1CO:2:2",
+      "text": "I had decided to focus on nothing among you except Jesus Christ—and him crucified."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1CO:2:3",
+      "text": "I came to you feeling weak, afraid, and deeply shaken."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1CO:2:4",
+      "text": "My words and my preaching weren't clever or persuasive. They showed the Spirit's power,"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1CO:2:5",
+      "text": "so your faith wouldn't rest on human wisdom but on God's power."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1CO:2:6",
+      "text": "We do speak wisdom among the mature, but it's not the wisdom of this age or its rulers, who are fading away."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1CO:2:7",
+      "text": "We speak God's wisdom, a mystery once hidden, which God planned before the ages for our glory."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1CO:2:8",
+      "text": "None of this age's rulers understood it. If they had, they wouldn't have crucified the Lord of glory."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1CO:2:9",
+      "text": "But, as Scripture says, ‘What no eye has seen, no ear has heard, and no human heart has imagined—this is what God has prepared for those who love him.’"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1CO:2:10",
+      "text": "God has revealed these things to us through the Spirit. The Spirit searches everything, even the depths of God."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1CO:2:11",
+      "text": "Who knows a person's thoughts except that person's own spirit within them? In the same way, no one knows God's thoughts except God's Spirit."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1CO:2:12",
+      "text": "We didn't receive the spirit of the world. We received the Spirit who comes from God, so we can understand the gifts God has freely given us."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1CO:2:13",
+      "text": "We speak about these things, not with words taught by human wisdom, but with words taught by the Spirit, explaining spiritual truths to spiritual people."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1CO:2:14",
+      "text": "A person without the Spirit doesn't welcome the things that come from God's Spirit. They seem foolish, and that person can't understand them because they're spiritually discerned."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:1CO:2:15",
+      "text": "But the person who has the Spirit can discern all things, though no one can judge them."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:1CO:2:16",
+      "text": "As Scripture says, ‘Who has known the Lord's mind well enough to instruct him?’ But we have the mind of Christ."
+    }
+  ]
+}

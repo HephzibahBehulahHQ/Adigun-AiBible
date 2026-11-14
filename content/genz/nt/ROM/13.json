@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ROM",
+  "bookName": "Romans",
+  "chapterNumber": 13,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ROM:13:1",
+      "text": "Everyone should submit to the governing authorities. No authority exists except by God's permission, and the authorities that do exist have been established by God."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ROM:13:2",
+      "text": "So whoever resists authority is resisting what God has established, and those who resist will bring judgment on themselves."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ROM:13:3",
+      "text": "Rulers aren't a threat to people who do good, but to those who do evil. Do you want to have no fear of the authorities? Do what's good, and they'll commend you,"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ROM:13:4",
+      "text": "because the ruler is God's servant for your good. But if you do evil, be afraid: the ruler doesn't carry the sword for nothing. They serve God as an agent of justice, bringing judgment on the wrongdoer."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ROM:13:5",
+      "text": "So you should submit, not only to avoid punishment but also for the sake of your conscience."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ROM:13:6",
+      "text": "That's also why you pay taxes: the authorities are God's servants, continually carrying out their duties."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ROM:13:7",
+      "text": "Give everyone what you owe them: taxes to the tax collector, customs duties where they're owed, respect to those due respect, and honor to those due honor."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ROM:13:8",
+      "text": "Don't owe anyone anything, except the debt of loving one another. Whoever loves their neighbor has fulfilled the law."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ROM:13:9",
+      "text": "The commands—don't commit adultery, don't murder, don't steal, don't covet—and any other command are summed up in this: ‘Love your neighbor as yourself.’"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ROM:13:10",
+      "text": "Love doesn't harm a neighbor. So love fulfills the law."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ROM:13:11",
+      "text": "Do this because you know what time it is: it's time to wake up. Our salvation is nearer now than when we first believed."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ROM:13:12",
+      "text": "The night is almost over, and the day is close. So let's throw off the works of darkness and put on the armor of light."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:ROM:13:13",
+      "text": "Let's live honorably, as people do in the daylight—not in wild parties and drunkenness, not in sexual immorality and reckless behavior, and not in fighting and jealousy."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:ROM:13:14",
+      "text": "Instead, clothe yourselves with the Lord Jesus Christ, and don't make plans to satisfy your human nature and its desires."
+    }
+  ]
+}

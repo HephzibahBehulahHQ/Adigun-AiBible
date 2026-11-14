@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1CO",
+  "bookName": "1 Corinthians",
+  "chapterNumber": 8,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1CO:8:1",
+      "text": "Now about food offered to idols: we know that we all have knowledge. Knowledge can make people arrogant, but love builds people up."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1CO:8:2",
+      "text": "If someone thinks they know something, they still don't know it the way they should."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1CO:8:3",
+      "text": "But whoever loves God is known by God."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1CO:8:4",
+      "text": "So about eating food offered to idols: we know that an idol is nothing in the world and that there is no God but one."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1CO:8:5",
+      "text": "People may call many things ‘gods’ in heaven or on earth—there are many so-called gods and lords—"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1CO:8:6",
+      "text": "but for us there is one God, the Father, from whom everything comes and for whom we live; and one Lord, Jesus Christ, through whom everything exists and through whom we live."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1CO:8:7",
+      "text": "But not everyone has this understanding. Some are still so used to idols that when they eat food offered to an idol, they think of it as idol worship, and their weak conscience is stained."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1CO:8:8",
+      "text": "Food doesn't bring us closer to God. We aren't worse off if we don't eat, or better off if we do."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1CO:8:9",
+      "text": "But be careful that your freedom doesn't become a reason for someone with a weaker conscience to fall."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1CO:8:10",
+      "text": "If someone with a weak conscience sees you, who understand this, eating in an idol's temple, won't they be encouraged to eat food offered to idols too?"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1CO:8:11",
+      "text": "Then your knowledge destroys the weak believer, a brother or sister Christ died for."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1CO:8:12",
+      "text": "When you sin against your brothers and sisters in this way and wound their weak conscience, you're sinning against Christ."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1CO:8:13",
+      "text": "So if food causes my brother or sister to fall, I'll never eat meat again, so I won't cause them to fall."
+    }
+  ]
+}

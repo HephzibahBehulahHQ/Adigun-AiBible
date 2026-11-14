@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "2CO",
+  "bookName": "2 Corinthians",
+  "chapterNumber": 6,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:2CO:6:1",
+      "text": "As God's co-workers, we urge you not to receive his grace and then let it go to waste."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:2CO:6:2",
+      "text": "For God says, ‘At the right time I heard you; on the day of salvation I helped you.’ Look, now is the right time; now is the day of salvation."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:2CO:6:3",
+      "text": "We don't put any obstacle in anyone's way, so our ministry won't be discredited."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:2CO:6:4",
+      "text": "Instead, in every way we show that we're God's servants: through great endurance, troubles, hardships, and distress;"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:2CO:6:5",
+      "text": "through beatings, imprisonments, riots, hard work, sleepless nights, and hunger;"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:2CO:6:6",
+      "text": "through purity, knowledge, patience, kindness, the Holy Spirit, and sincere love;"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:2CO:6:7",
+      "text": "through the true message, God's power, and the weapons of righteousness in both hands;"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:2CO:6:8",
+      "text": "through honor and dishonor, bad reports and good reports; treated as impostors, yet telling the truth;"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:2CO:6:9",
+      "text": "treated as unknown, yet well known; treated as dying, yet look—we live; punished, but not killed;"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:2CO:6:10",
+      "text": "grieving, yet always joyful; poor, yet making many rich; having nothing, yet possessing everything."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:2CO:6:11",
+      "text": "We've spoken openly to you, Corinthians; our hearts are wide open."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:2CO:6:12",
+      "text": "We haven't held back our affection for you, but you've held back yours for us."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:2CO:6:13",
+      "text": "So, as my children, open your hearts to us too."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:2CO:6:14",
+      "text": "Don't bind yourselves together with unbelievers in a way that compromises your faith. What partnership is there between righteousness and lawlessness? What fellowship does light have with darkness?"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:2CO:6:15",
+      "text": "What harmony is there between Christ and the devil? What does a believer share with an unbeliever?"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:2CO:6:16",
+      "text": "What agreement can God's temple have with idols? We are the temple of the living God. As God said, ‘I will live with them and walk among them. I will be their God, and they will be my people.’"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:2CO:6:17",
+      "text": "So the Lord says, ‘Come out from among them and be separate. Don't touch anything unclean, and I will welcome you.’"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:2CO:6:18",
+      "text": "‘I will be a Father to you, and you will be my sons and daughters,’ says the Lord Almighty."
+    }
+  ]
+}
