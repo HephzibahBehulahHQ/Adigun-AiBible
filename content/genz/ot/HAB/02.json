@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "HAB",
+  "bookName": "Habakkuk",
+  "chapterNumber": 2,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:HAB:2:1","text":"I will stand at my watchpost and station myself on the wall. I’ll watch to see what he says to me and how he answers my complaint."},
+    {"number":2,"sourceRef":"eng-web:HAB:2:2","text":"The LORD answered me: “Write down the vision and make it clear on tablets, so a runner can read it quickly."},
+    {"number":3,"sourceRef":"eng-web:HAB:2:3","text":"“The vision is for its appointed time. It rushes toward the end and won’t prove false. If it seems slow, wait for it; it will surely come and won’t be late."},
+    {"number":4,"sourceRef":"eng-web:HAB:2:4","text":"“Look at the proud one: his spirit is not upright. But the righteous will live by faith."},
+    {"number":5,"sourceRef":"eng-web:HAB:2:5","text":"“Indeed, wine betrays. An arrogant man never stays home. His appetite is as wide as the grave; like death, he is never satisfied. He gathers all nations and collects all peoples for himself."},
+    {"number":6,"sourceRef":"eng-web:HAB:2:6","text":"“Won’t all those people make up a taunt and mocking song about him? They will say, ‘Woe to the one who piles up what isn’t his and enriches himself through extortion! How long can that go on?’"},
+    {"number":7,"sourceRef":"eng-web:HAB:2:7","text":"“Won’t your debtors suddenly rise up and wake up those who make you tremble? Then you will become their prey."},
+    {"number":8,"sourceRef":"eng-web:HAB:2:8","text":"“You plundered many nations, so the people left will plunder you, because of all the bloodshed and violence you brought on the land, the city, and everyone living there."},
+    {"number":9,"sourceRef":"eng-web:HAB:2:9","text":"“Woe to the one who gets dishonest profit for his house, building his nest high to escape harm!"},
+    {"number":10,"sourceRef":"eng-web:HAB:2:10","text":"“Your plans have brought shame on your house. By wiping out many peoples, you have sinned against yourself."},
+    {"number":11,"sourceRef":"eng-web:HAB:2:11","text":"“Even the stone in the wall will cry out, and the beam in the woodwork will answer it."},
+    {"number":12,"sourceRef":"eng-web:HAB:2:12","text":"“Woe to the one who builds a city with bloodshed and establishes a town through injustice!"},
+    {"number":13,"sourceRef":"eng-web:HAB:2:13","text":"“Isn’t it the LORD of Armies who makes people labor for the fire and nations wear themselves out for nothing?"},
+    {"number":14,"sourceRef":"eng-web:HAB:2:14","text":"“The earth will be filled with knowledge of the LORD’s glory, as the waters cover the sea."},
+    {"number":15,"sourceRef":"eng-web:HAB:2:15","text":"“Woe to the one who gets his neighbor drunk, pouring out intoxicating wine until they’re wasted, just to stare at their nakedness!"},
+    {"number":16,"sourceRef":"eng-web:HAB:2:16","text":"“You will be filled with shame, not glory. You too will drink and be exposed! The cup in the LORD’s right hand will come around to you, and disgrace will replace your glory."},
+    {"number":17,"sourceRef":"eng-web:HAB:2:17","text":"“The violence you did to Lebanon will overwhelm you, and the destruction of its animals will terrify you, because of your bloodshed and violence against the land, its cities, and everyone living there."},
+    {"number":18,"sourceRef":"eng-web:HAB:2:18","text":"“What good is an idol carved by its maker? What good is a cast image that teaches lies? Its maker trusts in it, even though it is only a mute idol."},
+    {"number":19,"sourceRef":"eng-web:HAB:2:19","text":"“Woe to the one who tells wood, ‘Wake up!’ or silent stone, ‘Get up!’ Can it teach you? Look, it is covered with gold and silver, but there is no breath inside it."},
+    {"number":20,"sourceRef":"eng-web:HAB:2:20","text":"“But the LORD is in his holy temple. Let the whole earth be silent before him!”"}
+  ]
+}
+
