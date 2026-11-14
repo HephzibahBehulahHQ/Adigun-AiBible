@@ -131,7 +131,7 @@ test('reader speech cancels on edition and verse changes and ignores old utteran
   await page.getByRole('button', { name: 'Listen', exact: true }).click();
   await page.getByRole('button', { name: 'Play selected passage', exact: true }).click();
   await expect(page.getByRole('button', { name: 'Pause speech', exact: true })).toBeVisible();
-  await page.getByLabel('Reading preset', { exact: true }).selectOption('de');
+  await page.getByLabel('Bible version', { exact: true }).selectOption('deu1912');
   await expect(page.locator('.scripture')).toHaveAttribute('lang', 'de');
   await page.evaluate(() => { window.__testSpeech.utterances[0].onstart?.(); window.__testSpeech.utterances[0].onend?.(); });
   await expect(page.getByRole('button', { name: 'Pause speech', exact: true })).toHaveCount(0);
