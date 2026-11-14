@@ -5,7 +5,7 @@ import { publisherSpeeches } from '../src/speakers/model.ts';
 const root = resolve(import.meta.dirname, '..');
 const json = async path => JSON.parse(await readFile(resolve(root, path), 'utf8'));
 const catalog = await json('data/editions/catalog.json');
-const ids = [...new Set(['eng-web', ...catalog.editions.filter(edition => edition.corpus === 'bible' && edition.id !== 'adigun-edition').map(edition => edition.id)])];
+const ids = [...new Set(['eng-web', ...catalog.editions.filter(edition => edition.corpus === 'bible').map(edition => edition.id)])];
 const editions = [];
 for (const editionId of ids) {
   const prefix = editionId === 'eng-web' ? 'data' : `data/editions/${editionId}`;
