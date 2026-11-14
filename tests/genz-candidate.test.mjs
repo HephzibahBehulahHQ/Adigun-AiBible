@@ -6,7 +6,7 @@ const read = path => JSON.parse(readFileSync(new URL(path, import.meta.url), 'ut
 const candidate = read('../content/genz/ot/GEN/01.json');
 const source = read('../data/books/GEN.json');
 
-test('Adigun Gen Z Genesis 1 is complete, source-aligned, and retains the owner's opening text', () => {
+test('Adigun Gen Z Genesis 1 is complete, source-aligned, and retains the supplied opening text', () => {
   assert.equal(candidate.editionId, 'adigun-genz');
   assert.equal(candidate.sourceEditionId, 'eng-web');
   assert.equal(candidate.bookId, 'GEN');
