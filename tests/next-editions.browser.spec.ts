@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 
 type Edition = { id: string; name: string; language: string; corpus: string; attribution: string; conditions: string[]; licenseDeedUrl?: string };
 type SourceBook = { name: string; chapters: { number: number; verses: { number: number; endNumber?: number; text: string }[] }[] };
-const ids = ['fra-darby2024', 'spa-simple2026', 'spaonbv', 'tdx-tandroy', 'hausa2020', 'igbo2020', 'mdyeth'];
+const ids = ['fra-darby2024', 'spa-simple2026', 'spaonbv', 'tdx-tandroy', 'hausa2020', 'igbo2020', 'mdyeth', 'thafb'];
 const catalog = JSON.parse(readFileSync(new URL('../data/editions/catalog.json', import.meta.url), 'utf8'));
 const baseline = JSON.parse(readFileSync(new URL('../data/manifest.json', import.meta.url), 'utf8'));
 const editions: Edition[] = [baseline.edition, ...catalog.editions.filter((edition: Edition) => edition.corpus === 'bible')];
@@ -30,17 +30,17 @@ async function cachedNotice(page: Page, id: string) {
   }, id);
 }
 
-test.describe('eight exact source admissions', () => {
+test.describe('nine exact source admissions', () => {
   test.use({ serviceWorkers: 'block' });
 
-  test('38 editions report 25 source languages and preserve the separate regional filters', async ({ page }) => {
-    expect(editions).toHaveLength(38);
-    expect(new Set(editions.map(edition => new Intl.Locale(edition.language).language)).size).toBe(25);
+  test('39 editions report 26 source languages and preserve the separate regional filters', async ({ page }) => {
+    expect(editions).toHaveLength(39);
+    expect(new Set(editions.map(edition => new Intl.Locale(edition.language).language)).size).toBe(26);
     await page.goto(route('editions', 'eng-web'));
-    await expect(page.getByText('38 installed Bible text editions · 35 added beyond the verified three-edition baseline.', { exact: false })).toBeVisible();
-    await expect(page.getByText(/^Installed source languages \(25\):/)).toBeVisible();
+    await expect(page.getByText('39 installed Bible text editions · 36 added beyond the verified three-edition baseline.', { exact: false })).toBeVisible();
+    await expect(page.getByText(/^Installed source languages \(26\):/)).toBeVisible();
     const languages = page.getByRole('combobox', { name: 'Language', exact: true });
-    await expect(languages.locator('option')).toHaveCount(27); // 26 exact tags plus the all-languages option.
+    await expect(languages.locator('option')).toHaveCount(28); // 27 exact tags plus the all-languages option.
     const results = page.getByRole('region', { name: 'Installed Bible editions', exact: true });
     for (const tag of ['es', 'es-419']) {
       await languages.selectOption(tag);
