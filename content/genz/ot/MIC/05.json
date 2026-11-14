@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "MIC",
+  "bookName": "Micah",
+  "chapterNumber": 5,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:MIC:5:1","text":"Gather your troops, daughter of troops! The enemy has surrounded us. They will strike Israel’s judge on the cheek with a rod."},
+    {"number":2,"sourceRef":"eng-web:MIC:5:2","text":"But you, Bethlehem Ephrathah, though you are small among Judah’s clans, from you will come a ruler for me in Israel, whose origin is from ancient times, from long ago."},
+    {"number":3,"sourceRef":"eng-web:MIC:5:3","text":"So the LORD will abandon them until the woman in labor gives birth. Then the rest of his brothers will return to the people of Israel."},
+    {"number":4,"sourceRef":"eng-web:MIC:5:4","text":"He will stand and shepherd his flock in the LORD’s strength, in the majesty of the name of the LORD his God. They will live securely, because then his greatness will reach the ends of the earth."},
+    {"number":5,"sourceRef":"eng-web:MIC:5:5","text":"He will be our peace when Assyria invades our land and marches through our fortresses. Then we will raise seven shepherds against them, eight leaders of people."},
+    {"number":6,"sourceRef":"eng-web:MIC:5:6","text":"They will rule Assyria with the sword and Nimrod’s land at its gates. He will rescue us from Assyria when it invades our land and marches across our borders."},
+    {"number":7,"sourceRef":"eng-web:MIC:5:7","text":"The remnant of Jacob will be among many peoples like dew from the LORD, like showers on grass that don’t wait for anyone or depend on human beings."},
+    {"number":8,"sourceRef":"eng-web:MIC:5:8","text":"The remnant of Jacob will be among the nations, among many peoples, like a lion among forest animals, like a young lion among sheep. When it passes through, it tramples and tears, and no one can rescue them."},
+    {"number":9,"sourceRef":"eng-web:MIC:5:9","text":"May your hand rise over your enemies; may all your foes be cut off!"},
+    {"number":10,"sourceRef":"eng-web:MIC:5:10","text":"“On that day,” says the LORD, “I will take your horses away and destroy your chariots."},
+    {"number":11,"sourceRef":"eng-web:MIC:5:11","text":"“I will destroy the cities in your land and tear down all your fortresses."},
+    {"number":12,"sourceRef":"eng-web:MIC:5:12","text":"“I will take witchcraft out of your hands, and you will have no fortune-tellers."},
+    {"number":13,"sourceRef":"eng-web:MIC:5:13","text":"“I will remove your carved idols and sacred pillars. You will no longer worship things your own hands made."},
+    {"number":14,"sourceRef":"eng-web:MIC:5:14","text":"“I will uproot your Asherah poles and destroy your cities."},
+    {"number":15,"sourceRef":"eng-web:MIC:5:15","text":"“In anger and fury I will take revenge on the nations that refused to listen.”"}
+  ]
+}
+
