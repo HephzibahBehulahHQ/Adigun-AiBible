@@ -155,6 +155,19 @@ test('Palabra de Dios para ti retains its publisher edition identity, license an
   assert.equal(rights.operations.recordedAudio.state, 'unknown');
 });
 
+test('KJV priority remains deferred until its publisher territorial notice can be honored', () => {
+  const acquisition = read('acquisition-catalog.json');
+  const source = acquisition.records.find(row => row.providerId === 'eng-kjv2006');
+  const request = acquisition.priorityRequests.find(row => row.id === 'priority-01');
+  assert.equal(request.providerId, 'eng-kjv2006');
+  assert.equal(source.sourceReview.state, 'deferred');
+  assert.equal(source.sourceReview.archiveSha256, 'ee4cae32cddded36d9dfcb524c70c03dcf930cf04924ca34c9b805bac39210d4');
+  assert.deepEqual(source.sourceReview.observedTotals, { books: 66, chapters: 1189, verses: 31102 });
+  assert.equal(source.availability, 'metadata-only');
+  assert.equal(catalog.editions.some(row => row.id === 'eng-kjv2006'), false);
+  assert.equal(read('rights-register.json').editions.some(row => row.editionId === 'eng-kjv2006'), false);
+});
+
 test('Petrus Canisius 1939 preserves its publisher identity, Dutch source, Catholic inventory and combined verse range', () => {
   const id = 'nld1939', source = manifest(id), provenance = read(id + '/provenance.json');
   const metadata = catalog.editions.find(row => row.id === id);

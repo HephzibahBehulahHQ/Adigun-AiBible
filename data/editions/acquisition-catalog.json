@@ -5075,8 +5075,8 @@
       "id": "priority-01",
       "title": "King James Version — KJV",
       "source": "Master prompt v3 section 5",
-      "status": "acquisition-request",
-      "providerId": null,
+      "status": "source-review-deferred",
+      "providerId": "eng-kjv2006",
       "editionId": null,
       "revisionVerified": false
     },
