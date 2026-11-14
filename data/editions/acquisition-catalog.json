@@ -4625,6 +4625,50 @@
     },
     {
       "provider": "eBible.org",
+      "providerId": "spapddpt",
+      "languageName": "Spanish",
+      "nativeLanguageName": "Español",
+      "nativeTitle": "Palabra de Dios para ti",
+      "title": "Palabra de Dios para ti",
+      "revision": "Publisher files dated 2026-10-30; copyright notice ©2020",
+      "providerRightsStatement": "CC BY 4.0",
+      "translator": "Asociacion Biblica Latinoamericana",
+      "contributor": "Latinamerican Textual Bible Foundation, Inc.",
+      "sourceUrl": "https://ebible.org/details.php?id=spapddpt",
+      "inventoryUrl": "https://ebible.org/details.php?id=spapddpt",
+      "observedOn": "2026-11-14",
+      "availability": "installed",
+      "coverage": "validated-full-bible",
+      "permissions": "see-operation-specific-rights-register",
+      "installedEditionId": "spapddpt",
+      "installedRevision": "Publisher files dated 2026-10-30; verse text only",
+      "installedSourceSha256": "5d43f304b291c081551478cf43d08f0942fd8d151a067ba85bb313a73e87188a",
+      "installedObservedOn": "2026-11-14",
+      "publicationStatus": "published-edition",
+      "sourceReview": {
+        "state": "admitted-exact-source",
+        "observedOn": "2026-11-14",
+        "evidenceUrls": [
+          "https://ebible.org/details.php?id=spapddpt",
+          "https://ebible.org/spapddpt/copyright.htm",
+          "https://ebible.org/Scriptures/spapddpt_vpl.zip",
+          "https://creativecommons.org/licenses/by/4.0/"
+        ],
+        "archiveSha256": "5d43f304b291c081551478cf43d08f0942fd8d151a067ba85bb313a73e87188a",
+        "observedTotals": {
+          "books": 66,
+          "chapters": 1189,
+          "verses": 31081
+        },
+        "limitations": [
+          "Publisher TXT is the unchanged display source; all source bracket markers are retained.",
+          "The XML identifies 3 combined verse records; their exact coordinate inventory is hash-pinned and ranges are not expanded into invented text.",
+          "Source and format checks do not establish native-language or editorial approval."
+        ]
+      }
+    },
+    {
+      "provider": "eBible.org",
       "providerId": "spm",
       "languageName": "Akukem",
       "nativeLanguageName": "Akukem",

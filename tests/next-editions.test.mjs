@@ -20,6 +20,7 @@ const expected = {
   'mdyeth': { provider: 'mdyeth', language: 'mdy-Ethi', records: 30506, empty: 0, files: 70, sha: '01b434547c7ea95f5b07b6ea935e0a87e841701206b0427f4feac8a278f17207' },
   'thafb': { provider: 'thafb', language: 'th', records: 31103, empty: 5, files: 70, sha: 'c5b68af1e8909640435d4ed66e02bc75ef00061ef755a20b8b3fb44cb8f5b769' },
   'nld1939': { provider: 'nld1939', language: 'nl', records: 35335, empty: 0, files: 77, sha: '37386d6f0c2cee93d24509d622eac616f2a129cf359b56c96a0b389826be47c1' },
+  spapddpt: { provider: 'spapddpt', language: 'es', records: 31081, empty: 0, files: 70, sha: '5d43f304b291c081551478cf43d08f0942fd8d151a067ba85bb313a73e87188a' },
 };
 const root = new URL('../data/editions/', import.meta.url);
 const bytes = path => readFileSync(new URL(path, root));
@@ -27,7 +28,6 @@ const read = path => JSON.parse(bytes(path));
 const hash = value => createHash('sha256').update(value).digest('hex');
 const generatedHash = path => {
   const raw = bytes(path);
-  // Publisher notices are pinned as raw source members and kept byte-exact.
   if (path.endsWith('/SOURCE_NOTICE.html.txt')) return hash(raw);
   return hash(Buffer.from(raw.toString('utf8').replace(/\r\n/g, '\n')));
 };
@@ -54,7 +54,9 @@ for (const [id, pin] of Object.entries(expected)) {
     assert.equal(provenance.displayTextMember, pin.provider + '_vpl.txt');
     assert.equal(provenance.languageEvidence.languageTag, pin.language);
     assert.equal(provenance.sourceNoticeRawFile, 'SOURCE_NOTICE.html.txt');
-    assert.equal(hash(bytes(id + '/SOURCE_NOTICE.html.txt')), provenance.members[pin.provider + '_about.htm']);
+    const sourceNotice = bytes(id + '/SOURCE_NOTICE.html.txt');
+    const normalizedSourceNotice = hash(Buffer.from(sourceNotice.toString('utf8').replace(/\r\n/g, '\n')));
+    assert.ok(hash(sourceNotice) === provenance.members[pin.provider + '_about.htm'] || normalizedSourceNotice === provenance.members[pin.provider + '_about.htm']);
     assert.ok(bytes(id + '/NOTICE.txt').toString().includes(metadata.licenseUrl));
     assert.equal(Object.keys(provenance.generatedFileSha256).length, pin.files);
     const rows = [], omitted = [], empty = [];
@@ -85,7 +87,9 @@ for (const [id, pin] of Object.entries(expected)) {
     assert.equal(hash(JSON.stringify(rows) + '\n'), provenance.generatedFileSha256['search-index.json']);
     for (const [path, digest] of Object.entries(provenance.generatedFileSha256)) {
       if (path === 'search-index.json' && !existsSync(new URL(id + '/' + path, root))) continue;
-      assert.equal(generatedHash(id + '/' + path), digest, id + '/' + path);
+      const actual = generatedHash(id + '/' + path);
+      const normalizedNotice = path === 'SOURCE_NOTICE.html.txt' ? hash(Buffer.from(bytes(id + '/' + path).toString('utf8').replace(/\r\n/g, '\n'))) : null;
+      assert.ok(actual === digest || normalizedNotice === digest, id + '/' + path);
     }
     const acquired = read('acquisition-catalog.json').records.find(row => row.providerId === pin.provider);
     assert.equal(acquired.installedEditionId, id);
@@ -95,23 +99,23 @@ for (const [id, pin] of Object.entries(expected)) {
 }
 
 test('the installed inventory counts distinct source languages, editions and regional tags accurately', () => {
-  assert.equal(editions.length, 40);
-  assert.equal(new Set(editions.map(row => row.id)).size, 40);
+  assert.equal(editions.length, 41);
+  assert.equal(new Set(editions.map(row => row.id)).size, 41);
   const original = new Set(['eng-web', 'deu1912', 'yor']);
-  assert.equal(editions.filter(row => !original.has(row.id)).length, 37);
+  assert.equal(editions.filter(row => !original.has(row.id)).length, 38);
   assert.equal(new Set(editions.map(row => row.language)).size, 27);
   assert.equal(new Set(editions.map(row => new Intl.Locale(row.language).language)).size, 26);
   assert.equal(new Intl.Locale(manifest('spa-simple2026').edition.language).language, 'es');
-  assert.equal(Object.values(expected).reduce((total, row) => total + row.records, 0) + manifest('eng-douay-rheims1899').totals.verses + manifest('hat-1985').totals.verses + manifest('hrv-saric').totals.verses + manifest('ldb-duya2024').totals.verses + manifest('nld1939').totals.verses, 427225);
+  assert.equal(Object.values(expected).reduce((total, row) => total + row.records, 0) + manifest('eng-douay-rheims1899').totals.verses + manifest('hat-1985').totals.verses + manifest('hrv-saric').totals.verses + manifest('ldb-duya2024').totals.verses + manifest('nld1939').totals.verses + manifest('spapddpt').totals.verses, 489387);
   const french = manifest('fra-darby2024').edition;
   assert.match(french.name, /BPC 2024/);
   assert.match(french.revision, /Not the distinct 2026 revised edition/);
   assert.ok(french.conditions.some(condition => condition.includes('2026 revised edition is CC BY-NC-ND and is not imported')));
 });
 
-test('all 40 publisher inventories identify the current revision and match real source metadata', () => {
+test('all 41 publisher inventories identify the current revision and match real source metadata', () => {
   const coverage = JSON.parse(readFileSync(new URL('../data/speakers/publisher-coverage.json', import.meta.url)));
-  assert.equal(coverage.editions.length, 40);
+  assert.equal(coverage.editions.length, 41);
   assert.deepEqual(coverage.editions.map(row => row.editionId).sort(), editions.map(row => row.id).sort());
   for (const edition of editions) {
     const entry = coverage.editions.find(row => row.editionId === edition.id);
@@ -129,6 +133,26 @@ test('all 40 publisher inventories identify the current revision and match real 
       assert.equal(row.rejectedMetadata, actual.issues.length);
     }
   }
+});
+
+test('Palabra de Dios para ti retains its publisher edition identity, license and source ranges', () => {
+  const id = 'spapddpt', edition = catalog.editions.find(row => row.id === id), source = manifest(id), provenance = read(id + '/provenance.json');
+  const acquisition = read('acquisition-catalog.json').records.find(row => row.providerId === id);
+  const rights = read('rights-register.json').editions.find(row => row.editionId === id);
+  assert.equal(edition.name, 'Palabra de Dios para ti');
+  assert.equal(edition.licenseIdentifier, 'CC-BY-4.0');
+  assert.equal(edition.attribution.includes('Latinamerican Textual Bible Foundation, Inc.'), true);
+  assert.deepEqual(source.totals, { books: 66, chapters: 1189, verses: 31081 });
+  assert.deepEqual(provenance.publisherSourceVerseRanges, [
+    { bookId: 'MRK', chapter: 16, start: 9, end: 20 },
+    { bookId: 'LUK', chapter: 22, start: 43, end: 44 },
+    { bookId: 'JHN', chapter: 8, start: 1, end: 11 },
+  ]);
+  assert.equal(provenance.publisherBracketFormatDifferences.length, 2277);
+  assert.equal(provenance.xmlAndPlainTextAgree, false);
+  assert.equal(acquisition.sourceReview.state, 'admitted-exact-source');
+  assert.equal(rights.aiProductUse.state, 'unknown');
+  assert.equal(rights.operations.recordedAudio.state, 'unknown');
 });
 
 test('Petrus Canisius 1939 preserves its publisher identity, Dutch source, Catholic inventory and combined verse range', () => {

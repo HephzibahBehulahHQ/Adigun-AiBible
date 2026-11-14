@@ -2467,6 +2467,63 @@ SOURCES['nld1939'] = {
 }
 
 
+SOURCES['spapddpt'] = {
+    'name': 'Palabra de Dios para ti', 'nativeTitle': 'Palabra de Dios para ti',
+    'abbreviation': 'PdDpt', 'language': 'es', 'script': 'Latn', 'direction': 'ltr',
+    'corpus': 'bible', 'publisher': 'Asociacion Biblica Latinoamericana',
+    'translator': 'Asociacion Biblica Latinoamericana',
+    'contributor': 'Latinamerican Textual Bible Foundation, Inc.',
+    'revision': 'Publisher files dated 2026-10-30; copyright notice ©2020',
+    'sourceUpdatedAt': '2026-10-30', 'sourceNoticeDate': '2026-10-30',
+    'sourceUrl': 'https://ebible.org/spapddpt/',
+    'formatUrl': 'https://ebible.org/details.php?id=spapddpt',
+    'downloadUrl': 'https://ebible.org/Scriptures/spapddpt_vpl.zip',
+    'downloadBytes': 4333913,
+    'licenseUrl': 'https://ebible.org/spapddpt/copyright.htm',
+    'rightsEvidenceUrls': ['https://ebible.org/spapddpt/copyright.htm',
+                           'https://creativecommons.org/licenses/by/4.0/'],
+    'license': 'CC BY 4.0', 'licenseIdentifier': 'CC-BY-4.0',
+    'licenseDeedUrl': 'https://creativecommons.org/licenses/by/4.0/',
+    'attribution': 'Palabra de Dios para ti. Translation by Asociacion Biblica Latinoamericana; contributor Latinamerican Textual Bible Foundation, Inc. ©2020. CC BY 4.0. Source: https://ebible.org/spapddpt/.',
+    'sha256': '5d43f304b291c081551478cf43d08f0942fd8d151a067ba85bb313a73e87188a',
+    'xmlSha256': 'a125918bb8f1422b72317c7d51f1efa5d092992e6a90a641ab064b1dfc87a2bd',
+    'textSha256': 'd992af417ba7763817779a2a07cb991be02d42ab18bab70b7020cd3f22462983',
+    'noticeSha256': '355e2bda3bf86c512e36fc671955ad594aceb9c55b00c7e1c83367cf3dbce048',
+    'providerId': 'spapddpt', 'canon': 'publisher-spanish-66',
+    'canonProfile': {
+        'id': 'publisher-spanish-66', 'label': 'Publisher archive 66-book list · Palabra de Dios para ti',
+        'description': 'This profile records the 66 source books and their order in this archive. It describes this edition’s coverage and does not define one canon for all Christian traditions.',
+        'sourceUrl': 'https://ebible.org/spapddpt/', 'bookCount': 66, 'oldTestamentBookCount': 39,
+    },
+    'bookOrder': BOOKS,
+    'languageEvidence': {
+        'registryUrl': 'https://www.iana.org/assignments/language-subtag-registry',
+        'languageTag': 'es', 'script': 'Latn', 'direction': 'ltr',
+        'registryFileDate': '2026-09-17',
+        'registrySha256': '755fad43283be7b41ebe3c89ad054b6eaf928f404f9c0edb74799e0eab74beb1',
+        'sourceLetterBidiCounts': {'L': 2999394},
+        'sourceLetterUnicodeNamePrefixes': {'LATIN': 2995562, 'MODIFIER': 3832},
+        'scope': 'The publisher identifies this source as Spanish, with a South American dialect. The IANA registry validates the language tag. Letter-direction and Unicode-name counts describe the exact TXT source; they do not establish native-language or editorial approval.',
+    },
+    'expectedTotals': {'books': 66, 'chapters': 1189, 'verses': 31081},
+    'sourceVerseRangeCount': 3,
+    'sourceVerseRangesSha256': 'c94f59df63d66b2930b080e79a7f8921df44ae6c111d2e66847a08d19b13f538',
+    'bracketExceptionCount': 2277,
+    'bracketExceptionInventorySha256': '7bcb94f5ba120ccc83da0e428f863ec59de39ec7c2049ae36f26a8cec61c4d07',
+    'terminalBracketPaddingSuffix': ' [[',
+    'bracketExceptionScope': 'The exact TXT/XML comparison inventory preserves publisher TXT wording: differences align after comparison-only removal of square brackets plus a separately pinned trailing ASCII-space exception before terminal [[ markers. The full inventory and three XML verse ranges are pinned. Display text remains unchanged.',
+    'rightsObservedAt': '2026-11-14', 'preserveSourceNotice': True,
+    'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': False, 'export': True},
+    'conditions': [
+        'Retain the exact edition identity, copyright/source notice and CC BY 4.0 attribution with redistributed and offline copies.',
+        'The publisher license permits sharing and adaptation with attribution and disclosure of changes. The imported TXT remains unchanged.',
+        'The publisher-supplied 66-book list and order describe this edition and do not define one canon for all Christian traditions.',
+        'Preserve the three XML combined verse ranges and all TXT bracket markers exactly; no missing wording or verse numbering is fabricated.',
+        'The VPL archive contains verse text only; images and third-party recorded audio are not included. The source notice does not establish separate AI service permissions or independent editorial/native-language review.',
+    ],
+}
+
+
 def edition_metadata(edition_id):
     source = SOURCES[edition_id]
     fields = ('name', 'language', 'corpus', 'scope', 'publisher', 'translator', 'sourceUpdatedAt', 'sourceUrl', 'formatUrl',
@@ -2616,6 +2673,19 @@ def vpl_format_difference(edition_id, xml_row, text_row):
                 return {**record, 'publisherMarkers': [marker[0] for marker in re.finditer(r'\[[^\[\]\r\n]+\]', text)],
                         'bracketPositions': [{'offset': marker.start(), 'character': marker[0]} for marker in brackets],
                         'publisherPaddingPositions': padding}
+    terminal_padding = SOURCES[edition_id].get('terminalBracketPaddingSuffix')
+    if terminal_padding and text.endswith(terminal_padding):
+        brackets = list(re.finditer(r'[\[\]]', text))
+        padding = [{'offset': len(text) - len(terminal_padding), 'character': ' '}]
+        excluded = {marker.start() for marker in brackets} | {padding[0]['offset']}
+        if (terminal_padding != ' [[' or len(brackets) < 2
+                or text[brackets[-2].start():] != '[[' or text[-2:] != '[['
+                or text[padding[0]['offset']] != ' '
+                or ''.join(character for offset, character in enumerate(text) if offset not in excluded) != xml_row['text']):
+            raise ValueError('Publisher terminal bracket-padding exception changed.')
+        return {**record, 'publisherMarkers': [marker[0] for marker in re.finditer(r'\[[^\[\]\r\n]+\]', text)],
+                'bracketPositions': [{'offset': marker.start(), 'character': marker[0]} for marker in brackets],
+                'publisherPaddingPositions': padding}
     raise ValueError('Publisher exports disagree beyond the pinned source-specific bracket format exception.')
 
 
@@ -2807,7 +2877,7 @@ def bible_artifacts(edition_id, archive):
     if 'bracketExceptionCount' in source:
         bracket_differences = [value for value in formatting_differences if 'publisherXmlBoundaryNbsp' not in value]
         provenance.update({
-            'xmlPlainTextCrossCheck': ('XML and TXT source verse starts and wording agree after comparison-only removal of the exact recorded TXT bracket. The XML separately supplies 1,147 hash-pinned combined range endpoints absent from TXT labels; displayed TXT remains unchanged.' if expected_ranges else 'All words, punctuation and references agree after comparison-only removal of the recorded TXT square brackets. Display text retains every bracket unchanged.'),
+            'xmlPlainTextCrossCheck': (f"XML and TXT source verse starts and wording agree after comparison-only removal of the exact recorded TXT bracket. The XML separately supplies {len(observed_ranges):,} pinned combined range endpoints absent from TXT labels; displayed TXT remains unchanged." if expected_ranges else 'All words, punctuation and references agree after comparison-only removal of the recorded TXT square brackets. Display text retains every bracket unchanged.'),
             'publisherBracketFormatDifferences': bracket_differences,
             'publisherBracketInventorySha256': sha(json_bytes(bracket_differences)),
             'publisherBracketOffsetUnit': 'unicode-codepoint',
