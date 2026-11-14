@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "HEB",
+  "bookName": "Hebrews",
+  "chapterNumber": 11,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:HEB:11:1",
+      "text": "Faith means being sure of what we hope for and convinced about what we can’t see."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:HEB:11:2",
+      "text": "It was by faith that people long ago were commended."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:HEB:11:3",
+      "text": "By faith we understand that the universe was formed by God’s word, so what is visible came from what can’t be seen."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:HEB:11:4",
+      "text": "By faith Abel offered God a better sacrifice than Cain did. Because of that faith he was commended as righteous, with God himself testifying about his gifts. Abel still speaks through his faith, even though he died."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:HEB:11:5",
+      "text": "By faith Enoch was taken away so he wouldn’t see death. He couldn’t be found because God had taken him. Before he was taken, he was commended as someone who pleased God."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:HEB:11:6",
+      "text": "Without faith it’s impossible to please God, because whoever comes to him must believe that he exists and rewards those who seek him."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:HEB:11:7",
+      "text": "By faith Noah, warned about things not yet seen, honored God and built an ark to save his family. His faith condemned the world, and he received the righteousness that comes through faith."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:HEB:11:8",
+      "text": "By faith Abraham obeyed when God called him to leave for a place he would later receive as his inheritance. He left without knowing where he was going."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:HEB:11:9",
+      "text": "By faith he lived as a foreigner in the promised land, like a stranger in a country that wasn’t his. He lived in tents, as did Isaac and Jacob, who shared the same promise."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:HEB:11:10",
+      "text": "He was looking forward to the city with lasting foundations, whose architect and builder is God."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:HEB:11:11",
+      "text": "By faith Sarah received strength to conceive, even though she was past the age, because she considered the one who promised faithful."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:HEB:11:12",
+      "text": "So from one man, who was as good as dead, came descendants as numerous as the stars in the sky and the countless grains of sand on the seashore."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:HEB:11:13",
+      "text": "All these people died in faith without receiving what was promised. They saw it from far away, welcomed it, and admitted they were foreigners and strangers on earth."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:HEB:11:14",
+      "text": "People who talk like that show they’re looking for a homeland."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:HEB:11:15",
+      "text": "If they had been thinking about the place they left, they could have gone back."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:HEB:11:16",
+      "text": "Instead, they were longing for a better homeland—a heavenly one. So God isn’t ashamed to be called their God, because he prepared a city for them."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:HEB:11:17",
+      "text": "By faith Abraham, when tested, offered Isaac. He was ready to offer his only son, even though he had received the promises,"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:HEB:11:18",
+      "text": "and God had told him, “Your descendants will come through Isaac.”"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:HEB:11:19",
+      "text": "Abraham reasoned that God could even raise the dead, and in a sense he received Isaac back from death."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:HEB:11:20",
+      "text": "By faith Isaac blessed Jacob and Esau concerning what was to come."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:HEB:11:21",
+      "text": "By faith Jacob, as he was dying, blessed each of Joseph’s sons and worshiped while leaning on his staff."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:HEB:11:22",
+      "text": "By faith Joseph, near the end of his life, spoke about Israel’s departure and gave instructions about his bones."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:HEB:11:23",
+      "text": "By faith Moses’ parents hid him for three months after he was born, because they saw he was a beautiful child and weren’t afraid of the king’s order."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:HEB:11:24",
+      "text": "By faith Moses, when he grew up, refused to be known as the son of Pharaoh’s daughter."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:HEB:11:25",
+      "text": "He chose to suffer with God’s people rather than enjoy sin’s fleeting pleasures."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:HEB:11:26",
+      "text": "He considered disgrace for the Messiah greater wealth than Egypt’s treasures, because he was looking ahead to his reward."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:HEB:11:27",
+      "text": "By faith he left Egypt without fearing the king’s anger. He kept going because he saw the one who is invisible."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:HEB:11:28",
+      "text": "By faith he kept the Passover and the sprinkling of blood, so the destroyer of the firstborn wouldn’t touch Israel’s children."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:HEB:11:29",
+      "text": "By faith the people crossed the Red Sea as if on dry ground, but when the Egyptians tried, they drowned."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:HEB:11:30",
+      "text": "By faith Jericho’s walls fell after the people marched around them for seven days."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:HEB:11:31",
+      "text": "By faith Rahab the sex worker welcomed the spies in peace and didn’t die with those who disobeyed."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:HEB:11:32",
+      "text": "What more can I say? I don’t have time to tell about Gideon, Barak, Samson, Jephthah, David, Samuel, and the prophets."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:HEB:11:33",
+      "text": "Through faith they conquered kingdoms, did what was right, received what was promised, shut the mouths of lions,"
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:HEB:11:34",
+      "text": "put out raging fires, escaped the sword, were made strong after being weak, became powerful in battle, and drove back foreign armies."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:HEB:11:35",
+      "text": "Women received their dead back to life. Others were tortured and refused release, wanting a better resurrection."
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:HEB:11:36",
+      "text": "Some faced mocking and whipping, and even chains and prison."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:HEB:11:37",
+      "text": "They were stoned; they were sawed in two; they were killed by the sword. They went around in sheepskins and goatskins, needy, persecuted, and mistreated."
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:HEB:11:38",
+      "text": "The world wasn’t worthy of them. They wandered through deserts and mountains, living in caves and holes in the ground."
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:HEB:11:39",
+      "text": "All these people were commended for their faith, but they didn’t receive what was promised,"
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:HEB:11:40",
+      "text": "because God had planned something better for us, so that only together with us would they be made complete."
+    }
+  ]
+}
