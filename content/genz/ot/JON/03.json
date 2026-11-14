@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "JON",
+  "bookName": "Jonah",
+  "chapterNumber": 3,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:JON:3:1","text":"The LORD’s word came to Jonah a second time:"},
+    {"number":2,"sourceRef":"eng-web:JON:3:2","text":"“Get up and go to the great city of Nineveh. Announce the message I give you.”"},
+    {"number":3,"sourceRef":"eng-web:JON:3:3","text":"Jonah got up and went to Nineveh, as the LORD had told him. Nineveh was an enormous city; it took three days to cross it."},
+    {"number":4,"sourceRef":"eng-web:JON:3:4","text":"Jonah entered the city and walked for a day, announcing, “In forty days, Nineveh will be overthrown!”"},
+    {"number":5,"sourceRef":"eng-web:JON:3:5","text":"The people of Nineveh believed God. They declared a fast and put on sackcloth, from the most important to the least."},
+    {"number":6,"sourceRef":"eng-web:JON:3:6","text":"When the news reached Nineveh’s king, he got up from his throne, took off his royal robe, put on sackcloth, and sat in ashes."},
+    {"number":7,"sourceRef":"eng-web:JON:3:7","text":"The king and his nobles issued a decree throughout Nineveh: “No person or animal—herd or flock—may taste anything. Don’t feed them or give them water."},
+    {"number":8,"sourceRef":"eng-web:JON:3:8","text":"“Cover everyone, people and animals, with sackcloth. Everyone must cry out to God. Turn away from evil and from the violence in your hands."},
+    {"number":9,"sourceRef":"eng-web:JON:3:9","text":"“Who knows? Maybe God will turn back, change his mind, and hold back his fierce anger, so we won’t die.”"},
+    {"number":10,"sourceRef":"eng-web:JON:3:10","text":"God saw what they did and how they turned from their evil ways. So God changed his mind about the disaster he had said he would bring on them, and he did not bring it."}
+  ]
+}
+
