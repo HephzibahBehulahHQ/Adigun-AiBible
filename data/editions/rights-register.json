@@ -324,6 +324,12 @@
       "url": "https://creativecommons.org/licenses/by/4.0/",
       "observedOn": "2026-11-14",
       "summary": "Creative Commons Attribution 4.0 International license deed."
+    },
+    {
+      "id": "adigun-owner-authorization",
+      "url": "https://github.com/HephzibahBehulahHQ/Adigun-AiBible/blob/main/data/editions/adigun-genz/NOTICE.txt",
+      "observedOn": "2026-11-14",
+      "summary": "The project owner authorized public implementation, display and deployment of the original Adigun Edition for this repository. The edition is based on the pinned World English Bible source; this records project-owner authorization, not independent legal review or permission for unrelated audio, model training or third-party material."
     }
   ],
   "editions": [
@@ -8272,6 +8278,163 @@
       "providerReporting": {
         "requirement": "none",
         "description": "No provider telemetry obligation is stated in the publisher notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "adigun-edition",
+      "sourceSha256": "4cc84fcd4058035e2771f1ddbe2cd318b5898577514d64c56858c531fc41ed34",
+      "verifiedOn": "2026-11-14",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "unknown",
+        "evidenceIds": [
+          "adigun-owner-authorization"
+        ],
+        "reason": "No separate owner authorization or evidence is recorded for this operation."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "adigun-owner-authorization"
+          ],
+          "reason": "The project owner authorized this operation for the original Adigun Edition in Adigun-AiBible."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "adigun-owner-authorization"
+          ],
+          "reason": "The project owner authorized this operation for the original Adigun Edition in Adigun-AiBible."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "adigun-owner-authorization"
+          ],
+          "reason": "The project owner authorized this operation for the original Adigun Edition in Adigun-AiBible."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "adigun-owner-authorization"
+          ],
+          "reason": "The project owner authorized this operation for the original Adigun Edition in Adigun-AiBible."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "adigun-owner-authorization"
+          ],
+          "reason": "The project owner authorized this operation for the original Adigun Edition in Adigun-AiBible."
+        },
+        "translation": {
+          "state": "unknown",
+          "evidenceIds": [
+            "adigun-owner-authorization"
+          ],
+          "reason": "No separate owner authorization or evidence is recorded for this operation."
+        },
+        "studyParaphrase": {
+          "state": "unknown",
+          "evidenceIds": [
+            "adigun-owner-authorization"
+          ],
+          "reason": "No separate owner authorization or evidence is recorded for this operation."
+        },
+        "aiRetrieval": {
+          "state": "unknown",
+          "evidenceIds": [
+            "adigun-owner-authorization"
+          ],
+          "reason": "No separate owner authorization or evidence is recorded for this operation."
+        },
+        "modelTraining": {
+          "state": "unknown",
+          "evidenceIds": [
+            "adigun-owner-authorization"
+          ],
+          "reason": "No separate owner authorization or evidence is recorded for this operation."
+        },
+        "tts": {
+          "state": "unknown",
+          "evidenceIds": [
+            "adigun-owner-authorization"
+          ],
+          "reason": "No separate owner authorization or evidence is recorded for this operation."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "adigun-owner-authorization"
+          ],
+          "reason": "No separate owner authorization or evidence is recorded for this operation."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "adigun-owner-authorization"
+          ],
+          "reason": "The project owner authorized this operation for the original Adigun Edition in Adigun-AiBible."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "adigun-owner-authorization"
+          ],
+          "reason": "The project owner authorized this operation for the original Adigun Edition in Adigun-AiBible."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "adigun-owner-authorization"
+          ],
+          "reason": "The project owner authorized this operation for the original Adigun Edition in Adigun-AiBible."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "adigun-owner-authorization"
+          ],
+          "reason": "The project owner authorized this operation for the original Adigun Edition in Adigun-AiBible."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "adigun-owner-authorization"
+          ],
+          "reason": "The project owner authorized this operation for the original Adigun Edition in Adigun-AiBible."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "adigun-owner-authorization"
+          ],
+          "reason": "The project owner authorized this operation for the original Adigun Edition in Adigun-AiBible."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "adigun-owner-authorization"
+          ],
+          "reason": "The project owner authorized this operation for the original Adigun Edition in Adigun-AiBible."
+        }
+      },
+      "attribution": "Adigun Edition. Original project wording based on the public-domain World English Bible source.",
+      "conditions": [
+        "Keep the Adigun Edition identity and project notice with redistributed copies."
+      ],
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No third-party provider is used for serving Adigun Edition text."
       }
     }
   ]

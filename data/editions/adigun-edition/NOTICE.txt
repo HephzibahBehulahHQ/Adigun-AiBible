@@ -1,0 +1,7 @@
+Adigun Edition
+
+This is the original Adigun Edition wording prepared for Adigun-AiBible. The present reader release contains Genesis chapters 1–21. The edition's source reference system is aligned to the project's pinned World English Bible (WEB) public-domain text. Changed wording is identified as Adigun Edition and is not presented as the WEB.
+
+Project owner authorization for public display and redistribution: the repository owner authorized implementation, publication, merge and deployment of the Adigun Edition in this project. WEB source notice: https://ebible.org/engwebp/copyright.htm.
+
+Adigun Edition is a project version name. This text does not include third-party commentary, notes, audio recordings or images.

@@ -7,6 +7,22 @@ async function expectSourceVerse(page: Page, number: number, text: string) {
   await expect.poll(async () => (await page.locator(`#verse-${number} [data-source-run]`).allTextContents()).join('')).toBe(text);
 }
 
+test('Adigun Edition opens its own Genesis text without an overlay or fallback', async ({ page }) => {
+  const adigun = JSON.parse(readFileSync(new URL('../data/editions/adigun-edition/books/GEN.json', import.meta.url), 'utf8'));
+  await page.goto('#/read/GEN/1?verse=1&edition=eng-web');
+  await page.getByLabel('Bible version', { exact: true }).selectOption('adigun-edition');
+  await expect(page).toHaveURL(/read\/GEN\/1\?verse=1&edition=adigun-edition/);
+  await expect(page.getByRole('heading', { name: 'Genesis 1', exact: true })).toBeVisible();
+  await expect(page.locator('.reader-title')).toContainText('Adigun Edition');
+  await expectSourceVerse(page, 1, adigun.chapters[0].verses[0].text);
+  await expect(page.locator('.reviewed-paraphrase')).toHaveCount(0);
+  await expect(page.locator('.edition-row select')).toHaveValue('adigun-edition');
+  await expect(page.getByRole('button', { name: 'Next chapter' })).toBeEnabled();
+  await page.goto('#/read/GEN/21?verse=1&edition=adigun-edition');
+  await expectSourceVerse(page, 1, adigun.chapters[20].verses[0].text);
+  await expect(page.getByRole('button', { name: 'Next chapter' })).toBeDisabled();
+});
+
 test('publisher notes and red-letter spans preserve exact wording and source identity', async ({ page }, testInfo) => {
   await page.goto('#/read/JHN/3?verse=16&edition=eng-bsb');
   const verse = page.locator('#verse-16');

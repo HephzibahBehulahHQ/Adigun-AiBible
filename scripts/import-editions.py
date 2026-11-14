@@ -2525,6 +2525,23 @@ SOURCES['spapddpt'] = {
 
 
 def edition_metadata(edition_id):
+    if edition_id == 'adigun-edition':
+        return {
+            'id': 'adigun-edition', 'name': 'Adigun Edition', 'language': 'en', 'corpus': 'bible', 'scope': 'portion',
+            'publisher': 'Adigun-AiBible project', 'translator': 'Adigun-AiBible project',
+            'sourceUpdatedAt': '2026-11-14', 'sourceUrl': 'https://adigun-aibible.hephzibahbehulah.com/',
+            'licenseUrl': 'https://github.com/HephzibahBehulahHQ/Adigun-AiBible/blob/main/data/editions/adigun-edition/NOTICE.txt',
+            'license': 'Project-authorized original edition',
+            'attribution': 'Adigun Edition. Original project wording based on the public-domain World English Bible source.',
+            'sha256': '4cc84fcd4058035e2771f1ddbe2cd318b5898577514d64c56858c531fc41ed34',
+            'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': False, 'export': True},
+            'conditions': ['Keep the Adigun Edition identity and project notice with redistributed copies.'],
+            'revision': 'Genesis chapters 1–21', 'rightsObservedAt': '2026-11-14', 'commercialUse': True,
+            'referenceSystemId': 'adigun-edition:eng-web-alignment',
+            'noticePath': 'adigun-edition/NOTICE.txt', 'manifestPath': 'adigun-edition/manifest.json',
+            'totals': {'books': 1, 'chapters': 21, 'verses': 548},
+            'booksPath': 'adigun-edition/books/', 'searchIndexPath': 'adigun-edition/search-index.json',
+        }
     source = SOURCES[edition_id]
     fields = ('name', 'language', 'corpus', 'scope', 'publisher', 'translator', 'sourceUpdatedAt', 'sourceUrl', 'formatUrl',
               'downloadUrl', 'licenseUrl', 'license', 'licenseIdentifier', 'licenseDeedUrl', 'attribution', 'sha256', 'rights', 'conditions',
@@ -3191,7 +3208,7 @@ def build_artifacts(edition_id, raw):
 
 def verify_outputs(output, pending_indexes=None):
     catalog = json.loads((output / 'catalog.json').read_text(encoding='utf-8'))
-    expected_catalog = {'schemaVersion': 1, 'editions': [edition_metadata(edition_id) for edition_id in SOURCES]}
+    expected_catalog = {'schemaVersion': 1, 'editions': [edition_metadata(edition_id) for edition_id in SOURCES] + [edition_metadata('adigun-edition')]}
     if catalog != expected_catalog:
         raise ValueError('Edition catalog metadata differs from pinned rights/source declarations.')
     summaries = []
@@ -3310,7 +3327,7 @@ def main():
     for edition_id in args.edition or SOURCES:
         raw = archive_bytes(edition_id, args.source_dir, args.download)
         generated[edition_id] = build_artifacts(edition_id, raw)
-    catalog = json_bytes({'schemaVersion': 1, 'editions': [edition_metadata(edition_id) for edition_id in SOURCES]})
+    catalog = json_bytes({'schemaVersion': 1, 'editions': [edition_metadata(edition_id) for edition_id in SOURCES] + [edition_metadata('adigun-edition')]})
     # Validate all selected archives before replacing any generated output.
     for edition_id, files in generated.items():
         for name, content in files.items():
