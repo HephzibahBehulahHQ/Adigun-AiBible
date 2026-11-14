@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1TH",
+  "bookName": "1 Thessalonians",
+  "chapterNumber": 5,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1TH:5:1",
+      "text": "About the times and seasons, brothers and sisters, you don't need us to write to you."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1TH:5:2",
+      "text": "You know very well that the day of the Lord will come like a thief in the night."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1TH:5:3",
+      "text": "While people are saying, ‘Peace and safety,’ sudden destruction will come on them, like labor pains on a pregnant woman, and they won't escape."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1TH:5:4",
+      "text": "But you, brothers and sisters, aren't in the dark, so that this day could catch you like a thief."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1TH:5:5",
+      "text": "You are all children of light and children of the day. We don't belong to the night or the darkness."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1TH:5:6",
+      "text": "So let's not sleep like everyone else. Let's stay alert and clear-minded."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1TH:5:7",
+      "text": "Those who sleep, sleep at night, and those who get drunk, get drunk at night."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1TH:5:8",
+      "text": "But since we belong to the day, let's be clear-minded, putting on faith and love as a breastplate and the hope of salvation as a helmet."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1TH:5:9",
+      "text": "God didn't choose us for judgment but to receive salvation through our Lord Jesus Christ."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1TH:5:10",
+      "text": "He died for us so that, whether we're awake or asleep, we may live together with him."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1TH:5:11",
+      "text": "So encourage one another and build each other up, just as you're already doing."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1TH:5:12",
+      "text": "Brothers and sisters, respect those who work among you, lead you in the Lord, and correct you."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1TH:5:13",
+      "text": "Hold them in high regard and love because of their work. Live at peace with one another."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1TH:5:14",
+      "text": "We urge you, brothers and sisters: warn those who are idle, encourage the discouraged, help the weak, and be patient with everyone."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:1TH:5:15",
+      "text": "Make sure no one pays back evil for evil. Always pursue what is good for one another and for everyone."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:1TH:5:16",
+      "text": "Always be joyful."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:1TH:5:17",
+      "text": "Never stop praying."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:1TH:5:18",
+      "text": "Give thanks in every situation, because this is God's will for you in Christ Jesus."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:1TH:5:19",
+      "text": "Don't put out the Spirit's fire."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:1TH:5:20",
+      "text": "Don't treat prophecies with contempt."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:1TH:5:21",
+      "text": "Test everything. Hold on to what is good."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:1TH:5:22",
+      "text": "Stay away from every kind of evil."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:1TH:5:23",
+      "text": "May the God of peace himself make you completely holy. May your whole spirit, soul, and body be kept blameless when our Lord Jesus Christ comes."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:1TH:5:24",
+      "text": "The one who calls you is faithful, and he will do it."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:1TH:5:25",
+      "text": "Brothers and sisters, pray for us."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:1TH:5:26",
+      "text": "Greet all the believers with a holy kiss."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:1TH:5:27",
+      "text": "I charge you before the Lord to have this letter read to all the brothers and sisters."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:1TH:5:28",
+      "text": "May the grace of our Lord Jesus Christ be with you. Amen."
+    }
+  ]
+}
