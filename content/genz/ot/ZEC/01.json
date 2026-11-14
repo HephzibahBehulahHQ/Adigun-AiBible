@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ZEC",
+  "bookName": "Zechariah",
+  "chapterNumber": 1,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:ZEC:1:1","text":"In the eighth month of Darius’s second year, the LORD’s word came to the prophet Zechariah, son of Berechiah, son of Iddo:"},
+    {"number":2,"sourceRef":"eng-web:ZEC:1:2","text":"“The LORD was deeply angry with your ancestors."},
+    {"number":3,"sourceRef":"eng-web:ZEC:1:3","text":"So tell them, ‘The LORD of Armies says: “Return to me,” says the LORD of Armies, “and I will return to you,” says the LORD of Armies.’"},
+    {"number":4,"sourceRef":"eng-web:ZEC:1:4","text":"“Don’t be like your ancestors. The earlier prophets called out to them, ‘The LORD of Armies says, “Turn back from your evil ways and harmful actions!”’ But they wouldn’t listen or pay attention to me,” says the LORD."},
+    {"number":5,"sourceRef":"eng-web:ZEC:1:5","text":"“Where are your ancestors now? And do the prophets live forever?"},
+    {"number":6,"sourceRef":"eng-web:ZEC:1:6","text":"But my words and commands, which I gave my servants the prophets, caught up with your ancestors, didn’t they? Then they repented and said, ‘The LORD of Armies decided to deal with us according to our ways and actions, and that’s exactly what he did.’”"},
+    {"number":7,"sourceRef":"eng-web:ZEC:1:7","text":"On the twenty-fourth day of the eleventh month, Shebat, in Darius’s second year, the LORD’s word came to the prophet Zechariah, son of Berechiah, son of Iddo:"},
+    {"number":8,"sourceRef":"eng-web:ZEC:1:8","text":"“During the night I saw a vision: a man riding a red horse stood among myrtle trees in a ravine. Behind him were red, brown, and white horses."},
+    {"number":9,"sourceRef":"eng-web:ZEC:1:9","text":"I asked, ‘Sir, what are these?’ The angel speaking with me said, ‘I’ll show you what they are.’”"},
+    {"number":10,"sourceRef":"eng-web:ZEC:1:10","text":"The man standing among the myrtle trees answered, “These are the ones the LORD sent to patrol the earth.”"},
+    {"number":11,"sourceRef":"eng-web:ZEC:1:11","text":"They reported to the LORD’s angel standing among the myrtle trees: “We have patrolled the earth, and everywhere it’s calm and at rest.”"},
+    {"number":12,"sourceRef":"eng-web:ZEC:1:12","text":"Then the LORD’s angel said, “LORD of Armies, how long will you withhold mercy from Jerusalem and Judah’s towns? You have been angry with them for seventy years.”"},
+    {"number":13,"sourceRef":"eng-web:ZEC:1:13","text":"The LORD answered the angel speaking with me with kind and comforting words."},
+    {"number":14,"sourceRef":"eng-web:ZEC:1:14","text":"The angel speaking with me told me, “Proclaim this: ‘The LORD of Armies says: “I care deeply about Jerusalem and Zion; my jealousy for them burns fiercely."},
+    {"number":15,"sourceRef":"eng-web:ZEC:1:15","text":"I am extremely angry with the nations living comfortably. I was only a little angry, but they made the disaster far worse.”’"},
+    {"number":16,"sourceRef":"eng-web:ZEC:1:16","text":"“So the LORD says: ‘I have returned to Jerusalem with compassion. My house will be rebuilt there,’ says the LORD of Armies, ‘and a measuring line will be stretched over Jerusalem.’”"},
+    {"number":17,"sourceRef":"eng-web:ZEC:1:17","text":"“Proclaim this too: ‘The LORD of Armies says: “My towns will again overflow with prosperity. The LORD will once more comfort Zion and choose Jerusalem again.”’”"},
+    {"number":18,"sourceRef":"eng-web:ZEC:1:18","text":"I looked up and saw four horns."},
+    {"number":19,"sourceRef":"eng-web:ZEC:1:19","text":"I asked the angel speaking with me, “What are these?” He answered, “These are the horns that scattered Judah, Israel, and Jerusalem.”"},
+    {"number":20,"sourceRef":"eng-web:ZEC:1:20","text":"Then the LORD showed me four craftsmen."},
+    {"number":21,"sourceRef":"eng-web:ZEC:1:21","text":"I asked, “What have these come to do?” He said, “Those horns scattered Judah so badly that no one could lift their head. These craftsmen have come to terrify them and knock down the horns of nations that raised themselves against Judah to scatter it.”"}
+  ]
+}
+
