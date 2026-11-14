@@ -3,6 +3,23 @@
   "generatedOn": "2026-11-14",
   "editions": [
     {
+      "editionId": "adigun-edition",
+      "sourceSha256": "4cc84fcd4058035e2771f1ddbe2cd318b5898577514d64c56858c531fc41ed34",
+      "status": "publisher-metadata",
+      "marker": "none",
+      "offsetUnit": "not-applicable",
+      "totalSpans": 0,
+      "totalVerses": 0,
+      "books": [
+        {
+          "bookId": "GEN",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        }
+      ]
+    },
+    {
       "editionId": "arb-vandyck",
       "sourceSha256": "070404da2e13e641b7550b50d7e777480b2cc2667e9669f2194d909ca04cd68a",
       "status": "publisher-metadata",

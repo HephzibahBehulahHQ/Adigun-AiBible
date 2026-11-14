@@ -33,11 +33,11 @@ async function cachedNotice(page: Page, id: string) {
 test.describe('ten exact source admissions', () => {
   test.use({ serviceWorkers: 'block' });
 
-  test('41 editions report 26 source languages and preserve the separate regional filters', async ({ page }) => {
-    expect(editions).toHaveLength(41);
+  test('42 editions report 26 source languages and preserve the separate regional filters', async ({ page }) => {
+    expect(editions).toHaveLength(42);
     expect(new Set(editions.map(edition => new Intl.Locale(edition.language).language)).size).toBe(26);
     await page.goto(route('editions', 'eng-web'));
-    await expect(page.getByText('41 installed Bible text editions · 38 added beyond the verified three-edition baseline.', { exact: false })).toBeVisible();
+    await expect(page.getByText('42 installed Bible text editions · 39 added beyond the verified three-edition baseline.', { exact: false })).toBeVisible();
     await expect(page.getByText(/^Installed source languages \(26\):/)).toBeVisible();
     const languages = page.getByRole('combobox', { name: 'Language', exact: true });
     await expect(languages.locator('option')).toHaveCount(28); // 27 exact tags plus the all-languages option.

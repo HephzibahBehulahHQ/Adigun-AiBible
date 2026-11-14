@@ -2,6 +2,7 @@ import { mkdir, readFile, writeFile, rm, rename } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { publishEditorial } from './publish-editorial.mjs';
+import './build-adigun-edition.mjs';
 import { copySourceContent, verifySourceJsonTransport, createSourceStagingDirectory } from './pack-source-json.mjs';
 const root = resolve(import.meta.dirname, '..');
 const python = process.env.PYTHON ?? (process.platform === 'win32' ? 'python' : 'python3');
