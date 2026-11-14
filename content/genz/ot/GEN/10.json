@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "GEN",
+  "bookName": "Genesis",
+  "chapterNumber": 10,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:GEN:10:1",
+      "text": "Here is the family record of Noah's sons—Shem, Ham, and Japheth. They had children after the flood."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:GEN:10:2",
+      "text": "Japheth's sons were Gomer, Magog, Madai, Javan, Tubal, Meshech, and Tiras."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:GEN:10:3",
+      "text": "Gomer's sons were Ashkenaz, Riphath, and Togarmah."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:GEN:10:4",
+      "text": "Javan's sons were Elishah, Tarshish, Kittim, and Dodanim."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:GEN:10:5",
+      "text": "Their descendants spread across the islands and coastlands, dividing the lands among them by language, family, and nation."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:GEN:10:6",
+      "text": "Ham's sons were Cush, Mizraim, Put, and Canaan."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:GEN:10:7",
+      "text": "Cush's sons were Seba, Havilah, Sabtah, Raamah, and Sabteca. Raamah's sons were Sheba and Dedan."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:GEN:10:8",
+      "text": "Cush became the father of Nimrod, who grew into a powerful figure on earth."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:GEN:10:9",
+      "text": "He was a mighty hunter in Yahweh's sight. That's why people say, \"Like Nimrod, a mighty hunter in Yahweh's sight.\""
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:GEN:10:10",
+      "text": "His kingdom first included Babel, Erech, Accad, and Calneh in the land of Shinar."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:GEN:10:11",
+      "text": "From there he went into Assyria and built Nineveh, Rehoboth Ir, and Calah,"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:GEN:10:12",
+      "text": "along with Resen, between Nineveh and the great city of Calah."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:GEN:10:13",
+      "text": "Mizraim became the father of the Ludim, Anamim, Lehabim, and Naphtuhim,"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:GEN:10:14",
+      "text": "the Pathrusim, Casluhim (from whom the Philistines descended), and Caphtorim."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:GEN:10:15",
+      "text": "Canaan became the father of Sidon, his firstborn, and Heth,"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:GEN:10:16",
+      "text": "and of the Jebusites, Amorites, and Girgashites,"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:GEN:10:17",
+      "text": "Hivites, Arkites, and Sinites,"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:GEN:10:18",
+      "text": "Arvadites, Zemarites, and Hamathites. Later, the Canaanite families spread out."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:GEN:10:19",
+      "text": "The Canaanite territory stretched from Sidon toward Gerar and Gaza, then toward Sodom, Gomorrah, Admah, and Zeboiim, as far as Lasha."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:GEN:10:20",
+      "text": "These were Ham's descendants, grouped by families, languages, lands, and nations."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:GEN:10:21",
+      "text": "Sons were also born to Shem, Japheth's older brother. Shem was the ancestor of all the children of Eber."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:GEN:10:22",
+      "text": "Shem's sons were Elam, Asshur, Arpachshad, Lud, and Aram."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:GEN:10:23",
+      "text": "Aram's sons were Uz, Hul, Gether, and Mash."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:GEN:10:24",
+      "text": "Arpachshad became the father of Shelah, and Shelah became the father of Eber."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:GEN:10:25",
+      "text": "Eber had two sons. One was named Peleg, because the earth was divided in his days; his brother was named Joktan."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:GEN:10:26",
+      "text": "Joktan became the father of Almodad, Sheleph, Hazarmaveth, and Jerah,"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:GEN:10:27",
+      "text": "Hadoram, Uzal, Diklah,"
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:GEN:10:28",
+      "text": "Obal, Abimael, and Sheba,"
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:GEN:10:29",
+      "text": "Ophir, Havilah, and Jobab. All of these were Joktan's sons."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:GEN:10:30",
+      "text": "Their territory stretched from Mesha toward Sephar, the eastern mountain country."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:GEN:10:31",
+      "text": "These were Shem's descendants, grouped by families, languages, lands, and nations."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:GEN:10:32",
+      "text": "These were the families descended from Noah's sons, listed by generations and nations. After the flood, the nations spread across the earth."
+    }
+  ]
+}
