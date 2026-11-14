@@ -160,7 +160,6 @@ export default function App() {
     return true;
   }, [current,activeEditionId]);
   const openPassage = useCallback((r:Reference) => navigate('read',r),[navigate]);
-  function changePreset(preset:Preferences['preset']) { setPrefs(p => ({...p,preset})); navigate(route.view,{...current,editionId:presetEditionId(preset)}); }
   useEffect(() => { let active=true; getEditionCatalog().then(catalog=>{if(active)setAvailableEditions(catalog.editions.filter(edition=>edition.corpus==='bible'));}).catch(()=>{if(active)setAvailableEditions([]);}); return()=>{active=false;}; },[]);
   async function changeEdition(editionId:string) {
     try {
