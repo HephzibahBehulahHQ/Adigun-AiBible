@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ROM",
+  "bookName": "Romans",
+  "chapterNumber": 12,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ROM:12:1",
+      "text": "So, brothers and sisters, because of God's mercy, I urge you to offer your bodies as a living sacrifice—holy and pleasing to God. This is your true and proper worship."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ROM:12:2",
+      "text": "Don't let this age shape you. Instead, be transformed by a renewed mind, so you can recognize what God wants—what is good, pleasing, and complete."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ROM:12:3",
+      "text": "By the grace given to me, I tell everyone among you: don't think of yourself more highly than you should. Think clearly and soberly, as God has given each person a measure of faith."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ROM:12:4",
+      "text": "Just as one body has many parts, and those parts don't all have the same job,"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ROM:12:5",
+      "text": "so we, though many, are one body in Christ, and each of us belongs to one another."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ROM:12:6",
+      "text": "We have different gifts according to the grace God has given us. If your gift is prophecy, use it in keeping with your faith."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ROM:12:7",
+      "text": "If it's serving, then serve; if it's teaching, then teach."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ROM:12:8",
+      "text": "If it's encouraging, then encourage; if it's giving, give generously; if it's leading, lead diligently; if it's showing mercy, do it cheerfully."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ROM:12:9",
+      "text": "Let your love be real. Hate what is evil; hold tightly to what is good."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ROM:12:10",
+      "text": "Love each other like family. Take the lead in showing honor to one another."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ROM:12:11",
+      "text": "Don't lose your drive. Stay spiritually fired up as you serve the Lord."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ROM:12:12",
+      "text": "Be joyful in hope, patient in trouble, and faithful in prayer."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:ROM:12:13",
+      "text": "Share with God's people who are in need. Make hospitality a habit."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:ROM:12:14",
+      "text": "Bless those who persecute you—bless them, don't curse them."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:ROM:12:15",
+      "text": "Celebrate with those who celebrate; mourn with those who mourn."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:ROM:12:16",
+      "text": "Live in harmony with one another. Don't chase status; be willing to spend time with people others overlook. Don't act like you know it all."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:ROM:12:17",
+      "text": "Don't pay anyone back with evil. Do what everyone can see is good."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:ROM:12:18",
+      "text": "If possible, as far as it depends on you, live at peace with everyone."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:ROM:12:19",
+      "text": "Dear friends, don't take revenge. Leave room for God's anger, because Scripture says, ‘Vengeance is mine; I will repay, says the Lord.’"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:ROM:12:20",
+      "text": "Instead, ‘If your enemy is hungry, feed them; if they're thirsty, give them something to drink. By doing this, you'll heap burning coals on their head.’"
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:ROM:12:21",
+      "text": "Don't let evil defeat you. Defeat evil by doing good."
+    }
+  ]
+}
