@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "2CO",
+  "bookName": "2 Corinthians",
+  "chapterNumber": 10,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:2CO:10:1",
+      "text": "I, Paul, personally appeal to you by Christ's humility and gentleness. I may seem timid when I'm there with you but bold when I'm away."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:2CO:10:2",
+      "text": "I beg you not to make me show that same boldness in person when I come, as I plan to do toward some who think we live by human standards."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:2CO:10:3",
+      "text": "Even though we live in human bodies, we don't fight by human methods."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:2CO:10:4",
+      "text": "The weapons we fight with aren't human. They have God's power to tear down strongholds."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:2CO:10:5",
+      "text": "We tear down arguments and every proud obstacle raised against knowing God, and we take every thought captive to obey Christ."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:2CO:10:6",
+      "text": "Once your obedience is complete, we'll be ready to deal with every act of disobedience."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:2CO:10:7",
+      "text": "Look at what's right in front of you. If anyone is confident that they belong to Christ, they should remember that we belong to Christ just as much as they do."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:2CO:10:8",
+      "text": "Even if I boast a little too boldly about the authority the Lord gave us to build you up, not tear you down, I won't be ashamed of it."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:2CO:10:9",
+      "text": "I don't want it to seem like I'm trying to scare you with my letters."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:2CO:10:10",
+      "text": "Some say, ‘His letters are forceful and powerful, but in person he's unimpressive, and his speaking is nothing special.’"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:2CO:10:11",
+      "text": "Those people should understand this: what we say by letter while away, we'll also do when we're there."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:2CO:10:12",
+      "text": "We don't dare put ourselves in the same class as those who recommend themselves. When they measure themselves by their own standards and compare themselves with one another, they show how little they understand."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:2CO:10:13",
+      "text": "We won't boast beyond our proper limits. We'll stay within the boundaries God assigned to us, which include you."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:2CO:10:14",
+      "text": "We aren't overstepping our limits as if we hadn't reached you. We were the first to bring you the Good News about Christ."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:2CO:10:15",
+      "text": "We don't boast about work others have done. We hope that as your faith grows, our work among you will expand within the area God assigned us,"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:2CO:10:16",
+      "text": "so we can preach the Good News in regions beyond you, without boasting about work already done by someone else."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:2CO:10:17",
+      "text": "As Scripture says, ‘If you boast, boast about the Lord.’"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:2CO:10:18",
+      "text": "The person who recommends themselves isn't the one who passes the test. The Lord's recommendation is what counts."
+    }
+  ]
+}

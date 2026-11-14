@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "2CO",
+  "bookName": "2 Corinthians",
+  "chapterNumber": 13,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:2CO:13:1",
+      "text": "This is my third visit to you. Scripture says, ‘Every matter must be confirmed by the testimony of two or three witnesses.’"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:2CO:13:2",
+      "text": "I warned you when I was there the second time, and I'm warning you again now while I'm away: if I come again, I won't spare those who sinned before or anyone else."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:2CO:13:3",
+      "text": "You want proof that Christ speaks through me. He isn't weak toward you; he shows his power among you."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:2CO:13:4",
+      "text": "He was crucified in weakness, but he lives by God's power. We too are weak in him, but we'll live with him by God's power among you."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:2CO:13:5",
+      "text": "Examine yourselves to see whether you're living in the faith. Test yourselves. Don't you realize that Jesus Christ is in you?—unless you fail the test."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:2CO:13:6",
+      "text": "I hope you'll recognize that we haven't failed the test."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:2CO:13:7",
+      "text": "I pray to God that you won't do anything wrong—not so we can look successful, but so you'll do what is right, even if we seem to have failed."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:2CO:13:8",
+      "text": "We can't do anything against the truth; we can only work for the truth."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:2CO:13:9",
+      "text": "We're glad when we're weak and you're strong. We also pray that you'll be fully restored."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:2CO:13:10",
+      "text": "That's why I'm writing this while I'm away: so I won't have to be harsh when I come, using the authority the Lord gave me to build you up, not tear you down."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:2CO:13:11",
+      "text": "Finally, brothers and sisters: celebrate, be restored, encourage one another, agree with one another, and live in peace. Then the God of love and peace will be with you."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:2CO:13:12",
+      "text": "Greet one another with a holy kiss."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:2CO:13:13",
+      "text": "All God's people here send you their greetings."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:2CO:13:14",
+      "text": "May the grace of the Lord Jesus Christ, the love of God, and the fellowship of the Holy Spirit be with you all. Amen."
+    }
+  ]
+}

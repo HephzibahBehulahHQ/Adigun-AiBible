@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "GAL",
+  "bookName": "Galatians",
+  "chapterNumber": 2,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:GAL:2:1",
+      "text": "After fourteen years, I went back to Jerusalem with Barnabas, and I brought Titus along too."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:GAL:2:2",
+      "text": "I went because of a revelation. I explained the Good News I preach among the Gentiles privately to the leaders, to make sure I wasn't running—or had run—in vain."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:GAL:2:3",
+      "text": "But Titus, who was with me and was Greek, wasn't forced to be circumcised."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:GAL:2:4",
+      "text": "That came up because some false believers had secretly slipped in to spy on the freedom we have in Christ Jesus and to make us slaves."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:GAL:2:5",
+      "text": "We didn't give in to them—not even for a moment—so the truth of the Good News could remain with you."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:GAL:2:6",
+      "text": "As for those who seemed important (what they were makes no difference to me; God doesn't play favorites), those leaders added nothing to my message."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:GAL:2:7",
+      "text": "On the contrary, they saw that I had been entrusted with the Good News for the uncircumcised, just as Peter had been entrusted with the Good News for the circumcised."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:GAL:2:8",
+      "text": "For the one who worked through Peter as an apostle to the circumcised also worked through me among the Gentiles."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:GAL:2:9",
+      "text": "James, Cephas, and John—the leaders who were recognized as pillars—saw the grace given to me and offered Barnabas and me the hand of fellowship. We would go to the Gentiles, and they to the circumcised."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:GAL:2:10",
+      "text": "They asked only that we remember the poor, which I was already eager to do."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:GAL:2:11",
+      "text": "But when Cephas came to Antioch, I confronted him face to face, because he was clearly in the wrong."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:GAL:2:12",
+      "text": "Before some people arrived from James, he ate with the Gentiles. But when they came, he pulled back and separated himself, afraid of the circumcision group."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:GAL:2:13",
+      "text": "The other Jews joined him in this hypocrisy, and even Barnabas was swept along with them."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:GAL:2:14",
+      "text": "When I saw they weren't acting in line with the truth of the Good News, I said to Cephas in front of everyone, ‘If you, a Jew, live like a Gentile and not like a Jew, why are you forcing Gentiles to live like Jews?’"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:GAL:2:15",
+      "text": "‘We are Jews by birth, not Gentile sinners,"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:GAL:2:16",
+      "text": "yet we know a person is made right not by doing the works of the law but through faith in Jesus Christ. We too believed in Christ Jesus so we could be made right through faith in Christ, not by works of the law, because no one will be made right by doing those works."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:GAL:2:17",
+      "text": "But if we seek to be made right in Christ and are still found to be sinners, does that make Christ a servant of sin? Absolutely not!"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:GAL:2:18",
+      "text": "If I rebuild what I tore down, I prove that I am a lawbreaker."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:GAL:2:19",
+      "text": "Through the law I died to the law, so I could live for God."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:GAL:2:20",
+      "text": "I have been crucified with Christ. It's no longer I who live, but Christ lives in me. The life I now live in this body, I live by faith in the Son of God, who loved me and gave himself for me."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:GAL:2:21",
+      "text": "I don't set aside God's grace. If righteousness came through the law, then Christ died for nothing!’"
+    }
+  ]
+}

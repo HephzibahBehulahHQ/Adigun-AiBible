@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "COL",
+  "bookName": "Colossians",
+  "chapterNumber": 4,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:COL:4:1",
+      "text": "Masters, treat your enslaved workers justly and fairly. Remember that you also have a Master in heaven."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:COL:4:2",
+      "text": "Keep praying faithfully. Stay alert, and give thanks."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:COL:4:3",
+      "text": "At the same time, pray for us too, that God will open a door for our message so we can share the mystery of Christ, for which I'm in chains."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:COL:4:4",
+      "text": "Pray that I'll make it clear, as I should."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:COL:4:5",
+      "text": "Be wise in the way you act toward outsiders, making the most of every opportunity."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:COL:4:6",
+      "text": "Let your words always be gracious and thoughtful, so you'll know how to answer each person."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:COL:4:7",
+      "text": "Tychicus, our dear brother, faithful servant, and fellow worker in the Lord, will tell you everything about me."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:COL:4:8",
+      "text": "I sent him for this very reason: so you can know how we're doing, and so he can encourage your hearts."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:COL:4:9",
+      "text": "Onesimus is coming with him. He's a faithful and dearly loved brother, one of your own. They'll tell you everything that's happening here."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:COL:4:10",
+      "text": "Aristarchus, my fellow prisoner, sends greetings, as does Mark, Barnabas' cousin. You've received instructions about him: welcome him if he comes to you."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:COL:4:11",
+      "text": "Jesus, who is called Justus, sends greetings too. These are the only fellow workers for God's Kingdom from the circumcised group who have been a comfort to me."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:COL:4:12",
+      "text": "Epaphras, one of your own and a servant of Christ Jesus, sends greetings. He is always wrestling in prayer for you, asking that you'll stand firm, mature, and fully confident in everything God wants."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:COL:4:13",
+      "text": "I can testify that he works hard for you, and for the believers in Laodicea and Hierapolis."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:COL:4:14",
+      "text": "Luke, our dear doctor, and Demas send greetings."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:COL:4:15",
+      "text": "Give my greetings to the brothers and sisters in Laodicea, and to Nympha and the church that meets in her home."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:COL:4:16",
+      "text": "After this letter has been read among you, make sure it's read in the church in Laodicea too. And you should read the letter from Laodicea."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:COL:4:17",
+      "text": "Tell Archippus, ‘Pay attention to the ministry you received in the Lord, and carry it out.’"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:COL:4:18",
+      "text": "I, Paul, write this greeting with my own hand. Remember that I'm in chains. Grace be with you. Amen."
+    }
+  ]
+}

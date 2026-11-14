@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "COL",
+  "bookName": "Colossians",
+  "chapterNumber": 1,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:COL:1:1",
+      "text": "Paul, an apostle of Christ Jesus by God's will, and our brother Timothy,"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:COL:1:2",
+      "text": "to God's holy and faithful people in Christ at Colossae: Grace and peace to you from God our Father."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:COL:1:3",
+      "text": "We always thank God, the Father of our Lord Jesus Christ, when we pray for you,"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:COL:1:4",
+      "text": "because we've heard about your faith in Christ Jesus and the love you have for all God's people."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:COL:1:5",
+      "text": "Your faith and love come from the hope stored up for you in heaven. You heard about this hope earlier in the true message of the Good News,"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:COL:1:6",
+      "text": "which has reached you. Just as it is bearing fruit and growing throughout the world, it has been doing the same among you since the day you heard it and truly understood God's grace."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:COL:1:7",
+      "text": "You learned this from Epaphras, our dear fellow servant, who is a faithful servant of Christ on your behalf."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:COL:1:8",
+      "text": "He also told us about the love the Spirit has given you."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:COL:1:9",
+      "text": "That's why, from the day we heard about you, we haven't stopped praying for you. We ask God to fill you with the knowledge of his will through all spiritual wisdom and understanding,"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:COL:1:10",
+      "text": "so you can live in a way worthy of the Lord and please him in every way: producing fruit in every good work and growing in the knowledge of God."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:COL:1:11",
+      "text": "May you be strengthened with all power according to his glorious might, so you can endure everything with patience and joy,"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:COL:1:12",
+      "text": "and give thanks to the Father, who has qualified you to share in the inheritance of his people in the light."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:COL:1:13",
+      "text": "He rescued us from the power of darkness and brought us into the Kingdom of his beloved Son."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:COL:1:14",
+      "text": "In the Son we have redemption—the forgiveness of sins."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:COL:1:15",
+      "text": "The Son is the image of the invisible God, the firstborn over all creation."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:COL:1:16",
+      "text": "Everything in heaven and on earth was created through him, visible and invisible—thrones, powers, rulers, and authorities. Everything was created through him and for him."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:COL:1:17",
+      "text": "He existed before everything, and everything holds together in him."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:COL:1:18",
+      "text": "He is the head of the body, the church. He is the beginning and the firstborn from the dead, so that he might be first in everything."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:COL:1:19",
+      "text": "God was pleased to have all his fullness live in him,"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:COL:1:20",
+      "text": "and through him to reconcile everything to himself, making peace through the blood of his cross for everything on earth and in heaven."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:COL:1:21",
+      "text": "At one time you were separated from God and hostile toward him in your thinking, shown by the evil things you did."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:COL:1:22",
+      "text": "But now Christ has reconciled you through his physical body and death, to present you holy, blameless, and beyond accusation before God—"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:COL:1:23",
+      "text": "if you continue in the faith, firmly grounded and steady, without shifting away from the hope in the Good News you heard. This Good News has been announced to every creature under heaven, and I, Paul, became its servant."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:COL:1:24",
+      "text": "Now I rejoice in my sufferings for you. In my body, I complete what remains of Christ's afflictions for the sake of his body, the church."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:COL:1:25",
+      "text": "I became its servant through the responsibility God gave me for you: to make God's message fully known,"
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:COL:1:26",
+      "text": "the mystery hidden for ages and generations but now revealed to God's people."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:COL:1:27",
+      "text": "God wanted to make known to them the glorious riches of this mystery among the Gentiles: Christ in you, the hope of glory."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:COL:1:28",
+      "text": "We proclaim Christ, warning and teaching everyone with all wisdom, so we can present everyone mature in Christ."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:COL:1:29",
+      "text": "That's why I work so hard, struggling with all the energy Christ powerfully works in me."
+    }
+  ]
+}

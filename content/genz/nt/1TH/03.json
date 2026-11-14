@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1TH",
+  "bookName": "1 Thessalonians",
+  "chapterNumber": 3,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1TH:3:1",
+      "text": "When we couldn't stand being apart from you any longer, we decided to stay behind alone in Athens"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1TH:3:2",
+      "text": "and send Timothy, our brother and God's co-worker in sharing the Good News about Christ, to strengthen and encourage you in your faith,"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1TH:3:3",
+      "text": "so no one would be shaken by these troubles. You know we're destined to face them."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1TH:3:4",
+      "text": "Even when we were with you, we kept telling you that we would suffer. And, as you know, that's what happened."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1TH:3:5",
+      "text": "That's why, when I couldn't stand it any longer, I sent Timothy to find out about your faith. I was afraid the tempter might have tempted you and made our work useless."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1TH:3:6",
+      "text": "But Timothy has just returned from you with good news about your faith and love. He says you always remember us warmly and long to see us, just as we long to see you."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1TH:3:7",
+      "text": "Brothers and sisters, because of your faith, we were encouraged about you in all our distress and trouble."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1TH:3:8",
+      "text": "Now we can truly live, since you are standing firm in the Lord."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1TH:3:9",
+      "text": "How can we thank God enough for you, for all the joy we feel because of you before our God?"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1TH:3:10",
+      "text": "Night and day we pray earnestly to see you again and to supply whatever is lacking in your faith."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1TH:3:11",
+      "text": "May God our Father himself and our Lord Jesus clear the way for us to come to you."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1TH:3:12",
+      "text": "May the Lord make your love grow and overflow for one another and for everyone, just as our love overflows for you."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1TH:3:13",
+      "text": "May he strengthen your hearts so they are blameless and holy before our God and Father when our Lord Jesus comes with all his holy ones."
+    }
+  ]
+}
