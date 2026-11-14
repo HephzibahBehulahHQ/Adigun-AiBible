@@ -162,7 +162,7 @@ test.describe('nine exact source admissions', () => {
     await testInfo.attach('Tandroy draft, change notice and share-alike obligations at 320px', { path: licenseScreenshot, contentType: 'image/png' });
   });
 
-  test('a downloaded notebook preserves all five exact sources and the Tandroy license conditions', async ({ page }) => {
+  test('a downloaded notebook preserves each exact source and the Tandroy license conditions', async ({ page }) => {
     for (const id of ids) {
       await page.goto(route('read', id));
       await exactVerse(page, 16, verse(id));
@@ -173,7 +173,7 @@ test.describe('nine exact source admissions', () => {
     }
     await page.goto(route('saved', 'tdx-tandroy'));
     await page.reload();
-    await expect(page.locator('.saved-card')).toHaveCount(7);
+    await expect(page.locator('.saved-card')).toHaveCount(ids.length);
     const downloadPromise = page.waitForEvent('download');
     await page.getByRole('button', { name: 'Export notebook', exact: true }).click();
     const download = await downloadPromise;
