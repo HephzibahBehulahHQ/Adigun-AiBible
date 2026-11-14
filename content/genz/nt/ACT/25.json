@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ACT",
+  "bookName": "Acts",
+  "chapterNumber": 25,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ACT:25:1",
+      "text": "Three days after Festus arrived in the province, he went from Caesarea up to Jerusalem."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ACT:25:2",
+      "text": "The chief priests and Jewish leaders brought their charges against Paul to him and urged him,"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ACT:25:3",
+      "text": "asking him to do them a favor by sending Paul to Jerusalem. They were plotting to kill Paul along the way."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ACT:25:4",
+      "text": "Festus replied that Paul would stay in custody at Caesarea and that he himself would soon go there."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ACT:25:5",
+      "text": "He said, “Let your leaders come down with me. If the man has done anything wrong, they can bring charges against him.”"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ACT:25:6",
+      "text": "After staying with them more than ten days, Festus went down to Caesarea. The next day he took his seat on the judgment bench and ordered Paul brought in."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ACT:25:7",
+      "text": "When Paul arrived, the Jews who had come from Jerusalem surrounded him and brought many serious charges they couldn’t prove."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ACT:25:8",
+      "text": "Paul defended himself: “I haven’t done anything wrong against the Jewish law, the temple, or Caesar.”"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ACT:25:9",
+      "text": "But Festus wanted to gain favor with the Jews, so he asked Paul, “Are you willing to go up to Jerusalem and be tried there before me on these charges?”"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ACT:25:10",
+      "text": "Paul said, “I’m standing before Caesar’s court, where I should be tried. I haven’t wronged the Jews, as you know very well."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ACT:25:11",
+      "text": "If I’ve done something wrong that deserves death, I don’t refuse to die. But if their charges against me aren’t true, no one can hand me over to them. I appeal to Caesar!”"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ACT:25:12",
+      "text": "After conferring with his council, Festus answered, “You’ve appealed to Caesar. To Caesar you’ll go.”"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:ACT:25:13",
+      "text": "Some days later, King Agrippa and Bernice arrived in Caesarea to pay their respects to Festus."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:ACT:25:14",
+      "text": "Since they stayed there many days, Festus discussed Paul’s case with the king. He said, “There’s a man Felix left in prison."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:ACT:25:15",
+      "text": "When I was in Jerusalem, the chief priests and Jewish elders brought charges against him and asked me to condemn him."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:ACT:25:16",
+      "text": "I told them it isn’t Roman custom to hand anyone over before the accused meets the accusers face to face and gets a chance to defend himself against the charges."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:ACT:25:17",
+      "text": "So when they came here, I didn’t delay. The very next day I took my seat on the judgment bench and ordered the man brought in."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:ACT:25:18",
+      "text": "When his accusers stood up, they didn’t charge him with the crimes I had expected."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:ACT:25:19",
+      "text": "They only had arguments with him about their religion and about a man named Jesus, who had died but whom Paul claimed was alive."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:ACT:25:20",
+      "text": "I was confused about how to investigate these matters, so I asked Paul if he was willing to go to Jerusalem and be tried there."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:ACT:25:21",
+      "text": "But Paul appealed to remain in custody for the emperor’s decision. So I ordered him kept until I could send him to Caesar.”"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:ACT:25:22",
+      "text": "Agrippa said to Festus, “I’d like to hear the man myself.” Festus replied, “Tomorrow you will.”"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:ACT:25:23",
+      "text": "The next day Agrippa and Bernice arrived with great ceremony and entered the audience hall with the military commanders and leading men of the city. At Festus’ command, Paul was brought in."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:ACT:25:24",
+      "text": "Festus said, “King Agrippa and everyone here with us, you see this man. The whole crowd of Jews has petitioned me about him, both in Jerusalem and here, shouting that he shouldn’t be allowed to live."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:ACT:25:25",
+      "text": "I found he’d done nothing deserving death. But since he appealed to the emperor, I decided to send him."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:ACT:25:26",
+      "text": "I don’t have any definite charge to write to my lord about him. That’s why I’ve brought him before all of you, especially you, King Agrippa, so that after this hearing I’ll have something to write."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:ACT:25:27",
+      "text": "It seems unreasonable to send a prisoner without stating the charges against him.”"
+    }
+  ]
+}
