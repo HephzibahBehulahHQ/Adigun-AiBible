@@ -6,7 +6,7 @@ const read = path => JSON.parse(readFileSync(new URL(path, import.meta.url), 'ut
 const emoji = /[\p{Extended_Pictographic}\p{Regional_Indicator}]/u;
 const sourceManifest = read('../data/manifest.json');
 const sourceBooks = new Map(['GEN'].map(bookId => [bookId, read(`../data/books/${bookId}.json`)]));
-const chapters = { GEN: Array.from({ length: 24 }, (_, index) => index + 1) };
+const chapters = { GEN: Array.from({ length: 39 }, (_, index) => index + 1) };
 
 for (const [bookId, bookChapters] of Object.entries(chapters)) {
  for (const chapterNumber of bookChapters) {
@@ -24,7 +24,7 @@ for (const [bookId, bookChapters] of Object.entries(chapters)) {
     assert.deepEqual(candidate.verses.map(verse => verse.number), source.verses.map(verse => verse.number));
     assert.deepEqual(candidate.verses.map(verse => verse.sourceRef), source.verses.map(verse => `eng-web:${bookId}:${chapterNumber}:${verse.number}`));
     assert.ok(candidate.verses.every(verse => typeof verse.text === 'string' && verse.text.trim().length > 0));
-    if (chapterNumber <= 2) assert.ok(candidate.verses.every(verse => emoji.test(verse.text)), 'each opening chapter verse includes an emoji');
+    if (chapterNumber <= 2 || chapterNumber >= 25) assert.ok(candidate.verses.every(verse => emoji.test(verse.text)), 'each installed Adigun verse includes an emoji');
     if (chapterNumber === 1) {
       assert.deepEqual(candidate.verses.slice(0, 3).map(verse => verse.text), [
         'Before anything was even on the map, God made the heavens and the earth. The whole universe? God set it up from scratch. 🌌',
