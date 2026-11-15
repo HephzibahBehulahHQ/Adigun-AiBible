@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "JOS",
+  "bookName": "Joshua",
+  "chapterNumber": 19,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:JOS:19:1",
+      "text": "The second lot landed with Simeon’s tribe, by its families. Simeon’s inheritance sat right inside Judah’s. 🎲"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:JOS:19:2",
+      "text": "Their towns included Beersheba—also called Sheba—and Moladah; 🏘️"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:JOS:19:3",
+      "text": "Hazar-shual, Balah, and Ezem; 🏘️"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:JOS:19:4",
+      "text": "Eltolad, Bethul, and Hormah; 🏘️"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:JOS:19:5",
+      "text": "Ziklag, Beth-marcaboth, and Hazar-susah; 🏘️"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:JOS:19:6",
+      "text": "Beth-lebaoth and Sharuhen—thirteen towns altogether, plus their villages; 🏘️"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:JOS:19:7",
+      "text": "Ain, Rimmon, Ether, and Ashan—four towns, plus their villages; 🏘️"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:JOS:19:8",
+      "text": "and all the villages around those towns, as far as Baalath-beer and Ramah in the South. That was Simeon’s inheritance, family by family. 🗺️"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:JOS:19:9",
+      "text": "Simeon’s share came out of Judah’s because Judah had more land than it needed. So Simeon received its inheritance inside Judah’s. 🤝"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:JOS:19:10",
+      "text": "The third lot landed with Zebulun’s people, family by family. Their border started at Sarid. 🎲"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:JOS:19:11",
+      "text": "From there it climbed west to Maralah, reached Dabbesheth, and went to the stream in front of Jokneam. 🗺️"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:JOS:19:12",
+      "text": "It turned east from Sarid toward sunrise, to Chisloth-tabor, went out to Daberath, and climbed to Japhia. 🏔️"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:JOS:19:13",
+      "text": "From there it passed east to Gath-hepher and Eth-kazin, then came out at Rimmon and stretched as far as Neah. 🗺️"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:JOS:19:14",
+      "text": "The border curved north toward Hannathon and ended at the Iphtah-el Valley; 🏞️"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:JOS:19:15",
+      "text": "plus Kattath, Nahalal, Shimron, Idalah, and Bethlehem—twelve towns altogether, with their villages. 🏘️"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:JOS:19:16",
+      "text": "That was Zebulun’s inheritance, family by family, with its towns and villages. 📜"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:JOS:19:17",
+      "text": "The fourth lot landed with Issachar’s people, family by family. 🎲"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:JOS:19:18",
+      "text": "Their towns included Jezreel, Chesulloth, and Shunem; 🏘️"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:JOS:19:19",
+      "text": "Hapharaim, Shion, and Anaharath; 🏘️"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:JOS:19:20",
+      "text": "Rabbith, Kishion, and Ebez; 🏘️"
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:JOS:19:21",
+      "text": "Remeth, En-gannim, En-haddah, and Beth-pazzez. 🏘️"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:JOS:19:22",
+      "text": "The border reached Tabor, Shahazumah, and Beth-shemesh, then ended at the Jordan. That’s sixteen towns, plus their villages. 🌊"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:JOS:19:23",
+      "text": "That was Issachar’s inheritance, family by family, with its towns and villages. 📜"
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:JOS:19:24",
+      "text": "The fifth lot landed with Asher’s tribe, by its families. 🎲"
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:JOS:19:25",
+      "text": "Their border ran through Helkath, Hali, Beten, and Achshaph; 🗺️"
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:JOS:19:26",
+      "text": "Allammelech, Amad, and Mishal. It reached west to Carmel and to Shihor-libnath. 🏔️"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:JOS:19:27",
+      "text": "Then it turned east toward Beth-dagon, reached Zebulun and the Iphtah-el Valley, went north to Beth-emek and Neiel, and came out at Cabul on the left; 🗺️"
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:JOS:19:28",
+      "text": "then Ebron, Rehob, Hammon, and Kanah, all the way to Great Sidon. 🏘️"
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:JOS:19:29",
+      "text": "The border curved toward Ramah and the fortified city of Tyre, then turned to Hosah and ended at the sea near Achzib. 🌊"
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:JOS:19:30",
+      "text": "Ummah, Aphek, and Rehob—twenty-two towns altogether, with their villages. 🏘️"
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:JOS:19:31",
+      "text": "That was Asher’s inheritance, family by family, with its towns and villages. 📜"
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:JOS:19:32",
+      "text": "The sixth lot landed with Naphtali’s people, family by family. 🎲"
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:JOS:19:33",
+      "text": "Their border ran from Heleph and the oak at Zaanannim, past Adami-nekeb and Jabneel to Lakkum, ending at the Jordan. 🗺️"
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:JOS:19:34",
+      "text": "It turned west to Aznoth-tabor and went out to Hukkok. Zebulun was on its south, Asher on its west, and Judah by the Jordan to the east. 🏔️"
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:JOS:19:35",
+      "text": "Their fortified towns were Ziddim, Zer, Hammath, Rakkath, and Chinnereth; 🏰"
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:JOS:19:36",
+      "text": "Adamah, Ramah, and Hazor; 🏘️"
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:JOS:19:37",
+      "text": "Kedesh, Edrei, and En-hazor; 🏘️"
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:JOS:19:38",
+      "text": "Iron, Migdal-el, Horem, Beth-anath, and Beth-shemesh—nineteen towns altogether, with their villages. 🏘️"
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:JOS:19:39",
+      "text": "That was Naphtali’s inheritance, family by family, with its towns and villages. 📜"
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:JOS:19:40",
+      "text": "The seventh lot landed with Dan’s tribe, by its families. 🎲"
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:JOS:19:41",
+      "text": "Their inheritance border ran through Zorah, Eshtaol, and Ir-shemesh; 🗺️"
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:JOS:19:42",
+      "text": "Shaalabbin, Aijalon, and Ithlah; 🏘️"
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:JOS:19:43",
+      "text": "Elon, Timnah, and Ekron; 🏘️"
+    },
+    {
+      "number": 44,
+      "sourceRef": "eng-web:JOS:19:44",
+      "text": "Eltekeh, Gibbethon, and Baalath; 🏘️"
+    },
+    {
+      "number": 45,
+      "sourceRef": "eng-web:JOS:19:45",
+      "text": "Jehud, Bene-berak, and Gath-rimmon; 🏘️"
+    },
+    {
+      "number": 46,
+      "sourceRef": "eng-web:JOS:19:46",
+      "text": "Me-jarkon and Rakkon, with the border facing Joppa. 🗺️"
+    },
+    {
+      "number": 47,
+      "sourceRef": "eng-web:JOS:19:47",
+      "text": "But Dan’s people went beyond their border, fought Leshem, captured it, and struck it down with the sword. They took it over and settled there, renaming Leshem ‘Dan’ after their ancestor Dan. ⚔️"
+    },
+    {
+      "number": 48,
+      "sourceRef": "eng-web:JOS:19:48",
+      "text": "That was Dan’s inheritance, family by family, with its towns and villages. 📜"
+    },
+    {
+      "number": 49,
+      "sourceRef": "eng-web:JOS:19:49",
+      "text": "Once the land had been divided up along its borders, Israel’s people gave Joshua son of Nun an inheritance among them. 🎁"
+    },
+    {
+      "number": 50,
+      "sourceRef": "eng-web:JOS:19:50",
+      "text": "As Yahweh commanded, they gave him the town he asked for: Timnath-serah in Ephraim’s hill country. He rebuilt the town and lived there. 🏡"
+    },
+    {
+      "number": 51,
+      "sourceRef": "eng-web:JOS:19:51",
+      "text": "These were the inheritances Eleazar the priest, Joshua son of Nun, and the family leaders divided by lot at Shiloh, before Yahweh, at the entrance to the Meeting Tent. That’s how they finished dividing the land. 🏕️"
+    }
+  ]
+}
+
