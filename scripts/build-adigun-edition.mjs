@@ -10,13 +10,15 @@ const sourceBooks = new Map(sourceManifest.books.map(book => [book.id, book]));
 // Only complete, reviewed chapters are installed. Add a chapter here after its
 // candidate file exists and passes the exact source-reference and verse-count checks.
 const portion = {
-  GEN: Array.from({ length: 24 }, (_, index) => index + 1),
+  GEN: { testament: 'ot', chapters: Array.from({ length: 24 }, (_, index) => index + 1) },
+  MAT: { testament: 'nt', chapters: [1, 2, 3, 4] },
 };
 const editionBooks = [];
 for (const sourceBook of sourceManifest.books.filter(book => portion[book.id])) {
+  const { testament, chapters: includedChapters } = portion[sourceBook.id];
   const chapters = [];
-  for (const chapterNumber of portion[sourceBook.id]) {
-    const path = resolve(root, 'content/genz/ot', sourceBook.id, `${String(chapterNumber).padStart(2, '0')}.json`);
+  for (const chapterNumber of includedChapters) {
+    const path = resolve(root, 'content/genz', testament, sourceBook.id, `${String(chapterNumber).padStart(2, '0')}.json`);
     const candidate = JSON.parse(await readFile(path, 'utf8'));
     const sourceVerseCount = sourceBook.verseCounts[chapterNumber - 1];
     if (candidate.editionId !== 'adigun-genz' || candidate.sourceEditionId !== 'eng-web'
@@ -89,3 +91,4 @@ rightsEdition.sourceSha256 = edition.sha256;
 await writeFile(rightsPath, `${JSON.stringify(rightsRegister, null, 2)}\n`);
 
 console.log(`Built ${edition.name}: ${totals.books} books, ${totals.chapters} chapters, ${totals.verses} verses; ${edition.sha256}`);
+
