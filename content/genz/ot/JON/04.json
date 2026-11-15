@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "JON",
+  "bookName": "Jonah",
+  "chapterNumber": 4,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:JON:4:1","text":"But Jonah was furious about this. He was angry."},
+    {"number":2,"sourceRef":"eng-web:JON:4:2","text":"He prayed to the LORD: “LORD, wasn’t this what I said back home? That’s why I rushed to run away to Tarshish. I knew you are gracious and merciful, slow to anger, and full of faithful love—you relent from sending disaster."},
+    {"number":3,"sourceRef":"eng-web:JON:4:3","text":"“So now, LORD, please take my life. I would rather die than live.”"},
+    {"number":4,"sourceRef":"eng-web:JON:4:4","text":"The LORD said, “Is it right for you to be angry?”"},
+    {"number":5,"sourceRef":"eng-web:JON:4:5","text":"Jonah left the city and sat down east of it. He made a shelter there and sat in its shade, waiting to see what would happen to the city."},
+    {"number":6,"sourceRef":"eng-web:JON:4:6","text":"The LORD God appointed a plant to grow over Jonah and shade his head, easing his distress. Jonah was very happy about the plant."},
+    {"number":7,"sourceRef":"eng-web:JON:4:7","text":"But at dawn the next day, God appointed a worm to attack the plant, and it withered."},
+    {"number":8,"sourceRef":"eng-web:JON:4:8","text":"When the sun came up, God appointed a scorching east wind. The sun beat down on Jonah’s head, and he grew faint. He asked to die, saying, “I would rather die than live.”"},
+    {"number":9,"sourceRef":"eng-web:JON:4:9","text":"God asked Jonah, “Is it right for you to be angry about the plant?” He answered, “Yes! I’m right to be angry—even to the point of death!”"},
+    {"number":10,"sourceRef":"eng-web:JON:4:10","text":"The LORD said, “You cared about the plant, though you didn’t work for it or make it grow. It sprang up in one night and died in one night."},
+    {"number":11,"sourceRef":"eng-web:JON:4:11","text":"“Shouldn’t I care about Nineveh, that great city with more than 120,000 people who can’t tell their right hand from their left, and also many animals?”"}
+  ]
+}
+
