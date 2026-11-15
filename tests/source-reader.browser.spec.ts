@@ -3,6 +3,7 @@ import type { Page } from '@playwright/test';
 import { readFileSync } from 'node:fs';
 const read = (book: string, chapter: number) => JSON.parse(readFileSync(new URL(`../data/editions/eng-bsb/books/${book}.json`, import.meta.url), 'utf8')).chapters.find((value: { number: number }) => value.number === chapter);
 const john = read('JHN', 3), psalm = read('PSA', 6), genesis = read('GEN', 22);
+const adigunMatthew = JSON.parse(readFileSync(new URL('../data/editions/adigun-edition/books/MAT.json', import.meta.url), 'utf8'));
 async function expectSourceVerse(page: Page, number: number, text: string) {
   await expect.poll(async () => (await page.locator(`#verse-${number} [data-source-run]`).allTextContents()).join('')).toBe(text);
 }
@@ -21,7 +22,9 @@ test('Adigun Edition opens its own Genesis text without an overlay or fallback',
   await page.goto('#/read/GEN/24?verse=1&edition=adigun-edition');
   await expect(page.getByRole('heading', { name: 'Genesis 24', exact: true })).toBeVisible();
   await expectSourceVerse(page, 1, adigun.chapters[23].verses[0].text);
-  await expect(page.getByRole('button', { name: 'Next chapter' })).toBeDisabled();
+  await page.getByRole('button', { name: 'Next chapter' }).click();
+  await expect(page.getByRole('heading', { name: 'Matthew 1', exact: true })).toBeVisible();
+  await expectSourceVerse(page, 1, adigunMatthew.chapters[0].verses[0].text);
 });
 
 test('publisher notes and red-letter spans preserve exact wording and source identity', async ({ page }, testInfo) => {
