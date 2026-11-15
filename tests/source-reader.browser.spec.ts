@@ -19,9 +19,9 @@ test('Adigun Edition opens its own Genesis text without an overlay or fallback',
   await expect(page.locator('.reviewed-paraphrase')).toHaveCount(0);
   await expect(page.locator('.edition-row select')).toHaveValue('adigun-edition');
   await expect(page.getByRole('button', { name: 'Next chapter' })).toBeEnabled();
-  await page.goto('#/read/GEN/39?verse=1&edition=adigun-edition');
-  await expect(page.getByRole('heading', { name: 'Genesis 39', exact: true })).toBeVisible();
-  await expectSourceVerse(page, 1, adigun.chapters[38].verses[0].text);
+  await page.goto('#/read/GEN/50?verse=1&edition=adigun-edition');
+  await expect(page.getByRole('heading', { name: 'Genesis 50', exact: true })).toBeVisible();
+  await expectSourceVerse(page, 1, adigun.chapters[49].verses[0].text);
   await page.getByRole('button', { name: 'Next chapter' }).click();
   await expect(page.getByRole('heading', { name: 'Matthew 1', exact: true })).toBeVisible();
   await expectSourceVerse(page, 1, adigunMatthew.chapters[0].verses[0].text);
@@ -110,4 +110,5 @@ test('source cross-reference previews retry failed loads and open the same editi
   await expect(page.getByRole('region', { name: 'Publisher source details', exact: true })).toHaveCount(0);
 });
 });
+
 
