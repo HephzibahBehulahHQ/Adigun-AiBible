@@ -10,7 +10,7 @@ const sourceBooks = new Map(sourceManifest.books.map(book => [book.id, book]));
 // Only complete, reviewed chapters are installed. Add a chapter here after its
 // candidate file exists and passes the exact source-reference and verse-count checks.
 const portion = {
-  GEN: Array.from({ length: 39 }, (_, index) => index + 1),
+  GEN: Array.from({ length: 50 }, (_, index) => index + 1),
   MAT: Array.from({ length: 28 }, (_, index) => index + 1),
 };
 const editionBooks = [];
@@ -91,3 +91,4 @@ rightsEdition.sourceSha256 = edition.sha256;
 await writeFile(rightsPath, `${JSON.stringify(rightsRegister, null, 2)}\n`);
 
 console.log(`Built ${edition.name}: ${totals.books} books, ${totals.chapters} chapters, ${totals.verses} verses; ${edition.sha256}`);
+
