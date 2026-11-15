@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "JON",
+  "bookName": "Jonah",
+  "chapterNumber": 2,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:JON:2:1","text":"From inside the fish, Jonah prayed to the LORD his God."},
+    {"number":2,"sourceRef":"eng-web:JON:2:2","text":"He said, “I called to the LORD in my distress, and he answered me. From deep in the grave I cried for help, and you heard my voice."},
+    {"number":3,"sourceRef":"eng-web:JON:2:3","text":"“You threw me into the depths, into the heart of the sea. Floodwaters surrounded me; all your waves and breakers swept over me."},
+    {"number":4,"sourceRef":"eng-web:JON:2:4","text":"“I said, ‘I have been driven away from your sight, but I will look again toward your holy temple.’"},
+    {"number":5,"sourceRef":"eng-web:JON:2:5","text":"“The waters closed over me, threatening my life. The deep surrounded me, and seaweed wrapped around my head."},
+    {"number":6,"sourceRef":"eng-web:JON:2:6","text":"“I sank down to the roots of the mountains. The earth locked me in forever. But you brought my life up from the pit, LORD my God."},
+    {"number":7,"sourceRef":"eng-web:JON:2:7","text":"“As my life was slipping away, I remembered the LORD. My prayer reached you, into your holy temple."},
+    {"number":8,"sourceRef":"eng-web:JON:2:8","text":"“Those who cling to worthless idols abandon the mercy that could be theirs."},
+    {"number":9,"sourceRef":"eng-web:JON:2:9","text":"“But I will offer you a sacrifice with grateful praise. I will keep my vows. Salvation belongs to the LORD!”"},
+    {"number":10,"sourceRef":"eng-web:JON:2:10","text":"Then the LORD spoke to the fish, and it vomited Jonah out onto dry land."}
+  ]
+}
+
