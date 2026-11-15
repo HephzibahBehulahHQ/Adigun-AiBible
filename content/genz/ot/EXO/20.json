@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "EXO",
+  "bookName": "Exodus",
+  "chapterNumber": 20,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:EXO:20:1",
+      "text": "God spoke all these words: 📜"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:EXO:20:2",
+      "text": "‘I am Yahweh your God. I brought you out of Egypt, out of slavery. 🛡️"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:EXO:20:3",
+      "text": "‘You must not have any other gods besides me. 🙏"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:EXO:20:4",
+      "text": "‘Don’t make an idol for yourself or an image of anything in the sky above, on the earth below, or in the water under the earth. 🚫"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:EXO:20:5",
+      "text": "‘Don’t bow down to them or serve them. I, Yahweh your God, am jealous for your loyalty. I bring the consequences of parents’ sin on the third and fourth generations of those who hate me, ⚖️"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:EXO:20:6",
+      "text": "I show faithful love to thousands who love me and keep my commands. ❤️"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:EXO:20:7",
+      "text": "‘Don’t misuse the name of Yahweh your God. Yahweh won’t treat anyone who misuses his name as innocent. 📣"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:EXO:20:8",
+      "text": "‘Remember the Sabbath day and keep it holy. 🕊️"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:EXO:20:9",
+      "text": "‘Work for six days and do all your work, 🛠️"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:EXO:20:10",
+      "text": "‘but the seventh day is a Sabbath to Yahweh your God. Don’t work—you, your son or daughter, your male or female servant, your livestock, or the foreigner staying in your town. 🛌"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:EXO:20:11",
+      "text": "‘Yahweh made the sky, earth, sea, and everything in them in six days, then rested on the seventh. That’s why Yahweh blessed the Sabbath day and made it holy. 🌍"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:EXO:20:12",
+      "text": "‘Honor your father and mother, so you can live long in the land Yahweh your God is giving you. 👨‍👩‍👧"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:EXO:20:13",
+      "text": "‘Do not murder. 🛑"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:EXO:20:14",
+      "text": "‘Do not commit adultery. 💍"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:EXO:20:15",
+      "text": "‘Do not steal. 🚫"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:EXO:20:16",
+      "text": "‘Do not lie about your neighbor in court. ⚖️"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:EXO:20:17",
+      "text": "‘Do not desire your neighbor’s house. Don’t desire your neighbor’s wife, male or female servant, ox, donkey, or anything that belongs to your neighbor.’ 🏠"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:EXO:20:18",
+      "text": "The people heard the thunder, saw the lightning, heard the trumpet blast, and saw the mountain covered in smoke. They trembled and stayed far away. ⛈️"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:EXO:20:19",
+      "text": "They said to Moses, ‘You speak to us, and we’ll listen. Don’t let God speak to us, or we’ll die.’ 😨"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:EXO:20:20",
+      "text": "Moses told the people, ‘Don’t be afraid. God came to test you, so reverence for him will stay with you and keep you from sinning.’ 🙏"
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:EXO:20:21",
+      "text": "The people stayed back, while Moses went closer to the thick darkness where God was. ☁️"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:EXO:20:22",
+      "text": "Yahweh told Moses, ‘Tell Israel’s people: “You saw for yourselves that I spoke with you from heaven. ☁️"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:EXO:20:23",
+      "text": "“‘Don’t make silver or gold gods to stand alongside me. 🚫"
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:EXO:20:24",
+      "text": "“‘Make an altar of earth for me. Offer your burnt offerings and peace offerings on it—your sheep and cattle. Wherever I cause my name to be remembered, I’ll come to you and bless you. 🙏"
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:EXO:20:25",
+      "text": "“‘If you build an altar of stone for me, don’t use cut stones. The moment you use a tool on it, you’ll defile it. 🪨"
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:EXO:20:26",
+      "text": "“‘Don’t climb steps to my altar, so your nakedness won’t be exposed there.’” 🕊️"
+    }
+  ]
+}
