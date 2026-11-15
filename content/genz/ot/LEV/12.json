@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "LEV",
+  "bookName": "Leviticus",
+  "chapterNumber": 12,
+  "verses": [
+    { "number": 1, "sourceRef": "eng-web:LEV:12:1", "text": "Yahweh spoke to Moses: 📜" },
+    { "number": 2, "sourceRef": "eng-web:LEV:12:2", "text": "“Tell Israel: When a woman gives birth to a boy, she’ll be ceremonially unclean for seven days, just as during her monthly period. 🍼" },
+    { "number": 3, "sourceRef": "eng-web:LEV:12:3", "text": "“On the eighth day, circumcise the boy. 📅" },
+    { "number": 4, "sourceRef": "eng-web:LEV:12:4", "text": "“Then she’ll continue her purification for thirty-three days. She must not touch anything holy or enter the sanctuary until those days are complete. 🗓️" },
+    { "number": 5, "sourceRef": "eng-web:LEV:12:5", "text": "“If she gives birth to a girl, she’ll be ceremonially unclean for two weeks, as during her period. Her purification continues for sixty-six days. 🍼" },
+    { "number": 6, "sourceRef": "eng-web:LEV:12:6", "text": "“When her purification days are complete, for either a son or daughter, she must bring the priest at the Meeting Tent entrance a one-year-old lamb for a burnt offering and a young pigeon or turtledove for a sin offering. 🐑" },
+    { "number": 7, "sourceRef": "eng-web:LEV:12:7", "text": "“The priest will present them before Yahweh and make atonement for her. Then she’ll be clean from the flow of blood. This is the rule for a woman after giving birth to a boy or girl. 🕊️" },
+    { "number": 8, "sourceRef": "eng-web:LEV:12:8", "text": "“If she can’t afford a lamb, she may bring two turtledoves or two young pigeons—one as a burnt offering and one as a sin offering. The priest will make atonement for her, and she’ll be clean.” 🕊️" }
+  ]
+}
