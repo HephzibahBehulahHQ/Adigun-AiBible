@@ -8,16 +8,16 @@ const manifest = read('../data/editions/adigun-edition/manifest.json');
 const sourceManifest = read('../data/manifest.json');
 const expectedBooks = [
   { id: 'GEN', testament: 'ot', chapters: Array.from({ length: 24 }, (_, index) => index + 1) },
-  { id: 'MAT', testament: 'nt', chapters: [1, 2, 3, 4] },
+  { id: 'MAT', testament: 'nt', chapters: Array.from({ length: 28 }, (_, index) => index + 1) },
 ];
 
 test('reader edition contains only complete, source-aligned Adigun chapters in canonical order', () => {
   assert.equal(manifest.edition.name, 'Adigun Edition');
   assert.equal(manifest.edition.scope, 'portion');
-  assert.equal(manifest.edition.revision, 'Genesis 1–24; Matthew 1–4');
+  assert.equal(manifest.edition.revision, 'Genesis 1–24; Matthew 1–28');
   assert.equal(manifest.sourceManifestSha256, sourceManifest.edition.sha256);
   assert.deepEqual(manifest.books.map(row => row.id), ['GEN', 'MAT']);
-  assert.deepEqual(manifest.totals, { books: 2, chapters: 28, verses: 749 });
+  assert.deepEqual(manifest.totals, { books: 2, chapters: 52, verses: 1730 });
   const installedBooks = [];
   for (const expected of expectedBooks) {
     const source = sourceManifest.books.find(row => row.id === expected.id);
