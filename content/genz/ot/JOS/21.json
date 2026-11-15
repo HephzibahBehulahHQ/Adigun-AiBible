@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "JOS",
+  "bookName": "Joshua",
+  "chapterNumber": 21,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:JOS:21:1",
+      "text": "The heads of the Levite families came to Eleazar the priest, Joshua son of Nun, and the family leaders of Israel’s tribes. 👥"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:JOS:21:2",
+      "text": "They spoke to them at Shiloh in Canaan: ‘Yahweh commanded through Moses that we receive towns to live in, with pastureland for our livestock.’ 🗣️"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:JOS:21:3",
+      "text": "So Israel gave the Levites towns from their own inheritances, with pastures, just as Yahweh commanded. 🏘️"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:JOS:21:4",
+      "text": "The first lot went to Kohath’s families. Aaron’s priestly descendants, who were Levites, received thirteen towns from Judah, Simeon, and Benjamin. 🎲"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:JOS:21:5",
+      "text": "The rest of Kohath’s descendants received ten towns from Ephraim, Dan, and half of Manasseh’s tribe. 🏘️"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:JOS:21:6",
+      "text": "Gershon’s descendants received thirteen towns from Issachar, Asher, Naphtali, and half of Manasseh in Bashan. 🏘️"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:JOS:21:7",
+      "text": "Merari’s descendants received twelve towns from Reuben, Gad, and Zebulun. 🏘️"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:JOS:21:8",
+      "text": "Israel gave these towns and pastures to the Levites by lot, just as Yahweh had commanded through Moses. 🎲"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:JOS:21:9",
+      "text": "From Judah and Simeon, they gave the following towns, called out by name: 📜"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:JOS:21:10",
+      "text": "They went to Aaron’s descendants from Kohath’s families, Levi’s descendants. They got the first lot. 🎲"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:JOS:21:11",
+      "text": "They gave them Kiriath-arba, named after Anak’s father and also called Hebron, in Judah’s hill country, with its surrounding pastureland. 🏔️"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:JOS:21:12",
+      "text": "But Caleb son of Jephunneh kept the town’s fields and villages as his own property. 🏡"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:JOS:21:13",
+      "text": "They gave Aaron’s priestly descendants Hebron and its pastures—the refuge city for anyone who had accidentally killed someone—and Libnah with its pastures; 🛡️"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:JOS:21:14",
+      "text": "Jattir and its pastures, Eshtemoa and its pastures; 🏘️"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:JOS:21:15",
+      "text": "Holon and its pastures, Debir and its pastures; 🏘️"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:JOS:21:16",
+      "text": "Ain, Juttah, and Beth-shemesh, each with pastureland—nine towns from those two tribes altogether. 🏘️"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:JOS:21:17",
+      "text": "From Benjamin’s tribe they got Gibeon and its pastures, and Geba and its pastures; 🏘️"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:JOS:21:18",
+      "text": "Anathoth and Almon, each with pastureland—four towns altogether. 🏘️"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:JOS:21:19",
+      "text": "Aaron’s priestly descendants had thirteen towns in all, each with its pastureland. 🏘️"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:JOS:21:20",
+      "text": "The rest of Kohath’s Levite families got their lot of towns from Ephraim’s tribe. 🎲"
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:JOS:21:21",
+      "text": "They gave them Shechem and its pastures in Ephraim’s hill country—the refuge city for anyone who had accidentally killed someone—and Gezer with its pastures; 🛡️"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:JOS:21:22",
+      "text": "Kibzaim and Beth-horon, each with pastureland—four towns altogether. 🏘️"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:JOS:21:23",
+      "text": "From Dan’s tribe they got Elteke and Gibbethon, each with its pastureland; 🏘️"
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:JOS:21:24",
+      "text": "Aijalon and Gath-rimmon, each with pastureland—four towns altogether. 🏘️"
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:JOS:21:25",
+      "text": "From half of Manasseh’s tribe they got Taanach and Gath-rimmon, each with pastureland—two towns. 🏘️"
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:JOS:21:26",
+      "text": "The rest of Kohath’s families had ten towns altogether, each with its pastures. 🏘️"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:JOS:21:27",
+      "text": "From half of Manasseh’s tribe, Gershon’s Levite families got Golan in Bashan and its pastures—the refuge city for anyone who had accidentally killed someone—and Be-eshterah with its pastures. Two towns. 🛡️"
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:JOS:21:28",
+      "text": "From Issachar’s tribe: Kishion and Daberath, each with pastureland; 🏘️"
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:JOS:21:29",
+      "text": "Jarmuth and En-gannim, each with pastureland—four towns altogether. 🏘️"
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:JOS:21:30",
+      "text": "From Asher’s tribe: Mishal and Abdon, each with pastureland; 🏘️"
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:JOS:21:31",
+      "text": "Helkath and Rehob, each with pastureland—four towns altogether. 🏘️"
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:JOS:21:32",
+      "text": "From Naphtali’s tribe they got Kedesh in Galilee and its pastures—the refuge city for anyone who had accidentally killed someone—plus Hammoth-dor and Kartan with their pastures. Three towns. 🛡️"
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:JOS:21:33",
+      "text": "The Gershonite families had thirteen towns altogether, each with its pastureland. 🏘️"
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:JOS:21:34",
+      "text": "From Zebulun’s tribe, Merari’s Levite families—the rest of Levi’s descendants—got Jokneam and Kartah, each with pastureland; 🏘️"
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:JOS:21:35",
+      "text": "Dimnah and Nahalal, each with pastureland—four towns altogether. 🏘️"
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:JOS:21:36",
+      "text": "From Reuben’s tribe they got Bezer and Jahaz, each with pastureland; 🏘️"
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:JOS:21:37",
+      "text": "Kedemoth and Mephaath, each with pastureland—four towns altogether. 🏘️"
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:JOS:21:38",
+      "text": "From Gad’s tribe they got Ramoth in Gilead and its pastures—the refuge city for anyone who had accidentally killed someone—and Mahanaim with its pastures; 🛡️"
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:JOS:21:39",
+      "text": "Heshbon and Jazer with their pastures—four towns altogether. 🏘️"
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:JOS:21:40",
+      "text": "Those were all the towns allotted to Merari’s families, the rest of the Levites. Their lot was twelve towns. 🏘️"
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:JOS:21:41",
+      "text": "All the Levite towns inside Israel’s territory added up to forty-eight, each with surrounding pastureland. 🏘️"
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:JOS:21:42",
+      "text": "Every one of those towns had pastureland around it. That was the setup for all of them. 🌿"
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:JOS:21:43",
+      "text": "So Yahweh gave Israel all the land he had sworn to give their ancestors. They took possession and settled there. 🏡"
+    },
+    {
+      "number": 44,
+      "sourceRef": "eng-web:JOS:21:44",
+      "text": "Yahweh gave them peace on every side, just as he had sworn to their ancestors. None of their enemies could stand against them; Yahweh handed every enemy over to them. 🛡️"
+    },
+    {
+      "number": 45,
+      "sourceRef": "eng-web:JOS:21:45",
+      "text": "Not one good promise Yahweh made to Israel’s people fell through. Every word came true. ✅"
+    }
+  ]
+}
+
