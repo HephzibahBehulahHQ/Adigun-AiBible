@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "HAB",
+  "bookName": "Habakkuk",
+  "chapterNumber": 3,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:HAB:3:1","text":"A prayer of the prophet Habakkuk, set to victorious music."},
+    {"number":2,"sourceRef":"eng-web:HAB:3:2","text":"LORD, I have heard of your fame. I stand in awe of your works, LORD. Renew them in our time; make them known again. In your anger, remember mercy."},
+    {"number":3,"sourceRef":"eng-web:HAB:3:3","text":"God came from Teman, the Holy One from Mount Paran. Selah. His glory covered the heavens, and his praise filled the earth."},
+    {"number":4,"sourceRef":"eng-web:HAB:3:4","text":"His brightness was like sunlight. Rays flashed from his hand, where his power was hidden."},
+    {"number":5,"sourceRef":"eng-web:HAB:3:5","text":"Plague went ahead of him, and pestilence followed close behind."},
+    {"number":6,"sourceRef":"eng-web:HAB:3:6","text":"He stood, and the earth shook. He looked, and nations trembled. The ancient mountains crumbled; the old hills collapsed. His ways last forever."},
+    {"number":7,"sourceRef":"eng-web:HAB:3:7","text":"I saw the tents of Cushan in distress; the homes in Midian’s land trembled."},
+    {"number":8,"sourceRef":"eng-web:HAB:3:8","text":"LORD, were you angry with the rivers? Was your anger against the rivers, or your fury against the sea, when you rode out on your horses and chariots of salvation?"},
+    {"number":9,"sourceRef":"eng-web:HAB:3:9","text":"You uncovered your bow and called for your sworn arrows. Selah. You split the earth with rivers."},
+    {"number":10,"sourceRef":"eng-web:HAB:3:10","text":"The mountains saw you and shook. Floods swept past; the deep roared and lifted its hands high."},
+    {"number":11,"sourceRef":"eng-web:HAB:3:11","text":"The sun and moon stood still in the sky at the flash of your arrows and the gleam of your shining spear."},
+    {"number":12,"sourceRef":"eng-web:HAB:3:12","text":"You marched through the earth in anger and threshed the nations in fury."},
+    {"number":13,"sourceRef":"eng-web:HAB:3:13","text":"You came to save your people, to save your anointed one. You crushed the leader of the wicked house and stripped him bare from head to foot. Selah."},
+    {"number":14,"sourceRef":"eng-web:HAB:3:14","text":"You pierced the heads of his warriors with their own spears. They charged like a whirlwind to scatter me, celebrating as they secretly devoured the poor."},
+    {"number":15,"sourceRef":"eng-web:HAB:3:15","text":"You trampled the sea with your horses, churning the mighty waters."},
+    {"number":16,"sourceRef":"eng-web:HAB:3:16","text":"I heard, and my body shook. My lips quivered at the sound. My bones felt rotten, and I trembled where I stood. I will wait quietly for the day of trouble, when the people attacking us come."},
+    {"number":17,"sourceRef":"eng-web:HAB:3:17","text":"Even if the fig tree doesn’t blossom and the vines have no grapes; even if the olive crop fails and the fields produce no food; even if the flocks disappear from the pens and there are no cattle in the stalls,"},
+    {"number":18,"sourceRef":"eng-web:HAB:3:18","text":"I will still rejoice in the LORD and celebrate the God who saves me!"},
+    {"number":19,"sourceRef":"eng-web:HAB:3:19","text":"The Lord GOD is my strength. He makes my feet like a deer’s and helps me walk on high places. For the music director, with my stringed instruments."}
+  ]
+}
+
