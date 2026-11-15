@@ -6,7 +6,7 @@ const read = path => JSON.parse(readFileSync(new URL(path, import.meta.url), 'ut
 const emoji = /[\p{Extended_Pictographic}\p{Regional_Indicator}]/u;
 const sourceManifest = read('../data/manifest.json');
 const sourceBooks = new Map(['GEN'].map(bookId => [bookId, read(`../data/books/${bookId}.json`)]));
-const chapters = { GEN: Array.from({ length: 39 }, (_, index) => index + 1) };
+const chapters = { GEN: Array.from({ length: 50 }, (_, index) => index + 1) };
 
 for (const [bookId, bookChapters] of Object.entries(chapters)) {
  for (const chapterNumber of bookChapters) {
@@ -42,3 +42,4 @@ for (const [bookId, bookChapters] of Object.entries(chapters)) {
   });
  }
 }
+
