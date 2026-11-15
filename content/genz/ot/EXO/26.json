@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "EXO",
+  "bookName": "Exodus",
+  "chapterNumber": 26,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:EXO:26:1",
+      "text": "‘Make the Tabernacle from ten curtains of finely twisted linen, with blue, purple, and scarlet yarn and designs of cherubim. A skilled craftsperson must make them. 🧵"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:EXO:26:2",
+      "text": "‘Each curtain must be twenty-eight cubits long and four cubits wide. Make all ten the same size. 📏"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:EXO:26:3",
+      "text": "‘Join five curtains together as one set, and the other five together as another set. 🪡"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:EXO:26:4",
+      "text": "‘Make blue loops along the edge of the curtain at the joining seam. Do the same along the edge of the outer curtain in the second set. 🔵"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:EXO:26:5",
+      "text": "‘Make fifty loops on the edge of the curtain in each set, lining the loops up opposite one another. 🧵"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:EXO:26:6",
+      "text": "‘Make fifty gold clasps and use them to connect the curtain sets, so the Tabernacle becomes one piece. ✨"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:EXO:26:7",
+      "text": "‘Make eleven curtains of goat hair as a covering over the Tabernacle. 🐐"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:EXO:26:8",
+      "text": "‘Each of these curtains must be thirty cubits long and four cubits wide. Make all eleven the same size. 📏"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:EXO:26:9",
+      "text": "‘Join five curtains together as one set and six as another. Fold the sixth curtain over the front of the tent. 🪡"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:EXO:26:10",
+      "text": "‘Make fifty loops along the outer edge of the curtain in each joined set. 🧵"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:EXO:26:11",
+      "text": "‘Make fifty bronze clasps, put them through the loops, and join the curtains into one tent. 🟤"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:EXO:26:12",
+      "text": "‘Let the extra half-curtain hang over the back of the Tabernacle. 🏕️"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:EXO:26:13",
+      "text": "‘Let the extra cubit on each side hang down along the two sides of the Tabernacle to cover it. 📏"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:EXO:26:14",
+      "text": "‘Make a covering for the tent from ram skins dyed red, with a covering of sea cow hides over that. 🐏"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:EXO:26:15",
+      "text": "‘Make upright frames for the Tabernacle from acacia wood. 🪵"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:EXO:26:16",
+      "text": "‘Each frame must be ten cubits long and one and a half cubits wide. 📏"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:EXO:26:17",
+      "text": "‘Make two matching tenons on each frame. Make every Tabernacle frame the same way. 🪚"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:EXO:26:18",
+      "text": "‘Make twenty frames for the south side of the Tabernacle. 🔢"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:EXO:26:19",
+      "text": "‘Make forty silver bases under those twenty frames—two bases under each frame, one for each tenon. 🪙"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:EXO:26:20",
+      "text": "‘For the north side of the Tabernacle, make twenty frames, 🪵"
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:EXO:26:21",
+      "text": "‘and forty silver bases—two under each frame. 🪙"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:EXO:26:22",
+      "text": "‘For the back of the Tabernacle on the west side, make six frames. 🧭"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:EXO:26:23",
+      "text": "‘Make two extra frames for the back corners of the Tabernacle. 🪵"
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:EXO:26:24",
+      "text": "‘At the bottom, pair the corner frames. Join them all the way to the top with one ring. Make both corners the same way. 🔗"
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:EXO:26:25",
+      "text": "‘There will be eight frames in all, with sixteen silver bases—two bases under each frame. 🔢"
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:EXO:26:26",
+      "text": "‘Make crossbars from acacia wood: five for the frames on one side of the Tabernacle, 🪵"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:EXO:26:27",
+      "text": "‘five for the frames on the other side, and five for the frames at the back on the west side. 🪵"
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:EXO:26:28",
+      "text": "‘The middle crossbar must run through the center of the frames from one end to the other. 📏"
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:EXO:26:29",
+      "text": "‘Cover the frames with gold, make gold rings to hold the crossbars, and cover the crossbars with gold too. ✨"
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:EXO:26:30",
+      "text": "‘Set up the Tabernacle according to the design shown to you on the mountain. 🏔️"
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:EXO:26:31",
+      "text": "‘Make a curtain of blue, purple, and scarlet yarn and finely twisted linen, with cherubim woven into it by a skilled craftsperson. 🧵"
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:EXO:26:32",
+      "text": "‘Hang it on four acacia posts covered with gold, with gold hooks and four silver bases. 🏛️"
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:EXO:26:33",
+      "text": "‘Hang the curtain under the clasps, then bring the Ark of the Covenant inside it. The curtain will separate the Holy Place from the Most Holy Place. 🏛️"
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:EXO:26:34",
+      "text": "‘Put the atonement cover on the Ark of the Covenant in the Most Holy Place. 📦"
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:EXO:26:35",
+      "text": "‘Put the table outside the curtain. Place the lampstand opposite it on the south side of the Tabernacle, and put the table on the north side. 🪔"
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:EXO:26:36",
+      "text": "‘Make an entrance screen for the Tent from blue, purple, and scarlet yarn and finely twisted linen. An embroiderer must make it. 🧵"
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:EXO:26:37",
+      "text": "‘Make five acacia posts for the screen and cover them with gold. Their hooks must be gold. Cast five bronze bases for them.’ 🏛️"
+    }
+  ]
+}

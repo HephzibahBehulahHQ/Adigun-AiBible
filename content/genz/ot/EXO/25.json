@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "EXO",
+  "bookName": "Exodus",
+  "chapterNumber": 25,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:EXO:25:1",
+      "text": "Yahweh spoke to Moses: 📣"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:EXO:25:2",
+      "text": "‘Tell Israel’s people to bring me an offering. Accept it from everyone whose heart moves them to give. 🤲"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:EXO:25:3",
+      "text": "‘Here’s what you can receive: gold, silver, and bronze; 🪙"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:EXO:25:4",
+      "text": "‘blue, purple, and scarlet yarn; fine linen and goat hair; 🧵"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:EXO:25:5",
+      "text": "‘ram skins dyed red, sea cow hides, and acacia wood; 🪵"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:EXO:25:6",
+      "text": "‘oil for the lamps, spices for anointing oil and fragrant incense; 🪔"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:EXO:25:7",
+      "text": "‘onyx stones and gems to set in the ephod and breastpiece. 💎"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:EXO:25:8",
+      "text": "‘Have them make a sanctuary for me, so I can live among them. 🏛️"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:EXO:25:9",
+      "text": "‘Make the Tabernacle and all its furnishings exactly to the pattern I’ll show you. 📐"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:EXO:25:10",
+      "text": "‘Make an ark from acacia wood. It must be two and a half cubits long, one and a half cubits wide, and one and a half cubits high. 📦"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:EXO:25:11",
+      "text": "‘Cover it inside and outside with pure gold, and add a gold border around it. ✨"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:EXO:25:12",
+      "text": "‘Cast four gold rings for it and attach them to its four feet—two rings on one side and two on the other. 💍"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:EXO:25:13",
+      "text": "‘Make poles from acacia wood and cover them with gold. 🪵"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:EXO:25:14",
+      "text": "‘Put the poles through the rings on the ark’s sides so the ark can be carried. 🏛️"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:EXO:25:15",
+      "text": "‘Leave the poles in the ark’s rings; don’t remove them. 📦"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:EXO:25:16",
+      "text": "‘Place inside the ark the covenant tablets I’ll give you. 📜"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:EXO:25:17",
+      "text": "‘Make a cover of pure gold for the ark, two and a half cubits long and one and a half cubits wide. ✨"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:EXO:25:18",
+      "text": "‘Make two hammered-gold cherubim and put them at the two ends of the cover. 👼"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:EXO:25:19",
+      "text": "‘Make one cherub at each end, as one piece with the cover. 🪽"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:EXO:25:20",
+      "text": "‘The cherubim must spread their wings upward, covering the cover. Face them toward each other and toward the cover. 🪽"
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:EXO:25:21",
+      "text": "‘Put the cover on top of the ark, and place the covenant tablets I give you inside it. 📦"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:EXO:25:22",
+      "text": "‘I’ll meet you there and speak with you from above the cover, between the two cherubim over the ark of the covenant. I’ll give you all my commands for Israel’s people there. 🙏"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:EXO:25:23",
+      "text": "‘Make a table from acacia wood, two cubits long, one cubit wide, and one and a half cubits high. 🪵"
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:EXO:25:24",
+      "text": "‘Cover it with pure gold and add a gold border around it. ✨"
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:EXO:25:25",
+      "text": "‘Add a rim around it as wide as a hand, with a gold border around the rim. 📐"
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:EXO:25:26",
+      "text": "‘Make four gold rings and attach them at the four corners by its legs. 💍"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:EXO:25:27",
+      "text": "‘Put the rings close to the rim; they’ll hold the poles used to carry the table. 🪵"
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:EXO:25:28",
+      "text": "‘Make the carrying poles from acacia wood and cover them with gold. 🪵"
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:EXO:25:29",
+      "text": "‘Make its dishes, spoons, ladles, and bowls for pouring out offerings. Make them from pure gold. 🥣"
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:EXO:25:30",
+      "text": "‘Always keep the bread of the Presence on the table before me. 🍞"
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:EXO:25:31",
+      "text": "‘Make a lampstand from pure gold, hammered into shape as one piece with its base, shaft, cups, buds, and flowers. 🪔"
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:EXO:25:32",
+      "text": "‘Six branches must extend from its sides—three on one side and three on the other. 🌿"
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:EXO:25:33",
+      "text": "‘Each of the six branches must have three cups shaped like almond blossoms, each with a bud and a flower. 🌼"
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:EXO:25:34",
+      "text": "‘The lampstand’s central shaft must have four cups shaped like almond blossoms, with their buds and flowers. 🌼"
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:EXO:25:35",
+      "text": "‘Under each pair of the six branches, make a bud that is one piece with the shaft. 🌱"
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:EXO:25:36",
+      "text": "‘The buds and branches must all be one piece with the lampstand, hammered from pure gold. ✨"
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:EXO:25:37",
+      "text": "‘Make seven lamps for it and set them up to shine toward the space in front of it. 🪔"
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:EXO:25:38",
+      "text": "‘Make its tongs and trays from pure gold. 🛠️"
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:EXO:25:39",
+      "text": "‘Use one talent of pure gold for the lampstand and all its accessories. ⚖️"
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:EXO:25:40",
+      "text": "‘Be careful to make everything according to the pattern I showed you on the mountain.’ 🏔️"
+    }
+  ]
+}

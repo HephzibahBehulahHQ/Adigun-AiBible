@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "EXO",
+  "bookName": "Exodus",
+  "chapterNumber": 21,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:EXO:21:1",
+      "text": "‘Here are the laws you must set before the people: ⚖️"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:EXO:21:2",
+      "text": "‘If you buy a Hebrew servant, he’ll serve you for six years. In the seventh year, he goes free without paying you anything. 📜"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:EXO:21:3",
+      "text": "‘If he came alone, he leaves alone. If he was married when he came, his wife leaves with him. ⚖️"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:EXO:21:4",
+      "text": "‘If his master gives him a wife and she has sons or daughters, the wife and children remain with her master. The man leaves by himself. 👨‍👩‍👧"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:EXO:21:5",
+      "text": "‘But if the servant clearly says, “I love my master, my wife, and my children. I don’t want to go free,” ❤️"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:EXO:21:6",
+      "text": "‘then his master must bring him before God and take him to the door or doorpost. His master must pierce his ear with an awl, and he’ll serve him for life. 📜"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:EXO:21:7",
+      "text": "‘If a man sells his daughter as a female servant, she won’t be freed the way male servants are. ⚖️"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:EXO:21:8",
+      "text": "‘If she displeases the master who chose her for himself, he must let her be redeemed. He can’t sell her to foreigners, because he broke faith with her. ⚠️"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:EXO:21:9",
+      "text": "‘If he chooses her for his son, he must treat her as a daughter. 👨‍👧"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:EXO:21:10",
+      "text": "‘If he takes another wife, he must not reduce the first woman’s food, clothing, or marital rights. ⚖️"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:EXO:21:11",
+      "text": "‘If he fails to provide those three things, she may leave without paying anything. 🕊️"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:EXO:21:12",
+      "text": "‘Anyone who strikes someone and causes their death must be put to death. ⚖️"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:EXO:21:13",
+      "text": "‘But if it wasn’t intentional, and God let it happen, I’ll appoint a place where the person can flee. 🏃"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:EXO:21:14",
+      "text": "‘If someone plans a murder and deliberately kills a neighbor, take that person from my altar and put them to death. ⚖️"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:EXO:21:15",
+      "text": "‘Anyone who attacks their father or mother must be put to death. ⚖️"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:EXO:21:16",
+      "text": "‘Anyone who kidnaps a person and sells them—or is caught holding them—must be put to death. ⚖️"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:EXO:21:17",
+      "text": "‘Anyone who curses their father or mother must be put to death. ⚖️"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:EXO:21:18",
+      "text": "‘If two people fight and one hits the other with a stone or fist, but the injured person doesn’t die and has to stay in bed, ⚠️"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:EXO:21:19",
+      "text": "‘if they later get up and walk outside with a staff, the attacker won’t be put to death. But the attacker must pay for the time lost and cover the person’s full recovery. 🩹"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:EXO:21:20",
+      "text": "‘If someone beats a male or female servant with a rod and the servant dies as a direct result, the person must be punished. ⚖️"
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:EXO:21:21",
+      "text": "‘But if the servant survives for a day or two, the owner won’t be punished, since the servant is the owner’s property. 📜"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:EXO:21:22",
+      "text": "‘If men fight and injure a pregnant woman so she gives birth early, but no further harm happens, the person responsible must pay whatever her husband demands and the judges approve. ⚖️"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:EXO:21:23",
+      "text": "‘But if further harm happens, then the penalty is life for life, ⚖️"
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:EXO:21:24",
+      "text": "‘eye for eye, tooth for tooth, hand for hand, foot for foot, 👁️"
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:EXO:21:25",
+      "text": "‘burn for burn, wound for wound, bruise for bruise. 🩹"
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:EXO:21:26",
+      "text": "‘If someone strikes a male or female servant in the eye and destroys it, the servant must be set free because of the eye. 🕊️"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:EXO:21:27",
+      "text": "‘If someone knocks out a male or female servant’s tooth, the servant must be set free because of the tooth. 🕊️"
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:EXO:21:28",
+      "text": "‘If a bull gores a man or woman to death, the bull must be stoned, and its meat must not be eaten. The bull’s owner won’t be held responsible. ⚖️"
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:EXO:21:29",
+      "text": "‘But if the bull has been known to gore before, and its owner was warned but didn’t keep it penned in, then if it kills a man or woman, stone the bull and put its owner to death too. ⚠️"
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:EXO:21:30",
+      "text": "‘If a ransom is imposed instead, the owner must pay whatever amount is set to save their life. ⚖️"
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:EXO:21:31",
+      "text": "‘The same law applies if the bull gores a son or daughter. ⚖️"
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:EXO:21:32",
+      "text": "‘If the bull gores a male or female servant, pay the servant’s master thirty shekels of silver, and stone the bull. 🪙"
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:EXO:21:33",
+      "text": "‘If someone opens a pit or digs one and leaves it uncovered, and a bull or donkey falls in, 🕳️"
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:EXO:21:34",
+      "text": "‘the person who owns the pit must pay the animal’s owner. The dead animal belongs to the pit’s owner. ⚖️"
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:EXO:21:35",
+      "text": "‘If one person’s bull injures another person’s bull and it dies, they must sell the living bull and split the money. They must also split the dead bull. 🐂"
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:EXO:21:36",
+      "text": "‘But if the bull was known to gore before, and its owner didn’t keep it penned in, the owner must pay bull for bull, and the dead animal belongs to the owner who paid.’ ⚖️"
+    }
+  ]
+}
