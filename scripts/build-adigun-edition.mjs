@@ -10,7 +10,7 @@ const sourceBooks = new Map(sourceManifest.books.map(book => [book.id, book]));
 // Only complete, reviewed chapters are installed. Add a chapter here after its
 // candidate file exists and passes the exact source-reference and verse-count checks.
 const portion = {
-  GEN: Array.from({ length: 24 }, (_, index) => index + 1),
+  GEN: Array.from({ length: 39 }, (_, index) => index + 1),
   MAT: Array.from({ length: 28 }, (_, index) => index + 1),
 };
 const editionBooks = [];
