@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "JOS",
+  "bookName": "Joshua",
+  "chapterNumber": 16,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:JOS:16:1",
+      "text": "The land share for Joseph’s descendants ran from the Jordan by Jericho and Jericho’s eastern waters, through the wilderness, and up the hills to Bethel. 🗺️"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:JOS:16:2",
+      "text": "From Bethel it went to Luz, followed the Archite border to Ataroth, 🏔️"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:JOS:16:3",
+      "text": "then west along the Japhletite border, past Lower Beth-horon and on to Gezer, ending at the sea. 🌊"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:JOS:16:4",
+      "text": "Joseph’s descendants—Manasseh and Ephraim—received their inheritance. 📜"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:JOS:16:5",
+      "text": "Here’s Ephraim’s family boundary: on the east, from Ataroth-addar to Upper Beth-horon; 🗺️"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:JOS:16:6",
+      "text": "it ran west to Michmethath on the north, turned east toward Taanath-shiloh, and passed east of Janoah. 🏔️"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:JOS:16:7",
+      "text": "From Janoah it went down to Ataroth and Naarah, reached Jericho, and came out at the Jordan. 🌊"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:JOS:16:8",
+      "text": "From Tappuah the border ran west to the Kanah stream and ended at the sea. That was Ephraim’s inheritance by family. 🗺️"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:JOS:16:9",
+      "text": "Ephraim also got towns set aside for them inside Manasseh’s inheritance—all those towns and their villages. 🏘️"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:JOS:16:10",
+      "text": "But Ephraim didn’t drive out the Canaanites living in Gezer. They still live among Ephraim to this day, doing forced labor. ⚠️"
+    }
+  ]
+}
+
