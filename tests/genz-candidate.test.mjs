@@ -30,6 +30,13 @@ for (const [bookId, bookChapters] of Object.entries(chapters)) {
         'God said, ‘Let there be light.’ And light pulled up—immediately. 💡',
       ]);
     }
+    if (chapterNumber === 2) {
+      assert.deepEqual(candidate.verses.slice(0, 3).map(verse => verse.text), [
+        'The heavens, the earth, and everything in them were finished. Creation was complete. ✅',
+        "By day seven, God had finished the work He'd been doing. So He took a rest from all that creating.",
+        "God blessed day seven and set it apart, because that's when He rested from all the work of creating. Day seven was different. 🌿",
+      ]);
+    }
   });
  }
 }
