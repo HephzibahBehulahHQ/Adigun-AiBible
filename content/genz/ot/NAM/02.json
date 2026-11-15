@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "NAM",
+  "bookName": "Nahum",
+  "chapterNumber": 2,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:NAM:2:1","text":"The one who smashes everything is coming against you. Guard the fortress! Watch the road! Brace yourself! Gather all your strength!"},
+    {"number":2,"sourceRef":"eng-web:NAM:2:2","text":"The LORD is restoring Jacob’s greatness, like Israel’s greatness, even though destroyers stripped them and ruined their vine branches."},
+    {"number":3,"sourceRef":"eng-web:NAM:2:3","text":"The shields of his warriors are red; the soldiers wear scarlet. On the day he prepares for battle, the chariots flash with metal, and pine spears are brandished."},
+    {"number":4,"sourceRef":"eng-web:NAM:2:4","text":"The chariots race through the streets and rush back and forth in the open spaces. They look like flaming torches and dart like lightning."},
+    {"number":5,"sourceRef":"eng-web:NAM:2:5","text":"He summons his elite troops, but they stumble as they advance. They rush to the city wall, and the protective shield is set in place."},
+    {"number":6,"sourceRef":"eng-web:NAM:2:6","text":"The river gates open, and the palace collapses."},
+    {"number":7,"sourceRef":"eng-web:NAM:2:7","text":"It is decided: the queen is stripped and carried away. Her attendants moan like doves and beat their chests."},
+    {"number":8,"sourceRef":"eng-web:NAM:2:8","text":"From long ago, Nineveh was like a pool full of water, but now its people are fleeing. “Stop! Stop!” someone shouts, but no one turns back."},
+    {"number":9,"sourceRef":"eng-web:NAM:2:9","text":"“Take the silver! Take the gold!” There is no end to the treasure, every kind of precious object in abundance."},
+    {"number":10,"sourceRef":"eng-web:NAM:2:10","text":"The city is empty, ruined, and wrecked. Hearts melt; knees shake. Everyone’s strength drains away, and faces turn pale."},
+    {"number":11,"sourceRef":"eng-web:NAM:2:11","text":"Where is the lions’ den now, the place where young lions were fed? The lion, lioness, and cubs once walked there without fear."},
+    {"number":12,"sourceRef":"eng-web:NAM:2:12","text":"The lion killed enough for his cubs and strangled prey for his lionesses. He filled his caves with kills and his dens with prey."},
+    {"number":13,"sourceRef":"eng-web:NAM:2:13","text":"“Look, I am against you,” says the LORD of Armies. “I will burn your chariots in smoke. The sword will devour your young lions. I will cut off your prey from the earth, and no one will hear your messengers’ voices again.”"}
+  ]
+}
+
