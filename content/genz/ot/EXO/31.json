@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "EXO",
+  "bookName": "Exodus",
+  "chapterNumber": 31,
+  "verses": [
+    { "number": 1, "sourceRef": "eng-web:EXO:31:1", "text": "Yahweh spoke to Moses: 📜" },
+    { "number": 2, "sourceRef": "eng-web:EXO:31:2", "text": "‘Look, I’ve personally chosen Bezalel son of Uri, grandson of Hur, from Judah’s tribe. 👀" },
+    { "number": 3, "sourceRef": "eng-web:EXO:31:3", "text": "I’ve filled him with God’s Spirit—with wisdom, understanding, knowledge, and skill for every kind of craft. 🧠" },
+    { "number": 4, "sourceRef": "eng-web:EXO:31:4", "text": "He can design beautiful work in gold, silver, and bronze, 🎨" },
+    { "number": 5, "sourceRef": "eng-web:EXO:31:5", "text": "cut stones for settings, carve wood, and handle every kind of skilled work. 💎" },
+    { "number": 6, "sourceRef": "eng-web:EXO:31:6", "text": "I’ve also assigned Oholiab son of Ahisamach, from Dan’s tribe, to work with him. I’ve given skill to every wise-hearted craftsperson too, so they can make everything I commanded you: 🛠️" },
+    { "number": 7, "sourceRef": "eng-web:EXO:31:7", "text": "the Meeting Tent, the covenant chest, its atonement cover, and all the Tent’s furnishings; ⛺" },
+    { "number": 8, "sourceRef": "eng-web:EXO:31:8", "text": "the table and its utensils, the pure gold lampstand and all its accessories, and the incense altar; 🕯️" },
+    { "number": 9, "sourceRef": "eng-web:EXO:31:9", "text": "the burnt-offering altar with all its utensils, plus the basin and its stand; 🫙" },
+    { "number": 10, "sourceRef": "eng-web:EXO:31:10", "text": "the finely made garments—the sacred clothes for Aaron the priest, and the clothes his sons wear while serving as priests; 👘" },
+    { "number": 11, "sourceRef": "eng-web:EXO:31:11", "text": "and the anointing oil and fragrant incense for the holy place. They must make everything just as I commanded you.’ 🫙" },
+    { "number": 12, "sourceRef": "eng-web:EXO:31:12", "text": "Yahweh spoke to Moses again: 📜" },
+    { "number": 13, "sourceRef": "eng-web:EXO:31:13", "text": "‘Tell Israel: Keep my Sabbaths. They’re a sign between me and you through every generation, so you’ll know I am Yahweh, the one who makes you holy.’ 🕊️" },
+    { "number": 14, "sourceRef": "eng-web:EXO:31:14", "text": "‘Keep the Sabbath; it’s holy to you. Anyone who treats it as ordinary must be put to death. Whoever works that day must be cut off from their people. ⚠️" },
+    { "number": 15, "sourceRef": "eng-web:EXO:31:15", "text": "‘Work six days. The seventh is a Sabbath—a day of complete rest, holy to Yahweh. Anyone who works on the Sabbath must be put to death. 🕯️" },
+    { "number": 16, "sourceRef": "eng-web:EXO:31:16", "text": "‘Israel must keep the Sabbath through every generation, honoring it as a lasting covenant. 📜" },
+    { "number": 17, "sourceRef": "eng-web:EXO:31:17", "text": "‘It’s a permanent sign between me and Israel. Yahweh made heaven and earth in six days; on the seventh day he stopped and was refreshed.’ 🌌" },
+    { "number": 18, "sourceRef": "eng-web:EXO:31:18", "text": "When Yahweh finished speaking with Moses on Mount Sinai, he gave him the two covenant tablets—stone tablets written by God’s own finger. 🪨" }
+  ]
+}
