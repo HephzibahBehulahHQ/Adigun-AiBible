@@ -2131,7 +2131,7 @@
       "licenseUrl": "https://github.com/HephzibahBehulahHQ/Adigun-AiBible/blob/main/data/editions/adigun-edition/NOTICE.txt",
       "license": "Project-authorized original edition",
       "attribution": "Adigun Edition. Original project wording based on the public-domain World English Bible source.",
-      "sha256": "eafd21641e8c1d57da4f3f22ab3918dc00740c2e824ca6f9d3c6e1689cd6b87a",
+      "sha256": "450bff37520a45cc40c7e6746b67db109e1c9dc6ceb10c179924d631a696c56a",
       "rights": {
         "redistribute": true,
         "adapt": true,
@@ -2142,7 +2142,7 @@
       "conditions": [
         "Keep the Adigun Edition identity and project notice with redistributed copies."
       ],
-      "revision": "Genesis 1–39; Matthew 1–28",
+      "revision": "Genesis 1–50; Matthew 1–28",
       "rightsObservedAt": "2026-11-14",
       "commercialUse": true,
       "referenceSystemId": "adigun-edition:eng-web-alignment",
@@ -2150,8 +2150,8 @@
       "manifestPath": "adigun-edition/manifest.json",
       "totals": {
         "books": 2,
-        "chapters": 67,
-        "verses": 2244
+        "chapters": 78,
+        "verses": 2604
       },
       "booksPath": "adigun-edition/books/",
       "searchIndexPath": "adigun-edition/search-index.json"
