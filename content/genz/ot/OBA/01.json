@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "OBA",
+  "bookName": "Obadiah",
+  "chapterNumber": 1,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:OBA:1:1","text":"This is the vision of Obadiah. The Lord GOD says this about Edom: We have heard a report from the LORD, and a messenger has been sent among the nations, saying, “Get up! Let’s rise against her in battle.”"},
+    {"number":2,"sourceRef":"eng-web:OBA:1:2","text":"“Look, I have made you small among the nations; you are deeply despised."},
+    {"number":3,"sourceRef":"eng-web:OBA:1:3","text":"Your proud heart has fooled you—you who live in rocky cliffs, whose home is high up, and who say to yourself, ‘Who can bring me down to the ground?’"},
+    {"number":4,"sourceRef":"eng-web:OBA:1:4","text":"Even if you soar high like an eagle and put your nest among the stars, I will bring you down from there,” says the LORD."},
+    {"number":5,"sourceRef":"eng-web:OBA:1:5","text":"“If thieves came to you, or robbers by night—what a disaster for you!—wouldn’t they take only as much as they wanted? If grape pickers came, wouldn’t they leave a few grapes behind?"},
+    {"number":6,"sourceRef":"eng-web:OBA:1:6","text":"But Esau will be stripped bare! His hidden treasures will all be searched out!"},
+    {"number":7,"sourceRef":"eng-web:OBA:1:7","text":"All your allies will send you on your way to the border. Your friends will deceive you and overpower you. Those who share your bread will set a trap for you. No understanding remains in Edom.”"},
+    {"number":8,"sourceRef":"eng-web:OBA:1:8","text":"“On that day,” says the LORD, “won’t I wipe out Edom’s wise people and the understanding from Mount Esau?"},
+    {"number":9,"sourceRef":"eng-web:OBA:1:9","text":"Your warriors, Teman, will lose heart, so everyone on Mount Esau will be cut down in the slaughter."},
+    {"number":10,"sourceRef":"eng-web:OBA:1:10","text":"Because you were violent toward your brother Jacob, shame will cover you, and you will be cut off forever."},
+    {"number":11,"sourceRef":"eng-web:OBA:1:11","text":"When strangers carried away his wealth and foreigners entered his gates and cast lots for Jerusalem, you stood off to the side—just like one of them."},
+    {"number":12,"sourceRef":"eng-web:OBA:1:12","text":"“Don’t gloat over your brother on the day disaster hits him. Don’t celebrate Judah’s people when they’re destroyed, and don’t talk big on their day of distress."},
+    {"number":13,"sourceRef":"eng-web:OBA:1:13","text":"“Don’t enter the gate of my people when disaster strikes them. Don’t gloat over their suffering on that day, and don’t grab their wealth when disaster hits."},
+    {"number":14,"sourceRef":"eng-web:OBA:1:14","text":"“Don’t stand at the crossroads to cut down those who escape, and don’t hand over those who survive on their day of distress."},
+    {"number":15,"sourceRef":"eng-web:OBA:1:15","text":"“The day of the LORD is near for every nation! You’ll be treated the way you treated others. What you’ve done will come back on your own head."},
+    {"number":16,"sourceRef":"eng-web:OBA:1:16","text":"“Just as you drank on my holy mountain, all the nations will keep drinking. They will drink, gulp it down, and be as though they had never existed."},
+    {"number":17,"sourceRef":"eng-web:OBA:1:17","text":"“But on Mount Zion there will be survivors, and it will be holy. The people of Jacob will take possession of what belongs to them."},
+    {"number":18,"sourceRef":"eng-web:OBA:1:18","text":"“The people of Jacob will be a fire, the people of Joseph a flame, and the people of Esau like dry straw. They will set them ablaze and consume them. No one from Esau’s people will survive.” The LORD has spoken."},
+    {"number":19,"sourceRef":"eng-web:OBA:1:19","text":"“People from the south will possess Mount Esau, and people from the foothills will possess the Philistine country. They will possess Ephraim’s fields and Samaria’s fields, while Benjamin will possess Gilead."},
+    {"number":20,"sourceRef":"eng-web:OBA:1:20","text":"“The exiles from this army of Israel’s people, among the Canaanites, will possess the land as far as Zarephath; and the exiles from Jerusalem in Sepharad will possess the towns of the Negev."},
+    {"number":21,"sourceRef":"eng-web:OBA:1:21","text":"“Rescuers will go up Mount Zion to judge Mount Esau, and the kingdom will belong to the LORD.”"}
+  ]
+}
