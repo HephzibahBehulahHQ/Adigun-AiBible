@@ -2526,22 +2526,14 @@ SOURCES['spapddpt'] = {
 
 def edition_metadata(edition_id):
     if edition_id == 'adigun-edition':
-        return {
-            'id': 'adigun-edition', 'name': 'Adigun Edition', 'language': 'en', 'corpus': 'bible', 'scope': 'portion',
-            'publisher': 'Adigun-AiBible project', 'translator': 'Adigun-AiBible project',
-            'sourceUpdatedAt': '2026-11-14', 'sourceUrl': 'https://adigun-aibible.hephzibahbehulah.com/',
-            'licenseUrl': 'https://github.com/HephzibahBehulahHQ/Adigun-AiBible/blob/main/data/editions/adigun-edition/NOTICE.txt',
-            'license': 'Project-authorized original edition',
-            'attribution': 'Adigun Edition. Original project wording based on the public-domain World English Bible source.',
-            'sha256': '4cc84fcd4058035e2771f1ddbe2cd318b5898577514d64c56858c531fc41ed34',
-            'rights': {'redistribute': True, 'adapt': True, 'offline': True, 'audio': False, 'export': True},
-            'conditions': ['Keep the Adigun Edition identity and project notice with redistributed copies.'],
-            'revision': 'Genesis chapters 1–21', 'rightsObservedAt': '2026-11-14', 'commercialUse': True,
-            'referenceSystemId': 'adigun-edition:eng-web-alignment',
-            'noticePath': 'adigun-edition/NOTICE.txt', 'manifestPath': 'adigun-edition/manifest.json',
-            'totals': {'books': 1, 'chapters': 21, 'verses': 548},
-            'booksPath': 'adigun-edition/books/', 'searchIndexPath': 'adigun-edition/search-index.json',
-        }
+        catalog = json.loads((ROOT / 'data/editions/catalog.json').read_text(encoding='utf-8'))
+        manifest = json.loads((ROOT / 'data/editions/adigun-edition/manifest.json').read_text(encoding='utf-8'))
+        edition = next((row for row in catalog['editions'] if row['id'] == edition_id), None)
+        if (edition is None or edition.get('sha256') != manifest['edition'].get('sha256')
+                or edition.get('totals') != manifest.get('totals')
+                or edition.get('revision') != manifest['edition'].get('revision')):
+            raise ValueError('Adigun Edition catalog metadata does not match its generated manifest.')
+        return edition
     source = SOURCES[edition_id]
     fields = ('name', 'language', 'corpus', 'scope', 'publisher', 'translator', 'sourceUpdatedAt', 'sourceUrl', 'formatUrl',
               'downloadUrl', 'licenseUrl', 'license', 'licenseIdentifier', 'licenseDeedUrl', 'attribution', 'sha256', 'rights', 'conditions',
