@@ -10,7 +10,7 @@ The edition preserves the project's WEB 66-book order and every source chapter/v
 
 ## Authoring state
 
-- Complete chapter candidates cover Genesis 1–24, all 659 verses, under `content/genz/ot/GEN/`; each chapter has its own numbered JSON file.
+- Complete chapter candidates cover Genesis 1–39, all 1,173 verses, under `content/genz/ot/GEN/`; each chapter has its own numbered JSON file.
 - Authoring scope is the complete 66-book manifest, followed book by book in canonical order. Genesis must be complete before Exodus work begins.
 - Primary Codex owns the Old Testament from Genesis through Micah. The assigned second agent checks Malachi first and then works backward through Zechariah, Haggai, Zephaniah, Habakkuk, and Nahum; both lanes meet without overlap.
 - The New Testament candidate corpus is reported complete and must be checked against the source manifest before the project claims full-canon completion.
