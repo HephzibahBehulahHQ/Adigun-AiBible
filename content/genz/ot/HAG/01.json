@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "HAG",
+  "bookName": "Haggai",
+  "chapterNumber": 1,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:HAG:1:1","text":"In King Darius’s second year, on the first day of the sixth month, the LORD’s word came through the prophet Haggai to Zerubbabel son of Shealtiel, governor of Judah, and Joshua son of Jehozadak, the high priest:"},
+    {"number":2,"sourceRef":"eng-web:HAG:1:2","text":"“The LORD of Armies says: ‘These people keep saying, “It isn’t time yet to rebuild the LORD’s house.”’”"},
+    {"number":3,"sourceRef":"eng-web:HAG:1:3","text":"Then the LORD’s word came through the prophet Haggai:"},
+    {"number":4,"sourceRef":"eng-web:HAG:1:4","text":"“Is it really time for you to live in paneled houses while this house lies in ruins?"},
+    {"number":5,"sourceRef":"eng-web:HAG:1:5","text":"Now the LORD of Armies says: ‘Think carefully about how you’re living."},
+    {"number":6,"sourceRef":"eng-web:HAG:1:6","text":"You plant a lot but harvest little. You eat but never feel full. You drink but still feel thirsty. You put on clothes but can’t get warm. Workers earn wages only to put them in a bag full of holes.’”"},
+    {"number":7,"sourceRef":"eng-web:HAG:1:7","text":"“The LORD of Armies says: ‘Think carefully about how you’re living."},
+    {"number":8,"sourceRef":"eng-web:HAG:1:8","text":"Go up into the hills, bring back timber, and build my house. I will be pleased with it and honored by it,’ says the LORD."},
+    {"number":9,"sourceRef":"eng-web:HAG:1:9","text":"“You expected a big harvest, but it came to almost nothing. When you brought it home, I blew it away. Why?” says the LORD of Armies. “Because my house lies in ruins while each of you stays busy with your own house."},
+    {"number":10,"sourceRef":"eng-web:HAG:1:10","text":"“That’s why the sky withholds its dew, and the earth holds back its crops."},
+    {"number":11,"sourceRef":"eng-web:HAG:1:11","text":"“I called a drought on the land and hills, on grain, new wine, and oil, on everything the ground produces, on people and livestock, and on all the work you do.”"},
+    {"number":12,"sourceRef":"eng-web:HAG:1:12","text":"Zerubbabel son of Shealtiel, Joshua son of Jehozadak the high priest, and all the people who remained obeyed the voice of the LORD their God and the words of the prophet Haggai, whom the LORD their God had sent. The people honored the LORD with deep respect."},
+    {"number":13,"sourceRef":"eng-web:HAG:1:13","text":"Then Haggai, the LORD’s messenger, delivered this message from the LORD to the people: “I am with you,” says the LORD."},
+    {"number":14,"sourceRef":"eng-web:HAG:1:14","text":"The LORD stirred up Zerubbabel son of Shealtiel, governor of Judah; Joshua son of Jehozadak, the high priest; and all the people who remained. They came and worked on the house of the LORD of Armies, their God,"},
+    {"number":15,"sourceRef":"eng-web:HAG:1:15","text":"on the twenty-fourth day of the sixth month in King Darius’s second year."}
+  ]
+}
+
