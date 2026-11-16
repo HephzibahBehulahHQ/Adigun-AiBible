@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ROM",
+  "bookName": "Romans",
+  "chapterNumber": 16,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ROM:16:1",
+      "text": "I recommend to you our sister Phoebe, a servant of the church in Cenchreae. 🤝"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ROM:16:2",
+      "text": "Welcome her in the Lord in a way worthy of God’s people. Help her with whatever she needs from you, because she has helped many people—including me. 💛"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ROM:16:3",
+      "text": "Give my greetings to Prisca and Aquila, my coworkers in Christ Jesus. 👋"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ROM:16:4",
+      "text": "They put their own lives on the line for me. I am thankful to them, and so are all the Gentile churches. 🙏"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ROM:16:5",
+      "text": "Greet the church that meets in their home. Also greet my dear Epaenetus, the first person in Achaia to belong to Christ. 🏠"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ROM:16:6",
+      "text": "Greet Mary, who worked so hard for you all. 💪"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ROM:16:7",
+      "text": "Greet Andronicus and Junia, my relatives and fellow prisoners. They are well respected among the apostles and came to Christ before I did. ⛓️"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ROM:16:8",
+      "text": "Greet my dear friend Amplias in the Lord. 💛"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ROM:16:9",
+      "text": "Greet Urbanus, our coworker in Christ, and my dear Stachys. 👋"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ROM:16:10",
+      "text": "Greet Apelles, who has stood the test in Christ. Greet everyone in the household of Aristobulus. 🏠"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ROM:16:11",
+      "text": "Greet my relative Herodion. Greet those in the household of Narcissus who belong to the Lord. 🤝"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ROM:16:12",
+      "text": "Greet Tryphaena and Tryphosa, who work hard in the Lord. Greet my dear Persis, who has worked so hard in the Lord. 💪"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:ROM:16:13",
+      "text": "Greet Rufus, chosen in the Lord, and his mother, who has also been like a mother to me. 💛"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:ROM:16:14",
+      "text": "Greet Asyncritus, Phlegon, Hermes, Patrobas, Hermas, and all the believers with them. 👋"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:ROM:16:15",
+      "text": "Greet Philologus and Julia, Nereus and his sister, Olympas, and all God’s people with them. 🤝"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:ROM:16:16",
+      "text": "Greet one another with a holy kiss. All the churches of Christ send you their greetings. 💋"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:ROM:16:17",
+      "text": "Brothers and sisters, keep an eye out for people who cause divisions and trip others up, going against the teaching you received. Stay away from them. ⚠️"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:ROM:16:18",
+      "text": "People like that do not serve our Lord Christ. They serve their own appetites, and with smooth talk and flattery they trick innocent people. 🎭"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:ROM:16:19",
+      "text": "Your obedience is known everywhere, and I am glad about that. Keep your heads clear about what is good and stay innocent about what is evil. 🌱"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:ROM:16:20",
+      "text": "The God of peace will soon crush Satan under your feet. May the grace of our Lord Jesus be with you. ✨"
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:ROM:16:21",
+      "text": "Timothy, my coworker, sends you greetings. So do Lucius, Jason, and Sosipater, my relatives. 👋"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:ROM:16:22",
+      "text": "I, Tertius, who wrote this letter, greet you in the Lord. ✍️"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:ROM:16:23",
+      "text": "Gaius, who hosts me and the whole church, sends you greetings. Erastus, the city treasurer, and our brother Quartus send their greetings too. 🏠"
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:ROM:16:24",
+      "text": "May the grace of our Lord Jesus Christ be with all of you. Amen! 🙌"
+    }
+  ]
+}
