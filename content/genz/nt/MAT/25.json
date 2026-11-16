@@ -7,236 +7,51 @@
   "bookName": "Matthew",
   "chapterNumber": 25,
   "verses": [
-    {
-      "number": 1,
-      "sourceRef": "eng-web:MAT:25:1",
-      "text": "“Then Heaven’s Kingdom will be like ten young women who took their lamps and went out to meet the groom."
-    },
-    {
-      "number": 2,
-      "sourceRef": "eng-web:MAT:25:2",
-      "text": "Five were foolish; five were wise."
-    },
-    {
-      "number": 3,
-      "sourceRef": "eng-web:MAT:25:3",
-      "text": "The foolish ones brought their lamps but didn’t bring extra oil."
-    },
-    {
-      "number": 4,
-      "sourceRef": "eng-web:MAT:25:4",
-      "text": "The wise ones brought oil in jars along with their lamps."
-    },
-    {
-      "number": 5,
-      "sourceRef": "eng-web:MAT:25:5",
-      "text": "The groom took a while, so all ten got sleepy and nodded off."
-    },
-    {
-      "number": 6,
-      "sourceRef": "eng-web:MAT:25:6",
-      "text": "Around midnight, someone shouted, ‘Look! The groom’s coming! Come out and meet him!’ 🔔"
-    },
-    {
-      "number": 7,
-      "sourceRef": "eng-web:MAT:25:7",
-      "text": "All the young women woke up and got their lamps ready."
-    },
-    {
-      "number": 8,
-      "sourceRef": "eng-web:MAT:25:8",
-      "text": "The foolish ones told the wise, ‘Share some oil with us; our lamps are going out.’"
-    },
-    {
-      "number": 9,
-      "sourceRef": "eng-web:MAT:25:9",
-      "text": "The wise replied, ‘There may not be enough for all of us. Go to the sellers and buy some for yourselves.’"
-    },
-    {
-      "number": 10,
-      "sourceRef": "eng-web:MAT:25:10",
-      "text": "While they were away buying oil, the groom arrived. Those who were ready went in with him to the wedding feast, and the door was shut."
-    },
-    {
-      "number": 11,
-      "sourceRef": "eng-web:MAT:25:11",
-      "text": "Later the others came too, calling, ‘Sir, sir, open the door for us!’"
-    },
-    {
-      "number": 12,
-      "sourceRef": "eng-web:MAT:25:12",
-      "text": "But he answered, ‘I’m telling you the truth: I don’t know you.’"
-    },
-    {
-      "number": 13,
-      "sourceRef": "eng-web:MAT:25:13",
-      "text": "So stay alert, because you don’t know the day or hour the Son of Man is coming."
-    },
-    {
-      "number": 14,
-      "sourceRef": "eng-web:MAT:25:14",
-      "text": "“It’s like a man going on a trip abroad. He called his servants and trusted them with his property."
-    },
-    {
-      "number": 15,
-      "sourceRef": "eng-web:MAT:25:15",
-      "text": "He gave one five talents, another two, another one—each according to what they could handle. Then he left."
-    },
-    {
-      "number": 16,
-      "sourceRef": "eng-web:MAT:25:16",
-      "text": "The servant with five talents got to work right away and earned five more."
-    },
-    {
-      "number": 17,
-      "sourceRef": "eng-web:MAT:25:17",
-      "text": "The one with two did the same and earned two more."
-    },
-    {
-      "number": 18,
-      "sourceRef": "eng-web:MAT:25:18",
-      "text": "But the servant with one went off, dug a hole, and hid his master’s money."
-    },
-    {
-      "number": 19,
-      "sourceRef": "eng-web:MAT:25:19",
-      "text": "“After a long time, the master returned and settled accounts with them."
-    },
-    {
-      "number": 20,
-      "sourceRef": "eng-web:MAT:25:20",
-      "text": "The servant who got five talents brought five more. ‘Master, you trusted me with five talents. Look, I’ve earned five more.’"
-    },
-    {
-      "number": 21,
-      "sourceRef": "eng-web:MAT:25:21",
-      "text": "“His master said, ‘Well done, good and faithful servant! You were trustworthy with a little; I’ll put you in charge of much more. Come share your master’s joy.’"
-    },
-    {
-      "number": 22,
-      "sourceRef": "eng-web:MAT:25:22",
-      "text": "“Then the servant who got two talents came. ‘Master, you trusted me with two talents. Look, I’ve earned two more.’"
-    },
-    {
-      "number": 23,
-      "sourceRef": "eng-web:MAT:25:23",
-      "text": "“His master said, ‘Well done, good and faithful servant! You were trustworthy with a little; I’ll put you in charge of much more. Come share your master’s joy.’"
-    },
-    {
-      "number": 24,
-      "sourceRef": "eng-web:MAT:25:24",
-      "text": "“Then the servant who got one talent came and said, ‘Master, I knew you’re a hard man: you harvest where you didn’t plant and gather where you didn’t scatter."
-    },
-    {
-      "number": 25,
-      "sourceRef": "eng-web:MAT:25:25",
-      "text": "I was scared, so I went and hid your talent in the ground. Here, you can have back what’s yours.’"
-    },
-    {
-      "number": 26,
-      "sourceRef": "eng-web:MAT:25:26",
-      "text": "“His master answered, ‘You wicked, lazy servant! So you knew I harvest where I didn’t plant and gather where I didn’t scatter?"
-    },
-    {
-      "number": 27,
-      "sourceRef": "eng-web:MAT:25:27",
-      "text": "Then you should’ve put my money with the bankers. When I came back, I could’ve collected it with interest."
-    },
-    {
-      "number": 28,
-      "sourceRef": "eng-web:MAT:25:28",
-      "text": "So take the talent from him and give it to the one who has ten."
-    },
-    {
-      "number": 29,
-      "sourceRef": "eng-web:MAT:25:29",
-      "text": "Everyone who has will receive more and have plenty. But from the one who has nothing, even what he has will be taken away."
-    },
-    {
-      "number": 30,
-      "sourceRef": "eng-web:MAT:25:30",
-      "text": "Throw that useless servant into the darkness outside, where people weep and grind their teeth.’"
-    },
-    {
-      "number": 31,
-      "sourceRef": "eng-web:MAT:25:31",
-      "text": "“When the Son of Man comes in His glory with all the holy angels, He’ll sit on His glorious throne."
-    },
-    {
-      "number": 32,
-      "sourceRef": "eng-web:MAT:25:32",
-      "text": "Every nation will gather in front of Him, and He’ll separate people from one another, like a shepherd separates sheep from goats."
-    },
-    {
-      "number": 33,
-      "sourceRef": "eng-web:MAT:25:33",
-      "text": "He’ll put the sheep on His right and the goats on His left."
-    },
-    {
-      "number": 34,
-      "sourceRef": "eng-web:MAT:25:34",
-      "text": "Then the King will tell the people on His right, ‘Come, you who are blessed by My Father. Receive the Kingdom prepared for you since the world was founded."
-    },
-    {
-      "number": 35,
-      "sourceRef": "eng-web:MAT:25:35",
-      "text": "I was hungry, and you gave Me food. I was thirsty, and you gave Me a drink. I was a stranger, and you welcomed Me."
-    },
-    {
-      "number": 36,
-      "sourceRef": "eng-web:MAT:25:36",
-      "text": "I had no clothes, and you clothed Me. I was sick, and you cared for Me. I was in prison, and you came to visit Me.’"
-    },
-    {
-      "number": 37,
-      "sourceRef": "eng-web:MAT:25:37",
-      "text": "“Then the righteous will answer, ‘Lord, when did we see You hungry and feed You, or thirsty and give You a drink?"
-    },
-    {
-      "number": 38,
-      "sourceRef": "eng-web:MAT:25:38",
-      "text": "When did we see You as a stranger and welcome You, or without clothes and clothe You?"
-    },
-    {
-      "number": 39,
-      "sourceRef": "eng-web:MAT:25:39",
-      "text": "When did we see You sick or in prison and come visit You?’"
-    },
-    {
-      "number": 40,
-      "sourceRef": "eng-web:MAT:25:40",
-      "text": "“The King will answer, ‘I’m telling you the truth: whatever you did for one of the least important of these My brothers, you did for Me.’"
-    },
-    {
-      "number": 41,
-      "sourceRef": "eng-web:MAT:25:41",
-      "text": "“Then He’ll say to the people on His left, ‘Get away from Me, you cursed ones, into the eternal fire prepared for the devil and his angels."
-    },
-    {
-      "number": 42,
-      "sourceRef": "eng-web:MAT:25:42",
-      "text": "I was hungry, and you gave Me no food. I was thirsty, and you gave Me nothing to drink."
-    },
-    {
-      "number": 43,
-      "sourceRef": "eng-web:MAT:25:43",
-      "text": "I was a stranger, and you didn’t welcome Me. I had no clothes, and you didn’t clothe Me. I was sick and in prison, and you didn’t visit Me.’"
-    },
-    {
-      "number": 44,
-      "sourceRef": "eng-web:MAT:25:44",
-      "text": "“Then they’ll answer, ‘Lord, when did we see You hungry, thirsty, a stranger, without clothes, sick, or in prison and fail to help You?’"
-    },
-    {
-      "number": 45,
-      "sourceRef": "eng-web:MAT:25:45",
-      "text": "“He’ll answer, ‘I’m telling you the truth: whatever you failed to do for one of the least important of these, you failed to do for Me.’"
-    },
-    {
-      "number": 46,
-      "sourceRef": "eng-web:MAT:25:46",
-      "text": "They’ll go away to eternal punishment, but the righteous to eternal life.”"
-    }
+{"number":1,"sourceRef":"eng-web:MAT:25:1","text":"“Then Heaven’s Kingdom will be like ten young women who took their lamps and went out to meet the groom. 🪔”"},
+{"number":2,"sourceRef":"eng-web:MAT:25:2","text":"“Five of them were foolish, and five were wise.”"},
+{"number":3,"sourceRef":"eng-web:MAT:25:3","text":"“The foolish ones brought their lamps but didn’t bring extra oil.”"},
+{"number":4,"sourceRef":"eng-web:MAT:25:4","text":"“The wise ones brought oil in containers along with their lamps.”"},
+{"number":5,"sourceRef":"eng-web:MAT:25:5","text":"“The groom took a long time coming, so they all got drowsy and fell asleep.”"},
+{"number":6,"sourceRef":"eng-web:MAT:25:6","text":"“At midnight, a shout rang out: ‘Look, the groom is here! Come out and meet him!’”"},
+{"number":7,"sourceRef":"eng-web:MAT:25:7","text":"“All ten woke up and got their lamps ready.”"},
+{"number":8,"sourceRef":"eng-web:MAT:25:8","text":"“The foolish ones told the wise, ‘Share some of your oil with us. Our lamps are about to go out.’”"},
+{"number":9,"sourceRef":"eng-web:MAT:25:9","text":"“The wise answered, ‘There may not be enough for all of us. Go buy some for yourselves.’”"},
+{"number":10,"sourceRef":"eng-web:MAT:25:10","text":"“While they were out buying oil, the groom arrived. Those who were ready went in with him to the wedding feast, and the door was shut.”"},
+{"number":11,"sourceRef":"eng-web:MAT:25:11","text":"“Later the other young women came too: ‘Lord, Lord, open the door for us!’”"},
+{"number":12,"sourceRef":"eng-web:MAT:25:12","text":"“But he answered, ‘I’m telling you the truth: I don’t know you.’”"},
+    {"number":13,"sourceRef":"eng-web:MAT:25:13","text":"“So stay alert—you don’t know the day or the hour when the Son of Man is coming.” ⏰"},
+{"number":14,"sourceRef":"eng-web:MAT:25:14","text":"“It’s like a man leaving for another country. He called his servants and entrusted his property to them.”"},
+{"number":15,"sourceRef":"eng-web:MAT:25:15","text":"“He gave one servant five talents, another two, and another one—each according to their ability. Then he left on his journey.”"},
+{"number":16,"sourceRef":"eng-web:MAT:25:16","text":"“The one who got five talents went straight to work with them and earned five more.”"},
+{"number":17,"sourceRef":"eng-web:MAT:25:17","text":"“The one who got two earned two more in the same way.”"},
+{"number":18,"sourceRef":"eng-web:MAT:25:18","text":"“But the servant who got one talent went off, dug a hole, and hid his master’s money.”"},
+{"number":19,"sourceRef":"eng-web:MAT:25:19","text":"“After a long time, the master came back and settled accounts with them.”"},
+{"number":20,"sourceRef":"eng-web:MAT:25:20","text":"“The servant who got five talents brought another five: ‘Master, you gave me five talents. Look, I’ve earned five more.’”"},
+{"number":21,"sourceRef":"eng-web:MAT:25:21","text":"“His master said, ‘Well done, good and faithful servant! You were faithful with a little, so I’ll put you in charge of much more. Come share your master’s joy.’”"},
+{"number":22,"sourceRef":"eng-web:MAT:25:22","text":"“The servant who got two talents came too: ‘Master, you gave me two talents. Look, I’ve earned two more.’”"},
+{"number":23,"sourceRef":"eng-web:MAT:25:23","text":"“His master told him, ‘Well done, good and faithful servant! You were faithful with a little, so I’ll put you in charge of much more. Come share your master’s joy.’”"},
+{"number":24,"sourceRef":"eng-web:MAT:25:24","text":"“Then the servant who got one talent came: ‘Master, I knew you’re a hard man, harvesting where you didn’t plant and gathering where you didn’t scatter.”"},
+{"number":25,"sourceRef":"eng-web:MAT:25:25","text":"“‘I was afraid, so I hid your talent in the ground. Here, take back what belongs to you.’”"},
+{"number":26,"sourceRef":"eng-web:MAT:25:26","text":"“His master answered, ‘You wicked, lazy servant! You knew I harvest where I didn’t plant and gather where I didn’t scatter?”"},
+{"number":27,"sourceRef":"eng-web:MAT:25:27","text":"“‘Then you should’ve put my money in the bank. When I returned, I could’ve gotten it back with interest.’”"},
+{"number":28,"sourceRef":"eng-web:MAT:25:28","text":"“‘Take the talent from him and give it to the servant with ten talents.”"},
+{"number":29,"sourceRef":"eng-web:MAT:25:29","text":"“‘Everyone who has will get more and have plenty. But whoever doesn’t have will lose even what they have.”"},
+{"number":30,"sourceRef":"eng-web:MAT:25:30","text":"“‘Throw this useless servant into outer darkness, where there’ll be weeping and grinding of teeth.’”"},
+{"number":31,"sourceRef":"eng-web:MAT:25:31","text":"“When the Son of Man comes in his glory with all the holy angels, he’ll sit on his glorious throne.”"},
+{"number":32,"sourceRef":"eng-web:MAT:25:32","text":"“All nations will be gathered in front of him. He’ll separate people from each other like a shepherd separates sheep from goats.”"},
+{"number":33,"sourceRef":"eng-web:MAT:25:33","text":"“He’ll put the sheep on his right and the goats on his left.”"},
+{"number":34,"sourceRef":"eng-web:MAT:25:34","text":"“Then the King will tell those on his right, ‘Come, you who are blessed by my Father. Inherit the Kingdom prepared for you since the world began.”"},
+{"number":35,"sourceRef":"eng-web:MAT:25:35","text":"“‘I was hungry, and you gave me food. I was thirsty, and you gave me something to drink. I was a stranger, and you welcomed me.”"},
+{"number":36,"sourceRef":"eng-web:MAT:25:36","text":"“‘I had no clothes, and you clothed me. I was sick, and you cared for me. I was in prison, and you came to visit me.’”"},
+{"number":37,"sourceRef":"eng-web:MAT:25:37","text":"“Then the righteous will answer, ‘Lord, when did we see you hungry and feed you, or thirsty and give you a drink?”"},
+{"number":38,"sourceRef":"eng-web:MAT:25:38","text":"“‘When did we see you as a stranger and welcome you, or without clothes and clothe you?”"},
+{"number":39,"sourceRef":"eng-web:MAT:25:39","text":"“‘When did we see you sick or in prison and come visit you?’”"},
+{"number":40,"sourceRef":"eng-web:MAT:25:40","text":"“The King will answer, ‘I’m telling you the truth: whatever you did for one of the least of these, my brothers and sisters, you did for me.’”"},
+{"number":41,"sourceRef":"eng-web:MAT:25:41","text":"“Then he’ll tell those on his left, ‘Get away from me, you who are cursed, into the eternal fire prepared for the devil and his angels.”"},
+{"number":42,"sourceRef":"eng-web:MAT:25:42","text":"“‘I was hungry, and you gave me no food. I was thirsty, and you gave me nothing to drink.”"},
+{"number":43,"sourceRef":"eng-web:MAT:25:43","text":"“‘I was a stranger, and you didn’t welcome me. I had no clothes, and you didn’t clothe me. I was sick and in prison, and you didn’t visit me.’”"},
+{"number":44,"sourceRef":"eng-web:MAT:25:44","text":"“Then they’ll answer, ‘Lord, when did we see you hungry, thirsty, a stranger, without clothes, sick, or in prison and not help you?’”"},
+{"number":45,"sourceRef":"eng-web:MAT:25:45","text":"“He’ll answer them, ‘I’m telling you the truth: when you didn’t do it for one of the least of these, you didn’t do it for me.’”"},
+    {"number":46,"sourceRef":"eng-web:MAT:25:46","text":"“They’ll go away to eternal punishment, but the righteous to eternal life.”"}
   ]
 }
-
