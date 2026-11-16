@@ -7,33 +7,145 @@
   "bookName": "Acts",
   "chapterNumber": 18,
   "verses": [
-    {"number":1,"sourceRef":"eng-web:ACT:18:1","text":"After this, Paul left Athens and went to Corinth."},
-    {"number":2,"sourceRef":"eng-web:ACT:18:2","text":"There he met a Jew named Aquila, originally from Pontus, who had recently arrived from Italy with his wife Priscilla. Claudius had ordered all Jews to leave Rome. Paul went to see them,"},
-    {"number":3,"sourceRef":"eng-web:ACT:18:3","text":"and because they had the same trade, he stayed and worked with them. They made tents for a living."},
-    {"number":4,"sourceRef":"eng-web:ACT:18:4","text":"Every Sabbath he reasoned in the synagogue, trying to persuade Jews and Greeks."},
-    {"number":5,"sourceRef":"eng-web:ACT:18:5","text":"When Silas and Timothy came down from Macedonia, Paul devoted himself to preaching and testified to the Jews that Jesus is the Messiah."},
-    {"number":6,"sourceRef":"eng-web:ACT:18:6","text":"But they opposed and insulted him. So he shook the dust from his clothes and said, “You are responsible for what happens to you. I’m innocent. From now on, I’ll go to the Gentiles.”"},
-    {"number":7,"sourceRef":"eng-web:ACT:18:7","text":"He left the synagogue and went next door to the home of a man named Justus, who worshiped God."},
-    {"number":8,"sourceRef":"eng-web:ACT:18:8","text":"Crispus, the synagogue leader, believed in the Lord, along with his whole household. Many Corinthians who heard Paul also believed and were baptized."},
-    {"number":9,"sourceRef":"eng-web:ACT:18:9","text":"One night the Lord said to Paul in a vision, “Don’t be afraid. Keep speaking; don’t be silent."},
-    {"number":10,"sourceRef":"eng-web:ACT:18:10","text":"“I am with you. No one will attack or harm you, because I have many people in this city.”"},
-    {"number":11,"sourceRef":"eng-web:ACT:18:11","text":"Paul stayed there for a year and six months, teaching God’s word among them."},
-    {"number":12,"sourceRef":"eng-web:ACT:18:12","text":"When Gallio was proconsul of Achaia, the Jews joined forces against Paul and brought him before the judgment seat."},
-    {"number":13,"sourceRef":"eng-web:ACT:18:13","text":"They said, “This man is persuading people to worship God in ways that break the law.”"},
-    {"number":14,"sourceRef":"eng-web:ACT:18:14","text":"Paul was about to speak, but Gallio told the Jews, “If this were about a serious crime or real wrongdoing, I would hear you out."},
-    {"number":15,"sourceRef":"eng-web:ACT:18:15","text":"“But since this is a dispute about words, names, and your own law, handle it yourselves. I don’t want to judge a case like this.”"},
-    {"number":16,"sourceRef":"eng-web:ACT:18:16","text":"Then he drove them away from the judgment seat."},
-    {"number":17,"sourceRef":"eng-web:ACT:18:17","text":"They all grabbed Sosthenes, the synagogue leader, and beat him in front of the judgment seat. Gallio paid no attention."},
-    {"number":18,"sourceRef":"eng-web:ACT:18:18","text":"Paul stayed in Corinth many more days, then said goodbye to the believers and sailed for Syria with Priscilla and Aquila. In Cenchreae he had his head shaved because he was keeping a vow."},
-    {"number":19,"sourceRef":"eng-web:ACT:18:19","text":"They arrived in Ephesus, where Paul left Priscilla and Aquila. He went into the synagogue and reasoned with the Jews."},
-    {"number":20,"sourceRef":"eng-web:ACT:18:20","text":"They asked him to stay longer, but he declined."},
-    {"number":21,"sourceRef":"eng-web:ACT:18:21","text":"As he said goodbye, he told them, “I must keep the coming feast in Jerusalem. I’ll come back to you if God wills.” Then he sailed from Ephesus."},
-    {"number":22,"sourceRef":"eng-web:ACT:18:22","text":"He landed at Caesarea, went up and greeted the church, then went down to Antioch."},
-    {"number":23,"sourceRef":"eng-web:ACT:18:23","text":"After spending some time there, he left and traveled through Galatia and Phrygia, strengthening all the disciples along the way."},
-    {"number":24,"sourceRef":"eng-web:ACT:18:24","text":"A Jew named Apollos, originally from Alexandria, came to Ephesus. He was an eloquent speaker with a strong grasp of the Scriptures."},
-    {"number":25,"sourceRef":"eng-web:ACT:18:25","text":"He had been taught the Lord’s way and spoke about Jesus with spiritual passion and accuracy, though he knew only John’s baptism."},
-    {"number":26,"sourceRef":"eng-web:ACT:18:26","text":"He began speaking boldly in the synagogue. When Priscilla and Aquila heard him, they took him aside and explained God’s way to him more fully."},
-    {"number":27,"sourceRef":"eng-web:ACT:18:27","text":"When Apollos decided to go to Achaia, the believers encouraged him and wrote to the disciples there, asking them to welcome him. When he arrived, he greatly helped those who had believed through grace."},
-    {"number":28,"sourceRef":"eng-web:ACT:18:28","text":"He publicly and powerfully answered the Jews’ arguments, showing from the Scriptures that Jesus is the Messiah."}
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ACT:18:1",
+      "text": "After that, Paul left Athens and went to Corinth."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ACT:18:2",
+      "text": "There he met a Jewish man named Aquila, originally from Pontus. Aquila had recently arrived from Italy with his wife Priscilla, because Emperor Claudius had ordered all Jews to leave Rome. Paul went to see them,"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ACT:18:3",
+      "text": "and because they shared the same trade, he stayed and worked with them. They made tents for a living."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ACT:18:4",
+      "text": "Every Sabbath Paul reasoned in the synagogue, trying to persuade both Jews and Greeks."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ACT:18:5",
+      "text": "When Silas and Timothy came down from Macedonia, Paul devoted himself to preaching. He testified to the Jews that Jesus is the Messiah."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ACT:18:6",
+      "text": "But when they opposed him and insulted the message, he shook the dust from his clothes and said, “You’re responsible for what happens now! I’ve done my part. From here on, I’m going to the Gentiles.”"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ACT:18:7",
+      "text": "He left and went to the home of a man named Titius Justus, who worshiped God. His house was right next door to the synagogue."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ACT:18:8",
+      "text": "Crispus, the synagogue leader, believed in the Lord, along with everyone in his household. Many Corinthians who heard Paul believed and were baptized."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ACT:18:9",
+      "text": "One night the Lord told Paul in a vision, “Don’t be afraid. Keep speaking; don’t go silent."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ACT:18:10",
+      "text": "“I’m with you. No one will attack or hurt you, because I have many people in this city.”"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ACT:18:11",
+      "text": "Paul stayed there for a year and six months, teaching God’s message among them."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ACT:18:12",
+      "text": "But when Gallio became governor of Achaia, the Jews united against Paul and brought him before the court."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:ACT:18:13",
+      "text": "They accused him, “This man is persuading people to worship God in ways that break the law.”"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:ACT:18:14",
+      "text": "Paul was about to answer, but Gallio said to the Jews, “If this were about a crime or serious wrongdoing, I’d have reason to hear you out."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:ACT:18:15",
+      "text": "“But if this is about words, names, and your own law, handle it yourselves. I’m not going to judge these matters.”"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:ACT:18:16",
+      "text": "Then he drove them away from the court."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:ACT:18:17",
+      "text": "The crowd grabbed Sosthenes, the synagogue leader, and beat him right there in front of the court. Gallio didn’t care at all."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:ACT:18:18",
+      "text": "Paul stayed on in Corinth for many more days. Then he said goodbye to the believers and sailed for Syria with Priscilla and Aquila. In Cenchreae he had his hair cut because of a vow."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:ACT:18:19",
+      "text": "They arrived in Ephesus, where Paul left Priscilla and Aquila. He went into the synagogue and reasoned with the Jews."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:ACT:18:20",
+      "text": "They asked him to stay longer, but he declined."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:ACT:18:21",
+      "text": "As he left, he said, “I’ll come back to you if God wills. I have to get to Jerusalem for the coming festival.” Then he sailed from Ephesus."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:ACT:18:22",
+      "text": "After landing in Caesarea, he went up to greet the church, then traveled down to Antioch."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:ACT:18:23",
+      "text": "He spent some time there, then traveled through Galatia and Phrygia, strengthening all the disciples along the way."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:ACT:18:24",
+      "text": "Meanwhile, a Jewish man named Apollos arrived in Ephesus from Alexandria. He was an eloquent speaker and knew the Scriptures well."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:ACT:18:25",
+      "text": "He had been taught the Lord’s way and spoke about Jesus with great passion and accuracy, though he knew only John’s baptism."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:ACT:18:26",
+      "text": "Apollos began speaking boldly in the synagogue. When Priscilla and Aquila heard him, they took him aside and explained God’s way to him more accurately."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:ACT:18:27",
+      "text": "Apollos wanted to cross over to Achaia, so the believers encouraged him and wrote to the disciples there, asking them to welcome him. When he arrived, he greatly helped those who had believed through grace,"
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:ACT:18:28",
+      "text": "because he powerfully showed from the Scriptures, in public debate, that Jesus is the Messiah."
+    }
   ]
 }

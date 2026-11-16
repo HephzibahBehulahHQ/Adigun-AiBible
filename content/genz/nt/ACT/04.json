@@ -7,42 +7,190 @@
   "bookName": "Acts",
   "chapterNumber": 4,
   "verses": [
-    {"number":1,"sourceRef":"eng-web:ACT:4:1","text":"While Peter and John were speaking to the people, the priests, the temple guard captain, and the Sadducees came up to them."},
-    {"number":2,"sourceRef":"eng-web:ACT:4:2","text":"They were upset because the apostles were teaching the people and announcing that the dead are raised through Jesus."},
-    {"number":3,"sourceRef":"eng-web:ACT:4:3","text":"They arrested Peter and John and kept them in custody until the next day, since it was already evening."},
-    {"number":4,"sourceRef":"eng-web:ACT:4:4","text":"But many who heard the message believed, and the number of the men grew to about five thousand."},
-    {"number":5,"sourceRef":"eng-web:ACT:4:5","text":"The next morning, Jerusalem’s rulers, elders, and scribes gathered together."},
-    {"number":6,"sourceRef":"eng-web:ACT:4:6","text":"The high priest Annas was there, along with Caiaphas, John, Alexander, and others from the high priest’s family."},
-    {"number":7,"sourceRef":"eng-web:ACT:4:7","text":"They brought Peter and John in front of them and asked, “By what power or in whose name did you do this?”"},
-    {"number":8,"sourceRef":"eng-web:ACT:4:8","text":"Then Peter, filled with the Holy Spirit, said to them, “Rulers and elders of the people,"},
-    {"number":9,"sourceRef":"eng-web:ACT:4:9","text":"“if we’re being questioned today about the good done for a man who couldn’t walk, and how he was healed,"},
-    {"number":10,"sourceRef":"eng-web:ACT:4:10","text":"“then all of you and everyone in Israel should know: this man stands here healthy through the name of Jesus Christ of Nazareth, whom you crucified and whom God raised from the dead."},
-    {"number":11,"sourceRef":"eng-web:ACT:4:11","text":"“Jesus is ‘the stone you builders rejected, which has become the cornerstone.’"},
-    {"number":12,"sourceRef":"eng-web:ACT:4:12","text":"“Salvation is found in no one else. There is no other name under heaven given to humanity by which we must be saved.”"},
-    {"number":13,"sourceRef":"eng-web:ACT:4:13","text":"When they saw Peter and John speaking boldly, and realized they were ordinary, untrained men, they were amazed. They also recognized that the two had been with Jesus."},
-    {"number":14,"sourceRef":"eng-web:ACT:4:14","text":"They could see the healed man standing there with them, so they had nothing to say against it."},
-    {"number":15,"sourceRef":"eng-web:ACT:4:15","text":"They ordered Peter and John to leave the council room and then discussed the matter among themselves."},
-    {"number":16,"sourceRef":"eng-web:ACT:4:16","text":"They said, “What are we going to do with these men? Everyone in Jerusalem knows they performed a clear miracle, and we can’t deny it."},
-    {"number":17,"sourceRef":"eng-web:ACT:4:17","text":"“But to keep this from spreading any further among the people, let’s threaten them so they won’t speak to anyone in this name again.”"},
-    {"number":18,"sourceRef":"eng-web:ACT:4:18","text":"They called Peter and John back and ordered them not to speak or teach at all in the name of Jesus."},
-    {"number":19,"sourceRef":"eng-web:ACT:4:19","text":"But Peter and John replied, “You decide whether it is right in God’s sight to obey you instead of God."},
-    {"number":20,"sourceRef":"eng-web:ACT:4:20","text":"“We can’t keep quiet about what we have seen and heard.”"},
-    {"number":21,"sourceRef":"eng-web:ACT:4:21","text":"After threatening them some more, the leaders let them go. They couldn’t find a way to punish them because the people were praising God for what had happened."},
-    {"number":22,"sourceRef":"eng-web:ACT:4:22","text":"The man who had been miraculously healed was over forty years old."},
-    {"number":23,"sourceRef":"eng-web:ACT:4:23","text":"After their release, Peter and John went back to their group and reported everything the chief priests and elders had said."},
-    {"number":24,"sourceRef":"eng-web:ACT:4:24","text":"When the others heard, they raised their voices together in prayer to God: “Lord, you made the sky, the earth, the sea, and everything in them."},
-    {"number":25,"sourceRef":"eng-web:ACT:4:25","text":"“Through the mouth of your servant David, you said: ‘Why are the nations furious? Why do the peoples plot what is pointless?"},
-    {"number":26,"sourceRef":"eng-web:ACT:4:26","text":"“‘The kings of the earth take their stand, and the rulers join forces against the Lord and against his Messiah.’"},
-    {"number":27,"sourceRef":"eng-web:ACT:4:27","text":"“That is what happened here: Herod and Pontius Pilate joined with the Gentiles and the people of Israel against your holy servant Jesus, whom you anointed."},
-    {"number":28,"sourceRef":"eng-web:ACT:4:28","text":"“They did what your power and plan had already decided would happen."},
-    {"number":29,"sourceRef":"eng-web:ACT:4:29","text":"“Now, Lord, notice their threats and help your servants speak your word with complete boldness."},
-    {"number":30,"sourceRef":"eng-web:ACT:4:30","text":"“Reach out your hand to heal, and let signs and wonders happen through the name of your holy servant Jesus.”"},
-    {"number":31,"sourceRef":"eng-web:ACT:4:31","text":"After they prayed, the place where they were gathered shook. They were all filled with the Holy Spirit and spoke God’s word boldly."},
-    {"number":32,"sourceRef":"eng-web:ACT:4:32","text":"The whole group of believers was united in heart and purpose. No one claimed their possessions as only their own; they shared everything."},
-    {"number":33,"sourceRef":"eng-web:ACT:4:33","text":"With great power, the apostles testified that the Lord Jesus had risen. God’s grace was strongly at work among them all."},
-    {"number":34,"sourceRef":"eng-web:ACT:4:34","text":"No one among them was in need. Those who owned land or houses sold them and brought the money from the sales"},
-    {"number":35,"sourceRef":"eng-web:ACT:4:35","text":"and placed it at the apostles’ feet. It was then distributed to each person according to their need."},
-    {"number":36,"sourceRef":"eng-web:ACT:4:36","text":"One of them was Joses, a Levite from Cyprus. The apostles called him Barnabas, which means “Son of Encouragement.”"},
-    {"number":37,"sourceRef":"eng-web:ACT:4:37","text":"He owned a field, sold it, and brought the money and placed it at the apostles’ feet."}
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ACT:4:1",
+      "text": "While Peter and John were speaking to the people, the priests, the temple captain, and the Sadducees came over."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ACT:4:2",
+      "text": "They were upset that the apostles were teaching the people and announcing that Jesus had risen from the dead."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ACT:4:3",
+      "text": "They arrested Peter and John and kept them in custody until the next day, since it was already evening."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ACT:4:4",
+      "text": "But many who heard the message believed. By then, the number of men who believed was about five thousand."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ACT:4:5",
+      "text": "The next morning, the rulers, elders, and legal experts gathered in Jerusalem."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ACT:4:6",
+      "text": "Annas the high priest was there, along with Caiaphas, John, Alexander, and other members of the high priest’s family."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ACT:4:7",
+      "text": "They brought Peter and John before them and asked, “What power—or whose name—did you use to do this?”"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ACT:4:8",
+      "text": "Then Peter, filled with the Holy Spirit, said to them, “Rulers and elders of the people, listen."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ACT:4:9",
+      "text": "If we’re being questioned today about a good deed done for a disabled man—how he was healed—"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ACT:4:10",
+      "text": "then all of you and all the people of Israel should know this: he stands here healed by the name of Jesus Christ of Nazareth, the one you crucified and God raised from the dead."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ACT:4:11",
+      "text": "Jesus is ‘the stone you builders rejected, the stone that became the cornerstone.’"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ACT:4:12",
+      "text": "There is salvation in no one else. There is no other name under heaven given to people by which we must be saved!”"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:ACT:4:13",
+      "text": "The council members saw how boldly Peter and John spoke. They realized these were ordinary, untrained men, and they were stunned. Then they recognized that the two had been with Jesus."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:ACT:4:14",
+      "text": "They could say nothing against the healed man standing there with them."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:ACT:4:15",
+      "text": "So they ordered Peter and John out of the council chamber and talked it over among themselves."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:ACT:4:16",
+      "text": "“What are we going to do with these men?” they asked. “Everyone in Jerusalem knows they performed a remarkable sign, and we can’t deny it."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:ACT:4:17",
+      "text": "But we have to stop this from spreading any further. Let’s threaten them so they won’t speak to anyone in this name again.”"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:ACT:4:18",
+      "text": "They called Peter and John back in and ordered them not to speak or teach in the name of Jesus at all."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:ACT:4:19",
+      "text": "But Peter and John answered, “You decide for yourselves: is it right in God’s sight to obey you instead of God?"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:ACT:4:20",
+      "text": "We can’t keep quiet about what we’ve seen and heard.”"
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:ACT:4:21",
+      "text": "After more threats, they let them go. They couldn’t find a way to punish them because the people were praising God for what had happened."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:ACT:4:22",
+      "text": "The man who had been healed in this remarkable way was more than forty years old."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:ACT:4:23",
+      "text": "After being released, Peter and John went back to their people and reported everything the chief priests and elders had said."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:ACT:4:24",
+      "text": "When the others heard, they raised their voices together to God: “Master, you made the sky, the earth, the sea, and everything in them."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:ACT:4:25",
+      "text": "Through the mouth of your servant David, you said: ‘Why are the nations in an uproar? Why do the peoples plot what is pointless?"
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:ACT:4:26",
+      "text": "The kings of the earth take their stand, and the rulers gather together against the Lord and against his Anointed One.’"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:ACT:4:27",
+      "text": "“That is exactly what happened here. Herod and Pontius Pilate joined with the nations and the people of Israel against your holy servant Jesus, whom you anointed."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:ACT:4:28",
+      "text": "They did whatever your power and plan had already decided would happen."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:ACT:4:29",
+      "text": "Now, Lord, see their threats. Help your servants speak your word with complete boldness."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:ACT:4:30",
+      "text": "Stretch out your hand to heal, and let signs and wonders happen through the name of your holy servant Jesus.”"
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:ACT:4:31",
+      "text": "After they prayed, the place where they were gathered shook. They were all filled with the Holy Spirit and spoke God’s word boldly."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:ACT:4:32",
+      "text": "All the believers were united in heart and mind. Nobody claimed their possessions as their own; they shared everything."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:ACT:4:33",
+      "text": "With great power, the apostles kept telling people that the Lord Jesus had risen from the dead. God’s grace was powerfully at work among them all."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:ACT:4:34",
+      "text": "No one among them was in need. People who owned land or houses sold them and brought the money from the sale."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:ACT:4:35",
+      "text": "They placed the money at the apostles’ feet, and it was shared out to each person who had a need."
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:ACT:4:36",
+      "text": "Joses, whom the apostles called Barnabas, was a Levite from Cyprus. The name means “Son of Encouragement.”"
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:ACT:4:37",
+      "text": "He owned a field, sold it, brought the money, and laid it at the apostles’ feet."
+    }
   ]
 }

@@ -7,40 +7,180 @@
   "bookName": "Acts",
   "chapterNumber": 23,
   "verses": [
-    {"number":1,"sourceRef":"eng-web:ACT:23:1","text":"Paul looked straight at the council and said, “Brothers, I’ve lived before God with a clear conscience right up to today.”"},
-    {"number":2,"sourceRef":"eng-web:ACT:23:2","text":"At that, the high priest Ananias ordered the men standing near Paul to hit him on the mouth."},
-    {"number":3,"sourceRef":"eng-web:ACT:23:3","text":"Paul said to him, “God will strike you, you polished-up wall! You’re sitting there to judge me by the law, yet you order me struck in violation of the law.”"},
-    {"number":4,"sourceRef":"eng-web:ACT:23:4","text":"The men standing nearby said, “You dare insult God’s high priest?”"},
-    {"number":5,"sourceRef":"eng-web:ACT:23:5","text":"Paul said, “Brothers, I didn’t realize he was the high priest. Scripture says, ‘You must not speak evil of a ruler of your people.’”"},
-    {"number":6,"sourceRef":"eng-web:ACT:23:6","text":"Paul knew that some of the council were Sadducees and others were Pharisees, so he called out, “Brothers, I’m a Pharisee, from a family of Pharisees. I’m on trial because of the hope of the resurrection of the dead!”"},
-    {"number":7,"sourceRef":"eng-web:ACT:23:7","text":"As soon as he said this, the Pharisees and Sadducees began arguing, and the council split into opposing sides."},
-    {"number":8,"sourceRef":"eng-web:ACT:23:8","text":"The Sadducees say there is no resurrection, no angels, and no spirits, while the Pharisees believe in all of them."},
-    {"number":9,"sourceRef":"eng-web:ACT:23:9","text":"The shouting grew intense. Some of the Pharisee scribes stood up and argued, “We find nothing wrong with this man. What if a spirit or an angel really did speak to him? We shouldn’t fight against God!”"},
-    {"number":10,"sourceRef":"eng-web:ACT:23:10","text":"The argument became so fierce that the commander feared they would tear Paul apart. He ordered the soldiers to pull him out of the crowd by force and take him back to the barracks."},
-    {"number":11,"sourceRef":"eng-web:ACT:23:11","text":"That night the Lord stood beside Paul and said, “Be encouraged! You’ve testified about me here in Jerusalem, and you must testify about me in Rome too.”"},
-    {"number":12,"sourceRef":"eng-web:ACT:23:12","text":"When morning came, some of the Jews formed a plot and put themselves under an oath: they would neither eat nor drink until they had killed Paul."},
-    {"number":13,"sourceRef":"eng-web:ACT:23:13","text":"More than forty men were part of this plot."},
-    {"number":14,"sourceRef":"eng-web:ACT:23:14","text":"They went to the chief priests and elders and said, “We’ve taken a serious oath not to eat anything until Paul is dead."},
-    {"number":15,"sourceRef":"eng-web:ACT:23:15","text":"So now you and the council should ask the commander to bring Paul down to you tomorrow, as if you want to examine his case more carefully. We’ll be ready to kill him before he gets here.”"},
-    {"number":16,"sourceRef":"eng-web:ACT:23:16","text":"But the son of Paul’s sister heard that they were waiting in ambush. He went into the barracks and told Paul."},
-    {"number":17,"sourceRef":"eng-web:ACT:23:17","text":"Paul called one of the centurions and said, “Take this young man to the commander. He has something to report.”"},
-    {"number":18,"sourceRef":"eng-web:ACT:23:18","text":"The centurion brought him to the commander and said, “Paul the prisoner called me and asked me to bring this young man to you. He has something to tell you.”"},
-    {"number":19,"sourceRef":"eng-web:ACT:23:19","text":"The commander took the young man by the hand, stepped aside with him, and asked privately, “What do you need to tell me?”"},
-    {"number":20,"sourceRef":"eng-web:ACT:23:20","text":"He said, “The Jews have agreed to ask you to bring Paul down to the council tomorrow, pretending they want to investigate his case more carefully."},
-    {"number":21,"sourceRef":"eng-web:ACT:23:21","text":"“Don’t agree to it. More than forty men are hiding in wait for him. They’ve sworn not to eat or drink until they’ve killed him. They’re ready now, just waiting for you to say yes.”"},
-    {"number":22,"sourceRef":"eng-web:ACT:23:22","text":"The commander sent the young man away with a warning: “Don’t tell anyone that you brought this information to me.”"},
-    {"number":23,"sourceRef":"eng-web:ACT:23:23","text":"He called two centurions and said, “Get two hundred soldiers ready to go to Caesarea, along with seventy cavalry and two hundred spearmen. Leave at the third hour of the night."},
-    {"number":24,"sourceRef":"eng-web:ACT:23:24","text":"“Provide horses for Paul as well, and get him safely to Governor Felix.”"},
-    {"number":25,"sourceRef":"eng-web:ACT:23:25","text":"Then he wrote a letter that said:"},
-    {"number":26,"sourceRef":"eng-web:ACT:23:26","text":"“Claudius Lysias, to the most excellent Governor Felix: Greetings."},
-    {"number":27,"sourceRef":"eng-web:ACT:23:27","text":"“This man was seized by the Jews, who were about to kill him. I came with my troops and rescued him after learning that he was a Roman citizen."},
-    {"number":28,"sourceRef":"eng-web:ACT:23:28","text":"“I wanted to know what charge they were bringing against him, so I took him before their council."},
-    {"number":29,"sourceRef":"eng-web:ACT:23:29","text":"“I found that their accusations were about questions of their law. He wasn’t accused of anything deserving death or imprisonment."},
-    {"number":30,"sourceRef":"eng-web:ACT:23:30","text":"“When I was informed that a plot was being made against him, I sent him to you at once. I also ordered his accusers to bring their case before you. Farewell.”"},
-    {"number":31,"sourceRef":"eng-web:ACT:23:31","text":"The soldiers followed their orders and took Paul by night as far as Antipatris."},
-    {"number":32,"sourceRef":"eng-web:ACT:23:32","text":"The next day the foot soldiers returned to the barracks, leaving the cavalry to continue with him."},
-    {"number":33,"sourceRef":"eng-web:ACT:23:33","text":"When the cavalry reached Caesarea, they delivered the letter to the governor and handed Paul over to him."},
-    {"number":34,"sourceRef":"eng-web:ACT:23:34","text":"The governor read the letter and asked which province Paul came from. When he learned that Paul was from Cilicia,"},
-    {"number":35,"sourceRef":"eng-web:ACT:23:35","text":"he said, “I’ll hear your case fully when your accusers arrive.” Then he ordered Paul held in Herod’s palace."}
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ACT:23:1",
+      "text": "Paul looked straight at the council and said, “Brothers, I’ve lived before God with a clear conscience up to this very day.”"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ACT:23:2",
+      "text": "At that, the high priest Ananias ordered the men standing near Paul to hit him on the mouth."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ACT:23:3",
+      "text": "Paul said to him, “God is going to hit you, you whitewashed wall! You’re sitting there to judge me by the Law, yet you order me struck against the Law?”"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ACT:23:4",
+      "text": "The men standing nearby said, “You dare insult God’s high priest?”"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ACT:23:5",
+      "text": "Paul replied, “Brothers, I didn’t realize he was the high priest. Scripture says, ‘You must not speak evil of a ruler of your people.’”"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ACT:23:6",
+      "text": "Paul knew that some members of the council were Sadducees and others Pharisees, so he called out, “Brothers, I’m a Pharisee, descended from Pharisees. I’m on trial because of my hope in the resurrection of the dead!”"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ACT:23:7",
+      "text": "As soon as he said this, the Pharisees and Sadducees began arguing, and the council split."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ACT:23:8",
+      "text": "The Sadducees say there is no resurrection, no angels, and no spirits; the Pharisees believe in all of them."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ACT:23:9",
+      "text": "The argument grew loud. Some teachers of the Law from the Pharisees’ side stood up and insisted, “We find nothing wrong with this man. What if a spirit or an angel really spoke to him? We don’t want to fight against God!”"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ACT:23:10",
+      "text": "The argument became so intense that the commander feared they would tear Paul apart. He ordered the soldiers to go down, pull Paul out of the crowd by force, and take him to the barracks."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ACT:23:11",
+      "text": "That night the Lord stood beside Paul and said, “Be encouraged! Just as you’ve testified about me in Jerusalem, you must testify in Rome too.”"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ACT:23:12",
+      "text": "When morning came, some Jews formed a conspiracy and swore an oath not to eat or drink until they had killed Paul."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:ACT:23:13",
+      "text": "More than forty men were in on this plot."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:ACT:23:14",
+      "text": "They went to the chief priests and elders and said, “We’ve sworn a serious oath not to eat anything until we kill Paul."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:ACT:23:15",
+      "text": "“So now you and the council should ask the commander to bring him down to you tomorrow, as if you want to examine his case more carefully. We’ll be ready to kill him before he gets here.”"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:ACT:23:16",
+      "text": "But Paul’s sister’s son heard about their ambush. He went into the barracks and told Paul."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:ACT:23:17",
+      "text": "Paul called one of the centurions and said, “Take this young man to the commander. He has something to tell him.”"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:ACT:23:18",
+      "text": "The centurion took him to the commander and said, “Paul the prisoner called me and asked me to bring this young man to you. He has something to tell you.”"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:ACT:23:19",
+      "text": "The commander took the young man by the hand, led him aside, and asked privately, “What do you need to tell me?”"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:ACT:23:20",
+      "text": "He replied, “The Jews have agreed to ask you to bring Paul down to the council tomorrow, pretending they want to examine him more carefully."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:ACT:23:21",
+      "text": "“Don’t give in to them. More than forty men are waiting to ambush him. They’ve sworn not to eat or drink until they kill him. They’re ready now, just waiting for you to agree.”"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:ACT:23:22",
+      "text": "The commander let the young man go with this warning: “Don’t tell anyone you reported this to me.”"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:ACT:23:23",
+      "text": "Then he called two centurions and ordered them, “Get two hundred soldiers ready to go to Caesarea, along with seventy horsemen and two hundred spearmen. Leave at nine tonight."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:ACT:23:24",
+      "text": "“Provide horses for Paul too, and get him safely to Governor Felix.”"
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:ACT:23:25",
+      "text": "He wrote a letter that said:"
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:ACT:23:26",
+      "text": "“Claudius Lysias, to the most excellent Governor Felix: Greetings."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:ACT:23:27",
+      "text": "“This man was seized by the Jews, and they were about to kill him. I came with my soldiers and rescued him when I learned he was a Roman citizen."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:ACT:23:28",
+      "text": "“I wanted to find out what they were accusing him of, so I brought him before their council."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:ACT:23:29",
+      "text": "“I found he was accused over questions of their Law, but charged with nothing deserving death or imprisonment."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:ACT:23:30",
+      "text": "“When I was told of a plot against him, I sent him to you at once. I also ordered his accusers to bring their case against him before you. Farewell.”"
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:ACT:23:31",
+      "text": "The soldiers followed their orders, took Paul, and brought him by night to Antipatris."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:ACT:23:32",
+      "text": "The next day, they let the horsemen continue with him and returned to the barracks."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:ACT:23:33",
+      "text": "When they reached Caesarea, they delivered the letter to the governor and handed Paul over to him."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:ACT:23:34",
+      "text": "The governor read the letter and asked Paul what province he was from. When he learned Paul was from Cilicia, he said,"
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:ACT:23:35",
+      "text": "“I’ll hear your case fully when your accusers arrive.” Then he ordered Paul kept in Herod’s palace."
+    }
   ]
 }
