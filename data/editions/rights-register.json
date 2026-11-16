@@ -306,6 +306,24 @@
       "url": "https://ebible.org/nld1939/copyright.htm",
       "observedOn": "2026-11-14",
       "summary": "The individual notice identifies the first complete 1939 edition, records contact with the original publisher and relevant organizations with no objections, and says the edition can be considered free of copyright under the applicable legal terms. This is the provider’s conclusion, not independent worldwide legal advice."
+    },
+    {
+      "id": "spapddpt-cc",
+      "url": "https://ebible.org/spapddpt/copyright.htm",
+      "observedOn": "2026-11-14",
+      "summary": "The exact publisher notice identifies Palabra de Dios para ti as CC BY 4.0 and requires attribution and disclosure of changes. The notice does not establish separate AI retrieval, model-training or third-party audio rights."
+    },
+    {
+      "id": "spapddpt-details",
+      "url": "https://ebible.org/details.php?id=spapddpt",
+      "observedOn": "2026-11-14",
+      "summary": "Publisher metadata identifies Palabra de Dios para ti (PdDpt), Spanish, Asociacion Biblica Latinoamericana, contributor Latinamerican Textual Bible Foundation, Inc.; source files dated 2026-10-30."
+    },
+    {
+      "id": "spapddpt-license",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "observedOn": "2026-11-14",
+      "summary": "Creative Commons Attribution 4.0 International license deed."
     }
   ],
   "editions": [
@@ -8093,6 +8111,167 @@
       "providerReporting": {
         "requirement": "none",
         "description": "No telemetry obligation is stated in the edition notice. No provider telemetry is enabled."
+      }
+    },
+    {
+      "editionId": "spapddpt",
+      "sourceSha256": "5d43f304b291c081551478cf43d08f0942fd8d151a067ba85bb313a73e87188a",
+      "verifiedOn": "2026-11-14",
+      "expiresOn": null,
+      "withdrawn": false,
+      "territory": {
+        "scope": "worldwide",
+        "countries": []
+      },
+      "aiProductUse": {
+        "state": "unknown",
+        "evidenceIds": [
+          "spapddpt-cc"
+        ],
+        "reason": "CC BY 4.0 allows sharing and adaptation with attribution but does not establish this product’s separate AI retrieval or model-training permission."
+      },
+      "operations": {
+        "display": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "redistribution": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "offline": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "searchIndex": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "adaptation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "translation": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "studyParaphrase": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "publicPerformance": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "imageExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "videoExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "printExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "documentExport": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "peerSharing": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "commercialUse": {
+          "state": "allowed",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "Allowed for this exact publisher source under CC BY 4.0, subject to attribution and disclosure of changes."
+        },
+        "aiRetrieval": {
+          "state": "unknown",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "The source license does not separately establish permission for this operation."
+        },
+        "modelTraining": {
+          "state": "unknown",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "The source license does not separately establish permission for this operation."
+        },
+        "tts": {
+          "state": "unknown",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "The source license does not separately establish permission for this operation."
+        },
+        "recordedAudio": {
+          "state": "unknown",
+          "evidenceIds": [
+            "spapddpt-cc"
+          ],
+          "reason": "The source license does not separately establish permission for this operation."
+        }
+      },
+      "conditions": [
+        "Retain the exact edition identity, copyright/source notice and CC BY 4.0 attribution with redistributed and offline copies.",
+        "The publisher license permits sharing and adaptation with attribution and disclosure of changes. The imported TXT remains unchanged.",
+        "The publisher-supplied 66-book list and order describe this edition and do not define one canon for all Christian traditions.",
+        "Preserve the three XML combined verse ranges and all TXT bracket markers exactly; no missing wording or verse numbering is fabricated.",
+        "The VPL archive contains verse text only; images and third-party recorded audio are not included. The source notice does not establish separate AI service permissions or independent editorial/native-language review."
+      ],
+      "attribution": "Palabra de Dios para ti. Translation by Asociacion Biblica Latinoamericana; contributor Latinamerican Textual Bible Foundation, Inc. ©2020. CC BY 4.0. Unmodified publisher wording; full source notice retained. Source: https://ebible.org/spapddpt/.",
+      "cache": {
+        "mode": "none-required"
+      },
+      "providerReporting": {
+        "requirement": "none",
+        "description": "No provider telemetry obligation is stated in the publisher notice. No provider telemetry is enabled."
       }
     }
   ]
