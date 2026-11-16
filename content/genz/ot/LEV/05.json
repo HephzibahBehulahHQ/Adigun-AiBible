@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "LEV",
+  "bookName": "Leviticus",
+  "chapterNumber": 5,
+  "verses": [
+    { "number": 1, "sourceRef": "eng-web:LEV:5:1", "text": "“If you hear someone put under oath to testify, and you’re a witness—you saw or know what happened—but stay quiet, you’re guilty and must answer for it. 🤐" },
+    { "number": 2, "sourceRef": "eng-web:LEV:5:2", "text": "“Or if you touch something unclean—a dead unclean animal, livestock, or a creature that crawls—and didn’t realize it at the time, you’re still unclean and guilty. ⚠️" },
+    { "number": 3, "sourceRef": "eng-web:LEV:5:3", "text": "“Or if you touch human uncleanness of any kind without realizing it, then later find out, you’re guilty. ⚠️" },
+    { "number": 4, "sourceRef": "eng-web:LEV:5:4", "text": "“Or if you make a rash oath—promising to do something good or bad—and only later realize it, you’re guilty for that oath. 🗣️" },
+    { "number": 5, "sourceRef": "eng-web:LEV:5:5", "text": "“When anyone is guilty in one of these ways, they must confess the sin. 🙏" },
+    { "number": 6, "sourceRef": "eng-web:LEV:5:6", "text": "“Then bring Yahweh a guilt offering for the sin: a female lamb or goat from the flock. The priest will make atonement for you. 🐑" },
+    { "number": 7, "sourceRef": "eng-web:LEV:5:7", "text": "“If you can’t afford a lamb, bring Yahweh two turtledoves or two young pigeons for the wrong you did—one as a sin offering and the other as a burnt offering. 🕊️" },
+    { "number": 8, "sourceRef": "eng-web:LEV:5:8", "text": "“Bring them to the priest. He’ll offer the sin offering first, twisting off its head without fully severing it. 🕊️" },
+    { "number": 9, "sourceRef": "eng-web:LEV:5:9", "text": "“He’ll sprinkle some of its blood on the side of the altar and drain the rest at the altar’s base. This is the sin offering. 🩸" },
+    { "number": 10, "sourceRef": "eng-web:LEV:5:10", "text": "“He’ll offer the second bird as a burnt offering, following the rule. The priest will make atonement for your sin, and you’ll be forgiven. 🕊️" },
+    { "number": 11, "sourceRef": "eng-web:LEV:5:11", "text": "“If you can’t afford two turtledoves or two young pigeons, bring one-tenth of an ephah of fine flour for your sin offering. Don’t add oil or frankincense; it’s a sin offering. 🌾" },
+    { "number": 12, "sourceRef": "eng-web:LEV:5:12", "text": "“Bring it to the priest. He’ll take a handful as the memorial portion and burn it on the altar with Yahweh’s fire offerings. This is a sin offering. 🔥" },
+    { "number": 13, "sourceRef": "eng-web:LEV:5:13", "text": "“The priest will make atonement for your sin in any of these matters, and you’ll be forgiven. The rest of the flour belongs to the priest, like a grain offering.” 🙏" },
+    { "number": 14, "sourceRef": "eng-web:LEV:5:14", "text": "Yahweh spoke to Moses again: 📜" },
+    { "number": 15, "sourceRef": "eng-web:LEV:5:15", "text": "“If anyone unknowingly misuses something sacred to Yahweh, bring a flawless ram from the flock as a guilt offering. Its value must be set in sanctuary-shekels of silver. 🐏" },
+    { "number": 16, "sourceRef": "eng-web:LEV:5:16", "text": "“Pay back what you took from the sacred thing, add one-fifth of its value, and give it to the priest. The priest will make atonement for you with the ram, and you’ll be forgiven. 🪙" },
+    { "number": 17, "sourceRef": "eng-web:LEV:5:17", "text": "“If anyone breaks a command Yahweh said not to break, even without knowing it, they’re still guilty and must answer for it. ⚖️" },
+    { "number": 18, "sourceRef": "eng-web:LEV:5:18", "text": "“Bring a flawless ram from the flock, valued as required, to the priest as a guilt offering. The priest will make atonement for the sin you didn’t know about, and you’ll be forgiven. 🐏" },
+    { "number": 19, "sourceRef": "eng-web:LEV:5:19", "text": "“This is a guilt offering. The person is definitely guilty before Yahweh.” ⚖️" }
+  ]
+}
