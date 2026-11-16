@@ -2525,6 +2525,15 @@ SOURCES['spapddpt'] = {
 
 
 def edition_metadata(edition_id):
+    if edition_id == 'adigun-edition':
+        catalog = json.loads((ROOT / 'data/editions/catalog.json').read_text(encoding='utf-8'))
+        manifest = json.loads((ROOT / 'data/editions/adigun-edition/manifest.json').read_text(encoding='utf-8'))
+        edition = next((row for row in catalog['editions'] if row['id'] == edition_id), None)
+        if (edition is None or edition.get('sha256') != manifest['edition'].get('sha256')
+                or edition.get('totals') != manifest.get('totals')
+                or edition.get('revision') != manifest['edition'].get('revision')):
+            raise ValueError('Adigun Edition catalog metadata does not match its generated manifest.')
+        return edition
     source = SOURCES[edition_id]
     fields = ('name', 'language', 'corpus', 'scope', 'publisher', 'translator', 'sourceUpdatedAt', 'sourceUrl', 'formatUrl',
               'downloadUrl', 'licenseUrl', 'license', 'licenseIdentifier', 'licenseDeedUrl', 'attribution', 'sha256', 'rights', 'conditions',
@@ -3191,7 +3200,7 @@ def build_artifacts(edition_id, raw):
 
 def verify_outputs(output, pending_indexes=None):
     catalog = json.loads((output / 'catalog.json').read_text(encoding='utf-8'))
-    expected_catalog = {'schemaVersion': 1, 'editions': [edition_metadata(edition_id) for edition_id in SOURCES]}
+    expected_catalog = {'schemaVersion': 1, 'editions': [edition_metadata(edition_id) for edition_id in SOURCES] + [edition_metadata('adigun-edition')]}
     if catalog != expected_catalog:
         raise ValueError('Edition catalog metadata differs from pinned rights/source declarations.')
     summaries = []
@@ -3310,7 +3319,7 @@ def main():
     for edition_id in args.edition or SOURCES:
         raw = archive_bytes(edition_id, args.source_dir, args.download)
         generated[edition_id] = build_artifacts(edition_id, raw)
-    catalog = json_bytes({'schemaVersion': 1, 'editions': [edition_metadata(edition_id) for edition_id in SOURCES]})
+    catalog = json_bytes({'schemaVersion': 1, 'editions': [edition_metadata(edition_id) for edition_id in SOURCES] + [edition_metadata('adigun-edition')]})
     # Validate all selected archives before replacing any generated output.
     for edition_id, files in generated.items():
         for name, content in files.items():

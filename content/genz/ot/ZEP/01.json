@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ZEP",
+  "bookName": "Zephaniah",
+  "chapterNumber": 1,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:ZEP:1:1","text":"This is the message the LORD gave Zephaniah son of Cushi, son of Gedaliah, son of Amariah, son of Hezekiah, during the reign of Josiah son of Amon, king of Judah."},
+    {"number":2,"sourceRef":"eng-web:ZEP:1:2","text":"“I will sweep everything off the face of the earth,” says the LORD."},
+    {"number":3,"sourceRef":"eng-web:ZEP:1:3","text":"“I will sweep away people and animals, birds in the sky and fish in the sea. I will remove the wicked and their idols; I will cut off humanity from the face of the earth,” says the LORD."},
+    {"number":4,"sourceRef":"eng-web:ZEP:1:4","text":"“I will reach out against Judah and everyone living in Jerusalem. I will remove from this place every trace of Baal worship, the names of its idolatrous priests and pagan priests,"},
+    {"number":5,"sourceRef":"eng-web:ZEP:1:5","text":"those who bow to the stars from their rooftops, those who worship the LORD while also swearing loyalty to Malcam,"},
+    {"number":6,"sourceRef":"eng-web:ZEP:1:6","text":"and those who have turned away from following the LORD, who no longer seek him or ask for his guidance."},
+    {"number":7,"sourceRef":"eng-web:ZEP:1:7","text":"Be quiet before the Lord GOD, because the day of the LORD is near. The LORD has prepared a sacrifice and set apart his invited guests."},
+    {"number":8,"sourceRef":"eng-web:ZEP:1:8","text":"“On the day of the LORD’s sacrifice, I will punish the officials, the king’s sons, and everyone dressed in foreign clothing."},
+    {"number":9,"sourceRef":"eng-web:ZEP:1:9","text":"“On that day I will punish everyone who leaps over the threshold and fills their master’s house with violence and deceit."},
+    {"number":10,"sourceRef":"eng-web:ZEP:1:10","text":"“On that day,” says the LORD, “a cry will rise from the Fish Gate, wailing from the Second Quarter, and a loud crash from the hills."},
+    {"number":11,"sourceRef":"eng-web:ZEP:1:11","text":"“Wail, inhabitants of Maktesh! All the people of Canaan are ruined; everyone who trades in silver is cut off.”"},
+    {"number":12,"sourceRef":"eng-web:ZEP:1:12","text":"“At that time I will search Jerusalem with lamps and punish those who sit comfortably in their own settled ways, thinking, ‘The LORD won’t do anything, good or bad.’"},
+    {"number":13,"sourceRef":"eng-web:ZEP:1:13","text":"“Their wealth will be taken, and their houses left empty. They may build houses, but they won’t live in them; they may plant vineyards, but they won’t drink the wine.”"},
+    {"number":14,"sourceRef":"eng-web:ZEP:1:14","text":"The great day of the LORD is near—close and coming fast. The sound of the LORD’s day is bitter; even a warrior cries out there."},
+    {"number":15,"sourceRef":"eng-web:ZEP:1:15","text":"That day will bring wrath, distress, anguish, trouble, ruin, darkness, and gloom; it will be a day of clouds and thick darkness,"},
+    {"number":16,"sourceRef":"eng-web:ZEP:1:16","text":"a day of trumpet blasts and battle cries against fortified cities and their tall defenses."},
+    {"number":17,"sourceRef":"eng-web:ZEP:1:17","text":"“I will bring people into such distress that they will grope like the blind, because they sinned against the LORD. Their blood will be poured out like dust, and their bodies like dung."},
+    {"number":18,"sourceRef":"eng-web:ZEP:1:18","text":"“Their silver and gold won’t rescue them on the day of the LORD’s anger. The whole land will be consumed by the fire of his jealousy; he will bring a sudden, complete end to everyone living in the land.”"}
+  ]
+}

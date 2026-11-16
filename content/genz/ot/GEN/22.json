@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "GEN",
+  "bookName": "Genesis",
+  "chapterNumber": 22,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:GEN:22:1","text":"Some time later, God tested Abraham. He called, \"Abraham!\" Abraham answered, \"I'm here.\""},
+    {"number":2,"sourceRef":"eng-web:GEN:22:2","text":"God said, \"Take your son, your only son Isaac, whom you love, and go to the land of Moriah. Offer him there as a burnt offering on one of the mountains I'll show you.\""},
+    {"number":3,"sourceRef":"eng-web:GEN:22:3","text":"Abraham got up early, saddled his donkey, and took two young servants and his son Isaac with him. He split wood for the burnt offering, then set out for the place God had named."},
+    {"number":4,"sourceRef":"eng-web:GEN:22:4","text":"On the third day, Abraham looked up and saw the place in the distance."},
+    {"number":5,"sourceRef":"eng-web:GEN:22:5","text":"Abraham said to his servants, \"Stay here with the donkey. The boy and I will go over there to worship. Then we'll come back to you.\""},
+    {"number":6,"sourceRef":"eng-web:GEN:22:6","text":"Abraham placed the wood for the offering on his son Isaac. He carried the fire and the knife himself. The two of them walked on together."},
+    {"number":7,"sourceRef":"eng-web:GEN:22:7","text":"Isaac spoke up: \"Father?\" Abraham answered, \"I'm here, my son.\" Isaac said, \"We have the fire and the wood, but where's the lamb for the burnt offering?\""},
+    {"number":8,"sourceRef":"eng-web:GEN:22:8","text":"Abraham said, \"God himself will provide the lamb for the burnt offering, my son.\" And the two of them continued on together."},
+    {"number":9,"sourceRef":"eng-web:GEN:22:9","text":"When they reached the place God had shown him, Abraham built an altar and arranged the wood on it. He tied up his son Isaac and laid him on the altar, on top of the wood."},
+    {"number":10,"sourceRef":"eng-web:GEN:22:10","text":"Abraham reached for the knife and was about to kill his son."},
+    {"number":11,"sourceRef":"eng-web:GEN:22:11","text":"But Yahweh's angel called to him from the sky: \"Abraham! Abraham!\" He answered, \"I'm here.\""},
+    {"number":12,"sourceRef":"eng-web:GEN:22:12","text":"The angel said, \"Don't lay a hand on the boy. Don't do anything to him. Now I know that you fear God, because you didn't hold back your son, your only son, from me.\""},
+    {"number":13,"sourceRef":"eng-web:GEN:22:13","text":"Abraham looked up and saw a ram caught by its horns in a thicket. He went and took the ram, and offered it as a burnt offering in place of his son."},
+    {"number":14,"sourceRef":"eng-web:GEN:22:14","text":"Abraham named that place \"Yahweh Will Provide.\" That's why people still say, \"On Yahweh's mountain, it will be provided.\""},
+    {"number":15,"sourceRef":"eng-web:GEN:22:15","text":"Yahweh's angel called to Abraham from the sky a second time."},
+    {"number":16,"sourceRef":"eng-web:GEN:22:16","text":"He said, \"Yahweh declares: I have sworn by myself. Because you did this and didn't hold back your son, your only son,"},
+    {"number":17,"sourceRef":"eng-web:GEN:22:17","text":"I will surely bless you and make your descendants as numerous as the stars in the sky and the sand along the seashore. Your descendants will take possession of their enemies' cities."},
+    {"number":18,"sourceRef":"eng-web:GEN:22:18","text":"All nations on earth will find blessing through your descendants, because you listened to my voice.\""},
+    {"number":19,"sourceRef":"eng-web:GEN:22:19","text":"Abraham returned to his servants, and they all went together to Beersheba. Abraham stayed there."},
+    {"number":20,"sourceRef":"eng-web:GEN:22:20","text":"Some time later, Abraham was told, \"Milcah has also had children by your brother Nahor:"},
+    {"number":21,"sourceRef":"eng-web:GEN:22:21","text":"Uz, his firstborn; Buz, his brother; Kemuel, the father of Aram;"},
+    {"number":22,"sourceRef":"eng-web:GEN:22:22","text":"Chesed, Hazo, Pildash, Jidlaph, and Bethuel.\""},
+    {"number":23,"sourceRef":"eng-web:GEN:22:23","text":"Bethuel became Rebekah's father. Milcah bore these eight sons to Nahor, Abraham's brother."},
+    {"number":24,"sourceRef":"eng-web:GEN:22:24","text":"Nahor's concubine, named Reumah, also bore Tebah, Gaham, Tahash, and Maacah."}
+  ]
+}
+

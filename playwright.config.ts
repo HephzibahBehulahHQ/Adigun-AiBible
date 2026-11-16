@@ -1,5 +1,9 @@
 import { defineConfig, devices } from '@playwright/test';
 
+const port = Number(process.env.PLAYWRIGHT_PORT || 4173);
+if (!Number.isInteger(port) || port < 1024 || port > 65535) throw new Error('PLAYWRIGHT_PORT must be a valid local TCP port.');
+const baseURL = `http://127.0.0.1:${port}/`;
+
 export default defineConfig({
   testDir: './tests',
   testMatch: ['browser.spec.ts', '*.browser.spec.ts'],
@@ -11,7 +15,8 @@ export default defineConfig({
   expect: { timeout: 12_000 },
   reporter: [['list'], ['html', { open: 'never' }]],
   use: {
-    baseURL: 'http://127.0.0.1:4173/',
+    baseURL,
+    launchOptions: process.env.PLAYWRIGHT_CHANNEL ? { channel: process.env.PLAYWRIGHT_CHANNEL } : undefined,
     acceptDownloads: true,
     serviceWorkers: 'allow',
     trace: 'retain-on-failure',
@@ -28,8 +33,8 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: 'npm run preview -- --host 127.0.0.1 --port 4173 --strictPort',
-    url: 'http://127.0.0.1:4173/',
+    command: `npm run preview -- --host 127.0.0.1 --port ${port} --strictPort`,
+    url: baseURL,
     reuseExistingServer: !process.env.CI,
     timeout: 30_000,
   },

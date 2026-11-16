@@ -99,10 +99,10 @@ for (const [id, pin] of Object.entries(expected)) {
 }
 
 test('the installed inventory counts distinct source languages, editions and regional tags accurately', () => {
-  assert.equal(editions.length, 41);
-  assert.equal(new Set(editions.map(row => row.id)).size, 41);
+  assert.equal(editions.length, 42);
+  assert.equal(new Set(editions.map(row => row.id)).size, 42);
   const original = new Set(['eng-web', 'deu1912', 'yor']);
-  assert.equal(editions.filter(row => !original.has(row.id)).length, 38);
+  assert.equal(editions.filter(row => !original.has(row.id)).length, 39);
   assert.equal(new Set(editions.map(row => row.language)).size, 27);
   assert.equal(new Set(editions.map(row => new Intl.Locale(row.language).language)).size, 26);
   assert.equal(new Intl.Locale(manifest('spa-simple2026').edition.language).language, 'es');
@@ -113,11 +113,12 @@ test('the installed inventory counts distinct source languages, editions and reg
   assert.ok(french.conditions.some(condition => condition.includes('2026 revised edition is CC BY-NC-ND and is not imported')));
 });
 
-test('all 41 publisher inventories identify the current revision and match real source metadata', () => {
+test('all 42 publisher inventories identify the current revision and match real source metadata', () => {
   const coverage = JSON.parse(readFileSync(new URL('../data/speakers/publisher-coverage.json', import.meta.url)));
-  assert.equal(coverage.editions.length, 41);
-  assert.deepEqual(coverage.editions.map(row => row.editionId).sort(), editions.map(row => row.id).sort());
-  for (const edition of editions) {
+  assert.equal(coverage.editions.length, 42);
+  const publisherEditions = editions;
+  assert.deepEqual(coverage.editions.map(row => row.editionId).sort(), publisherEditions.map(row => row.id).sort());
+  for (const edition of publisherEditions) {
     const entry = coverage.editions.find(row => row.editionId === edition.id);
     const source = edition.id === 'eng-web' ? baseline : manifest(edition.id);
     assert.equal(entry.sourceSha256, edition.sha256, edition.id);

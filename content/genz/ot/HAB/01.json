@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "HAB",
+  "bookName": "Habakkuk",
+  "chapterNumber": 1,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:HAB:1:1","text":"This is the vision the prophet Habakkuk received."},
+    {"number":2,"sourceRef":"eng-web:HAB:1:2","text":"LORD, how long must I call for help before you listen? I cry out, “Violence!” but you don’t come to rescue."},
+    {"number":3,"sourceRef":"eng-web:HAB:1:3","text":"Why do you make me watch evil and look at trouble? Destruction and violence surround me; arguments break out and conflict keeps rising."},
+    {"number":4,"sourceRef":"eng-web:HAB:1:4","text":"The law has lost its force, and justice never wins. The wicked close in on the righteous, so justice comes out twisted."},
+    {"number":5,"sourceRef":"eng-web:HAB:1:5","text":"“Look among the nations. Watch closely and be amazed, because I am doing something in your own days that you would not believe, even if someone told you."},
+    {"number":6,"sourceRef":"eng-web:HAB:1:6","text":"“I am raising up the Chaldeans, a fierce, restless nation that sweeps across the earth and takes homes that belong to others."},
+    {"number":7,"sourceRef":"eng-web:HAB:1:7","text":"“They inspire fear and terror. They make their own rules and claim their own honor."},
+    {"number":8,"sourceRef":"eng-web:HAB:1:8","text":"“Their horses are faster than leopards and fiercer than wolves at dusk. Their riders charge forward; they come from far away, swooping like an eagle diving for prey."},
+    {"number":9,"sourceRef":"eng-web:HAB:1:9","text":"“They all come intent on violence. Their troops advance in a line, and they collect captives like sand."},
+    {"number":10,"sourceRef":"eng-web:HAB:1:10","text":"“They ridicule kings and laugh at rulers. They mock every fortress, piling up earth against its walls and capturing it."},
+    {"number":11,"sourceRef":"eng-web:HAB:1:11","text":"“Then they sweep past like the wind. They are guilty, because they treat their own strength as a god.”"},
+    {"number":12,"sourceRef":"eng-web:HAB:1:12","text":"LORD my God, my Holy One, haven’t you always existed? We will not die. LORD, you appointed them to bring judgment; Rock, you established them to punish."},
+    {"number":13,"sourceRef":"eng-web:HAB:1:13","text":"Your eyes are too pure to look approvingly at evil; you cannot accept wrongdoing. So why do you tolerate traitors? Why stay silent while the wicked swallow up people more righteous than themselves?"},
+    {"number":14,"sourceRef":"eng-web:HAB:1:14","text":"Why do you let people become like fish in the sea, like small creatures with no ruler over them?"},
+    {"number":15,"sourceRef":"eng-web:HAB:1:15","text":"The enemy hooks them, hauls them in with a net, and gathers them in a dragnet. Then he celebrates and cheers."},
+    {"number":16,"sourceRef":"eng-web:HAB:1:16","text":"That is why he offers sacrifices to his net and burns incense to his dragnet: he credits them for his rich life and excellent food."},
+    {"number":17,"sourceRef":"eng-web:HAB:1:17","text":"Will he keep emptying his net and killing nations without mercy?"}
+  ]
+}

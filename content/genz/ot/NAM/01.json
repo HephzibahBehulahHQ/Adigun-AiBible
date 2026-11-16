@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "NAM",
+  "bookName": "Nahum",
+  "chapterNumber": 1,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:NAM:1:1","text":"A message about Nineveh: the vision Nahum of Elkosh received."},
+    {"number":2,"sourceRef":"eng-web:NAM:1:2","text":"The LORD is jealous and takes revenge. The LORD brings vengeance and burns with anger. He takes revenge on those who oppose him and holds his anger against his enemies."},
+    {"number":3,"sourceRef":"eng-web:NAM:1:3","text":"The LORD is patient, yet powerful, and he never lets the guilty go unpunished. His path runs through whirlwind and storm; clouds are dust beneath his feet."},
+    {"number":4,"sourceRef":"eng-web:NAM:1:4","text":"He rebukes the sea and makes it dry; he dries up every river. Bashan and Carmel wither, and Lebanon’s blossoms fade."},
+    {"number":5,"sourceRef":"eng-web:NAM:1:5","text":"Mountains quake before him and hills melt. The earth shakes at his presence—the world and everyone living in it."},
+    {"number":6,"sourceRef":"eng-web:NAM:1:6","text":"Who can stand against his anger? Who can endure his fierce wrath? His fury pours out like fire, and rocks break apart before him."},
+    {"number":7,"sourceRef":"eng-web:NAM:1:7","text":"The LORD is good, a safe place in times of trouble. He knows those who take shelter in him."},
+    {"number":8,"sourceRef":"eng-web:NAM:1:8","text":"But with a sweeping flood he will bring Nineveh’s place to a complete end, and he will chase his enemies into darkness."},
+    {"number":9,"sourceRef":"eng-web:NAM:1:9","text":"What are you plotting against the LORD? He will bring it to a complete end; trouble will not rise a second time."},
+    {"number":10,"sourceRef":"eng-web:NAM:1:10","text":"They are tangled like thorns and drunk with wine; they will be consumed like dry straw in a fire."},
+    {"number":11,"sourceRef":"eng-web:NAM:1:11","text":"Someone has come from among you who plans evil against the LORD and gives wicked advice."},
+    {"number":12,"sourceRef":"eng-web:NAM:1:12","text":"The LORD says: “Though they are strong and many, they will be cut down and disappear. Judah, I have brought suffering on you, but I won’t do it again."},
+    {"number":13,"sourceRef":"eng-web:NAM:1:13","text":"“Now I will break the yoke they put on you and snap your chains.”"},
+    {"number":14,"sourceRef":"eng-web:NAM:1:14","text":"The LORD has issued this command about you: “No one will carry on your name. I will remove the carved and cast idols from the house of your gods. I will prepare your grave, because you are vile.”"},
+    {"number":15,"sourceRef":"eng-web:NAM:1:15","text":"Look—the feet of the messenger bringing good news and announcing peace are on the mountains! Judah, celebrate your festivals and keep your promises. The wicked will never invade you again; they have been completely destroyed."}
+  ]
+}

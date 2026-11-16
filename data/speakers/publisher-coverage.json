@@ -1,7 +1,30 @@
 {
   "schemaVersion": 1,
-  "generatedOn": "2026-11-14",
+  "generatedOn": "2026-11-15",
   "editions": [
+    {
+      "editionId": "adigun-edition",
+      "sourceSha256": "e65dd163759f353192c6e687d7c70b58208e839d97a9222c54118e8000532f35",
+      "status": "publisher-metadata",
+      "marker": "none",
+      "offsetUnit": "not-applicable",
+      "totalSpans": 0,
+      "totalVerses": 0,
+      "books": [
+        {
+          "bookId": "GEN",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "MAT",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        }
+      ]
+    },
     {
       "editionId": "arb-vandyck",
       "sourceSha256": "070404da2e13e641b7550b50d7e777480b2cc2667e9669f2194d909ca04cd68a",

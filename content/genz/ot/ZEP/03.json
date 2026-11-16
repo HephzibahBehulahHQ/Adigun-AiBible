@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ZEP",
+  "bookName": "Zephaniah",
+  "chapterNumber": 3,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:ZEP:3:1","text":"Woe to the rebellious, polluted city that oppresses its people!"},
+    {"number":2,"sourceRef":"eng-web:ZEP:3:2","text":"It would not listen or accept correction. It did not trust the LORD or draw near to its God."},
+    {"number":3,"sourceRef":"eng-web:ZEP:3:3","text":"Its officials are roaring lions; its judges are wolves at evening, leaving nothing for the morning."},
+    {"number":4,"sourceRef":"eng-web:ZEP:3:4","text":"Its prophets are reckless and treacherous. Its priests make the holy place unclean and twist the law."},
+    {"number":5,"sourceRef":"eng-web:ZEP:3:5","text":"The LORD within the city is righteous; he does no wrong. Each morning he makes his justice clear; he never fails. But the unjust have no shame."},
+    {"number":6,"sourceRef":"eng-web:ZEP:3:6","text":"“I have wiped out nations; their towers lie in ruins. I have emptied their streets so no one passes by. Their cities are destroyed, with no people left to live there."},
+    {"number":7,"sourceRef":"eng-web:ZEP:3:7","text":"“I thought, ‘Surely you will respect me and accept correction, so your home won’t be cut off, despite everything I have appointed against it.’ But they were eager to corrupt everything they did."},
+    {"number":8,"sourceRef":"eng-web:ZEP:3:8","text":"“So wait for me,” says the LORD. “Wait for the day I rise up to take the prey. I have decided to gather nations and assemble kingdoms, to pour out my fury and all my fierce anger on them. The whole earth will be consumed by the fire of my jealousy."},
+    {"number":9,"sourceRef":"eng-web:ZEP:3:9","text":"“Then I will give the peoples pure speech, so they can all call on the LORD’s name and serve him together."},
+    {"number":10,"sourceRef":"eng-web:ZEP:3:10","text":"“From beyond the rivers of Cush, my worshipers—the scattered people who belong to me—will bring me an offering."},
+    {"number":11,"sourceRef":"eng-web:ZEP:3:11","text":"“On that day you won’t have to feel ashamed of all your rebellion against me. I will remove from among you those who proudly celebrate themselves, and you will no longer act arrogantly on my holy mountain."},
+    {"number":12,"sourceRef":"eng-web:ZEP:3:12","text":"“I will leave among you a humble and lowly people, and they will find safety in the LORD’s name."},
+    {"number":13,"sourceRef":"eng-web:ZEP:3:13","text":"“The survivors of Israel will do no wrong and tell no lies. No deceitful words will come from their mouths. They will eat and lie down, and no one will make them afraid.”"},
+    {"number":14,"sourceRef":"eng-web:ZEP:3:14","text":"Sing, daughter of Zion! Shout, Israel! Celebrate and rejoice with all your heart, daughter of Jerusalem!"},
+    {"number":15,"sourceRef":"eng-web:ZEP:3:15","text":"The LORD has removed the judgments against you and driven your enemy away. The King of Israel, the LORD, is with you; you no longer need to fear disaster."},
+    {"number":16,"sourceRef":"eng-web:ZEP:3:16","text":"On that day Jerusalem will be told, “Don’t be afraid, Zion. Don’t let your hands grow weak.”"},
+    {"number":17,"sourceRef":"eng-web:ZEP:3:17","text":"The LORD your God is with you, a mighty one who saves. He will delight in you with joy, quiet you with his love, and celebrate you with singing."},
+    {"number":18,"sourceRef":"eng-web:ZEP:3:18","text":"“I will remove from you those who grieve over the appointed festivals; they have become a burden and a disgrace to you."},
+    {"number":19,"sourceRef":"eng-web:ZEP:3:19","text":"“At that time I will deal with everyone who has oppressed you. I will rescue the lame and gather those who were driven away. I will give them praise and honor in every land where they were shamed."},
+    {"number":20,"sourceRef":"eng-web:ZEP:3:20","text":"“At that time I will bring you home; I will gather you together. I will give you honor and praise among all the peoples of the earth when I restore your fortunes before your eyes,” says the LORD."}
+  ]
+}

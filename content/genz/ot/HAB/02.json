@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "HAB",
+  "bookName": "Habakkuk",
+  "chapterNumber": 2,
+  "verses": [
+    {"number":1,"sourceRef":"eng-web:HAB:2:1","text":"I will take my place on the watchtower and stand at my post. I will watch to see what he says to me and how he answers my complaint."},
+    {"number":2,"sourceRef":"eng-web:HAB:2:2","text":"The LORD answered: “Write down the vision and make it clear on tablets, so a messenger can run with it."},
+    {"number":3,"sourceRef":"eng-web:HAB:2:3","text":"“The vision is for its appointed time; it’s moving toward its fulfillment and won’t prove false. Even if it seems slow, wait for it. It will surely come; it won’t be late."},
+    {"number":4,"sourceRef":"eng-web:HAB:2:4","text":"“Look at the proud: they are not upright within themselves. But righteous people will live by their faithfulness.”"},
+    {"number":5,"sourceRef":"eng-web:HAB:2:5","text":"“Wine betrays; the arrogant never settle down. Their appetite is as wide as the grave; like death, they are never satisfied. They gather all nations and claim all peoples for themselves."},
+    {"number":6,"sourceRef":"eng-web:HAB:2:6","text":"“Won’t all those people turn him into a saying and mock him with a taunt? They will say: ‘Woe to the one who piles up what isn’t his and enriches himself by taking from others. How long can this go on?’”"},
+    {"number":7,"sourceRef":"eng-web:HAB:2:7","text":"“Won’t your creditors rise suddenly? Won’t those who make you tremble wake up? Then you will become their prey."},
+    {"number":8,"sourceRef":"eng-web:HAB:2:8","text":"“You plundered many nations, so the peoples who remain will plunder you, because you shed human blood and used violence against the land, the city, and everyone living there."},
+    {"number":9,"sourceRef":"eng-web:HAB:2:9","text":"“Woe to the one who builds a house with dishonest profit, trying to put the nest beyond danger and escape disaster."},
+    {"number":10,"sourceRef":"eng-web:HAB:2:10","text":"“Your plans have brought shame on your house. By wiping out many peoples, you have sinned against yourself."},
+    {"number":11,"sourceRef":"eng-web:HAB:2:11","text":"“Even the stone in the wall will cry out, and the wooden beam will answer it."},
+    {"number":12,"sourceRef":"eng-web:HAB:2:12","text":"“Woe to the one who builds a city with bloodshed and establishes it through injustice!"},
+    {"number":13,"sourceRef":"eng-web:HAB:2:13","text":"“Isn’t it the LORD of Armies who decrees that peoples work only to feed the fire and nations exhaust themselves for nothing?"},
+    {"number":14,"sourceRef":"eng-web:HAB:2:14","text":"“The earth will be filled with knowledge of the LORD’s glory, as completely as water covers the sea."},
+    {"number":15,"sourceRef":"eng-web:HAB:2:15","text":"“Woe to the one who gets a neighbor drunk, pouring out wine until they’re intoxicated so he can stare at their nakedness!"},
+    {"number":16,"sourceRef":"eng-web:HAB:2:16","text":"“You will be filled with shame instead of honor. Now it is your turn to drink and expose yourself. The cup from the LORD’s right hand will come around to you, and disgrace will cover your glory."},
+    {"number":17,"sourceRef":"eng-web:HAB:2:17","text":"“The violence you did to Lebanon will overwhelm you; the destruction of its animals will terrify you. You shed human blood and used violence against the land, its cities, and everyone living there."},
+    {"number":18,"sourceRef":"eng-web:HAB:2:18","text":"“What good is a carved idol made by a craftsman, or a cast image that teaches lies? Its maker trusts the thing he shaped, even though it cannot speak."},
+    {"number":19,"sourceRef":"eng-web:HAB:2:19","text":"“Woe to anyone who tells a piece of wood, ‘Wake up!’ or a silent stone, ‘Get up and teach us!’ It may be covered in gold and silver, but there is no breath in it at all."},
+    {"number":20,"sourceRef":"eng-web:HAB:2:20","text":"“The LORD is in his holy temple. Let everyone on earth be silent before him.”"}
+  ]
+}
