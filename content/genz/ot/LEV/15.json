@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "LEV",
+  "bookName": "Leviticus",
+  "chapterNumber": 15,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:LEV:15:1",
+      "text": "Yahweh spoke to Moses and Aaron, laying out the rules: 📣"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:LEV:15:2",
+      "text": "‘Tell Israel: If a man has a bodily discharge, that flow makes him ritually unclean. 🩺"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:LEV:15:3",
+      "text": "Whether the flow keeps going or has stopped, the ritual uncleanness still applies. 📜"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:LEV:15:4",
+      "text": "‘Any bed he lies on and anything he sits on is ritually unclean too. 🛏️"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:LEV:15:5",
+      "text": "Anyone who touches that bed must wash their clothes, bathe in water, and stay ritually unclean till evening. 🧼"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:LEV:15:6",
+      "text": "If you sit where he sat, wash your clothes, bathe in water, and stay ritually unclean till evening. 🪑"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:LEV:15:7",
+      "text": "Anyone who touches him must wash their clothes, bathe in water, and stay ritually unclean till evening. 🚿"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:LEV:15:8",
+      "text": "‘If the man with the discharge spits on someone who’s clean, that person must wash their clothes, bathe, and stay ritually unclean till evening. 💧"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:LEV:15:9",
+      "text": "‘Whatever saddle he rides on is ritually unclean. 🐎"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:LEV:15:10",
+      "text": "Anyone touching something that was under him is ritually unclean till evening. If you carry those things, wash your clothes, bathe, and stay unclean till evening. 🧼"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:LEV:15:11",
+      "text": "‘If he touches you before rinsing his hands with water, wash your clothes, bathe, and stay ritually unclean till evening. 💧"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:LEV:15:12",
+      "text": "‘A clay pot he touches has to be broken; rinse any wooden bowl or vessel he touches with water. 🏺"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:LEV:15:13",
+      "text": "‘Once the discharge clears, he must count out seven days, wash his clothes, and bathe in fresh running water. Then he’s ritually clean. 🌊"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:LEV:15:14",
+      "text": "‘On day eight, he must bring two turtledoves or two young pigeons to the priest, at the Meeting Tent entrance before Yahweh. 🕊️"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:LEV:15:15",
+      "text": "The priest must offer one bird for the sin offering and the other for the burnt offering, making atonement for the man before Yahweh because of the discharge. 🙏"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:LEV:15:16",
+      "text": "‘If a man has a semen emission, he must bathe his whole body in water and stay ritually unclean till evening. 🚿"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:LEV:15:17",
+      "text": "Any clothes or leather with semen on it must be washed with water and stay ritually unclean till evening. 🧼"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:LEV:15:18",
+      "text": "If a man and woman sleep together and he has a semen emission, both must bathe in water and stay ritually unclean till evening. 💧"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:LEV:15:19",
+      "text": "‘When a woman has her monthly blood flow, she is ritually unclean for seven days. Anyone who touches her is unclean till evening. 🌿"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:LEV:15:20",
+      "text": "‘Anything she lies on or sits on during those days is ritually unclean too. 🛏️"
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:LEV:15:21",
+      "text": "If you touch her bed, wash your clothes, bathe in water, and stay ritually unclean till evening. 🧼"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:LEV:15:22",
+      "text": "If you touch anything she sat on, wash your clothes, bathe, and stay ritually unclean till evening. 🚿"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:LEV:15:23",
+      "text": "Touch something on her bed or a seat she used? You’re ritually unclean till evening. ⚠️"
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:LEV:15:24",
+      "text": "‘If a man sleeps with her while her monthly flow is happening, he is ritually unclean for seven days, and every bed he lies on is unclean. 📆"
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:LEV:15:25",
+      "text": "‘If a woman’s blood flow carries on for many days outside her period, or runs past when her period should end, she is unclean the whole time, just as during her period. 🩺"
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:LEV:15:26",
+      "text": "Every bed she lies on and anything she sits on during that flow is unclean, same as during her period. 🛏️"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:LEV:15:27",
+      "text": "Anyone touching these things becomes unclean: wash your clothes, bathe in water, and stay ritually unclean till evening. 🧼"
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:LEV:15:28",
+      "text": "‘When her flow clears, she must count out seven days. After that, she’s ritually clean. 📆"
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:LEV:15:29",
+      "text": "On day eight, she must bring two turtledoves or two young pigeons to the priest at the Meeting Tent entrance. 🕊️"
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:LEV:15:30",
+      "text": "The priest must offer one bird for the sin offering and one for the burnt offering, making atonement for her before Yahweh because of the uncleanness from her flow. 🙏"
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:LEV:15:31",
+      "text": "‘Keep Israel separated from this uncleanness, so they don’t die by defiling my Tabernacle among them.’ ⚠️"
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:LEV:15:32",
+      "text": "That’s the rulebook for a man with a discharge or semen emission that makes him ritually unclean, 📜"
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:LEV:15:33",
+      "text": "for a woman on her period, for anyone with a bodily discharge, and for a man who sleeps with a woman who is unclean.’ ⚖️"
+    }
+  ]
+}

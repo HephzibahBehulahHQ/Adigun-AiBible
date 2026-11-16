@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "LEV",
+  "bookName": "Leviticus",
+  "chapterNumber": 19,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:LEV:19:1",
+      "text": "Yahweh spoke to Moses, laying down the next word: 📣"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:LEV:19:2",
+      "text": "‘Tell all Israel: live set apart, because I, Yahweh your God, am holy. 🕊️"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:LEV:19:3",
+      "text": "‘Every one of you, show your mother and father respect, and keep my Sabbaths. I am Yahweh your God. 👪"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:LEV:19:4",
+      "text": "‘Don’t go chasing idols or make yourselves metal gods. I am Yahweh your God. 🚫"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:LEV:19:5",
+      "text": "‘When you bring Yahweh a peace offering, do it the right way so it’s accepted. 🕊️"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:LEV:19:6",
+      "text": "Eat it on offering day or the next day. If any is still left on day three, burn it up. 🔥"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:LEV:19:7",
+      "text": "If anybody eats it on day three, it’s detestable and the offering won’t be accepted. ⚠️"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:LEV:19:8",
+      "text": "Whoever eats it carries the guilt for disrespecting Yahweh’s holy offering and must be cut off from their people. ⚖️"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:LEV:19:9",
+      "text": "‘When harvest time comes, don’t clear every corner of your field or scoop up every last bit of the crop. 🌾"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:LEV:19:10",
+      "text": "Don’t strip the vineyard clean or pick up every fallen grape. Leave some for poor people and foreigners living among you. I am Yahweh your God. 🍇"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:LEV:19:11",
+      "text": "‘No stealing, no lying, and don’t run a con on each other. 🤝"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:LEV:19:12",
+      "text": "‘Don’t swear by my name when it’s a lie; that drags your God’s name through it. I am Yahweh. 🗣️"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:LEV:19:13",
+      "text": "‘Don’t take advantage of your neighbor or rob them. Don’t hold a worker’s pay overnight—get them paid by morning. 💵"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:LEV:19:14",
+      "text": "‘Don’t curse someone who can’t hear you or put a trip hazard in front of someone who can’t see. Revere your God. I am Yahweh. 🦯"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:LEV:19:15",
+      "text": "‘No crooked justice. Don’t give the poor special treatment or play favorites with the powerful; judge your neighbor fairly. ⚖️"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:LEV:19:16",
+      "text": "‘Don’t spread rumors that drag your people or put your neighbor’s life in danger. I am Yahweh. 🗣️"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:LEV:19:17",
+      "text": "‘Don’t let hate for your relative sit in your heart. Talk straight to your neighbor and correct them, so you don’t share their guilt. 💬"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:LEV:19:18",
+      "text": "‘Don’t get revenge or keep a grudge against your own people. Love your neighbor like you love yourself. I am Yahweh. ❤️"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:LEV:19:19",
+      "text": "‘Keep my rules. Don’t crossbreed different kinds of animals, mix two kinds of seed in your field, or wear clothes woven from two kinds of material. 🌱"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:LEV:19:20",
+      "text": "‘If a man has sex with a female slave promised to another man, but she hasn’t been bought back or freed, there must be punishment—but not death, because she wasn’t free. ⚖️"
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:LEV:19:21",
+      "text": "He must bring Yahweh a ram as his guilt offering at the Meeting Tent entrance. 🐏"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:LEV:19:22",
+      "text": "The priest will make atonement for him before Yahweh with that guilt-offering ram for the sin he committed, and he’ll be forgiven. 🙏"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:LEV:19:23",
+      "text": "‘When you move into the land and plant fruit trees, leave their fruit alone for the first three years—don’t eat it. 🌳"
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:LEV:19:24",
+      "text": "In year four, all the fruit is set apart as a praise offering to Yahweh. 🍎"
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:LEV:19:25",
+      "text": "In year five, you can eat the fruit, and the trees will produce more for you. I am Yahweh your God. 🌳"
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:LEV:19:26",
+      "text": "‘Don’t eat meat while its blood is still in it. Stay away from divination and sorcery too. 🚫"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:LEV:19:27",
+      "text": "‘Don’t shave off the hair at your temples or trim away the edges of your beard. 🧔"
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:LEV:19:28",
+      "text": "‘Don’t cut your bodies for the dead or tattoo marks onto yourselves. I am Yahweh. ⚠️"
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:LEV:19:29",
+      "text": "‘Don’t push your daughter into prostitution; that would dishonor her and fill the land with prostitution and wickedness. 🛑"
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:LEV:19:30",
+      "text": "‘Keep my Sabbaths and show respect for my sanctuary. I am Yahweh. 🕯️"
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:LEV:19:31",
+      "text": "‘Don’t go looking for mediums or spiritists; don’t make yourselves unclean by chasing them. I am Yahweh your God. 🚫"
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:LEV:19:32",
+      "text": "‘Stand up when an older person comes by; show elders respect. Revere your God. I am Yahweh. 👵"
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:LEV:19:33",
+      "text": "‘When a foreigner settles in your land, don’t treat them wrong. 🤝"
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:LEV:19:34",
+      "text": "Treat the foreigner living with you like someone born among you, and love them like yourself—you were foreigners in Egypt too. I am Yahweh your God. ❤️"
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:LEV:19:35",
+      "text": "‘No cheating in court or when you measure length, weight, or quantity. ⚖️"
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:LEV:19:36",
+      "text": "Use fair scales, proper weights, and honest measures for dry goods and liquids. I am Yahweh your God, who brought you out of Egypt. ⚖️"
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:LEV:19:37",
+      "text": "‘Follow all my rules and instructions and actually live them out. I am Yahweh.’ ✅"
+    }
+  ]
+}
