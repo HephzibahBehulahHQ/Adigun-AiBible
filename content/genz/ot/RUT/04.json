@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "RUT",
+  "bookName": "Ruth",
+  "chapterNumber": 4,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:RUT:4:1",
+      "text": "Boaz went up to the town gate and sat down. Just then the close relative he'd spoken about came by. Boaz said, “Come sit here, my friend.” So the man came over and sat down."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:RUT:4:2",
+      "text": "Boaz gathered ten elders of the town and asked them to sit there with them. They sat down."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:RUT:4:3",
+      "text": "Boaz told the close relative, “Naomi has come back from Moab and is selling the piece of land that belonged to our relative Elimelech."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:RUT:4:4",
+      "text": "I thought you should hear about it first. Buy it in front of the people sitting here and the elders of my people. If you want to redeem it, go ahead. If you don't, tell me so I know. You have the first right, and I'm next.” The man said, “I'll redeem it.”"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:RUT:4:5",
+      "text": "Then Boaz said, “When you buy the field from Naomi, you also acquire it from Ruth the Moabite, the widow of the man who died, to carry on his name through his inheritance.”"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:RUT:4:6",
+      "text": "The relative replied, “I can't redeem it myself without risking my own inheritance. You take my right to redeem it, because I can't.”"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:RUT:4:7",
+      "text": "In earlier times in Israel, when people confirmed a redemption or exchange, one man took off his sandal and gave it to the other. That's how they made a transaction official."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:RUT:4:8",
+      "text": "The close relative told Boaz, “Buy it for yourself,” and took off his sandal."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:RUT:4:9",
+      "text": "Boaz said to the elders and everyone there, “You're witnesses today that I've bought from Naomi everything that belonged to Elimelech, Chilion, and Mahlon."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:RUT:4:10",
+      "text": "I've also acquired Ruth the Moabite, Mahlon's widow, as my wife, to carry on Mahlon's name through his inheritance so his name won't disappear from his family or his town. You're witnesses today.”"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:RUT:4:11",
+      "text": "Everyone at the gate, including the elders, answered, “We're witnesses. May the LORD make the woman coming into your home like Rachel and Leah, who together built up the house of Israel. May you prosper in Ephrathah and become well known in Bethlehem."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:RUT:4:12",
+      "text": "Through the children the LORD gives you by this young woman, may your family become like the family of Perez, the son Tamar bore to Judah.”"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:RUT:4:13",
+      "text": "Boaz took Ruth as his wife and slept with her. The LORD enabled her to become pregnant, and she gave birth to a son."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:RUT:4:14",
+      "text": "The women said to Naomi, “Praise the LORD! He hasn't left you without a family redeemer today. May the boy's name become well known in Israel."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:RUT:4:15",
+      "text": "He'll bring your life back to you and care for you in your old age. Your daughter-in-law, who loves you and has been better to you than seven sons, has given birth to him.”"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:RUT:4:16",
+      "text": "Naomi took the child into her arms and cared for him."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:RUT:4:17",
+      "text": "The women who lived near her said, “Naomi has a son!” They named him Obed. He became the father of Jesse, who became the father of David."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:RUT:4:18",
+      "text": "Here's the family line of Perez. Perez was the father of Hezron."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:RUT:4:19",
+      "text": "Hezron was the father of Ram, and Ram was the father of Amminadab."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:RUT:4:20",
+      "text": "Amminadab was the father of Nahshon, and Nahshon was the father of Salmon."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:RUT:4:21",
+      "text": "Salmon was the father of Boaz, and Boaz was the father of Obed."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:RUT:4:22",
+      "text": "Obed was the father of Jesse, and Jesse was the father of David."
+    }
+  ]
+}
