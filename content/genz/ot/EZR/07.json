@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "EZR",
+  "bookName": "Ezra",
+  "chapterNumber": 7,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:EZR:7:1",
+      "text": "After these events, during the reign of King Artaxerxes of Persia, there was a man named Ezra. His father was Seraiah, whose line went back through Azariah and Hilkiah,"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:EZR:7:2",
+      "text": "then through Shallum, Zadok, and Ahitub,"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:EZR:7:3",
+      "text": "through Amariah, Azariah, and Meraioth,"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:EZR:7:4",
+      "text": "through Zerahiah, Uzzi, and Bukki,"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:EZR:7:5",
+      "text": "and through Abishua, Phinehas, and Eleazar to Aaron the chief priest."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:EZR:7:6",
+      "text": "Ezra came up from Babylon. He was a scribe who knew the law of Moses well, the law the LORD, the God of Israel, had given. The king granted everything Ezra asked for because the hand of the LORD his God was on him."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:EZR:7:7",
+      "text": "In the seventh year of King Artaxerxes, some Israelites went up to Jerusalem, including priests, Levites, singers, gatekeepers, and temple servants."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:EZR:7:8",
+      "text": "Ezra arrived in Jerusalem in the fifth month of the king's seventh year."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:EZR:7:9",
+      "text": "He set out from Babylon on the first day of the first month and reached Jerusalem on the first day of the fifth month because God's good hand was on him."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:EZR:7:10",
+      "text": "Ezra had devoted himself to studying and obeying the LORD's law and teaching its statutes and rulings in Israel."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:EZR:7:11",
+      "text": "This is a copy of the letter King Artaxerxes gave Ezra the priest and scribe, who was trained in the LORD's commands and statutes for Israel."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:EZR:7:12",
+      "text": "\"From Artaxerxes, king of kings, to Ezra the priest, scribe of the law of the perfect God of heaven."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:EZR:7:13",
+      "text": "I decree that any Israelites in my kingdom, including priests and Levites, who freely choose to go to Jerusalem may go with you."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:EZR:7:14",
+      "text": "The king and his seven advisers are sending you to inquire about Judah and Jerusalem according to the law of your God that you have with you."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:EZR:7:15",
+      "text": "Take the silver and gold that the king and his advisers have freely given to the God of Israel, whose dwelling is in Jerusalem."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:EZR:7:16",
+      "text": "Take also any silver and gold you receive throughout the province of Babylon, along with what the people and priests willingly give for the house of their God in Jerusalem."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:EZR:7:17",
+      "text": "Use this money promptly to buy bulls, rams, and lambs, with the proper grain and drink offerings. Offer them on the altar at the house of your God in Jerusalem."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:EZR:7:18",
+      "text": "You and your fellow Israelites may use the remaining silver and gold as you see fit, in keeping with the will of your God."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:EZR:7:19",
+      "text": "Deliver the vessels entrusted to you for service in your God's house before the God of Jerusalem."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:EZR:7:20",
+      "text": "If you need to provide anything else for your God's house, pay for it from the royal treasury."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:EZR:7:21",
+      "text": "I, King Artaxerxes, order all the treasurers of the province Beyond the River to promptly supply whatever Ezra the priest and scribe of the law of the God of heaven asks for,"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:EZR:7:22",
+      "text": "up to a hundred talents of silver, a hundred cors of wheat, a hundred baths of wine, and a hundred baths of oil, with no limit on salt."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:EZR:7:23",
+      "text": "Do whatever the God of heaven commands for his house, exactly as ordered. Why should anger fall on the kingdom of the king and his sons?"
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:EZR:7:24",
+      "text": "You should also know that you have no authority to collect tribute, customs, or tolls from any priests, Levites, singers, gatekeepers, temple servants, or other workers at this house of God."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:EZR:7:25",
+      "text": "Ezra, use the wisdom your God has given you to appoint magistrates and judges over the people of the province Beyond the River who know your God's laws. Teach those who don't know them."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:EZR:7:26",
+      "text": "Anyone who refuses to obey the law of your God and the king's law must be judged promptly, whether the sentence is death, exile, seizure of property, or imprisonment.\""
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:EZR:7:27",
+      "text": "Praise the LORD, the God of our ancestors, who put it in the king's heart to honor and beautify the LORD's house in Jerusalem."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:EZR:7:28",
+      "text": "He showed me faithful love in the presence of the king, his advisers, and his most powerful officials. The hand of the LORD my God gave me courage, and I gathered leaders from Israel to go up with me."
+    }
+  ]
+}
