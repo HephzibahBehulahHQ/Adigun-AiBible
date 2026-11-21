@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 65,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:65:1",
+      "text": "For the music director. A psalm by David. A song. Praise awaits you in Zion, God, and there we’ll keep our vows to you."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:65:2",
+      "text": "You hear prayer. People everywhere will come to you."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:65:3",
+      "text": "Our sins overwhelmed me, but you made atonement for our rebellion."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:65:4",
+      "text": "Blessed are those you choose and bring near to live in your courts. We’ll have our fill of the goodness of your house, your holy temple."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:65:5",
+      "text": "You answer us with righteous deeds that fill us with awe, God who saves us. You’re the hope of those at the ends of the earth and far out at sea."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:65:6",
+      "text": "You set the mountains in place by your power, armed with strength."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:65:7",
+      "text": "You quiet the roar of the seas, the crashing of their waves, and the uproar of the nations."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:65:8",
+      "text": "Even people in distant places stand in awe of your wonders. You make dawn and evening shout for joy."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:65:9",
+      "text": "You come to the earth and water it, making it rich. The river of God is full of water. You provide grain for the people because that’s how you prepared the land."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:65:10",
+      "text": "You soak the furrows and level the ridges. With showers you soften the soil and bless its crops."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:65:11",
+      "text": "You crown the year with your goodness. Your carts spill over with plenty."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:65:12",
+      "text": "The grasslands of the wilderness overflow, and the hills are dressed in joy."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:65:13",
+      "text": "Flocks cover the pastures, and grain clothes the valleys. They shout for joy and sing."
+    }
+  ]
+}
