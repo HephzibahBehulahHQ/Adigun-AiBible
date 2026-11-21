@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 55,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:55:1",
+      "text": "For the music director, with stringed instruments. A psalm for reflection by David. Listen to my prayer, God. Don’t hide from my plea."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:55:2",
+      "text": "Pay attention and answer me. I’m restless in my distress, and I groan"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:55:3",
+      "text": "because of my enemy’s threats and the pressure of the wicked. They bring suffering on me and hold on to their anger against me."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:55:4",
+      "text": "My heart aches inside me. The terrors of death have fallen on me."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:55:5",
+      "text": "Fear and trembling have seized me. Horror has overwhelmed me."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:55:6",
+      "text": "I said, “If only I had wings like a dove! I’d fly away and find rest."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:55:7",
+      "text": "I’d go far away and stay out in the wilderness.” Selah."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:55:8",
+      "text": "“I’d hurry to find shelter from the howling wind and the storm.”"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:55:9",
+      "text": "Lord, confuse them and scramble their words, because I’ve seen violence and conflict in the city."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:55:10",
+      "text": "Day and night they prowl along its walls. Malice and abuse fill the city."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:55:11",
+      "text": "Ruin is at work inside it. Threats and lies never leave its streets."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:55:12",
+      "text": "If an enemy had insulted me, I could have borne it. If someone who hated me had risen against me, I could have hidden from them."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:55:13",
+      "text": "But it was you, someone like me, my companion and close friend."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:55:14",
+      "text": "We enjoyed each other’s company and walked with the crowd into God’s house."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:55:15",
+      "text": "Let death catch them by surprise. Let them go down alive to Sheol, because wickedness lives in their homes and among them."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:55:16",
+      "text": "As for me, I’ll call on God, and the LORD will save me."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:55:17",
+      "text": "Evening, morning, and noon I cry out in distress, and he hears my voice."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:55:18",
+      "text": "He brought me safely out of the battle against me, even though many stood against me."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:55:19",
+      "text": "God, who has been on his throne forever, will hear and answer them. Selah. They refuse to change and have no fear of God."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PSA:55:20",
+      "text": "My companion turned against his friends and broke his covenant."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PSA:55:21",
+      "text": "His speech was smooth as butter, but his heart was set on war. His words were softer than oil, yet they were drawn swords."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PSA:55:22",
+      "text": "Give your burden to the LORD, and he’ll sustain you. He’ll never let the righteous be shaken."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PSA:55:23",
+      "text": "But you, God, will bring them down into the pit of destruction. Violent and deceitful people won’t live out half their days. I’ll put my trust in you."
+    }
+  ]
+}

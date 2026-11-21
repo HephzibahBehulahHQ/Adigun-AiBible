@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 51,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:51:1",
+      "text": "For the music director. A psalm by David, when Nathan the prophet came to him after he had slept with Bathsheba. Have mercy on me, God, because of your faithful love. In your great compassion, wipe away my rebellion."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:51:2",
+      "text": "Wash away all my guilt. Cleanse me from my sin."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:51:3",
+      "text": "I know what I’ve done wrong. My sin is always in front of me."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:51:4",
+      "text": "Against you, you alone, I’ve sinned and done what is evil in your sight. You are right when you speak and just when you judge."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:51:5",
+      "text": "I was born in guilt. Sin was there from the time my mother conceived me."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:51:6",
+      "text": "You want truth deep inside me. You teach me wisdom in the hidden places of my heart."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:51:7",
+      "text": "Cleanse me with hyssop, and I’ll be clean. Wash me, and I’ll be whiter than snow."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:51:8",
+      "text": "Let me hear joy and gladness again, so the bones you’ve broken can rejoice."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:51:9",
+      "text": "Turn your face away from my sins and wipe away all my guilt."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:51:10",
+      "text": "Create a clean heart in me, God, and renew a steadfast spirit within me."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:51:11",
+      "text": "Don’t send me away from your presence or take your Holy Spirit from me."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:51:12",
+      "text": "Give me back the joy of your salvation. Keep me going with a willing spirit."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:51:13",
+      "text": "Then I’ll teach those who rebel how to follow your ways, and sinners will turn back to you."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:51:14",
+      "text": "Free me from the guilt of bloodshed, God who saves me. Then I’ll sing aloud about your righteousness."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:51:15",
+      "text": "Lord, open my lips, and I’ll speak your praise."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:51:16",
+      "text": "You take no delight in sacrifice, or I’d bring one. A burnt offering brings you no pleasure."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:51:17",
+      "text": "The sacrifice God desires is a broken spirit. God, you welcome a broken heart that is sorry for its sin."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:51:18",
+      "text": "In your good pleasure, do good to Zion. Build up the walls of Jerusalem."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:51:19",
+      "text": "Then you’ll delight in sacrifices offered in righteousness, in burnt offerings and offerings burned whole. Then bulls will be offered on your altar."
+    }
+  ]
+}

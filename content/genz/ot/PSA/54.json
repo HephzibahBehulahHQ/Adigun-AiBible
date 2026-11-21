@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 54,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:54:1",
+      "text": "For the music director, with stringed instruments. A psalm for reflection by David, when the Ziphites came to Saul and said, “Isn’t David hiding among us?” Save me by your name, God. Use your strength to clear my name."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:54:2",
+      "text": "Hear my prayer, God. Listen to the words I’m saying."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:54:3",
+      "text": "Strangers have risen up against me. Violent people are trying to take my life. They give no thought to God. Selah."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:54:4",
+      "text": "Look, God is my helper. The Lord is the one who keeps me alive."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:54:5",
+      "text": "He’ll pay my enemies back for their evil. In your faithfulness, bring them down."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:54:6",
+      "text": "I’ll bring you a sacrifice freely. I’ll thank you for your name, LORD, because it is good."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:54:7",
+      "text": "You’ve rescued me from every trouble, and I’ve seen my enemies defeated with my own eyes."
+    }
+  ]
+}

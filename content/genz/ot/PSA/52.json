@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 52,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:52:1",
+      "text": "For the music director. A psalm for reflection by David, when Doeg the Edomite went to Saul and said, “David has come to Ahimelech’s house.” Why do you boast about doing harm, mighty man? God’s faithful love lasts all day long."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:52:2",
+      "text": "Your tongue plots ruin, cutting like a sharp razor as you deceive."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:52:3",
+      "text": "You love evil more than good and would rather lie than tell the truth. Selah."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:52:4",
+      "text": "You love words that tear people apart, you lying tongue."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:52:5",
+      "text": "God will bring you down for good. He’ll grab you and pull you out of your tent. He’ll uproot you from the land of the living. Selah."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:52:6",
+      "text": "Those who do right will see it and stand in awe. They’ll laugh at him and say,"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:52:7",
+      "text": "“Look at the man who refused to make God his strength. He trusted in his great wealth and drew his strength from doing wrong.”"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:52:8",
+      "text": "But I’m like a green olive tree in God’s house. I trust in God’s faithful love forever and ever."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:52:9",
+      "text": "I’ll thank you forever for what you’ve done. In front of your faithful people I’ll put my hope in your name, because it is good."
+    }
+  ]
+}
