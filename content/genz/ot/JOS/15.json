@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "JOS",
+  "bookName": "Joshua",
+  "chapterNumber": 15,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:JOS:15:1",
+      "text": "The land assigned by lot to Judah, clan by clan, stretched south to Edom's border and the wilderness of Zin, at the far southern end."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:JOS:15:2",
+      "text": "Their southern border began at the southern end of the Salt Sea, at the bay facing south."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:JOS:15:3",
+      "text": "It ran south of the Akrabbim Pass, went through Zin, and climbed south of Kadesh Barnea. It went past Hezron, up to Addar, and turned toward Karka."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:JOS:15:4",
+      "text": "It continued to Azmon, reached the Brook of Egypt, and ended at the sea. That's your southern border."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:JOS:15:5",
+      "text": "The eastern border followed the Salt Sea as far as the mouth of the Jordan. The northern border started at the bay where the Jordan enters the sea."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:JOS:15:6",
+      "text": "From there it went up to Beth Hoglah, passed north of Beth Arabah, and climbed to the Stone of Bohan son of Reuben."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:JOS:15:7",
+      "text": "The border climbed from the Valley of Achor to Debir and turned north toward Gilgal, opposite the Adummim Pass on the south side of the stream. It ran past the waters of En Shemesh and ended at En Rogel."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:JOS:15:8",
+      "text": "It climbed through the Valley of Ben Hinnom, along the south side of the Jebusite city, also called Jerusalem. Then it climbed to the hilltop west of the Hinnom Valley, at the northern end of the Valley of Rephaim."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:JOS:15:9",
+      "text": "From that hilltop the border ran to the spring at Nephtoah, then to the towns of Mount Ephron, and on to Baalah, also called Kiriath Jearim."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:JOS:15:10",
+      "text": "From Baalah it turned west to Mount Seir, passed along the north side of Mount Jearim, also called Chesalon, came down to Beth Shemesh, and went past Timnah."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:JOS:15:11",
+      "text": "The border ran along the north side of Ekron, went on to Shikkeron, passed Mount Baalah, and reached Jabneel before ending at the sea."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:JOS:15:12",
+      "text": "The coastline of the great sea marked the western border. These were the boundaries of Judah's land, clan by clan."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:JOS:15:13",
+      "text": "As the LORD had commanded him, Joshua gave Caleb son of Jephunneh a share among the people of Judah. He gave him Kiriath Arba, also called Hebron, which had been named for Arba, the father of Anak."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:JOS:15:14",
+      "text": "Caleb drove out three descendants of Anak: Sheshai, Ahiman, and Talmai."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:JOS:15:15",
+      "text": "Then Caleb went up against the people of Debir, which used to be called Kiriath Sepher."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:JOS:15:16",
+      "text": "Caleb said, “I'll give my daughter Achsah in marriage to whoever attacks Kiriath Sepher and captures it.”"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:JOS:15:17",
+      "text": "Othniel son of Kenaz, Caleb's brother, captured the town, so Caleb gave him his daughter Achsah in marriage."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:JOS:15:18",
+      "text": "When Achsah came to Othniel, she urged him to ask her father for a field. She got down from her donkey, and Caleb asked her, “What would you like?”"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:JOS:15:19",
+      "text": "She said, “Give me a blessing. You've given me land in the south, so please give me springs of water too.” Caleb gave her the upper and lower springs."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:JOS:15:20",
+      "text": "This was the inheritance of the tribe of Judah, clan by clan."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:JOS:15:21",
+      "text": "Judah's towns farthest south toward Edom's border were Kabzeel, Eder, and Jagur,"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:JOS:15:22",
+      "text": "Kinah, Dimonah, and Adadah,"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:JOS:15:23",
+      "text": "Kedesh, Hazor, and Ithnan,"
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:JOS:15:24",
+      "text": "Ziph, Telem, and Bealoth,"
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:JOS:15:25",
+      "text": "Hazor Hadattah and Kerioth Hezron, also called Hazor,"
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:JOS:15:26",
+      "text": "Amam, Shema, and Moladah,"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:JOS:15:27",
+      "text": "Hazar Gaddah, Heshmon, and Beth Pelet,"
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:JOS:15:28",
+      "text": "Hazar Shual, Beersheba, and Biziothiah,"
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:JOS:15:29",
+      "text": "Baalah, Iim, and Ezem,"
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:JOS:15:30",
+      "text": "Eltolad, Chesil, and Hormah,"
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:JOS:15:31",
+      "text": "Ziklag, Madmannah, and Sansannah,"
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:JOS:15:32",
+      "text": "Lebaoth, Shilhim, Ain, and Rimmon. There were twenty-nine towns in all, with their villages."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:JOS:15:33",
+      "text": "In the lowlands were Eshtaol, Zorah, and Ashnah,"
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:JOS:15:34",
+      "text": "Zanoah, En Gannim, Tappuah, and Enam,"
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:JOS:15:35",
+      "text": "Jarmuth, Adullam, Socoh, and Azekah,"
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:JOS:15:36",
+      "text": "Shaaraim, Adithaim, and Gederah, also called Gederothaim. There were fourteen towns with their villages."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:JOS:15:37",
+      "text": "There were also Zenan, Hadashah, and Migdal Gad,"
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:JOS:15:38",
+      "text": "Dilean, Mizpah, and Joktheel,"
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:JOS:15:39",
+      "text": "Lachish, Bozkath, and Eglon,"
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:JOS:15:40",
+      "text": "Cabbon, Lahmam, and Chitlish,"
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:JOS:15:41",
+      "text": "Gederoth, Beth Dagon, Naamah, and Makkedah. There were sixteen towns with their villages."
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:JOS:15:42",
+      "text": "There were also Libnah, Ether, and Ashan,"
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:JOS:15:43",
+      "text": "Iphtah, Ashnah, and Nezib,"
+    },
+    {
+      "number": 44,
+      "sourceRef": "eng-web:JOS:15:44",
+      "text": "Keilah, Achzib, and Mareshah. There were nine towns with their villages."
+    },
+    {
+      "number": 45,
+      "sourceRef": "eng-web:JOS:15:45",
+      "text": "Judah also received Ekron and its towns and villages,"
+    },
+    {
+      "number": 46,
+      "sourceRef": "eng-web:JOS:15:46",
+      "text": "and everything from Ekron to the sea near Ashdod, including the villages."
+    },
+    {
+      "number": 47,
+      "sourceRef": "eng-web:JOS:15:47",
+      "text": "Judah received Ashdod and its towns and villages, and Gaza and its towns and villages, as far as the Brook of Egypt and the coastline of the great sea."
+    },
+    {
+      "number": 48,
+      "sourceRef": "eng-web:JOS:15:48",
+      "text": "In the hill country were Shamir, Jattir, and Socoh,"
+    },
+    {
+      "number": 49,
+      "sourceRef": "eng-web:JOS:15:49",
+      "text": "Dannah and Kiriath Sannah, also called Debir,"
+    },
+    {
+      "number": 50,
+      "sourceRef": "eng-web:JOS:15:50",
+      "text": "Anab, Eshtemoh, and Anim,"
+    },
+    {
+      "number": 51,
+      "sourceRef": "eng-web:JOS:15:51",
+      "text": "Goshen, Holon, and Giloh. There were eleven towns with their villages."
+    },
+    {
+      "number": 52,
+      "sourceRef": "eng-web:JOS:15:52",
+      "text": "There were also Arab, Dumah, and Eshan,"
+    },
+    {
+      "number": 53,
+      "sourceRef": "eng-web:JOS:15:53",
+      "text": "Janim, Beth Tappuah, and Aphekah,"
+    },
+    {
+      "number": 54,
+      "sourceRef": "eng-web:JOS:15:54",
+      "text": "Humtah, Kiriath Arba, also called Hebron, and Zior. There were nine towns with their villages."
+    },
+    {
+      "number": 55,
+      "sourceRef": "eng-web:JOS:15:55",
+      "text": "There were also Maon, Carmel, Ziph, and Jutah,"
+    },
+    {
+      "number": 56,
+      "sourceRef": "eng-web:JOS:15:56",
+      "text": "Jezreel, Jokdeam, and Zanoah,"
+    },
+    {
+      "number": 57,
+      "sourceRef": "eng-web:JOS:15:57",
+      "text": "Kain, Gibeah, and Timnah. There were ten towns with their villages."
+    },
+    {
+      "number": 58,
+      "sourceRef": "eng-web:JOS:15:58",
+      "text": "There were also Halhul, Beth Zur, and Gedor,"
+    },
+    {
+      "number": 59,
+      "sourceRef": "eng-web:JOS:15:59",
+      "text": "Maarath, Beth Anoth, and Eltekon. There were six towns with their villages."
+    },
+    {
+      "number": 60,
+      "sourceRef": "eng-web:JOS:15:60",
+      "text": "There were also Kiriath Baal, known as Kiriath Jearim, and Rabbah. There were two towns with their villages."
+    },
+    {
+      "number": 61,
+      "sourceRef": "eng-web:JOS:15:61",
+      "text": "In the wilderness were Beth Arabah, Middin, and Secacah,"
+    },
+    {
+      "number": 62,
+      "sourceRef": "eng-web:JOS:15:62",
+      "text": "Nibshan, the City of Salt, and En Gedi. There were six towns with their villages."
+    },
+    {
+      "number": 63,
+      "sourceRef": "eng-web:JOS:15:63",
+      "text": "The people of Judah couldn't drive the Jebusites out of Jerusalem, so the Jebusites still live there alongside the people of Judah today."
+    }
+  ]
+}

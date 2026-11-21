@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "JOS",
+  "bookName": "Joshua",
+  "chapterNumber": 18,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:JOS:18:1",
+      "text": "The whole community of Israel gathered at Shiloh and set up the Tent of Meeting there. The land was now under their control."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:JOS:18:2",
+      "text": "Seven tribes of Israel still hadn't received their shares of the land."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:JOS:18:3",
+      "text": "Joshua asked the Israelites, “How long are you going to put off taking possession of the land the LORD, the God of your ancestors, has given you?"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:JOS:18:4",
+      "text": "Choose three men from each tribe. I'll send them to walk through the land and write down how it can be divided for your inheritance. Then they'll come back to me."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:JOS:18:5",
+      "text": "They're to divide it into seven shares. Judah will stay in its territory to the south, and Joseph's descendants in theirs to the north."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:JOS:18:6",
+      "text": "Survey the land in seven sections and bring the description back to me. I'll cast lots for you here before the LORD our God."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:JOS:18:7",
+      "text": "The Levites won't get a share among you because serving as the LORD's priests is their inheritance. Gad, Reuben, and half the tribe of Manasseh already received their inheritance east of the Jordan from Moses, the LORD's servant.”"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:JOS:18:8",
+      "text": "As the men set out, Joshua told the surveyors, “Walk through the land, write down what you find, and come back to me. I'll cast lots for you here at Shiloh in the LORD's presence.”"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:JOS:18:9",
+      "text": "The men went through the land and wrote down a survey, listing the towns in seven sections. Then they came back to Joshua at the camp in Shiloh."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:JOS:18:10",
+      "text": "Joshua cast lots for them before the LORD at Shiloh. There he divided the land among the Israelites according to their groups."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:JOS:18:11",
+      "text": "The lot came up for the tribe of Benjamin, clan by clan. Their territory lay between Judah's land and that of Joseph's descendants."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:JOS:18:12",
+      "text": "Their northern border started at the Jordan, went up along the north side of Jericho, and climbed west through the hill country. It ended at the wilderness of Beth Aven."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:JOS:18:13",
+      "text": "From there it ran to the south side of Luz, also called Bethel. Then it went down to Ataroth Addar near the hill south of Lower Beth Horon."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:JOS:18:14",
+      "text": "From the hill south of Beth Horon, the border turned south on the west side and ended at Kiriath Baal, also called Kiriath Jearim, a town of Judah. That was the western border."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:JOS:18:15",
+      "text": "The southern border began at the edge of Kiriath Jearim, ran west, and reached the spring at Nephtoah."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:JOS:18:16",
+      "text": "From there it went down to the foot of the hill opposite the Valley of Ben Hinnom, at the north end of the Valley of Rephaim. It went down through the Hinnom Valley along the south side of the Jebusite city, then down to En Rogel."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:JOS:18:17",
+      "text": "The border turned north to En Shemesh and reached Geliloth opposite the Adummim Pass. Then it went down to the Stone of Bohan son of Reuben."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:JOS:18:18",
+      "text": "It continued along the north side of the slope facing the Arabah and went down into the Arabah."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:JOS:18:19",
+      "text": "It passed north of Beth Hoglah and ended at the northern bay of the Salt Sea, at the southern end of the Jordan. That was the southern border."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:JOS:18:20",
+      "text": "The Jordan marked the eastern border. Those were the boundaries of Benjamin's inheritance, clan by clan."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:JOS:18:21",
+      "text": "The towns belonging to Benjamin's clans were Jericho, Beth Hoglah, and Emek Keziz,"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:JOS:18:22",
+      "text": "Beth Arabah, Zemaraim, and Bethel,"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:JOS:18:23",
+      "text": "Avvim, Parah, and Ophrah,"
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:JOS:18:24",
+      "text": "Chephar Ammoni, Ophni, and Geba. There were twelve towns and their villages."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:JOS:18:25",
+      "text": "There were also Gibeon, Ramah, and Beeroth,"
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:JOS:18:26",
+      "text": "Mizpeh, Chephirah, and Mozah,"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:JOS:18:27",
+      "text": "Rekem, Irpeel, and Taralah,"
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:JOS:18:28",
+      "text": "Zelah, Eleph, the Jebusite city also called Jerusalem, Gibeath, and Kiriath. There were fourteen towns and their villages. This was Benjamin's inheritance, clan by clan."
+    }
+  ]
+}

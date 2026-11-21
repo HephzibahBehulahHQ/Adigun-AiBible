@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "JOS",
+  "bookName": "Joshua",
+  "chapterNumber": 20,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:JOS:20:1",
+      "text": "The LORD spoke to Joshua."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:JOS:20:2",
+      "text": "“Tell the Israelites, ‘Set aside the cities of refuge I told you about through Moses."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:JOS:20:3",
+      "text": "Anyone who kills someone by accident can run to one of these cities for safety from the relative seeking to avenge the death."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:JOS:20:4",
+      "text": "The person must flee to one of these cities, stand at the entrance to the city gate, and explain what happened to the city elders. The elders must take the person into the city and give them a place to live among them."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:JOS:20:5",
+      "text": "If the avenger of blood comes after that person, the elders must refuse to hand them over. The killing was unintentional, and the person had no prior hatred for the neighbor who died."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:JOS:20:6",
+      "text": "The person must live in that city until they stand before the community for judgment and until the high priest serving at the time dies. Then they may go back to their own home, in the city they fled from.’”"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:JOS:20:7",
+      "text": "They set aside Kedesh in Galilee in the hill country of Naphtali, Shechem in the hill country of Ephraim, and Kiriath Arba, also called Hebron, in the hill country of Judah."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:JOS:20:8",
+      "text": "East of the Jordan across from Jericho, they set aside Bezer on the wilderness plain from the tribe of Reuben, Ramoth in Gilead from the tribe of Gad, and Golan in Bashan from the tribe of Manasseh."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:JOS:20:9",
+      "text": "These were the cities designated for all Israelites and for foreigners living among them. Anyone who killed someone unintentionally could flee there and be safe from the avenger of blood until they stood trial before the community."
+    }
+  ]
+}
