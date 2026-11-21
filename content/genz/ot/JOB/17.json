@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "JOB",
+  "bookName": "Job",
+  "chapterNumber": 17,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:JOB:17:1",
+      "text": "\"My spirit is broken. My days have burned out, and the grave is waiting for me."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:JOB:17:2",
+      "text": "Mockers surround me. I have to sit here watching them provoke me."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:JOB:17:3",
+      "text": "God, put up a pledge for me yourself. Who else will give me their hand as a guarantee?"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:JOB:17:4",
+      "text": "You've kept them from understanding, so you won't let them triumph."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:JOB:17:5",
+      "text": "Anyone who betrays friends for a share of the spoils will see even their children's eyes fail."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:JOB:17:6",
+      "text": "God has made me a byword among the people. They spit in my face."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:JOB:17:7",
+      "text": "My eyes have grown dim from grief, and my whole body is a shadow of what it was."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:JOB:17:8",
+      "text": "Upright people are appalled at this. The innocent are stirred up against the godless."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:JOB:17:9",
+      "text": "Still, the righteous hold to their way, and those with clean hands grow stronger and stronger."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:JOB:17:10",
+      "text": "As for all of you, come back and try again. I won't find a single wise person among you."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:JOB:17:11",
+      "text": "My days have passed. My plans and the deepest desires of my heart have fallen apart."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:JOB:17:12",
+      "text": "They call night day. In the middle of the darkness they say, 'The light is near.'"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:JOB:17:13",
+      "text": "If I look to Sheol as my home and spread out my bed in the dark,"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:JOB:17:14",
+      "text": "if I say to decay, 'You're my father,' and to the worm, 'You're my mother and my sister,'"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:JOB:17:15",
+      "text": "then where is my hope? Who can see any hope for me?"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:JOB:17:16",
+      "text": "Will it go down with me to the gates of Sheol? Will we go down into the dust together?\""
+    }
+  ]
+}
