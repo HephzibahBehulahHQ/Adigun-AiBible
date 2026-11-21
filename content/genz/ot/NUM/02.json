@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "NUM",
+  "bookName": "Numbers",
+  "chapterNumber": 2,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:NUM:2:1",
+      "text": "Yahweh spoke to Moses and Aaron:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:NUM:2:2",
+      "text": "“The Israelites will camp around the Tent of Meeting, leaving some space between the camps and the tent. Everyone will camp under their own standard, with their family banners."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:NUM:2:3",
+      "text": "“On the east, toward the sunrise, Judah’s divisions will camp under Judah’s standard. Nahshon son of Amminadab will lead Judah’s people."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:NUM:2:4",
+      "text": "His division had 74,600 men in the count."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:NUM:2:5",
+      "text": "“Issachar’s tribe will camp next to them. Nethanel son of Zuar will lead Issachar’s people."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:NUM:2:6",
+      "text": "His division had 54,400 men in the count."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:NUM:2:7",
+      "text": "“Then comes Zebulun’s tribe. Eliab son of Helon will lead Zebulun’s people."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:NUM:2:8",
+      "text": "His division had 57,400 men in the count."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:NUM:2:9",
+      "text": "“All the divisions in Judah’s camp came to 186,400. They’ll head out first."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:NUM:2:10",
+      "text": "“On the south, Reuben’s divisions will camp under Reuben’s standard. Elizur son of Shedeur will lead Reuben’s people."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:NUM:2:11",
+      "text": "His division had 46,500 men in the count."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:NUM:2:12",
+      "text": "“Simeon’s tribe will camp next to them. Shelumiel son of Zurishaddai will lead Simeon’s people."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:NUM:2:13",
+      "text": "His division had 59,300 men in the count."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:NUM:2:14",
+      "text": "“Then comes Gad’s tribe. Eliasaph son of Reuel will lead Gad’s people."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:NUM:2:15",
+      "text": "His division had 45,650 men in the count."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:NUM:2:16",
+      "text": "“All the fighting divisions in Reuben’s camp came to 151,450. They’ll head out second."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:NUM:2:17",
+      "text": "“Then the Tent of Meeting will move out with the Levites’ camp in the middle of the other camps. They’ll travel in the same order they camp, everyone in place under their own standard."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:NUM:2:18",
+      "text": "“On the west, Ephraim’s divisions will camp under Ephraim’s standard. Elishama son of Ammihud will lead Ephraim’s people."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:NUM:2:19",
+      "text": "His division had 40,500 men in the count."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:NUM:2:20",
+      "text": "“Manasseh’s tribe will camp next to them. Gamaliel son of Pedahzur will lead Manasseh’s people."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:NUM:2:21",
+      "text": "His division had 32,200 men in the count."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:NUM:2:22",
+      "text": "“Then comes Benjamin’s tribe. Abidan son of Gideoni will lead Benjamin’s people."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:NUM:2:23",
+      "text": "His fighting men came to 35,400 in the count."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:NUM:2:24",
+      "text": "“All the divisions in Ephraim’s camp came to 108,100. They’ll head out third."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:NUM:2:25",
+      "text": "“On the north, Dan’s divisions will camp under Dan’s standard. Ahiezer son of Ammishaddai will lead Dan’s people."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:NUM:2:26",
+      "text": "His division had 62,700 men in the count."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:NUM:2:27",
+      "text": "“Asher’s tribe will camp next to them. Pagiel son of Ochran will lead Asher’s people."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:NUM:2:28",
+      "text": "His division had 41,500 men in the count."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:NUM:2:29",
+      "text": "“Then comes Naphtali’s tribe. Ahira son of Enan will lead Naphtali’s people."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:NUM:2:30",
+      "text": "His division had 53,400 men in the count."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:NUM:2:31",
+      "text": "“Dan’s camp came to 157,600 in all. They’ll head out last, each division under its own standard.”"
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:NUM:2:32",
+      "text": "That’s the count of the Israelites by ancestral family. All the fighting divisions across the camps came to 603,550."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:NUM:2:33",
+      "text": "The Levites weren’t included in Israel’s count, just as Yahweh had told Moses."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:NUM:2:34",
+      "text": "The Israelites did everything Yahweh told Moses. They camped under their standards and moved out under them, each person with their own clan and ancestral family."
+    }
+  ]
+}
