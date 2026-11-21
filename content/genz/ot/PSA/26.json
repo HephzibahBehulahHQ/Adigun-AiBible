@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 26,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:26:1",
+      "text": "By David. Judge me, LORD, because I’ve lived with integrity and trusted you without wavering."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:26:2",
+      "text": "Examine me, LORD, and put me to the test. Search my heart and mind."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:26:3",
+      "text": "I keep your faithful love before my eyes and live by your truth."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:26:4",
+      "text": "I’ve never sat with liars, and I won’t join people who pretend to be what they aren’t."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:26:5",
+      "text": "I hate the gatherings of evildoers and won’t sit with the wicked."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:26:6",
+      "text": "I’ll wash my hands in innocence and walk around your altar, LORD,"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:26:7",
+      "text": "so I can thank you aloud and tell of all your wonderful deeds."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:26:8",
+      "text": "LORD, I love the house where you live, the place where your glory dwells."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:26:9",
+      "text": "Don’t take my life along with sinners or sweep me away with bloodthirsty people."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:26:10",
+      "text": "Their hands are busy with evil, and their right hands are full of bribes."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:26:11",
+      "text": "But I’ll keep living with integrity. Redeem me and have mercy on me."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:26:12",
+      "text": "My feet stand on level ground. I’ll bless the LORD in the gatherings of his people."
+    }
+  ]
+}

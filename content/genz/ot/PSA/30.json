@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 30,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:30:1",
+      "text": "A psalm by David. A song for the dedication of the temple. I’ll praise you, LORD, because you lifted me up and gave my enemies no chance to gloat over me."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:30:2",
+      "text": "LORD my God, I cried out to you, and you healed me."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:30:3",
+      "text": "LORD, you pulled me up from Sheol. You kept me alive when I was close to going down to the pit."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:30:4",
+      "text": "Sing praise to the LORD, you who are faithful to him. Give thanks to his holy name."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:30:5",
+      "text": "His anger lasts a moment, and his favor lasts a lifetime. Weeping may stay the night, but joy comes in the morning."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:30:6",
+      "text": "When life was going well for me, I said, “Nothing will ever shake me.”"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:30:7",
+      "text": "LORD, when you favored me, you made my mountain stand firm. When you hid your face, I was shaken."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:30:8",
+      "text": "I cried out to you, LORD. I pleaded with you:"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:30:9",
+      "text": "“What good would come from my death if I went down to the pit? Will dust praise you or tell of your faithfulness?"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:30:10",
+      "text": "Hear me, LORD, and have mercy on me. LORD, come help me.”"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:30:11",
+      "text": "You turned my mourning into dancing. You took off my clothes of grief and dressed me in joy,"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:30:12",
+      "text": "so my heart could sing praises to you and never go quiet. LORD my God, I’ll thank you forever!"
+    }
+  ]
+}
