@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "2SA",
+  "bookName": "2 Samuel",
+  "chapterNumber": 9,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:2SA:9:1",
+      "text": "David asked, “Is anyone from Saul's family still alive? I'd like to show them kindness for Jonathan's sake.”"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:2SA:9:2",
+      "text": "Saul's household had a servant named Ziba. He was called in to see David, and the king asked, “Are you Ziba?” He answered, “I'm your servant.”"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:2SA:9:3",
+      "text": "The king asked, “Is anyone left from Saul's family that I can show God's kindness to?” Ziba answered, “Jonathan still has a son. He has a disability in both feet.”"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:2SA:9:4",
+      "text": "“Where is he?” the king asked. Ziba said, “He's at the home of Machir son of Ammiel in Lo Debar.”"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:2SA:9:5",
+      "text": "So King David sent for him and had him brought from the home of Machir son of Ammiel in Lo Debar."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:2SA:9:6",
+      "text": "When Mephibosheth, Jonathan's son and Saul's grandson, came to David, he bowed with his face to the ground to show respect. David said, “Mephibosheth?” He answered, “Here I am, your servant.”"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:2SA:9:7",
+      "text": "David said, “Don't be afraid. I'll show you kindness for the sake of your father Jonathan. I'll give back all the land that belonged to your grandfather Saul, and you'll always eat at my table.”"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:2SA:9:8",
+      "text": "Mephibosheth bowed and said, “Who am I, your servant, that you'd pay attention to a dead dog like me?”"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:2SA:9:9",
+      "text": "The king called Saul's servant Ziba and told him, “I've given your master's grandson everything that belonged to Saul and his family."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:2SA:9:10",
+      "text": "You, your sons, and your servants will farm his land and bring in the harvest so your master's grandson has food. Mephibosheth himself will always eat at my table.” Ziba had fifteen sons and twenty servants."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:2SA:9:11",
+      "text": "Ziba told the king, “I'll do everything my lord the king has commanded.” So Mephibosheth ate at the king's table like one of the king's sons."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:2SA:9:12",
+      "text": "Mephibosheth had a young son named Mica. Everyone in Ziba's household served Mephibosheth."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:2SA:9:13",
+      "text": "Mephibosheth lived in Jerusalem and ate regularly at the king's table. He had a disability in both feet."
+    }
+  ]
+}
