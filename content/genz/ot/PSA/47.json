@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 47,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:47:1",
+      "text": "For the music director. A psalm by the sons of Korah. Clap your hands, all you nations! Shout to God in triumph!"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:47:2",
+      "text": "The LORD Most High fills us with awe. He’s the great King over all the earth."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:47:3",
+      "text": "He brings nations under our rule and puts peoples beneath our feet."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:47:4",
+      "text": "He chooses our inheritance for us, the pride of Jacob, whom he loved. Selah."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:47:5",
+      "text": "God has gone up to shouts of joy. The LORD has gone up to the sound of a trumpet."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:47:6",
+      "text": "Sing praises to God! Sing praises! Sing praises to our King! Sing praises!"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:47:7",
+      "text": "God is King over all the earth. Sing praise with understanding."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:47:8",
+      "text": "God reigns over the nations. God sits on his holy throne."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:47:9",
+      "text": "The leaders of the peoples gather as the people of Abraham’s God. The shields of the earth belong to God. He is exalted far above all!"
+    }
+  ]
+}
