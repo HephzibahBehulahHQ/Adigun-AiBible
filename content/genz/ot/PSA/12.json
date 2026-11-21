@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 12,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:12:1",
+      "text": "For the music director, on an eight-stringed lyre. A psalm of David. Help, LORD! The godly are gone, and faithful people are disappearing."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:12:2",
+      "text": "Everyone lies to their neighbor. They flatter with their lips while hiding what’s in their hearts."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:12:3",
+      "text": "May the LORD silence every flattering lip and every boasting tongue,"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:12:4",
+      "text": "all those who say, “Our words will put us on top. Our lips are our own. Who can tell us what to do?”"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:12:5",
+      "text": "“The weak are oppressed and the needy are groaning, so I’ll rise up now,” says the LORD. “I’ll keep them safe from those who speak against them.”"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:12:6",
+      "text": "The LORD’s words are flawless, like silver refined in a clay furnace and purified seven times."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:12:7",
+      "text": "You’ll protect them, LORD, and keep them safe from this generation forever."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:12:8",
+      "text": "The wicked strut everywhere when people praise what is vile."
+    }
+  ]
+}

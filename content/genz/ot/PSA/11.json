@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 11,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:11:1",
+      "text": "For the music director. By David. I take refuge in the LORD. How can you tell me, “Fly to your mountain like a bird”?"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:11:2",
+      "text": "Look, the wicked are bending their bows and setting arrows on the strings, ready to shoot from the dark at people whose hearts are right."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:11:3",
+      "text": "When the foundations are torn down, what can the righteous do?"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:11:4",
+      "text": "The LORD is in his holy temple. His throne is in heaven. He watches closely and examines all people."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:11:5",
+      "text": "The LORD examines the righteous, and he hates the wicked and those who love violence."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:11:6",
+      "text": "He’ll rain burning coals on the wicked. Fire, sulfur, and scorching wind will fill their cup."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:11:7",
+      "text": "The LORD is righteous, and he loves what is right. The upright will see his face."
+    }
+  ]
+}
