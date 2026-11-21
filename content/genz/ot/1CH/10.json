@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1CH",
+  "bookName": "1 Chronicles",
+  "chapterNumber": 10,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1CH:10:1",
+      "text": "The Philistines fought against Israel. Israel's men fled from them, and many fell dead on Mount Gilboa."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1CH:10:2",
+      "text": "The Philistines closed in on Saul and his sons. They killed Saul's sons Jonathan, Abinadab, and Malchishua."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1CH:10:3",
+      "text": "The fighting grew fierce around Saul. The archers caught up with him, and he was in great distress."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1CH:10:4",
+      "text": "Saul told his armor bearer, “Draw your sword and run me through before these uncircumcised men come and abuse me.” His armor bearer was terrified and refused. So Saul took his own sword and fell on it."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1CH:10:5",
+      "text": "When his armor bearer saw that Saul was dead, he fell on his own sword and died too."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1CH:10:6",
+      "text": "So Saul and his three sons died, and his whole household fell with him."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1CH:10:7",
+      "text": "When the Israelites in the valley saw their army running away and heard that Saul and his sons were dead, they abandoned their towns and fled. The Philistines moved in and lived in them."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1CH:10:8",
+      "text": "The next day the Philistines came to strip the dead. They found Saul and his sons lying on Mount Gilboa."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1CH:10:9",
+      "text": "They stripped Saul and took his head and armor. Then they sent messengers all through Philistine territory to announce the news to their idols and their people."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1CH:10:10",
+      "text": "They put his armor in the temple of their gods and fastened his head in the temple of Dagon."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1CH:10:11",
+      "text": "When everyone in Jabesh Gilead heard what the Philistines had done to Saul,"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1CH:10:12",
+      "text": "the brave men went and retrieved the bodies of Saul and his sons. They brought them to Jabesh, buried their bones under the oak there, and fasted for seven days."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1CH:10:13",
+      "text": "Saul died because he was unfaithful to the LORD. He didn't obey the LORD's word, and he went to a medium for advice"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1CH:10:14",
+      "text": "without asking the LORD. So the LORD put him to death and handed the kingdom over to David son of Jesse."
+    }
+  ]
+}
