@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "2CH",
+  "bookName": "2 Chronicles",
+  "chapterNumber": 3,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:2CH:3:1",
+      "text": "Solomon began building the LORD's house in Jerusalem on Mount Moriah, where the LORD had appeared to his father David. Solomon prepared the site David had chosen, the threshing floor of Ornan the Jebusite."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:2CH:3:2",
+      "text": "He began building on the second day of the second month in the fourth year of his reign."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:2CH:3:3",
+      "text": "Solomon laid the foundation for God's house sixty cubits long and twenty cubits wide, using the old standard for the cubit."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:2CH:3:4",
+      "text": "The entrance porch stretched across the full width of the house, twenty cubits. It was a hundred twenty cubits high. Solomon covered the inside with pure gold."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:2CH:3:5",
+      "text": "He put a cypress ceiling in the main room, covered it with fine gold, and decorated it with palm trees and chains."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:2CH:3:6",
+      "text": "He decorated the house with precious stones. The gold came from Parvaim."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:2CH:3:7",
+      "text": "He covered the house with gold, including its beams, thresholds, walls, and doors, and carved cherubim on the walls."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:2CH:3:8",
+      "text": "He made the Most Holy Place twenty cubits long, matching the width of the house, and twenty cubits wide. He covered it with six hundred talents of fine gold."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:2CH:3:9",
+      "text": "The nails weighed fifty shekels of gold. He covered the upper rooms with gold as well."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:2CH:3:10",
+      "text": "He had two cherubim carved for the Most Holy Place, and they covered them with gold."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:2CH:3:11",
+      "text": "The cherubim's wings spanned twenty cubits altogether. One wing of the first cherub reached five cubits to the wall, and its other wing reached five cubits to the other cherub's wing."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:2CH:3:12",
+      "text": "One wing of the second cherub reached five cubits to the opposite wall, and its other wing reached five cubits to meet the wing of the first cherub."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:2CH:3:13",
+      "text": "The cherubim stood on their feet, facing the main room, with their wings spread across twenty cubits."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:2CH:3:14",
+      "text": "Solomon made the curtain from blue, purple, and crimson material and fine linen, and decorated it with cherubim."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:2CH:3:15",
+      "text": "He also made two pillars thirty-five cubits high in front of the house. Each had a capital five cubits high."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:2CH:3:16",
+      "text": "He made chains in the inner sanctuary and put them on top of the pillars. He made a hundred pomegranates and attached them to the chains."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:2CH:3:17",
+      "text": "He set up both pillars in front of the temple. He named the one on the right Jachin and the one on the left Boaz."
+    }
+  ]
+}
