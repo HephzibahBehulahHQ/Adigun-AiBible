@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 17,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:17:1",
+      "text": "A prayer by David. LORD, hear my just plea. Listen to my prayer. There’s no deceit on my lips."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:17:2",
+      "text": "Let my verdict come from you. Look on what is fair."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:17:3",
+      "text": "You’ve tested my heart and come to me in the night. You’ve examined me and found nothing. I’ve made up my mind to keep my mouth from wrongdoing."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:17:4",
+      "text": "Whatever others do, I’ve followed what you said and stayed away from the paths of violent people."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:17:5",
+      "text": "I’ve kept to your paths. My feet haven’t slipped."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:17:6",
+      "text": "I call on you, God, because you’ll answer me. Turn your ear toward me and hear what I say."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:17:7",
+      "text": "Show your wonderful faithful love. With your right hand you save those who take refuge in you from their enemies."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:17:8",
+      "text": "Guard me like the apple of your eye. Hide me in the shadow of your wings,"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:17:9",
+      "text": "away from the wicked who oppress me, from the deadly enemies who surround me."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:17:10",
+      "text": "They’ve shut their hearts to pity, and they talk with pride."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:17:11",
+      "text": "They’ve tracked us down and now surround us, watching for a chance to throw us to the ground."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:17:12",
+      "text": "My enemy is like a lion hungry for prey, like a young lion lurking in a hiding place."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:17:13",
+      "text": "Rise up, LORD! Confront him and bring him down. Rescue me from the wicked with your sword."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:17:14",
+      "text": "Save me by your hand, LORD, from people whose share is in this life. You fill the bellies of those you cherish. Their children have plenty, and they leave wealth for their children."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:17:15",
+      "text": "As for me, I’ll see your face in righteousness. When I wake, seeing you will be enough."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 16,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:16:1",
+      "text": "A poem by David. Keep me safe, God, because I take refuge in you."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:16:2",
+      "text": "I’ve said to the LORD from my soul, “You are my Lord. Every good thing I have comes from you.”"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:16:3",
+      "text": "The holy people in the land are the ones I admire. I find great joy in them."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:16:4",
+      "text": "Those who bring gifts to another god will only add to their sorrows. I won’t pour out their offerings of blood or even speak the names of those gods."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:16:5",
+      "text": "The LORD has given me my portion and filled my cup. You keep what’s mine secure."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:16:6",
+      "text": "The boundary lines have fallen in pleasant places for me. I’ve received a good inheritance."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:16:7",
+      "text": "I’ll bless the LORD for guiding me. Even at night my heart teaches me."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:16:8",
+      "text": "I keep the LORD before me at all times. Because he’s at my right hand, I won’t be shaken."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:16:9",
+      "text": "So my heart is glad, my tongue sings for joy, and my body rests secure."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:16:10",
+      "text": "You won’t abandon me to Sheol. You won’t let your holy one see decay."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:16:11",
+      "text": "You’ll show me the path of life. In your presence there is fullness of joy. At your right hand there is delight forever."
+    }
+  ]
+}
