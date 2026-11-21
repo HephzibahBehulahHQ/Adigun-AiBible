@@ -4,7 +4,7 @@
   "editions": [
     {
       "editionId": "adigun-edition",
-      "sourceSha256": "963b4beb7ec9d231809973747c60666257654f77041e3dcf39594d8a246fee63",
+      "sourceSha256": "5df3f0b87cf0cba143bb1101377071ad70ebc21f9be5f9e72f41eaee729de5f2",
       "status": "publisher-metadata",
       "marker": "none",
       "offsetUnit": "not-applicable",
@@ -43,6 +43,12 @@
         },
         {
           "bookId": "JOS",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "JDG",
           "spans": 0,
           "verses": 0,
           "rejectedMetadata": 0
