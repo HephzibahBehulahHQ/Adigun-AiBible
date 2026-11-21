@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "DEU",
+  "bookName": "Deuteronomy",
+  "chapterNumber": 25,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:DEU:25:1",
+      "text": "When people have a dispute and take it to court, the judges are to clear the person in the right and condemn the one in the wrong."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:DEU:25:2",
+      "text": "If the guilty person deserves a beating, the judge must have him lie down and be beaten in front of him. The number of lashes must fit the offense."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:DEU:25:3",
+      "text": "The judge may order up to forty lashes. Any more than that would humiliate your fellow Israelite in front of you."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:DEU:25:4",
+      "text": "Don't muzzle an ox while it's threshing grain."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:DEU:25:5",
+      "text": "If brothers live together and one dies without a son, his widow must not marry someone outside the family. Her husband's brother is to marry her and fulfill his duty to her as her brother-in-law."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:DEU:25:6",
+      "text": "The first child she bears will carry on the dead brother's name so that his name won't disappear from Israel."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:DEU:25:7",
+      "text": "If the man doesn't want to marry his brother's widow, she is to go to the elders at the town gate and say, “My husband's brother refuses to carry on his brother's name in Israel. He won't fulfill his duty to me as my brother-in-law.”"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:DEU:25:8",
+      "text": "The elders of his town must call him in and talk to him. If he stands his ground and says, “I don't want to marry her,”"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:DEU:25:9",
+      "text": "his brother's widow is to go up to him in front of the elders, take the sandal off his foot, and spit in his face. She must say, “This is what happens to the man who won't build up his brother's family.”"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:DEU:25:10",
+      "text": "From then on, his family will be known in Israel as “the family of the man whose sandal was removed.”"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:DEU:25:11",
+      "text": "If two men are fighting and the wife of one steps in to save her husband from the man beating him, and she reaches out and grabs that man by his genitals,"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:DEU:25:12",
+      "text": "you must cut off her hand. Show no pity."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:DEU:25:13",
+      "text": "Don't carry two different weights in your bag, one heavy and one light."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:DEU:25:14",
+      "text": "Don't keep two different measures at home, one large and one small."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:DEU:25:15",
+      "text": "Use weights and measures that are accurate and fair, so you'll live a long time in the land the LORD your God is giving you."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:DEU:25:16",
+      "text": "The LORD your God detests everyone who cheats like this and everyone who acts dishonestly."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:DEU:25:17",
+      "text": "Remember what Amalek did to you on the road when you came out of Egypt."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:DEU:25:18",
+      "text": "They met you on the road while you were worn out and attacked the weak people lagging at the back. They had no fear of God."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:DEU:25:19",
+      "text": "When the LORD your God gives you rest from all the enemies around you in the land he's giving you as your own, wipe out the memory of Amalek from under the sky. Don't forget."
+    }
+  ]
+}
