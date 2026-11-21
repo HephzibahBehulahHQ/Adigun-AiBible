@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1SA",
+  "bookName": "1 Samuel",
+  "chapterNumber": 15,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1SA:15:1",
+      "text": "Samuel told Saul, “The LORD sent me to anoint you as king over his people Israel. Now listen to what the LORD says."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1SA:15:2",
+      "text": "The LORD of Armies says, ‘I remember what Amalek did to Israel, how they came against them on the road out of Egypt."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1SA:15:3",
+      "text": "Go and strike Amalek. Destroy everything they have and spare no one, whether man or woman, infant or nursing baby, cattle or sheep, camel or donkey.’”"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1SA:15:4",
+      "text": "Saul called the people together and counted them at Telaim. There were two hundred thousand foot soldiers and ten thousand men from Judah."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1SA:15:5",
+      "text": "Saul went to the city of Amalek and set an ambush in the valley."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1SA:15:6",
+      "text": "He told the Kenites, “Get away from the Amalekites, or you could be destroyed along with them. You showed kindness to all Israel when they came out of Egypt.” So they left."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1SA:15:7",
+      "text": "Saul struck down the Amalekites from Havilah as far as Shur, east of Egypt."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1SA:15:8",
+      "text": "He took King Agag of Amalek alive and put all the people to the sword."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1SA:15:9",
+      "text": "Saul and his troops spared Agag and the best sheep, cattle, fat calves, and lambs. They kept everything they thought was good and destroyed only what they considered worthless."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1SA:15:10",
+      "text": "Then the LORD's word came to Samuel."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1SA:15:11",
+      "text": "“I regret making Saul king. He's turned away from following me and hasn't done what I commanded.” Samuel was angry and cried out to the LORD all night."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1SA:15:12",
+      "text": "Early the next morning Samuel went to meet Saul. Someone told him, “Saul went to Carmel and set up a monument to himself. Then he moved on down to Gilgal.”"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1SA:15:13",
+      "text": "When Samuel reached him, Saul said, “May the LORD bless you! I've done what the LORD commanded.”"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1SA:15:14",
+      "text": "Samuel asked, “Then why do I hear sheep bleating and cattle lowing?”"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:1SA:15:15",
+      "text": "Saul answered, “The troops brought them from the Amalekites. They saved the best sheep and cattle to sacrifice to the LORD your God. We destroyed the rest.”"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:1SA:15:16",
+      "text": "Samuel said, “Stop. Let me tell you what the LORD said to me last night.” Saul said, “Go ahead.”"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:1SA:15:17",
+      "text": "Samuel said, “You used to think little of yourself, yet you became the head of Israel's tribes. The LORD anointed you king over Israel."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:1SA:15:18",
+      "text": "The LORD sent you on a mission and told you to fight the Amalekites for their sins and destroy them completely."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:1SA:15:19",
+      "text": "Why didn't you listen to the LORD? Why did you seize the plunder and do what was evil in his sight?”"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:1SA:15:20",
+      "text": "Saul told Samuel, “I did listen to the LORD. I went where he sent me, brought back Agag king of Amalek, and destroyed the Amalekites."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:1SA:15:21",
+      "text": "The troops took sheep and cattle from the plunder, the best of what had been set apart, to sacrifice to the LORD your God at Gilgal.”"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:1SA:15:22",
+      "text": "Samuel said, “Does the LORD delight in burnt offerings and sacrifices as much as he delights in obedience? Obedience is better than sacrifice, and listening is better than the fat of rams."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:1SA:15:23",
+      "text": "Rebellion is like witchcraft, and stubbornness is like worshiping idols and household gods. Because you rejected the LORD's word, he has rejected you as king.”"
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:1SA:15:24",
+      "text": "Saul said, “I've sinned. I broke the LORD's command and ignored your words because I was afraid of the people and listened to them."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:1SA:15:25",
+      "text": "Please forgive my sin and come back with me so I can worship the LORD.”"
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:1SA:15:26",
+      "text": "Samuel answered, “I won't go back with you. You rejected the LORD's word, and the LORD has rejected you as king over Israel.”"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:1SA:15:27",
+      "text": "As Samuel turned to leave, Saul grabbed the edge of his robe, and it tore."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:1SA:15:28",
+      "text": "Samuel told him, “Today the LORD has torn the kingdom of Israel away from you and given it to someone close to you who is better than you."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:1SA:15:29",
+      "text": "The Strength of Israel doesn't lie or change his mind. He isn't human, so he doesn't change his mind as people do.”"
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:1SA:15:30",
+      "text": "Saul said, “I've sinned. Please still honor me before my people's elders and before Israel. Come back with me so I can worship the LORD your God.”"
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:1SA:15:31",
+      "text": "Samuel returned with Saul, and Saul worshiped the LORD."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:1SA:15:32",
+      "text": "Then Samuel said, “Bring me Agag, the king of the Amalekites.” Agag came to him cheerfully and said, “Surely the bitterness of death has passed.”"
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:1SA:15:33",
+      "text": "Samuel said, “Your sword has left women childless. Now your mother will be childless too.” Then Samuel executed Agag before the LORD at Gilgal."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:1SA:15:34",
+      "text": "Samuel went back to Ramah, and Saul went home to Gibeah of Saul."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:1SA:15:35",
+      "text": "Samuel never went to see Saul again before his death, but he mourned for him. The LORD regretted making Saul king over Israel."
+    }
+  ]
+}

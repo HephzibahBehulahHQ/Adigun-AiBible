@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1SA",
+  "bookName": "1 Samuel",
+  "chapterNumber": 11,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1SA:11:1",
+      "text": "Nahash the Ammonite went up and camped against Jabesh Gilead. The men of Jabesh told him, “Make a treaty with us, and we'll serve you.”"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1SA:11:2",
+      "text": "Nahash said, “I'll make a treaty on one condition. I'll gouge out your right eyes and bring disgrace on all Israel.”"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1SA:11:3",
+      "text": "The elders of Jabesh answered, “Give us seven days to send messengers throughout Israel. If nobody comes to rescue us, we'll come out to you.”"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1SA:11:4",
+      "text": "The messengers reached Saul's town of Gibeah and told the people what had happened. Everyone cried out and wept."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1SA:11:5",
+      "text": "Saul was coming in from the fields behind his oxen. He asked, “What's wrong? Why is everyone crying?” They told him what the men of Jabesh had said."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1SA:11:6",
+      "text": "When Saul heard it, God's Spirit came powerfully upon him, and he burned with anger."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1SA:11:7",
+      "text": "He cut up a pair of oxen and sent the pieces throughout Israel with messengers. They announced, “This is what will happen to the oxen of anyone who refuses to follow Saul and Samuel.” The fear of the LORD fell on the people, and they came out together as one."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1SA:11:8",
+      "text": "Saul counted them at Bezek. There were three hundred thousand men from Israel and thirty thousand from Judah."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1SA:11:9",
+      "text": "They told the messengers, “Tell the people of Jabesh Gilead, ‘Tomorrow, by the time the sun is hot, you'll be rescued.’” When the messengers brought the news, the people of Jabesh were glad."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1SA:11:10",
+      "text": "The people of Jabesh told Nahash, “Tomorrow we'll come out to you, and you can do whatever you think best with us.”"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1SA:11:11",
+      "text": "The next day Saul divided his men into three groups. They entered the camp during the morning watch and struck down the Ammonites until the heat of the day. The survivors scattered until no two were left together."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1SA:11:12",
+      "text": "The people asked Samuel, “Who said Saul shouldn't rule over us? Bring those men here so we can put them to death.”"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1SA:11:13",
+      "text": "Saul said, “Nobody will be put to death today, because today the LORD has rescued Israel.”"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1SA:11:14",
+      "text": "Then Samuel told the people, “Come on, let's go to Gilgal and renew the kingdom there.”"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:1SA:11:15",
+      "text": "Everyone went to Gilgal and made Saul king there before the LORD. They offered peace offerings to the LORD, and Saul and all the Israelites celebrated."
+    }
+  ]
+}
