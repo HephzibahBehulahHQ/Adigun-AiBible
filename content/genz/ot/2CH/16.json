@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "2CH",
+  "bookName": "2 Chronicles",
+  "chapterNumber": 16,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:2CH:16:1",
+      "text": "In the thirty-sixth year of Asa's reign, King Baasha of Israel marched against Judah and fortified Ramah to block people from coming to or going from Asa, king of Judah."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:2CH:16:2",
+      "text": "Asa took silver and gold from the treasuries of the LORD's house and the royal palace. He sent them to King Ben Hadad of Syria, who lived in Damascus, with this message:"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:2CH:16:3",
+      "text": "\"Let's make a treaty, like the one our fathers had. I've sent you silver and gold. Break your treaty with King Baasha of Israel so he'll pull back from me.\""
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:2CH:16:4",
+      "text": "Ben Hadad agreed to King Asa's request and sent his commanders against the towns of Israel. They attacked Ijon, Dan, Abel Maim, and all the storage towns of Naphtali."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:2CH:16:5",
+      "text": "When Baasha heard about it, he abandoned the work at Ramah."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:2CH:16:6",
+      "text": "King Asa called out all Judah to haul away the stone and timber Baasha had used at Ramah. Asa used those materials to build up Geba and Mizpah."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:2CH:16:7",
+      "text": "At that time Hanani the seer went to Asa, king of Judah, and said, \"Because you relied on the king of Syria instead of the LORD your God, the Syrian king's army slipped out of your hands."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:2CH:16:8",
+      "text": "Didn't the Ethiopians and Libyans come with a huge army, with chariots and more horsemen than you could count? Because you relied on the LORD, he handed them over to you."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:2CH:16:9",
+      "text": "The LORD looks throughout the whole earth to show his strength on behalf of those whose hearts are fully devoted to him. You've acted foolishly in this, and from now on you'll face wars.\""
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:2CH:16:10",
+      "text": "Asa was furious with the seer over what he had said and threw him in prison. At the same time Asa mistreated some of his people."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:2CH:16:11",
+      "text": "Asa's deeds, from beginning to end, are recorded in the Book of the Kings of Judah and Israel."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:2CH:16:12",
+      "text": "In the thirty-ninth year of his reign, Asa developed a severe disease in his feet. Even as the disease got worse, he turned to his physicians alone and never sought the LORD."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:2CH:16:13",
+      "text": "Asa died in the forty-first year of his reign."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:2CH:16:14",
+      "text": "They buried him in the tomb he'd cut for himself in the City of David. They laid him on a bier filled with fragrant spices blended by perfumers and lit a very large fire in his honor."
+    }
+  ]
+}

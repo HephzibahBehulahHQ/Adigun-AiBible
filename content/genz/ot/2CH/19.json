@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "2CH",
+  "bookName": "2 Chronicles",
+  "chapterNumber": 19,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:2CH:19:1",
+      "text": "King Jehoshaphat of Judah returned safely to his palace in Jerusalem."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:2CH:19:2",
+      "text": "Jehu son of Hanani the seer went out to meet him and said, \"Should you help the wicked and love those who hate the LORD? Because you've done this, the LORD is angry with you."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:2CH:19:3",
+      "text": "Still, there is good in you. You removed the Asherah poles from the land and set your heart on seeking God.\""
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:2CH:19:4",
+      "text": "Jehoshaphat lived in Jerusalem. He went out among his people again, from Beersheba to the hill country of Ephraim, and brought them back to the LORD, the God of their ancestors."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:2CH:19:5",
+      "text": "He appointed judges throughout the land, in each of Judah's fortified towns."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:2CH:19:6",
+      "text": "He told the judges, \"Think carefully about what you do. You judge for the LORD himself. He's with you when you give a ruling."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:2CH:19:7",
+      "text": "Let reverence for the LORD guide you. Do your work carefully, because the LORD our God deals justly, shows no favoritism, and takes no bribes.\""
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:2CH:19:8",
+      "text": "In Jerusalem, Jehoshaphat also appointed some Levites, priests, and Israelite family heads to judge matters concerning the LORD and settle disputes. They returned to Jerusalem."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:2CH:19:9",
+      "text": "He gave them these instructions: \"Do this work faithfully and wholeheartedly, with reverence for the LORD."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:2CH:19:10",
+      "text": "Whenever your people in other towns bring you a case, whether it concerns bloodshed, a law, a command, a statute, or a ruling, warn them so they won't incur guilt before the LORD and bring his anger down on you and your people. Do this and you'll be free of guilt."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:2CH:19:11",
+      "text": "Amariah the chief priest will oversee you in everything that concerns the LORD. Zebadiah son of Ishmael, leader of the house of Judah, will oversee everything that concerns the king. The Levites will serve as officers alongside you. Act with courage, and may the LORD be with those who do good.\""
+    }
+  ]
+}
