@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1KI",
+  "bookName": "1 Kings",
+  "chapterNumber": 4,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1KI:4:1",
+      "text": "King Solomon ruled over all Israel."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1KI:4:2",
+      "text": "These were his senior officials: Azariah son of Zadok was the priest."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1KI:4:3",
+      "text": "Elihoreph and Ahijah, sons of Shisha, were the scribes, and Jehoshaphat son of Ahilud kept the official records."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1KI:4:4",
+      "text": "Benaiah son of Jehoiada commanded the army. Zadok and Abiathar were priests."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1KI:4:5",
+      "text": "Azariah son of Nathan was in charge of the officers. Zabud son of Nathan was the chief minister and the king's friend."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1KI:4:6",
+      "text": "Ahishar ran the palace household, and Adoniram son of Abda was in charge of forced labor."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1KI:4:7",
+      "text": "Solomon appointed twelve officers across Israel to supply food for the king and his household. Each was responsible for one month of the year."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1KI:4:8",
+      "text": "These were their names and districts: Ben Hur served in the hill country of Ephraim."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1KI:4:9",
+      "text": "Ben Deker served in Makaz, Shaalbim, Beth Shemesh, and Elon Beth Hanan."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1KI:4:10",
+      "text": "Ben Hesed served in Arubboth, including Socoh and all the land of Hepher."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1KI:4:11",
+      "text": "Ben Abinadab served in the whole highland of Dor. He was married to Solomon's daughter Taphath."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1KI:4:12",
+      "text": "Baana son of Ahilud served in Taanach, Megiddo, and all of Beth Shean near Zarethan below Jezreel, from Beth Shean to Abel Meholah and beyond Jokmeam."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1KI:4:13",
+      "text": "Ben Geber served in Ramoth Gilead. His district included the towns of Jair son of Manasseh in Gilead and the region of Argob in Bashan, with sixty large cities that had walls and bronze gate bars."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1KI:4:14",
+      "text": "Ahinadab son of Iddo served in Mahanaim."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:1KI:4:15",
+      "text": "Ahimaaz served in Naphtali. He married Solomon's daughter Basemath."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:1KI:4:16",
+      "text": "Baana son of Hushai served in Asher and Bealoth."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:1KI:4:17",
+      "text": "Jehoshaphat son of Paruah served in Issachar."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:1KI:4:18",
+      "text": "Shimei son of Ela served in Benjamin."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:1KI:4:19",
+      "text": "Geber son of Uri served in Gilead, the former territory of Sihon king of the Amorites and Og king of Bashan. He was the only officer in that land."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:1KI:4:20",
+      "text": "The people of Judah and Israel were as numerous as the sand by the sea. They ate, drank, and enjoyed themselves."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:1KI:4:21",
+      "text": "Solomon ruled over all the kingdoms from the Euphrates to the land of the Philistines and on to Egypt's border. They paid him tribute and served him as long as he lived."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:1KI:4:22",
+      "text": "Solomon's household needed thirty cors of fine flour and sixty measures of meal every day,"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:1KI:4:23",
+      "text": "along with ten fattened cattle, twenty cattle from the pasture, a hundred sheep, and deer, gazelles, roebucks, and fattened birds."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:1KI:4:24",
+      "text": "Solomon ruled over all the land west of the Euphrates, from Tiphsah to Gaza, and over all the kings in that region. There was peace on every side."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:1KI:4:25",
+      "text": "Judah and Israel lived in safety from Dan to Beersheba throughout Solomon's reign. Everyone could sit under their own vine and fig tree."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:1KI:4:26",
+      "text": "Solomon had forty thousand stalls for his chariot horses and twelve thousand horsemen."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:1KI:4:27",
+      "text": "Each officer supplied food for King Solomon and everyone who ate at his table during the month he was responsible for. They made sure nothing ran short."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:1KI:4:28",
+      "text": "They also brought barley and straw for the horses and swift steeds wherever they were needed, each officer doing his part."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:1KI:4:29",
+      "text": "God gave Solomon abundant wisdom, deep understanding, and a mind as wide-ranging as the sand on the seashore is plentiful."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:1KI:4:30",
+      "text": "Solomon's wisdom surpassed that of all the people of the east and all the wisdom of Egypt."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:1KI:4:31",
+      "text": "He was wiser than anyone else, including Ethan the Ezrahite and Heman, Calcol, and Darda, the sons of Mahol. His fame spread through all the nations around him."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:1KI:4:32",
+      "text": "He spoke three thousand proverbs and composed a thousand and five songs."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:1KI:4:33",
+      "text": "He spoke about plants, from the cedars of Lebanon to the hyssop growing out of a wall. He also spoke about animals, birds, creatures that crawl, and fish."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:1KI:4:34",
+      "text": "People from every nation came to hear Solomon's wisdom. Kings across the earth heard about it and sent them to listen."
+    }
+  ]
+}
