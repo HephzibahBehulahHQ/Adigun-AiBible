@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 62,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:62:1",
+      "text": "For the music director. For Jeduthun. A psalm by David. My soul finds rest in God alone. My salvation comes from him."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:62:2",
+      "text": "He alone is my rock, my salvation, and my fortress. I won’t be shaken badly."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:62:3",
+      "text": "How long will all of you attack one person? Would you push him over like a leaning wall or a wobbling fence?"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:62:4",
+      "text": "Their whole plan is to pull him down from his high place. They love lies. They bless him out loud and curse him in their hearts. Selah."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:62:5",
+      "text": "My soul, wait quietly for God alone. My hope comes from him."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:62:6",
+      "text": "He alone is my rock and my salvation, my fortress. I won’t be shaken."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:62:7",
+      "text": "My salvation and honor depend on God. God is my strong rock and my refuge."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:62:8",
+      "text": "Trust him at all times, you people. Pour out your hearts before him. God is a refuge for us. Selah."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:62:9",
+      "text": "Ordinary people are only a breath, and people of high standing are an illusion. Put them all on the scales and they rise together, lighter than a breath."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:62:10",
+      "text": "Don’t rely on oppression or put empty hopes in what you steal. If your wealth grows, don’t set your heart on it."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:62:11",
+      "text": "God has spoken once, and twice I’ve heard this: power belongs to God."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:62:12",
+      "text": "Faithful love also belongs to you, Lord, because you repay each person according to what they’ve done."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 64,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:64:1",
+      "text": "For the music director. A psalm by David. God, hear my voice as I bring you my complaint. Keep me alive through the terror my enemy brings."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:64:2",
+      "text": "Hide me from the plots of the wicked and from the noisy crowd of evildoers."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:64:3",
+      "text": "They sharpen their tongues like swords and aim deadly words like arrows,"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:64:4",
+      "text": "to shoot at innocent people from hiding. They strike without warning and without fear."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:64:5",
+      "text": "They urge each other on in their evil plans. They talk about setting traps in secret and say, “Who will see them?”"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:64:6",
+      "text": "They plot injustice and say, “We’ve worked out the perfect plan!” The human mind and heart are deep and crafty."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:64:7",
+      "text": "But God will shoot at them. An arrow will strike them without warning."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:64:8",
+      "text": "Their own tongues will bring them down. Everyone who sees them will shake their head."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:64:9",
+      "text": "People everywhere will stand in awe. They’ll tell of God’s work and think carefully about what he’s done."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:64:10",
+      "text": "The righteous will rejoice in the LORD and take refuge in him. Everyone with an upright heart will praise him!"
+    }
+  ]
+}
