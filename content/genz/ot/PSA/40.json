@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 40,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:40:1",
+      "text": "For the music director. A psalm by David. I waited patiently for the LORD. He turned toward me and heard my cry."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:40:2",
+      "text": "He pulled me out of a dreadful pit, out of the sticky mud. He set my feet on a rock and gave me firm footing."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:40:3",
+      "text": "He put a new song in my mouth, a song of praise to our God. Many will see what he’s done, stand in awe, and trust the LORD."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:40:4",
+      "text": "Blessed are those who put their trust in the LORD and turn away from the proud and from people who chase lies."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:40:5",
+      "text": "LORD my God, you’ve done so many wonders and made so many plans for us. If I tried to tell you about them all, they’d be more than I could count."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:40:6",
+      "text": "You didn’t want sacrifice or offering. You opened my ears. You didn’t require a burnt offering or a sin offering."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:40:7",
+      "text": "Then I said, “Here I am. What is written about me is in the scroll."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:40:8",
+      "text": "I take joy in doing your will, my God. Your instruction is in my heart.”"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:40:9",
+      "text": "I’ve announced the good news of your righteousness in the great assembly. You know, LORD, that I won’t keep quiet."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:40:10",
+      "text": "I haven’t kept your righteousness to myself. I’ve told of your faithfulness and your salvation. I haven’t hidden your faithful love or your truth from the great assembly."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:40:11",
+      "text": "LORD, don’t hold back your tender mercy from me. Keep me safe always with your faithful love and truth."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:40:12",
+      "text": "Troubles beyond counting surround me. My wrongs have caught up with me, and I can’t lift my eyes. They outnumber the hairs on my head, and my courage is gone."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:40:13",
+      "text": "Please rescue me, LORD. Hurry to help me, LORD."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:40:14",
+      "text": "Let those who want to take my life be put to shame and confusion together. Turn back and disgrace those who enjoy seeing me hurt."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:40:15",
+      "text": "Let their own shame leave them devastated when they say to me, “Aha! Aha!”"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:40:16",
+      "text": "Let all who seek you rejoice and be glad in you. Let those who love your salvation keep saying, “How great is the LORD!”"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:40:17",
+      "text": "I’m poor and needy. Lord, remember me. You’re my help and my rescuer. My God, don’t delay."
+    }
+  ]
+}
