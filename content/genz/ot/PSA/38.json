@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 38,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:38:1",
+      "text": "A psalm by David, for remembrance. LORD, don’t rebuke me in your wrath or discipline me in your burning anger."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:38:2",
+      "text": "Your arrows have pierced me, and your hand weighs heavily on me."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:38:3",
+      "text": "My whole body is sick because of your anger. My bones have no peace because of my sin."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:38:4",
+      "text": "My wrongs have risen over my head. They’re a burden too heavy for me to carry."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:38:5",
+      "text": "My wounds fester and stink because of my foolishness."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:38:6",
+      "text": "I’m in pain and bent low. I spend the whole day mourning."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:38:7",
+      "text": "My sides burn with pain. My whole body is sick."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:38:8",
+      "text": "I’m weak and badly bruised. I groan because my heart is in anguish."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:38:9",
+      "text": "Lord, you know everything I long for. You hear all my groaning."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:38:10",
+      "text": "My heart pounds. My strength is gone, and the light has left my eyes."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:38:11",
+      "text": "My loved ones and friends keep away from my suffering. Even my family stands far off."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:38:12",
+      "text": "Those who want me dead lay traps for me. Those who want to hurt me make threats and plot lies all day long."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:38:13",
+      "text": "But I act as though I can’t hear, as though I can’t speak."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:38:14",
+      "text": "I’m like someone who hears nothing and has no reply to give."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:38:15",
+      "text": "I put my hope in you, LORD. You’ll answer me, Lord my God."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:38:16",
+      "text": "I said, “Don’t let them gloat over me or boast when I lose my footing.”"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:38:17",
+      "text": "I’m about to fall, and my pain never leaves me."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:38:18",
+      "text": "I’ll confess what I’ve done wrong. I’m sorry for my sin."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:38:19",
+      "text": "My enemies are strong and many. So many people hate me for no reason."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PSA:38:20",
+      "text": "They repay good with evil and oppose me because I pursue what is good."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PSA:38:21",
+      "text": "Don’t leave me, LORD. My God, stay close to me."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PSA:38:22",
+      "text": "Hurry to help me, Lord, my salvation."
+    }
+  ]
+}
