@@ -1,0 +1,281 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "NUM",
+  "bookName": "Numbers",
+  "chapterNumber": 1,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:NUM:1:1",
+      "text": "Yahweh spoke to Moses at the Tent of Meeting in the Sinai wilderness. It was day one of month two, in the second year after Israel left Egypt."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:NUM:1:2",
+      "text": "“Take a census of the whole Israelite community. Go by clan and family, writing down the names of the men one by one."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:NUM:1:3",
+      "text": "You and Aaron will count every man in Israel who’s twenty or older and able to go to war. Count them by division."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:NUM:1:4",
+      "text": "One man from every tribe will help you. Each one must be the head of his family."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:NUM:1:5",
+      "text": "Here are the men who’ll stand with you. From Reuben: Elizur son of Shedeur."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:NUM:1:6",
+      "text": "From Simeon: Shelumiel son of Zurishaddai."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:NUM:1:7",
+      "text": "From Judah: Nahshon son of Amminadab."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:NUM:1:8",
+      "text": "From Issachar: Nethanel son of Zuar."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:NUM:1:9",
+      "text": "From Zebulun: Eliab son of Helon."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:NUM:1:10",
+      "text": "From Joseph’s descendants: Elishama son of Ammihud from Ephraim, and Gamaliel son of Pedahzur from Manasseh."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:NUM:1:11",
+      "text": "From Benjamin: Abidan son of Gideoni."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:NUM:1:12",
+      "text": "From Dan: Ahiezer son of Ammishaddai."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:NUM:1:13",
+      "text": "From Asher: Pagiel son of Ochran."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:NUM:1:14",
+      "text": "From Gad: Eliasaph son of Deuel."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:NUM:1:15",
+      "text": "From Naphtali: Ahira son of Enan.”"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:NUM:1:16",
+      "text": "These were the men called out from the community, the leaders of their ancestral tribes and the heads of Israel’s thousands."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:NUM:1:17",
+      "text": "Moses and Aaron brought together the men named on that list."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:NUM:1:18",
+      "text": "On day one of month two, they gathered the whole community. The men twenty and older registered by name, one by one, giving their ancestry by clan and family."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:NUM:1:19",
+      "text": "Moses counted them there in the Sinai wilderness, just as Yahweh had told him."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:NUM:1:20",
+      "text": "First were the descendants of Reuben, Israel’s firstborn. They were listed by generation, clan, and family, naming each man twenty or older who could go to war."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:NUM:1:21",
+      "text": "Reuben’s tribe had 46,500 men on the list."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:NUM:1:22",
+      "text": "Simeon’s descendants were listed by generation, clan, and family, naming each man twenty or older who could go to war."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:NUM:1:23",
+      "text": "Simeon’s tribe had 59,300 men on the list."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:NUM:1:24",
+      "text": "Gad’s descendants were listed by generation, clan, and family, naming the men twenty or older who could go to war."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:NUM:1:25",
+      "text": "Gad’s tribe had 45,650 men on the list."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:NUM:1:26",
+      "text": "Judah’s descendants were listed by generation, clan, and family, naming the men twenty or older who could go to war."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:NUM:1:27",
+      "text": "Judah’s tribe had 74,600 men on the list."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:NUM:1:28",
+      "text": "Issachar’s descendants were listed by generation, clan, and family, naming the men twenty or older who could go to war."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:NUM:1:29",
+      "text": "Issachar’s tribe had 54,400 men on the list."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:NUM:1:30",
+      "text": "Zebulun’s descendants were listed by generation, clan, and family, naming the men twenty or older who could go to war."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:NUM:1:31",
+      "text": "Zebulun’s tribe had 57,400 men on the list."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:NUM:1:32",
+      "text": "From Joseph’s descendants, Ephraim’s line was listed by generation, clan, and family, naming the men twenty or older who could go to war."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:NUM:1:33",
+      "text": "Ephraim’s tribe had 40,500 men on the list."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:NUM:1:34",
+      "text": "Manasseh’s descendants were listed by generation, clan, and family, naming the men twenty or older who could go to war."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:NUM:1:35",
+      "text": "Manasseh’s tribe had 32,200 men on the list."
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:NUM:1:36",
+      "text": "Benjamin’s descendants were listed by generation, clan, and family, naming the men twenty or older who could go to war."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:NUM:1:37",
+      "text": "Benjamin’s tribe had 35,400 men on the list."
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:NUM:1:38",
+      "text": "Dan’s descendants were listed by generation, clan, and family, naming the men twenty or older who could go to war."
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:NUM:1:39",
+      "text": "Dan’s tribe had 62,700 men on the list."
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:NUM:1:40",
+      "text": "Asher’s descendants were listed by generation, clan, and family, naming the men twenty or older who could go to war."
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:NUM:1:41",
+      "text": "Asher’s tribe had 41,500 men on the list."
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:NUM:1:42",
+      "text": "Naphtali’s descendants were listed by generation, clan, and family, naming the men twenty or older who could go to war."
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:NUM:1:43",
+      "text": "Naphtali’s tribe had 53,400 men on the list."
+    },
+    {
+      "number": 44,
+      "sourceRef": "eng-web:NUM:1:44",
+      "text": "That’s who Moses, Aaron, and the twelve leaders of Israel counted. Each leader represented his own ancestral family."
+    },
+    {
+      "number": 45,
+      "sourceRef": "eng-web:NUM:1:45",
+      "text": "They counted Israel’s men by their ancestral families, everyone twenty or older who could go to war."
+    },
+    {
+      "number": 46,
+      "sourceRef": "eng-web:NUM:1:46",
+      "text": "The total was 603,550."
+    },
+    {
+      "number": 47,
+      "sourceRef": "eng-web:NUM:1:47",
+      "text": "The Levites weren’t counted with the others by ancestral tribe."
+    },
+    {
+      "number": 48,
+      "sourceRef": "eng-web:NUM:1:48",
+      "text": "That’s because Yahweh had told Moses:"
+    },
+    {
+      "number": 49,
+      "sourceRef": "eng-web:NUM:1:49",
+      "text": "“Leave the tribe of Levi out of this count. Don’t register them with the rest of Israel."
+    },
+    {
+      "number": 50,
+      "sourceRef": "eng-web:NUM:1:50",
+      "text": "Put the Levites in charge of the Tabernacle of the Testimony, its furnishings, and everything that belongs to it. They’ll carry the tabernacle and all its furnishings, take care of it, and camp around it."
+    },
+    {
+      "number": 51,
+      "sourceRef": "eng-web:NUM:1:51",
+      "text": "When the tabernacle needs to move, the Levites will take it down. When it needs to go back up, they’ll set it up. Any outsider who comes near must be put to death."
+    },
+    {
+      "number": 52,
+      "sourceRef": "eng-web:NUM:1:52",
+      "text": "The Israelites will pitch their tents by division, each person in their own camp under their own banner."
+    },
+    {
+      "number": 53,
+      "sourceRef": "eng-web:NUM:1:53",
+      "text": "But the Levites will camp around the Tabernacle of the Testimony so wrath doesn’t fall on the Israelite community. The Levites are responsible for taking care of the Tabernacle of the Testimony.”"
+    },
+    {
+      "number": 54,
+      "sourceRef": "eng-web:NUM:1:54",
+      "text": "The Israelites did exactly what Yahweh had told Moses."
+    }
+  ]
+}
