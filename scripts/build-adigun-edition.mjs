@@ -23,6 +23,7 @@ const portion = {
   '2KI': { testament: 'ot', chapters: 25 },
   '1CH': { testament: 'ot', chapters: 29 },
   '2CH': { testament: 'ot', chapters: 36 },
+  EZR: { testament: 'ot', chapters: 10 },
   MAT: { testament: 'nt', chapters: 28 },
 };
 const editionBooks = [];
