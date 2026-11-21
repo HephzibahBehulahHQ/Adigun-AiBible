@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 5,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:5:1",
+      "text": "For the music director, with flutes. A psalm by David. Hear my words, LORD. Pay attention to what weighs on my mind."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:5:2",
+      "text": "Listen to my cry for help, my King and my God, because I’m praying to you."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:5:3",
+      "text": "LORD, you’ll hear my voice in the morning. I’ll lay my requests before you at dawn and watch for your answer."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:5:4",
+      "text": "You take no pleasure in wickedness. Evil can’t live with you."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:5:5",
+      "text": "The arrogant can’t stand in your presence. You hate everyone who does wrong."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:5:6",
+      "text": "You destroy those who tell lies. The LORD detests those who are bloodthirsty and deceitful."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:5:7",
+      "text": "But because of your abundant faithful love, I can enter your house. I’ll bow toward your holy temple in reverence for you."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:5:8",
+      "text": "LORD, guide me in your righteousness with enemies around me. Make your path straight before me."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:5:9",
+      "text": "Nothing they say can be trusted. Their hearts plot ruin. Their throats are open graves, and their tongues are full of flattery."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:5:10",
+      "text": "Hold them guilty, God. Let their own schemes bring them down. Drive them out for all their wrongs, because they’ve rebelled against you."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:5:11",
+      "text": "But let everyone who takes refuge in you rejoice. Let them always shout for joy because you protect them. Let those who love your name find joy in you."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:5:12",
+      "text": "You bless those who do what is right, LORD. You surround them with your favor like a shield."
+    }
+  ]
+}
