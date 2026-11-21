@@ -219,6 +219,7 @@ test('legacy WEB bookmarks keep their edition and remove correctly while German 
   await page.getByRole('button',{name:'Merge backup',exact:true}).click();
   await expect(page.getByText('Backup merged and saved on this device.',{exact:true})).toBeVisible();
   await page.getByLabel('Bible version',{exact:true}).selectOption('deu1912');
+  await expect(page).toHaveURL(/read\/GEN\/1\?verse=1&edition=deu1912$/);
   await page.goto(route('saved','GEN',1,1,'deu1912'));
   await expect(page.locator('.saved-card .passage-preview p')).toHaveText(sourceVerse(englishGenesis,1,1));
   await expect(page.locator('.saved-card .passage-preview small')).toContainText('World English Bible');
