@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "NUM",
+  "bookName": "Numbers",
+  "chapterNumber": 36,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:NUM:36:1",
+      "text": "The ancestral family heads of Gilead’s descendants came forward. Gilead was the son of Machir, son of Manasseh, from Joseph’s clans. They spoke before Moses and the leaders of Israel’s ancestral families."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:NUM:36:2",
+      "text": "They said, “Yahweh told you, my lord, to give the Israelites their land by drawing lots. Yahweh also told you to give the inheritance of our brother Zelophehad to his daughters."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:NUM:36:3",
+      "text": "If they marry into another Israelite tribe, their land will be taken out of our ancestral inheritance and added to the land of the tribe they marry into. Our share will shrink."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:NUM:36:4",
+      "text": "When Israel’s Year of Jubilee comes, their inheritance will be added to the inheritance of the tribe they married into. Their land will be lost from the inheritance of our ancestral tribe.”"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:NUM:36:5",
+      "text": "Following Yahweh’s word, Moses told the Israelites, “The tribe of Joseph’s descendants is right about this."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:NUM:36:6",
+      "text": "Here’s what Yahweh commands about Zelophehad’s daughters: ‘They can marry whoever they think best, as long as they marry within their father’s tribal clan."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:NUM:36:7",
+      "text": "That way none of Israel’s land will pass from one tribe to another. Each Israelite will keep the inheritance of their ancestral tribe."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:NUM:36:8",
+      "text": "Any daughter who inherits land in an Israelite tribe must marry someone from her father’s tribal clan, so each Israelite can keep their ancestral inheritance."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:NUM:36:9",
+      "text": "No inheritance will move from one tribe to another. Each Israelite tribe will keep its own inheritance.’”"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:NUM:36:10",
+      "text": "Zelophehad’s daughters did what Yahweh had commanded Moses."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:NUM:36:11",
+      "text": "Mahlah, Tirzah, Hoglah, Milcah, and Noah married their father’s brothers’ sons."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:NUM:36:12",
+      "text": "They married into the clans of Manasseh son of Joseph, and their inheritance stayed in their father’s tribal clan."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:NUM:36:13",
+      "text": "These are the commands and rulings Yahweh gave the Israelites through Moses on the plains of Moab, by the Jordan across from Jericho."
+    }
+  ]
+}
