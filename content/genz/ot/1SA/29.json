@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1SA",
+  "bookName": "1 Samuel",
+  "chapterNumber": 29,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1SA:29:1",
+      "text": "The Philistines gathered all their armies at Aphek, while the Israelites camped by the spring at Jezreel."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1SA:29:2",
+      "text": "The Philistine rulers marched past with their troops in groups of hundreds and thousands. David and his men brought up the rear with Achish."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1SA:29:3",
+      "text": "The Philistine commanders asked, “What are these Hebrews doing here?” Achish said, “This is David, who served King Saul of Israel. He's been with me for years. Since he came over to me, I haven't found any fault in him.”"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1SA:29:4",
+      "text": "But the commanders were angry. They told Achish, “Send him back to the place you gave him. He can't go into battle with us. He might turn against us in the fighting. What better way for him to win back his master's favor than with the heads of our men?"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1SA:29:5",
+      "text": "Isn't this the same David the women sang about as they danced? ‘Saul has killed his thousands, and David his tens of thousands.’”"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1SA:29:6",
+      "text": "Achish called David and told him, “As surely as the LORD lives, you've been honest with me. I've been glad to have you go out and come back with me in the army. From the day you came to me until now, I haven't found anything wrong with what you've done. But the other rulers don't trust you."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1SA:29:7",
+      "text": "So turn back and go in peace. Don't do anything that would upset the Philistine rulers.”"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1SA:29:8",
+      "text": "David asked, “What have I done? What fault have you found in me since I entered your service? Why can't I go and fight the enemies of my lord the king?”"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1SA:29:9",
+      "text": "Achish answered, “As far as I'm concerned, you've been as good as an angel of God. But the Philistine commanders have said you can't go into battle with us."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1SA:29:10",
+      "text": "Get up early tomorrow with the men who came with you from your master's service. Leave as soon as it's light.”"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1SA:29:11",
+      "text": "David and his men got up early and went back to Philistine territory, while the Philistines went up to Jezreel."
+    }
+  ]
+}
