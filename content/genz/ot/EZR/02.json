@@ -1,0 +1,361 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "EZR",
+  "bookName": "Ezra",
+  "chapterNumber": 2,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:EZR:2:1",
+      "text": "Here are the people of the province who returned from exile. King Nebuchadnezzar of Babylon had taken them to Babylon, and they came back to Jerusalem and Judah, each to their own town."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:EZR:2:2",
+      "text": "They came with Zerubbabel, Jeshua, Nehemiah, Seraiah, Reelaiah, Mordecai, Bilshan, Mispar, Bigvai, Rehum, and Baanah. Here is the count of the Israelite men."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:EZR:2:3",
+      "text": "Parosh's descendants numbered two thousand one hundred seventy-two."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:EZR:2:4",
+      "text": "Shephatiah's descendants numbered three hundred seventy-two."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:EZR:2:5",
+      "text": "Arah's descendants numbered seven hundred seventy-five."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:EZR:2:6",
+      "text": "Pahathmoab's descendants from the families of Jeshua and Joab numbered two thousand eight hundred twelve."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:EZR:2:7",
+      "text": "Elam's descendants numbered one thousand two hundred fifty-four."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:EZR:2:8",
+      "text": "Zattu's descendants numbered nine hundred forty-five."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:EZR:2:9",
+      "text": "Zaccai's descendants numbered seven hundred sixty."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:EZR:2:10",
+      "text": "Bani's descendants numbered six hundred forty-two."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:EZR:2:11",
+      "text": "Bebai's descendants numbered six hundred twenty-three."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:EZR:2:12",
+      "text": "Azgad's descendants numbered one thousand two hundred twenty-two."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:EZR:2:13",
+      "text": "Adonikam's descendants numbered six hundred sixty-six."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:EZR:2:14",
+      "text": "Bigvai's descendants numbered two thousand fifty-six."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:EZR:2:15",
+      "text": "Adin's descendants numbered four hundred fifty-four."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:EZR:2:16",
+      "text": "Ater's descendants through Hezekiah numbered ninety-eight."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:EZR:2:17",
+      "text": "Bezai's descendants numbered three hundred twenty-three."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:EZR:2:18",
+      "text": "Jorah's descendants numbered one hundred twelve."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:EZR:2:19",
+      "text": "Hashum's descendants numbered two hundred twenty-three."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:EZR:2:20",
+      "text": "Gibbar's descendants numbered ninety-five."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:EZR:2:21",
+      "text": "From Bethlehem came one hundred twenty-three."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:EZR:2:22",
+      "text": "From Netophah came fifty-six."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:EZR:2:23",
+      "text": "From Anathoth came one hundred twenty-eight."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:EZR:2:24",
+      "text": "From Azmaveth came forty-two."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:EZR:2:25",
+      "text": "From Kiriath Arim, Chephirah, and Beeroth came seven hundred forty-three."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:EZR:2:26",
+      "text": "From Ramah and Geba came six hundred twenty-one."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:EZR:2:27",
+      "text": "From Michmas came one hundred twenty-two."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:EZR:2:28",
+      "text": "From Bethel and Ai came two hundred twenty-three."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:EZR:2:29",
+      "text": "From Nebo came fifty-two."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:EZR:2:30",
+      "text": "Magbish's descendants numbered one hundred fifty-six."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:EZR:2:31",
+      "text": "the other Elam's descendants numbered one thousand two hundred fifty-four."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:EZR:2:32",
+      "text": "Harim's descendants numbered three hundred twenty."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:EZR:2:33",
+      "text": "From Lod, Hadid, and Ono came seven hundred twenty-five."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:EZR:2:34",
+      "text": "From Jericho came three hundred forty-five."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:EZR:2:35",
+      "text": "From Senaah came three thousand six hundred thirty."
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:EZR:2:36",
+      "text": "The priests included nine hundred seventy-three descendants of Jedaiah from the family of Jeshua."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:EZR:2:37",
+      "text": "Immer's descendants numbered one thousand fifty-two."
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:EZR:2:38",
+      "text": "Pashhur's descendants numbered one thousand two hundred forty-seven."
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:EZR:2:39",
+      "text": "Harim's descendants numbered one thousand seventeen."
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:EZR:2:40",
+      "text": "The Levites included seventy-four descendants of Jeshua and Kadmiel from the family of Hodaviah."
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:EZR:2:41",
+      "text": "The singers were Asaph's descendants, a hundred twenty-eight in all."
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:EZR:2:42",
+      "text": "The gatekeepers came from the families of Shallum, Ater, Talmon, Akkub, Hatita, and Shobai. They numbered a hundred thirty-nine in all."
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:EZR:2:43",
+      "text": "The temple servants came from the families of Ziha, Hasupha, and Tabbaoth,"
+    },
+    {
+      "number": 44,
+      "sourceRef": "eng-web:EZR:2:44",
+      "text": "Keros, Siaha, Padon,"
+    },
+    {
+      "number": 45,
+      "sourceRef": "eng-web:EZR:2:45",
+      "text": "Lebanah, Hagabah, Akkub,"
+    },
+    {
+      "number": 46,
+      "sourceRef": "eng-web:EZR:2:46",
+      "text": "Hagab, Shamlai, Hanan,"
+    },
+    {
+      "number": 47,
+      "sourceRef": "eng-web:EZR:2:47",
+      "text": "Giddel, Gahar, Reaiah,"
+    },
+    {
+      "number": 48,
+      "sourceRef": "eng-web:EZR:2:48",
+      "text": "Rezin, Nekoda, Gazzam,"
+    },
+    {
+      "number": 49,
+      "sourceRef": "eng-web:EZR:2:49",
+      "text": "Uzza, Paseah, Besai,"
+    },
+    {
+      "number": 50,
+      "sourceRef": "eng-web:EZR:2:50",
+      "text": "Asnah, Meunim, Nephisim,"
+    },
+    {
+      "number": 51,
+      "sourceRef": "eng-web:EZR:2:51",
+      "text": "Bakbuk, Hakupha, Harhur,"
+    },
+    {
+      "number": 52,
+      "sourceRef": "eng-web:EZR:2:52",
+      "text": "Bazluth, Mehida, Harsha,"
+    },
+    {
+      "number": 53,
+      "sourceRef": "eng-web:EZR:2:53",
+      "text": "Barkos, Sisera, Temah,"
+    },
+    {
+      "number": 54,
+      "sourceRef": "eng-web:EZR:2:54",
+      "text": "Neziah and Hatipha."
+    },
+    {
+      "number": 55,
+      "sourceRef": "eng-web:EZR:2:55",
+      "text": "The descendants of Solomon's servants came from the families of Sotai, Hassophereth, and Peruda,"
+    },
+    {
+      "number": 56,
+      "sourceRef": "eng-web:EZR:2:56",
+      "text": "Jaalah, Darkon, Giddel,"
+    },
+    {
+      "number": 57,
+      "sourceRef": "eng-web:EZR:2:57",
+      "text": "Shephatiah, Hattil, Pochereth Hazzebaim, and Ami."
+    },
+    {
+      "number": 58,
+      "sourceRef": "eng-web:EZR:2:58",
+      "text": "The temple servants and the descendants of Solomon's servants numbered three hundred ninety-two altogether."
+    },
+    {
+      "number": 59,
+      "sourceRef": "eng-web:EZR:2:59",
+      "text": "Some people returned from Tel Melah, Tel Harsha, Cherub, Addan, and Immer without records to establish their ancestry or show whether they belonged to Israel."
+    },
+    {
+      "number": 60,
+      "sourceRef": "eng-web:EZR:2:60",
+      "text": "They included the descendants of Delaiah, Tobiah, and Nekoda, six hundred fifty-two in all."
+    },
+    {
+      "number": 61,
+      "sourceRef": "eng-web:EZR:2:61",
+      "text": "The priestly families included the descendants of Habaiah, Hakkoz, and Barzillai. Barzillai had married a daughter of Barzillai the Gileadite and taken the family's name."
+    },
+    {
+      "number": 62,
+      "sourceRef": "eng-web:EZR:2:62",
+      "text": "They looked for their names in the family records, but their names were missing. So they were disqualified from serving as priests."
+    },
+    {
+      "number": 63,
+      "sourceRef": "eng-web:EZR:2:63",
+      "text": "The governor told them to refrain from eating the most sacred food until a priest could make a ruling using the Urim and Thummim."
+    },
+    {
+      "number": 64,
+      "sourceRef": "eng-web:EZR:2:64",
+      "text": "The whole assembly numbered forty-two thousand three hundred sixty,"
+    },
+    {
+      "number": 65,
+      "sourceRef": "eng-web:EZR:2:65",
+      "text": "plus seven thousand three hundred thirty-seven male and female servants. They also had two hundred men and women who sang."
+    },
+    {
+      "number": 66,
+      "sourceRef": "eng-web:EZR:2:66",
+      "text": "They had seven hundred thirty-six horses and two hundred forty-five mules,"
+    },
+    {
+      "number": 67,
+      "sourceRef": "eng-web:EZR:2:67",
+      "text": "as well as four hundred thirty-five camels and six thousand seven hundred twenty donkeys."
+    },
+    {
+      "number": 68,
+      "sourceRef": "eng-web:EZR:2:68",
+      "text": "When they arrived at the LORD's house in Jerusalem, some family heads gave freely to rebuild God's house on its original site."
+    },
+    {
+      "number": 69,
+      "sourceRef": "eng-web:EZR:2:69",
+      "text": "They gave what they could to the building fund: sixty-one thousand darics of gold, five thousand minas of silver, and a hundred priestly garments."
+    },
+    {
+      "number": 70,
+      "sourceRef": "eng-web:EZR:2:70",
+      "text": "The priests, Levites, some of the people, singers, gatekeepers, and temple servants settled in their own towns. The rest of Israel settled in their towns too."
+    }
+  ]
+}
