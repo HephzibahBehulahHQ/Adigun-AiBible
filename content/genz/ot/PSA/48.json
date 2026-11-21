@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 48,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:48:1",
+      "text": "A song. A psalm by the sons of Korah. Great is the LORD and worthy of great praise in the city of our God, on his holy mountain."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:48:2",
+      "text": "Mount Zion rises beautifully in the far north, the joy of the whole earth, the city of the great King."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:48:3",
+      "text": "God has shown himself to be a refuge inside its fortresses."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:48:4",
+      "text": "Look, the kings gathered and advanced together."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:48:5",
+      "text": "When they saw the city, they were stunned. They panicked and hurried away."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:48:6",
+      "text": "Trembling seized them there, with pain like that of a woman in labor."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:48:7",
+      "text": "With an east wind you shatter the ships of Tarshish."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:48:8",
+      "text": "What we heard about, we’ve now seen for ourselves in the city of the LORD of Armies, the city of our God. God will keep it standing forever. Selah."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:48:9",
+      "text": "Inside your temple, God, we think about your faithful love."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:48:10",
+      "text": "Your praise reaches the ends of the earth, just as your name does, God. Your right hand is full of righteousness."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:48:11",
+      "text": "Let Mount Zion be glad! Let the towns of Judah rejoice because of your judgments."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:48:12",
+      "text": "Walk around Zion. Circle it and count its towers."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:48:13",
+      "text": "Look closely at its walls and take in its palaces, so you can tell the next generation about them."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:48:14",
+      "text": "This God is our God forever and ever. He’ll guide us to the end of our lives."
+    }
+  ]
+}

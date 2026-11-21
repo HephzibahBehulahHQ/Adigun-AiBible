@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 50,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:50:1",
+      "text": "A psalm by Asaph. The Mighty One, God, the LORD, speaks and summons the whole earth from sunrise to sunset."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:50:2",
+      "text": "God shines out from Zion, perfect in beauty."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:50:3",
+      "text": "Our God comes and won’t stay silent. Fire devours everything ahead of him, and a fierce storm rages around him."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:50:4",
+      "text": "He calls to the heavens above and to the earth as he comes to judge his people:"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:50:5",
+      "text": "“Gather my faithful ones to me, those who made a covenant with me by sacrifice.”"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:50:6",
+      "text": "The heavens declare his righteousness, because God himself is the judge. Selah."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:50:7",
+      "text": "“Listen, my people, and I’ll speak. Israel, I’ll testify against you. I am God, your God."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:50:8",
+      "text": "I have no complaint about your sacrifices. Your burnt offerings are always before me."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:50:9",
+      "text": "I don’t need a bull from your stall or male goats from your pens."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:50:10",
+      "text": "Every animal in the forest is mine, along with the cattle on a thousand hills."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:50:11",
+      "text": "I know every bird in the mountains, and all the wild animals of the fields are mine."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:50:12",
+      "text": "If I were hungry, I wouldn’t tell you. The world and everything in it belong to me."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:50:13",
+      "text": "Do I eat the flesh of bulls or drink the blood of goats?"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:50:14",
+      "text": "Offer thanks to God as your sacrifice and keep the vows you made to the Most High."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:50:15",
+      "text": "Call on me when trouble comes. I’ll rescue you, and you’ll honor me.”"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:50:16",
+      "text": "But God says to the wicked, “What right have you to recite my laws or speak my covenant,"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:50:17",
+      "text": "when you hate correction and toss my words aside?"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:50:18",
+      "text": "You see a thief and join in. You make common cause with adulterers."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:50:19",
+      "text": "You give your mouth over to evil, and your tongue spins lies."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PSA:50:20",
+      "text": "You sit and speak against your brother. You slander your own mother’s son."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PSA:50:21",
+      "text": "You did all this while I kept quiet, and you thought I was just like you. Now I’ll rebuke you and lay the charges out before your eyes."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PSA:50:22",
+      "text": "Think about this, you who forget God, or I’ll tear you apart and no one will rescue you."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PSA:50:23",
+      "text": "Those who offer thanks as a sacrifice honor me. To those who set their path right I’ll show the salvation of God.”"
+    }
+  ]
+}
