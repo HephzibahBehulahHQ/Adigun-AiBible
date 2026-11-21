@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 6,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:6:1",
+      "text": "For the music director, with stringed instruments, on the eight-stringed lyre. A psalm by David. LORD, don’t rebuke me in your anger or discipline me in your wrath."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:6:2",
+      "text": "Have mercy on me, LORD, because I’m weak. Heal me, LORD, because my bones are shaking."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:6:3",
+      "text": "I’m shaken to my core. LORD, how long will this go on?"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:6:4",
+      "text": "Turn back to me, LORD. Rescue me. Save me because of your faithful love."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:6:5",
+      "text": "In death no one remembers you. Who can thank you from Sheol?"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:6:6",
+      "text": "I’m worn out from groaning. Every night my tears flood my bed and soak the place where I lie."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:6:7",
+      "text": "My eyes grow weak with grief. They wear out because of all my enemies."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:6:8",
+      "text": "Get away from me, all you who do evil, because the LORD has heard me weeping."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:6:9",
+      "text": "The LORD has heard my plea. The LORD accepts my prayer."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:6:10",
+      "text": "May all my enemies be ashamed and shaken. They’ll turn back, disgraced in an instant."
+    }
+  ]
+}

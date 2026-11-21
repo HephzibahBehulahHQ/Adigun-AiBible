@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 9,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:9:1",
+      "text": "For the music director, to the tune of “The Death of the Son.” A psalm by David. I’ll thank the LORD with my whole heart. I’ll tell about all the wonders you’ve done."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:9:2",
+      "text": "I’ll be glad and rejoice in you. I’ll sing praises to your name, Most High."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:9:3",
+      "text": "When my enemies turn back, they stumble and perish in your presence."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:9:4",
+      "text": "You’ve upheld my just cause. You sit on your throne and judge with righteousness."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:9:5",
+      "text": "You’ve rebuked the nations and destroyed the wicked. You’ve erased their name forever."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:9:6",
+      "text": "The enemy has fallen into ruin without end. Even the memory of the cities you overthrew is gone."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:9:7",
+      "text": "But the LORD reigns forever. He’s set up his throne for judgment."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:9:8",
+      "text": "He’ll judge the world with righteousness and give the peoples a fair judgment."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:9:9",
+      "text": "The LORD is a fortress for the oppressed, a place of safety in times of trouble."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:9:10",
+      "text": "Those who know your name trust you, because you, LORD, have never abandoned those who seek you."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:9:11",
+      "text": "Sing praises to the LORD, who lives in Zion. Tell the peoples what he’s done."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:9:12",
+      "text": "The one who avenges bloodshed remembers those who suffer. He never forgets their cries."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:9:13",
+      "text": "Have mercy on me, LORD. See how those who hate me make me suffer. Lift me away from the gates of death,"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:9:14",
+      "text": "so I can tell of all your praises and rejoice in your rescue at the gates of the daughter of Zion."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:9:15",
+      "text": "The nations have sunk into the pit they dug. Their own feet are caught in the net they hid."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:9:16",
+      "text": "The LORD has made himself known by bringing judgment. The wicked are caught by what their own hands have done. Meditation. Selah."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:9:17",
+      "text": "The wicked will go down to Sheol, along with every nation that forgets God."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:9:18",
+      "text": "The needy won’t be forgotten forever, and the hope of the poor won’t always be lost."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:9:19",
+      "text": "Rise up, LORD! Don’t let human power win. Bring the nations before you for judgment."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PSA:9:20",
+      "text": "Make them tremble, LORD. Let the nations know they’re only human. Selah."
+    }
+  ]
+}
