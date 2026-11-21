@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "NUM",
+  "bookName": "Numbers",
+  "chapterNumber": 34,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:NUM:34:1",
+      "text": "Yahweh told Moses:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:NUM:34:2",
+      "text": "“Give the Israelites these instructions: ‘When you enter Canaan, here are the borders of the land you’ll receive as your inheritance."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:NUM:34:3",
+      "text": "Your southern territory will stretch from the wilderness of Zin along Edom. On its eastern end, the southern border will start at the end of the Salt Sea."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:NUM:34:4",
+      "text": "The border will curve south of the ascent of Akrabbim and pass through Zin. It’ll go south of Kadesh Barnea, then run to Hazar Addar and on to Azmon."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:NUM:34:5",
+      "text": "From Azmon it’ll turn toward the brook of Egypt and end at the sea."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:NUM:34:6",
+      "text": "“‘On the west, the Great Sea and its coastline will be your border."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:NUM:34:7",
+      "text": "“‘Here’s your northern border. Mark it out from the Great Sea to Mount Hor."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:NUM:34:8",
+      "text": "From Mount Hor, mark it out to the entrance of Hamath. The border will pass by Zedad."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:NUM:34:9",
+      "text": "Then it’ll go to Ziphron and end at Hazar Enan. That’s your northern border."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:NUM:34:10",
+      "text": "“‘Mark out your eastern border from Hazar Enan to Shepham."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:NUM:34:11",
+      "text": "From Shepham the border will go down to Riblah, east of Ain. Then it’ll go down to the eastern shore of the Sea of Chinnereth."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:NUM:34:12",
+      "text": "The border will follow the Jordan down to the Salt Sea, where it ends. Those are the borders all the way around your land.’”"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:NUM:34:13",
+      "text": "Moses told the Israelites, “This is the land you’ll inherit by drawing lots. Yahweh has commanded that it go to the nine tribes and the half-tribe."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:NUM:34:14",
+      "text": "The tribes of Reuben and Gad have already received their inheritance by ancestral family, and so has the half-tribe of Manasseh."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:NUM:34:15",
+      "text": "Those two tribes and the half-tribe received their land across the Jordan from Jericho, on the east side toward the sunrise.”"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:NUM:34:16",
+      "text": "Yahweh told Moses:"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:NUM:34:17",
+      "text": "“Here are the men who’ll divide the land among you for your inheritance: Eleazar the priest and Joshua son of Nun."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:NUM:34:18",
+      "text": "Choose one leader from each tribe to help divide the land."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:NUM:34:19",
+      "text": "Here are their names. From Judah: Caleb son of Jephunneh."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:NUM:34:20",
+      "text": "From Simeon: Shemuel son of Ammihud."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:NUM:34:21",
+      "text": "From Benjamin: Elidad son of Chislon."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:NUM:34:22",
+      "text": "From Dan: Bukki son of Jogli, their leader."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:NUM:34:23",
+      "text": "From Joseph’s descendants, for Manasseh: Hanniel son of Ephod, their leader."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:NUM:34:24",
+      "text": "From Ephraim: Kemuel son of Shiphtan, their leader."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:NUM:34:25",
+      "text": "From Zebulun: Elizaphan son of Parnach, their leader."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:NUM:34:26",
+      "text": "From Issachar: Paltiel son of Azzan, their leader."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:NUM:34:27",
+      "text": "From Asher: Ahihud son of Shelomi, their leader."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:NUM:34:28",
+      "text": "From Naphtali: Pedahel son of Ammihud, their leader.”"
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:NUM:34:29",
+      "text": "These were the men Yahweh told to divide the land of Canaan among the Israelites for their inheritance."
+    }
+  ]
+}
