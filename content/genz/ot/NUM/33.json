@@ -1,0 +1,291 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "NUM",
+  "bookName": "Numbers",
+  "chapterNumber": 33,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:NUM:33:1",
+      "text": "Here’s the route the Israelites took when they marched out of Egypt by divisions under Moses and Aaron."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:NUM:33:2",
+      "text": "At Yahweh’s command Moses wrote down where they started each leg of the journey. These are the stages, listed by where each one began."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:NUM:33:3",
+      "text": "They left Rameses on day fifteen of the first month. It was the day after Passover, and the Israelites marched out boldly where all the Egyptians could see them."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:NUM:33:4",
+      "text": "The Egyptians were burying the firstborn Yahweh had struck down among them. Yahweh had also judged their gods."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:NUM:33:5",
+      "text": "The Israelites left Rameses and camped at Succoth."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:NUM:33:6",
+      "text": "They left Succoth and camped at Etham on the edge of the wilderness."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:NUM:33:7",
+      "text": "They left Etham and turned back toward Pihahiroth, across from Baal Zephon. They camped in front of Migdol."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:NUM:33:8",
+      "text": "They left the area in front of Hahiroth and went right through the sea into the wilderness. After three days in the wilderness of Etham, they camped at Marah."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:NUM:33:9",
+      "text": "They left Marah and came to Elim. There were twelve springs and seventy palm trees at Elim, so they camped there."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:NUM:33:10",
+      "text": "They left Elim and camped by the Red Sea."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:NUM:33:11",
+      "text": "They left the Red Sea and camped in the wilderness of Sin."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:NUM:33:12",
+      "text": "They left the wilderness of Sin and camped at Dophkah."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:NUM:33:13",
+      "text": "They left Dophkah and camped at Alush."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:NUM:33:14",
+      "text": "They left Alush and camped at Rephidim. There was no drinking water for the people there."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:NUM:33:15",
+      "text": "They left Rephidim and camped in the wilderness of Sinai."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:NUM:33:16",
+      "text": "They left the wilderness of Sinai and camped at Kibroth Hattaavah."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:NUM:33:17",
+      "text": "They left Kibroth Hattaavah and camped at Hazeroth."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:NUM:33:18",
+      "text": "They left Hazeroth and camped at Rithmah."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:NUM:33:19",
+      "text": "They left Rithmah and camped at Rimmon Perez."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:NUM:33:20",
+      "text": "They left Rimmon Perez and camped at Libnah."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:NUM:33:21",
+      "text": "They left Libnah and camped at Rissah."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:NUM:33:22",
+      "text": "They left Rissah and camped at Kehelathah."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:NUM:33:23",
+      "text": "They left Kehelathah and camped at Mount Shepher."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:NUM:33:24",
+      "text": "They left Mount Shepher and camped at Haradah."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:NUM:33:25",
+      "text": "They left Haradah and camped at Makheloth."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:NUM:33:26",
+      "text": "They left Makheloth and camped at Tahath."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:NUM:33:27",
+      "text": "They left Tahath and camped at Terah."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:NUM:33:28",
+      "text": "They left Terah and camped at Mithkah."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:NUM:33:29",
+      "text": "They left Mithkah and camped at Hashmonah."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:NUM:33:30",
+      "text": "They left Hashmonah and camped at Moseroth."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:NUM:33:31",
+      "text": "They left Moseroth and camped at Bene Jaakan."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:NUM:33:32",
+      "text": "They left Bene Jaakan and camped at Hor Haggidgad."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:NUM:33:33",
+      "text": "They left Hor Haggidgad and camped at Jotbathah."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:NUM:33:34",
+      "text": "They left Jotbathah and camped at Abronah."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:NUM:33:35",
+      "text": "They left Abronah and camped at Ezion Geber."
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:NUM:33:36",
+      "text": "They left Ezion Geber and camped at Kadesh in the wilderness of Zin."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:NUM:33:37",
+      "text": "They left Kadesh and camped at Mount Hor on the edge of Edom."
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:NUM:33:38",
+      "text": "Aaron the priest went up Mount Hor at Yahweh’s command and died there. It was day one of month five, forty years after the Israelites came out of Egypt."
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:NUM:33:39",
+      "text": "Aaron was 123 years old when he died on Mount Hor."
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:NUM:33:40",
+      "text": "The Canaanite king of Arad, who lived in the South of Canaan, heard that the Israelites were coming."
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:NUM:33:41",
+      "text": "They left Mount Hor and camped at Zalmonah."
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:NUM:33:42",
+      "text": "They left Zalmonah and camped at Punon."
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:NUM:33:43",
+      "text": "They left Punon and camped at Oboth."
+    },
+    {
+      "number": 44,
+      "sourceRef": "eng-web:NUM:33:44",
+      "text": "They left Oboth and camped at Iye Abarim on Moab’s border."
+    },
+    {
+      "number": 45,
+      "sourceRef": "eng-web:NUM:33:45",
+      "text": "They left Iyim and camped at Dibon Gad."
+    },
+    {
+      "number": 46,
+      "sourceRef": "eng-web:NUM:33:46",
+      "text": "They left Dibon Gad and camped at Almon Diblathaim."
+    },
+    {
+      "number": 47,
+      "sourceRef": "eng-web:NUM:33:47",
+      "text": "They left Almon Diblathaim and camped in the mountains of Abarim in front of Nebo."
+    },
+    {
+      "number": 48,
+      "sourceRef": "eng-web:NUM:33:48",
+      "text": "They left the mountains of Abarim and camped on the plains of Moab by the Jordan across from Jericho."
+    },
+    {
+      "number": 49,
+      "sourceRef": "eng-web:NUM:33:49",
+      "text": "Their camp along the Jordan stretched from Beth Jeshimoth to Abel Shittim on the plains of Moab."
+    },
+    {
+      "number": 50,
+      "sourceRef": "eng-web:NUM:33:50",
+      "text": "Yahweh spoke to Moses on the plains of Moab by the Jordan across from Jericho:"
+    },
+    {
+      "number": 51,
+      "sourceRef": "eng-web:NUM:33:51",
+      "text": "“Tell the Israelites, ‘When you cross the Jordan into Canaan,"
+    },
+    {
+      "number": 52,
+      "sourceRef": "eng-web:NUM:33:52",
+      "text": "drive out everyone who lives in the land ahead of you. Smash all their stone idols and their metal images, and tear down every one of their worship sites on the heights."
+    },
+    {
+      "number": 53,
+      "sourceRef": "eng-web:NUM:33:53",
+      "text": "Take possession of the land and live there. I’ve given it to you to own."
+    },
+    {
+      "number": 54,
+      "sourceRef": "eng-web:NUM:33:54",
+      "text": "Draw lots to divide the land among your clans. Give larger groups a bigger share and smaller groups a smaller share. Wherever a person’s lot falls, that’s their land. Inherit it according to your ancestral tribes."
+    },
+    {
+      "number": 55,
+      "sourceRef": "eng-web:NUM:33:55",
+      "text": "“‘But if you leave any of the people living there, they’ll be like splinters in your eyes and thorns in your sides. They’ll give you trouble in the land where you live."
+    },
+    {
+      "number": 56,
+      "sourceRef": "eng-web:NUM:33:56",
+      "text": "Then what I planned to do to them, I’ll do to you.’”"
+    }
+  ]
+}
