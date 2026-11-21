@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 70,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:70:1",
+      "text": "For the music director. By David. For remembrance. Hurry, God, to rescue me. Come quickly to help me, LORD."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:70:2",
+      "text": "Let those who want to take my life be put to shame and confusion. Turn back in disgrace those who want to see me ruined."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:70:3",
+      "text": "Let the ones who say, “Aha! Aha!” turn away in shame."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:70:4",
+      "text": "Let all who seek you rejoice and be glad in you. Let those who love your salvation keep saying, “Let God be exalted!”"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:70:5",
+      "text": "I’m poor and needy. Come quickly, God. You’re my help and my rescuer. LORD, don’t delay."
+    }
+  ]
+}
