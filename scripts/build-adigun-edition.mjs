@@ -18,6 +18,7 @@ const portion = {
   JDG: { testament: 'ot', chapters: 21 },
   RUT: { testament: 'ot', chapters: 4 },
   '1SA': { testament: 'ot', chapters: 31 },
+  '2SA': { testament: 'ot', chapters: 24 },
   MAT: { testament: 'nt', chapters: 28 },
 };
 const editionBooks = [];

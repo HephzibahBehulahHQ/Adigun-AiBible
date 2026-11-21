@@ -65,6 +65,12 @@ test('Adigun Edition opens its own Genesis text without an overlay or fallback',
   await expect(page.getByRole('heading', { name: '1 Samuel 31', exact: true })).toBeVisible();
   await expectSourceVerse(page, 13, readAdigun('1SA').chapters[30].verses[12].text);
   await page.getByRole('button', { name: 'Next chapter' }).click();
+  await expect(page.getByRole('heading', { name: '2 Samuel 1', exact: true })).toBeVisible();
+  await expectSourceVerse(page, 1, readAdigun('2SA').chapters[0].verses[0].text);
+  await page.goto('#/read/2SA/24?verse=25&edition=adigun-edition');
+  await expect(page.getByRole('heading', { name: '2 Samuel 24', exact: true })).toBeVisible();
+  await expectSourceVerse(page, 25, readAdigun('2SA').chapters[23].verses[24].text);
+  await page.getByRole('button', { name: 'Next chapter' }).click();
   await expect(page.getByRole('heading', { name: 'Matthew 1', exact: true })).toBeVisible();
   await expectSourceVerse(page, 1, readAdigun('MAT').chapters[0].verses[0].text);
 });
