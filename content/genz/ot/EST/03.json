@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "EST",
+  "bookName": "Esther",
+  "chapterNumber": 3,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:EST:3:1",
+      "text": "After these events King Ahasuerus promoted Haman son of Hammedatha the Agagite and gave him a position above all the other officials."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:EST:3:2",
+      "text": "Everyone serving the king at the palace gate bowed and paid Haman honor, as the king had ordered. Mordecai refused to bow or pay him honor."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:EST:3:3",
+      "text": "The royal servants at the gate asked Mordecai, \"Why are you disobeying the king's order?\""
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:EST:3:4",
+      "text": "They spoke to him day after day, but he wouldn't listen. So they told Haman to find out whether Mordecai's explanation would be accepted. He had told them he was Jewish."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:EST:3:5",
+      "text": "When Haman saw that Mordecai wouldn't bow to him or honor him, he became furious."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:EST:3:6",
+      "text": "When Haman learned who Mordecai's people were, he decided that going after Mordecai alone wasn't enough. He looked for a way to destroy all the Jews, Mordecai's people, throughout the kingdom of Ahasuerus."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:EST:3:7",
+      "text": "In the first month, Nisan, of the twelfth year of King Ahasuerus, they cast the Pur, meaning the lot, in Haman's presence to choose a day and a month. The choice fell on the twelfth month, Adar."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:EST:3:8",
+      "text": "Haman told King Ahasuerus, \"There is a people scattered among the peoples in every province of your kingdom. Their laws differ from everyone else's, and they disobey the king's laws. It isn't in your interest to let them remain."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:EST:3:9",
+      "text": "If it pleases the king, issue a decree to destroy them. I'll pay ten thousand talents of silver to the officials in charge of the king's business to put into the royal treasuries.\""
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:EST:3:10",
+      "text": "The king took off his signet ring and gave it to Haman son of Hammedatha the Agagite, the enemy of the Jews."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:EST:3:11",
+      "text": "The king told Haman, \"The silver is yours, and so are the people. Do with them as you see fit.\""
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:EST:3:12",
+      "text": "On the thirteenth day of the first month, the king's scribes wrote down everything Haman ordered for the royal governors, provincial rulers, and leaders of every people, using each province's script and each people's language. They wrote in King Ahasuerus's name and sealed the decree with his ring."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:EST:3:13",
+      "text": "Couriers carried the letters to every province. They ordered the killing of all Jews, young and old, women and children, on one day, the thirteenth day of the twelfth month, Adar. They also authorized the seizure of their possessions."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:EST:3:14",
+      "text": "A copy of the decree was published throughout every province and made known to all the peoples so they could be ready for that day."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:EST:3:15",
+      "text": "The couriers went out quickly at the king's command, and the decree was announced in the fortress of Susa. The king and Haman sat down to drink, while the city of Susa was in confusion."
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "EST",
+  "bookName": "Esther",
+  "chapterNumber": 4,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:EST:4:1",
+      "text": "When Mordecai learned everything that had happened, he tore his clothes, put on sackcloth and ashes, and went into the middle of the city, crying out loudly and bitterly."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:EST:4:2",
+      "text": "He went as far as the king's gate, because no one wearing sackcloth was allowed inside."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:EST:4:3",
+      "text": "In every province the king's decree reached, the Jews mourned deeply. They fasted, wept, and cried out, and many lay in sackcloth and ashes."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:EST:4:4",
+      "text": "When Esther's attendants and eunuchs told her what was happening, she was deeply distressed. She sent clothes for Mordecai to wear instead of sackcloth, but he refused them."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:EST:4:5",
+      "text": "Esther called Hathach, one of the king's eunuchs assigned to serve her. She ordered him to ask Mordecai what was happening and why."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:EST:4:6",
+      "text": "Hathach went to Mordecai in the city square in front of the king's gate."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:EST:4:7",
+      "text": "Mordecai told him everything that had happened and the exact amount Haman had promised to pay into the royal treasuries for the destruction of the Jews."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:EST:4:8",
+      "text": "He gave Hathach a copy of the decree issued in Susa to destroy the Jews. He told him to show it to Esther, explain it, and urge her to go to the king and plead for her people."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:EST:4:9",
+      "text": "Hathach returned and told Esther what Mordecai had said."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:EST:4:10",
+      "text": "Esther gave Hathach this message for Mordecai:"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:EST:4:11",
+      "text": "\"All the king's officials and everyone in the provinces know the law. Anyone, man or woman, who goes into the inner court to see the king without being summoned must die, unless the king holds out the gold scepter and spares them. I haven't been summoned to the king for thirty days.\""
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:EST:4:12",
+      "text": "Esther's words were reported to Mordecai."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:EST:4:13",
+      "text": "Mordecai sent back this reply: \"Don't assume that living in the king's palace will let you escape when the rest of the Jews are in danger."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:EST:4:14",
+      "text": "If you stay silent now, relief and rescue will come to the Jews from somewhere else, but you and your family will die. Who knows whether you became queen for a time like this?\""
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:EST:4:15",
+      "text": "Then Esther sent Mordecai this reply:"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:EST:4:16",
+      "text": "\"Go gather all the Jews in Susa and fast for me. Go without food and drink for three days, night and day. My attendants and I will fast too. Then I'll go to the king, even though it's against the law. If I die, I die.\""
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:EST:4:17",
+      "text": "Mordecai went and did everything Esther had asked him to do."
+    }
+  ]
+}

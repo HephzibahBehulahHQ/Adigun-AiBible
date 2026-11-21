@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "EST",
+  "bookName": "Esther",
+  "chapterNumber": 5,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:EST:5:1",
+      "text": "On the third day Esther put on her royal robes and stood in the inner courtyard of the palace, across from the king's hall. The king was sitting on his throne inside the hall, facing the entrance."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:EST:5:2",
+      "text": "When the king saw Queen Esther standing in the courtyard, he welcomed her by holding out the gold scepter in his hand. Esther stepped forward and touched its tip."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:EST:5:3",
+      "text": "The king asked, \"What is it, Queen Esther? What's your request? I'll give you even half the kingdom.\""
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:EST:5:4",
+      "text": "Esther answered, \"If it pleases the king, I'd like you and Haman to come today to a banquet I've prepared for you.\""
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:EST:5:5",
+      "text": "The king said, \"Bring Haman quickly so we can do what Esther has asked.\" So the king and Haman went to the banquet Esther had prepared."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:EST:5:6",
+      "text": "While they were drinking wine, the king said to Esther, \"What do you ask? You'll have it. What would you like me to do? I'll do it, even if you ask for half the kingdom.\""
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:EST:5:7",
+      "text": "Esther answered, \"Here is what I ask."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:EST:5:8",
+      "text": "If I've found favor with the king and it pleases him to grant my request, let the king and Haman come to the banquet I'll prepare for them tomorrow. Then I'll answer the king's question.\""
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:EST:5:9",
+      "text": "Haman left that day in high spirits. But when he saw Mordecai at the king's gate and Mordecai stayed seated and didn't move for him, Haman was furious."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:EST:5:10",
+      "text": "He held himself back and went home. Then he sent for his friends and his wife Zeresh."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:EST:5:11",
+      "text": "Haman bragged to them about his wealth, his many children, every promotion the king had given him, and how the king had raised him above the other officials and servants."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:EST:5:12",
+      "text": "He added, \"Queen Esther invited only me to join the king at her banquet, and tomorrow she's invited me back with the king."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:EST:5:13",
+      "text": "Yet none of this gives me any satisfaction as long as I see Mordecai the Jew sitting at the king's gate.\""
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:EST:5:14",
+      "text": "His wife Zeresh and all his friends said, \"Have a gallows built fifty cubits high. In the morning ask the king to hang Mordecai on it. Then you can go to the banquet with the king in good spirits.\" The idea pleased Haman, and he had the gallows built."
+    }
+  ]
+}
