@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "JOB",
+  "bookName": "Job",
+  "chapterNumber": 26,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:JOB:26:1",
+      "text": "Then Job answered:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:JOB:26:2",
+      "text": "\"What a help you've been to someone who has no power! What a rescue for an arm with no strength!"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:JOB:26:3",
+      "text": "What advice you've given to someone without wisdom! How much sound knowledge you've shared!"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:JOB:26:4",
+      "text": "Who were you speaking to? Whose spirit spoke through you?"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:JOB:26:5",
+      "text": "The spirits of the dead tremble beneath the waters and all that live in them."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:JOB:26:6",
+      "text": "Sheol lies bare before God, and Abaddon has nothing to cover it."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:JOB:26:7",
+      "text": "He stretches the northern skies over empty space and hangs the earth on nothing."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:JOB:26:8",
+      "text": "He wraps the waters in thick clouds, yet the clouds don't burst under their weight."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:JOB:26:9",
+      "text": "He covers the face of his throne and spreads his cloud over it."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:JOB:26:10",
+      "text": "He draws a boundary on the surface of the waters where light meets darkness."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:JOB:26:11",
+      "text": "The pillars of heaven tremble and stand in shock at his rebuke."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:JOB:26:12",
+      "text": "By his power he stirs up the sea, and by his understanding he strikes down Rahab."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:JOB:26:13",
+      "text": "His Spirit makes the heavens beautiful. His hand pierces the swift serpent."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:JOB:26:14",
+      "text": "And these are only the edges of what he does. We hear so faint a whisper of him. Who can understand the thunder of his power?\""
+    }
+  ]
+}
