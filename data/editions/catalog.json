@@ -2131,7 +2131,7 @@
       "licenseUrl": "https://github.com/HephzibahBehulahHQ/Adigun-AiBible/blob/main/data/editions/adigun-edition/NOTICE.txt",
       "license": "Project-authorized original edition",
       "attribution": "Adigun Edition. Original project wording based on the public-domain World English Bible source.",
-      "sha256": "381b0769a571168b088c6b8e04a453e37ff92bce3995b67273a506973a504a71",
+      "sha256": "3822aed08aa46f1403f3bfb9d7d405fa5d9e339716a5345eadccc5e4b8e543f0",
       "rights": {
         "redistribute": true,
         "adapt": true,
@@ -2142,16 +2142,16 @@
       "conditions": [
         "Keep the Adigun Edition identity and project notice with redistributed copies."
       ],
-      "revision": "Genesis 1–50; Exodus 1–40; Leviticus 1–27; Numbers 1–36; Deuteronomy 1–34; Joshua 1–24; Judges 1–21; Ruth 1–4; 1 Samuel 1–31; 2 Samuel 1–24; 1 Kings 1–22; 2 Kings 1–25; 1 Chronicles 1–29; 2 Chronicles 1–36; Ezra 1–10; Matthew 1–28",
+      "revision": "Genesis 1–50; Exodus 1–40; Leviticus 1–27; Numbers 1–36; Deuteronomy 1–34; Joshua 1–24; Judges 1–21; Ruth 1–4; 1 Samuel 1–31; 2 Samuel 1–24; 1 Kings 1–22; 2 Kings 1–25; 1 Chronicles 1–29; 2 Chronicles 1–36; Ezra 1–10; Nehemiah 1–13; Matthew 1–28",
       "rightsObservedAt": "2026-11-14",
       "commercialUse": true,
       "referenceSystemId": "adigun-edition:eng-web-alignment",
       "noticePath": "adigun-edition/NOTICE.txt",
       "manifestPath": "adigun-edition/manifest.json",
       "totals": {
-        "books": 16,
-        "chapters": 441,
-        "verses": 13368
+        "books": 17,
+        "chapters": 454,
+        "verses": 13774
       },
       "booksPath": "adigun-edition/books/",
       "searchIndexPath": "adigun-edition/search-index.json"
