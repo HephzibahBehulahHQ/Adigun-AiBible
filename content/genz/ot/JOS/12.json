@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "JOS",
+  "bookName": "Joshua",
+  "chapterNumber": 12,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:JOS:12:1",
+      "text": "These are the kings the Israelites defeated east of the Jordan. Israel took their land from the Arnon Valley to Mount Hermon, including the whole eastern Arabah."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:JOS:12:2",
+      "text": "King Sihon of the Amorites lived in Heshbon. He ruled from Aroer on the edge of the Arnon Valley, including the middle of the valley and half of Gilead, as far as the Jabbok River on the Ammonite border."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:JOS:12:3",
+      "text": "He also ruled the eastern Arabah from the Sea of Chinneroth to the Sea of the Arabah, the Salt Sea, on the way to Beth Jeshimoth, and south below the slopes of Pisgah."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:JOS:12:4",
+      "text": "The Israelites also took the territory of King Og of Bashan, one of the last of the Rephaim, who lived in Ashtaroth and Edrei."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:JOS:12:5",
+      "text": "He ruled Mount Hermon, Salecah, and all of Bashan as far as the borders of the Geshurites and Maacathites. He also ruled half of Gilead, up to the border of King Sihon of Heshbon."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:JOS:12:6",
+      "text": "Moses, the LORD's servant, and the Israelites defeated these kings. Moses gave their land to the tribes of Reuben and Gad and the half tribe of Manasseh as their own."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:JOS:12:7",
+      "text": "Here are the kings Joshua and the Israelites defeated west of the Jordan, from Baal Gad in the Lebanon Valley to Mount Halak, which rises toward Seir. Joshua divided that land among Israel's tribes as their own."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:JOS:12:8",
+      "text": "The land included the hill country, the lowlands, the Arabah, the slopes, the wilderness, and the south. These were the lands of the Hittites, Amorites, Canaanites, Perizzites, Hivites, and Jebusites."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:JOS:12:9",
+      "text": "One king of Jericho and one king of Ai near Bethel."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:JOS:12:10",
+      "text": "One king of Jerusalem and one king of Hebron."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:JOS:12:11",
+      "text": "One king of Jarmuth and one king of Lachish."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:JOS:12:12",
+      "text": "One king of Eglon and one king of Gezer."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:JOS:12:13",
+      "text": "One king of Debir and one king of Geder."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:JOS:12:14",
+      "text": "One king of Hormah and one king of Arad."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:JOS:12:15",
+      "text": "One king of Libnah and one king of Adullam."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:JOS:12:16",
+      "text": "One king of Makkedah and one king of Bethel."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:JOS:12:17",
+      "text": "One king of Tappuah and one king of Hepher."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:JOS:12:18",
+      "text": "One king of Aphek and one king of Lassharon."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:JOS:12:19",
+      "text": "One king of Madon and one king of Hazor."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:JOS:12:20",
+      "text": "One king of Shimron Meron and one king of Achshaph."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:JOS:12:21",
+      "text": "One king of Taanach and one king of Megiddo."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:JOS:12:22",
+      "text": "One king of Kedesh and one king of Jokneam in Carmel."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:JOS:12:23",
+      "text": "One king of Dor in the heights of Dor and one king of Goiim in Gilgal."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:JOS:12:24",
+      "text": "One king of Tirzah. That makes thirty-one kings in all."
+    }
+  ]
+}
