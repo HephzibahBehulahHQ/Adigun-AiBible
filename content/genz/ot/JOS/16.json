@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "JOS",
+  "bookName": "Joshua",
+  "chapterNumber": 16,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:JOS:16:1",
+      "text": "The land assigned by lot to Joseph's descendants began at the Jordan near Jericho, east of the springs of Jericho. It went up through the wilderness from Jericho into the hill country toward Bethel."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:JOS:16:2",
+      "text": "It ran from Bethel to Luz and continued along the border of the Archites to Ataroth."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:JOS:16:3",
+      "text": "Then it went down west to the territory of the Japhletites, as far as Lower Beth Horon and Gezer, and ended at the sea."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:JOS:16:4",
+      "text": "Joseph's descendants, Manasseh and Ephraim, received their inheritance."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:JOS:16:5",
+      "text": "This was Ephraim's territory, clan by clan. On the east, the boundary of their inheritance ran from Ataroth Addar to Upper Beth Horon."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:JOS:16:6",
+      "text": "The border ran west, with Michmethath to the north. Then it turned east toward Taanath Shiloh and passed east of Janoah."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:JOS:16:7",
+      "text": "It went down from Janoah to Ataroth and Naarah, reached Jericho, and ended at the Jordan."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:JOS:16:8",
+      "text": "From Tappuah the border ran west along the Kanah Brook and ended at the sea. This was Ephraim's inheritance, clan by clan."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:JOS:16:9",
+      "text": "They also received towns set apart for them within Manasseh's inheritance, including all the villages belonging to those towns."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:JOS:16:10",
+      "text": "They didn't drive out the Canaanites living in Gezer. Those Canaanites still live within Ephraim's territory today and have been made to do forced labor."
+    }
+  ]
+}
