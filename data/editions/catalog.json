@@ -2131,7 +2131,7 @@
       "licenseUrl": "https://github.com/HephzibahBehulahHQ/Adigun-AiBible/blob/main/data/editions/adigun-edition/NOTICE.txt",
       "license": "Project-authorized original edition",
       "attribution": "Adigun Edition. Original project wording based on the public-domain World English Bible source.",
-      "sha256": "204b9431fd40a4e27c873cb98c0a3490de623c466fb4cd810dd24043bc9fd023",
+      "sha256": "963b4beb7ec9d231809973747c60666257654f77041e3dcf39594d8a246fee63",
       "rights": {
         "redistribute": true,
         "adapt": true,
@@ -2142,16 +2142,16 @@
       "conditions": [
         "Keep the Adigun Edition identity and project notice with redistributed copies."
       ],
-      "revision": "Genesis 1–50; Exodus 1–40; Leviticus 1–27; Numbers 1–36; Deuteronomy 1–34; Matthew 1–28",
+      "revision": "Genesis 1–50; Exodus 1–40; Leviticus 1–27; Numbers 1–36; Deuteronomy 1–34; Joshua 1–24; Matthew 1–28",
       "rightsObservedAt": "2026-11-14",
       "commercialUse": true,
       "referenceSystemId": "adigun-edition:eng-web-alignment",
       "noticePath": "adigun-edition/NOTICE.txt",
       "manifestPath": "adigun-edition/manifest.json",
       "totals": {
-        "books": 6,
-        "chapters": 215,
-        "verses": 6923
+        "books": 7,
+        "chapters": 239,
+        "verses": 7581
       },
       "booksPath": "adigun-edition/books/",
       "searchIndexPath": "adigun-edition/search-index.json"
