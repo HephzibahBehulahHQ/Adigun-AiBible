@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 4,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:4:1",
+      "text": "For the music director, with stringed instruments. A psalm by David. Answer me when I call, God who upholds my cause. Give me room to breathe in my distress. Have mercy and hear my prayer."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:4:2",
+      "text": "People, how long will you turn my honor into shame? How long will you love empty things and chase lies? Selah."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:4:3",
+      "text": "Know that the LORD has set apart the faithful for himself. The LORD hears when I call to him."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:4:4",
+      "text": "Tremble with awe and don’t sin. When you lie down, search your heart and be still. Selah."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:4:5",
+      "text": "Offer sacrifices that are right, and put your trust in the LORD."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:4:6",
+      "text": "Many ask, “Who will show us anything good?” LORD, let the light of your face shine on us."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:4:7",
+      "text": "You’ve given me more joy than they have when their grain and fresh wine are plentiful."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:4:8",
+      "text": "I’ll lie down and sleep in peace, because you alone, LORD, keep me safe."
+    }
+  ]
+}

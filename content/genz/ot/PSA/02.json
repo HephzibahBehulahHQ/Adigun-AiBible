@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 2,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:2:1",
+      "text": "Why are the nations raging? Why are the peoples making plans that will come to nothing?"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:2:2",
+      "text": "The kings of the earth take their stand, and the rulers plot together against the LORD and his Anointed One. They say,"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:2:3",
+      "text": "“Let’s break their chains and throw off their ropes.”"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:2:4",
+      "text": "The one enthroned in heaven laughs. The Lord makes fun of them."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:2:5",
+      "text": "Then he speaks to them in anger and terrifies them with his wrath:"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:2:6",
+      "text": "“I’ve already set my King on Zion, my holy hill.”"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:2:7",
+      "text": "I’ll tell you what the LORD declared to me: “You are my son. Today I have become your father."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:2:8",
+      "text": "Ask me, and I’ll give you the nations as your inheritance and the far ends of the earth as your own."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:2:9",
+      "text": "You’ll break them with an iron rod and smash them like a clay pot.”"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:2:10",
+      "text": "So wise up, you kings. Take this warning, you judges of the earth."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:2:11",
+      "text": "Serve the LORD with reverence and rejoice with trembling."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:2:12",
+      "text": "Honor the Son sincerely, or his anger may flare up and you’ll perish along the way. Blessed are all who take refuge in him."
+    }
+  ]
+}
