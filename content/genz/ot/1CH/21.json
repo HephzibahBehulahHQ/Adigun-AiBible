@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1CH",
+  "bookName": "1 Chronicles",
+  "chapterNumber": 21,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1CH:21:1",
+      "text": "Satan rose up against Israel and stirred David to take a census of the people."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1CH:21:2",
+      "text": "David told Joab and the leaders of the people, \"Go count the people of Israel from Beersheba to Dan. Report back so I can know how many there are.\""
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1CH:21:3",
+      "text": "Joab said, \"May the LORD make his people a hundred times as numerous as they are now. But my lord the king, aren't they all your servants? Why do you want this done? Why bring guilt on Israel?\""
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1CH:21:4",
+      "text": "The king overruled Joab. So Joab went through all Israel and then returned to Jerusalem."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1CH:21:5",
+      "text": "Joab reported the census totals to David. In Israel there were one million one hundred thousand men able to carry a sword, and in Judah there were four hundred seventy thousand."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1CH:21:6",
+      "text": "Joab left Levi and Benjamin out of the count because he found the king's order repulsive."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1CH:21:7",
+      "text": "God was displeased by what David had done, so he struck Israel."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1CH:21:8",
+      "text": "David said to God, \"I've sinned terribly by doing this. Please take away your servant's guilt. I've acted very foolishly.\""
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1CH:21:9",
+      "text": "The LORD spoke to Gad, David's seer."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1CH:21:10",
+      "text": "\"Go tell David, 'The LORD says: I'm giving you three choices. Pick one, and I'll do it to you.'\""
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1CH:21:11",
+      "text": "Gad went to David and said, \"The LORD says, 'Choose:"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1CH:21:12",
+      "text": "three years of famine, three months of being overwhelmed by your foes while their swords overtake you, or three days of the LORD's sword, with plague in the land and the LORD's angel bringing destruction throughout Israel.' Think it over and tell me what answer to take back to the one who sent me.\""
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1CH:21:13",
+      "text": "David told Gad, \"I'm in terrible distress. Please let me fall into the LORD's hands, because his mercy is great. Keep me from falling into human hands.\""
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1CH:21:14",
+      "text": "So the LORD sent a plague on Israel, and seventy thousand men of Israel died."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:1CH:21:15",
+      "text": "God sent an angel to destroy Jerusalem. Just as the angel was about to destroy it, the LORD saw what was happening and relented. He told the angel bringing destruction, \"Enough. Pull back your hand.\" The LORD's angel was standing by the threshing floor of Ornan the Jebusite."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:1CH:21:16",
+      "text": "David looked up and saw the LORD's angel standing between earth and sky, with a drawn sword stretched out over Jerusalem. David and the elders put their faces to the ground in sackcloth."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:1CH:21:17",
+      "text": "David said to God, \"I'm the one who ordered the census. I sinned and did something terribly wrong. But what have these sheep done? LORD my God, please let your hand fall on me and my father's family, and spare your people from the plague.\""
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:1CH:21:18",
+      "text": "The LORD's angel told Gad to tell David to go up and build an altar to the LORD on the threshing floor of Ornan the Jebusite."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:1CH:21:19",
+      "text": "David went up as Gad had told him to do in the LORD's name."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:1CH:21:20",
+      "text": "Ornan was threshing wheat when he turned and saw the angel. His four sons, who were there with him, hid."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:1CH:21:21",
+      "text": "As David approached, Ornan saw him, came out from the threshing floor, and bowed before David with his face to the ground."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:1CH:21:22",
+      "text": "David said to Ornan, \"Sell me this threshing floor so I can build an altar to the LORD here. Sell it to me at full price, so the plague on the people can be stopped.\""
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:1CH:21:23",
+      "text": "Ornan told David, \"Take it. My lord the king can do whatever seems right to him. I'll give you the oxen for burnt offerings, the threshing tools for firewood, and the wheat for the grain offering. I give you all of it.\""
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:1CH:21:24",
+      "text": "King David answered Ornan, \"No. I'll buy it at full price. I won't take what belongs to you and give it to the LORD, or make a burnt offering that costs me nothing.\""
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:1CH:21:25",
+      "text": "So David paid Ornan six hundred shekels of gold by weight for the site."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:1CH:21:26",
+      "text": "David built an altar to the LORD there and presented burnt offerings and peace offerings. He called on the LORD, who answered him with fire from heaven on the altar for burnt offerings."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:1CH:21:27",
+      "text": "The LORD gave the angel an order, and the angel put his sword back in its sheath."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:1CH:21:28",
+      "text": "When David saw that the LORD had answered him at Ornan the Jebusite's threshing floor, he offered sacrifices there."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:1CH:21:29",
+      "text": "At that time the LORD's tabernacle, which Moses had made in the wilderness, and the altar for burnt offerings were at the high place in Gibeon."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:1CH:21:30",
+      "text": "David was too afraid of the LORD's angel and his sword to go there to ask God for guidance."
+    }
+  ]
+}
