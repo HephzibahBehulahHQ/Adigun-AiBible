@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 22,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:22:1",
+      "text": "For the music director, to the tune of “The Doe of the Morning.” A psalm by David. My God, my God, why have you abandoned me? Why are you so far away when I groan for help?"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:22:2",
+      "text": "My God, I cry out by day and you don’t answer. At night I keep crying."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:22:3",
+      "text": "Yet you are holy, enthroned in the praises of Israel."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:22:4",
+      "text": "Our ancestors trusted you. They trusted, and you rescued them."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:22:5",
+      "text": "They cried out to you and escaped. They trusted you and weren’t let down."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:22:6",
+      "text": "But I’m a worm, hardly human in their eyes. People scorn and despise me."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:22:7",
+      "text": "Everyone who sees me mocks me. They sneer and shake their heads, saying,"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:22:8",
+      "text": "“He trusts the LORD. Let the LORD save him. Let him rescue him if he delights in him so much.”"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:22:9",
+      "text": "Yet you brought me out of the womb. You taught me to trust you at my mother’s breast."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:22:10",
+      "text": "From birth I was placed in your care. You’ve been my God since my mother bore me."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:22:11",
+      "text": "Stay close to me, because trouble is near and there’s no one to help."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:22:12",
+      "text": "Many bulls have surrounded me. Mighty bulls from Bashan have closed in on me."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:22:13",
+      "text": "They open their mouths wide at me like lions roaring and tearing their prey."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:22:14",
+      "text": "I’m poured out like water. All my bones are out of joint. My heart is like wax melting inside me."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:22:15",
+      "text": "My strength has dried up like a shard of pottery, and my tongue sticks to the roof of my mouth. You’ve brought me down into the dust of death."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:22:16",
+      "text": "Dogs have surrounded me. A gang of evildoers has closed in on me. They’ve pierced my hands and feet."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:22:17",
+      "text": "I can count all my bones. They stare at me."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:22:18",
+      "text": "They divide my clothes among themselves and cast lots for what I’m wearing."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:22:19",
+      "text": "But LORD, stay close. You’re my help. Hurry to help me!"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PSA:22:20",
+      "text": "Save me from the sword. Save my precious life from the power of the dog."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PSA:22:21",
+      "text": "Save me from the lion’s mouth! You’ve rescued me from the horns of wild oxen."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PSA:22:22",
+      "text": "I’ll tell my brothers about your name. I’ll praise you in the middle of the assembly."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PSA:22:23",
+      "text": "Praise the LORD, all you who fear him! Give him glory, all you descendants of Jacob! Stand in awe of him, all you descendants of Israel!"
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PSA:22:24",
+      "text": "He took the suffering of the afflicted seriously and never turned his face away. When they cried to him, he listened."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PSA:22:25",
+      "text": "You give me reason to praise you in the great assembly. I’ll keep my vows before those who fear you."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:PSA:22:26",
+      "text": "The humble will eat until they’re satisfied. Those who seek the LORD will praise him. May your hearts live forever!"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:PSA:22:27",
+      "text": "People across the earth will remember and turn to the LORD. Every family of the nations will worship before you."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:PSA:22:28",
+      "text": "The kingdom belongs to the LORD. He rules over the nations."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:PSA:22:29",
+      "text": "All the wealthy on earth will eat and worship. All who go down to the dust will bow before him, even those who cannot keep themselves alive."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:PSA:22:30",
+      "text": "Their descendants will serve him. Generations to come will hear about the Lord."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:PSA:22:31",
+      "text": "They’ll come and tell people yet to be born about his righteousness, because he has done it."
+    }
+  ]
+}
