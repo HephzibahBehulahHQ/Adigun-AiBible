@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "DEU",
+  "bookName": "Deuteronomy",
+  "chapterNumber": 23,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:DEU:23:1",
+      "text": "A man whose genitals have been crushed or cut off may not enter Yahweh’s assembly."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:DEU:23:2",
+      "text": "Someone born from a forbidden union may not enter Yahweh’s assembly. None of their descendants may enter, even to the tenth generation."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:DEU:23:3",
+      "text": "No Ammonite or Moabite may enter Yahweh’s assembly. None of their descendants may enter, even to the tenth generation, for all time."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:DEU:23:4",
+      "text": "They didn’t meet you with bread and water on the road out of Egypt. They also hired Balaam son of Beor from Pethor in Mesopotamia to curse you."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:DEU:23:5",
+      "text": "Yahweh your God refused to listen to Balaam. He turned the curse into a blessing for you because he loved you."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:DEU:23:6",
+      "text": "Don’t seek their peace or prosperity for as long as you live."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:DEU:23:7",
+      "text": "Don’t despise an Edomite. They’re your relatives. Don’t despise an Egyptian either, because you lived as a foreigner in their land."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:DEU:23:8",
+      "text": "Their children in the third generation may enter Yahweh’s assembly."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:DEU:23:9",
+      "text": "When you camp out against your enemies, keep yourselves away from every evil thing."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:DEU:23:10",
+      "text": "If a man becomes unclean because of something that happens during the night, he must go outside the camp and stay out."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:DEU:23:11",
+      "text": "When evening comes, he’ll bathe in water. After sunset he can come back into camp."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:DEU:23:12",
+      "text": "Set aside a place outside the camp where you can go to relieve yourselves."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:DEU:23:13",
+      "text": "Carry a trowel with your gear. When you relieve yourself, use it to dig a hole, then cover up what you left."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:DEU:23:14",
+      "text": "Yahweh your God walks through the middle of your camp to rescue you and hand your enemies over to you. Keep the camp holy so he doesn’t see anything unclean among you and turn away."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:DEU:23:15",
+      "text": "If an enslaved person escapes from their master and comes to you, don’t hand them back."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:DEU:23:16",
+      "text": "Let them live among you in whichever town they choose, wherever they’re most comfortable. Don’t mistreat them."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:DEU:23:17",
+      "text": "No Israelite woman or man is to serve as a shrine prostitute."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:DEU:23:18",
+      "text": "Don’t bring the pay of a female or male prostitute into the house of Yahweh your God to fulfill a vow. Yahweh your God finds both detestable."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:DEU:23:19",
+      "text": "Don’t charge a fellow Israelite interest on a loan, whether it’s money, food, or anything else people lend at interest."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:DEU:23:20",
+      "text": "You can charge a foreigner interest, but don’t charge your fellow Israelites. Then Yahweh your God will bless everything you put your hands to in the land you’re going to possess."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:DEU:23:21",
+      "text": "When you make a vow to Yahweh your God, don’t drag your feet about keeping it. Yahweh your God will require it of you, and you’ll be guilty of sin if you fail to do it."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:DEU:23:22",
+      "text": "If you choose to make no vow, you haven’t sinned."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:DEU:23:23",
+      "text": "Keep the promises you’ve spoken. When you freely make a vow to Yahweh your God, do what you said you’d do."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:DEU:23:24",
+      "text": "When you step into your neighbor’s vineyard, eat as many grapes as you want until you’re full. Don’t put any in a container to take away."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:DEU:23:25",
+      "text": "When you go into your neighbor’s standing grain, you can pick heads of grain by hand. Don’t take a sickle to their crop."
+    }
+  ]
+}

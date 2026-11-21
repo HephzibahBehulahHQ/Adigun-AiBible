@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "DEU",
+  "bookName": "Deuteronomy",
+  "chapterNumber": 20,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:DEU:20:1",
+      "text": "When you go out to battle and see your enemies’ horses, chariots, and an army bigger than yours, don’t be afraid of them. Yahweh your God, who brought you out of Egypt, is with you."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:DEU:20:2",
+      "text": "When you get close to the battle, the priest will step forward and speak to the people."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:DEU:20:3",
+      "text": "He’ll say, “Listen, Israel! Today you’re about to fight your enemies. Don’t lose heart. Don’t be afraid or tremble or let them terrify you."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:DEU:20:4",
+      "text": "Yahweh your God goes with you. He’ll fight for you against your enemies and save you.”"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:DEU:20:5",
+      "text": "The officers will tell the people, “Has anyone built a new house and hasn’t dedicated it yet? Go home. If you die in battle, someone else will dedicate it."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:DEU:20:6",
+      "text": "Has anyone planted a vineyard and hasn’t enjoyed its fruit yet? Go home. If you die in battle, someone else will enjoy the fruit."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:DEU:20:7",
+      "text": "Is anyone engaged to a woman and hasn’t married her yet? Go home. If you die in battle, someone else will marry her.”"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:DEU:20:8",
+      "text": "Then the officers will ask, “Is anyone afraid and losing heart? Go home, so your fear doesn’t make your brothers lose heart too.”"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:DEU:20:9",
+      "text": "When the officers finish speaking, they’ll appoint commanders to lead the army."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:DEU:20:10",
+      "text": "When you approach a town to fight it, first offer it peace."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:DEU:20:11",
+      "text": "If the people accept and open the town to you, everyone there will be made to do forced labor and serve you."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:DEU:20:12",
+      "text": "If they refuse peace and go to war against you, lay siege to the town."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:DEU:20:13",
+      "text": "When Yahweh your God hands the town over to you, put every male in it to the sword."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:DEU:20:14",
+      "text": "Take the women, children, livestock, and everything in the town as spoils for yourselves. You may use what you take from the enemies Yahweh your God has handed over to you."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:DEU:20:15",
+      "text": "That’s how you’ll deal with towns far away, outside the towns of these nations here."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:DEU:20:16",
+      "text": "But in the towns of the peoples whose land Yahweh your God gives you as an inheritance, don’t leave anything alive that breathes."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:DEU:20:17",
+      "text": "Destroy them completely, the Hittites, Amorites, Canaanites, Perizzites, Hivites, and Jebusites, as Yahweh your God commanded."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:DEU:20:18",
+      "text": "Otherwise they’ll teach you to copy the detestable things they’ve done for their gods, and you’ll sin against Yahweh your God."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:DEU:20:19",
+      "text": "When you’ve laid siege to a town for a long time to capture it, don’t take an ax to its fruit trees. You can eat their fruit, so leave them standing. A tree in a field isn’t a person you can lay siege to."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:DEU:20:20",
+      "text": "You may cut down trees you know don’t produce food. Use them to build siegeworks against the town that’s fighting you until it falls."
+    }
+  ]
+}

@@ -1,0 +1,351 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "DEU",
+  "bookName": "Deuteronomy",
+  "chapterNumber": 28,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:DEU:28:1",
+      "text": "If you listen closely to the LORD your God and carefully follow every command I'm giving you today, the LORD your God will set you high above every nation on earth."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:DEU:28:2",
+      "text": "If you listen to the LORD your God, all these blessings will come your way and catch up with you."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:DEU:28:3",
+      "text": "You'll be blessed in the city and in the fields."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:DEU:28:4",
+      "text": "Your children, your crops, and your animals will be blessed, including the young of your herds and flocks."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:DEU:28:5",
+      "text": "Your basket and your kneading bowl will be blessed."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:DEU:28:6",
+      "text": "You'll be blessed when you come in and when you go out."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:DEU:28:7",
+      "text": "The LORD will defeat the enemies who rise up against you. They'll come at you from one direction and run away in seven."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:DEU:28:8",
+      "text": "The LORD will command a blessing on your barns and everything you put your hands to. He'll bless you in the land the LORD your God is giving you."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:DEU:28:9",
+      "text": "If you keep the commands of the LORD your God and follow his ways, he'll establish you as his own holy people, just as he swore to you."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:DEU:28:10",
+      "text": "All the peoples on earth will see that you bear the LORD's name, and they'll be afraid of you."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:DEU:28:11",
+      "text": "The LORD will give you plenty of children, livestock, and crops in the land he swore to your ancestors he would give you."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:DEU:28:12",
+      "text": "The LORD will open up his rich storehouse in the sky to send rain on your land at the right time and bless all your work. You'll lend to many nations without having to borrow."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:DEU:28:13",
+      "text": "The LORD will make you the head instead of the tail. You'll always be on top if you listen to the commands of the LORD your God that I'm giving you today and follow them carefully."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:DEU:28:14",
+      "text": "Don't turn away from anything I'm commanding you today, to the right or to the left, to follow and serve other gods."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:DEU:28:15",
+      "text": "But if you refuse to listen to the LORD your God and fail to follow all his commands and laws I'm giving you today, all these curses will come after you and catch up with you."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:DEU:28:16",
+      "text": "You'll be cursed in the city and in the fields."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:DEU:28:17",
+      "text": "Your basket and your kneading bowl will be cursed."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:DEU:28:18",
+      "text": "Your children, your crops, and the young of your herds and flocks will be cursed."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:DEU:28:19",
+      "text": "You'll be cursed when you come in and when you go out."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:DEU:28:20",
+      "text": "The LORD will send curses, confusion, and rebuke on everything you try to do. You'll be destroyed and perish quickly because you abandoned me by doing evil."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:DEU:28:21",
+      "text": "The LORD will make disease stick to you until he wipes you out of the land you're entering to take over."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:DEU:28:22",
+      "text": "The LORD will strike you with wasting disease, fever, inflammation, scorching heat, the sword, crop blight, and mildew. They'll chase you until you perish."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:DEU:28:23",
+      "text": "The sky above you will be like bronze, and the ground beneath you like iron."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:DEU:28:24",
+      "text": "The LORD will turn your land's rain into powder and dust. It will fall from the sky until you're destroyed."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:DEU:28:25",
+      "text": "The LORD will let your enemies defeat you. You'll go out against them from one direction and run away in seven. You'll be tossed around among all the kingdoms on earth."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:DEU:28:26",
+      "text": "Your bodies will become food for the birds and wild animals, with nobody to scare them away."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:DEU:28:27",
+      "text": "The LORD will strike you with the boils of Egypt, tumors, scurvy, and itching that you can't get rid of."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:DEU:28:28",
+      "text": "The LORD will strike you with madness, blindness, and confusion."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:DEU:28:29",
+      "text": "You'll feel your way around at noon like a blind person in the dark. Nothing you try will go well. You'll be oppressed and robbed all the time, with nobody to rescue you."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:DEU:28:30",
+      "text": "You'll get engaged, but another man will sleep with the woman you were going to marry. You'll build a house and never live in it. You'll plant a vineyard and never enjoy its fruit."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:DEU:28:31",
+      "text": "Your ox will be killed right in front of you, and you won't eat any of it. Your donkey will be taken by force before your eyes and never returned. Your sheep will be handed over to your enemies, and nobody will rescue you."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:DEU:28:32",
+      "text": "Your sons and daughters will be handed over to another people. You'll wear out your eyes looking for them all day, longing for them and powerless to do anything."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:DEU:28:33",
+      "text": "A nation you've never known will eat everything you grow and take everything you've worked for. You'll be oppressed and crushed all the time,"
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:DEU:28:34",
+      "text": "until what you see with your own eyes drives you mad."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:DEU:28:35",
+      "text": "The LORD will strike your knees and legs with painful boils that can't be healed. They'll cover you from the soles of your feet to the top of your head."
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:DEU:28:36",
+      "text": "The LORD will take you and the king you appoint to a nation neither you nor your ancestors ever knew. There you'll serve other gods made of wood and stone."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:DEU:28:37",
+      "text": "You'll become a shocking sight, a cautionary saying, and a name people throw around wherever the LORD takes you."
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:DEU:28:38",
+      "text": "You'll scatter plenty of seed in the fields and harvest hardly anything, because locusts will devour it."
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:DEU:28:39",
+      "text": "You'll plant and tend vineyards, but you won't drink their wine or gather the grapes, because worms will eat them."
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:DEU:28:40",
+      "text": "You'll have olive trees all across your land, but you won't rub any of their oil on yourself, because the olives will fall off."
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:DEU:28:41",
+      "text": "You'll have sons and daughters, but you won't get to keep them, because they'll be taken captive."
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:DEU:28:42",
+      "text": "Locusts will devour all your trees and everything your land grows."
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:DEU:28:43",
+      "text": "The foreigners living among you will rise higher and higher above you, while you sink lower and lower."
+    },
+    {
+      "number": 44,
+      "sourceRef": "eng-web:DEU:28:44",
+      "text": "They'll lend to you, and you won't lend to them. They'll be the head, and you'll be the tail."
+    },
+    {
+      "number": 45,
+      "sourceRef": "eng-web:DEU:28:45",
+      "text": "All these curses will come after you, chase you down, and catch you until you're destroyed, because you refused to listen to the LORD your God and follow the commands and laws he gave you."
+    },
+    {
+      "number": 46,
+      "sourceRef": "eng-web:DEU:28:46",
+      "text": "They'll be a sign and a wonder to you and your descendants forever."
+    },
+    {
+      "number": 47,
+      "sourceRef": "eng-web:DEU:28:47",
+      "text": "You had plenty of everything, yet you didn't serve the LORD your God joyfully and with a glad heart."
+    },
+    {
+      "number": 48,
+      "sourceRef": "eng-web:DEU:28:48",
+      "text": "So you'll serve the enemies the LORD sends against you, hungry, thirsty, naked, and lacking everything. He'll put an iron yoke around your neck until he destroys you."
+    },
+    {
+      "number": 49,
+      "sourceRef": "eng-web:DEU:28:49",
+      "text": "The LORD will bring a nation against you from the far end of the earth. It'll swoop down like an eagle, and you won't understand its language."
+    },
+    {
+      "number": 50,
+      "sourceRef": "eng-web:DEU:28:50",
+      "text": "It's a fierce-looking nation that shows no respect to the elderly and no kindness to the young."
+    },
+    {
+      "number": 51,
+      "sourceRef": "eng-web:DEU:28:51",
+      "text": "They'll eat your livestock and crops until you're destroyed. They won't leave you any grain, new wine, oil, calves, or lambs until they've brought you to ruin."
+    },
+    {
+      "number": 52,
+      "sourceRef": "eng-web:DEU:28:52",
+      "text": "They'll surround all your towns until the high, fortified walls you trusted come down. They'll lay siege to every town throughout the land the LORD your God gave you."
+    },
+    {
+      "number": 53,
+      "sourceRef": "eng-web:DEU:28:53",
+      "text": "Your enemies will put you under such pressure during the siege that you'll eat the flesh of your own sons and daughters, the children the LORD your God gave you."
+    },
+    {
+      "number": 54,
+      "sourceRef": "eng-web:DEU:28:54",
+      "text": "Even the gentlest, most delicate man among you will look with hostility at his brother, the wife he loves, and the children he has left."
+    },
+    {
+      "number": 55,
+      "sourceRef": "eng-web:DEU:28:55",
+      "text": "He won't share any of the flesh of the children he's eating with any of them, because he has nothing else left under the pressure of the siege your enemy lays against all your towns."
+    },
+    {
+      "number": 56,
+      "sourceRef": "eng-web:DEU:28:56",
+      "text": "Even the gentlest, most delicate woman among you, who was too delicate to put her bare foot on the ground, will look with hostility at the husband she loves, her son, and her daughter,"
+    },
+    {
+      "number": 57,
+      "sourceRef": "eng-web:DEU:28:57",
+      "text": "and at the newborn who comes from between her feet and the children she bears. She'll eat them in secret because she has nothing left under the pressure of the siege your enemy lays against your towns."
+    },
+    {
+      "number": 58,
+      "sourceRef": "eng-web:DEU:28:58",
+      "text": "If you fail to follow every word of this law written in this book and fail to honor this glorious and awe-inspiring name, the LORD your God,"
+    },
+    {
+      "number": 59,
+      "sourceRef": "eng-web:DEU:28:59",
+      "text": "the LORD will send terrifying plagues on you and your descendants, devastating plagues and severe sicknesses that go on and on."
+    },
+    {
+      "number": 60,
+      "sourceRef": "eng-web:DEU:28:60",
+      "text": "He'll bring back all the diseases of Egypt that you dreaded, and they'll stick to you."
+    },
+    {
+      "number": 61,
+      "sourceRef": "eng-web:DEU:28:61",
+      "text": "The LORD will even bring on you every sickness and plague this book of the law doesn't mention, until you're destroyed."
+    },
+    {
+      "number": 62,
+      "sourceRef": "eng-web:DEU:28:62",
+      "text": "You were once as numerous as the stars in the sky, but only a few of you will be left, because you refused to listen to the LORD your God."
+    },
+    {
+      "number": 63,
+      "sourceRef": "eng-web:DEU:28:63",
+      "text": "Just as the LORD took joy in doing you good and making you numerous, the LORD will take joy in bringing you to ruin and destroying you. You'll be uprooted from the land you're going in to possess."
+    },
+    {
+      "number": 64,
+      "sourceRef": "eng-web:DEU:28:64",
+      "text": "The LORD will scatter you among all peoples from one end of the earth to the other. There you'll serve gods of wood and stone that neither you nor your ancestors ever knew."
+    },
+    {
+      "number": 65,
+      "sourceRef": "eng-web:DEU:28:65",
+      "text": "Among those nations you'll find no peace and nowhere to rest your feet. There the LORD will give you a trembling heart, failing eyes, and a soul worn out by longing."
+    },
+    {
+      "number": 66,
+      "sourceRef": "eng-web:DEU:28:66",
+      "text": "Your life will hang in the balance. You'll be afraid night and day, with no certainty that you'll live."
+    },
+    {
+      "number": 67,
+      "sourceRef": "eng-web:DEU:28:67",
+      "text": "In the morning you'll say, “I wish it were evening!” At evening you'll say, “I wish it were morning!” That's how terrified you'll be because of what you see."
+    },
+    {
+      "number": 68,
+      "sourceRef": "eng-web:DEU:28:68",
+      "text": "The LORD will send you back to Egypt in ships, along the route I told you you'd never see again. There you'll offer yourselves to your enemies as slaves, men and women alike, but nobody will buy you."
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "DEU",
+  "bookName": "Deuteronomy",
+  "chapterNumber": 24,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:DEU:24:1",
+      "text": "Suppose a man marries a woman and then decides he no longer wants her because he’s found something indecent in her. He writes her a certificate of divorce, puts it in her hand, and sends her out of his house."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:DEU:24:2",
+      "text": "After she leaves his house, she may go and marry another man."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:DEU:24:3",
+      "text": "Suppose her second husband hates her and writes her a certificate of divorce, puts it in her hand, and sends her away, or suppose that husband dies."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:DEU:24:4",
+      "text": "The first husband who sent her away can’t marry her again after she’s been defiled. Yahweh finds that detestable. Don’t bring sin on the land Yahweh your God is giving you as an inheritance."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:DEU:24:5",
+      "text": "When a man has just married, don’t send him out with the army or assign him any other public duty. Let him stay home for a year and bring joy to the wife he married."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:DEU:24:6",
+      "text": "Don’t take someone’s mill or upper millstone as security for a loan. That’s taking their livelihood as security."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:DEU:24:7",
+      "text": "If someone is caught kidnapping a fellow Israelite and treating them as a slave or selling them, the kidnapper must die. That’s how you’ll remove the evil from among you."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:DEU:24:8",
+      "text": "When a case of leprosy turns up, take care to follow everything the Levitical priests teach you. Do exactly what I told them."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:DEU:24:9",
+      "text": "Remember what Yahweh your God did to Miriam on the road out of Egypt."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:DEU:24:10",
+      "text": "When you lend your neighbor anything, don’t go into their house to take their pledge."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:DEU:24:11",
+      "text": "Stand outside and let the person you’re lending to bring the pledge out to you."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:DEU:24:12",
+      "text": "If they’re poor, don’t keep what they pledged overnight."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:DEU:24:13",
+      "text": "Give it back by sunset so they can sleep in their cloak and bless you. Yahweh your God will count that as righteousness for you."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:DEU:24:14",
+      "text": "Don’t take advantage of a hired worker who’s poor and in need, whether they’re a fellow Israelite or a foreigner living in one of your towns."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:DEU:24:15",
+      "text": "Pay them that day, before sunset. They’re poor and counting on that money. If they cry out to Yahweh against you, you’ll be guilty of sin."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:DEU:24:16",
+      "text": "Parents must not be put to death for what their children did, and children must not be put to death for what their parents did. A person may be put to death only for their own sin."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:DEU:24:17",
+      "text": "Don’t deny justice to a foreigner or a child without a father, and don’t take a widow’s clothing as security for a loan."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:DEU:24:18",
+      "text": "Remember that you were a slave in Egypt and Yahweh your God redeemed you there. That’s why I’m telling you to do this."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:DEU:24:19",
+      "text": "When you harvest your field and forget a bundle of grain, don’t go back for it. Leave it for the foreigner, the child without a father, and the widow, so Yahweh your God will bless all the work you do."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:DEU:24:20",
+      "text": "When you beat the branches of your olive tree to harvest it, don’t go back over them. Leave what’s still there for the foreigner, the child without a father, and the widow."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:DEU:24:21",
+      "text": "When you pick grapes from your vineyard, don’t go back for what you missed. Leave it for the foreigner, the child without a father, and the widow."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:DEU:24:22",
+      "text": "Remember that you were a slave in Egypt. That’s why I’m telling you to do this."
+    }
+  ]
+}

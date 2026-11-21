@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "DEU",
+  "bookName": "Deuteronomy",
+  "chapterNumber": 27,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:DEU:27:1",
+      "text": "Moses and the elders of Israel told the people, “Keep all the commands I'm giving you today."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:DEU:27:2",
+      "text": "On the day you cross the Jordan into the land the LORD your God is giving you, set up some large stones and coat them with plaster."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:DEU:27:3",
+      "text": "Once you've crossed, write every word of this law on the stones, so you can enter the land the LORD your God is giving you. It's a land flowing with milk and honey, just as the LORD, the God of your ancestors, promised you."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:DEU:27:4",
+      "text": "After you cross the Jordan, set up these stones on Mount Ebal as I'm telling you today, and coat them with plaster."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:DEU:27:5",
+      "text": "Build a stone altar there for the LORD your God. Don't use any iron tool on the stones."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:DEU:27:6",
+      "text": "Build the altar of the LORD your God out of uncut stones and offer burnt offerings on it to the LORD your God."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:DEU:27:7",
+      "text": "Make peace offerings, eat there, and celebrate in the presence of the LORD your God."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:DEU:27:8",
+      "text": "Write every word of this law clearly on the stones.”"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:DEU:27:9",
+      "text": "Moses and the Levitical priests told all Israel, “Be quiet and listen, Israel! Today you've become the people of the LORD your God."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:DEU:27:10",
+      "text": "So listen to the LORD your God and follow the commands and laws I'm giving you today.”"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:DEU:27:11",
+      "text": "That same day Moses gave the people these instructions."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:DEU:27:12",
+      "text": "“After you cross the Jordan, Simeon, Levi, Judah, Issachar, Joseph, and Benjamin will stand on Mount Gerizim to bless the people."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:DEU:27:13",
+      "text": "Reuben, Gad, Asher, Zebulun, Dan, and Naphtali will stand on Mount Ebal for the curse."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:DEU:27:14",
+      "text": "The Levites must call out in a loud voice to all the men of Israel,"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:DEU:27:15",
+      "text": "‘Cursed is anyone who makes a carved or cast idol and sets it up in secret. A craftsman made it by hand, and the LORD detests it.’ All the people must answer, ‘Amen.’"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:DEU:27:16",
+      "text": "‘Cursed is anyone who dishonors their father or mother.’ All the people must say, ‘Amen.’"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:DEU:27:17",
+      "text": "‘Cursed is anyone who moves their neighbor's boundary marker.’ All the people must say, ‘Amen.’"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:DEU:27:18",
+      "text": "‘Cursed is anyone who leads a blind person off course on the road.’ All the people must say, ‘Amen.’"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:DEU:27:19",
+      "text": "‘Cursed is anyone who denies justice to a foreigner, a fatherless child, or a widow.’ All the people must say, ‘Amen.’"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:DEU:27:20",
+      "text": "‘Cursed is anyone who sleeps with his father's wife, because he dishonors his father's bed.’ All the people must say, ‘Amen.’"
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:DEU:27:21",
+      "text": "‘Cursed is anyone who has sex with any animal.’ All the people must say, ‘Amen.’"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:DEU:27:22",
+      "text": "‘Cursed is anyone who sleeps with his sister, whether she's his father's daughter or his mother's daughter.’ All the people must say, ‘Amen.’"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:DEU:27:23",
+      "text": "‘Cursed is anyone who sleeps with his mother-in-law.’ All the people must say, ‘Amen.’"
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:DEU:27:24",
+      "text": "‘Cursed is anyone who kills their neighbor in secret.’ All the people must say, ‘Amen.’"
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:DEU:27:25",
+      "text": "‘Cursed is anyone who takes a bribe to kill an innocent person.’ All the people must say, ‘Amen.’"
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:DEU:27:26",
+      "text": "‘Cursed is anyone who fails to uphold the words of this law by putting them into practice.’ All the people must say, ‘Amen.’”"
+    }
+  ]
+}

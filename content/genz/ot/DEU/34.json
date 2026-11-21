@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "DEU",
+  "bookName": "Deuteronomy",
+  "chapterNumber": 34,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:DEU:34:1",
+      "text": "Moses went up from the plains of Moab to Mount Nebo, to the top of Pisgah across from Jericho. The LORD showed him all of Gilead as far as Dan,"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:DEU:34:2",
+      "text": "all of Naphtali, the land of Ephraim and Manasseh, and all of Judah as far as the Western Sea,"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:DEU:34:3",
+      "text": "as well as the south and the plain of the Jericho Valley, from the city of palm trees as far as Zoar."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:DEU:34:4",
+      "text": "The LORD told him, “This is the land I swore to Abraham, Isaac, and Jacob that I would give to their descendants. I've let you see it with your own eyes, but you won't cross over into it.”"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:DEU:34:5",
+      "text": "So Moses, the LORD's servant, died there in Moab, just as the LORD had said."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:DEU:34:6",
+      "text": "The LORD buried him in the valley in Moab across from Beth Peor, and to this day nobody knows where his grave is."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:DEU:34:7",
+      "text": "Moses was 120 years old when he died. He could still see clearly and hadn't lost his strength."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:DEU:34:8",
+      "text": "The Israelites cried for Moses in the plains of Moab for thirty days, until their time of mourning was over."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:DEU:34:9",
+      "text": "Joshua son of Nun was full of the spirit of wisdom because Moses had laid his hands on him. The Israelites listened to Joshua and did what the LORD had commanded Moses."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:DEU:34:10",
+      "text": "Since then, no prophet has risen in Israel like Moses, whom the LORD knew face to face."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:DEU:34:11",
+      "text": "No one has matched the signs and wonders the LORD sent him to do in Egypt against Pharaoh, all his servants, and his whole land,"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:DEU:34:12",
+      "text": "or the mighty power and awe-inspiring deeds Moses showed in front of all Israel."
+    }
+  ]
+}
