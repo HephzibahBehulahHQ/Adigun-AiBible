@@ -23,16 +23,17 @@ const expectedBooks = [
   { id: '2CH', testament: 'ot', chapters: Array.from({ length: 36 }, (_, index) => index + 1) },
   { id: 'EZR', testament: 'ot', chapters: Array.from({ length: 10 }, (_, index) => index + 1) },
   { id: 'NEH', testament: 'ot', chapters: Array.from({ length: 13 }, (_, index) => index + 1) },
+  { id: 'EST', testament: 'ot', chapters: Array.from({ length: 10 }, (_, index) => index + 1) },
   { id: 'MAT', testament: 'nt', chapters: Array.from({ length: 28 }, (_, index) => index + 1) },
 ];
 
 test('reader edition contains only complete, source-aligned Adigun chapters in canonical order', () => {
   assert.equal(manifest.edition.name, 'Adigun Edition');
   assert.equal(manifest.edition.scope, 'portion');
-  assert.equal(manifest.edition.revision, 'Genesis 1–50; Exodus 1–40; Leviticus 1–27; Numbers 1–36; Deuteronomy 1–34; Joshua 1–24; Judges 1–21; Ruth 1–4; 1 Samuel 1–31; 2 Samuel 1–24; 1 Kings 1–22; 2 Kings 1–25; 1 Chronicles 1–29; 2 Chronicles 1–36; Ezra 1–10; Nehemiah 1–13; Matthew 1–28');
+  assert.equal(manifest.edition.revision, 'Genesis 1–50; Exodus 1–40; Leviticus 1–27; Numbers 1–36; Deuteronomy 1–34; Joshua 1–24; Judges 1–21; Ruth 1–4; 1 Samuel 1–31; 2 Samuel 1–24; 1 Kings 1–22; 2 Kings 1–25; 1 Chronicles 1–29; 2 Chronicles 1–36; Ezra 1–10; Nehemiah 1–13; Esther 1–10; Matthew 1–28');
   assert.equal(manifest.sourceManifestSha256, sourceManifest.edition.sha256);
-  assert.deepEqual(manifest.books.map(row => row.id), ['GEN', 'EXO', 'LEV', 'NUM', 'DEU', 'JOS', 'JDG', 'RUT', '1SA', '2SA', '1KI', '2KI', '1CH', '2CH', 'EZR', 'NEH', 'MAT']);
-  assert.deepEqual(manifest.totals, { books: 17, chapters: 454, verses: 13774 });
+  assert.deepEqual(manifest.books.map(row => row.id), ['GEN', 'EXO', 'LEV', 'NUM', 'DEU', 'JOS', 'JDG', 'RUT', '1SA', '2SA', '1KI', '2KI', '1CH', '2CH', 'EZR', 'NEH', 'EST', 'MAT']);
+  assert.deepEqual(manifest.totals, { books: 18, chapters: 464, verses: 13941 });
   const installedBooks = [];
   for (const expected of expectedBooks) {
     const source = sourceManifest.books.find(row => row.id === expected.id);
