@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "DEU",
+  "bookName": "Deuteronomy",
+  "chapterNumber": 8,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:DEU:8:1",
+      "text": "Be careful to do everything I’m commanding you today. Then you’ll live, grow in number, and go in and take possession of the land Yahweh promised your ancestors."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:DEU:8:2",
+      "text": "Remember the whole road Yahweh your God led you down for forty years in the wilderness. He humbled you and tested you to see what was in your heart and whether you’d keep his commands."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:DEU:8:3",
+      "text": "He humbled you, let you go hungry, and fed you manna, food that neither you nor your ancestors had ever known. He was teaching you that people need more than bread to live. They live by every word that comes from Yahweh’s mouth."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:DEU:8:4",
+      "text": "For all forty of those years, your clothes didn’t wear out and your feet didn’t swell."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:DEU:8:5",
+      "text": "Take this to heart: Yahweh your God disciplines you the way a father disciplines his son."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:DEU:8:6",
+      "text": "Keep Yahweh your God’s commands, live the way he tells you, and honor him with reverence."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:DEU:8:7",
+      "text": "Yahweh your God is bringing you into a good land, with streams, springs, and underground waters flowing into hills and valleys."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:DEU:8:8",
+      "text": "It’s a land of wheat and barley, grapevines, fig trees, and pomegranates, a land of olive trees and honey."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:DEU:8:9",
+      "text": "You’ll have all the bread you need there and won’t go without anything. Its rocks are iron, and you can dig copper out of its hills."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:DEU:8:10",
+      "text": "When you’ve eaten your fill, bless Yahweh your God for the good land he’s given you."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:DEU:8:11",
+      "text": "Watch out that you don’t forget Yahweh your God by failing to keep the commands, rulings, and laws I’m giving you today."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:DEU:8:12",
+      "text": "You’ll eat your fill, build fine homes, and move into them."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:DEU:8:13",
+      "text": "Your herds and flocks will grow, your silver and gold will pile up, and everything you own will increase."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:DEU:8:14",
+      "text": "When that happens, don’t let pride go to your head and make you forget Yahweh your God, who brought you out of Egypt, out of slavery."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:DEU:8:15",
+      "text": "He led you through that huge, terrifying wilderness, with venomous snakes, scorpions, and dry ground with no water. He poured water for you out of hard flint."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:DEU:8:16",
+      "text": "He fed you manna in the wilderness, food your ancestors had never known. He did it to humble you, test you, and do you good in the end."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:DEU:8:17",
+      "text": "Don’t start thinking, “I got all this wealth by my own power and the strength of my own hands.”"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:DEU:8:18",
+      "text": "Remember Yahweh your God. He’s the one who gives you the power to gain wealth, so he can establish the covenant he swore to your ancestors, as he’s doing today."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:DEU:8:19",
+      "text": "If you forget Yahweh your God, chase after other gods, serve them, and bow down to them, I warn you today that you’ll perish."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:DEU:8:20",
+      "text": "You’ll perish just like the nations Yahweh destroys ahead of you, because you refused to listen to Yahweh your God."
+    }
+  ]
+}
