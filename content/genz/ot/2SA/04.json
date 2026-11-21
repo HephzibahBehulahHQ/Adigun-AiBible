@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "2SA",
+  "bookName": "2 Samuel",
+  "chapterNumber": 4,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:2SA:4:1",
+      "text": "When Saul's son Ishbosheth heard that Abner had died at Hebron, he lost his courage, and all Israel was shaken."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:2SA:4:2",
+      "text": "Two men commanded his raiding bands. Their names were Baanah and Rechab, sons of Rimmon from Beeroth in Benjamin. Beeroth is counted as part of Benjamin,"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:2SA:4:3",
+      "text": "though its people fled to Gittaim, where they've lived as foreigners ever since."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:2SA:4:4",
+      "text": "Saul's son Jonathan had a son who couldn't walk normally. He was five years old when news about Saul and Jonathan came from Jezreel. His nurse picked him up and ran, but in her hurry he fell and injured his feet. His name was Mephibosheth."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:2SA:4:5",
+      "text": "Rechab and Baanah, sons of Rimmon from Beeroth, went to Ishbosheth's house during the hottest part of the day, while he was resting at noon."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:2SA:4:6",
+      "text": "They went into the middle of the house as if to collect wheat. They struck Ishbosheth and escaped."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:2SA:4:7",
+      "text": "They had gone into his bedroom while he was lying on his bed, killed him, and cut off his head. Then they took his head and traveled through the Arabah all night."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:2SA:4:8",
+      "text": "They brought Ishbosheth's head to David at Hebron and said, “Here's the head of Ishbosheth son of Saul, the enemy who wanted you dead. Today the LORD has avenged my lord the king against Saul and his descendants.”"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:2SA:4:9",
+      "text": "David answered Rechab and his brother Baanah, the sons of Rimmon from Beeroth, “As surely as the LORD lives, the one who has rescued me from every trouble,"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:2SA:4:10",
+      "text": "when a man told me, ‘Saul is dead,’ he thought he was bringing good news. I seized him and put him to death in Ziklag. That was his reward for the news."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:2SA:4:11",
+      "text": "How much more should I hold you accountable? Wicked men have murdered an innocent man in his own house, on his own bed. I'll answer for his blood by removing you from the earth.”"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:2SA:4:12",
+      "text": "David ordered his young men to execute them. They cut off their hands and feet and hung their bodies beside the pool at Hebron. They buried Ishbosheth's head in Abner's grave at Hebron."
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "2SA",
+  "bookName": "2 Samuel",
+  "chapterNumber": 3,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:2SA:3:1",
+      "text": "The war between Saul's house and David's house went on for a long time. David grew stronger and stronger, while Saul's family grew weaker and weaker."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:2SA:3:2",
+      "text": "David had sons in Hebron. His firstborn was Amnon, whose mother was Ahinoam from Jezreel."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:2SA:3:3",
+      "text": "His second was Chileab, whose mother was Abigail, the widow of Nabal from Carmel. His third was Absalom, whose mother was Maacah daughter of King Talmai of Geshur."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:2SA:3:4",
+      "text": "His fourth was Adonijah son of Haggith, and his fifth was Shephatiah son of Abital."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:2SA:3:5",
+      "text": "His sixth was Ithream, whose mother was David's wife Eglah. These sons were born to David in Hebron."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:2SA:3:6",
+      "text": "During the war between Saul's and David's households, Abner gained power in Saul's house."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:2SA:3:7",
+      "text": "Saul had a concubine named Rizpah daughter of Aiah. Ishbosheth asked Abner, “Why did you sleep with my father's concubine?”"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:2SA:3:8",
+      "text": "Abner was furious at what Ishbosheth said. “Am I some dog serving Judah? I've been loyal to your father Saul's family, his brothers, and his friends. I haven't handed you over to David, and now you accuse me of wrongdoing over this woman?"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:2SA:3:9",
+      "text": "May God deal with me, Abner, as severely as he sees fit if I fail to do for David what the LORD swore to do for him:"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:2SA:3:10",
+      "text": "take the kingdom away from Saul's family and establish David's throne over Israel and Judah, from Dan to Beersheba.”"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:2SA:3:11",
+      "text": "Ishbosheth was too afraid of Abner to say another word."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:2SA:3:12",
+      "text": "Abner sent messengers to David on his behalf. “Who does the land belong to? Make an alliance with me, and I'll help bring all Israel over to your side.”"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:2SA:3:13",
+      "text": "David said, “Good. I'll make a treaty with you on one condition. Don't come to see me unless you bring Saul's daughter Michal with you.”"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:2SA:3:14",
+      "text": "David sent messengers to Saul's son Ishbosheth demanding, “Give me back my wife Michal. I paid a hundred Philistine foreskins to marry her.”"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:2SA:3:15",
+      "text": "Ishbosheth sent men to take her away from her husband, Paltiel son of Laish."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:2SA:3:16",
+      "text": "Paltiel followed her, weeping all the way to Bahurim. Abner told him, “Go back home.” So he went back."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:2SA:3:17",
+      "text": "Abner told Israel's elders, “You've wanted David as your king for some time."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:2SA:3:18",
+      "text": "Now make it happen. The LORD has said about David, ‘Through my servant David I'll rescue my people Israel from the Philistines and all their enemies.’”"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:2SA:3:19",
+      "text": "Abner also spoke to Benjamin's people. Then he went to Hebron to tell David what Israel and the whole tribe of Benjamin had agreed to."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:2SA:3:20",
+      "text": "Abner came to David at Hebron with twenty men. David gave a feast for Abner and his men."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:2SA:3:21",
+      "text": "Abner told David, “I'll go and gather all Israel to you, my lord the king. They'll make a covenant with you, and you'll rule over all you desire.” David sent Abner on his way, and he left in peace."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:2SA:3:22",
+      "text": "Just then Joab and David's men came back from a raid with a great deal of plunder. Abner was no longer with David at Hebron, because David had sent him away in peace."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:2SA:3:23",
+      "text": "When Joab and all his troops arrived, they told him Abner son of Ner had come to the king and had been sent away in peace."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:2SA:3:24",
+      "text": "Joab went to the king and said, “What have you done? Abner came here to you. Why did you let him get away?"
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:2SA:3:25",
+      "text": "You know Abner son of Ner. He came to trick you, find out where you go and when you return, and learn everything you're doing.”"
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:2SA:3:26",
+      "text": "After leaving David, Joab sent messengers after Abner. They brought him back from the well of Sirah, but David knew nothing about it."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:2SA:3:27",
+      "text": "When Abner returned to Hebron, Joab took him aside inside the gate as if to speak privately with him. There he killed Abner to avenge his brother Asahel."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:2SA:3:28",
+      "text": "When David heard about it, he said, “My kingdom and I are forever innocent before the LORD of the blood of Abner son of Ner."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:2SA:3:29",
+      "text": "May it fall on Joab and his entire family. May there always be someone in Joab's house with a discharge or a serious skin disease, someone who leans on a staff, falls by the sword, or goes without bread.”"
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:2SA:3:30",
+      "text": "Joab and his brother Abishai killed Abner because he had killed their brother Asahel in the battle at Gibeon."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:2SA:3:31",
+      "text": "David ordered Joab and everyone with him to tear their clothes, put on sackcloth, and mourn for Abner. King David himself walked behind the funeral bier."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:2SA:3:32",
+      "text": "They buried Abner in Hebron. The king cried out and wept at his grave, and all the people wept."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:2SA:3:33",
+      "text": "The king sang a lament for Abner. “Should Abner have died like a fool?"
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:2SA:3:34",
+      "text": "Your hands were free, and your feet weren't in chains. You fell as someone falls at the hands of wicked men.” All the people wept for him again."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:2SA:3:35",
+      "text": "While it was still daylight, the people urged David to eat. But he swore, “May God deal with me severely if I taste bread or anything else before the sun goes down.”"
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:2SA:3:36",
+      "text": "The people took notice and were pleased. Everything the king did pleased them."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:2SA:3:37",
+      "text": "That day everyone there and all Israel understood that the king hadn't ordered Abner son of Ner killed."
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:2SA:3:38",
+      "text": "The king asked his servants, “Don't you know a ruler and a great man fell in Israel today?"
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:2SA:3:39",
+      "text": "Today I'm weak, even though I've been anointed king. These sons of Zeruiah are too hard for me to handle. May the LORD repay whoever did this evil for what he's done.”"
+    }
+  ]
+}
