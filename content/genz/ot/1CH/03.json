@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1CH",
+  "bookName": "1 Chronicles",
+  "chapterNumber": 3,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1CH:3:1",
+      "text": "These were David's sons born in Hebron. His firstborn was Amnon, whose mother was Ahinoam from Jezreel. His second was Daniel, whose mother was Abigail from Carmel."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1CH:3:2",
+      "text": "His third was Absalom, son of Maacah daughter of Talmai king of Geshur. His fourth was Adonijah, son of Haggith."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1CH:3:3",
+      "text": "His fifth was Shephatiah, son of Abital. His sixth was Ithream, son of his wife Eglah."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1CH:3:4",
+      "text": "These six were born to David in Hebron, where he ruled for seven years and six months. He ruled for thirty-three years in Jerusalem."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1CH:3:5",
+      "text": "In Jerusalem, Bathshua daughter of Ammiel bore him four sons: Shimea, Shobab, Nathan, and Solomon."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1CH:3:6",
+      "text": "Nine other sons were born there: Ibhar, Elishama, and Eliphelet,"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1CH:3:7",
+      "text": "Nogah, Nepheg, and Japhia,"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1CH:3:8",
+      "text": "and Elishama, Eliada, and Eliphelet."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1CH:3:9",
+      "text": "These were David's sons, besides the sons of his concubines. Tamar was their sister."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1CH:3:10",
+      "text": "Solomon's son was Rehoboam. The family line continued through Rehoboam's son Abijah, then Asa and Jehoshaphat,"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1CH:3:11",
+      "text": "then Joram, Ahaziah, and Joash,"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1CH:3:12",
+      "text": "then Amaziah, Azariah, and Jotham,"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1CH:3:13",
+      "text": "then Ahaz, Hezekiah, and Manasseh,"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1CH:3:14",
+      "text": "then Amon and Josiah."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:1CH:3:15",
+      "text": "Josiah's firstborn was Johanan, his second was Jehoiakim, his third was Zedekiah, and his fourth was Shallum."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:1CH:3:16",
+      "text": "Jehoiakim's sons were Jeconiah and Zedekiah."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:1CH:3:17",
+      "text": "The sons of Jeconiah, who was taken captive, included Shealtiel,"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:1CH:3:18",
+      "text": "as well as Malchiram, Pedaiah, Shenazzar, Jekamiah, Hoshama, and Nedabiah."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:1CH:3:19",
+      "text": "Pedaiah's sons were Zerubbabel and Shimei. Zerubbabel's sons included Meshullam and Hananiah, and Shelomith was their sister."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:1CH:3:20",
+      "text": "He also had five sons named Hashubah, Ohel, Berechiah, Hasadiah, and Jushab Hesed."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:1CH:3:21",
+      "text": "Hananiah's sons were Pelatiah and Jeshaiah. The family records also include the sons of Rephaiah, Arnan, Obadiah, and Shecaniah."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:1CH:3:22",
+      "text": "Shecaniah's son was Shemaiah. The record counts six sons of Shemaiah and names Hattush, Igal, Bariah, Neariah, and Shaphat."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:1CH:3:23",
+      "text": "Neariah had three sons: Elioenai, Hizkiah, and Azrikam."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:1CH:3:24",
+      "text": "Elioenai had seven sons: Hodaviah, Eliashib, Pelaiah, Akkub, Johanan, Delaiah, and Anani."
+    }
+  ]
+}

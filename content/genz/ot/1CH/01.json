@@ -1,0 +1,281 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1CH",
+  "bookName": "1 Chronicles",
+  "chapterNumber": 1,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1CH:1:1",
+      "text": "The family line began with Adam, Seth, and Enosh,"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1CH:1:2",
+      "text": "then Kenan, Mahalalel, and Jared,"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1CH:1:3",
+      "text": "then Enoch, Methuselah, and Lamech,"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1CH:1:4",
+      "text": "then Noah and his sons Shem, Ham, and Japheth."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1CH:1:5",
+      "text": "Japheth's sons were Gomer, Magog, Madai, Javan, Tubal, Meshech, and Tiras."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1CH:1:6",
+      "text": "Gomer's sons were Ashkenaz, Diphath, and Togarmah."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1CH:1:7",
+      "text": "Javan's sons were Elishah, Tarshish, Kittim, and Rodanim."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1CH:1:8",
+      "text": "Ham's sons were Cush, Mizraim, Put, and Canaan."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1CH:1:9",
+      "text": "Cush's sons were Seba, Havilah, Sabta, Raama, and Sabteca. Raamah's sons were Sheba and Dedan."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1CH:1:10",
+      "text": "Cush was also Nimrod's father. Nimrod rose to become a mighty man on earth."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1CH:1:11",
+      "text": "Mizraim was the ancestor of the Ludim, Anamim, Lehabim, and Naphtuhim,"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1CH:1:12",
+      "text": "as well as the Pathrusim, the Casluhim, from whom the Philistines came, and the Caphtorim."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1CH:1:13",
+      "text": "Canaan was the father of Sidon, his firstborn, and Heth. He was also the ancestor of"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1CH:1:14",
+      "text": "the Jebusites, Amorites, and Girgashites,"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:1CH:1:15",
+      "text": "the Hivites, Arkites, and Sinites,"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:1CH:1:16",
+      "text": "and the Arvadites, Zemarites, and Hamathites."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:1CH:1:17",
+      "text": "Shem's descendants were Elam, Asshur, Arpachshad, Lud, Aram, Uz, Hul, Gether, and Meshech."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:1CH:1:18",
+      "text": "Arpachshad was Shelah's father, and Shelah was Eber's father."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:1CH:1:19",
+      "text": "Eber had two sons. One was named Peleg because the earth was divided in his time. His brother was named Joktan."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:1CH:1:20",
+      "text": "Joktan was the father of Almodad, Sheleph, Hazarmaveth, and Jerah,"
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:1CH:1:21",
+      "text": "Hadoram, Uzal, and Diklah,"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:1CH:1:22",
+      "text": "Ebal, Abimael, and Sheba,"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:1CH:1:23",
+      "text": "and Ophir, Havilah, and Jobab. These were all Joktan's sons."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:1CH:1:24",
+      "text": "The family line went from Shem to Arpachshad and Shelah,"
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:1CH:1:25",
+      "text": "then Eber, Peleg, and Reu,"
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:1CH:1:26",
+      "text": "then Serug, Nahor, and Terah,"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:1CH:1:27",
+      "text": "then Abram, who was also called Abraham."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:1CH:1:28",
+      "text": "Abraham's sons were Isaac and Ishmael."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:1CH:1:29",
+      "text": "These were Ishmael's descendants: Nebaioth was his firstborn, followed by Kedar, Adbeel, and Mibsam,"
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:1CH:1:30",
+      "text": "then Mishma, Dumah, Massa, Hadad, and Tema,"
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:1CH:1:31",
+      "text": "and Jetur, Naphish, and Kedemah. These were Ishmael's sons."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:1CH:1:32",
+      "text": "Abraham's concubine Keturah gave birth to Zimran, Jokshan, Medan, Midian, Ishbak, and Shuah. Jokshan's sons were Sheba and Dedan."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:1CH:1:33",
+      "text": "Midian's sons were Ephah, Epher, Hanoch, Abida, and Eldaah. All these were Keturah's descendants."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:1CH:1:34",
+      "text": "Abraham was Isaac's father. Isaac's sons were Esau and Israel."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:1CH:1:35",
+      "text": "Esau's sons were Eliphaz, Reuel, Jeush, Jalam, and Korah."
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:1CH:1:36",
+      "text": "Eliphaz's descendants were Teman, Omar, Zephi, Gatam, Kenaz, Timna, and Amalek."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:1CH:1:37",
+      "text": "Reuel's sons were Nahath, Zerah, Shammah, and Mizzah."
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:1CH:1:38",
+      "text": "Seir's sons were Lotan, Shobal, Zibeon, Anah, Dishon, Ezer, and Dishan."
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:1CH:1:39",
+      "text": "Lotan's sons were Hori and Homam. Timna was Lotan's sister."
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:1CH:1:40",
+      "text": "Shobal's sons were Alian, Manahath, Ebal, Shephi, and Onam. Zibeon's sons were Aiah and Anah."
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:1CH:1:41",
+      "text": "Anah's son was Dishon. Dishon's sons were Hamran, Eshban, Ithran, and Cheran."
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:1CH:1:42",
+      "text": "Ezer's sons were Bilhan, Zaavan, and Jaakan. Dishan's sons were Uz and Aran."
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:1CH:1:43",
+      "text": "These were the kings who ruled Edom before Israel had a king. The first was Bela son of Beor, whose city was Dinhabah."
+    },
+    {
+      "number": 44,
+      "sourceRef": "eng-web:1CH:1:44",
+      "text": "When Bela died, Jobab son of Zerah from Bozrah took his place."
+    },
+    {
+      "number": 45,
+      "sourceRef": "eng-web:1CH:1:45",
+      "text": "When Jobab died, Husham from the land of the Temanites took his place."
+    },
+    {
+      "number": 46,
+      "sourceRef": "eng-web:1CH:1:46",
+      "text": "When Husham died, Hadad son of Bedad took his place. Hadad defeated Midian in the fields of Moab, and his city was Avith."
+    },
+    {
+      "number": 47,
+      "sourceRef": "eng-web:1CH:1:47",
+      "text": "When Hadad died, Samlah from Masrekah took his place."
+    },
+    {
+      "number": 48,
+      "sourceRef": "eng-web:1CH:1:48",
+      "text": "When Samlah died, Shaul from Rehoboth by the River took his place."
+    },
+    {
+      "number": 49,
+      "sourceRef": "eng-web:1CH:1:49",
+      "text": "When Shaul died, Baal Hanan son of Achbor took his place."
+    },
+    {
+      "number": 50,
+      "sourceRef": "eng-web:1CH:1:50",
+      "text": "When Baal Hanan died, Hadad took his place. His city was Pai. His wife was Mehetabel daughter of Matred and granddaughter of Mezahab."
+    },
+    {
+      "number": 51,
+      "sourceRef": "eng-web:1CH:1:51",
+      "text": "Then Hadad died. These were Edom's chiefs: Timna, Aliah, and Jetheth,"
+    },
+    {
+      "number": 52,
+      "sourceRef": "eng-web:1CH:1:52",
+      "text": "Oholibamah, Elah, and Pinon,"
+    },
+    {
+      "number": 53,
+      "sourceRef": "eng-web:1CH:1:53",
+      "text": "Kenaz, Teman, and Mibzar,"
+    },
+    {
+      "number": 54,
+      "sourceRef": "eng-web:1CH:1:54",
+      "text": "and Magdiel and Iram. These were the chiefs of Edom."
+    }
+  ]
+}
