@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "EST",
+  "bookName": "Esther",
+  "chapterNumber": 1,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:EST:1:1",
+      "text": "This happened in the days of King Ahasuerus, who ruled over a hundred twenty-seven provinces from India to Ethiopia."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:EST:1:2",
+      "text": "At that time King Ahasuerus ruled from his royal throne at the palace in Susa."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:EST:1:3",
+      "text": "In the third year of his reign, he gave a banquet for all his officials and servants, with the military leaders of Persia and Media, the nobles, and the provincial leaders in attendance."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:EST:1:4",
+      "text": "For a hundred eighty days he showed off the wealth of his glorious kingdom and the splendor of his royal power."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:EST:1:5",
+      "text": "When that was over, the king gave a seven-day banquet in the garden courtyard of his palace for everyone in the fortress of Susa, from the least to the greatest."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:EST:1:6",
+      "text": "White and blue curtains hung from silver rings on marble columns, tied with cords of fine linen and purple cloth. Gold and silver couches stood on a pavement of red, white, yellow, and black marble."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:EST:1:7",
+      "text": "Drinks were served in gold cups of many designs, and there was plenty of royal wine because the king gave it freely."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:EST:1:8",
+      "text": "By royal order no one was required to drink. The king had told all his palace officials to give each guest as much or as little as he wanted."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:EST:1:9",
+      "text": "Queen Vashti also gave a banquet for the women inside King Ahasuerus's palace."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:EST:1:10",
+      "text": "On the seventh day, when the king was cheerful from drinking wine, he gave an order to the seven eunuchs who served him: Mehuman, Biztha, Harbona, Bigtha, Abagtha, Zethar, and Carcass."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:EST:1:11",
+      "text": "He told them to bring Queen Vashti before him wearing her royal crown so he could show the people and officials how beautiful she was."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:EST:1:12",
+      "text": "Queen Vashti refused to come when the eunuchs brought the king's order. The king was furious, and his anger burned within him."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:EST:1:13",
+      "text": "The king consulted the wise men who understood the times. It was his custom to ask those who knew the law and how to apply it."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:EST:1:14",
+      "text": "His closest advisers were Carshena, Shethar, Admatha, Tarshish, Meres, Marsena, and Memucan, seven leaders of Persia and Media who had direct access to the king and held the highest positions in the kingdom."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:EST:1:15",
+      "text": "\"Under the law, what should we do to Queen Vashti for refusing to obey the order King Ahasuerus sent through the eunuchs?\""
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:EST:1:16",
+      "text": "Memucan answered before the king and the officials, \"Queen Vashti has wronged the king, all his officials, and the people in every province of King Ahasuerus."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:EST:1:17",
+      "text": "Women everywhere will hear what the queen did and look down on their husbands. They'll say, 'King Ahasuerus ordered Queen Vashti to appear before him, and she refused to come.'"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:EST:1:18",
+      "text": "Today the noblewomen of Persia and Media who hear what the queen did will speak the same way to the king's officials. There'll be no end to the disrespect and anger."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:EST:1:19",
+      "text": "If it pleases the king, let him issue a royal decree and have it written into the laws of Persia and Media so it can't be changed. Vashti must never come before King Ahasuerus again, and the king should give her position as queen to someone better than she is."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:EST:1:20",
+      "text": "When the king's decree is announced throughout his vast kingdom, all wives will honor their husbands, whatever their rank.\""
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:EST:1:21",
+      "text": "The king and his officials liked this advice, so the king did what Memucan had proposed."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:EST:1:22",
+      "text": "He sent letters to every province of his kingdom, in each province's script and every people's language, ordering that every man should rule his own household and speak the language of his own people."
+    }
+  ]
+}
