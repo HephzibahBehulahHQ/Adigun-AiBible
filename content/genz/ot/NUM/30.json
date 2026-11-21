@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "NUM",
+  "bookName": "Numbers",
+  "chapterNumber": 30,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:NUM:30:1",
+      "text": "Moses spoke to the heads of Israel’s tribes: “Here’s what Yahweh has commanded."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:NUM:30:2",
+      "text": "When a man makes a vow to Yahweh or takes an oath that binds him to a pledge, he must keep his word. He must do everything he said he’d do."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:NUM:30:3",
+      "text": "“Suppose a young woman still living in her father’s house makes a vow to Yahweh and binds herself with a pledge."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:NUM:30:4",
+      "text": "If her father hears what she vowed or pledged and says nothing to her, all her vows and every pledge she made still stand."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:NUM:30:5",
+      "text": "If her father forbids her on the day he hears about it, none of her vows or binding pledges stand. Yahweh will forgive her because her father forbade her."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:NUM:30:6",
+      "text": "“Suppose she gets married while still bound by a vow or a promise she blurted out without thinking."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:NUM:30:7",
+      "text": "If her husband hears about it and says nothing to her that day, her vows and all her binding pledges still stand."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:NUM:30:8",
+      "text": "But if he forbids her the day he hears about it, he cancels the vow or the hurried promise that bound her. Yahweh will forgive her."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:NUM:30:9",
+      "text": "“A widow or a divorced woman must keep every vow she’s bound herself to."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:NUM:30:10",
+      "text": "“Suppose a woman makes a vow in her husband’s house or takes an oath that binds her to a pledge."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:NUM:30:11",
+      "text": "If her husband hears about it and keeps quiet instead of forbidding her, every vow and binding pledge she made still stands."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:NUM:30:12",
+      "text": "But if he cancels them on the day he hears about them, none of the vows or pledges she spoke will stand. Her husband canceled them, and Yahweh will forgive her."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:NUM:30:13",
+      "text": "Her husband can confirm or cancel any vow or binding oath she makes to deny herself."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:NUM:30:14",
+      "text": "If her husband keeps saying nothing day after day, all the vows and pledges binding her still stand. His silence on the day he heard about them confirmed them."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:NUM:30:15",
+      "text": "If he cancels them later, after he’s heard about them, he’ll bear her guilt.”"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:NUM:30:16",
+      "text": "Those are the rules Yahweh gave Moses for a man and his wife, and for a father and his young daughter while she’s living in his house."
+    }
+  ]
+}
