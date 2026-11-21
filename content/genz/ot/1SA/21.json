@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1SA",
+  "bookName": "1 Samuel",
+  "chapterNumber": 21,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1SA:21:1",
+      "text": "David went to Nob to see Ahimelech the priest. Ahimelech came out trembling to meet him and asked, “Why are you alone? Why isn't anyone with you?”"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1SA:21:2",
+      "text": "David said, “The king sent me on a mission and told me to tell nobody what he sent me to do. I've arranged for my men to meet me at a certain place."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1SA:21:3",
+      "text": "What do you have on hand? Please give me five loaves of bread, or whatever you have.”"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1SA:21:4",
+      "text": "The priest said, “I don't have any ordinary bread. I have holy bread, if the young men have kept away from women.”"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1SA:21:5",
+      "text": "David answered, “We've stayed away from women for these three days, as we usually do. My men's bodies were holy when we set out, even on an ordinary journey. How much more so today?”"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1SA:21:6",
+      "text": "So the priest gave him the holy bread. There was no other bread there except the bread that had been set before the LORD and removed that day to make room for fresh, hot bread."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1SA:21:7",
+      "text": "One of Saul's servants was there that day, detained before the LORD. His name was Doeg the Edomite, and he was Saul's chief herdsman."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1SA:21:8",
+      "text": "David asked Ahimelech, “Do you have a spear or sword here? I didn't bring my sword or any of my weapons, because the king's business was urgent.”"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1SA:21:9",
+      "text": "The priest said, “Goliath the Philistine's sword, the one you took when you killed him in the Valley of Elah, is wrapped in a cloth behind the ephod. Take it if you want it. It's the only one here.” David said, “There's no sword like it. Give it to me.”"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1SA:21:10",
+      "text": "That day David fled from Saul and went to King Achish of Gath."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1SA:21:11",
+      "text": "Achish's servants said, “Isn't this David, the king of the land? Didn't the people dance and sing, ‘Saul has killed his thousands, and David his tens of thousands’?”"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1SA:21:12",
+      "text": "David took their words to heart and became very afraid of King Achish of Gath."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1SA:21:13",
+      "text": "So he changed his behavior in front of them and pretended to have lost his mind while he was in their hands. He scratched on the gate doors and let saliva run down his beard."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1SA:21:14",
+      "text": "Achish told his servants, “Look at him. You can see he's lost his mind. Why did you bring him here?"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:1SA:21:15",
+      "text": "Don't I have enough people acting like this already? Did you have to bring this fellow to act like that in front of me? Should I let him into my house?”"
+    }
+  ]
+}
