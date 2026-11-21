@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1SA",
+  "bookName": "1 Samuel",
+  "chapterNumber": 5,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1SA:5:1",
+      "text": "After capturing God's ark, the Philistines took it from Ebenezer to Ashdod."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1SA:5:2",
+      "text": "They carried it into Dagon's temple and set it beside Dagon."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1SA:5:3",
+      "text": "Early the next morning the people of Ashdod found Dagon lying facedown on the ground in front of the LORD's ark. They lifted him up and put him back in place."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1SA:5:4",
+      "text": "When they got up early the next morning, Dagon had fallen facedown again before the LORD's ark. His head and both hands lay cut off on the threshold. Only his torso was intact."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1SA:5:5",
+      "text": "That's why to this day Dagon's priests and everyone who enters his temple in Ashdod avoid stepping on the threshold."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1SA:5:6",
+      "text": "The LORD's hand weighed heavily on the people of Ashdod. He devastated the town and the surrounding area and struck the people with tumors."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1SA:5:7",
+      "text": "When the people saw what was happening, they said, “The ark of Israel's God can't stay here. His hand is heavy on us and on Dagon our god.”"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1SA:5:8",
+      "text": "So they called all the Philistine rulers together and asked, “What should we do with the ark of Israel's God?” The rulers said to move it to Gath, and that's where they took it."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1SA:5:9",
+      "text": "After they brought it there, the LORD's hand came against the city and threw it into panic. He struck the people, young and old alike, and tumors broke out on them."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1SA:5:10",
+      "text": "They sent God's ark to Ekron. As it arrived, the people of Ekron cried out, “They've brought the ark of Israel's God here to kill us and our people!”"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1SA:5:11",
+      "text": "They called the Philistine rulers together and said, “Send the ark of Israel's God back where it belongs, before it kills us and our people.” Deadly panic had spread through the city, and God's hand weighed heavily on it."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1SA:5:12",
+      "text": "Those who survived were struck with tumors, and the city's cries rose to heaven."
+    }
+  ]
+}
