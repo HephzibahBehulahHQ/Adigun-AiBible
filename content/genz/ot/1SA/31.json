@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1SA",
+  "bookName": "1 Samuel",
+  "chapterNumber": 31,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1SA:31:1",
+      "text": "The Philistines fought Israel. The Israelites fled from them, and many were killed on Mount Gilboa."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1SA:31:2",
+      "text": "The Philistines caught up with Saul and his sons and killed Jonathan, Abinadab, and Malchishua."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1SA:31:3",
+      "text": "The battle closed in around Saul. The archers caught up with him, leaving him in great distress."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1SA:31:4",
+      "text": "Saul asked his armor-bearer to kill him before the uncircumcised Philistines could kill and abuse him. His armor-bearer was too terrified to do it. So Saul took his own life with his sword."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1SA:31:5",
+      "text": "When his armor-bearer saw that Saul was dead, he took his own life too and died beside him."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1SA:31:6",
+      "text": "Saul, his three sons, his armor-bearer, and all his men died together that day."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1SA:31:7",
+      "text": "When the Israelites across the valley and beyond the Jordan saw their army flee and learned that Saul and his sons were dead, they abandoned their towns and ran. The Philistines moved into the towns."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1SA:31:8",
+      "text": "The next day the Philistines went to strip the bodies and found Saul and his three sons lying dead on Mount Gilboa."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1SA:31:9",
+      "text": "They cut off Saul's head and took his armor. Then they sent the news throughout Philistine territory, to the temples of their idols and to the people."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1SA:31:10",
+      "text": "They put his armor in the temple of the Ashtaroth and fastened his body to the wall of Beth Shan."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1SA:31:11",
+      "text": "The people of Jabesh Gilead heard what the Philistines had done to Saul."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1SA:31:12",
+      "text": "All their brave men traveled through the night and took the bodies of Saul and his sons down from the wall of Beth Shan. They brought them to Jabesh and burned them there."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1SA:31:13",
+      "text": "They buried their bones under the tamarisk tree at Jabesh and fasted for seven days."
+    }
+  ]
+}

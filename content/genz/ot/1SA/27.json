@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1SA",
+  "bookName": "1 Samuel",
+  "chapterNumber": 27,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1SA:27:1",
+      "text": "David thought, “One day Saul is going to kill me. My best chance is to escape to Philistine territory. Then Saul will give up looking for me in Israel, and I'll be out of his reach.”"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1SA:27:2",
+      "text": "So David crossed over with his six hundred men to Achish son of Maoch, king of Gath."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1SA:27:3",
+      "text": "David and his men settled with Achish at Gath, each man with his household. David brought his two wives, Ahinoam from Jezreel and Abigail from Carmel, who had been Nabal's wife."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1SA:27:4",
+      "text": "When Saul heard David had fled to Gath, he stopped looking for him."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1SA:27:5",
+      "text": "David told Achish, “If I've found favor with you, let me have a place in one of the country towns. Why should your servant live with you in the royal city?”"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1SA:27:6",
+      "text": "Achish gave him Ziklag that day. That's why Ziklag has belonged to the kings of Judah ever since."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1SA:27:7",
+      "text": "David lived in Philistine territory for a year and four months."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1SA:27:8",
+      "text": "David and his men went up and raided the Geshurites, Girzites, and Amalekites. Those peoples had long lived in the land stretching toward Shur and as far as Egypt."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1SA:27:9",
+      "text": "When David attacked, he left no man or woman alive. He took sheep, cattle, donkeys, camels, and clothing, then returned to Achish."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1SA:27:10",
+      "text": "Achish asked, “Where did you raid today?” David told him, “The south of Judah, the south of the Jerahmeelites, and the south of the Kenites.”"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1SA:27:11",
+      "text": "David left no man or woman alive to bring back to Gath. He thought they might report what he had done. This was his practice the whole time he lived among the Philistines."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1SA:27:12",
+      "text": "Achish trusted David. He thought, “David has made his own people Israel hate him. Now he'll serve me forever.”"
+    }
+  ]
+}
