@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "DEU",
+  "bookName": "Deuteronomy",
+  "chapterNumber": 2,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:DEU:2:1",
+      "text": "Then we turned and headed into the wilderness by the road to the Red Sea, just as Yahweh told me. We traveled around Mount Seir for many days."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:DEU:2:2",
+      "text": "Yahweh spoke to me:"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:DEU:2:3",
+      "text": "“You’ve been going around this mountain long enough. Turn north."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:DEU:2:4",
+      "text": "Tell the people, ‘You’re about to pass through territory that belongs to your relatives, Esau’s descendants who live in Seir. They’ll be afraid of you, so be careful."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:DEU:2:5",
+      "text": "Don’t pick a fight with them. I won’t give you any of their land, even enough to put one foot on. I gave Mount Seir to Esau as his own land."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:DEU:2:6",
+      "text": "Pay them for the food you eat and the water you drink.’”"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:DEU:2:7",
+      "text": "Yahweh your God has blessed everything you’ve worked at. He’s watched over your journey through this vast wilderness. For forty years Yahweh your God has been with you, and you haven’t gone without a thing."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:DEU:2:8",
+      "text": "So we went past our relatives, Esau’s descendants who live in Seir. We left the Arabah road from Elath and Ezion Geber and turned onto the road through Moab’s wilderness."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:DEU:2:9",
+      "text": "Yahweh told me, “Don’t harass the Moabites or pick a fight with them. I won’t give you any of their land to own. I’ve given Ar to Lot’s descendants as their own land.”"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:DEU:2:10",
+      "text": "(The Emim used to live there. They were a great people, numerous and as tall as the Anakim."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:DEU:2:11",
+      "text": "Like the Anakim, they were counted among the Rephaim. The Moabites called them Emim."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:DEU:2:12",
+      "text": "The Horites used to live in Seir too, but Esau’s descendants drove them out, destroyed them, and settled in their place. Israel did the same in the land Yahweh gave them to own.)"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:DEU:2:13",
+      "text": "“Now get up and cross the Zered Brook.” So we crossed the Zered Brook."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:DEU:2:14",
+      "text": "Thirty-eight years passed between leaving Kadesh Barnea and crossing the Zered Brook. By then the whole generation of fighting men had died out in the camp, just as Yahweh had sworn to them."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:DEU:2:15",
+      "text": "Yahweh’s hand was against them until they’d all been removed from the camp."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:DEU:2:16",
+      "text": "Once all those fighting men had died out among the people,"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:DEU:2:17",
+      "text": "Yahweh spoke to me:"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:DEU:2:18",
+      "text": "“Today you’ll pass through Ar, on the border of Moab."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:DEU:2:19",
+      "text": "When you get near the Ammonites’ border, don’t harass them or start a fight. I won’t give you any of their land. I gave it to Lot’s descendants as their own land.”"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:DEU:2:20",
+      "text": "(That too was considered Rephaim territory. The Rephaim lived there before, but the Ammonites called them Zamzummim."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:DEU:2:21",
+      "text": "They were a great people, numerous and as tall as the Anakim. But Yahweh destroyed them ahead of Israel, and the Ammonites took their place and settled there."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:DEU:2:22",
+      "text": "He’d done the same for Esau’s descendants who live in Seir. He destroyed the Horites ahead of them, and they took their place and have lived there to this day."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:DEU:2:23",
+      "text": "The Avvim used to live in villages as far as Gaza. The Caphtorim came from Caphtor, destroyed them, and settled in their place.)"
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:DEU:2:24",
+      "text": "“Get up, set out, and cross the Arnon Valley. Look, I’ve handed you Sihon the Amorite, king of Heshbon, and his land. Start taking possession of it and engage him in battle."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:DEU:2:25",
+      "text": "Starting today I’ll make peoples everywhere under the sky dread you. When they hear about you, they’ll shake with fear and be in anguish because of you.”"
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:DEU:2:26",
+      "text": "From the wilderness of Kedemoth I sent messengers to Sihon, king of Heshbon, with a peaceful message:"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:DEU:2:27",
+      "text": "“Let me cross your land. I’ll stay on the highway the whole way, without turning to the right or left."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:DEU:2:28",
+      "text": "Sell me food to eat and water to drink. I’ll pay for both. Just let me walk through,"
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:DEU:2:29",
+      "text": "as Esau’s descendants in Seir and the Moabites in Ar let me do, until I cross the Jordan into the land Yahweh our God is giving us.”"
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:DEU:2:30",
+      "text": "But Sihon, king of Heshbon, refused to let us cross. Yahweh your God made his spirit stubborn and his heart set against us so he could hand him over to you, as he’s done today."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:DEU:2:31",
+      "text": "Yahweh told me, “Look, I’ve started handing over Sihon and his land to you. Go ahead and take possession of it as your inheritance.”"
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:DEU:2:32",
+      "text": "Then Sihon and all his people came out to fight us at Jahaz."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:DEU:2:33",
+      "text": "Yahweh our God handed him over to us, and we struck him down along with his sons and all his people."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:DEU:2:34",
+      "text": "We took all his towns and destroyed every inhabited town completely, killing the women and the little ones too. We left no survivors."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:DEU:2:35",
+      "text": "We took only the livestock and the goods from the towns we captured as plunder for ourselves."
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:DEU:2:36",
+      "text": "From Aroer on the edge of the Arnon Valley and the town down in the valley all the way to Gilead, no town was too high for us. Yahweh our God handed them all over to us."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:DEU:2:37",
+      "text": "But you stayed away from Ammonite territory, including the banks of the Jabbok River, the towns in the hill country, and everywhere else Yahweh our God had told us to stay away from."
+    }
+  ]
+}
