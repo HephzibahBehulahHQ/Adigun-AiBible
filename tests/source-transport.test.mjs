@@ -4,6 +4,7 @@ import { createHash } from 'node:crypto';
 import { mkdtemp, mkdir, readFile, writeFile, rm, cp, readdir } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { packSourceJson, sourceTransportEnabled, verifySourceJsonTransport, copySourceContent, createSourceStagingDirectory } from '../scripts/pack-source-json.mjs';
 import { decodeSourceJsonBytes } from '../src/source-codec.ts';
 import { finalizeBuild } from '../scripts/finalize-build.mjs';
@@ -31,7 +32,7 @@ test('packaging is opt-in, preserves URLs and untouched metadata, and never rewr
   }
   for (const name of ['manifest.json', 'editions/test/NOTICE.txt']) assert.deepEqual(await readFile(join(directory, name)), files[name]);
   assert.deepEqual(await readFile(new URL('../data/editions/yor/books/ACT.json', import.meta.url)), book);
-  await assert.rejects(packSourceJson({ directory: new URL('../data/', import.meta.url).pathname, enabled: true }), /Refusing to package canonical/);
+  await assert.rejects(packSourceJson({ directory: fileURLToPath(new URL('../data/', import.meta.url)), enabled: true }), /Refusing to package canonical/);
 });
 
 function inventory(count) {
