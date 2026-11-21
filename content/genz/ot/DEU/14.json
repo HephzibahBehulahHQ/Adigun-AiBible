@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "DEU",
+  "bookName": "Deuteronomy",
+  "chapterNumber": 14,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:DEU:14:1",
+      "text": "You’re the children of Yahweh your God. When someone dies, don’t cut yourselves or shave a bald patch above your eyes for them."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:DEU:14:2",
+      "text": "You’re a people set apart as holy for Yahweh your God. Out of all the peoples on earth, he chose you to be his own."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:DEU:14:3",
+      "text": "Don’t eat anything detestable."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:DEU:14:4",
+      "text": "Here are the animals you can eat: cattle, sheep, goats,"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:DEU:14:5",
+      "text": "deer, gazelles, roebucks, wild goats, ibexes, antelopes, and chamois."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:DEU:14:6",
+      "text": "You can eat an animal if its hoof is split all the way in two and it chews its cud."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:DEU:14:7",
+      "text": "Some animals chew their cud or have split hooves and are still off-limits. The camel, hare, and rabbit chew their cud but don’t have split hooves. They’re unclean to you."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:DEU:14:8",
+      "text": "The pig has a split hoof but doesn’t chew its cud. It’s unclean to you. Don’t eat the meat of any of these animals or touch their dead bodies."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:DEU:14:9",
+      "text": "Out of everything that lives in water, you can eat whatever has fins and scales."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:DEU:14:10",
+      "text": "Anything without fins and scales is unclean to you. Don’t eat it."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:DEU:14:11",
+      "text": "You can eat any clean bird."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:DEU:14:12",
+      "text": "Here are the ones you can’t eat: the eagle, the vulture, the osprey,"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:DEU:14:13",
+      "text": "the red kite, the falcon, any kind of kite,"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:DEU:14:14",
+      "text": "every kind of raven,"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:DEU:14:15",
+      "text": "the ostrich, the owl, the seagull, any kind of hawk,"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:DEU:14:16",
+      "text": "the little owl, the great owl, the horned owl,"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:DEU:14:17",
+      "text": "the pelican, the vulture, the cormorant,"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:DEU:14:18",
+      "text": "the stork, every kind of heron, the hoopoe, and the bat."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:DEU:14:19",
+      "text": "All winged crawling creatures are unclean to you. Don’t eat them."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:DEU:14:20",
+      "text": "You can eat any clean bird."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:DEU:14:21",
+      "text": "Don’t eat an animal that dies on its own. You can give it to a foreigner living in your town to eat, or sell it to a foreigner. You’re a people set apart as holy for Yahweh your God. Don’t boil a young goat in its mother’s milk."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:DEU:14:22",
+      "text": "Be sure to set aside a tenth of everything your fields produce from the seed you plant each year."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:DEU:14:23",
+      "text": "At the place Yahweh your God chooses for his name to dwell, eat before him the tenth of your grain, new wine, and oil, and the firstborn of your herds and flocks. That way you’ll learn to honor Yahweh your God with reverence all the time."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:DEU:14:24",
+      "text": "When Yahweh your God blesses you, the place he chooses for his name might be too far away for you to carry all of that there."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:DEU:14:25",
+      "text": "If so, sell it, take the money with you, and go to the place Yahweh your God chooses."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:DEU:14:26",
+      "text": "Spend the money on whatever you feel like having: cattle, sheep, wine, strong drink, whatever you want. Eat there before Yahweh your God, and celebrate with your household."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:DEU:14:27",
+      "text": "Don’t leave out the Levite in your town. The Levite has no share or inheritance with you."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:DEU:14:28",
+      "text": "At the end of every third year, bring that year’s whole tenth of what you produced and store it in your towns."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:DEU:14:29",
+      "text": "The Levite, who has no share or inheritance with you, and the foreigners, children without fathers, and widows living in your towns can come and eat their fill. Then Yahweh your God will bless everything you put your hands to."
+    }
+  ]
+}
