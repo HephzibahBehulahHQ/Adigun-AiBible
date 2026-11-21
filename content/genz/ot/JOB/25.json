@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "JOB",
+  "bookName": "Job",
+  "chapterNumber": 25,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:JOB:25:1",
+      "text": "Then Bildad the Shuhite answered:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:JOB:25:2",
+      "text": "\"Rule and awe belong to God. He makes peace in the heights of heaven."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:JOB:25:3",
+      "text": "Can anyone count his armies? Is there anyone his light doesn't shine on?"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:JOB:25:4",
+      "text": "How can a person be in the right before God? How can anyone born of a woman be clean?"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:JOB:25:5",
+      "text": "Look, even the moon isn't bright in his eyes, and the stars aren't pure to him."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:JOB:25:6",
+      "text": "How much less a mortal, who is only a maggot, a human being, who is only a worm!\""
+    }
+  ]
+}
