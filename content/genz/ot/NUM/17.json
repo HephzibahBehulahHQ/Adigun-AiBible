@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "NUM",
+  "bookName": "Numbers",
+  "chapterNumber": 17,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:NUM:17:1",
+      "text": "Yahweh told Moses:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:NUM:17:2",
+      "text": "“Tell the Israelites to give you twelve staffs, one from the leader of each ancestral family. Write each leader’s name on his own staff."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:NUM:17:3",
+      "text": "Write Aaron’s name on Levi’s staff. There’s one staff for each head of an ancestral family."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:NUM:17:4",
+      "text": "Put them in the Tent of Meeting in front of the covenant, where I meet with you."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:NUM:17:5",
+      "text": "The staff of the man I choose will sprout. That’s how I’ll put an end to the Israelites’ complaints against you that keep reaching me.”"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:NUM:17:6",
+      "text": "Moses told the Israelites, and their leaders gave him one staff for each ancestral family, twelve staffs in all. Aaron’s staff was among them."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:NUM:17:7",
+      "text": "Moses placed the staffs before Yahweh in the Tent of the Testimony."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:NUM:17:8",
+      "text": "The next day Moses went into the Tent of the Testimony, and there it was: Aaron’s staff for Levi’s family had sprouted, formed buds, opened flowers, and grown ripe almonds."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:NUM:17:9",
+      "text": "Moses took all the staffs from before Yahweh and brought them out to the Israelites. They looked at them, and each man took his own staff."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:NUM:17:10",
+      "text": "Yahweh told Moses, “Put Aaron’s staff back in front of the covenant. Keep it there as a warning to the rebels. Put an end to their complaints against me so they don’t die.”"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:NUM:17:11",
+      "text": "Moses did exactly what Yahweh told him."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:NUM:17:12",
+      "text": "The Israelites told Moses, “Look at us! We’re dying! We’re ruined! Every one of us is ruined!"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:NUM:17:13",
+      "text": "Anyone who gets close to Yahweh’s tabernacle dies! Are all of us going to die?”"
+    }
+  ]
+}
