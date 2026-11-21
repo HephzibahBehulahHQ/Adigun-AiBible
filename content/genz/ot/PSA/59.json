@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 59,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:59:1",
+      "text": "For the music director, to the tune of “Do Not Destroy.” A poem by David, when Saul sent men to watch David’s house and kill him. Rescue me from my enemies, my God. Set me out of reach of those who rise against me."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:59:2",
+      "text": "Rescue me from people who do evil. Save me from those who thirst for blood."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:59:3",
+      "text": "Look, they’re lying in wait to take my life. Powerful men gather against me, though I haven’t rebelled or sinned, LORD."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:59:4",
+      "text": "I’ve done nothing wrong, yet they’re ready to attack. Rise up, see what’s happening, and help me!"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:59:5",
+      "text": "LORD God of Armies, God of Israel, rise up to punish the nations. Show no mercy to those who betray others and do evil. Selah."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:59:6",
+      "text": "They come back at evening, howling like dogs and prowling around the city."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:59:7",
+      "text": "Listen to what pours out of their mouths. Their words are like swords. “Who can hear us?” they say."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:59:8",
+      "text": "But you laugh at them, LORD. You scoff at all the nations."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:59:9",
+      "text": "My Strength, I watch for you, because God is my fortress."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:59:10",
+      "text": "My God will go ahead of me with his faithful love. He’ll let me look on my enemies in triumph."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:59:11",
+      "text": "Don’t kill them, or my people may forget. Scatter them by your power and bring them down, Lord, our shield."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:59:12",
+      "text": "Let them be caught in their pride because of the sins they speak, the curses and lies on their lips."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:59:13",
+      "text": "Consume them in your wrath until they’re gone. Let them know that God rules over Jacob, to the ends of the earth. Selah."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:59:14",
+      "text": "Let them come back at evening, howling like dogs and roaming the city."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:59:15",
+      "text": "Let them wander in search of food and stay up all night if they can’t get enough."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:59:16",
+      "text": "But I’ll sing about your strength. In the morning I’ll sing aloud about your faithful love, because you’ve been my fortress, a refuge when I was in trouble."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:59:17",
+      "text": "I’ll sing praises to you, my Strength. God is my fortress, the God who shows me mercy."
+    }
+  ]
+}
