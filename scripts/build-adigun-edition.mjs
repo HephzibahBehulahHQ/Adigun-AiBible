@@ -15,6 +15,7 @@ const portion = {
   NUM: { testament: 'ot', chapters: 36 },
   DEU: { testament: 'ot', chapters: 34 },
   JOS: { testament: 'ot', chapters: 24 },
+  JDG: { testament: 'ot', chapters: 21 },
   MAT: { testament: 'nt', chapters: 28 },
 };
 const editionBooks = [];
