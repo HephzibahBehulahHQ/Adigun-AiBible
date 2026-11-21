@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "LEV",
+  "bookName": "Leviticus",
+  "chapterNumber": 18,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:LEV:18:1",
+      "text": "Yahweh told Moses:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:LEV:18:2",
+      "text": "“Tell the Israelites, ‘I’m Yahweh your God."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:LEV:18:3",
+      "text": "Don’t copy what people do in Egypt, where you used to live, or in Canaan, where I’m taking you. Don’t live by their rules."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:LEV:18:4",
+      "text": "Follow my instructions. Keep my laws and live by them. I’m Yahweh your God."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:LEV:18:5",
+      "text": "Keep my laws and my instructions. Whoever follows them will live by them. I’m Yahweh."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:LEV:18:6",
+      "text": "“‘None of you may approach a close relative to uncover their nakedness. I’m Yahweh."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:LEV:18:7",
+      "text": "“‘Don’t uncover your father’s nakedness or your mother’s. She’s your mother. Don’t uncover her nakedness."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:LEV:18:8",
+      "text": "“‘Don’t uncover the nakedness of your father’s wife. That’s your father’s nakedness."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:LEV:18:9",
+      "text": "“‘Don’t uncover your sister’s nakedness, whether she’s your father’s daughter or your mother’s daughter, whether she was born at home or somewhere else."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:LEV:18:10",
+      "text": "“‘Don’t uncover the nakedness of your son’s daughter or your daughter’s daughter. Their nakedness is your own."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:LEV:18:11",
+      "text": "“‘Don’t uncover the nakedness of your father’s wife’s daughter if your father is her father too. She’s your sister."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:LEV:18:12",
+      "text": "“‘Don’t uncover your father’s sister’s nakedness. She’s his close relative."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:LEV:18:13",
+      "text": "“‘Don’t uncover your mother’s sister’s nakedness. She’s your mother’s close relative."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:LEV:18:14",
+      "text": "“‘Don’t uncover your father’s brother’s nakedness by approaching his wife. She’s your aunt."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:LEV:18:15",
+      "text": "“‘Don’t uncover your daughter-in-law’s nakedness. She’s your son’s wife. Don’t uncover her nakedness."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:LEV:18:16",
+      "text": "“‘Don’t uncover your brother’s wife’s nakedness. That’s your brother’s nakedness."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:LEV:18:17",
+      "text": "“‘Don’t uncover the nakedness of both a woman and her daughter. Don’t take her son’s daughter or her daughter’s daughter to uncover her nakedness either. They’re close relatives. That’s wicked."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:LEV:18:18",
+      "text": "“‘While your wife is still alive, don’t take her sister as a rival wife and uncover her nakedness."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:LEV:18:19",
+      "text": "“‘Don’t approach a woman to uncover her nakedness while she’s unclean from her period."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:LEV:18:20",
+      "text": "“‘Don’t sleep with your neighbor’s wife and make yourself unclean with her."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:LEV:18:21",
+      "text": "“‘Don’t give any of your children as a sacrifice to Molech. Don’t dishonor your God’s name. I’m Yahweh."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:LEV:18:22",
+      "text": "“‘Don’t sleep with a man as you would with a woman. That’s detestable."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:LEV:18:23",
+      "text": "“‘Don’t sleep with an animal and make yourself unclean with it. A woman must never give herself to an animal to sleep with it. That’s a perversion."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:LEV:18:24",
+      "text": "“‘Don’t make yourselves unclean by doing any of these things. They’re what made the nations I’m driving out ahead of you unclean."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:LEV:18:25",
+      "text": "The land became unclean, so I punished it for its wrongdoing, and it threw up the people who lived there."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:LEV:18:26",
+      "text": "Keep my laws and instructions, and stay away from all these detestable practices. That goes for anyone born among you and for foreigners living with you."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:LEV:18:27",
+      "text": "The people who lived there before you did all those detestable things, and the land became unclean."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:LEV:18:28",
+      "text": "If you make the land unclean, it’ll throw you up too, just as it threw up the nation that was there before you."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:LEV:18:29",
+      "text": "“‘Whoever does any of these detestable things will be cut off from their people."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:LEV:18:30",
+      "text": "So keep my instructions. Don’t copy the detestable customs people practiced before you or make yourselves unclean by them. I’m Yahweh your God.’”"
+    }
+  ]
+}

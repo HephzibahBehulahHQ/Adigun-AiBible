@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "LEV",
+  "bookName": "Leviticus",
+  "chapterNumber": 22,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:LEV:22:1",
+      "text": "Yahweh told Moses:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:LEV:22:2",
+      "text": "“Tell Aaron and his sons to keep away from the holy things the Israelites set apart for me when the priests are unclean, so they don’t dishonor my holy name. I’m Yahweh."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:LEV:22:3",
+      "text": "“Tell them, ‘For every generation to come, if one of your descendants approaches the holy things the Israelites set apart for Yahweh while that person is unclean, they’ll be cut off from my presence. I’m Yahweh."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:LEV:22:4",
+      "text": "“‘If any descendant of Aaron has leprosy or a discharge, they can’t eat the holy food until they’re clean. The same goes for anyone who touches something made unclean by a dead body, or touches a man who has released semen,"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:LEV:22:5",
+      "text": "or touches a crawling creature that makes them unclean, or touches someone they can become unclean from, whatever made that person unclean."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:LEV:22:6",
+      "text": "Anyone who touches any of these things will be unclean until evening. They can’t eat the holy food without bathing in water."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:LEV:22:7",
+      "text": "Once the sun goes down, they’ll be clean. Then they can eat the holy food, because that’s their food."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:LEV:22:8",
+      "text": "They must not eat an animal that died on its own or was torn apart by other animals. That would make them unclean. I’m Yahweh."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:LEV:22:9",
+      "text": "“‘The priests must keep my charge so they don’t become guilty and die for treating it with disrespect. I’m Yahweh, the one who makes them holy."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:LEV:22:10",
+      "text": "“‘Nobody outside the priest’s household may eat the holy food. That includes a foreign visitor staying with the priest or a hired worker."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:LEV:22:11",
+      "text": "But an enslaved person a priest buys with his own money may eat it, and people born in his household may share his food."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:LEV:22:12",
+      "text": "If a priest’s daughter marries someone outside the priestly family, she can’t eat the holy portions lifted up as offerings."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:LEV:22:13",
+      "text": "But if she’s widowed or divorced, has no children, and moves back into her father’s house like when she was young, she can eat her father’s food. Nobody outside the household may eat any of it."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:LEV:22:14",
+      "text": "“‘If someone eats holy food by mistake, they must give the priest back its value plus a fifth."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:LEV:22:15",
+      "text": "The priests must not dishonor the holy things the Israelites offer to Yahweh"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:LEV:22:16",
+      "text": "and bring guilt on them when they eat those holy things. I’m Yahweh, the one who makes them holy.’”"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:LEV:22:17",
+      "text": "Yahweh told Moses:"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:LEV:22:18",
+      "text": "“Tell Aaron, his sons, and all the Israelites, ‘If an Israelite or a foreigner living in Israel brings Yahweh a burnt offering, whether to keep a vow or to give it freely,"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:LEV:22:19",
+      "text": "bring a male from the cattle, sheep, or goats with no defects so you’ll be accepted."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:LEV:22:20",
+      "text": "Don’t bring any animal with a defect. It won’t be accepted on your behalf."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:LEV:22:21",
+      "text": "If someone sacrifices a peace offering to Yahweh from the herd or flock, whether to fulfill a vow or to give it freely, the animal must be sound to be accepted. It must have no defects."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:LEV:22:22",
+      "text": "Don’t bring Yahweh an animal that’s blind, injured, maimed, or has a wart, an infected spot, or a draining sore. Don’t burn any of them as an offering to Yahweh on the altar."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:LEV:22:23",
+      "text": "You can give a bull or lamb that’s misshapen or missing a part as a voluntary offering. It won’t be accepted to fulfill a vow."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:LEV:22:24",
+      "text": "Don’t offer Yahweh an animal whose testicles have been bruised, crushed, torn, or cut. Don’t do this in your land."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:LEV:22:25",
+      "text": "Don’t accept any of these animals from a foreigner and offer them as the food of your God. They’re damaged and have defects, so they won’t be accepted on your behalf.’”"
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:LEV:22:26",
+      "text": "Yahweh told Moses:"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:LEV:22:27",
+      "text": "“When a calf, lamb, or kid is born, leave it with its mother for seven days. Starting on day eight, it can be accepted as an offering given to Yahweh through fire."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:LEV:22:28",
+      "text": "Don’t slaughter a cow or a ewe and her young on the same day."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:LEV:22:29",
+      "text": "“When you bring Yahweh a sacrifice to give thanks, offer it so that you’ll be accepted."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:LEV:22:30",
+      "text": "Eat it that same day. Don’t save any of it for the morning. I’m Yahweh."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:LEV:22:31",
+      "text": "“So keep my commands and live them out. I’m Yahweh."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:LEV:22:32",
+      "text": "Don’t dishonor my holy name. I’ll be treated as holy among the Israelites. I’m Yahweh, the one who makes you holy,"
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:LEV:22:33",
+      "text": "the one who brought you out of Egypt to be your God. I’m Yahweh.”"
+    }
+  ]
+}

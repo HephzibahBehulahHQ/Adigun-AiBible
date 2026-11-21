@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "LEV",
+  "bookName": "Leviticus",
+  "chapterNumber": 13,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:LEV:13:1",
+      "text": "Yahweh spoke to Moses and Aaron:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:LEV:13:2",
+      "text": "“If someone gets a swelling, a scab, or a bright spot on their skin and it develops into a sore that looks like leprosy, bring them to Aaron the priest or to one of his sons who serves as a priest."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:LEV:13:3",
+      "text": "The priest will check the sore. If the hair in it has turned white and the sore looks deeper than the skin, it’s leprosy. After examining the person, the priest will declare them unclean."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:LEV:13:4",
+      "text": "If the spot is white but looks no deeper than the skin and the hair hasn’t turned white, the priest will keep the person apart for seven days."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:LEV:13:5",
+      "text": "On day seven the priest will look again. If the sore looks the same to him and hasn’t spread, he’ll keep the person apart for another seven days."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:LEV:13:6",
+      "text": "On the next seventh day, the priest will look again. If the sore has faded and hasn’t spread across the skin, he’ll declare the person clean. It’s a scab. They’ll wash their clothes and be clean."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:LEV:13:7",
+      "text": "If the scab spreads after the person has already been to the priest to be declared clean, they’ll go back and show him again."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:LEV:13:8",
+      "text": "The priest will check. If the scab has spread, he’ll declare the person unclean. It’s leprosy."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:LEV:13:9",
+      "text": "“If someone develops a sore from leprosy, bring them to the priest."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:LEV:13:10",
+      "text": "He’ll check the person for a white swelling that has turned the hair white and has raw flesh in it."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:LEV:13:11",
+      "text": "That’s a lasting case of leprosy in the skin. The priest will declare them unclean right away. There’s no need to keep them apart for observation because they’re already unclean."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:LEV:13:12",
+      "text": "“If leprosy breaks out everywhere and covers the person from head to toe, as far as the priest can see,"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:LEV:13:13",
+      "text": "the priest will check them. If it covers their whole body, he’ll declare them clean of the disease. Their skin has all turned white, so they’re clean."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:LEV:13:14",
+      "text": "Whenever raw flesh appears, that person is unclean."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:LEV:13:15",
+      "text": "The priest will look at the raw flesh and declare the person unclean. Raw flesh is unclean. It’s leprosy."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:LEV:13:16",
+      "text": "If the raw flesh turns white again, the person will go back to the priest."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:LEV:13:17",
+      "text": "The priest will check them. If the sore has turned white, he’ll declare the person clean of the disease. They’re clean."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:LEV:13:18",
+      "text": "“Say someone had a boil on their skin and it healed,"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:LEV:13:19",
+      "text": "but a white swelling or a bright reddish-white spot shows up where the boil was. Show it to the priest."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:LEV:13:20",
+      "text": "He’ll check it. If the spot looks deeper than the skin and the hair in it has turned white, he’ll declare the person unclean. It’s leprosy that broke out where the boil was."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:LEV:13:21",
+      "text": "If the priest sees no white hair in it, and the spot is faded and goes no deeper than the skin, he’ll keep the person apart for seven days."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:LEV:13:22",
+      "text": "If it spreads across the skin, the priest will declare them unclean. It’s a diseased sore."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:LEV:13:23",
+      "text": "If the bright spot stays where it was and doesn’t spread, it’s the scar from the boil. The priest will declare the person clean."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:LEV:13:24",
+      "text": "“Say someone burns their skin with fire, and the raw flesh of the burn turns into a shiny spot that’s reddish-white or white."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:LEV:13:25",
+      "text": "The priest will check it. If the hair in the spot has turned white and the spot looks deeper than the skin, leprosy has broken out in the burn. The priest will declare the person unclean. It’s leprosy."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:LEV:13:26",
+      "text": "If the priest sees no white hair in the spot, and it’s faded and goes no deeper than the skin, he’ll keep the person apart for seven days."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:LEV:13:27",
+      "text": "The priest will check again on day seven. If the spot has spread across the skin, he’ll declare the person unclean. It’s leprosy."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:LEV:13:28",
+      "text": "If the spot stays where it was, hasn’t spread, and has faded, it’s the swelling from the burn. The priest will declare the person clean because it’s a burn scar."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:LEV:13:29",
+      "text": "“If a man or woman gets a sore on the scalp or in the beard area,"
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:LEV:13:30",
+      "text": "the priest will look at the sore. If it looks deeper than the skin and the hair in it is thin and yellow, he’ll declare the person unclean. It’s an itchy sore, a case of leprosy on the scalp or beard."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:LEV:13:31",
+      "text": "If the priest checks the itchy sore and it looks no deeper than the skin but has no black hair in it, he’ll keep the person apart for seven days."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:LEV:13:32",
+      "text": "On day seven the priest will check it again. If it hasn’t spread, has no yellow hair in it, and looks no deeper than the skin,"
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:LEV:13:33",
+      "text": "the person will shave around the sore, leaving the sore itself unshaved. The priest will keep them apart for another seven days."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:LEV:13:34",
+      "text": "On the next seventh day the priest will check it. If it hasn’t spread and looks no deeper than the skin, he’ll declare the person clean. They’ll wash their clothes and be clean."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:LEV:13:35",
+      "text": "If the sore spreads after the person has been declared clean,"
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:LEV:13:36",
+      "text": "the priest will check again. If it’s spread across the skin, there’s no need to look for yellow hair. The person is unclean."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:LEV:13:37",
+      "text": "If the priest sees that it has stopped spreading and black hair has grown in it, the sore has healed. The person is clean, and the priest will say so."
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:LEV:13:38",
+      "text": "“If a man or woman gets bright white spots on their skin,"
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:LEV:13:39",
+      "text": "the priest will check them. If the spots are dull white, it’s a harmless rash that broke out on the skin. The person is clean."
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:LEV:13:40",
+      "text": "“If a man loses the hair on his head, he’s bald and he’s clean."
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:LEV:13:41",
+      "text": "If the hair falls out at the front of his head, he’s bald there and he’s clean."
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:LEV:13:42",
+      "text": "But if a reddish-white sore shows up anywhere on the bald area, leprosy is breaking out there."
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:LEV:13:43",
+      "text": "The priest will check him. If the swelling on his bald scalp or forehead is reddish-white, like leprosy elsewhere on the body,"
+    },
+    {
+      "number": 44,
+      "sourceRef": "eng-web:LEV:13:44",
+      "text": "the man has leprosy and is unclean. The priest must declare him unclean. The sore is on his head."
+    },
+    {
+      "number": 45,
+      "sourceRef": "eng-web:LEV:13:45",
+      "text": "“The person with leprosy will wear torn clothes and let their hair hang loose. They’ll cover their upper lip and call out, ‘Unclean! Unclean!’"
+    },
+    {
+      "number": 46,
+      "sourceRef": "eng-web:LEV:13:46",
+      "text": "They’ll stay unclean as long as they have the disease. They’ll live alone outside the camp."
+    },
+    {
+      "number": 47,
+      "sourceRef": "eng-web:LEV:13:47",
+      "text": "“Now say the same kind of plague shows up on a wool or linen garment,"
+    },
+    {
+      "number": 48,
+      "sourceRef": "eng-web:LEV:13:48",
+      "text": "in the threads running lengthwise or across the cloth, in wool or linen, or in leather or something made of leather."
+    },
+    {
+      "number": 49,
+      "sourceRef": "eng-web:LEV:13:49",
+      "text": "If the affected spot looks greenish or reddish on the garment, the leather, the lengthwise or crosswise threads, or anything made of leather, it’s a plague like leprosy. Show it to the priest."
+    },
+    {
+      "number": 50,
+      "sourceRef": "eng-web:LEV:13:50",
+      "text": "The priest will check the spot and set the item aside for seven days."
+    },
+    {
+      "number": 51,
+      "sourceRef": "eng-web:LEV:13:51",
+      "text": "On day seven he’ll look again. If it’s spread on the garment, in the lengthwise or crosswise threads, or on the leather, whatever the leather is used for, it’s destructive mildew. The item is unclean."
+    },
+    {
+      "number": 52,
+      "sourceRef": "eng-web:LEV:13:52",
+      "text": "Burn the garment, the affected wool or linen threads, or the leather item where the spot appears. It’s destructive mildew. Burn it up. 🔥"
+    },
+    {
+      "number": 53,
+      "sourceRef": "eng-web:LEV:13:53",
+      "text": "“If the priest checks it and the spot hasn’t spread on the garment, in either direction of the weave, or on the leather,"
+    },
+    {
+      "number": 54,
+      "sourceRef": "eng-web:LEV:13:54",
+      "text": "he’ll order the item washed and set it aside for another seven days."
+    },
+    {
+      "number": 55,
+      "sourceRef": "eng-web:LEV:13:55",
+      "text": "The priest will check the spot after it’s been washed. If its color is the same, even if it hasn’t spread, it’s unclean. Burn it. The spot is mildew, whether it’s eaten into the inside or the outside."
+    },
+    {
+      "number": 56,
+      "sourceRef": "eng-web:LEV:13:56",
+      "text": "If the priest sees that the spot has faded after washing, he’ll tear it out of the garment, the leather, or the lengthwise or crosswise threads."
+    },
+    {
+      "number": 57,
+      "sourceRef": "eng-web:LEV:13:57",
+      "text": "If the spot shows up again on the garment, in the threads, or on anything made of leather, it’s spreading. Burn whatever has the spot."
+    },
+    {
+      "number": 58,
+      "sourceRef": "eng-web:LEV:13:58",
+      "text": "If washing takes the spot out of the garment, out of the threads, or off the leather, wash it a second time, and it’ll be clean.”"
+    },
+    {
+      "number": 59,
+      "sourceRef": "eng-web:LEV:13:59",
+      "text": "That’s the rule for deciding whether wool, linen, the threads running either way in the cloth, or anything made of leather is clean or unclean when mildew shows up."
+    }
+  ]
+}

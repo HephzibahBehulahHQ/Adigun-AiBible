@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "LEV",
+  "bookName": "Leviticus",
+  "chapterNumber": 26,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:LEV:26:1",
+      "text": "“‘Don’t make idols for yourselves, set up a carved image or a pillar, or put a carved stone in your land to bow down to it. I’m Yahweh your God."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:LEV:26:2",
+      "text": "“‘Keep my Sabbaths and treat my sanctuary with reverence. I’m Yahweh."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:LEV:26:3",
+      "text": "“‘If you live by my laws, remember my commands, and actually do what they say,"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:LEV:26:4",
+      "text": "I’ll send rain when it’s due. The land will grow crops, and the trees in the fields will bear fruit."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:LEV:26:5",
+      "text": "You’ll still be threshing grain when it’s time to pick grapes, and you’ll still be picking grapes when it’s time to plant. You’ll eat your fill of bread and live safely in your land."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:LEV:26:6",
+      "text": "“‘I’ll give your land peace. You’ll lie down with nobody to scare you. I’ll clear dangerous animals out of the land, and the sword won’t sweep through it."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:LEV:26:7",
+      "text": "You’ll chase your enemies, and they’ll fall before you by the sword."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:LEV:26:8",
+      "text": "Five of you will chase a hundred, and a hundred will chase ten thousand. Your enemies will fall before you by the sword."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:LEV:26:9",
+      "text": "“‘I’ll look on you with favor, make you fruitful, grow your numbers, and establish my covenant with you."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:LEV:26:10",
+      "text": "You’ll still be eating food you stored long ago when you have to clear it out to make room for the new harvest."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:LEV:26:11",
+      "text": "I’ll set up my tent among you, and I won’t turn away from you in disgust."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:LEV:26:12",
+      "text": "I’ll walk among you. I’ll be your God, and you’ll be my people."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:LEV:26:13",
+      "text": "I’m Yahweh your God. I brought you out of Egypt so you wouldn’t be their slaves. I broke the bars of your yoke and got you walking with your heads up."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:LEV:26:14",
+      "text": "“‘But if you won’t listen to me or follow all these commands,"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:LEV:26:15",
+      "text": "if you reject my laws and despise my instructions so much that you refuse to do what I commanded and break my covenant,"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:LEV:26:16",
+      "text": "here’s what I’ll do to you: I’ll bring terror, wasting disease, and fever that dims your eyes and drains the life out of you. You’ll plant your seed for nothing because your enemies will eat what grows."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:LEV:26:17",
+      "text": "I’ll turn against you, and your enemies will beat you. The people who hate you will rule over you. You’ll run even when nobody is chasing you."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:LEV:26:18",
+      "text": "“‘If you still won’t listen after all that, I’ll punish you seven times more for your sins."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:LEV:26:19",
+      "text": "I’ll break the power you’re so proud of. I’ll make the sky above you like iron and the soil under you like bronze."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:LEV:26:20",
+      "text": "You’ll wear yourselves out for nothing. Your land won’t grow crops, and its trees won’t bear fruit."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:LEV:26:21",
+      "text": "“‘If you keep going against me and won’t listen, I’ll bring seven times more trouble on you for your sins."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:LEV:26:22",
+      "text": "I’ll send wild animals among you. They’ll take your children, destroy your livestock, and leave so few of you that your roads will be empty."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:LEV:26:23",
+      "text": "“‘If all this still doesn’t turn you back to me and you keep going against me,"
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:LEV:26:24",
+      "text": "I’ll go against you too. I myself will strike you seven times for your sins."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:LEV:26:25",
+      "text": "I’ll bring the sword against you to avenge the covenant. You’ll crowd into your cities, and I’ll send disease among you. You’ll be handed over to the enemy."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:LEV:26:26",
+      "text": "When I cut off your bread supply, ten women will bake all your bread in one oven and hand it back by weight. You’ll eat and still be hungry."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:LEV:26:27",
+      "text": "“‘If even then you won’t listen and keep going against me,"
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:LEV:26:28",
+      "text": "I’ll go against you in anger and punish you seven times for your sins."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:LEV:26:29",
+      "text": "You’ll eat the flesh of your sons and daughters."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:LEV:26:30",
+      "text": "I’ll tear down your worship sites on the heights and cut down your incense altars. I’ll throw your dead bodies on the lifeless bodies of your idols, and I’ll despise you."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:LEV:26:31",
+      "text": "I’ll leave your cities in ruins and your sanctuaries deserted. I won’t take any pleasure in the smell of your offerings."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:LEV:26:32",
+      "text": "I’ll devastate the land. Even your enemies who settle there will be stunned by it."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:LEV:26:33",
+      "text": "I’ll scatter you among the nations and draw my sword to go after you. Your land will be deserted, and your cities will be in ruins."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:LEV:26:34",
+      "text": "Then the land will finally get its Sabbaths. While it lies deserted and you live in your enemies’ land, it’ll rest and enjoy its Sabbaths."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:LEV:26:35",
+      "text": "For as long as it lies deserted, it’ll get the rest it missed on your Sabbaths while you lived on it."
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:LEV:26:36",
+      "text": "“‘I’ll make those of you who survive lose heart in your enemies’ lands. Even the sound of a leaf blowing past will send them running like they’re fleeing a sword. They’ll fall with nobody after them. 🍂"
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:LEV:26:37",
+      "text": "They’ll trip over one another like people trying to escape a sword, even with nobody after them. You won’t have the strength to stand up to your enemies."
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:LEV:26:38",
+      "text": "You’ll die among the nations. Your enemies’ land will swallow you up."
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:LEV:26:39",
+      "text": "Those of you who are left will waste away in your enemies’ lands because of what you did wrong. You’ll also waste away because of the wrongs your ancestors did."
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:LEV:26:40",
+      "text": "“‘But if they admit what they and their ancestors did wrong, how they were unfaithful to me, and admit that because they went against me"
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:LEV:26:41",
+      "text": "I went against them and brought them into their enemies’ land, if their uncircumcised hearts are humbled and they accept the punishment for what they did,"
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:LEV:26:42",
+      "text": "then I’ll remember my covenant with Jacob, my covenant with Isaac, and my covenant with Abraham. I’ll remember the land too."
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:LEV:26:43",
+      "text": "They’ll leave the land behind, and it’ll enjoy its Sabbaths while it lies deserted without them. They’ll accept the punishment for what they did, because they rejected my instructions and despised my laws."
+    },
+    {
+      "number": 44,
+      "sourceRef": "eng-web:LEV:26:44",
+      "text": "Even after all that, when they’re in their enemies’ land, I won’t reject them or despise them so completely that I destroy them and break my covenant with them. I’m Yahweh their God."
+    },
+    {
+      "number": 45,
+      "sourceRef": "eng-web:LEV:26:45",
+      "text": "For their sake I’ll remember the covenant with their ancestors, the ones I brought out of Egypt in front of the nations so I could be their God. I’m Yahweh.’”"
+    },
+    {
+      "number": 46,
+      "sourceRef": "eng-web:LEV:26:46",
+      "text": "These are the laws, instructions, and teachings Yahweh established between himself and the Israelites on Mount Sinai through Moses."
+    }
+  ]
+}

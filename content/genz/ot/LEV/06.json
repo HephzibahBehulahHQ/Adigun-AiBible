@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "LEV",
+  "bookName": "Leviticus",
+  "chapterNumber": 6,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:LEV:6:1",
+      "text": "Yahweh told Moses:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:LEV:6:2",
+      "text": "“Suppose someone sins against Yahweh by cheating a neighbor over something entrusted to them or over a deal, by stealing, or by taking advantage of that neighbor."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:LEV:6:3",
+      "text": "Maybe they found something that was lost and lied about it under oath. Any of those actions is a sin."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:LEV:6:4",
+      "text": "When they’re guilty of that sin, they must return what they stole, what they got by taking advantage of someone, what was left in their care, or the lost thing they found."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:LEV:6:5",
+      "text": "The same goes for anything else they lied about under oath. Pay it back in full, plus a fifth. Give it to the owner the day you’re found guilty."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:LEV:6:6",
+      "text": "Bring the priest a ram from the flock with no defects as a guilt offering to Yahweh, according to your valuation."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:LEV:6:7",
+      "text": "The priest will make atonement for that person before Yahweh, and they’ll be forgiven for whatever made them guilty.”"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:LEV:6:8",
+      "text": "Yahweh told Moses:"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:LEV:6:9",
+      "text": "“Give Aaron and his sons these instructions: ‘Here’s the rule for the burnt offering. Leave it on the altar hearth all night till morning. Keep the altar fire going."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:LEV:6:10",
+      "text": "The priest will put on his linen clothes, including his linen trousers. He’ll clear out the ashes left after the fire burns up the offering and set them beside the altar."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:LEV:6:11",
+      "text": "Then he’ll change clothes and carry the ashes outside the camp to a clean place."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:LEV:6:12",
+      "text": "Don’t let the altar fire die out. Every morning the priest will add wood, arrange the burnt offering over the fire, and burn the fat from the peace offerings on it."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:LEV:6:13",
+      "text": "Keep that altar fire going all the time. It must never go out. 🔥"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:LEV:6:14",
+      "text": "“‘Here’s the rule for the grain offering. Aaron’s sons will bring it before Yahweh at the altar."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:LEV:6:15",
+      "text": "The priest will take a handful of fine flour and oil, along with all the frankincense on the offering. He’ll burn that portion on the altar as a reminder. Its smell will be pleasing to Yahweh."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:LEV:6:16",
+      "text": "Aaron and his sons will eat what’s left, without yeast, in a holy place. They’ll eat it in the courtyard of the Tent of Meeting."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:LEV:6:17",
+      "text": "Don’t bake it with yeast. I’ve given it to them as their share of my offerings given through fire. It’s most holy, just like the sin offering and the guilt offering."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:LEV:6:18",
+      "text": "Every male descendant of Aaron may eat it. That share of Yahweh’s offerings given through fire is theirs for every generation. Whoever touches these offerings will be holy.’”"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:LEV:6:19",
+      "text": "Yahweh told Moses:"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:LEV:6:20",
+      "text": "“Here’s what Aaron and his sons will offer Yahweh, starting on the day of anointing: a tenth of an ephah of fine flour as a regular grain offering, half in the morning and half in the evening."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:LEV:6:21",
+      "text": "Prepare it with oil on a griddle. Bring it in once it’s soaked, and offer it in baked pieces so its smell is pleasing to Yahweh."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:LEV:6:22",
+      "text": "The anointed priest who takes Aaron’s place from among his sons will make this offering. Burn the whole thing for Yahweh. That rule stands forever."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:LEV:6:23",
+      "text": "Burn every grain offering a priest brings in full. Nobody is to eat any of it.”"
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:LEV:6:24",
+      "text": "Yahweh told Moses:"
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:LEV:6:25",
+      "text": "“Tell Aaron and his sons this: ‘Here’s the rule for the sin offering. Slaughter it before Yahweh where you slaughter the burnt offering. It’s most holy."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:LEV:6:26",
+      "text": "The priest who offers it for sin will eat it in a holy place, in the courtyard of the Tent of Meeting."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:LEV:6:27",
+      "text": "Whatever touches its meat will be holy. If blood spatters onto any clothing, wash the spot in a holy place."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:LEV:6:28",
+      "text": "If you boil the meat in a clay pot, break the pot. If you boil it in a bronze pot, scrub it and rinse it with water."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:LEV:6:29",
+      "text": "Every male among the priests may eat it. It’s most holy."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:LEV:6:30",
+      "text": "If any blood from a sin offering goes into the Tent of Meeting to make atonement in the Holy Place, nobody may eat that offering. Burn it up.’”"
+    }
+  ]
+}

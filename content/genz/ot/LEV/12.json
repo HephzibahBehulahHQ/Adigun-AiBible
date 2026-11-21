@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "LEV",
+  "bookName": "Leviticus",
+  "chapterNumber": 12,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:LEV:12:1",
+      "text": "Yahweh told Moses:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:LEV:12:2",
+      "text": "“Tell the Israelites this: ‘If a woman gets pregnant and gives birth to a boy, she’ll be unclean for seven days, just as she is during her monthly period."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:LEV:12:3",
+      "text": "On day eight, circumcise the boy."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:LEV:12:4",
+      "text": "She’ll spend thirty-three more days going through purification from the bleeding. Until that time is up, she must stay out of the sanctuary and keep her hands off anything holy."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:LEV:12:5",
+      "text": "If she gives birth to a girl, she’ll be unclean for two weeks, just as she is during her period. She’ll spend sixty-six more days going through purification from the bleeding."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:LEV:12:6",
+      "text": "“‘When her time of purification is up, whether she had a son or a daughter, she’ll bring a year-old lamb for a burnt offering and a young pigeon or turtledove for a sin offering. She’ll bring them to the priest at the entrance to the Tent of Meeting."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:LEV:12:7",
+      "text": "He’ll present the offering before Yahweh and make atonement for her. Then she’ll be clean from the flow of blood. This is the rule for anyone who gives birth, whether to a boy or to a girl."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:LEV:12:8",
+      "text": "If she can’t afford a lamb, she’ll bring two turtledoves or two young pigeons, one for a burnt offering and the other for a sin offering. The priest will make atonement for her, and she’ll be clean.’”"
+    }
+  ]
+}
