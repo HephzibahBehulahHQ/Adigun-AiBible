@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1SA",
+  "bookName": "1 Samuel",
+  "chapterNumber": 17,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1SA:17:1",
+      "text": "The Philistines gathered their armies for battle at Socoh in Judah and camped between Socoh and Azekah at Ephesdammim."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1SA:17:2",
+      "text": "Saul and the Israelites gathered in the Valley of Elah and lined up for battle against the Philistines."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1SA:17:3",
+      "text": "The Philistines stood on one hill, Israel stood on the other, and the valley lay between them."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1SA:17:4",
+      "text": "A champion named Goliath, from Gath, stepped out of the Philistine camp. He was six cubits and a span tall."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1SA:17:5",
+      "text": "He wore a bronze helmet and a coat of armor that weighed five thousand shekels of bronze."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1SA:17:6",
+      "text": "He wore bronze guards on his shins and carried a bronze javelin across his shoulders."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1SA:17:7",
+      "text": "His spear shaft was like a weaver's beam, and its iron point weighed six hundred shekels. His shield-bearer walked ahead of him."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1SA:17:8",
+      "text": "He stood and shouted to Israel's army, “Why have you lined up for battle? I'm a Philistine, and you serve Saul. Choose one man to come down and face me."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1SA:17:9",
+      "text": "If he fights me and kills me, we'll serve you. But if I beat him and kill him, you'll serve us.”"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1SA:17:10",
+      "text": "The Philistine said, “Today I defy Israel's army! Send me a man, and let us fight!”"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1SA:17:11",
+      "text": "When Saul and all Israel heard him, they lost heart and were terrified."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1SA:17:12",
+      "text": "David was the son of Jesse, an Ephrathite from Bethlehem in Judah. Jesse had eight sons and was already an old man in Saul's time."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1SA:17:13",
+      "text": "Jesse's three oldest sons had gone to battle with Saul: Eliab the firstborn, Abinadab the second, and Shammah the third."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1SA:17:14",
+      "text": "David was the youngest. The three oldest followed Saul."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:1SA:17:15",
+      "text": "David went back and forth from Saul to Bethlehem to look after his father's sheep."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:1SA:17:16",
+      "text": "For forty days, morning and evening, the Philistine came forward to issue his challenge."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:1SA:17:17",
+      "text": "Jesse told his son David, “Take an ephah of this roasted grain and these ten loaves and hurry to the camp with them for your brothers."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:1SA:17:18",
+      "text": "Take these ten cheeses to their commander. See how your brothers are doing and bring me word.”"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:1SA:17:19",
+      "text": "Saul, David's brothers, and the Israelites were in the Valley of Elah fighting the Philistines."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:1SA:17:20",
+      "text": "David got up early, left the sheep with a keeper, and took the supplies as Jesse had told him. He reached the wagons as the army was marching out and shouting its battle cry."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:1SA:17:21",
+      "text": "Israel and the Philistines lined up across from each other."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:1SA:17:22",
+      "text": "David left his things with the man in charge of the supplies, ran to the battle line, and greeted his brothers."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:1SA:17:23",
+      "text": "As he spoke with them, Goliath of Gath, the Philistine champion, came forward and repeated his challenge. David heard him."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:1SA:17:24",
+      "text": "When the Israelites saw Goliath, they were terrified and ran from him."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:1SA:17:25",
+      "text": "They said, “Do you see that man? He's come out to defy Israel. The king will make whoever kills him rich, give him his daughter in marriage, and exempt his father's household from taxes in Israel.”"
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:1SA:17:26",
+      "text": "David asked the men nearby, “What will be done for the man who kills this Philistine and takes away Israel's disgrace? Who is this uncircumcised Philistine to defy the armies of the living God?”"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:1SA:17:27",
+      "text": "They repeated what would be done for whoever killed him."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:1SA:17:28",
+      "text": "David's oldest brother Eliab heard him speaking and was furious. “Why did you come down here? Who's looking after those few sheep in the wilderness? I know how proud you are and what you're really after. You came to watch the battle.”"
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:1SA:17:29",
+      "text": "David said, “What did I do now? Isn't there a reason to ask?”"
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:1SA:17:30",
+      "text": "He turned to someone else and asked the same question, and the people gave him the same answer."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:1SA:17:31",
+      "text": "When word of what David had said reached Saul, Saul sent for him."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:1SA:17:32",
+      "text": "David told Saul, “Nobody should lose heart because of this man. I'll go fight this Philistine.”"
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:1SA:17:33",
+      "text": "Saul answered, “You can't go out against him. You're only a boy, and he's been a warrior since he was young.”"
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:1SA:17:34",
+      "text": "David said, “I look after my father's sheep. When a lion or a bear carried off a lamb,"
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:1SA:17:35",
+      "text": "I went after it, struck it, and rescued the lamb from its mouth. When the animal turned on me, I grabbed it by the beard, struck it, and killed it."
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:1SA:17:36",
+      "text": "I've killed both lions and bears. This uncircumcised Philistine will end up like one of them because he's defied the armies of the living God."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:1SA:17:37",
+      "text": "The LORD rescued me from the lion and the bear. He'll rescue me from this Philistine too.” Saul said, “Go, and the LORD be with you.”"
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:1SA:17:38",
+      "text": "Saul dressed David in his own gear. He put a bronze helmet on David's head and a coat of armor on his body."
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:1SA:17:39",
+      "text": "David strapped the sword on and tried to walk, but he wasn't used to the gear. He told Saul, “I can't go in this. I've never used it.” So he took it off."
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:1SA:17:40",
+      "text": "David took his staff, picked five smooth stones from the stream, and put them in his shepherd's bag. With his sling in hand, he went toward the Philistine."
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:1SA:17:41",
+      "text": "The Philistine came closer to David, with his shield-bearer walking ahead."
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:1SA:17:42",
+      "text": "When Goliath looked at David, he looked down on him because he was young, ruddy, and handsome."
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:1SA:17:43",
+      "text": "He said, “Am I a dog, that you come at me with sticks?” Then he cursed David by his gods."
+    },
+    {
+      "number": 44,
+      "sourceRef": "eng-web:1SA:17:44",
+      "text": "The Philistine said, “Come here, and I'll feed your flesh to the birds and wild animals.”"
+    },
+    {
+      "number": 45,
+      "sourceRef": "eng-web:1SA:17:45",
+      "text": "David answered, “You come at me with a sword, spear, and javelin. I come at you in the name of the LORD of Armies, the God of Israel's armies, whom you've defied."
+    },
+    {
+      "number": 46,
+      "sourceRef": "eng-web:1SA:17:46",
+      "text": "Today the LORD will hand you over to me. I'll strike you down and cut off your head. I'll give the bodies of the Philistine army to the birds and wild animals today, so everyone on earth will know there is a God in Israel."
+    },
+    {
+      "number": 47,
+      "sourceRef": "eng-web:1SA:17:47",
+      "text": "Everyone gathered here will know that the LORD saves without sword or spear. The battle belongs to the LORD, and he'll hand you over to us.”"
+    },
+    {
+      "number": 48,
+      "sourceRef": "eng-web:1SA:17:48",
+      "text": "As the Philistine came forward to face him, David ran out to meet him."
+    },
+    {
+      "number": 49,
+      "sourceRef": "eng-web:1SA:17:49",
+      "text": "David took a stone from his bag and slung it at the Philistine. The stone struck him in the forehead, and he fell facedown to the ground."
+    },
+    {
+      "number": 50,
+      "sourceRef": "eng-web:1SA:17:50",
+      "text": "David defeated and killed the Philistine with a sling and a stone. He didn't have a sword in his hand."
+    },
+    {
+      "number": 51,
+      "sourceRef": "eng-web:1SA:17:51",
+      "text": "David ran up, stood over the Philistine, and drew the man's own sword. He killed him and cut off his head. When the Philistines saw that their champion was dead, they ran."
+    },
+    {
+      "number": 52,
+      "sourceRef": "eng-web:1SA:17:52",
+      "text": "The men of Israel and Judah rose with a shout and chased the Philistines to Gai and the gates of Ekron. The wounded fell along the road to Shaaraim, as far as Gath and Ekron."
+    },
+    {
+      "number": 53,
+      "sourceRef": "eng-web:1SA:17:53",
+      "text": "When the Israelites came back from chasing the Philistines, they plundered their camp."
+    },
+    {
+      "number": 54,
+      "sourceRef": "eng-web:1SA:17:54",
+      "text": "David took the Philistine's head to Jerusalem, but put the man's armor in his own tent."
+    },
+    {
+      "number": 55,
+      "sourceRef": "eng-web:1SA:17:55",
+      "text": "When Saul saw David go out against the Philistine, he asked Abner, his army commander, “Abner, whose son is that boy?” Abner answered, “As surely as you live, my king, I don't know.”"
+    },
+    {
+      "number": 56,
+      "sourceRef": "eng-web:1SA:17:56",
+      "text": "The king told him, “Find out whose son he is.”"
+    },
+    {
+      "number": 57,
+      "sourceRef": "eng-web:1SA:17:57",
+      "text": "When David returned from killing the Philistine, Abner brought him before Saul, still carrying the Philistine's head."
+    },
+    {
+      "number": 58,
+      "sourceRef": "eng-web:1SA:17:58",
+      "text": "Saul asked him, “Whose son are you, young man?” David replied, “I'm the son of your servant Jesse of Bethlehem.”"
+    }
+  ]
+}
