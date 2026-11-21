@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "EST",
+  "bookName": "Esther",
+  "chapterNumber": 10,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:EST:10:1",
+      "text": "King Ahasuerus imposed a tax on the mainland and the islands of the sea."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:EST:10:2",
+      "text": "The full record of his powerful deeds and of the high position he gave Mordecai is written in the Book of the Chronicles of the Kings of Media and Persia."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:EST:10:3",
+      "text": "Mordecai the Jew was second only to King Ahasuerus. He was highly respected among the Jews and well regarded by many of his fellow Jews, because he worked for their welfare and spoke for the peace of all their descendants."
+    }
+  ]
+}
