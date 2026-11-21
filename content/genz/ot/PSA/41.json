@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 41,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:41:1",
+      "text": "For the music director. A psalm by David. Blessed are those who look after the poor. The LORD will rescue them when trouble comes."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:41:2",
+      "text": "The LORD will protect them and keep them alive. They’ll be blessed in the land, and he won’t hand them over to their enemies."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:41:3",
+      "text": "The LORD will sustain them on their sickbed and help them get well again."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:41:4",
+      "text": "I said, “LORD, have mercy on me. Heal me, because I’ve sinned against you.”"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:41:5",
+      "text": "My enemies say cruel things about me: “When will he die and his name be forgotten?”"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:41:6",
+      "text": "When one of them visits, he tells me lies. He looks for something harmful to say about me and spreads it as soon as he leaves."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:41:7",
+      "text": "Everyone who hates me whispers about me together. They imagine the worst for me."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:41:8",
+      "text": "“A terrible illness has struck him,” they say. “He’s down, and he’ll never get back up.”"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:41:9",
+      "text": "Even my close friend, the one I trusted and shared my bread with, has turned against me."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:41:10",
+      "text": "But you, LORD, have mercy on me. Raise me up so I can repay them."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:41:11",
+      "text": "I know you delight in me because my enemy hasn’t triumphed over me."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:41:12",
+      "text": "You uphold me in my integrity and give me a place in your presence forever."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:41:13",
+      "text": "Blessed be the LORD, the God of Israel, from everlasting to everlasting! Amen and amen."
+    }
+  ]
+}

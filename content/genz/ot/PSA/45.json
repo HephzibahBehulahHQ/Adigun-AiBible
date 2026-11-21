@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 45,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:45:1",
+      "text": "For the music director, to the tune of “The Lilies.” A psalm for reflection by the sons of Korah. A wedding song. My heart overflows with a noble theme. I recite my verses for the king. My tongue is like the pen of a skilled writer."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:45:2",
+      "text": "You surpass all other men. Grace pours from your lips, because God has blessed you forever."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:45:3",
+      "text": "Strap your sword to your thigh, mighty one. Put on your splendor and majesty."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:45:4",
+      "text": "Ride out in majesty to victory for truth, humility, and righteousness. Let your right hand do deeds that fill people with awe."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:45:5",
+      "text": "Your arrows are sharp. Nations fall beneath you as your arrows pierce the hearts of the king’s enemies."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:45:6",
+      "text": "Your throne, God, lasts forever and ever. The scepter of your kingdom is a scepter of justice."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:45:7",
+      "text": "You love righteousness and hate wickedness. That’s why God, your God, has anointed you with the oil of joy above your companions."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:45:8",
+      "text": "All your clothes are fragrant with myrrh, aloes, and cassia. Music from stringed instruments in ivory palaces makes you glad."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:45:9",
+      "text": "Daughters of kings are among the women you honor. At your right hand stands the queen in gold from Ophir."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:45:10",
+      "text": "Listen, daughter. Pay close attention. Leave your people and your father’s household behind."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:45:11",
+      "text": "The king will desire your beauty. Honor him, because he is your lord."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:45:12",
+      "text": "The daughter of Tyre will bring a gift. The richest people will seek your favor."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:45:13",
+      "text": "Inside, the princess is radiant. Gold is woven into her clothes."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:45:14",
+      "text": "She’ll be led to the king wearing embroidered robes. Her young companions will follow and be brought to you."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:45:15",
+      "text": "They’ll be led in with gladness and joy as they enter the king’s palace."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:45:16",
+      "text": "Your sons will take the place of your ancestors. You’ll make them princes throughout the land."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:45:17",
+      "text": "I’ll keep the memory of your name alive in every generation. The peoples will thank you forever and ever."
+    }
+  ]
+}

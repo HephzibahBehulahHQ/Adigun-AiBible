@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 42,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:42:1",
+      "text": "For the music director. A psalm for reflection by the sons of Korah. Like a deer panting for streams of water, my soul longs for you, God."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:42:2",
+      "text": "My soul thirsts for God, the living God. When can I come and stand before him?"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:42:3",
+      "text": "My tears have been my food day and night, while people keep asking, “Where is your God?”"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:42:4",
+      "text": "I pour out my soul as I remember how I walked with the crowd and led them to God’s house, a festival crowd shouting for joy and singing praise."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:42:5",
+      "text": "Why are you so downcast, my soul? Why are you so restless inside me? Put your hope in God. I’ll praise him again for the rescue his presence brings."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:42:6",
+      "text": "My God, my soul is downcast within me. So I remember you from the land of the Jordan, from the heights of Hermon, and from Mount Mizar."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:42:7",
+      "text": "Deep calls to deep in the roar of your waterfalls. All your waves and surges have swept over me."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:42:8",
+      "text": "By day the LORD sends his faithful love. At night his song stays with me, a prayer to the God of my life."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:42:9",
+      "text": "I say to God, my rock, “Why have you forgotten me? Why do I go around grieving under my enemy’s oppression?”"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:42:10",
+      "text": "My enemies’ taunts cut like a sword in my bones. They keep asking me, “Where is your God?”"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:42:11",
+      "text": "Why are you so downcast, my soul? Why are you so restless inside me? Put your hope in God. I’ll praise him again, my Savior and my God."
+    }
+  ]
+}
