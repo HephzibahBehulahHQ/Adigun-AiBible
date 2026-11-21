@@ -1,0 +1,341 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1KI",
+  "bookName": "1 Kings",
+  "chapterNumber": 8,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1KI:8:1",
+      "text": "Solomon called Israel's elders, the heads of its tribes, and the leaders of its families to Jerusalem. They were to bring the ark of the LORD's covenant up from David's City, also called Zion."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1KI:8:2",
+      "text": "All the men of Israel gathered before King Solomon for the festival in Ethanim, the seventh month."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1KI:8:3",
+      "text": "Once Israel's elders had arrived, the priests lifted the ark."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1KI:8:4",
+      "text": "The priests and Levites carried up the LORD's ark, the Tent of Meeting, and all the sacred furnishings that were in the Tent."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1KI:8:5",
+      "text": "King Solomon and all the Israelites who had gathered with him stood before the ark. They sacrificed more sheep and cattle than anyone could count."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1KI:8:6",
+      "text": "The priests brought the ark of the LORD's covenant into its place in the inner sanctuary of the house, the Most Holy Place, beneath the wings of the cherubim."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1KI:8:7",
+      "text": "The cherubim spread their wings over the ark, covering the ark and its carrying poles from above."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1KI:8:8",
+      "text": "The poles were so long that their ends could be seen from the Holy Place in front of the inner sanctuary. They couldn't be seen from outside, and they're still there today."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1KI:8:9",
+      "text": "The only things in the ark were the two stone tablets Moses had put there at Horeb when the LORD made a covenant with Israel after they came out of Egypt."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1KI:8:10",
+      "text": "When the priests came out of the Holy Place, the cloud filled the LORD's house."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1KI:8:11",
+      "text": "The priests couldn't stand there to serve because of the cloud. The LORD's glory filled his house."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1KI:8:12",
+      "text": "Solomon said, “The LORD said he would live in thick darkness."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1KI:8:13",
+      "text": "I've built you a home, a place for you to live forever.”"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1KI:8:14",
+      "text": "The king turned around and blessed the whole assembly of Israel while they stood."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:1KI:8:15",
+      "text": "He said, “Praise the LORD, the God of Israel! He gave your father David his word, and with his own hand he's kept it. He said,"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:1KI:8:16",
+      "text": "‘Since I brought my people Israel out of Egypt, I haven't chosen a city in any tribe to build a house for my name. I chose David to lead my people Israel.’"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:1KI:8:17",
+      "text": "“My father David wanted to build a house for the name of the LORD, the God of Israel."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:1KI:8:18",
+      "text": "But the LORD told my father David, ‘You did well to want to build a house for my name."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:1KI:8:19",
+      "text": "Still, you won't build the house. Your own son will build the house for my name.’"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:1KI:8:20",
+      "text": "The LORD has kept his promise. I've taken my father's place and sit on Israel's throne, just as the LORD said. I've built the house for the name of the LORD, the God of Israel."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:1KI:8:21",
+      "text": "I've made a place there for the ark, which holds the covenant the LORD made with our ancestors when he brought them out of Egypt.”"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:1KI:8:22",
+      "text": "Solomon stood in front of the LORD's altar with all Israel gathered there and stretched out his hands toward heaven."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:1KI:8:23",
+      "text": "He prayed, “LORD, God of Israel, there's no God like you in heaven above or on earth below. You keep your covenant and show faithful love to your servants who walk before you with their whole heart."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:1KI:8:24",
+      "text": "You've kept the promise you made to your servant David, my father. You said it with your own mouth and carried it out with your own hand, as we can see today."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:1KI:8:25",
+      "text": "Now, LORD, God of Israel, keep your promise to my father David, your servant: ‘You will always have someone before me on Israel's throne, as long as your descendants watch their steps and walk before me as you have.’"
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:1KI:8:26",
+      "text": "Now, God of Israel, please let the word you spoke to your servant David, my father, come true."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:1KI:8:27",
+      "text": "But will God really live on earth? The heavens, even the highest heavens, can't hold you. How could this house I built ever hold you?"
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:1KI:8:28",
+      "text": "Still, LORD my God, pay attention to your servant's prayer and plea. Hear the cry and the prayer I'm bringing before you today."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:1KI:8:29",
+      "text": "Keep your eyes on this house night and day, on the place where you said, ‘My name will be there.’ Hear your servant's prayer when I turn toward this place."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:1KI:8:30",
+      "text": "Hear your servant and your people Israel when we pray toward this place. Listen from heaven, where you live, and when you hear us, forgive us."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:1KI:8:31",
+      "text": "“If someone wrongs a neighbor and is required to take an oath, and comes to swear before your altar in this house,"
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:1KI:8:32",
+      "text": "hear from heaven and act. Judge between your servants. Condemn the guilty and bring the consequences of what they've done on their own head. Clear the innocent and give them what their upright conduct deserves."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:1KI:8:33",
+      "text": "“When your people Israel are defeated by an enemy because they have sinned against you, if they come back to you, acknowledge your name, and pray and plead with you in this house,"
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:1KI:8:34",
+      "text": "hear from heaven. Forgive your people Israel and bring them back to the land you gave their ancestors."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:1KI:8:35",
+      "text": "“When the sky closes and rain stops because they have sinned against you, if they pray toward this place, acknowledge your name, and turn from their sin because you've afflicted them,"
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:1KI:8:36",
+      "text": "hear from heaven and forgive the sin of your servants, your people Israel. Teach them the good way they should live and send rain to the land you gave them as their inheritance."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:1KI:8:37",
+      "text": "“If there's famine, plague, blight, mildew, locusts, or caterpillars, or if an enemy lays siege to their cities, whatever disease or disaster comes,"
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:1KI:8:38",
+      "text": "and someone, or all your people Israel, prays for help, each knowing the pain within their own heart and stretching out their hands toward this house,"
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:1KI:8:39",
+      "text": "hear from heaven where you live. Forgive them and act. Give each person what their conduct deserves, because you know their hearts. You alone know every human heart."
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:1KI:8:40",
+      "text": "Then they'll honor you all the days they live in the land you gave our ancestors."
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:1KI:8:41",
+      "text": "“When a foreigner who doesn't belong to your people Israel comes from a distant land because of your name,"
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:1KI:8:42",
+      "text": "because people will hear about your great name, your mighty hand, and your outstretched arm, and that foreigner prays toward this house,"
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:1KI:8:43",
+      "text": "hear from heaven where you live and do all that the foreigner asks of you. Then all the peoples of the earth will know your name and honor you as your people Israel do. They'll know that this house I built bears your name."
+    },
+    {
+      "number": 44,
+      "sourceRef": "eng-web:1KI:8:44",
+      "text": "“When your people go out to fight their enemies wherever you send them, if they pray to the LORD toward the city you've chosen and the house I've built for your name,"
+    },
+    {
+      "number": 45,
+      "sourceRef": "eng-web:1KI:8:45",
+      "text": "hear their prayer and their plea from heaven and uphold their cause."
+    },
+    {
+      "number": 46,
+      "sourceRef": "eng-web:1KI:8:46",
+      "text": "“If they sin against you, and everyone sins, and you become angry and hand them over to an enemy who takes them captive to a land far away or nearby,"
+    },
+    {
+      "number": 47,
+      "sourceRef": "eng-web:1KI:8:47",
+      "text": "but they come to their senses there and turn back and plead with you in the land of their captors, saying, ‘We've sinned, we've done wrong, and we've acted wickedly,’"
+    },
+    {
+      "number": 48,
+      "sourceRef": "eng-web:1KI:8:48",
+      "text": "if they turn back to you with their whole heart and soul in the land of their enemies, and pray toward the land you gave their ancestors, the city you've chosen, and the house I've built for your name,"
+    },
+    {
+      "number": 49,
+      "sourceRef": "eng-web:1KI:8:49",
+      "text": "hear their prayer and their plea from heaven where you live, and uphold their cause."
+    },
+    {
+      "number": 50,
+      "sourceRef": "eng-web:1KI:8:50",
+      "text": "Forgive your people for sinning against you and for all the ways they've rebelled against you. Move their captors to show them compassion,"
+    },
+    {
+      "number": 51,
+      "sourceRef": "eng-web:1KI:8:51",
+      "text": "because they are your people and your inheritance, whom you brought out of Egypt, out of the middle of the iron furnace."
+    },
+    {
+      "number": 52,
+      "sourceRef": "eng-web:1KI:8:52",
+      "text": "Keep your eyes open to your servant's plea and to the pleas of your people Israel, and hear them whenever they call out to you."
+    },
+    {
+      "number": 53,
+      "sourceRef": "eng-web:1KI:8:53",
+      "text": "You set them apart from all the peoples of the earth as your own inheritance, just as you said through your servant Moses when you brought our ancestors out of Egypt, Lord GOD.”"
+    },
+    {
+      "number": 54,
+      "sourceRef": "eng-web:1KI:8:54",
+      "text": "When Solomon finished his prayer and plea to the LORD, he got up from his knees in front of the LORD's altar, where he'd been kneeling with his hands spread toward heaven."
+    },
+    {
+      "number": 55,
+      "sourceRef": "eng-web:1KI:8:55",
+      "text": "He stood and blessed the whole assembly of Israel in a loud voice:"
+    },
+    {
+      "number": 56,
+      "sourceRef": "eng-web:1KI:8:56",
+      "text": "“Praise the LORD, who has given his people Israel rest, just as he promised. Every word of the good promise he gave through his servant Moses has come true."
+    },
+    {
+      "number": 57,
+      "sourceRef": "eng-web:1KI:8:57",
+      "text": "May the LORD our God be with us as he was with our ancestors. May he never leave us or turn away from us."
+    },
+    {
+      "number": 58,
+      "sourceRef": "eng-web:1KI:8:58",
+      "text": "May he turn our hearts toward him so we'll walk in all his ways and keep the commands, statutes, and rulings he gave our ancestors."
+    },
+    {
+      "number": 59,
+      "sourceRef": "eng-web:1KI:8:59",
+      "text": "May the words I've prayed before the LORD stay close to the LORD our God day and night. May he uphold my cause and the cause of his people Israel as each day requires."
+    },
+    {
+      "number": 60,
+      "sourceRef": "eng-web:1KI:8:60",
+      "text": "Then all the peoples of the earth will know that the LORD himself is God. There is no other."
+    },
+    {
+      "number": 61,
+      "sourceRef": "eng-web:1KI:8:61",
+      "text": "Give your whole heart to the LORD our God so you follow his statutes and keep his commands, as you're doing today.”"
+    },
+    {
+      "number": 62,
+      "sourceRef": "eng-web:1KI:8:62",
+      "text": "Then the king and all Israel with him offered sacrifices before the LORD."
+    },
+    {
+      "number": 63,
+      "sourceRef": "eng-web:1KI:8:63",
+      "text": "Solomon offered twenty-two thousand cattle and a hundred and twenty thousand sheep as peace offerings to the LORD. The king and all Israel dedicated the LORD's house this way."
+    },
+    {
+      "number": 64,
+      "sourceRef": "eng-web:1KI:8:64",
+      "text": "That same day the king set apart the middle of the courtyard in front of the LORD's house as holy. He offered the burnt offerings, grain offerings, and the fat of the peace offerings there because the bronze altar before the LORD was too small for them all."
+    },
+    {
+      "number": 65,
+      "sourceRef": "eng-web:1KI:8:65",
+      "text": "So Solomon and all Israel kept the festival before the LORD our God. A great crowd came from the entrance to Hamath all the way to the Brook of Egypt. They celebrated for seven days and then seven more, fourteen days altogether."
+    },
+    {
+      "number": 66,
+      "sourceRef": "eng-web:1KI:8:66",
+      "text": "On the eighth day he sent the people home. They blessed the king and went back to their tents full of joy for all the good the LORD had done for his servant David and for his people Israel."
+    }
+  ]
+}
