@@ -4,7 +4,7 @@
   "editions": [
     {
       "editionId": "adigun-edition",
-      "sourceSha256": "54bdb302e3e191fb2dce84ca02c52804ed819835dfd33c557cb9d4aa0c79745f",
+      "sourceSha256": "ba6775bd3b534368e215f96ced9e4128d41401a7aacaed2f3b9fb847a523ba34",
       "status": "publisher-metadata",
       "marker": "none",
       "offsetUnit": "not-applicable",
@@ -55,6 +55,12 @@
         },
         {
           "bookId": "RUT",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "1SA",
           "spans": 0,
           "verses": 0,
           "rejectedMetadata": 0
