@@ -5,19 +5,21 @@ import { resolve } from 'node:path';
 const root = resolve(import.meta.dirname, '..');
 const sourceManifest = JSON.parse(await readFile(resolve(root, 'data/manifest.json'), 'utf8'));
 const sourceHash = sourceManifest.edition.sha256;
-const sourceBooks = new Map(sourceManifest.books.map(book => [book.id, book]));
 
 // Only complete, reviewed chapters are installed. Add a chapter here after its
 // candidate file exists and passes the exact source-reference and verse-count checks.
 const portion = {
-  GEN: Array.from({ length: 50 }, (_, index) => index + 1),
-  MAT: Array.from({ length: 28 }, (_, index) => index + 1),
+  GEN: { testament: 'ot', chapters: 50 },
+  EXO: { testament: 'ot', chapters: 40 },
+  LEV: { testament: 'ot', chapters: 27 },
+  MAT: { testament: 'nt', chapters: 28 },
 };
 const editionBooks = [];
 for (const sourceBook of sourceManifest.books.filter(book => portion[book.id])) {
   const chapters = [];
-  for (const chapterNumber of portion[sourceBook.id]) {
-    const contentRoot = sourceBook.id === 'GEN' ? 'content/genz/ot' : 'content/genz/nt';
+  const { testament, chapters: chapterCount } = portion[sourceBook.id];
+  for (let chapterNumber = 1; chapterNumber <= chapterCount; chapterNumber += 1) {
+    const contentRoot = `content/genz/${testament}`;
     const path = resolve(root, contentRoot, sourceBook.id, `${String(chapterNumber).padStart(2, '0')}.json`);
     const candidate = JSON.parse(await readFile(path, 'utf8'));
     const sourceVerseCount = sourceBook.verseCounts[chapterNumber - 1];

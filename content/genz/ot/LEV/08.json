@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "LEV",
+  "bookName": "Leviticus",
+  "chapterNumber": 8,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:LEV:8:1",
+      "text": "Yahweh told Moses:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:LEV:8:2",
+      "text": "“Bring Aaron and his sons, the clothes, the anointing oil, the bull for the sin offering, the two rams, and the basket of bread made without yeast."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:LEV:8:3",
+      "text": "Get the whole community together at the entrance to the Tent of Meeting.”"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:LEV:8:4",
+      "text": "Moses did what Yahweh told him, and the community gathered at the entrance to the Tent of Meeting."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:LEV:8:5",
+      "text": "Moses told everyone, “Here’s what Yahweh has told us to do.”"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:LEV:8:6",
+      "text": "Moses brought Aaron and his sons forward and washed them with water."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:LEV:8:7",
+      "text": "He put the tunic on Aaron and tied the sash around him. Then he put the robe and the ephod on him and fastened the ephod with its expertly woven band."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:LEV:8:8",
+      "text": "He put the breastplate on Aaron and tucked the Urim and Thummim inside it."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:LEV:8:9",
+      "text": "He set the turban on Aaron’s head and put the gold plate, the holy crown, on the front, just as Yahweh had told him."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:LEV:8:10",
+      "text": "Moses took the anointing oil and used it to set apart the tabernacle and everything in it as holy."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:LEV:8:11",
+      "text": "He sprinkled the altar with the oil seven times. He anointed the altar, all its utensils, and the basin and its stand to set them apart as holy."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:LEV:8:12",
+      "text": "He poured some of the anointing oil on Aaron’s head to anoint him and set him apart as holy."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:LEV:8:13",
+      "text": "Then Moses brought Aaron’s sons forward, put tunics on them, tied their sashes, and put headbands on them, just as Yahweh had told him."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:LEV:8:14",
+      "text": "Moses brought the bull for the sin offering. Aaron and his sons put their hands on its head."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:LEV:8:15",
+      "text": "Moses slaughtered the bull. He used his finger to put blood on the horns all around the altar, making the altar clean. He poured the rest at the base, setting the altar apart as holy to make atonement for it."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:LEV:8:16",
+      "text": "Moses took all the fat attached to the insides, the piece covering the liver, and both kidneys with their fat, and burned them on the altar."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:LEV:8:17",
+      "text": "He burned the rest of the bull outside the camp, including its hide, meat, and dung, just as Yahweh had told him."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:LEV:8:18",
+      "text": "Moses brought forward the ram for the burnt offering. Aaron and his sons put their hands on its head."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:LEV:8:19",
+      "text": "Moses slaughtered it and splashed its blood against all sides of the altar."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:LEV:8:20",
+      "text": "He cut the ram into pieces and burned the head, the pieces, and the fat."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:LEV:8:21",
+      "text": "He rinsed the insides and legs with water, then burned the whole ram on the altar. That was a burnt offering with a pleasing smell, an offering given to Yahweh through fire, just as Yahweh had told him."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:LEV:8:22",
+      "text": "Then Moses brought forward the other ram, the one for setting the priests apart. Aaron and his sons put their hands on its head."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:LEV:8:23",
+      "text": "Moses slaughtered it and put some of its blood on the tip of Aaron’s right ear, his right thumb, and his right big toe."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:LEV:8:24",
+      "text": "Then Moses brought Aaron’s sons forward. He put blood on the tip of each man’s right ear, on his right thumb, and on his right big toe. Moses splashed the blood against all sides of the altar."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:LEV:8:25",
+      "text": "He took the fat, the fat tail, all the fat attached to the insides, the piece covering the liver, both kidneys with their fat, and the right thigh."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:LEV:8:26",
+      "text": "From the basket of bread without yeast that was before Yahweh, he took one cake without yeast, one cake made with oil, and one wafer. He put them on top of the fat and the right thigh."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:LEV:8:27",
+      "text": "He put it all in the hands of Aaron and his sons and waved it as an offering before Yahweh."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:LEV:8:28",
+      "text": "Moses took it back from their hands and burned it on the altar, on top of the burnt offering. It was an offering to set them apart, given to Yahweh through fire, with a pleasing smell."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:LEV:8:29",
+      "text": "Moses took the breast and waved it as an offering before Yahweh. That was his share of the ram for setting the priests apart, just as Yahweh had told him."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:LEV:8:30",
+      "text": "Moses took some of the anointing oil and some blood from the altar and sprinkled them on Aaron, his sons, and all their clothes. He set them and their clothes apart as holy."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:LEV:8:31",
+      "text": "Moses told Aaron and his sons, “Boil the meat at the entrance to the Tent of Meeting. Eat it there with the bread from the basket for setting you apart, just as I said when I gave the order, ‘Aaron and his sons will eat it.’"
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:LEV:8:32",
+      "text": "Burn whatever meat and bread is left over. 🔥"
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:LEV:8:33",
+      "text": "Stay at the entrance to the Tent of Meeting for seven days, till your time of being set apart is done. It takes seven days to set you apart."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:LEV:8:34",
+      "text": "What you saw done today is what Yahweh commanded to make atonement for you."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:LEV:8:35",
+      "text": "Stay at that entrance day and night for all seven days. Do what Yahweh says so you don’t die. That’s what he told me to say.”"
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:LEV:8:36",
+      "text": "Aaron and his sons did everything Yahweh had told them through Moses."
+    }
+  ]
+}

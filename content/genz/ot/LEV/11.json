@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "LEV",
+  "bookName": "Leviticus",
+  "chapterNumber": 11,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:LEV:11:1",
+      "text": "Yahweh spoke to Moses and Aaron:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:LEV:11:2",
+      "text": "“Tell the Israelites, ‘Here’s what you can eat from all the animals on earth."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:LEV:11:3",
+      "text": "You can eat any animal that has a hoof split all the way through and chews its cud."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:LEV:11:4",
+      "text": "“‘Here are the exceptions among animals that chew their cud or have split hooves. The camel chews its cud but doesn’t have a split hoof. It’s unclean to you."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:LEV:11:5",
+      "text": "The hyrax chews its cud but doesn’t have a split hoof. It’s unclean to you."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:LEV:11:6",
+      "text": "The hare chews its cud but doesn’t have a split hoof. It’s unclean to you."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:LEV:11:7",
+      "text": "The pig has a hoof split all the way through but doesn’t chew its cud. It’s unclean to you."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:LEV:11:8",
+      "text": "Don’t eat their meat or touch their dead bodies. They’re unclean to you."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:LEV:11:9",
+      "text": "“‘Here’s what you can eat from the water: anything with fins and scales, whether it lives in the sea or in a river."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:LEV:11:10",
+      "text": "Treat every creature in the seas and rivers that lacks fins and scales as detestable. That goes for everything that moves or lives in the water."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:LEV:11:11",
+      "text": "Treat them as detestable. Don’t eat their meat, and detest their dead bodies too."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:LEV:11:12",
+      "text": "Anything in the water without fins or scales is detestable to you."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:LEV:11:13",
+      "text": "“‘Here are the birds you must treat as detestable. Don’t eat them: the eagle, the vulture, the black vulture,"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:LEV:11:14",
+      "text": "the red kite, every kind of black kite,"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:LEV:11:15",
+      "text": "every kind of raven,"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:LEV:11:16",
+      "text": "the horned owl, the screech owl, the gull, every kind of hawk,"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:LEV:11:17",
+      "text": "the little owl, the cormorant, the great owl,"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:LEV:11:18",
+      "text": "the white owl, the desert owl, the osprey,"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:LEV:11:19",
+      "text": "the stork, every kind of heron, the hoopoe, and the bat."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:LEV:11:20",
+      "text": "“‘Every flying insect that walks on all fours is detestable to you."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:LEV:11:21",
+      "text": "There’s an exception you can eat: winged creatures that walk on all fours and have long, jointed legs for hopping on the ground."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:LEV:11:22",
+      "text": "That includes every kind of locust, katydid, cricket, and grasshopper."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:LEV:11:23",
+      "text": "All other winged creatures that crawl on four feet are detestable to you."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:LEV:11:24",
+      "text": "“‘Here’s how these creatures can make you unclean. Touch a dead one and you’ll be unclean until evening."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:LEV:11:25",
+      "text": "If you carry any part of its dead body, wash your clothes. You’ll be unclean until evening."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:LEV:11:26",
+      "text": "“‘Any animal whose hoof isn’t split all the way through or that doesn’t chew its cud is unclean to you. Anyone who touches one becomes unclean."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:LEV:11:27",
+      "text": "Any animal that walks on all fours on paws is unclean to you. Touch its dead body and you’ll be unclean until evening."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:LEV:11:28",
+      "text": "Carry its dead body and you’ll have to wash your clothes. You’ll be unclean until evening. These animals are unclean to you."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:LEV:11:29",
+      "text": "“‘Of the creatures that crawl on the ground, these are unclean to you: the weasel, the rat, every kind of large lizard,"
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:LEV:11:30",
+      "text": "the gecko, the monitor lizard, the wall lizard, the skink, and the chameleon."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:LEV:11:31",
+      "text": "These are the crawling creatures that are unclean to you. Anyone who touches one of them dead will be unclean until evening."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:LEV:11:32",
+      "text": "If one of them dies and falls on something, that thing becomes unclean. Whether it’s a wooden container, clothing, leather, a sack, or any other object you use for work, put it in water. It stays unclean until evening. After that it’s clean."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:LEV:11:33",
+      "text": "If one falls inside a clay pot, the pot and everything in it become unclean. Break the pot."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:LEV:11:34",
+      "text": "Any food that’s normally safe to eat becomes unclean if it’s soaked with that water. Anything drinkable in such a container becomes unclean too."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:LEV:11:35",
+      "text": "Anything a piece of their dead body falls on becomes unclean. If it lands on an oven or a cooking stand, smash it. Those things are unclean, and you must treat them that way."
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:LEV:11:36",
+      "text": "A spring or a cistern where water collects stays clean. Anything that touches their dead bodies becomes unclean."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:LEV:11:37",
+      "text": "If a piece of their dead body falls on seed meant for planting, the seed stays clean."
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:LEV:11:38",
+      "text": "But if the seed has been watered and a piece falls on it, the seed is unclean to you."
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:LEV:11:39",
+      "text": "“‘If an animal you’re allowed to eat dies, anyone who touches its dead body is unclean until evening."
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:LEV:11:40",
+      "text": "Anyone who eats from its dead body must wash their clothes and will be unclean until evening. Anyone who carries it must wash their clothes too and will be unclean until evening."
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:LEV:11:41",
+      "text": "“‘Every creature that crawls on the ground is detestable. Don’t eat it."
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:LEV:11:42",
+      "text": "Whether it travels on its belly, on all fours, or on lots of feet, don’t eat any of these creatures that crawl on the ground. They’re detestable."
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:LEV:11:43",
+      "text": "Don’t make yourselves detestable by means of any crawling creature. Don’t let them make you unclean and defile you."
+    },
+    {
+      "number": 44,
+      "sourceRef": "eng-web:LEV:11:44",
+      "text": "I’m Yahweh your God. Set yourselves apart and be holy, because I’m holy. Don’t defile yourselves with any crawling creature that moves along the ground."
+    },
+    {
+      "number": 45,
+      "sourceRef": "eng-web:LEV:11:45",
+      "text": "I’m Yahweh, the one who brought you out of Egypt to be your God. So be holy, because I’m holy."
+    },
+    {
+      "number": 46,
+      "sourceRef": "eng-web:LEV:11:46",
+      "text": "“‘That’s the rule for animals, birds, every living creature that moves in the water, and every creature that crawls on the ground."
+    },
+    {
+      "number": 47,
+      "sourceRef": "eng-web:LEV:11:47",
+      "text": "Use it to tell what’s clean and what’s unclean, and which creatures you can eat and which you can’t.’”"
+    }
+  ]
+}

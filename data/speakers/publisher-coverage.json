@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedOn": "2026-11-14",
+  "generatedOn": "2026-11-21",
   "editions": [
     {
       "editionId": "adigun-edition",
-      "sourceSha256": "1a132847ab0e7469921f3840a2bd334029899693f2a46628d76fb49f4e474668",
+      "sourceSha256": "bc7e128dde2d0dda4c70bfe61b774d8e7f3337ac0301c08ef5e0dfc1068e3b28",
       "status": "publisher-metadata",
       "marker": "none",
       "offsetUnit": "not-applicable",
@@ -13,6 +13,24 @@
       "books": [
         {
           "bookId": "GEN",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "EXO",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "LEV",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "MAT",
           "spans": 0,
           "verses": 0,
           "rejectedMetadata": 0

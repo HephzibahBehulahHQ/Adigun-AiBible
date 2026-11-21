@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "LEV",
+  "bookName": "Leviticus",
+  "chapterNumber": 15,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:LEV:15:1",
+      "text": "Yahweh spoke to Moses and Aaron:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:LEV:15:2",
+      "text": "“Tell the Israelites this: ‘If a man has a discharge from his body, that discharge makes him unclean."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:LEV:15:3",
+      "text": "Whether it’s flowing or his body has stopped it up, either way he’s unclean."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:LEV:15:4",
+      "text": "“‘Any bed he lies on and anything he sits on becomes unclean."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:LEV:15:5",
+      "text": "Anyone who touches his bed must wash their clothes and bathe in water. They’ll be unclean until evening."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:LEV:15:6",
+      "text": "Anyone who sits where he sat must wash their clothes and bathe in water. They’ll be unclean until evening."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:LEV:15:7",
+      "text": "“‘Anyone who touches the man himself must wash their clothes and bathe in water. They’ll be unclean until evening."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:LEV:15:8",
+      "text": "“‘If the man spits on someone who’s clean, that person must wash their clothes and bathe in water. They’ll be unclean until evening."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:LEV:15:9",
+      "text": "“‘Any saddle the man rides on becomes unclean."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:LEV:15:10",
+      "text": "Touch anything that was under him and you’ll be unclean until evening. If you carry any of those things, you must wash your clothes and bathe in water, and you’ll be unclean until evening."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:LEV:15:11",
+      "text": "“‘If the man touches someone before rinsing his hands in water, that person must wash their clothes and bathe in water. They’ll be unclean until evening."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:LEV:15:12",
+      "text": "“‘Break any clay pot the man touches. Rinse every wooden container he touches in water."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:LEV:15:13",
+      "text": "“‘Once his discharge clears up, he’ll count off seven days for his cleansing. Then he’ll wash his clothes and bathe in running water, and he’ll be clean."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:LEV:15:14",
+      "text": "“‘On day eight he’ll bring two turtledoves or two young pigeons before Yahweh at the entrance to the Tent of Meeting and hand them to the priest."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:LEV:15:15",
+      "text": "The priest will offer one as a sin offering and the other as a burnt offering. The priest will make atonement for him before Yahweh for his discharge."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:LEV:15:16",
+      "text": "“‘If a man releases semen, he must bathe his whole body in water. He’ll be unclean until evening."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:LEV:15:17",
+      "text": "Wash any clothing or leather that gets semen on it. It’ll be unclean until evening."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:LEV:15:18",
+      "text": "If a man sleeps with a woman and releases semen, both of them must bathe in water, and both will be unclean until evening."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:LEV:15:19",
+      "text": "“‘When a woman has a discharge of blood from her body, she’ll be unclean for seven days. Anyone who touches her will be unclean until evening."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:LEV:15:20",
+      "text": "“‘While she’s unclean, anything she lies down on or sits on becomes unclean."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:LEV:15:21",
+      "text": "Anyone who touches her bed must wash their clothes and bathe in water. They’ll be unclean until evening."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:LEV:15:22",
+      "text": "Anyone who touches something she’s been sitting on must wash their clothes and bathe in water. They’ll be unclean until evening."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:LEV:15:23",
+      "text": "Anyone who touches something on her bed or on whatever she sits on will be unclean until evening."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:LEV:15:24",
+      "text": "“‘If a man sleeps with her and gets her menstrual blood on him, he’ll be unclean for seven days. Any bed he lies on will be unclean too."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:LEV:15:25",
+      "text": "“‘If a woman bleeds for many days outside her period, or the bleeding goes on past her period, she’ll be unclean the whole time she bleeds, just as she is during her period."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:LEV:15:26",
+      "text": "Every bed she lies on while she’s bleeding is treated like the bed she uses during her period. Anything she sits on becomes unclean, just as it does during her period."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:LEV:15:27",
+      "text": "Anyone who touches those things becomes unclean. They must wash their clothes and bathe in water, and they’ll be unclean until evening."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:LEV:15:28",
+      "text": "“‘When the bleeding stops, she’ll count off seven days. After that she’ll be clean."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:LEV:15:29",
+      "text": "On day eight she’ll take two turtledoves or two young pigeons and bring them to the priest at the entrance to the Tent of Meeting."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:LEV:15:30",
+      "text": "The priest will offer one as a sin offering and the other as a burnt offering. The priest will make atonement for her before Yahweh for the uncleanness from her discharge."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:LEV:15:31",
+      "text": "“‘This is how you’ll keep the Israelites separate from their uncleanness, so they don’t die in it by defiling my tabernacle, which is right there among them.’”"
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:LEV:15:32",
+      "text": "These are the rules for a man with a discharge or a release of semen that makes him unclean,"
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:LEV:15:33",
+      "text": "for a woman on her period, for a man or woman with a discharge, and for a man who sleeps with a woman while she’s unclean."
+    }
+  ]
+}

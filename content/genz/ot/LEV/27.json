@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "LEV",
+  "bookName": "Leviticus",
+  "chapterNumber": 27,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:LEV:27:1",
+      "text": "Yahweh told Moses:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:LEV:27:2",
+      "text": "“Tell the Israelites, ‘If someone makes a vow setting a person apart for Yahweh, here’s how to work out the value:"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:LEV:27:3",
+      "text": "For a male from twenty to sixty years old, set the value at fifty silver shekels, using the sanctuary shekel."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:LEV:27:4",
+      "text": "For a female in that age group, set it at thirty shekels."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:LEV:27:5",
+      "text": "From five to twenty years old, set it at twenty shekels for a male and ten for a female."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:LEV:27:6",
+      "text": "From one month to five years old, set it at five silver shekels for a male and three for a female."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:LEV:27:7",
+      "text": "From sixty years old and up, set it at fifteen shekels for a male and ten for a female."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:LEV:27:8",
+      "text": "If the person who made the vow can’t afford that amount, bring them before the priest. The priest will set a value based on what they can afford."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:LEV:27:9",
+      "text": "“‘If the vow is for an animal of a kind people can offer to Yahweh, any such animal given to Yahweh becomes holy."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:LEV:27:10",
+      "text": "Don’t swap it out, whether you’d be trading a good one for a bad one or a bad one for a good one. If you make a swap anyway, both animals become holy."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:LEV:27:11",
+      "text": "If it’s an unclean animal, the kind nobody offers to Yahweh, bring it before the priest."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:LEV:27:12",
+      "text": "The priest will assess its condition, good or bad. Whatever value he sets is what stands."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:LEV:27:13",
+      "text": "If you want to buy the animal back, add a fifth to that value."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:LEV:27:14",
+      "text": "“‘When someone dedicates their house to Yahweh as holy, the priest will assess its condition, good or bad. The value the priest sets is final."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:LEV:27:15",
+      "text": "If the person who dedicated it wants the house back, they’ll pay the assessed value plus a fifth. Then the house is theirs."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:LEV:27:16",
+      "text": "“‘When someone dedicates part of their own field to Yahweh, base its value on how much seed it takes to plant it. Set the value at fifty silver shekels for land that takes a homer of barley seed."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:LEV:27:17",
+      "text": "If they dedicate the field in the Year of Jubilee, the full assessed value stands."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:LEV:27:18",
+      "text": "If they dedicate the field after the Jubilee, the priest will work out its value by how many years remain until the next Jubilee and reduce the assessed value accordingly."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:LEV:27:19",
+      "text": "If the person who dedicated the field wants it back, they’ll pay the assessed value plus a fifth, and it’ll stay theirs."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:LEV:27:20",
+      "text": "If they don’t buy it back or they sell it to someone else, the field can no longer be bought back."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:LEV:27:21",
+      "text": "When the field is released at the Jubilee, it’ll be holy to Yahweh as land permanently devoted to him. It’ll belong to the priests."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:LEV:27:22",
+      "text": "“‘If someone dedicates a field to Yahweh that they bought and that isn’t part of their own family land,"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:LEV:27:23",
+      "text": "the priest will calculate its value up to the Year of Jubilee. The person will pay that amount the same day as something set apart for Yahweh."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:LEV:27:24",
+      "text": "In the Year of Jubilee, the field will go back to the person who sold it, the one whose family land it is."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:LEV:27:25",
+      "text": "Use the sanctuary shekel for every valuation. A shekel is twenty gerahs."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:LEV:27:26",
+      "text": "“‘Nobody may dedicate a firstborn animal, whether it’s a firstborn ox or sheep. The firstborn already belongs to Yahweh."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:LEV:27:27",
+      "text": "If it’s an unclean animal, the owner may buy it back at the assessed value plus a fifth. If it isn’t bought back, sell it for the assessed value."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:LEV:27:28",
+      "text": "“‘Anything someone permanently devotes to Yahweh from what they own, whether a person, an animal, or part of their land, can’t be sold or bought back. Everything permanently devoted is most holy to Yahweh."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:LEV:27:29",
+      "text": "“‘A person devoted to destruction can’t be ransomed. That person must be put to death."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:LEV:27:30",
+      "text": "“‘A tenth of all the land produces, whether crops from seed or fruit from trees, belongs to Yahweh. It’s holy to him."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:LEV:27:31",
+      "text": "If you want to buy back any of your tenth, pay an extra fifth."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:LEV:27:32",
+      "text": "As the cattle, sheep, or goats pass under the counting rod, every tenth animal is holy to Yahweh."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:LEV:27:33",
+      "text": "Don’t check whether that animal is good or bad, and don’t swap it out. If you do make a swap, both animals become holy. Neither may be bought back.’”"
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:LEV:27:34",
+      "text": "These are the commands Yahweh gave Moses on Mount Sinai for the Israelites."
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "LEV",
+  "bookName": "Leviticus",
+  "chapterNumber": 14,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:LEV:14:1",
+      "text": "Yahweh told Moses:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:LEV:14:2",
+      "text": "“Here’s the rule for the day someone with leprosy is to be made clean. Bring the person to the priest."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:LEV:14:3",
+      "text": "The priest will go outside the camp and examine them there. If their leprosy has healed,"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:LEV:14:4",
+      "text": "he’ll tell the people to get two live, clean birds, cedar wood, scarlet yarn, and hyssop for the person being made clean."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:LEV:14:5",
+      "text": "The priest will tell them to slaughter one bird in a clay pot over running water."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:LEV:14:6",
+      "text": "He’ll take the live bird, the cedar wood, the scarlet yarn, and the hyssop and dip them in the blood of the bird killed over the running water."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:LEV:14:7",
+      "text": "He’ll sprinkle the person being cleansed from leprosy seven times and declare them clean. Then he’ll let the live bird fly away into the open field."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:LEV:14:8",
+      "text": "“The person being made clean will wash their clothes, shave off all their hair, and bathe in water. Then they’ll be clean. They can come back into camp, but they must stay outside their tent for seven days."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:LEV:14:9",
+      "text": "On day seven they’ll shave all their hair, including their head, beard, and eyebrows. Shave it all off. Then they’ll wash their clothes and bathe in water, and they’ll be clean."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:LEV:14:10",
+      "text": "“On day eight they’ll bring two male lambs with no defects and one year-old female lamb with no defects. They’ll also bring three tenths of an ephah of fine flour mixed with oil for a grain offering, and one log of oil."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:LEV:14:11",
+      "text": "The priest who performs the cleansing will present the person and these offerings before Yahweh at the entrance to the Tent of Meeting."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:LEV:14:12",
+      "text": "“The priest will take one of the male lambs and the log of oil for a guilt offering and wave them before Yahweh as a wave offering."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:LEV:14:13",
+      "text": "He’ll slaughter the lamb in the sanctuary area where the sin and burnt offerings are slaughtered. The guilt offering belongs to the priest, just like the sin offering. It’s most holy."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:LEV:14:14",
+      "text": "The priest will put some blood from the guilt offering on the tip of the person’s right ear, on their right thumb, and on their right big toe."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:LEV:14:15",
+      "text": "The priest will pour some of the log of oil into his own left palm."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:LEV:14:16",
+      "text": "He’ll dip a finger of his right hand in the oil in his left palm and sprinkle some of it seven times before Yahweh."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:LEV:14:17",
+      "text": "He’ll put some of the oil left in his palm on the tip of the person’s right ear, their right thumb, and their right big toe, right over the blood from the guilt offering."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:LEV:14:18",
+      "text": "The priest will put the rest of the oil in his palm on the head of the person being cleansed. He’ll make atonement for them before Yahweh."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:LEV:14:19",
+      "text": "“The priest will make the sin offering to make atonement for the person’s uncleanness. After that he’ll slaughter the burnt offering."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:LEV:14:20",
+      "text": "Then he’ll put the burnt offering and the grain offering on the altar. The priest will make atonement for the person, and they’ll be clean."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:LEV:14:21",
+      "text": "“If the person is poor and can’t afford all that, here’s what they’ll bring: one male lamb to be waved as a guilt offering to make atonement for them, a tenth of an ephah of fine flour mixed with oil for a grain offering, and a log of oil."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:LEV:14:22",
+      "text": "They’ll also bring two turtledoves or two young pigeons, whichever they can afford. One is for a sin offering and the other is for a burnt offering."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:LEV:14:23",
+      "text": "“On day eight they’ll bring these for their cleansing to the priest before Yahweh, at the entrance to the Tent of Meeting."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:LEV:14:24",
+      "text": "The priest will take the lamb for the guilt offering and the log of oil and wave them before Yahweh as a wave offering."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:LEV:14:25",
+      "text": "He’ll slaughter the lamb for the guilt offering. Then he’ll put some of its blood on the tip of the person’s right ear, on their right thumb, and on their right big toe."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:LEV:14:26",
+      "text": "The priest will pour some of the oil into his own left palm."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:LEV:14:27",
+      "text": "He’ll use a finger of his right hand to sprinkle some of the oil from his left palm seven times before Yahweh."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:LEV:14:28",
+      "text": "The priest will put some of the oil in his palm on the tip of the person’s right ear, their right thumb, and their right big toe, where he put the blood from the guilt offering."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:LEV:14:29",
+      "text": "He’ll put the rest of the oil in his palm on the person’s head to make atonement for them before Yahweh."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:LEV:14:30",
+      "text": "Then he’ll offer the birds the person could afford, whether turtledoves or young pigeons:"
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:LEV:14:31",
+      "text": "one as a sin offering and the other as a burnt offering, along with the grain offering. The priest will make atonement before Yahweh for the person being cleansed.”"
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:LEV:14:32",
+      "text": "That’s the rule for people with leprosy who can’t afford the usual sacrifice for their cleansing."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:LEV:14:33",
+      "text": "Yahweh spoke to Moses and Aaron:"
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:LEV:14:34",
+      "text": "“When you get to Canaan, the land I’m giving you to own, and I cause mildew to spread in a house in that land,"
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:LEV:14:35",
+      "text": "the homeowner must tell the priest, ‘It looks like something’s spreading in my house.’"
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:LEV:14:36",
+      "text": "Before he goes in to check the affected area, the priest will tell them to clear the house so everything inside won’t become unclean. Then he’ll go in and look."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:LEV:14:37",
+      "text": "He’ll check the affected area. If the walls have greenish or reddish streaks that look sunken below the surface,"
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:LEV:14:38",
+      "text": "the priest will go out to the doorway and close up the house for seven days."
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:LEV:14:39",
+      "text": "On day seven the priest will come back and look. If the affected area has spread across the walls,"
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:LEV:14:40",
+      "text": "he’ll tell them to pull out the affected stones and dump them in an unclean place outside the city."
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:LEV:14:41",
+      "text": "He’ll have the whole inside of the house scraped. They’ll dump the plaster they scraped off in an unclean place outside the city."
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:LEV:14:42",
+      "text": "They’ll put new stones where the old ones were and replaster the house with fresh mortar."
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:LEV:14:43",
+      "text": "“If the mildew breaks out again after the stones have been taken out and the house has been scraped and replastered,"
+    },
+    {
+      "number": 44,
+      "sourceRef": "eng-web:LEV:14:44",
+      "text": "the priest will go in and take a look. If the patch has spread, it’s destructive mildew. The house is unclean."
+    },
+    {
+      "number": 45,
+      "sourceRef": "eng-web:LEV:14:45",
+      "text": "Tear down the house, stones, beams, plaster and all. Carry the debris to an unclean place outside the city."
+    },
+    {
+      "number": 46,
+      "sourceRef": "eng-web:LEV:14:46",
+      "text": "“Anyone who goes inside while the house is closed up will be unclean until evening."
+    },
+    {
+      "number": 47,
+      "sourceRef": "eng-web:LEV:14:47",
+      "text": "Anyone who lies down or eats in the house must wash their clothes."
+    },
+    {
+      "number": 48,
+      "sourceRef": "eng-web:LEV:14:48",
+      "text": "“If the priest goes back to check the house after it’s been replastered and the affected area hasn’t spread, he’ll declare the house clean because the mildew is gone."
+    },
+    {
+      "number": 49,
+      "sourceRef": "eng-web:LEV:14:49",
+      "text": "To cleanse the house, he’ll take two birds, cedar wood, scarlet yarn, and hyssop."
+    },
+    {
+      "number": 50,
+      "sourceRef": "eng-web:LEV:14:50",
+      "text": "He’ll slaughter one bird in a clay pot over running water."
+    },
+    {
+      "number": 51,
+      "sourceRef": "eng-web:LEV:14:51",
+      "text": "He’ll take the cedar wood, the hyssop, the scarlet yarn, and the live bird and dip them in the blood of the slaughtered bird and in the running water. Then he’ll sprinkle the house seven times."
+    },
+    {
+      "number": 52,
+      "sourceRef": "eng-web:LEV:14:52",
+      "text": "He’ll cleanse the house with the bird’s blood, the running water, the live bird, the cedar wood, the hyssop, and the scarlet yarn."
+    },
+    {
+      "number": 53,
+      "sourceRef": "eng-web:LEV:14:53",
+      "text": "Then he’ll let the live bird go outside the city into the open field. That’s how he’ll make atonement for the house, and it’ll be clean.”"
+    },
+    {
+      "number": 54,
+      "sourceRef": "eng-web:LEV:14:54",
+      "text": "These are the rules for sores from leprosy and for itchy sores,"
+    },
+    {
+      "number": 55,
+      "sourceRef": "eng-web:LEV:14:55",
+      "text": "for destructive mildew on clothing or in a house,"
+    },
+    {
+      "number": 56,
+      "sourceRef": "eng-web:LEV:14:56",
+      "text": "and for swellings, scabs, and bright spots."
+    },
+    {
+      "number": 57,
+      "sourceRef": "eng-web:LEV:14:57",
+      "text": "They show when something is unclean and when it’s clean. That’s the law of leprosy."
+    }
+  ]
+}

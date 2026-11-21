@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "LEV",
+  "bookName": "Leviticus",
+  "chapterNumber": 5,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:LEV:5:1",
+      "text": "“‘Say someone calls publicly for witnesses to speak under oath. If you saw what happened or know something about it and keep quiet, that’s a sin. You’ll answer for it."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:LEV:5:2",
+      "text": "“‘Say you touch something unclean, like the dead body of an unclean wild animal, farm animal, or crawling creature. Even if you don’t realize you touched it, you’re unclean and guilty."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:LEV:5:3",
+      "text": "“‘Or say you come into contact with something unclean from another person, whatever made them unclean. You didn’t notice at the time. Once you find out, you’re guilty."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:LEV:5:4",
+      "text": "“‘Or say you blurt out an oath to do something bad or good. Whatever you swore in the heat of the moment, if you didn’t realize it at the time, you’re guilty when you find out."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:LEV:5:5",
+      "text": "If you’re guilty of any of these things, own up to exactly what you did."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:LEV:5:6",
+      "text": "Bring Yahweh a guilt offering for that sin: a female lamb or goat from the flock as a sin offering. The priest will make atonement for what you did."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:LEV:5:7",
+      "text": "“‘Can’t afford a lamb? Bring Yahweh two turtledoves or two young pigeons as your guilt offering. One is for a sin offering and the other is for a burnt offering."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:LEV:5:8",
+      "text": "Take both to the priest. He’ll offer the bird for the sin offering first. He’ll wring its head at the neck, keeping it attached."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:LEV:5:9",
+      "text": "He’ll sprinkle some of the blood against the side of the altar and drain the rest at its base. That’s the sin offering."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:LEV:5:10",
+      "text": "He’ll offer the second bird as a burnt offering, following the rules for it. The priest will make atonement for what you did, and you’ll be forgiven."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:LEV:5:11",
+      "text": "“‘Can’t afford two turtledoves or two young pigeons? Bring a tenth of an ephah of fine flour as a sin offering for what you did. Leave out the oil and frankincense. This is a sin offering."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:LEV:5:12",
+      "text": "Take the flour to the priest. He’ll scoop out a handful as the portion that serves as a reminder and burn it on the altar on top of the offerings given to Yahweh through fire. That’s a sin offering."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:LEV:5:13",
+      "text": "The priest will make atonement for whichever of these things you did, and you’ll be forgiven. The rest of the flour goes to the priest, just like with a grain offering.’”"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:LEV:5:14",
+      "text": "Yahweh told Moses:"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:LEV:5:15",
+      "text": "“If someone does wrong without realizing it in a matter involving something holy that belongs to Yahweh, bring Yahweh a ram from the flock with no defects as a guilt offering. Use your valuation in silver, measured in sanctuary shekels."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:LEV:5:16",
+      "text": "Pay back what’s owed for the wrong done to the holy thing, add a fifth, and give it to the priest. The priest will make atonement for you with the ram from the guilt offering, and you’ll be forgiven."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:LEV:5:17",
+      "text": "“If you do something Yahweh commanded you to stay away from, you’re still guilty even if you didn’t know. You’ll answer for what you did."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:LEV:5:18",
+      "text": "Bring the priest a ram from the flock with no defects as a guilt offering, according to your valuation. The priest will make atonement for the wrong you did without knowing it, and you’ll be forgiven."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:LEV:5:19",
+      "text": "That’s a guilt offering. You really were guilty before Yahweh.”"
+    }
+  ]
+}

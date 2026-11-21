@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "LEV",
+  "bookName": "Leviticus",
+  "chapterNumber": 23,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:LEV:23:1",
+      "text": "Yahweh told Moses:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:LEV:23:2",
+      "text": "“Tell the Israelites, ‘Here are my appointed festivals. Announce them as holy gatherings. These are the times I’ve set."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:LEV:23:3",
+      "text": "“‘You can work for six days. Day seven is a Sabbath of complete rest and a holy gathering. Don’t do any work. It’s a Sabbath for Yahweh wherever you live."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:LEV:23:4",
+      "text": "“‘Here are Yahweh’s appointed festivals. Announce these holy gatherings at the times set for them."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:LEV:23:5",
+      "text": "Yahweh’s Passover is on the evening of the fourteenth day of the first month."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:LEV:23:6",
+      "text": "On day fifteen of that same month, celebrate Yahweh’s Festival of Unleavened Bread. For seven days, eat bread made without yeast."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:LEV:23:7",
+      "text": "On the first day, gather for a holy assembly. Don’t do your regular work."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:LEV:23:8",
+      "text": "Bring Yahweh an offering through fire on each of the seven days. On day seven, gather for another holy assembly. Don’t do your regular work.’”"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:LEV:23:9",
+      "text": "Yahweh told Moses:"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:LEV:23:10",
+      "text": "“Tell the Israelites, ‘When you get to the land I’m giving you and bring in its harvest, take a bundle of the first grain you cut to the priest."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:LEV:23:11",
+      "text": "He’ll wave the bundle before Yahweh so you’ll be accepted. The priest will wave it the day after the Sabbath."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:LEV:23:12",
+      "text": "On the day the bundle is waved, offer Yahweh a year-old male lamb with no defects as a burnt offering."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:LEV:23:13",
+      "text": "Bring two tenths of an ephah of fine flour mixed with oil as the grain offering, given to Yahweh through fire for a pleasing smell. Bring a quarter of a hin of wine with it as a drink offering."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:LEV:23:14",
+      "text": "Don’t eat any bread, roasted grain, or fresh grain until that day, when you’ve brought the offering to your God. Keep this rule for every generation, wherever you live."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:LEV:23:15",
+      "text": "“‘Start counting the day after the Sabbath, the day you brought the bundle to be waved. Count seven full Sabbaths."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:LEV:23:16",
+      "text": "The day after the seventh Sabbath is day fifty. Bring Yahweh an offering of new grain that day."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:LEV:23:17",
+      "text": "Bring two loaves from your homes as a wave offering. Make them from two tenths of an ephah of fine flour and bake them with yeast. They’re the first of the harvest for Yahweh."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:LEV:23:18",
+      "text": "With the bread, bring seven year-old lambs with no defects, one young bull, and two rams. They’ll be a burnt offering to Yahweh, with their grain and drink offerings, given through fire for a smell that pleases him."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:LEV:23:19",
+      "text": "Bring one male goat for a sin offering and two year-old male lambs for a peace offering."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:LEV:23:20",
+      "text": "The priest will wave the first-harvest bread and the two lambs before Yahweh as a wave offering. They’ll be holy to Yahweh and will go to the priest."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:LEV:23:21",
+      "text": "Announce a holy gathering for that same day. Don’t do your regular work. Keep this rule for every generation, wherever you live."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:LEV:23:22",
+      "text": "“‘When you harvest your land, leave the corners of your field standing and don’t pick up what the harvesters leave behind. Leave it for the poor and for foreigners. I’m Yahweh your God.’”"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:LEV:23:23",
+      "text": "Yahweh told Moses:"
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:LEV:23:24",
+      "text": "“Tell the Israelites, ‘On day one of the seventh month, take a day of complete rest. Blow the trumpets as a reminder and come together for a holy gathering."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:LEV:23:25",
+      "text": "Don’t do your regular work. Bring Yahweh an offering through fire.’”"
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:LEV:23:26",
+      "text": "Yahweh told Moses:"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:LEV:23:27",
+      "text": "“But day ten of that seventh month is the Day of Atonement. Come together for a holy gathering, deny yourselves, and bring Yahweh an offering through fire."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:LEV:23:28",
+      "text": "Don’t do any work that day. It’s the Day of Atonement, when atonement is made for you before Yahweh your God."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:LEV:23:29",
+      "text": "Anyone who refuses to deny themselves that day will be cut off from their people."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:LEV:23:30",
+      "text": "If anyone does any work that day, I’ll destroy that person from among their people."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:LEV:23:31",
+      "text": "Don’t do any work. Keep this rule for every generation, wherever you live."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:LEV:23:32",
+      "text": "It’ll be a Sabbath of complete rest for you, and you’ll deny yourselves. Start on the evening of day nine and keep the Sabbath from that evening to the next.”"
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:LEV:23:33",
+      "text": "Yahweh told Moses:"
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:LEV:23:34",
+      "text": "“Tell the Israelites, ‘Starting on day fifteen of the seventh month, celebrate the Festival of Booths for Yahweh for seven days."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:LEV:23:35",
+      "text": "Come together for a holy gathering on day one. Don’t do your regular work."
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:LEV:23:36",
+      "text": "For seven days, bring Yahweh an offering through fire. On day eight, come together for a holy gathering and bring another offering through fire to Yahweh. This is a solemn gathering. Don’t do your regular work."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:LEV:23:37",
+      "text": "“‘These are Yahweh’s appointed festivals, which you’ll announce as holy gatherings. Bring offerings to Yahweh through fire, including the burnt offerings, grain offerings, sacrifices, and drink offerings, each on its own day."
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:LEV:23:38",
+      "text": "These are in addition to Yahweh’s Sabbaths, your gifts, everything you bring to fulfill your vows, and all the offerings you freely give to Yahweh."
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:LEV:23:39",
+      "text": "“‘On day fifteen of the seventh month, after you’ve gathered in what the land produced, celebrate Yahweh’s festival for seven days. Day one is a day of complete rest, and so is day eight."
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:LEV:23:40",
+      "text": "On day one, gather fruit from great trees, palm branches, branches from thick trees, and willows from the stream. Celebrate before Yahweh your God for seven days."
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:LEV:23:41",
+      "text": "Keep this festival for Yahweh for seven days each year. It’s a rule for every generation. Celebrate it in the seventh month."
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:LEV:23:42",
+      "text": "Live in temporary shelters for seven days. Everyone born in Israel must live in those shelters"
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:LEV:23:43",
+      "text": "so your children and their children will know that I had the Israelites live in temporary shelters when I brought them out of Egypt. I’m Yahweh your God.’”"
+    },
+    {
+      "number": 44,
+      "sourceRef": "eng-web:LEV:23:44",
+      "text": "That’s how Moses announced Yahweh’s appointed festivals to the Israelites."
+    }
+  ]
+}

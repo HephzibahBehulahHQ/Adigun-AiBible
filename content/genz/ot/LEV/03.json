@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "LEV",
+  "bookName": "Leviticus",
+  "chapterNumber": 3,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:LEV:3:1",
+      "text": "“‘Bringing cattle as a peace offering? You can bring a male or a female before Yahweh. Either way, it must have no defects."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:LEV:3:2",
+      "text": "Put your hand on the animal’s head and slaughter it at the entrance of the Tent of Meeting. Aaron’s sons, the priests, will splash its blood against all sides of the altar."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:LEV:3:3",
+      "text": "Give part of that peace offering to Yahweh through fire. Take the fat that covers the insides and all the fat attached to them."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:LEV:3:4",
+      "text": "Remove both kidneys, the fat on them near the lower back, and the piece that covers the liver. Take that piece out with the kidneys."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:LEV:3:5",
+      "text": "Aaron’s sons will burn those parts on top of the burnt offering, over the wood in the altar fire. It’s an offering given through fire, and its smell is pleasing to Yahweh."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:LEV:3:6",
+      "text": "“‘Bringing a peace offering to Yahweh from your flock? Male or female, the animal must have no defects."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:LEV:3:7",
+      "text": "If you’re bringing a lamb, present it before Yahweh."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:LEV:3:8",
+      "text": "Put your hand on its head and slaughter it in front of the Tent of Meeting. Aaron’s sons will splash its blood against all sides of the altar."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:LEV:3:9",
+      "text": "Give the fat from that peace offering to Yahweh through fire. Cut away all the tail fat close to the backbone, and take the fat that covers the insides and all the fat attached to them."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:LEV:3:10",
+      "text": "Remove both kidneys, the fat on them near the lower back, and the piece that covers the liver. Take that piece out with the kidneys."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:LEV:3:11",
+      "text": "The priest will burn those parts on the altar as food offered to Yahweh through fire."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:LEV:3:12",
+      "text": "“‘If you’re bringing a goat, present it before Yahweh."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:LEV:3:13",
+      "text": "Put your hand on its head and slaughter it in front of the Tent of Meeting. Aaron’s sons will splash its blood against all sides of the altar."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:LEV:3:14",
+      "text": "Give these parts to Yahweh through fire. Take the fat that covers the insides and all the fat attached to them."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:LEV:3:15",
+      "text": "Remove both kidneys, the fat on them near the lower back, and the piece that covers the liver. Take that piece out with the kidneys."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:LEV:3:16",
+      "text": "The priest will burn those parts on the altar as food given through fire, with a pleasing smell. All the fat belongs to Yahweh."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:LEV:3:17",
+      "text": "“‘Here’s a rule to keep for every generation, wherever you live: Don’t eat fat or blood.’”"
+    }
+  ]
+}

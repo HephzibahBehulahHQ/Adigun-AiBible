@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "LEV",
+  "bookName": "Leviticus",
+  "chapterNumber": 17,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:LEV:17:1",
+      "text": "Yahweh told Moses:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:LEV:17:2",
+      "text": "“Tell Aaron, his sons, and all the Israelites, ‘Here’s what Yahweh has commanded:"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:LEV:17:3",
+      "text": "Suppose someone from Israel slaughters a bull, a lamb, or a goat, whether inside the camp or outside it,"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:LEV:17:4",
+      "text": "and doesn’t bring it to the entrance to the Tent of Meeting to give it to Yahweh as an offering in front of his tabernacle. That person is guilty of shedding blood. They shed blood and will be cut off from their people."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:LEV:17:5",
+      "text": "The point is for the Israelites to bring the sacrifices they’ve been making out in the open fields to Yahweh. Bring them to the priest at the entrance to the Tent of Meeting and offer them there to Yahweh as peace offerings."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:LEV:17:6",
+      "text": "The priest will splash the blood on Yahweh’s altar at the entrance to the Tent of Meeting and burn the fat so its smell is pleasing to Yahweh."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:LEV:17:7",
+      "text": "They must stop sacrificing to the goat idols they’ve been chasing after like unfaithful partners. This rule stands for every generation.’"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:LEV:17:8",
+      "text": "“Tell them, ‘If an Israelite or a foreigner living among them offers a burnt offering or any other sacrifice,"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:LEV:17:9",
+      "text": "and doesn’t bring it to the entrance to the Tent of Meeting to offer it to Yahweh, that person will be cut off from their people."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:LEV:17:10",
+      "text": "“‘If anyone from Israel or any foreigner living among them eats blood of any kind, I’ll turn against that person and cut them off from their people."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:LEV:17:11",
+      "text": "The life of the body is in the blood. I’ve given you the blood to use on the altar to make atonement for your lives. The blood makes atonement because of the life in it."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:LEV:17:12",
+      "text": "That’s why I told the Israelites, “Nobody among you may eat blood. No foreigner living among you may eat it either.”"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:LEV:17:13",
+      "text": "“‘If an Israelite or a foreigner living among them hunts and catches an animal or bird you’re allowed to eat, they must drain its blood and cover it with dirt."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:LEV:17:14",
+      "text": "The blood of every creature goes with its life. That’s why I told the Israelites, “Don’t eat the blood of any creature. The blood is its life. Whoever eats it will be cut off.”"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:LEV:17:15",
+      "text": "“‘Anyone who eats an animal that died on its own or was torn apart by other animals must wash their clothes and bathe in water. That goes for someone born among you or a foreigner. They’ll be unclean until evening, and then they’ll be clean."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:LEV:17:16",
+      "text": "If they skip washing their clothes or bathing, they’ll answer for what they did.’”"
+    }
+  ]
+}
