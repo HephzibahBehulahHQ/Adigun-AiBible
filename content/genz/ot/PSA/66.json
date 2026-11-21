@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 66,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:66:1",
+      "text": "For the music director. A song. A psalm. Shout for joy to God, all the earth!"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:66:2",
+      "text": "Sing about the glory of his name. Give him glory and praise!"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:66:3",
+      "text": "Say to God, “Your deeds fill us with awe! Your power is so great that your enemies submit to you."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:66:4",
+      "text": "The whole earth will worship you and sing to you. They’ll sing praise to your name.” Selah."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:66:5",
+      "text": "Come and see what God has done, the wonders he’s worked for humanity."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:66:6",
+      "text": "He turned the sea into dry ground, and his people crossed the river on foot. There we rejoiced in him."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:66:7",
+      "text": "He rules by his power forever. He keeps watch over the nations. Let those who rebel against him keep from rising up. Selah."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:66:8",
+      "text": "Praise our God, you peoples! Let everyone hear you praise him."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:66:9",
+      "text": "He keeps us alive and keeps our feet from slipping."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:66:10",
+      "text": "You’ve tested us, God. You’ve refined us like silver."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:66:11",
+      "text": "You brought us into prison and laid heavy loads on our backs."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:66:12",
+      "text": "You let people ride over our heads. We passed through fire and water, but you brought us out to a place of plenty."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:66:13",
+      "text": "I’ll come into your temple with burnt offerings and keep the vows I made to you,"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:66:14",
+      "text": "the promises I spoke with my own lips when I was in trouble."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:66:15",
+      "text": "I’ll bring you fat animals as burnt offerings, including rams. I’ll offer bulls and goats. Selah."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:66:16",
+      "text": "Come and listen, all you who fear God. I’ll tell you what he’s done for me."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:66:17",
+      "text": "I cried out to him with my mouth, and my tongue lifted him up in praise."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:66:18",
+      "text": "If I’d held on to sin in my heart, the Lord wouldn’t have listened."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:66:19",
+      "text": "But God did listen. He heard my prayer."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PSA:66:20",
+      "text": "Blessed be God! He received my prayer and kept showing me his faithful love."
+    }
+  ]
+}
