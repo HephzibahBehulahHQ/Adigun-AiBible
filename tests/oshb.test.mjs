@@ -2,7 +2,8 @@ import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { readFileSync, readdirSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
-import { join } from 'node:path';
+import { join, relative } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import test from 'node:test';
 
 const root = new URL('../data/original-language/oshb/', import.meta.url);
@@ -40,7 +41,7 @@ test('OSHB source, exact complete notices and derived outputs retain verified pr
   const expected = [...integrity.files.map((file) => file.path), 'source.json', 'integrity.json'].sort();
   const actual = readdirSync(root, { recursive: true, withFileTypes: true }).filter((entry) => entry.isFile()).map((entry) => {
     const absolute = join(entry.parentPath, entry.name);
-    return absolute.slice(root.pathname.length).replaceAll('\\', '/');
+    return relative(fileURLToPath(root), absolute).replaceAll('\\', '/');
   }).sort();
   assert.deepEqual(actual, expected);
   const notices = { 'LICENSE.md': 'LICENSE.md', 'README.md': 'README.md', 'parsing/README.md': 'parsing-README.md', 'parsing/HebrewMorphologyCodes.html': 'HebrewMorphologyCodes.html.txt', 'parsing/Oshm.xml': 'Oshm.xml.txt' };
