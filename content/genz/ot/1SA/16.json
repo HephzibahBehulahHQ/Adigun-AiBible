@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1SA",
+  "bookName": "1 Samuel",
+  "chapterNumber": 16,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1SA:16:1",
+      "text": "The LORD told Samuel, “How long will you grieve for Saul? I've rejected him as king over Israel. Fill your horn with oil and go. I'm sending you to Jesse of Bethlehem, because I've chosen one of his sons to be my king.”"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1SA:16:2",
+      "text": "Samuel asked, “How can I go? If Saul hears about it, he'll kill me.” The LORD said, “Take a young cow with you and say, ‘I've come to sacrifice to the LORD.’"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1SA:16:3",
+      "text": "Invite Jesse to the sacrifice. I'll show you what to do. Anoint the one I point out to you.”"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1SA:16:4",
+      "text": "Samuel did what the LORD said and went to Bethlehem. The town elders came out trembling to meet him and asked, “Have you come in peace?”"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1SA:16:5",
+      "text": "He said, “Yes, I've come in peace to sacrifice to the LORD. Set yourselves apart and come with me to the sacrifice.” He set Jesse and his sons apart and invited them to come."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1SA:16:6",
+      "text": "When they arrived and Samuel saw Eliab, he thought, “Surely this is the one the LORD has chosen to anoint.”"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1SA:16:7",
+      "text": "But the LORD told Samuel, “Don't judge by his looks or how tall he is. I've rejected him. I see differently from people. People look at what's on the outside, but the LORD looks at the heart.”"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1SA:16:8",
+      "text": "Jesse called Abinadab forward and had him pass in front of Samuel. Samuel said, “The LORD hasn't chosen this one either.”"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1SA:16:9",
+      "text": "Then Jesse brought Shammah forward. Samuel said, “The LORD hasn't chosen him either.”"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1SA:16:10",
+      "text": "Jesse brought seven of his sons before Samuel, but Samuel said, “The LORD hasn't chosen any of these.”"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1SA:16:11",
+      "text": "Samuel asked, “Are these all your sons?” Jesse said, “There's still the youngest, but he's out looking after the sheep.” Samuel said, “Send for him. We won't sit down until he gets here.”"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1SA:16:12",
+      "text": "Jesse sent for him. The boy had a ruddy complexion, a handsome face, and a striking appearance. The LORD said, “Get up and anoint him. He's the one.”"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1SA:16:13",
+      "text": "Samuel took the horn of oil and anointed David in front of his brothers. From that day on, the LORD's Spirit came powerfully upon David. Then Samuel left for Ramah."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1SA:16:14",
+      "text": "The LORD's Spirit left Saul, and an evil spirit from the LORD tormented him."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:1SA:16:15",
+      "text": "Saul's servants told him, “An evil spirit from God is tormenting you."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:1SA:16:16",
+      "text": "Give your servants the order to look for someone who plays the harp well. When the evil spirit from God comes over you, he can play and you'll feel better.”"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:1SA:16:17",
+      "text": "Saul told them, “Find someone who plays well and bring him to me.”"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:1SA:16:18",
+      "text": "One of the young men answered, “I've seen a son of Jesse from Bethlehem who plays well. He's brave, he knows how to fight, he speaks wisely, and he's handsome. The LORD is with him.”"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:1SA:16:19",
+      "text": "Saul sent messengers to Jesse. “Send me your son David, the one who looks after the sheep.”"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:1SA:16:20",
+      "text": "Jesse loaded a donkey with bread, a container of wine, and a young goat and sent his son David to Saul with them."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:1SA:16:21",
+      "text": "David came and entered Saul's service. Saul grew very fond of him, and David became his armor-bearer."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:1SA:16:22",
+      "text": "Saul sent word to Jesse, “Please let David stay in my service. He's found favor with me.”"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:1SA:16:23",
+      "text": "Whenever the spirit from God came over Saul, David took his harp and played. Saul felt better and found relief, and the evil spirit left him."
+    }
+  ]
+}
