@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "NEH",
+  "bookName": "Nehemiah",
+  "chapterNumber": 11,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:NEH:11:1",
+      "text": "The leaders of the people lived in Jerusalem. The rest drew lots so that one person in ten would live in Jerusalem, the holy city, and the other nine would stay in the other towns."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:NEH:11:2",
+      "text": "The people blessed everyone who volunteered to live in Jerusalem."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:NEH:11:3",
+      "text": "These are the leaders of the province who lived in Jerusalem. In the other towns of Judah, the Israelites, priests, Levites, temple servants, and descendants of Solomon's servants lived on their own property."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:NEH:11:4",
+      "text": "Some people from Judah and Benjamin lived in Jerusalem. From Judah came Athaiah son of Uzziah, whose ancestors were Zechariah, Amariah, Shephatiah, and Mahalalel, from the line of Perez."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:NEH:11:5",
+      "text": "There was also Maaseiah son of Baruch, whose ancestors were Colhozeh, Hazaiah, Adaiah, Joiarib, Zechariah, and the Shilonite."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:NEH:11:6",
+      "text": "There were four hundred sixty-eight capable men from the line of Perez living in Jerusalem."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:NEH:11:7",
+      "text": "From Benjamin came Sallu son of Meshullam, whose ancestors were Joed, Pedaiah, Kolaiah, Maaseiah, Ithiel, and Jeshaiah."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:NEH:11:8",
+      "text": "Gabbai and Sallai came after him. The group numbered nine hundred twenty-eight."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:NEH:11:9",
+      "text": "Joel son of Zichri supervised them, and Judah son of Hassenuah was second in charge of the city."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:NEH:11:10",
+      "text": "The priests included Jedaiah son of Joiarib, Jachin,"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:NEH:11:11",
+      "text": "and Seraiah son of Hilkiah, whose ancestors were Meshullam, Zadok, Meraioth, and Ahitub, who had been in charge of God's house."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:NEH:11:12",
+      "text": "They and their fellow priests who worked at God's house numbered eight hundred twenty-two. There was also Adaiah son of Jeroham, whose ancestors were Pelaliah, Amzi, Zechariah, Pashhur, and Malchijah."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:NEH:11:13",
+      "text": "Adaiah's fellow family heads numbered two hundred forty-two. There was also Amashsai son of Azarel, whose ancestors were Ahzai, Meshillemoth, and Immer."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:NEH:11:14",
+      "text": "He and his fellow men of courage numbered a hundred twenty-eight, and Zabdiel son of Haggedolim supervised them."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:NEH:11:15",
+      "text": "The Levites included Shemaiah son of Hasshub, whose ancestors were Azrikam, Hashabiah, and Bunni,"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:NEH:11:16",
+      "text": "along with Shabbethai and Jozabad, Levite leaders who supervised work outside God's house."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:NEH:11:17",
+      "text": "There was also Mattaniah son of Mica, descended from Zabdi and Asaph, who led the prayer of thanksgiving. Bakbukiah was second among his fellow Levites. Abda was the son of Shammua, descended from Galal and Jeduthun."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:NEH:11:18",
+      "text": "There were two hundred eighty-four Levites in the holy city."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:NEH:11:19",
+      "text": "The gatekeepers Akkub, Talmon, and their fellow guards numbered a hundred seventy-two. They kept watch at the gates."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:NEH:11:20",
+      "text": "The other Israelites, priests, and Levites lived in the towns of Judah, each on their own inherited land."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:NEH:11:21",
+      "text": "The temple servants lived on Ophel, with Ziha and Gishpa in charge of them."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:NEH:11:22",
+      "text": "Uzzi son of Bani supervised the Levites in Jerusalem. His ancestors were Hashabiah, Mattaniah, and Mica, from Asaph's family of singers responsible for the service of God's house."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:NEH:11:23",
+      "text": "The king had issued instructions about them, with a fixed provision for what the singers needed each day."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:NEH:11:24",
+      "text": "Pethahiah son of Meshezabel, a descendant of Judah's son Zerah, represented the people in all matters before the king."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:NEH:11:25",
+      "text": "As for the villages and their fields, some of Judah's people settled in Kiriath Arba and its surrounding towns, in Dibon and its towns, and in Jekabzeel and its villages."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:NEH:11:26",
+      "text": "Others settled in Jeshua, Moladah, and Beth Pelet,"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:NEH:11:27",
+      "text": "in Hazar Shual and in Beersheba and its towns,"
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:NEH:11:28",
+      "text": "in Ziklag and in Meconah and its towns,"
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:NEH:11:29",
+      "text": "in En Rimmon, Zorah, and Jarmuth,"
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:NEH:11:30",
+      "text": "in Zanoah and Adullam with their villages, in Lachish and its fields, and in Azekah and its towns. They settled from Beersheba to the Valley of Hinnom."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:NEH:11:31",
+      "text": "The people of Benjamin settled from Geba onward, in Michmash, Aija, and Bethel and its towns,"
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:NEH:11:32",
+      "text": "and in Anathoth, Nob, and Ananiah,"
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:NEH:11:33",
+      "text": "Hazor, Ramah, and Gittaim,"
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:NEH:11:34",
+      "text": "Hadid, Zeboim, and Neballat,"
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:NEH:11:35",
+      "text": "as well as Lod and Ono, the Valley of the Craftsmen."
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:NEH:11:36",
+      "text": "Some divisions of Levites from Judah settled in Benjamin's territory."
+    }
+  ]
+}
