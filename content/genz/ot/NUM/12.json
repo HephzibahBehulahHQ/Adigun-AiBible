@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "NUM",
+  "bookName": "Numbers",
+  "chapterNumber": 12,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:NUM:12:1",
+      "text": "Miriam and Aaron spoke against Moses because he’d married a Cushite woman. That was the woman he’d taken as his wife."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:NUM:12:2",
+      "text": "They said, “Is Moses the only one Yahweh has spoken through? Hasn’t he spoken through us too?” Yahweh heard them."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:NUM:12:3",
+      "text": "Moses was very humble, more humble than anyone else on earth."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:NUM:12:4",
+      "text": "Out of nowhere Yahweh told Moses, Aaron, and Miriam, “All three of you, out to the Tent of Meeting!” So the three of them went out."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:NUM:12:5",
+      "text": "Yahweh came down in a pillar of cloud and stood at the entrance to the tent. He called Aaron and Miriam, and they both stepped forward."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:NUM:12:6",
+      "text": "He said, “Listen to what I’m telling you. If there’s a prophet among you, I, Yahweh, make myself known in a vision and speak to that prophet in a dream."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:NUM:12:7",
+      "text": "Things are different with my servant Moses. He’s faithful throughout my household."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:NUM:12:8",
+      "text": "I speak to him directly, mouth to mouth. I speak plainly and without riddles, and he sees Yahweh’s form. So how were you able to speak against my servant Moses without being afraid?”"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:NUM:12:9",
+      "text": "Yahweh’s anger flared against them, and he left."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:NUM:12:10",
+      "text": "When the cloud lifted from the tent, there was Miriam with leprosy, white as snow. Aaron turned toward her and saw the leprosy."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:NUM:12:11",
+      "text": "Aaron told Moses, “Please, my lord, don’t hold this sin against us. We acted like fools and sinned."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:NUM:12:12",
+      "text": "Please don’t let her end up like a stillborn baby whose flesh is half gone when it comes out of its mother’s womb.”"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:NUM:12:13",
+      "text": "Moses cried out to Yahweh, “God, please heal her. I’m begging you!”"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:NUM:12:14",
+      "text": "Yahweh told Moses, “If her father had spit in her face, wouldn’t she carry that shame for seven days? Keep her outside the camp for seven days, and then bring her back in.”"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:NUM:12:15",
+      "text": "Miriam was kept outside the camp for seven days. The people stayed put until she was brought back in."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:NUM:12:16",
+      "text": "After that, the people moved on from Hazeroth and camped in the wilderness of Paran."
+    }
+  ]
+}

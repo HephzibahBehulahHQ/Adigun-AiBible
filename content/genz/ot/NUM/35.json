@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "NUM",
+  "bookName": "Numbers",
+  "chapterNumber": 35,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:NUM:35:1",
+      "text": "Yahweh spoke to Moses on the plains of Moab by the Jordan across from Jericho:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:NUM:35:2",
+      "text": "“Tell the Israelites to give the Levites towns to live in out of the land they inherit. Give them the pastureland around those towns too."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:NUM:35:3",
+      "text": "The towns will be their homes, and the pastureland will be for their livestock, their possessions, and all their other animals."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:NUM:35:4",
+      "text": "“The pastureland you give the Levites will stretch a thousand cubits out from the town wall all the way around."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:NUM:35:5",
+      "text": "Measure two thousand cubits on the east side, two thousand on the south, two thousand on the west, and two thousand on the north, with the town in the middle. That will be the pastureland for their towns."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:NUM:35:6",
+      "text": "“Give the Levites six towns of refuge where someone who kills a person can run for safety. Give them forty-two other towns besides those."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:NUM:35:7",
+      "text": "Give the Levites forty-eight towns in all, with their pasturelands."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:NUM:35:8",
+      "text": "Take the towns from the Israelites’ own land. Take more from larger groups and fewer from smaller ones. Each group will give the Levites towns in proportion to the inheritance it receives.”"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:NUM:35:9",
+      "text": "Yahweh told Moses:"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:NUM:35:10",
+      "text": "“Tell the Israelites, ‘When you cross the Jordan into Canaan,"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:NUM:35:11",
+      "text": "pick towns to serve as places of refuge. Anyone who kills a person by accident can run there."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:NUM:35:12",
+      "text": "Those towns will protect the person from the avenger, so the person who caused the death won’t die before standing trial in front of the community."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:NUM:35:13",
+      "text": "Set aside six towns of refuge."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:NUM:35:14",
+      "text": "Put three across the Jordan and three in Canaan. Those will be towns of refuge."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:NUM:35:15",
+      "text": "All six will offer refuge to Israelites, to outsiders, and to foreigners living among you. Anyone who kills someone by accident can escape there."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:NUM:35:16",
+      "text": "“‘If someone strikes another person with an iron object and that person dies, it’s murder. The murderer must be put to death."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:NUM:35:17",
+      "text": "If someone strikes another person with a stone big enough to kill, and that person dies, it’s murder. The murderer must be put to death."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:NUM:35:18",
+      "text": "If someone strikes another person with a wooden weapon that can kill, and that person dies, it’s murder. The murderer must be put to death."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:NUM:35:19",
+      "text": "The avenger of blood will put the murderer to death. When the avenger meets the murderer, the avenger will kill them."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:NUM:35:20",
+      "text": "If someone shoves another person out of hatred, or lies in wait and throws something at them, and they die,"
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:NUM:35:21",
+      "text": "or hits them with their hand out of hostility and kills them, the person who struck them must be put to death. It’s murder. The avenger of blood will kill the murderer when they meet."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:NUM:35:22",
+      "text": "“‘But suppose someone shoves a person suddenly without hostility or throws something at them without lying in wait."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:NUM:35:23",
+      "text": "Or suppose they drop a stone big enough to kill without seeing the person below, and that person dies. They weren’t enemies and the one who dropped it wasn’t trying to hurt anyone."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:NUM:35:24",
+      "text": "In that case the community will judge between the person who caused the death and the avenger of blood, using these rules."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:NUM:35:25",
+      "text": "The community will protect the person who caused the death from the avenger of blood and send them back to the town of refuge they ran to. They must live there until the high priest, who was anointed with holy oil, dies."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:NUM:35:26",
+      "text": "“‘But if the person ever goes beyond the boundaries of the town they fled to for refuge,"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:NUM:35:27",
+      "text": "and the avenger of blood finds and kills them outside those boundaries, the avenger won’t be guilty of shedding blood."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:NUM:35:28",
+      "text": "The person should have stayed in their town of refuge until the high priest died. Once the high priest dies, they can go back to their own land."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:NUM:35:29",
+      "text": "“‘These rules will stand for every generation, wherever you live."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:NUM:35:30",
+      "text": "“‘When someone kills a person, the murderer may be put to death on the testimony of witnesses. Nobody can be put to death on the word of just one witness."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:NUM:35:31",
+      "text": "“‘Don’t accept payment to spare the life of a murderer who deserves death. The murderer must be put to death."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:NUM:35:32",
+      "text": "“‘Don’t accept payment to let someone who fled to a town of refuge go back home before the priest dies."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:NUM:35:33",
+      "text": "“‘Don’t pollute the land where you live. Bloodshed pollutes the land, and the land can’t be atoned for the blood shed on it except by the blood of the one who shed it."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:NUM:35:34",
+      "text": "Don’t make the land where you live unclean. I live there too, because I, Yahweh, live among the Israelites.’”"
+    }
+  ]
+}

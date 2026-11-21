@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "NUM",
+  "bookName": "Numbers",
+  "chapterNumber": 19,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:NUM:19:1",
+      "text": "Yahweh spoke to Moses and Aaron:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:NUM:19:2",
+      "text": "“Here’s the rule Yahweh has given. Tell the Israelites to bring you a red heifer with no spot or defect, one that’s never worn a yoke."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:NUM:19:3",
+      "text": "Give her to Eleazar the priest. He’ll take her outside the camp and have someone slaughter her right in front of him."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:NUM:19:4",
+      "text": "Eleazar the priest will take some of her blood on his finger and sprinkle it seven times toward the front of the Tent of Meeting."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:NUM:19:5",
+      "text": "Have someone burn the heifer where he can see it. Burn her hide, meat, blood, and dung."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:NUM:19:6",
+      "text": "The priest will take cedar wood, hyssop, and scarlet yarn and throw them into the middle of the fire where the heifer is burning."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:NUM:19:7",
+      "text": "Then the priest must wash his clothes and bathe in water. He can come into camp after that, but he’ll be unclean until evening."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:NUM:19:8",
+      "text": "The person who burns the heifer must wash their clothes and bathe in water too. They’ll be unclean until evening."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:NUM:19:9",
+      "text": "“Someone who’s clean will collect the heifer’s ashes and store them in a clean place outside the camp. The Israelite community will keep them to use in water for cleansing impurity. It’s a sin offering."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:NUM:19:10",
+      "text": "The person who collects the ashes must wash their clothes and will be unclean until evening. This rule lasts forever for the Israelites and the foreigners living among them."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:NUM:19:11",
+      "text": "“Anyone who touches a dead human body will be unclean for seven days."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:NUM:19:12",
+      "text": "They must cleanse themselves with the water on day three, and they’ll be clean on day seven. If they skip cleansing on day three, they’ll still be unclean on day seven."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:NUM:19:13",
+      "text": "Anyone who touches a dead person’s body and fails to cleanse themselves defiles Yahweh’s tabernacle. Cut that person off from Israel. The cleansing water wasn’t sprinkled on them, so their uncleanness remains."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:NUM:19:14",
+      "text": "“Here’s the rule when someone dies in a tent. Anyone who goes into the tent and anyone already inside will be unclean for seven days."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:NUM:19:15",
+      "text": "Any open container with no cover tied over it is unclean."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:NUM:19:16",
+      "text": "“Out in the open, anyone who touches someone killed by a sword, a dead body, a human bone, or a grave will be unclean for seven days."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:NUM:19:17",
+      "text": "“For the person who’s unclean, take some ashes from the burned sin offering, put them in a container, and pour running water over them."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:NUM:19:18",
+      "text": "Someone who’s clean will dip hyssop in the water and sprinkle it on the tent, the containers, the people who were there, and whoever touched the bone, the person who was killed, the dead body, or the grave."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:NUM:19:19",
+      "text": "The clean person will sprinkle the unclean person on day three and day seven. On day seven they’ll cleanse that person, who must wash their clothes and bathe in water. That evening they’ll be clean."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:NUM:19:20",
+      "text": "Anyone who’s unclean and refuses to cleanse themselves will be cut off from the assembly for defiling Yahweh’s sanctuary. They haven’t been sprinkled with the cleansing water, so they’re unclean."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:NUM:19:21",
+      "text": "This rule lasts forever. Anyone who sprinkles the cleansing water must wash their clothes, and anyone who touches the water will be unclean until evening."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:NUM:19:22",
+      "text": "“Anything an unclean person touches becomes unclean. Anyone who touches that thing will be unclean until evening.”"
+    }
+  ]
+}

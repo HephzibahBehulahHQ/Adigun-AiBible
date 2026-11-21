@@ -12,6 +12,7 @@ const portion = {
   GEN: { testament: 'ot', chapters: 50 },
   EXO: { testament: 'ot', chapters: 40 },
   LEV: { testament: 'ot', chapters: 27 },
+  NUM: { testament: 'ot', chapters: 36 },
   MAT: { testament: 'nt', chapters: 28 },
 };
 const editionBooks = [];

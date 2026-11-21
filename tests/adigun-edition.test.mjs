@@ -10,16 +10,17 @@ const expectedBooks = [
   { id: 'GEN', testament: 'ot', chapters: Array.from({ length: 50 }, (_, index) => index + 1) },
   { id: 'EXO', testament: 'ot', chapters: Array.from({ length: 40 }, (_, index) => index + 1) },
   { id: 'LEV', testament: 'ot', chapters: Array.from({ length: 27 }, (_, index) => index + 1) },
+  { id: 'NUM', testament: 'ot', chapters: Array.from({ length: 36 }, (_, index) => index + 1) },
   { id: 'MAT', testament: 'nt', chapters: Array.from({ length: 28 }, (_, index) => index + 1) },
 ];
 
 test('reader edition contains only complete, source-aligned Adigun chapters in canonical order', () => {
   assert.equal(manifest.edition.name, 'Adigun Edition');
   assert.equal(manifest.edition.scope, 'portion');
-  assert.equal(manifest.edition.revision, 'Genesis 1–50; Exodus 1–40; Leviticus 1–27; Matthew 1–28');
+  assert.equal(manifest.edition.revision, 'Genesis 1–50; Exodus 1–40; Leviticus 1–27; Numbers 1–36; Matthew 1–28');
   assert.equal(manifest.sourceManifestSha256, sourceManifest.edition.sha256);
-  assert.deepEqual(manifest.books.map(row => row.id), ['GEN', 'EXO', 'LEV', 'MAT']);
-  assert.deepEqual(manifest.totals, { books: 4, chapters: 145, verses: 4676 });
+  assert.deepEqual(manifest.books.map(row => row.id), ['GEN', 'EXO', 'LEV', 'NUM', 'MAT']);
+  assert.deepEqual(manifest.totals, { books: 5, chapters: 181, verses: 5964 });
   const installedBooks = [];
   for (const expected of expectedBooks) {
     const source = sourceManifest.books.find(row => row.id === expected.id);

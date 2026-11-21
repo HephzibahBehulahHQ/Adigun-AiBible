@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "NUM",
+  "bookName": "Numbers",
+  "chapterNumber": 26,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:NUM:26:1",
+      "text": "After the plague, Yahweh spoke to Moses and to Eleazar son of Aaron the priest:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:NUM:26:2",
+      "text": "“Take a census of the whole Israelite community by ancestral family. Count everyone in Israel who’s twenty or older and able to go to war.”"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:NUM:26:3",
+      "text": "Moses and Eleazar the priest spoke to them on the plains of Moab by the Jordan across from Jericho:"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:NUM:26:4",
+      "text": "“Count everyone twenty or older, just as Yahweh told Moses and the Israelites.” These are the people who came out of Egypt."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:NUM:26:5",
+      "text": "Reuben was Israel’s firstborn. From his sons came the Hanochite clan through Hanoch and the Palluite clan through Pallu."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:NUM:26:6",
+      "text": "Hezron gave rise to the Hezronite clan, and Carmi to the Carmite clan."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:NUM:26:7",
+      "text": "Those were Reuben’s clans. The count came to 43,730."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:NUM:26:8",
+      "text": "Pallu’s son was Eliab."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:NUM:26:9",
+      "text": "Eliab’s sons were Nemuel, Dathan, and Abiram. These were the same Dathan and Abiram called to the assembly who joined Korah’s group in rebelling against Moses and Aaron. They rebelled against Yahweh."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:NUM:26:10",
+      "text": "The earth opened its mouth and swallowed them up with Korah when his group died. Fire consumed 250 men, and what happened to them became a warning."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:NUM:26:11",
+      "text": "Korah’s sons, though, didn’t die."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:NUM:26:12",
+      "text": "Simeon’s sons by clan: Nemuel gave rise to the Nemuelites, Jamin to the Jaminites, and Jachin to the Jachinites."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:NUM:26:13",
+      "text": "Zerah gave rise to the Zerahites, and Shaul to the Shaulites."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:NUM:26:14",
+      "text": "Those were Simeon’s clans, with a total of 22,200."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:NUM:26:15",
+      "text": "Gad’s sons by clan: Zephon gave rise to the Zephonites, Haggi to the Haggites, and Shuni to the Shunites."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:NUM:26:16",
+      "text": "Ozni gave rise to the Oznites, and Eri to the Erites."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:NUM:26:17",
+      "text": "Arod gave rise to the Arodites, and Areli to the Arelites."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:NUM:26:18",
+      "text": "Those were the clans of Gad’s descendants. The count came to 40,500."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:NUM:26:19",
+      "text": "Judah’s sons included Er and Onan. Both died in Canaan."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:NUM:26:20",
+      "text": "Judah’s sons by clan: Shelah gave rise to the Shelanites, Perez to the Perezites, and Zerah to the Zerahites."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:NUM:26:21",
+      "text": "From Perez’s sons came the Hezronite clan through Hezron and the Hamulite clan through Hamul."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:NUM:26:22",
+      "text": "Those were Judah’s clans. The count came to 76,500."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:NUM:26:23",
+      "text": "Issachar’s sons by clan: Tola gave rise to the Tolaites and Puvah to the Punites."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:NUM:26:24",
+      "text": "Jashub gave rise to the Jashubites, and Shimron to the Shimronites."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:NUM:26:25",
+      "text": "Those were Issachar’s clans. The count came to 64,300."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:NUM:26:26",
+      "text": "Zebulun’s sons by clan: Sered gave rise to the Seredites, Elon to the Elonites, and Jahleel to the Jahleelites."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:NUM:26:27",
+      "text": "Those were Zebulun’s clans. The count came to 60,500."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:NUM:26:28",
+      "text": "Joseph’s sons by clan were Manasseh and Ephraim."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:NUM:26:29",
+      "text": "From Manasseh’s line came the Machirite clan through Machir. Machir was Gilead’s father, and Gilead gave rise to the Gileadites."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:NUM:26:30",
+      "text": "Gilead’s sons included Iezer, whose clan was the Iezerites, and Helek, whose clan was the Helekites."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:NUM:26:31",
+      "text": "Asriel gave rise to the Asrielites, and Shechem to the Shechemites."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:NUM:26:32",
+      "text": "Shemida gave rise to the Shemidaites, and Hepher to the Hepherites."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:NUM:26:33",
+      "text": "Zelophehad son of Hepher had daughters and no sons. His daughters were Mahlah, Noah, Hoglah, Milcah, and Tirzah."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:NUM:26:34",
+      "text": "Those were Manasseh’s clans. The count came to 52,700."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:NUM:26:35",
+      "text": "Ephraim’s sons by clan: Shuthelah gave rise to the Shuthelahites, Becher to the Becherites, and Tahan to the Tahanites."
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:NUM:26:36",
+      "text": "From Shuthelah’s sons came the Eranite clan through Eran."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:NUM:26:37",
+      "text": "Those were the clans of Ephraim’s descendants. The count came to 32,500. That’s Joseph’s line by clan."
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:NUM:26:38",
+      "text": "Benjamin’s sons by clan: Bela gave rise to the Belaites, Ashbel to the Ashbelites, and Ahiram to the Ahiramites."
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:NUM:26:39",
+      "text": "Shephupham gave rise to the Shuphamites, and Hupham to the Huphamites."
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:NUM:26:40",
+      "text": "Bela’s sons were Ard and Naaman, whose clans were the Ardites and the Naamites."
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:NUM:26:41",
+      "text": "Those were Benjamin’s descendants by clan. The count came to 45,600."
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:NUM:26:42",
+      "text": "Dan’s descendants by clan came through Shuham, whose clan was the Shuhamites. Those were Dan’s clans."
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:NUM:26:43",
+      "text": "The count of all the Shuhamite clans came to 64,400."
+    },
+    {
+      "number": 44,
+      "sourceRef": "eng-web:NUM:26:44",
+      "text": "Asher’s sons by clan: Imnah gave rise to the Imnites, Ishvi to the Ishvites, and Beriah to the Berites."
+    },
+    {
+      "number": 45,
+      "sourceRef": "eng-web:NUM:26:45",
+      "text": "From Beriah’s sons came the Heberites through Heber and the Malchielites through Malchiel."
+    },
+    {
+      "number": 46,
+      "sourceRef": "eng-web:NUM:26:46",
+      "text": "Asher’s daughter was named Serah."
+    },
+    {
+      "number": 47,
+      "sourceRef": "eng-web:NUM:26:47",
+      "text": "Those were the clans of Asher’s descendants. The count came to 53,400."
+    },
+    {
+      "number": 48,
+      "sourceRef": "eng-web:NUM:26:48",
+      "text": "Naphtali’s sons by clan: Jahzeel gave rise to the Jahzeelites, and Guni to the Gunites."
+    },
+    {
+      "number": 49,
+      "sourceRef": "eng-web:NUM:26:49",
+      "text": "Jezer gave rise to the Jezerites, and Shillem to the Shillemites."
+    },
+    {
+      "number": 50,
+      "sourceRef": "eng-web:NUM:26:50",
+      "text": "Those were Naphtali’s clans. The count came to 45,400."
+    },
+    {
+      "number": 51,
+      "sourceRef": "eng-web:NUM:26:51",
+      "text": "The total counted in Israel was 601,730."
+    },
+    {
+      "number": 52,
+      "sourceRef": "eng-web:NUM:26:52",
+      "text": "Yahweh told Moses:"
+    },
+    {
+      "number": 53,
+      "sourceRef": "eng-web:NUM:26:53",
+      "text": "“Divide the land among these people as their inheritance, using the number of names on the list."
+    },
+    {
+      "number": 54,
+      "sourceRef": "eng-web:NUM:26:54",
+      "text": "Give larger groups a bigger share and smaller groups a smaller share. Each group will get its inheritance according to the number counted in it."
+    },
+    {
+      "number": 55,
+      "sourceRef": "eng-web:NUM:26:55",
+      "text": "The land itself must be divided by drawing lots. They’ll inherit it under the names of their ancestral tribes."
+    },
+    {
+      "number": 56,
+      "sourceRef": "eng-web:NUM:26:56",
+      "text": "The lot will decide where their inheritance falls, whether the group is large or small.”"
+    },
+    {
+      "number": 57,
+      "sourceRef": "eng-web:NUM:26:57",
+      "text": "These were the Levites counted by clan: the Gershonites through Gershon, the Kohathites through Kohath, and the Merarites through Merari."
+    },
+    {
+      "number": 58,
+      "sourceRef": "eng-web:NUM:26:58",
+      "text": "Levi’s clans included the Libnites, Hebronites, Mahlites, Mushites, and Korahites. Kohath was the father of Amram."
+    },
+    {
+      "number": 59,
+      "sourceRef": "eng-web:NUM:26:59",
+      "text": "Amram’s wife was Jochebed, Levi’s daughter, born to him in Egypt. She had Aaron, Moses, and their sister Miriam with Amram."
+    },
+    {
+      "number": 60,
+      "sourceRef": "eng-web:NUM:26:60",
+      "text": "Aaron’s sons were Nadab, Abihu, Eleazar, and Ithamar."
+    },
+    {
+      "number": 61,
+      "sourceRef": "eng-web:NUM:26:61",
+      "text": "Nadab and Abihu died when they brought unauthorized fire before Yahweh."
+    },
+    {
+      "number": 62,
+      "sourceRef": "eng-web:NUM:26:62",
+      "text": "The Levite count came to 23,000, every male a month old or older. They were counted apart from the other Israelites because they weren’t given a land inheritance among them."
+    },
+    {
+      "number": 63,
+      "sourceRef": "eng-web:NUM:26:63",
+      "text": "That’s who Moses and Eleazar the priest counted when they took Israel’s census on the plains of Moab by the Jordan across from Jericho."
+    },
+    {
+      "number": 64,
+      "sourceRef": "eng-web:NUM:26:64",
+      "text": "No man in that count had been counted by Moses and Aaron the priest in the earlier Israelite census in the Sinai wilderness."
+    },
+    {
+      "number": 65,
+      "sourceRef": "eng-web:NUM:26:65",
+      "text": "Yahweh had said of those men, “They’ll die in the wilderness.” None of them was left except Caleb son of Jephunneh and Joshua son of Nun."
+    }
+  ]
+}
