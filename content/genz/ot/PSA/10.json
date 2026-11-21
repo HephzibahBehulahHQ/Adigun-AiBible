@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 10,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:10:1",
+      "text": "Why do you stand so far away, LORD? Why do you hide when trouble comes?"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:10:2",
+      "text": "In their arrogance the wicked hunt down the weak. Let them get caught in the schemes they devise."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:10:3",
+      "text": "The wicked boast about what they crave. They bless the greedy and speak against the LORD."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:10:4",
+      "text": "The wicked carry themselves with pride. There’s no room for God in their thoughts."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:10:5",
+      "text": "Everything they do seems to prosper. They’re arrogant and keep your laws out of sight. They sneer at all their enemies."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:10:6",
+      "text": "They tell themselves, “Nothing will shake me. Trouble won’t touch me for generations.”"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:10:7",
+      "text": "Their mouths are full of curses, lies, and threats. Trouble and evil are under their tongues."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:10:8",
+      "text": "They lie in wait near villages and murder innocent people from hiding. They keep a secret watch on those who can’t defend themselves."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:10:9",
+      "text": "They hide like a lion waiting to pounce. They lie in wait for the helpless and catch them by pulling them into their nets."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:10:10",
+      "text": "The helpless are crushed. They collapse and fall under the weight of their attackers."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:10:11",
+      "text": "The wicked tell themselves, “God has forgotten. He’s turned away. He’ll never see it.”"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:10:12",
+      "text": "Rise up, LORD! Lift up your hand, God! Remember those who can’t defend themselves."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:10:13",
+      "text": "Why do the wicked speak against God and tell themselves, “He’ll never hold me to account”?"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:10:14",
+      "text": "But you do see their trouble and grief, and you take it into your own hands. You help the victim and the fatherless."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:10:15",
+      "text": "Break the power of the wicked. Call evildoers to account until no wickedness is left to uncover."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:10:16",
+      "text": "The LORD is King forever and ever! The nations will vanish from his land."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:10:17",
+      "text": "LORD, you hear what the humble long for. You steady their hearts and listen to them,"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:10:18",
+      "text": "to give justice to the fatherless and the oppressed, so mere mortals can terrorize them no more."
+    }
+  ]
+}
