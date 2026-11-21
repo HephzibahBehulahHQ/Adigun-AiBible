@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 28,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:28:1",
+      "text": "By David. LORD, I call to you. My rock, don’t shut your ears to me. If you stay silent, I’ll be like those who go down to the pit."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:28:2",
+      "text": "Hear my plea when I cry to you and lift my hands toward your Most Holy Place."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:28:3",
+      "text": "Don’t drag me away with the wicked, with people who speak peace to their neighbors while they plan harm in their hearts."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:28:4",
+      "text": "Pay them back for what they’ve done and for the evil in their actions. Give them what their own hands have earned."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:28:5",
+      "text": "They pay no attention to what the LORD does or to what his hands have made. He’ll tear them down and never build them up again."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:28:6",
+      "text": "Blessed be the LORD, because he heard my plea for help."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:28:7",
+      "text": "The LORD is my strength and my shield. I trusted him with my heart, and he helped me. My heart is full of joy, and I’ll thank him with my song."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:28:8",
+      "text": "The LORD is his people’s strength. He’s a stronghold that saves his anointed."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:28:9",
+      "text": "Save your people and bless those who are your inheritance. Shepherd them and carry them forever."
+    }
+  ]
+}

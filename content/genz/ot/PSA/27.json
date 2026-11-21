@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 27,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:27:1",
+      "text": "By David. The LORD is my light and my salvation. Who should I fear? The LORD is the stronghold of my life. Who could frighten me?"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:27:2",
+      "text": "When evildoers came to devour me, my enemies and attackers were the ones who stumbled and fell."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:27:3",
+      "text": "Even if an army camps against me, my heart won’t fear. Even if war breaks out against me, I’ll still stand confident."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:27:4",
+      "text": "I’ve asked the LORD for one thing, and I’ll keep seeking it: to live in his house all my days, to see his beauty and seek him in his temple."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:27:5",
+      "text": "When trouble comes, he’ll keep me safe in his shelter. He’ll hide me deep inside his tent and set me high on a rock."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:27:6",
+      "text": "Then my head will rise above the enemies around me. I’ll offer sacrifices with shouts of joy in his tent and sing praises to the LORD."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:27:7",
+      "text": "Hear me when I cry out, LORD. Have mercy on me and answer me."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:27:8",
+      "text": "When you said, “Seek my face,” my heart answered, “LORD, I’ll seek your face.”"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:27:9",
+      "text": "Don’t hide your face from me or send your servant away in anger. You’ve been my help. Don’t leave me or abandon me, God who saves me."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:27:10",
+      "text": "Even if my father and mother leave me, the LORD will take me in."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:27:11",
+      "text": "Teach me your way, LORD. Lead me on a straight path with my enemies around me."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:27:12",
+      "text": "Don’t hand me over to what my enemies want. False witnesses have risen against me, breathing threats."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:27:13",
+      "text": "I still believe I’ll see the LORD’s goodness in the land of the living."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:27:14",
+      "text": "Wait for the LORD. Be strong and take heart. Yes, wait for the LORD."
+    }
+  ]
+}
