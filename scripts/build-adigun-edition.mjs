@@ -21,6 +21,7 @@ const portion = {
   '2SA': { testament: 'ot', chapters: 24 },
   '1KI': { testament: 'ot', chapters: 22 },
   '2KI': { testament: 'ot', chapters: 25 },
+  '1CH': { testament: 'ot', chapters: 29 },
   MAT: { testament: 'nt', chapters: 28 },
 };
 const editionBooks = [];
