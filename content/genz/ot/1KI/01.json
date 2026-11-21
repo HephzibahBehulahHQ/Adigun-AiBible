@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1KI",
+  "bookName": "1 Kings",
+  "chapterNumber": 1,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1KI:1:1",
+      "text": "King David was very old. No matter how many covers they put on him, he couldn't get warm."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1KI:1:2",
+      "text": "His servants told him, “Let us find a young virgin for my lord the king. She can attend to you and care for you. She can lie close to you so my lord the king can keep warm.”"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1KI:1:3",
+      "text": "They searched all over Israel for a beautiful young woman. They found Abishag from Shunem and brought her to the king."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1KI:1:4",
+      "text": "She was very beautiful. She cared for the king and served him, and the king never slept with her."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1KI:1:5",
+      "text": "Then Adonijah son of Haggith put himself forward and said, “I'll be king.” He got chariots and horsemen for himself, with fifty men to run ahead of him."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1KI:1:6",
+      "text": "His father had never once challenged him by asking, “Why did you do that?” Adonijah was also very handsome, and he had been born after Absalom."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1KI:1:7",
+      "text": "He consulted Joab son of Zeruiah and Abiathar the priest, and they backed Adonijah and helped him."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1KI:1:8",
+      "text": "But Zadok the priest, Benaiah son of Jehoiada, Nathan the prophet, Shimei, Rei, and David's elite warriors stayed out of it."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1KI:1:9",
+      "text": "Adonijah slaughtered sheep, cattle, and fattened animals by the stone of Zoheleth near En Rogel. He invited all his brothers, the king's sons, and all the royal servants from Judah."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1KI:1:10",
+      "text": "He left out Nathan the prophet, Benaiah, the elite warriors, and his brother Solomon."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1KI:1:11",
+      "text": "Nathan asked Solomon's mother Bathsheba, “Haven't you heard that Adonijah son of Haggith is ruling as king, and our lord David doesn't even know?"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1KI:1:12",
+      "text": "Please take my advice so you can save your life and the life of your son Solomon."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1KI:1:13",
+      "text": "Go to King David and ask him, ‘My lord the king, didn't you swear to me, “Your son Solomon will reign after me and sit on my throne”? Then why is Adonijah ruling?’"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1KI:1:14",
+      "text": "While you're still talking to the king, I'll come in after you and confirm what you've said.”"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:1KI:1:15",
+      "text": "Bathsheba went into the king's room. The king was very old, and Abishag from Shunem was attending him."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:1KI:1:16",
+      "text": "Bathsheba bowed respectfully to the king. “What do you want?” he asked."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:1KI:1:17",
+      "text": "She said, “My lord, you swore to me by the LORD your God, ‘Your son Solomon will reign after me and sit on my throne.’"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:1KI:1:18",
+      "text": "And now Adonijah is ruling, and you, my lord the king, don't even know it."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:1KI:1:19",
+      "text": "He's slaughtered plenty of cattle, fattened animals, and sheep. He's invited all your sons, Abiathar the priest, and Joab the army commander. But he didn't invite your servant Solomon."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:1KI:1:20",
+      "text": "My lord the king, all Israel is watching you, waiting for you to tell them who will sit on your throne after you."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:1KI:1:21",
+      "text": "If you say nothing, then when my lord the king rests with his ancestors, my son Solomon and I will be treated as criminals.”"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:1KI:1:22",
+      "text": "While she was still speaking with the king, Nathan the prophet arrived."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:1KI:1:23",
+      "text": "The king was told, “Nathan the prophet is here.” Nathan came in and bowed to the king with his face to the ground."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:1KI:1:24",
+      "text": "Nathan asked, “My lord the king, did you say, ‘Adonijah will reign after me and sit on my throne’?"
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:1KI:1:25",
+      "text": "He went down today and slaughtered plenty of cattle, fattened animals, and sheep. He invited all the king's sons, the army commanders, and Abiathar the priest. They're eating and drinking with him and shouting, ‘Long live King Adonijah!’"
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:1KI:1:26",
+      "text": "But he didn't invite me, your servant, or Zadok the priest, Benaiah son of Jehoiada, or your servant Solomon."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:1KI:1:27",
+      "text": "Did you order this, my lord the king, without telling your servants who would sit on your throne after you?”"
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:1KI:1:28",
+      "text": "King David answered, “Call Bathsheba back in.” She came and stood before the king."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:1KI:1:29",
+      "text": "The king gave his oath: “As surely as the LORD lives, who rescued me from every trouble,"
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:1KI:1:30",
+      "text": "I'll do today exactly what I swore to you by the LORD, the God of Israel. Your son Solomon will reign after me, and he will sit on my throne in my place.”"
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:1KI:1:31",
+      "text": "Bathsheba bowed with her face to the ground in respect and said, “May my lord King David live forever!”"
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:1KI:1:32",
+      "text": "King David said, “Send for Zadok the priest, Nathan the prophet, and Benaiah son of Jehoiada.” They came before the king."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:1KI:1:33",
+      "text": "He told them, “Take my servants with you. Put my son Solomon on my own mule and take him down to Gihon."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:1KI:1:34",
+      "text": "Have Zadok the priest and Nathan the prophet anoint him king over Israel there. Blow the trumpet and shout, ‘Long live King Solomon!’"
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:1KI:1:35",
+      "text": "Then follow him back up. He'll come and sit on my throne, because he'll be king in my place. I've appointed him to rule Israel and Judah.”"
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:1KI:1:36",
+      "text": "Benaiah son of Jehoiada answered, “Amen! May the LORD, the God of my lord the king, declare it so."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:1KI:1:37",
+      "text": "Just as the LORD has been with my lord the king, may he be with Solomon and make his throne greater than the throne of my lord King David.”"
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:1KI:1:38",
+      "text": "Zadok the priest, Nathan the prophet, Benaiah son of Jehoiada, and the Cherethites and Pelethites went down, put Solomon on King David's mule, and brought him to Gihon."
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:1KI:1:39",
+      "text": "Zadok the priest took the horn of oil from the Tent and anointed Solomon. Then they blew the trumpet and everyone shouted, “Long live King Solomon!”"
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:1KI:1:40",
+      "text": "All the people followed Solomon back up, playing pipes and celebrating so loudly that the ground shook with the sound."
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:1KI:1:41",
+      "text": "Adonijah and all his guests heard it as they finished eating. When Joab heard the trumpet, he asked, “Why is the city in such an uproar?”"
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:1KI:1:42",
+      "text": "While he was speaking, Jonathan son of Abiathar the priest arrived. Adonijah said, “Come in. You're a man of standing, so you must be bringing good news.”"
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:1KI:1:43",
+      "text": "Jonathan answered Adonijah, “Our lord King David has indeed made Solomon king."
+    },
+    {
+      "number": 44,
+      "sourceRef": "eng-web:1KI:1:44",
+      "text": "The king sent Zadok the priest, Nathan the prophet, Benaiah son of Jehoiada, and the Cherethites and Pelethites with him, and they put him on the king's mule."
+    },
+    {
+      "number": 45,
+      "sourceRef": "eng-web:1KI:1:45",
+      "text": "Zadok the priest and Nathan the prophet anointed him king at Gihon. They came back from there celebrating, and the whole city rang with the sound. That's the noise you're hearing."
+    },
+    {
+      "number": 46,
+      "sourceRef": "eng-web:1KI:1:46",
+      "text": "Solomon is already sitting on the royal throne."
+    },
+    {
+      "number": 47,
+      "sourceRef": "eng-web:1KI:1:47",
+      "text": "The king's servants went in to bless our lord King David. They said, ‘May your God make Solomon's name greater than yours and make his throne greater than yours.’ Then the king bowed in his bed."
+    },
+    {
+      "number": 48,
+      "sourceRef": "eng-web:1KI:1:48",
+      "text": "And the king said, ‘Praise the LORD, the God of Israel! He's given me someone to sit on my throne today and let me see it with my own eyes.’”"
+    },
+    {
+      "number": 49,
+      "sourceRef": "eng-web:1KI:1:49",
+      "text": "All Adonijah's guests were terrified. They got up and went their separate ways."
+    },
+    {
+      "number": 50,
+      "sourceRef": "eng-web:1KI:1:50",
+      "text": "Adonijah was afraid of Solomon. He got up, went to the altar, and grabbed its horns."
+    },
+    {
+      "number": 51,
+      "sourceRef": "eng-web:1KI:1:51",
+      "text": "Someone told Solomon, “Adonijah is afraid of King Solomon. He's holding on to the horns of the altar and saying, ‘Let King Solomon swear to me first that he won't put his servant to death with the sword.’”"
+    },
+    {
+      "number": 52,
+      "sourceRef": "eng-web:1KI:1:52",
+      "text": "Solomon said, “If he proves himself trustworthy, not a hair of his head will fall to the ground. But if he's found doing wrong, he'll die.”"
+    },
+    {
+      "number": 53,
+      "sourceRef": "eng-web:1KI:1:53",
+      "text": "King Solomon sent men to bring him down from the altar. Adonijah came and bowed before King Solomon, and Solomon told him, “Go home.”"
+    }
+  ]
+}
