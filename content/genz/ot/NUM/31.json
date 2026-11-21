@@ -1,0 +1,281 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "NUM",
+  "bookName": "Numbers",
+  "chapterNumber": 31,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:NUM:31:1",
+      "text": "Yahweh told Moses:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:NUM:31:2",
+      "text": "“Take vengeance on the Midianites for what they did to the Israelites. After that, you’ll be gathered to your people.”"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:NUM:31:3",
+      "text": "Moses told the people, “Get some of your men armed for battle. They’ll go against Midian to carry out Yahweh’s vengeance."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:NUM:31:4",
+      "text": "Send a thousand men to the war from each tribe of Israel.”"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:NUM:31:5",
+      "text": "So from Israel’s thousands they supplied a thousand from each tribe, twelve thousand men armed for war."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:NUM:31:6",
+      "text": "Moses sent a thousand men from each tribe into battle with Phinehas son of Eleazar the priest. Phinehas carried the holy utensils and the trumpets for sounding the alarm."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:NUM:31:7",
+      "text": "They fought Midian as Yahweh had commanded Moses, and killed every male."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:NUM:31:8",
+      "text": "Among those they killed were Midian’s five kings: Evi, Rekem, Zur, Hur, and Reba. They also killed Balaam son of Beor with the sword."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:NUM:31:9",
+      "text": "The Israelites took the Midianite women and their children captive. They took all their livestock, flocks, and possessions as plunder."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:NUM:31:10",
+      "text": "They burned every town where the Midianites lived and all their camps."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:NUM:31:11",
+      "text": "They took all the captives and all the spoils, people and animals alike."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:NUM:31:12",
+      "text": "They brought the captives and everything they’d taken to Moses, Eleazar the priest, and the Israelite community. The camp was on the plains of Moab by the Jordan across from Jericho."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:NUM:31:13",
+      "text": "Moses, Eleazar the priest, and all the community’s leaders went outside the camp to meet them."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:NUM:31:14",
+      "text": "Moses was angry with the army officers who came back from battle, the commanders of thousands and of hundreds."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:NUM:31:15",
+      "text": "He asked them, “You kept all the women alive?"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:NUM:31:16",
+      "text": "These are the women who acted on Balaam’s advice and led the Israelites to betray Yahweh at Peor. That’s why the plague struck Yahweh’s community."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:NUM:31:17",
+      "text": "So now kill every boy and every woman who has slept with a man."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:NUM:31:18",
+      "text": "Keep alive for yourselves the girls who have never slept with a man."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:NUM:31:19",
+      "text": "“Stay outside the camp for seven days. Anyone who killed someone or touched a dead body must cleanse themselves on day three and day seven. That goes for you and your captives."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:NUM:31:20",
+      "text": "Cleanse all the clothes, everything made of leather or goat hair, and everything made of wood.”"
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:NUM:31:21",
+      "text": "Eleazar the priest told the men who’d gone into battle, “Here’s the rule Yahweh gave Moses."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:NUM:31:22",
+      "text": "Take all the gold, silver, bronze, iron, tin, and lead,"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:NUM:31:23",
+      "text": "and pass through fire whatever can stand the heat. It’ll be clean, but it must also be cleansed with the water for impurity. Whatever can’t stand the fire must go through the water."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:NUM:31:24",
+      "text": "Wash your clothes on day seven, and you’ll be clean. Then you can come into camp.”"
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:NUM:31:25",
+      "text": "Yahweh told Moses:"
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:NUM:31:26",
+      "text": "“You, Eleazar the priest, and the community’s ancestral family heads must count the plunder, both the people and the animals."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:NUM:31:27",
+      "text": "Split it in half between the men who went out to fight and the whole community."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:NUM:31:28",
+      "text": "Collect a tribute for Yahweh from the men who fought. Take one out of every five hundred from the people, cattle, donkeys, and flocks."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:NUM:31:29",
+      "text": "Take it out of the fighters’ half and give it to Eleazar the priest as Yahweh’s wave offering."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:NUM:31:30",
+      "text": "From the Israelites’ half, take one out of every fifty, whether people, cattle, donkeys, sheep, goats, or any other livestock. Give them to the Levites who take care of Yahweh’s tabernacle.”"
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:NUM:31:31",
+      "text": "Moses and Eleazar the priest did what Yahweh had commanded Moses."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:NUM:31:32",
+      "text": "Apart from what the fighters took for themselves, the plunder came to 675,000 sheep,"
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:NUM:31:33",
+      "text": "72,000 head of cattle,"
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:NUM:31:34",
+      "text": "61,000 donkeys,"
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:NUM:31:35",
+      "text": "and 32,000 women in all who had never slept with a man."
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:NUM:31:36",
+      "text": "The half for those who’d gone to war came to 337,500 sheep."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:NUM:31:37",
+      "text": "Yahweh’s tribute from the sheep was 675."
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:NUM:31:38",
+      "text": "There were 36,000 head of cattle. Yahweh’s tribute was 72."
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:NUM:31:39",
+      "text": "There were 30,500 donkeys. Yahweh’s tribute was 61."
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:NUM:31:40",
+      "text": "There were 16,000 people. Yahweh’s tribute was 32 people."
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:NUM:31:41",
+      "text": "Moses gave the tribute to Eleazar the priest as Yahweh’s wave offering, just as Yahweh had commanded him."
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:NUM:31:42",
+      "text": "Moses set the Israelites’ half apart from the share of the men who fought."
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:NUM:31:43",
+      "text": "The community’s half came to 337,500 sheep,"
+    },
+    {
+      "number": 44,
+      "sourceRef": "eng-web:NUM:31:44",
+      "text": "36,000 head of cattle,"
+    },
+    {
+      "number": 45,
+      "sourceRef": "eng-web:NUM:31:45",
+      "text": "30,500 donkeys,"
+    },
+    {
+      "number": 46,
+      "sourceRef": "eng-web:NUM:31:46",
+      "text": "and 16,000 people."
+    },
+    {
+      "number": 47,
+      "sourceRef": "eng-web:NUM:31:47",
+      "text": "From that half Moses took one out of every fifty, people and animals alike, and gave them to the Levites who took care of Yahweh’s tabernacle. He did what Yahweh had commanded him."
+    },
+    {
+      "number": 48,
+      "sourceRef": "eng-web:NUM:31:48",
+      "text": "The army officers who led the thousands and the hundreds came to Moses."
+    },
+    {
+      "number": 49,
+      "sourceRef": "eng-web:NUM:31:49",
+      "text": "They said, “Your servants have counted the fighting men under our command. We aren’t missing a single man."
+    },
+    {
+      "number": 50,
+      "sourceRef": "eng-web:NUM:31:50",
+      "text": "We’ve brought Yahweh an offering from what each man found: gold ornaments, armlets, bracelets, signet rings, earrings, and necklaces, to make atonement for our lives before Yahweh.”"
+    },
+    {
+      "number": 51,
+      "sourceRef": "eng-web:NUM:31:51",
+      "text": "Moses and Eleazar the priest accepted their gold, all of it worked jewelry."
+    },
+    {
+      "number": 52,
+      "sourceRef": "eng-web:NUM:31:52",
+      "text": "All the gold the commanders of thousands and hundreds lifted up as an offering to Yahweh weighed 16,750 shekels."
+    },
+    {
+      "number": 53,
+      "sourceRef": "eng-web:NUM:31:53",
+      "text": "The fighting men had each taken plunder for themselves."
+    },
+    {
+      "number": 54,
+      "sourceRef": "eng-web:NUM:31:54",
+      "text": "Moses and Eleazar the priest took the gold from the commanders of thousands and hundreds into the Tent of Meeting as a reminder of the Israelites before Yahweh."
+    }
+  ]
+}
