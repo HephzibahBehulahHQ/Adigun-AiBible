@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1SA",
+  "bookName": "1 Samuel",
+  "chapterNumber": 8,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1SA:8:1",
+      "text": "When Samuel grew old, he appointed his sons to judge Israel."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1SA:8:2",
+      "text": "His oldest son was Joel, and his second was Abijah. They served as judges in Beersheba."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1SA:8:3",
+      "text": "His sons didn't follow his example. They went after dishonest gain, took bribes, and twisted justice."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1SA:8:4",
+      "text": "All Israel's elders gathered and went to see Samuel at Ramah."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1SA:8:5",
+      "text": "They told him, “You're old, and your sons don't follow your ways. Appoint a king to govern us, like all the other nations have.”"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1SA:8:6",
+      "text": "Samuel was upset when they asked for a king to govern them, so he prayed to the LORD."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1SA:8:7",
+      "text": "The LORD told Samuel, “Listen to everything the people tell you. I'm the one they've rejected as their king. Their rejection is directed at me."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1SA:8:8",
+      "text": "From the day I brought them out of Egypt until now, they've abandoned me and served other gods. Now they're treating you the same way."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1SA:8:9",
+      "text": "So listen to them, but warn them plainly and tell them what the king who rules over them will do.”"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1SA:8:10",
+      "text": "Samuel passed on all the LORD's words to the people who'd asked him for a king."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1SA:8:11",
+      "text": "He said, “Here's what the king who rules over you will do. He'll take your sons into his service, put them in his chariots and cavalry, and make some run ahead of his chariots."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1SA:8:12",
+      "text": "He'll make some commanders over a thousand men and others over fifty. He'll make some plow his fields, harvest his crops, and make his weapons and chariot equipment."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1SA:8:13",
+      "text": "He'll take your daughters to make perfume, cook, and bake for him."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1SA:8:14",
+      "text": "He'll take the best of your fields, vineyards, and olive groves and give them to his servants."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:1SA:8:15",
+      "text": "He'll take a tenth of your grain and what your vineyards produce and give it to his officers and servants."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:1SA:8:16",
+      "text": "He'll take your male and female servants, your best young men, and your donkeys, and put them to work for him."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:1SA:8:17",
+      "text": "He'll take a tenth of your flocks, and you'll become his servants."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:1SA:8:18",
+      "text": "That day you'll cry out because of the king you chose for yourselves, and the LORD won't answer you.”"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:1SA:8:19",
+      "text": "The people refused to listen to Samuel. They said, “No, we want a king over us."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:1SA:8:20",
+      "text": "Then we'll be like all the other nations. Our king will govern us, go out ahead of us, and fight our battles.”"
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:1SA:8:21",
+      "text": "Samuel heard everything the people said and repeated it to the LORD."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:1SA:8:22",
+      "text": "The LORD told him, “Listen to them and appoint a king for them.” Then Samuel told the people of Israel, “Everyone go back to your own town.”"
+    }
+  ]
+}
