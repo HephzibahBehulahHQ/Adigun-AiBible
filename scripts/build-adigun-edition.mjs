@@ -26,6 +26,7 @@ const portion = {
   EZR: { testament: 'ot', chapters: 10 },
   NEH: { testament: 'ot', chapters: 13 },
   EST: { testament: 'ot', chapters: 10 },
+  JOB: { testament: 'ot', chapters: 42 },
   MAT: { testament: 'nt', chapters: 28 },
 };
 const editionBooks = [];

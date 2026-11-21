@@ -4,7 +4,7 @@
   "editions": [
     {
       "editionId": "adigun-edition",
-      "sourceSha256": "8b7fe781df9670b3e3991338980462c31cfea59e5300321f452fe87611426f49",
+      "sourceSha256": "14576f903875b6bd42b36d24f1cb51b78adeb4027ea27ba8a17a81ac8323caee",
       "status": "publisher-metadata",
       "marker": "none",
       "offsetUnit": "not-applicable",
@@ -109,6 +109,12 @@
         },
         {
           "bookId": "EST",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "JOB",
           "spans": 0,
           "verses": 0,
           "rejectedMetadata": 0
