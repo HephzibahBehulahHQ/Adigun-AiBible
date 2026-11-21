@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 57,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:57:1",
+      "text": "For the music director, to the tune of “Do Not Destroy.” A poem by David, when he fled from Saul into the cave. Have mercy on me, God, have mercy on me. I take refuge in you. I’ll shelter in the shadow of your wings until the disaster passes."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:57:2",
+      "text": "I cry out to God Most High, the God who acts on my behalf."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:57:3",
+      "text": "He’ll send help from heaven and save me. He rebukes the one chasing me. Selah. God will send his faithful love and his truth."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:57:4",
+      "text": "I’m surrounded by lions. I lie among people burning with rage, whose teeth are spears and arrows and whose tongues are sharp swords."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:57:5",
+      "text": "Be exalted above the heavens, God! Let your glory rise above the whole earth!"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:57:6",
+      "text": "They set a net in my path, and my soul bowed low. They dug a pit in front of me and fell into it themselves. Selah."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:57:7",
+      "text": "My heart is steady, God. My heart is steady. I’ll sing, yes, I’ll sing praises."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:57:8",
+      "text": "Wake up, my glory! Wake up, lute and harp! I’ll wake the dawn."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:57:9",
+      "text": "I’ll thank you, Lord, among the peoples. I’ll sing praises to you among the nations."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:57:10",
+      "text": "Your great faithful love reaches to the heavens, and your truth reaches to the skies."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:57:11",
+      "text": "Be exalted above the heavens, God. Let your glory be over the whole earth."
+    }
+  ]
+}
