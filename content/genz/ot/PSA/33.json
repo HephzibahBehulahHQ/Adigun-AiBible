@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 33,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:33:1",
+      "text": "Rejoice in the LORD, you righteous people! Praise belongs on the lips of those who live uprightly."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:33:2",
+      "text": "Thank the LORD with the lyre. Sing praise to him with a ten-stringed harp."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:33:3",
+      "text": "Sing him a new song. Play it well and shout for joy!"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:33:4",
+      "text": "The LORD’s word is right, and he’s faithful in everything he does."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:33:5",
+      "text": "He loves righteousness and justice. The earth is full of the LORD’s faithful love."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:33:6",
+      "text": "The heavens came into being by the LORD’s word, and all their hosts by the breath of his mouth."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:33:7",
+      "text": "He gathers the sea into a heap and stores the deep waters away."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:33:8",
+      "text": "Let the whole earth fear the LORD. Let everyone who lives in the world stand in awe of him."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:33:9",
+      "text": "He spoke and it came to be. He gave the command and it stood firm."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:33:10",
+      "text": "The LORD brings the nations’ plans to nothing and stops the peoples’ schemes from succeeding."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:33:11",
+      "text": "The LORD’s plans stand firm forever. What he intends lasts through every generation."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:33:12",
+      "text": "Blessed is the nation whose God is the LORD, the people he chose as his inheritance."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:33:13",
+      "text": "The LORD looks down from heaven and sees all humanity."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:33:14",
+      "text": "From where he lives, he watches everyone on earth."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:33:15",
+      "text": "He’s the one who formed all their hearts, and he takes notice of everything they do."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:33:16",
+      "text": "A huge army can’t save a king, and great strength can’t rescue a warrior."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:33:17",
+      "text": "A horse is a false hope for safety. All its power can’t save anyone."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:33:18",
+      "text": "The LORD watches over those who fear him and put their hope in his faithful love,"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:33:19",
+      "text": "to rescue them from death and keep them alive through famine."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PSA:33:20",
+      "text": "We wait for the LORD with our whole being. He’s our help and our shield."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PSA:33:21",
+      "text": "Our hearts rejoice in him because we trust in his holy name."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PSA:33:22",
+      "text": "Let your faithful love rest on us, LORD, as we put our hope in you."
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 34,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:34:1",
+      "text": "By David, when he pretended to be insane before Abimelech, who drove him away. I’ll bless the LORD at all times. His praise will always be on my lips."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:34:2",
+      "text": "With my whole soul I’ll boast in the LORD. Let the humble hear it and be glad."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:34:3",
+      "text": "Praise the greatness of the LORD with me. Let’s lift up his name together."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:34:4",
+      "text": "I sought the LORD, and he answered me. He rescued me from all my fears."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:34:5",
+      "text": "Those who look to him shine with joy. Shame will never cover their faces."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:34:6",
+      "text": "I was poor and cried out, and the LORD heard me. He saved me from all my troubles."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:34:7",
+      "text": "The angel of the LORD camps around those who fear him and rescues them."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:34:8",
+      "text": "Taste and see that the LORD is good. Blessed are those who take refuge in him."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:34:9",
+      "text": "Fear the LORD, you who belong to him. Those who fear him have all they need."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:34:10",
+      "text": "Even young lions go hungry, but those who seek the LORD won’t lack any good thing."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:34:11",
+      "text": "Come, children, listen to me. I’ll teach you what it means to fear the LORD."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:34:12",
+      "text": "Who wants to live a long life and enjoy good days?"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:34:13",
+      "text": "Keep your tongue from evil and your lips from lies."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:34:14",
+      "text": "Turn away from evil and do good. Seek peace and go after it."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:34:15",
+      "text": "The LORD watches over those who do right and listens when they cry out."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:34:16",
+      "text": "The LORD sets his face against those who do evil, to wipe the memory of them from the earth."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:34:17",
+      "text": "The righteous cry out, and the LORD hears them. He rescues them from all their troubles."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:34:18",
+      "text": "The LORD stays close to the brokenhearted and saves those whose spirits are crushed."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:34:19",
+      "text": "The righteous face many troubles, but the LORD rescues them from every one."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PSA:34:20",
+      "text": "He guards all their bones. Every one stays whole."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PSA:34:21",
+      "text": "Evil will kill the wicked. Those who hate the righteous will be condemned."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PSA:34:22",
+      "text": "The LORD redeems the lives of his servants. Everyone who takes refuge in him will escape condemnation."
+    }
+  ]
+}
