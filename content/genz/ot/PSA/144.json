@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 144,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:144:1",
+      "text": "A psalm by David. Praise the LORD, my rock! He trains my hands for war and gets my fingers ready for battle."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:144:2",
+      "text": "He's the one who loves me, my fortress, my lookout tower, my rescuer and my shield. He's where I run for safety, and he brings my people under my rule."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:144:3",
+      "text": "LORD, what are we humans that you'd care about us? Who are we that you'd even think of us?"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:144:4",
+      "text": "We're like a breath. Our days slip by like a passing shadow."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:144:5",
+      "text": "Open up the heavens, LORD, and come down. Touch the mountains and watch them smoke."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:144:6",
+      "text": "Flash your lightning and scatter them. Fire your arrows and send them running."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:144:7",
+      "text": "Reach down from above and pull me out. Get me out of these deep waters, out of the hands of foreigners."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:144:8",
+      "text": "They lie through their teeth, and even the hand they raise to swear an oath can't be trusted."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:144:9",
+      "text": "God, I've got a new song for you. I'll play my ten-string lyre and sing your praises. 🎶"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:144:10",
+      "text": "You're the one who saves kings. You pull your servant David clear of the sword that could kill him."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:144:11",
+      "text": "Get me out of the hands of foreigners. They lie through their teeth, and even the hand they raise to swear an oath can't be trusted."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:144:12",
+      "text": "Then our sons will stand like plants that have grown up strong, and our daughters like pillars carved to make a palace beautiful."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:144:13",
+      "text": "Our barns will be packed with supplies of every kind. Our sheep will multiply by the thousands and tens of thousands out in our fields."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:144:14",
+      "text": "Our oxen will haul heavy loads. No one will break in, no one will be driven away, and no cries of distress will ring through our streets."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:144:15",
+      "text": "Happy are the people who get to live like that! Happy are the people whose God is the LORD!"
+    }
+  ]
+}
