@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 88,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:88:1",
+      "text": "A song. A psalm by the sons of Korah. For the music director, to the tune of “The Suffering of Affliction.” A psalm for reflection by Heman the Ezrahite. LORD, God who saves me, I’ve cried out to you day and night."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:88:2",
+      "text": "Let my prayer reach you. Lean in and hear my cry."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:88:3",
+      "text": "My soul is packed with trouble, and my life is getting close to Sheol."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:88:4",
+      "text": "People count me among those going down to the pit. I’m like someone with no one to help,"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:88:5",
+      "text": "left among the dead, like those killed and laid in the grave, whom you no longer remember. They’re cut off from your hand."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:88:6",
+      "text": "You’ve put me in the lowest pit, down in the deepest dark."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:88:7",
+      "text": "Your anger weighs hard on me. You’ve battered me with wave after wave. Selah."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:88:8",
+      "text": "You’ve driven my friends away and made them recoil from me. I’m shut in and can’t get out."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:88:9",
+      "text": "My eyes are worn out from grief. I call to you every day, LORD, with my hands stretched out to you."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:88:10",
+      "text": "Do you work wonders for the dead? Do the spirits of those who’ve died get up and praise you? Selah."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:88:11",
+      "text": "Does anyone tell of your faithful love in the grave or talk about your faithfulness in Destruction?"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:88:12",
+      "text": "Are your wonders known in the dark or your righteousness in the land where everyone is forgotten?"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:88:13",
+      "text": "But I’m still crying out to you, LORD. In the morning my prayer comes before you."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:88:14",
+      "text": "LORD, why do you turn my soul away? Why do you hide your face from me?"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:88:15",
+      "text": "I’ve suffered and come close to death since I was young. Your terrors leave me beside myself."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:88:16",
+      "text": "Your fierce anger has swept over me. Your terrors have cut me off."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:88:17",
+      "text": "They surround me like floodwater all day long. They’ve swallowed me up."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:88:18",
+      "text": "You’ve put my loved ones and friends far from me, and my friends are lost in the dark."
+    }
+  ]
+}
