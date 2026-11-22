@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1CH",
+  "bookName": "1 Chronicles",
+  "chapterNumber": 25,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1CH:25:1",
+      "text": "David and the army commanders set apart some of the sons of Asaph, Heman, and Jeduthun to prophesy with harps, other stringed instruments, and cymbals. The musicians were organized for service as follows."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1CH:25:2",
+      "text": "Asaph's sons were Zaccur, Joseph, Nethaniah, and Asharelah. They served under their father Asaph, who prophesied at the king's direction."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1CH:25:3",
+      "text": "Jeduthun had six sons: Gedaliah, Zeri, Jeshaiah, Shimei, Hashabiah, and Mattithiah. They served under their father Jeduthun, who prophesied with the harp as he gave thanks and praised the LORD."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1CH:25:4",
+      "text": "Heman's sons were Bukkiah, Mattaniah, Uzziel, Shebuel, Jerimoth, Hananiah, Hanani, Eliathah, Giddalti, Romamti-Ezer, Joshbekashah, Mallothi, Hothir, and Mahazioth."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1CH:25:5",
+      "text": "All these were sons of Heman, the king's seer, who spoke God's words. God raised Heman's standing and gave him fourteen sons and three daughters."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1CH:25:6",
+      "text": "They all sang in the LORD's house under their fathers' direction, using cymbals, stringed instruments, and harps to serve in God's house. Asaph, Jeduthun, and Heman served under the king's direction."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1CH:25:7",
+      "text": "Counting them and their relatives, there were two hundred eighty-eight skilled singers trained to sing to the LORD."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1CH:25:8",
+      "text": "They drew lots for their assignments on equal terms, regardless of rank or whether they were teachers or students."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1CH:25:9",
+      "text": "The first lot went to Joseph from Asaph's family. The second went to Gedaliah, whose group totaled twelve with his sons and brothers."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1CH:25:10",
+      "text": "The third went to Zaccur and his sons and brothers, twelve in all."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1CH:25:11",
+      "text": "The fourth went to Izri and his sons and brothers, twelve in all."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1CH:25:12",
+      "text": "The fifth went to Nethaniah and his sons and brothers, twelve in all."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1CH:25:13",
+      "text": "The sixth went to Bukkiah and his sons and brothers, twelve in all."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1CH:25:14",
+      "text": "The seventh went to Jesharelah and his sons and brothers, twelve in all."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:1CH:25:15",
+      "text": "The eighth went to Jeshaiah and his sons and brothers, twelve in all."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:1CH:25:16",
+      "text": "The ninth went to Mattaniah and his sons and brothers, twelve in all."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:1CH:25:17",
+      "text": "The tenth went to Shimei and his sons and brothers, twelve in all."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:1CH:25:18",
+      "text": "The eleventh went to Azarel and his sons and brothers, twelve in all."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:1CH:25:19",
+      "text": "The twelfth went to Hashabiah and his sons and brothers, twelve in all."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:1CH:25:20",
+      "text": "The thirteenth went to Shubael and his sons and brothers, twelve in all."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:1CH:25:21",
+      "text": "The fourteenth went to Mattithiah and his sons and brothers, twelve in all."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:1CH:25:22",
+      "text": "The fifteenth went to Jeremoth and his sons and brothers, twelve in all."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:1CH:25:23",
+      "text": "The sixteenth went to Hananiah and his sons and brothers, twelve in all."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:1CH:25:24",
+      "text": "The seventeenth went to Joshbekashah and his sons and brothers, twelve in all."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:1CH:25:25",
+      "text": "The eighteenth went to Hanani and his sons and brothers, twelve in all."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:1CH:25:26",
+      "text": "The nineteenth went to Mallothi and his sons and brothers, twelve in all."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:1CH:25:27",
+      "text": "The twentieth went to Eliathah and his sons and brothers, twelve in all."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:1CH:25:28",
+      "text": "The twenty-first went to Hothir and his sons and brothers, twelve in all."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:1CH:25:29",
+      "text": "The twenty-second went to Giddalti and his sons and brothers, twelve in all."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:1CH:25:30",
+      "text": "The twenty-third went to Mahazioth and his sons and brothers, twelve in all."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:1CH:25:31",
+      "text": "The twenty-fourth went to Romamti-Ezer and his sons and brothers, twelve in all."
+    }
+  ]
+}
