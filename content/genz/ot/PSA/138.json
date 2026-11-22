@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 138,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:138:1",
+      "text": "By David. I’ll thank you with all my heart. Right in front of the gods, I’ll sing your praise."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:138:2",
+      "text": "I’ll bow toward your holy temple and thank you for your name, your faithful love, and your truth. You’ve lifted your name and your word above everything."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:138:3",
+      "text": "The day I called, you answered. You gave me fresh courage and strength deep inside."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:138:4",
+      "text": "Every king on earth will thank you, LORD, because they’ve heard what you said."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:138:5",
+      "text": "They’ll sing about your ways, LORD, because your glory is so great!"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:138:6",
+      "text": "Even though the LORD is high above us, he looks after people who are lowly. He recognizes the proud from far away."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:138:7",
+      "text": "Even when I’m walking right through trouble, you keep me alive. You reach out against my enemies’ rage, and your right hand saves me."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:138:8",
+      "text": "The LORD will finish what concerns me. Your faithful love lasts forever, LORD. Don’t walk away from what your own hands have made."
+    }
+  ]
+}
