@@ -1,0 +1,416 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1CH",
+  "bookName": "1 Chronicles",
+  "chapterNumber": 6,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1CH:6:1",
+      "text": "Levi's sons were Gershon, Kohath, and Merari."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1CH:6:2",
+      "text": "Kohath's sons were Amram, Izhar, Hebron, and Uzziel."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1CH:6:3",
+      "text": "Amram's children were Aaron, Moses, and Miriam. Aaron's sons were Nadab, Abihu, Eleazar, and Ithamar."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1CH:6:4",
+      "text": "Eleazar was the father of Phinehas, and Phinehas was the father of Abishua."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1CH:6:5",
+      "text": "Abishua was the father of Bukki, who was the father of Uzzi."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1CH:6:6",
+      "text": "Uzzi was the father of Zerahiah, who was the father of Meraioth."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1CH:6:7",
+      "text": "Meraioth was the father of Amariah, who was the father of Ahitub."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1CH:6:8",
+      "text": "Ahitub was the father of Zadok, who was the father of Ahimaaz."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1CH:6:9",
+      "text": "Ahimaaz was the father of Azariah, who was the father of Johanan."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1CH:6:10",
+      "text": "Johanan was the father of Azariah, who served as priest in the house Solomon built in Jerusalem."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1CH:6:11",
+      "text": "Azariah was the father of Amariah, who was the father of Ahitub."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1CH:6:12",
+      "text": "Ahitub was the father of Zadok, who was the father of Shallum."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1CH:6:13",
+      "text": "Shallum was the father of Hilkiah, who was the father of Azariah."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1CH:6:14",
+      "text": "Azariah was the father of Seraiah, who was the father of Jehozadak."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:1CH:6:15",
+      "text": "Jehozadak went into exile when the LORD sent Judah and Jerusalem away through Nebuchadnezzar."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:1CH:6:16",
+      "text": "Levi's sons were Gershom, Kohath, and Merari."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:1CH:6:17",
+      "text": "Gershom's sons were named Libni and Shimei."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:1CH:6:18",
+      "text": "Kohath's sons were Amram, Izhar, Hebron, and Uzziel."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:1CH:6:19",
+      "text": "Merari's sons were Mahli and Mushi. These were the Levite clans according to their family households."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:1CH:6:20",
+      "text": "Gershom's family line continued through his son Libni, then Jahath and Zimmah,"
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:1CH:6:21",
+      "text": "then Joah, Iddo, Zerah, and Jeatherai."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:1CH:6:22",
+      "text": "Kohath's family line continued through his son Amminadab, then Korah and Assir,"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:1CH:6:23",
+      "text": "then Elkanah, Ebiasaph, and Assir,"
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:1CH:6:24",
+      "text": "then Tahath, Uriel, Uzziah, and Shaul."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:1CH:6:25",
+      "text": "Elkanah's sons were Amasai and Ahimoth."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:1CH:6:26",
+      "text": "Elkanah's line ran through his son Zophai, then Nahath,"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:1CH:6:27",
+      "text": "then Eliab, Jeroham, and Elkanah."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:1CH:6:28",
+      "text": "Samuel's firstborn was Joel, and his second son was Abijah."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:1CH:6:29",
+      "text": "Merari's family line continued through Mahli and his son Libni, then Shimei and Uzzah,"
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:1CH:6:30",
+      "text": "then Shimea, Haggiah, and Asaiah."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:1CH:6:31",
+      "text": "These were the men David put in charge of music at the LORD's house after the ark had come to rest there."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:1CH:6:32",
+      "text": "They served as singers in front of the sanctuary, the Tent of Meeting, until Solomon built the LORD's house in Jerusalem. They carried out their duties in the appointed order."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:1CH:6:33",
+      "text": "These were the men who served, along with their sons. From the Kohathites came Heman the singer, son of Joel and grandson of Samuel."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:1CH:6:34",
+      "text": "His family line went back through Elkanah, Jeroham, Eliel, and Toah,"
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:1CH:6:35",
+      "text": "then Zuph, Elkanah, Mahath, and Amasai,"
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:1CH:6:36",
+      "text": "then Elkanah, Joel, Azariah, and Zephaniah,"
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:1CH:6:37",
+      "text": "then Tahath, Assir, Ebiasaph, and Korah,"
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:1CH:6:38",
+      "text": "then Izhar, Kohath, Levi, and Israel."
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:1CH:6:39",
+      "text": "Heman's fellow Levite Asaph stood to his right. Asaph was the son of Berechiah and grandson of Shimea."
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:1CH:6:40",
+      "text": "His family line went back through Michael, Baaseiah, and Malchijah,"
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:1CH:6:41",
+      "text": "then Ethni, Zerah, and Adaiah,"
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:1CH:6:42",
+      "text": "then Ethan, Zimmah, and Shimei,"
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:1CH:6:43",
+      "text": "then Jahath, Gershom, and Levi."
+    },
+    {
+      "number": 44,
+      "sourceRef": "eng-web:1CH:6:44",
+      "text": "On the left stood their fellow Levites from Merari's family: Ethan son of Kishi, whose father was Abdi son of Malluch."
+    },
+    {
+      "number": 45,
+      "sourceRef": "eng-web:1CH:6:45",
+      "text": "His family line went back through Hashabiah, Amaziah, and Hilkiah,"
+    },
+    {
+      "number": 46,
+      "sourceRef": "eng-web:1CH:6:46",
+      "text": "then Amzi, Bani, and Shemer,"
+    },
+    {
+      "number": 47,
+      "sourceRef": "eng-web:1CH:6:47",
+      "text": "then Mahli, Mushi, Merari, and Levi."
+    },
+    {
+      "number": 48,
+      "sourceRef": "eng-web:1CH:6:48",
+      "text": "Their fellow Levites were appointed to all the other duties at the sanctuary of God's house."
+    },
+    {
+      "number": 49,
+      "sourceRef": "eng-web:1CH:6:49",
+      "text": "Aaron and his sons made offerings on the altar of burnt offerings and on the altar of incense. They handled the work of the Most Holy Place and made atonement for Israel, following everything Moses, God's servant, had commanded."
+    },
+    {
+      "number": 50,
+      "sourceRef": "eng-web:1CH:6:50",
+      "text": "This was Aaron's family line through his son Eleazar, then Phinehas and Abishua,"
+    },
+    {
+      "number": 51,
+      "sourceRef": "eng-web:1CH:6:51",
+      "text": "then Bukki, Uzzi, and Zerahiah,"
+    },
+    {
+      "number": 52,
+      "sourceRef": "eng-web:1CH:6:52",
+      "text": "then Meraioth, Amariah, and Ahitub,"
+    },
+    {
+      "number": 53,
+      "sourceRef": "eng-web:1CH:6:53",
+      "text": "then Zadok and Ahimaaz."
+    },
+    {
+      "number": 54,
+      "sourceRef": "eng-web:1CH:6:54",
+      "text": "These were the places where the Levites settled within their territories. Aaron's descendants belonged to the Kohathite families and received the first allotment."
+    },
+    {
+      "number": 55,
+      "sourceRef": "eng-web:1CH:6:55",
+      "text": "They were given Hebron in the land of Judah, along with its surrounding pasturelands."
+    },
+    {
+      "number": 56,
+      "sourceRef": "eng-web:1CH:6:56",
+      "text": "The fields and villages belonging to Hebron went to Caleb son of Jephunneh."
+    },
+    {
+      "number": 57,
+      "sourceRef": "eng-web:1CH:6:57",
+      "text": "Aaron's descendants received Hebron, a city of refuge, as well as Libnah with its pasturelands, Jattir, and Eshtemoa with its pasturelands."
+    },
+    {
+      "number": 58,
+      "sourceRef": "eng-web:1CH:6:58",
+      "text": "They also received Hilen and Debir, each with its pasturelands,"
+    },
+    {
+      "number": 59,
+      "sourceRef": "eng-web:1CH:6:59",
+      "text": "and Ashan and Beth Shemesh, each with its pasturelands."
+    },
+    {
+      "number": 60,
+      "sourceRef": "eng-web:1CH:6:60",
+      "text": "From Benjamin they received Geba, Allemeth, and Anathoth, each with its pasturelands. Their families received thirteen towns in all."
+    },
+    {
+      "number": 61,
+      "sourceRef": "eng-web:1CH:6:61",
+      "text": "The rest of Kohath's descendants were allotted ten towns from the families of the half-tribe of Manasseh."
+    },
+    {
+      "number": 62,
+      "sourceRef": "eng-web:1CH:6:62",
+      "text": "Gershom's descendants received thirteen towns for their families from Issachar, Asher, Naphtali, and Manasseh in Bashan."
+    },
+    {
+      "number": 63,
+      "sourceRef": "eng-web:1CH:6:63",
+      "text": "Merari's descendants were allotted twelve towns for their families from Reuben, Gad, and Zebulun."
+    },
+    {
+      "number": 64,
+      "sourceRef": "eng-web:1CH:6:64",
+      "text": "So the Israelites gave the Levites towns and their pasturelands."
+    },
+    {
+      "number": 65,
+      "sourceRef": "eng-web:1CH:6:65",
+      "text": "They allotted the towns named here from the tribes of Judah, Simeon, and Benjamin."
+    },
+    {
+      "number": 66,
+      "sourceRef": "eng-web:1CH:6:66",
+      "text": "Some families descended from Kohath received towns within the territory of Ephraim."
+    },
+    {
+      "number": 67,
+      "sourceRef": "eng-web:1CH:6:67",
+      "text": "Among the towns given to them were Shechem, a city of refuge in the hill country of Ephraim, and Gezer, with their pasturelands."
+    },
+    {
+      "number": 68,
+      "sourceRef": "eng-web:1CH:6:68",
+      "text": "They also received Jokmeam and Beth Horon with their pasturelands,"
+    },
+    {
+      "number": 69,
+      "sourceRef": "eng-web:1CH:6:69",
+      "text": "and Aijalon and Gath Rimmon with their pasturelands."
+    },
+    {
+      "number": 70,
+      "sourceRef": "eng-web:1CH:6:70",
+      "text": "The other Kohathite families received Aner and Bileam from the half-tribe of Manasseh, with their pasturelands."
+    },
+    {
+      "number": 71,
+      "sourceRef": "eng-web:1CH:6:71",
+      "text": "Gershom's descendants received Golan in Bashan and Ashtaroth from the half-tribe of Manasseh, with their pasturelands."
+    },
+    {
+      "number": 72,
+      "sourceRef": "eng-web:1CH:6:72",
+      "text": "From Issachar they received Kedesh and Daberath with their pasturelands,"
+    },
+    {
+      "number": 73,
+      "sourceRef": "eng-web:1CH:6:73",
+      "text": "and Ramoth and Anem with their pasturelands."
+    },
+    {
+      "number": 74,
+      "sourceRef": "eng-web:1CH:6:74",
+      "text": "From Asher they received Mashal and Abdon with their pasturelands,"
+    },
+    {
+      "number": 75,
+      "sourceRef": "eng-web:1CH:6:75",
+      "text": "and Hukok and Rehob with their pasturelands."
+    },
+    {
+      "number": 76,
+      "sourceRef": "eng-web:1CH:6:76",
+      "text": "From Naphtali they received Kedesh in Galilee, Hammon, and Kiriathaim, each with its pasturelands."
+    },
+    {
+      "number": 77,
+      "sourceRef": "eng-web:1CH:6:77",
+      "text": "The remaining Levites, Merari's descendants, received Rimmono and Tabor from Zebulun, with their pasturelands."
+    },
+    {
+      "number": 78,
+      "sourceRef": "eng-web:1CH:6:78",
+      "text": "East of the Jordan, across from Jericho, they received Bezer in the wilderness and Jahzah from Reuben, with their pasturelands."
+    },
+    {
+      "number": 79,
+      "sourceRef": "eng-web:1CH:6:79",
+      "text": "They also received Kedemoth and Mephaath with their pasturelands."
+    },
+    {
+      "number": 80,
+      "sourceRef": "eng-web:1CH:6:80",
+      "text": "And from Gad they received Ramoth in Gilead and Mahanaim with their pasturelands,"
+    },
+    {
+      "number": 81,
+      "sourceRef": "eng-web:1CH:6:81",
+      "text": "and Heshbon and Jazer with their pasturelands."
+    }
+  ]
+}

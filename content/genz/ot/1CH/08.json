@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1CH",
+  "bookName": "1 Chronicles",
+  "chapterNumber": 8,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1CH:8:1",
+      "text": "Benjamin was the father of Bela, his firstborn, Ashbel, his second, and Aharah, his third,"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1CH:8:2",
+      "text": "followed by Nohah, his fourth, and Rapha, his fifth."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1CH:8:3",
+      "text": "Bela's sons were Addar, Gera, and Abihud,"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1CH:8:4",
+      "text": "Abishua, Naaman, and Ahoah,"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1CH:8:5",
+      "text": "and Gera, Shephuphan, and Huram."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1CH:8:6",
+      "text": "These were Ehud's sons, the heads of the families who lived in Geba and were taken captive to Manahath:"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1CH:8:7",
+      "text": "Naaman, Ahijah, and Gera. Gera led them into exile and was the father of Uzza and Ahihud."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1CH:8:8",
+      "text": "Shaharaim had children in the land of Moab after he sent away his wives Hushim and Baara."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1CH:8:9",
+      "text": "His wife Hodesh bore him Jobab, Zibia, Mesha, and Malcam,"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1CH:8:10",
+      "text": "as well as Jeuz, Shachia, and Mirmah. These sons were heads of their families."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1CH:8:11",
+      "text": "Hushim bore him Abitub and Elpaal."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1CH:8:12",
+      "text": "Elpaal's sons included Eber, Misham, and Shemed, who built Ono and Lod and its surrounding towns."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1CH:8:13",
+      "text": "They also included Beriah and Shema, family heads among the people living in Aijalon. They drove the people of Gath away."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1CH:8:14",
+      "text": "Beriah's sons included Ahio, Shashak, and Jeremoth,"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:1CH:8:15",
+      "text": "Zebadiah, Arad, and Eder,"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:1CH:8:16",
+      "text": "and Michael, Ishpah, and Joha."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:1CH:8:17",
+      "text": "Elpaal's sons also included Zebadiah, Meshullam, Hizki, and Heber,"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:1CH:8:18",
+      "text": "along with Ishmerai, Izliah, and Jobab."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:1CH:8:19",
+      "text": "Shimei's sons included Jakim, Zichri, and Zabdi,"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:1CH:8:20",
+      "text": "Elienai, Zillethai, and Eliel,"
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:1CH:8:21",
+      "text": "and Adaiah, Beraiah, and Shimrath."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:1CH:8:22",
+      "text": "Shashak's sons included Ishpan, Eber, and Eliel,"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:1CH:8:23",
+      "text": "Abdon, Zichri, and Hanan,"
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:1CH:8:24",
+      "text": "Hananiah, Elam, and Anthothijah,"
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:1CH:8:25",
+      "text": "and Iphdeiah and Penuel."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:1CH:8:26",
+      "text": "Jeroham's sons included Shamsherai, Shehariah, and Athaliah,"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:1CH:8:27",
+      "text": "as well as Jaareshiah, Elijah, and Zichri."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:1CH:8:28",
+      "text": "These were leading men, heads of their families as listed by generation. They lived in Jerusalem."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:1CH:8:29",
+      "text": "The father of Gibeon lived in Gibeon. His wife was named Maacah."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:1CH:8:30",
+      "text": "With them lived his firstborn son Abdon, along with Zur, Kish, Baal, and Nadab,"
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:1CH:8:31",
+      "text": "Gedor, Ahio, and Zecher,"
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:1CH:8:32",
+      "text": "and Mikloth, who was the father of Shimeah. They also lived with their families in Jerusalem, near their relatives."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:1CH:8:33",
+      "text": "Ner was the father of Kish, and Kish was the father of Saul. Saul was the father of Jonathan, Malchishua, Abinadab, and Eshbaal."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:1CH:8:34",
+      "text": "Jonathan's son was Merib-baal, and Merib-baal was the father of Micah."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:1CH:8:35",
+      "text": "Micah's sons were Pithon, Melech, Tarea, and Ahaz."
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:1CH:8:36",
+      "text": "Ahaz was the father of Jehoaddah. Jehoaddah was the father of Alemeth, Azmaveth, and Zimri. Zimri was the father of Moza."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:1CH:8:37",
+      "text": "Moza was the father of Binea. Binea's family line continued through his son Raphah, then Eleasah and Azel."
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:1CH:8:38",
+      "text": "Azel had six sons named Azrikam, Bocheru, Ishmael, Sheariah, Obadiah, and Hanan. These were all his sons."
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:1CH:8:39",
+      "text": "His brother Eshek's firstborn was Ulam, his second was Jeush, and his third was Eliphelet."
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:1CH:8:40",
+      "text": "Ulam's sons were brave warriors and skilled archers. They had many sons and grandsons, a hundred and fifty in all. These all belonged to Benjamin's family."
+    }
+  ]
+}
