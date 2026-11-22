@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 72,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:72:1",
+      "text": "By Solomon. God, give the king your sense of justice and give your righteousness to the king’s son."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:72:2",
+      "text": "He’ll judge your people with righteousness and give the poor the justice they deserve."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:72:3",
+      "text": "May the mountains bring the people prosperity and the hills yield the fruit of righteousness."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:72:4",
+      "text": "May he defend the poor, save the children of those in need, and crush the oppressor."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:72:5",
+      "text": "May people fear you as long as the sun and moon endure, through every generation."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:72:6",
+      "text": "May the king come down like rain on freshly cut grass, like showers watering the earth."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:72:7",
+      "text": "In his days may the righteous flourish and peace abound until the moon is gone."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:72:8",
+      "text": "May he rule from sea to sea, from the River to the ends of the earth."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:72:9",
+      "text": "May those who live in the wilderness bow before him and his enemies lick the dust."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:72:10",
+      "text": "May the kings of Tarshish and the islands bring tribute, and the kings of Sheba and Seba bring gifts."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:72:11",
+      "text": "May every king bow before him and every nation serve him."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:72:12",
+      "text": "He’ll rescue the needy when they cry out, and the poor who have no one to help."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:72:13",
+      "text": "He’ll have compassion on the poor and needy, and he’ll save the lives of those in need."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:72:14",
+      "text": "He’ll rescue them from oppression and violence. Their blood will be precious to him."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:72:15",
+      "text": "May he live long and receive gold from Sheba. May people pray for him continually and bless him all day long."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:72:16",
+      "text": "May grain grow in abundance throughout the land. May its fruit sway like Lebanon and flourish like grass in the fields."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:72:17",
+      "text": "May his name last forever, as long as the sun shines. May people find blessing through him and all nations call him blessed."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:72:18",
+      "text": "Praise the LORD God, the God of Israel. He alone does wonderful things."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:72:19",
+      "text": "Bless his glorious name forever! Let the whole earth be filled with his glory! Amen and amen."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PSA:72:20",
+      "text": "This ends the prayers of David son of Jesse."
+    }
+  ]
+}
