@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 77,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:77:1",
+      "text": "For the music director. For Jeduthun. A psalm by Asaph. I cry out to God! I call on him for help, asking him to hear me."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:77:2",
+      "text": "When trouble hit, I looked for the Lord. I kept my hand stretched out through the night and didn’t let it drop. My soul wouldn’t be comforted."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:77:3",
+      "text": "I think of God and groan. I voice my pain, and my spirit feels overwhelmed. Selah."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:77:4",
+      "text": "You keep my eyes wide open. I’m so upset I can’t even speak."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:77:5",
+      "text": "I think back to the old days, to years long gone."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:77:6",
+      "text": "At night I remember my song. I search my heart, and my spirit keeps asking:"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:77:7",
+      "text": "“Will the Lord turn us away forever? Will he never show us favor again?"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:77:8",
+      "text": "Has his faithful love disappeared for good? Has his promise failed for every generation to come?"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:77:9",
+      "text": "Has God forgotten how to show grace? Has anger made him hold back his compassion?” Selah."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:77:10",
+      "text": "Then I thought, “Here’s where I’ll turn: to those years when the Most High showed the power of his right hand.”"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:77:11",
+      "text": "I’ll remember what the LORD has done. I’ll remember your wonders from long ago."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:77:12",
+      "text": "I’ll think deeply about all your work and turn over in my mind what you’ve done."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:77:13",
+      "text": "God, your way is in the sanctuary. What god is as great as you?"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:77:14",
+      "text": "You’re the God who works wonders. You’ve shown your strength among the peoples."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:77:15",
+      "text": "With your own arm you redeemed your people, the descendants of Jacob and Joseph. Selah."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:77:16",
+      "text": "The waters saw you, God. They saw you and twisted in fear. Even the depths shook."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:77:17",
+      "text": "The clouds poured out water. Thunder rolled through the skies, and your arrows flashed all around."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:77:18",
+      "text": "Your thunder roared in the whirlwind. Lightning lit up the world, and the earth shook and trembled."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:77:19",
+      "text": "Your road ran through the sea. Your paths crossed the mighty waters, yet no one saw your footprints."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PSA:77:20",
+      "text": "You led your people like a flock, with Moses and Aaron to guide them."
+    }
+  ]
+}
