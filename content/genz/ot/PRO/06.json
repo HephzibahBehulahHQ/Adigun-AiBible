@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PRO",
+  "bookName": "Proverbs",
+  "chapterNumber": 6,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PRO:6:1",
+      "text": "My son, suppose you've put yourself up as security for your neighbor, or shaken hands on a promise to cover a stranger's debt."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PRO:6:2",
+      "text": "Then your own words have caught you. That promise you made has you stuck."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PRO:6:3",
+      "text": "Here's how to get free, my son. Your neighbor has you in his hands now, so go humble yourself and keep pleading with him."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PRO:6:4",
+      "text": "Don't go to sleep. Don't even let your eyes close for a nap."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PRO:6:5",
+      "text": "Get yourself free like a gazelle escaping a hunter, or a bird wriggling out of a trap."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PRO:6:6",
+      "text": "Go watch an ant, you lazybones. Pay attention to how she lives and learn something. 🐜"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PRO:6:7",
+      "text": "She doesn't have a boss, a supervisor, or a ruler,"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PRO:6:8",
+      "text": "but she gets her food ready in summer and gathers what she'll eat at harvest."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PRO:6:9",
+      "text": "How long are you going to lie there, lazybones? When are you getting out of bed?"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PRO:6:10",
+      "text": "“A little more sleep, a quick nap, just folding my hands and resting a bit.”"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PRO:6:11",
+      "text": "Then poverty will jump you like a robber, and need will come at you like somebody carrying a weapon."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PRO:6:12",
+      "text": "A troublemaker who lives to do wrong goes around talking out of both sides of his mouth."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PRO:6:13",
+      "text": "He winks, signals with his feet, and makes signs with his fingers."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PRO:6:14",
+      "text": "His heart is twisted. He's always cooking up something evil and trying to get people fighting."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PRO:6:15",
+      "text": "That's why disaster will hit him all at once. Just like that he'll break, and there'll be no putting him back together."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PRO:6:16",
+      "text": "There are six things the LORD hates, seven that disgust him:"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PRO:6:17",
+      "text": "eyes that look down on people, a tongue that lies, hands that spill innocent blood,"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PRO:6:18",
+      "text": "a heart that cooks up wicked plans, feet that run straight into trouble,"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PRO:6:19",
+      "text": "a witness who lies about what happened, and somebody who gets brothers fighting."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PRO:6:20",
+      "text": "My son, keep your father's command, and don't leave your mother's teaching behind."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PRO:6:21",
+      "text": "Keep them tied close to your heart all the time. Wear them like a chain around your neck."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PRO:6:22",
+      "text": "When you walk, they'll guide you. When you sleep, they'll watch over you. When you wake up, they'll have something to tell you."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PRO:6:23",
+      "text": "The command is a lamp, and the teaching is a light. Correction that teaches you is the road to life."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PRO:6:24",
+      "text": "It keeps you away from the woman who does wrong and the smooth talk of a wife who's straying."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PRO:6:25",
+      "text": "Don't let desire for her beauty take over your heart, and don't let the way she looks at you reel you in."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:PRO:6:26",
+      "text": "A prostitute can leave you with nothing but a piece of bread. Another man's wife is hunting for your very life."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:PRO:6:27",
+      "text": "Can you scoop fire into your lap and keep your clothes from burning?"
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:PRO:6:28",
+      "text": "Can you walk across hot coals and come away without burning your feet?"
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:PRO:6:29",
+      "text": "That's how it goes when someone sleeps with his neighbor's wife. Whoever touches her will face punishment."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:PRO:6:30",
+      "text": "People don't look down on a thief for stealing food when he's hungry."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:PRO:6:31",
+      "text": "But if he gets caught, he has to pay back seven times what he took, even if it costs everything in his house."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:PRO:6:32",
+      "text": "A man who sleeps with another man's wife has no sense. He's destroying his own life."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:PRO:6:33",
+      "text": "He'll end up wounded and disgraced, and that shame won't wash off."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:PRO:6:34",
+      "text": "Jealousy makes her husband furious. When he comes for payback, he won't hold back."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:PRO:6:35",
+      "text": "He won't take any amount of money to let it go. You can pile on the gifts, and he still won't be satisfied."
+    }
+  ]
+}
