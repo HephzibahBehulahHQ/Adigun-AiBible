@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 132,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:132:1",
+      "text": "A song of ascents. LORD, remember David and everything he went through."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:132:2",
+      "text": "Remember how he swore to the LORD and made a promise to the Mighty One of Jacob:"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:132:3",
+      "text": "“I won’t step inside my house or climb into my bed."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:132:4",
+      "text": "I won’t close my eyes and sleep or even let myself doze"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:132:5",
+      "text": "until I find a place for the LORD, a home for the Mighty One of Jacob.”"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:132:6",
+      "text": "We heard about it in Ephrathah and found it in the field of Jaar."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:132:7",
+      "text": "“Let’s go to his home. Let’s bow down and worship at his footstool.”"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:132:8",
+      "text": "Rise up, LORD, and come to your resting place, you and the ark of your strength."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:132:9",
+      "text": "Dress your priests in righteousness, and let your faithful people shout for joy!"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:132:10",
+      "text": "For the sake of your servant David, don’t turn your anointed one away."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:132:11",
+      "text": "The LORD gave David his word, and he’ll keep it: “I’ll put one of your own descendants on your throne."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:132:12",
+      "text": "If your children keep my covenant and the teaching I give them, their children will sit on your throne forever.”"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:132:13",
+      "text": "The LORD chose Zion. That’s where he wanted to make his home."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:132:14",
+      "text": "“This is my resting place forever. I’ll live here because this is where I want to be."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:132:15",
+      "text": "I’ll bless it with plenty of food. I’ll give its poor enough bread to eat their fill."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:132:16",
+      "text": "I’ll dress its priests in salvation, and its faithful people will shout for joy."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:132:17",
+      "text": "There I’ll make David’s horn sprout. I’ve set a lamp in place for my anointed one."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:132:18",
+      "text": "I’ll dress his enemies in shame, and his own crown will shine.”"
+    }
+  ]
+}

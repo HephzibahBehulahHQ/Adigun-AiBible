@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 134,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:134:1",
+      "text": "A song of ascents. Come on, praise the LORD, all you servants who stand in his house through the night!"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:134:2",
+      "text": "Lift your hands in the sanctuary and praise the LORD!"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:134:3",
+      "text": "May the LORD, who made heaven and earth, bless you from Zion."
+    }
+  ]
+}

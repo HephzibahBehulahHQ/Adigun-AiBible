@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 133,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:133:1",
+      "text": "A song of ascents. By David. Look how good it is, how beautiful, when brothers live together in peace!"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:133:2",
+      "text": "It’s like precious oil poured on the head, running down the beard, down Aaron’s beard, all the way to the edge of his robes."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:133:3",
+      "text": "It’s like dew from Hermon falling on Zion’s hills. That’s where the LORD gives his blessing: life forever."
+    }
+  ]
+}
