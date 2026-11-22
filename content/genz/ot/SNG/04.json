@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "SNG",
+  "bookName": "Song of Solomon",
+  "chapterNumber": 4,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:SNG:4:1",
+      "text": "Look at you, my love. You're beautiful, so beautiful. Your eyes are like doves behind your veil. Your hair flows like a flock of goats coming down Mount Gilead."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:SNG:4:2",
+      "text": "Your teeth are like a flock of freshly shorn sheep coming back from washing. Every one has its twin, with none missing."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:SNG:4:3",
+      "text": "Your lips are like scarlet thread, and your mouth is lovely. Behind your veil, your temples look like slices of pomegranate."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:SNG:4:4",
+      "text": "Your neck is like David's tower, built to store weapons. A thousand shields hang there, all belonging to mighty warriors."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:SNG:4:5",
+      "text": "Your breasts are like two fawns, twins born to a gazelle, feeding among the lilies."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:SNG:4:6",
+      "text": "Till the day cools down and the shadows slip away, I'll go to the mountain of myrrh and the hill of frankincense."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:SNG:4:7",
+      "text": "You're beautiful through and through, my love. There's no flaw in you."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:SNG:4:8",
+      "text": "Come with me from Lebanon, my bride. Come away from Lebanon with me. Look out from the top of Amana, from the peaks of Senir and Hermon, from where the lions den and the leopards live in the mountains."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:SNG:4:9",
+      "text": "You've stolen my heart, my sister, my bride. One glance from you, one chain on your neck, and my heart is yours."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:SNG:4:10",
+      "text": "Your love is beautiful, my sister, my bride. It's so much better than wine, and your perfume smells better than all the spices."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:SNG:4:11",
+      "text": "Your lips drip like honeycomb, my bride. Honey and milk are under your tongue. Your clothes smell like Lebanon."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:SNG:4:12",
+      "text": "My sister, my bride, is a garden locked up tight, a spring shut away, a fountain sealed."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:SNG:4:13",
+      "text": "Your new growth is a pomegranate orchard full of prized fruit, with henna and spikenard,"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:SNG:4:14",
+      "text": "with spikenard and saffron, calamus and cinnamon, every kind of incense tree, myrrh and aloes, and all the best spices."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:SNG:4:15",
+      "text": "You're a fountain for the gardens, a well of fresh running water, streams flowing down from Lebanon."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:SNG:4:16",
+      "text": "Wake up, north wind! Come on, south wind! Blow across my garden so the scent of its spices drifts out. Let my love come into his garden and taste its precious fruit."
+    }
+  ]
+}

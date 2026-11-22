@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "SNG",
+  "bookName": "Song of Solomon",
+  "chapterNumber": 5,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:SNG:5:1",
+      "text": "I've come into my garden, my sister, my bride. I've gathered my myrrh and spices, eaten my honeycomb and honey, and drunk my wine and milk. Friends: Eat, friends! Drink your fill, you who are loved!"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:SNG:5:2",
+      "text": "I was asleep, but my heart was awake. That's my love's voice at the door! “Open up for me, my sister, my love, my dove, my flawless one. My head is soaked with dew, my hair wet from the night.”"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:SNG:5:3",
+      "text": "I've already taken my robe off. Do I really have to put it back on? I've washed my feet. Do I have to get them dirty again?"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:SNG:5:4",
+      "text": "My love reached in through the opening by the latch, and my heart started pounding for him."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:SNG:5:5",
+      "text": "I got up to open the door for him. My hands dripped myrrh. Liquid myrrh ran from my fingers onto the handles of the lock."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:SNG:5:6",
+      "text": "I opened the door for my love, but he'd turned and gone. My heart had gone out to him when he spoke. I looked and couldn't find him. I called and got no answer."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:SNG:5:7",
+      "text": "The guards making their rounds found me. They beat me and left me bruised. The guards on the walls took my cloak from me."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:SNG:5:8",
+      "text": "Daughters of Jerusalem, promise me this. If you find my love, tell him I'm weak with love."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:SNG:5:9",
+      "text": "What makes your love better than anyone else's, most beautiful of women? What's so special about him that you're making us promise this?"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:SNG:5:10",
+      "text": "My love is bright and ruddy. He stands out among ten thousand."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:SNG:5:11",
+      "text": "His head is like the purest gold. His hair is thick and black as a raven."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:SNG:5:12",
+      "text": "His eyes are like doves beside streams, washed with milk and set like jewels."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:SNG:5:13",
+      "text": "His cheeks are like beds of spice with mounds of perfume. His lips are like lilies dripping liquid myrrh."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:SNG:5:14",
+      "text": "His hands are like gold rings set with beryl. His body is like carved ivory covered with sapphires."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:SNG:5:15",
+      "text": "His legs are like marble pillars set on bases of pure gold. He looks like Lebanon, majestic as its cedars."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:SNG:5:16",
+      "text": "His mouth is sweetness itself. Everything about him is lovely. This is my love, and this is my friend, daughters of Jerusalem."
+    }
+  ]
+}
