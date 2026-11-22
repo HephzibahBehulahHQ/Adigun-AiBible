@@ -26,10 +26,10 @@ const expectedBooks = [
 test('reader edition contains only complete, source-aligned Adigun chapters in canonical order', () => {
   assert.equal(manifest.edition.name, 'Adigun Edition');
   assert.equal(manifest.edition.scope, 'portion');
-;
+  assert.equal(manifest.edition.revision, 'Genesis 1–50; Exodus 1–40; Leviticus 1–27; Numbers 1–36; Deuteronomy 1–34; Joshua 1–24; Judges 1–21; Ruth 1–4; 1 Samuel 1–31; 2 Samuel 1–24; 1 Kings 1–22; 2 Kings 1–25; 1 Chronicles 1–29; Matthew 1–28');
   assert.equal(manifest.sourceManifestSha256, sourceManifest.edition.sha256);
-;
-;
+  assert.deepEqual(manifest.books.map(row => row.id), ['GEN', 'EXO', 'LEV', 'NUM', 'DEU', 'JOS', 'JDG', 'RUT', '1SA', '2SA', '1KI', '2KI', '1CH', 'MAT']);
+  assert.deepEqual(manifest.totals, { books: 14, chapters: 395, verses: 12266 });
   const installedBooks = [];
   for (const expected of expectedBooks) {
     const source = sourceManifest.books.find(row => row.id === expected.id);
