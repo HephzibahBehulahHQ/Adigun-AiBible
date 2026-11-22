@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 137,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:137:1",
+      "text": "We sat by the rivers of Babylon and cried when Zion came to mind."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:137:2",
+      "text": "We hung our harps on the willows there."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:137:3",
+      "text": "The people who took us captive asked for songs. The ones who tormented us wanted us to sound happy: “Sing us one of Zion’s songs!”"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:137:4",
+      "text": "How are we supposed to sing the LORD’s song in a foreign land?"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:137:5",
+      "text": "Jerusalem, if I forget you, let my right hand forget how to play."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:137:6",
+      "text": "Let my tongue stick to the roof of my mouth if I forget you, if I don’t hold Jerusalem above my greatest joy."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:137:7",
+      "text": "LORD, remember what Edom’s people did the day Jerusalem fell. They shouted, “Tear it down! Tear it down to the foundations!”"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:137:8",
+      "text": "Daughter of Babylon, you’re headed for ruin. Happy is the one who pays you back for what you did to us."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:137:9",
+      "text": "Happy is the one who takes your little ones and dashes them against the rock."
+    }
+  ]
+}
