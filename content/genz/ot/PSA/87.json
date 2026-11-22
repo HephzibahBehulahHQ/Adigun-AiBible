@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 87,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:87:1",
+      "text": "A psalm by the sons of Korah. A song. God laid his foundation in the holy mountains."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:87:2",
+      "text": "The LORD loves Zion’s gates more than anywhere else Jacob’s people live."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:87:3",
+      "text": "City of God, people say glorious things about you! Selah."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:87:4",
+      "text": "“I’ll count Rahab and Babylon among those who know me. Look at Philistia, Tyre, and Ethiopia. I’ll say, ‘This one was born there.’”"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:87:5",
+      "text": "People will say of Zion, “This one was born here, and so was that one.” The Most High himself will keep the city standing."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:87:6",
+      "text": "When the LORD writes down the names of the peoples, he’ll mark down, “This one was born there.” Selah."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:87:7",
+      "text": "Singers and dancers alike say, “All my springs are in you.”"
+    }
+  ]
+}
