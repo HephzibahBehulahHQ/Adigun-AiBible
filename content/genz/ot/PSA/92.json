@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 92,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:92:1",
+      "text": "A psalm. A song for the Sabbath day. It’s good to thank the LORD and sing praise to your name, Most High,"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:92:2",
+      "text": "to tell of your faithful love in the morning and your faithfulness every night,"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:92:3",
+      "text": "with the ten-stringed lute, the harp, and the melody of the lyre."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:92:4",
+      "text": "What you’ve done fills me with joy, LORD. I’ll celebrate what your hands have made."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:92:5",
+      "text": "LORD, your works are amazing! Your thoughts go so deep."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:92:6",
+      "text": "People with no sense miss it. Fools can’t get their heads around this:"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:92:7",
+      "text": "the wicked may pop up like grass and those who do evil may thrive, but they’ll be destroyed forever."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:92:8",
+      "text": "You, LORD, are on high forever."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:92:9",
+      "text": "Look, LORD, your enemies will perish. Every one of those evildoers will scatter."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:92:10",
+      "text": "But you’ve lifted my horn high like a wild ox’s. You’ve anointed me with fresh oil."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:92:11",
+      "text": "I’ve seen my enemies with my own eyes, and I’ve heard about the wicked who rise up against me."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:92:12",
+      "text": "The righteous will flourish like palm trees and grow tall like cedars in Lebanon."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:92:13",
+      "text": "Planted in the LORD’s house, they’ll flourish in the courts of our God."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:92:14",
+      "text": "Even in old age they’ll still bear fruit. They’ll stay green and full of sap,"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:92:15",
+      "text": "showing that the LORD is upright. He’s my rock, and there’s no wrong in him."
+    }
+  ]
+}
