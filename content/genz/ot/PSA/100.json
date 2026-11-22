@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 100,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:100:1",
+      "text": "A psalm of thanks. Shout for joy to the LORD, everyone on earth!"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:100:2",
+      "text": "Serve the LORD with joy. Come into his presence singing!"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:100:3",
+      "text": "Know that the LORD is God. He made us, and we belong to him. We’re his people, the sheep he looks after."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:100:4",
+      "text": "Walk through his gates giving thanks. Come into his courts with praise. Thank him and bless his name."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:100:5",
+      "text": "The LORD is good. His faithful love lasts forever, and he stays faithful through every generation."
+    }
+  ]
+}

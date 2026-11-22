@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 99,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:99:1",
+      "text": "The LORD reigns! Let the peoples tremble. He sits on his throne among the cherubim. Let the earth shake."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:99:2",
+      "text": "The LORD is great in Zion. He stands high above every people."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:99:3",
+      "text": "Let them praise your great name, the name that fills them with awe. He is holy!"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:99:4",
+      "text": "The mighty King loves justice. You make things fair. You do what’s just and right in Jacob."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:99:5",
+      "text": "Lift up the LORD our God. Bow down at his footstool. He is holy!"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:99:6",
+      "text": "Moses and Aaron served among his priests, and Samuel was among those who called on his name. They called to the LORD, and he answered them."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:99:7",
+      "text": "He spoke to them from the pillar of cloud. They kept his teachings and the law he gave them."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:99:8",
+      "text": "You answered them, LORD our God. You forgave them, even as you held them accountable for what they did."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:99:9",
+      "text": "Lift up the LORD our God. Worship at his holy hill, because the LORD our God is holy!"
+    }
+  ]
+}
