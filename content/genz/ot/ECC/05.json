@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ECC",
+  "bookName": "Ecclesiastes",
+  "chapterNumber": 5,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ECC:5:1",
+      "text": "Watch your step when you go to God's house. It's better to come close and listen than to offer the sacrifice fools bring. They don't even know they're doing wrong."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ECC:5:2",
+      "text": "Don't let words fly out of your mouth or rush to say whatever's on your heart before God. God's in heaven and you're on earth, so keep your words few."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ECC:5:3",
+      "text": "Many worries will fill your sleep with dreams, and a fool fills the air with words."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ECC:5:4",
+      "text": "When you make God a vow, don't put off keeping it. Fools don't please him. Do what you promised."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ECC:5:5",
+      "text": "It's better to skip the vow than make one and fail to keep it."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ECC:5:6",
+      "text": "Don't let your mouth talk you into sin. Don't tell the messenger, “I made a mistake.” Why make God angry at what you say and have him wreck what your hands built?"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ECC:5:7",
+      "text": "Piles of dreams can all slip away like a breath, and so can piles of words. Stand in awe of God."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ECC:5:8",
+      "text": "If you see poor people oppressed and justice and fairness torn away in some district, don't be shocked. One official has a higher official watching them, and others sit above them too."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ECC:5:9",
+      "text": "What the land produces is for everybody. Even the king gets his share from the fields."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ECC:5:10",
+      "text": "Love money and you'll never have enough money. Love having more and you'll never be satisfied with what comes in. That too slips away like a breath."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ECC:5:11",
+      "text": "The more goods there are, the more people show up to eat them. What does the owner get besides a chance to look at it all?"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ECC:5:12",
+      "text": "A worker sleeps sweetly after eating a little or a lot. Rich people have so much they can't sleep."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:ECC:5:13",
+      "text": "I've seen something awful under the sun. Someone holds on to their wealth, and it ends up hurting them."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:ECC:5:14",
+      "text": "Then a stroke of bad luck wipes the money out. If they've had a son, there's nothing left to put in his hand."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:ECC:5:15",
+      "text": "They came out of their mother's womb naked, and they'll leave the same way. They won't carry off a single thing they worked for."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:ECC:5:16",
+      "text": "That's another terrible wrong. People leave exactly as they came. What does anybody gain from working for the wind?"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:ECC:5:17",
+      "text": "They spend their days eating in the dark, full of frustration, sickness, and anger."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:ECC:5:18",
+      "text": "Here's what I've seen is good and right. Eat, drink, and take some joy in the work you do under the sun in the days God gives you. That's your share."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:ECC:5:19",
+      "text": "When God gives someone riches and possessions and lets them enjoy those things, take their share, and find joy in their work, that's God's gift."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:ECC:5:20",
+      "text": "They won't spend much time dwelling on how many days they've got, because God keeps their heart busy with joy."
+    }
+  ]
+}
