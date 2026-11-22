@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ECC",
+  "bookName": "Ecclesiastes",
+  "chapterNumber": 8,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ECC:8:1",
+      "text": "Who compares to someone wise? Who can tell you what a thing really means? Wisdom lights up a person's face and softens that hard look."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ECC:8:2",
+      "text": "Here's what I say: follow the king's command, because of the oath you made to God."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ECC:8:3",
+      "text": "Don't rush out of his presence or dig in your heels over something wrong. He'll do whatever he pleases."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ECC:8:4",
+      "text": "The king's word carries the highest authority. Who can ask him, “What are you doing?”"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ECC:8:5",
+      "text": "Follow the command and you'll stay out of harm's way. A wise heart knows when to act and how to go about it."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ECC:8:6",
+      "text": "There's a time and a way for every purpose, even when misery weighs heavy on a person."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ECC:8:7",
+      "text": "Nobody knows what's going to happen. Who can tell them how it'll go?"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ECC:8:8",
+      "text": "Nobody has the power to hold their spirit in or decide the day they'll die. You don't get discharged in the middle of a war, and doing evil won't get evildoers out of trouble."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ECC:8:9",
+      "text": "I saw all this and gave my attention to everything done under the sun. There are times when people use their power to hurt others."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ECC:8:10",
+      "text": "I saw wicked people buried. They'd even come from the holy place, then they were gone and forgotten in the same city where they'd done those things. This too slips away like a breath."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ECC:8:11",
+      "text": "When a sentence for doing wrong takes too long to be carried out, people make up their minds to do evil."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ECC:8:12",
+      "text": "A sinner might do wrong a hundred times and still live a long life. Even so, I know things will go better for people who stand in awe of God and honor him."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:ECC:8:13",
+      "text": "Things won't go well for the wicked. Their days won't stretch out like a shadow, because they don't stand in awe of God."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:ECC:8:14",
+      "text": "Here's something on earth that slips away like a breath. People who do right get what the wicked deserve, and wicked people get what those who do right deserve. I said this too slips away like a breath."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:ECC:8:15",
+      "text": "So I spoke up for joy. There's nothing better under the sun than to eat, drink, and enjoy yourself. That joy can go with you in your work through all the days God gives you under the sun."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:ECC:8:16",
+      "text": "I put my whole heart into understanding wisdom and watching what goes on here on earth, even when people's eyes get no sleep day or night."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:ECC:8:17",
+      "text": "Then I saw what God does. People can't figure out the work that goes on under the sun. No matter how hard they try, they won't get to the bottom of it. Even someone wise who thinks they can work it out still won't be able to."
+    }
+  ]
+}
