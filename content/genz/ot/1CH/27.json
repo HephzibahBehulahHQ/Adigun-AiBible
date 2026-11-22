@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1CH",
+  "bookName": "1 Chronicles",
+  "chapterNumber": 27,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1CH:27:1",
+      "text": "Here is the count of the Israelites who served the king: family heads, commanders of thousands and hundreds, and their officers. Their divisions rotated in and out of service each month throughout the year, with twenty-four thousand in each division."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1CH:27:2",
+      "text": "Jashobeam son of Zabdiel led the first division, which served in the first month and numbered twenty-four thousand."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1CH:27:3",
+      "text": "He descended from Perez and was in charge of all the army commanders for the first month."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1CH:27:4",
+      "text": "Dodai the Ahohite led the division for the second month, with Mikloth as its officer. His division numbered twenty-four thousand."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1CH:27:5",
+      "text": "Benaiah son of Jehoiada the chief priest was the third army commander, serving in the third month. His division numbered twenty-four thousand."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1CH:27:6",
+      "text": "This was the Benaiah who was a mighty warrior among the Thirty and led them. His son Ammizabad served with his division."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1CH:27:7",
+      "text": "Asahel, Joab's brother, commanded the fourth division in the fourth month, and his son Zebadiah succeeded him. His division numbered twenty-four thousand."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1CH:27:8",
+      "text": "Shamhuth the Izrahite commanded the fifth division in the fifth month. His division numbered twenty-four thousand."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1CH:27:9",
+      "text": "Ira son of Ikkesh the Tekoite commanded the sixth division in the sixth month. His division numbered twenty-four thousand."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1CH:27:10",
+      "text": "Helez the Pelonite, from Ephraim, commanded the seventh division in the seventh month. His division numbered twenty-four thousand."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1CH:27:11",
+      "text": "Sibbecai the Hushathite, from the Zerahites, commanded the eighth division in the eighth month. His division numbered twenty-four thousand."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1CH:27:12",
+      "text": "Abiezer the Anathothite, from Benjamin, commanded the ninth division in the ninth month. His division numbered twenty-four thousand."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1CH:27:13",
+      "text": "Maharai the Netophathite, from the Zerahites, commanded the tenth division in the tenth month. His division numbered twenty-four thousand."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1CH:27:14",
+      "text": "Benaiah the Pirathonite, from Ephraim, commanded the eleventh division in the eleventh month. His division numbered twenty-four thousand."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:1CH:27:15",
+      "text": "Heldai the Netophathite, from Othniel's family, commanded the twelfth division in the twelfth month. His division numbered twenty-four thousand."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:1CH:27:16",
+      "text": "These were the leaders of Israel's tribes: Eliezer son of Zichri led Reuben, and Shephatiah son of Maacah led Simeon."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:1CH:27:17",
+      "text": "Hashabiah son of Kemuel led Levi, and Zadok led Aaron's family."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:1CH:27:18",
+      "text": "Elihu, one of David's brothers, led Judah, and Omri son of Michael led Issachar."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:1CH:27:19",
+      "text": "Ishmaiah son of Obadiah led Zebulun, and Jeremoth son of Azriel led Naphtali."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:1CH:27:20",
+      "text": "Hoshea son of Azaziah led Ephraim, and Joel son of Pedaiah led half the tribe of Manasseh."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:1CH:27:21",
+      "text": "Iddo son of Zechariah led the half-tribe of Manasseh in Gilead, and Jaasiel son of Abner led Benjamin."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:1CH:27:22",
+      "text": "Azarel son of Jeroham led Dan. These were the leaders of Israel's tribes."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:1CH:27:23",
+      "text": "David left those twenty years old and younger out of the count, because the LORD had promised to make Israel as numerous as the stars in the sky."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:1CH:27:24",
+      "text": "Joab son of Zeruiah started counting the people but never finished. Wrath came on Israel because of this, and the count was left out of King David's official records."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:1CH:27:25",
+      "text": "Azmaveth son of Adiel managed the king's treasuries. Jonathan son of Uzziah managed the stores in the countryside, cities, villages, and towers."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:1CH:27:26",
+      "text": "Ezri son of Chelub supervised the workers who cultivated the fields."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:1CH:27:27",
+      "text": "Shimei the Ramathite oversaw the vineyards, and Zabdi the Shiphmite managed the wine going into the cellars."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:1CH:27:28",
+      "text": "Baal Hanan the Gederite oversaw the olive and sycamore trees in the lowlands, and Joash managed the oil stores."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:1CH:27:29",
+      "text": "Shitrai the Sharonite oversaw the herds grazing in Sharon, and Shaphat son of Adlai oversaw the herds in the valleys."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:1CH:27:30",
+      "text": "Obil the Ishmaelite managed the camels. Jehdeiah the Meronothite managed the donkeys. Jaziz the Hagrite managed the flocks."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:1CH:27:31",
+      "text": "These were the people in charge of King David's property."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:1CH:27:32",
+      "text": "David's uncle Jonathan was an adviser, a man of good judgment, and a scribe. Jehiel son of Hachmoni attended the king's sons."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:1CH:27:33",
+      "text": "Ahithophel was the king's adviser, and Hushai the Archite was the king's friend."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:1CH:27:34",
+      "text": "Jehoiada son of Benaiah and Abiathar came after Ahithophel. Joab commanded the king's army."
+    }
+  ]
+}
