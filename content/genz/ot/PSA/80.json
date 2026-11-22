@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 80,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:80:1",
+      "text": "For the music director, to the tune of “The Lilies of the Covenant.” A psalm by Asaph. Hear us, Shepherd of Israel. You lead Joseph like a flock. You sit above the cherubim. Shine out!"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:80:2",
+      "text": "Show your strength before Ephraim, Benjamin, and Manasseh. Come save us!"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:80:3",
+      "text": "Bring us back, God. Let your face shine on us, and we’ll be saved."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:80:4",
+      "text": "LORD God of Armies, how long will your anger burn against your people’s prayers?"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:80:5",
+      "text": "You’ve fed them bread made of tears and given them tears to drink by the bowlful."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:80:6",
+      "text": "You’ve made our neighbors fight over us, and our enemies laugh among themselves."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:80:7",
+      "text": "Bring us back, God of Armies. Let your face shine on us, and we’ll be saved."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:80:8",
+      "text": "You brought a vine out of Egypt. You drove out the nations and planted it."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:80:9",
+      "text": "You cleared the ground for it. It sank its roots deep and filled the land."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:80:10",
+      "text": "Its shade covered the mountains, and its branches were like God’s cedars."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:80:11",
+      "text": "It spread its branches all the way to the sea and sent its shoots out to the River."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:80:12",
+      "text": "Why did you break down its walls so anyone walking by can pick from it?"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:80:13",
+      "text": "Wild boars from the woods tear it up, and animals from the fields feed on it."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:80:14",
+      "text": "Come back, God of Armies, please. Look down from heaven. See what’s happened and come care for this vine,"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:80:15",
+      "text": "the root your right hand planted, the branch you made strong for yourself."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:80:16",
+      "text": "It’s been burned and cut down. At your rebuke they perish."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:80:17",
+      "text": "Let your hand rest on the man at your right hand, the son of man you made strong for yourself."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:80:18",
+      "text": "Then we won’t turn away from you. Bring us back to life and we’ll call on your name."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:80:19",
+      "text": "Bring us back, LORD God of Armies. Let your face shine on us, and we’ll be saved."
+    }
+  ]
+}
