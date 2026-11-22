@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 145,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:145:1",
+      "text": "A praise song by David. My God, my King, I'll lift you high. I'll praise your name forever and ever."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:145:2",
+      "text": "Every single day I'll praise you. I'll speak your name with praise forever and ever."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:145:3",
+      "text": "The LORD is great and deserves all the praise! No one can get to the bottom of how great he is."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:145:4",
+      "text": "One generation will tell the next what you've done, passing on the stories of your mighty acts."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:145:5",
+      "text": "I'll take time to think about your glory and majesty and all the amazing things you've done."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:145:6",
+      "text": "People will talk about the sheer power of the things you've done. I'll tell them how great you are."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:145:7",
+      "text": "They'll tell the stories of how good you've been, and they'll sing about how you always do what's right."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:145:8",
+      "text": "The LORD is gracious and full of mercy. He's slow to get angry and overflowing with faithful love."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:145:9",
+      "text": "The LORD is good to everyone. His tender mercy reaches everything he's made."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:145:10",
+      "text": "Everything you've made will thank you, LORD. Your faithful people will praise you."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:145:11",
+      "text": "They'll talk about the glory of your kingdom and tell each other about your power,"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:145:12",
+      "text": "so people everywhere can hear what mighty things you've done and how glorious and majestic your kingdom is."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:145:13",
+      "text": "Your kingdom lasts forever. You rule through every generation. The LORD keeps every word he gives and shows love in everything he does."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:145:14",
+      "text": "The LORD catches everyone who's falling and lifts up everyone who's bent low."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:145:15",
+      "text": "Every eye looks to you, waiting. You give them their food right when it's time."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:145:16",
+      "text": "You open your hand and give every living thing what it longs for."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:145:17",
+      "text": "The LORD is right in all his ways and gracious in everything he does."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:145:18",
+      "text": "The LORD is close to everyone who calls on him, everyone who calls on him sincerely."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:145:19",
+      "text": "He gives those who honor him what they long for. He hears them cry for help and saves them."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PSA:145:20",
+      "text": "The LORD keeps everyone who loves him safe, but he'll destroy all the wicked."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PSA:145:21",
+      "text": "I'll keep speaking the LORD's praise. Let every living creature bless his holy name forever and ever."
+    }
+  ]
+}

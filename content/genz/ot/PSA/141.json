@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 141,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:141:1",
+      "text": "A psalm by David. LORD, I’m calling to you. Come quickly! Listen to my voice when I call."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:141:2",
+      "text": "Let my prayer rise before you like incense. Let my raised hands be like the evening sacrifice."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:141:3",
+      "text": "Set a guard over my mouth, LORD. Keep watch at the door of my lips."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:141:4",
+      "text": "Keep my heart from leaning toward evil or joining in with people who do wrong. Don’t let me share their rich food."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:141:5",
+      "text": "If someone who lives rightly strikes me, let me take it as kindness. Their correction is like oil on my head. Let me accept it. I’ll keep praying against evil deeds."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:141:6",
+      "text": "When their judges are thrown down the sides of the cliff, they’ll hear my words and know they were well spoken."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:141:7",
+      "text": "“Like soil broken up by a plow, our bones are scattered at the mouth of Sheol.”"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:141:8",
+      "text": "My eyes are on you, LORD, my Lord. I take refuge in you. Don’t leave my soul with nothing."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:141:9",
+      "text": "Keep me out of the snare they’ve set for me, out of the traps of people who do evil."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:141:10",
+      "text": "Let the wicked fall together into their own nets while I walk safely past."
+    }
+  ]
+}
