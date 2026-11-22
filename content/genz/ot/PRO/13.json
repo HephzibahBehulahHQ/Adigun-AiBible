@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PRO",
+  "bookName": "Proverbs",
+  "chapterNumber": 13,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PRO:13:1",
+      "text": "A wise son listens when his dad teaches him. A mocker tunes out anyone who calls him out."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PRO:13:2",
+      "text": "The good things a person says bring good things back to them. People who betray others are hungry for violence."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PRO:13:3",
+      "text": "Watch what you say and you'll protect your life. Let every thought fly out of your mouth and you'll end up ruined."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PRO:13:4",
+      "text": "Lazy people want plenty and get nothing. People who work hard get their fill."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PRO:13:5",
+      "text": "People who do right hate lies. Wicked people bring shame and disgrace."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PRO:13:6",
+      "text": "Doing what's right protects the road of a person with integrity. Wickedness knocks a sinner down."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PRO:13:7",
+      "text": "Some people act loaded when they've got nothing. Others act broke when they're sitting on a fortune."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PRO:13:8",
+      "text": "A rich person may have to buy their life back with their money. A poor person doesn't get those threats."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PRO:13:9",
+      "text": "The light of people who do right burns bright, but the lamp of the wicked gets snuffed out."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PRO:13:10",
+      "text": "Pride just starts arguments. You'll find wisdom with people willing to take advice."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PRO:13:11",
+      "text": "Money gained by cheating dwindles away. Gather it through your own work and it grows."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PRO:13:12",
+      "text": "When hope keeps getting put off, your heart gets sick. When what you've longed for finally comes, it's a tree of life."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PRO:13:13",
+      "text": "Look down on instruction and you'll pay for it. Respect a command and you'll be rewarded."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PRO:13:14",
+      "text": "A wise person's teaching is a spring of life that steers you away from death's traps."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PRO:13:15",
+      "text": "Good sense earns favor. For people who break trust, the road is rough."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PRO:13:16",
+      "text": "A sensible person learns what's going on before acting. A fool puts their foolishness on full display."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PRO:13:17",
+      "text": "A wicked messenger gets into trouble. A messenger you can trust brings healing."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PRO:13:18",
+      "text": "Turn down discipline and you'll end up poor and disgraced. Take correction seriously and you'll earn honor."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PRO:13:19",
+      "text": "Finally getting what you've longed for feels sweet deep down. Fools can't stand the thought of giving up evil."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PRO:13:20",
+      "text": "Spend time with wise people and you'll grow wise. Keep company with fools and you'll get hurt."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PRO:13:21",
+      "text": "Trouble chases sinners down. People who do right are rewarded with good things."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PRO:13:22",
+      "text": "A good person leaves something for their grandkids to inherit. A sinner's wealth gets stored up for people who do right."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PRO:13:23",
+      "text": "The fields of poor people can grow plenty of food, but injustice sweeps it all away."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PRO:13:24",
+      "text": "Whoever holds back the rod hates their son. Whoever loves him takes care to discipline him."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PRO:13:25",
+      "text": "People who do right eat till they're satisfied. The wicked go away with empty stomachs."
+    }
+  ]
+}
