@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 129,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:129:1",
+      "text": "A song of ascents. They’ve caused me pain over and over since I was young. Let Israel say it now:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:129:2",
+      "text": "They’ve caused me pain over and over since I was young, but they haven’t beaten me."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:129:3",
+      "text": "They plowed across my back, cutting long furrows."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:129:4",
+      "text": "The LORD does what’s right. He cut the ropes of the wicked."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:129:5",
+      "text": "Let everyone who hates Zion be put to shame and turned back."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:129:6",
+      "text": "Let them be like grass on a roof, drying up before it has a chance to grow."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:129:7",
+      "text": "Nobody harvesting gets even a handful of it. Nobody tying bundles gets an armful."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:129:8",
+      "text": "People walking past don’t say, “The LORD bless you. We bless you in the LORD’s name.”"
+    }
+  ]
+}

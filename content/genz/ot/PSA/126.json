@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 126,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:126:1",
+      "text": "A song of ascents. When the LORD brought us back to Zion, it felt like we were dreaming."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:126:2",
+      "text": "We couldn’t stop laughing and singing. Even the nations said, “The LORD has done great things for them.”"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:126:3",
+      "text": "The LORD really has done great things for us, and we’re full of joy."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:126:4",
+      "text": "Restore our fortunes again, LORD, like streams flowing through the Negev."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:126:5",
+      "text": "Those who plant in tears will harvest with shouts of joy."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:126:6",
+      "text": "The one who goes out crying with seed to sow will come back singing for joy, carrying armfuls of grain."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 130,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:130:1",
+      "text": "A song of ascents. From down in the depths I cry out to you, LORD."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:130:2",
+      "text": "Lord, hear my voice. Listen closely when I beg for help."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:130:3",
+      "text": "LORD, if you kept track of every sin, who could stand before you?"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:130:4",
+      "text": "But you forgive, and that’s why we stand in awe of you."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:130:5",
+      "text": "I’m waiting for the LORD with my whole soul. I put my hope in what he says."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:130:6",
+      "text": "I long for the Lord more than guards long for morning, more than guards long for morning."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:130:7",
+      "text": "Israel, put your hope in the LORD. Faithful love is with him, and he has more than enough power to redeem."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:130:8",
+      "text": "He’ll redeem Israel from all their sins."
+    }
+  ]
+}
