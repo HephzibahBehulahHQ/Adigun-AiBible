@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ECC",
+  "bookName": "Ecclesiastes",
+  "chapterNumber": 3,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ECC:3:1",
+      "text": "Everything has its season. There's a time for every purpose under heaven."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ECC:3:2",
+      "text": "A time to be born and a time to die. A time to plant and a time to pull up what you planted."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ECC:3:3",
+      "text": "A time to kill and a time to heal. A time to tear down and a time to build up."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ECC:3:4",
+      "text": "A time to cry and a time to laugh. A time to grieve and a time to dance."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ECC:3:5",
+      "text": "A time to throw stones away and a time to gather them up. A time to hold someone close and a time to keep your arms to yourself."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ECC:3:6",
+      "text": "A time to look for something and a time to let it go as lost. A time to keep and a time to throw away."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ECC:3:7",
+      "text": "A time to tear and a time to sew. A time to stay quiet and a time to speak up."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ECC:3:8",
+      "text": "A time to love and a time to hate. A time for war and a time for peace."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ECC:3:9",
+      "text": "What does a worker actually get from all that work?"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ECC:3:10",
+      "text": "I've seen the heavy work God has given people to struggle with."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ECC:3:11",
+      "text": "He's made everything beautiful at the right time. He's put eternity in people's hearts, yet they can't see the whole of what God has done from beginning to end."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ECC:3:12",
+      "text": "I know there's nothing better for people than to find joy and do good as long as they're alive."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:ECC:3:13",
+      "text": "When people can eat, drink, and enjoy something good from their work, that's a gift from God."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:ECC:3:14",
+      "text": "I know whatever God does lasts forever. You can't add anything to it or take anything away. God made it that way so people would stand in awe before him."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:ECC:3:15",
+      "text": "What's here now was here a long time ago. What's coming was here long ago too. God goes looking for what has passed away."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:ECC:3:16",
+      "text": "I saw something else under the sun. The very place where justice should be was full of wickedness, and I found wickedness where people were supposed to do right."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:ECC:3:17",
+      "text": "I told myself, “God will judge both the people who do right and the wicked. There's a time for every purpose and every deed.”"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:ECC:3:18",
+      "text": "I told myself, “God tests people so they'll see that they're like animals."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:ECC:3:19",
+      "text": "What happens to people happens to animals too. They all meet the same fate. One dies and so does the other. They all breathe the same breath. People have no advantage over animals, because it all slips away like a breath."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:ECC:3:20",
+      "text": "They all go to the same place. Everything comes from dust, and everything goes back to dust."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:ECC:3:21",
+      "text": "Who knows whether a person's spirit goes up and an animal's spirit goes down into the earth?”"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:ECC:3:22",
+      "text": "So I saw there's nothing better than for people to enjoy the work they do. That's their share. Who can bring them back to see what happens after they're gone?"
+    }
+  ]
+}
