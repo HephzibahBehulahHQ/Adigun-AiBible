@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ECC",
+  "bookName": "Ecclesiastes",
+  "chapterNumber": 10,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ECC:10:1",
+      "text": "Dead flies can make a perfumer's oil stink. That's how a little foolishness can outweigh wisdom and honor."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ECC:10:2",
+      "text": "A wise person's heart leans to the right. A fool's heart leans to the left."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ECC:10:3",
+      "text": "A fool can be walking down the road, run out of sense entirely, and show everybody what a fool they are."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ECC:10:4",
+      "text": "If a ruler gets angry at you, stay where you are. A gentle response can put even serious offenses to rest."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ECC:10:5",
+      "text": "I've seen something wrong under the sun, the kind of mistake that comes from the ruler."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ECC:10:6",
+      "text": "Foolishness gets a seat of honor, while rich people are made to sit down low."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ECC:10:7",
+      "text": "I've seen servants riding horses and princes walking on the ground like servants."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ECC:10:8",
+      "text": "Dig a pit and you might fall into it. Break through a wall and a snake might bite you."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ECC:10:9",
+      "text": "Cut stones out and they can hurt you. Split wood and you can get hurt doing that too."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ECC:10:10",
+      "text": "A dull ax takes more muscle if you don't sharpen it. Skill gets the job done."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ECC:10:11",
+      "text": "If the snake bites before you charm it, what good were the charmer's words?"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ECC:10:12",
+      "text": "Wise people speak with grace. A fool's own words swallow them up."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:ECC:10:13",
+      "text": "Their talk starts off foolish and ends up in harmful madness."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:ECC:10:14",
+      "text": "A fool keeps piling on words. Nobody knows what's coming. Who can tell anyone what will happen after they're gone?"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:ECC:10:15",
+      "text": "Work wears fools out. They don't even know the way into town."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:ECC:10:16",
+      "text": "What trouble for a country whose king is a child and whose rulers start feasting in the morning!"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:ECC:10:17",
+      "text": "Happy is the land whose king comes from nobles and whose rulers eat at the proper time to get their strength up, without getting drunk."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:ECC:10:18",
+      "text": "Get lazy and the roof sags. Keep your hands idle and the house starts leaking."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:ECC:10:19",
+      "text": "People throw a feast to laugh, wine brings cheer to life, and money pays for it all."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:ECC:10:20",
+      "text": "Don't curse the king, even in your head. Don't curse rich people in your bedroom. A bird might carry your words, and something with wings could spread the story."
+    }
+  ]
+}
