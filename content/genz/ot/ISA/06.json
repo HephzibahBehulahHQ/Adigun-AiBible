@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ISA",
+  "bookName": "Isaiah",
+  "chapterNumber": 6,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ISA:6:1",
+      "text": "The year King Uzziah died, I saw the Lord sitting way up high on a throne. The train of his robe filled the temple."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ISA:6:2",
+      "text": "Above him stood the seraphim. Each had six wings. Two covered their faces, two covered their feet, and two kept them flying."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ISA:6:3",
+      "text": "They called out to one another, “Holy, holy, holy is the LORD of Armies! The whole earth is full of his glory!”"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ISA:6:4",
+      "text": "At the sound of that voice, the doorways shook right down to their foundations, and smoke filled the temple."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ISA:6:5",
+      "text": "I said, “I'm done for! My lips are unclean, and I live with people whose lips are unclean. And I've seen the King, the LORD of Armies, with my own eyes!”"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ISA:6:6",
+      "text": "Then one of the seraphim flew right over to me with a glowing coal in his hand. He'd picked it up from the altar with tongs."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ISA:6:7",
+      "text": "He touched my mouth with it and said, “Look, this touched your lips. Your guilt is gone, and your sin is forgiven.”"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ISA:6:8",
+      "text": "Then I heard the Lord say, “Who am I going to send? Who will go for us?” I said, “Here I am. Send me!”"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ISA:6:9",
+      "text": "He said, “Go tell these people, ‘You're hearing, all right, but you don't understand. You're seeing, all right, but you don't get what you're seeing.’"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ISA:6:10",
+      "text": "Make these people's hearts dull, their ears heavy, and their eyes shut. Otherwise they might see with their eyes, hear with their ears, understand with their hearts, and turn back and be healed.”"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ISA:6:11",
+      "text": "I said, “Lord, how long?” He said, “Till the cities are wrecked with nobody living in them, the houses are empty, and the whole land is a wasteland,"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ISA:6:12",
+      "text": "till the LORD has sent people far away and abandoned places fill the land."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:ISA:6:13",
+      "text": "Even if a tenth is left, that too will be consumed. A terebinth or an oak leaves a stump when it's cut down. The holy seed is that stump.”"
+    }
+  ]
+}
