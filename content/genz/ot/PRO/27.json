@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PRO",
+  "bookName": "Proverbs",
+  "chapterNumber": 27,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PRO:27:1",
+      "text": "Don't brag about tomorrow. You've got no idea what the day will bring."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PRO:27:2",
+      "text": "Let someone else praise you. Let it come from a stranger's lips and leave your own mouth out of it."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PRO:27:3",
+      "text": "A rock is heavy and a load of sand weighs you down. A fool who keeps provoking you weighs more than both."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PRO:27:4",
+      "text": "Fury is cruel and anger can sweep you away. But who can stand up to jealousy?"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PRO:27:5",
+      "text": "Open correction is better than love somebody keeps hidden."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PRO:27:6",
+      "text": "When a friend wounds you, they're being faithful to you. An enemy will smother you in kisses."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PRO:27:7",
+      "text": "A person who's full turns their nose up at honeycomb. To somebody hungry, even bitter food tastes sweet."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PRO:27:8",
+      "text": "A person who wanders away from home is like a bird that strays from her nest."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PRO:27:9",
+      "text": "Perfume and incense cheer the heart. So does a friend's honest advice."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PRO:27:10",
+      "text": "Don't drop your friend or your dad's friend. When disaster hits, don't head to your brother's house far away. A neighbor who's there beats a brother who's far off."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PRO:27:11",
+      "text": "Be wise, my son, and make my heart glad. Then I'll have an answer for the person giving me grief."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PRO:27:12",
+      "text": "Someone with good sense spots danger and takes cover. People who don't know better keep going and pay for it."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PRO:27:13",
+      "text": "Take the coat of someone who puts themselves up as security for a stranger. Hold it when they do it for a woman who strays."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PRO:27:14",
+      "text": "Shout a blessing at your neighbor first thing in the morning and they'll take it as a curse."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PRO:27:15",
+      "text": "A wife who's always picking a fight is like a drip that won't quit on a rainy day."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PRO:27:16",
+      "text": "Trying to hold her back is like trying to hold the wind or grab oil in your right hand."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PRO:27:17",
+      "text": "Iron sharpens iron, and one friend sharpens another."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PRO:27:18",
+      "text": "Take care of a fig tree and you'll get to eat its figs. Look after your master and you'll be honored."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PRO:27:19",
+      "text": "Water shows you your face. Your heart shows who you are."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PRO:27:20",
+      "text": "The grave and the place of destruction never get full. Your eyes never get enough either."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PRO:27:21",
+      "text": "A refining pot tests silver, and a furnace tests gold. Praise is what puts a person to the test."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PRO:27:22",
+      "text": "You could pound a fool in a mortar with a pestle right along with the grain, and you still wouldn't get the foolishness out."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PRO:27:23",
+      "text": "Know what shape your flocks are in. Pay close attention to your herds."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PRO:27:24",
+      "text": "Money doesn't last forever. Even a crown won't stay in the family through every generation."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PRO:27:25",
+      "text": "The hay gets taken in, new grass grows, and the grass on the hills gets gathered."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:PRO:27:26",
+      "text": "Your lambs give you clothes, and your goats can pay for a field."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:PRO:27:27",
+      "text": "You'll have enough goats' milk to feed yourself and your family and keep your servant girls fed too."
+    }
+  ]
+}
