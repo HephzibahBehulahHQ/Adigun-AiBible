@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ECC",
+  "bookName": "Ecclesiastes",
+  "chapterNumber": 4,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ECC:4:1",
+      "text": "I looked again at all the oppression happening under the sun. I saw the tears of the people being crushed, with nobody to comfort them. The people crushing them had all the power, and still there was nobody to comfort them."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ECC:4:2",
+      "text": "So I counted those who'd been dead a long time better off than the people still alive."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ECC:4:3",
+      "text": "Better off than either is the person who hasn't been born, who's never seen the evil people do under the sun."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ECC:4:4",
+      "text": "Then I saw how all that hard work and achievement makes neighbors envy each other. That too slips away like a breath, like chasing the wind."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ECC:4:5",
+      "text": "A fool folds their hands and lets their own life fall apart."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ECC:4:6",
+      "text": "Better to have one handful and some peace than two handfuls that cost you endless work and leave you chasing the wind."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ECC:4:7",
+      "text": "I looked again and saw something else slipping away under the sun."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ECC:4:8",
+      "text": "Here's someone all alone, with no son or brother. Their work never ends, and they never see enough money to feel satisfied. “Who am I working for, then? Why am I cutting myself off from anything good?” That too slips away like a breath. What a miserable way to spend your life."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ECC:4:9",
+      "text": "Two are better than one. They get a good return for the work they put in together."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ECC:4:10",
+      "text": "If one falls, the other can help them up. But it's awful to fall when you're alone and nobody's there to lift you."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ECC:4:11",
+      "text": "If two people lie down together, they can keep warm. How's one person supposed to stay warm alone?"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ECC:4:12",
+      "text": "Someone can overpower one person, but two can stand against them. A cord of three strands won't snap in a hurry."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:ECC:4:13",
+      "text": "A poor kid with wisdom is better than an old king who's too foolish to listen when someone corrects him."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:ECC:4:14",
+      "text": "That young man came out of prison to be king, even though he was born poor in that very kingdom."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:ECC:4:15",
+      "text": "I saw all the people walking under the sun side with the young man who took the older king's place."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:ECC:4:16",
+      "text": "There was no end to the crowd he ruled. But the people who come later won't celebrate him. That too slips away like a breath, like chasing the wind."
+    }
+  ]
+}
