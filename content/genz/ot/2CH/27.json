@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "2CH",
+  "bookName": "2 Chronicles",
+  "chapterNumber": 27,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:2CH:27:1",
+      "text": "Jotham was twenty-five years old when he became king and ruled sixteen years in Jerusalem. His mother was Jerushah daughter of Zadok."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:2CH:27:2",
+      "text": "He did what was right in the LORD's eyes, as his father Uzziah had done, except that he stayed out of the LORD's temple. The people still acted corruptly."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:2CH:27:3",
+      "text": "Jotham built the Upper Gate of the LORD's house and did extensive work on the wall of Ophel."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:2CH:27:4",
+      "text": "He built towns in Judah's hill country and put up fortresses and towers in the forests."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:2CH:27:5",
+      "text": "He fought and defeated the king of the Ammonites. That year the Ammonites paid him a hundred talents of silver, ten thousand cors of wheat, and ten thousand cors of barley. They paid him the same amount in the second and third years."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:2CH:27:6",
+      "text": "Jotham grew powerful because he lived faithfully before the LORD his God."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:2CH:27:7",
+      "text": "The rest of what Jotham did, including all his wars and how he lived, is recorded in the Book of the Kings of Israel and Judah."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:2CH:27:8",
+      "text": "He was twenty-five when he became king and ruled sixteen years in Jerusalem."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:2CH:27:9",
+      "text": "Jotham died and was buried in the City of David. His son Ahaz became king in his place."
+    }
+  ]
+}
