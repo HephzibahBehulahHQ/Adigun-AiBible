@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "1CH",
+  "bookName": "1 Chronicles",
+  "chapterNumber": 13,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:1CH:13:1",
+      "text": "David consulted all the leaders, including the commanders of thousands and hundreds."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:1CH:13:2",
+      "text": "Then David told the whole assembly of Israel, “If this seems right to you and it's what the LORD our God wants, let's send word throughout Israel. Let's call our fellow Israelites together, along with the priests and Levites who live among them in towns with pasturelands."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:1CH:13:3",
+      "text": "Let's bring God's ark back to us. We didn't seek it in Saul's time.”"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:1CH:13:4",
+      "text": "The whole assembly agreed to do it, because it seemed right to everyone."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:1CH:13:5",
+      "text": "David gathered all Israel from the Shihor River of Egypt to the entrance of Hamath to bring God's ark back from Kiriath Jearim."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:1CH:13:6",
+      "text": "David and all Israel went to Baalah, also known as Kiriath Jearim, in Judah. They went to bring back the ark of the LORD God, who sits enthroned above the cherubim and whose name the ark bears."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:1CH:13:7",
+      "text": "They took God's ark from Abinadab's house on a new cart, with Uzza and Ahio driving it."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:1CH:13:8",
+      "text": "David and all Israel celebrated before God with all their strength, singing and playing harps, stringed instruments, tambourines, cymbals, and trumpets."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:1CH:13:9",
+      "text": "When they reached Chidon's threshing floor, the oxen stumbled, and Uzza reached out to steady the ark."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:1CH:13:10",
+      "text": "The LORD's anger burned against Uzza. He struck him for putting his hand on the ark, and Uzza died there before God."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:1CH:13:11",
+      "text": "David was upset because the LORD had broken out against Uzza. He named the place Perez Uzza, and it's still called that today."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:1CH:13:12",
+      "text": "David was afraid of God that day and asked, “How can I bring God's ark home with me?”"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:1CH:13:13",
+      "text": "So David didn't take the ark with him into David's City. He took it instead to the house of Obed-Edom from Gath."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:1CH:13:14",
+      "text": "God's ark stayed with Obed-Edom's family in his house for three months. The LORD blessed Obed-Edom's household and everything he owned."
+    }
+  ]
+}
