@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 147,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:147:1",
+      "text": "Praise the LORD! Singing to our God feels good, and he's worth every bit of praise."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:147:2",
+      "text": "The LORD builds Jerusalem back up. He brings home the people Israel lost to exile."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:147:3",
+      "text": "He heals broken hearts and wraps up their wounds."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:147:4",
+      "text": "He counts every star and calls each one by name."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:147:5",
+      "text": "Our Lord is great, and his power is huge. There's no limit to what he understands."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:147:6",
+      "text": "The LORD holds up the humble and brings the wicked down to the dirt."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:147:7",
+      "text": "Sing to the LORD and thank him. Play the harp and sing to our God,"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:147:8",
+      "text": "the one who fills the sky with clouds, gets rain ready for the earth, and makes grass grow on the mountains."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:147:9",
+      "text": "He feeds the livestock and the baby ravens when they cry out."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:147:10",
+      "text": "A horse's strength doesn't impress him. A man's powerful legs don't thrill him either."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:147:11",
+      "text": "The LORD delights in those who honor him with awe, those who put their hope in his faithful love."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:147:12",
+      "text": "Jerusalem, praise the LORD! Zion, praise your God!"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:147:13",
+      "text": "He's made the bars on your gates strong and blessed the children who live inside."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:147:14",
+      "text": "He gives you peace all the way to your borders and feeds you with the finest wheat."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:147:15",
+      "text": "He sends his command out across the earth, and his word moves fast."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:147:16",
+      "text": "He lays down snow like wool and sprinkles frost like ashes."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:147:17",
+      "text": "He flings down hail like little stones. Who can stand up to that cold?"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:147:18",
+      "text": "Then he gives the word, and it all melts. He sends his wind blowing, and the waters start to flow."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:147:19",
+      "text": "He gives his word to Jacob and makes his laws and rulings known to Israel."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PSA:147:20",
+      "text": "He hasn't done this for any other nation. They don't know his rulings. Praise the LORD!"
+    }
+  ]
+}

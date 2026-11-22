@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 148,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:148:1",
+      "text": "Praise the LORD! Praise him from the heavens! Praise him way up high!"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:148:2",
+      "text": "Praise him, all his angels! Praise him, all his armies!"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:148:3",
+      "text": "Praise him, sun and moon! Every shining star, praise him!"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:148:4",
+      "text": "Praise him, highest heavens, and you waters above the skies!"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:148:5",
+      "text": "Let them praise the LORD's name. He spoke the command, and there they were."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:148:6",
+      "text": "He set them in place forever and ever. The order he gave will never expire."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:148:7",
+      "text": "Praise the LORD from the earth, you giant sea creatures and all you ocean depths!"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:148:8",
+      "text": "Lightning and hail, snow and clouds, storm winds that do what he says,"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:148:9",
+      "text": "mountains and hills, fruit trees and every cedar,"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:148:10",
+      "text": "wild animals and livestock, little creatures and birds on the wing,"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:148:11",
+      "text": "kings of the earth and people everywhere, rulers and all the judges on earth,"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:148:12",
+      "text": "young men and young women, old men and children too."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:148:13",
+      "text": "Let them all praise the LORD's name. His name alone is lifted high. His glory rises over earth and heaven."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:148:14",
+      "text": "He's lifted up his people's strength and given his faithful ones reason to praise. That's Israel, the people he holds close. Praise the LORD!"
+    }
+  ]
+}
