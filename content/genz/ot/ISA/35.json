@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ISA",
+  "bookName": "Isaiah",
+  "chapterNumber": 35,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ISA:35:1",
+      "text": "The wilderness and dry ground will be glad. The desert will celebrate and bloom like a rose."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ISA:35:2",
+      "text": "It'll burst into flower, shouting and singing for joy. It'll get the glory of Lebanon and the beauty of Carmel and Sharon. They'll see the LORD's glory, the splendor of our God."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ISA:35:3",
+      "text": "Put strength back into weak hands. Steady those shaky knees."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ISA:35:4",
+      "text": "Tell people with scared hearts, “Be strong! Don't be afraid! Look, your God is coming to take vengeance and set things right. He's coming to save you.”"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ISA:35:5",
+      "text": "Then blind eyes will open, and deaf ears will hear."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ISA:35:6",
+      "text": "Then people who couldn't walk will jump like deer, and those who couldn't speak will sing. Water will burst out in the wilderness and streams will run through the desert."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ISA:35:7",
+      "text": "Burning sand will turn into a pool and thirsty ground into springs. Where jackals used to lie down, grass, reeds, and rushes will grow."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ISA:35:8",
+      "text": "A highway will run through there called the Holy Way. People who are unclean won't cross it. It'll be for those who walk the Way, and wicked fools won't go there."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ISA:35:9",
+      "text": "No lion will be on it, and no hungry predator will come up onto it. They won't be found there. The people God redeemed will walk there."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ISA:35:10",
+      "text": "The people the LORD has bought back will return to Zion singing. Joy that lasts forever will be on their heads. They'll find gladness and joy, and sorrow and sighing will run away."
+    }
+  ]
+}
