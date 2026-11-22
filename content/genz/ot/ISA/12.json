@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ISA",
+  "bookName": "Isaiah",
+  "chapterNumber": 12,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ISA:12:1",
+      "text": "That day you'll say, “Thank you, LORD. You were angry with me, but your anger has turned away and now you comfort me."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ISA:12:2",
+      "text": "Look, God is the one who saves me. I'll trust him and won't be scared. The LORD, the LORD is my strength and my song. He's become my salvation.”"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ISA:12:3",
+      "text": "You'll draw water with joy from the wells of salvation."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ISA:12:4",
+      "text": "That day you'll say, “Thank the LORD! Call on his name! Tell the peoples what he's done! Tell them how high his name is lifted!"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ISA:12:5",
+      "text": "Sing to the LORD! He's done amazing things. Let the whole earth hear about it!"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ISA:12:6",
+      "text": "People of Zion, raise your voices and shout! The Holy One of Israel is great right there among you!”"
+    }
+  ]
+}
