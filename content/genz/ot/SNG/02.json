@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "SNG",
+  "bookName": "Song of Solomon",
+  "chapterNumber": 2,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:SNG:2:1",
+      "text": "I'm a rose from Sharon, a lily from the valleys."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:SNG:2:2",
+      "text": "Like a lily growing among thorns, that's what my love is like among the other young women."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:SNG:2:3",
+      "text": "Like an apple tree in the middle of the woods, that's what my love is like among the other young men. I loved sitting in his shade. His fruit tasted sweet to me."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:SNG:2:4",
+      "text": "He took me into the banquet hall. The banner he raised over me was love."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:SNG:2:5",
+      "text": "Give me raisins to get my strength back. Refresh me with apples. I'm weak with love."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:SNG:2:6",
+      "text": "His left hand cradles my head, and his right arm wraps around me."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:SNG:2:7",
+      "text": "Daughters of Jerusalem, swear to me by the gazelles and the does out in the field. Don't stir up love or wake it before it wants to wake."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:SNG:2:8",
+      "text": "That's my love's voice! Look, here he comes, leaping over mountains and bounding over hills."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:SNG:2:9",
+      "text": "My love is like a gazelle or a young deer. Look, he's standing behind our wall, peeking in through the windows, looking through the lattice."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:SNG:2:10",
+      "text": "My love called to me, “Get up, my love, my beautiful one. Come away with me."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:SNG:2:11",
+      "text": "Look, winter's over. The rain has stopped and gone."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:SNG:2:12",
+      "text": "Flowers are popping up all over the ground. It's time to sing, and you can hear the turtledove in our land."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:SNG:2:13",
+      "text": "Green figs are ripening on the tree. The vines are blooming and filling the air with their scent. Get up, my love, my beautiful one. Come away with me.”"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:SNG:2:14",
+      "text": "My dove, tucked in the cracks of the rock, hiding on the mountainside, let me see your face. Let me hear your voice. Your voice is sweet and your face is lovely."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:SNG:2:15",
+      "text": "Catch those foxes for us, the little ones that tear up the vineyards. Our vines are in bloom."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:SNG:2:16",
+      "text": "My love is mine and I'm his. He grazes among the lilies."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:SNG:2:17",
+      "text": "Till the day cools down and the shadows slip away, turn, my love, and be like a gazelle or a young deer on the mountains of Bether."
+    }
+  ]
+}
