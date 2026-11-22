@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ECC",
+  "bookName": "Ecclesiastes",
+  "chapterNumber": 11,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ECC:11:1",
+      "text": "Send your bread out over the waters. After many days you'll find it again."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ECC:11:2",
+      "text": "Share what you have with seven people, even eight. You don't know what disaster might hit the earth."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ECC:11:3",
+      "text": "When clouds are full of rain, they pour it out on the ground. If a tree falls south or north, wherever it lands is where it'll stay."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ECC:11:4",
+      "text": "Keep watching the wind and you'll never plant. Keep staring at the clouds and you'll never harvest."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ECC:11:5",
+      "text": "You don't know which way the wind goes or how bones grow inside a pregnant woman's womb. In the same way, you don't know how God does everything he does."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ECC:11:6",
+      "text": "Plant your seed in the morning, and keep your hands working in the evening. You don't know which planting will do well. It might be this one or that one, or both might turn out just as good."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ECC:11:7",
+      "text": "Light really is sweet. It feels good just to see the sun. ☀️"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ECC:11:8",
+      "text": "If you live many years, enjoy every one of them. Remember that the dark days will be many. Everything that comes slips away like a breath."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ECC:11:9",
+      "text": "Young man, enjoy being young. Let your heart be glad in these days. Go where your heart leads and follow what catches your eye. Just know God will bring you to account for all of it."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ECC:11:10",
+      "text": "So clear sorrow out of your heart and put trouble away from your body. Youth and the first light of life slip away like a breath."
+    }
+  ]
+}

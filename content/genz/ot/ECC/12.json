@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ECC",
+  "bookName": "Ecclesiastes",
+  "chapterNumber": 12,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ECC:12:1",
+      "text": "Remember your Creator while you're young, before the hard days come and the years get here when you'll say, “I don't enjoy these days at all.”"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ECC:12:2",
+      "text": "Remember before the sun and its light go dark, before the moon and stars dim, and before the clouds come back after the rain."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ECC:12:3",
+      "text": "That's the day the keepers of the house will shake and the strong men will bend over. The grinders will stop because there are so few, and the people looking out the windows will lose their light."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ECC:12:4",
+      "text": "The doors to the street will shut. The sound of grinding will grow faint. A bird's call will be enough to wake you, and every voice of music will grow quiet."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ECC:12:5",
+      "text": "Heights will scare you, and the road will be full of fears. The almond tree will bloom, even a grasshopper will be a burden, and desire will fade. People are heading to their home that lasts forever, and mourners walk the streets."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ECC:12:6",
+      "text": "Remember before the silver cord snaps or the gold bowl shatters, before the pitcher breaks at the spring or the wheel breaks at the cistern."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ECC:12:7",
+      "text": "Then the dust goes back to the earth it came from, and the spirit goes back to God who gave it."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ECC:12:8",
+      "text": "“A breath, just a breath,” says the Preacher. “It all slips away like a breath!”"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ECC:12:9",
+      "text": "The Preacher was wise, and he kept teaching people what he knew. He thought things through, searched them out, and put many proverbs in order."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ECC:12:10",
+      "text": "The Preacher looked for words people could take in, and what he wrote was honest and true."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ECC:12:11",
+      "text": "Words from wise people are like sharp sticks that prod you. The words of those who teach the gatherings are like nails hammered in tight. They come from one shepherd."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ECC:12:12",
+      "text": "One more thing, my son. Take this warning. There's no end to making books, and too much studying wears your body out."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:ECC:12:13",
+      "text": "Here's where it all lands now that you've heard everything. Stand in awe of God and keep his commands. That's the whole duty of a human being."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:ECC:12:14",
+      "text": "God will judge everything people do, including everything done in secret, whether it's good or evil."
+    }
+  ]
+}
