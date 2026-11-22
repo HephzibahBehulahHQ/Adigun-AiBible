@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PRO",
+  "bookName": "Proverbs",
+  "chapterNumber": 9,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PRO:9:1",
+      "text": "Wisdom built herself a house and carved out seven pillars for it."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PRO:9:2",
+      "text": "She got the meat ready, mixed her wine, and set the table."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PRO:9:3",
+      "text": "She sent out her young servants, and from the highest spots in town she calls,"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PRO:9:4",
+      "text": "“If you don't know any better, come on in!” To anyone short on sense, she says,"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PRO:9:5",
+      "text": "“Come get some of my bread! Drink the wine I mixed!"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PRO:9:6",
+      "text": "Leave those naive ways behind and live. Walk the road where you'll learn to understand.”"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PRO:9:7",
+      "text": "Correct a mocker, and you'll get insulted. Call out a wicked person, and you'll get abuse."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PRO:9:8",
+      "text": "Don't correct somebody who just wants to mock you. They'll hate you for it. Correct a wise person, and they'll love you for it."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PRO:9:9",
+      "text": "Give wise people a lesson and they'll get wiser. Teach people who do right and they'll learn even more."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PRO:9:10",
+      "text": "Wisdom starts with standing in awe of the LORD. Knowing the Holy One is what it means to understand."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PRO:9:11",
+      "text": "With me, you'll get more days and add years to your life."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PRO:9:12",
+      "text": "If you're wise, you're the one who benefits. If you mock, you're the one who'll carry the cost."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PRO:9:13",
+      "text": "Folly is loud and out of control. She doesn't know a thing."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PRO:9:14",
+      "text": "She sits in her doorway on a seat high up in the city."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PRO:9:15",
+      "text": "She calls to people passing by who are just going straight down their own roads."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PRO:9:16",
+      "text": "“If you don't know any better, come on in!” To anyone short on sense, she says,"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PRO:9:17",
+      "text": "“Stolen water tastes sweet. Food you eat on the sly hits different.”"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PRO:9:18",
+      "text": "What they don't realize is that the dead are in there. Her guests are already deep in the grave."
+    }
+  ]
+}
