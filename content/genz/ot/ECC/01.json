@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ECC",
+  "bookName": "Ecclesiastes",
+  "chapterNumber": 1,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ECC:1:1",
+      "text": "These are the words of the Preacher, David's son, king in Jerusalem."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ECC:1:2",
+      "text": "“It's a breath, just a breath,” says the Preacher. “It all slips away like a breath.”"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ECC:1:3",
+      "text": "What do people actually get to keep from all the work they do under the sun?"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ECC:1:4",
+      "text": "One generation goes and another comes along, but the earth stays put forever."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ECC:1:5",
+      "text": "The sun comes up, goes down, then hurries back to where it rises again."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ECC:1:6",
+      "text": "The wind heads south, swings north, and keeps circling back around to the same routes."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ECC:1:7",
+      "text": "Every river runs into the sea, but the sea never fills up. The rivers flow back to the places they always flow."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ECC:1:8",
+      "text": "Everything is more exhausting than words can say. Your eyes never see enough, and your ears never hear enough."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ECC:1:9",
+      "text": "What's happened will happen again. What's been done will be done again. There's nothing new under the sun."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ECC:1:10",
+      "text": "Can you point to something and say, “Look, this is new”? It was here ages before we were."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ECC:1:11",
+      "text": "Nobody remembers the people who came before. And people still to come will be forgotten by the ones who come after them too."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ECC:1:12",
+      "text": "I, the Preacher, was king over Israel in Jerusalem."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:ECC:1:13",
+      "text": "I put my whole heart into using wisdom to figure out everything people do under the sky. What a heavy load God has given people to struggle with."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:ECC:1:14",
+      "text": "I've seen everything people do under the sun. Look at it all. It's a breath that slips away, like trying to catch the wind."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:ECC:1:15",
+      "text": "You can't straighten what's bent, and you can't count what's missing."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:ECC:1:16",
+      "text": "I told myself, “Look, I've gained more wisdom than anyone who came before me in Jerusalem. I've gotten to know wisdom and knowledge firsthand.”"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:ECC:1:17",
+      "text": "I put my whole heart into understanding wisdom, madness, and foolishness. I realized this was another way of chasing the wind."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:ECC:1:18",
+      "text": "A lot of wisdom brings a lot of grief. The more you know, the more you hurt."
+    }
+  ]
+}
