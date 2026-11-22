@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 105,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:105:1",
+      "text": "Give thanks to the LORD! Call on his name. Let every people know what he’s done."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:105:2",
+      "text": "Sing to him! Sing his praises and tell about every wonder he’s worked."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:105:3",
+      "text": "Take pride in his holy name. Let the hearts of everyone looking for the LORD fill with joy."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:105:4",
+      "text": "Look to the LORD and his strength. Keep seeking his face."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:105:5",
+      "text": "Remember the amazing things he’s done, the wonders he worked and the judgments he spoke,"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:105:6",
+      "text": "you descendants of his servant Abraham, you children of Jacob whom he chose."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:105:7",
+      "text": "He’s the LORD our God. His judgments reach across the whole earth."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:105:8",
+      "text": "He remembers his covenant forever, the word he commanded for a thousand generations."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:105:9",
+      "text": "It’s the covenant he made with Abraham and the oath he swore to Isaac."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:105:10",
+      "text": "He confirmed it to Jacob as a law, to Israel as a covenant that lasts forever."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:105:11",
+      "text": "He said, “I’ll give you the land of Canaan. That’s the share you’ll inherit.”"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:105:12",
+      "text": "He said it when they were only a handful of people, strangers in the land."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:105:13",
+      "text": "They moved from nation to nation, from one kingdom to another people."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:105:14",
+      "text": "He let no one mistreat them. He even called out kings for their sake:"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:105:15",
+      "text": "“Keep your hands off my anointed ones! Don’t do a thing to harm my prophets!”"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:105:16",
+      "text": "He called down famine on the land and cut off their food supply."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:105:17",
+      "text": "He sent someone ahead of them. Joseph was sold as a slave."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:105:18",
+      "text": "Shackles bruised his feet, and an iron collar locked around his neck,"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:105:19",
+      "text": "until what he’d said came true and the LORD’s word proved him right."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PSA:105:20",
+      "text": "The king, a ruler over peoples, sent for him and set him free."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PSA:105:21",
+      "text": "He put Joseph in charge of his household and everything he owned,"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PSA:105:22",
+      "text": "with authority to discipline his officials as he saw fit and teach his elders wisdom."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PSA:105:23",
+      "text": "Then Israel came to Egypt, and Jacob made his home in the land of Ham."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PSA:105:24",
+      "text": "God made his people grow in number until they were stronger than their enemies."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PSA:105:25",
+      "text": "He turned the Egyptians’ hearts against his people, and they plotted against his servants."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:PSA:105:26",
+      "text": "He sent Moses, his servant, and Aaron, the man he had chosen."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:PSA:105:27",
+      "text": "They worked miracles in front of the people and did wonders in the land of Ham."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:PSA:105:28",
+      "text": "He sent darkness, and the land went dark. They didn’t rebel against his words."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:PSA:105:29",
+      "text": "He turned their water to blood and killed their fish."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:PSA:105:30",
+      "text": "Frogs swarmed over the land and got into the rooms of their kings."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:PSA:105:31",
+      "text": "He spoke, and swarms of flies came, with lice all across their land."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:PSA:105:32",
+      "text": "He sent hail instead of rain, and lightning flashed through their land."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:PSA:105:33",
+      "text": "He struck their vines and fig trees and shattered the trees across the country."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:PSA:105:34",
+      "text": "He spoke, and locusts and grasshoppers came in numbers no one could count."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:PSA:105:35",
+      "text": "They ate every plant in the land and devoured everything the ground produced."
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:PSA:105:36",
+      "text": "He struck down all the firstborn in the land, the first fruits of their strength."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:PSA:105:37",
+      "text": "He led his people out with silver and gold, and no one among his tribes was too weak to keep up."
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:PSA:105:38",
+      "text": "Egypt was glad to see them leave, because the people were terrified of them."
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:PSA:105:39",
+      "text": "He spread a cloud over them for shelter and gave them fire to light up the night."
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:PSA:105:40",
+      "text": "They asked for food, so he brought them quail and filled them with bread from the sky."
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:PSA:105:41",
+      "text": "He opened the rock, and water gushed out. It ran like a river through the dry ground."
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:PSA:105:42",
+      "text": "He remembered his holy promise and his servant Abraham."
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:PSA:105:43",
+      "text": "He brought his people out rejoicing. The ones he chose came out singing."
+    },
+    {
+      "number": 44,
+      "sourceRef": "eng-web:PSA:105:44",
+      "text": "He gave them the lands of the nations, and they took possession of what those peoples had worked for,"
+    },
+    {
+      "number": 45,
+      "sourceRef": "eng-web:PSA:105:45",
+      "text": "so they could keep his statutes and follow his laws. Praise the LORD!"
+    }
+  ]
+}

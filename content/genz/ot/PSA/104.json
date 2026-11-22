@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 104,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:104:1",
+      "text": "Bless the LORD, my soul! LORD my God, you are so great. You wear honor and majesty like a robe."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:104:2",
+      "text": "You wrap yourself in light like a garment and stretch out the heavens like a curtain."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:104:3",
+      "text": "You set the beams of your rooms in the waters. You ride the clouds like a chariot and walk on the wings of the wind."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:104:4",
+      "text": "You make winds your messengers and flames of fire your servants."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:104:5",
+      "text": "You laid the earth on its foundations so it would never be moved."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:104:6",
+      "text": "You wrapped it in deep water like a cloak. The waters stood higher than the mountains."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:104:7",
+      "text": "At your rebuke they ran. At the sound of your thunder they rushed away."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:104:8",
+      "text": "The mountains rose and the valleys sank into the places you set for them."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:104:9",
+      "text": "You drew a line the waters can’t cross, so they’ll never come back to cover the earth."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:104:10",
+      "text": "You send springs into the valleys, and they run between the mountains."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:104:11",
+      "text": "Every animal in the fields drinks from them. Wild donkeys come and quench their thirst."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:104:12",
+      "text": "Birds nest beside the streams and sing from the branches."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:104:13",
+      "text": "From your rooms above, you water the mountains. The earth is filled with the fruit of what you do."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:104:14",
+      "text": "You grow grass for livestock and plants for people to tend, so they can bring food out of the ground:"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:104:15",
+      "text": "wine to lift their hearts, oil to make their faces shine, and bread to give them strength."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:104:16",
+      "text": "The LORD’s trees drink their fill, the cedars of Lebanon that he planted."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:104:17",
+      "text": "Birds build their nests there. The stork makes its home in the cypresses."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:104:18",
+      "text": "The high mountains are home to wild goats. The rocks shelter the rock badgers."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:104:19",
+      "text": "You set the moon to mark the seasons. The sun knows when it’s time to go down."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PSA:104:20",
+      "text": "You bring on the dark, and night comes. Then all the forest animals come out and prowl."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PSA:104:21",
+      "text": "Young lions roar for prey and look to God for their food."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PSA:104:22",
+      "text": "When the sun comes up, they slip away and lie down in their dens."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PSA:104:23",
+      "text": "Then people go out to work and keep at it until evening."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PSA:104:24",
+      "text": "LORD, look how much you’ve made! You made it all with wisdom. The earth is full of your riches."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PSA:104:25",
+      "text": "There’s the sea, huge and wide, full of creatures too many to count, from the smallest to the largest."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:PSA:104:26",
+      "text": "Ships sail there, and Leviathan is there too, the creature you made to play in the sea."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:PSA:104:27",
+      "text": "They all look to you to give them food when it’s time."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:PSA:104:28",
+      "text": "You give it, and they gather it up. You open your hand, and they have their fill of good things."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:PSA:104:29",
+      "text": "When you hide your face, they’re terrified. When you take their breath away, they die and go back to dust."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:PSA:104:30",
+      "text": "You send out your Spirit, and they come to life. You make the face of the earth new again."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:PSA:104:31",
+      "text": "May the LORD’s glory last forever. May the LORD take joy in what he’s made."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:PSA:104:32",
+      "text": "He looks at the earth and it shakes. He touches the mountains and they smoke."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:PSA:104:33",
+      "text": "I’ll sing to the LORD as long as I live. I’ll praise my God as long as I’m here."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:PSA:104:34",
+      "text": "May what I think about please him. I’ll take joy in the LORD."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:PSA:104:35",
+      "text": "Let sinners be swept off the earth. Let the wicked be gone. Bless the LORD, my soul. Praise the LORD!"
+    }
+  ]
+}
