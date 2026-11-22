@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 96,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:96:1",
+      "text": "Sing the LORD a new song! Sing to the LORD, everyone on earth!"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:96:2",
+      "text": "Sing to the LORD and bless his name! Day after day, tell people how he saves."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:96:3",
+      "text": "Tell the nations about his glory. Let every people hear what wonders he’s done."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:96:4",
+      "text": "The LORD is great and deserves all that praise! He’s to be feared above every god."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:96:5",
+      "text": "The gods of the nations are idols, but the LORD made the heavens."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:96:6",
+      "text": "Honor and majesty stand before him. Strength and beauty fill his sanctuary."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:96:7",
+      "text": "Give the LORD glory and strength, you families of the nations. Give him the credit he deserves."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:96:8",
+      "text": "Give the LORD the glory his name deserves. Bring an offering and come into his courts."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:96:9",
+      "text": "Worship the LORD in holy splendor. Tremble before him, all the earth."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:96:10",
+      "text": "Tell the nations, “The LORD reigns!” The world stands firm. It won’t be moved. He’ll judge the peoples fairly."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:96:11",
+      "text": "Let the heavens be glad and the earth rejoice. Let the sea roar with everything in it!"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:96:12",
+      "text": "Let the fields and everything in them celebrate! Then every tree in the woods will sing for joy"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:96:13",
+      "text": "before the LORD, because he’s coming. He’s coming to judge the earth. He’ll judge the world with righteousness and the peoples with his truth."
+    }
+  ]
+}

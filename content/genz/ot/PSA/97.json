@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 97,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:97:1",
+      "text": "The LORD reigns! Let the whole earth celebrate! Let all the islands be glad!"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:97:2",
+      "text": "Clouds and darkness surround him. Righteousness and justice hold up his throne."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:97:3",
+      "text": "Fire goes ahead of him and burns up his enemies on every side."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:97:4",
+      "text": "His lightning lights up the world. The earth sees it and shakes."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:97:5",
+      "text": "Mountains melt like wax before the LORD, before the Lord of the whole earth."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:97:6",
+      "text": "The skies tell of his righteousness. Every people has seen his glory."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:97:7",
+      "text": "Let everyone who serves carved images and brags about their idols be put to shame. Worship him, all you gods!"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:97:8",
+      "text": "Zion heard and celebrated. The daughters of Judah rejoiced because of your judgments, LORD."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:97:9",
+      "text": "LORD, you are Most High over all the earth. You stand far above every god."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:97:10",
+      "text": "If you love the LORD, hate evil! He guards the lives of his faithful people and pulls them out of the grip of the wicked."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:97:11",
+      "text": "Light is planted for those who do right, and joy for those with honest hearts."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:97:12",
+      "text": "Rejoice in the LORD, you righteous people! Give thanks to his holy name."
+    }
+  ]
+}
