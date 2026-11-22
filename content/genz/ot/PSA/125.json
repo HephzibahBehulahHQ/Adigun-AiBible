@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 125,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:125:1",
+      "text": "A song of ascents. People who trust the LORD are like Mount Zion. It can’t be shaken. It stands forever."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:125:2",
+      "text": "Just as mountains surround Jerusalem, the LORD surrounds his people from now on and forever."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:125:3",
+      "text": "The scepter of the wicked won’t stay over the land given to the righteous, so the righteous won’t turn their own hands to evil."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:125:4",
+      "text": "LORD, do good to people who do good, to those whose hearts are upright."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:125:5",
+      "text": "But the people who turn off onto crooked paths, the LORD will lead away with those who do evil. Peace be on Israel."
+    }
+  ]
+}

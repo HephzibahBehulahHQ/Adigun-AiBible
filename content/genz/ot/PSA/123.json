@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 123,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:123:1",
+      "text": "A song of ascents. I lift my eyes to you, the one who sits in heaven."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:123:2",
+      "text": "As servants watch their master’s hand, as a servant girl watches her mistress’s hand, we keep our eyes on the LORD our God until he shows us mercy."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:123:3",
+      "text": "Have mercy on us, LORD. Have mercy on us. We’ve taken more than enough contempt."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:123:4",
+      "text": "We’ve had our fill of insults from people who have it easy and of contempt from the proud."
+    }
+  ]
+}
