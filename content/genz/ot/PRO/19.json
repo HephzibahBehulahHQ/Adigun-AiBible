@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PRO",
+  "bookName": "Proverbs",
+  "chapterNumber": 19,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PRO:19:1",
+      "text": "Better to be poor and walk with integrity than be a fool whose words are twisted."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PRO:19:2",
+      "text": "All that drive won't do you good without knowledge. Rush ahead too fast and you'll miss the road."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PRO:19:3",
+      "text": "People wreck their own lives by acting foolish, then get furious with the LORD about it."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PRO:19:4",
+      "text": "Money brings a crowd of friends. A poor person can lose the friend they already had."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PRO:19:5",
+      "text": "A false witness will face punishment. Someone who keeps pouring out lies won't walk free."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PRO:19:6",
+      "text": "Plenty of people try to get on a ruler's good side. Everybody wants to be friends with someone who gives out gifts."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PRO:19:7",
+      "text": "Even a poor person's relatives keep their distance. How much more will their friends dodge them! They go after them begging, but those people are gone."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PRO:19:8",
+      "text": "Get wisdom and you're showing love for your own soul. Hold on to understanding and you'll find good things."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PRO:19:9",
+      "text": "A false witness will face punishment. The person who tells lies will perish."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PRO:19:10",
+      "text": "A life of luxury doesn't suit a fool. A servant ruling over princes makes even less sense."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PRO:19:11",
+      "text": "Good judgment slows down your anger. There's honor in letting an offense go."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PRO:19:12",
+      "text": "A king's anger sounds like a lion roaring. His favor is like dew on the grass."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PRO:19:13",
+      "text": "A foolish son is a disaster for his father. A wife's quarrels are like a drip that won't stop."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PRO:19:14",
+      "text": "You can inherit a house and money from your parents. A wife with good judgment comes from the LORD."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PRO:19:15",
+      "text": "Laziness drags you into a deep sleep. Sit around doing nothing and you'll go hungry."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PRO:19:16",
+      "text": "Keep the command and you'll guard your life. Treat the way you live with contempt and you'll die."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PRO:19:17",
+      "text": "Show kindness to someone who's poor and you're lending to the LORD. He'll pay you back."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PRO:19:18",
+      "text": "Discipline your son while there's still hope. Don't go along with anything that leads to his death."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PRO:19:19",
+      "text": "A hothead has to pay for what they did. Bail them out and you'll just have to do it again."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PRO:19:20",
+      "text": "Listen to advice and take correction so you'll have wisdom later in life."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PRO:19:21",
+      "text": "You can have all kinds of plans in your heart. What the LORD decides will stand."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PRO:19:22",
+      "text": "Kindness is what draws people to someone. Better to be poor than a liar."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PRO:19:23",
+      "text": "Standing in awe of the LORD leads to life. You can rest content, with trouble unable to touch you."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PRO:19:24",
+      "text": "A lazy person sticks their hand in the dish and can't even be bothered to bring it back up to their mouth."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PRO:19:25",
+      "text": "Give a mocker a whipping and the gullible will pick up some good sense. Correct someone with understanding and they'll learn from it."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:PRO:19:26",
+      "text": "A son who robs his father and drives his mother away brings shame and disgrace."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:PRO:19:27",
+      "text": "My son, stop listening to instruction and you'll wander away from words that can teach you."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:PRO:19:28",
+      "text": "A corrupt witness laughs at justice. The wicked swallow wrongdoing like they can't get enough."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:PRO:19:29",
+      "text": "Punishments are ready for mockers, and beatings for the backs of fools."
+    }
+  ]
+}
