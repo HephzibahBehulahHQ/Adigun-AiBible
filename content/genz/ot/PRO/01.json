@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PRO",
+  "bookName": "Proverbs",
+  "chapterNumber": 1,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PRO:1:1",
+      "text": "These are the proverbs of Solomon, David's son and Israel's king."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PRO:1:2",
+      "text": "They're here to teach you wisdom and discipline and help you recognize words that carry real insight."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PRO:1:3",
+      "text": "They'll train you to make wise moves and do what's right, just, and fair."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PRO:1:4",
+      "text": "They give good sense to people who are easily led and give young people knowledge and judgment."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PRO:1:5",
+      "text": "Even wise people can listen and learn more, and people with understanding can pick up solid advice."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PRO:1:6",
+      "text": "They'll help you get the point of proverbs and stories and work out the sayings and riddles of wise people."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PRO:1:7",
+      "text": "Knowledge starts with taking the LORD seriously and standing in awe of him. Fools look down on wisdom and discipline."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PRO:1:8",
+      "text": "My son, listen when your father teaches you, and hold on to what your mother tells you."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PRO:1:9",
+      "text": "Their teaching will look good on you, like a wreath on your head and a chain around your neck."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PRO:1:10",
+      "text": "My son, if people doing wrong try to pull you in, don't go for it."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PRO:1:11",
+      "text": "They might say, “Roll with us. Let's hide and wait to spill blood. Let's ambush somebody innocent for no reason."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PRO:1:12",
+      "text": "Let's swallow them alive like the grave, whole like people dropping into the pit."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PRO:1:13",
+      "text": "We'll grab all kinds of valuables and fill our houses with what we take."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PRO:1:14",
+      "text": "Throw in with us. We'll all share the same pot.”"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PRO:1:15",
+      "text": "My son, don't go down that road with them. Keep your feet off their path."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PRO:1:16",
+      "text": "They run straight toward evil and can't wait to spill blood."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PRO:1:17",
+      "text": "You don't catch a bird by spreading the net where it can see you."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PRO:1:18",
+      "text": "But these people are setting an ambush for their own blood. They're lying in wait for their own lives."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PRO:1:19",
+      "text": "That's how it goes for anyone hungry for crooked gain. The stuff they grab ends up taking their lives."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PRO:1:20",
+      "text": "Wisdom calls out in the street. She raises her voice in the public squares."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PRO:1:21",
+      "text": "She calls above the noisy crowd and speaks up at the city gates."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PRO:1:22",
+      "text": "“How long will you gullible people love being gullible? How long will mockers get a kick out of mocking, and fools hate knowing better?"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PRO:1:23",
+      "text": "Listen when I correct you and turn around. Look, I'll pour out my spirit on you and tell you what I have to say."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PRO:1:24",
+      "text": "I called, and you refused to listen. I reached out my hand, and nobody paid attention."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PRO:1:25",
+      "text": "You brushed off all my advice and wanted nothing to do with my correction."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:PRO:1:26",
+      "text": "So I'll laugh when disaster hits you. I'll mock when trouble catches up with you,"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:PRO:1:27",
+      "text": "when it hits like a storm and disaster comes spinning in like a whirlwind, and you're gripped by distress and pain."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:PRO:1:28",
+      "text": "Then they'll call for me, but I won't answer. They'll look hard for me, but they won't find me."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:PRO:1:29",
+      "text": "They hated knowledge and chose to live without reverence for the LORD."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:PRO:1:30",
+      "text": "They wanted none of my advice and had nothing but contempt for my correction."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:PRO:1:31",
+      "text": "So they'll eat the fruit of the road they took and get their fill of their own schemes."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:PRO:1:32",
+      "text": "People who are easily led turn away, and it kills them. Fools get comfortable and careless, and it destroys them."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:PRO:1:33",
+      "text": "But whoever listens to me will live safely and rest easy, without being scared of harm.”"
+    }
+  ]
+}

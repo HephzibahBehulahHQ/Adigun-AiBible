@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PRO",
+  "bookName": "Proverbs",
+  "chapterNumber": 2,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PRO:2:1",
+      "text": "My son, take in what I tell you and keep my instructions close."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PRO:2:2",
+      "text": "Tune your ears to wisdom and put your whole heart into understanding."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PRO:2:3",
+      "text": "Call out for good judgment. Raise your voice and ask for understanding."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PRO:2:4",
+      "text": "Look for it like you'd look for silver. Dig for it like buried treasure."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PRO:2:5",
+      "text": "Then you'll understand what it means to stand in awe of the LORD, and you'll come to know God."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PRO:2:6",
+      "text": "The LORD gives wisdom. Knowledge and understanding come straight from his mouth."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PRO:2:7",
+      "text": "He saves up solid wisdom for people who live right. He's a shield for those who walk with integrity."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PRO:2:8",
+      "text": "He guards the roads of justice and protects the path of his faithful people."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PRO:2:9",
+      "text": "Then you'll understand what's right, what's just, what's fair, and how to recognize every good road."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PRO:2:10",
+      "text": "Wisdom will settle in your heart, and knowing what's true will feel good deep down."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PRO:2:11",
+      "text": "Good judgment will watch over you, and understanding will keep you safe."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PRO:2:12",
+      "text": "They'll pull you away from evil roads and people who twist things with their words."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PRO:2:13",
+      "text": "Those people leave the straight path to walk down dark roads."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PRO:2:14",
+      "text": "They get excited about doing wrong and enjoy just how twisted evil can get."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PRO:2:15",
+      "text": "Everything about their way of life is crooked. The paths they take are all over the place."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PRO:2:16",
+      "text": "Wisdom will also save you from the foreign woman who tries to pull you in with smooth talk."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PRO:2:17",
+      "text": "She's left the partner she had when she was young and forgotten the covenant she made before God."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PRO:2:18",
+      "text": "Her house slopes down toward death. Her paths lead where the departed spirits are."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PRO:2:19",
+      "text": "People who go to her don't make it back. They never reach the paths of life again."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PRO:2:20",
+      "text": "So walk where good people walk and stick to the paths of those who do right."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PRO:2:21",
+      "text": "People who live honestly will live in the land. People of integrity will get to stay."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PRO:2:22",
+      "text": "But the wicked will be cut off from the land, and people who betray others will be ripped out by the roots."
+    }
+  ]
+}
