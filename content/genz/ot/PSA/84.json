@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 84,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:84:1",
+      "text": "For the music director, on an instrument from Gath. A psalm by the sons of Korah. What a beautiful place you live in, LORD of Armies!"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:84:2",
+      "text": "I’m aching to be in the LORD’s courts. My heart and my whole body cry out for the living God."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:84:3",
+      "text": "Even a sparrow has found a home, and a swallow has built a nest for her young near your altars, LORD of Armies, my King and my God."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:84:4",
+      "text": "Blessed are those who live in your house. They never stop praising you. Selah."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:84:5",
+      "text": "Blessed are those who get their strength from you and set their hearts on the journey to your house."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:84:6",
+      "text": "When they pass through the Valley of Weeping, they turn it into a place of springs. The autumn rain covers it with blessings."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:84:7",
+      "text": "They grow stronger as they go, until every one of them stands before God in Zion."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:84:8",
+      "text": "LORD God of Armies, hear my prayer. Listen to me, God of Jacob. Selah."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:84:9",
+      "text": "God, our shield, look with favor on the face of your anointed one."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:84:10",
+      "text": "One day in your courts beats a thousand anywhere else. I’d rather stand at the door of my God’s house than live in the tents of the wicked."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:84:11",
+      "text": "The LORD God is a sun and a shield. The LORD gives grace and glory. He holds back nothing good from those who live with integrity."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:84:12",
+      "text": "LORD of Armies, blessed is anyone who trusts you."
+    }
+  ]
+}
