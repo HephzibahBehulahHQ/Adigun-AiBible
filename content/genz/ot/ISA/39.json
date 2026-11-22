@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ISA",
+  "bookName": "Isaiah",
+  "chapterNumber": 39,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ISA:39:1",
+      "text": "About then Merodach-baladan, Baladan's son and king of Babylon, sent Hezekiah letters and a gift. He'd heard Hezekiah had been sick and recovered."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ISA:39:2",
+      "text": "Hezekiah was glad to see the messengers and showed them his treasure house: the silver, the gold, the spices, the precious oil, his whole armory, and everything in his storerooms. He showed them everything in his house and all over his kingdom."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ISA:39:3",
+      "text": "Then Isaiah the prophet came to King Hezekiah and asked, “What did these men say? Where did they come from?” Hezekiah said, “They came from far away, all the way from Babylon.”"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ISA:39:4",
+      "text": "Isaiah asked, “What did they see in your house?” Hezekiah answered, “Everything. I showed them every last thing in my treasuries.”"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ISA:39:5",
+      "text": "Then Isaiah told Hezekiah, “Hear what the LORD of Armies says."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ISA:39:6",
+      "text": "‘Look, days are coming when everything in your house and everything your ancestors have stored up till now will be hauled off to Babylon. Nothing will be left,’ says the LORD."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ISA:39:7",
+      "text": "‘They'll take away sons who come from you, sons you'll father, and they'll be eunuchs in the king of Babylon's palace.’”"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ISA:39:8",
+      "text": "Hezekiah told Isaiah, “The word from the LORD that you've spoken is good.” Then he said, “There'll be peace and faithfulness while I'm alive.”"
+    }
+  ]
+}
