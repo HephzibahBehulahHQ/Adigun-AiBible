@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 146,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:146:1",
+      "text": "Praise the LORD! Come on, my soul, praise the LORD!"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:146:2",
+      "text": "As long as I'm alive, I'll praise the LORD. As long as I'm here, I'll sing to my God."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:146:3",
+      "text": "Don't pin your hopes on rulers. They're human, and they can't save you."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:146:4",
+      "text": "When their spirit leaves, they go back to the dirt. That same day, all their plans disappear."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:146:5",
+      "text": "Happy are those who have the God of Jacob on their side, who put their hope in the LORD their God."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:146:6",
+      "text": "He made heaven and earth, the sea and everything in them. He stays faithful forever."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:146:7",
+      "text": "He makes sure the oppressed get justice and the hungry get food. The LORD sets prisoners free."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:146:8",
+      "text": "The LORD opens the eyes of the blind. He lifts up those bent low. The LORD loves those who do right."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:146:9",
+      "text": "The LORD looks after foreigners. He supports children without fathers and women who've lost their husbands, but he turns the plans of the wicked upside down."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:146:10",
+      "text": "The LORD will reign forever. Zion, your God will rule through every generation. Praise the LORD!"
+    }
+  ]
+}

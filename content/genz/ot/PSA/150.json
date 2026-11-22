@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 150,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:150:1",
+      "text": "Praise the LORD! Praise God in his holy place! Praise him in his mighty heavens!"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:150:2",
+      "text": "Praise him for the powerful things he's done! Give him praise as great as he is!"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:150:3",
+      "text": "Blast the trumpet to praise him! Praise him with harp and lyre!"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:150:4",
+      "text": "Praise him with a tambourine and some dancing! Bring the strings and the flute and praise him!"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:150:5",
+      "text": "Crash those cymbals in praise! Let the cymbals ring out for him!"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:150:6",
+      "text": "If you've got breath, praise the LORD! Praise the LORD!"
+    }
+  ]
+}
