@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "2CH",
+  "bookName": "2 Chronicles",
+  "chapterNumber": 22,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:2CH:22:1",
+      "text": "The people of Jerusalem made Jehoram's youngest son Ahaziah king in his place. The raiding party that came to the camp with the Arabians had killed all his older brothers. So Ahaziah son of Jehoram became king of Judah."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:2CH:22:2",
+      "text": "Ahaziah was forty-two years old when he became king and ruled one year in Jerusalem. His mother was Athaliah, a daughter of Omri's family."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:2CH:22:3",
+      "text": "He followed the ways of Ahab's house, because his mother advised him to do evil."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:2CH:22:4",
+      "text": "He did what was evil in the LORD's eyes, as Ahab's family had done. After his father died, they became his advisers and led him to ruin."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:2CH:22:5",
+      "text": "He took their advice and went with King Jehoram son of Ahab of Israel to fight King Hazael of Syria at Ramoth Gilead. The Syrians wounded Jehoram."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:2CH:22:6",
+      "text": "Jehoram returned to Jezreel to recover from the wounds he had received at Ramah in the fight against King Hazael of Syria. Ahaziah son of Jehoram, king of Judah, went down to Jezreel to visit him because he was wounded."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:2CH:22:7",
+      "text": "God brought about Ahaziah's downfall through that visit. When Ahaziah arrived, he went out with Jehoram to confront Jehu son of Nimshi, whom the LORD had anointed to wipe out Ahab's house."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:2CH:22:8",
+      "text": "While Jehu was carrying out judgment on Ahab's house, he found Judah's officials and the sons of Ahaziah's brothers serving Ahaziah, and he killed them."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:2CH:22:9",
+      "text": "Jehu looked for Ahaziah, who was hiding in Samaria. His men caught him, brought him to Jehu, and killed him. They buried him because they said, \"He's a descendant of Jehoshaphat, who sought the LORD with all his heart.\" No one from Ahaziah's family had the power to hold the kingdom."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:2CH:22:10",
+      "text": "When Ahaziah's mother Athaliah saw that her son was dead, she set out to destroy all the royal descendants of Judah."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:2CH:22:11",
+      "text": "But Jehoshabeath, King Jehoram's daughter, secretly took Ahaziah's son Joash away from the royal sons who were being killed and put him and his nurse in a bedroom. Jehoshabeath was Ahaziah's sister and the wife of Jehoiada the priest. She hid Joash from Athaliah and saved his life."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:2CH:22:12",
+      "text": "He remained hidden with them in God's house for six years while Athaliah ruled the land."
+    }
+  ]
+}
