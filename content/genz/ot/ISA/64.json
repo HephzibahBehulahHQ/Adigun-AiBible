@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ISA",
+  "bookName": "Isaiah",
+  "chapterNumber": 64,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ISA:64:1",
+      "text": "If only you'd rip the heavens open and come down, so mountains would shake when you showed up!"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ISA:64:2",
+      "text": "Come like a fire that catches in brush and makes water boil. Make your name known to your enemies so the nations shake in front of you."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ISA:64:3",
+      "text": "When you did amazing things we never saw coming, you came down and mountains shook in your presence."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ISA:64:4",
+      "text": "Since long ago nobody has heard or seen a God besides you who acts for people who wait for him."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ISA:64:5",
+      "text": "You meet people who gladly do what's right, who remember you by walking your roads. Look, you were angry, and we sinned. We've been stuck in sin a long time. Can we be saved?"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ISA:64:6",
+      "text": "We've all become like somebody unclean, and even the right things we do are like dirty clothes. We all wither like leaves, and our wrongdoing carries us off like the wind."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ISA:64:7",
+      "text": "Nobody calls on your name or gets up to grab hold of you. You've hidden your face from us and let our wrongdoing eat us up."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ISA:64:8",
+      "text": "But LORD, you're still our Father. We're the clay and you're the potter. Every one of us is the work of your hands."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ISA:64:9",
+      "text": "LORD, don't stay furious. Don't remember our wrongs forever. Please look at us. We're all your people."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ISA:64:10",
+      "text": "Your holy cities have become wilderness. Zion is a wasteland, and Jerusalem lies in ruins."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ISA:64:11",
+      "text": "Our beautiful, holy house where our ancestors praised you has burned down. Every place we loved is wrecked."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ISA:64:12",
+      "text": "LORD, will you hold back after all this? Will you stay quiet and keep punishing us so hard?"
+    }
+  ]
+}
