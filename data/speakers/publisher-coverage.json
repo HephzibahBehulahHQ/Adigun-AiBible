@@ -4,7 +4,7 @@
   "editions": [
     {
       "editionId": "adigun-edition",
-      "sourceSha256": "de119244d1ab87659fa3e310fd3a6056268b0f56a020aa714a79d25c535126ee",
+      "sourceSha256": "12ad4cf2d569da10c9773480f29f4050f42ead8bd3c071cd8f83b74953a19cc5",
       "status": "publisher-metadata",
       "marker": "none",
       "offsetUnit": "not-applicable",
@@ -133,6 +133,12 @@
         },
         {
           "bookId": "ECC",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "SNG",
           "spans": 0,
           "verses": 0,
           "rejectedMetadata": 0
