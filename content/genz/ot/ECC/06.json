@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ECC",
+  "bookName": "Ecclesiastes",
+  "chapterNumber": 6,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ECC:6:1",
+      "text": "I've seen something wrong under the sun, and it weighs heavy on people."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ECC:6:2",
+      "text": "God gives someone riches, possessions, and honor, so they've got everything their heart could want. Yet God doesn't let them enjoy any of it, and a stranger gets to eat it all. It slips away like a breath. It's a terrible sickness."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ECC:6:3",
+      "text": "Say a man has a hundred kids and lives a very long time. If he never gets to enjoy anything good and doesn't even get a burial, I say a stillborn child is better off."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ECC:6:4",
+      "text": "The child comes and goes like a breath, leaving in darkness, with even its name hidden in the dark."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ECC:6:5",
+      "text": "It never saw the sun or knew it, but it has more rest than that man."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ECC:6:6",
+      "text": "Even if someone lived a thousand years twice over without enjoying anything good, don't they all end up in the same place?"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ECC:6:7",
+      "text": "People work to put food in their mouths, and their appetite still won't say it's had enough."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ECC:6:8",
+      "text": "So what advantage does a wise person have over a fool? What does a poor person gain from knowing how to get along in the world?"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ECC:6:9",
+      "text": "Better to have what's right in front of you than let your desires wander everywhere. This too slips away like a breath, like chasing the wind."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ECC:6:10",
+      "text": "Whatever exists got its name long ago. What a human being is has already been made known. People can't go up against someone stronger than they are."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ECC:6:11",
+      "text": "More words just give you more that slips away like a breath. What does anybody gain from that?"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ECC:6:12",
+      "text": "Who knows what's good for someone in this life, in all those fleeting days that pass like a shadow? Who can tell them what will happen under the sun after they're gone?"
+    }
+  ]
+}
