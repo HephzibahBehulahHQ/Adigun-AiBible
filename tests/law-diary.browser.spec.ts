@@ -47,6 +47,7 @@ test('Law Diary filters Torah samples and searches real source references', asyn
   await torah.locator('.ld-category > summary').click();
   await expect(torah.locator('.ld-source > summary').filter({ hasText: 'Leviticus 11:1–23' })).toBeVisible();
   await page.getByRole('navigation', { name: 'Law Diary sections' }).getByRole('link', { name: 'Social laws', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'Social laws', exact: true })).toBeVisible();
   await page.getByLabel('Search this section', { exact: true }).fill('Quran 4:135');
   await expect(page.locator('.ld-entry')).toHaveCount(1);
   await expect(page.getByRole('heading', { name: 'Justice and witness', exact: true })).toBeVisible();
