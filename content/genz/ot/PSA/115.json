@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 115,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:115:1",
+      "text": "Give the glory to your name, LORD. It belongs to you alone, because of your faithful love and truth."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:115:2",
+      "text": "Why should the nations get to say, “So where’s their God now?”"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:115:3",
+      "text": "Our God is in heaven. He does whatever he chooses."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:115:4",
+      "text": "Their idols are silver and gold, made by human hands."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:115:5",
+      "text": "They have mouths that can’t speak and eyes that can’t see."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:115:6",
+      "text": "They have ears that can’t hear and noses that can’t smell."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:115:7",
+      "text": "They have hands that can’t feel and feet that can’t walk. Their throats can’t make a sound."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:115:8",
+      "text": "The people who make them will end up like them, and so will everyone who trusts them."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:115:9",
+      "text": "Israel, trust the LORD! He’s your help and your shield."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:115:10",
+      "text": "Family of Aaron, trust the LORD! He’s your help and your shield."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:115:11",
+      "text": "All you who fear the LORD, trust him! He’s your help and your shield."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:115:12",
+      "text": "The LORD remembers us and will bless us. He’ll bless the family of Israel and the family of Aaron."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:115:13",
+      "text": "He’ll bless everyone who fears him, from the least to the greatest."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:115:14",
+      "text": "May the LORD give you and your children more and more."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:115:15",
+      "text": "May the LORD who made heaven and earth bless you."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:115:16",
+      "text": "The heavens belong to the LORD, and he’s given the earth to humanity."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:115:17",
+      "text": "The dead don’t praise the LORD. Neither do those who go down into silence."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:115:18",
+      "text": "But we’ll bless the LORD from now on and forever. Praise the LORD!"
+    }
+  ]
+}

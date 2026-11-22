@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 111,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:111:1",
+      "text": "Praise the LORD! I’ll thank the LORD with my whole heart, in the circle of the upright and in the full gathering."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:111:2",
+      "text": "The LORD’s works are great. Everyone who takes joy in them keeps thinking about them."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:111:3",
+      "text": "What he does is full of honor and majesty. His righteousness lasts forever."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:111:4",
+      "text": "He’s made sure people remember his wonders. The LORD is gracious and merciful."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:111:5",
+      "text": "He’s fed those who fear him. He never forgets his covenant."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:111:6",
+      "text": "He showed his people the power of what he does when he gave them the nations’ lands as their inheritance."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:111:7",
+      "text": "What his hands do is true and just. Every instruction he gives stands firm."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:111:8",
+      "text": "His instructions are set in place forever, carried out in truth and integrity."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:111:9",
+      "text": "He sent rescue to his people and established his covenant forever. His name is holy and fills us with awe!"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:111:10",
+      "text": "Wisdom starts with the fear of the LORD. Everyone who follows his ways gains sound understanding. His praise goes on forever!"
+    }
+  ]
+}
