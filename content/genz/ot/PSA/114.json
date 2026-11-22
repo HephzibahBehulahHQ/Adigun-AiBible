@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 114,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:114:1",
+      "text": "When Israel walked out of Egypt, when Jacob’s family left a people whose language they didn’t speak,"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:114:2",
+      "text": "Judah became God’s holy place, and Israel became the land he ruled."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:114:3",
+      "text": "The sea saw it and ran. The Jordan turned back."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:114:4",
+      "text": "Mountains jumped like rams, and hills like lambs."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:114:5",
+      "text": "Sea, what made you run? Jordan, what made you turn back?"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:114:6",
+      "text": "Mountains, why did you jump like rams? Hills, why did you leap like lambs?"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:114:7",
+      "text": "Earth, tremble before the Lord, before the God of Jacob,"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:114:8",
+      "text": "who turned rock into a pool of water and hard flint into a flowing spring."
+    }
+  ]
+}

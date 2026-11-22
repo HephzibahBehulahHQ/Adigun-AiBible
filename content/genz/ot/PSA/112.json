@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 112,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:112:1",
+      "text": "Praise the LORD! Blessed are those who fear the LORD and take real joy in what he commands."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:112:2",
+      "text": "Their children will be strong in the land. The generation of those who live uprightly will be blessed."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:112:3",
+      "text": "Their home is full of wealth, and their righteousness lasts forever."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:112:4",
+      "text": "Light breaks through the dark for those who live uprightly, the gracious, the merciful, and the righteous."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:112:5",
+      "text": "Things go well for someone who lends generously. They’ll handle their case justly."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:112:6",
+      "text": "They’ll never be shaken. People will remember the righteous forever."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:112:7",
+      "text": "Bad news won’t scare them. Their hearts are steady because they trust the LORD."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:112:8",
+      "text": "Their hearts are firm. They won’t be afraid when they finally look on their enemies."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:112:9",
+      "text": "They give freely to the poor. Their righteousness lasts forever. Their horn will rise high with honor."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:112:10",
+      "text": "The wicked will see it and get upset. They’ll grind their teeth and waste away. Everything the wicked hoped for will come to nothing."
+    }
+  ]
+}
