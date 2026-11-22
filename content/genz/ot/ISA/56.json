@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ISA",
+  "bookName": "Isaiah",
+  "chapterNumber": 56,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ISA:56:1",
+      "text": "The LORD says, “Keep justice going and do what's right. My salvation is close, and my righteousness is about to be revealed."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ISA:56:2",
+      "text": "Blessed is anyone who does this and sticks to it, who keeps the Sabbath holy and keeps their hands from doing anything evil.”"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ISA:56:3",
+      "text": "A foreigner who's joined the LORD shouldn't say, “The LORD will cut me off from his people.” A eunuch shouldn't say, “Look at me, I'm a dried-up tree.”"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ISA:56:4",
+      "text": "The LORD says, “To the eunuchs who keep my Sabbaths, choose what makes me glad, and hold tight to my covenant,"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ISA:56:5",
+      "text": "I'll give them a memorial and a name inside my house and within my walls that's better than sons and daughters. I'll give them a name that lasts forever and won't be cut off."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ISA:56:6",
+      "text": "And the foreigners who join the LORD to serve him and love his name, everyone who keeps from profaning the Sabbath and holds fast to my covenant,"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ISA:56:7",
+      "text": "I'll bring them to my holy mountain and make them glad in my house of prayer. I'll accept their burnt offerings and sacrifices on my altar. My house will be called a house of prayer for every people.”"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ISA:56:8",
+      "text": "The Lord GOD, who gathers Israel's outcasts, says, “I'll gather still more people to them, along with those I've already gathered.”"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ISA:56:9",
+      "text": "Come and devour, all you animals out in the fields and all you animals in the forest!"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ISA:56:10",
+      "text": "Israel's watchmen are blind. None of them knows what's going on. They're dogs that can't bark. They lie around dreaming and love to sleep."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ISA:56:11",
+      "text": "Those dogs are greedy and never have enough. They're shepherds who don't understand. They've all gone their own way, each looking out for what they can get."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ISA:56:12",
+      "text": "“Come on,” they say. “I'll get the wine, and we'll drink our fill of strong liquor! Tomorrow will be just like today, only even bigger.”"
+    }
+  ]
+}
