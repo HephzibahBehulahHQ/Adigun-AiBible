@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ISA",
+  "bookName": "Isaiah",
+  "chapterNumber": 50,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ISA:50:1",
+      "text": "The LORD says, “Where's the divorce paper I gave your mother when I sent her away? Which of my creditors did I sell you to? Look, your own wrongdoing got you sold, and your rebellion is why your mother was sent away."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ISA:50:2",
+      "text": "Why was nobody there when I came? Why didn't anybody answer when I called? Is my arm too short to buy you back? Have I lost the power to rescue you? Look, one rebuke from me dries up the sea. I turn rivers into dry ground, and their fish stink and die of thirst because there's no water."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ISA:50:3",
+      "text": "I dress the heavens in black and cover them with sackcloth.”"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ISA:50:4",
+      "text": "The Lord GOD taught me how to speak so I could give worn-out people words that help them keep going. Morning after morning he wakes me up and opens my ears to listen like a student."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ISA:50:5",
+      "text": "The Lord GOD opened my ear. I didn't rebel or turn back."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ISA:50:6",
+      "text": "I gave my back to the people beating me and my cheeks to those pulling out my beard. I didn't hide my face from shame or spit."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ISA:50:7",
+      "text": "The Lord GOD will help me. That's why I haven't been put to shame. I've set my face hard as flint, and I know I won't end up disgraced."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ISA:50:8",
+      "text": "The one who says I'm in the right is near. Who wants to charge me? Let's stand up together. Who's got a case against me? Let them come close."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ISA:50:9",
+      "text": "Look, the Lord GOD will help me! Who's going to condemn me? They'll all wear out like old clothes and get eaten up by moths."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ISA:50:10",
+      "text": "Who among you stands in awe of the LORD and listens to his servant? If you're walking in the dark without a light, trust the LORD's name and lean on your God."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ISA:50:11",
+      "text": "Look, all of you who start your own fire and surround yourselves with torches, go on and walk in the flames you lit and among the torches you set burning. Here's what you'll get from my hand. You'll lie down in sorrow."
+    }
+  ]
+}
