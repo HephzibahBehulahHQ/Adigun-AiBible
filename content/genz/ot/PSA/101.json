@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 101,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:101:1",
+      "text": "A psalm by David. I’ll sing about faithful love and justice. LORD, you’re the one I’ll praise."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:101:2",
+      "text": "I’ll pay attention to how I live so I can walk with integrity. When will you come to me? Even in my own house, I’ll live with a heart that’s right."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:101:3",
+      "text": "I won’t set anything vile in front of my eyes. I hate what faithless people do. I won’t let any of it stick to me."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:101:4",
+      "text": "I’ll keep a twisted heart far from me. I’ll have nothing to do with evil."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:101:5",
+      "text": "If someone secretly runs down their neighbor, I’ll silence them. I won’t put up with people who look down on others and think too highly of themselves."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:101:6",
+      "text": "I’ll look for faithful people in the land and bring them to live with me. Those who walk with integrity will serve me."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:101:7",
+      "text": "Anyone who makes a habit of deceiving people won’t live under my roof. Liars won’t get to stay in my presence."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:101:8",
+      "text": "Morning after morning I’ll bring down every wicked person in the land, cutting off everyone who does evil from the LORD’s city."
+    }
+  ]
+}
