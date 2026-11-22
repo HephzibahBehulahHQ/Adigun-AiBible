@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ISA",
+  "bookName": "Isaiah",
+  "chapterNumber": 4,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ISA:4:1",
+      "text": "That day seven women will grab one man and say, “We'll buy our own bread and wear our own clothes. Just let us carry your name. Take this shame off us.”"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ISA:4:2",
+      "text": "That day the LORD's branch will be beautiful and glorious. What the land grows will be the beauty and pride of the people of Israel who survive."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ISA:4:3",
+      "text": "Everyone left in Zion and everyone who remains in Jerusalem will be called holy, everyone whose name is on the list of the living in Jerusalem."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ISA:4:4",
+      "text": "That's when the Lord will have washed away the filth of Zion's daughters and cleaned the blood out of Jerusalem by a spirit of justice and a spirit of burning."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ISA:4:5",
+      "text": "Then the LORD will make a cloud and smoke by day and a blazing fire by night over every home on Mount Zion and every gathering there. A canopy will cover all that glory."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ISA:4:6",
+      "text": "There'll be a shelter to shade people from the daytime heat, a safe place to get out of the storm and rain."
+    }
+  ]
+}
