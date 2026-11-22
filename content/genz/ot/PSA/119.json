@@ -1,0 +1,891 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 119,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:119:1",
+      "text": "ALEPH Blessed are those who live with integrity and walk by the LORD’s instruction."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:119:2",
+      "text": "Blessed are those who keep his teachings and seek him with their whole hearts."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:119:3",
+      "text": "They do no wrong. They walk in his ways."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:119:4",
+      "text": "You gave your instructions so we’d follow them all the way."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:119:5",
+      "text": "If only I could stay steady and keep your statutes!"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:119:6",
+      "text": "Then I wouldn’t hang my head in shame when I look at all your commands."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:119:7",
+      "text": "I’ll thank you with an honest heart as I learn your righteous judgments."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:119:8",
+      "text": "I’ll keep your statutes. Please don’t leave me altogether. BETH"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:119:9",
+      "text": "How can a young person stay on a clean path? By living by your word."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:119:10",
+      "text": "I’ve looked for you with my whole heart. Don’t let me drift from your commands."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:119:11",
+      "text": "I’ve tucked your word away in my heart so I won’t sin against you."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:119:12",
+      "text": "Blessed are you, LORD. Teach me your statutes."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:119:13",
+      "text": "I’ve said out loud every judgment you’ve spoken."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:119:14",
+      "text": "I find as much joy in following your teachings as I would in having every kind of wealth."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:119:15",
+      "text": "I’ll sit with your instructions and pay close attention to your ways."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:119:16",
+      "text": "I’ll take joy in your statutes. I won’t forget your word. GIMEL"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:119:17",
+      "text": "Be good to your servant so I can live and follow your word."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:119:18",
+      "text": "Open my eyes so I can see the wonders in your instruction."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:119:19",
+      "text": "I’m a stranger here on earth. Don’t hide your commands from me."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PSA:119:20",
+      "text": "My whole soul aches for your judgments all the time."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PSA:119:21",
+      "text": "You’ve rebuked the proud, those under a curse who wander from your commands."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PSA:119:22",
+      "text": "Take away the insults and contempt, because I’ve kept your teachings."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PSA:119:23",
+      "text": "Even when rulers sit together and talk trash about me, your servant will keep thinking about your statutes."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PSA:119:24",
+      "text": "Your teachings are my joy. They’re the ones I go to for advice. DALETH"
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PSA:119:25",
+      "text": "I’m down in the dust. Bring me back to life as you promised!"
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:PSA:119:26",
+      "text": "I told you how I’ve been living, and you answered me. Teach me your statutes."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:PSA:119:27",
+      "text": "Help me understand what you’re teaching me through your instructions. Then I’ll think about the wonders you’ve done."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:PSA:119:28",
+      "text": "My soul is worn out from sorrow. Give me strength as you promised."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:PSA:119:29",
+      "text": "Keep me off the path of lies. Be gracious and teach me your law."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:PSA:119:30",
+      "text": "I’ve chosen the way of truth. I’ve set your judgments right in front of me."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:PSA:119:31",
+      "text": "I’m holding tight to your teachings, LORD. Don’t let me be put to shame."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:PSA:119:32",
+      "text": "I run down the path of your commands because you’ve set my heart free. HE"
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:PSA:119:33",
+      "text": "Teach me, LORD, how to live by your statutes, and I’ll keep them to the end."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:PSA:119:34",
+      "text": "Give me understanding so I can keep your law and follow it with my whole heart."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:PSA:119:35",
+      "text": "Lead me down the path of your commands. That’s where I find joy."
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:PSA:119:36",
+      "text": "Turn my heart toward your teachings and away from chasing gain for myself."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:PSA:119:37",
+      "text": "Turn my eyes away from things that aren’t worth my attention. Give me life in your ways."
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:PSA:119:38",
+      "text": "Keep the promise you made to your servant, so people will stand in awe of you."
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:PSA:119:39",
+      "text": "Take away the disgrace I dread, because your judgments are good."
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:PSA:119:40",
+      "text": "Look how I long for your instructions! Bring me back to life in your righteousness. VAV"
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:PSA:119:41",
+      "text": "Let your faithful love reach me too, LORD. Save me as you promised."
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:PSA:119:42",
+      "text": "Then I’ll have an answer for people who mock me, because I trust what you’ve said."
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:PSA:119:43",
+      "text": "Don’t take the words of truth out of my mouth, because I’ve put my hope in your judgments."
+    },
+    {
+      "number": 44,
+      "sourceRef": "eng-web:PSA:119:44",
+      "text": "I’ll keep following your law, always and forever."
+    },
+    {
+      "number": 45,
+      "sourceRef": "eng-web:PSA:119:45",
+      "text": "I’ll walk freely, because I’ve gone looking for your instructions."
+    },
+    {
+      "number": 46,
+      "sourceRef": "eng-web:PSA:119:46",
+      "text": "I’ll talk about your teachings even in front of kings, and I won’t be put to shame."
+    },
+    {
+      "number": 47,
+      "sourceRef": "eng-web:PSA:119:47",
+      "text": "I’ll take joy in your commands, because I love them."
+    },
+    {
+      "number": 48,
+      "sourceRef": "eng-web:PSA:119:48",
+      "text": "I reach out for the commands I love. I’ll keep thinking about your statutes. ZAYIN"
+    },
+    {
+      "number": 49,
+      "sourceRef": "eng-web:PSA:119:49",
+      "text": "Remember what you told me, your servant. You gave me something to hope for."
+    },
+    {
+      "number": 50,
+      "sourceRef": "eng-web:PSA:119:50",
+      "text": "Here’s what comforts me when I’m hurting: your word has brought me back to life."
+    },
+    {
+      "number": 51,
+      "sourceRef": "eng-web:PSA:119:51",
+      "text": "The proud won’t stop mocking me, but I won’t veer away from your instruction."
+    },
+    {
+      "number": 52,
+      "sourceRef": "eng-web:PSA:119:52",
+      "text": "I remember the judgments you gave long ago, LORD, and I find comfort in them."
+    },
+    {
+      "number": 53,
+      "sourceRef": "eng-web:PSA:119:53",
+      "text": "I’m burning with anger because the wicked have walked away from your law."
+    },
+    {
+      "number": 54,
+      "sourceRef": "eng-web:PSA:119:54",
+      "text": "Your statutes are the songs I sing in the place where I’m staying."
+    },
+    {
+      "number": 55,
+      "sourceRef": "eng-web:PSA:119:55",
+      "text": "At night I remember your name, LORD, and I keep your law."
+    },
+    {
+      "number": 56,
+      "sourceRef": "eng-web:PSA:119:56",
+      "text": "This is how I live: I follow your instructions. HETH"
+    },
+    {
+      "number": 57,
+      "sourceRef": "eng-web:PSA:119:57",
+      "text": "The LORD is my share. I’ve promised to live by what you say."
+    },
+    {
+      "number": 58,
+      "sourceRef": "eng-web:PSA:119:58",
+      "text": "I’ve asked for your favor with my whole heart. Show me mercy, just as you promised."
+    },
+    {
+      "number": 59,
+      "sourceRef": "eng-web:PSA:119:59",
+      "text": "I thought about where I was headed and turned my feet back toward your teachings."
+    },
+    {
+      "number": 60,
+      "sourceRef": "eng-web:PSA:119:60",
+      "text": "I’m moving fast to obey your commands. I won’t put it off."
+    },
+    {
+      "number": 61,
+      "sourceRef": "eng-web:PSA:119:61",
+      "text": "The wicked tie me up with their ropes, but I won’t forget your law."
+    },
+    {
+      "number": 62,
+      "sourceRef": "eng-web:PSA:119:62",
+      "text": "I’ll get up at midnight to thank you for your righteous judgments."
+    },
+    {
+      "number": 63,
+      "sourceRef": "eng-web:PSA:119:63",
+      "text": "I’m a friend to everyone who fears you and follows your instructions."
+    },
+    {
+      "number": 64,
+      "sourceRef": "eng-web:PSA:119:64",
+      "text": "LORD, your faithful love fills the earth. Teach me your statutes. TETH"
+    },
+    {
+      "number": 65,
+      "sourceRef": "eng-web:PSA:119:65",
+      "text": "You’ve been good to me, your servant, just as you promised, LORD."
+    },
+    {
+      "number": 66,
+      "sourceRef": "eng-web:PSA:119:66",
+      "text": "Teach me good judgment and help me learn, because I trust your commands."
+    },
+    {
+      "number": 67,
+      "sourceRef": "eng-web:PSA:119:67",
+      "text": "Before I went through trouble, I wandered off. Now I do what you say."
+    },
+    {
+      "number": 68,
+      "sourceRef": "eng-web:PSA:119:68",
+      "text": "You’re good, and you do good. Teach me your statutes."
+    },
+    {
+      "number": 69,
+      "sourceRef": "eng-web:PSA:119:69",
+      "text": "The proud have smeared my name with lies. I’ll keep your instructions with my whole heart."
+    },
+    {
+      "number": 70,
+      "sourceRef": "eng-web:PSA:119:70",
+      "text": "Their hearts have gone numb, thick as fat, but I take joy in your law."
+    },
+    {
+      "number": 71,
+      "sourceRef": "eng-web:PSA:119:71",
+      "text": "That hardship did me good. It helped me learn your statutes."
+    },
+    {
+      "number": 72,
+      "sourceRef": "eng-web:PSA:119:72",
+      "text": "The law you spoke is worth more to me than thousands of pieces of gold and silver. YODH"
+    },
+    {
+      "number": 73,
+      "sourceRef": "eng-web:PSA:119:73",
+      "text": "Your hands made me and gave me shape. Give me understanding so I can learn your commands."
+    },
+    {
+      "number": 74,
+      "sourceRef": "eng-web:PSA:119:74",
+      "text": "People who fear you will see me and be glad, because I’ve put my hope in your word."
+    },
+    {
+      "number": 75,
+      "sourceRef": "eng-web:PSA:119:75",
+      "text": "LORD, I know your judgments are right. Even when you brought me hardship, you were faithful."
+    },
+    {
+      "number": 76,
+      "sourceRef": "eng-web:PSA:119:76",
+      "text": "Let your faithful love be my comfort, just as you promised me, your servant."
+    },
+    {
+      "number": 77,
+      "sourceRef": "eng-web:PSA:119:77",
+      "text": "Let your tender mercy reach me so I can live, because your law is where I find joy."
+    },
+    {
+      "number": 78,
+      "sourceRef": "eng-web:PSA:119:78",
+      "text": "Put the proud to shame for knocking me down without cause. I’ll keep thinking about your instructions."
+    },
+    {
+      "number": 79,
+      "sourceRef": "eng-web:PSA:119:79",
+      "text": "Let the people who fear you turn to me, so they can know your teachings."
+    },
+    {
+      "number": 80,
+      "sourceRef": "eng-web:PSA:119:80",
+      "text": "Let my heart stay true to your decrees so I won’t be put to shame. KAPF"
+    },
+    {
+      "number": 81,
+      "sourceRef": "eng-web:PSA:119:81",
+      "text": "My soul is worn out waiting for you to save me. I put my hope in your word."
+    },
+    {
+      "number": 82,
+      "sourceRef": "eng-web:PSA:119:82",
+      "text": "My eyes are worn out looking for your promise to come true. I ask, “When will you comfort me?”"
+    },
+    {
+      "number": 83,
+      "sourceRef": "eng-web:PSA:119:83",
+      "text": "I’m like a wineskin shriveled in the smoke, but I haven’t forgotten your statutes."
+    },
+    {
+      "number": 84,
+      "sourceRef": "eng-web:PSA:119:84",
+      "text": "How many days do I have left? When will you judge the people who keep coming after me?"
+    },
+    {
+      "number": 85,
+      "sourceRef": "eng-web:PSA:119:85",
+      "text": "Proud people have dug pits for me, going right against your law."
+    },
+    {
+      "number": 86,
+      "sourceRef": "eng-web:PSA:119:86",
+      "text": "Every command you give is trustworthy. They’re wrong to hound me like this. Help me!"
+    },
+    {
+      "number": 87,
+      "sourceRef": "eng-web:PSA:119:87",
+      "text": "They almost wiped me off the earth, but I held on to your instructions."
+    },
+    {
+      "number": 88,
+      "sourceRef": "eng-web:PSA:119:88",
+      "text": "Keep me alive in your faithful love so I can obey the teachings you spoke. LAMEDH"
+    },
+    {
+      "number": 89,
+      "sourceRef": "eng-web:PSA:119:89",
+      "text": "LORD, your word stands firm in heaven forever."
+    },
+    {
+      "number": 90,
+      "sourceRef": "eng-web:PSA:119:90",
+      "text": "Your faithfulness holds through every generation. You set the earth in place, and it’s still here."
+    },
+    {
+      "number": 91,
+      "sourceRef": "eng-web:PSA:119:91",
+      "text": "Your laws still stand today, because everything serves you."
+    },
+    {
+      "number": 92,
+      "sourceRef": "eng-web:PSA:119:92",
+      "text": "If I hadn’t found joy in your law, my suffering would’ve finished me."
+    },
+    {
+      "number": 93,
+      "sourceRef": "eng-web:PSA:119:93",
+      "text": "I’ll never forget your instructions. Through them you gave me life again."
+    },
+    {
+      "number": 94,
+      "sourceRef": "eng-web:PSA:119:94",
+      "text": "I belong to you. Save me, because I’ve been seeking your instructions."
+    },
+    {
+      "number": 95,
+      "sourceRef": "eng-web:PSA:119:95",
+      "text": "The wicked are waiting to destroy me. I’ll keep my mind on your teachings."
+    },
+    {
+      "number": 96,
+      "sourceRef": "eng-web:PSA:119:96",
+      "text": "I’ve seen a limit even to what seems perfect. Your commands have no limit. MEM"
+    },
+    {
+      "number": 97,
+      "sourceRef": "eng-web:PSA:119:97",
+      "text": "I love your law so much! I think about it all day long."
+    },
+    {
+      "number": 98,
+      "sourceRef": "eng-web:PSA:119:98",
+      "text": "Your commands make me wiser than my enemies, because I carry them with me everywhere."
+    },
+    {
+      "number": 99,
+      "sourceRef": "eng-web:PSA:119:99",
+      "text": "I understand more than all my teachers because I keep turning your teachings over in my mind."
+    },
+    {
+      "number": 100,
+      "sourceRef": "eng-web:PSA:119:100",
+      "text": "I understand more than my elders because I’ve put your instructions into practice."
+    },
+    {
+      "number": 101,
+      "sourceRef": "eng-web:PSA:119:101",
+      "text": "I’ve kept my feet off every road that leads to evil so I can live by your word."
+    },
+    {
+      "number": 102,
+      "sourceRef": "eng-web:PSA:119:102",
+      "text": "I haven’t turned away from your judgments, because you’re the one who taught me."
+    },
+    {
+      "number": 103,
+      "sourceRef": "eng-web:PSA:119:103",
+      "text": "Your promises taste so sweet to me, sweeter than honey on my tongue!"
+    },
+    {
+      "number": 104,
+      "sourceRef": "eng-web:PSA:119:104",
+      "text": "Your instructions help me see clearly. That’s why I hate every path built on lies. NUN"
+    },
+    {
+      "number": 105,
+      "sourceRef": "eng-web:PSA:119:105",
+      "text": "Your word is a lamp for my feet and a light on the path ahead."
+    },
+    {
+      "number": 106,
+      "sourceRef": "eng-web:PSA:119:106",
+      "text": "I’ve sworn an oath and stand by it. I’ll follow your righteous judgments."
+    },
+    {
+      "number": 107,
+      "sourceRef": "eng-web:PSA:119:107",
+      "text": "I’m hurting badly, LORD. Bring me back to life as you promised."
+    },
+    {
+      "number": 108,
+      "sourceRef": "eng-web:PSA:119:108",
+      "text": "Please accept the praise I offer freely, LORD, and teach me your judgments."
+    },
+    {
+      "number": 109,
+      "sourceRef": "eng-web:PSA:119:109",
+      "text": "My life is always on the line, but I won’t forget your law."
+    },
+    {
+      "number": 110,
+      "sourceRef": "eng-web:PSA:119:110",
+      "text": "The wicked have set a trap for me, but I haven’t strayed from your instructions."
+    },
+    {
+      "number": 111,
+      "sourceRef": "eng-web:PSA:119:111",
+      "text": "I’ve taken your teachings as my inheritance forever, because they fill my heart with joy."
+    },
+    {
+      "number": 112,
+      "sourceRef": "eng-web:PSA:119:112",
+      "text": "I’ve made up my mind to live by your statutes forever, right to the end. SAMEKH"
+    },
+    {
+      "number": 113,
+      "sourceRef": "eng-web:PSA:119:113",
+      "text": "I hate double-minded people, but I love your law."
+    },
+    {
+      "number": 114,
+      "sourceRef": "eng-web:PSA:119:114",
+      "text": "You’re my hiding place and my shield. I put my hope in your word."
+    },
+    {
+      "number": 115,
+      "sourceRef": "eng-web:PSA:119:115",
+      "text": "Get away from me, you evildoers, so I can keep my God’s commands."
+    },
+    {
+      "number": 116,
+      "sourceRef": "eng-web:PSA:119:116",
+      "text": "Hold me up as you promised, so I can live. Don’t let the hope I’ve put in you leave me ashamed."
+    },
+    {
+      "number": 117,
+      "sourceRef": "eng-web:PSA:119:117",
+      "text": "Hold me steady and I’ll be safe. I’ll keep paying attention to your statutes."
+    },
+    {
+      "number": 118,
+      "sourceRef": "eng-web:PSA:119:118",
+      "text": "You reject everyone who strays from your statutes, because their lies get them nowhere."
+    },
+    {
+      "number": 119,
+      "sourceRef": "eng-web:PSA:119:119",
+      "text": "You skim away the wicked of the earth like waste from molten metal. That’s why I love your teachings."
+    },
+    {
+      "number": 120,
+      "sourceRef": "eng-web:PSA:119:120",
+      "text": "I tremble all over in fear of you. Your judgments fill me with dread. AYIN"
+    },
+    {
+      "number": 121,
+      "sourceRef": "eng-web:PSA:119:121",
+      "text": "I’ve done what’s just and right. Don’t leave me in the hands of those who oppress me."
+    },
+    {
+      "number": 122,
+      "sourceRef": "eng-web:PSA:119:122",
+      "text": "Make sure your servant is safe. Don’t let the proud push me around."
+    },
+    {
+      "number": 123,
+      "sourceRef": "eng-web:PSA:119:123",
+      "text": "My eyes are worn out looking for your rescue, waiting for your righteous promise."
+    },
+    {
+      "number": 124,
+      "sourceRef": "eng-web:PSA:119:124",
+      "text": "Treat me with your faithful love, and teach me your statutes."
+    },
+    {
+      "number": 125,
+      "sourceRef": "eng-web:PSA:119:125",
+      "text": "I’m your servant. Give me understanding so I can know your teachings."
+    },
+    {
+      "number": 126,
+      "sourceRef": "eng-web:PSA:119:126",
+      "text": "LORD, it’s time to act. They’re breaking your law."
+    },
+    {
+      "number": 127,
+      "sourceRef": "eng-web:PSA:119:127",
+      "text": "That’s why I love your commands more than gold, more than the purest gold."
+    },
+    {
+      "number": 128,
+      "sourceRef": "eng-web:PSA:119:128",
+      "text": "I know every instruction you give is right. I hate every path built on lies. PE"
+    },
+    {
+      "number": 129,
+      "sourceRef": "eng-web:PSA:119:129",
+      "text": "Your teachings are full of wonder. That’s why I keep them with my whole soul."
+    },
+    {
+      "number": 130,
+      "sourceRef": "eng-web:PSA:119:130",
+      "text": "When your words open up, light comes in. They help people with no experience understand."
+    },
+    {
+      "number": 131,
+      "sourceRef": "eng-web:PSA:119:131",
+      "text": "I opened my mouth wide and gasped for breath, longing for your commands."
+    },
+    {
+      "number": 132,
+      "sourceRef": "eng-web:PSA:119:132",
+      "text": "Turn toward me and show me mercy, like you always do for people who love your name."
+    },
+    {
+      "number": 133,
+      "sourceRef": "eng-web:PSA:119:133",
+      "text": "Keep my steps steady in your word. Don’t let any wrongdoing take control of me."
+    },
+    {
+      "number": 134,
+      "sourceRef": "eng-web:PSA:119:134",
+      "text": "Free me from people who oppress me, so I can follow your instructions."
+    },
+    {
+      "number": 135,
+      "sourceRef": "eng-web:PSA:119:135",
+      "text": "Let your face shine on your servant. Teach me your statutes."
+    },
+    {
+      "number": 136,
+      "sourceRef": "eng-web:PSA:119:136",
+      "text": "Tears run down my face like streams because people don’t keep your law. TZADHE"
+    },
+    {
+      "number": 137,
+      "sourceRef": "eng-web:PSA:119:137",
+      "text": "You’re righteous, LORD, and your judgments are right."
+    },
+    {
+      "number": 138,
+      "sourceRef": "eng-web:PSA:119:138",
+      "text": "You gave your teachings in righteousness. Every one of them can be trusted."
+    },
+    {
+      "number": 139,
+      "sourceRef": "eng-web:PSA:119:139",
+      "text": "My passion wears me out because my enemies brush off your words."
+    },
+    {
+      "number": 140,
+      "sourceRef": "eng-web:PSA:119:140",
+      "text": "Your promises have stood up to every test, and I love them."
+    },
+    {
+      "number": 141,
+      "sourceRef": "eng-web:PSA:119:141",
+      "text": "People look down on me and think I’m nobody. I still remember your instructions."
+    },
+    {
+      "number": 142,
+      "sourceRef": "eng-web:PSA:119:142",
+      "text": "Your righteousness lasts forever, and your law is truth."
+    },
+    {
+      "number": 143,
+      "sourceRef": "eng-web:PSA:119:143",
+      "text": "Trouble and anguish have caught up with me, but your commands are still my joy."
+    },
+    {
+      "number": 144,
+      "sourceRef": "eng-web:PSA:119:144",
+      "text": "Your teachings are right forever. Give me understanding so I can live. QOPH"
+    },
+    {
+      "number": 145,
+      "sourceRef": "eng-web:PSA:119:145",
+      "text": "I’m calling with my whole heart. Answer me, LORD! I’ll keep your statutes."
+    },
+    {
+      "number": 146,
+      "sourceRef": "eng-web:PSA:119:146",
+      "text": "I’m calling to you. Save me! I’ll follow your teachings."
+    },
+    {
+      "number": 147,
+      "sourceRef": "eng-web:PSA:119:147",
+      "text": "I’m up before dawn crying for help. I put my hope in your words."
+    },
+    {
+      "number": 148,
+      "sourceRef": "eng-web:PSA:119:148",
+      "text": "Through the watches of the night I stay wide awake, thinking about your word."
+    },
+    {
+      "number": 149,
+      "sourceRef": "eng-web:PSA:119:149",
+      "text": "Hear my voice in your faithful love. LORD, give me life as your judgments promise."
+    },
+    {
+      "number": 150,
+      "sourceRef": "eng-web:PSA:119:150",
+      "text": "People who chase after evil are closing in. They’re miles from your law."
+    },
+    {
+      "number": 151,
+      "sourceRef": "eng-web:PSA:119:151",
+      "text": "But you’re close, LORD, and every command you give is true."
+    },
+    {
+      "number": 152,
+      "sourceRef": "eng-web:PSA:119:152",
+      "text": "I learned long ago from your teachings that you set them in place forever. RESH"
+    },
+    {
+      "number": 153,
+      "sourceRef": "eng-web:PSA:119:153",
+      "text": "See what I’m going through and rescue me, because I haven’t forgotten your law."
+    },
+    {
+      "number": 154,
+      "sourceRef": "eng-web:PSA:119:154",
+      "text": "Take up my case and buy me back! Bring me to life as you promised."
+    },
+    {
+      "number": 155,
+      "sourceRef": "eng-web:PSA:119:155",
+      "text": "The wicked are far from rescue because they never look to your statutes."
+    },
+    {
+      "number": 156,
+      "sourceRef": "eng-web:PSA:119:156",
+      "text": "LORD, your compassion is great. Give me life in keeping with your judgments."
+    },
+    {
+      "number": 157,
+      "sourceRef": "eng-web:PSA:119:157",
+      "text": "I have plenty of enemies, and plenty of people are after me. I haven’t turned away from your teachings."
+    },
+    {
+      "number": 158,
+      "sourceRef": "eng-web:PSA:119:158",
+      "text": "I see people break faith, and it makes me sick, because they pay no attention to your word."
+    },
+    {
+      "number": 159,
+      "sourceRef": "eng-web:PSA:119:159",
+      "text": "See how much I love your instructions. LORD, bring me back to life in your faithful love."
+    },
+    {
+      "number": 160,
+      "sourceRef": "eng-web:PSA:119:160",
+      "text": "Everything you say is true. Every one of your righteous judgments lasts forever. SIN AND SHIN"
+    },
+    {
+      "number": 161,
+      "sourceRef": "eng-web:PSA:119:161",
+      "text": "Rulers have come after me for no reason, but it’s your words that make my heart stand in awe."
+    },
+    {
+      "number": 162,
+      "sourceRef": "eng-web:PSA:119:162",
+      "text": "I celebrate your word like someone who’s just found a pile of treasure."
+    },
+    {
+      "number": 163,
+      "sourceRef": "eng-web:PSA:119:163",
+      "text": "I hate lies with everything in me. I love your law."
+    },
+    {
+      "number": 164,
+      "sourceRef": "eng-web:PSA:119:164",
+      "text": "Seven times a day I praise you for your righteous judgments."
+    },
+    {
+      "number": 165,
+      "sourceRef": "eng-web:PSA:119:165",
+      "text": "People who love your law have deep peace. Nothing trips them up."
+    },
+    {
+      "number": 166,
+      "sourceRef": "eng-web:PSA:119:166",
+      "text": "LORD, I’ve put my hope in your rescue and followed your commands."
+    },
+    {
+      "number": 167,
+      "sourceRef": "eng-web:PSA:119:167",
+      "text": "I’ve kept your teachings with my whole soul. I love them so much."
+    },
+    {
+      "number": 168,
+      "sourceRef": "eng-web:PSA:119:168",
+      "text": "I’ve followed your instructions and your teachings, because you see every path I take. TAV"
+    },
+    {
+      "number": 169,
+      "sourceRef": "eng-web:PSA:119:169",
+      "text": "Let my cry reach you, LORD. Give me understanding as you promised."
+    },
+    {
+      "number": 170,
+      "sourceRef": "eng-web:PSA:119:170",
+      "text": "Let my plea come before you. Rescue me as you promised."
+    },
+    {
+      "number": 171,
+      "sourceRef": "eng-web:PSA:119:171",
+      "text": "Let praise pour from my lips, because you teach me your statutes."
+    },
+    {
+      "number": 172,
+      "sourceRef": "eng-web:PSA:119:172",
+      "text": "Let my tongue sing about your word, because everything you command is right."
+    },
+    {
+      "number": 173,
+      "sourceRef": "eng-web:PSA:119:173",
+      "text": "Have your hand ready to help me, because I’ve chosen your instructions."
+    },
+    {
+      "number": 174,
+      "sourceRef": "eng-web:PSA:119:174",
+      "text": "I’ve been longing for you to save me, LORD. Your law is where I find joy."
+    },
+    {
+      "number": 175,
+      "sourceRef": "eng-web:PSA:119:175",
+      "text": "Let me live so I can praise you. Let your judgments help me."
+    },
+    {
+      "number": 176,
+      "sourceRef": "eng-web:PSA:119:176",
+      "text": "I’ve wandered off like a lost sheep. Come find your servant. I haven’t forgotten your commands."
+    }
+  ]
+}

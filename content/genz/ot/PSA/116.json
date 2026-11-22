@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 116,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:116:1",
+      "text": "I love the LORD because he hears my voice when I cry for mercy."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:116:2",
+      "text": "He leaned in to listen, so I’ll call on him for as long as I live."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:116:3",
+      "text": "Death’s ropes wrapped around me. The pain of Sheol got hold of me. Trouble and grief were all I could see."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:116:4",
+      "text": "Then I called on the LORD’s name: “Please, LORD, save my life!”"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:116:5",
+      "text": "The LORD is gracious and righteous. Our God is full of mercy."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:116:6",
+      "text": "The LORD protects people who don’t know how to protect themselves. I was down low, and he saved me."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:116:7",
+      "text": "You can rest again, my soul. The LORD has been so good to you."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:116:8",
+      "text": "You rescued my life from death, dried the tears in my eyes, and kept my feet from falling."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:116:9",
+      "text": "I’ll walk before the LORD in the land of the living."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:116:10",
+      "text": "I kept believing, so I spoke up: “I’m going through a lot.”"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:116:11",
+      "text": "In my panic I said, “Everybody lies.”"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:116:12",
+      "text": "What can I give the LORD for all he’s done for me?"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:116:13",
+      "text": "I’ll lift the cup of salvation and call on the LORD’s name."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:116:14",
+      "text": "I’ll keep the promises I made to the LORD, right in front of all his people."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:116:15",
+      "text": "The death of his faithful people is precious in the LORD’s sight."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:116:16",
+      "text": "LORD, I really am your servant. I’m your servant, the son of your servant girl. You broke my chains and set me free."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:116:17",
+      "text": "I’ll bring you a sacrifice of thanks and call on the LORD’s name."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:116:18",
+      "text": "I’ll keep the promises I made to the LORD, right in front of all his people,"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:116:19",
+      "text": "in the courts of the LORD’s house, right in the middle of you, Jerusalem. Praise the LORD!"
+    }
+  ]
+}
