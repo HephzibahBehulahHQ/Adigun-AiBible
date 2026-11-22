@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ISA",
+  "bookName": "Isaiah",
+  "chapterNumber": 53,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ISA:53:1",
+      "text": "Who believed what we told them? Who has seen the LORD's arm revealed?"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ISA:53:2",
+      "text": "He grew up before the LORD like a young shoot, like a root out of dry ground. He didn't have looks or majesty that would turn our heads. When we saw him there was nothing beautiful that drew us to him."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ISA:53:3",
+      "text": "People looked down on him and rejected him. He knew suffering and sickness firsthand. We turned our faces away from him like he was nothing, and we gave him no respect."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ISA:53:4",
+      "text": "He really did carry our sickness and bear our pain. We thought God had struck him and brought that suffering on him."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ISA:53:5",
+      "text": "But he was pierced for our rebellion and crushed for the wrong we've done. The punishment that brought us peace fell on him, and his wounds are how we're healed."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ISA:53:6",
+      "text": "All of us have wandered like sheep. Every one of us went our own way, and the LORD put all our wrongdoing on him."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ISA:53:7",
+      "text": "People pushed him down and made him suffer, but he didn't say a word. Like a lamb being led to slaughter, like a sheep quiet in front of the people shearing it, he kept his mouth shut."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ISA:53:8",
+      "text": "He was taken away through oppression and judgment. Who in his generation stopped to think that he was cut off from the land of the living and struck for my people's rebellion?"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ISA:53:9",
+      "text": "They assigned him a grave with wicked people, and in his death he was with a rich man. He'd never done violence or told a lie."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ISA:53:10",
+      "text": "Yet the LORD chose to crush him and made him suffer. When his life is made an offering for sin, he'll see his descendants and live long, and what the LORD wants will succeed in his hand."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ISA:53:11",
+      "text": "After all his suffering, he'll see the light and be satisfied. My righteous servant will make many right through knowledge of him, and he'll carry their wrongdoing."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ISA:53:12",
+      "text": "So I'll give him a share with the great, and he'll divide the spoils with the strong. He poured out his life to death and was counted with rebels. Yet he carried the sins of many and pleaded for those who rebelled."
+    }
+  ]
+}
