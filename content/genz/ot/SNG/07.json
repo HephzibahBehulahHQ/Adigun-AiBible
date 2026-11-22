@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "SNG",
+  "bookName": "Song of Solomon",
+  "chapterNumber": 7,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:SNG:7:1",
+      "text": "Your feet look beautiful in sandals, daughter of a prince! The curves of your thighs are like jewels made by a skilled craftsperson."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:SNG:7:2",
+      "text": "Your body is like a round cup that never runs out of mixed wine. Your waist is like a mound of wheat with lilies all around it."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:SNG:7:3",
+      "text": "Your breasts are like two fawns, twins born to a gazelle."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:SNG:7:4",
+      "text": "Your neck is like an ivory tower. Your eyes are like the pools of Heshbon by the gate of Bathrabbim. Your nose is like the tower of Lebanon looking toward Damascus."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:SNG:7:5",
+      "text": "Your head rises like Mount Carmel, and your hair is like purple cloth. A king is held captive by those locks."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:SNG:7:6",
+      "text": "You're so beautiful, my love, so lovely and full of delight!"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:SNG:7:7",
+      "text": "You stand like a palm tree, your breasts like its fruit."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:SNG:7:8",
+      "text": "I said, “I'll climb the palm and take hold of its fruit.” May your breasts be like clusters of grapes, and your breath as sweet as apples."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:SNG:7:9",
+      "text": "Your mouth is like the finest wine, going down smoothly for my love, slipping past the lips of people who are asleep."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:SNG:7:10",
+      "text": "I belong to my love, and he wants me."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:SNG:7:11",
+      "text": "Come on, my love. Let's go out into the fields and spend the night in the villages."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:SNG:7:12",
+      "text": "Let's get up early and go to the vineyards. We'll see if the vines have budded, if their flowers have opened, and if the pomegranates are blooming. That's where I'll give you my love."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:SNG:7:13",
+      "text": "The mandrakes fill the air with their scent. At our doors is every kind of precious fruit, new and old, that I've saved for you, my love."
+    }
+  ]
+}

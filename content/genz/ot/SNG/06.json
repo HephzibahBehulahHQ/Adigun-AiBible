@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "SNG",
+  "bookName": "Song of Solomon",
+  "chapterNumber": 6,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:SNG:6:1",
+      "text": "Where did your love go, most beautiful of women? Which way did he turn? We'll help you look for him."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:SNG:6:2",
+      "text": "My love has gone down to his garden, to the beds of spices. He's gone to graze his flock in the gardens and pick lilies."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:SNG:6:3",
+      "text": "I belong to my love, and my love belongs to me. He grazes among the lilies."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:SNG:6:4",
+      "text": "You're as beautiful as Tirzah, my love, as lovely as Jerusalem, as awe-inspiring as an army with its banners raised."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:SNG:6:5",
+      "text": "Look away for a moment. Your eyes overwhelm me. Your hair is like a flock of goats resting along the slopes of Gilead."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:SNG:6:6",
+      "text": "Your teeth are like a flock of ewes coming up from washing. Each has a twin and none is missing."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:SNG:6:7",
+      "text": "Your temples look like slices of pomegranate behind your veil."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:SNG:6:8",
+      "text": "There are sixty queens, eighty concubines, and more young women than you can count."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:SNG:6:9",
+      "text": "My dove, my perfect one, is one of a kind. She's her mother's only daughter, the favorite of the woman who bore her. The young women saw her and called her blessed. The queens and concubines saw her and praised her."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:SNG:6:10",
+      "text": "Who's this looking out like the dawn, beautiful as the moon, bright as the sun, and awe-inspiring as an army with its banners raised?"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:SNG:6:11",
+      "text": "I went down to the grove of nut trees to see the valley's green shoots, to see whether the vines had budded and the pomegranates had bloomed."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:SNG:6:12",
+      "text": "Before I knew what was happening, my desire had put me among the chariots of my royal people."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:SNG:6:13",
+      "text": "Come back, come back, Shulammite! Come back, let us look at you! Lover: Why do you want to watch the Shulammite as if you were watching the dance of Mahanaim?"
+    }
+  ]
+}
