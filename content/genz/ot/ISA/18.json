@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ISA",
+  "bookName": "Isaiah",
+  "chapterNumber": 18,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ISA:18:1",
+      "text": "Ah, land of rustling wings beyond the rivers of Ethiopia!"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ISA:18:2",
+      "text": "You send ambassadors by sea in boats made of papyrus. You say, “Go, quick messengers, to a tall, smooth-skinned nation, a people feared from the beginning till now, a nation that measures out and tramples down, a land cut through by rivers!”"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ISA:18:3",
+      "text": "Everybody who lives on earth, look up when a banner goes up on the mountains! Listen when the trumpet blows!"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ISA:18:4",
+      "text": "The LORD told me, “I'll stay still and watch from where I live, like clear heat in sunshine, like a cloud of dew in the heat of harvest.”"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ISA:18:5",
+      "text": "Before harvest, when the flowers have dropped and the blossoms have become ripening grapes, he'll snip off the shoots with pruning hooks and cut away the spreading branches."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ISA:18:6",
+      "text": "They'll all be left for the mountain birds of prey and the animals of the earth. The birds will feed on them in summer, and the animals will feed on them in winter."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ISA:18:7",
+      "text": "At that time the tall, smooth-skinned people, feared from the beginning till now, the nation that measures out and tramples down, whose land the rivers divide, will bring a gift to the LORD of Armies at Mount Zion, the place that bears his name."
+    }
+  ]
+}
