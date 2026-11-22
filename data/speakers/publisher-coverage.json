@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedOn": "2026-11-21",
+  "generatedOn": "2026-11-22",
   "editions": [
     {
       "editionId": "adigun-edition",
-      "sourceSha256": "14576f903875b6bd42b36d24f1cb51b78adeb4027ea27ba8a17a81ac8323caee",
+      "sourceSha256": "6c9c95b572d374871bf1b6d568e7cb8667cfdc94955331af598430afa643d0c9",
       "status": "publisher-metadata",
       "marker": "none",
       "offsetUnit": "not-applicable",
@@ -115,6 +115,12 @@
         },
         {
           "bookId": "JOB",
+          "spans": 0,
+          "verses": 0,
+          "rejectedMetadata": 0
+        },
+        {
+          "bookId": "PSA",
           "spans": 0,
           "verses": 0,
           "rejectedMetadata": 0
