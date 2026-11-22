@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PRO",
+  "bookName": "Proverbs",
+  "chapterNumber": 30,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PRO:30:1",
+      "text": "These are the words of Agur, Jakeh's son. This is the revelation he spoke to Ithiel, to Ithiel and Ucal."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PRO:30:2",
+      "text": "“Honestly, I know less than anybody. I haven't even got an ordinary person's understanding."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PRO:30:3",
+      "text": "I haven't learned wisdom, and I don't know the Holy One."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PRO:30:4",
+      "text": "Who went up into heaven and came back down? Who caught the wind in their fists? Who wrapped the waters in their coat? Who set up every end of the earth? What's his name, and what's his son's name, if you know?"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PRO:30:5",
+      "text": "“Every word God speaks is flawless. He's a shield for anyone who runs to him for safety."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PRO:30:6",
+      "text": "Don't tack anything on to his words. He'll correct you, and you'll be exposed as a liar."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PRO:30:7",
+      "text": "“I'm asking you for two things. Please don't refuse me before I die."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PRO:30:8",
+      "text": "Keep dishonesty and lies far away from me. Give me enough without making me poor or rich. Feed me what I need."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PRO:30:9",
+      "text": "Otherwise I might get full, turn my back on you, and say, ‘Who's the LORD?’ Or I might get so poor I steal and drag my God's name through the dirt."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PRO:30:10",
+      "text": "“Don't trash a servant to their master. The servant might curse you, and you'll be held guilty."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PRO:30:11",
+      "text": "There's a generation that curses their dads and has no blessing for their moms."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PRO:30:12",
+      "text": "There's a generation that looks at itself and sees nothing dirty, while their filth hasn't even been washed off."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PRO:30:13",
+      "text": "There's a generation that looks down on everybody. Just look how high they lift their eyes!"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PRO:30:14",
+      "text": "There's a generation with teeth like swords and jaws like knives, eating the poor off the earth and wiping needy people out of society."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PRO:30:15",
+      "text": "“The leech has two daughters, and all they say is, ‘Give! Give!’ There are three things that never get full, four that never say, ‘Enough!’"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PRO:30:16",
+      "text": "The grave, a womb that can't bear children, ground that never gets enough water, and a fire that never says, ‘Enough!’"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PRO:30:17",
+      "text": "“An eye that mocks its father and sneers at obeying its mother will be picked out by the ravens of the valley and eaten by young eagles."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PRO:30:18",
+      "text": "“There are three things that amaze me, four I just can't figure out."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PRO:30:19",
+      "text": "How an eagle moves through the air, how a snake moves across a rock, how a ship moves through the sea, and how a man makes his way with a young woman."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PRO:30:20",
+      "text": "“Here's how a woman who breaks her marriage vows acts. She eats, wipes her mouth, and says, ‘I haven't done anything wrong.’"
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PRO:30:21",
+      "text": "“Three things make the earth shake. Four are more than it can bear."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PRO:30:22",
+      "text": "A servant who becomes king, a fool with a belly full of food,"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PRO:30:23",
+      "text": "a woman nobody loves who gets married, and a servant girl who inherits what was her mistress's."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PRO:30:24",
+      "text": "“Four things on earth are tiny, but unbelievably wise."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PRO:30:25",
+      "text": "Ants aren't strong, but they get their food together in summer."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:PRO:30:26",
+      "text": "Rock hyraxes are weak little creatures, but they make their homes in the rocks."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:PRO:30:27",
+      "text": "Locusts have no king, but they all move forward in ranks."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:PRO:30:28",
+      "text": "You can catch a lizard in your hands, yet there it is in kings' palaces."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:PRO:30:29",
+      "text": "“There are three things that stride with dignity, four that walk like they own the road."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:PRO:30:30",
+      "text": "The lion, strongest of the animals, turns away for nobody."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:PRO:30:31",
+      "text": "Then there's the greyhound, the male goat, and a king nobody dares rise up against."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:PRO:30:32",
+      "text": "“If you've acted foolishly by showing off, or you've been thinking up something evil, put your hand over your mouth."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:PRO:30:33",
+      "text": "Churn milk and you get butter. Twist a nose and you get blood. Keep pushing someone's anger and you'll get a fight.”"
+    }
+  ]
+}
