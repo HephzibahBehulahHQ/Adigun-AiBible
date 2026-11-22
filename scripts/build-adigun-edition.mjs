@@ -29,6 +29,7 @@ const portion = {
   JOB: { testament: 'ot', chapters: 42 },
   PSA: { testament: 'ot', chapters: 150 },
   PRO: { testament: 'ot', chapters: 31 },
+  ECC: { testament: 'ot', chapters: 12 },
   MAT: { testament: 'nt', chapters: 28 },
 };
 const editionBooks = [];
