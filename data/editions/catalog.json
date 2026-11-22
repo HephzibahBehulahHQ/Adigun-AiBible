@@ -2131,7 +2131,7 @@
       "licenseUrl": "https://github.com/HephzibahBehulahHQ/Adigun-AiBible/blob/main/data/editions/adigun-edition/NOTICE.txt",
       "license": "Project-authorized original edition",
       "attribution": "Adigun Edition. Original project wording based on the public-domain World English Bible source.",
-      "sha256": "edf76413699a283ed4ad9af1cc200ba4375f3d7a1ec71497f7f634c6a68be2d4",
+      "sha256": "de119244d1ab87659fa3e310fd3a6056268b0f56a020aa714a79d25c535126ee",
       "rights": {
         "redistribute": true,
         "adapt": true,
@@ -2142,16 +2142,16 @@
       "conditions": [
         "Keep the Adigun Edition identity and project notice with redistributed copies."
       ],
-      "revision": "Genesis 1–50; Exodus 1–40; Leviticus 1–27; Numbers 1–36; Deuteronomy 1–34; Joshua 1–24; Judges 1–21; Ruth 1–4; 1 Samuel 1–31; 2 Samuel 1–24; 1 Kings 1–22; 2 Kings 1–25; 1 Chronicles 1–29; 2 Chronicles 1–36; Ezra 1–10; Nehemiah 1–13; Esther 1–10; Job 1–42; Psalms 1–150; Proverbs 1–31; Matthew 1–28",
+      "revision": "Genesis 1–50; Exodus 1–40; Leviticus 1–27; Numbers 1–36; Deuteronomy 1–34; Joshua 1–24; Judges 1–21; Ruth 1–4; 1 Samuel 1–31; 2 Samuel 1–24; 1 Kings 1–22; 2 Kings 1–25; 1 Chronicles 1–29; 2 Chronicles 1–36; Ezra 1–10; Nehemiah 1–13; Esther 1–10; Job 1–42; Psalms 1–150; Proverbs 1–31; Ecclesiastes 1–12; Matthew 1–28",
       "rightsObservedAt": "2026-11-14",
       "commercialUse": true,
       "referenceSystemId": "adigun-edition:eng-web-alignment",
       "noticePath": "adigun-edition/NOTICE.txt",
       "manifestPath": "adigun-edition/manifest.json",
       "totals": {
-        "books": 21,
-        "chapters": 687,
-        "verses": 18387
+        "books": 22,
+        "chapters": 699,
+        "verses": 18609
       },
       "booksPath": "adigun-edition/books/",
       "searchIndexPath": "adigun-edition/search-index.json"
