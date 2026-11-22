@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 91,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:91:1",
+      "text": "Whoever lives in the shelter of the Most High will find rest in the Almighty’s shadow."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:91:2",
+      "text": "I’ll say of the LORD, “He’s my refuge and my fortress. He’s my God, and I trust him.”"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:91:3",
+      "text": "He’ll pull you out of the bird catcher’s trap and save you from deadly disease."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:91:4",
+      "text": "He’ll cover you with his feathers, and you’ll find shelter under his wings. His faithfulness is your shield and your defense."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:91:5",
+      "text": "You won’t fear what comes at you in the night or the arrow that flies in broad daylight,"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:91:6",
+      "text": "the disease that moves through the dark or the destruction that strikes at noon."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:91:7",
+      "text": "A thousand may fall beside you, ten thousand at your right hand, but it won’t come near you."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:91:8",
+      "text": "You’ll see it with your own eyes when the wicked get what they’ve earned."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:91:9",
+      "text": "You’ve made the LORD your refuge and the Most High your home."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:91:10",
+      "text": "No harm will come to you, and no plague will come near where you live."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:91:11",
+      "text": "He’ll give his angels orders to guard you wherever you go."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:91:12",
+      "text": "They’ll lift you up in their hands so you don’t strike your foot against a stone."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:91:13",
+      "text": "You’ll step on the lion and the cobra. You’ll trample the young lion and the snake underfoot."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:91:14",
+      "text": "“Because he loves me, I’ll rescue him. I’ll lift him out of danger because he knows my name."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:91:15",
+      "text": "He’ll call to me and I’ll answer. I’ll be right there with him in trouble. I’ll rescue him and honor him."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:91:16",
+      "text": "I’ll give him a long life to satisfy him, and I’ll show him how I save.”"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 93,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:93:1",
+      "text": "The LORD reigns! He wears majesty like a robe and straps on strength. The world is firmly in place. Nothing can move it."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:93:2",
+      "text": "Your throne has stood since long ago. You’ve been here from everlasting."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:93:3",
+      "text": "The floods have risen, LORD. The floods have raised their roar. The floods lift their waves."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:93:4",
+      "text": "Louder than the roar of mighty waters, stronger than the crashing waves of the sea, the LORD on high is mighty."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:93:5",
+      "text": "Your laws stand firm. Holiness makes your house beautiful, LORD, forever."
+    }
+  ]
+}
