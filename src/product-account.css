@@ -1,0 +1,18 @@
+.product-account {
+  width: min(28rem, calc(100% - 2rem));
+  max-height: calc(100dvh - 2rem);
+  padding: 1.5rem;
+  border: 1px solid #a78bfa;
+  border-radius: 1rem;
+  background: #13162a;
+  color: #f4f0ff;
+}
+
+.product-account::backdrop { background: #090b18d9; }
+.product-account h2 { margin-top: 0; }
+.product-account label { display: grid; gap: .35rem; margin-bottom: .8rem; }
+.product-account label[hidden] { display: none; }
+.product-account input, .product-account select { width: 100%; }
+.product-account button { margin: .25rem .25rem .25rem 0; }
+.product-account [role="status"] { min-height: 1.5em; }
+.aibible-account-launch { position: fixed; inset: auto 1rem 1rem auto; z-index: 20; padding: .65rem 1rem; background: #13283a; color: #e9f4fb; border: 1px solid #55cade; border-radius: .5rem; }
