@@ -125,7 +125,9 @@ async function begin(body, env, origin) {
     });
     if (!accepted) return reply(401, { error: "invalid-product-credentials" });
   }
-  const sent = await provider(env, "/auth/v1/otp", {
+  const otpPath = new URL("/auth/v1/otp", env.SUPABASE_URL);
+  otpPath.searchParams.set("redirect_to", origin);
+  const sent = await provider(env, otpPath.pathname + otpPath.search, {
     email,
     create_user: mode === "register",
   });
@@ -326,3 +328,4 @@ async function open(env, value) {
     return null;
   }
 }
+

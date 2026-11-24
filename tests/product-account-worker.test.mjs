@@ -40,6 +40,7 @@ test("product registration and every sign-in require email OTP before releasing 
   const mocked = mock.method(globalThis, "fetch", async (url, init) => {
     const payload = JSON.parse(init.body);
     if (url.pathname === "/auth/v1/otp") {
+      assert.equal(url.searchParams.get("redirect_to"), origin);
       assert.equal(payload.email, email);
       assert.equal(payload.create_user, !account);
       sent++;
@@ -177,3 +178,4 @@ test("guest cookies retain one immutable four-minute deadline without Supabase",
     clock.mock.restore();
   }
 });
+
