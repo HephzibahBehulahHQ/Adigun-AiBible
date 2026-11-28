@@ -1,5 +1,9 @@
 const tones = new Map([
-  ['pcm', 'Translate into natural Nigerian Pidgin English. Use idiomatic Nigerian Pidgin grammar and phrasing. Read each verse back for fluency and remove redundant phrasing.'],
+  ['pcm', [
+    'Translate into natural Nigerian Pidgin English. Use idiomatic Nigerian Pidgin grammar and phrasing. Read each verse back for fluency and remove redundant phrasing.',
+    'Keep family relationships pointing in the right direction. For “his one and only Son”, use “di only Son wey God get” or equivalent. Never say the Son gave birth to God.',
+    'For “that the world should be saved through him”, keep the world as the people being saved and the Son as the means of salvation.',
+  ].join(' ')],
   ['gen-z', [
     'Render in conversational Gen Z English. Use contractions, direct wording, and slang only where it preserves the meaning and emotional weight.',
     'Do not add filler reactions such as “lowkey”, “for real”, or “no cap”. Keep concrete images such as clothing and nakedness, and keep expressions of worship as worship.',
