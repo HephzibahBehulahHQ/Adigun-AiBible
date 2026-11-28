@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ISA",
+  "bookName": "Isaiah",
+  "chapterNumber": 20,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ISA:20:1",
+      "text": "In the year King Sargon of Assyria sent Tartan to Ashdod, Tartan attacked the city and took it."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ISA:20:2",
+      "text": "Around then the LORD told Isaiah son of Amoz, “Take the sackcloth off your waist and the sandals off your feet.” Isaiah did it and went around naked and barefoot."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ISA:20:3",
+      "text": "The LORD said, “My servant Isaiah has walked naked and barefoot for three years as a sign and a warning about Egypt and Ethiopia."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ISA:20:4",
+      "text": "In the same way, the king of Assyria will march away captives from Egypt and exiles from Ethiopia, young and old, naked and barefoot with their backsides exposed, to Egypt’s shame."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ISA:20:5",
+      "text": "People will be shocked and ashamed. They put their hopes in Ethiopia and took pride in Egypt."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ISA:20:6",
+      "text": "That day the people of this coast will say, ‘Look what happened to the ones we were counting on! We ran to them for help against Assyria’s king. How are we supposed to escape now?’”"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ISA",
+  "bookName": "Isaiah",
+  "chapterNumber": 39,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ISA:39:1",
+      "text": "Around then King Merodach-baladan of Babylon, son of Baladan, sent letters and a gift to Hezekiah. He’d heard that Hezekiah got sick and recovered."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ISA:39:2",
+      "text": "Hezekiah was happy to see them and showed them his treasure house. He showed them the silver, gold, spices, expensive oil, his whole armory, and every last thing in his storerooms. There wasn’t a thing in his house or anywhere he ruled that he kept from them."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ISA:39:3",
+      "text": "Then the prophet Isaiah came to King Hezekiah and asked, “What did those men say? Where did they come from?” Hezekiah said, “They came from a country far away from me, all the way from Babylon.”"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ISA:39:4",
+      "text": "Isaiah asked, “What did they see in your house?” Hezekiah answered, “They saw everything in my house. I didn’t leave a single treasure out.”"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ISA:39:5",
+      "text": "Then Isaiah said to Hezekiah, “Hear what the LORD of Armies says:"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ISA:39:6",
+      "text": "‘Look, the days are coming when everything in your house, everything your fathers stored up to this day, will be hauled off to Babylon. Nothing will be left,’ says the LORD."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ISA:39:7",
+      "text": "‘They’ll take away your sons, sons you yourself will father, and make them eunuchs in the king of Babylon’s palace.’”"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ISA:39:8",
+      "text": "Hezekiah told Isaiah, “The word you’ve spoken from the LORD is good.” He added, “There’ll be peace and truth in my days.”"
+    }
+  ]
+}
