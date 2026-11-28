@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ECC",
+  "bookName": "Ecclesiastes",
+  "chapterNumber": 6,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ECC:6:1",
+      "text": "I've seen an evil under the sun, and it weighs heavily on people."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ECC:6:2",
+      "text": "God gives someone riches, wealth, and honor, so they have everything they could want. Yet God doesn't give them the chance to enjoy it, and a stranger enjoys it instead. That's empty, and it's a terrible sickness."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ECC:6:3",
+      "text": "Suppose someone fathers a hundred children and lives a long, long life. If they never get their fill of anything good and don't even get a burial, I say a stillborn child is better off."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ECC:6:4",
+      "text": "The child comes in emptiness and leaves in darkness, and darkness covers its name."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ECC:6:5",
+      "text": "It never saw the sun or knew it, yet it has more rest than that person."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ECC:6:6",
+      "text": "Even if someone lives a thousand years twice over and never enjoys anything good, don't they all go to the same place?"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ECC:6:7",
+      "text": "People do all their work to feed themselves, yet their appetite never gets its fill."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ECC:6:8",
+      "text": "What advantage do the wise have over fools? What does a poor person gain by knowing how to get along among the living?"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ECC:6:9",
+      "text": "Better to see what's in front of you than let your desires wander. This too is empty, like chasing the wind."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ECC:6:10",
+      "text": "Whatever exists was named long ago. What humans are is already known, and they can't argue their case against someone stronger than they are."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ECC:6:11",
+      "text": "More words just make for more emptiness. What does anyone gain from that?"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ECC:6:12",
+      "text": "Who knows what's good for anyone in life, through all the days of a fleeting life that passes like a shadow? Who can tell them what will happen under the sun after they're gone?"
+    }
+  ]
+}

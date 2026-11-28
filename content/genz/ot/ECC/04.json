@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ECC",
+  "bookName": "Ecclesiastes",
+  "chapterNumber": 4,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ECC:4:1",
+      "text": "I looked again at all the oppression under the sun. I saw the tears of people being crushed. They had nobody to comfort them. Their oppressors had the power, and still nobody comforted them."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ECC:4:2",
+      "text": "So I counted the dead, who've been gone a long time, better off than those still alive."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ECC:4:3",
+      "text": "Better off than both is the person who hasn't been born and hasn't seen the evil people do under the sun."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ECC:4:4",
+      "text": "Then I saw how hard people work and how much they achieve that makes their neighbors envious. This too is vapor, like chasing the wind."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ECC:4:5",
+      "text": "A fool folds their hands and ruins themselves."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ECC:4:6",
+      "text": "Better to have one handful in peace than two handfuls from grinding away and chasing the wind."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ECC:4:7",
+      "text": "I looked again and saw more vapor under the sun."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ECC:4:8",
+      "text": "Here's someone all alone, with neither a son nor a brother. They never stop working, and their eyes never get enough wealth. “Who am I doing all this for? Why am I denying myself any joy?” This too is vapor. It's a miserable business."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ECC:4:9",
+      "text": "Two are better than one. They get a good return for their work."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ECC:4:10",
+      "text": "If one falls, the other can lift them up. But how hard it is to fall alone with nobody to help you up."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ECC:4:11",
+      "text": "If two lie down together, they stay warm. How can someone keep warm alone?"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ECC:4:12",
+      "text": "Someone might overpower one person, but two can stand against them. A cord of three strands doesn't snap easily."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:ECC:4:13",
+      "text": "A poor, wise young person is better than an old, foolish king who no longer knows how to take correction."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:ECC:4:14",
+      "text": "The young person came out of prison to become king, even though he was born poor in that kingdom."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:ECC:4:15",
+      "text": "I saw all the people living under the sun rally around the young man who took the king's place."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:ECC:4:16",
+      "text": "There was no end to the people he ruled. Still, those who come later won't celebrate him. This too is vapor, like chasing the wind."
+    }
+  ]
+}

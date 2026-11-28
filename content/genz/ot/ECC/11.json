@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ECC",
+  "bookName": "Ecclesiastes",
+  "chapterNumber": 11,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ECC:11:1",
+      "text": "Send your bread out on the waters. After many days you'll find it again."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ECC:11:2",
+      "text": "Give a share to seven, even to eight. You don't know what trouble will come on earth."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ECC:11:3",
+      "text": "When clouds fill with rain, they pour it out on the earth. Whether a tree falls south or north, it stays where it falls."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ECC:11:4",
+      "text": "Whoever keeps watching the wind won't sow, and whoever keeps watching the clouds won't reap."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ECC:11:5",
+      "text": "You don't know the path of the wind or how bones grow in a mother's womb. In the same way, you don't know the work of God, who does it all."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ECC:11:6",
+      "text": "Sow your seed in the morning, and keep at it in the evening. You don't know which planting will do well, or whether both will do equally well."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ECC:11:7",
+      "text": "Light really is sweet, and it's a joy for the eyes to see the sun."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ECC:11:8",
+      "text": "If you live many years, rejoice in all of them. Remember that there will be many dark days too. Everything ahead is fleeting."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ECC:11:9",
+      "text": "Enjoy your youth. Let your heart be glad while you're young, and follow where your heart and eyes lead you. Just remember that God will bring you into judgment for all of it."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ECC:11:10",
+      "text": "Let go of the sorrow in your heart and put evil away from your body. Youth and the dawn of life pass quickly."
+    }
+  ]
+}

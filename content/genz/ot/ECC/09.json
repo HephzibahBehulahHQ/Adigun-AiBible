@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ECC",
+  "bookName": "Ecclesiastes",
+  "chapterNumber": 9,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ECC:9:1",
+      "text": "I took all this to heart and looked into it. The righteous and the wise, and the work they do, are in God's hands. People can't tell whether love or hate awaits them. It all lies ahead."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ECC:9:2",
+      "text": "The same fate comes to everyone. It comes to the righteous and the wicked, the good, the clean and the unclean, those who offer sacrifices and those who don't. The good and the sinner meet it alike, as do those who swear an oath and those who are afraid to swear one."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ECC:9:3",
+      "text": "That's an evil in all that happens under the sun. Everyone meets the same fate. People's hearts are full of evil and madness as long as they live, and afterward they join the dead."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ECC:9:4",
+      "text": "Anyone still among the living has hope. A living dog is better off than a dead lion."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ECC:9:5",
+      "text": "The living know they'll die. The dead know nothing and have no more reward. Even the memory of them is forgotten."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ECC:9:6",
+      "text": "Their love, hate, and envy died long ago. They'll never again have a share in anything done under the sun."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ECC:9:7",
+      "text": "Go ahead and eat your bread with joy. Drink your wine with a glad heart, because God has already accepted what you've done."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ECC:9:8",
+      "text": "Keep your clothes white, and don't let your head go without oil."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ECC:9:9",
+      "text": "Enjoy life with the wife you love through all the fleeting days God has given you under the sun. That's your share in life and in all the work you do under the sun."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ECC:9:10",
+      "text": "Whatever work your hands find, give it all your strength. In Sheol, where you're headed, there's no work, planning, knowledge, or wisdom."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ECC:9:11",
+      "text": "I looked again and saw this under the sun. The fastest don't always win the race or the strongest the battle. The wise don't always get bread, the discerning don't always get rich, and the skilled don't always find favor. Time and chance happen to them all."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ECC:9:12",
+      "text": "People don't know when their time will come. Like fish caught in a cruel net or birds caught in a trap, people get caught when disaster falls on them without warning."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:ECC:9:13",
+      "text": "I also saw wisdom at work under the sun in a way that struck me as great."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:ECC:9:14",
+      "text": "There was a small city with few people in it. A mighty king came against it, surrounded it, and built huge siegeworks around it."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:ECC:9:15",
+      "text": "A poor wise man lived there, and his wisdom saved the city. Yet no one remembered him."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:ECC:9:16",
+      "text": "So I said, “Wisdom is better than strength.” Still, people looked down on the poor man's wisdom and wouldn't listen to his words."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:ECC:9:17",
+      "text": "Wise words heard in quiet are better than the shouting of someone who rules over fools."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:ECC:9:18",
+      "text": "Wisdom is better than weapons of war, but one sinner can destroy a lot of good."
+    }
+  ]
+}
