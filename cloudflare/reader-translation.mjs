@@ -1,7 +1,9 @@
 const tones = new Map([
-  ['pcm', 'Translate into natural Nigerian Pidgin English.'],
-  ['gen-z', 'Render in conversational Gen Z English with natural slang and a few fitting emojis.'],
+  ['pcm', 'Translate into natural Nigerian Pidgin English. Use idiomatic Nigerian Pidgin grammar and phrasing. Read each verse back for fluency and remove redundant phrasing.'],
+  ['gen-z', 'Render in conversational Gen Z English. Use slang that carries the same meaning and intensity as the original. Use occasional fitting emojis in joyful or celebratory passages, and omit them in solemn passages.'],
 ]);
+
+const fidelityInstructions = 'Preserve every claim, condition, contrast, negation, speaker, and verse boundary. Keep names, key theological terms, and meaningful imagery. Do not make a claim stronger or weaker, turn it into a different claim, or add an attitude the source does not express. Favor clear wording over forced slang. Read each verse against its source before returning it. Do not add commentary. Return a JSON object with a verses array of objects with number and text, in the original order.';
 
 export async function translateReadingPassage(request, env) {
   if (request.method === 'GET') {
@@ -58,7 +60,7 @@ export async function translateReadingPassage(request, env) {
       temperature: 0.2,
       response_format: { type: 'json_object' },
       messages: [
-        { role: 'system', content: tones.get(tone) + ' Preserve meaning, speakers and verse boundaries. Do not add claims or commentary. Return a JSON object with a verses array of objects with number and text, in the original order.' },
+        { role: 'system', content: tones.get(tone) + ' ' + fidelityInstructions },
         { role: 'user', content: JSON.stringify(verses.map(({ number, text }) => ({ number, text }))) },
       ],
     });
