@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ISA",
+  "bookName": "Isaiah",
+  "chapterNumber": 25,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ISA:25:1",
+      "text": "LORD, you’re my God. I’ll lift you up and praise your name! You’ve done wonderful things you planned long ago, and you’ve been completely faithful and true."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ISA:25:2",
+      "text": "You turned a city into a pile of rubble, a fortified city into ruins. That palace of foreigners is a city no longer. It’ll never be rebuilt."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ISA:25:3",
+      "text": "That’s why a strong people will give you glory and the city of terrifying nations will stand in awe of you."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ISA:25:4",
+      "text": "You’ve been a fortress for the poor, a shelter for people in desperate need, a refuge from the storm, and shade from the heat when ruthless people blast against the wall like a storm."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ISA:25:5",
+      "text": "You quiet the uproar of foreigners like heat dying down in a dry place. Like a cloud cooling the heat with its shade, you hush the song of the ruthless."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ISA:25:6",
+      "text": "On this mountain the LORD of Armies will lay out a feast for all peoples: the best meats, the best wines, rich meat full of marrow, and fine wines cleared of their sediment."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ISA:25:7",
+      "text": "On this mountain he’ll destroy the covering spread over every people, the veil stretched over every nation."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ISA:25:8",
+      "text": "He’s swallowed up death forever! The Lord GOD will wipe tears off every face. He’ll take away the shame of his people from the whole earth. The LORD has spoken."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ISA:25:9",
+      "text": "On that day people will say, “Look, this is our God! We waited for him, and he’ll save us! This is the LORD. We waited for him. Let’s be glad and celebrate the way he saves us!”"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ISA:25:10",
+      "text": "The LORD’s hand will rest on this mountain. Moab will be trampled where it stands, like straw stomped down in the muck of a manure pit."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ISA:25:11",
+      "text": "Moab will stretch out its hands in the middle of it like a swimmer stretching out to swim, but its pride will come down along with all the clever work of its hands."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ISA:25:12",
+      "text": "He’s brought your high, fortified walls down, leveled them all the way to the ground, right into the dust."
+    }
+  ]
+}

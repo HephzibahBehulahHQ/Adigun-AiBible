@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ISA",
+  "bookName": "Isaiah",
+  "chapterNumber": 11,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ISA:11:1",
+      "text": "A shoot will grow from Jesse's stump, and a branch from his roots will bear fruit."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ISA:11:2",
+      "text": "The LORD's Spirit will rest on him, the spirit of wisdom and understanding, of counsel and might, of knowledge and fear of the LORD."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ISA:11:3",
+      "text": "He'll delight in fearing the LORD. He won't judge by what his eyes see or decide by what his ears hear."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ISA:11:4",
+      "text": "He'll judge the poor with righteousness and rule fairly for the humble of the earth. He'll strike the earth with the rod of his mouth, and with the breath of his lips he'll kill the wicked."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ISA:11:5",
+      "text": "Righteousness and faithfulness will be like belts fastened around his waist."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ISA:11:6",
+      "text": "The wolf will live with the lamb, and the leopard will lie down with the young goat. The calf, the young lion, and the fattened calf will be together, and a little child will lead them."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ISA:11:7",
+      "text": "The cow and the bear will graze, and their young will lie down together. The lion will eat straw like the ox."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ISA:11:8",
+      "text": "A nursing child will play near a cobra's hole, and a weaned child will put a hand at a viper's den."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ISA:11:9",
+      "text": "They won't hurt or destroy anywhere on my holy mountain. The earth will be full of the knowledge of the LORD as the waters cover the sea."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ISA:11:10",
+      "text": "On that day the nations will seek the root of Jesse, who stands as a banner for the peoples. His resting place will be glorious."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ISA:11:11",
+      "text": "On that day the Lord will reach out his hand a second time to recover the remnant of his people from Assyria, Egypt, Pathros, Cush, Elam, Shinar, Hamath, and the islands of the sea."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ISA:11:12",
+      "text": "He'll raise a banner for the nations, gather Israel's outcasts, and bring together the scattered people of Judah from the four corners of the earth."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:ISA:11:13",
+      "text": "Ephraim's envy will disappear, and those who persecute Judah will be cut off. Ephraim won't envy Judah, and Judah won't persecute Ephraim."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:ISA:11:14",
+      "text": "They'll swoop down on the slopes of the Philistines to the west and together plunder the peoples of the east. They'll extend their power over Edom and Moab, and the people of Ammon will obey them."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:ISA:11:15",
+      "text": "The LORD will completely destroy the tongue of the Egyptian sea. He'll wave his hand over the River with a scorching wind, split it into seven streams, and let people cross in their sandals."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:ISA:11:16",
+      "text": "There'll be a highway out of Assyria for the remnant of his people, just as there was for Israel when they came up out of Egypt."
+    }
+  ]
+}

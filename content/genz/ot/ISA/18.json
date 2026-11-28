@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ISA",
+  "bookName": "Isaiah",
+  "chapterNumber": 18,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ISA:18:1",
+      "text": "Ah, that land where wings rustle, beyond the rivers of Ethiopia!"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ISA:18:2",
+      "text": "It sends envoys across the sea in papyrus boats, saying, “Go fast, messengers! Go to a nation of tall, smooth-skinned people, a people feared from the start, a nation that measures out and tramples down, a land split by rivers!”"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ISA:18:3",
+      "text": "Everybody in the world, everyone living on earth, look when a banner goes up on the mountains! Listen when the trumpet blows!"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ISA:18:4",
+      "text": "The LORD told me, “I’ll stay still and watch from where I live, like the clear heat in sunshine, like a cloud of dew in the heat of harvest.”"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ISA:18:5",
+      "text": "Before harvest, when the flowers are gone and the blossoms have turned into grapes that are starting to ripen, he’ll take pruning hooks to the shoots. He’ll cut down the spreading branches and carry them off."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ISA:18:6",
+      "text": "He’ll leave them all for the hungry birds of the mountains and the wild animals. The birds will feed on them all summer and the animals all winter."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ISA:18:7",
+      "text": "Then those tall, smooth-skinned people, feared from the start, a nation that measures out and tramples down in a land split by rivers, will bring a gift to the LORD of Armies. They’ll bring it to Mount Zion, the place of his name."
+    }
+  ]
+}

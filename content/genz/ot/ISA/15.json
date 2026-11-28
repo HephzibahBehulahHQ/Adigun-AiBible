@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ISA",
+  "bookName": "Isaiah",
+  "chapterNumber": 15,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ISA:15:1",
+      "text": "Here’s the warning for Moab. In a single night, Ar in Moab is wrecked and wiped out. In a single night, Kir in Moab is wrecked and wiped out."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ISA:15:2",
+      "text": "They go up to Bayith and Dibon, up to the high places to cry. Moab wails over Nebo and Medeba. Every head is shaved. Every beard is cut off."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ISA:15:3",
+      "text": "People wear sackcloth in the streets. In the streets and on the rooftops, everybody’s wailing and crying their eyes out."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ISA:15:4",
+      "text": "Heshbon cries out with Elealeh. You can hear them all the way to Jahaz. Even Moab’s armed men cry out. Deep down, they’re shaking."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ISA:15:5",
+      "text": "My heart cries out for Moab! Its nobles run to Zoar and Eglath Shelishiyah. They’re crying as they climb the road to Luhith, and on the way to Horonaim they cry out over the destruction."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ISA:15:6",
+      "text": "The waters of Nimrim will dry up. The grass has withered, the new grass has died, and there’s nothing green left."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ISA:15:7",
+      "text": "So they’ll haul what they’ve earned and what they’ve saved across the Brook of the Willows."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ISA:15:8",
+      "text": "The cry has gone all around Moab’s borders. You can hear the wailing as far as Eglaim and Beer Elim."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ISA:15:9",
+      "text": "The waters of Dimon are full of blood. And I’m bringing more trouble on Dimon: a lion for the Moabites who escape and the ones still left in the land."
+    }
+  ]
+}
