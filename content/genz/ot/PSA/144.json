@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 144,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:144:1",
+      "text": "By David. Bless the LORD, my rock. He trains my hands for war and my fingers for battle."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:144:2",
+      "text": "He’s my faithful love, my fortress, my high tower, my rescuer, my shield, and the one I run to for shelter. He brings my people under my rule."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:144:3",
+      "text": "LORD, what’s a human being that you care about them? What’s a human child that you even think of them?"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:144:4",
+      "text": "Human beings are like a breath. Their days pass like a shadow."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:144:5",
+      "text": "Open up your heavens, LORD, and come down. Touch the mountains so they smoke."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:144:6",
+      "text": "Send out lightning and scatter them. Shoot your arrows and throw them into confusion."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:144:7",
+      "text": "Reach down from above and rescue me. Pull me out of deep waters and out of the hands of foreigners,"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:144:8",
+      "text": "whose mouths tell lies and whose right hands are raised to make false promises."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:144:9",
+      "text": "God, I’ll sing you a new song. I’ll sing your praises on a ten-string lyre."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:144:10",
+      "text": "You give victory to kings and rescue your servant David from the deadly sword."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:144:11",
+      "text": "Rescue me from the hands of foreigners whose mouths tell lies and whose right hands are raised to make false promises."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:144:12",
+      "text": "Then our sons will be like plants raised with care, and our daughters like pillars carved for a palace."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:144:13",
+      "text": "Our barns will be packed with every kind of supply, and our flocks will grow by the thousands and tens of thousands in our fields."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:144:14",
+      "text": "Our oxen will pull heavy loads. No one will break in or be taken away, and no cries of distress will fill our streets."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:144:15",
+      "text": "Happy are people who get to live like that. Happy are people whose God is the LORD."
+    }
+  ]
+}

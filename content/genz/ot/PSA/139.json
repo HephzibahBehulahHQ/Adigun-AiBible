@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 139,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:139:1",
+      "text": "For the lead musician. A psalm by David. LORD, you’ve searched me all the way through, and you know me."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:139:2",
+      "text": "You know when I sit down and when I get up. You understand my thoughts from far away."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:139:3",
+      "text": "You know the road I take and where I lie down. Every way I live is familiar to you."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:139:4",
+      "text": "Before I even get a word out, LORD, you already know the whole thing."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:139:5",
+      "text": "You surround me front and back and put your hand on me."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:139:6",
+      "text": "Knowing that blows my mind. It’s too high for me to reach."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:139:7",
+      "text": "Where could I go to get away from your Spirit? Where could I run from your presence?"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:139:8",
+      "text": "If I go up to heaven, you’re there. If I make my bed in Sheol, there you are too!"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:139:9",
+      "text": "If I ride out on the wings of the dawn and settle at the farthest edge of the sea,"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:139:10",
+      "text": "even there your hand will lead me and your right hand will hold me."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:139:11",
+      "text": "If I say, “Surely the darkness will swallow me, and the light around me will turn to night,”"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:139:12",
+      "text": "even darkness can’t hide from you. Night shines like day, because darkness is like light to you."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:139:13",
+      "text": "You formed the deepest parts of me. You knitted me together in my mother’s womb."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:139:14",
+      "text": "I thank you because you made me in a way that fills me with awe. What you do is wonderful, and I know that deep down."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:139:15",
+      "text": "My frame wasn’t hidden from you when I was made in secret, woven together in the depths of the earth."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:139:16",
+      "text": "You saw my body. All the days set for me were written in your book before even one of them had come."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:139:17",
+      "text": "How precious your thoughts are to me, God! There are so many of them!"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:139:18",
+      "text": "If I tried counting them, there’d be more than grains of sand. When I wake up, I’m still with you."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:139:19",
+      "text": "If only you’d put the wicked to death, God. Get away from me, you bloodthirsty people!"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PSA:139:20",
+      "text": "They speak against you with evil intent. Your enemies misuse your name."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PSA:139:21",
+      "text": "LORD, don’t I hate those who hate you? Don’t I grieve over those who rise against you?"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PSA:139:22",
+      "text": "I hate them completely. They’ve become my enemies."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PSA:139:23",
+      "text": "Search me, God, and know what’s in my heart. Test me and know my thoughts."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PSA:139:24",
+      "text": "See if there’s any wicked path in me, and lead me down the way that lasts forever."
+    }
+  ]
+}

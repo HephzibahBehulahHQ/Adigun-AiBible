@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 32,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:32:1",
+      "text": "By David. A psalm for reflection. Blessed are those whose rebellion is forgiven and whose sin is covered."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:32:2",
+      "text": "Blessed are those whose wrongdoing the LORD doesn't count against them, who have no deceit in their spirit."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:32:3",
+      "text": "When I kept quiet, my bones wore down as I groaned all day."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:32:4",
+      "text": "Day and night your hand weighed on me. My strength dried up like water in the summer heat. Selah."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:32:5",
+      "text": "I admitted my sin to you. I stopped hiding what I'd done. I said, “I'll confess my rebellion to the LORD,” and you forgave the guilt of my sin. Selah."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:32:6",
+      "text": "So let everyone faithful pray to you while you can be found. When mighty waters rise, they won't reach them."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:32:7",
+      "text": "You're my hiding place. You keep me safe from trouble and surround me with songs of rescue. Selah."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:32:8",
+      "text": "I'll teach you the way you should go. I'll give you advice and keep my eye on you."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:32:9",
+      "text": "Don't be like a horse or a mule that doesn't understand. It takes a bit and bridle to steer them, or they won't come near you."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:32:10",
+      "text": "The wicked go through plenty of sorrow, but faithful love surrounds those who trust the LORD."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:32:11",
+      "text": "Be glad in the LORD and celebrate, you who do what's right! Shout for joy, all of you with honest hearts! 🙌"
+    }
+  ]
+}

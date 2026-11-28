@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 93,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:93:1",
+      "text": "The LORD reigns! He's dressed in majesty and armed with strength. The world stands firm. Nothing can shake it."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:93:2",
+      "text": "Your throne has stood since long ago. You are from everlasting."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:93:3",
+      "text": "The floods have risen, LORD. They've raised their voices. The floods lift up their waves."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:93:4",
+      "text": "Above the roar of mighty waters, above the breakers of the sea, the LORD on high is mighty. 🌊"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:93:5",
+      "text": "Your statutes stand firm. Holiness adorns your house, LORD, forever."
+    }
+  ]
+}

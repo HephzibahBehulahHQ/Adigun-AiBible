@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 128,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:128:1",
+      "text": "A song of ascents. Blessed is everyone who fears the LORD and walks in his ways."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:128:2",
+      "text": "You’ll eat what your own hands worked for. You’ll be glad, and things will go well for you."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:128:3",
+      "text": "Your wife will be like a vine full of fruit deep inside your home, and your children like olive shoots all around your table."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:128:4",
+      "text": "Look, that’s how the one who fears the LORD is blessed."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:128:5",
+      "text": "May the LORD bless you from Zion, and may you see Jerusalem doing well all your life."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:128:6",
+      "text": "May you get to see your children’s children. Peace be on Israel."
+    }
+  ]
+}

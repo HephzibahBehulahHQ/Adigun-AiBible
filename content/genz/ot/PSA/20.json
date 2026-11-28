@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 20,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:20:1",
+      "text": "For the music director. A psalm by David. May the LORD answer you when trouble hits. May the name of Jacob's God lift you to safety,"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:20:2",
+      "text": "send help from his sanctuary, and back you up from Zion."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:20:3",
+      "text": "May he remember everything you've offered and accept your burnt sacrifice. Selah."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:20:4",
+      "text": "May he give you what your heart longs for and bring all your plans to life."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:20:5",
+      "text": "We'll cheer when he rescues you and raise our banners in the name of our God. May the LORD grant every request you make. 🙌"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:20:6",
+      "text": "Now I know the LORD saves his anointed. He'll answer him from his holy heaven with the saving power of his right hand."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:20:7",
+      "text": "Some put their trust in chariots, others in horses. We trust in the name of the LORD our God."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:20:8",
+      "text": "They buckle and fall, but we rise and stand tall."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:20:9",
+      "text": "Save us, LORD! May the King answer when we call!"
+    }
+  ]
+}

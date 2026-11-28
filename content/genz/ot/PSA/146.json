@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 146,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:146:1",
+      "text": "Praise the LORD! My soul, praise the LORD!"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:146:2",
+      "text": "I’ll praise the LORD my whole life. I’ll sing praises to my God as long as I’m here."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:146:3",
+      "text": "Don’t put your trust in rulers or in any mortal who can’t save you."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:146:4",
+      "text": "Their spirit leaves them, and back to the earth they go. That very day, their plans die with them."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:146:5",
+      "text": "Happy is the person whose help is the God of Jacob, whose hope is in the LORD their God,"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:146:6",
+      "text": "the one who made heaven and earth and the sea with everything in them, the one who stays true forever,"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:146:7",
+      "text": "who brings justice to people held down and gives food to hungry people. The LORD sets prisoners free."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:146:8",
+      "text": "The LORD opens blind eyes. The LORD lifts people bowed down. The LORD loves the righteous."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:146:9",
+      "text": "The LORD guards foreigners. He helps the fatherless and the widow but flips the road of the wicked upside down."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:146:10",
+      "text": "The LORD will reign forever. Zion, your God reigns through every generation. Praise the LORD!"
+    }
+  ]
+}

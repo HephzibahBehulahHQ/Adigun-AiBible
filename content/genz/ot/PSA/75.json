@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 75,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:75:1",
+      "text": "For the music director, to “Do Not Destroy.” A psalm by Asaph. A song. We thank you, God. We thank you because your Name is near. People tell of the amazing things you've done."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:75:2",
+      "text": "When I choose the appointed time, I'll judge fairly."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:75:3",
+      "text": "The earth and everyone on it may shake, but I hold its pillars steady. Selah."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:75:4",
+      "text": "I told the arrogant, “Quit flexing!” I told the wicked, “Don't raise your horn."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:75:5",
+      "text": "Don't hold your horn up high. Don't talk with your neck stiff in defiance.”"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:75:6",
+      "text": "Being lifted up doesn't come from the east, the west, or the south."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:75:7",
+      "text": "God is the judge. He brings one person down and lifts another up."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:75:8",
+      "text": "The LORD holds a cup of foaming wine mixed with spices. He pours it out, and the wicked of the earth drink every last drop."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:75:9",
+      "text": "I'll keep telling this forever. I'll sing praise to the God of Jacob. 🎶"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:75:10",
+      "text": "I'll cut off all the horns of the wicked, and the horns of the righteous will be lifted high."
+    }
+  ]
+}

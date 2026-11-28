@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 16,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:16:1",
+      "text": "A poem by David. Keep me safe, God. You're where I go for shelter."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:16:2",
+      "text": "My soul, you've told the LORD, “You're my Lord. Without you, I have nothing good.”"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:16:3",
+      "text": "The faithful on earth are the people I respect and love to be around."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:16:4",
+      "text": "People who bring gifts to another god pile up grief. I won't pour out their offerings of blood or even say the names of their gods."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:16:5",
+      "text": "The LORD has given me my share and my cup. You keep what you've given me secure."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:16:6",
+      "text": "My boundary lines landed in good places. I've been given a beautiful inheritance."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:16:7",
+      "text": "I'll bless the LORD for guiding me. Even at night my heart teaches me."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:16:8",
+      "text": "I keep the LORD in front of me always. With him at my right hand, I won't be shaken."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:16:9",
+      "text": "So my heart is glad, and I can't stop celebrating. My body can rest safely too."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:16:10",
+      "text": "You won't leave my soul in Sheol or let your holy one decay."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:16:11",
+      "text": "You'll show me the path of life. With you, joy is full. At your right hand there's delight forever. 🙌"
+    }
+  ]
+}

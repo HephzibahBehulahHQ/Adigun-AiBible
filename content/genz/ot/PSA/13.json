@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 13,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:13:1",
+      "text": "For the music director. A psalm by David. How long, LORD? Are you going to forget me forever? How long will you hide your face from me?"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:13:2",
+      "text": "How long do I have to wrestle with my thoughts and carry this grief every day? How long will my enemy keep getting the upper hand?"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:13:3",
+      "text": "Look at me and answer, LORD my God. Give light to my eyes so I don't fall into the sleep of death."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:13:4",
+      "text": "Don't let my enemy say, “I beat him,” or let the people against me celebrate when I fall."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:13:5",
+      "text": "But I'm trusting your faithful love. My heart celebrates because you save me."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:13:6",
+      "text": "I'll sing to the LORD because he's been good to me. 🎶"
+    }
+  ]
+}

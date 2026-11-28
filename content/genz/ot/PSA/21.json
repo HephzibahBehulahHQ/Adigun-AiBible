@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 21,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:21:1",
+      "text": "For the music director. A psalm by David. LORD, the king celebrates your strength! He's overjoyed because you saved him."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:21:2",
+      "text": "You gave him what his heart wanted. You didn't hold back what he asked for. Selah."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:21:3",
+      "text": "You came to meet him with good blessings and put a crown of pure gold on his head. 👑"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:21:4",
+      "text": "He asked you for life, and you gave it to him, days that stretch on forever and ever."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:21:5",
+      "text": "Your rescue brought him great glory. You gave him honor and majesty."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:21:6",
+      "text": "You bless him forever and fill him with joy in your presence."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:21:7",
+      "text": "The king trusts in the LORD. The faithful love of the Most High keeps him steady."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:21:8",
+      "text": "Your hand will find every enemy. Your right hand will find everyone who hates you."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:21:9",
+      "text": "When your anger flares, you'll make them like a blazing furnace. The LORD will swallow them up in his anger. Fire will consume them."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:21:10",
+      "text": "You'll wipe their descendants off the earth and their family line from humanity."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:21:11",
+      "text": "They meant to hurt you. They came up with a scheme that can't work."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:21:12",
+      "text": "You'll send them running when you aim your drawn bows right at them."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:21:13",
+      "text": "Rise high in your strength, LORD! We'll sing and praise your power. 🎶"
+    }
+  ]
+}

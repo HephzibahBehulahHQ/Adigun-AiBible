@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 46,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:46:1",
+      "text": "For the music director. By the sons of Korah. According to Alamoth. God is our shelter and our strength. When trouble hits, he's right here to help."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:46:2",
+      "text": "So we won't be afraid, even if the earth shifts and the mountains tumble into the heart of the sea,"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:46:3",
+      "text": "even if the waters roar and churn and the mountains shake as the waves rise. Selah."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:46:4",
+      "text": "There's a river whose streams bring joy to God's city, the holy place where the Most High pitches his tents."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:46:5",
+      "text": "God is in the city, so it won't be shaken. God will come to its aid at dawn."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:46:6",
+      "text": "Nations raged and kingdoms shook. He raised his voice, and the earth melted."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:46:7",
+      "text": "The LORD of Armies is with us. The God of Jacob is our shelter. Selah."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:46:8",
+      "text": "Come see what the LORD has done. Look at the devastation he's brought on the earth."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:46:9",
+      "text": "He puts an end to wars all the way to the ends of the earth. He snaps the bow, shatters the spear, and burns the chariots."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:46:10",
+      "text": "“Be still and know that I am God. I'll be exalted among the nations. I'll be exalted on the earth.” 🙏"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:46:11",
+      "text": "The LORD of Armies is with us. The God of Jacob is our shelter. Selah."
+    }
+  ]
+}

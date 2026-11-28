@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 103,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:103:1",
+      "text": "By David. Praise the LORD, my soul! Everything in me, praise his holy name!"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:103:2",
+      "text": "Praise the LORD, my soul. Don't forget all the good he's done for you."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:103:3",
+      "text": "He forgives all your sins and heals all your diseases."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:103:4",
+      "text": "He redeems your life from ruin and crowns you with faithful love and tender mercy."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:103:5",
+      "text": "He fills your life with good things so your youth is renewed like an eagle's."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:103:6",
+      "text": "The LORD does what's right and brings justice to everyone who's oppressed."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:103:7",
+      "text": "He showed Moses his ways and let the people of Israel see what he could do."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:103:8",
+      "text": "The LORD is merciful and gracious, slow to anger and overflowing with faithful love."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:103:9",
+      "text": "He won't keep accusing us or stay angry forever."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:103:10",
+      "text": "He hasn't treated us as our sins deserve or paid us back for the wrong we've done."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:103:11",
+      "text": "As high as the heavens are above the earth, that's how great his faithful love is for those who revere him."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:103:12",
+      "text": "As far as east is from west, that's how far he's taken our wrongs away from us."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:103:13",
+      "text": "Like a father who has compassion for his children, the LORD has compassion for those who revere him."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:103:14",
+      "text": "He knows how we're made. He remembers we're dust."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:103:15",
+      "text": "Our days are like grass. We flourish like wildflowers in a field."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:103:16",
+      "text": "The wind blows over a flower, and it's gone. Even the place where it grew forgets it."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:103:17",
+      "text": "The LORD's faithful love lasts from everlasting to everlasting for those who revere him. His righteousness reaches their grandchildren,"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:103:18",
+      "text": "those who keep his covenant and remember to follow his instructions."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:103:19",
+      "text": "The LORD set his throne in the heavens. His kingdom rules over everything."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PSA:103:20",
+      "text": "Praise the LORD, you mighty angels who carry out his word and obey his voice."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PSA:103:21",
+      "text": "Praise the LORD, all his armies, all his servants who do what pleases him."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PSA:103:22",
+      "text": "Praise the LORD, everything he's made, everywhere he rules. Praise the LORD, my soul! 🙌"
+    }
+  ]
+}

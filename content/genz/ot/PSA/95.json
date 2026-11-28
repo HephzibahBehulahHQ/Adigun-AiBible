@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 95,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:95:1",
+      "text": "Come on, let's sing to the LORD! Let's shout to the rock who saves us!"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:95:2",
+      "text": "Let's come into his presence with thanks and lift him up with songs. 🎶"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:95:3",
+      "text": "The LORD is a great God, the great King above all gods."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:95:4",
+      "text": "He holds the deepest places on earth in his hand. The highest mountains are his too."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:95:5",
+      "text": "The sea is his because he made it. His hands shaped the dry land."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:95:6",
+      "text": "Come on, let's worship and bow down. Let's kneel before the LORD, our Maker,"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:95:7",
+      "text": "because he's our God. We're the people in his pasture, the sheep in his care. If only you'd listen to his voice today!"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:95:8",
+      "text": "Don't harden your hearts like at Meribah, like that day at Massah in the wilderness,"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:95:9",
+      "text": "when your ancestors put me to the test even though they'd seen what I'd done."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:95:10",
+      "text": "For forty long years that generation grieved me. I said, “Their hearts keep going off course. They haven't learned my ways.”"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:95:11",
+      "text": "So I swore in my anger, “They won't enter my rest.”"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 8,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:8:1",
+      "text": "For the chief musician, on an instrument from Gath. A psalm by David. LORD, our Lord, your name is majestic across the whole earth! You’ve set your glory above the heavens."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:8:2",
+      "text": "From the mouths of babies and infants you’ve established strength against your enemies, to silence the enemy and the one out for revenge."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:8:3",
+      "text": "When I look at your heavens, the work of your fingers, the moon and stars you put in place,"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:8:4",
+      "text": "what are human beings that you’d think of them? What is a child of humanity that you’d care for them?"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:8:5",
+      "text": "You made them a little lower than the angels and crowned them with glory and honor."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:8:6",
+      "text": "You put them in charge of what your hands made. You placed everything under their feet:"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:8:7",
+      "text": "all sheep and cattle, and the animals out in the fields,"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:8:8",
+      "text": "the birds in the sky, the fish in the sea, and everything that travels the paths of the seas."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:8:9",
+      "text": "LORD, our Lord, your name is majestic across the whole earth!"
+    }
+  ]
+}

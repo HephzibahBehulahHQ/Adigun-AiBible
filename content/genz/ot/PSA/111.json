@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 111,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:111:1",
+      "text": "Praise the LORD! I’ll thank the LORD with my whole heart, among upright people gathered together and in the whole assembly."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:111:2",
+      "text": "The LORD’s works are great, and everyone who loves what he does takes time to think about them."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:111:3",
+      "text": "His work is full of honor and majesty. His righteousness lasts forever."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:111:4",
+      "text": "He’s made his wonders things people will remember. The LORD is gracious and merciful."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:111:5",
+      "text": "He’s given food to those who fear him. His covenant never slips his mind."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:111:6",
+      "text": "He showed his people how powerful his works are when he gave them the nations’ inheritance."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:111:7",
+      "text": "What he does with his hands is true and just. Every instruction he gives is reliable."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:111:8",
+      "text": "They’re set forever and ever, carried out in truth and uprightness."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:111:9",
+      "text": "He sent rescue to his people and established his covenant forever. His name is holy and awesome!"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:111:10",
+      "text": "Fearing the LORD is where wisdom starts. Everyone who follows his instructions has good sense. His praise goes on forever!"
+    }
+  ]
+}

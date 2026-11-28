@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 86,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:86:1",
+      "text": "A prayer by David. LORD, hear me and answer me. I'm poor and in need."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:86:2",
+      "text": "Guard my life, because I'm faithful to you. My God, save your servant who trusts you."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:86:3",
+      "text": "Show me mercy, Lord. I'm calling on you all day long."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:86:4",
+      "text": "Bring joy to your servant's soul. Lord, I lift my soul to you."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:86:5",
+      "text": "Lord, you're good and ready to forgive. You have more than enough faithful love for everyone who calls on you."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:86:6",
+      "text": "LORD, hear my prayer. Listen to me pleading for help."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:86:7",
+      "text": "When trouble hits, I'll call on you, because you'll answer me."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:86:8",
+      "text": "No one among the gods is like you, Lord. Nobody does what you do."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:86:9",
+      "text": "Every nation you've made will come and worship before you, Lord. They'll give your name glory."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:86:10",
+      "text": "You're great and do amazing things. You alone are God."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:86:11",
+      "text": "Teach me your way, LORD, and I'll walk in your truth. Give me an undivided heart that reveres your name."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:86:12",
+      "text": "Lord my God, I'll praise you with my whole heart. I'll give your name glory forever. 🙏"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:86:13",
+      "text": "Your faithful love for me is great. You rescued my life from the deepest part of Sheol."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:86:14",
+      "text": "God, proud people have risen against me. A gang of violent people is out to take my life. They don't give you a thought."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:86:15",
+      "text": "But you, Lord, are merciful and gracious, slow to anger and overflowing with faithful love and truth."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:86:16",
+      "text": "Turn toward me and show me mercy! Give your servant your strength. Save the son of your servant."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:86:17",
+      "text": "Show me a sign of your goodness so those who hate me will see it and be ashamed. LORD, you've helped me and given me comfort."
+    }
+  ]
+}

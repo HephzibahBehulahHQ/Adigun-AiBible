@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 19,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:19:1",
+      "text": "For the music director. A psalm by David. The heavens tell of God's glory. The wide-open sky shows what his hands made."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:19:2",
+      "text": "Day after day they have something to say. Night after night they share what they know."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:19:3",
+      "text": "There's no speech or language where their voice goes unheard."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:19:4",
+      "text": "Their voice reaches across the whole earth, their words to the ends of the world. God pitched a tent in the heavens for the sun,"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:19:5",
+      "text": "which steps out like a groom leaving his room, like a champion hyped to run his course."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:19:6",
+      "text": "It rises at one end of the heavens and makes its way to the other. Nothing escapes its heat. ☀️"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:19:7",
+      "text": "The LORD's law is flawless and brings the soul back to life. His covenant is trustworthy and gives wisdom to the inexperienced."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:19:8",
+      "text": "The LORD's instructions are right and make the heart glad. His command is pure and gives light to the eyes."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:19:9",
+      "text": "Reverence for the LORD is clean and lasts forever. His rulings are true and right through and through."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:19:10",
+      "text": "They're worth wanting more than gold, even piles of pure gold. They're sweeter than honey dripping from the comb."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:19:11",
+      "text": "Through them you warn your servant. There's a great reward in living by them."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:19:12",
+      "text": "Who can spot all their own mistakes? Forgive me for the ones I can't see."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:19:13",
+      "text": "Keep your servant from sins I commit on purpose. Don't let them run my life. Then I'll live with integrity and be clear of serious wrongdoing."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:19:14",
+      "text": "May what I say and what I dwell on in my heart please you, LORD, my rock and my redeemer."
+    }
+  ]
+}

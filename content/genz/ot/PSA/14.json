@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 14,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:14:1",
+      "text": "For the music director. By David. The fool thinks, “There's no God.” They've become corrupt and done awful things. No one does good."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:14:2",
+      "text": "The LORD looked down from heaven at humanity to see if anyone understood and was looking for God."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:14:3",
+      "text": "They've all turned away and become corrupt together. No one does good. Not even one."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:14:4",
+      "text": "Do these people doing wrong really get nothing? They devour my people like they're eating bread, and they never call on the LORD."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:14:5",
+      "text": "They were terrified there, because God is with those who do what's right."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:14:6",
+      "text": "You try to wreck the plans of the poor, because the LORD is their safe place."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:14:7",
+      "text": "If only rescue for Israel would come from Zion! When the LORD restores what his people have lost, Jacob will celebrate and Israel will be glad. 🙌"
+    }
+  ]
+}

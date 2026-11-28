@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 6,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:6:1",
+      "text": "For the chief musician, on stringed instruments, on the eight-stringed lyre. A psalm by David. LORD, don’t correct me in anger or discipline me in your wrath."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:6:2",
+      "text": "Have mercy on me, LORD. I’m worn out. Heal me, LORD, because my bones are shaking."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:6:3",
+      "text": "Deep down I’m in agony. But you, LORD, how long?"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:6:4",
+      "text": "Come back, LORD. Rescue me and save me because of your faithful love."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:6:5",
+      "text": "In death no one remembers you. Who’s going to thank you in Sheol?"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:6:6",
+      "text": "I’m exhausted from groaning. Night after night I flood my bed and soak my couch with tears."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:6:7",
+      "text": "My eyes are wearing out from grief. They’ve grown old because of all my enemies."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:6:8",
+      "text": "Get away from me, all you who do wrong. The LORD has heard me crying."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:6:9",
+      "text": "The LORD has heard my plea. The LORD accepts my prayer."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:6:10",
+      "text": "May all my enemies be ashamed and shaken. They’ll turn back and be put to shame in an instant."
+    }
+  ]
+}

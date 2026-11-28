@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 79,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:79:1",
+      "text": "A psalm by Asaph. God, nations have invaded your inheritance. They've defiled your holy temple and left Jerusalem in piles of rubble."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:79:2",
+      "text": "They left your servants' bodies for the birds of the sky and the bodies of your faithful people for wild animals to eat."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:79:3",
+      "text": "They spilled their blood like water all around Jerusalem. Nobody was there to bury them."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:79:4",
+      "text": "We're a disgrace to our neighbors. People all around us scoff and laugh at us."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:79:5",
+      "text": "How long, LORD? Will you be angry forever? Will your jealousy burn like fire?"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:79:6",
+      "text": "Pour out your wrath on nations that don't know you and kingdoms that don't call on your name,"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:79:7",
+      "text": "because they've devoured Jacob and wrecked his homeland."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:79:8",
+      "text": "Don't hold our ancestors' wrongs against us. Let your tender mercy meet us quickly. We're desperate."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:79:9",
+      "text": "God who saves us, help us for the glory of your name. Rescue us and forgive our sins for the sake of your name. 🙏"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:79:10",
+      "text": "Why should the nations ask, “Where's their God?” Let the nations see, right in front of us, that you're avenging the blood of your servants."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:79:11",
+      "text": "Let the prisoners' sighs reach you. By your great power, keep alive the people sentenced to die."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:79:12",
+      "text": "Lord, pay our neighbors back seven times over for the insults they threw at you."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:79:13",
+      "text": "Then we, your people and the sheep of your pasture, will thank you forever. We'll tell of your praise from generation to generation."
+    }
+  ]
+}

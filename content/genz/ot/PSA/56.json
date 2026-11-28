@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 56,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:56:1",
+      "text": "For the music director, to “Silent Dove in Distant Lands.” A poem by David, when the Philistines grabbed him in Gath. Show me mercy, God. People want to swallow me whole. They come after me and press me down all day."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:56:2",
+      "text": "My enemies want to swallow me up all day long. So many of them come at me full of pride."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:56:3",
+      "text": "When I'm scared, I'll put my trust in you."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:56:4",
+      "text": "In God, I praise his word. In God, I put my trust. I won't be afraid. What can mere flesh do to me?"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:56:5",
+      "text": "All day they twist my words. All they think about is how to hurt me."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:56:6",
+      "text": "They get together to plot and wait in hiding, watching my every step. They're out to take my life."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:56:7",
+      "text": "Will they get away with it by doing wrong? God, bring those peoples down in your anger."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:56:8",
+      "text": "You've counted every place I've wandered. You keep my tears in your bottle. Aren't they written in your book?"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:56:9",
+      "text": "My enemies will turn back the day I call on you. I know God is for me."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:56:10",
+      "text": "In God, I'll praise his word. In the LORD, I'll praise his word."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:56:11",
+      "text": "I've put my trust in God. I won't be afraid. What can people do to me?"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:56:12",
+      "text": "God, I owe you what I vowed. I'll bring you offerings of thanks."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:56:13",
+      "text": "You saved my life from death and kept my feet from falling, so I can walk before you in the light of the living. 🙏"
+    }
+  ]
+}

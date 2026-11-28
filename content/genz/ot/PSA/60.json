@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 60,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:60:1",
+      "text": "For the music director, to “The Lily of the Covenant.” A teaching poem by David, when he fought Aram Naharaim and Aram Zobah, and Joab came back and killed twelve thousand Edomites in the Valley of Salt. God, you've rejected us and broken us down. You've been angry. Bring us back."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:60:2",
+      "text": "You shook the land and tore it open. Mend the cracks, because it's still shaking."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:60:3",
+      "text": "You put your people through hard things. You made us drink wine that left us staggering."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:60:4",
+      "text": "You gave those who revere you a banner to raise for the truth. Selah."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:60:5",
+      "text": "Save us with your right hand and answer us, so the people you love can be rescued."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:60:6",
+      "text": "God spoke from his sanctuary: “I'll triumph. I'll divide up Shechem and measure out the valley of Succoth."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:60:7",
+      "text": "Gilead is mine, and so is Manasseh. Ephraim is the helmet that guards my head. Judah is my scepter."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:60:8",
+      "text": "Moab is my washbasin. I'll toss my sandal on Edom. I'll shout in victory over Philistia.”"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:60:9",
+      "text": "Who's going to bring me into the fortified city? Who has led me to Edom?"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:60:10",
+      "text": "God, haven't you rejected us? You don't march out with our armies anymore."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:60:11",
+      "text": "Help us against our enemy, because human help gets us nowhere."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:60:12",
+      "text": "With God we'll stand strong, because he's the one who will trample our enemies. 🙏"
+    }
+  ]
+}

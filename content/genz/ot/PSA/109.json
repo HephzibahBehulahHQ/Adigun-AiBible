@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 109,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:109:1",
+      "text": "For the lead musician. A psalm by David. God I praise, don’t go quiet on me."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:109:2",
+      "text": "Wicked, dishonest people have opened their mouths against me. They’ve told me lies to my face."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:109:3",
+      "text": "They’ve surrounded me with hateful words and come at me for no reason."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:109:4",
+      "text": "I gave them love, and they turned into my enemies. But I keep praying."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:109:5",
+      "text": "They’ve paid back my good with evil and my love with hate."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:109:6",
+      "text": "Put a wicked man over him. Let an accuser stand at his right hand."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:109:7",
+      "text": "When he’s judged, let him be found guilty. Let his prayer count as sin."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:109:8",
+      "text": "Let his days be few. Let someone else take his place."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:109:9",
+      "text": "Let his children lose their father and his wife become a widow."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:109:10",
+      "text": "Let his children wander about and beg. Let them be sought out from their ruined homes."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:109:11",
+      "text": "Let the man he owes take everything he’s got. Let strangers grab everything he worked for."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:109:12",
+      "text": "Let no one show him kindness or feel sorry for his fatherless children."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:109:13",
+      "text": "Let his family line be cut off. Let their name be erased in the next generation."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:109:14",
+      "text": "Let the LORD remember his ancestors’ wrongdoing. Don’t let his mother’s sin be wiped away."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:109:15",
+      "text": "Let those wrongs stay before the LORD, so he cuts off their memory from the earth."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:109:16",
+      "text": "He never thought to show kindness. Instead he went after poor and needy people, hunting the brokenhearted down to kill them."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:109:17",
+      "text": "He loved to curse, so the curse came back to him. He took no joy in blessing, so blessing stayed far away."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:109:18",
+      "text": "He put on cursing like an outfit. It soaked inside him like water, like oil seeping into his bones."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:109:19",
+      "text": "Let it be like clothes wrapped around him, like a belt he always wears."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PSA:109:20",
+      "text": "Let this be what my enemies get from the LORD, the people who speak evil against my very life."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PSA:109:21",
+      "text": "But you, GOD my Lord, act for me for your name’s sake. Your faithful love is good, so rescue me."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PSA:109:22",
+      "text": "I’m poor and in need. My heart is wounded deep inside."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PSA:109:23",
+      "text": "I’m fading like an evening shadow. I’m shaken off like a locust."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PSA:109:24",
+      "text": "My knees are weak from fasting. My body’s gone thin and lost its fat."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PSA:109:25",
+      "text": "I’ve become someone they make fun of. When they see me, they shake their heads."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:PSA:109:26",
+      "text": "Help me, LORD my God! Save me in line with your faithful love,"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:PSA:109:27",
+      "text": "so they’ll know this is your hand at work and that you, LORD, did it."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:PSA:109:28",
+      "text": "They can curse, but you bless. When they rise up, they’ll be put to shame, but your servant will rejoice."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:PSA:109:29",
+      "text": "Let my enemies wear dishonor. Let them wrap themselves in their own shame like a robe."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:PSA:109:30",
+      "text": "I’ll thank the LORD out loud with everything I’ve got. I’ll praise him right in the middle of the crowd."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:PSA:109:31",
+      "text": "He’ll stand at the right hand of the needy to save them from people who pass judgment on their life."
+    }
+  ]
+}

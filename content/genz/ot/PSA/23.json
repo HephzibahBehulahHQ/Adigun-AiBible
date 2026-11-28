@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 23,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:23:1",
+      "text": "A psalm by David. The LORD is my shepherd. I have everything I need."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:23:2",
+      "text": "He has me rest in green pastures and leads me beside quiet waters."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:23:3",
+      "text": "He restores my soul and guides me down the right paths for the sake of his name."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:23:4",
+      "text": "Even when I walk through the valley of death's shadow, I won't fear any evil. You're with me. Your rod and your staff give me comfort."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:23:5",
+      "text": "You set a table for me with my enemies watching. You anoint my head with oil. My cup is overflowing."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:23:6",
+      "text": "Your goodness and faithful love will follow me every day of my life. I'll live in the LORD's house forever. 🙏"
+    }
+  ]
+}

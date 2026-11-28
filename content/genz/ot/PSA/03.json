@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 3,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:3:1",
+      "text": "A psalm by David, written when he fled from his son Absalom. LORD, my enemies keep multiplying! So many people are rising up against me."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:3:2",
+      "text": "So many say about me, “God won’t help him.” Selah."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:3:3",
+      "text": "But you, LORD, are a shield all around me. You’re my glory, the one who lifts my head."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:3:4",
+      "text": "I cry out loud to the LORD, and he answers me from his holy hill. Selah."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:3:5",
+      "text": "I lay down and slept. I woke up because the LORD keeps me going."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:3:6",
+      "text": "I won’t be afraid of tens of thousands of people who’ve lined up against me on every side."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:3:7",
+      "text": "Get up, LORD! Save me, my God! You’ve struck all my enemies on the cheekbone. You’ve broken the teeth of the wicked."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:3:8",
+      "text": "Rescue belongs to the LORD. May your blessing rest on your people. Selah."
+    }
+  ]
+}

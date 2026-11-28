@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 36,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:36:1",
+      "text": "For the music director. By David, the LORD's servant. Something became clear to me about the rebellion of the wicked: they have no fear of God before their eyes."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:36:2",
+      "text": "They hype themselves up so much that they can't even see their own sin or hate it."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:36:3",
+      "text": "Their words are full of wrongdoing and lies. They've given up on wisdom and on doing good."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:36:4",
+      "text": "They lie in bed plotting wrong. They commit to a path that leads nowhere good. Evil doesn't even bother them."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:36:5",
+      "text": "LORD, your faithful love reaches the heavens. Your faithfulness reaches the skies."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:36:6",
+      "text": "Your righteousness is like the mountains of God. Your judgments are as deep as the ocean. LORD, you keep people and animals alive."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:36:7",
+      "text": "God, how precious is your faithful love! People take shelter in the shadow of your wings."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:36:8",
+      "text": "They feast on the abundance of your house. You give them a drink from the river of your delights."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:36:9",
+      "text": "The spring of life is with you. In your light, we see light. ✨"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:36:10",
+      "text": "Keep showing your faithful love to those who know you, and your righteousness to people with upright hearts."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:36:11",
+      "text": "Don't let the proud come and trample me. Don't let the wicked drive me away."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:36:12",
+      "text": "Look, the people doing evil have fallen. They've been thrown down and won't get back up."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 58,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:58:1",
+      "text": "For the music director, to “Do Not Destroy.” A poem by David. Do you silent ones really speak what's right? Do you people judge fairly?"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:58:2",
+      "text": "No, you plan injustice in your hearts. You deal out violence with your own hands across the earth."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:58:3",
+      "text": "The wicked go off course from the womb. They start going astray and telling lies from birth."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:58:4",
+      "text": "Their venom is like a snake's, like a deaf cobra that shuts its ears"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:58:5",
+      "text": "and won't listen to the charmers, no matter how good they are."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:58:6",
+      "text": "God, break the teeth in their mouths. LORD, smash the fangs of those young lions."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:58:7",
+      "text": "Let them drain away like running water. When they draw their bows, let their arrows lose their edge."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:58:8",
+      "text": "Let them disappear like a snail that melts away, like a stillborn child who never saw the sun."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:58:9",
+      "text": "Before your pots even feel the heat of the thorn fire, God will sweep away the green branches and the burning ones alike."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:58:10",
+      "text": "People who do right will rejoice when they see justice done. They'll wash their feet in the blood of the wicked,"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:58:11",
+      "text": "and people will say, “Doing what's right really does have a reward. There really is a God who judges the earth.”"
+    }
+  ]
+}

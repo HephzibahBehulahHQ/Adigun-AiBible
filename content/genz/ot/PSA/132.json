@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 132,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:132:1",
+      "text": "A song of ascents. LORD, remember David and all the hardship he went through."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:132:2",
+      "text": "Remember how he swore to the LORD and made a vow to the Mighty One of Jacob:"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:132:3",
+      "text": "“I won’t go inside my house or climb into my bed."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:132:4",
+      "text": "I won’t let my eyes close in sleep or even let my eyelids doze"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:132:5",
+      "text": "until I find a place for the LORD, a home for the Mighty One of Jacob.”"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:132:6",
+      "text": "Look, we heard about it in Ephrathah and found it in the fields of Jaar."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:132:7",
+      "text": "“Let’s go into his home. Let’s worship at his footstool.”"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:132:8",
+      "text": "Rise up, LORD, and go into your resting place, you and the ark of your strength."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:132:9",
+      "text": "Let your priests wear righteousness like clothing. Let your holy people shout with joy!"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:132:10",
+      "text": "For the sake of David your servant, don’t turn your anointed one away."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:132:11",
+      "text": "The LORD swore David a true oath. He won’t take it back: “I’ll put one of your own children on your throne."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:132:12",
+      "text": "If your children keep my covenant and the testimony I teach them, their children will sit on your throne forever too.”"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:132:13",
+      "text": "The LORD chose Zion. He wanted to make it his home."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:132:14",
+      "text": "“This is my resting place forever. I’ll live here, because this is where I want to be."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:132:15",
+      "text": "I’ll give her plenty of supplies and fill her poor with bread."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:132:16",
+      "text": "I’ll dress her priests in salvation, and her holy people will shout for joy."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:132:17",
+      "text": "There I’ll make David’s horn grow strong. I’ve set up a lamp for my anointed one."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:132:18",
+      "text": "I’ll dress his enemies in shame, but the crown on his own head will shine.”"
+    }
+  ]
+}

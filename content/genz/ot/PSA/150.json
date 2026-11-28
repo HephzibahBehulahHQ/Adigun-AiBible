@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 150,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:150:1",
+      "text": "Praise the LORD! Praise God in his sanctuary! Praise him in his mighty heavens for the powerful things he’s done!"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:150:2",
+      "text": "Praise him for his mighty acts! Praise him the way his unmatched greatness deserves!"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:150:3",
+      "text": "Praise him with a trumpet blast! Praise him with harp and lyre!"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:150:4",
+      "text": "Praise him with tambourine and dancing! Praise him with strings and flute!"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:150:5",
+      "text": "Praise him with loud cymbals! Praise him with cymbals that ring out!"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:150:6",
+      "text": "Everything that breathes, praise the LORD! Praise the LORD! 🙌"
+    }
+  ]
+}

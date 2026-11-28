@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 149,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:149:1",
+      "text": "Praise the LORD! Sing the LORD a new song, and sing his praise where his holy people gather."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:149:2",
+      "text": "Let Israel celebrate the one who made them. Let Zion’s children find joy in their King."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:149:3",
+      "text": "Let them dance to praise his name! Let them sing his praises with tambourine and harp!"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:149:4",
+      "text": "The LORD takes pleasure in his people. He crowns the humble with rescue."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:149:5",
+      "text": "Let his holy people celebrate in honor. Let them sing for joy even on their beds."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:149:6",
+      "text": "Let praise for God ring from their mouths, with a double-edged sword in their hands,"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:149:7",
+      "text": "to carry out vengeance on nations and punishment on peoples,"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:149:8",
+      "text": "to chain their kings and bind their nobles with iron shackles,"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:149:9",
+      "text": "to carry out the judgment written against them. This honor belongs to all his holy people. Praise the LORD!"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 62,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:62:1",
+      "text": "For the music director. To Jeduthun. A psalm by David. My soul finds rest in God alone. He's the one who saves me."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:62:2",
+      "text": "He alone is my rock, my salvation, and my fortress. I won't be shaken badly."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:62:3",
+      "text": "How long will you keep coming at one person? Will you all knock him down like a leaning wall or a fence about to fall?"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:62:4",
+      "text": "They're set on dragging him down from his high place. They love lies. They bless him out loud while cursing him inside. Selah."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:62:5",
+      "text": "My soul, wait quietly for God alone. My hope comes from him."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:62:6",
+      "text": "He alone is my rock, my salvation, and my fortress. I won't be shaken."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:62:7",
+      "text": "My rescue and my honor come from God. He's my solid rock and my shelter."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:62:8",
+      "text": "Trust him all the time, everyone. Pour out your heart to him. God is our shelter. Selah."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:62:9",
+      "text": "People of low rank are a breath. People of high rank are an illusion. Put them all on the scale and they weigh less than a breath."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:62:10",
+      "text": "Don't count on squeezing people or pin your hopes on what you steal. If your money grows, don't let it have your heart."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:62:11",
+      "text": "God spoke once, and I've heard it twice: power belongs to God."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:62:12",
+      "text": "Faithful love belongs to you too, Lord, because you repay each person for what they've done."
+    }
+  ]
+}

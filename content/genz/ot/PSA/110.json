@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 110,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:110:1",
+      "text": "A psalm by David. The LORD says to my Lord, “Sit at my right hand until I make your enemies a footrest for you.”"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:110:2",
+      "text": "The LORD will send out your mighty scepter from Zion. Rule right there among your enemies."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:110:3",
+      "text": "Your people will freely offer themselves on the day you show your power, dressed in holy splendor. From the womb of the dawn comes the dew of your youth."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:110:4",
+      "text": "The LORD swore an oath, and he won’t take it back: “You’re a priest forever in the order of Melchizedek.”"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:110:5",
+      "text": "The Lord is at your right hand. On the day of his anger he’ll crush kings."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:110:6",
+      "text": "He’ll judge the nations and pile up dead bodies. He’ll crush the ruler of the whole earth."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:110:7",
+      "text": "He’ll drink from a stream on the way, and that’s why he’ll lift his head."
+    }
+  ]
+}

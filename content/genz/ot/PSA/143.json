@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 143,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:143:1",
+      "text": "A psalm by David. LORD, hear my prayer. Listen when I ask you for help. Answer me in your faithfulness and righteousness."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:143:2",
+      "text": "Don’t bring your servant into judgment, because no one alive is righteous in your eyes."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:143:3",
+      "text": "My enemy is chasing me down. He’s knocked my life to the ground and made me live in dark places like somebody long dead."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:143:4",
+      "text": "That’s why my spirit is overwhelmed inside me. My heart feels empty and ruined."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:143:5",
+      "text": "I remember the old days. I think about everything you’ve done. I reflect on what your hands have made."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:143:6",
+      "text": "I reach out my hands to you. My soul is thirsty for you like cracked, dry soil. Selah."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:143:7",
+      "text": "Hurry and answer me, LORD. My spirit’s giving out. Don’t hide your face so I end up like the people who go down into the pit."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:143:8",
+      "text": "Let me hear about your faithful love in the morning, because I trust you. Show me which way to walk, because I lift my soul to you."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:143:9",
+      "text": "LORD, save me from my enemies. I run to you to hide me."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:143:10",
+      "text": "Teach me to do what you want, because you’re my God. Your Spirit is good. Lead me in the land where people do what’s right."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:143:11",
+      "text": "LORD, give me life again for your name’s sake. In your righteousness, get me out of trouble."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:143:12",
+      "text": "In your faithful love, cut off my enemies and destroy everyone who brings trouble on my soul, because I’m your servant."
+    }
+  ]
+}

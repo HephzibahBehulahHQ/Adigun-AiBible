@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 26,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:26:1",
+      "text": "By David. Judge me, LORD. I've lived with integrity and trusted you without wavering."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:26:2",
+      "text": "Look me over, LORD, and put me to the test. Search my heart and my mind."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:26:3",
+      "text": "Your faithful love is right in front of me, and I've walked in your truth."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:26:4",
+      "text": "I haven't sat with people who lie, and I'm not joining up with hypocrites."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:26:5",
+      "text": "I hate the gatherings of people doing evil. I won't sit with the wicked."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:26:6",
+      "text": "I'll wash my hands in innocence and go around your altar, LORD,"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:26:7",
+      "text": "so everyone can hear me give thanks and tell of all the amazing things you've done."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:26:8",
+      "text": "LORD, I love the house where you live, the place where your glory stays."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:26:9",
+      "text": "Don't sweep my life away with sinners or count me among people out for blood."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:26:10",
+      "text": "Their hands are full of wrongdoing, and their right hands are full of bribes."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:26:11",
+      "text": "As for me, I'll keep walking with integrity. Redeem me and show me mercy."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:26:12",
+      "text": "My feet are on level ground. I'll bless the LORD when the people gather. 🙌"
+    }
+  ]
+}

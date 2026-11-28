@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 11,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:11:1",
+      "text": "For the chief musician. By David. I take refuge in the LORD. How can you tell me, “Fly off to your mountain like a bird”?"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:11:2",
+      "text": "Look, the wicked are bending their bows. They’ve set arrows on the strings to shoot from the dark at people whose hearts are upright."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:11:3",
+      "text": "If the foundations are torn down, what can the righteous do?"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:11:4",
+      "text": "The LORD is in his holy temple. The LORD is on his throne in heaven. His eyes watch what’s happening and examine every person."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:11:5",
+      "text": "The LORD examines the righteous, but deep down he hates the wicked and anyone who loves violence."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:11:6",
+      "text": "He’ll rain burning coals on the wicked. Fire, sulfur, and scorching wind will be their share to drink."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:11:7",
+      "text": "The LORD is righteous and loves what’s right. The upright will see his face."
+    }
+  ]
+}

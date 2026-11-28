@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 67,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:67:1",
+      "text": "For the music director. On strings. A psalm. A song. May God show us mercy, bless us, and make his face shine on us. Selah."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:67:2",
+      "text": "So your way will be known on earth and your salvation among all the nations."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:67:3",
+      "text": "May the peoples praise you, God. May every people praise you."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:67:4",
+      "text": "Let the nations celebrate and sing for joy! You judge the peoples fairly and guide the nations on earth. Selah."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:67:5",
+      "text": "May the peoples praise you, God. May every people praise you."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:67:6",
+      "text": "The earth has given its harvest. God, our own God, will bless us."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:67:7",
+      "text": "God will bless us, and people to the ends of the earth will stand in awe of him. 🙌"
+    }
+  ]
+}

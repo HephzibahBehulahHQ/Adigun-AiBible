@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 63,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:63:1",
+      "text": "A psalm by David, when he was in the desert of Judah. God, you're my God. I'm looking for you with everything I've got. My soul is thirsty for you. My whole body longs for you in this dry, worn-out land with no water."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:63:2",
+      "text": "I've seen you in the sanctuary and looked on your power and glory."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:63:3",
+      "text": "Your faithful love is better than life itself, so I'll praise you out loud."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:63:4",
+      "text": "I'll bless you as long as I live. I'll raise my hands in your name. 🙌"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:63:5",
+      "text": "My soul will be as satisfied as if I'd eaten the richest food. With joy I'll sing your praise"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:63:6",
+      "text": "when I remember you in bed and think about you through the watches of the night."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:63:7",
+      "text": "You've been my help. I'll celebrate in the shadow of your wings."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:63:8",
+      "text": "My soul clings to you. Your right hand holds me up."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:63:9",
+      "text": "Those who want to end my life will go down into the depths of the earth."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:63:10",
+      "text": "They'll fall to the sword and become food for jackals."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:63:11",
+      "text": "But the king will celebrate in God. Everyone who swears by God will glory in him, because the mouths of liars will be shut."
+    }
+  ]
+}
