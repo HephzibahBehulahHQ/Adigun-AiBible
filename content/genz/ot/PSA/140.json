@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 140,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:140:1",
+      "text": "For the lead musician. A psalm by David. LORD, rescue me from evil people. Keep me safe from violent people,"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:140:2",
+      "text": "the ones who plot trouble in their hearts and keep getting together for war."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:140:3",
+      "text": "They sharpen their tongues like snakes. Viper venom is tucked under their lips. Selah."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:140:4",
+      "text": "LORD, keep me out of the hands of the wicked. Keep me safe from violent people who’ve set out to trip me up."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:140:5",
+      "text": "Proud people have hidden a trap for me. They’ve laid the ropes of a net beside my path. They’ve set snares for me. Selah."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:140:6",
+      "text": "I told the LORD, “You’re my God.” LORD, listen to me crying out for help."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:140:7",
+      "text": "GOD my Lord, you’re the strength that saves me. You covered my head on the day of battle."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:140:8",
+      "text": "LORD, don’t give the wicked what they want. Don’t let their evil plans work, or they’ll get proud. Selah."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:140:9",
+      "text": "As for the people surrounding me, let the trouble their own lips started come down on their heads."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:140:10",
+      "text": "Let burning coals fall on them. Let them be thrown into the fire, into muddy pits they can’t climb out of."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:140:11",
+      "text": "People who speak evil won’t get established on earth. Evil will hunt down violent people and bring them down."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:140:12",
+      "text": "I know the LORD will take up the case of people who are suffering and get justice for those in need."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:140:13",
+      "text": "The righteous will thank your name. Upright people will live in your presence."
+    }
+  ]
+}

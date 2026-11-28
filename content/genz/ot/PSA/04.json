@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 4,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:4:1",
+      "text": "For the chief musician, on stringed instruments. A psalm by David. Answer when I call, God of my righteousness. Give me room to breathe in my distress. Have mercy on me and hear my prayer."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:4:2",
+      "text": "How long will you people turn my honor into shame? Will you keep loving what’s empty and chasing lies? Selah."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:4:3",
+      "text": "Know this: the LORD has set apart those who are faithful to him. The LORD will hear when I call to him."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:4:4",
+      "text": "Stand in awe and don’t sin. When you’re lying in bed, look into your own heart and be still. Selah."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:4:5",
+      "text": "Offer sacrifices that are right and put your trust in the LORD."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:4:6",
+      "text": "Many people ask, “Who’s going to show us anything good?” LORD, let the light of your face shine on us."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:4:7",
+      "text": "You’ve put more joy in my heart than they have when their grain and new wine overflow."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:4:8",
+      "text": "I’ll lie down and go to sleep in peace. You alone, LORD, let me live in safety."
+    }
+  ]
+}

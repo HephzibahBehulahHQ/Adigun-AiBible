@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 121,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:121:1",
+      "text": "A song of ascents. I lift my eyes to the hills. Where does my help come from?"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:121:2",
+      "text": "My help comes from the LORD, who made heaven and earth."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:121:3",
+      "text": "He won’t let your foot slip. The one who watches over you won’t doze off."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:121:4",
+      "text": "Look, the one who watches over Israel won’t doze off or go to sleep."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:121:5",
+      "text": "The LORD is the one who watches over you. The LORD is your shade at your right hand."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:121:6",
+      "text": "The sun won’t hurt you in the daytime, and the moon won’t hurt you at night."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:121:7",
+      "text": "The LORD will guard you from all evil. He’ll guard your very life."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:121:8",
+      "text": "The LORD will watch over you when you go out and when you come back, from now on and forever."
+    }
+  ]
+}

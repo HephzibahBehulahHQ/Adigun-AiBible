@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 120,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:120:1",
+      "text": "A song of ascents. When I was in trouble, I cried out to the LORD, and he answered me."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:120:2",
+      "text": "LORD, rescue me from lying lips and a tongue that tricks people."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:120:3",
+      "text": "What are you going to get for this? What more will be done to you, you lying tongue?"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:120:4",
+      "text": "Sharp arrows from a mighty warrior, along with glowing coals from a juniper."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:120:5",
+      "text": "How miserable for me to live in Meshech, to stay among the tents of Kedar!"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:120:6",
+      "text": "I’ve lived too long beside people who hate peace."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:120:7",
+      "text": "I’m all for peace, but the minute I speak up, they’re ready for war."
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 74,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:74:1",
+      "text": "A psalm for reflection by Asaph. God, why have you rejected us forever? Why does your anger smolder against the sheep in your pasture?"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:74:2",
+      "text": "Remember the people you bought long ago, the tribe you redeemed as your inheritance. Remember Mount Zion, where you lived."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:74:3",
+      "text": "Walk through these ruins that never seem to end. Look at all the damage the enemy did in your sanctuary."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:74:4",
+      "text": "Your enemies roared right in the middle of your gathering. They planted their own banners there as signs."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:74:5",
+      "text": "They swung their axes like people chopping through a thicket."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:74:6",
+      "text": "Now they're smashing every carving with hatchets and hammers."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:74:7",
+      "text": "They burned your sanctuary to the ground. They defiled the place where your Name lived."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:74:8",
+      "text": "They thought, “We'll crush them completely.” They burned every place in the land where people worshiped God."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:74:9",
+      "text": "We see no signs. No prophet is left, and nobody among us knows how long this will last."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:74:10",
+      "text": "God, how long will the enemy mock you? Will they disrespect your name forever?"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:74:11",
+      "text": "Why are you holding back your right hand? Take it from your chest and put an end to them!"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:74:12",
+      "text": "Yet God has been my King from long ago, bringing rescue all across the earth."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:74:13",
+      "text": "You split the sea with your strength. You shattered the heads of the monsters in the water."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:74:14",
+      "text": "You crushed Leviathan's heads and gave him as food to people and desert creatures."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:74:15",
+      "text": "You opened up springs and streams. You dried up mighty rivers."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:74:16",
+      "text": "The day is yours, and so is the night. You set the light and the sun in place."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:74:17",
+      "text": "You set every boundary of the earth. You made summer and winter."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:74:18",
+      "text": "Remember how the enemy mocked you, LORD. Foolish people dragged your name through the dirt."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:74:19",
+      "text": "Don't hand your dove over to wild beasts. Don't forget the lives of your poor forever."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PSA:74:20",
+      "text": "Honor your covenant. Violence has made a home in the dark places of the earth."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PSA:74:21",
+      "text": "Don't send the oppressed away in shame. Let the poor and needy praise your name."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PSA:74:22",
+      "text": "Get up, God! Take up your own case. Remember how fools mock you all day."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PSA:74:23",
+      "text": "Don't forget what your enemies are shouting. The noise of those who rise against you keeps going up."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 61,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:61:1",
+      "text": "For the music director. For a stringed instrument. By David. God, hear my cry. Listen to my prayer."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:61:2",
+      "text": "From the ends of the earth, I'll call to you when my heart is overwhelmed. Lead me to the rock that's higher than I am."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:61:3",
+      "text": "You've been my shelter, a strong tower where my enemy can't reach me."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:61:4",
+      "text": "I'll live in your tent forever. I'll take shelter under your wings. Selah."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:61:5",
+      "text": "God, you heard my vows. You gave me the inheritance of those who revere your name."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:61:6",
+      "text": "You'll give the king a long life. His years will stretch through generations."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:61:7",
+      "text": "He'll stay on his throne in God's presence forever. Let your faithful love and truth guard him."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:61:8",
+      "text": "I'll sing praise to your name forever and keep my vows day by day. 🎶"
+    }
+  ]
+}

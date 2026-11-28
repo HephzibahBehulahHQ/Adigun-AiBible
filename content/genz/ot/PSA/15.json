@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 15,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:15:1",
+      "text": "A psalm by David. LORD, who gets to stay in your sanctuary? Who can live on your holy hill?"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:15:2",
+      "text": "Someone who lives with integrity, does what's right, and speaks the truth from the heart."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:15:3",
+      "text": "They don't drag people with their words, hurt their friends, or throw insults at their neighbors."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:15:4",
+      "text": "They reject people who do vile things and honor those who revere the LORD. They keep their word even when it costs them."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:15:5",
+      "text": "They don't lend money to squeeze people for interest or take a bribe against someone innocent. Live like that and you won't be shaken."
+    }
+  ]
+}

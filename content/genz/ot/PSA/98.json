@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 98,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:98:1",
+      "text": "A psalm. Sing the LORD a new song! He's done amazing things. His right hand and his holy arm have won the victory."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:98:2",
+      "text": "The LORD has shown how he saves. He's put his righteousness on display for the nations to see."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:98:3",
+      "text": "He's remembered his faithful love and his faithfulness to the house of Israel. The farthest ends of the earth have seen our God save."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:98:4",
+      "text": "Make a joyful noise to the LORD, all the earth! Burst into song and shout for joy! 🙌"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:98:5",
+      "text": "Sing praise to the LORD with the harp. Let the harp and your voices make music together."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:98:6",
+      "text": "With trumpets and the blast of the ram's horn, shout for joy before the King, the LORD."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:98:7",
+      "text": "Let the sea roar with everything in it, and let the world and everyone in it join in."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:98:8",
+      "text": "Let the rivers clap their hands. Let the mountains sing for joy together"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:98:9",
+      "text": "before the LORD, because he's coming to judge the earth. He'll judge the world with righteousness and the peoples with fairness."
+    }
+  ]
+}

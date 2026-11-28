@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 85,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:85:1",
+      "text": "For the music director. A psalm by the sons of Korah. LORD, you showed favor to your land. You restored Jacob's fortunes."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:85:2",
+      "text": "You forgave your people's wrongdoing and covered all their sin. Selah."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:85:3",
+      "text": "You set aside all your wrath and turned away from your fierce anger."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:85:4",
+      "text": "Bring us back, God who saves us. Let your anger against us come to an end."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:85:5",
+      "text": "Will you stay angry with us forever? Will your anger go on through every generation?"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:85:6",
+      "text": "Won't you bring us back to life so your people can find joy in you again?"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:85:7",
+      "text": "Show us your faithful love, LORD. Give us your salvation."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:85:8",
+      "text": "I'll listen to what God, the LORD, says. He'll speak peace to his people, those faithful to him. Let them stay away from their old foolish ways."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:85:9",
+      "text": "His salvation is close to those who revere him, so glory can live in our land."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:85:10",
+      "text": "Mercy and truth meet up. Righteousness and peace greet each other with a kiss."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:85:11",
+      "text": "Truth springs up from the ground, and righteousness looks down from heaven."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:85:12",
+      "text": "The LORD will give what's good, and our land will bring in a harvest. 🌾"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:85:13",
+      "text": "Righteousness goes out ahead of him, getting the path ready for his steps."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 48,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:48:1",
+      "text": "A song. A psalm by the sons of Korah. The LORD is great and deserves great praise in our God's city, on his holy mountain."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:48:2",
+      "text": "Mount Zion rises beautifully on the northern heights, the joy of the whole earth. It's the city of the great King."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:48:3",
+      "text": "God has shown that he's a safe place in the city's fortresses."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:48:4",
+      "text": "Look, the kings gathered and marched past together."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:48:5",
+      "text": "They saw the city and froze in amazement. Then panic hit, and they hurried away."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:48:6",
+      "text": "They started shaking right there, gripped by pain like a woman in labor."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:48:7",
+      "text": "With an east wind you smash the ships of Tarshish."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:48:8",
+      "text": "We'd heard about it, and now we've seen it ourselves in the city of the LORD of Armies, the city of our God. God will keep it standing forever. Selah."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:48:9",
+      "text": "God, we think about your faithful love right in the middle of your temple."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:48:10",
+      "text": "God, your praise reaches as far as your name, all the way to the ends of the earth. Your right hand is full of righteousness."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:48:11",
+      "text": "Let Mount Zion celebrate! Let the daughters of Judah rejoice because of your judgments. 🙌"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:48:12",
+      "text": "Take a walk around Zion. Make the whole circuit and count its towers."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:48:13",
+      "text": "Look closely at its defenses and take in its palaces so you can tell the next generation."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:48:14",
+      "text": "This God is our God forever and ever. He'll guide us all the way to death."
+    }
+  ]
+}

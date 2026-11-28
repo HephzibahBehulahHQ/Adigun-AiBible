@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 135,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:135:1",
+      "text": "Praise the LORD! Praise the LORD’s name! Praise him, you servants of the LORD,"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:135:2",
+      "text": "you who stand in the LORD’s house, in the courtyards of our God’s house."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:135:3",
+      "text": "Praise the LORD because he’s good. Sing praises to his name because it’s a joy to do it."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:135:4",
+      "text": "The LORD chose Jacob for himself, Israel as his own special possession."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:135:5",
+      "text": "I know the LORD is great. Our Lord is above all gods."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:135:6",
+      "text": "Whatever the LORD wanted to do, he did, in heaven, on earth, in the seas, and in all the depths."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:135:7",
+      "text": "He raises clouds from the ends of the earth. He makes lightning flash with the rain. He brings wind out of his storehouses."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:135:8",
+      "text": "He struck down Egypt’s firstborn, both people and animals."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:135:9",
+      "text": "Egypt, he sent signs and wonders right into the middle of you, against Pharaoh and all his servants."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:135:10",
+      "text": "He struck many nations and killed powerful kings:"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:135:11",
+      "text": "Sihon, king of the Amorites, Og, king of Bashan, and all the kingdoms of Canaan."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:135:12",
+      "text": "He gave their land as an inheritance, an inheritance to Israel, his people."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:135:13",
+      "text": "LORD, your name lasts forever. Your fame goes on through every generation."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:135:14",
+      "text": "The LORD will judge his people and show compassion to his servants."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:135:15",
+      "text": "The nations’ idols are silver and gold, made by human hands."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:135:16",
+      "text": "They’ve got mouths but can’t speak. They’ve got eyes but can’t see."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:135:17",
+      "text": "They’ve got ears but can’t hear. There isn’t even a breath in their mouths."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:135:18",
+      "text": "The people who make them will end up like them, and so will everybody who trusts them."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:135:19",
+      "text": "Family of Israel, praise the LORD! Family of Aaron, praise the LORD!"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PSA:135:20",
+      "text": "Family of Levi, praise the LORD! Everyone who fears the LORD, praise the LORD!"
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PSA:135:21",
+      "text": "Bless the LORD from Zion, the one who lives in Jerusalem. Praise the LORD!"
+    }
+  ]
+}

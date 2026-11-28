@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 83,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:83:1",
+      "text": "A song. A psalm by Asaph. God, don't stay silent. Don't stay quiet or sit still."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:83:2",
+      "text": "Look, your enemies are getting loud. Those who hate you are lifting their heads."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:83:3",
+      "text": "They're scheming against your people, plotting against the ones you cherish."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:83:4",
+      "text": "“Come on,” they say, “let's wipe them out as a nation so nobody remembers Israel's name.”"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:83:5",
+      "text": "They're all in on the same plan. They've joined forces against you."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:83:6",
+      "text": "The tents of Edom and the Ishmaelites are in it, along with Moab and the Hagrites,"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:83:7",
+      "text": "Gebal, Ammon, and Amalek, plus Philistia and the people of Tyre."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:83:8",
+      "text": "Assyria has joined them too, backing up Lot's descendants. Selah."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:83:9",
+      "text": "Do to them what you did to Midian, to Sisera and Jabin at the Kishon River."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:83:10",
+      "text": "They died at Endor and became like dung on the ground."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:83:11",
+      "text": "Make their nobles like Oreb and Zeeb, all their princes like Zebah and Zalmunna,"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:83:12",
+      "text": "who said, “Let's take God's pasturelands for ourselves.”"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:83:13",
+      "text": "My God, make them like tumbleweed, like chaff scattered by the wind."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:83:14",
+      "text": "Like fire that burns through a forest or flames that set mountains ablaze,"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:83:15",
+      "text": "chase them with your tempest and terrify them with your storm."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:83:16",
+      "text": "Let confusion cover their faces so they'll seek your name, LORD."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:83:17",
+      "text": "Let them be ashamed and terrified forever. Let them be disgraced and perish,"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:83:18",
+      "text": "so they know that you alone, whose name is the LORD, are Most High over the whole earth."
+    }
+  ]
+}

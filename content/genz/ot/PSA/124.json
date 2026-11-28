@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 124,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:124:1",
+      "text": "A song of ascents. By David. If the LORD hadn’t been on our side, let Israel say it now,"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:124:2",
+      "text": "if the LORD hadn’t been on our side when people rose up against us,"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:124:3",
+      "text": "they would’ve swallowed us alive when their anger flared up at us."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:124:4",
+      "text": "The waters would’ve overwhelmed us, and the current would’ve swept over our lives."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:124:5",
+      "text": "Those proud waters would’ve swept right over us."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:124:6",
+      "text": "Bless the LORD, who didn’t hand us over as prey for their teeth."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:124:7",
+      "text": "We got away like a bird from a hunter’s trap. The trap broke, and we got free."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:124:8",
+      "text": "Our help is in the name of the LORD, the one who made heaven and earth."
+    }
+  ]
+}

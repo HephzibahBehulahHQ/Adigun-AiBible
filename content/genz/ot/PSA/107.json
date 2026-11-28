@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 107,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:107:1",
+      "text": "Thank the LORD because he’s good. His faithful love lasts forever."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:107:2",
+      "text": "Let the people the LORD has rescued say so, the ones he bought back from the enemy’s grip,"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:107:3",
+      "text": "and gathered from other lands, from east and west, north and south."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:107:4",
+      "text": "Some wandered along desert roads in the wilderness. They couldn’t find a city to call home."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:107:5",
+      "text": "Hungry and thirsty, they felt their life slipping away."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:107:6",
+      "text": "Then they cried out to the LORD in their trouble, and he rescued them from their distress."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:107:7",
+      "text": "He led them along a straight road so they could reach a city to live in."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:107:8",
+      "text": "Let them thank the LORD for his faithful love and for the amazing things he does for people!"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:107:9",
+      "text": "He satisfies the soul that’s longing and fills the hungry with good things."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:107:10",
+      "text": "Some sat in darkness, in the very shadow of death, bound by misery and iron."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:107:11",
+      "text": "They’d rebelled against God’s words and looked down on the Most High’s advice."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:107:12",
+      "text": "So he brought their spirits low with hard work. They fell down, and nobody was there to help."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:107:13",
+      "text": "Then they cried out to the LORD in their trouble, and he saved them from their distress."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:107:14",
+      "text": "He brought them out of darkness and death’s shadow and snapped their chains."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:107:15",
+      "text": "Let them thank the LORD for his faithful love and for the amazing things he does for people!"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:107:16",
+      "text": "He broke through bronze gates and cut right through iron bars."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:107:17",
+      "text": "Some people were foolish and suffered because they disobeyed and did wrong."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:107:18",
+      "text": "They couldn’t stand any food and were near the gates of death."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:107:19",
+      "text": "Then they cry out to the LORD in their trouble, and he saves them from their distress."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PSA:107:20",
+      "text": "He sends out his word and heals them. He rescues them from the grave."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PSA:107:21",
+      "text": "Let them thank the LORD for his faithful love and for the amazing things he does for people!"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PSA:107:22",
+      "text": "Let them bring sacrifices to thank him and sing about what he’s done."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PSA:107:23",
+      "text": "Some go out to sea in ships and do business on great waters."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PSA:107:24",
+      "text": "They see what the LORD does and the wonders he works in the deep."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PSA:107:25",
+      "text": "He gives the command, and a storm wind rises and drives the waves up."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:PSA:107:26",
+      "text": "They shoot toward the sky, then plunge into the depths. In that danger, their courage melts away."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:PSA:107:27",
+      "text": "They lurch back and forth and stagger like drunk people. They’re at their wits’ end."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:PSA:107:28",
+      "text": "Then they cry out to the LORD in their trouble, and he brings them out of their distress."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:PSA:107:29",
+      "text": "He calms the storm, and its waves go still."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:PSA:107:30",
+      "text": "They’re glad the water is quiet, and he brings them to the harbor they wanted."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:PSA:107:31",
+      "text": "Let them thank the LORD for his faithful love and for the amazing things he does for people!"
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:PSA:107:32",
+      "text": "Let them lift him up when the people gather and praise him where the elders sit."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:PSA:107:33",
+      "text": "He turns rivers into deserts and springs into thirsty ground."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:PSA:107:34",
+      "text": "He turns productive land into a salty wasteland because of the wrong the people there do."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:PSA:107:35",
+      "text": "He turns a desert into a pool and dry land into springs of water."
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:PSA:107:36",
+      "text": "He settles hungry people there so they can build a city to live in."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:PSA:107:37",
+      "text": "They plant fields and vineyards and bring in good harvests."
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:PSA:107:38",
+      "text": "He blesses them, and their numbers grow big. He doesn’t let their livestock shrink."
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:PSA:107:39",
+      "text": "Then their numbers fall, and oppression, trouble, and sorrow bend them low."
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:PSA:107:40",
+      "text": "He pours contempt on rulers and sends them wandering through a wasteland with no trails."
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:PSA:107:41",
+      "text": "But he lifts needy people out of their suffering and makes their families grow like flocks."
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:PSA:107:42",
+      "text": "Upright people see it and are glad, and all the wicked shut their mouths."
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:PSA:107:43",
+      "text": "If you’re wise, pay attention to this. Think about the ways the LORD has shown his faithful love."
+    }
+  ]
+}

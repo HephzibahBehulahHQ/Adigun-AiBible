@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 39,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:39:1",
+      "text": "For the music director. For Jeduthun. A psalm by David. I said, “I'll watch how I act so I don't sin with my words. I'll keep my mouth on a tight leash while the wicked are in front of me.”"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:39:2",
+      "text": "I went completely quiet. I held back even good words, and my grief grew."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:39:3",
+      "text": "My heart burned inside me. The more I thought, the hotter it got, until I finally spoke:"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:39:4",
+      "text": "“LORD, show me where my life ends and how many days I have. Let me see how fragile I am."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:39:5",
+      "text": "You've made my days only a few handbreadths long. My whole life is like nothing next to you. Even when we stand firm, we're just a breath.” Selah."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:39:6",
+      "text": "“People go around like shadows, rushing for nothing. They pile things up with no idea who'll get them."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:39:7",
+      "text": "So now, Lord, what am I waiting for? My hope is in you."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:39:8",
+      "text": "Rescue me from all my wrongdoing. Don't let fools make me their punch line."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:39:9",
+      "text": "I stayed quiet and didn't open my mouth, because you were the one who did it."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:39:10",
+      "text": "Take this punishment off me. The blow of your hand is more than I can bear."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:39:11",
+      "text": "When you correct people for their sin, you eat away what they treasure like a moth. We're all just a breath.” Selah."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:39:12",
+      "text": "“Hear my prayer, LORD. Listen to my cry. Don't stay silent when I'm in tears. I'm a stranger staying with you, a traveler like all my ancestors."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:39:13",
+      "text": "Please spare me so I can get my strength back before I go away and am gone for good.”"
+    }
+  ]
+}

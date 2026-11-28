@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 117,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:117:1",
+      "text": "Praise the LORD, every nation! Give him praise, all you peoples!"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:117:2",
+      "text": "His faithful love for us is great. The LORD’s faithfulness lasts forever. Praise the LORD!"
+    }
+  ]
+}

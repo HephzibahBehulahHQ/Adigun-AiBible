@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 81,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:81:1",
+      "text": "For the music director. On an instrument of Gath. By Asaph. Sing out to God, our strength! Give a joyful shout to the God of Jacob!"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:81:2",
+      "text": "Start the song. Bring the tambourine, the sweet-sounding lyre, and the harp. 🎶"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:81:3",
+      "text": "Blow the trumpet at the new moon, at the full moon, on our feast day."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:81:4",
+      "text": "This is a rule for Israel, an ordinance from the God of Jacob."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:81:5",
+      "text": "He set it in place as a covenant for Joseph when he went out over Egypt. I heard a language I didn't know."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:81:6",
+      "text": "“I lifted the load off his shoulder. I freed his hands from the basket."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:81:7",
+      "text": "You called when you were in trouble, and I rescued you. I answered from where the thunder was hidden. I tested you at the waters of Meribah.” Selah."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:81:8",
+      "text": "“Listen, my people, while I testify to you. Israel, if only you'd hear me!"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:81:9",
+      "text": "Don't let any strange god among you. Don't worship a foreign god."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:81:10",
+      "text": "I am the LORD your God, who brought you up out of Egypt. Open your mouth wide, and I'll fill it."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:81:11",
+      "text": "But my people wouldn't listen to me. Israel wanted nothing to do with me."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:81:12",
+      "text": "So I let them follow their stubborn hearts and go with their own plans."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:81:13",
+      "text": "If only my people would listen to me! If only Israel would walk in my ways!"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:81:14",
+      "text": "I'd soon bring their enemies down and turn my hand against the people who oppose them."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:81:15",
+      "text": "Those who hate the LORD would cringe before him, and their punishment would last forever."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:81:16",
+      "text": "But he would feed his people with the finest wheat. I'd give you your fill of honey from the rock.”"
+    }
+  ]
+}

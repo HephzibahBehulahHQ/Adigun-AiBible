@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 142,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:142:1",
+      "text": "A reflection by David from when he was in the cave. A prayer. I cry out loud to the LORD. I ask the LORD out loud for mercy."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:142:2",
+      "text": "I pour out my complaint in front of him and tell him all my trouble."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:142:3",
+      "text": "When my spirit was overwhelmed inside me, you knew the path I was on. On the path I walk, they’ve hidden a trap for me."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:142:4",
+      "text": "Look to my right and see. There’s nobody looking out for me. I’ve got nowhere to run, and no one cares whether I live."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:142:5",
+      "text": "I cried out to you, LORD. I said, “You’re my shelter, my share in the land of the living.”"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:142:6",
+      "text": "Listen to my cry because I’m desperate. Save me from those coming after me, because they’re too strong for me."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:142:7",
+      "text": "Get my soul out of prison so I can thank your name. Righteous people will gather around me, because you’ll be good to me."
+    }
+  ]
+}

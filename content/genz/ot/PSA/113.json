@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 113,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:113:1",
+      "text": "Praise the LORD! You servants of the LORD, give him praise! Praise the LORD’s name."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:113:2",
+      "text": "Bless the LORD’s name from now on and forever."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:113:3",
+      "text": "From sunrise to sunset, the LORD’s name deserves praise."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:113:4",
+      "text": "The LORD is high above every nation. His glory is above the heavens."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:113:5",
+      "text": "Who’s like the LORD our God, who sits way up high"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:113:6",
+      "text": "and stoops down to look at heaven and earth?"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:113:7",
+      "text": "He lifts poor people out of the dirt and raises needy people from the ash heap,"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:113:8",
+      "text": "so he can give them a seat with princes, right alongside the princes of his people."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:113:9",
+      "text": "He settles the woman who couldn’t have children in a home as a joyful mother. Praise the LORD!"
+    }
+  ]
+}

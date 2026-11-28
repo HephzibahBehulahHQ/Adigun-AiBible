@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 129,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:129:1",
+      "text": "A song of ascents. “They’ve made me suffer again and again since I was young.” Let Israel say it now:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:129:2",
+      "text": "“They’ve made me suffer again and again since I was young, but they didn’t beat me.”"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:129:3",
+      "text": "Plowers ran their plows over my back and dragged their furrows long."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:129:4",
+      "text": "The LORD is righteous. He cut the ropes of the wicked apart."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:129:5",
+      "text": "Let everyone who hates Zion be put to shame and forced to turn back."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:129:6",
+      "text": "Let them be like grass on rooftops, drying out before it even grows up,"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:129:7",
+      "text": "so harvesters can’t fill their hands with it and people tying bundles can’t fill their arms."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:129:8",
+      "text": "And nobody walking by says, “The LORD’s blessing be on you. We bless you in the LORD’s name.”"
+    }
+  ]
+}

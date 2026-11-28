@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 53,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:53:1",
+      "text": "For the music director, to “Mahalath.” A psalm for reflection by David. The fool thinks, “There's no God.” They're corrupt and have done awful things. No one does good."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:53:2",
+      "text": "God looks down from heaven at humanity to see if anyone understands and seeks him."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:53:3",
+      "text": "Every one of them has turned back. They've all become corrupt together. No one does good. Not even one."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:53:4",
+      "text": "Do these people doing wrong understand anything? They devour my people like they're eating bread, and they never call on God."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:53:5",
+      "text": "They were terrified where there was nothing to fear. God scattered the bones of those camped against you. You put them to shame because God rejected them."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:53:6",
+      "text": "If only rescue for Israel would come from Zion! When God brings his people back from captivity, Jacob will celebrate and Israel will be glad. 🙌"
+    }
+  ]
+}

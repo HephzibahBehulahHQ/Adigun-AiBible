@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 43,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:43:1",
+      "text": "God, show that I'm in the right. Take up my case against a nation that turns away from you. Rescue me from people who lie and do evil."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:43:2",
+      "text": "You're the God who gives me strength. Why have you turned me away? Why do I go around grieving under my enemy's oppression?"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:43:3",
+      "text": "Send out your light and your truth. Let them lead me all the way to your holy hill, to your tents. ✨"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:43:4",
+      "text": "Then I'll go to God's altar, to God, my greatest joy. I'll praise you on the harp, God, my God."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:43:5",
+      "text": "Why are you so down, my soul? Why are you so restless inside me? Put your hope in God! I'll praise him again, my Savior, my helper, and my God."
+    }
+  ]
+}

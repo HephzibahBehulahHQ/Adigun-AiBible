@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 131,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:131:1",
+      "text": "A song of ascents. By David. LORD, my heart isn’t proud, and I don’t look down on people. I don’t take on matters too big or too wonderful for me."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:131:2",
+      "text": "I’ve settled and quieted my soul. Like a weaned child resting with its mother, that’s how my soul rests inside me."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:131:3",
+      "text": "Israel, put your hope in the LORD, from now on and forever."
+    }
+  ]
+}

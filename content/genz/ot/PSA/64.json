@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 64,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:64:1",
+      "text": "For the music director. A psalm by David. God, hear me as I bring you my troubles. Keep me safe from the enemy I fear."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:64:2",
+      "text": "Hide me from what the wicked are plotting and from the noisy crowd of people doing evil."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:64:3",
+      "text": "They sharpen their tongues like swords and aim their deadly words like arrows,"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:64:4",
+      "text": "ready to fire from hiding at someone innocent. They shoot without warning and without fear."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:64:5",
+      "text": "They hype each other up to do wrong and talk about setting traps in secret. “Who's going to see them?” they say."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:64:6",
+      "text": "They scheme to do injustice and say, “We've got the perfect plan!” The human mind and heart can be so cunning."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:64:7",
+      "text": "But God will shoot at them. An arrow will strike them down without warning."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:64:8",
+      "text": "Their own words will be their undoing. Everyone who sees them will shake their heads."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:64:9",
+      "text": "Everyone will be afraid. They'll tell what God has done and take it to heart."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:64:10",
+      "text": "People who do what's right will rejoice in the LORD and run to him for shelter. Everyone with an upright heart will praise him! 🙌"
+    }
+  ]
+}

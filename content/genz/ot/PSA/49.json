@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 49,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:49:1",
+      "text": "For the music director. A psalm by the sons of Korah. Hear this, all you peoples! Everyone in the world, listen up."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:49:2",
+      "text": "High or low, rich or poor, listen together."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:49:3",
+      "text": "I'll speak wisdom. What my heart has to say comes from understanding."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:49:4",
+      "text": "I'll listen closely to a proverb and work out my riddle on the harp."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:49:5",
+      "text": "Why should I be afraid when trouble hits and the wrong of those at my heels closes in around me?"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:49:6",
+      "text": "People trust their money and flex about how much they have."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:49:7",
+      "text": "Yet none of them can buy back a brother's life or pay God a ransom for him."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:49:8",
+      "text": "A life costs too much to buy back. No payment could ever cover it"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:49:9",
+      "text": "so someone could live forever and never see decay."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:49:10",
+      "text": "Anyone can see that wise people die. Fools and people with no sense die too. They all leave what they own to someone else."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:49:11",
+      "text": "Deep down they think their houses will last forever and their homes will stand for generations. They even name their lands after themselves."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:49:12",
+      "text": "For all their riches, people don't last. They die like the animals do."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:49:13",
+      "text": "That's where foolish people end up, along with everyone who buys into what they say. Selah."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:49:14",
+      "text": "They're headed for Sheol like sheep in a flock, with death as their shepherd. In the morning the upright will rule over them. Their beauty will decay in Sheol, far from the mansions they called home."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:49:15",
+      "text": "But God will buy my life back from the grip of Sheol. He'll take me in. Selah."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:49:16",
+      "text": "Don't be afraid when someone gets rich and their household grows more impressive."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:49:17",
+      "text": "When they die, they can't take a thing. Their glory won't go down with them."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:49:18",
+      "text": "Even if they congratulate themselves while they're alive, and people applaud them for doing well,"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:49:19",
+      "text": "they'll join their ancestors, who will never see the light again."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PSA:49:20",
+      "text": "Riches without understanding leave a person like the animals that die."
+    }
+  ]
+}

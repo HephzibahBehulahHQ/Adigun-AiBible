@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 1,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:1:1",
+      "text": "Blessed is the person who doesn’t follow the advice of the wicked, stand on the road sinners take, or sit down with people who scoff."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:1:2",
+      "text": "Instead, they find joy in the LORD’s law. They keep turning it over in their mind, day and night."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:1:3",
+      "text": "They’re like a tree planted beside streams of water. It bears fruit in season, and its leaves never wither. Whatever they do prospers."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:1:4",
+      "text": "The wicked aren’t like that. They’re like chaff the wind blows away."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:1:5",
+      "text": "So the wicked won’t stand when judgment comes, and sinners won’t stand in the gathering of the righteous."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:1:6",
+      "text": "The LORD knows the road the righteous take, but the road of the wicked leads to ruin."
+    }
+  ]
+}

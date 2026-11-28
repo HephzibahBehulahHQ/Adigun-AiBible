@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 141,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:141:1",
+      "text": "A psalm by David. LORD, I’m calling on you. Come quickly! Hear my voice when I call."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:141:2",
+      "text": "Let my prayer reach you like incense, and my raised hands be like the evening sacrifice."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:141:3",
+      "text": "LORD, set a guard over my mouth. Watch the door of my lips."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:141:4",
+      "text": "Don’t let my heart lean toward anything evil, or let me join people who do wrong in their wicked deeds. Don’t let me eat their fancy food."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:141:5",
+      "text": "Let someone righteous strike me. That’s an act of kindness. Let them correct me. That’s like oil on my head, and I won’t refuse it. Still, I’ll keep praying against evil deeds."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:141:6",
+      "text": "Their judges are thrown down along the rock. They’ll hear my words, because those words are well spoken."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:141:7",
+      "text": "“Like soil broken up by a plow, our bones have been scattered at the mouth of Sheol.”"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:141:8",
+      "text": "My eyes are on you, GOD my Lord. You’re where I run for shelter. Don’t leave my life stripped of everything."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:141:9",
+      "text": "Keep me out of the snare they’ve set for me and away from the traps of people who do wrong."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:141:10",
+      "text": "Let the wicked all fall into their own nets while I walk right past."
+    }
+  ]
+}

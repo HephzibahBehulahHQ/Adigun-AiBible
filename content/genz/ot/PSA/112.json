@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 112,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:112:1",
+      "text": "Praise the LORD! Blessed is the person who fears the LORD and finds real joy in his commands."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:112:2",
+      "text": "Their children will be mighty in the land. The generation of upright people will be blessed."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:112:3",
+      "text": "Wealth and riches are in their home. Their righteousness lasts forever."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:112:4",
+      "text": "Light breaks through the dark for upright people, for the gracious, merciful, and righteous."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:112:5",
+      "text": "Things go well for the person who is generous and lends. They handle their affairs with justice."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:112:6",
+      "text": "They won’t ever be shaken. The righteous will be remembered forever."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:112:7",
+      "text": "They won’t panic over bad news. Their heart is steady because they trust the LORD."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:112:8",
+      "text": "Their heart is secure. They won’t be afraid when they finally look on their enemies."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:112:9",
+      "text": "They’ve spread what they have around and given to poor people. Their righteousness lasts forever. Their strength will be lifted up in honor."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:112:10",
+      "text": "The wicked will see it and get upset. They’ll grind their teeth and melt away. What the wicked long for will come to nothing."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 127,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:127:1",
+      "text": "A song of ascents. By Solomon. Unless the LORD builds the house, the builders work for nothing. Unless the LORD watches over the city, the guard stays up for nothing."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:127:2",
+      "text": "There’s no point in getting up early and staying up late just to eat bread you wore yourself out for. God gives sleep to the people he loves."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:127:3",
+      "text": "Look, children are an inheritance from the LORD. Children born to you are his reward."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:127:4",
+      "text": "Children born when you’re young are like arrows in a warrior’s hand."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:127:5",
+      "text": "Happy is the parent with a quiver full of them. They won’t hang their heads when they speak to their enemies at the gate."
+    }
+  ]
+}

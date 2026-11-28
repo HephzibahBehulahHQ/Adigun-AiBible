@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 28,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:28:1",
+      "text": "By David. LORD, I'm calling to you. You're my rock. Please don't go quiet on me, or I'll be like the people going down into the pit."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:28:2",
+      "text": "Hear me pleading when I cry out to you and lift my hands toward your Most Holy Place."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:28:3",
+      "text": "Don't drag me away with the wicked, with people who talk peace to their neighbors while plotting harm in their hearts."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:28:4",
+      "text": "Pay them back for what they've done and for how wickedly they've acted. Give them back what their own hands have earned."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:28:5",
+      "text": "They pay no attention to the LORD's works or to what his hands have made. He'll tear them down and won't build them back up."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:28:6",
+      "text": "Bless the LORD! He heard me pleading for help."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:28:7",
+      "text": "The LORD is my strength and my shield. My heart trusted him, and he came through for me. My heart is full of joy, and I'll thank him with a song. 🎶"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:28:8",
+      "text": "The LORD is his people's strength, a fortress of safety for his anointed."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:28:9",
+      "text": "Save your people and bless those who belong to you. Be their shepherd and carry them forever."
+    }
+  ]
+}

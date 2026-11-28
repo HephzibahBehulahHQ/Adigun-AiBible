@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 52,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:52:1",
+      "text": "For the music director. A psalm for reflection by David, when Doeg the Edomite told Saul, “David has gone to Ahimelech's house.” Why are you flexing about the harm you've done, mighty man? God's faithful love lasts all day long."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:52:2",
+      "text": "Your tongue plans destruction. It's like a sharp razor when you use it to deceive."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:52:3",
+      "text": "You love evil more than good. You'd rather lie than speak the truth. Selah."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:52:4",
+      "text": "You love every word that tears people apart, you lying tongue."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:52:5",
+      "text": "God will tear you down for good. He'll grab you, pull you out of your tent, and uproot you from the land of the living. Selah."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:52:6",
+      "text": "People who do right will see it, stand in awe, and laugh at him."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:52:7",
+      "text": "“Look at him. He didn't make God his strength. He counted on piles of money and built up his power by doing wrong.”"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:52:8",
+      "text": "But I'm like a green olive tree in God's house. I'm trusting God's faithful love forever and ever. 🫒"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:52:9",
+      "text": "I'll thank you forever for what you've done. I'll put my hope in your name, because it's good, right there with your faithful people."
+    }
+  ]
+}

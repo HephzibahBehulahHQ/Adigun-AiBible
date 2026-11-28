@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 7,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:7:1",
+      "text": "A meditation David sang to the LORD about the words of Cush the Benjaminite. LORD my God, I take shelter in you. Save me from everyone chasing me. Get me out of their hands,"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:7:2",
+      "text": "or they’ll tear me apart like a lion, ripping me to pieces with no one there to rescue me."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:7:3",
+      "text": "LORD my God, if I really did this, if these hands are guilty,"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:7:4",
+      "text": "if I paid back someone who was at peace with me by doing evil, if I plundered someone who was my enemy for no reason,"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:7:5",
+      "text": "then let the enemy chase me down and catch me. Let him trample my life into the ground and lay my honor in the dust. Selah."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:7:6",
+      "text": "Rise up in your anger, LORD. Stand against the fury of my enemies. Wake up for me. You’ve called for judgment."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:7:7",
+      "text": "Let the peoples gather around you. Rule over them from on high."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:7:8",
+      "text": "The LORD judges the peoples. Judge me, LORD, by my righteousness and the integrity within me."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:7:9",
+      "text": "Put an end to the evil of the wicked and make the righteous stand firm. You’re the righteous God who searches hearts and minds."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:7:10",
+      "text": "God is my shield. He saves those whose hearts are upright."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:7:11",
+      "text": "God is a righteous judge, a God who feels indignation every day."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:7:12",
+      "text": "If a person refuses to turn back, God will sharpen his sword. He’s bent his bow and set the string."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:7:13",
+      "text": "He’s prepared his weapons of death and made his flaming arrows ready."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:7:14",
+      "text": "Look, the wicked person is in labor with wrongdoing. They conceived trouble and gave birth to lies."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:7:15",
+      "text": "They dug a hole, then fell into the very pit they made."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:7:16",
+      "text": "The trouble they cause will come back on their own head. Their violence will come down on the crown of their own head."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:7:17",
+      "text": "I’ll thank the LORD for his righteousness. I’ll sing praise to the name of the LORD Most High."
+    }
+  ]
+}

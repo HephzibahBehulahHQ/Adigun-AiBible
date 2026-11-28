@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 76,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:76:1",
+      "text": "For the music director. On strings. A psalm by Asaph. A song. People in Judah know God. His name is great in Israel."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:76:2",
+      "text": "His tent is in Salem. His home is in Zion."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:76:3",
+      "text": "There he broke the flaming arrows, the shield, the sword, and the weapons of war. Selah."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:76:4",
+      "text": "You shine with glory, more majestic than mountains full of prey."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:76:5",
+      "text": "The bravest warriors lie stripped of their gear. They've slept their last sleep. None of them can lift a hand."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:76:6",
+      "text": "At your rebuke, God of Jacob, both chariot and horse fall into a dead sleep."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:76:7",
+      "text": "You're the one to be feared. Who can stand before you when you're angry?"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:76:8",
+      "text": "You announced your judgment from heaven. The earth went silent in fear"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:76:9",
+      "text": "when God rose to judge and save all the suffering people of the earth. Selah."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:76:10",
+      "text": "Even human anger ends up praising you. You hold back those who survive your wrath."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:76:11",
+      "text": "Make vows to the LORD your God and keep them! Let everyone around him bring gifts to the one they should stand in awe of."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:76:12",
+      "text": "He breaks the spirit of rulers. The kings of the earth fear him."
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 90,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:90:1",
+      "text": "A prayer by Moses, the man of God. Lord, you've been our home through every generation."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:90:2",
+      "text": "Before the mountains were born, before you shaped the earth and the world, from everlasting to everlasting, you are God."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:90:3",
+      "text": "You turn people back to dust and say, “Return, you mortals.”"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:90:4",
+      "text": "A thousand years to you are like yesterday once it's gone, like one watch in the night."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:90:5",
+      "text": "You sweep people away as they sleep. In the morning they shoot up like fresh grass."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:90:6",
+      "text": "It sprouts and grows in the morning. By evening it's dried up and withered."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:90:7",
+      "text": "Your anger consumes us. Your wrath leaves us shaken."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:90:8",
+      "text": "You've set our wrongs in front of you. Even our secret sins are in the light of your presence."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:90:9",
+      "text": "All our days pass under your wrath. Our years end with a sigh."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:90:10",
+      "text": "We get seventy years, or eighty if we're strong. Even the best of them bring hard work and grief. They pass in a flash, and we fly away."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:90:11",
+      "text": "Who knows how powerful your anger is? Who reckons with your wrath and gives you the reverence you're due?"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:90:12",
+      "text": "Teach us to count our days so we can grow wise at heart."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:90:13",
+      "text": "Relent, LORD! How long will it be? Show compassion to your servants!"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:90:14",
+      "text": "Fill us with your faithful love in the morning so we can rejoice and be glad all our days. 🌅"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:90:15",
+      "text": "Give us as many days of joy as the days you made us suffer, as many years as we've known trouble."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:90:16",
+      "text": "Let your servants see what you do and their children see your glory."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:90:17",
+      "text": "May the favor of the Lord our God rest on us. Make the work of our hands last. Yes, make the work of our hands last."
+    }
+  ]
+}

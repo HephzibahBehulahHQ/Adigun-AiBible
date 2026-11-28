@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 106,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:106:1",
+      "text": "Praise the LORD! Thank the LORD because he’s good. His faithful love lasts forever."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:106:2",
+      "text": "Who could tell all the mighty things the LORD has done? Who could give him all the praise he deserves?"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:106:3",
+      "text": "Blessed are the people who uphold justice and the person who does what’s right every time."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:106:4",
+      "text": "Remember me, LORD, when you show favor to your people. Come rescue me,"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:106:5",
+      "text": "so I can see the people you chose thrive, celebrate with your nation, and take pride with the people who are your inheritance."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:106:6",
+      "text": "We’ve sinned right along with our ancestors. We’ve done wrong. We’ve acted wickedly."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:106:7",
+      "text": "Our ancestors didn’t get what your wonders in Egypt meant. They forgot your countless acts of faithful love and rebelled by the sea, right there at the Red Sea."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:106:8",
+      "text": "Still, he saved them for his name’s sake, to show how mighty his power is."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:106:9",
+      "text": "He told the Red Sea off, and it dried up. He led them through the depths like they were walking through a desert."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:106:10",
+      "text": "He saved them from the grip of the one who hated them and bought them back from the enemy’s hand."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:106:11",
+      "text": "The waters covered their enemies. Not one of them was left."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:106:12",
+      "text": "Then they believed what he said and sang his praises."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:106:13",
+      "text": "But they forgot what he’d done in no time. They didn’t wait for his advice."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:106:14",
+      "text": "They gave in to their cravings in the desert and put God to the test in the wasteland."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:106:15",
+      "text": "He gave them what they asked for but made their souls waste away."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:106:16",
+      "text": "In the camp they got jealous of Moses and of Aaron, the one set apart for the LORD."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:106:17",
+      "text": "The earth opened up and swallowed Dathan and buried Abiram’s whole group."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:106:18",
+      "text": "A fire broke out among them. The flames burned up the wicked."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:106:19",
+      "text": "At Horeb they made a calf and bowed to an image cast from metal."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PSA:106:20",
+      "text": "They traded away their glory for a picture of a bull that eats grass."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PSA:106:21",
+      "text": "They forgot God, the one who saved them and did great things in Egypt,"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PSA:106:22",
+      "text": "wonders in the land of Ham and awe-inspiring things by the Red Sea."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PSA:106:23",
+      "text": "He said he’d wipe them out, but Moses, the one he chose, stood in the gap before him. He turned God’s anger away so God wouldn’t destroy them."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PSA:106:24",
+      "text": "They looked down on that good land and didn’t believe what he said."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PSA:106:25",
+      "text": "They grumbled in their tents and wouldn’t listen to the LORD’s voice."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:PSA:106:26",
+      "text": "So he swore he’d bring them down in the wilderness,"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:PSA:106:27",
+      "text": "bring their descendants down among the nations, and scatter them through other lands."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:PSA:106:28",
+      "text": "They attached themselves to Baal Peor and ate sacrifices offered to the dead."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:PSA:106:29",
+      "text": "What they did made him angry, and a plague broke out among them."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:PSA:106:30",
+      "text": "Then Phinehas stood up and carried out judgment, and the plague stopped."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:PSA:106:31",
+      "text": "That counted as righteousness for him through every generation to come."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:PSA:106:32",
+      "text": "They angered the LORD at the waters of Meribah too, and Moses suffered trouble on their account."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:PSA:106:33",
+      "text": "They rebelled against his spirit, and he spoke without thinking."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:PSA:106:34",
+      "text": "They didn’t destroy the peoples as the LORD told them to."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:PSA:106:35",
+      "text": "Instead they mixed with the nations and picked up their ways."
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:PSA:106:36",
+      "text": "They served those nations’ idols, and the idols trapped them."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:PSA:106:37",
+      "text": "They even sacrificed their sons and daughters to demons."
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:PSA:106:38",
+      "text": "They spilled innocent blood, the blood of their own sons and daughters, sacrificing them to the idols of Canaan. The blood polluted the land."
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:PSA:106:39",
+      "text": "They made themselves unclean by what they did and sold themselves out through their actions."
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:PSA:106:40",
+      "text": "So the LORD burned with anger at his people and was disgusted with his own inheritance."
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:PSA:106:41",
+      "text": "He handed them over to the nations, and the people who hated them ruled over them."
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:PSA:106:42",
+      "text": "Their enemies oppressed them and forced them to live under their control."
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:PSA:106:43",
+      "text": "He rescued them over and over, but they kept making rebellious plans and were brought low by their own wrongdoing."
+    },
+    {
+      "number": 44,
+      "sourceRef": "eng-web:PSA:106:44",
+      "text": "Even so, he saw how much they were hurting when he heard their cry."
+    },
+    {
+      "number": 45,
+      "sourceRef": "eng-web:PSA:106:45",
+      "text": "He remembered his covenant with them and backed away from what he’d planned because his faithful love was so great."
+    },
+    {
+      "number": 46,
+      "sourceRef": "eng-web:PSA:106:46",
+      "text": "He made the people who took them captive feel sorry for them."
+    },
+    {
+      "number": 47,
+      "sourceRef": "eng-web:PSA:106:47",
+      "text": "Save us, LORD our God! Gather us from among the nations so we can thank your holy name and celebrate your praise!"
+    },
+    {
+      "number": 48,
+      "sourceRef": "eng-web:PSA:106:48",
+      "text": "Bless the LORD, the God of Israel, from forever to forever! Let all the people say, “Amen.” Praise the LORD!"
+    }
+  ]
+}

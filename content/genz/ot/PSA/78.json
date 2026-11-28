@@ -1,0 +1,371 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PSA",
+  "bookName": "Psalms",
+  "chapterNumber": 78,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PSA:78:1",
+      "text": "A psalm for reflection by Asaph. My people, hear what I'm teaching. Listen closely to my words."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PSA:78:2",
+      "text": "I'll speak in a parable and bring out hard truths from long ago,"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PSA:78:3",
+      "text": "things we've heard and known because our ancestors told us."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PSA:78:4",
+      "text": "We won't hide them from their children. We'll tell the next generation why the LORD deserves praise, how strong he is, and what amazing things he's done."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PSA:78:5",
+      "text": "He established a covenant in Jacob and gave Israel a teaching. He commanded our ancestors to pass it on to their children,"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PSA:78:6",
+      "text": "so the next generation would know, even children yet to be born. They'd grow up and tell their own children,"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PSA:78:7",
+      "text": "so they'd put their hope in God, remember what he's done, and keep his commands."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PSA:78:8",
+      "text": "That way they wouldn't be like their ancestors, a stubborn generation that rebelled, whose hearts weren't loyal and whose spirits wouldn't stay faithful to God."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PSA:78:9",
+      "text": "Ephraim's people were armed with bows, but on battle day they turned back."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PSA:78:10",
+      "text": "They broke God's covenant and refused to live by his law."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PSA:78:11",
+      "text": "They forgot what he'd done, all the wonders he'd shown them."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PSA:78:12",
+      "text": "He did amazing things in front of their ancestors in Egypt, in the fields of Zoan."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PSA:78:13",
+      "text": "He split the sea and let them cross. He piled the waters up like a wall."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PSA:78:14",
+      "text": "By day he led them with a cloud, and all night with the light of fire."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PSA:78:15",
+      "text": "He split rocks in the wilderness and gave them water to drink as freely as from the depths."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PSA:78:16",
+      "text": "He brought streams out of the rock and made water flow down like rivers."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PSA:78:17",
+      "text": "Still, they kept sinning against him and rebelling against the Most High in the desert."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PSA:78:18",
+      "text": "In their hearts they put God to the test by demanding the food they craved."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PSA:78:19",
+      "text": "They spoke against God: “Can God set a table in the wilderness?"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PSA:78:20",
+      "text": "Sure, he struck the rock and water gushed out until streams overflowed. But can he give us bread? Can he get meat for his people?”"
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PSA:78:21",
+      "text": "The LORD heard and was angry. Fire flared against Jacob, and anger rose against Israel,"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PSA:78:22",
+      "text": "because they didn't believe God or trust him to save them."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PSA:78:23",
+      "text": "Even so, he commanded the skies above and opened heaven's doors."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PSA:78:24",
+      "text": "He rained down manna for them to eat and gave them food from the sky."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PSA:78:25",
+      "text": "People ate the bread of angels. He sent them enough food to eat their fill."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:PSA:78:26",
+      "text": "He sent the east wind blowing through the skies. By his power he directed the south wind."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:PSA:78:27",
+      "text": "He rained meat down on them like dust, birds as countless as sand by the sea."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:PSA:78:28",
+      "text": "He dropped them right in the camp, all around where they lived."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:PSA:78:29",
+      "text": "They ate until they were full. He gave them exactly what they craved."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:PSA:78:30",
+      "text": "But they wouldn't let go of their cravings. The food was still in their mouths"
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:PSA:78:31",
+      "text": "when God's anger rose against them. He killed some of their strongest and struck down Israel's young men."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:PSA:78:32",
+      "text": "Even after all that, they kept sinning and wouldn't believe in his wonders."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:PSA:78:33",
+      "text": "So he brought their days to nothing and filled their years with terror."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:PSA:78:34",
+      "text": "When he struck them down, they came looking for him. They turned back and searched for God with real urgency."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:PSA:78:35",
+      "text": "They remembered that God was their rock, that the Most High God was their redeemer."
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:PSA:78:36",
+      "text": "But they flattered him with their mouths and lied to him with their tongues."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:PSA:78:37",
+      "text": "Their hearts weren't right with him, and they weren't faithful to his covenant."
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:PSA:78:38",
+      "text": "Yet he showed mercy. He forgave their wrongdoing and held back from destroying them. Again and again he turned his anger away and held back the full force of his wrath."
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:PSA:78:39",
+      "text": "He remembered they were only flesh, like a wind that blows past and never comes back."
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:PSA:78:40",
+      "text": "How often they rebelled against him in the wilderness and hurt him in the desert!"
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:PSA:78:41",
+      "text": "They put God to the test again and pushed the Holy One of Israel to anger."
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:PSA:78:42",
+      "text": "They forgot his power and the day he rescued them from their enemy."
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:PSA:78:43",
+      "text": "They forgot how he showed his signs in Egypt and his wonders in the fields of Zoan."
+    },
+    {
+      "number": 44,
+      "sourceRef": "eng-web:PSA:78:44",
+      "text": "He turned their rivers and streams into blood so they couldn't drink."
+    },
+    {
+      "number": 45,
+      "sourceRef": "eng-web:PSA:78:45",
+      "text": "He sent swarms of flies that devoured them and frogs that brought destruction."
+    },
+    {
+      "number": 46,
+      "sourceRef": "eng-web:PSA:78:46",
+      "text": "He handed their crops over to caterpillars and the fruit of their work to locusts."
+    },
+    {
+      "number": 47,
+      "sourceRef": "eng-web:PSA:78:47",
+      "text": "He destroyed their vines with hail and their sycamore figs with frost."
+    },
+    {
+      "number": 48,
+      "sourceRef": "eng-web:PSA:78:48",
+      "text": "He left their livestock to the hail and their flocks to blazing lightning."
+    },
+    {
+      "number": 49,
+      "sourceRef": "eng-web:PSA:78:49",
+      "text": "He unleashed fierce anger on them, wrath, outrage, and trouble, with a band of angels bringing disaster."
+    },
+    {
+      "number": 50,
+      "sourceRef": "eng-web:PSA:78:50",
+      "text": "He cleared a path for his anger. He didn't spare them from death but left their lives to the plague."
+    },
+    {
+      "number": 51,
+      "sourceRef": "eng-web:PSA:78:51",
+      "text": "He struck every firstborn in Egypt, the first of their strength in the tents of Ham."
+    },
+    {
+      "number": 52,
+      "sourceRef": "eng-web:PSA:78:52",
+      "text": "But he led his own people out like sheep and guided them through the wilderness like a flock."
+    },
+    {
+      "number": 53,
+      "sourceRef": "eng-web:PSA:78:53",
+      "text": "He led them safely so they had no reason to fear. The sea swept over their enemies."
+    },
+    {
+      "number": 54,
+      "sourceRef": "eng-web:PSA:78:54",
+      "text": "He brought them to the edge of his holy land, to this mountain his right hand had taken."
+    },
+    {
+      "number": 55,
+      "sourceRef": "eng-web:PSA:78:55",
+      "text": "He drove out nations ahead of them, measured out land for their inheritance, and settled Israel's tribes in their tents."
+    },
+    {
+      "number": 56,
+      "sourceRef": "eng-web:PSA:78:56",
+      "text": "Yet they tested and rebelled against God Most High and refused to keep his instructions."
+    },
+    {
+      "number": 57,
+      "sourceRef": "eng-web:PSA:78:57",
+      "text": "They turned away and acted just as faithlessly as their ancestors. They twisted like a bow you can't trust."
+    },
+    {
+      "number": 58,
+      "sourceRef": "eng-web:PSA:78:58",
+      "text": "They made him angry with their places of worship on the heights and stirred his jealousy with their carved images."
+    },
+    {
+      "number": 59,
+      "sourceRef": "eng-web:PSA:78:59",
+      "text": "When God heard, he was angry and recoiled from Israel."
+    },
+    {
+      "number": 60,
+      "sourceRef": "eng-web:PSA:78:60",
+      "text": "He left the tent at Shiloh, the tent he'd set up among people."
+    },
+    {
+      "number": 61,
+      "sourceRef": "eng-web:PSA:78:61",
+      "text": "He let his strength go into captivity and gave his glory into his enemy's hands."
+    },
+    {
+      "number": 62,
+      "sourceRef": "eng-web:PSA:78:62",
+      "text": "He handed his people over to the sword and was angry with his own inheritance."
+    },
+    {
+      "number": 63,
+      "sourceRef": "eng-web:PSA:78:63",
+      "text": "Fire devoured their young men, and their young women never heard a wedding song."
+    },
+    {
+      "number": 64,
+      "sourceRef": "eng-web:PSA:78:64",
+      "text": "Their priests fell by the sword, and their widows couldn't even weep."
+    },
+    {
+      "number": 65,
+      "sourceRef": "eng-web:PSA:78:65",
+      "text": "Then the Lord woke as if from sleep, like a warrior shouting from the force of wine."
+    },
+    {
+      "number": 66,
+      "sourceRef": "eng-web:PSA:78:66",
+      "text": "He struck his enemies and drove them back, leaving them in lasting disgrace."
+    },
+    {
+      "number": 67,
+      "sourceRef": "eng-web:PSA:78:67",
+      "text": "He rejected Joseph's tent and passed over the tribe of Ephraim."
+    },
+    {
+      "number": 68,
+      "sourceRef": "eng-web:PSA:78:68",
+      "text": "He chose the tribe of Judah and Mount Zion, which he loved."
+    },
+    {
+      "number": 69,
+      "sourceRef": "eng-web:PSA:78:69",
+      "text": "He built his sanctuary like the heights, like the earth he set in place forever."
+    },
+    {
+      "number": 70,
+      "sourceRef": "eng-web:PSA:78:70",
+      "text": "He chose David his servant and took him from the sheepfolds."
+    },
+    {
+      "number": 71,
+      "sourceRef": "eng-web:PSA:78:71",
+      "text": "He brought David away from tending mother sheep and their young to shepherd Jacob, his people, and Israel, his inheritance."
+    },
+    {
+      "number": 72,
+      "sourceRef": "eng-web:PSA:78:72",
+      "text": "David shepherded them with an honest heart and guided them with skilled hands."
+    }
+  ]
+}

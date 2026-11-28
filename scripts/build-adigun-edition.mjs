@@ -27,6 +27,7 @@ const portion = {
   NEH: { testament: 'ot', chapters: 13 },
   EST: { testament: 'ot', chapters: 10 },
   JOB: { testament: 'ot', chapters: 42 },
+  PSA: { testament: 'ot', chapters: 150 },
   MAT: { testament: 'nt', chapters: 28 },
   MRK: { testament: 'nt', chapters: 16 },
   LUK: { testament: 'nt', chapters: 24 },
