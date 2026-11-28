@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "SNG",
+  "bookName": "Song of Solomon",
+  "chapterNumber": 5,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:SNG:5:1",
+      "text": "I've come into my garden, my sister, my bride. I've gathered my myrrh and my spice, eaten my honeycomb and honey, and drunk my wine and milk. Friends: Eat, friends! Drink your fill, beloved."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:SNG:5:2",
+      "text": "I was asleep, but my heart was awake. I heard my beloved knocking. “Open up for me, my sister, my love, my dove, my pure one. My head is covered in dew, my hair damp from the night.”"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:SNG:5:3",
+      "text": "I've already taken off my robe. Do I have to put it back on? I've washed my feet. Do I have to get them dirty?"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:SNG:5:4",
+      "text": "My beloved reached his hand through the opening by the latch. My heart pounded for him."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:SNG:5:5",
+      "text": "I got up to open the door for my beloved. My hands dripped with myrrh, my fingers with liquid myrrh, onto the handles of the lock."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:SNG:5:6",
+      "text": "I opened the door for my beloved, but he'd already turned and gone. My heart had gone out to him when he spoke. I looked for him but couldn't find him. I called out, but he didn't answer."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:SNG:5:7",
+      "text": "The watchmen on their rounds found me. They beat me and left me bruised. The guards on the walls took my cloak away."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:SNG:5:8",
+      "text": "Daughters of Jerusalem, swear to me that if you find my beloved, you'll tell him I'm faint with love."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:SNG:5:9",
+      "text": "What makes your beloved better than any other, most beautiful of women? What's so special about him that you'd make us swear like this?"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:SNG:5:10",
+      "text": "My beloved is fair and ruddy, the finest among ten thousand."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:SNG:5:11",
+      "text": "His head is like the purest gold. His hair is thick and black as a raven."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:SNG:5:12",
+      "text": "His eyes are like doves beside streams of water, washed in milk and set like jewels."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:SNG:5:13",
+      "text": "His cheeks are like a bed of spices with mounds of fragrance. His lips are like lilies dripping liquid myrrh."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:SNG:5:14",
+      "text": "His hands are like gold rings set with beryl. His body is like carved ivory overlaid with sapphires."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:SNG:5:15",
+      "text": "His legs are like marble pillars standing on bases of fine gold. He looks as majestic as Lebanon, as splendid as its cedars."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:SNG:5:16",
+      "text": "His mouth is sweetness itself, and he's lovely through and through. This is my beloved, and this is my friend, daughters of Jerusalem."
+    }
+  ]
+}
