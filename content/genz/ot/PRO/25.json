@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PRO",
+  "bookName": "Proverbs",
+  "chapterNumber": 25,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PRO:25:1",
+      "text": "These are more proverbs of Solomon, copied down by the men of Hezekiah, king of Judah."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PRO:25:2",
+      "text": "God's glory is to keep a matter hidden. The glory of kings is to search it out."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PRO:25:3",
+      "text": "The sky is high, the earth is deep, and nobody can fully search out a king's heart."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PRO:25:4",
+      "text": "Remove the impurities from silver, and the refiner has something to work with."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PRO:25:5",
+      "text": "Remove wicked people from the king's presence, and his throne will stand firm on righteousness."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PRO:25:6",
+      "text": "Don't hype yourself up in front of the king or claim a place among important people."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PRO:25:7",
+      "text": "It's better to hear, “Come up here,” than to be moved down in front of the ruler you're standing there looking at."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PRO:25:8",
+      "text": "Don't rush to take someone to court. What will you do when your neighbor proves you wrong and shames you?"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PRO:25:9",
+      "text": "Talk the case through with your neighbor, and keep other people's secrets,"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PRO:25:10",
+      "text": "or someone may hear what you did and shame you, and the bad reputation will stick."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PRO:25:11",
+      "text": "The right word at the right time is like golden apples set in silver."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PRO:25:12",
+      "text": "Wise correction to someone ready to listen is like a gold earring or a piece of pure gold jewelry."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PRO:25:13",
+      "text": "A reliable messenger is like the chill of snow in harvest season. They refresh the people who sent them."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PRO:25:14",
+      "text": "Someone who brags about a gift they never give is like clouds and wind that bring no rain."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PRO:25:15",
+      "text": "Patience can persuade a ruler. Gentle words can break a bone."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PRO:25:16",
+      "text": "Found some honey? Eat just enough. Too much and you'll throw it up."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PRO:25:17",
+      "text": "Don't show up at your neighbor's place too often, or they'll get tired of you and start to hate you."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PRO:25:18",
+      "text": "A false witness against a neighbor is like a club, a sword, or a sharp arrow."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PRO:25:19",
+      "text": "Trusting someone unreliable in a crisis is like chewing on a bad tooth or standing on an injured foot."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PRO:25:20",
+      "text": "Singing to someone with a heavy heart is like taking their coat in cold weather or pouring vinegar on soda."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PRO:25:21",
+      "text": "If your enemy is hungry, give them food. If they're thirsty, give them water."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PRO:25:22",
+      "text": "You'll pile burning coals on their head, and the LORD will reward you."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PRO:25:23",
+      "text": "The north wind brings rain. Talking behind someone's back brings angry faces."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PRO:25:24",
+      "text": "It's better to live in a corner of the roof than share a house with a wife who's always picking fights."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PRO:25:25",
+      "text": "Good news from far away is like cold water when you're thirsty."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:PRO:25:26",
+      "text": "Someone who does right and gives in to the wicked is like a muddy spring or a polluted well."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:PRO:25:27",
+      "text": "Too much honey isn't good for you. Chasing your own honor isn't honorable."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:PRO:25:28",
+      "text": "A person with no self-control is like a ruined city with its walls down."
+    }
+  ]
+}

@@ -26,6 +26,7 @@ const expectedBooks = [
   { id: 'EST', testament: 'ot', chapters: Array.from({ length: 10 }, (_, index) => index + 1) },
   { id: 'JOB', testament: 'ot', chapters: Array.from({ length: 42 }, (_, index) => index + 1) },
   { id: 'PSA', testament: 'ot', chapters: Array.from({ length: 150 }, (_, index) => index + 1) },
+  { id: 'PRO', testament: 'ot', chapters: Array.from({ length: 31 }, (_, index) => index + 1) },
   ...sourceManifest.books.slice(39).map(book => ({
     id: book.id, testament: 'nt', chapters: Array.from({ length: book.chapters }, (_, index) => index + 1),
   })),
@@ -36,10 +37,10 @@ test('reader edition contains only complete, source-aligned Adigun chapters in c
   assert.equal(manifest.edition.scope, 'portion');
   assert.equal(manifest.edition.revision, expectedBooks.map(({ id, chapters }) =>
     sourceManifest.books.find(book => book.id === id).name+' 1–'+chapters.length).join('; '));
-  assert.equal(manifest.edition.canonProfile.oldTestamentBookCount, 19);
+  assert.equal(manifest.edition.canonProfile.oldTestamentBookCount, 20);
   assert.equal(manifest.sourceManifestSha256, sourceManifest.edition.sha256);
   assert.deepEqual(manifest.books.map(row => row.id), expectedBooks.map(book => book.id));
-  assert.deepEqual(manifest.totals, { books: 46, chapters: 888, verses: 24359 });
+  assert.deepEqual(manifest.totals, { books: 47, chapters: 919, verses: 25274 });
   const installedBooks = [];
   for (const expected of expectedBooks) {
     const source = sourceManifest.books.find(row => row.id === expected.id);

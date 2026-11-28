@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PRO",
+  "bookName": "Proverbs",
+  "chapterNumber": 31,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PRO:31:1",
+      "text": "These are the words of King Lemuel, the revelation his mother taught him:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PRO:31:2",
+      "text": "“Oh, my son! The son I carried, the son of my vows!"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PRO:31:3",
+      "text": "Don't give your strength away to women or follow the ways that ruin kings."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PRO:31:4",
+      "text": "Lemuel, kings have no business drinking wine. Rulers have no business asking where the strong drink is."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PRO:31:5",
+      "text": "They might drink and forget the law, twisting the justice that people in trouble are owed."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PRO:31:6",
+      "text": "Give strong drink to someone who's about to die, and wine to someone bitter in soul."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PRO:31:7",
+      "text": "Let them drink and forget their poverty, and let their misery slip from their mind."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PRO:31:8",
+      "text": "Speak up for those who can't speak, and take up the cause of everyone left helpless."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PRO:31:9",
+      "text": "Speak up and judge fairly. Get justice for the poor and needy.”"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PRO:31:10",
+      "text": "Who can find a worthy woman? She's worth far more than rubies."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PRO:31:11",
+      "text": "Her husband trusts her with his whole heart, and he'll have no shortage of gain."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PRO:31:12",
+      "text": "She does him good and never harms him, all the days of her life."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PRO:31:13",
+      "text": "She looks for wool and flax and gets to work gladly with her hands."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PRO:31:14",
+      "text": "She's like a fleet of merchant ships, bringing her food from far away."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PRO:31:15",
+      "text": "She gets up while it's still dark, feeds her household, and sets out portions for the young women who serve her."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PRO:31:16",
+      "text": "She sizes up a field and buys it. From what her own hands earn, she plants a vineyard."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PRO:31:17",
+      "text": "She gets herself ready with strength and makes her arms strong."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PRO:31:18",
+      "text": "She sees that her business is making a profit. Her lamp stays lit at night."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PRO:31:19",
+      "text": "She reaches for the distaff and takes the spindle in her hands."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PRO:31:20",
+      "text": "She opens her arms to the poor and reaches out to people in need."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PRO:31:21",
+      "text": "She doesn't fear snow for her household. Everyone in the house is dressed in scarlet."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PRO:31:22",
+      "text": "She makes her own coverings. She dresses in fine linen and purple."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PRO:31:23",
+      "text": "Her husband is respected at the city gates, where he sits with the elders of the land."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PRO:31:24",
+      "text": "She makes linen clothes and sells them. She supplies sashes to the merchant."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PRO:31:25",
+      "text": "She wears strength and dignity like clothes. She can laugh at what's ahead."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:PRO:31:26",
+      "text": "When she speaks, wisdom comes out. She teaches with kindness."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:PRO:31:27",
+      "text": "She watches over how her household is doing. She doesn't eat the bread of idleness."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:PRO:31:28",
+      "text": "Her children stand up and call her blessed. Her husband praises her too:"
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:PRO:31:29",
+      "text": "“Many women do noble things, but you rise above them all.”"
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:PRO:31:30",
+      "text": "Charm can fool you, and beauty doesn't last. A woman who reveres the LORD deserves praise."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:PRO:31:31",
+      "text": "Give her what her work has earned. Let what she's done bring her praise at the city gates!"
+    }
+  ]
+}

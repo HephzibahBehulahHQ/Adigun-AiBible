@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PRO",
+  "bookName": "Proverbs",
+  "chapterNumber": 3,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PRO:3:1",
+      "text": "My son, remember what I've taught you. Keep my commands in your heart."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PRO:3:2",
+      "text": "They'll give you more days, years of life, and peace."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PRO:3:3",
+      "text": "Hold on to kindness and truth. Tie them around your neck and write them on the tablet of your heart."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PRO:3:4",
+      "text": "Then you'll find favor and be known for good judgment before God and people."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PRO:3:5",
+      "text": "Trust the LORD with your whole heart. Don't lean on your own understanding."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PRO:3:6",
+      "text": "Recognize him in everything you do, and he'll straighten your paths."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PRO:3:7",
+      "text": "Don't act wise in your own eyes. Revere the LORD and turn away from evil."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PRO:3:8",
+      "text": "That will bring health to your body and strength to your bones."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PRO:3:9",
+      "text": "Honor the LORD with what you have and with the first fruits of everything you gain."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PRO:3:10",
+      "text": "Then your barns will be full and your vats will overflow with new wine."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PRO:3:11",
+      "text": "My son, don't look down on the LORD's discipline or get tired of his correction."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PRO:3:12",
+      "text": "The LORD corrects the people he loves, like a father correcting the son he delights in."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PRO:3:13",
+      "text": "Happy is anyone who finds wisdom and gains understanding."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PRO:3:14",
+      "text": "What wisdom brings is worth more than silver. What she gives back is better than pure gold."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PRO:3:15",
+      "text": "She's more precious than rubies. Nothing you could want compares to her."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PRO:3:16",
+      "text": "She holds long life in her right hand and riches and honor in her left."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PRO:3:17",
+      "text": "Her ways are pleasant, and all her paths lead in peace."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PRO:3:18",
+      "text": "She's a tree of life to those who take hold of her. Happy is everyone who holds on. 🌳"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PRO:3:19",
+      "text": "By wisdom the LORD laid the earth's foundations. By understanding he set the heavens in place."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PRO:3:20",
+      "text": "By his knowledge the depths broke open and the skies dropped down dew."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PRO:3:21",
+      "text": "My son, keep sound wisdom and good judgment in sight. Don't let them go."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PRO:3:22",
+      "text": "They'll bring life to your soul and grace to your neck."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PRO:3:23",
+      "text": "Then you'll walk safely on your way. Your feet won't stumble."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PRO:3:24",
+      "text": "When you lie down, you won't be afraid. You'll lie down and sleep well."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PRO:3:25",
+      "text": "Don't be afraid when terror comes out of nowhere or when destruction comes on the wicked."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:PRO:3:26",
+      "text": "The LORD will be the one you trust, and he'll keep your foot from getting caught."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:PRO:3:27",
+      "text": "When you have the power to do good for someone who deserves it, don't hold back."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:PRO:3:28",
+      "text": "Don't tell your neighbor, “Go away and come back tomorrow. I'll give it to you then,” when you already have it with you."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:PRO:3:29",
+      "text": "Don't plot harm against your neighbor when they're living beside you in trust."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:PRO:3:30",
+      "text": "Don't pick a fight with someone for no reason when they've done you no harm."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:PRO:3:31",
+      "text": "Don't envy violent people or take up any of their ways."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:PRO:3:32",
+      "text": "The LORD detests people who twist what's right, but he's a friend to those who live uprightly."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:PRO:3:33",
+      "text": "The LORD's curse is on the home of the wicked. He blesses the home of those who do right."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:PRO:3:34",
+      "text": "He mocks the mockers and gives grace to the humble."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:PRO:3:35",
+      "text": "Wise people will inherit honor. Fools will get nothing but shame for their trouble."
+    }
+  ]
+}

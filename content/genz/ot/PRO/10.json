@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PRO",
+  "bookName": "Proverbs",
+  "chapterNumber": 10,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PRO:10:1",
+      "text": "The proverbs of Solomon. A wise son makes his father glad. A foolish son breaks his mother's heart."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PRO:10:2",
+      "text": "Wealth gained by doing wrong does you no good, but doing what's right saves you from death."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PRO:10:3",
+      "text": "The LORD won't let people who do right go hungry, but he pushes away what the wicked crave."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PRO:10:4",
+      "text": "Lazy hands lead to poverty. Diligent hands build wealth."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PRO:10:5",
+      "text": "A son who gathers in summer is wise. A son who sleeps through harvest brings shame."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PRO:10:6",
+      "text": "Blessings rest on the heads of people who do right, but violence covers the mouths of the wicked."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PRO:10:7",
+      "text": "The memory of people who do right is a blessing. The name of the wicked will rot."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PRO:10:8",
+      "text": "People who are wise at heart accept commands. A fool who won't stop talking will fall."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PRO:10:9",
+      "text": "People who walk with integrity walk securely. People who take crooked paths will get found out."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PRO:10:10",
+      "text": "A sneaky wink causes grief. A fool who won't stop talking will fall."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PRO:10:11",
+      "text": "The words of people who do right are a spring of life, but violence covers the mouths of the wicked."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PRO:10:12",
+      "text": "Hatred starts fights, but love covers every wrong."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PRO:10:13",
+      "text": "People with good judgment speak wisdom. A rod is for the back of the person who lacks understanding."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PRO:10:14",
+      "text": "Wise people store up knowledge. Foolish talk brings ruin close."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PRO:10:15",
+      "text": "A rich person's wealth is their fortified city. Poverty is what brings the poor to ruin."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PRO:10:16",
+      "text": "The work of people who do right leads to life. The gains of the wicked lead to sin."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PRO:10:17",
+      "text": "Listening to correction keeps you on the path of life. Rejecting it leads others astray."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PRO:10:18",
+      "text": "Anyone who hides hatred is lying. Anyone who spreads slander is a fool."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PRO:10:19",
+      "text": "When you talk nonstop, wrongdoing is never far away. It's wise to know when to keep quiet."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PRO:10:20",
+      "text": "The words of people who do right are like the finest silver. The heart of the wicked isn't worth much."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PRO:10:21",
+      "text": "The words of people who do right feed many. Fools die because they lack understanding."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PRO:10:22",
+      "text": "The LORD's blessing brings wealth, and he adds no trouble to it."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PRO:10:23",
+      "text": "Doing wrong is fun to a fool. A person with understanding finds joy in wisdom."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PRO:10:24",
+      "text": "What the wicked dread will catch up with them. People who do right will get what they long for."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PRO:10:25",
+      "text": "When the whirlwind passes, the wicked are gone. People who do right stand firm forever."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:PRO:10:26",
+      "text": "Sending a slacker on an errand is like vinegar on your teeth or smoke in your eyes."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:PRO:10:27",
+      "text": "Reverence for the LORD adds days to your life. The years of the wicked will be cut short."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:PRO:10:28",
+      "text": "People who do right have joy ahead of them. The hopes of the wicked will come to nothing."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:PRO:10:29",
+      "text": "The LORD's way is a fortress for people of integrity and ruin for people who do evil."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:PRO:10:30",
+      "text": "People who do right will never be uprooted. The wicked won't live in the land."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:PRO:10:31",
+      "text": "Wisdom grows from the words of people who do right. The tongue that twists the truth will be cut off."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:PRO:10:32",
+      "text": "People who do right know what to say. The wicked twist what's right when they speak."
+    }
+  ]
+}

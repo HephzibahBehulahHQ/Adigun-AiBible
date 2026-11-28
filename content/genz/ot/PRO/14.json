@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PRO",
+  "bookName": "Proverbs",
+  "chapterNumber": 14,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PRO:14:1",
+      "text": "A wise woman builds up her household. A foolish one tears hers down with her own hands."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PRO:14:2",
+      "text": "Someone who walks uprightly reveres the LORD. Someone whose ways are crooked despises him."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PRO:14:3",
+      "text": "A fool's talk earns them a beating. Wise people's words protect them."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PRO:14:4",
+      "text": "Without oxen the feeding trough stays clean, but an ox's strength brings a big harvest."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PRO:14:5",
+      "text": "An honest witness won't lie. A false witness pours out lies."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PRO:14:6",
+      "text": "A mocker looks for wisdom and comes up empty. Knowledge comes easily to someone with good judgment."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PRO:14:7",
+      "text": "Stay away from a fool. You won't hear anything worth learning from their lips."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PRO:14:8",
+      "text": "Wise people think about where they're headed. Fools get caught up in deceit."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PRO:14:9",
+      "text": "Fools make fun of making amends for sin. People who live uprightly show goodwill."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PRO:14:10",
+      "text": "The heart knows its own hurt and joy. A stranger can't fully share either."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PRO:14:11",
+      "text": "The house of the wicked will come down. Even the tent of the upright will thrive."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PRO:14:12",
+      "text": "A road can look right to you and still end in death."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PRO:14:13",
+      "text": "You can laugh and still have a heavy heart. Even good times can end in grief."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PRO:14:14",
+      "text": "Unfaithful people will get paid back for their ways. Good people will get the reward of theirs."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PRO:14:15",
+      "text": "An inexperienced person believes everything. Someone with good judgment watches where they step."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PRO:14:16",
+      "text": "A wise person takes evil seriously and stays clear of it. A fool gets heated and rushes in."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PRO:14:17",
+      "text": "People with quick tempers do foolish things. People who scheme are hated."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PRO:14:18",
+      "text": "People without experience inherit foolishness. Those with good judgment wear knowledge like a crown."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PRO:14:19",
+      "text": "Evil people bow before good people, and the wicked bow at the gates of those who do right."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PRO:14:20",
+      "text": "Even their neighbors avoid someone who's poor. A rich person has plenty of friends."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PRO:14:21",
+      "text": "Looking down on your neighbor is a sin. Blessed is anyone who shows kindness to the poor."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PRO:14:22",
+      "text": "People who plot evil lose their way. Faithful love and truth belong to those who plan good."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PRO:14:23",
+      "text": "Hard work pays off. Just talking about it leads to poverty."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PRO:14:24",
+      "text": "Wealth is a crown for the wise. Fools wear their foolishness like a crown."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PRO:14:25",
+      "text": "An honest witness saves lives. A false witness deals in lies."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:PRO:14:26",
+      "text": "Reverence for the LORD is a strong fortress, and he'll be a shelter for his children."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:PRO:14:27",
+      "text": "Reverence for the LORD is a fountain of life. It turns people away from deadly traps."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:PRO:14:28",
+      "text": "A king's glory comes from having many people. Without people, a ruler falls."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:PRO:14:29",
+      "text": "Being slow to anger shows deep understanding. A short fuse puts foolishness on display."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:PRO:14:30",
+      "text": "A peaceful heart gives life to the body. Envy eats away at the bones."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:PRO:14:31",
+      "text": "Oppressing the poor insults their Maker. Showing kindness to someone in need honors him."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:PRO:14:32",
+      "text": "The wicked fall when disaster hits. People who do right have a refuge even in death."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:PRO:14:33",
+      "text": "Wisdom rests in an understanding heart. It makes itself known even in the hearts of fools."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:PRO:14:34",
+      "text": "Doing what's right lifts up a nation. Sin disgraces any people."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:PRO:14:35",
+      "text": "A king favors a servant who acts wisely and has no patience for a servant who brings shame."
+    }
+  ]
+}

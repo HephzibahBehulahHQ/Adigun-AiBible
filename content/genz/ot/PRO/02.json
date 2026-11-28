@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PRO",
+  "bookName": "Proverbs",
+  "chapterNumber": 2,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PRO:2:1",
+      "text": "My son, take in my words and store my commands inside you."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PRO:2:2",
+      "text": "Tune your ear to wisdom and give your whole heart to understanding."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PRO:2:3",
+      "text": "Call out for good judgment. Raise your voice for understanding."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PRO:2:4",
+      "text": "Look for wisdom like you'd look for silver. Search for it like buried treasure."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PRO:2:5",
+      "text": "Then you'll understand what it means to revere the LORD and come to know God."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PRO:2:6",
+      "text": "The LORD gives wisdom. Knowledge and understanding come straight from him."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PRO:2:7",
+      "text": "He stores up sound wisdom for people who live uprightly. He's a shield for those who walk with integrity,"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PRO:2:8",
+      "text": "guarding the paths of justice and keeping his faithful people safe on their way."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PRO:2:9",
+      "text": "Then you'll understand what's right, just, and fair, and recognize every good path."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PRO:2:10",
+      "text": "Wisdom will make its home in your heart. Knowledge will be a joy to your soul."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PRO:2:11",
+      "text": "Good judgment will watch over you, and understanding will keep you safe."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PRO:2:12",
+      "text": "They'll rescue you from the road to evil and from people whose words twist what's right,"
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PRO:2:13",
+      "text": "people who leave the straight paths to walk in darkness,"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PRO:2:14",
+      "text": "who celebrate doing evil and get a kick out of its crooked ways,"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PRO:2:15",
+      "text": "whose roads are crooked and whose paths lead them astray."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PRO:2:16",
+      "text": "Wisdom will rescue you from the strange woman, the outsider who draws you in with flattery."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PRO:2:17",
+      "text": "She walks away from the partner of her youth and forgets the covenant she made before God."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PRO:2:18",
+      "text": "Her house leads down to death. Her paths lead to the spirits of the dead."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PRO:2:19",
+      "text": "None who go to her come back or find their way to the paths of life."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PRO:2:20",
+      "text": "So walk with people who do good and stay on the paths of those who do what's right."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PRO:2:21",
+      "text": "The upright will live in the land. People of integrity will remain there."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PRO:2:22",
+      "text": "But the wicked will be cut off from the land. Those who betray others will be pulled up by the roots."
+    }
+  ]
+}

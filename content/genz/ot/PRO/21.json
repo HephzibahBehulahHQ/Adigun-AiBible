@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PRO",
+  "bookName": "Proverbs",
+  "chapterNumber": 21,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PRO:21:1",
+      "text": "A king's heart is in the LORD's hand like channels of water. He turns it wherever he wants."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PRO:21:2",
+      "text": "Everyone thinks their own way is right, but the LORD weighs the heart."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PRO:21:3",
+      "text": "Doing what's right and just pleases the LORD more than offering a sacrifice."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PRO:21:4",
+      "text": "Arrogant eyes and a proud heart, the lamp of the wicked, are sin."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PRO:21:5",
+      "text": "Careful plans and hard work lead to profit. Rushing into things leads straight to poverty."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PRO:21:6",
+      "text": "Wealth gained by lies is a mist that vanishes, the pursuit of people headed for death."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PRO:21:7",
+      "text": "The violence of the wicked sweeps them away because they refuse to do what's right."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PRO:21:8",
+      "text": "The guilty take crooked paths. The innocent act uprightly."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PRO:21:9",
+      "text": "It's better to live in a corner of the roof than share a house with a wife who's always picking fights."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PRO:21:10",
+      "text": "The wicked crave evil. Their neighbor gets no mercy from them."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PRO:21:11",
+      "text": "When a mocker is punished, the inexperienced grow wise. Teach a wise person and they'll gain knowledge."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PRO:21:12",
+      "text": "The Righteous One takes notice of the house of the wicked and brings them to ruin."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PRO:21:13",
+      "text": "Shut your ears to the cries of the poor and someday you'll cry out and nobody will hear you."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PRO:21:14",
+      "text": "A gift given in secret calms anger. A bribe slipped under a cloak can quiet even fierce rage."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PRO:21:15",
+      "text": "Doing justice brings joy to people who do right. It brings ruin to people who do evil."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PRO:21:16",
+      "text": "Anyone who wanders away from the path of understanding will rest among the spirits of the dead."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PRO:21:17",
+      "text": "Anyone who lives for pleasure will end up poor. Lovers of wine and oil won't get rich."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PRO:21:18",
+      "text": "The wicked become a ransom for people who do right, and the treacherous for the upright."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PRO:21:19",
+      "text": "It's better to live out in the desert than with a wife who argues and stays irritated."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PRO:21:20",
+      "text": "Wise people keep precious treasure and oil in their homes. A fool uses it all up."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PRO:21:21",
+      "text": "Chase righteousness and kindness and you'll find life, righteousness, and honor."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PRO:21:22",
+      "text": "A wise person can climb the walls of a strong city and bring down the defenses it trusts in."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PRO:21:23",
+      "text": "Watch what you say and you'll keep yourself out of trouble."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PRO:21:24",
+      "text": "Call the proud and arrogant person “Mocker.” Pride drives everything they do."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PRO:21:25",
+      "text": "A slacker's own cravings kill them, because their hands refuse to work."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:PRO:21:26",
+      "text": "Some people want more for themselves all day long. People who do right give freely and hold nothing back."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:PRO:21:27",
+      "text": "A sacrifice from the wicked is detestable, especially when they bring it with evil intent."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:PRO:21:28",
+      "text": "A false witness will perish. Someone who listens speaks words that last."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:PRO:21:29",
+      "text": "The wicked put on a bold face. The upright make sure their path is firm."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:PRO:21:30",
+      "text": "No wisdom, understanding, or advice can stand against the LORD."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:PRO:21:31",
+      "text": "You can get the horse ready for battle, but victory comes from the LORD."
+    }
+  ]
+}

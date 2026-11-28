@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PRO",
+  "bookName": "Proverbs",
+  "chapterNumber": 18,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PRO:18:1",
+      "text": "Someone who shuts everyone out chases their own interests and pushes back against all sound judgment."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PRO:18:2",
+      "text": "A fool has no interest in understanding. They just want everyone to hear their opinion."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PRO:18:3",
+      "text": "When wickedness shows up, contempt follows. Shame comes with disgrace."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PRO:18:4",
+      "text": "A person's words are like deep waters. Wisdom's fountain is like a flowing stream."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PRO:18:5",
+      "text": "It's wrong to play favorites with the wicked or deny innocent people justice."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PRO:18:6",
+      "text": "A fool's words start arguments, and their mouth invites a beating."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PRO:18:7",
+      "text": "A fool's mouth is their undoing. Their own words are a trap for their life."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PRO:18:8",
+      "text": "Gossip goes down like tasty bites, all the way into a person's deepest parts."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PRO:18:9",
+      "text": "Someone who slacks off at work is kin to someone who makes a mess of everything."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PRO:18:10",
+      "text": "The LORD's name is a strong tower. People who do right run there and are safe."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PRO:18:11",
+      "text": "A rich person's wealth is their fortified city. In their imagination, it's a wall nobody can climb."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PRO:18:12",
+      "text": "Pride takes over the heart before ruin. Humility comes before honor."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PRO:18:13",
+      "text": "Answering before you've heard the whole thing is foolish and embarrassing."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PRO:18:14",
+      "text": "Your spirit can carry you through sickness. But who can bear a crushed spirit?"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PRO:18:15",
+      "text": "A discerning heart gains knowledge. Wise ears listen for it."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PRO:18:16",
+      "text": "A gift opens doors for the giver and brings them before people of influence."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PRO:18:17",
+      "text": "The first person to make their case sounds right until someone else comes and questions them."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PRO:18:18",
+      "text": "Casting lots settles disputes and keeps powerful opponents apart."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PRO:18:19",
+      "text": "An offended brother is harder to win back than a fortified city. Arguments are like the bars of a fortress."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PRO:18:20",
+      "text": "The fruit of a person's words fills their stomach. The harvest of their lips satisfies them."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PRO:18:21",
+      "text": "The tongue has power over death and life. Those who love to use it will eat what it produces."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PRO:18:22",
+      "text": "Anyone who finds a wife finds a good thing and receives favor from the LORD."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PRO:18:23",
+      "text": "Poor people plead for mercy. Rich people answer harshly."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PRO:18:24",
+      "text": "Having lots of companions can lead to ruin, but there's a friend who sticks closer than a brother."
+    }
+  ]
+}

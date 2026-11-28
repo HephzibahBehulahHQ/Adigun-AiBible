@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PRO",
+  "bookName": "Proverbs",
+  "chapterNumber": 1,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PRO:1:1",
+      "text": "The proverbs of Solomon, David's son and king of Israel."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PRO:1:2",
+      "text": "They're here so you can learn wisdom and instruction and recognize words that give insight."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PRO:1:3",
+      "text": "They teach you how to act wisely and do what's right, just, and fair."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PRO:1:4",
+      "text": "They give good judgment to the inexperienced, and knowledge and discretion to young people."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PRO:1:5",
+      "text": "Let wise people listen and learn even more. Let people with understanding get sound advice."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PRO:1:6",
+      "text": "Learn to understand proverbs and parables, the sayings and riddles of the wise."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PRO:1:7",
+      "text": "Reverence for the LORD is where knowledge begins. Fools look down on wisdom and instruction."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PRO:1:8",
+      "text": "My son, listen to what your father teaches you. Don't walk away from your mother's instruction."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PRO:1:9",
+      "text": "Their teaching is like a crown of flowers on your head and a chain of honor around your neck."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PRO:1:10",
+      "text": "My son, if people pull you toward sin, don't go along."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PRO:1:11",
+      "text": "They might say, “Come with us. Let's wait in hiding to spill blood. Let's ambush innocent people for no reason."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PRO:1:12",
+      "text": "Let's swallow them alive like Sheol, whole like people going down to the pit."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PRO:1:13",
+      "text": "We'll get all kinds of valuables and fill our homes with stolen goods."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PRO:1:14",
+      "text": "Join our crew. We'll all share the same purse.”"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PRO:1:15",
+      "text": "My son, don't go down that road with them. Keep your feet off their path."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PRO:1:16",
+      "text": "Their feet run toward evil. They're in a hurry to spill blood."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PRO:1:17",
+      "text": "There's no point spreading a net where a bird can see it."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PRO:1:18",
+      "text": "But these people are setting an ambush for themselves. They're putting their own lives in the trap."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PRO:1:19",
+      "text": "That's where greed for profit leads. It takes the lives of the people who chase it."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PRO:1:20",
+      "text": "Wisdom calls out in the street. She raises her voice in the public squares."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PRO:1:21",
+      "text": "She calls out over the noise. At the entrance to the city gates, here's what she says:"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PRO:1:22",
+      "text": "“How long will you who lack judgment be happy to stay that way? How long will mockers love mocking and fools hate knowledge?"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PRO:1:23",
+      "text": "Turn around when I correct you. Look, I'll pour out my spirit on you and make my words known to you."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PRO:1:24",
+      "text": "I called, and you refused to listen. I reached out my hand, and nobody paid attention."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PRO:1:25",
+      "text": "You brushed off all my advice and wanted nothing to do with my correction."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:PRO:1:26",
+      "text": "So I'll laugh when disaster hits you. I'll mock when trouble catches up with you,"
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:PRO:1:27",
+      "text": "when calamity sweeps in like a storm and disaster hits like a whirlwind, when distress and anguish close in."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:PRO:1:28",
+      "text": "Then they'll call out to me, but I won't answer. They'll look hard for me, but they won't find me,"
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:PRO:1:29",
+      "text": "because they hated knowledge and never chose to revere the LORD."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:PRO:1:30",
+      "text": "They wanted nothing to do with my advice and despised every correction I gave."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:PRO:1:31",
+      "text": "So they'll eat the fruit of their choices and get their fill of their own schemes."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:PRO:1:32",
+      "text": "The inexperienced will die because they turned away, and fools will be destroyed by their own carelessness."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:PRO:1:33",
+      "text": "But whoever listens to me will live safely and be at ease, without fear of harm.”"
+    }
+  ]
+}

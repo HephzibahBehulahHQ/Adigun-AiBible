@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PRO",
+  "bookName": "Proverbs",
+  "chapterNumber": 15,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PRO:15:1",
+      "text": "A gentle answer cools down anger. A harsh word heats it back up."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PRO:15:2",
+      "text": "Wise people make knowledge worth hearing. Foolishness pours out of the mouths of fools."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PRO:15:3",
+      "text": "The LORD's eyes are everywhere, watching people who do evil and people who do good."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PRO:15:4",
+      "text": "Gentle words are a tree of life. Deceitful words crush the spirit."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PRO:15:5",
+      "text": "A fool looks down on their father's correction. Someone who listens to correction shows good judgment."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PRO:15:6",
+      "text": "There's plenty of treasure in the home of people who do right. The earnings of the wicked bring trouble."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PRO:15:7",
+      "text": "Wise people spread knowledge when they speak. The hearts of fools have nothing like that to share."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PRO:15:8",
+      "text": "The LORD detests the sacrifices of the wicked. The prayers of people who live uprightly delight him."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PRO:15:9",
+      "text": "The LORD detests the way the wicked live. He loves anyone who pursues what's right."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PRO:15:10",
+      "text": "Hard discipline comes to those who leave the path. Anyone who hates correction will die."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PRO:15:11",
+      "text": "Even Sheol and Abaddon lie open before the LORD. How much more the hearts of human beings!"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PRO:15:12",
+      "text": "A mocker hates being corrected and won't go to wise people for advice."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PRO:15:13",
+      "text": "A happy heart lights up your face. Heartache breaks your spirit."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PRO:15:14",
+      "text": "An understanding heart seeks knowledge. The mouths of fools feed on foolishness."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PRO:15:15",
+      "text": "For someone who's suffering, every day is hard. A cheerful heart enjoys a feast that never ends."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PRO:15:16",
+      "text": "It's better to have a little and revere the LORD than to have piles of treasure and trouble with it."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PRO:15:17",
+      "text": "A meal of greens with people who love you beats a fattened calf served with hatred."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PRO:15:18",
+      "text": "A hothead starts fights. Someone slow to anger settles them down."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PRO:15:19",
+      "text": "A slacker's road is like a patch of thorns. The path of the upright is a highway."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PRO:15:20",
+      "text": "A wise son makes his father glad. A fool looks down on his mother."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PRO:15:21",
+      "text": "People who lack wisdom have fun doing foolish things. Someone with understanding keeps to a straight path."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PRO:15:22",
+      "text": "Plans fall apart without advice. Get plenty of good advisers and your plans stand firm."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PRO:15:23",
+      "text": "Giving a good answer brings you joy. How good it is to hear the right word at the right time!"
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PRO:15:24",
+      "text": "For wise people the path of life leads up, keeping them from going down to Sheol."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PRO:15:25",
+      "text": "The LORD uproots the house of the proud, but he keeps a widow's boundaries intact."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:PRO:15:26",
+      "text": "The LORD detests the thoughts of the wicked. The thoughts of people who are pure please him."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:PRO:15:27",
+      "text": "Greed for profit brings trouble home. Anyone who hates bribes will live."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:PRO:15:28",
+      "text": "People who do right think before they answer. The wicked let evil pour out of their mouths."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:PRO:15:29",
+      "text": "The LORD is far from the wicked. He hears the prayers of those who do right."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:PRO:15:30",
+      "text": "Bright eyes bring joy to the heart. Good news brings health to the bones. ✨"
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:PRO:15:31",
+      "text": "Listen to correction that gives life, and you'll be at home among wise people."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:PRO:15:32",
+      "text": "Reject correction and you show contempt for your own life. Listen to it and you'll gain understanding."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:PRO:15:33",
+      "text": "Reverence for the LORD teaches wisdom. Humility comes before honor."
+    }
+  ]
+}
