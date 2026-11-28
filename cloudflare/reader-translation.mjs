@@ -9,6 +9,8 @@ const tones = new Map([
     'Do not add filler reactions such as “lowkey”, “for real”, or “no cap”. Keep concrete images such as clothing and nakedness, and keep expressions of worship as worship.',
     'Use at most one fitting emoji for a passage whose source clearly expresses joy or celebration. Omit emojis throughout passages about grief, loss, suffering, or judgment, even when the speaker also blesses God.',
     'For example, “God so loved the world” can become “God loved the world so much”, and “Blessed be the name of the LORD” can become “Bless the LORD’s name.”',
+    'Distinguish a declaration about people from a command to the reader. In the Beatitudes, “Blessed are those who mourn” means “Those who mourn are blessed”, never “Bless those who mourn”. Keep the promise that follows.',
+    'In everyday advice or joyful passages, use a current expression when its meaning really fits, such as “don’t stress about anything” for “in nothing be anxious”. Keep solemn or ceremonial statements direct and dignified.',
   ].join(' ')],
 ]);
 
