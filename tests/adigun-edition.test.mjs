@@ -24,20 +24,26 @@ const expectedBooks = [
   { id: 'EZR', testament: 'ot', chapters: Array.from({ length: 10 }, (_, index) => index + 1) },
   { id: 'NEH', testament: 'ot', chapters: Array.from({ length: 13 }, (_, index) => index + 1) },
   { id: 'EST', testament: 'ot', chapters: Array.from({ length: 10 }, (_, index) => index + 1) },
-  { id: 'MAT', testament: 'nt', chapters: Array.from({ length: 28 }, (_, index) => index + 1) },
+  { id: 'JOB', testament: 'ot', chapters: Array.from({ length: 42 }, (_, index) => index + 1) },
+  ...sourceManifest.books.slice(39).map(book => ({
+    id: book.id, testament: 'nt', chapters: Array.from({ length: book.chapters }, (_, index) => index + 1),
+  })),
 ];
 
 test('reader edition contains only complete, source-aligned Adigun chapters in canonical order', () => {
   assert.equal(manifest.edition.name, 'Adigun Edition');
   assert.equal(manifest.edition.scope, 'portion');
-  assert.equal(manifest.edition.revision, 'Genesis 1–50; Exodus 1–40; Leviticus 1–27; Numbers 1–36; Deuteronomy 1–34; Joshua 1–24; Judges 1–21; Ruth 1–4; 1 Samuel 1–31; 2 Samuel 1–24; 1 Kings 1–22; 2 Kings 1–25; 1 Chronicles 1–29; 2 Chronicles 1–36; Ezra 1–10; Nehemiah 1–13; Esther 1–10; Matthew 1–28');
+  assert.equal(manifest.edition.revision, expectedBooks.map(({ id, chapters }) =>
+    sourceManifest.books.find(book => book.id === id).name+' 1–'+chapters.length).join('; '));
+  assert.equal(manifest.edition.canonProfile.oldTestamentBookCount, 18);
   assert.equal(manifest.sourceManifestSha256, sourceManifest.edition.sha256);
-  assert.deepEqual(manifest.books.map(row => row.id), ['GEN', 'EXO', 'LEV', 'NUM', 'DEU', 'JOS', 'JDG', 'RUT', '1SA', '2SA', '1KI', '2KI', '1CH', '2CH', 'EZR', 'NEH', 'EST', 'MAT']);
-  assert.deepEqual(manifest.totals, { books: 18, chapters: 464, verses: 13941 });
+  assert.deepEqual(manifest.books.map(row => row.id), expectedBooks.map(book => book.id));
+  assert.deepEqual(manifest.totals, { books: 45, chapters: 738, verses: 21898 });
   const installedBooks = [];
   for (const expected of expectedBooks) {
     const source = sourceManifest.books.find(row => row.id === expected.id);
     const book = read(`../data/editions/adigun-edition/books/${expected.id}.json`);
+    const pinnedBook = read('../data/books/'+expected.id+'.json');
     const manifestBook = manifest.books.find(row => row.id === expected.id);
     installedBooks.push(book);
     const candidates = expected.chapters.map(number => read(`../content/genz/${expected.testament}/${expected.id}/${String(number).padStart(2, '0')}.json`));
@@ -51,7 +57,8 @@ test('reader edition contains only complete, source-aligned Adigun chapters in c
       assert.equal(chapter.number, chapterNumber);
       assert.equal(chapter.verses.length, sourceCount);
       assert.deepEqual(chapter.verses, candidate.verses.map(({ number, text }) => ({ number, text })));
-      assert.ok(chapter.verses.every(verse => verse.text.trim()));
+      assert.deepEqual(chapter.verses.filter(verse => verse.text === '').map(verse => verse.number),
+        pinnedBook.chapters[chapterNumber - 1].verses.filter(verse => verse.text === '').map(verse => verse.number));
     }
   }
   const digest = createHash('sha256').update(JSON.stringify({ sourceHash: sourceManifest.edition.sha256, books: installedBooks })).digest('hex');
@@ -59,6 +66,16 @@ test('reader edition contains only complete, source-aligned Adigun chapters in c
   const catalog = read('../data/editions/catalog.json').editions.find(row => row.id === 'adigun-edition');
   assert.equal(catalog.sha256, digest);
   assert.deepEqual(catalog.totals, manifest.totals);
+});
+
+test('the search index covers every authored verse and omits empty source positions', () => {
+  const searchIndex = read('../data/editions/adigun-edition/search-index.json');
+  const expected = manifest.books.flatMap(({ id }) =>
+    read(`../data/editions/adigun-edition/books/${id}.json`).chapters.flatMap(chapter =>
+      chapter.verses.filter(verse => verse.text.trim()).map(verse => ({
+        bookId: id, chapter: chapter.number, verse: verse.number, text: verse.text, editionId: manifest.edition.id,
+      }))));
+  assert.deepEqual(searchIndex, expected);
 });
 
 
