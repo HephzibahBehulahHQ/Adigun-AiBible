@@ -30,6 +30,7 @@ const portion = {
   PSA: { testament: 'ot', chapters: 150 },
   PRO: { testament: 'ot', chapters: 31 },
   ECC: { testament: 'ot', chapters: 12 },
+  SNG: { testament: 'ot', chapters: 8 },
   MAT: { testament: 'nt', chapters: 28 },
   MRK: { testament: 'nt', chapters: 16 },
   LUK: { testament: 'nt', chapters: 24 },

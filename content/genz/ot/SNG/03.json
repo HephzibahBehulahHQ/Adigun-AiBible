@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "SNG",
+  "bookName": "Song of Solomon",
+  "chapterNumber": 3,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:SNG:3:1",
+      "text": "At night on my bed, I looked for the one my soul loves. I looked for him, but I couldn't find him."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:SNG:3:2",
+      "text": "I'll get up now and go through the city. In the streets and squares I'll look for the one my soul loves. I looked for him, but I couldn't find him."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:SNG:3:3",
+      "text": "The watchmen making their rounds in the city found me. “Have you seen the one my soul loves?”"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:SNG:3:4",
+      "text": "I'd barely passed them when I found the one my soul loves. I held him and wouldn't let him go until I'd brought him into my mother's house, into the room of the woman who conceived me."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:SNG:3:5",
+      "text": "Daughters of Jerusalem, swear to me by the gazelles and the deer of the field. Don't stir up or wake love until it wants to wake."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:SNG:3:6",
+      "text": "Who's this coming up from the wilderness like pillars of smoke, scented with myrrh and frankincense and every kind of spice the merchant sells?"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:SNG:3:7",
+      "text": "Look, it's Solomon's carriage! Sixty mighty men surround it, some of Israel's mightiest."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:SNG:3:8",
+      "text": "They're all skilled with the sword and experienced in war. Each has a sword at his thigh because of the dangers of the night."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:SNG:3:9",
+      "text": "King Solomon made himself a carriage out of wood from Lebanon."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:SNG:3:10",
+      "text": "He made its posts from silver, its base from gold, and its seat from purple cloth. The daughters of Jerusalem lined its inside with love."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:SNG:3:11",
+      "text": "Daughters of Zion, come out and see King Solomon in the crown his mother put on him on his wedding day, the day his heart rejoiced."
+    }
+  ]
+}

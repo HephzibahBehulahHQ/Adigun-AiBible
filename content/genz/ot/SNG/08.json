@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "SNG",
+  "bookName": "Song of Solomon",
+  "chapterNumber": 8,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:SNG:8:1",
+      "text": "I wish you were like my brother, who nursed at my mother's breasts. If I found you outside, I'd kiss you, and no one would look down on me."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:SNG:8:2",
+      "text": "I'd lead you into my mother's house, where she'd teach me. I'd give you spiced wine to drink, from the juice of my pomegranate."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:SNG:8:3",
+      "text": "His left hand would be under my head, and his right hand would hold me close."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:SNG:8:4",
+      "text": "Daughters of Jerusalem, swear to me. Don't stir up or wake love until it wants to wake."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:SNG:8:5",
+      "text": "Who's that coming up from the wilderness, leaning on her beloved? Beloved: I woke you under the apple tree. That's where your mother conceived you, where she went into labor and gave birth to you."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:SNG:8:6",
+      "text": "Set me like a seal on your heart, like a seal on your arm. Love is strong as death, and jealousy is cruel as Sheol. It flashes like fire, a flame of the LORD himself."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:SNG:8:7",
+      "text": "Deep waters can't put out love, and floods can't drown it. If someone offered all the wealth in their house for love, people would reject the offer with contempt."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:SNG:8:8",
+      "text": "We have a little sister, and she has no breasts yet. What will we do for her on the day someone asks for her hand?"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:SNG:8:9",
+      "text": "If she's a wall, we'll build a silver turret on her. If she's a door, we'll enclose her with cedar boards."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:SNG:8:10",
+      "text": "I'm a wall, and my breasts are like towers. Then in his eyes I was like someone who'd found peace."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:SNG:8:11",
+      "text": "Solomon had a vineyard at Baal Hamon. He rented it out to caretakers, and each was to bring a thousand shekels of silver for its fruit."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:SNG:8:12",
+      "text": "My own vineyard is before me. The thousand are yours, Solomon, and two hundred go to those who tend its fruit."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:SNG:8:13",
+      "text": "You who live in the gardens, with friends listening nearby, let me hear your voice!"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:SNG:8:14",
+      "text": "Come away, my beloved! Be like a gazelle or a young stag on the mountains of spices!"
+    }
+  ]
+}

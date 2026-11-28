@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "SNG",
+  "bookName": "Song of Solomon",
+  "chapterNumber": 1,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:SNG:1:1",
+      "text": "The Song of Songs, Solomon's song."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:SNG:1:2",
+      "text": "Let him kiss me with kisses from his own lips. Your love is better than wine."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:SNG:1:3",
+      "text": "Your oils smell wonderful. Your name is like oil poured out. No wonder the young women love you."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:SNG:1:4",
+      "text": "Take me with you. Let's hurry! The king has brought me into his rooms. Friends: We'll be glad and rejoice in you. We'll praise your love more than wine! Beloved: They're right to love you."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:SNG:1:5",
+      "text": "Daughters of Jerusalem, I'm dark and lovely, like Kedar's tents and Solomon's curtains."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:SNG:1:6",
+      "text": "Don't stare at me because I'm dark. The sun has scorched me. My mother's sons got angry with me and put me in charge of the vineyards. My own vineyard I haven't kept."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:SNG:1:7",
+      "text": "Tell me, you whom my soul loves, where do you graze your flock? Where do you let them rest at noon? Why should I be like a woman in a veil beside your companions' flocks?"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:SNG:1:8",
+      "text": "If you don't know, most beautiful of women, follow the sheep tracks. Let your young goats graze by the shepherds' tents."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:SNG:1:9",
+      "text": "My love, I compare you to a horse pulling one of Pharaoh's chariots."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:SNG:1:10",
+      "text": "Your cheeks look beautiful with earrings, and your neck with strings of jewels."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:SNG:1:11",
+      "text": "We'll make you gold earrings studded with silver."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:SNG:1:12",
+      "text": "While the king was at his table, my perfume filled the air."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:SNG:1:13",
+      "text": "My beloved is like a pouch of myrrh resting between my breasts."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:SNG:1:14",
+      "text": "My beloved is like a cluster of henna blossoms from the vineyards of En Gedi."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:SNG:1:15",
+      "text": "Look at you, my love. You're beautiful, so beautiful. Your eyes are like doves."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:SNG:1:16",
+      "text": "Look at you, my beloved. You're beautiful and delightful, and our resting place is green."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:SNG:1:17",
+      "text": "The beams of our house are cedar, and the rafters are fir."
+    }
+  ]
+}

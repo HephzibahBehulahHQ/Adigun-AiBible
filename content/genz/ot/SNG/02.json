@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "SNG",
+  "bookName": "Song of Solomon",
+  "chapterNumber": 2,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:SNG:2:1",
+      "text": "I'm a rose of Sharon, a lily of the valleys."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:SNG:2:2",
+      "text": "Like a lily among thorns, that's how my love stands out among the young women."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:SNG:2:3",
+      "text": "Like an apple tree among the trees of the forest, that's how my beloved stands out among the young men. I sat in his shade with delight, and his fruit tasted sweet."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:SNG:2:4",
+      "text": "He brought me into the banquet hall, and his banner over me is love."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:SNG:2:5",
+      "text": "Give me raisins to keep my strength up and apples to refresh me. I'm faint with love."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:SNG:2:6",
+      "text": "His left hand is under my head, and his right arm holds me close."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:SNG:2:7",
+      "text": "Daughters of Jerusalem, swear to me by the gazelles and the deer of the field. Don't stir up or wake love until it wants to wake."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:SNG:2:8",
+      "text": "That's my beloved's voice! Look, here he comes, leaping over the mountains and skipping over the hills."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:SNG:2:9",
+      "text": "My beloved is like a gazelle or a young deer. Look, he's standing behind our wall, looking in at the windows and peeking through the lattice."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:SNG:2:10",
+      "text": "My beloved spoke to me. “Get up, my love, my beautiful one. Come away with me."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:SNG:2:11",
+      "text": "Look, winter is past. The rain is over and gone."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:SNG:2:12",
+      "text": "Flowers are showing up across the land. The time for singing is here, and the turtledove's voice is heard in our land."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:SNG:2:13",
+      "text": "The fig tree is ripening its green figs. The vines are blooming and giving off their scent. Get up, my love, my beautiful one. Come away with me.”"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:SNG:2:14",
+      "text": "My dove in the cracks of the rock, in the hidden places of the mountainside, let me see your face. Let me hear your voice. Your voice is sweet, and your face is lovely."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:SNG:2:15",
+      "text": "Catch the foxes for us, the little foxes that raid the vineyards, because our vineyards are in bloom."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:SNG:2:16",
+      "text": "My beloved is mine and I am his. He grazes among the lilies."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:SNG:2:17",
+      "text": "Until the day cools and the shadows flee, turn, my beloved. Be like a gazelle or a young deer on the mountains of Bether."
+    }
+  ]
+}
