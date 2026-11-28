@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ECC",
+  "bookName": "Ecclesiastes",
+  "chapterNumber": 12,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ECC:12:1",
+      "text": "Remember your Creator while you're young, before hard days come and you reach the years when you say, “I get no pleasure from them.”"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ECC:12:2",
+      "text": "Remember him before the sun, the light, the moon, and the stars grow dark, and before the clouds come back after the rain."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ECC:12:3",
+      "text": "That's when those who guard the house tremble, the strong men bend over, the grinders stop because so few are left, and those looking through the windows see the light grow dim."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ECC:12:4",
+      "text": "The doors to the street shut and the sound of grinding fades. You wake up at the call of a bird, and all the daughters of song fall quiet."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ECC:12:5",
+      "text": "Heights become frightening and dangers wait along the road. The almond tree blossoms, the grasshopper becomes a burden, and desire fades. People go to their everlasting home, and mourners walk the streets."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ECC:12:6",
+      "text": "Remember your Creator before the silver cord snaps, the golden bowl breaks, the pitcher shatters at the spring, or the wheel breaks at the cistern."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ECC:12:7",
+      "text": "Then the dust returns to the earth it came from, and the spirit returns to God who gave it."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ECC:12:8",
+      "text": "“Vapor upon vapor,” says the Preacher. “It's all vapor!”"
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ECC:12:9",
+      "text": "The Preacher was wise and kept passing on knowledge to the people. He thought things through, searched them out, and arranged many proverbs."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ECC:12:10",
+      "text": "The Preacher looked for fitting words and wrote truthful words with care and integrity."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ECC:12:11",
+      "text": "Wise words are like pointed sticks that prod you along. The sayings of the masters of assemblies are like nails driven firmly in place. They come from one shepherd."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ECC:12:12",
+      "text": "Take this warning too, my son. There's no end to making books, and too much study wears the body out."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:ECC:12:13",
+      "text": "That's the conclusion. Everything has been heard. Fear God and keep his commands. That's the whole duty of every person."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:ECC:12:14",
+      "text": "God will judge every deed, including every hidden thing, whether it's good or evil."
+    }
+  ]
+}

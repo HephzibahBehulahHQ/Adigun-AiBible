@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ECC",
+  "bookName": "Ecclesiastes",
+  "chapterNumber": 8,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ECC:8:1",
+      "text": "Who compares to a wise person? Who knows how to make sense of things? Wisdom makes a person's face shine and softens its hard look."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ECC:8:2",
+      "text": "Here's what I say. Obey the king's command because of the oath you swore before God."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ECC:8:3",
+      "text": "Don't rush out of his presence. Don't stick with an evil cause, because the king does whatever he pleases."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ECC:8:4",
+      "text": "The king's word carries supreme authority. Who can ask him, “What are you doing?”"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ECC:8:5",
+      "text": "Whoever obeys the command will come to no harm. A wise heart knows when and how to act."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ECC:8:6",
+      "text": "There's a time and a right way for every purpose, even when misery weighs heavily on a person."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ECC:8:7",
+      "text": "Nobody knows what's coming. Who can tell them how it'll turn out?"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ECC:8:8",
+      "text": "Nobody can hold back their spirit or control the day they die. There's no discharge in war, and wickedness won't rescue those who practice it."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ECC:8:9",
+      "text": "I saw all this as I paid attention to everything done under the sun. There are times when one person uses power to hurt another."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ECC:8:10",
+      "text": "I saw wicked people buried. They too had come from a holy place. They were gone and forgotten in the very city where they'd done those things. This too is empty."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ECC:8:11",
+      "text": "When a sentence for wrongdoing takes too long to be carried out, people set their hearts on doing evil."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ECC:8:12",
+      "text": "A sinner might commit a hundred crimes and still live a long life, but I know it'll go better for those who fear God and stand before him with reverence."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:ECC:8:13",
+      "text": "It won't go well for the wicked. Their days won't stretch out like a shadow, because they don't fear God."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:ECC:8:14",
+      "text": "Something empty happens on earth. Righteous people get what the wicked deserve, and wicked people get what the righteous deserve. I said this too is empty."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:ECC:8:15",
+      "text": "So I praised joy. There's nothing better for a person under the sun than to eat, drink, and be joyful. That joy can go with them in their work all the days God gives them under the sun."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:ECC:8:16",
+      "text": "I set my heart on learning wisdom and seeing all the work going on across the earth, though eyes may go without sleep day and night."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:ECC:8:17",
+      "text": "Then I saw all that God does. People can't figure out the work done under the sun. However hard they search, they won't uncover it. Even the wise who think they understand it can't get to the bottom of it."
+    }
+  ]
+}

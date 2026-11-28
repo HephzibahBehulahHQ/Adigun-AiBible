@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "ECC",
+  "bookName": "Ecclesiastes",
+  "chapterNumber": 7,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:ECC:7:1",
+      "text": "A good reputation is worth more than expensive perfume, and the day you die is better than the day you're born."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:ECC:7:2",
+      "text": "It's better to go to a house where people are grieving than to a house where they're feasting. Death comes to everyone, and the living should take it to heart."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:ECC:7:3",
+      "text": "Sorrow is better than laughter. A face marked by sadness can make the heart better."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:ECC:7:4",
+      "text": "Wise people have their hearts in the house of mourning. Fools have their hearts where the party is."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:ECC:7:5",
+      "text": "It's better to hear a wise person's correction than to listen to fools sing."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:ECC:7:6",
+      "text": "A fool's laughter is like thorns crackling under a pot. This too is empty."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:ECC:7:7",
+      "text": "Extortion can turn a wise person into a fool, and a bribe ruins good judgment."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:ECC:7:8",
+      "text": "The end of a thing is better than its beginning. A patient spirit is better than a proud one."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:ECC:7:9",
+      "text": "Don't get angry in a hurry. Anger makes itself at home in the hearts of fools."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:ECC:7:10",
+      "text": "Don't ask, “Why were the old days better than these?” There's no wisdom in asking that."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:ECC:7:11",
+      "text": "Wisdom is as good as an inheritance, and it has even greater value for those who see the sun."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:ECC:7:12",
+      "text": "Wisdom can protect you, and so can money. But here's what makes wisdom worth having. It keeps the person who has it alive."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:ECC:7:13",
+      "text": "Think about what God has done. Who can straighten what he's made crooked?"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:ECC:7:14",
+      "text": "When times are good, rejoice. When times are hard, stop and think. God made both, side by side, so people can't figure out what will come after them."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:ECC:7:15",
+      "text": "I've seen both in these fleeting days of mine. A righteous person dies while doing right, and a wicked person lives long while doing evil."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:ECC:7:16",
+      "text": "Don't be righteous to excess or make yourself out to be too wise. Why ruin yourself?"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:ECC:7:17",
+      "text": "Don't go deep into wickedness or live like a fool. Why die before your time?"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:ECC:7:18",
+      "text": "Hold on to this advice and keep a grip on the other too. The person who fears God will come through it all."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:ECC:7:19",
+      "text": "Wisdom gives one wise person more strength than ten rulers in a city."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:ECC:7:20",
+      "text": "There isn't a righteous person on earth who does good and never sins."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:ECC:7:21",
+      "text": "Don't pay attention to every word people say, or you might hear your servant curse you."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:ECC:7:22",
+      "text": "You know in your own heart how often you've cursed other people too."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:ECC:7:23",
+      "text": "I tested all this with wisdom. I said, “I'll be wise,” but wisdom was far from me."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:ECC:7:24",
+      "text": "What exists is far beyond reach and deep beyond measure. Who can figure it out?"
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:ECC:7:25",
+      "text": "I turned my attention to knowing, investigating, and seeking wisdom and the reason behind things. I wanted to understand how wickedness is stupidity and how foolishness is madness."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:ECC:7:26",
+      "text": "I find more bitter than death the woman whose heart is full of snares and traps and whose hands are chains. The person who pleases God will escape her, but the sinner will get caught."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:ECC:7:27",
+      "text": "“Look what I've found,” says the Preacher. “I've been putting one thing beside another to find an explanation."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:ECC:7:28",
+      "text": "I'm still looking for it and haven't found it. I found one man among a thousand, but among them all I didn't find a woman."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:ECC:7:29",
+      "text": "Here's the one thing I did find. God made people upright, but they've gone looking for all sorts of schemes.”"
+    }
+  ]
+}
