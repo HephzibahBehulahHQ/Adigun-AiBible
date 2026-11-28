@@ -1,0 +1,376 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "NEH",
+  "bookName": "Nehemiah",
+  "chapterNumber": 7,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:NEH:7:1",
+      "text": "Once the wall was built, I hung the doors, and the gatekeepers, singers, and Levites were appointed."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:NEH:7:2",
+      "text": "I put my brother Hanani and Hananiah, the commander of the fortress, in charge of Jerusalem. Hananiah was trustworthy and feared God more than most people did."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:NEH:7:3",
+      "text": "I told them, “Keep Jerusalem’s gates closed until the sun gets hot. Have the gatekeepers shut the doors while they’re still on duty, and bar them. Assign people from Jerusalem to guard shifts, each at their post and near their own home.”"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:NEH:7:4",
+      "text": "The city was large and spread out, but few people lived in it, and the houses hadn’t been built."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:NEH:7:5",
+      "text": "My God put it in my heart to gather the nobles, officials, and people to register them by family. I found the family records of the first people who’d come back. Here’s what was written there:"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:NEH:7:6",
+      "text": "These are the people of the province who came home from exile. King Nebuchadnezzar of Babylon had taken them away, and they returned to Jerusalem and Judah, each to their own town."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:NEH:7:7",
+      "text": "They came with Zerubbabel, Jeshua, Nehemiah, Azariah, Raamiah, Nahamani, Mordecai, Bilshan, Mispereth, Bigvai, Nehum, and Baanah. Here’s the count of the men of Israel:"
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:NEH:7:8",
+      "text": "Parosh’s descendants: 2,172."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:NEH:7:9",
+      "text": "Shephatiah’s descendants: 372."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:NEH:7:10",
+      "text": "Arah’s descendants: 652."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:NEH:7:11",
+      "text": "Pahathmoab’s descendants, from the lines of Jeshua and Joab: 2,818."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:NEH:7:12",
+      "text": "Elam’s descendants: 1,254."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:NEH:7:13",
+      "text": "Zattu’s descendants: 845."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:NEH:7:14",
+      "text": "Zaccai’s descendants: 760."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:NEH:7:15",
+      "text": "Binnui’s descendants: 648."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:NEH:7:16",
+      "text": "Bebai’s descendants: 628."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:NEH:7:17",
+      "text": "Azgad’s descendants: 2,322."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:NEH:7:18",
+      "text": "Adonikam’s descendants: 667."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:NEH:7:19",
+      "text": "Bigvai’s descendants: 2,067."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:NEH:7:20",
+      "text": "Adin’s descendants: 655."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:NEH:7:21",
+      "text": "Ater’s descendants from Hezekiah’s line: 98."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:NEH:7:22",
+      "text": "Hashum’s descendants: 328."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:NEH:7:23",
+      "text": "Bezai’s descendants: 324."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:NEH:7:24",
+      "text": "Hariph’s descendants: 112."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:NEH:7:25",
+      "text": "People from Gibeon: 95."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:NEH:7:26",
+      "text": "Men from Bethlehem and Netophah: 188."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:NEH:7:27",
+      "text": "Men from Anathoth: 128."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:NEH:7:28",
+      "text": "Men from Beth Azmaveth: 42."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:NEH:7:29",
+      "text": "Men from Kiriath Jearim, Chephirah, and Beeroth: 743."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:NEH:7:30",
+      "text": "Men from Ramah and Geba: 621."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:NEH:7:31",
+      "text": "Men from Michmas: 122."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:NEH:7:32",
+      "text": "Men from Bethel and Ai: 123."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:NEH:7:33",
+      "text": "Men from the other Nebo: 52."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:NEH:7:34",
+      "text": "The other Elam’s descendants: 1,254."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:NEH:7:35",
+      "text": "Harim’s descendants: 320."
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:NEH:7:36",
+      "text": "People from Jericho: 345."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:NEH:7:37",
+      "text": "People from Lod, Hadid, and Ono: 721."
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:NEH:7:38",
+      "text": "People from Senaah: 3,930."
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:NEH:7:39",
+      "text": "Here are the priests: Jedaiah’s descendants from Jeshua’s family: 973."
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:NEH:7:40",
+      "text": "Immer’s descendants: 1,052."
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:NEH:7:41",
+      "text": "Pashhur’s descendants: 1,247."
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:NEH:7:42",
+      "text": "Harim’s descendants: 1,017."
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:NEH:7:43",
+      "text": "The Levites were the descendants of Jeshua, Kadmiel, and the line of Hodevah: 74."
+    },
+    {
+      "number": 44,
+      "sourceRef": "eng-web:NEH:7:44",
+      "text": "The singers were Asaph’s descendants: 148."
+    },
+    {
+      "number": 45,
+      "sourceRef": "eng-web:NEH:7:45",
+      "text": "The gatekeepers came from the families of Shallum, Ater, Talmon, Akkub, Hatita, and Shobai: 138 in all."
+    },
+    {
+      "number": 46,
+      "sourceRef": "eng-web:NEH:7:46",
+      "text": "The temple servants came from these families: Ziha, Hasupha, Tabbaoth,"
+    },
+    {
+      "number": 47,
+      "sourceRef": "eng-web:NEH:7:47",
+      "text": "Keros, Sia, Padon,"
+    },
+    {
+      "number": 48,
+      "sourceRef": "eng-web:NEH:7:48",
+      "text": "Lebana, Hagaba, Salmai,"
+    },
+    {
+      "number": 49,
+      "sourceRef": "eng-web:NEH:7:49",
+      "text": "Hanan, Giddel, Gahar,"
+    },
+    {
+      "number": 50,
+      "sourceRef": "eng-web:NEH:7:50",
+      "text": "Reaiah, Rezin, Nekoda,"
+    },
+    {
+      "number": 51,
+      "sourceRef": "eng-web:NEH:7:51",
+      "text": "Gazzam, Uzza, Paseah,"
+    },
+    {
+      "number": 52,
+      "sourceRef": "eng-web:NEH:7:52",
+      "text": "Besai, Meunim, Nephushesim,"
+    },
+    {
+      "number": 53,
+      "sourceRef": "eng-web:NEH:7:53",
+      "text": "Bakbuk, Hakupha, Harhur,"
+    },
+    {
+      "number": 54,
+      "sourceRef": "eng-web:NEH:7:54",
+      "text": "Bazlith, Mehida, Harsha,"
+    },
+    {
+      "number": 55,
+      "sourceRef": "eng-web:NEH:7:55",
+      "text": "Barkos, Sisera, Temah,"
+    },
+    {
+      "number": 56,
+      "sourceRef": "eng-web:NEH:7:56",
+      "text": "Neziah, and Hatipha."
+    },
+    {
+      "number": 57,
+      "sourceRef": "eng-web:NEH:7:57",
+      "text": "The descendants of Solomon’s servants came from these families: Sotai, Sophereth, Perida,"
+    },
+    {
+      "number": 58,
+      "sourceRef": "eng-web:NEH:7:58",
+      "text": "Jaala, Darkon, Giddel,"
+    },
+    {
+      "number": 59,
+      "sourceRef": "eng-web:NEH:7:59",
+      "text": "Shephatiah, Hattil, Pochereth Hazzebaim, and Amon."
+    },
+    {
+      "number": 60,
+      "sourceRef": "eng-web:NEH:7:60",
+      "text": "Altogether there were 392 temple servants and descendants of Solomon’s servants."
+    },
+    {
+      "number": 61,
+      "sourceRef": "eng-web:NEH:7:61",
+      "text": "These people came up from Tel Melah, Tel Harsha, Cherub, Addon, and Immer. They couldn’t show from their family records or ancestry whether they belonged to Israel:"
+    },
+    {
+      "number": 62,
+      "sourceRef": "eng-web:NEH:7:62",
+      "text": "The descendants of Delaiah, Tobiah, and Nekoda: 642."
+    },
+    {
+      "number": 63,
+      "sourceRef": "eng-web:NEH:7:63",
+      "text": "From the priestly families there were descendants of Hobaiah, Hakkoz, and Barzillai. Barzillai had married one of the daughters of Barzillai the Gileadite and taken their family name."
+    },
+    {
+      "number": 64,
+      "sourceRef": "eng-web:NEH:7:64",
+      "text": "They searched for their family records but couldn’t find them. So they were ruled ineligible and removed from the priesthood."
+    },
+    {
+      "number": 65,
+      "sourceRef": "eng-web:NEH:7:65",
+      "text": "The governor told them they couldn’t eat any of the most holy things until a priest could serve with the Urim and Thummim."
+    },
+    {
+      "number": 66,
+      "sourceRef": "eng-web:NEH:7:66",
+      "text": "The whole assembly totaled 42,360,"
+    },
+    {
+      "number": 67,
+      "sourceRef": "eng-web:NEH:7:67",
+      "text": "plus 7,337 male and female servants. They had 245 singers, men and women."
+    },
+    {
+      "number": 68,
+      "sourceRef": "eng-web:NEH:7:68",
+      "text": "They had 736 horses and 245 mules,"
+    },
+    {
+      "number": 69,
+      "sourceRef": "eng-web:NEH:7:69",
+      "text": "435 camels and 6,720 donkeys."
+    },
+    {
+      "number": 70,
+      "sourceRef": "eng-web:NEH:7:70",
+      "text": "Some of the family heads gave to the work. The governor gave the treasury 1,000 gold darics, 50 basins, and 530 sets of priests’ clothes."
+    },
+    {
+      "number": 71,
+      "sourceRef": "eng-web:NEH:7:71",
+      "text": "Some family heads gave the treasury for the work 20,000 gold darics and 2,200 silver minas."
+    },
+    {
+      "number": 72,
+      "sourceRef": "eng-web:NEH:7:72",
+      "text": "The rest of the people gave 20,000 gold darics, 2,000 silver minas, and 67 sets of priests’ clothes."
+    },
+    {
+      "number": 73,
+      "sourceRef": "eng-web:NEH:7:73",
+      "text": "The priests, Levites, gatekeepers, singers, some of the people, and the temple servants settled in their towns, and so did all Israel. By the seventh month, the Israelites were in their towns."
+    }
+  ]
+}

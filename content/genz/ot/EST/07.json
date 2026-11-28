@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "EST",
+  "bookName": "Esther",
+  "chapterNumber": 7,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:EST:7:1",
+      "text": "The king and Haman came to feast with Queen Esther."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:EST:7:2",
+      "text": "On the second day, as they drank wine at the banquet, the king asked Esther again, “What are you asking for, Queen Esther? I’ll grant it. What do you want? Even if it’s half the kingdom, I’ll do it.”"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:EST:7:3",
+      "text": "Queen Esther answered, “If I’ve found favor with you, O king, and if it pleases you, here’s what I ask: spare my life and spare my people."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:EST:7:4",
+      "text": "My people and I have been sold to be destroyed, killed, and wiped out. If we’d only been sold as slaves, men and women alike, I would’ve kept quiet, even though the enemy couldn’t make up for what the king would lose.”"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:EST:7:5",
+      "text": "King Ahasuerus asked Queen Esther, “Who would dare do a thing like that? Where is he?”"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:EST:7:6",
+      "text": "Esther said, “The enemy, the one against us, is this wicked Haman!” Haman was terrified in front of the king and queen."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:EST:7:7",
+      "text": "The king got up from the wine banquet in a rage and went out to the palace garden. Haman stood up to beg Queen Esther for his life. He could see the king had decided to bring disaster on him."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:EST:7:8",
+      "text": "When the king came back from the palace garden to the banquet room, Haman had fallen across the couch where Esther was. The king said, “Is he going to assault the queen right in front of me, in my own house?” The words were barely out of the king’s mouth when they covered Haman’s face."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:EST:7:9",
+      "text": "Harbonah, one of the eunuchs attending the king, said, “Look, there’s a gallows fifty cubits high standing at Haman’s house. He made it for Mordecai, the man who spoke up for the king’s good.” The king said, “Hang him on it!”"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:EST:7:10",
+      "text": "So they hanged Haman on the gallows he’d made for Mordecai. Then the king’s anger cooled."
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "EST",
+  "bookName": "Esther",
+  "chapterNumber": 4,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:EST:4:1",
+      "text": "When Mordecai found out everything that had happened, he tore his clothes, put on sackcloth and ashes, and went into the middle of the city, crying out loud and bitterly."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:EST:4:2",
+      "text": "He went as far as the king’s gate, because nobody dressed in sackcloth was allowed inside."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:EST:4:3",
+      "text": "In every province the king’s order reached, the Jews went into deep mourning. They fasted, cried, and wailed, and many lay in sackcloth and ashes."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:EST:4:4",
+      "text": "Esther’s attendants and eunuchs came and told her, and the queen was deeply upset. She sent Mordecai clothes to wear in place of the sackcloth, but he wouldn’t take them."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:EST:4:5",
+      "text": "Then Esther called Hathach, one of the king’s eunuchs appointed to attend her. She told him to go to Mordecai and find out what was happening and why."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:EST:4:6",
+      "text": "Hathach went out to Mordecai in the city square in front of the king’s gate."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:EST:4:7",
+      "text": "Mordecai told him everything that had happened to him, including the exact amount Haman had promised to pay into the king’s treasuries to have the Jews destroyed."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:EST:4:8",
+      "text": "He also gave him a copy of the decree issued in Susa ordering their destruction. He told Hathach to show it to Esther, explain it to her, and urge her to go to the king and plead for her people."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:EST:4:9",
+      "text": "Hathach came back and told Esther what Mordecai had said."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:EST:4:10",
+      "text": "Then Esther gave Hathach a message to take to Mordecai:"
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:EST:4:11",
+      "text": "“Everyone who serves the king and everyone in his provinces knows the rule. If anyone, man or woman, goes into the inner court to see the king without being called, they’re put to death. The only exception is if the king holds out the gold scepter and lets them live. I haven’t been called to see the king in thirty days.”"
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:EST:4:12",
+      "text": "They passed Esther’s words on to Mordecai."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:EST:4:13",
+      "text": "Mordecai sent back this answer: “Don’t think you’re any more likely to escape than the rest of the Jews just because you live in the king’s house."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:EST:4:14",
+      "text": "If you stay quiet now, relief and rescue will come to the Jews from somewhere else, but you and your father’s family will perish. Who knows? Maybe you became queen for a time like this.”"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:EST:4:15",
+      "text": "Then Esther sent Mordecai this answer:"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:EST:4:16",
+      "text": "“Go gather all the Jews in Susa and fast for me. Don’t eat or drink for three days, night or day. My attendants and I will fast too. Then I’ll go to the king, even though it’s against the law. If I die, I die.”"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:EST:4:17",
+      "text": "So Mordecai went and did everything Esther had told him to do."
+    }
+  ]
+}

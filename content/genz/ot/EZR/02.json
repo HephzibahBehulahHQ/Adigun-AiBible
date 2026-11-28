@@ -1,0 +1,361 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "EZR",
+  "bookName": "Ezra",
+  "chapterNumber": 2,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:EZR:2:1",
+      "text": "These are the people of the province who came home out of exile. King Nebuchadnezzar of Babylon had hauled them off to Babylon, and now they made it back to Jerusalem and Judah, each to their own town."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:EZR:2:2",
+      "text": "They came with Zerubbabel, Jeshua, Nehemiah, Seraiah, Reelaiah, Mordecai, Bilshan, Mispar, Bigvai, Rehum, and Baanah. Here’s the count of the men of Israel:"
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:EZR:2:3",
+      "text": "Parosh’s descendants: 2,172."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:EZR:2:4",
+      "text": "Shephatiah’s descendants: 372."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:EZR:2:5",
+      "text": "Arah’s descendants: 775."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:EZR:2:6",
+      "text": "Pahathmoab’s descendants, from the lines of Jeshua and Joab: 2,812."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:EZR:2:7",
+      "text": "Elam’s descendants: 1,254."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:EZR:2:8",
+      "text": "Zattu’s descendants: 945."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:EZR:2:9",
+      "text": "Zaccai’s descendants: 760."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:EZR:2:10",
+      "text": "Bani’s descendants: 642."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:EZR:2:11",
+      "text": "Bebai’s descendants: 623."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:EZR:2:12",
+      "text": "Azgad’s descendants: 1,222."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:EZR:2:13",
+      "text": "Adonikam’s descendants: 666."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:EZR:2:14",
+      "text": "Bigvai’s descendants: 2,056."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:EZR:2:15",
+      "text": "Adin’s descendants: 454."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:EZR:2:16",
+      "text": "Ater’s descendants from Hezekiah’s line: 98."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:EZR:2:17",
+      "text": "Bezai’s descendants: 323."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:EZR:2:18",
+      "text": "Jorah’s descendants: 112."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:EZR:2:19",
+      "text": "Hashum’s descendants: 223."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:EZR:2:20",
+      "text": "Gibbar’s descendants: 95."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:EZR:2:21",
+      "text": "People from Bethlehem: 123."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:EZR:2:22",
+      "text": "Men from Netophah: 56."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:EZR:2:23",
+      "text": "Men from Anathoth: 128."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:EZR:2:24",
+      "text": "People from Azmaveth: 42."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:EZR:2:25",
+      "text": "People from Kiriath Arim, Chephirah, and Beeroth: 743."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:EZR:2:26",
+      "text": "People from Ramah and Geba: 621."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:EZR:2:27",
+      "text": "Men from Michmas: 122."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:EZR:2:28",
+      "text": "Men from Bethel and Ai: 223."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:EZR:2:29",
+      "text": "People from Nebo: 52."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:EZR:2:30",
+      "text": "People from Magbish: 156."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:EZR:2:31",
+      "text": "The other Elam’s descendants: 1,254."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:EZR:2:32",
+      "text": "Harim’s descendants: 320."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:EZR:2:33",
+      "text": "People from Lod, Hadid, and Ono: 725."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:EZR:2:34",
+      "text": "People from Jericho: 345."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:EZR:2:35",
+      "text": "People from Senaah: 3,630."
+    },
+    {
+      "number": 36,
+      "sourceRef": "eng-web:EZR:2:36",
+      "text": "Here are the priests: Jedaiah’s descendants from Jeshua’s family: 973."
+    },
+    {
+      "number": 37,
+      "sourceRef": "eng-web:EZR:2:37",
+      "text": "Immer’s descendants: 1,052."
+    },
+    {
+      "number": 38,
+      "sourceRef": "eng-web:EZR:2:38",
+      "text": "Pashhur’s descendants: 1,247."
+    },
+    {
+      "number": 39,
+      "sourceRef": "eng-web:EZR:2:39",
+      "text": "Harim’s descendants: 1,017."
+    },
+    {
+      "number": 40,
+      "sourceRef": "eng-web:EZR:2:40",
+      "text": "The Levites were the descendants of Jeshua and Kadmiel from Hodaviah’s line: 74."
+    },
+    {
+      "number": 41,
+      "sourceRef": "eng-web:EZR:2:41",
+      "text": "The singers were Asaph’s descendants: 128."
+    },
+    {
+      "number": 42,
+      "sourceRef": "eng-web:EZR:2:42",
+      "text": "The gatekeepers’ descendants came from the families of Shallum, Ater, Talmon, Akkub, Hatita, and Shobai: 139 in all."
+    },
+    {
+      "number": 43,
+      "sourceRef": "eng-web:EZR:2:43",
+      "text": "The temple servants came from these families: Ziha, Hasupha, Tabbaoth,"
+    },
+    {
+      "number": 44,
+      "sourceRef": "eng-web:EZR:2:44",
+      "text": "Keros, Siaha, Padon,"
+    },
+    {
+      "number": 45,
+      "sourceRef": "eng-web:EZR:2:45",
+      "text": "Lebanah, Hagabah, Akkub,"
+    },
+    {
+      "number": 46,
+      "sourceRef": "eng-web:EZR:2:46",
+      "text": "Hagab, Shamlai, Hanan,"
+    },
+    {
+      "number": 47,
+      "sourceRef": "eng-web:EZR:2:47",
+      "text": "Giddel, Gahar, Reaiah,"
+    },
+    {
+      "number": 48,
+      "sourceRef": "eng-web:EZR:2:48",
+      "text": "Rezin, Nekoda, Gazzam,"
+    },
+    {
+      "number": 49,
+      "sourceRef": "eng-web:EZR:2:49",
+      "text": "Uzza, Paseah, Besai,"
+    },
+    {
+      "number": 50,
+      "sourceRef": "eng-web:EZR:2:50",
+      "text": "Asnah, Meunim, Nephisim,"
+    },
+    {
+      "number": 51,
+      "sourceRef": "eng-web:EZR:2:51",
+      "text": "Bakbuk, Hakupha, Harhur,"
+    },
+    {
+      "number": 52,
+      "sourceRef": "eng-web:EZR:2:52",
+      "text": "Bazluth, Mehida, Harsha,"
+    },
+    {
+      "number": 53,
+      "sourceRef": "eng-web:EZR:2:53",
+      "text": "Barkos, Sisera, Temah,"
+    },
+    {
+      "number": 54,
+      "sourceRef": "eng-web:EZR:2:54",
+      "text": "Neziah, and Hatipha."
+    },
+    {
+      "number": 55,
+      "sourceRef": "eng-web:EZR:2:55",
+      "text": "The descendants of Solomon’s servants came from these families: Sotai, Hassophereth, Peruda,"
+    },
+    {
+      "number": 56,
+      "sourceRef": "eng-web:EZR:2:56",
+      "text": "Jaalah, Darkon, Giddel,"
+    },
+    {
+      "number": 57,
+      "sourceRef": "eng-web:EZR:2:57",
+      "text": "Shephatiah, Hattil, Pochereth Hazzebaim, and Ami."
+    },
+    {
+      "number": 58,
+      "sourceRef": "eng-web:EZR:2:58",
+      "text": "Altogether there were 392 temple servants and descendants of Solomon’s servants."
+    },
+    {
+      "number": 59,
+      "sourceRef": "eng-web:EZR:2:59",
+      "text": "The following people came up from Tel Melah, Tel Harsha, Cherub, Addan, and Immer. They couldn’t show from their family lines or ancestry whether they belonged to Israel:"
+    },
+    {
+      "number": 60,
+      "sourceRef": "eng-web:EZR:2:60",
+      "text": "The descendants of Delaiah, Tobiah, and Nekoda: 652."
+    },
+    {
+      "number": 61,
+      "sourceRef": "eng-web:EZR:2:61",
+      "text": "From the priestly families there were the descendants of Habaiah, Hakkoz, and Barzillai. Barzillai had married one of the daughters of Barzillai the Gileadite and taken their family name."
+    },
+    {
+      "number": 62,
+      "sourceRef": "eng-web:EZR:2:62",
+      "text": "They looked for their names in the family records but couldn’t find them. So they were counted ineligible and removed from the priesthood."
+    },
+    {
+      "number": 63,
+      "sourceRef": "eng-web:EZR:2:63",
+      "text": "The governor told them they couldn’t eat any of the most holy things until a priest was there to serve with the Urim and Thummim."
+    },
+    {
+      "number": 64,
+      "sourceRef": "eng-web:EZR:2:64",
+      "text": "The whole group added up to 42,360,"
+    },
+    {
+      "number": 65,
+      "sourceRef": "eng-web:EZR:2:65",
+      "text": "plus 7,337 male and female servants. They also had 200 singers, men and women."
+    },
+    {
+      "number": 66,
+      "sourceRef": "eng-web:EZR:2:66",
+      "text": "They had 736 horses and 245 mules,"
+    },
+    {
+      "number": 67,
+      "sourceRef": "eng-web:EZR:2:67",
+      "text": "435 camels and 6,720 donkeys."
+    },
+    {
+      "number": 68,
+      "sourceRef": "eng-web:EZR:2:68",
+      "text": "When they got to the LORD’s house in Jerusalem, some of the family heads gave freely to rebuild God’s house on its old site."
+    },
+    {
+      "number": 69,
+      "sourceRef": "eng-web:EZR:2:69",
+      "text": "They gave what they could to the treasury for the work: 61,000 gold darics, 5,000 silver minas, and 100 sets of priests’ clothes."
+    },
+    {
+      "number": 70,
+      "sourceRef": "eng-web:EZR:2:70",
+      "text": "The priests, Levites, some of the people, the singers, gatekeepers, and temple servants settled in their towns. All Israel settled in their own towns."
+    }
+  ]
+}
