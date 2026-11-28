@@ -56,19 +56,24 @@ export async function translateReadingPassage(request, env) {
     const result = await env.AI.run('@cf/meta/llama-3.3-70b-instruct-fp8-fast', {
       max_tokens: 1800,
       temperature: 0.2,
+      response_format: { type: 'json_object' },
       messages: [
-        { role: 'system', content: tones.get(tone) + ' Preserve meaning, speakers and verse boundaries. Do not add claims or commentary. Return only a JSON array of objects with number and text, in the original order.' },
+        { role: 'system', content: tones.get(tone) + ' Preserve meaning, speakers and verse boundaries. Do not add claims or commentary. Return a JSON object with a verses array of objects with number and text, in the original order.' },
         { role: 'user', content: JSON.stringify(verses.map(({ number, text }) => ({ number, text }))) },
       ],
     });
-    const rows = JSON.parse(result.response);
+    const output = typeof result.response === 'string'
+      ? JSON.parse(result.response.trim().replace(/^```(?:json)?\s*|\s*```$/gi, ''))
+      : result.response;
+    const rows = Array.isArray(output) ? output : output?.verses;
     if (!Array.isArray(rows) || rows.length !== verses.length || rows.some((row, index) =>
       row?.number !== verses[index].number || typeof row.text !== 'string' || !row.text.trim() || row.text.length > 3000))
       return new Response(null, { status: 502 });
     return Response.json(rows.map(({ number, text }) => ({ number, text })), {
       headers: { 'Cache-Control': 'no-store' },
     });
-  } catch {
+  } catch (error) {
+    console.error('Reading translation failed', error instanceof Error ? error.message : 'Unexpected error');
     return new Response(null, { status: 502 });
   }
 }
