@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PRO",
+  "bookName": "Proverbs",
+  "chapterNumber": 26,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PRO:26:1",
+      "text": "Honor fits a fool about as well as snow fits summer or rain fits harvest."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PRO:26:2",
+      "text": "An undeserved curse is like a sparrow fluttering or a swallow darting past. It doesn't land."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PRO:26:3",
+      "text": "A whip is for a horse, a bridle for a donkey, and a rod for the backs of fools."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PRO:26:4",
+      "text": "Don't answer a fool on their own foolish terms, or you'll become just like them."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PRO:26:5",
+      "text": "Answer a fool in a way that exposes the foolishness, or they'll think they're wise."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PRO:26:6",
+      "text": "Sending a message with a fool is like cutting off your own feet and drinking down violence."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PRO:26:7",
+      "text": "A proverb in a fool's mouth is like legs hanging limp and useless."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PRO:26:8",
+      "text": "Honoring a fool is like tying a stone into a sling."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PRO:26:9",
+      "text": "A proverb in a fool's mouth is like a thornbush in a drunk person's hand."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PRO:26:10",
+      "text": "Hiring a fool or just anyone passing by is like an archer who wounds whoever's around."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PRO:26:11",
+      "text": "A fool repeats their foolishness like a dog going back to its vomit."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PRO:26:12",
+      "text": "See someone who thinks they're already wise? There's more hope for a fool than for them."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PRO:26:13",
+      "text": "A slacker says, “There's a lion in the road! A fierce lion is roaming the streets!”"
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PRO:26:14",
+      "text": "A slacker turns over in bed like a door swinging on its hinges."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PRO:26:15",
+      "text": "A slacker sticks their hand in the dish and is too lazy to bring the food to their mouth."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PRO:26:16",
+      "text": "A slacker thinks they're wiser than seven people who answer with good judgment."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PRO:26:17",
+      "text": "Jumping into someone else's fight is like grabbing a dog by the ears."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PRO:26:18",
+      "text": "Like someone out of control firing flaming torches and deadly arrows"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PRO:26:19",
+      "text": "is the person who tricks their neighbor and says, “I was just joking!”"
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PRO:26:20",
+      "text": "Without wood, a fire goes out. Without gossip, a fight dies down. 🔥"
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PRO:26:21",
+      "text": "A person who loves to argue stirs up conflict like coal feeds hot embers and wood feeds a fire."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PRO:26:22",
+      "text": "Gossip goes down like tasty bites, all the way into a person's deepest parts."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PRO:26:23",
+      "text": "Passionate words from an evil heart are like silver dross coating a clay pot."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PRO:26:24",
+      "text": "A malicious person hides who they are with their words while keeping evil in their heart."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PRO:26:25",
+      "text": "When they sound charming, don't believe them. There are seven detestable things in their heart."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:PRO:26:26",
+      "text": "They may hide their malice with lies, but their wickedness will come out in front of everyone."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:PRO:26:27",
+      "text": "Dig a pit and you'll fall into it. Roll a stone and it'll roll back on you."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:PRO:26:28",
+      "text": "A lying tongue hates the people it hurts, and flattery brings ruin."
+    }
+  ]
+}

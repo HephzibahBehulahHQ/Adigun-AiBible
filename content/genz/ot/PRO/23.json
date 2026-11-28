@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PRO",
+  "bookName": "Proverbs",
+  "chapterNumber": 23,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PRO:23:1",
+      "text": "When you sit down to eat with a ruler, pay close attention to what's in front of you."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PRO:23:2",
+      "text": "If your appetite tends to take over, hold it back as if there were a knife at your throat."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PRO:23:3",
+      "text": "Don't crave the ruler's fancy food. That meal can fool you."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PRO:23:4",
+      "text": "Don't wear yourself out trying to get rich. Be wise enough to know when to stop."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PRO:23:5",
+      "text": "Why fix your eyes on something that won't last? Wealth sprouts wings like an eagle and flies off into the sky."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PRO:23:6",
+      "text": "Don't eat with a stingy person or crave their fancy food."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PRO:23:7",
+      "text": "They're counting the cost the whole time. “Eat and drink!” they tell you, but they don't mean it."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PRO:23:8",
+      "text": "You'll throw up what you ate, and all your kind words will have been wasted."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PRO:23:9",
+      "text": "Don't bother speaking wisdom into a fool's ears. They'll just look down on what you say."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PRO:23:10",
+      "text": "Don't move an old boundary stone or take over fields that belong to children without a father."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PRO:23:11",
+      "text": "Their Defender is strong. He'll take up their case against you."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PRO:23:12",
+      "text": "Take instruction to heart and listen closely to words that give you knowledge."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PRO:23:13",
+      "text": "Don't hold back correction from a child. The proverb says the rod of discipline won't kill them."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PRO:23:14",
+      "text": "That discipline, it says, can save their life from Sheol."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PRO:23:15",
+      "text": "My son, if your heart grows wise, my own heart will be glad."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PRO:23:16",
+      "text": "I'll rejoice deep down when your lips say what's right."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PRO:23:17",
+      "text": "Don't envy people who sin. Spend your whole day revering the LORD."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PRO:23:18",
+      "text": "There really is a future for you, and your hope won't be cut off."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PRO:23:19",
+      "text": "Listen, my son, and grow wise. Keep your heart on the right path."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PRO:23:20",
+      "text": "Don't hang around with people who drink too much wine or stuff themselves with meat."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PRO:23:21",
+      "text": "Drunkards and gluttons end up poor. Being half asleep all the time leaves them dressed in rags."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PRO:23:22",
+      "text": "Listen to your father who gave you life. Don't look down on your mother when she grows old."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PRO:23:23",
+      "text": "Buy the truth and never sell it. Get wisdom, discipline, and understanding."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PRO:23:24",
+      "text": "A father takes great joy in a child who does what's right. A wise child makes their father glad."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PRO:23:25",
+      "text": "Let your father and mother be glad. Let the woman who gave birth to you celebrate."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:PRO:23:26",
+      "text": "My son, give me your heart and keep your eyes on the way I live."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:PRO:23:27",
+      "text": "A prostitute is like a deep pit, and an unfaithful wife is like a narrow well."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:PRO:23:28",
+      "text": "She waits in hiding like a robber and draws more people into unfaithfulness."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:PRO:23:29",
+      "text": "Who's in trouble? Who's grieving? Who's fighting and complaining? Who has bruises for no reason and bloodshot eyes?"
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:PRO:23:30",
+      "text": "People who spend hours drinking wine, people who go looking for mixed wine."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:PRO:23:31",
+      "text": "Don't get caught staring at the red wine as it sparkles in the cup and goes down smooth."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:PRO:23:32",
+      "text": "In the end it bites like a snake and poisons like a viper."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:PRO:23:33",
+      "text": "Your eyes will see strange things, and your mind will come up with confusing thoughts."
+    },
+    {
+      "number": 34,
+      "sourceRef": "eng-web:PRO:23:34",
+      "text": "You'll feel like someone lying in the middle of the sea or stretched out high on a ship's rigging."
+    },
+    {
+      "number": 35,
+      "sourceRef": "eng-web:PRO:23:35",
+      "text": "“They hit me and it didn't hurt! They beat me and I didn't feel it! When will I wake up? I'll go looking for another drink.”"
+    }
+  ]
+}

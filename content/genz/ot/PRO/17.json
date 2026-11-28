@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PRO",
+  "bookName": "Proverbs",
+  "chapterNumber": 17,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PRO:17:1",
+      "text": "A dry bite of bread in peace beats a house full of food and fighting."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PRO:17:2",
+      "text": "A servant who acts wisely will rule over a son who brings shame and share the inheritance with the brothers."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PRO:17:3",
+      "text": "A crucible refines silver and a furnace refines gold. The LORD tests hearts."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PRO:17:4",
+      "text": "Someone who does evil listens to wicked talk. A liar pays attention to words that stir up trouble."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PRO:17:5",
+      "text": "Mock the poor and you insult their Maker. Celebrate someone's disaster and you won't get away with it."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PRO:17:6",
+      "text": "Grandchildren are a crown to the old, and children take pride in their parents."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PRO:17:7",
+      "text": "Fine speech doesn't suit a fool. Lies suit a ruler even less."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PRO:17:8",
+      "text": "To the one who gives it, a bribe looks like a precious gem. Wherever they turn, things seem to go their way."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PRO:17:9",
+      "text": "Let an offense go and you make room for love. Keep bringing it up and you split up close friends."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PRO:17:10",
+      "text": "One correction goes deeper into someone with understanding than a hundred lashes go into a fool."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PRO:17:11",
+      "text": "An evil person seeks nothing but rebellion, so a cruel messenger will be sent against them."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PRO:17:12",
+      "text": "You're better off meeting a bear robbed of her cubs than a fool caught up in foolishness."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PRO:17:13",
+      "text": "Pay back good with evil, and evil won't leave your house."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PRO:17:14",
+      "text": "Starting a fight is like cracking open a dam. Drop the dispute before the argument breaks out."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PRO:17:15",
+      "text": "The LORD detests both letting the wicked off and condemning people who do what's right."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PRO:17:16",
+      "text": "Why give a fool money to buy wisdom when they have no understanding?"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PRO:17:17",
+      "text": "A friend loves through everything. A brother is born for hard times."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PRO:17:18",
+      "text": "Someone with no judgment shakes hands on a deal and puts themselves up as collateral for their neighbor."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PRO:17:19",
+      "text": "Love rebellion and you love a fight. Build your gate too high and you're asking for ruin."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PRO:17:20",
+      "text": "A crooked heart won't find prosperity. A deceitful tongue lands its owner in trouble."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PRO:17:21",
+      "text": "Being the parent of a fool brings grief. The father of a fool has no joy."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PRO:17:22",
+      "text": "A cheerful heart is good medicine. A crushed spirit dries up the bones."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PRO:17:23",
+      "text": "The wicked take bribes in secret to bend justice."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PRO:17:24",
+      "text": "Someone with understanding keeps wisdom in view. A fool's eyes wander to the ends of the earth."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PRO:17:25",
+      "text": "A foolish son brings grief to his father and bitterness to the mother who gave birth to him."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:PRO:17:26",
+      "text": "It's wrong to punish people who do right or to lash officials for their integrity."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:PRO:17:27",
+      "text": "People who know what they're talking about use few words. A calm temper shows understanding."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:PRO:17:28",
+      "text": "Even a fool seems wise when they stay quiet. Keep your mouth shut and people will think you have good judgment."
+    }
+  ]
+}

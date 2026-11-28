@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PRO",
+  "bookName": "Proverbs",
+  "chapterNumber": 11,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PRO:11:1",
+      "text": "The LORD hates rigged scales. Honest weights make him glad."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PRO:11:2",
+      "text": "Pride shows up and shame follows. Wisdom comes with humility."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PRO:11:3",
+      "text": "Integrity guides people who live uprightly. Crookedness destroys those who betray others."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PRO:11:4",
+      "text": "Money won't help on the day of wrath, but righteousness rescues from death."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PRO:11:5",
+      "text": "Doing what's right keeps a person of integrity on a straight path. The wicked trip over their own wrongdoing."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PRO:11:6",
+      "text": "The upright are rescued by doing what's right. The unfaithful get trapped by their own evil cravings."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PRO:11:7",
+      "text": "When a wicked person dies, their hope dies too. Everything they expected from their power comes to nothing."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PRO:11:8",
+      "text": "A person who does right gets out of trouble, and the wicked take their place."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PRO:11:9",
+      "text": "The godless ruin their neighbors with their words. Knowledge gets the righteous out of danger."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PRO:11:10",
+      "text": "When things go well for people who do right, the city celebrates. When the wicked perish, people shout for joy."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PRO:11:11",
+      "text": "The blessing of upright people lifts up a city. The words of the wicked tear it down."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PRO:11:12",
+      "text": "Looking down on your neighbor shows a lack of wisdom. Someone with understanding knows when to stay quiet."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PRO:11:13",
+      "text": "A gossip spills what was told in confidence. A trustworthy person keeps a secret."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PRO:11:14",
+      "text": "Without wise guidance a nation falls. With plenty of advisers, there's victory."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PRO:11:15",
+      "text": "Guarantee a stranger's debt and you'll pay for it. Refuse to put yourself up as collateral and you'll be secure."
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PRO:11:16",
+      "text": "A gracious woman gains honor. Violent men gain riches."
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PRO:11:17",
+      "text": "A merciful person does themselves good. A cruel person brings trouble on their own body."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PRO:11:18",
+      "text": "The wicked earn wages that don't deliver. Sow righteousness and the reward is sure."
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PRO:11:19",
+      "text": "Anyone who truly does what's right finds life. Anyone who chases evil finds death."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PRO:11:20",
+      "text": "The LORD detests crooked hearts. People whose ways are blameless make him glad."
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PRO:11:21",
+      "text": "Make no mistake, evil won't go unpunished. The children of those who do right will be rescued."
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PRO:11:22",
+      "text": "A beautiful woman without good judgment is like a gold ring in a pig's snout."
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PRO:11:23",
+      "text": "People who do right desire what's good. The wicked can expect wrath."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PRO:11:24",
+      "text": "One person gives freely and gains even more. Another holds back more than they should and ends up poor."
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PRO:11:25",
+      "text": "A generous person will have plenty. Give others water and you'll get water too."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:PRO:11:26",
+      "text": "People curse someone who hoards grain, but they bless the person who sells it."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:PRO:11:27",
+      "text": "Search hard for what's good and you're seeking favor. Go looking for evil and it'll find you."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:PRO:11:28",
+      "text": "Trust your wealth and you'll fall. People who do right will thrive like green leaves. 🌿"
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:PRO:11:29",
+      "text": "Bring trouble on your own household and you'll inherit the wind. A fool will serve someone wise at heart."
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:PRO:11:30",
+      "text": "What the righteous produce is a tree of life. A wise person wins people over."
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:PRO:11:31",
+      "text": "Look, even those who do right get repaid here on earth. How much more will the wicked and the sinner?"
+    }
+  ]
+}

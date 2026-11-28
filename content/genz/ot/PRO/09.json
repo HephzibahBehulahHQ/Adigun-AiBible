@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PRO",
+  "bookName": "Proverbs",
+  "chapterNumber": 9,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PRO:9:1",
+      "text": "Wisdom built her house and carved out its seven pillars."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PRO:9:2",
+      "text": "She prepared the meat, mixed the wine, and set the table."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PRO:9:3",
+      "text": "She sent out her servants and called from the highest spots in the city:"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PRO:9:4",
+      "text": "“If you're inexperienced, come on in!” To those who lack understanding, she says,"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PRO:9:5",
+      "text": "“Come eat my bread and drink the wine I've mixed!"
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PRO:9:6",
+      "text": "Leave your foolish ways behind and live. Walk the path of understanding.”"
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PRO:9:7",
+      "text": "Correct a mocker and you'll get insulted. Call out someone wicked and you'll get abuse."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PRO:9:8",
+      "text": "Correct a scoffer and they'll hate you for it. Correct someone wise and they'll love you for it."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PRO:9:9",
+      "text": "Teach wise people and they'll grow wiser. Teach people who do what's right and they'll learn even more."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PRO:9:10",
+      "text": "Reverence for the LORD is where wisdom begins. Knowing the Holy One is understanding."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PRO:9:11",
+      "text": "Through me, you'll have more days and more years of life."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PRO:9:12",
+      "text": "If you're wise, you benefit from your wisdom. If you mock, you carry the consequences yourself."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PRO:9:13",
+      "text": "The woman called Folly is loud and out of control. She has no clue."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PRO:9:14",
+      "text": "She sits by her front door, on a seat high above the city,"
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PRO:9:15",
+      "text": "calling to people passing by who were walking straight on their way:"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PRO:9:16",
+      "text": "“If you're inexperienced, come on in!” To those who lack understanding, she says,"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PRO:9:17",
+      "text": "“Stolen water tastes sweet. Food eaten in secret hits different.”"
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PRO:9:18",
+      "text": "They have no idea the spirits of the dead are there, or that her guests are down in the depths of Sheol."
+    }
+  ]
+}

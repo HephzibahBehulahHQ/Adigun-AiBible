@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "PRO",
+  "bookName": "Proverbs",
+  "chapterNumber": 30,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:PRO:30:1",
+      "text": "These are the words of Agur son of Jakeh, a revelation. He speaks to Ithiel, to Ithiel and Ucal:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:PRO:30:2",
+      "text": "“Surely I'm more ignorant than anyone. I don't even have ordinary human understanding."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:PRO:30:3",
+      "text": "I haven't learned wisdom, and I don't have knowledge of the Holy One."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:PRO:30:4",
+      "text": "Who's gone up to heaven and come down? Who's gathered the wind in their fists or wrapped the waters in their clothes? Who set the farthest ends of the earth in place? What's his name, and what's his son's name, if you know?"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:PRO:30:5",
+      "text": "“Every word God speaks is flawless. He's a shield to those who take shelter in him."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:PRO:30:6",
+      "text": "Don't add to his words, or he'll correct you and you'll be exposed as a liar."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:PRO:30:7",
+      "text": "“I've asked you for two things. Don't deny them to me before I die."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:PRO:30:8",
+      "text": "Keep falsehood and lies far away from me. Give me neither poverty nor riches. Feed me with just the food I need."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:PRO:30:9",
+      "text": "If I have too much, I might deny you and say, ‘Who's the LORD?’ If I'm poor, I might steal and dishonor my God's name."
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:PRO:30:10",
+      "text": "“Don't slander a servant to their master, or they'll curse you and you'll be held guilty."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:PRO:30:11",
+      "text": "There's a generation that curses their fathers and won't bless their mothers."
+    },
+    {
+      "number": 12,
+      "sourceRef": "eng-web:PRO:30:12",
+      "text": "There's a generation that thinks it's pure even though its filth hasn't been washed away."
+    },
+    {
+      "number": 13,
+      "sourceRef": "eng-web:PRO:30:13",
+      "text": "There's a generation with eyes lifted high. You can see their pride in the way they look at you."
+    },
+    {
+      "number": 14,
+      "sourceRef": "eng-web:PRO:30:14",
+      "text": "There's a generation with teeth like swords and jaws like knives, ready to devour the poor off the earth and the needy from among humanity."
+    },
+    {
+      "number": 15,
+      "sourceRef": "eng-web:PRO:30:15",
+      "text": "“The leech has two daughters who keep saying, ‘Give! Give!’ Three things never get enough. Four never say, ‘That's enough!’"
+    },
+    {
+      "number": 16,
+      "sourceRef": "eng-web:PRO:30:16",
+      "text": "Sheol, a womb that can't bear children, ground that never gets enough water, and fire that never says, ‘Enough!’"
+    },
+    {
+      "number": 17,
+      "sourceRef": "eng-web:PRO:30:17",
+      "text": "“The eye that mocks its father and scorns obeying its mother will be picked out by ravens in the valley and eaten by young eagles."
+    },
+    {
+      "number": 18,
+      "sourceRef": "eng-web:PRO:30:18",
+      "text": "“Three things are too amazing for me. Four I just don't understand:"
+    },
+    {
+      "number": 19,
+      "sourceRef": "eng-web:PRO:30:19",
+      "text": "how an eagle moves through the air, how a snake moves over a rock, how a ship moves through the open sea, and the way of a man with a young woman."
+    },
+    {
+      "number": 20,
+      "sourceRef": "eng-web:PRO:30:20",
+      "text": "“Here's how an adulterous woman acts: she eats, wipes her mouth, and says, ‘I did nothing wrong.’"
+    },
+    {
+      "number": 21,
+      "sourceRef": "eng-web:PRO:30:21",
+      "text": "“Three things make the earth shake. Four are more than it can bear:"
+    },
+    {
+      "number": 22,
+      "sourceRef": "eng-web:PRO:30:22",
+      "text": "a servant who becomes king, a fool with a full stomach,"
+    },
+    {
+      "number": 23,
+      "sourceRef": "eng-web:PRO:30:23",
+      "text": "an unloved woman who gets married, and a servant who inherits her mistress's place."
+    },
+    {
+      "number": 24,
+      "sourceRef": "eng-web:PRO:30:24",
+      "text": "“Four things on earth are small and incredibly wise:"
+    },
+    {
+      "number": 25,
+      "sourceRef": "eng-web:PRO:30:25",
+      "text": "ants aren't strong, yet they store up food in summer."
+    },
+    {
+      "number": 26,
+      "sourceRef": "eng-web:PRO:30:26",
+      "text": "Hyraxes are weak, yet they build their homes in the rocks."
+    },
+    {
+      "number": 27,
+      "sourceRef": "eng-web:PRO:30:27",
+      "text": "Locusts have no king, yet they march in ranks."
+    },
+    {
+      "number": 28,
+      "sourceRef": "eng-web:PRO:30:28",
+      "text": "You can catch a lizard with your hands, yet there it is in kings' palaces."
+    },
+    {
+      "number": 29,
+      "sourceRef": "eng-web:PRO:30:29",
+      "text": "“Three things walk with dignity. Four move with a stately stride:"
+    },
+    {
+      "number": 30,
+      "sourceRef": "eng-web:PRO:30:30",
+      "text": "the lion, strongest of the animals, who backs down for none;"
+    },
+    {
+      "number": 31,
+      "sourceRef": "eng-web:PRO:30:31",
+      "text": "the greyhound, the male goat, and the king nobody can rise up against."
+    },
+    {
+      "number": 32,
+      "sourceRef": "eng-web:PRO:30:32",
+      "text": "“If you've foolishly hyped yourself up or thought about doing evil, put your hand over your mouth."
+    },
+    {
+      "number": 33,
+      "sourceRef": "eng-web:PRO:30:33",
+      "text": "Churning milk brings out butter, twisting a nose brings out blood, and stirring up anger brings out a fight.”"
+    }
+  ]
+}
