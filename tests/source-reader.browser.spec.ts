@@ -158,6 +158,31 @@ test('reading language keeps the passage and uses the selected source editions',
   }
 });
 
+test('a delayed language load cannot replace a newer selection', async ({ page }) => {
+  let releaseYoruba!: () => void;
+  const delayed = new Promise<void>(resolve => { releaseYoruba = resolve; });
+  await page.route('**/data/editions/yor/manifest.json*', async route => {
+    await delayed;
+    await route.continue();
+  });
+  await page.goto('#/read/JHN/3?verse=16&edition=eng-web');
+  const language = page.getByRole('combobox', { name: 'Reading language' });
+  const requested = page.waitForRequest('**/data/editions/yor/manifest.json*');
+  try {
+    await language.selectOption('yor');
+    await requested;
+    await language.selectOption('deu1912');
+    await expect(page).toHaveURL(/JHN\/3.*verse=16.*edition=deu1912/);
+    const completed = page.waitForResponse('**/data/editions/yor/manifest.json*');
+    releaseYoruba();
+    expect(await (await completed).finished()).toBeNull();
+    await page.waitForLoadState('networkidle');
+    await expect(page).toHaveURL(/JHN\/3.*verse=16.*edition=deu1912/);
+  } finally {
+    releaseYoruba();
+  }
+});
+
 test('publisher notes and red-letter spans preserve exact wording and source identity', async ({ page }, testInfo) => {
   await page.goto('#/read/JHN/3?verse=16&edition=eng-bsb');
   const verse = page.locator('#verse-16');
