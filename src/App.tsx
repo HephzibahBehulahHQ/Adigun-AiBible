@@ -189,10 +189,10 @@ export default function App() {
   useEffect(() => () => readingTranslationRequest.current?.abort(), [translationPassage]);
   async function changeReadingLanguage(editionId: string) {
     readingTranslationRequest.current?.abort();
+    const controller = new AbortController();
+    readingTranslationRequest.current = controller;
     setReadingTranslation(null);
     if (editionId === 'pcm' || editionId === 'gen-z') {
-      const controller = new AbortController();
-      readingTranslationRequest.current = controller;
       const { bookId, chapter, verse, endVerse } = current;
       setReadingTranslation({ passage: translationPassage, tone: editionId, rows: [] });
       try {
@@ -213,6 +213,7 @@ export default function App() {
     }
     try {
       const next = await getManifest(editionId);
+      if (controller.signal.aborted) return;
       const passage = { ...current, editionId };
       if (!validateReference(passage, next.books, editionId)) {
         notify('This passage is unavailable in that language.');
@@ -220,7 +221,7 @@ export default function App() {
       }
       navigate('read', passage);
     } catch {
-      notify('Could not open that language.');
+      if (!controller.signal.aborted) notify('Could not open that language.');
     }
   }
   function openQuran(ref:PassageRef){setQuranRef(ref);navigate('library',current);}
