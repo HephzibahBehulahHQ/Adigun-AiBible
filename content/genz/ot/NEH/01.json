@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "NEH",
+  "bookName": "Nehemiah",
+  "chapterNumber": 1,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:NEH:1:1",
+      "text": "These are the words of Nehemiah son of Hacaliah. In the month of Chislev, in the twentieth year, I was at the palace in Susa."
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:NEH:1:2",
+      "text": "Hanani, one of my brothers, came with some men from Judah. I asked them about the Jews who’d escaped and survived the exile, and I asked how Jerusalem was doing."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:NEH:1:3",
+      "text": "They told me, “The people who survived the exile and are still there in the province are in deep trouble and are being shamed. Jerusalem’s wall is broken down, and its gates have been burned.”"
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:NEH:1:4",
+      "text": "When I heard that, I sat down and cried. I mourned for days, fasting and praying before the God of heaven."
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:NEH:1:5",
+      "text": "I said, “Please, LORD, God of heaven, great and awesome God, you keep your covenant and show faithful love to those who love you and keep your commands."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:NEH:1:6",
+      "text": "Please listen closely and keep your eyes open to hear your servant’s prayer. I’m praying before you day and night for your servants, the Israelites, and confessing the sins we’ve committed against you. I’ve sinned too, and so has my family."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:NEH:1:7",
+      "text": "We’ve done terribly wrong against you. We haven’t kept the commands, statutes, or rulings you gave your servant Moses."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:NEH:1:8",
+      "text": "“Please remember what you told Moses your servant: ‘If you do wrong, I’ll scatter you among the peoples."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:NEH:1:9",
+      "text": "But if you come back to me, keep my commands, and live by them, even if your scattered people are at the farthest edge of the sky, I’ll gather them from there. I’ll bring them to the place I’ve chosen for my name to dwell.’"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:NEH:1:10",
+      "text": "“These are your servants, your own people. You rescued them by your great power and your strong hand."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:NEH:1:11",
+      "text": "Lord, please listen to your servant’s prayer and to the prayers of your servants who gladly honor your name with reverence. Help your servant succeed today and let this man show him mercy.” I was the king’s cupbearer."
+    }
+  ]
+}

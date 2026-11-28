@@ -2,6 +2,14 @@
 
 ## Adigun Edition
 
+- Finish Adigun Edition as the final new Bible edition for this project. Keep existing Bible editions available. Do not create or add additional Bible editions. Earlier edition-count expansion targets are superseded.
+
+### Reader language switch
+
+- Prioritize four languages: English, Yoruba, German, and Nigerian Pidgin English. Offer Gen Z as an English tone option with natural slang and fitting emojis. Expand to other languages after these first choices work end to end.
+- Use existing exact edition text when a reader selects an installed edition. For translation from the selected source, use a working translation service where the source rights allow it and preserve source references and verse boundaries. Keep the selected source edition and original text intact. Do not save generated output as a new Bible edition or present a placeholder as a translation.
+- Keep the public interface limited to the switch and the choices needed to operate it. Put developer notes, internal tags, and implementation details in code or developer documentation.
+
 Adigun is creating an original English Bible edition called **Adigun Edition**. Treat it as its own Bible version throughout authoring, data, and product work. Do not describe, classify, or display it as a paraphrase, secondary overlay, or third-party edition. In the reader, show only the selected version's own text; show other versions only when the reader explicitly opens the 2–5 parallel versions feature. Never substitute another edition's wording for missing Adigun text.
 
 ### Shared text source and rules

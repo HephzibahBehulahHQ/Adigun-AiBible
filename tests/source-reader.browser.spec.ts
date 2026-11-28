@@ -17,7 +17,7 @@ test('Adigun Edition opens its own Genesis text without an overlay or fallback',
   await expect(page.locator('.reader-title')).toContainText('Adigun Edition');
   await expectSourceVerse(page, 1, adigun.chapters[0].verses[0].text);
   await expect(page.locator('.reviewed-paraphrase')).toHaveCount(0);
-  await expect(page.locator('.edition-row select')).toHaveValue('adigun-edition');
+  await expect(page.getByRole('combobox', { name: 'Bible version', exact: true })).toHaveValue('adigun-edition');
   await expect(page.getByRole('button', { name: 'Next chapter' })).toBeEnabled();
   await page.goto('#/read/GEN/50?verse=1&edition=adigun-edition');
   await expect(page.getByRole('heading', { name: 'Genesis 50', exact: true })).toBeVisible();
@@ -89,8 +89,44 @@ test('Adigun Edition opens its own Genesis text without an overlay or fallback',
   await expect(page.getByRole('heading', { name: '1 Chronicles 29', exact: true })).toBeVisible();
   await expectSourceVerse(page, 30, readAdigun('1CH').chapters[28].verses[29].text);
   await page.getByRole('button', { name: 'Next chapter' }).click();
+  await expect(page.getByRole('heading', { name: '2 Chronicles 1', exact: true })).toBeVisible();
+  await expectSourceVerse(page, 1, readAdigun('2CH').chapters[0].verses[0].text);
+  await page.goto('#/read/2CH/36?verse=23&edition=adigun-edition');
+  await expect(page.getByRole('heading', { name: '2 Chronicles 36', exact: true })).toBeVisible();
+  await expectSourceVerse(page, 23, readAdigun('2CH').chapters[35].verses[22].text);
+  await page.getByRole('button', { name: 'Next chapter' }).click();
+  await expect(page.getByRole('heading', { name: 'Ezra 1', exact: true })).toBeVisible();
+  await expectSourceVerse(page, 1, readAdigun('EZR').chapters[0].verses[0].text);
+  await page.goto('#/read/EZR/10?verse=44&edition=adigun-edition');
+  await expect(page.getByRole('heading', { name: 'Ezra 10', exact: true })).toBeVisible();
+  await expectSourceVerse(page, 44, readAdigun('EZR').chapters[9].verses[43].text);
+  await page.getByRole('button', { name: 'Next chapter' }).click();
+  await expect(page.getByRole('heading', { name: 'Nehemiah 1', exact: true })).toBeVisible();
+  await expectSourceVerse(page, 1, readAdigun('NEH').chapters[0].verses[0].text);
+  await page.goto('#/read/NEH/13?verse=31&edition=adigun-edition');
+  await expect(page.getByRole('heading', { name: 'Nehemiah 13', exact: true })).toBeVisible();
+  await expectSourceVerse(page, 31, readAdigun('NEH').chapters[12].verses[30].text);
+  await page.getByRole('button', { name: 'Next chapter' }).click();
+  await expect(page.getByRole('heading', { name: 'Esther 1', exact: true })).toBeVisible();
+  await expectSourceVerse(page, 1, readAdigun('EST').chapters[0].verses[0].text);
+  await page.goto('#/read/EST/10?verse=3&edition=adigun-edition');
+  await expect(page.getByRole('heading', { name: 'Esther 10', exact: true })).toBeVisible();
+  await expectSourceVerse(page, 3, readAdigun('EST').chapters[9].verses[2].text);
+  await page.getByRole('button', { name: 'Next chapter' }).click();
   await expect(page.getByRole('heading', { name: 'Matthew 1', exact: true })).toBeVisible();
   await expectSourceVerse(page, 1, readAdigun('MAT').chapters[0].verses[0].text);
+});
+
+test('reading language keeps the passage and uses the selected source editions', async ({ page }) => {
+  await page.goto('#/read/JHN/3?verse=16&end=17&edition=eng-web');
+  const language = page.getByRole('combobox', { name: 'Reading language' });
+  for (const edition of ['yor', 'deu1912', 'eng-web']) {
+    await language.selectOption(edition);
+    await expect(page).toHaveURL(new RegExp('JHN/3.*verse=16.*end=17.*edition='+edition));
+    const path = edition === 'eng-web' ? '../data/books/JHN.json' : '../data/editions/'+edition+'/books/JHN.json';
+    const book = JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'));
+    await expectSourceVerse(page, 16, book.chapters[2].verses.find((row: { number: number }) => row.number === 16).text);
+  }
 });
 
 test('publisher notes and red-letter spans preserve exact wording and source identity', async ({ page }, testInfo) => {

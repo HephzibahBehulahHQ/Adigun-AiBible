@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "editionId": "adigun-genz",
+  "sourceEditionId": "eng-web",
+  "sourceManifestSha256": "37a8ccecfbc765a2305ae64f3b5e88d1d01bafceb9a33e8d191f6ee551a437b9",
+  "bookId": "EZR",
+  "bookName": "Ezra",
+  "chapterNumber": 1,
+  "verses": [
+    {
+      "number": 1,
+      "sourceRef": "eng-web:EZR:1:1",
+      "text": "In the first year of King Cyrus of Persia, the LORD stirred up Cyrus’s spirit so the word he’d spoken through Jeremiah would come true. Cyrus sent a proclamation across his kingdom and put it in writing:"
+    },
+    {
+      "number": 2,
+      "sourceRef": "eng-web:EZR:1:2",
+      "text": "“Here’s what Cyrus, king of Persia, says: ‘The LORD, the God of heaven, has given me all the kingdoms on earth. He’s told me to build him a house in Jerusalem in Judah."
+    },
+    {
+      "number": 3,
+      "sourceRef": "eng-web:EZR:1:3",
+      "text": "If you belong to his people, may your God be with you. Go up to Jerusalem in Judah and build the house of the LORD, the God of Israel. He is God, and his house belongs in Jerusalem."
+    },
+    {
+      "number": 4,
+      "sourceRef": "eng-web:EZR:1:4",
+      "text": "Wherever any of his people are still living, their neighbors should help them out with silver, gold, goods, and animals, in addition to what they freely give for God’s house in Jerusalem.’”"
+    },
+    {
+      "number": 5,
+      "sourceRef": "eng-web:EZR:1:5",
+      "text": "Then the family heads of Judah and Benjamin, the priests, and the Levites got ready to go build the LORD’s house in Jerusalem. These were all the people whose spirits God had stirred up to go."
+    },
+    {
+      "number": 6,
+      "sourceRef": "eng-web:EZR:1:6",
+      "text": "Their neighbors backed them up with silver vessels, gold, goods, animals, and valuables, on top of everything else they gave freely."
+    },
+    {
+      "number": 7,
+      "sourceRef": "eng-web:EZR:1:7",
+      "text": "Cyrus also brought out the vessels from the LORD’s house that Nebuchadnezzar had taken from Jerusalem and put in the house of his gods."
+    },
+    {
+      "number": 8,
+      "sourceRef": "eng-web:EZR:1:8",
+      "text": "Cyrus, king of Persia, had Mithredath the treasurer bring them out and count them out for Sheshbazzar, prince of Judah."
+    },
+    {
+      "number": 9,
+      "sourceRef": "eng-web:EZR:1:9",
+      "text": "Here’s the count: thirty gold platters, a thousand silver platters, twenty-nine knives,"
+    },
+    {
+      "number": 10,
+      "sourceRef": "eng-web:EZR:1:10",
+      "text": "thirty gold bowls, four hundred ten silver bowls of a second kind, and a thousand other vessels."
+    },
+    {
+      "number": 11,
+      "sourceRef": "eng-web:EZR:1:11",
+      "text": "Altogether there were five thousand four hundred gold and silver vessels. Sheshbazzar brought them all up when the captives went from Babylon to Jerusalem."
+    }
+  ]
+}

@@ -10,7 +10,15 @@ PRODUCT_ACCOUNT_PREFIX = "adigunaibible_preview"
 [assets]
 directory = "dist"
 binding = "ASSETS"
-run_worker_first = ["/api/account"]
+run_worker_first = ["/api/account", "/api/reader-translation"]
+
+[ai]
+binding = "AI"
+
+[[ratelimits]]
+name = "TRANSLATION_LIMITER"
+namespace_id = "3"
+simple = { limit = 5, period = 60 }
 
 [[ratelimits]]
 name = "ACCOUNT_LIMITER"
@@ -29,7 +37,15 @@ PRODUCT_ACCOUNT_PREFIX = "adigunaibible"
 [env.production.assets]
 directory = "dist"
 binding = "ASSETS"
-run_worker_first = ["/api/account"]
+run_worker_first = ["/api/account", "/api/reader-translation"]
+
+[env.production.ai]
+binding = "AI"
+
+[[env.production.ratelimits]]
+name = "TRANSLATION_LIMITER"
+namespace_id = "4"
+simple = { limit = 5, period = 60 }
 
 [[env.production.ratelimits]]
 name = "ACCOUNT_LIMITER"
