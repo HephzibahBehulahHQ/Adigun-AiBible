@@ -1,6 +1,11 @@
 const tones = new Map([
   ['pcm', 'Translate into natural Nigerian Pidgin English. Use idiomatic Nigerian Pidgin grammar and phrasing. Read each verse back for fluency and remove redundant phrasing.'],
-  ['gen-z', 'Render in conversational Gen Z English. Use slang that carries the same meaning and intensity as the original. Use occasional fitting emojis in joyful or celebratory passages, and omit them in solemn passages.'],
+  ['gen-z', [
+    'Render in conversational Gen Z English. Use contractions, direct wording, and slang only where it preserves the meaning and emotional weight.',
+    'Do not add filler reactions such as “lowkey”, “for real”, or “no cap”. Keep concrete images such as clothing and nakedness, and keep expressions of worship as worship.',
+    'Use at most one fitting emoji for a passage whose source clearly expresses joy or celebration. Omit emojis throughout passages about grief, loss, suffering, or judgment, even when the speaker also blesses God.',
+    'For example, “God so loved the world” can become “God loved the world so much”, and “Blessed be the name of the LORD” can become “Bless the LORD’s name.”',
+  ].join(' ')],
 ]);
 
 const fidelityInstructions = 'Preserve every claim, condition, contrast, negation, speaker, and verse boundary. Keep names, key theological terms, and meaningful imagery. Do not make a claim stronger or weaker, turn it into a different claim, or add an attitude the source does not express. Favor clear wording over forced slang. Read each verse against its source before returning it. Do not add commentary. Return a JSON object with a verses array of objects with number and text, in the original order.';
